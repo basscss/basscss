@@ -17,6 +17,7 @@ Import the `basscss.scss` file then use the utility classes or @extend them to b
 
 ### SASS @extend Example
 *Use this with caution. It's really easy to make your CSS hairy using @extend.*
+
     // Media Object
     .media, .media-body {
       @extend .clearfix;
