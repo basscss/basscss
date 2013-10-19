@@ -64,6 +64,7 @@ $dark: #1c2226;
     }
   }
   .blue { color: $blue; }
+  .light-gray { color: lighten($dark,60%); }
   .btn-dark {
     background-color: $dark;
   }
