@@ -32,6 +32,9 @@ button, input, select, textarea {
   font-family: inherit;
   font-size: 100%; }
 
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block; }
+
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5;
