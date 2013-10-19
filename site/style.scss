@@ -50,6 +50,8 @@ $blue: #0cf;
 $dark: #1c2226;
 
 .theme {
+  color: $dark;
+  background-color: #fff;
   .reverse {
     color: rgba(#fff,.8);
     background-color: $dark;   
