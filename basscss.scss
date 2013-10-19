@@ -1,0 +1,164 @@
+/*
+
+  BASSCSS
+
+  Part reset, part boilerplate, part framework, all minimal.
+
+  BASSCSS is a small reset and collection of simple type and layout
+  classes that can be used as the basis for any web project.
+  Use it out of the box or as a base for SASS @extend classes.
+
+  Contents:
+  1. Reset
+  2. Typography
+     a. Default Font Stack
+     b. Base Type Scale
+     c. Responsive Type Scale
+     d. Utilities
+  3. Layout
+     a. Margins
+     b. Padding
+     c. Display
+     d. Utilities
+
+  Made with love by Jxnblk
+
+*/
+  
+
+
+
+
+// Reset
+body, h1, h2, h3, h4, h5, h6, dl, ol, ul, p,
+button, input, select, textarea { margin: 0; }
+button, input, select, textarea { font-family: inherit; font-size: 100%; }
+
+
+
+
+// Typography
+
+// Default Font Stack
+$font-primary: 'Helvetica Neue', Helvetica, sans-serif !default;
+
+body {
+  font-family: $font-primary;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+// Base Type Scale
+h1, .h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+h2, .h2 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+h3, h4, h5, h6, dl, ol, ul, p, .p {
+  font-size: 1.125em;
+}
+
+small, .small {
+  font-size: .875em;
+}
+
+// Responsive Type Scale
+// Apply the .responsive class directly to elements or their parents
+.responsive {
+  @media (min-width: 768px) {
+    .h1, &.h1 { font-size: 4rem; }
+    .h2, &.h2 { font-size: 2rem; }
+    .p, &.p { font-size: 1.25rem; }
+    .small, &.small { font-size: 1rem; }
+  }
+  @media (min-width: 1024px) {
+    .h1, &.h1 { font-size: 6rem; }
+    .h2, &.h2 { font-size: 3rem; }
+  }
+}
+
+// Utilities
+strong, .bold { font-weight: 700; }
+.regular { font-weight: normal; }
+.caps { text-transform: uppercase; letter-spacing: .2em; }
+.center { text-align: center; }
+.right-align  { text-align: right; }
+
+
+
+
+// Layout
+
+// Base spacing unit
+$space: 1rem !default;
+
+// Margins
+// Builds margin utilities (e.g. .m1, .m2, .mr1, .mb1, etc.)
+@mixin margins {
+  $scale-max: 4 !default;
+  $margin-directions: (t -top, r -right, b -bottom, l -left) !default;
+  @for $i from 1 through $scale-max {
+    .m#{$i} { margin: $space * $i }
+    @each $direction in $margin-directions {
+      $short: nth($direction, 1);
+      $suffixes: nth($direction, 2);
+      @if (length($direction) == 3) {
+        $suffixes: (nth($direction, 2) nth($direction, 3));
+      }
+      .m#{$short}#{$i} {
+        @each $suffix in $suffixes {
+          margin#{$suffix}: $space * $i;
+        }
+      }
+    }
+  }
+}
+@include margins;
+
+// Useful for horizontally center elements with a fixed width
+.mxa { margin-right: auto; margin-left: auto; }
+
+// Padding
+// Builds padding utilities (e.g. .p1, .p2, .px1, .py1, etc.)
+@mixin padding {
+  $scale-max: 4 !default;
+  $padding-directions: (x -right -left, y -top -bottom) !default;
+  @for $i from 1 through $scale-max {
+    .p#{$i} { padding: $space * $i }
+    @each $direction in $padding-directions {
+      $short: nth($direction, 1);
+      $suffixes: nth($direction, 2);
+      @if (length($direction) == 3) {
+        $suffixes: (nth($direction, 2) nth($direction, 3));
+      }
+      .p#{$short}#{$i} {
+        @each $suffix in $suffixes {
+          padding#{$suffix}: $space * $i;
+        }
+      }
+    }  
+  }
+}
+@include padding;
+
+// Display
+.inline       { display: inline;}
+.block        { display: block; }
+.inline-block { display: inline-block; }
+.table        { display: table; }
+.table-cell   { display: table-cell; vertical-align: middle; }
+
+// Utilities
+.clearfix {
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+.left { float: left; }
+.right { float: right; }
+
+.fit { max-width: 100%; }
