@@ -1,0 +1,77 @@
+// Styles for BASSCSS site
+
+@import "../basscss.scss";
+
+.measure { max-width: 40rem; }
+.h0 { font-size: 6em; }
+
+// Positioning Utilities
+.relative { position: relative; }
+.absolute { position: absolute; }
+.absolute-center {
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+}
+
+.full-width { width: 100%; }
+
+// Ratio Utilities
+.letterbox {
+  width: 100%;
+  height: 0;
+  padding-bottom: 40%;
+  overflow: hidden;
+}
+.square {
+  width: 1em; height: 1em;
+  line-height: 1;
+}
+
+// Object Scaler
+@mixin scale {
+  $base: .5;
+  $ratio: 32;
+  $increment: .5;
+  $steps: 4;
+  font-size: percentage($base);
+  @for $step from 1 through $steps {
+    $scale: $base + ($increment * $step);
+    $font-size: percentage($scale);
+    $breakpoint: #{$scale * $ratio * 16}px;
+    @media (min-width: $breakpoint) {
+      font-size: $font-size;
+    }
+  }
+}
+.object-scale { @include scale; }
+
+// Theme
+$blue: #0cf;
+$dark: #1c2226;
+
+.theme {
+  .reverse {
+    color: rgba(#fff,.8);
+    background-color: $dark;   
+  }
+  a, .link {
+    color: $blue;
+    text-decoration: none;
+    &:hover {
+      color: darken($blue,10%);
+    }
+  }
+  .blue { color: $blue; }
+  .btn-dark {
+    background-color: $dark;
+  }
+}
+.border-thick {
+  border-width: $space/4;
+  border-style: solid; }
+.rounded { border-radius: $space/2; }
+.outline, .outline * { outline: 1px solid rgba($blue,.05); }
+.btn {
+  @extend .inline-block, .p, .bold, .p1, .rounded;
+}
+.transition-all { transition: all .3s ease; }
