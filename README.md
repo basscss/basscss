@@ -25,3 +25,28 @@ Import the `basscss.scss` file then use the utility classes or @extend them to b
     .media-img {
       @extend .left, .mr1;
     }
+
+# Or...
+## Do it the awesome way and don't write any CSS
+
+### Need a media object?
+
+    <div class="clearfix">
+        <img src="" alt="" class="left mr1" />
+        <div class="clearfix">
+            <h2>Boom!</h2>
+            <p>See that wasn't so hard.</p>
+        </div>
+    </div>
+
+### Is that semantically correct h1 just a tad too large?
+
+    <h1 class="h2">Still semantically correct</h1>
+
+### Want your type to scale up beyond mobile sizes?
+
+    <article class="responsive">
+        <h1 class="h1">This heading will resize</h1>
+        <h2>This one will not</h2>
+        <p class="p">This paragraph will though</p>
+    </article>
