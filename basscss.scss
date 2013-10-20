@@ -98,53 +98,49 @@ strong, .bold { font-weight: 700; }
 $space: 1rem !default;
 
 // Margins
-// Builds margin utilities (e.g. .m1, .m2, .mr1, .mb1, etc.)
-@mixin margins {
-  $scale-max: 4 !default;
-  $margin-directions: (t -top, r -right, b -bottom, l -left) !default;
-  @for $i from 1 through $scale-max {
-    .m#{$i} { margin: $space * $i }
-    @each $direction in $margin-directions {
-      $short: nth($direction, 1);
-      $suffixes: nth($direction, 2);
-      @if (length($direction) == 3) {
-        $suffixes: (nth($direction, 2) nth($direction, 3));
-      }
-      .m#{$short}#{$i} {
-        @each $suffix in $suffixes {
-          margin#{$suffix}: $space * $i;
-        }
-      }
-    }
-  }
-}
-@include margins;
+.m1  { margin: $space; }
+.mt1 { margin-top: $space; }
+.mr1 { margin-right: $space; }
+.mb1 { margin-bottom: $space; }
+.ml1 { margin-left: $space; }
+
+.m2  { margin: 2 * $space; }
+.mt2 { margin-top: 2 * $space; }
+.mr2 { margin-right: 2 * $space; }
+.mb2 { margin-bottom: 2 * $space; }
+.ml2 { margin-left: 2 * $space; }
+
+.m3  { margin: 3 * $space; }
+.mt3 { margin-top: 3 * $space; }
+.mr3 { margin-right: 3 * $space; }
+.mb3 { margin-bottom: 3 * $space; }
+.ml3 { margin-left: 3 * $space; }
+
+.m4  { margin: 4 * $space; }
+.mt4 { margin-top: 4 * $space; }
+.mr4 { margin-right: 4 * $space; }
+.mb4 { margin-bottom: 4 * $space; }
+.ml4 { margin-left: 4 * $space; }
 
 // Useful for horizontally center elements with a fixed width
 .mxa { margin-right: auto; margin-left: auto; }
 
 // Padding
-// Builds padding utilities (e.g. .p1, .p2, .px1, .py1, etc.)
-@mixin padding {
-  $scale-max: 4 !default;
-  $padding-directions: (x -right -left, y -top -bottom) !default;
-  @for $i from 1 through $scale-max {
-    .p#{$i} { padding: $space * $i }
-    @each $direction in $padding-directions {
-      $short: nth($direction, 1);
-      $suffixes: nth($direction, 2);
-      @if (length($direction) == 3) {
-        $suffixes: (nth($direction, 2) nth($direction, 3));
-      }
-      .p#{$short}#{$i} {
-        @each $suffix in $suffixes {
-          padding#{$suffix}: $space * $i;
-        }
-      }
-    }  
-  }
-}
-@include padding;
+.p1  { padding: $space; }
+.px1 { padding-right: $space; padding-left: $space; }
+.py1 { padding-top: $space; padding-bottom: $space; }
+
+.p2  { padding: 2 * $space; }
+.px2 { padding-right: 2 * $space; padding-left: 2 * $space; }
+.py2 { padding-top: 2 * $space; padding-bottom: 2 * $space; }
+
+.p3  { padding: 3 * $space; }
+.px3 { padding-right: 3 * $space; padding-left: 3 * $space; }
+.py3 { padding-top: 3 * $space; padding-bottom: 3 * $space; }
+
+.p4  { padding: 4 * $space; }
+.px4 { padding-right: 4 * $space; padding-left: 4 * $space; }
+.py4 { padding-top: 4 * $space; padding-bottom: 4 * $space; }
 
 // Display
 .inline       { display: inline;}
