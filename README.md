@@ -16,7 +16,7 @@ Adjust the font stack and add your own theme/skin classes to customize the look 
 Import the `basscss.scss` file then use the utility classes or @extend them to build more complex components. You can also adjust several variables, including the font stack and base spacing unit.
 
 ### SASS @extend Example
-*Use this with caution. It's really easy to make your CSS hairy using @extend.*
+*Use this with caution. It's really easy to  end up with some hairy CSS using @extend.*
 
     // Media Object
     .media, .media-body {
