@@ -10,7 +10,7 @@ BASSCSS is a small reset and collection of simple type and layout classes that c
 ## Vanilla CSS
 Include `basscss.min.css` (2kb) for all the default settings or use the unminified `basscss.css` (3.2kb) and edit it how you see fit.
 
-Adjust the font stack and add theme/skin classes to customize the look and feel.
+Adjust the font stack and add your own theme/skin classes to customize the look and feel.
 
 ## SASS
 Import the `basscss.scss` file then use the utility classes or @extend them to build more complex components. You can also adjust several variables, including the font stack and base spacing unit.

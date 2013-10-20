@@ -8,9 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="site/style.min.css" />
 </head>
-<body class="theme responsive">
+<body class="theme">
 
-  <header class="reverse">
+  <header class="responsive reverse">
     <div class="relative letterbox measure mxa outline center">
       <div class="absolute absolute-center py1 table full-width center object-scale transition-all">
         <div class="inline-block mb1 border-thick rounded pulsate">
@@ -22,16 +22,54 @@
   </header>
 
   <main class="px2 py4 measure mxa">
-    <section class="mb2">
-      <p class="h2 bold mb2">Part reset<br>Part boilerplate<br>Part framework<br>All minimal*</p>
+    <section class="responsive mb2">
+      <h2 class="h2 bold mb2">Part reset<br>Part boilerplate<br>Part framework<br>All minimal*</h2>
       <p class="p">BASSCSS is a small reset and collection of simple type and layout classes that can be used as the basis for any web project. Use it out of the box or as a base for a larger SASS project.</p>
     </section>
 
-    <section>
-      <p class="p mb1">Get started:</p>
+    <section class="responsive mb4">
+      <h2 class="p mb1">Get started:</h2>
       <div>
         <a href="//github.com/jxnblk/basscss" class="btn btn-dark">View on Github</a>
       </div>
+    </section>
+
+    <section class="mb2">
+      
+      <h2 class="h2 responsive mb2">Examples</h2>
+      
+      <article class="mb4">
+        <h1 class="p responsive">Mobile-First Responsive Type</h1>
+        <p class="p">Any <code>.h1</code>, <code>.h2</code>, <code>.p</code>, or <code>.small</code> class with the <code>.responsive</code> class applied to its parent will resize at large breakpoints.</p>
+        <div class="responsive">
+          <h1 class="h1">Heading 1</h1>
+          <h2 class="h2">Heading 2</h2>
+          <p class="p">Paragraph</p>
+          <p><small class="small">Small Type</small></p>
+        </div>
+        <pre class="p1 mb4 bg-light-gray rounded">
+&lt;div class=&quot;responsive&quot;&gt;
+  &lt;h1 class=&quot;h1&quot;&gt;Heading 1&lt;/h1&gt;
+  &lt;h2 class=&quot;h2&quot;&gt;Heading 2&lt;/h2&gt;
+  &lt;p class=&quot;p&quot;&gt;Paragraph&lt;/p&gt;
+  &lt;p&gt;&lt;small class=&quot;small&quot;&gt;Small Type&lt;/small&gt;&lt;/p&gt;
+&lt;/div&gt;</pre>
+        <h2 class="p">Selectively Responsive Type</h2>
+        <p class="p">Selectively applying the <code>.responsive</code> class will only affect that element.</p>
+        <div>
+          <h1 class="h1 responsive">Responsive</h1>
+          <h2 class="h2">Unresponsive</h2>
+          <p class="p">Unresponsive paragraph</p>
+        </div>
+        <pre class="p1 bg-light-gray rounded">
+&lt;div&gt;
+  &lt;h1 class=&quot;h1 responsive&quot;&gt;Responsive Heading 1&lt;/h1&gt;
+  &lt;h2 class=&quot;h2&quot;&gt;Unresponsive Heading 2&lt;/h2&gt;
+  &lt;p class=&quot;p&quot;&gt;Unresponsive paragraph&lt;/p&gt;
+&lt;/div&gt;</pre>
+      </article>
+
+
     </section>
 
   </main>

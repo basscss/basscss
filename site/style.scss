@@ -45,6 +45,10 @@
 }
 .object-scale { @include scale; }
 
+
+pre, code, samp, .mono {
+  font-family: 'Source Code Pro', monospace;
+}
 // Theme
 $blue: #0cf;
 $dark: #1c2226;
@@ -65,6 +69,8 @@ $dark: #1c2226;
   }
   .blue { color: $blue; }
   .light-gray { color: lighten($dark,60%); }
+  .bg-blue { background-color: $blue; }
+  .bg-light-gray { background-color: lighten($dark,60%); }
   .btn-dark {
     background-color: $dark;
   }
