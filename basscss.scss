@@ -61,6 +61,9 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 // Default Font Stack
 $font-primary: 'Helvetica Neue', Helvetica, sans-serif !default;
 
+// Base spacing unit
+$space: 1rem !default;
+
 body {
   font-family: $font-primary;
   line-height: 1.5;
@@ -108,13 +111,17 @@ strong, .bold { font-weight: 700; }
 .center { text-align: center; }
 .right-align  { text-align: right; }
 
+// Type Spacing
+// Apply the .type-margins class to parent elements for default type spacing
+.type-margins {
+  h1, .h1 { margin-bottom: $space; }
+  h2, .h2 { margin-bottom: $space; }
+  h3, h4, h5, h6, p, dl, ol, ul { margin-bottom: $space; }
+}
 
 
 
 // Layout
-
-// Base spacing unit
-$space: 1rem !default;
 
 // Margins
 .m1  { margin: $space; }
