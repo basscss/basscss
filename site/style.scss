@@ -52,6 +52,7 @@ pre, code, samp, .mono {
 // Theme
 $blue: #0cf;
 $dark: #1c2226;
+$light-gray: #dde;
 
 .theme {
   color: $dark;
@@ -68,9 +69,9 @@ $dark: #1c2226;
     }
   }
   .blue { color: $blue; }
-  .light-gray { color: lighten($dark,60%); }
+  .light-gray { color: $light-gray; }
   .bg-blue { background-color: $blue; }
-  .bg-light-gray { background-color: lighten($dark,60%); }
+  .bg-light-gray { background-color: $light-gray; }
   .btn-dark {
     background-color: $dark;
   }
