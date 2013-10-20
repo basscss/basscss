@@ -71,6 +71,10 @@ $mid-gray: #cacfd0;
       color: darken($blue,10%);
     }
   }
+  code {
+    font-size: 1rem;
+    background-color: $light-gray;
+  }
   .blue { color: $blue; }
   .bg-blue { background-color: $blue; }
   .mid-gray { color: $mid-gray; }
