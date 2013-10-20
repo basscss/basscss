@@ -87,6 +87,13 @@ strong, .bold {
 .right-align {
   text-align: right; }
 
+.type-margins h1, .type-margins .h1 {
+  margin-bottom: 1rem; }
+.type-margins h2, .type-margins .h2 {
+  margin-bottom: 1rem; }
+.type-margins h3, .type-margins h4, .type-margins h5, .type-margins h6, .type-margins p, .type-margins dl, .type-margins ol, .type-margins ul {
+  margin-bottom: 1rem; }
+
 .m1 {
   margin: 1rem; }
 
