@@ -6,7 +6,8 @@
 
   BASSCSS is a small reset and collection of simple type and layout
   classes that can be used as the basis for any web project.
-  Use it out of the box or as a base for SASS @extend classes.
+  Use it out of the box or as a base for a larger SASS project.
+
 
   Contents:
   1. Reset
@@ -21,19 +22,29 @@
      c. Display
      d. Utilities
 
+
   Made with love by Jxnblk
 
 */
-  
+
+
+
+
+// Settings
+
+// Defines whether or not to reset margins to 0
+// $reset-margins: true;
+// Default font stack
+// $font-primary: 'Helvetica Neue', Helvetica, sans-serif;
+// Base spacing unit
+// $space: 1rem;
 
 
 
 
 // Reset
 
-// Defines whether or not to reset margins to 0
 $reset-margins: true !default;
-
 @if ($reset-margins == true) {
   body, h1, h2, h3, h4, h5, h6, dl, ol, ul, p,
   button, input, select, textarea { margin: 0; }
@@ -41,6 +52,7 @@ $reset-margins: true !default;
 
 button, input, select, textarea { font-family: inherit; font-size: 100%; }
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary { display: block; }
+
 
 
 
