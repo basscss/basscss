@@ -72,8 +72,10 @@ $mid-gray: #cacfd0;
     }
   }
   .blue { color: $blue; }
-  .light-gray { color: $light-gray; }
   .bg-blue { background-color: $blue; }
+  .mid-gray { color: $mid-gray; }
+  .bg-mid-gray { background-color: $mid-gray; }
+  .light-gray { color: $light-gray; }
   .bg-light-gray { background-color: $light-gray; }
   .btn-dark {
     background-color: $dark;

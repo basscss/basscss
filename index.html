@@ -41,7 +41,7 @@
       <article id="responsive-type" class="mb4">
         <h1 class="h2 responsive">Mobile-First Responsive Type</h1>
         <p class="p responsive">Any <code>.h1</code>, <code>.h2</code>, <code>.p</code>, or <code>.small</code> class with the <code>.responsive</code> class applied to its parent will resize at certain breakpoints.</p>
-        <div class="responsive">
+        <div class="responsive mid-gray">
           <h1 class="h1">Heading 1</h1>
           <h2 class="h2">Heading 2</h2>
           <p class="p">Paragraph</p>
@@ -56,7 +56,7 @@
 &lt;/div&gt;</pre>
         <h2 class="h2 responsive">Selectively Responsive Type</h2>
         <p class="p responsive">Selectively applying the <code>.responsive</code> class will only affect that element.</p>
-        <div>
+        <div class="mid-gray">
           <h1 class="h1 responsive">Responsive</h1>
           <h2 class="h2">Unresponsive</h2>
           <p class="p">Unresponsive paragraph</p>
@@ -72,6 +72,23 @@
       <article id="type-margins" class="responsive mb4">
         <h1 class="h2">Type Margins</h1>
         <p class="p">By default all type element's margins are reset to 0. For blocks of copy apply the <code>.type-margins</code> class to automatically add margins to child text elements.</p>
+      </article>
+
+      <article id="type-utilities" class="responsive mb4">
+        <h1 class="h2">Type Utilities</h1>
+        <p class="p">Use the type utilities to quickly change the default styling of type elements.</p>
+        <dl class="p1 bg-light-gray rounded">
+          <dt><code>.bold</code></dt>
+          <dd><code>font-weight: bold;</code></dd>
+          <dt><code>.regular</code></dt>
+          <dd><code>font-weight: normal;</code></dd>
+          <dt><code>.caps</code></dt>
+          <dd><code>text-transform: uppercase; letter-spacing: .2em;</code></dd>
+          <dt><code>.center</code></dt>
+          <dd><code>text-align: center;</code></dd>
+          <dt><code>.right-align</code></dt>
+          <dd><code>text-align: right;</code></dd>
+        </dl>
       </article>
 
       <article id="margins" class="responsive mb4">
@@ -109,10 +126,40 @@
         </dl>
       </article>
 
+      <article id="floats" class="responsive mb4">
+        <h1 class="h2">Float Utilities</h1>
+        <p class="p">The set of float utilities are great for common layout cases.</p>
+        <dl class="p1 bg-light-gray rounded">
+          <dt><code>.left</code></dt>
+          <dd><code>float: left;</code></dd>
+          <dt><code>.right</code></dt>
+          <dd><code>float: right;</code></dd>
+          <dt><code>.clearfix</code></dt>
+          <dd>Used to clear floats</dd>
+        </dl>
+      </article>
+
+      <article id="display" class="responsive mb4">
+        <h1 class="h2">Display Utilities</h1>
+        <p class="p">Useful for changing display properties of elements</p>
+        <dl class="p1 bg-light-gray rounded">
+          <dt><code>.inline</code></dt>
+          <dd><code>display: inline;</code></dd>
+          <dt><code>.block</code></dt>
+          <dd><code>display: block;</code></dd>
+          <dt><code>.inline-block;</code></dt>
+          <dd><code>display: inline-block;</code></dd>
+          <dt><code>.table</code></dt>
+          <dd><code>display: table;</code></dd>
+          <dt><code>.table-cell</code></dt>
+          <dd><code>display: table-cell; vertical-align: middle;</code></dd>
+        </dl>
+      </article>
+
       <article id="media-object" class="responsive mb4">
         <h1 class="h2">Media Object</h1>
         <p class="p">Using <code>.clearfix</code>, <code>.left</code>, and <code>.mr1</code>, you can create the media object without writing any new CSS.</p>
-        <div class="clearfix mb2">
+        <div class="clearfix mb2 mid-gray">
           <img src="//placehold.it/128" alt="Placeholder Image" class="left mr1" />
           <div class="clearfix">
             <h2 class="p">Media Object</h2>
@@ -130,6 +177,13 @@
       </article>
 
 
+    </section>
+
+    <section class="type-margins">
+      <p class="h2">Ready to dive in?</p>
+      <div>
+        <a href="//github.com/jxnblk/basscss" class="btn btn-dark">View on Github</a>
+      </div>
     </section>
 
   </main>
