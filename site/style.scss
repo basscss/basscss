@@ -4,7 +4,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
-.measure { max-width: 40rem; }
+.measure { max-width: 48rem; }
 .h0 { font-size: 6em; }
 
 // Positioning Utilities
@@ -47,6 +47,17 @@
 }
 .object-scale { @include scale; }
 
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  li {
+    display: inline;
+    margin-right: $space;
+    line-height: 2 * $space;
+    white-space: nowrap;
+  }
+}
+
 
 pre, code, samp, .mono {
   font-family: 'Source Code Pro', monospace;
@@ -83,6 +94,14 @@ $mid-gray: #cacfd0;
   .bg-light-gray { background-color: $light-gray; }
   .btn-dark {
     background-color: $dark;
+  }
+  .btn-blue {
+    color: #fff;
+    background-color: $blue;
+    &:hover {
+      color: #fff;
+      background-color: darken($blue,20%);
+    }
   }
 }
 .border-thick {
