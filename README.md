@@ -14,7 +14,7 @@ BASSCSS is a small reset and collection of simple type and layout classes that c
 # Usage
 
 ## Vanilla CSS
-Include `basscss.min.css` (2kb) for all the default settings or use the unminified `basscss.css` (3.2kb) and edit it how you see fit.
+Include `basscss.min.css` (2.3kb) for all the default settings or use the unminified `basscss.css` (3.2kb) and edit it how you see fit.
 
 Adjust the font stack and add your own theme/skin classes to customize the look and feel.
 
