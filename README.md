@@ -19,23 +19,11 @@ Include `basscss.min.css` (2.3kb) for all the default settings or use the unmini
 Adjust the font stack and add your own theme/skin classes to customize the look and feel.
 
 ## SASS
-Import the `basscss.scss` file then use the utility classes or @extend them to build more complex components. You can also adjust several variables, including the font stack and base spacing unit.
+Import the `basscss.scss` file in your SASS project. You can then adjust several variables, including the font stack and base spacing unit.
 
-### SASS @extend Example
-*Use this with caution. It's really easy to  end up with some hairy CSS using @extend.*
+# Examples
 
-    // Media Object
-    .media, .media-body {
-      @extend .clearfix;
-    }
-    .media-img {
-      @extend .left, .mr1;
-    }
-
-# Or...
-## Do it the awesome way and don't write any CSS
-
-### Need a media object?
+## Media Object with no new CSS
 
     <div class="clearfix">
         <img src="" alt="" class="left mr1" />
@@ -45,11 +33,11 @@ Import the `basscss.scss` file then use the utility classes or @extend them to b
         </div>
     </div>
 
-### Is that semantically correct h1 just a tad too large?
+## Type scale classes
 
     <h1 class="h2">Still semantically correct</h1>
 
-### Want your type to scale up beyond mobile sizes?
+## Responsive type classes
 
     <article class="responsive">
         <h1 class="h1">This heading will resize</h1>
