@@ -72,7 +72,7 @@ small, .small {
     font-size: 3rem; } }
 
 strong, .bold {
-  font-weight: 700; }
+  font-weight: bold; }
 
 .regular {
   font-weight: normal; }
@@ -218,11 +218,8 @@ strong, .bold {
   display: table-cell;
   vertical-align: middle; }
 
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table; }
-.clearfix:after {
-  clear: both; }
+.clearfix {
+  overflow: hidden; }
 
 .left {
   float: left; }
