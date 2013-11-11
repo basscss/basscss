@@ -54,7 +54,7 @@ h3, h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125em; }
 
 small, .small {
-  font-size: .875em; }
+  font-size: .875rem; }
 
 @media (min-width: 768px) {
   .responsive .h1, .responsive.h1 {
