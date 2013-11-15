@@ -211,13 +211,6 @@ strong, .bold {
 .inline-block {
   display: inline-block; }
 
-.table {
-  display: table; }
-
-.table-cell {
-  display: table-cell;
-  vertical-align: middle; }
-
 .clearfix {
   overflow: hidden; }
 
