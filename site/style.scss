@@ -13,6 +13,7 @@
 .absolute-center {
   top: 0; right: 0; bottom: 0; left: 0;
   margin: auto;
+  display: table;
 }
 
 .full-width { width: 100%; }
