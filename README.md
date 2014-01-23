@@ -44,3 +44,5 @@ Import the `basscss.scss` file in your SASS project. You can then adjust several
         <h2>This one will not</h2>
         <p class="p">This paragraph will though</p>
     </article>
+
+<small>MIT license</small>
