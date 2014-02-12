@@ -1,0 +1,18 @@
+// Padding
+
+.p1  { padding: $space; }
+.px1 { padding-right: $space; padding-left: $space; }
+.py1 { padding-top: $space; padding-bottom: $space; }
+
+.p2  { padding: 2 * $space; }
+.px2 { padding-right: 2 * $space; padding-left: 2 * $space; }
+.py2 { padding-top: 2 * $space; padding-bottom: 2 * $space; }
+
+.p3  { padding: 3 * $space; }
+.px3 { padding-right: 3 * $space; padding-left: 3 * $space; }
+.py3 { padding-top: 3 * $space; padding-bottom: 3 * $space; }
+
+.p4  { padding: 4 * $space; }
+.px4 { padding-right: 4 * $space; padding-left: 4 * $space; }
+.py4 { padding-top: 4 * $space; padding-bottom: 4 * $space; }
+

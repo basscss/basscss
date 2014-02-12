@@ -1,0 +1,100 @@
+/*
+
+  BASSCSS
+  v2
+
+  Part reset, part boilerplate, part framework, all minimal.
+
+  Next-level CSS framework
+
+  BASSCSS is a small reset and collection of simple type and layout
+  classes that can be used as the basis for any web project.
+  Use it out of the box or as a base for a larger SASS project.
+
+  http://jxnblk.github.io/basscss
+  Made with love by Jxnblk
+
+*/
+
+
+// Settings
+// [ ] define all defaults here
+
+// Default font stack
+// $font-primary: 'Helvetica Neue', Helvetica, sans-serif;
+// Base spacing unit
+// $space: 1rem;
+
+@import "reset";
+//@import "basscss";
+@import "type";
+@import "margins";
+@import "padding";
+@import "utilities";
+// @import "forms";
+// @import "positions";
+
+@import "theme";
+
+
+.h0 { font-size: 6em; }
+
+// Positioning Utilities
+.relative { position: relative; }
+.absolute { position: absolute; }
+.absolute-center {
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  display: table;
+}
+
+.full-width { width: 100%; }
+
+// Ratio Utilities
+.letterbox {
+  width: 100%;
+  height: 0;
+  padding-bottom: 40%;
+  overflow: hidden;
+}
+.square {
+  width: 1em; height: 1em;
+  line-height: 1;
+}
+
+// Object Scaler
+@mixin scale {
+  $base: .5;
+  $ratio: 32;
+  $increment: .5;
+  $steps: 4;
+  font-size: percentage($base);
+  @for $step from 1 through $steps {
+    $scale: $base + ($increment * $step);
+    $font-size: percentage($scale);
+    $breakpoint: #{$scale * $ratio * 16}px;
+    @media (min-width: $breakpoint) {
+      font-size: $font-size;
+    }
+  }
+}
+.object-scale { @include scale; }
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  li {
+    display: inline;
+    margin-right: $space;
+    line-height: 2 * $space;
+    white-space: nowrap;
+  }
+}
+
+
+pre, code, samp, .mono {
+  font-family: 'Source Code Pro', monospace;
+}
+
+// Temporary hack
+pre { overflow: auto; }

@@ -1,0 +1,92 @@
+// Type
+
+// Default Font Stack
+$font-primary: 'Helvetica Neue', Helvetica, sans-serif !default;
+
+// Base spacing unit
+$space: 1rem !default;
+
+body {
+  font-family: $font-primary;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
+  margin-bottom: 1rem;
+}
+
+// Base Type Scale
+h1, .h1 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h2, .h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h3, h4, h5, h6, dl, ol, ul, p, .p {
+  font-size: 1.125rem;
+}
+
+small, .small {
+  font-size: .875rem;
+}
+
+// Responsive Type Scale
+// Apply the .responsive class to a parent element or
+// use the -responsive extension
+@media (min-width: 768px) {
+  .responsive .h1, .h1-responsive {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .responsive .h2, .h2-responsive {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .responsive .p, .p-responsive {
+    font-size: 1.25rem;
+  }
+  .responsive .small, .small-responsive {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .responsive .h1, .h1-responsive {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+  .responsive .h2, .h2-responsive {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+// Typographical Measure
+// Use with the .wrap class to center container
+.measure-1 { max-width: 48rem; }
+
+// Leading utilities to control line-height
+// [ ] move into responsive utilities
+.leading-1 { line-height: 1.5rem; }
+.leading-2 { line-height: 2rem; }
+.leading-3 { line-height: 3rem; }
+.leading-4 { line-height: 4rem; }
+
+// Tracking utilities to control letter-spacing
+// [ ] consider merits of this
+// .tracking-1 { letter-spacing: .1em; }
+// .tracking-2 { letter-spacing: .2em; }
+// .tracking-3 { letter-spacing: .3em; }
+
+// Utilities
+strong, .bold { font-weight: bold; }
+.regular { font-weight: normal; }
+.italic { font-style: italic; }
+.caps { text-transform: uppercase; letter-spacing: .2em; }
+.center { text-align: center; }
+.right-align  { text-align: right; }
+
