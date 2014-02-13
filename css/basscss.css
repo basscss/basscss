@@ -1,18 +1,12 @@
+@charset "UTF-8";
 /*
 
-  BASSCSS
-  v2
+  BASSCSS v2
 
-  Part reset, part boilerplate, part framework, all minimal.
+  Next-level CSS framework - http://jxnblk.github.io/basscss
 
-  Next-level CSS framework
-
-  BASSCSS is a small reset and collection of simple type and layout
-  classes that can be used as the basis for any web project.
-  Use it out of the box or as a base for a larger SASS project.
-
-  http://jxnblk.github.io/basscss
-  Made with love by Jxnblk
+  Made with love by Jxnblk - ©2014 Brent Jackson
+  MIT License http://opensource.org/licenses/MIT
 
 */
 h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
@@ -29,7 +23,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   display: block; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.5rem;
   font-weight: 400; }
 
@@ -50,7 +44,7 @@ h3, h4, h5, h6, dl, ol, ul, p, .p, .btn {
 small, .small {
   font-size: .875rem; }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .responsive .h1, .h1-responsive {
     font-size: 4rem;
     line-height: 5rem; }
@@ -64,7 +58,7 @@ small, .small {
 
   .responsive .small, .small-responsive {
     font-size: 1rem; } }
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .responsive .h1, .h1-responsive {
     font-size: 6rem;
     line-height: 8rem; }
@@ -72,7 +66,7 @@ small, .small {
   .responsive .h2, .h2-responsive {
     font-size: 3rem;
     line-height: 4rem; } }
-.measure-1 {
+.measure {
   max-width: 48rem; }
 
 .leading-1 {
@@ -176,6 +170,51 @@ strong, .bold, .btn {
   margin-right: auto;
   margin-left: auto; }
 
+.mq {
+  margin: 2rem; }
+
+.mtq {
+  margin-top: 2rem; }
+
+.mrq {
+  margin-right: 2rem; }
+
+.mbq {
+  margin-bottom: 2rem; }
+
+.mlq {
+  margin-left: 2rem; }
+
+@media (min-width: 48em) and (max-width: 64em) {
+  .mq {
+    margin: 3rem; }
+
+  .mtq {
+    margin-top: 3rem; }
+
+  .mrq {
+    margin-right: 3rem; }
+
+  .mbq {
+    margin-bottom: 3rem; }
+
+  .mlq {
+    margin-left: 3rem; } }
+@media (min-width: 64em) {
+  .mq {
+    margin: 4rem; }
+
+  .mtq {
+    margin-top: 4rem; }
+
+  .mrq {
+    margin-right: 4rem; }
+
+  .mbq {
+    margin-bottom: 4rem; }
+
+  .mlq {
+    margin-left: 4rem; } }
 .p1, .btn {
   padding: 1rem; }
 
@@ -220,6 +259,39 @@ strong, .bold, .btn {
   padding-top: 4rem;
   padding-bottom: 4rem; }
 
+.pq {
+  padding: 2rem; }
+
+.pxq {
+  padding-right: 2rem;
+  padding-left: 2rem; }
+
+.pyq {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+@media (min-width: 48em) and (max-width: 64em) {
+  .pq {
+    padding: 3rem; }
+
+  .pxq {
+    padding-right: 3rem;
+    padding-left: 3rem; }
+
+  .pyq {
+    padding-top: 3rem;
+    padding-bottom: 3rem; } }
+@media (min-width: 64em) {
+  .pq {
+    padding: 4rem; }
+
+  .pxq {
+    padding-right: 4rem;
+    padding-left: 4rem; }
+
+  .pyq {
+    padding-top: 4rem;
+    padding-bottom: 4rem; } }
 .inline {
   display: inline; }
 
@@ -246,6 +318,43 @@ strong, .bold, .btn {
 
 .fit {
   max-width: 100%; }
+
+.list-simple {
+  list-style: none;
+  padding-left: 0; }
+
+.list-inline li {
+  display: inline;
+  white-space: nowrap; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.fixed {
+  position: fixed; }
+
+.t0 {
+  top: 0; }
+
+.r0 {
+  right: 0; }
+
+.b0 {
+  bottom: 0; }
+
+.l0 {
+  left: 0; }
+
+.absolute--center {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: table; }
 
 .theme {
   color: #1c2226;
@@ -287,10 +396,10 @@ strong, .bold, .btn {
   border-style: solid; }
 
 .rounded, .btn {
-  border-radius: 0.5rem; }
+  border-radius: .25rem; }
 
 .outline, .outline * {
-  outline: 1px solid rgba(0, 204, 255, 0.05); }
+  outline: 1px solid rgba(0, 204, 255, 0.2); }
 
 .transition-all {
   transition: all .3s ease; }
@@ -324,34 +433,6 @@ strong, .bold, .btn {
 .h0 {
   font-size: 6em; }
 
-.relative {
-  position: relative; }
-
-.absolute {
-  position: absolute; }
-
-.absolute-center {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  display: table; }
-
-.full-width {
-  width: 100%; }
-
-.letterbox {
-  width: 100%;
-  height: 0;
-  padding-bottom: 40%;
-  overflow: hidden; }
-
-.square {
-  width: 1em;
-  height: 1em;
-  line-height: 1; }
-
 .object-scale {
   font-size: 50%; }
   @media (min-width: 512px) {
@@ -367,17 +448,46 @@ strong, .bold, .btn {
     .object-scale {
       font-size: 250%; } }
 
-.list-inline {
-  list-style: none;
-  padding-left: 0; }
-  .list-inline li {
-    display: inline;
-    margin-right: 1rem;
-    line-height: 2rem;
-    white-space: nowrap; }
+.letterbox {
+  width: 100%;
+  height: 0;
+  padding-bottom: 40%;
+  overflow: hidden; }
+
+.square {
+  width: 1em;
+  height: 1em;
+  line-height: 1; }
 
 pre, code, samp, .mono {
   font-family: 'Source Code Pro', monospace; }
 
 pre {
   overflow: auto; }
+
+.full-width {
+  width: 100%; }
+
+html, body {
+  height: 100%; }
+
+.y100 {
+  height: 100%; }
+
+.min-y100 {
+  min-height: 100%; }
+
+.show-baseline {
+  background-image: url(../baseline-16.svg);
+  background-size: .5rem .5rem; }
+
+.show-outline, .show-outline * {
+  outline: 1px solid #0cf; }
+
+.table {
+  display: table;
+  width: 100%; }
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle; }

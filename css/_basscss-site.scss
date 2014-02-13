@@ -1,0 +1,63 @@
+// Custom styles for BASSCSS site
+
+.h0 { font-size: 6em; }
+
+// Object Scaler
+@mixin scale {
+  $base: .5;
+  $ratio: 32;
+  $increment: .5;
+  $steps: 4;
+  font-size: percentage($base);
+  @for $step from 1 through $steps {
+    $scale: $base + ($increment * $step);
+    $font-size: percentage($scale);
+    $breakpoint: #{$scale * $ratio * 16}px;
+    @media (min-width: $breakpoint) {
+      font-size: $font-size;
+    }
+  }
+}
+.object-scale { @include scale; }
+
+// Ratio Utilities
+.letterbox {
+  width: 100%;
+  height: 0;
+  padding-bottom: 40%;
+  overflow: hidden;
+}
+.square {
+  width: 1em; height: 1em;
+  line-height: 1;
+}
+
+pre, code, samp, .mono {
+  font-family: 'Source Code Pro', monospace;
+}
+
+// Temporary hack
+pre { overflow: auto; }
+
+.full-width { width: 100%; }
+html, body { height: 100%; }
+.y100 { height: 100%; }
+.min-y100 { min-height: 100%; }
+
+.show-baseline {
+  background-image: url(../baseline-16.svg);
+  background-size: .5rem .5rem;
+}
+.show-outline, .show-outline * {
+  outline: 1px solid #0cf;
+}
+
+.table {
+  display: table;
+  width: 100%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+

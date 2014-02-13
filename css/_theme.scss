@@ -44,8 +44,8 @@ $mid-gray: #cacfd0;
 .border-thick {
   border-width: .25em;
   border-style: solid; }
-.rounded { border-radius: $space/2; }
-.outline, .outline * { outline: 1px solid rgba($blue,.05); }
+.rounded { border-radius: .25rem; }
+.outline, .outline * { outline: 1px solid rgba($blue,.2); }
 .btn {
   @extend .inline-block, .p, .bold, .p1, .rounded;
 }

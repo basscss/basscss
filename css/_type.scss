@@ -1,13 +1,7 @@
 // Type
 
-// Default Font Stack
-$font-primary: 'Helvetica Neue', Helvetica, sans-serif !default;
-
-// Base spacing unit
-$space: 1rem !default;
-
 body {
-  font-family: $font-primary;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.5rem;
   font-weight: 400;
 }
@@ -38,7 +32,7 @@ small, .small {
 // Responsive Type Scale
 // Apply the .responsive class to a parent element or
 // use the -responsive extension
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .responsive .h1, .h1-responsive {
     font-size: 4rem;
     line-height: 5rem;
@@ -54,7 +48,7 @@ small, .small {
     font-size: 1rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .responsive .h1, .h1-responsive {
     font-size: 6rem;
     line-height: 8rem;
@@ -67,7 +61,7 @@ small, .small {
 
 // Typographical Measure
 // Use with the .wrap class to center container
-.measure-1 { max-width: 48rem; }
+.measure { max-width: 48rem; }
 
 // Leading utilities to control line-height
 // [ ] move into responsive utilities
@@ -75,12 +69,6 @@ small, .small {
 .leading-2 { line-height: 2rem; }
 .leading-3 { line-height: 3rem; }
 .leading-4 { line-height: 4rem; }
-
-// Tracking utilities to control letter-spacing
-// [ ] consider merits of this
-// .tracking-1 { letter-spacing: .1em; }
-// .tracking-2 { letter-spacing: .2em; }
-// .tracking-3 { letter-spacing: .3em; }
 
 // Utilities
 strong, .bold { font-weight: bold; }

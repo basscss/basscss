@@ -6,25 +6,29 @@
   <meta name="author" content="Jxnblk">
   <meta name="description" content="Minimal CSS/SASS reset, boilerplate, and framework">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/basscss.css" />
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 </head>
 <body class="theme">
 
-  <header class="responsive reverse">
-    <div class="relative letterbox measure mxa outline center">
-      <div class="absolute absolute-center py1 full-width center object-scale transition-all">
+  <header class="responsive reverse min-y100 table xoutline center">
+  <!--
+    <div class="relative letterbox measure wrap outline center">
+    -->
+      <div class="table-cell xabsolute xabsolute--center py1 full-width center object-scale transition-all">
         <div class="inline-block mb1 border-thick rounded pulsate">
           <div class="h0 bold square">B</div>
         </div>
-        <h1 class="h2 blue">BASSCSS</h1>
+        <h1 class="h1 blue">BASSCSS</h1>
       </div>
+      <!--
     </div>
+    -->
   </header>
 
-  <main class="px2 py4 measure mxa">
+  <main class="pxq py4 measure wrap show-baseline outline">
     <section class="responsive mb2">
-      <h2 class="h2 bold mb2">Part reset<br>Part boilerplate<br>Part framework<br>All minimal*</h2>
+      <h2 class="h2 bold mb2">Next-level CSS framework</h2>
       <p class="p">BASSCSS is a small reset and collection of simple type and layout classes that can be used as the basis for any web project. Use it out of the box or as a base for a larger SASS project.</p>
     </section>
 
@@ -38,7 +42,7 @@
     <section class="mb2 type-margins">
       
       <h2 class="p responsive">Examples</h2>
-      <ul class="list-inline">
+      <ul class="list-simple list-inline">
         <li><a href="#responsive-type">Responsive Type</a></li>
         <li><a href="#type-margins">Type Margins</a></li>
         <li><a href="#type-utilities">Type Utilities</a></li>
@@ -56,7 +60,7 @@
           <h1 class="h1">Heading 1</h1>
           <h2 class="h2">Heading 2</h2>
           <p class="p">Paragraph</p>
-          <p><small class="small">Small Type</small></p>
+          <p class="small">Small Type</p>
         </div>
         <pre class="p1 mb4 bg-light-gray rounded">
 &lt;div class=&quot;responsive&quot;&gt;
@@ -165,10 +169,10 @@
 
       <article id="media-object" class="responsive mb4">
         <h1 class="h2">Media Object</h1>
-        <p class="p">Using <code>.clearfix</code>, <code>.left</code>, and <code>.mr1</code>, you can create the media object without writing any new CSS.</p>
-        <div class="clearfix mb2 mid-gray">
+        <p class="p">Using <code>.oh</code>, <code>.left</code>, and <code>.mr1</code>, you can create the media object without writing any new CSS.</p>
+        <div class="oh mb2 mid-gray">
           <img src="//placehold.it/128" alt="Placeholder Image" class="left mr1" />
-          <div class="clearfix">
+          <div class="oh">
             <h2 class="p">Media Object</h2>
             <p class="p">With no new CSS written</p>
           </div>
@@ -186,7 +190,7 @@
 
     </section>
 
-    <section class="type-margins">
+    <section>
       <p class="h2">Ready to dive in?</p>
       <div>
         <a href="//github.com/jxnblk/basscss" class="btn btn-blue">View on Github</a>
@@ -195,9 +199,9 @@
 
   </main>
 
-  <footer class="p2 measure mxa">
-    <p class="small">Made with love by <a href="//jxnblk.com">Jxnblk</a></p>
-    <p class="small light-gray">*That's a Robocop reference.</p>
+  <footer class="p2 measure wrap">
+    <p class="">Made with love by <a href="//jxnblk.com">Jxnblk</a></p>
+    <p class="small"><a href="http://opensource.org/licenses/MIT">MIT License</a> &middot; &copy; 2014 Brent Jackson</p>
   </footer>
 
 

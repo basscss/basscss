@@ -1,0 +1,15 @@
+// Lists
+
+// Simple unbulleted list
+.list-simple {
+  list-style: none;
+  padding-left: 0;
+}
+
+// Sets lists inline
+.list-inline {
+  li {
+    display: inline;
+    white-space: nowrap;
+  }
+}

@@ -1,18 +1,33 @@
 // Padding
 
-.p1  { padding: $space; }
-.px1 { padding-right: $space; padding-left: $space; }
-.py1 { padding-top: $space; padding-bottom: $space; }
+.p1  { padding: 1rem; }
+.px1 { padding-right: 1rem; padding-left: 1rem; }
+.py1 { padding-top: 1rem; padding-bottom: 1rem; }
 
-.p2  { padding: 2 * $space; }
-.px2 { padding-right: 2 * $space; padding-left: 2 * $space; }
-.py2 { padding-top: 2 * $space; padding-bottom: 2 * $space; }
+.p2  { padding: 2rem; }
+.px2 { padding-right: 2rem; padding-left: 2rem; }
+.py2 { padding-top: 2rem; padding-bottom: 2rem; }
 
-.p3  { padding: 3 * $space; }
-.px3 { padding-right: 3 * $space; padding-left: 3 * $space; }
-.py3 { padding-top: 3 * $space; padding-bottom: 3 * $space; }
+.p3  { padding: 3rem; }
+.px3 { padding-right: 3rem; padding-left: 3rem; }
+.py3 { padding-top: 3rem; padding-bottom: 3rem; }
 
-.p4  { padding: 4 * $space; }
-.px4 { padding-right: 4 * $space; padding-left: 4 * $space; }
-.py4 { padding-top: 4 * $space; padding-bottom: 4 * $space; }
+.p4  { padding: 4rem; }
+.px4 { padding-right: 4rem; padding-left: 4rem; }
+.py4 { padding-top: 4rem; padding-bottom: 4rem; }
+
+// Responsive padding
+.pq { padding: 2rem; }
+.pxq { padding-right: 2rem; padding-left: 2rem; }
+.pyq { padding-top: 2rem; padding-bottom: 2rem; }
+@media (min-width: 48em) and (max-width: 64em) {
+  .pq { padding: 3rem; }
+  .pxq { padding-right: 3rem; padding-left: 3rem; }
+  .pyq { padding-top: 3rem; padding-bottom: 3rem; }
+}
+@media (min-width: 64em) {
+  .pq { padding: 4rem; }
+  .pxq { padding-right: 4rem; padding-left: 4rem; }
+  .pyq { padding-top: 4rem; padding-bottom: 4rem; }
+}
 
