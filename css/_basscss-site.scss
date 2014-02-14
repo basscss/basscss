@@ -1,5 +1,9 @@
 // Custom styles for BASSCSS site
 
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .bold { font-weight: 600; }
 .h0 { font-size: 6em; }
 
 // Object Scaler
@@ -39,7 +43,7 @@ pre, code, samp, .mono {
 // Temporary hack
 pre { overflow: auto; }
 
-.full-width { width: 100%; }
+//.full-width { width: 100%; }
 html, body { height: 100%; }
 .y100 { height: 100%; }
 .min-y100 { min-height: 100%; }
@@ -49,15 +53,35 @@ html, body { height: 100%; }
   background-size: .5rem .5rem;
 }
 .show-outline, .show-outline * {
-  outline: 1px solid #0cf;
+  outline: 1px solid rgba($blue, .2);
+}
+//.outline, .outline * { outline: 1px solid rgba($blue,.2); }
+
+.border-thick {
+  border-width: .25em;
+  border-style: solid; }
+
+
+@-webkit-keyframes pulsate {
+  0% { opacity: .9; }
+  50% { opacity: 1; -webkit-transform: scale(1.05); }
+  100% { opacity: .9; }
+}
+@keyframes pulsate {
+  0% { opacity: .9; }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: .9; }
+}
+.pulsate {
+  -webkit-animation: pulsate 4s linear infinite;
+          animation: pulsate 4s linear infinite;
 }
 
-.table {
-  display: table;
-  width: 100%;
+.icon {
+  display: inline-block;
+  vertical-align: -.125em;
 }
-.table-cell {
-  display: table-cell;
-  vertical-align: middle;
+.icon--heart {
+  fill: #f30;
 }
 

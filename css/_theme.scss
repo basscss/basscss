@@ -1,68 +1,88 @@
 // Theme
 
-$blue: #0cf;
+//$blue: #0cf;
 $dark: #1c2226;
-$light-gray: #dadfe0;
-$mid-gray: #cacfd0;
+//$light-gray: #dadfe0;
+//$mid-gray: #cacfd0;
 
-.theme {
+$blue: #00bbdd;
+$light-gray: #eaeff0;
+$mid-gray: #a0aab0;
+
+$green: #00ff99;
+$red: #bb6633;
+.red { color: $red; }
+$light-blue: #22ddff;
+.light-blue { color: $light-blue; }
+
+body {
   color: $dark;
   background-color: #fff;
-  .reverse {
-    color: rgba(#fff,.8);
-    background-color: $dark;   
+}
+.reverse {
+  color: rgba(#fff,.8);
+  background-color: $dark;   
+}
+a, .link {
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    color: darken($blue,10%);
   }
-  a, .link {
-    color: $blue;
-    text-decoration: none;
-    &:hover {
-      color: darken($blue,10%);
-    }
-  }
-  code {
-    font-size: 1rem;
-    background-color: $light-gray;
-  }
-  .blue { color: $blue; }
-  .bg-blue { background-color: $blue; }
-  .mid-gray { color: $mid-gray; }
-  .bg-mid-gray { background-color: $mid-gray; }
-  .light-gray { color: $light-gray; }
-  .bg-light-gray { background-color: $light-gray; }
-  .btn-dark {
-    background-color: $dark;
-  }
-  .btn-blue {
+}
+code {
+  font-size: 1rem;
+  background-color: $light-gray;
+}
+.blue { color: $blue; }
+.bg-blue { background-color: $blue; }
+.mid-gray { color: $mid-gray; }
+.bg-mid-gray { background-color: $mid-gray; }
+.light-gray { color: $light-gray; }
+.bg-light-gray { background-color: $light-gray; }
+
+.green { color: $green; }
+
+.button--dark {
+  background-color: $dark;
+}
+.button--blue {
+  color: #fff;
+  background-color: $blue;
+  &:hover {
     color: #fff;
-    background-color: $blue;
+    background-color: darken($blue,20%);
+  }
+}
+.button--gray {
+  color: #fff;
+  background-color: $mid-gray;
+  &:hover {
+    color: #fff;
+    background-color: darken($mid-gray, 20%);
+  }
+}
+
+.nav-light {
+  a {
+    //color: $dark;
     &:hover {
-      color: #fff;
-      background-color: darken($blue,20%);
+      background-color: $light-gray;
     }
   }
 }
-.border-thick {
-  border-width: .25em;
-  border-style: solid; }
-.rounded { border-radius: .25rem; }
-.outline, .outline * { outline: 1px solid rgba($blue,.2); }
-.btn {
-  @extend .inline-block, .p, .bold, .p1, .rounded;
+
+.form--light {
+  .input {
+    border-color: $mid-gray;
+    &:focus {
+      outline: none;
+      border-color: $blue;
+    }
+  }
 }
+
+.rounded { border-radius: .25rem; }
 .transition-all { transition: all .3s ease; }
 
-@-webkit-keyframes pulsate {
-  0% { opacity: .9; }
-  50% { opacity: 1; -webkit-transform: scale(1.05); }
-  100% { opacity: .9; }
-}
-@keyframes pulsate {
-  0% { opacity: .9; }
-  50% { opacity: 1; transform: scale(1.05); }
-  100% { opacity: .9; }
-}
-.pulsate {
-  -webkit-animation: pulsate 4s linear infinite;
-          animation: pulsate 4s linear infinite;
-}
 

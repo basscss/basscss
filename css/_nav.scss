@@ -5,4 +5,15 @@
     display: block;
   }
 }
+.nav-inline {
+  a {
+    display: inline-block;
+  }
+}
+.nav--padded {
+  a {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+}
 

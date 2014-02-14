@@ -7,203 +7,153 @@
   <meta name="description" content="Minimal CSS/SASS reset, boilerplate, and framework">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/basscss.css" />
-  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
 </head>
 <body class="theme">
 
-  <header class="responsive reverse min-y100 table xoutline center">
-  <!--
-    <div class="relative letterbox measure wrap outline center">
-    -->
-      <div class="table-cell xabsolute xabsolute--center py1 full-width center object-scale transition-all">
-        <div class="inline-block mb1 border-thick rounded pulsate">
-          <div class="h0 bold square">B</div>
-        </div>
-        <h1 class="h1 blue">BASSCSS</h1>
+  <header class="responsive reverse min-y100 table center">
+    <div class="table-cell py1 center object-scale transition-all">
+      <div class="inline-block mb1 border-thick rounded pulsate">
+        <div class="h0 bold square">B</div>
       </div>
-      <!--
+      <h1 class="h1 caps blue">BASSCSS</h1>
+      <p class="p caps">Next-level CSS</p>
     </div>
-    -->
   </header>
 
-  <main class="pxq py4 measure wrap show-baseline outline">
-    <section class="responsive mb2">
-      <h2 class="h2 bold mb2">Next-level CSS framework</h2>
-      <p class="p">BASSCSS is a small reset and collection of simple type and layout classes that can be used as the basis for any web project. Use it out of the box or as a base for a larger SASS project.</p>
-    </section>
+  <main class="pxq pyq js-baseline js-outline">
 
-    <section class="responsive mb4">
-      <h2 class="p mb1">Get started:</h2>
+    <section class="responsive pyq">
+      <h2 class="h2 bold mb2">Minimal, utilitarian, responsive, mathematical, rhythmic</h2>
+      <p class="p measure mb2">BASSCSS is a lightweight collection of simple type and layout utilities that can be used as the basis for any web project. Use it out of the box or as the base for a larger SASS project.</p>
       <div>
-        <a href="//github.com/jxnblk/basscss" class="btn btn-blue">View on Github</a>
+        <p class="p">Built around the base unit of 1rem, everything in BASSCSS should line up neatly to a visual rhythm.</p>
+        <a href="#!" class="js-toggle-baseline button button--small mr1 mb1 button--gray">Toggle Baseline Grid</a>
+        <a href="#!" class="js-toggle-outline button button--small button--gray">Toggle Outlines</a>
       </div>
     </section>
 
-    <section class="mb2 type-margins">
+    <section class="measure wrap responsive pyq right-align">
+      <span class="p bold mr1">Get started:</span>
+      <a href="//github.com/jxnblk/basscss" class="button p button--big button--blue">View on Github</a>
+    </section>
+
+    <section class="mb2">
       
-      <h2 class="p responsive">Examples</h2>
-      <ul class="list-simple list-inline">
+      <!--
+      <ul class="p bold leading-2 list-simple list-inline nav-inline nav--padded nav-light">
         <li><a href="#responsive-type">Responsive Type</a></li>
-        <li><a href="#type-margins">Type Margins</a></li>
-        <li><a href="#type-utilities">Type Utilities</a></li>
-        <li><a href="#margins">Margins</a></li>
-        <li><a href="#padding">Padding</a></li>
-        <li><a href="#floats">Float Utilities</a></li>
-        <li><a href="#display">Display Utilities</a></li>
-        <li><a href="#media-object">Media Object</a></li>
       </ul>
+      -->
       
-      <article id="responsive-type" class="mb4">
-        <h1 class="h2 responsive">Mobile-First Responsive Type</h1>
-        <p class="p responsive">Any <code>.h1</code>, <code>.h2</code>, <code>.p</code>, or <code>.small</code> class with the <code>.responsive</code> class applied to its parent will resize at certain breakpoints.</p>
-        <div class="responsive mid-gray">
-          <h1 class="h1">Heading 1</h1>
-          <h2 class="h2">Heading 2</h2>
-          <p class="p">Paragraph</p>
-          <p class="small">Small Type</p>
+      <article id="responsive-type" class="measure wrap pyq">
+        <h1 class="h2 h2-responsive">Mobile-First Responsive Type</h1>
+        <div class="responsive measure mid-gray">
+          <h1 class="h1 mb0">Heading 1</h1>
+          <h2 class="h2 mb0">Heading 2</h2>
+          <p class="p">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
+          <p class="small">Landjaeger jerky ham sausage corned beef kevin drumstick ham hock shank meatball. Jowl brisket meatloaf capicola corned beef tri-tip drumstick strip steak t-bone flank. Biltong landjaeger pastrami cow tenderloin pork chop chuck turkey leberkas ribeye capicola hamburger jowl brisket. Bresaola boudin leberkas capicola salami, ribeye filet mignon tail kevin.</p>
+          <p class="h2">
+            <span class="caps">Caps</span>
+            <span class="italic">Italic</span>
+            <span class="bold">Bold</span>
+            <span class="regular">Regular</span>
+          </p>
         </div>
-        <pre class="p1 mb4 bg-light-gray rounded">
-&lt;div class=&quot;responsive&quot;&gt;
-  &lt;h1 class=&quot;h1&quot;&gt;Heading 1&lt;/h1&gt;
-  &lt;h2 class=&quot;h2&quot;&gt;Heading 2&lt;/h2&gt;
-  &lt;p class=&quot;p&quot;&gt;Paragraph&lt;/p&gt;
-  &lt;p&gt;&lt;small class=&quot;small&quot;&gt;Small Type&lt;/small&gt;&lt;/p&gt;
-&lt;/div&gt;</pre>
-        <h2 class="h2 responsive">Selectively Responsive Type</h2>
-        <p class="p responsive">Selectively applying the <code>.responsive</code> class will only affect that element.</p>
-        <div class="mid-gray">
-          <h1 class="h1 responsive">Responsive</h1>
-          <h2 class="h2">Unresponsive</h2>
-          <p class="p">Unresponsive paragraph</p>
-        </div>
-        <pre class="p1 bg-light-gray rounded">
-&lt;div&gt;
-  &lt;h1 class=&quot;h1 responsive&quot;&gt;Responsive Heading 1&lt;/h1&gt;
-  &lt;h2 class=&quot;h2&quot;&gt;Unresponsive Heading 2&lt;/h2&gt;
-  &lt;p class=&quot;p&quot;&gt;Unresponsive paragraph&lt;/p&gt;
-&lt;/div&gt;</pre>
       </article>
 
-      <article id="type-margins" class="responsive mb4">
-        <h1 class="h2">Type Margins</h1>
-        <p class="p">By default all type element's margins are reset to 0. For blocks of copy apply the <code>.type-margins</code> class to automatically add margins to child text elements.</p>
+      <article id="layout" class="measure wrap responsive pyq">
+        <h1 class="h2">Layout Utilities</h1>
+        <p class="p">BASSCSS includes a suite of layout utilities to control whitespace, floats, display, positioning and more. Take a look through the CSS to see what's available.</p>
       </article>
 
-      <article id="type-utilities" class="responsive mb4">
-        <h1 class="h2">Type Utilities</h1>
-        <p class="p">Use the type utilities to quickly change the default styling of type elements.</p>
-        <dl class="p1 bg-light-gray rounded">
-          <dt><code>.bold</code></dt>
-          <dd><code>font-weight: bold;</code></dd>
-          <dt><code>.regular</code></dt>
-          <dd><code>font-weight: normal;</code></dd>
-          <dt><code>.caps</code></dt>
-          <dd><code>text-transform: uppercase; letter-spacing: .2em;</code></dd>
-          <dt><code>.center</code></dt>
-          <dd><code>text-align: center;</code></dd>
-          <dt><code>.right-align</code></dt>
-          <dd><code>text-align: right;</code></dd>
-        </dl>
+      <article id="forms" class="measure wrap responsive pyq">
+        <h1 class="h2">Forms</h1>
+        <form class="form mb2 form--light">
+          <h2 class="p">Inline Form (with .mobile-block state)</h2>
+          <label class="mobile-block">Email Address:</label>
+          <input type="text" class="input mr1 mb1 mobile-block" placeholder="Email Address">
+          <label class="mobile-block">Password:</label>
+          <input type="text" class="input mr1 mb1 mobile-block" placeholder="Password">
+          <input type="submit" class="button button--blue mobile-block" value="Sign In">
+        </form>
+        <form class="form form--stacked mb2 form--light">
+          <h2 class="p">Stacked Form</h2>
+          <label>Email Address:</label>
+          <input type="text" class="input" placeholder="Email Address">
+          <label>Password:</label>
+          <input type="text" class="input" placeholder="Password">
+          <input type="submit" class="button button--blue" value="Sign In">
+        </form>
       </article>
 
-      <article id="margins" class="responsive mb4">
-        <h1 class="h2">Margin Utilities</h1>
-        <p class="p">BASSCSS includes a suite of margin utilities to control whitespace. The base unit of spacing can be customized with the <code>$space</code> variable.</p>
-        <dl class="p1 bg-light-gray rounded">
-          <dt><code>.m1</code></dt>
-          <dd><code>margin: 1x</code></dd>
-          <dt><code>.mt1</code></dt>
-          <dd><code>margin-top: 1x</code></dd>
-          <dt><code>.mr1</code></dt>
-          <dd><code>margin-right: 1x</code></dd>
-          <dt><code>.mb1</code></dt>
-          <dd><code>margin-bottom: 1x</code></dd>
-          <dt><code>.ml1</code></dt>
-          <dd><code>margin-left: 1x</code></dd>
-          <dt><code>.m2</code></dt>
-          <dd><code>margin: 2x</code></dd>
-          <dt></dt><dd>&hellip;</dd>
-          <dt><code>.ml4</code></dt>
-          <dd><code>.margin-left: 4x</code></dd>
-        </dl>
+      <article id="buttons" class="measure wrap responsive pyq">
+        <h1 class="h2">Buttons</h1>
       </article>
 
-      <article id="padding" class="responsive mb4">
-        <h1 class="h2">Padding Utilities</h1>
-        <p class="p">The padding utilities are similar to margin utilities, but only include symmetrical directions.</p>
-        <dl class="p1 bg-light-gray rounded">
-          <dt><code>.p1</code></dt>
-          <dd><code>padding: 1x;</code></dd>
-          <dt><code>.px1</code></dt>
-          <dd><code>padding-right: 1x; padding-left: 1x;</code></dd>
-          <dt><code>.py1</code></dt>
-          <dd><code>padding-top: 1x; padding-bottom: 1x;</code></dd>
-        </dl>
-      </article>
-
-      <article id="floats" class="responsive mb4">
-        <h1 class="h2">Float Utilities</h1>
-        <p class="p">The set of float utilities are great for common layout cases.</p>
-        <dl class="p1 bg-light-gray rounded">
-          <dt><code>.left</code></dt>
-          <dd><code>float: left;</code></dd>
-          <dt><code>.right</code></dt>
-          <dd><code>float: right;</code></dd>
-          <dt><code>.clearfix</code></dt>
-          <dd>Used to clear floats</dd>
-        </dl>
-      </article>
-
-      <article id="display" class="responsive mb4">
-        <h1 class="h2">Display Utilities</h1>
-        <p class="p">Useful for changing display properties of elements</p>
-        <dl class="p1 bg-light-gray rounded">
-          <dt><code>.inline</code></dt>
-          <dd><code>display: inline;</code></dd>
-          <dt><code>.block</code></dt>
-          <dd><code>display: block;</code></dd>
-          <dt><code>.inline-block;</code></dt>
-          <dd><code>display: inline-block;</code></dd>
-        </dl>
-      </article>
-
-      <article id="media-object" class="responsive mb4">
-        <h1 class="h2">Media Object</h1>
-        <p class="p">Using <code>.oh</code>, <code>.left</code>, and <code>.mr1</code>, you can create the media object without writing any new CSS.</p>
+      <article id="components" class="measure wrap responsive pyq">
+        <h1 class="h2">Components</h1>
+        <p class="p">Using BASSCSS's utilities, you can create a plethora of components &ndash; like the media object &ndash; without writing any new CSS.</p>
         <div class="oh mb2 mid-gray">
-          <img src="//placehold.it/128" alt="Placeholder Image" class="left mr1" />
+          <img src="http://placehold.it/128" alt="Placeholder Image" class="left mr1" />
           <div class="oh">
             <h2 class="p">Media Object</h2>
             <p class="p">With no new CSS written</p>
           </div>
         </div>
-        <pre class="p1 bg-light-gray rounded">
-&lt;div class=&quot;clearfix&quot;&gt;
-  &lt;img src=&quot;//placehold.it/128&quot; class=&quot;left mr1&quot; /&gt;
-  &lt;div class=&quot;clearfix&quot;&gt;
-    &lt;h2 class=&quot;p&quot;&gt;Media Object&lt;/h2&gt;
-    &lt;p class=&quot;p&quot;&gt;With no new CSS written&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</pre>
       </article>
 
 
     </section>
 
-    <section>
+    <section class="measure wrap responsive">
       <p class="h2">Ready to dive in?</p>
       <div>
-        <a href="//github.com/jxnblk/basscss" class="btn btn-blue">View on Github</a>
+        <a href="//github.com/jxnblk/basscss" class="p p-responsive button button--big button--blue">View on Github</a>
       </div>
     </section>
 
   </main>
 
-  <footer class="p2 measure wrap">
-    <p class="">Made with love by <a href="//jxnblk.com">Jxnblk</a></p>
-    <p class="small"><a href="http://opensource.org/licenses/MIT">MIT License</a> &middot; &copy; 2014 Brent Jackson</p>
+  <footer class="pq right-align">
+    <p class="">
+      <svg class="icon icon--heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
+        <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 " />
+      </svg>
+      Made with love by
+      <a href="//jxnblk.com">Jxnblk</a>
+    </p>
+    <p class="small mid-gray"><a href="http://opensource.org/licenses/MIT">MIT License</a> &middot; &copy; 2014 Brent Jackson</p>
   </footer>
 
+
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <!--
+  <script src="js/jquery.smooth-scroll.min.js"></script>
+  -->
+  <script>
+    $(document).ready(function(){
+      //$('a').smoothScroll({speed: 150});
+      var isOutlined = false,
+          isBaselined = false;
+      $('.js-toggle-baseline').click(function(){
+        if(isBaselined){
+          $('.js-baseline').removeClass('show-baseline');
+        } else {
+          $('.js-baseline').addClass('show-baseline');
+        }
+        isBaselined = !isBaselined;
+      });
+      $('.js-toggle-outline').click(function(){
+        if(isOutlined){
+          $('.js-outline').removeClass('show-outline');
+        } else {
+          $('.js-outline').addClass('show-outline');
+        }
+        isOutlined = !isOutlined;
+      });
+    });
+  </script>
 
 </body>
 </html>

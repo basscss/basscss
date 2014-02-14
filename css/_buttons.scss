@@ -1,0 +1,34 @@
+// Buttons
+
+.button {
+  //Reset
+  font-family: inherit;
+  font-weight: bold;
+  //font-smoothing: antialiased;
+  text-decoration: none;
+  cursor: pointer;
+  // move this to theme
+  //outline: none;
+  border: none;
+  appearance: none;
+  white-space: nowrap;
+  //margin: 0;
+  // Base styles
+  display: inline-block;
+  line-height: 2rem;
+  height: auto;
+  min-height: 2rem;
+  padding: 0.5rem 1rem;
+  // Move to theme
+  border-radius: .25rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button--big {
+  padding: 1rem 1.5rem;
+}
+
+.button--small {
+  padding: 0 1rem;
+}
+
