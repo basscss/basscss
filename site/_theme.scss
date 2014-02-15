@@ -27,10 +27,7 @@ a, .link {
     color: darken($blue,10%);
   }
 }
-code {
-  font-size: 1rem;
-  //background-color: $light-gray;
-}
+
 .blue { color: $blue; }
 .bg-blue { background-color: $blue; }
 .mid-gray { color: $mid-gray; }
@@ -41,10 +38,10 @@ code {
 
 .green { color: $green; }
 
-.button--dark {
+.button-dark {
   background-color: $dark;
 }
-.button--blue {
+.button-blue {
   color: #fff;
   background-color: $blue;
   &:hover {
@@ -52,7 +49,7 @@ code {
     background-color: darken($blue,20%);
   }
 }
-.button--gray {
+.button-gray {
   color: #fff;
   background-color: $mid-gray;
   &:hover {
@@ -61,7 +58,7 @@ code {
   }
 }
 
-.nav--light {
+.nav-light {
   a {
     //color: $dark;
     &:hover {
@@ -70,7 +67,7 @@ code {
   }
 }
 
-.form--light {
+.form-light {
   .input,
   .textarea,
   .select {
@@ -86,6 +83,9 @@ code {
 .radio input,
 .checkbox input,
 .button {
+  border-radius: .25rem;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   transition: box-shadow .2s ease;
   &:focus {
     outline: none;

@@ -27,27 +27,33 @@
 .mb4 { margin-bottom: 4rem; }
 .ml4 { margin-left: 4rem; }
 
+
 // Wrapper for horizontally centering elements with a fixed width
+// Use .wrap in conjunction with the .measure classes to center columns
 .wrap { margin-right: auto; margin-left: auto; }
 
+
 // Responsive margins
-.mq { margin: 2rem; }
-.mtq { margin-top: 2rem; }
-.mrq { margin-right: 2rem; }
-.mbq { margin-bottom: 2rem; }
-.mlq { margin-left: 2rem; }
+
+.m-responsive { margin: 2rem; }
+.mt-responsive { margin-top: 2rem; }
+.mr-responsive { margin-right: 2rem; }
+.mb-responsive { margin-bottom: 2rem; }
+.ml-responsive { margin-left: 2rem; }
+
 @media (min-width: 48em) and (max-width: 64em) {
-  .mq { margin: 3rem; }
-  .mtq { margin-top: 3rem; }
-  .mrq { margin-right: 3rem; }
-  .mbq { margin-bottom: 3rem; }
-  .mlq { margin-left: 3rem; }
+  .m-responsive { margin: 3rem; }
+  .mt-responsive { margin-top: 3rem; }
+  .mr-responsive { margin-right: 3rem; }
+  .mb-responsive { margin-bottom: 3rem; }
+  .ml-responsive { margin-left: 3rem; }
 }
+
 @media (min-width: 64em) {
-  .mq { margin: 4rem; }
-  .mtq { margin-top: 4rem; }
-  .mrq { margin-right: 4rem; }
-  .mbq { margin-bottom: 4rem; }
-  .mlq { margin-left: 4rem; }
+  .m-responsive { margin: 4rem; }
+  .mt-responsive { margin-top: 4rem; }
+  .mr-responsive { margin-right: 4rem; }
+  .mb-responsive { margin-bottom: 4rem; }
+  .ml-responsive { margin-left: 4rem; }
 }
 

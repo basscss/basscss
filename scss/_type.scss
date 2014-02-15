@@ -30,30 +30,30 @@ small, .small {
 }
 
 // Responsive Type Scale
-// Apply the .responsive class to a parent element or
-// use the -responsive extension
+// Apply the .responsive-type class to a parent element
+// or use the -responsive extension
 @media (min-width: 48em) {
-  .responsive .h1, .h1-responsive {
+  .responsive-type .h1, .h1-responsive {
     font-size: 4rem;
     line-height: 5rem;
   }
-  .responsive .h2, .h2-responsive {
+  .responsive-type .h2, .h2-responsive {
     font-size: 2rem;
     line-height: 3rem;
   }
-  .responsive .p, .p-responsive {
+  .responsive-type .p, .p-responsive {
     font-size: 1.25rem;
   }
-  .responsive .small, .small-responsive {
+  .responsive-type .small, .small-responsive {
     font-size: 1rem;
   }
 }
 @media (min-width: 64em) {
-  .responsive .h1, .h1-responsive {
+  .responsive-type .h1, .h1-responsive {
     font-size: 6rem;
     line-height: 8rem;
   }
-  .responsive .h2, .h2-responsive {
+  .responsive-type .h2, .h2-responsive {
     font-size: 3rem;
     line-height: 4rem;
   }

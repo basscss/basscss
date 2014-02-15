@@ -9,13 +9,14 @@
   .mobile-block {
     display: block;
   }
-  .mobile-hide { display: none; }
-  // Mobile 100% width state?
+  .mobile-block {
+    width: 100%;
+  }
+  .mobile-hide {
+    display: none;
+  }
   .mobile-center {
     text-align: center;
   }
 }
-
-
-// Hover group - should i even encourage this?
 

@@ -1,2 +1,127 @@
 // Example theme
 
+// Use fewer colors
+
+// Colors from https://github.com/mrmrs/colors
+$aqua:  #7FDBFF;
+$blue:  #0074D9;
+$navy:  #001F3F;
+$teal:  #39CCCC;
+$green: #2ECC40;
+$olive: #3D9970;
+$lime:  #01FF70;
+
+$yellow:  #FFDC00;
+$orange:  #FF851B;
+$red:     #FF4136;
+$fuchsia: #F012BE;
+$purple:  #B10DC9;
+$maroon:  #85144B;
+
+$white:  #fff;
+$silver: #ddd;
+$gray:   #aaa;
+$black:  #111;
+
+// Additional colors for BASSCSS
+$mid-gray: $777;
+$dark-gray: #333;
+
+// Colors
+.navy { color: $navy; }
+.blue { color: $blue; }
+.aqua { color: $aqua; }
+.teal { color: $teal; }
+.olive { color: $olive; }
+.green { color: $green; }
+.lime { color: $lime; }
+.yellow { color: $yellow; }
+.orange { color: $orange; }
+.red { color: $red; }
+.fuchsia { color: $fuchsia; }
+.purple { color: $purple; }
+.maroon { color: $maroon; }
+.white { color: $white; }
+.silver { color: $silver; }
+.gray { color: $gray; }
+.black { color: $black; }
+.mid-gray { color: $mid-gray; }
+.dark-gray { color: $dark-gray; }
+
+// Background colors
+.bg-navy { background-color: $navy; }
+.bg-blue { background-color: $blue; }
+.bg-aqua { background-color: $aqua; }
+.bg-teal { background-color: $teal; }
+.bg-olive { background-color: $olive; }
+.bg-green { background-color: $green; }
+.bg-lime { background-color: $lime; }
+.bg-yellow { background-color: $yellow; }
+.bg-orange { background-color: $orange; }
+.bg-red { background-color: $red; }
+.bg-fuchsia { background-color: $fuchsia; }
+.bg-purple { background-color: $purple; }
+.bg-maroon { background-color: $maroon; }
+.bg-white { background-color: $white; }
+.bg-gray { background-color: $gray; }
+.bg-silver { background-color: $silver; }
+.bg-black { background-color: $black; }
+.bg-mid-gray { background-color: $mid-gray; }
+.bg-dark-gray { background-color: $dark-gray; }
+
+
+// Base theme styles
+
+body {
+  color: $black;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    color: $aqua;
+  }
+}
+
+
+// Buttons
+
+.button {
+  border-radius: .25rem;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  transition: box-shadow .2s ease;
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $white, 0 0 1px 4px rgba($blue, .5);
+  }
+}
+
+.button-blue {
+  color: $white;
+  background-color: $blue;
+  &:hover {
+    background-color: darken($blue, 20%);
+  }
+  &:focus {
+  }
+}
+
+.button-gray {
+  color: $white;
+  background-color: $mid-gray;
+  &:hover {
+    background-color: darken($mid-gray, 20%);
+  }
+  &:focus {}
+}
+
+// Forms
+
+// Borders
+
+// Utilities
+.rounded { border-radius: .25rem; }
+.transition-all { transition: all .2s ease; }
+

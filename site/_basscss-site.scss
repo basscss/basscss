@@ -1,10 +1,18 @@
 // Custom styles for BASSCSS site
 
-body {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
-}
+body { font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif; }
+
 h1, h2, h3, h4, h5, h6, .bold { font-weight: 600; }
-.h0 { font-size: 6em; }
+
+pre, code, samp, .mono {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+}
+
+html, body { height: 100%; }
+
+.y100 { height: 100%; }
+.min-y100 { min-height: 100%; }
 
 // Object Scaler
 @mixin scale {
@@ -24,43 +32,17 @@ h1, h2, h3, h4, h5, h6, .bold { font-weight: 600; }
 }
 .object-scale { @include scale; }
 
-// Ratio Utilities
-.letterbox {
-  width: 100%;
-  height: 0;
-  padding-bottom: 40%;
-  overflow: hidden;
-}
+.h0 { font-size: 6em; }
+
 .square {
   width: 1em; height: 1em;
   line-height: 1;
 }
 
-pre, code, samp, .mono {
-  font-family: 'Source Code Pro', monospace;
-}
-
-// Temporary hack
-pre { overflow: auto; }
-
-//.full-width { width: 100%; }
-html, body { height: 100%; }
-.y100 { height: 100%; }
-.min-y100 { min-height: 100%; }
-
-.show-baseline {
-  background-image: url(baseline-16.svg);
-  background-size: .5rem .5rem;
-}
-.show-outline, .show-outline * {
-  outline: 1px solid rgba($blue, .2);
-}
-//.outline, .outline * { outline: 1px solid rgba($blue,.2); }
-
 .border-thick {
   border-width: .25em;
-  border-style: solid; }
-
+  border-style: solid;
+}
 
 @-webkit-keyframes pulsate {
   0% { opacity: .9; }
@@ -87,14 +69,21 @@ html, body { height: 100%; }
 }
 .glow {
   -webkit-animation: glow 2s linear infinite alternate;
-  animation: glow 2s linear infinite alternate;
+          animation: glow 2s linear infinite alternate;
+}
+
+.show-baseline {
+  background-image: url(baseline-16.svg);
+  background-size: .5rem .5rem;
+}
+
+.show-outline, .show-outline * {
+  outline: 1px solid rgba($blue, .2);
 }
 
 .icon {
   display: inline-block;
   vertical-align: -.125em;
 }
-.icon--heart {
-  fill: #f30;
-}
+.icon-heart { fill: #f30; }
 

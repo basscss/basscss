@@ -1,4 +1,5 @@
 // Nav menus
+// Consider removing this
 
 .nav {
   a {
@@ -10,7 +11,7 @@
     display: inline-block;
   }
 }
-.nav--padded {
+.nav-padded {
   a {
     padding-right: .5rem;
     padding-left: .5rem;
@@ -18,7 +19,7 @@
 }
 
 // Test this out first
-.nav--spaced {
+.nav-spaced {
   a {
     margin-right: 1rem;
     margin-bottom: 1rem;

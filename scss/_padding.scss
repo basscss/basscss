@@ -16,18 +16,22 @@
 .px4 { padding-right: 4rem; padding-left: 4rem; }
 .py4 { padding-top: 4rem; padding-bottom: 4rem; }
 
+
 // Responsive padding
-.pq { padding: 1.5rem; }
-.pxq { padding-right: 1.5rem; padding-left: 1.5rem; }
-.pyq { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+
+.p-responsive { padding: 1.5rem; }
+.px-responsive { padding-right: 1.5rem; padding-left: 1.5rem; }
+.py-responsive { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+
 @media (min-width: 48em) and (max-width: 64em) {
-  .pq { padding: 3rem; }
-  .pxq { padding-right: 3rem; padding-left: 3rem; }
-  .pyq { padding-top: 3rem; padding-bottom: 3rem; }
+  .p-responsive { padding: 3rem; }
+  .px-responsive { padding-right: 3rem; padding-left: 3rem; }
+  .py-responsive { padding-top: 3rem; padding-bottom: 3rem; }
 }
+
 @media (min-width: 64em) {
-  .pq { padding: 4rem; }
-  .pxq { padding-right: 4rem; padding-left: 4rem; }
-  .pyq { padding-top: 4rem; padding-bottom: 4rem; }
+  .p-responsive { padding: 4rem; }
+  .px-responsive { padding-right: 4rem; padding-left: 4rem; }
+  .py-responsive { padding-top: 4rem; padding-bottom: 4rem; }
 }
 

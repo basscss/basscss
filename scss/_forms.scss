@@ -3,6 +3,7 @@
 .form {
   font-size: 1rem;
 }
+
 .input {
   appearance: none;
   border-style: solid;
@@ -13,39 +14,32 @@
   height: 3rem;
   line-height: 2rem;
   padding: .5rem;
-  //margin: 0;
   border-radius: .25rem;
-  // Move this to theme
-  &:focus {
-    //outline: none;
-    //border-color: $blue;
-    //box-shadow: 0 0 2px 2px rgba($blue,.3);
-  }
 }
+
 .select {
-  //appearance: menulist-button;
   box-sizing: border-box;
   height: 3rem;
   margin-right: 0;
   margin-left: 0;
   border-radius: .25rem;
 }
+
 .textarea {
   box-sizing: border-box;
-  //width: 100%;
   padding: 1rem;
   line-height: 1.5rem;
   border-radius: .25rem;
 }
-.textarea--4 {
-  height: 8rem;
-}
-.form--stacked {
-  input[type='text'], label, select {
+
+.form-stacked {
+  label,
+  .input,
+  .select {
     display: block;
     width: 100%;
   }
-  input[type='text'],
+  .input,
   .select,
   .radio,
   .checkbox {

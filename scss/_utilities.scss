@@ -10,8 +10,9 @@
 .left { float: left; }
 .right { float: right; }
 .clearfix {
-  &:before, &:after {
-    content: '';
+  &:before,
+  &:after {
+    content: " ";
     display: table;
   }
   &:after {
@@ -21,7 +22,7 @@
 
 .fit { max-width: 100%; }
 
-// full-width / half-width utilities
+// Width utilities
 .full-width { width: 100%; }
 .half-width { width: 50%; }
 
