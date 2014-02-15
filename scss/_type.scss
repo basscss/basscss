@@ -62,6 +62,8 @@ small, .small {
 // Typographical Measure
 // Use with the .wrap class to center container
 .measure { max-width: 48rem; }
+.measure-narrow { max-width: 32rem; }
+.measure-wide { max-width: 60rem; }
 
 // Leading utilities to control line-height
 // [ ] move into responsive utilities

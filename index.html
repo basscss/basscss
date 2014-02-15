@@ -1,3 +1,7 @@
+---
+---
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,7 +10,7 @@
   <meta name="author" content="Jxnblk">
   <meta name="description" content="Minimal CSS/SASS reset, boilerplate, and framework">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/basscss.css" />
+  <link rel="stylesheet" href="site/styles.css" />
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
 </head>
 <body class="theme">
@@ -17,7 +21,7 @@
         <div class="h0 bold square glow">B</div>
       </div>
       <h1 class="h1 caps blue glow">BASSCSS</h1>
-      <p class="p caps">Next-level CSS</p>
+      <p class="p caps">Next-level CSS Framework</p>
     </div>
     <div class="absolute b0 l0 p1">
       <p class="mb0 small mid-gray">7KB minified</p>
@@ -29,11 +33,9 @@
 
   <main class="pxq pyq js-baseline js-outline">
 
-    <section class="responsive pyq">
-      <h2 class="h2 bold center mb2">Fastest responsive web design framework in the west</h2>
-      <div class="measure wrap">
-        <p class="p mb2">BASSCSS is a lightweight collection of simple type and layout utilities designed for speed, performance, and scalability. BASSCSS can be used as the basis for any web project. Use it out of the box or as the base for a larger SASS project.</p>
-      </div>
+    <section class="measure-wide wrap responsive pyq">
+      <h2 class="h2 bold mb2">Fastest responsive web design framework in the west</h2>
+      <p class="p mb2">BASSCSS is a lightweight collection of simple type and layout utilities designed for speed, performance, and scalability. BASSCSS can be used as the basis for any web project. Use it out of the box or as the base for a larger SASS project.</p>
       <!--
       <div class="measure wrap right-align">
         <span class="p bold mr1">Get started:</span>
@@ -42,36 +44,40 @@
       -->
     </section>
 
+    <section>
+{% highlight html %}
+<!doctype html>
+<html lang="en">
+  ...
+</html>
+{% endhighlight %}
+      </section>
+
     <section class="responsive measure wrap pyq">
-      <div class="table mb1">
-        <div class="table-cell h2 bold p1 white bg-blue rounded">
-          1rem
+        <div class="table mb1">
+          <div class="table-cell h2 bold p1 white bg-blue rounded">
+            1rem
+          </div>
+          <div class="table-cell px1">
+            <h2 class="h2 mb0">Mathematical</h2>
+            <p class="p">Built around the base unit of 1rem, everything in BASSCSS lines up neatly to a visual rhythm. See for yourself by toggling the baseline grid and outlines for all elements.</p>
+          </div>
         </div>
-        <div class="table-cell px1">
-          <h2 class="h2 mb0">Mathematical</h2>
-          <p class="p">Built around the base unit of 1rem, everything in BASSCSS lines up neatly to a visual rhythm. See for yourself by toggling the baseline grid and outlines for all elements.</p>
+        <div class="right-align mobile-center">
+          <a href="#!" class="js-toggle-baseline button button--small mr1 mb1 ml1 button--gray">Toggle Baseline Grid</a>
+          <a href="#!" class="js-toggle-outline button button--small button--gray">Toggle Outlines</a>
         </div>
-      </div>
-      <div class="right-align mobile-center">
-        <a href="#!" class="js-toggle-baseline button button--small mr1 mb1 ml1 button--gray">Toggle Baseline Grid</a>
-        <a href="#!" class="js-toggle-outline button button--small button--gray">Toggle Outlines</a>
-      </div>
     </section>
 
     <section class="mb2">
-      
-      <!--
-      <ul class="p bold leading-2 list-simple list--inline nav-inline nav--padded nav--light">
-        <li><a href="#responsive-type">Responsive Type</a></li>
-      </ul>
-      -->
       
       <article id="responsive-type" class="responsive measure wrap pyq">
         <h1 class="h2 mb0">Mobile-First Responsive Type</h1>
         <p class="p mb2">Type scale with more contrast at larger screen widths.</p>
         <div class="mid-gray">
-          <h1 class="h1 mb0">Heading 1</h1>
-          <h2 class="h2 mb0">Heading 2</h2>
+          <h1 class="h1 mb0">Hamburgers</h1>
+          <h2 class="h2">Bright vixens</h2>
+          <div class="right p2 mb2 ml2 h1 bold white bg-blue rounded">.h1</div>
           <p class="p">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
           <p class="small">Landjaeger jerky ham sausage corned beef kevin drumstick ham hock shank meatball. Jowl brisket meatloaf capicola corned beef tri-tip drumstick strip steak t-bone flank. Biltong landjaeger pastrami cow tenderloin pork chop chuck turkey leberkas ribeye capicola hamburger jowl brisket. Bresaola boudin leberkas capicola salami, ribeye filet mignon tail kevin.</p>
           <p class="h2">
@@ -90,8 +96,11 @@
       </article>
 
       <article id="layout" class="measure wrap responsive pyq">
-        <h1 class="h2">Layout Utilities</h1>
-        <p class="p">BASSCSS includes a suite of layout utilities to control whitespace, floats, display, positioning and more. Take a look through the CSS to see what's available.</p>
+          <h1 class="h2">Layout Utilities</h1>
+          <!-- 
+          <div class="left p1 mb1 mr1 h2 bold white bg-blue rounded">.py4</div>
+          -->
+          <p class="p">BASSCSS includes a suite of layout utilities to control whitespace, floats, display, positioning and more. Take a look through the CSS to see what's available.</p>
       </article>
 
       <article id="forms" class="measure wrap responsive pyq">
@@ -105,7 +114,7 @@
           <input type="text" class="input mr1 mb1 mobile-block" placeholder="Password">
           <input type="submit" class="button button--blue mobile-block" value="Sign In">
         </form>
-        <form class="clearfix mb2 form form--stacked form--light">
+        <form class="measure-narrow wrap clearfix mb2 form form--stacked form--light">
           <h2 class="p">Stacked Form</h2>
             <label>Email Address:</label>
             <input type="text" class="input" placeholder="Email Address">
@@ -135,10 +144,10 @@
           <button class="button button--blue mr1">Button Element</button>
         </form>
         <div class="mb2">
+          <a href="#!" class="button button--big button--blue mr1 mb1">.button--big</a>
+          <a href="#!" class="button button--small button--blue mr1 mb1">.button--small</a>
           <a href="#!" class="button button--gray mr1 mb1">.button--gray</a>
           <a href="#!" class="button button--dark mr1 mb1">.button--dark</a>
-          <a href="#!" class="button button--big button--blue mr1 mb1">.button--big</a>
-          <a href="#!" class="button button--small button--blue">.button--small</a>
         </div>
           
       </article>
@@ -147,8 +156,11 @@
         <h1 class="h2">Components</h1>
         <p class="p">Using BASSCSS's utilities, you can create a plethora of components &ndash; like the media object &ndash; without writing any new CSS.</p>
         <div class="oh mb2">
+          <!--
           <img src="http://placehold.it/128" alt="Placeholder Image" class="left mr1" />
-          <div class="oh">
+          -->
+          <div class="h2 left p2 mr2 bold white bg-blue rounded">.oh</div>
+          <div class="oh bg-light-gray p1">
             <h2 class="p mb1">Media Object</h2>
             <p class="p">With no new CSS written</p>
           </div>
@@ -180,6 +192,11 @@
             <li><a href="#!" class="px1">5</a></li>
             <li><a href="#!" class="px1">Next</a></li>
           </ul>
+        </div>
+        <div class="relative p2 mb2 mid-gray bg-light-gray rounded">
+          <h2 class="p4 center">Position anything</h2>
+          <p class="absolute t0 l0 p1">Top left</p>
+          <p class="absolute r0 b0 p1 mb0">Bottom right</p>
         </div>
       </article>
 

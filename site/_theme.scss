@@ -1,19 +1,16 @@
 // Theme
 
-//$blue: #0cf;
 $dark: #1c2226;
-//$light-gray: #dadfe0;
-//$mid-gray: #cacfd0;
-
 $blue: #00bbdd;
 $light-gray: #eaeff0;
 $mid-gray: #a0aab0;
 
-$green: #00ff99;
-$red: #bb6633;
-.red { color: $red; }
-$light-blue: #22ddff;
-.light-blue { color: $light-blue; }
+  // Secondary colors
+  $green: #00ff99;
+  $red: #bb6633;
+  .red { color: $red; }
+  $light-blue: #22ddff;
+  .light-blue { color: $light-blue; }
 
 body {
   color: $dark;
@@ -32,7 +29,7 @@ a, .link {
 }
 code {
   font-size: 1rem;
-  background-color: $light-gray;
+  //background-color: $light-gray;
 }
 .blue { color: $blue; }
 .bg-blue { background-color: $blue; }
@@ -103,4 +100,8 @@ code {
 .rounded { border-radius: .25rem; }
 .transition-all { transition: all .3s ease; }
 
+// Old colors
+//$blue: #0cf;
+//$light-gray: #dadfe0;
+//$mid-gray: #cacfd0;
 
