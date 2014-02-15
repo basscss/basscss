@@ -1,28 +1,20 @@
 // Layout Utilities
 
-// Display
-.inline       { display: inline;}
+.inline       { display: inline; }
 .block        { display: block; }
 .inline-block { display: inline-block; }
 
-// Utilities
-.oh { overflow: hidden; }
-.left { float: left; }
+.oh    { overflow: hidden; }
+.left  { float: left; }
 .right { float: right; }
+
 .clearfix {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
 }
 
 .fit { max-width: 100%; }
 
-// Width utilities
 .full-width { width: 100%; }
 .half-width { width: 50%; }
 

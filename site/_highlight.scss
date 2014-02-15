@@ -1,0 +1,11 @@
+// Theme for pygments syntax highlighting
+
+.highlight {
+  color: $mid-gray;
+  .p { font-size: 1rem; }
+  .nc, .s { color: darken($blue, 10%); }
+  .nt { color: $blue; }
+  .k, .m, .n { color: $blue; }
+  
+}
+

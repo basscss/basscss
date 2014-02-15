@@ -8,6 +8,7 @@ pre, code, samp, .mono {
   font-family: 'Source Code Pro', monospace;
   font-size: 1rem;
 }
+pre { overflow: auto; }
 
 html, body { height: 100%; }
 
