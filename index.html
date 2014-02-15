@@ -22,7 +22,7 @@
         <div class="h0 bold square glow">B</div>
       </div>
       <h1 class="h1 caps blue glow">BASSCSS</h1>
-      <p class="p caps">Next-level CSS Framework</p>
+      <p class="p caps">Next-level CSS</p>
     </div>
     <div class="absolute b0 l0 p1">
       <p class="mb0 small mid-gray">5KB minified CHECK THIS</p>
@@ -35,14 +35,14 @@
   <main class="px-responsive py-responsive js-baseline js-outline">
 
     <section class="measure-wide wrap py-responsive">
-      <h2 class="h2 bold mb2">Simple, responsive CSS framework</h2>
+      <h2 class="h2 bold mb2">Simple, responsive CSS toolkit</h2>
       <p class="h3 mb2">BASSCSS is a lightweight collection of base styles and simple type and layout utilities designed for speed, performance, and scalability. BASSCSS can be used as the basis for any web project. Use it out of the box or as the base for a larger SASS project.</p>
     </section>
 
 
     <section class="measure wrap py-responsive">
       <div class="table mb1">
-        <div class="table-cell center h2 bold p1 white bg-blue rounded">
+        <div class="table-cell center h2 bold p1 mid-gray bg-light-gray rounded">
           1rem
         </div>
         <div class="table-cell px1">
@@ -51,7 +51,7 @@
         </div>
       </div>
       <div class="right-align mobile-center">
-        <a href="#!" class="js-toggle-baseline button button-small button-gray">Toggle Baseline Grid</a>
+        <a href="#!" class="js-toggle-baseline button button-small button-gray">Show Baseline</a>
       </div>
     </section>
 
@@ -62,7 +62,7 @@
       <div class="mid-gray">
         <h1 class="h1 mb0">Hand claps</h1>
         <h2 class="h2">Polyrhythmic Percussion</h2>
-        <h3 class="h3">Polyrhythmic Percussion</h3>
+        <h3 class="h3">Step sequencers &amp; lasers</h3>
         <!--
         <div class="right p2 mb2 ml2 h1 bold white bg-blue rounded">.h1</div>
         -->
@@ -75,17 +75,17 @@
           <span class="regular">Regular</span>
         </p>
         <ul class="list">
-          <li>Landjaeger</li>
-          <li>Jerky ham sausage</li>
-          <li>Corned beef kevin</li>
-          <li>Drumstick ham hock</li>
+          <li>Synthesizers</li>
+          <li>Drum machines</li>
+          <li>Vocal samples</li>
+          <li>Filter delay</li>
         </ul>
       </div>
     </section>
 
     <section id="layout" class="measure wrap py-responsive">
-        <h1 class="h2">Layout Utilities</h1>
-        <p class="p">A suite of layout utilities to control whitespace, floats, display, positioning and more.</p>
+        <h1 class="h2 mb0">Layout Utilities</h1>
+        <p class="p mb2">A suite of layout utilities to control whitespace, floats, display, positioning and more.</p>
       <div class="p1 mb2 bg-light-gray rounded">
 {% highlight css %}
 .m1  { margin: 1rem; }
@@ -118,11 +118,26 @@
 }
 {% endhighlight %}
       </div>
+      <div class="p1 mb2 bg-light-gray rounded">
+{% highlight css %}
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
+
+.t0 { top: 0; }
+.r0 { right: 0; }
+.b0 { bottom: 0; }
+.l0 { left: 0; }
+{% endhighlight %}
+      </div>
+      <div class="center p">
+        <a href="">View the full CSS</a>
+      </div>
     </section>
 
     <section id="buttons" class="measure wrap py-responsive">
       <h1 class="h2 mb0">Buttons</h1>
-      <p class="p mb2">Button styles work on anchor links, submit inputs, and button elements. They come in three sizes and can be extended with themes.</p>
+      <p class="p mb2">Three sizes for anchor links, submit inputs, and button elements &ndash; extensible with themes.</p>
       <form class="mb2">
         <a href="#!" class="button button-blue mr1 mb1">Anchor Link Button</a>
         <input type="submit" class="button button-blue mr1 mb1" value="Submit Button">
@@ -138,7 +153,7 @@
 
     <section id="forms" class="measure wrap py-responsive">
       <h1 class="h2 mb0">Forms</h1>
-      <p class="p mb2">Basic form structural classes keep everything lined up and can be extended with themes.</p>
+      <p class="p mb2">Structural styles keep everything lined up and can be extended with themes.</p>
       <form class="measure-narrow wrap form mb2 form-light">
         <h2 class="p">Inline Form (with .mobile-block state)</h2>
         <input type="text" class="input mr1 mb1 mobile-block" placeholder="Email Address">
@@ -167,13 +182,13 @@
     </section>
 
     <section id="components" class="measure wrap py-responsive">
-      <h1 class="h2">Components</h1>
-      <p class="p">Using BASSCSS's utilities, you can create a plethora of components &ndash; like the media object &ndash; without writing any new CSS.</p>
+      <h1 class="h2 mb0">Components</h1>
+      <p class="p mb2">Create a plethora of components &ndash; like the media object &ndash; without writing any new CSS.</p>
       <div class="oh mt4 mb1">
         <div class="h2 left p2 mr2 bold white bg-blue rounded">.oh</div>
         <div class="oh bg-light-gray p1">
           <h2 class="p mb1">Media Object</h2>
-          <p class="p">With no new CSS written</p>
+          <p class="p">Using simple layout utilities</p>
         </div>
       </div>
       <div class="p1 mb4 bg-light-gray rounded">
@@ -203,7 +218,7 @@
 {% endhighlight %}
       </div>
       <div class="clearfix leading-3 mb1 bg-light-gray">
-        <div class="left px1 p bold">Nav bar</div>
+        <div class="left px1 p bold leading-3">Nav bar</div>
         <div class="right px1">
           <a href="#!">Right</a>
           <a href="#!" class="button button-small button-gray ml1">Button</a>
@@ -212,7 +227,7 @@
       <div class="p1 mb4 bg-light-gray rounded">
 {% highlight html %}
 <div class="clearfix leading-3 mb1 bg-light-gray">
-  <div class="left px1 p bold">Nav bar</div>
+  <div class="left px1 p bold leading-3">Nav bar</div>
   <div class="right px1">
     <a href="#!">Right</a>
     <a href="#!" class="button button-small button-gray ml1">Button</a>
@@ -233,7 +248,7 @@
 {% endhighlight %}
       </div>
       <div class="clearfix p1 mb1 bg-light-gray rounded">
-        <h2 class="p">Pagination</h2>
+        <h2 class="h3">Pagination</h2>
         <ul class="list-simple list-inline center leading-3">
           <li><a href="#!" class="inline-block px1">Previous</a></li>
           <li><a href="#!" class="inline-block px1 mid-gray">1</a></li>
@@ -258,18 +273,21 @@
 {% endhighlight %}
       </div>
       <div class="relative p2 mb1 mid-gray bg-light-gray rounded">
-        <h2 class="p4 center">Position anything</h2>
+        <h2 class="h3 p4 center">Position anything</h2>
         <p class="absolute t0 l0 p1">Top left</p>
         <p class="absolute r0 b0 p1 mb0">Bottom right</p>
       </div>
-      <div class="p1 mb4 bg-light-gray rounded">
+      <div class="p1 mb2 bg-light-gray rounded">
 {% highlight html %}
 <div class="relative p2 mb1 mid-gray bg-light-gray rounded">
-  <h2 class="p4 center">Position anything</h2>
+  <h2 class="h3 p4 center">Position anything</h2>
   <p class="absolute t0 l0 p1">Top left</p>
   <p class="absolute r0 b0 p1 mb0">Bottom right</p>
 </div>
 {% endhighlight %}
+      </div>
+      <div class="center p">
+        <a href="">View more markup examples</a>
       </div>
     </section>
 
@@ -280,31 +298,22 @@
 
     <section id="extending" class="measure wrap py-responsive">
       <h2 class="h2 mb0">Customizing and Extending</h2>
-      <p class="p">Add your own styles to build upon BASSCSS. Keeping styles reusable and maintaining a separation of structure and skin will help keep your site's code readable, scalable, and generally easier to maintain.</p>
+      <p class="p">Add your own styles to build upon BASSCSS. Reusable styles and a separation of structure and skin will help keep your site's code readable, scalable, and generally easier to maintain.</p>
     </section>
 
 
 
-    <section class="measure wrap">
-      <h2 class="h2">Ready to rock?</h2>
+    <section class="measure wrap py-responsive">
+      <h2 class="h2 mb0">Ready to rock?</h2>
+      <p class="p mb2">Read the documentation and download the source to get started.</p>
       <div>
         <a href="//github.com/jxnblk/basscss" class="p button button-big button-blue">View on Github</a>
       </div>
     </section>
-<!--
-    <section>
-{% highlight html %}
-<!doctype html>
-<html lang="en">
-  ...
-</html>
-{% endhighlight %}
-    </section>
--->
 
   </main>
 
-  <footer class="right-align">
+  <footer class="p-responsive right-align">
     <p>
       <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
         <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 " />
@@ -323,11 +332,11 @@
           $baselineButton = $('.js-toggle-baseline');
       $baselineButton.click(function(){
         if(isBaselined){
-          $baselineButton.removeClass('button-blue').addClass('button-gray');
+          $baselineButton.removeClass('button-blue').addClass('button-gray').html('Show Baseline');
           $('.js-baseline').removeClass('show-baseline');
           $('.js-outline').removeClass('show-outline');
         } else {
-          $baselineButton.removeClass('button-gray').addClass('button-blue');
+          $baselineButton.removeClass('button-gray').addClass('button-blue').html('Hide Baseline');
           $('.js-baseline').addClass('show-baseline');
           $('.js-outline').addClass('show-outline');
         }
