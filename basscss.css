@@ -9,12 +9,12 @@
   MIT License http://opensource.org/licenses/MIT
 
 */
-h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
-  margin-top: 0;
+body, button, input, select, textarea, pre {
+  margin: 0;
 }
 
-body, button, input, select, textarea {
-  margin: 0;
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
+  margin-top: 0;
 }
 
 button, input, select, textarea {
@@ -36,50 +36,61 @@ h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
   margin-bottom: 1rem;
 }
 
-h1, .h1 {
+h1, .h1, .f1 {
   font-size: 2rem;
   line-height: 3rem;
 }
 
-h2, .h2 {
+h2, .h2, .f1 {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-h3, h4, h5, h6, dl, ol, ul, p, .p {
+h3, .h3, .f3 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+p, .p, .f4, h4, h5, h6, dl, ol, ul {
   font-size: 1.125rem;
 }
 
-small, .small {
+small, .small, .f5 {
   font-size: .875rem;
 }
 
 @media (min-width: 48em) {
-  .responsive .h1, .h1-responsive {
+  .h1 {
     font-size: 4rem;
     line-height: 5rem;
   }
 
-  .responsive .h2, .h2-responsive {
+  .h2 {
     font-size: 2rem;
     line-height: 3rem;
   }
 
-  .responsive .p, .p-responsive {
-    font-size: 1.25rem;
+  .h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
-  .responsive .small, .small-responsive {
+  .p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  .small {
     font-size: 1rem;
   }
 }
 @media (min-width: 64em) {
-  .responsive .h1, .h1-responsive {
+  .h1 {
     font-size: 6rem;
     line-height: 8rem;
   }
 
-  .responsive .h2, .h2-responsive {
+  .h2 {
     font-size: 3rem;
     line-height: 4rem;
   }
@@ -230,65 +241,65 @@ strong, .bold {
   margin-left: auto;
 }
 
-.mq {
+.m-responsive {
   margin: 2rem;
 }
 
-.mtq {
+.mt-responsive {
   margin-top: 2rem;
 }
 
-.mrq {
+.mr-responsive {
   margin-right: 2rem;
 }
 
-.mbq {
+.mb-responsive {
   margin-bottom: 2rem;
 }
 
-.mlq {
+.ml-responsive {
   margin-left: 2rem;
 }
 
 @media (min-width: 48em) and (max-width: 64em) {
-  .mq {
+  .m-responsive {
     margin: 3rem;
   }
 
-  .mtq {
+  .mt-responsive {
     margin-top: 3rem;
   }
 
-  .mrq {
+  .mr-responsive {
     margin-right: 3rem;
   }
 
-  .mbq {
+  .mb-responsive {
     margin-bottom: 3rem;
   }
 
-  .mlq {
+  .ml-responsive {
     margin-left: 3rem;
   }
 }
 @media (min-width: 64em) {
-  .mq {
+  .m-responsive {
     margin: 4rem;
   }
 
-  .mtq {
+  .mt-responsive {
     margin-top: 4rem;
   }
 
-  .mrq {
+  .mr-responsive {
     margin-right: 4rem;
   }
 
-  .mbq {
+  .mb-responsive {
     margin-bottom: 4rem;
   }
 
-  .mlq {
+  .ml-responsive {
     margin-left: 4rem;
   }
 }
@@ -348,46 +359,46 @@ strong, .bold {
   padding-bottom: 4rem;
 }
 
-.pq {
+.p-responsive {
   padding: 1.5rem;
 }
 
-.pxq {
+.px-responsive {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
 
-.pyq {
+.py-responsive {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
 @media (min-width: 48em) and (max-width: 64em) {
-  .pq {
+  .p-responsive {
     padding: 3rem;
   }
 
-  .pxq {
+  .px-responsive {
     padding-right: 3rem;
     padding-left: 3rem;
   }
 
-  .pyq {
+  .py-responsive {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 @media (min-width: 64em) {
-  .pq {
+  .p-responsive {
     padding: 4rem;
   }
 
-  .pxq {
+  .px-responsive {
     padding-right: 4rem;
     padding-left: 4rem;
   }
 
-  .pyq {
+  .py-responsive {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
@@ -417,7 +428,7 @@ strong, .bold {
 }
 
 .clearfix:before, .clearfix:after {
-  content: '';
+  content: " ";
   display: table;
 }
 .clearfix:after {
@@ -436,6 +447,28 @@ strong, .bold {
   width: 50%;
 }
 
+.mobile-show {
+  display: none;
+}
+
+@media (max-width: 48em) {
+  .mobile-show,
+  .mobile-block {
+    display: block;
+  }
+
+  .mobile-block {
+    width: 100%;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .mobile-center {
+    text-align: center;
+  }
+}
 .button {
   font-family: inherit;
   font-weight: bold;
@@ -449,15 +482,13 @@ strong, .bold {
   height: auto;
   min-height: 2rem;
   padding: 0.5rem 1rem;
-  border-radius: .25rem;
-  -webkit-font-smoothing: antialiased;
 }
 
-.button--big {
+.button-big {
   padding: 1rem 1.5rem;
 }
 
-.button--small {
+.button-small {
   padding: 0 1rem;
 }
 
@@ -493,19 +524,21 @@ strong, .bold {
   border-radius: .25rem;
 }
 
-.textarea--4 {
-  height: 8rem;
-}
-
-.form--stacked input[type='text'], .form--stacked label, .form--stacked select {
+.form-stacked label,
+.form-stacked .input,
+.form-stacked .select {
   display: block;
   width: 100%;
 }
-.form--stacked input[type='text'],
-.form--stacked .select,
-.form--stacked .radio,
-.form--stacked .checkbox {
+.form-stacked .input,
+.form-stacked .select,
+.form-stacked .radio,
+.form-stacked .checkbox {
   margin-bottom: 1rem;
+}
+
+.list {
+  padding-left: 2rem;
 }
 
 .list-simple {
@@ -513,27 +546,13 @@ strong, .bold {
   padding-left: 0;
 }
 
-.list--inline li {
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+}
+.list-inline li {
   display: inline;
   white-space: nowrap;
-}
-
-.nav a {
-  display: block;
-}
-
-.nav-inline a {
-  display: inline-block;
-}
-
-.nav--padded a {
-  padding-right: .5rem;
-  padding-left: .5rem;
-}
-
-.nav--spaced a {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
 }
 
 .relative {
@@ -564,7 +583,23 @@ strong, .bold {
   left: 0;
 }
 
-.absolute--center {
+.z1 {
+  z-index: 1;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.z3 {
+  z-index: 3;
+}
+
+.z4 {
+  z-index: 4;
+}
+
+.absolute-center {
   top: 0;
   right: 0;
   bottom: 0;
@@ -573,21 +608,201 @@ strong, .bold {
   display: table;
 }
 
-.mobile-show {
-  display: none;
+.navy {
+  color: #001f3f;
 }
 
-@media (max-width: 48em) {
-  .mobile-show,
-  .mobile-block {
-    display: block;
-  }
+.blue {
+  color: #0074d9;
+}
 
-  .mobile-hide {
-    display: none;
-  }
+.aqua {
+  color: #7fdbff;
+}
 
-  .mobile-center {
-    text-align: center;
-  }
+.teal {
+  color: #39cccc;
+}
+
+.olive {
+  color: #3d9970;
+}
+
+.green {
+  color: #2ecc40;
+}
+
+.lime {
+  color: #01ff70;
+}
+
+.yellow {
+  color: #ffdc00;
+}
+
+.orange {
+  color: #ff851b;
+}
+
+.red {
+  color: #ff4136;
+}
+
+.fuchsia {
+  color: #f012be;
+}
+
+.purple {
+  color: #b10dc9;
+}
+
+.maroon {
+  color: #85144b;
+}
+
+.white {
+  color: white;
+}
+
+.silver {
+  color: #dddddd;
+}
+
+.gray {
+  color: #aaaaaa;
+}
+
+.black {
+  color: #111111;
+}
+
+.mid-gray {
+  color: #777777;
+}
+
+.dark-gray {
+  color: #333333;
+}
+
+.bg-navy {
+  background-color: #001f3f;
+}
+
+.bg-blue {
+  background-color: #0074d9;
+}
+
+.bg-aqua {
+  background-color: #7fdbff;
+}
+
+.bg-teal {
+  background-color: #39cccc;
+}
+
+.bg-olive {
+  background-color: #3d9970;
+}
+
+.bg-green {
+  background-color: #2ecc40;
+}
+
+.bg-lime {
+  background-color: #01ff70;
+}
+
+.bg-yellow {
+  background-color: #ffdc00;
+}
+
+.bg-orange {
+  background-color: #ff851b;
+}
+
+.bg-red {
+  background-color: #ff4136;
+}
+
+.bg-fuchsia {
+  background-color: #f012be;
+}
+
+.bg-purple {
+  background-color: #b10dc9;
+}
+
+.bg-maroon {
+  background-color: #85144b;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-gray {
+  background-color: #aaaaaa;
+}
+
+.bg-silver {
+  background-color: #dddddd;
+}
+
+.bg-black {
+  background-color: #111111;
+}
+
+.bg-mid-gray {
+  background-color: #777777;
+}
+
+.bg-dark-gray {
+  background-color: #333333;
+}
+
+body {
+  color: #111111;
+}
+
+a {
+  color: #0074d9;
+  text-decoration: none;
+}
+a:hover {
+  color: #7fdbff;
+}
+
+.button {
+  border-radius: .25rem;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  transition: box-shadow .2s ease;
+}
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 116, 217, 0.5);
+}
+
+.button-blue {
+  color: white;
+  background-color: #0074d9;
+}
+.button-blue:hover {
+  background-color: #003d73;
+}
+
+.button-gray {
+  color: white;
+  background-color: #777777;
+}
+.button-gray:hover {
+  background-color: #444444;
+}
+
+.rounded {
+  border-radius: .25rem;
+}
+
+.transition-all {
+  transition: all .2s ease;
 }
