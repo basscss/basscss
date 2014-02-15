@@ -11,44 +11,65 @@
 </head>
 <body class="theme">
 
-  <header class="responsive reverse min-y100 table center">
+  <header class="relative responsive reverse min-y100 table center">
     <div class="table-cell py1 center object-scale transition-all">
       <div class="inline-block mb1 border-thick rounded pulsate">
-        <div class="h0 bold square">B</div>
+        <div class="h0 bold square glow">B</div>
       </div>
-      <h1 class="h1 caps blue">BASSCSS</h1>
+      <h1 class="h1 caps blue glow">BASSCSS</h1>
       <p class="p caps">Next-level CSS</p>
+    </div>
+    <div class="absolute b0 l0 p1">
+      <p class="mb0 small mid-gray">7KB minified</p>
+    </div>
+    <div class="absolute r0 b0 p1">
+      <a href="//github.com/jxnblk/basscss">View on Github</a>
     </div>
   </header>
 
   <main class="pxq pyq js-baseline js-outline">
 
     <section class="responsive pyq">
-      <h2 class="h2 bold mb2">Minimal, utilitarian, responsive, mathematical, rhythmic</h2>
-      <p class="p measure mb2">BASSCSS is a lightweight collection of simple type and layout utilities that can be used as the basis for any web project. Use it out of the box or as the base for a larger SASS project.</p>
-      <div>
-        <p class="p">Built around the base unit of 1rem, everything in BASSCSS should line up neatly to a visual rhythm.</p>
-        <a href="#!" class="js-toggle-baseline button button--small mr1 mb1 button--gray">Toggle Baseline Grid</a>
-        <a href="#!" class="js-toggle-outline button button--small button--gray">Toggle Outlines</a>
+      <h2 class="h2 bold center mb2">Fastest responsive web design framework in the west</h2>
+      <div class="measure wrap">
+        <p class="p mb2">BASSCSS is a lightweight collection of simple type and layout utilities designed for speed, performance, and scalability. BASSCSS can be used as the basis for any web project. Use it out of the box or as the base for a larger SASS project.</p>
       </div>
+      <!--
+      <div class="measure wrap right-align">
+        <span class="p bold mr1">Get started:</span>
+        <a href="//github.com/jxnblk/basscss" class="button p button--big button--blue">View on Github</a>
+      </div>
+      -->
     </section>
 
-    <section class="measure wrap responsive pyq right-align">
-      <span class="p bold mr1">Get started:</span>
-      <a href="//github.com/jxnblk/basscss" class="button p button--big button--blue">View on Github</a>
+    <section class="responsive measure wrap pyq">
+      <div class="table mb1">
+        <div class="table-cell h2 bold p1 white bg-blue rounded">
+          1rem
+        </div>
+        <div class="table-cell px1">
+          <h2 class="h2 mb0">Mathematical</h2>
+          <p class="p">Built around the base unit of 1rem, everything in BASSCSS lines up neatly to a visual rhythm. See for yourself by toggling the baseline grid and outlines for all elements.</p>
+        </div>
+      </div>
+      <div class="right-align mobile-center">
+        <a href="#!" class="js-toggle-baseline button button--small mr1 mb1 ml1 button--gray">Toggle Baseline Grid</a>
+        <a href="#!" class="js-toggle-outline button button--small button--gray">Toggle Outlines</a>
+      </div>
     </section>
 
     <section class="mb2">
       
       <!--
-      <ul class="p bold leading-2 list-simple list-inline nav-inline nav--padded nav-light">
+      <ul class="p bold leading-2 list-simple list--inline nav-inline nav--padded nav--light">
         <li><a href="#responsive-type">Responsive Type</a></li>
       </ul>
       -->
       
-      <article id="responsive-type" class="measure wrap pyq">
-        <h1 class="h2 h2-responsive">Mobile-First Responsive Type</h1>
-        <div class="responsive measure mid-gray">
+      <article id="responsive-type" class="responsive measure wrap pyq">
+        <h1 class="h2 mb0">Mobile-First Responsive Type</h1>
+        <p class="p mb2">Type scale with more contrast at larger screen widths.</p>
+        <div class="mid-gray">
           <h1 class="h1 mb0">Heading 1</h1>
           <h2 class="h2 mb0">Heading 2</h2>
           <p class="p">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
@@ -59,6 +80,12 @@
             <span class="bold">Bold</span>
             <span class="regular">Regular</span>
           </p>
+          <ul class="">
+            <li>Landjaeger</li>
+            <li>Jerky ham sausage</li>
+            <li>Corned beef kevin</li>
+            <li>Drumstick ham hock</li>
+          </ul>
         </div>
       </article>
 
@@ -68,7 +95,8 @@
       </article>
 
       <article id="forms" class="measure wrap responsive pyq">
-        <h1 class="h2">Forms</h1>
+        <h1 class="h2 mb0">Forms</h1>
+        <p class="p mb2">Basic form structural classes keep everything lined up and can be extended with themes.</p>
         <form class="form mb2 form--light">
           <h2 class="p">Inline Form (with .mobile-block state)</h2>
           <label class="mobile-block">Email Address:</label>
@@ -77,18 +105,30 @@
           <input type="text" class="input mr1 mb1 mobile-block" placeholder="Password">
           <input type="submit" class="button button--blue mobile-block" value="Sign In">
         </form>
-        <form class="form form--stacked mb2 form--light">
+        <form class="clearfix mb2 form form--stacked form--light">
           <h2 class="p">Stacked Form</h2>
-          <label>Email Address:</label>
-          <input type="text" class="input" placeholder="Email Address">
-          <label>Password:</label>
-          <input type="text" class="input" placeholder="Password">
-          <input type="submit" class="button button--blue" value="Sign In">
+            <label>Email Address:</label>
+            <input type="text" class="input" placeholder="Email Address">
+            <label>Password:</label>
+            <input type="text" class="input" placeholder="Password">
+            <label>Select:</label>
+            <select class="select">
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+            <label for="radio-1" class="radio"> <input name="radios" id="radio-1" type="radio"> Radio 1 </label>
+            <label for="radio-2" class="radio"> <input name="radios" id="radio-2" type="radio"> Radio 2 </label>
+            <label for="radio-3" class="radio"> <input name="radios" id="radio-3" type="radio"> Radio 3 </label>
+            <label for="checkbox-1" class="checkbox"> <input id="checkbox-1" type="checkbox"> Checkbox </label>
+            <input type="submit" class="button button--blue mr1" value="Sign In">
+            <input type="submit" class="button button--gray" value="Cancel">
         </form>
       </article>
 
       <article id="buttons" class="measure wrap responsive pyq">
-        <h1 class="h2">Buttons</h1>
+        <h1 class="h2 mb0">Buttons</h1>
+        <p class="p mb2">Button styles work on anchor links, submit inputs, and button elements. They come in three sizes and can be extended with themes.</p>
         <form class="mb2">
           <a href="#!" class="button button--blue mr1 mb1">Anchor Link Button</a>
           <input type="submit" class="button button--blue mr1 mb1" value="Submit Button">
@@ -106,13 +146,46 @@
       <article id="components" class="measure wrap responsive pyq">
         <h1 class="h2">Components</h1>
         <p class="p">Using BASSCSS's utilities, you can create a plethora of components &ndash; like the media object &ndash; without writing any new CSS.</p>
-        <div class="oh mb2 mid-gray">
+        <div class="oh mb2">
           <img src="http://placehold.it/128" alt="Placeholder Image" class="left mr1" />
           <div class="oh">
-            <h2 class="p">Media Object</h2>
+            <h2 class="p mb1">Media Object</h2>
             <p class="p">With no new CSS written</p>
           </div>
         </div>
+        <div class="clearfix mb2">
+          <div class="left p1 bg-light-gray">Left</div>
+          <div class="right p1 bg-light-gray">Right</div>
+          <div class="oh p1 bg-mid-gray">Flexible center</div>
+        </div>
+        <div class="clearfix leading-3 mb2 bg-light-gray">
+          <div class="left px1 p bold">Nav bar</div>
+          <div class="right px1">
+            <a href="#!">Right</a>
+            <a href="#!" class="button button--small button--gray ml1">Button</a>
+          </div>
+        </div>
+        <div class="p2 mb2 bg-light-gray rounded">
+          <h2 class="h2">Box</h2>
+          <p class="p">Useful for organizing asides and interstitial messaging</p>
+        </div>
+        <div class="clearfix p1 mb2 bg-light-gray rounded">
+          <h2 class="p">Pagination</h2>
+          <ul class="list-simple list--inline center leading-3 nav-inline">
+            <li><a href="#!" class="px1">Previous</a></li>
+            <li><a href="#!" class="px1 mid-gray">1</a></li>
+            <li><a href="#!" class="px1">2</a></li>
+            <li><a href="#!" class="px1">3</a></li>
+            <li><a href="#!" class="px1">4</a></li>
+            <li><a href="#!" class="px1">5</a></li>
+            <li><a href="#!" class="px1">Next</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <article id="themes" class="measure wrap responsive pyq">
+        <h1 class="h2">Themes</h1>
+        <p class="p mb2">BASSCSS follows a principle of separation of structure and skin. BASSCSS comes packaged with a simple example theme for you to quickly customize the look and feel of your site.</p>
       </article>
 
 
@@ -147,19 +220,25 @@
     $(document).ready(function(){
       //$('a').smoothScroll({speed: 150});
       var isOutlined = false,
-          isBaselined = false;
-      $('.js-toggle-baseline').click(function(){
+          isBaselined = false,
+          $baselineButton = $('.js-toggle-baseline'),
+          $outlineButton = $('.js-toggle-outline');
+      $baselineButton.click(function(){
         if(isBaselined){
+          $baselineButton.removeClass('button--blue').addClass('button--gray');
           $('.js-baseline').removeClass('show-baseline');
         } else {
+          $baselineButton.removeClass('button--gray').addClass('button--blue');
           $('.js-baseline').addClass('show-baseline');
         }
         isBaselined = !isBaselined;
       });
-      $('.js-toggle-outline').click(function(){
+      $outlineButton.click(function(){
         if(isOutlined){
+          $outlineButton.removeClass('button--blue').addClass('button--gray');
           $('.js-outline').removeClass('show-outline');
         } else {
+          $outlineButton.removeClass('button--gray').addClass('button--blue');
           $('.js-outline').addClass('show-outline');
         }
         isOutlined = !isOutlined;

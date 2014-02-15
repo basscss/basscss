@@ -77,6 +77,19 @@ html, body { height: 100%; }
           animation: pulsate 4s linear infinite;
 }
 
+@-webkit-keyframes glow {
+  from { text-shadow: 0 0 .5rem rgba($blue,0); }
+    to { text-shadow: 0 0 .75rem rgba($blue,0.8); }
+}
+@keyframes glow {
+  from { text-shadow: 0 0 .5rem rgba($blue,0); }
+    to { text-shadow: 0 0 .75rem rgba($blue,0.8); }
+}
+.glow {
+  -webkit-animation: glow 2s linear infinite alternate;
+  animation: glow 2s linear infinite alternate;
+}
+
 .icon {
   display: inline-block;
   vertical-align: -.125em;
