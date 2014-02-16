@@ -73,6 +73,16 @@ small, .small, .f5 {
 }
 
 
+// Utilities
+
+strong, .bold { font-weight: bold; }
+.regular { font-weight: normal; }
+.italic { font-style: italic; }
+.caps { text-transform: uppercase; letter-spacing: .2em; }
+.center { text-align: center; }
+.right-align  { text-align: right; }
+
+
 // Typographical Measure
 // Use with the .wrap class to center container
 
@@ -87,14 +97,4 @@ small, .small, .f5 {
 .leading-2 { line-height: 2rem; }
 .leading-3 { line-height: 3rem; }
 .leading-4 { line-height: 4rem; }
-
-
-// Utilities
-
-strong, .bold { font-weight: bold; }
-.regular { font-weight: normal; }
-.italic { font-style: italic; }
-.caps { text-transform: uppercase; letter-spacing: .2em; }
-.center { text-align: center; }
-.right-align  { text-align: right; }
 

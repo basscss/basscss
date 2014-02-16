@@ -92,6 +92,31 @@ small, .small, .f5 {
     line-height: 4rem;
   }
 }
+strong, .bold {
+  font-weight: bold;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.center {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
 .measure {
   max-width: 48rem;
 }
@@ -118,31 +143,6 @@ small, .small, .f5 {
 
 .leading-4 {
   line-height: 4rem;
-}
-
-strong, .bold {
-  font-weight: bold;
-}
-
-.regular {
-  font-weight: normal;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.caps {
-  text-transform: uppercase;
-  letter-spacing: .2em;
-}
-
-.center {
-  text-align: center;
-}
-
-.right-align {
-  text-align: right;
 }
 
 .m0 {
