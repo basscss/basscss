@@ -59,11 +59,11 @@ html, body { height: 100%; }
 }
 
 @-webkit-keyframes glow {
-  from { text-shadow: 0 0 .5rem rgba($blue,0); }
+  from { text-shadow: 0 0 .5rem rgba($blue,0); opacity: .7; }
     to { text-shadow: 0 0 .75rem rgba($blue,0.8); }
 }
 @keyframes glow {
-  from { text-shadow: 0 0 .5rem rgba($blue,0); }
+  from { text-shadow: 0 0 .5rem rgba($blue,0); opacity: .7; }
     to { text-shadow: 0 0 .75rem rgba($blue,0.8); }
 }
 .glow {

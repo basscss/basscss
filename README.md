@@ -1,3 +1,5 @@
+*Needs updated for latest version*
+
 # BASSCSS
 
 Part reset, part boilerplate, part framework, all minimal.
