@@ -38,7 +38,7 @@ To adjust the font-size for a semantic type element, but keep the size consisten
 
 ## Type utilities
 
-```css
+```scss
 strong, .bold { font-weight: bold; }
 .regular { font-weight: normal; }
 .italic { font-style: italic; }
@@ -102,87 +102,94 @@ Use layout utilities to adjust the default document flow.
 # Margins
 Classes use a shorthand syntax. `m`: margin, `t`: top, `r`: right, `b`: bottom, `l`: left
 
-    .m0  { margin: 0; }
-    .mb0 { margin-bottom: 0; }
+```scss
+.m0  { margin: 0; }
+.mb0 { margin-bottom: 0; }
 
-    .m1  { margin: 1rem; }
-    .mt1 { margin-top: 1rem; }
-    .mr1 { margin-right: 1rem; }
-    .mb1 { margin-bottom: 1rem; }
-    .ml1 { margin-left: 1rem; }
+.m1  { margin: 1rem; }
+.mt1 { margin-top: 1rem; }
+.mr1 { margin-right: 1rem; }
+.mb1 { margin-bottom: 1rem; }
+.ml1 { margin-left: 1rem; }
 
-    .m2  { margin: 2rem; }
-    .mt2 { margin-top: 2rem; }
-    .mr2 { margin-right: 2rem; }
-    .mb2 { margin-bottom: 2rem; }
-    .ml2 { margin-left: 2rem; }
+.m2  { margin: 2rem; }
+.mt2 { margin-top: 2rem; }
+.mr2 { margin-right: 2rem; }
+.mb2 { margin-bottom: 2rem; }
+.ml2 { margin-left: 2rem; }
 
-    .m3  { margin: 3rem; }
-    .mt3 { margin-top: 3rem; }
-    .mr3 { margin-right: 3rem; }
-    .mb3 { margin-bottom: 3rem; }
-    .ml3 { margin-left: 3rem; }
+.m3  { margin: 3rem; }
+.mt3 { margin-top: 3rem; }
+.mr3 { margin-right: 3rem; }
+.mb3 { margin-bottom: 3rem; }
+.ml3 { margin-left: 3rem; }
 
-    .m4  { margin: 4rem; }
-    .mt4 { margin-top: 4rem; }
-    .mr4 { margin-right: 4rem; }
-    .mb4 { margin-bottom: 4rem; }
-    .ml4 { margin-left: 4rem; }
+.m4  { margin: 4rem; }
+.mt4 { margin-top: 4rem; }
+.mr4 { margin-right: 4rem; }
+.mb4 { margin-bottom: 4rem; }
+.ml4 { margin-left: 4rem; }
 
-    .wrap { margin-right: auto; margin-left: auto; }
+.wrap { margin-right: auto; margin-left: auto; }
 
-    .m-responsive { margin: 2rem; }
-    .mt-responsive { margin-top: 2rem; }
-    .mr-responsive { margin-right: 2rem; }
-    .mb-responsive { margin-bottom: 2rem; }
-    .ml-responsive { margin-left: 2rem; }
+.m-responsive { margin: 2rem; }
+.mt-responsive { margin-top: 2rem; }
+.mr-responsive { margin-right: 2rem; }
+.mb-responsive { margin-bottom: 2rem; }
+.ml-responsive { margin-left: 2rem; }
+```
 
 # Padding
 Only includes symmetrical padding styles. `x`: x-axis (left and right), `y`: y-axis (top and bottom)
 
-    .p1  { padding: 1rem; }
-    .px1 { padding-right: 1rem; padding-left: 1rem; }
-    .py1 { padding-top: 1rem; padding-bottom: 1rem; }
+```scss
+.p1  { padding: 1rem; }
+.px1 { padding-right: 1rem; padding-left: 1rem; }
+.py1 { padding-top: 1rem; padding-bottom: 1rem; }
 
-    .p2  { padding: 2rem; }
-    .px2 { padding-right: 2rem; padding-left: 2rem; }
-    .py2 { padding-top: 2rem; padding-bottom: 2rem; }
+.p2  { padding: 2rem; }
+.px2 { padding-right: 2rem; padding-left: 2rem; }
+.py2 { padding-top: 2rem; padding-bottom: 2rem; }
 
-    .p3  { padding: 3rem; }
-    .px3 { padding-right: 3rem; padding-left: 3rem; }
-    .py3 { padding-top: 3rem; padding-bottom: 3rem; }
+.p3  { padding: 3rem; }
+.px3 { padding-right: 3rem; padding-left: 3rem; }
+.py3 { padding-top: 3rem; padding-bottom: 3rem; }
 
-    .p4  { padding: 4rem; }
-    .px4 { padding-right: 4rem; padding-left: 4rem; }
-    .py4 { padding-top: 4rem; padding-bottom: 4rem; }
+.p4  { padding: 4rem; }
+.px4 { padding-right: 4rem; padding-left: 4rem; }
+.py4 { padding-top: 4rem; padding-bottom: 4rem; }
 
-    .p-responsive { padding: 1.5rem; }
-    .px-responsive { padding-right: 1.5rem; padding-left: 1.5rem; }
-    .py-responsive { padding-top: 1.5rem; padding-bottom: 1.5rem; }
-
+.p-responsive { padding: 1.5rem; }
+.px-responsive { padding-right: 1.5rem; padding-left: 1.5rem; }
+.py-responsive { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+```
 
 # Buttons
 Use the base `.button` class, then extend with your own theme styles to adjust the visual treatment.
 
-    <button class="button button-blue">Blue Button</button>
-    <a href="#!" class="button button-gray">Gray Button</a>
-    <button class="button button-big button-gray">Big Gray Button</button>
-    <button class="button button-small button-gray">Small Gray Button</button>
+```html
+<button class="button button-blue">Blue Button</button>
+<a href="#!" class="button button-gray">Gray Button</a>
+<button class="button button-big button-gray">Big Gray Button</button>
+<button class="button button-small button-gray">Small Gray Button</button>
+```
 
 # Forms
 Similarly, extend the form classes with custom theme styles.
 
-    <form class="form form-light">
-      <label class="mr1">Input:</label>
-      <input type="text" class="input mr1">
-      <input type="submit" class="button button-blue" value="Go">
-    </form>
+```html
+<form class="form form-light">
+  <label class="mr1">Input:</label>
+  <input type="text" class="input mr1">
+  <input type="submit" class="button button-blue" value="Go">
+</form>
 
-    <form class="form form-stacked form-light>
-      <input type="text" class="input" placeholder="Email Address">
-      <input type="text" class="input" placeholder="Password">
-      <input type="submit" class="button button-blue" value="Sign In">
-    </form>
+<form class="form form-stacked form-light>
+  <input type="text" class="input" placeholder="Email Address">
+  <input type="text" class="input" placeholder="Password">
+  <input type="submit" class="button button-blue" value="Sign In">
+</form>
+```
 
 # Components
 Create a variety of components without writing any new CSS
