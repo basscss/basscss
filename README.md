@@ -19,7 +19,9 @@ BASSCSS is a lightweight collection of base styles and simple type and layout ut
 ## Vanilla CSS
 Include `basscss.min.css` (7KB) out-of-the-box or use the unminified `basscss.css` (9KB) and edit it how you see fit.
 
-Adjust the font stack and theme/skin styles to customize the look and feel.
+For lighter-weight projects use `basscss-lite.min.css` (4KB), which doesn't include button, form, positioning, or theme styles.
+
+Adjust the font stack and theme styles to customize the look and feel.
 
 ## SASS
 Include the files found in the `scss` folder and adjust as necessary.
@@ -190,4 +192,5 @@ Add new styles to build upon BASSCSS. Reusable styles and a separation of struct
 ---
 
 MIT license
+http://opensource.org/licenses/MIT
 
