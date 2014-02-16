@@ -46,18 +46,16 @@ html, body { height: 100%; }
 }
 
 @-webkit-keyframes pulsate {
-  0% { opacity: .9; }
-  50% { opacity: 1; -webkit-transform: scale(1.05); }
-  100% { opacity: .9; }
+  from { opacity: .7; }
+    to { opacity: 1; -webkit-transform: scale(1.05); }
 }
 @keyframes pulsate {
-  0% { opacity: .9; }
-  50% { opacity: 1; transform: scale(1.05); }
-  100% { opacity: .9; }
+  from { opacity: .7; }
+    to { opacity: 1; transform: scale(1.05); }
 }
 .pulsate {
-  -webkit-animation: pulsate 4s linear infinite;
-          animation: pulsate 4s linear infinite;
+  -webkit-animation: pulsate 2s linear infinite alternate;
+          animation: pulsate 2s linear infinite alternate;
 }
 
 @-webkit-keyframes glow {
