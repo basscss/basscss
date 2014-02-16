@@ -141,7 +141,7 @@
       -->
     </section>
 
-    <section id="buttons" class="measure wrap py-responsive">
+    <section id="buttons" class="measure-narrow wrap py-responsive">
       <h1 class="h2 mb0">Buttons</h1>
       <p class="p mb2">Three sizes for anchor links, submit inputs, and button elements</p>
       <form class="mb2">
@@ -152,21 +152,23 @@
       <div class="mb2">
         <a href="#!" class="button button-big button-blue mr1 mb1">.button-big</a>
         <a href="#!" class="button button-small button-blue mr1 mb1">.button-small</a>
+      </div>
+      <div class="mb2">
         <a href="#!" class="button button-gray mr1 mb1">.button-gray</a>
         <a href="#!" class="button button-dark mr1 mb1">.button-dark</a>
       </div>
     </section>
 
-    <section id="forms" class="measure wrap py-responsive">
+    <section id="forms" class="measure-narrow wrap py-responsive">
       <h1 class="h2 mb0">Forms</h1>
       <p class="p mb2">Structural styles keep everything lined up</p>
-      <form class="measure-narrow wrap form mb2 form-light">
+      <form class="form mb2 form-light">
         <h2 class="p">Inline Form (with .mobile-block state)</h2>
         <input type="text" class="input mr1 mb1 mobile-block" placeholder="Email Address">
         <input type="text" class="input mr1 mb1 mobile-block" placeholder="Password">
         <input type="submit" class="button button-blue mobile-block" value="Sign In">
       </form>
-      <form class="measure-narrow wrap clearfix mb2 form form-stacked form-light">
+      <form class="clearfix mb2 form form-stacked form-light">
         <h2 class="p">Stacked Form</h2>
           <label>Email Address:</label>
           <input type="text" class="input" placeholder="Email Address">
@@ -212,14 +214,14 @@
       <div class="clearfix mb1">
         <div class="left p1 bg-light-gray">Left</div>
         <div class="right p1 bg-light-gray">Right</div>
-        <div class="oh p1 bg-mid-gray">Flexible center</div>
+        <div class="oh bold p1 bg-mid-gray">Flexible center</div>
       </div>
       <div class="p1 mb4 bg-light-gray rounded">
 {% highlight html %}
 <div class="clearfix mb1">
   <div class="left p1 bg-light-gray">Left</div>
   <div class="right p1 bg-light-gray">Right</div>
-  <div class="oh p1 bg-mid-gray">Flexible center</div>
+  <div class="oh bold p1 bg-mid-gray">Flexible center</div>
 </div>
 {% endhighlight %}
       </div>
@@ -278,17 +280,17 @@
 </ul>
 {% endhighlight %}
       </div>
-      <div class="relative p2 mb1 mid-gray bg-light-gray rounded">
+      <div class="relative p2 mb1 bg-light-gray rounded">
         <h2 class="h3 p4 center">Position anything</h2>
-        <p class="absolute t0 l0 p1">Top left</p>
-        <p class="absolute r0 b0 p1 mb0">Bottom right</p>
+        <p class="absolute t0 l0 p1 mid-gray">Top left</p>
+        <p class="absolute r0 b0 p1 mb0 mid-gray">Bottom right</p>
       </div>
       <div class="p1 mb2 bg-light-gray rounded">
 {% highlight html %}
-<div class="relative p2 mb1 mid-gray bg-light-gray rounded">
+<div class="relative p2 mb1 bg-light-gray rounded">
   <h2 class="h3 p4 center">Position anything</h2>
-  <p class="absolute t0 l0 p1">Top left</p>
-  <p class="absolute r0 b0 p1 mb0">Bottom right</p>
+  <p class="absolute t0 l0 p1 mid-gray">Top left</p>
+  <p class="absolute r0 b0 p1 mb0 mid-gray">Bottom right</p>
 </div>
 {% endhighlight %}
       </div>
