@@ -38,23 +38,23 @@ To adjust the font-size for a semantic type element, but keep the size consisten
 
 ## Type utilities
 
-    ```css
-    strong, .bold { font-weight: bold; }
-    .regular { font-weight: normal; }
-    .italic { font-style: italic; }
-    .caps { text-transform: uppercase; letter-spacing: .2em; }
-    .center { text-align: center; }
-    .right-align  { text-align: right; }
+```css
+strong, .bold { font-weight: bold; }
+.regular { font-weight: normal; }
+.italic { font-style: italic; }
+.caps { text-transform: uppercase; letter-spacing: .2em; }
+.center { text-align: center; }
+.right-align  { text-align: right; }
 
-    .measure { max-width: 48rem; }
-    .measure-narrow { max-width: 32rem; }
-    .measure-wide { max-width: 60rem; }
+.measure { max-width: 48rem; }
+.measure-narrow { max-width: 32rem; }
+.measure-wide { max-width: 60rem; }
 
-    .leading-1 { line-height: 1.5rem; }
-    .leading-2 { line-height: 2rem; }
-    .leading-3 { line-height: 3rem; }
-    .leading-4 { line-height: 4rem; }
-    ```
+.leading-1 { line-height: 1.5rem; }
+.leading-2 { line-height: 2rem; }
+.leading-3 { line-height: 3rem; }
+.leading-4 { line-height: 4rem; }
+```
 
 # Layout utilities
 Use layout utilities to adjust the default document flow.
