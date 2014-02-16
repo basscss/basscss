@@ -59,44 +59,45 @@ strong, .bold { font-weight: bold; }
 # Layout utilities
 Use layout utilities to adjust the default document flow.
 
+```scss
+.inline       { display: inline; }
+.block        { display: block; }
+.inline-block { display: inline-block; }
 
-    .inline       { display: inline; }
-    .block        { display: block; }
-    .inline-block { display: inline-block; }
+.oh    { overflow: hidden; }
+.left  { float: left; }
+.right { float: right; }
 
-    .oh    { overflow: hidden; }
-    .left  { float: left; }
-    .right { float: right; }
+.clearfix {
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
 
-    .clearfix {
-      &:before, &:after { content: " "; display: table; }
-      &:after { clear: both; }
-    }
+.fit { max-width: 100%; }
 
-    .fit { max-width: 100%; }
+.full-width { width: 100%; }
+.half-width { width: 50%; }
 
-    .full-width { width: 100%; }
-    .half-width { width: 50%; }
+.mobile-show {
+  display: none;
+}
 
-    .mobile-show {
-      display: none;
-    }
-
-    @media (max-width: 48em) {
-      .mobile-show,
-      .mobile-block {
-        display: block;
-      }
-      .mobile-block {
-        width: 100%;
-      }
-      .mobile-hide {
-        display: none;
-      }
-      .mobile-center {
-        text-align: center;
-      }
-    }
+@media (max-width: 48em) {
+  .mobile-show,
+  .mobile-block {
+    display: block;
+  }
+  .mobile-block {
+    width: 100%;
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .mobile-center {
+    text-align: center;
+  }
+}
+```
 
 # Margins
 Classes use a shorthand syntax. `m`: margin, `t`: top, `r`: right, `b`: bottom, `l`: left
