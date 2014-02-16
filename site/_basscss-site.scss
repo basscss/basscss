@@ -1,0 +1,88 @@
+// Custom styles for BASSCSS site
+
+body { font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif; }
+
+h1, h2, h3, h4, h5, h6, .bold { font-weight: 600; }
+
+pre, code, samp, .mono {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+}
+pre { overflow: auto; }
+
+html, body { height: 100%; }
+
+.y100 { height: 100%; }
+.min-y100 { min-height: 100%; }
+
+// Object Scaler
+@mixin scale {
+  $base: .5;
+  $ratio: 32;
+  $increment: .5;
+  $steps: 4;
+  font-size: percentage($base);
+  @for $step from 1 through $steps {
+    $scale: $base + ($increment * $step);
+    $font-size: percentage($scale);
+    $breakpoint: #{$scale * $ratio * 16}px;
+    @media (min-width: $breakpoint) {
+      font-size: $font-size;
+    }
+  }
+}
+.object-scale { @include scale; }
+
+.h0 { font-size: 6em; }
+
+.square {
+  width: 1em; height: 1em;
+  line-height: 1;
+}
+
+.border-thick {
+  border-width: .25em;
+  border-style: solid;
+}
+
+@-webkit-keyframes pulsate {
+  from { opacity: .7; }
+    to { opacity: 1; -webkit-transform: scale(1.05); }
+}
+@keyframes pulsate {
+  from { opacity: .7; }
+    to { opacity: 1; transform: scale(1.05); }
+}
+.pulsate {
+  -webkit-animation: pulsate 2s linear infinite alternate;
+          animation: pulsate 2s linear infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from { text-shadow: 0 0 .5rem rgba($blue,0); opacity: .7; }
+    to { text-shadow: 0 0 .75rem rgba($blue,0.8); }
+}
+@keyframes glow {
+  from { text-shadow: 0 0 .5rem rgba($blue,0); opacity: .7; }
+    to { text-shadow: 0 0 .75rem rgba($blue,0.8); }
+}
+.glow {
+  -webkit-animation: glow 2s linear infinite alternate;
+          animation: glow 2s linear infinite alternate;
+}
+
+.show-baseline {
+  background-image: url(baseline-16.svg);
+  background-size: .5rem .5rem;
+}
+
+.show-outline, .show-outline * {
+  outline: 1px solid rgba($blue, .2);
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: -.125em;
+}
+.icon-heart { fill: #f30; }
+

@@ -1,0 +1,49 @@
+// Forms
+
+.form {
+  font-size: 1rem;
+}
+
+.input {
+  appearance: none;
+  border-style: solid;
+  border-width: 1px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 3rem;
+  line-height: 2rem;
+  padding: .5rem;
+  border-radius: .25rem;
+}
+
+.select {
+  box-sizing: border-box;
+  height: 3rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-radius: .25rem;
+}
+
+.textarea {
+  box-sizing: border-box;
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-radius: .25rem;
+}
+
+.form-stacked {
+  label,
+  .input,
+  .select {
+    display: block;
+    width: 100%;
+  }
+  .input,
+  .select,
+  .radio,
+  .checkbox {
+    margin-bottom: 1rem;
+  }
+}
+
