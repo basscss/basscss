@@ -97,7 +97,7 @@ Use layout utilities to adjust the default document flow.
     }
 
 # Margins
-
+Classes use a shorthand syntax. `m`: margin, `t`: top, `r`: right, `b`: bottom, `l`: left
 
     .m0  { margin: 0; }
     .mb0 { margin-bottom: 0; }
@@ -135,6 +135,7 @@ Use layout utilities to adjust the default document flow.
     .ml-responsive { margin-left: 2rem; }
 
 # Padding
+Only includes symmetrical padding styles. `x`: x-axis (left and right), `y`: y-axis (top and bottom)
 
     .p1  { padding: 1rem; }
     .px1 { padding-right: 1rem; padding-left: 1rem; }
