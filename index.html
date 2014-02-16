@@ -18,14 +18,14 @@
 
   <header class="relative reverse min-y100 table center">
     <div class="table-cell p1 center object-scale transition-all">
-      <div class="inline-block mb1 border-thick rounded pulsate">
-        <div class="h0 bold square glow">B</div>
+      <div class="inline-block mb1 xdark white bg-blue xborder-thick rounded pulsate">
+        <div class="h0 bold square">B</div>
       </div>
       <h1 class="h1 caps blue glow">BASSCSS</h1>
       <p class="p caps">Next-level CSS Toolkit</p>
     </div>
     <div class="absolute b0 l0 p1">
-      <p class="mb0 small mid-gray">5KB minified CHECK THIS</p>
+      <p class="mb0 small mid-gray">7KB minified</p>
     </div>
     <div class="absolute r0 b0 p1">
       <a href="//github.com/jxnblk/basscss">View on Github</a>
@@ -35,7 +35,7 @@
   <main class="px-responsive py-responsive js-baseline js-outline">
 
     <section class="measure-wide wrap py-responsive">
-      <h2 class="h2 bold mb2">Simple, responsive &amp; lightning fast</h2>
+      <h2 class="h2 bold mb2">Simple, responsive type &amp; layout </h2>
       <p class="h3 mb2">BASSCSS is a lightweight collection of base styles and simple type and layout utilities designed for speed, performance, and scalability. Use it out of the box for simple sites and prototypes or as the base for a larger SASS project.</p>
     </section>
 
@@ -137,7 +137,7 @@
 
     <section id="buttons" class="measure wrap py-responsive">
       <h1 class="h2 mb0">Buttons</h1>
-      <p class="p mb2">Three sizes for anchor links, submit inputs, and button elements &ndash; extensible with themes.</p>
+      <p class="p mb2">Three sizes for anchor links, submit inputs, and button elements</p>
       <form class="mb2">
         <a href="#!" class="button button-blue mr1 mb1">Anchor Link Button</a>
         <input type="submit" class="button button-blue mr1 mb1" value="Submit Button">
@@ -153,7 +153,7 @@
 
     <section id="forms" class="measure wrap py-responsive">
       <h1 class="h2 mb0">Forms</h1>
-      <p class="p mb2">Structural styles keep everything lined up and can be extended with themes.</p>
+      <p class="p mb2">Structural styles keep everything lined up</p>
       <form class="measure-narrow wrap form mb2 form-light">
         <h2 class="p">Inline Form (with .mobile-block state)</h2>
         <input type="text" class="input mr1 mb1 mobile-block" placeholder="Email Address">
@@ -183,7 +183,7 @@
 
     <section id="components" class="measure wrap py-responsive">
       <h1 class="h2 mb0">Components</h1>
-      <p class="p mb2">Create a plethora of components &ndash; like the media object &ndash; without writing any new CSS.</p>
+      <p class="p mb2">Create a variety of components without writing any new CSS</p>
       <div class="oh mt4 mb1">
         <div class="h2 left p2 mr2 bold white bg-blue rounded">.oh</div>
         <div class="oh bg-light-gray p1">
@@ -286,25 +286,35 @@
 </div>
 {% endhighlight %}
       </div>
+      <!--
       <div class="center p">
         <a href="">View more markup examples</a>
       </div>
+      -->
     </section>
 
     <section id="themes" class="measure wrap py-responsive">
       <h1 class="h2 mb0">Themes</h1>
-      <p class="p">Following a principle of separation of structure and skin, BASSCSS comes packaged with a simple example theme for you to quickly customize the look and feel of your site.</p>
+      <p class="p">Separation of structure and skin to quickly customize the look and feel</p>
       <div class="h3 bold oh white rounded">
-        <div class="p1 center bg-blue">.blue</div>
-        <div class="p1 center bg-dark">.dark</div>
-        <div class="p1 center bg-mid-gray">.mid-gray</div>
-        <div class="p1 center dark bg-light-gray">.light-gray</div>
+        <div class="p1 center bg-s-blue">.blue</div>
+        <div class="p1 center bg-s-dark-gray">.dark-gray</div>
+        <div class="p1 center bg-s-mid-gray">.mid-gray</div>
+        <div class="p1 center dark bg-s-light-gray">.light-gray</div>
+        <div class="p1 center bg-s-red">.red</div>
+        <div class="p1 center bg-s-green">.green</div>
+        <div class="p1 center bg-s-orange">.orange</div>
       </div>
+      <!--
+      <div class="center p">
+        <a href="">View example theme</a>
+      </div>
+      -->
     </section>
 
     <section id="extending" class="measure wrap py-responsive">
       <h2 class="h2 mb0">Customizing and Extending</h2>
-      <p class="p">Add your own styles to build upon BASSCSS. Reusable styles and a separation of structure and skin will help keep your site's code readable, scalable, and generally easier to maintain.</p>
+      <p class="p">Add new styles to build upon BASSCSS. Reusable styles and a separation of structure and skin will help keep code readable, scalable, and generally easier to maintain.</p>
     </section>
 
 
@@ -319,15 +329,20 @@
 
   </main>
 
-  <footer class="p-responsive right-align">
-    <p>
-      <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
-        <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 " />
-      </svg>
-      Made with love by
-      <a href="//jxnblk.com">Jxnblk</a>
-    </p>
-    <p class="small mid-gray"><a href="http://opensource.org/licenses/MIT">MIT License</a> &middot; &copy; 2014 Brent Jackson</p>
+  <footer class="px-responsive py1 clearfix">
+    <div class="left mb2 mobile-block">
+      <a class="button xbutton-small button-blue p" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&url=http://jxnblk.github.io/basscss&via=jxnblk" target="_blank">Tweet</a>
+    </div>
+    <div class="right mb2 mobile-block">
+      <p>
+        <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
+          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 " />
+        </svg>
+        Made with love by
+        <a href="//jxnblk.com">Jxnblk</a>
+      </p>
+      <p class="mb0 small mid-gray"><a href="http://opensource.org/licenses/MIT">MIT License</a> &middot; &copy; 2014 Brent Jackson</p>
+    </div>
   </footer>
 
 

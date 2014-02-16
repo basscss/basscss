@@ -1,17 +1,36 @@
-// Theme
+// Custom Theme for BASSCSS site
 
-
+// Site colors
 $dark: #1c2226;
 $blue: #00bbdd;
 $light-gray: #eaeff0;
 $mid-gray: #a0aab0;
 
-  // Secondary colors
-  $green: #00ff99;
-  $red: #bb6633;
-  .red { color: $red; }
-  $light-blue: #22ddff;
-  .light-blue { color: $light-blue; }
+  // Standard colors
+  $s-blue: #0096cc;
+  $s-light-gray: #eee;
+  $s-mid-gray: #777;
+  $s-dark-gray: #333;
+
+  $s-red: #f52;
+  $s-green: #0f6;
+  $s-orange: #fc2;
+
+  .s-blue { color: $s-blue; }
+  .s-light-gray { color: $s-light-gray; }
+  .s-mid-gray { color: $s-mid-gray; }
+  .s-dark-gray { color: $s-dark-gray; }
+  .s-red { color: $s-red; }
+  .s-green { color: $s-green; }
+  .s-orange { color: $s-orange; }
+
+  .bg-s-blue { background-color: $s-blue; }
+  .bg-s-light-gray { background-color: $s-light-gray; }
+  .bg-s-mid-gray { background-color: $s-mid-gray; }
+  .bg-s-dark-gray { background-color: $s-dark-gray; }
+  .bg-s-red { background-color: $s-red; }
+  .bg-s-green { background-color: $s-green; }
+  .bg-s-orange { background-color: $s-orange; }
 
 body {
   color: $dark;
@@ -38,12 +57,34 @@ a, .link {
 .light-gray { color: $light-gray; }
 .bg-light-gray { background-color: $light-gray; }
 .white { color: #fff; }
+.bg-white { background-color: #fff; }
 
-.green { color: $green; }
+
+// Utilities
+
+.rounded { border-radius: .25rem; }
+.transition-all { transition: all .3s ease; }
+
+
+// Buttons
+
+.button {
+  border-radius: .25rem;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition: box-shadow, background-color;
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 .125rem #fff, 0 0 1px .25rem rgba($blue,.5);
+  }
+}
 
 .button-dark {
   background-color: $dark;
 }
+
 .button-blue {
   color: #fff;
   background-color: $blue;
@@ -52,6 +93,7 @@ a, .link {
     background-color: darken($blue,20%);
   }
 }
+
 .button-gray {
   color: #fff;
   background-color: $mid-gray;
@@ -61,14 +103,8 @@ a, .link {
   }
 }
 
-.nav-light {
-  a {
-    //color: $dark;
-    &:hover {
-      background-color: $light-gray;
-    }
-  }
-}
+
+// Forms
 
 .form-light {
   .input,
@@ -83,28 +119,48 @@ a, .link {
     }
   }
 }
+
 .radio input,
-.checkbox input,
-.button {
-  border-radius: .25rem;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+.checkbox input {
   transition: box-shadow .2s ease;
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 .125rem #fff, 0 0 1px .25rem rgba($blue,.5);
+    box-shadow: 0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5);
   }
 }
+
 .radio input {
-  outline: none;
   border-radius: 50%;
 }
 
-.rounded { border-radius: .25rem; }
-.transition-all { transition: all .3s ease; }
 
-// Old colors
-//$blue: #0cf;
-//$light-gray: #dadfe0;
-//$mid-gray: #cacfd0;
+// Testing only
+.border-light-gray { border-color: $light-gray; }
+.border-mid-gray { border-color: $mid-gray; }
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.border-top {
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.border-right {
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.border-left {
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+
 

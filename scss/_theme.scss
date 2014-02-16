@@ -1,86 +1,51 @@
 // Example theme
+//
+// Edit these styles to adjust the look and feel of your site
 
-// Use fewer colors
 
-// Colors from https://github.com/mrmrs/colors
-$aqua:  #7FDBFF;
-$blue:  #0074D9;
-$navy:  #001F3F;
-$teal:  #39CCCC;
-$green: #2ECC40;
-$olive: #3D9970;
-$lime:  #01FF70;
-
-$yellow:  #FFDC00;
-$orange:  #FF851B;
-$red:     #FF4136;
-$fuchsia: #F012BE;
-$purple:  #B10DC9;
-$maroon:  #85144B;
-
-$white:  #fff;
-$silver: #ddd;
-$gray:   #aaa;
-$black:  #111;
-
-// Additional colors for BASSCSS
+$blue: #0096cc;
+$light-gray: #eee;
 $mid-gray: #777;
 $dark-gray: #333;
 
-// Colors
-.navy { color: $navy; }
+$red: #f52;
+$green: #0f6;
+$orange: #fc2;
+
+
+.white { color: #fff; }
 .blue { color: $blue; }
-.aqua { color: $aqua; }
-.teal { color: $teal; }
-.olive { color: $olive; }
-.green { color: $green; }
-.lime { color: $lime; }
-.yellow { color: $yellow; }
-.orange { color: $orange; }
-.red { color: $red; }
-.fuchsia { color: $fuchsia; }
-.purple { color: $purple; }
-.maroon { color: $maroon; }
-.white { color: $white; }
-.silver { color: $silver; }
-.gray { color: $gray; }
-.black { color: $black; }
+.light-gray { color: $light-gray; }
 .mid-gray { color: $mid-gray; }
 .dark-gray { color: $dark-gray; }
 
-// Background colors
-.bg-navy { background-color: $navy; }
+.red { color: $red; }
+.green { color: $green; }
+.orange { color: $orange; }
+
+.bg-white { background-color: #fff; }
 .bg-blue { background-color: $blue; }
-.bg-aqua { background-color: $aqua; }
-.bg-teal { background-color: $teal; }
-.bg-olive { background-color: $olive; }
-.bg-green { background-color: $green; }
-.bg-lime { background-color: $lime; }
-.bg-yellow { background-color: $yellow; }
-.bg-orange { background-color: $orange; }
-.bg-red { background-color: $red; }
-.bg-fuchsia { background-color: $fuchsia; }
-.bg-purple { background-color: $purple; }
-.bg-maroon { background-color: $maroon; }
-.bg-white { background-color: $white; }
-.bg-gray { background-color: $gray; }
-.bg-silver { background-color: $silver; }
-.bg-black { background-color: $black; }
+.bg-light-gray { background-color: $light-gray; }
 .bg-mid-gray { background-color: $mid-gray; }
 .bg-dark-gray { background-color: $dark-gray; }
+
+.bg-red { background-color: $red; }
+.bg-green { background-color: $green; }
+.bg-orange { background-color: $orange; }
 
 
 // Base theme styles
 
 body {
-  color: $black;
+  color: $dark-gray;
+  background-color: #fff;
 }
 
 a {
   color: $blue;
   text-decoration: none;
   &:hover {
-    color: $aqua;
+    color: darken($blue, 10%);
   }
 }
 
@@ -89,27 +54,25 @@ a {
 
 .button {
   border-radius: .25rem;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  transition: box-shadow .2s ease;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition: box-shadow , background-color;
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 2px $white, 0 0 1px 4px rgba($blue, .5);
+    box-shadow: 0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5);
   }
 }
 
 .button-blue {
-  color: $white;
+  color: #fff;
   background-color: $blue;
   &:hover {
     background-color: darken($blue, 20%);
   }
-  &:focus {
-  }
 }
 
 .button-gray {
-  color: $white;
+  color: #fff;
   background-color: $mid-gray;
   &:hover {
     background-color: darken($mid-gray, 20%);
@@ -117,9 +80,49 @@ a {
   &:focus {}
 }
 
+
 // Forms
 
+.form-light {
+  .input,
+  .textarea,
+  .select {
+    transition: box-shadow .2s ease;
+    border-color: $mid-gray;
+    &:focus {
+      outline: none;
+      border-color: $blue;
+      box-shadow: 0 0 .125rem rgba($blue,.5);
+    }
+  }
+  .radio input,
+  .checkbox input {
+    transition: box-shadow .2s ease;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5);
+    }
+  }
+  .radio input {
+    border-radius: 50%;
+  }
+}
+
+
 // Borders
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+}
+.border-top {
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.border-light-gray {
+  border-color: $light-gray;
+}
 
 // Utilities
 .rounded { border-radius: .25rem; }

@@ -6,11 +6,9 @@ body {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
-  margin-bottom: 1rem;
-}
 
 // Base Type Scale
+
 h1, .h1, .f1 {
   font-size: 2rem;
   line-height: 3rem;
@@ -34,7 +32,9 @@ small, .small, .f5 {
   font-size: .875rem;
 }
 
+
 // Responsive Type Scale
+
 @media (min-width: 48em) {
   .h1 {
     font-size: 4rem;
@@ -56,6 +56,7 @@ small, .small, .f5 {
     font-size: 1rem;
   }
 }
+
 @media (min-width: 64em) {
   .h1 {
     font-size: 6rem;
@@ -65,25 +66,31 @@ small, .small, .f5 {
     font-size: 3rem;
     line-height: 4rem;
   }
-  //.h3 {
-  //  font-size: 2rem;
-  //  line-height: 3rem;
-  //}
+  // .h3 {
+  //   font-size: 2rem;
+  //   line-height: 3rem;
+  // }
 }
+
 
 // Typographical Measure
 // Use with the .wrap class to center container
+
 .measure { max-width: 48rem; }
 .measure-narrow { max-width: 32rem; }
 .measure-wide { max-width: 60rem; }
 
+
 // Leading utilities to control line-height
+
 .leading-1 { line-height: 1.5rem; }
 .leading-2 { line-height: 2rem; }
 .leading-3 { line-height: 3rem; }
 .leading-4 { line-height: 4rem; }
 
+
 // Utilities
+
 strong, .bold { font-weight: bold; }
 .regular { font-weight: normal; }
 .italic { font-style: italic; }
