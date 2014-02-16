@@ -38,6 +38,7 @@ To adjust the font-size for a semantic type element, but keep the size consisten
 
 ## Type utilities
 
+    ```css
     strong, .bold { font-weight: bold; }
     .regular { font-weight: normal; }
     .italic { font-style: italic; }
@@ -53,6 +54,7 @@ To adjust the font-size for a semantic type element, but keep the size consisten
     .leading-2 { line-height: 2rem; }
     .leading-3 { line-height: 3rem; }
     .leading-4 { line-height: 4rem; }
+    ```
 
 # Layout utilities
 Use layout utilities to adjust the default document flow.
