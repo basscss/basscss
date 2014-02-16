@@ -50,10 +50,12 @@ h3, .h3, .f3 {
 
 p, .p, .f4, h4, h5, h6, dl, ol, ul {
   font-size: 1.125rem;
+  line-height: 1.5rem;
 }
 
 small, .small, .f5 {
   font-size: .875rem;
+  line-height: 1.5rem;
 }
 
 @media (min-width: 48em) {
