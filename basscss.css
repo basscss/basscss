@@ -474,6 +474,7 @@ strong, .bold {
   text-decoration: none;
   cursor: pointer;
   border: none;
+  -webkit-appearance: none;
   appearance: none;
   white-space: nowrap;
   display: inline-block;
