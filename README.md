@@ -194,6 +194,56 @@ Similarly, extend the form classes with custom theme styles.
 # Components
 Create a variety of components without writing any new CSS
 
+## Media Object
+
+```html
+<div class="clearfix mb1">
+  <img class="left mr1" src="" alt=""/>
+  <div class="oh">
+    Body
+  </div>
+</div>
+```
+
+## Flexible Container with Padding
+
+```html
+<div class="clearfix">
+  <div classs="left p1">Left</div>
+  <div class="right p1">Right</div>
+  <div class="oh p1">Center</div>
+</div>
+```
+
+## Nav Bar
+Uses `.leading-3` to keep elements aligned
+
+```html
+<div class="clearfix leading-3">
+  <div class="left px1">Left</div>
+  <div class="right px1">Right</div>
+</div>
+```
+
+## Box
+
+```html
+<div class="p1 mb1 bg-light-gray rounded">
+  <h2>Title</h2>
+  <p>Content</p>
+</div>
+```
+
+## Positioning
+
+```html
+<div class="relative">
+  <h2 class="p4 center">Position anything</h2>
+  <p class="absolute t0 l0 p1">Top left</p>
+  <p class="absolute r0 b0 p1 mb0">Bottom right</p>
+</div>
+```
+
 # Themes
 Use the included example theme to adjust visual styles
 
