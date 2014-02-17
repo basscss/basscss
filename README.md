@@ -184,7 +184,7 @@ Similarly, extend the form classes with custom theme styles.
   <input type="submit" class="button button-blue" value="Go">
 </form>
 
-<form class="form form-stacked form-light>
+<form class="form form-stacked form-light">
   <input type="text" class="input" placeholder="Email Address">
   <input type="text" class="input" placeholder="Password">
   <input type="submit" class="button button-blue" value="Sign In">
