@@ -701,6 +701,7 @@ a:hover {
   background-color: #0096cc;
 }
 .button-blue:hover {
+  color: #fff;
   background-color: #004b66;
 }
 
@@ -709,6 +710,7 @@ a:hover {
   background-color: #777777;
 }
 .button-gray:hover {
+  color: #fff;
   background-color: #444444;
 }
 

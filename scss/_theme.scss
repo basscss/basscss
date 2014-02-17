@@ -67,6 +67,7 @@ a {
   color: #fff;
   background-color: $blue;
   &:hover {
+    color: #fff;
     background-color: darken($blue, 20%);
   }
 }
@@ -75,6 +76,7 @@ a {
   color: #fff;
   background-color: $mid-gray;
   &:hover {
+    color: #fff;
     background-color: darken($mid-gray, 20%);
   }
   &:focus {}
