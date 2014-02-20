@@ -56,7 +56,7 @@ a {
   border-radius: .25rem;
   transition-duration: .2s;
   transition-timing-function: ease;
-  transition: box-shadow , background-color;
+  transition-property: box-shadow , background-color;
   &:focus {
     outline: none;
     box-shadow: 0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5);

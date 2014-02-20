@@ -689,7 +689,7 @@ a:hover {
   border-radius: .25rem;
   transition-duration: .2s;
   transition-timing-function: ease;
-  transition: box-shadow , background-color;
+  transition-property: box-shadow , background-color;
 }
 .button:focus {
   outline: none;
