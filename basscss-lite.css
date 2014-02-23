@@ -58,7 +58,7 @@ small, .small, .f5 {
   line-height: 1.5rem;
 }
 
-@media (min-width: 48em) {
+@media screen and (min-width: 48em) {
   .h1 {
     font-size: 4rem;
     line-height: 5rem;
@@ -83,7 +83,7 @@ small, .small, .f5 {
     font-size: 1rem;
   }
 }
-@media (min-width: 64em) {
+@media screen and (min-width: 64em) {
   .h1 {
     font-size: 6rem;
     line-height: 8rem;
@@ -260,7 +260,7 @@ strong, .bold {
   margin-left: 2rem;
 }
 
-@media (min-width: 48em) and (max-width: 64em) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .m-responsive {
     margin: 3rem;
   }
@@ -281,7 +281,7 @@ strong, .bold {
     margin-left: 3rem;
   }
 }
-@media (min-width: 64em) {
+@media screen and (min-width: 64em) {
   .m-responsive {
     margin: 4rem;
   }
@@ -372,7 +372,7 @@ strong, .bold {
   padding-bottom: 1.5rem;
 }
 
-@media (min-width: 48em) and (max-width: 64em) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .p-responsive {
     padding: 3rem;
   }
@@ -387,7 +387,7 @@ strong, .bold {
     padding-bottom: 3rem;
   }
 }
-@media (min-width: 64em) {
+@media screen and (min-width: 64em) {
   .p-responsive {
     padding: 4rem;
   }
@@ -450,7 +450,7 @@ strong, .bold {
   display: none;
 }
 
-@media (max-width: 48em) {
+@media screen and (max-width: 48em) {
   .mobile-show,
   .mobile-block {
     display: block;

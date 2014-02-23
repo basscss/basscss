@@ -41,7 +41,7 @@
 .mb-responsive { margin-bottom: 2rem; }
 .ml-responsive { margin-left: 2rem; }
 
-@media screen (min-width: 48em) and (max-width: 64em) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .m-responsive { margin: 3rem; }
   .mt-responsive { margin-top: 3rem; }
   .mr-responsive { margin-right: 3rem; }
@@ -49,7 +49,7 @@
   .ml-responsive { margin-left: 3rem; }
 }
 
-@media screen (min-width: 64em) {
+@media screen and (min-width: 64em) {
   .m-responsive { margin: 4rem; }
   .mt-responsive { margin-top: 4rem; }
   .mr-responsive { margin-right: 4rem; }

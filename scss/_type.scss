@@ -37,7 +37,7 @@ small, .small, .f5 {
 
 // Responsive Type Scale
 
-@media screen (min-width: 48em) {
+@media screen and (min-width: 48em) {
   .h1 {
     font-size: 4rem;
     line-height: 5rem;
@@ -59,7 +59,7 @@ small, .small, .f5 {
   }
 }
 
-@media screen (min-width: 64em) {
+@media screen and (min-width: 64em) {
   .h1 {
     font-size: 6rem;
     line-height: 8rem;

@@ -22,7 +22,7 @@
   display: none;
 }
 
-@media screen (max-width: 48em) {
+@media screen and (max-width: 48em) {
   .mobile-show,
   .mobile-block {
     display: block;
