@@ -250,8 +250,10 @@ Use the included example theme to adjust visual styles
 # Customizing and Extending
 Add new styles to build upon BASSCSS. Reusable styles and a separation of structure and skin will help keep code readable, scalable, and generally easier to maintain.
 
+## Need a grid system?
+Checkout [Tempo](//jxnblk.github.io/tempo)
+
 ---
 
-MIT license
-http://opensource.org/licenses/MIT
+[MIT license](http://opensource.org/licenses/MIT)
 
