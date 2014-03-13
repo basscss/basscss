@@ -1,0 +1,106 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BASSCSS Guide</title>
+  <meta name="author" content="Jxnblk">
+  <meta name="description" content="Simple, responsive CSS/SASS toolkit based on OOCSS principles">
+  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/basscss/">
+  <link rel="stylesheet" href="../site/styles.css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700,900" rel="stylesheet">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+</head>
+<body class="theme">
+
+<div class="measure wrap px-responsive">
+ 
+  <header class="py1">
+    <h1>BASSCSS Guide</h1>
+  </header>
+
+  <section id="outline" class="py1">
+    <ul>
+      <li>Start with semantic, structured HTML - natural document flow</li>
+      <li>Multiclass pattern</li>
+      <li>Box model basics - padding, margin and borders</li>
+      <li>Display</li>
+      <li>Positions</li>
+      <li>Floats</li>
+      <li>Clearfix and block formatting contexts</li>
+      <li>Percentage based widths</li>
+      <li>Media queries</li>
+      <li>Extending BASSCSS</li>
+    </ul>
+  </section>
+
+  <section id="markup" class="py2">
+    <h1>Document structure</h1>
+    <p>HTML is a semantically structured markup language. When building anything on the web, start with clean structured markup that accurately reflects your information hierarchy. When hierarchy changes, be sure to update the markup before making any stylistic changes. The most important parts of web design involve no CSS at all.</p>
+  </section>
+
+  <section id="multi-class-pattern" class="py2">
+    <h1>Multiclass CSS pattern</h1>
+    <p>BASSCSS is based on Object Oriented CSS (OOCSS) principles. OOCSS has many benefits, including code readability, reusable styles, smaller CSS files, more performant selectors, more flexible markup structure, and code scalability. BASSCSS is meant to be a very simple and intiutive take on this approach, well suited to rapid prototyping, designing in the browser and styling simple sites.</p>
+    <p>One of the defining features of OOCSS is the multiclass pattern. This is the practice of using multiple classes on a single HTML element. This often seems strange to people unfamiliar, but once you get the hang of things, it can make designing and building websites much faster and easier. It also has some significant front-end performance benefits.</p>
+    <h2>Example</h2>
+    <div class="p1 mb2 bg-light-gray rounded">
+{% highlight html %}
+<div class="h3 p1 mb2 bg-light-gray rounded">
+  A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
+</div>
+{% endhighlight %}
+    </div>
+    <h2>Order</h2>
+    <p>While the order of classes doesn't matter to the browser, maintaining a consistent order will drastically improve code readability. I recommend the following order:</p>
+    <ol>
+      <li>Typography - this sets the visual hieararchy and is one of the most important parts of web design</li>
+      <li>Positioning - this can severly change document flow</li>
+      <li>Layout - this can affect other elements and document flow</li>
+      <li>Theme - this has little or no effect on layout and is likely to change frequently when designing</li>
+      <li>State - this is dynamic and often unnecessary</li>
+    </ol>
+  </section>
+
+  <section id="block-level-inline" class="py2">
+    <h1>Block-level and Inline Elements</h1>
+    <p>There are two types of elements in HTML. Block-level elements are larger container elements that begin on a new line and take up the entire width of their parent container by default. Block-level elements can also have set widths and heights. They may contain other block-level elements and inline elements.</p>
+    <p>Inline elements contain content and other inline elements. The do not begin a new line and are only as large as their contents.</p>
+  </section>
+
+  <section id="display" class="py2">
+    <h1>Display Property</h1>
+    <p>BASSCSS's display utilities override the default behaviors of block-level and inline elements. To make a block-level element inline, use the <code>.inline</code> class. To make inline elements block-level, use <code>.block</code>.</p>
+    <p>Inline-block is a mix of these two properties. Inline-block elements may have a width and height, but only take up the width of their contents and behave similarly to inline elements.</p>
+  </section>
+
+  <section id="box-model" class="py2">
+    <h1>Box Model</h1>
+    <p>The box-model is the basis of all HTML layout. Understanding how it works is crucial to designing for the web.</p>
+  </section>
+
+  <footer class="py1 clearfix">
+    <div class="left mb2 mobile-block">
+      <a class="button button-small button-gray" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&url=http://jxnblk.github.io/basscss&via=jxnblk" target="_blank">Tweet</a>
+    </div>
+    <div class="right right-align mb2 mobile-block mobile-center">
+      <p>
+        <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
+          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 " />
+        </svg>
+        Made with love by
+        <a href="//jxnblk.com">Jxnblk</a>
+      </p>
+      <p class="small mid-gray">&copy; 2014 Brent Jackson &middot; <a href="http://opensource.org/licenses/MIT">MIT License</a></p>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
