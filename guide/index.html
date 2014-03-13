@@ -11,6 +11,7 @@
   <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <base href="/basscss/">
+  <style>.hide{display:none;}</style>
   <link rel="stylesheet" href="../site/styles.css">
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700,900" rel="stylesheet">
   <link rel="icon" href="favicon.png">
@@ -33,8 +34,7 @@
       <li>Display</li>
       <li>Box model basics - padding, margin and borders</li>
       <li>Positions</li>
-      <li>Floats</li>
-      <li>Clearfix and block formatting contexts</li>
+      <li>Floats, clearfix and block formatting contexts</li>
       <li>Percentage based widths</li>
       <li>Media queries</li>
       <li>Extending BASSCSS</li>
@@ -121,6 +121,13 @@
         <div class="p1 bg-mid-gray" style="width:64rem">wider than parent element</div>
       </div>
     </div>
+  </section>
+
+  <section id="widths" class="py1">
+    <h1>Widths</h1>
+    <p class="p">The default document flow in HTML is fluid. This means that creating fluid and responsive layouts should be very easy to achieve. Avoid using fixed widths at all in your layout. Instead rely heavily on the normal document flow.</p>
+    <p class="p">For images with inherit widths, such as images, consider using a max-width of 100% to ensure it never overflows its container.</p>
+    <p class="p">If you do need to use widths, use percentages. Most grid systems these days use this approach, along with media queries to prevent the rigid layouts from the past. When using percentage based widths, remember that the percentage is based on </p>
   </section>
 
   <footer class="py1 clearfix">
