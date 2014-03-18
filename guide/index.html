@@ -10,9 +10,11 @@
   <meta name="description" content="Simple, responsive CSS/SASS toolkit based on OOCSS principles">
   <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
   <base href="/basscss/">
+  -->
   <style>.hide{display:none;}</style>
-  <link rel="stylesheet" href="site/styles.css">
+  <link rel="stylesheet" href="../site/styles.css">
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700,900" rel="stylesheet">
   <link rel="icon" href="favicon.png">
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
@@ -23,8 +25,12 @@
  
   <header class="py1">
     <h1 class="h2 mb0">BASSCSS Guide</h1>
-    <p class="p">Web design layout basics</p>
+    <p class="p">Responsive web design layout with BASSCSS</p>
   </header>
+
+  <section id="rams-quote" class="py2">
+    <blockquote></blockquote>
+  </section>
 
   <section id="markup" class="py2">
     <h1>Document structure</h1>
@@ -172,6 +178,12 @@
 
   <section id="media-queries" class="py1">
     <h1>Media Queries and Mobile-First Approach</h1>
+    <p class="p">When building responsive websites, best practices suggest using a mobile-first approach. First consider content and user flows, then create layouts that work well at small screen sizes and touch devices. Once that's in a good place use styling to enhance the experience on larger devices. Designing for tap targets first usually translates well to use with pointing devices.</p>
+    <p class="p">BASSCSS includes several state utilities for showing and hiding content on mobile devices. Use these with care. Mobile users still want the same content across devices and often switch devices mid-task. Creating a cohesive experience is key to a good experience with your product.</p>
+  </section>
+
+  <section id="positions" class="py1">
+    <h1>Positions</h1>
   </section>
 
   <section id="extending-basscss" class="py1">
