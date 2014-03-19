@@ -99,7 +99,8 @@
 
   <section id="floats" class="py2">
     <h1>Floats</h1>
-    <p class="p">Floats are for wrapping text around images, but are also used for breaking elements out of the normal document flow. When you float an element left or right, the text will flow beside and around the element.</p>
+    <p class="p">Floats are for wrapping text around images, but are also used for breaking elements out of the normal document flow. When you float an element left or right, the content following the float will flow beside and around the element.</p>
+    <p class="p">Do not set display properties on floated elements. When elements are floated, they are set to display block.</p>
     <div class="p1 mb1 mid-gray bg-light-gray rounded">
       <div class="right p1 m1 white bg-blue">.right</div>
       <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
@@ -144,18 +145,38 @@
 </div>
 {% endhighlight %}
     </div>
-    <p class="p">Using the overflow hidden property and its new block formatting context, sibling elements with overflow hidden will create a flexible column layout. This is the basis of the <a href="#">Media Object.</a></p>
-    <div class="mb1 mid-gray bg-light-gray rounded">
+    <p class="p">
+      Using overflow hidden's new block formatting context, floating one or more elements and setting overflow hidden to the next sibling will create a flexible column layout.
+      <del>Using the overflow hidden property and its new block formatting context,</del>
+      <del>sibling elements with overflow hidden will create a flexible column layout.</del>
+      This is the basis of the <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">Media Object.</a></p>
+    <div class="oh mb1 mid-gray bg-light-gray rounded">
       <div class="left p1 mr1 white bg-blue">.left</div>
-      <div class="oh">
+      <div class="clearfix">
         <code class="h3">.oh (overflow hidden)</code>
         <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
       </div>
     </div>
     <div class="p1 mb2 bg-light-gray rounded">
 {% highlight html %}
-<div class="left">Floated left</div>
-<div class="oh">Container with overflow hidden</div>
+<div class="clearfix">
+  <div class="left">Floated left</div>
+  <div class="oh">Container with overflow hidden</div>
+</div>
+{% endhighlight %}
+    </div>
+    <div class="leading-3 clearfix mb1 mid-gray bg-light-gray">
+      <div class="left px1 white bg-blue">.left</div>
+      <div class="right px1 white bg-blue">.right</div>
+      <div class="oh px1">.oh</div>
+    </div>
+    <div class="p1 mb2 bg-light-gray rounded">
+{% highlight html %}
+<div class="clearfix">
+  <div class="left">.left</div>
+  <div class="right">.right</div>
+  <div class="oh">.oh</div>
+</div>
 {% endhighlight %}
     </div>
   </section>
