@@ -16,8 +16,8 @@
   <style>.blockquote { margin-left: 0; }</style>
   <link rel="stylesheet" href="../site/styles.css">
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700,900" rel="stylesheet">
-  <link rel="icon" href="favicon.png">
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+  <link rel="icon" href="../favicon.png">
+  <link rel="../apple-touch-icon-precomposed" href="apple-touch-icon.png">
 </head>
 <body class="theme">
 
@@ -30,7 +30,7 @@
 
   <section id="rams-quote" class="py2">
     <blockquote class="blockquote">
-      <p class="h2 italic">Good design is as little design as possible</p>
+      <p class="h3 italic">Good design is as little design as possible</p>
       <cite>&ndash; Dieter Rams</cite>
     </blockquote>
   </section>
@@ -42,7 +42,7 @@
 
   <section id="multi-class-pattern" class="py2">
     <h1>Multiclass CSS pattern</h1>
-    <p class="p">BASSCSS is based on Object Oriented CSS (OOCSS) principles. OOCSS has many benefits, including code readability, reusable styles, smaller CSS files, more performant selectors, more flexible markup structure, and code scalability. BASSCSS is meant to be a very simple and intuitive take on this approach, well suited to rapid prototyping, designing in the browser and styling simple sites.</p>
+    <p class="p">BASSCSS is based on Object Oriented CSS (OOCSS) principles. OOCSS has many benefits, including code readability, reusable styles, smaller CSS files, more performant selectors, more flexible markup structure, and code scalability. BASSCSS is meant to be a very simple and intuitive take on this approach, well suited to designing in the browser, rapid prototyping, or serving as the basis for a larger project.</p>
     <p class="p">One of the defining features of OOCSS is the multiclass pattern. This is the practice of using multiple classes on a single HTML element. This can seem strange at first, but once you get the hang of things, it can make designing and building websites much faster and easier. It also has some significant front-end performance benefits.</p>
     <h2>Example</h2>
     <div class="p1 mb2 bg-light-gray rounded">
@@ -70,20 +70,31 @@
 
   <section id="block-level-inline" class="py2">
     <h1>Block-level and Inline Elements</h1>
-    <p class="p">There are two types of elements in HTML. Block-level elements are larger container elements that begin on a new line and take up the entire width of their parent container by default. Block-level elements can also have set widths and heights. They may contain other block-level elements and inline elements.</p>
-    <p class="p">Inline elements contain content and other inline elements. The do not begin a new line and are only as large as their contents.</p>
+    <p class="p">There are two basic types of elements in HTML. <a href="https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements">Block-level elements</a> are larger container elements that begin on a new line and take up the entire width of their parent container by default. Block-level elements can also have set widths and heights. They may contain other block-level elements and inline elements.</p>
+    <p class="p"><a href="https://developer.mozilla.org/en-US/docs/HTML/Inline_elements">Inline elements</a> do not begin a new line and contain content and other inline elements. Inline elements are only as large as the content they contain.</p>
+    <p class="p">In HTML5, things get a little more complicated, but the basics still apply: <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories">HTML5 Content Categories</a>.</p>
   </section>
 
   <section id="display" class="py2">
     <h1>Display Property</h1>
     <p class="p">BASSCSS's display utilities override the default behaviors of block-level and inline elements. To make a block-level element inline, use the <code>.inline</code> class. To make inline elements block-level, use <code>.block</code>.</p>
-    <p class="p">Inline-block is a mix of these two properties. Inline-block elements may have a width and height, but only take up the width of their contents and behave similarly to inline elements.</p>
+    <p class="p">Inline-block is a mix of these two properties.
+      Inline-block elements have a block element box, with optional width and height, but flow with surrounding content like an inline element.
+      <del>Inline-block elements may have a width and height, but only take up the width of their contents and behave similarly to inline elements.</del>
+    </p>
   </section>
 
   <section id="box-model" class="py2">
     <h1>Box Model</h1>
     <p class="p">The box-model is the basis of all HTML layout. Understanding how it works is crucial to designing for the web. Block-level elements naturally fill the width of their parents. Margins add space around the element. Borders add space around the element, but within the margins. Padding adds space within the element.</p>
-    <p class="p">If an element has a declared width, padding and borders will be added to the overall width. It's often preferable to add padding and borders to child elements rather than directly to elements with set widths. For example, when using a grid system.</p>
+    <p class="p">If an element has a declared width, padding and borders will be added to the overall width. It's often easier to add padding and borders to child elements rather than directly to elements with set widths. For example, when using a grid system.</p>
+    <div class="center p1 bg-light-gray">
+      <p class="mb0">Margin</p>
+      <div class="m1 py1 px2 bg-mid-gray border border-dark">
+        <p class="">Padding</p>
+        <div class="p2 white bg-dark">Content</div>
+      </div>
+    </div>
   </section>
 
   <section id="floats" class="py2">
@@ -97,20 +108,6 @@
 {% highlight html %}
 <div class="right">Floated right</div>
 <p>Just a normal paragraph</p>
-{% endhighlight %}
-    </div>
-    <p class="p">Using the overflow hidden property along with floats will allow flexible columns of content that don't wrap around floats.</p>
-    <div class="mb1 mid-gray bg-light-gray rounded">
-      <div class="left p1 mr1 white bg-blue">.left</div>
-      <div class="oh">
-        <code class="h3">.oh (overflow hidden)</code>
-        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-      </div>
-    </div>
-    <div class="p1 mb2 bg-light-gray rounded">
-{% highlight html %}
-<div class="left">Floated left</div>
-<div class="oh">Container with overflow hidden</div>
 {% endhighlight %}
     </div>
     <p class="p">If an element contains only floated children, such as in a grid system, its height will collapse. Clearfixes are used to ensure the parent element maintains the height of its content. This container element is using the <code>.clearfix</code> class.</p>
@@ -128,7 +125,7 @@
 </div>
 {% endhighlight %}
     </div>
-    <p class="p">Overflow hidden can also be used as a clearfix, but it will crop content that overflows its bounds.</p>
+    <p class="p">Overflow hidden crops overflowing content, but can also be used as a clearfix because it creates what's called a new <i>block formatting context</i>.</p>
     <div class="oh mb1 mid-gray bg-light-gray">
       <div class="left p2 white bg-blue">.left</div>
       <div class="left p2 white bg-blue">
@@ -145,6 +142,20 @@
     <div style="width:64rem">wider than parent element</div>
   </div>
 </div>
+{% endhighlight %}
+    </div>
+    <p class="p">Using the overflow hidden property and its new block formatting context, sibling elements with overflow hidden will create a flexible column layout. This is the basis of the <a href="#">Media Object.</a></p>
+    <div class="mb1 mid-gray bg-light-gray rounded">
+      <div class="left p1 mr1 white bg-blue">.left</div>
+      <div class="oh">
+        <code class="h3">.oh (overflow hidden)</code>
+        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
+      </div>
+    </div>
+    <div class="p1 mb2 bg-light-gray rounded">
+{% highlight html %}
+<div class="left">Floated left</div>
+<div class="oh">Container with overflow hidden</div>
 {% endhighlight %}
     </div>
   </section>
