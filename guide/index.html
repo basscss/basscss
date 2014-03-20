@@ -106,23 +106,23 @@
     <h1>Floats</h1>
     <p class="p">Floats are for wrapping text around images, but are also used for breaking elements out of the normal document flow. When you float an element left or right, the content following the float will flow beside and around the element.</p>
     <p class="p">Do not set display properties on floated elements. When elements are floated, they are set to display block.</p>
-    <div class="p1 mb1 mid-gray bg-light-gray rounded">
+    <div class="p1 white bg-mid-gray">
       <div class="right p1 m1 white bg-blue">.right</div>
       <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
     </div>
-    <div class="p1 mb2 bg-light-gray rounded">
+    <div class="p1 mb2 bg-light-gray">
 {% highlight html %}
 <div class="right">Floated right</div>
 <p>Just a normal paragraph</p>
 {% endhighlight %}
     </div>
     <p class="p">If an element contains only floated children, such as in a grid system, its height will collapse. Clearfixes are used to ensure the parent element maintains the height of its content. This container element is using the <code>.clearfix</code> class.</p>
-    <div class="clearfix mb1 mid-gray bg-light-gray">
-      <div class="left p2 white bg-blue">.left</div>
-      <div class="left p2 white bg-blue">.left</div>
-      <div class="right p2 white bg-blue">.right</div>
+    <div class="clearfix white bg-mid-gray">
+      <div class="left p2 bg-blue">.left</div>
+      <div class="left p2 bg-blue">.left</div>
+      <div class="right p2 bg-blue">.right</div>
     </div>
-    <div class="p1 mb2 bg-light-gray rounded">
+    <div class="p1 mb2 bg-light-gray">
 {% highlight html %}
 <div class="clearfix">
   <div class="left">Floated left</div>
@@ -132,14 +132,14 @@
 {% endhighlight %}
     </div>
     <p class="p">Overflow hidden crops overflowing content, but can also be used as a clearfix because it creates what's called a new <i>block formatting context</i>.</p>
-    <div class="oh mb1 mid-gray bg-light-gray">
-      <div class="left p2 white bg-blue">.left</div>
-      <div class="left p2 white bg-blue">
+    <div class="oh white bg-mid-gray">
+      <div class="left p2 bg-blue">.left</div>
+      <div class="left p2 bg-blue">
         .left
         <div class="p1 bg-mid-gray" style="width:64rem">wider than parent element</div>
       </div>
     </div>
-    <div class="p1 mb2 bg-light-gray rounded">
+    <div class="p1 mb2 bg-light-gray">
 {% highlight html %}
 <div class="oh">
   <div class="left">Floated left</div>
@@ -155,14 +155,14 @@
       <del>Using the overflow hidden property and its new block formatting context,</del>
       <del>sibling elements with overflow hidden will create a flexible column layout.</del>
       This is the basis of the <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">Media Object.</a></p>
-    <div class="clearfix mb1 mid-gray bg-light-gray rounded">
-      <div class="left p1 mr1 white bg-blue">.left</div>
+    <div class="clearfix white bg-mid-gray">
+      <div class="left p1 mr1 bg-blue">.left</div>
       <div class="oh">
         <code class="h3">.oh (overflow hidden)</code>
         <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
       </div>
     </div>
-    <div class="p1 mb2 bg-light-gray rounded">
+    <div class="p1 mb2 bg-light-gray">
 {% highlight html %}
 <div class="clearfix">
   <div class="left">Floated left</div>
@@ -170,12 +170,12 @@
 </div>
 {% endhighlight %}
     </div>
-    <div class="leading-3 clearfix mb1 mid-gray bg-light-gray">
-      <div class="left px1 white bg-blue">.left</div>
-      <div class="right px1 white bg-blue">.right</div>
+    <div class="leading-3 clearfix white bg-mid-gray">
+      <div class="left px1 bg-blue">.left</div>
+      <div class="right px1 bg-blue">.right</div>
       <div class="oh px1">.oh</div>
     </div>
-    <div class="p1 mb2 bg-light-gray rounded">
+    <div class="p1 mb2 bg-light-gray">
 {% highlight html %}
 <div class="clearfix">
   <div class="left">.left</div>
@@ -196,14 +196,14 @@
 {% endhighlight %}
     </div>
     <p class="p">If you do need to use widths, use percentages. Most grid systems these days use this approach, along with media queries to prevent the rigid layouts from the past. When using percentage-based widths, remember that the percentage is based on width of the parent, so nesting elements with percentage-based widths will get incrementally smaller as you nest.</p>
-    <div class="clearfix mb1 bg-light-gray">
+    <div class="clearfix white bg-mid-gray">
       <div class="left half-width py1">.left.half-width</div>
       <div class="left half-width clearfix">
-        <div class="left half-width py1 bg-mid-gray">Nested .left.half-width</div>
+        <div class="left half-width py1 bg-blue">Nested .left.half-width</div>
         <div class="left half-width py1">Nested .left.half-width</div>
       </div>
     </div>
-    <div class="p1 mb2 bg-light-gray rounded">
+    <div class="p1 mb2 bg-light-gray">
 {% highlight html %}
 <div class="clearfix">
   <div class="left half-width">Half width</div>
@@ -224,6 +224,38 @@
 
   <section id="positions" class="py1">
     <h1>Positions</h1>
+    <p class="p">
+      Positions allow you to move elements out of the default document flow. They can be tricky to use, and I recommend using them as little as possible.
+    </p>
+    <p class="p">By default, elements have a <code>static</code> position. Use the <code>.relative</code> class to keep elements in the default document flow but create a new positioning context. This is useful when anchoring to specific elements or dealing with <code>z-index</code>.</p>
+    <p class="p">
+      Use the <code>.absolute</code> class along with the
+      <code>.t0</code>,
+      <code>.r0</code>,
+      <code>.b0</code>, and
+      <code>.l0</code> utilities to anchor elements to the top, right, bottom,
+      or left of their current positioning context.
+      Use the padding or margin utilities to add space around the element.
+      Using two opposing anchoring utilities, such as <code>.l0</code> and <code>.r0</code> will make an element span the full width.
+    </p>
+    <p class="p">Use the <code>.fixed</code> class to give an element fixed positioning relative to the viewport. Use this with caution. It can cause issues with mobile devices and is commonly abused in web design.</p>
+    <p class="p">By default, positioned elements are stacked one on top of the other based on their position in the document. Try reordering elements in the document before applying z-index properties. If you do need to set z-index, start with the <code>.z1</code> class and work up from there.</p>
+
+    <div class="relative p4 bg-mid-gray">
+      .relative
+      <div class="absolute t0 r0 p1 m1 white bg-dark">.absolute .t0 .r0</div>
+      <div class="absolute t0 r0 p1 m3 white bg-blue">.absolute .t0 .r0</div>
+    </div>
+    <div class="p1 mb2 bg-light-gray ">
+{% highlight html %}
+<div class="relative">
+  .relative
+  <div class="absolute t0 r0 m1">.absolute .t0 .r0 .m1</div>
+  <div class="absolute t0 r0 m3">.absolute .t0 .r0 .m3</div>
+</div>
+{% endhighlight %}
+    </div>
+      
   </section>
 
   <section id="extending-basscss" class="py1">
