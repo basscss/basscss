@@ -37,13 +37,31 @@
 
   <section id="markup" class="py2">
     <h1>Document structure</h1>
-    <p class="p">HTML is a semantically structured markup language. When building anything on the web, start with clean structured markup that accurately reflects your information hierarchy. When hierarchy changes, be sure to update the markup before making any stylistic changes. The most important parts of web design involve no CSS at all.</p>
+    <p class="p">
+      HTML is a semantically structured markup language.
+      When building anything on the web, start with clean structured markup that accurately
+      reflects your information hierarchy.
+      When hierarchy changes, be sure to update the markup before making any stylistic changes.
+      The most important parts of web design involve no CSS at all.
+    </p>
   </section>
 
   <section id="multi-class-pattern" class="py2">
     <h1>Multiclass CSS pattern</h1>
-    <p class="p">BASSCSS is based on Object Oriented CSS (OOCSS) principles. OOCSS has many benefits, including code readability, reusable styles, smaller CSS files, more performant selectors, more flexible markup structure, and code scalability. BASSCSS is meant to be a very simple and intuitive take on this approach, well suited to designing in the browser, rapid prototyping, or serving as the basis for a larger project.</p>
-    <p class="p">One of the defining features of OOCSS is the multiclass pattern. This is the practice of using multiple classes on a single HTML element. This can seem strange at first, but once you get the hang of things, it can make designing and building websites much faster and easier. It also has some significant front-end performance benefits.</p>
+    <p class="p">
+      BASSCSS is based on Object Oriented CSS (OOCSS) principles.
+      OOCSS has many benefits, including code readability, reusable styles, smaller CSS files,
+      more performant selectors, more flexible markup structure, and code scalability.
+      BASSCSS is meant to be a very simple and intuitive take on this approach,
+      well suited to designing in the browser, rapid prototyping, or serving as the basis for a larger project.
+    </p>
+    <p class="p">
+      One of the defining features of OOCSS is the multiclass pattern.
+      This is the practice of using multiple classes on a single HTML element.
+      This can seem strange at first, but once you get the hang of things,
+      it can make designing and building websites much faster and easier.
+      It also has some significant front-end performance benefits.
+    </p>
     <h2>Example</h2>
     <div class="p1 mb2 bg-light-gray rounded">
 {% highlight html %}
@@ -53,7 +71,11 @@
 {% endhighlight %}
     </div>
     <h2>Order</h2>
-    <p class="p">While the order of classes doesn't matter to the browser, maintaining a consistent order will drastically improve code readability. I recommend the following order:</p>
+    <p class="p">
+      While the order of classes doesn't matter to the browser, maintaining
+      a consistent order will drastically improve code readability.
+      I recommend the following order:
+    </p>
     <ol class="p">
       <li>Typography - this sets the visual hieararchy and is one of the most important parts of web design</li>
       <li>Positioning - this can severly change document flow</li>
@@ -68,30 +90,61 @@
     <p class="p">
       Good writing and typography are key to successful web design.
       Typography should serve as the basis for gestalt, user flows, and information hierarchy.
-      Ensure that links, form labels, helper text, buttons, and other microcopy receive as much attention as body copy, and remember the two serve very different purposes.
+      Ensure that links, form labels, helper text, buttons, and other microcopy
+      receive as much attention as body copy, and remember the two serve very different purposes.
     </p>
   </section>
 
   <section id="block-level-inline" class="py2">
     <h1>Block-level and Inline Elements</h1>
-    <p class="p">There are two basic types of elements in HTML. <a href="https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements">Block-level elements</a> are larger container elements that begin on a new line and take up the entire width of their parent container by default. Block-level elements can also have set widths and heights. They may contain other block-level elements and inline elements.</p>
-    <p class="p"><a href="https://developer.mozilla.org/en-US/docs/HTML/Inline_elements">Inline elements</a> do not begin a new line and contain content and other inline elements. Inline elements are only as large as the content they contain.</p>
-    <p class="p">In HTML5, things get a little more complicated, but the basics still apply: <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories">HTML5 Content Categories</a>.</p>
+    <p class="p">
+      There are two basic types of elements in HTML.
+      <a href="https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements">Block-level elements</a>
+      are larger container elements that begin on a new line and take up the entire width
+      of their parent container by default.
+      Block-level elements can also have set widths and heights.
+      They may contain other block-level elements and inline elements.
+    </p>
+    <p class="p">
+      <a href="https://developer.mozilla.org/en-US/docs/HTML/Inline_elements">Inline elements</a>
+      do not begin a new line and contain content and other inline elements.
+      Inline elements are only as large as the content they contain.
+    </p>
+    <p class="p">
+      In HTML5, things get a little more complicated, but the basics still apply.
+      Learn more:
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories">HTML5 Content Categories</a>.
+    </p>
   </section>
 
   <section id="display" class="py2">
     <h1>Display Property</h1>
-    <p class="p">BASSCSS's display utilities override the default behaviors of block-level and inline elements. To make a block-level element inline, use the <code>.inline</code> class. To make inline elements block-level, use <code>.block</code>.</p>
-    <p class="p">Inline-block is a mix of these two properties.
-      Inline-block elements have a block element box, with optional width and height, but flow with surrounding content like an inline element.
-      <del>Inline-block elements may have a width and height, but only take up the width of their contents and behave similarly to inline elements.</del>
+    <p class="p">
+      BASSCSS's display utilities override the default behaviors of block-level and inline elements.
+      To make a block-level element inline, use the <code>.inline</code> class.
+      To make inline elements block-level, use <code>.block</code>.
+    </p>
+    <p class="p">
+      Inline-block is a mix of these two properties.
+      Inline-block elements have a block element box, with optional width and height,
+      but flow with surrounding content like an inline element.
     </p>
   </section>
 
   <section id="box-model" class="py2">
     <h1>Box Model</h1>
-    <p class="p">The box-model is the basis of all HTML layout. Understanding how it works is crucial to designing for the web. Block-level elements naturally fill the width of their parents. Margins add space around the element. Borders add space around the element, but within the margins. Padding adds space within the element.</p>
-    <p class="p">If an element has a declared width, padding and borders will be added to the overall width. It's often easier to add padding and borders to child elements rather than directly to elements with set widths. For example, when using a grid system.</p>
+    <p class="p">
+      The box-model is the basis of all HTML layout.
+      Understanding how it works is crucial to designing for the web.
+      Block-level elements naturally fill the width of their parents.
+      Margins add space around the element. Borders add space around the element, but within the margins.
+      Padding adds space within the element.
+    </p>
+    <p class="p">
+      If an element has a declared width or height, padding and borders will be added to those values.
+      It's often easier to add padding and borders to child elements rather than directly to elements with set widths.
+      For example, when using a grid system.
+    </p>
     <h2 class="f5 mid-gray">Box Model Simulation</h2>
     <div class="center p1 bg-light-gray">
       <p class="mb0">Margin</p>
@@ -104,8 +157,15 @@
 
   <section id="floats" class="py2">
     <h1>Floats</h1>
-    <p class="p">Floats are for wrapping text around images, but are also used for breaking elements out of the normal document flow. When you float an element left or right, the content following the float will flow beside and around the element.</p>
-    <p class="p">Do not set display properties on floated elements. When elements are floated, they are set to display block.</p>
+    <p class="p">
+      Floats are for wrapping text around images, but are also used for breaking
+      elements out of the normal document flow.
+      When you float an element left or right, the content following the float will flow beside and around the element.
+    </p>
+    <p class="p">
+      Do not set display properties on floated elements.
+      When elements are floated, they are set to display block.
+    </p>
     <div class="p1 white bg-mid-gray">
       <div class="right p1 m1 white bg-blue">.right</div>
       <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
@@ -116,7 +176,11 @@
 <p>Just a normal paragraph</p>
 {% endhighlight %}
     </div>
-    <p class="p">If an element contains only floated children, such as in a grid system, its height will collapse. Clearfixes are used to ensure the parent element maintains the height of its content. This container element is using the <code>.clearfix</code> class.</p>
+    <p class="p">
+      If an element contains only floated children, such as in a grid system, its height will collapse.
+      Clearfixes are used to ensure the parent element maintains the height of its content.
+      This container element is using the <code>.clearfix</code> class.
+    </p>
     <div class="clearfix white bg-mid-gray">
       <div class="left p2 bg-blue">.left</div>
       <div class="left p2 bg-blue">.left</div>
@@ -131,7 +195,10 @@
 </div>
 {% endhighlight %}
     </div>
-    <p class="p">Overflow hidden crops overflowing content, but can also be used as a clearfix because it creates what's called a new <i>block formatting context</i>.</p>
+    <p class="p">
+      Overflow hidden crops overflowing content, but can also be used as a clearfix
+      because it creates what's called a new <i>block formatting context</i>.
+    </p>
     <div class="oh white bg-mid-gray">
       <div class="left p2 bg-blue">.left</div>
       <div class="left p2 bg-blue">
@@ -151,10 +218,13 @@
 {% endhighlight %}
     </div>
     <p class="p">
-      Using overflow hidden's new block formatting context, floating one or more elements and setting overflow hidden to the next sibling will create a flexible column layout.
-      <del>Using the overflow hidden property and its new block formatting context,</del>
-      <del>sibling elements with overflow hidden will create a flexible column layout.</del>
-      This is the basis of the <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">Media Object.</a></p>
+      Using overflow hidden's new block formatting context,
+      floating one or more elements and setting overflow hidden to the next sibling will create a flexible column layout.
+      This is the basis of the
+      <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">
+        Media Object.
+      </a>
+    </p>
     <div class="clearfix white bg-mid-gray">
       <div class="left p1 mr1 bg-blue">.left</div>
       <div class="oh">
@@ -188,14 +258,29 @@
 
   <section id="widths" class="py1">
     <h1>Widths</h1>
-    <p class="p">The default document flow in HTML is fluid. This means that creating fluid and responsive layouts should be very easy to achieve. Avoid using fixed widths at all in your layout. Instead rely heavily on the normal document flow.</p>
-    <p class="p">For elements with inherit widths, such as images, consider using a max-width of 100% to ensure it never overflows its container. Use the <code>.fit</code> class to do this.</p>
+    <p class="p">
+      The default document flow in HTML is fluid.
+      This means that creating fluid and responsive layouts should be very easy to achieve.
+      Avoid using fixed widths at all in your layout.
+      Instead rely heavily on the normal document flow.
+    </p>
+    <p class="p">
+      For elements with inherit widths, such as images, consider using a max-width of 100%
+      to ensure it never overflows its container.
+      Use the <code>.fit</code> class to do this.
+    </p>
     <div class="p1 mb2 bg-light-gray rounded">
 {% highlight html %}
 <img src="cat.gif" alt="Cat" class="fit" />
 {% endhighlight %}
     </div>
-    <p class="p">If you do need to use widths, use percentages. Most grid systems these days use this approach, along with media queries to prevent the rigid layouts from the past. When using percentage-based widths, remember that the percentage is based on width of the parent, so nesting elements with percentage-based widths will get incrementally smaller as you nest.</p>
+    <p class="p">
+      If you do need to use widths, use percentages.
+      Most grid systems these days use this approach,
+      along with media queries to prevent the rigid layouts from the past.
+      When using percentage-based widths, remember that the percentage is based on width of the parent,
+      so nesting elements with percentage-based widths will get incrementally smaller as you nest.
+    </p>
     <div class="clearfix white bg-mid-gray">
       <div class="left half-width py1">.left.half-width</div>
       <div class="left half-width clearfix">
@@ -218,16 +303,33 @@
 
   <section id="media-queries" class="py1">
     <h1>Media Queries and Mobile-First Approach</h1>
-    <p class="p">When building responsive websites, best practices suggest using a mobile-first approach. First consider content and user flows, then create layouts that work well at small screen sizes and touch devices. Once that's in a good place use styling to enhance the experience on larger devices. Designing for tap targets first usually translates well to use with pointing devices.</p>
-    <p class="p">BASSCSS includes several state utilities for showing and hiding content on mobile devices. Use these with care. Mobile users still want the same content across devices and often switch devices mid-task. Creating a cohesive experience is key to a good experience with your product.</p>
+    <p class="p">
+      When building responsive websites, best practices suggest using a mobile-first approach.
+      First consider content and user flows, then create layouts that work well
+      at small screen sizes and touch devices.
+      Once that's in a good place use styling to enhance the experience on larger devices.
+      Designing for tap targets first usually translates well to use with pointing devices.
+    </p>
+    <p class="p">
+      BASSCSS includes several state utilities for showing and hiding content on mobile devices.
+      Use these with care.
+      Mobile users still want the same content across devices and often switch devices mid-task.
+      Creating a cohesive experience is key to a good experience with your product.
+    </p>
   </section>
 
   <section id="positions" class="py1">
     <h1>Positions</h1>
     <p class="p">
-      Positions allow you to move elements out of the default document flow. They can be tricky to use, and I recommend using them as little as possible.
+      Positions allow you to move elements out of the default document flow.
+      They can be tricky to use, and I recommend using them as little as possible.
     </p>
-    <p class="p">By default, elements have a <code>static</code> position. Use the <code>.relative</code> class to keep elements in the default document flow but create a new positioning context. This is useful when anchoring to specific elements or dealing with <code>z-index</code>.</p>
+    <p class="p">
+      By default, elements have a <code>static</code> position.
+      Use the <code>.relative</code> class to keep elements in the default document flow
+      but create a new positioning context.
+      This is useful when anchoring to specific elements or dealing with <code>z-index</code>.
+    </p>
     <p class="p">
       Use the <code>.absolute</code> class along with the
       <code>.t0</code>,
@@ -236,10 +338,19 @@
       <code>.l0</code> utilities to anchor elements to the top, right, bottom,
       or left of their current positioning context.
       Use the padding or margin utilities to add space around the element.
-      Using two opposing anchoring utilities, such as <code>.l0</code> and <code>.r0</code> will make an element span the full width.
+      Using two opposing anchoring utilities, such as
+      <code>.l0</code> and <code>.r0</code>
+      will make an element span the full width.
     </p>
-    <p class="p">Use the <code>.fixed</code> class to give an element fixed positioning relative to the viewport. Use this with caution. It can cause issues with mobile devices and is commonly abused in web design.</p>
-    <p class="p">By default, positioned elements are stacked one on top of the other based on their position in the document. Try reordering elements in the document before applying z-index properties. If you do need to set z-index, start with the <code>.z1</code> class and work up from there.</p>
+    <p class="p">
+      Use the <code>.fixed</code> class to give an element fixed positioning relative to the viewport.
+      Use this with caution. It can cause issues with mobile devices and is commonly abused in web design.
+    </p>
+    <p class="p">
+      By default, positioned elements are stacked one on top of the other based on their position in the document.
+      Try reordering elements in the document before applying z-index properties.
+      If you do need to set z-index, start with the <code>.z1</code> class and work up from there.
+    </p>
 
     <div class="relative p4 bg-mid-gray">
       .relative
@@ -260,6 +371,20 @@
 
   <section id="extending-basscss" class="py1">
     <h1>Extending BASSCSS</h1>
+    <p class="p">
+      You can do a lot with BASSCSS's suite of styles, but if you decide to add new styles to your project,
+      here are some tips and recommendations to keep your code simple and maintainable:
+    </p>
+    <ul class="p">
+      <li>Keep styles as reusable as possible.</li>
+      <li>Never use base elements, ids, attributes or the universal selector as selectors.</li>
+      <li>Never use adjoining selectors.</li>
+      <li>Avoid parent selectors.</li>
+      <li>Prefer using class selectors directly on the elements they're styling.</li>
+      <li>Use clear, descriptive names for selectors.</li>
+      <li>Keep structural styles and skin styles separate.</li>
+      <li>Avoid using mixins and extends in sass &ndash; it's often easier and more readable (especially for others) to write styles out by hand.</li>
+    </ul>
   </section>
 
   <footer class="py1 clearfix">
