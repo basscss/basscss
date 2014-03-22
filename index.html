@@ -11,28 +11,29 @@
   <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="site/styles.css" />
-  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
   <link rel="icon" href="favicon.png" />
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" />
 </head>
-<body class="theme">
+<body>
 
   <header class="relative reverse min-y100 table center">
     <div class="table-cell p1 center object-scale transition-all">
       <div class="inline-block mb1 white bg-blue rounded pulsate">
         <div class="h0 bold square">B</div>
       </div>
-      <h1 class="h1 caps blue glow">BASSCSS</h1>
-      <p class="p caps">Next-level CSS Toolkit</p>
+      <h1 class="h1 caps mb0 blue glow">BASSCSS</h1>
+      <p class="p caps mb2">Next-level CSS Toolkit</p>
+      <div>
+        <a class="p button button-blue mr1" href="//github.com/jxnblk/basscss">View on Github</a>
+        <a class="p button button-blue" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&url=http://jxnblk.github.io/basscss&via=jxnblk" target="_blank">Tweet</a>
+      </div>
     </div>
     <div class="absolute b0 l0 p1">
       <p class="mb0 small mid-gray">7KB minified</p>
     </div>
-    <div class="absolute r0 b0 p1">
-      <a href="//github.com/jxnblk/basscss">View on Github</a>
-    </div>
-    <div class="absolute r0 t0 p1">
-      <a class="button button-small button-blue" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&url=http://jxnblk.github.io/basscss&via=jxnblk" target="_blank">Tweet</a>
+    <div class="absolute t0 r0">
+      {% include _nav.html %}
     </div>
   </header>
 
@@ -340,22 +341,7 @@
 
   </main>
 
-  <footer class="measure wrap px-responsive py1 clearfix">
-    <div class="left mb2 mobile-block">
-      <a class="button button-small button-gray" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&url=http://jxnblk.github.io/basscss&via=jxnblk" target="_blank">Tweet</a>
-    </div>
-    <div class="right right-align mb2 mobile-block mobile-center">
-      <p>
-        <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
-          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 " />
-        </svg>
-        Made with love by
-        <a href="//jxnblk.com">Jxnblk</a>
-      </p>
-      <p class="small mid-gray">&copy; 2014 Brent Jackson &middot; <a href="http://opensource.org/licenses/MIT">MIT License</a></p>
-    </div>
-  </footer>
-
+  {% include _footer.html %}
 
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
   <script>

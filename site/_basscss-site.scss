@@ -1,8 +1,12 @@
 // Custom styles for BASSCSS site
 
 body { font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif; }
+//body { font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; }
+//body { font-family: 'Helvetica Neue', Helvetica, sans-serif; }
 
 h1, h2, h3, h4, h5, h6, .bold { font-weight: 600; }
+
+//h1 { font-size: 2.25rem; }
 
 pre, code, samp, .mono {
   font-family: 'Source Code Pro', monospace;
@@ -82,7 +86,14 @@ html, body { height: 100%; }
 
 .icon {
   display: inline-block;
+  width: 1em;
+  height: 1em;
   vertical-align: -.125em;
 }
+.fill-white { fill: #fff; }
 .icon-heart { fill: #f30; }
+
+.blockquote {
+  margin-left: 0;
+}
 

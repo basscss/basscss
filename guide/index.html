@@ -10,36 +10,36 @@
   <meta name="description" content="Simple, responsive CSS/SASS toolkit based on OOCSS principles">
   <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--
-  <base href="/basscss/">
-  -->
-  <style>.blockquote { margin-left: 0; }</style>
   <link rel="stylesheet" href="../site/styles.css">
-  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700,900" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600" rel="stylesheet">
   <link rel="icon" href="../favicon.png">
   <link rel="../apple-touch-icon-precomposed" href="apple-touch-icon.png">
 </head>
-<body class="theme">
+<body>
 
-<div class="measure wrap px-responsive">
- 
-  <header class="py2">
-    <h1 class="h2 mb0">BASSCSS Guide</h1>
-    <p class="p">Web design basics with BASSCSS</p>
+  <header class="white bg-dark">
+    {% include _nav.html %}
+    <div class="measure wrap px-responsive py2">
+      <h1 class="h2 caps mb0 blue">Guide</h1>
+      <p class="p caps">Web design basics with BASSCSS</p>
+    </div>
   </header>
 
+<div class="measure wrap px-responsive">
+
   <section id="rams-quote" class="py2">
-    <blockquote class="blockquote">
-      <p class="h3 italic">Good design is as little design as possible</p>
+    <blockquote class="blockquote mid-gray">
+      <p class="h2 italic">Good design is<br class="mobile-hide"> as little design as possible</p>
       <cite>&ndash; Dieter Rams</cite>
     </blockquote>
   </section>
+
 
   <section id="markup" class="py2">
     <h1>Document structure</h1>
     <p class="p">
       HTML is a semantically structured markup language.
-      When building anything on the web, start with clean structured markup that accurately
+      When building anything on the web, start with clean markup that accurately
       reflects your information hierarchy.
       When hierarchy changes, be sure to update the markup before making any stylistic changes.
       The most important parts of web design involve no CSS at all.
@@ -77,11 +77,11 @@
       I recommend the following order:
     </p>
     <ol class="p">
-      <li>Typography - this sets the visual hieararchy and is one of the most important parts of web design</li>
-      <li>Positioning - this can severly change document flow</li>
-      <li>Layout - this can affect other elements and document flow</li>
-      <li>Theme - this has little or no effect on layout and is likely to change frequently when designing</li>
-      <li>State - this is dynamic and often unnecessary</li>
+      <li><strong>Typography</strong> &ndash; sets the visual hieararchy and is one of the most important parts of web design</li>
+      <li><strong>Positioning</strong> &ndash; can severly change document flow</li>
+      <li><strong>Layout</strong> &ndash; can affect other elements and document flow</li>
+      <li><strong>Theme</strong> &ndash; has little or no effect on layout</li>
+      <li><strong>State</strong> &ndash; is dynamic and often unnecessary</li>
     </ol>
   </section>
 
@@ -377,7 +377,10 @@
     </p>
     <ul class="p">
       <li>Keep styles as reusable as possible.</li>
-      <li>Never use base elements, ids, attributes or the universal selector as selectors.</li>
+      <li>
+        <del>Never use base elements, ids, attributes or the universal selector as selectors.</del>
+        (Unqualified selectors)
+      </li>
       <li>Never use adjoining selectors.</li>
       <li>Avoid parent selectors.</li>
       <li>Prefer using class selectors directly on the elements they're styling.</li>
@@ -387,23 +390,10 @@
     </ul>
   </section>
 
-  <footer class="py1 clearfix">
-    <div class="left mb2 mobile-block">
-      <a class="button button-small button-gray" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&url=http://jxnblk.github.io/basscss&via=jxnblk" target="_blank">Tweet</a>
-    </div>
-    <div class="right right-align mb2 mobile-block mobile-center">
-      <p>
-        <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
-          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 " />
-        </svg>
-        Made with love by
-        <a href="//jxnblk.com">Jxnblk</a>
-      </p>
-      <p class="small mid-gray">&copy; 2014 Brent Jackson &middot; <a href="http://opensource.org/licenses/MIT">MIT License</a></p>
-    </div>
-  </footer>
-
 </div>
+
+  {% include _footer.html %}
+
 
 </body>
 </html>
