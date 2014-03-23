@@ -39,7 +39,7 @@ To adjust the font-size for a semantic type element, but keep the size consisten
 ## Type utilities
 
 ```scss
-strong, .bold { font-weight: bold; }
+.bold { font-weight: bold; }
 .regular { font-weight: normal; }
 .italic { font-style: italic; }
 .caps { text-transform: uppercase; letter-spacing: .2em; }
@@ -77,7 +77,12 @@ Use layout utilities to adjust the default document flow.
 
 .full-width { width: 100%; }
 .half-width { width: 50%; }
+```
 
+# Mobile state utilities
+Use these to change layout behavior for small devices.
+
+```scss
 .mobile-show {
   display: none;
 }
@@ -101,6 +106,14 @@ Use layout utilities to adjust the default document flow.
 
 # Margins
 Classes use a shorthand syntax. `m`: margin, `t`: top, `r`: right, `b`: bottom, `l`: left
+
+Shorthand | Description
+----------|------------
+m         | margin
+t         | top
+r         | right
+b         | bottom
+l         | left
 
 ```scss
 .m0  { margin: 0; }
