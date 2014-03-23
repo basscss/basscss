@@ -155,6 +155,7 @@ l         | left
 # Padding
 Only includes symmetrical padding styles.
 
+Shorthand | Description
 --|--
 p | padding
 x | x-axis (left and right)
