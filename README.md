@@ -156,7 +156,7 @@ l         | left
 Only includes symmetrical padding styles.
 
 Shorthand | Description
---|--
+----------|------------
 p | padding
 x | x-axis (left and right)
 y | y-asix (top and bottom)
