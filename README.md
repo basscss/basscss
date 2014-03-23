@@ -105,7 +105,7 @@ Use these to change layout behavior for small devices.
 ```
 
 # Margins
-Classes use a shorthand syntax. `m`: margin, `t`: top, `r`: right, `b`: bottom, `l`: left
+Classes use a shorthand syntax.
 
 Shorthand | Description
 ----------|------------
@@ -153,7 +153,11 @@ l         | left
 ```
 
 # Padding
-Only includes symmetrical padding styles. `x`: x-axis (left and right), `y`: y-axis (top and bottom)
+Only includes symmetrical padding styles.
+
+p | padding
+x | x-axis (left and right)
+y | y-asix (top and bottom)
 
 ```scss
 .p1  { padding: 1rem; }
