@@ -276,7 +276,7 @@
     <p class="p">
       If you do need to use widths, use percentages.
       Most grid systems these days use this approach,
-      along with media queries to prevent the rigid layouts from the past.
+      along with media queries to prevent broken layouts across devices.
       When using percentage-based widths, remember that the percentage is based on width of the parent,
       so nesting elements with percentage-based widths will get incrementally smaller as you nest.
     </p>
@@ -307,7 +307,8 @@
       First consider content and user flows, then create layouts that work well
       at small screen sizes and touch devices.
       Once that's in a good place use styling to enhance the experience on larger devices.
-      Designing for tap targets first usually translates well to use with pointing devices.
+      For interactive elements, design for touchscreen-sized tap targets first.
+      This usually translates well for use on desktop computers with pointing devices.
     </p>
     <p class="p">
       BASSCSS includes several state utilities for showing and hiding content on mobile devices.
