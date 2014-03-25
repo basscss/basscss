@@ -269,6 +269,10 @@ Use the included example theme to adjust visual styles
 # Customizing and Extending
 Add new styles to build upon BASSCSS. Reusable styles and a separation of structure and skin will help keep code readable, scalable, and generally easier to maintain.
 
+# Checkout the Guide
+For a more in-depth take on web design with BASSCSS, read the guide:
+http://jxnblk.github.io/basscss/guide
+
 ## Need a grid system?
 Checkout [Tempo](http://jxnblk.github.io/tempo)
 
