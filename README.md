@@ -159,7 +159,7 @@ Shorthand | Description
 ----------|------------
 p | padding
 x | x-axis (left and right)
-y | y-asix (top and bottom)
+y | y-axis (top and bottom)
 
 ```scss
 .p1  { padding: 1rem; }
