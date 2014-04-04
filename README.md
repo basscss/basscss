@@ -9,7 +9,7 @@ BASSCSS is a lightweight collection of base styles and simple type and layout ut
 - Consistent visual rhythm with a baseline grid
 - Responsive type scale
 - Type utilities
-- Layout utilties
+- Layout utilities
 - Button styles
 - Form styles
 - Example theme (skins)
