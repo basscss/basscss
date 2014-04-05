@@ -9,7 +9,7 @@ BASSCSS is a lightweight collection of base styles and simple type and layout ut
 - Consistent visual rhythm with a baseline grid
 - Responsive type scale
 - Type utilities
-- Layout utilties
+- Layout utilities
 - Button styles
 - Form styles
 - Example theme (skins)
@@ -159,7 +159,7 @@ Shorthand | Description
 ----------|------------
 p | padding
 x | x-axis (left and right)
-y | y-asix (top and bottom)
+y | y-axis (top and bottom)
 
 ```scss
 .p1  { padding: 1rem; }
