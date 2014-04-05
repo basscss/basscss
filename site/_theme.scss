@@ -9,6 +9,12 @@ $mid-gray: #a0aab0;
 $mid-gray: #909a9f;
 $mid-gray: #808a8f;
 
+// From Jxnblk style guide
+//$blue: #0096cc;
+$light-gray: #eaeff0;
+$mid-gray: #708690;
+$dark-gray: #405660;
+
   // Standard colors from BASSCSS
   $s-blue: #0096cc;
   $s-light-gray: #eee;
@@ -36,12 +42,12 @@ $mid-gray: #808a8f;
   .bg-s-orange { background-color: $s-orange; }
 
 body {
-  color: $dark;
+  color: $dark-gray;
   background-color: #fff;
 }
 .reverse {
   color: rgba(#fff,.8);
-  background-color: $dark;   
+  background-color: $dark-gray;   
 }
 a, .link {
   color: $blue;
@@ -53,8 +59,8 @@ a, .link {
 
 .blue { color: $blue; }
 .bg-blue { background-color: $blue; }
-.dark { color: $dark; }
-.bg-dark { background-color: $dark; }
+.dark { color: $dark-gray; }
+.bg-dark { background-color: $dark-gray; }
 .mid-gray { color: $mid-gray; }
 .bg-mid-gray { background-color: $mid-gray; }
 .light-gray { color: $light-gray; }
@@ -80,7 +86,7 @@ a, .link {
 }
 
 .button-dark {
-  background-color: $dark;
+  background-color: $dark-gray;
   &:focus {
     outline: none;
     box-shadow: 0 0 0 .125rem #fff, 0 0 1px .25rem rgba($blue,.5);
@@ -167,7 +173,7 @@ a, .link {
 // Testing only
 .border-light-gray { border-color: $light-gray; }
 .border-mid-gray { border-color: $mid-gray; }
-.border-dark { border-color: $dark; }
+.border-dark { border-color: $dark-gray; }
 
 .border {
   border-style: solid;
