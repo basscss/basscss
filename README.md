@@ -1,7 +1,8 @@
 # BASSCSS
 
 Simple, responsive CSS/SASS toolkit based on OOCSS principles
-http://jxnblk.github.io/basscss
+
+http://basscss.com
 
 BASSCSS is a lightweight collection of base styles and simple type and layout utilities designed for speed, performance, and scalability. Use it out of the box for simple sites and prototypes or as the base for a larger SASS project.
 
