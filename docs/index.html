@@ -1,82 +1,63 @@
 ---
 ---
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>BASSCSS</title>
-  <meta name="author" content="Jxnblk">
-  <meta name="description" content="Simple, responsive CSS/SASS toolkit based on OOCSS principles">
-  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="site/styles.css" />
-  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:400,400italic,600" rel="stylesheet">
-  <link rel="icon" href="favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" />
-</head>
+{% include _head.html %}
+
 <body>
 
-
-  <nav class="right-align px-responsive reverse">
+  <nav class="nav mobile-nav-table bold">
     {% include _nav.html %}
   </nav>
-  <header class="relative reverse min-y100 table center">
 
-    <div class="table-cell px1 py4 center object-scale transition-all">
-      <div class="inline-block mb1 dark bg-white rounded pulsate">
-        <div class="h0 bold square">B</div>
-      </div>
-      <h1 class="h1 caps mb0">BASSCSS</h1>
-      <p class="p caps mb2">Next-level CSS Toolkit</p>
-      <div>
-        <span class="mr1 mobile-hide">
-          <a class="p button button-box-blue" href="//github.com/jxnblk/basscss">View on Github</a>
-        </span>
-        <a class="p button button-box-blue" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-            <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
-          </svg>
-          Tweet
-        </a>
-      </div>
+  <header class="px2 py4 white bg-dark-gray">
+    <div class="h1 bold mb1 dot dot-blue">B</div>
+    <h1 class="h1 mb0">Basscss</h1>
+    <p class="p caps mb2">Next-level CSS Toolkit</p>
+    <div>
+      <span class="mr1 mobile-hide">
+        <a class="p button button-box-blue" href="//github.com/jxnblk/basscss">View on Github</a>
+      </span>
+      <a class="p button button-box-blue" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+        </svg>
+        Tweet
+      </a>
     </div>
   </header>
 
-  <main class="px-responsive py-responsive js-baseline js-outline">
+  <main class="p2">
 
-    <section class="measure-wide wrap py-responsive">
+    <section class="py2">
       <h2 class="h2 bold mb2">Simple, responsive type &amp; layout </h2>
       <p class="h3 mb2">BASSCSS is a lightweight collection of base styles and simple type and layout utilities designed for speed, performance, and scalability. Use it out of the box for simple sites and prototypes or as the base for a larger SASS project.</p>
     </section>
 
 
-    <section class="measure wrap py-responsive">
+    <section class="py2">
       <div class="table mb1">
         <div class="table-cell center h2 bold p1 mid-gray bg-light-gray rounded">
           1rem
         </div>
         <div class="table-cell px1">
           <h2 class="h2 mb0">Beautifully Mathematical</h2>
-          <p class="p">Based on multiples of 1rem and aligned to a baseline grid for a consistent visual rhythm</p>
+          <p class="h4">Based on multiples of 1rem and aligned to a baseline grid for a consistent visual rhythm</p>
         </div>
-      </div>
-      <div class="right-align mobile-center">
-        <a href="#!" class="js-toggle-baseline button button-small button-gray">Show Baseline</a>
       </div>
     </section>
 
       
-    <section id="responsive-type" class="measure wrap py-responsive">
+    <section id="responsive-type" class="py2">
       <h1 class="h2 mb0">Mobile-First Responsive Type</h1>
-      <p class="p mb2">More contrast at larger screen widths.</p>
+      <p class="h4 mb2">More contrast at larger screen widths.</p>
       <div class="mid-gray">
         <h1 class="h1 mb0">Hand claps</h1>
         <h2 class="h2">Polyrhythmic Percussion</h2>
         <h3 class="h3">Step sequencers, low frequency oscillators &amp; lasers</h3>
-        <p class="p">It is based on the same principle as sampling. However, the samples are not played back conventionally, but are instead split into small pieces of around 1 to 50 ms. These small pieces are called grains. Multiple grains may be layered on top of each other, and may play at different speeds, phases, volume, and frequency, among other parameters.</p>
+        <p class="h4">It is based on the same principle as sampling. However, the samples are not played back conventionally, but are instead split into small pieces of around 1 to 50 ms. These small pieces are called grains. Multiple grains may be layered on top of each other, and may play at different speeds, phases, volume, and frequency, among other parameters.</p>
 
-        <p class="small">At low speeds of playback, the result is a kind of soundscape, often described as a cloud, that is manipulatable in a manner unlike that for natural sound sampling or other synthesis techniques. At high speeds, the result is heard as a note or notes of a novel timbre. By varying the waveform, envelope, duration, spatial position, and density of the grains, many different sounds can be produced.</p>
+        <p class="h5">At low speeds of playback, the result is a kind of soundscape, often described as a cloud, that is manipulatable in a manner unlike that for natural sound sampling or other synthesis techniques. At high speeds, the result is heard as a note or notes of a novel timbre. By varying the waveform, envelope, duration, spatial position, and density of the grains, many different sounds can be produced.</p>
+        <!-- .h6? -->
         <p class="h2">
           <span class="caps">Caps</span>
           <span class="italic">Italic</span>
@@ -86,9 +67,9 @@
       </div>
     </section>
 
-    <section id="layout" class="measure wrap py-responsive">
+    <section id="layout" class="py2">
         <h1 class="h2 mb0">Layout Utilities</h1>
-        <p class="p mb2">Control whitespace, floats, display, positioning and more.</p>
+        <p class="h4 mb2">Control whitespace, floats, display, positioning and more.</p>
       <div class="p1 mb2 bg-light-gray rounded">
 {% highlight css %}
 .m1  { margin: 1rem; }
@@ -135,9 +116,9 @@
       </div>
     </section>
 
-    <section id="buttons" class="measure-narrow wrap py-responsive">
+    <section id="buttons" class="py2">
       <h1 class="h2 mb0">Buttons</h1>
-      <p class="p mb2">Three sizes for anchor links, submit inputs, and button elements</p>
+      <p class="h4 mb2">Three sizes for anchor links, submit inputs, and button elements</p>
       <form class="mb2">
         <a href="#!" class="button button-blue mr1 mb1">Anchor Link Button</a>
         <input type="submit" class="button button-blue mr1 mb1" value="Submit Button">
@@ -153,17 +134,17 @@
       </div>
     </section>
 
-    <section id="forms" class="measure-narrow wrap py-responsive">
+    <section id="forms" class="py2">
       <h1 class="h2 mb0">Forms</h1>
-      <p class="p mb2">Structural styles keep everything lined up</p>
+      <p class="h4 mb2">Structural styles keep everything lined up</p>
       <form class="form mb2 form-light">
-        <h2 class="p">Inline Form (with .mobile-block state)</h2>
+        <h2 class="h4">Inline Form (with .mobile-block state)</h2>
         <input type="text" class="input mr1 mb1 mobile-block" placeholder="Email Address">
         <input type="text" class="input mr1 mb1 mobile-block" placeholder="Password">
         <input type="submit" class="button button-blue mobile-block" value="Sign In">
       </form>
       <form class="clearfix mb2 form form-stacked form-light">
-        <h2 class="p">Stacked Form</h2>
+        <h2 class="h4">Stacked Form</h2>
           <label>Email Address:</label>
           <input type="text" class="input" placeholder="Email Address">
           <label>Password:</label>
@@ -183,14 +164,14 @@
       </form>
     </section>
 
-    <section id="components" class="measure wrap py-responsive">
+    <section id="components" class="py2">
       <h1 class="h2 mb0">Components</h1>
-      <p class="p mb2">Create a variety of components without writing any new CSS</p>
+      <p class="h4 mb2">Create a variety of components without writing any new CSS</p>
       <div class="oh mt4 mb1">
         <div class="h2 left p2 mr2 bold white bg-blue rounded">.oh</div>
         <div class="oh bg-light-gray p1">
-          <h2 class="p mb1">Media Object</h2>
-          <p class="p">Using simple layout utilities</p>
+          <h2 class="h4 mb1">Media Object</h2>
+          <p class="h4">Using simple layout utilities</p>
         </div>
       </div>
       <div class="p1 mb4 bg-light-gray rounded">
@@ -198,8 +179,8 @@
 <div class="oh mb1">
   <div class="h2 left p2 mr2 bold white bg-blue rounded">.oh</div>
   <div class="oh bg-light-gray p1">
-    <h2 class="p mb1">Media Object</h2>
-    <p class="p">With no new CSS written</p>
+    <h2 class="h4 mb1">Media Object</h2>
+    <p class="h4">With no new CSS written</p>
   </div>
 </div>
 {% endhighlight %}
@@ -219,8 +200,8 @@
 </div>
 {% endhighlight %}
       </div>
-      <div class="clearfix leading-3 mb1 bg-light-gray">
-        <div class="left px1 p bold leading-3">Nav bar</div>
+      <div class="clearfix xleading-3 mb1 bg-light-gray">
+        <div class="left px1 h4 bold leading-3">Nav bar</div>
         <div class="right px1">
           <a href="#!">Right</a>
           <a href="#!" class="button button-small button-gray ml1">Button</a>
@@ -228,8 +209,8 @@
       </div>
       <div class="p1 mb4 bg-light-gray rounded">
 {% highlight html %}
-<div class="clearfix leading-3 mb1 bg-light-gray">
-  <div class="left px1 p bold leading-3">Nav bar</div>
+<div class="clearfix xleading-3 mb1 bg-light-gray">
+  <div class="left px1 h4 bold leading-3">Nav bar</div>
   <div class="right px1">
     <a href="#!">Right</a>
     <a href="#!" class="button button-small button-gray ml1">Button</a>
@@ -239,19 +220,19 @@
       </div>
       <div class="p1 mb1 bg-light-gray rounded">
         <h2 class="h2">Box</h2>
-        <p class="p mb0">Useful for organizing asides and interstitial messaging</p>
+        <p class="h4 mb0">Useful for organizing asides and interstitial messaging</p>
       </div>
       <div class="p1 mb4 bg-light-gray rounded">
 {% highlight html %}
 <div class="p1 mb1 bg-light-gray rounded">
   <h2 class="h2">Box</h2>
-  <p class="p mb0">Useful for organizing asides and interstitial messaging</p>
+  <p class="h4 mb0">Useful for organizing asides and interstitial messaging</p>
 </div>
 {% endhighlight %}
       </div>
       <div class="clearfix p1 mb1 bg-light-gray rounded">
         <h2 class="h3">Pagination</h2>
-        <ul class="list-simple list-inline center leading-3">
+        <ul class="list-simple list-inline center">
           <li><a href="#!" class="inline-block px1">Previous</a></li>
           <li><a href="#!" class="inline-block px1 mid-gray">1</a></li>
           <li><a href="#!" class="inline-block px1">2</a></li>
@@ -263,7 +244,7 @@
       </div>
       <div class="p1 mb4 bg-light-gray rounded">
 {% highlight html %}
-<ul class="list-simple list-inline center leading-3">
+<ul class="list-simple list-inline center">
   <li><a href="#!" class="inline-block px1">Previous</a></li>
   <li><a href="#!" class="inline-block px1 mid-gray">1</a></li>
   <li><a href="#!" class="inline-block px1">2</a></li>
@@ -276,70 +257,50 @@
       </div>
       <div class="relative p2 mb1 bg-light-gray rounded">
         <h2 class="h3 p4 center">Position anything</h2>
-        <p class="absolute t0 l0 p1 mid-gray">Top left</p>
-        <p class="absolute r0 b0 p1 mb0 mid-gray">Bottom right</p>
+        <p class="absolute top-0 left-0 p1 mid-gray">Top left</p>
+        <p class="absolute right-0 bottom-0 p1 mb0 mid-gray">Bottom right</p>
       </div>
       <div class="p1 mb2 bg-light-gray rounded">
 {% highlight html %}
 <div class="relative p2 mb1 bg-light-gray rounded">
   <h2 class="h3 p4 center">Position anything</h2>
-  <p class="absolute t0 l0 p1 mid-gray">Top left</p>
-  <p class="absolute r0 b0 p1 mb0 mid-gray">Bottom right</p>
+  <p class="absolute top-0 left-0 p1 mid-gray">Top left</p>
+  <p class="absolute right-0 bottom-0 p1 mb0 mid-gray">Bottom right</p>
 </div>
 {% endhighlight %}
       </div>
     </section>
 
-    <section id="themes" class="measure wrap py-responsive">
+    <section id="themes" class="py2">
       <h1 class="h2 mb0">Themes</h1>
-      <p class="p">Separation of structure and skin to quickly customize the look and feel</p>
+      <p class="h4">Separation of structure and skin to quickly customize the look and feel</p>
       <div class="h3 bold oh white rounded">
-        <div class="p1 center bg-s-blue">.blue</div>
-        <div class="p1 center bg-s-dark-gray">.dark-gray</div>
-        <div class="p1 center bg-s-mid-gray">.mid-gray</div>
-        <div class="p1 center dark bg-s-light-gray">.light-gray</div>
-        <div class="p1 center bg-s-red">.red</div>
-        <div class="p1 center bg-s-green">.green</div>
-        <div class="p1 center bg-s-orange">.orange</div>
+        <div class="p1 center bg-dark-gray">.dark-gray</div>
+        <div class="p1 center bg-mid-gray">.mid-gray</div>
+        <div class="p1 center dark bg-light-gray">.light-gray</div>
+        <div class="p1 center bg-blue">.blue</div>
+        <div class="p1 center bg-green">.green</div>
+        <div class="p1 center bg-yellow">.yellow</div>
+        <div class="p1 center bg-red">.red</div>
       </div>
     </section>
 
-    <section id="extending" class="measure wrap py-responsive">
+    <section id="extending" class="py2">
       <h2 class="h2 mb0">Customizing and Extending</h2>
-      <p class="p">Add new styles to build upon BASSCSS. Reusable styles and a separation of structure and skin will help keep code readable, scalable, and generally easier to maintain.</p>
+      <p class="h4">Add new styles to build upon BASSCSS. Reusable styles and a separation of structure and skin will help keep code readable, scalable, and generally easier to maintain.</p>
     </section>
 
-    <section class="measure wrap py-responsive">
+    <section class="py2">
       <h2 class="h2 mb0">Ready to rock?</h2>
-      <p class="p mb2">Read the documentation and download the source to get started.</p>
+      <p class="h4 mb2">Read the documentation and download the source to get started.</p>
       <div class="right-align mobile-center">
-        <a href="//github.com/jxnblk/basscss" class="p button button-big button-box-blue">View on Github</a>
+        <a href="//github.com/jxnblk/basscss" class="button button-big button-box-blue">View on Github</a>
       </div>
     </section>
 
   </main>
 
   {% include _footer.html %}
-
-  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      var isBaselined = false,
-          $baselineButton = $('.js-toggle-baseline');
-      $baselineButton.click(function(){
-        if(isBaselined){
-          $baselineButton.removeClass('button-blue').addClass('button-gray').html('Show Baseline');
-          $('.js-baseline').removeClass('show-baseline');
-          $('.js-outline').removeClass('show-outline');
-        } else {
-          $baselineButton.removeClass('button-gray').addClass('button-blue').html('Hide Baseline');
-          $('.js-baseline').addClass('show-baseline');
-          $('.js-outline').addClass('show-outline');
-        }
-        isBaselined = !isBaselined;
-      });
-    });
-  </script>
 
 </body>
 </html>

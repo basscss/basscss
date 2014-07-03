@@ -10,6 +10,8 @@
 */
 
 
+@import "variables";
+
 @import "reset";
 @import "type";
 @import "margins";
@@ -19,5 +21,18 @@
 @import "forms";
 @import "lists";
 @import "positions";
+
+// New
+@import "grid";
+@import "table-object";
+@import "nav";
+
+// @import "dropdown";
+
+// Split theme up
+// Or combine with components?
+// CHANGED file structure
 @import "theme";
+@import "colors";
+@import "borders";
 

@@ -1,0 +1,205 @@
+// Nav Component
+
+
+// Sets line height, display block, padding, and white-space nowrap
+.nav {
+  line-height: $ui-height;
+  & > a,
+  .nav-item {
+    display: block;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  & > a {
+    padding-right: $ui-padding;
+    padding-left: $ui-padding;
+  }
+}
+
+// Sets display table at all sizes
+.mobile-nav-table {
+  display: table;
+  & > a,
+  .nav-item {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+// Sets display table above breakpoint
+@media (min-width: $breakpoint-mobile) {
+  .nav-table {
+    display: table;
+    & > a,
+    .nav-item {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+// Extension to set all nav-table items equal width
+// Use with width 100% to span full width of container
+.nav-table-fixed { table-layout: fixed; }
+
+.nav-item-padding {
+  padding-right: $ui-padding;
+  padding-left: $ui-padding;
+}
+
+
+// Adjust heights
+// Big and small are in line with button naming conventions
+// Support for same sizes in buttons and form elements
+//$nav-big-height: 3rem !default;
+//$nav-small-height: 2rem !default;
+.nav-big   { line-height: $ui-height-big; }
+.nav-small { line-height: $ui-height-small; }
+
+.nav-flush {
+  margin-right: -$ui-padding;
+  margin-left:  -$ui-padding;
+}
+
+
+
+// Themes
+
+
+// Should these be part of the global variables?
+$darken-1: rgba(#000,.125) !default;
+$darken-2: rgba(#000,.25) !default;
+$darken-3: rgba(#000,.375) !default;
+$darken-4: rgba(#000,.5) !default;
+
+.nav a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.nav-dark {
+  & > a {
+    color: white;
+    &:hover,
+    &:focus {
+      color: white;
+      background-color: $darken-2;
+    }
+  }
+  .active {
+    background-color: $darken-3;
+  }
+}
+
+.nav-light {
+  & > a {
+    color: $dark-gray;
+    &:hover,
+    &:focus {
+      color: $dark-gray;
+      background-color: $darken-1;
+    }
+  }
+  .active {
+    background-color: $darken-2;
+  }
+}
+
+// Bordered treatment
+// For vertical layouts only
+.nav-borders {
+  border-style: solid;
+  border-width: 1px;
+  border-color: $border-color;
+  & > a {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: $border-color;
+    &:first-child {
+      border-top: 0;
+    }
+  }
+  .active {
+    //background-color: $darken-2;
+    color: $dark-gray;
+  }
+}
+
+// Pills
+// Horizontal or vertical layouts
+.nav-pills {
+  & > a {
+    border-radius: $border-radius;
+    &:hover,
+    &:focus {
+      background-color: rgba($blue,.125);
+    }
+  }
+  .active {
+    color: white;
+    background-color: $blue;
+    &:hover,
+    &:focus {
+      background-color: darken($blue,10%);
+    }
+  }
+}
+
+// Segmented control styles
+// For horizontal layouts only
+.nav-segments {
+  box-shadow: inset 0 0 0 1px $blue;
+  border-radius: $border-radius;
+  & > a {
+    border-right: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+    &:hover,
+    &:focus {
+      background-color: rgba($blue,.125);
+    }
+    &:first-child {
+      border-radius: $border-radius 0 0 $border-radius;
+    }
+    &:last-child {
+      border-right: 0;
+      border-radius: 0 $border-radius $border-radius 0;
+    }
+  }
+  .active {
+    color: white;
+    background-color: $blue;
+    &:hover,
+    &:focus {
+      background-color: darken($blue,10%);
+    }
+  }
+  .disabled {
+    color: rgba($dark-gray,.5);
+    &:hover,
+    &:focus {
+      color: rgba($dark-gray,.5);
+      background-color: transparent;
+    }
+  }
+}
+
+
+// Tabs
+// For horizontal layout only
+.nav-tabs {
+  & > a {
+    border-radius: $border-radius $border-radius 0 0;
+    border-bottom: 1px solid $border-color;
+    &:hover {
+      background-color: $darken-1;
+    }
+  }
+  .active {
+    background-color: white;
+    border: 1px solid $border-color;
+    border-bottom-color: transparent;
+  }
+}
+

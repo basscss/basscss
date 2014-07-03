@@ -1,0 +1,39 @@
+// Basscss.com theme
+
+.fill-white { fill: #fff; }
+.icon-heart { fill: #f30; }
+
+.button-box-blue {
+  color: $blue;
+  background-color: rgba($blue,0);
+  box-shadow: inset 0 0 0 2px $blue;
+  svg {
+    fill: $blue;
+  }
+  &:hover {
+    color: #fff;
+    background-color: rgba(lighten($blue,5%),1);
+    svg {
+      fill: #fff;
+    }
+  }
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px $blue, 0 0 0 2px #fff, 0 0 0 4px rgba($blue,.5);
+  }
+}
+
+.dot {
+  line-height: 2em;
+  text-align: center;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+}
+
+.dot-blue {
+  color: white;
+  background-color: $blue;
+}
+

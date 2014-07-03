@@ -1,0 +1,57 @@
+// Variables
+
+// Default whitespace unit
+$space: 1rem !default;
+
+// Typography
+$font-family: 'Helvetica Neue', Helvetica, sans-serif !default;
+$line-height: 1.5 !default;
+$line-height-heading: 1.25 !default;
+
+// Type Scale
+$h1: 2rem !default;
+$h2: 1.5rem !default;
+$h3: 1.25rem !default;
+$h4: 1rem !default;
+$h5: .875rem !default;
+$h6: .875rem !default;
+
+// Responsive type scale
+$responsive-type: true !default;
+$desktop-h1: 4rem !default;
+$desktop-h2: 2rem !default;
+$desktop-h3: 1.5rem !default;
+$desktop-h4: 1.25rem !default;
+$desktop-h5: 1rem !default;
+$desktop-h6: 1rem !default;
+
+// Breakpoints
+$breakpoint-mobile: 32em !default;
+$breakpoint-desktop: 48em !default;
+
+// Heights for buttons, forms, nav, etc.
+$ui-height: 2.25rem !default;
+$ui-height-small: 1.75rem !default;
+$ui-height-big: 3rem !default;
+
+$ui-padding: .5*$space !default;
+
+// Grid
+$grid-max-width: 75rem !default;
+$grid-gutter: 1.5 * $space !default;
+
+// Theme
+$blue: #0096cc !default;
+$light-gray: #eee !default;
+$mid-gray: #777 !default;
+$dark-gray: #333 !default;
+
+$red: #f40 !default;
+$green: #0f6 !default;
+$yellow: #fc0 !default;
+
+//$border-color: $light-gray !default;
+$border-color: #ccc !default;
+
+$border-radius: .25rem !default;
+

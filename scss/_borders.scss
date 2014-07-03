@@ -1,0 +1,23 @@
+// Borders
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: $border-color;
+}
+
+.border-top {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: $border-color;
+}
+
+.border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: $border-color;
+}
+
+.rounded { border-radius: .25rem; }
+.circle { border-radius: 50%; }
+

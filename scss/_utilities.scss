@@ -19,19 +19,19 @@
 .half-width { width: 50%; }
 
 .mobile-show {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 48em) {
   .mobile-show,
   .mobile-block {
-    display: block;
+    display: block !important;
   }
   .mobile-block {
     width: 100%;
   }
   .mobile-hide {
-    display: none;
+    display: none !important;
   }
   .mobile-center {
     text-align: center;

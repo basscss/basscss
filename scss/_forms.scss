@@ -4,36 +4,52 @@
   font-size: 1rem;
 }
 
+// Potentially use variables for heights
+.form-control,
+.input,
+.select {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: $ui-height;
+  line-height: $ui-height;
+
+}
 .input {
   appearance: none;
   border-style: solid;
   border-width: 1px;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 100%;
-  height: 3rem;
-  line-height: 2rem;
-  padding: .5rem;
-  border-radius: .25rem;
+  padding: 0 $ui-padding;
 }
 
+// Add custom select styles
 .select {
-  box-sizing: border-box;
-  height: 3rem;
+  //height: 3rem;
   margin-right: 0;
   margin-left: 0;
-  border-radius: .25rem;
 }
 
 .textarea {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 1rem;
-  line-height: 1.5rem;
-  border-radius: .25rem;
+  padding: $ui-padding;
+  line-height: 1.5;
+}
+
+.form-control-big,
+.input-big {
+  height: $ui-height-big;
+  line-height: $ui-height-big;
+}
+
+.form-control-small,
+.input-small {
+  height: $ui-height-small;
+  line-height: $ui-height-small;
 }
 
 .form-stacked {
-  label,
+  .label,
   .input,
   .select {
     display: block;
@@ -44,6 +60,39 @@
   .radio,
   .checkbox {
     margin-bottom: 1rem;
+  }
+}
+
+// Add
+// Custom selects
+// Custom radios
+// Custom checkboxes
+
+// Thematic styles
+
+.form-light {
+  .input,
+  .textarea,
+  .select {
+    transition: box-shadow .2s ease;
+    border-color: $border-color;
+    border-radius: $border-radius;
+    &:focus {
+      outline: none;
+      border-color: $blue;
+      box-shadow: 0 0 .125rem rgba($blue,.5);
+    }
+  }
+  .radio input,
+  .checkbox input {
+    transition: box-shadow .2s ease;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5);
+    }
+  }
+  .radio input {
+    border-radius: 50%;
   }
 }
 
