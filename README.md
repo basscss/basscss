@@ -33,15 +33,15 @@ BASSCSS is a lightweight collection of highly reusable styles and utilities desi
 
 # Documentation
 
-## [Getting Started](#getting-started)
-### Typography
-### Layout
-### Grid
-### Table Object
-### Forms
-### Buttons
-### Tables
-### Navigation
+[Getting Started](#getting-started)
+[Typography]
+[Layout](#layout)
+[Grid](#grid)
+[Table Object](#table-object)
+[Forms](#forms)
+[Buttons](#buttons)
+[Tables](#tables)
+[Navigation](#navigation)
 
 ## Guide to Web Design Basics
 For a more in-depth take on web design with BASSCSS, read the guide:
