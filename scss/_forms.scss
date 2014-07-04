@@ -2,54 +2,50 @@
 
 .form {
   font-size: 1rem;
+
+  .form-control,
+  .input,
+  .select {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: $ui-height;
+    line-height: $ui-height - $ui-padding;
+  }
+  .input {
+    appearance: none;
+    border-style: solid;
+    border-width: 1px;
+    padding: .5*$ui-padding $ui-padding;
+  }
+  // Add custom select styles
+  .select {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .textarea {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: $ui-padding;
+    line-height: 1.5;
+  }
+  .form-control-big,
+  .input-big {
+    height: $ui-height-big;
+    //line-height: $ui-height-big - $ui-padding;
+  }
+
+  .form-control-small,
+  .input-small {
+    height: $ui-height-small;
+    line-height: $ui-height-small - $ui-padding;
+  }
 }
 
-// Potentially use variables for heights
-.form-control,
-.input,
-.select {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 100%;
-  height: $ui-height;
-  line-height: $ui-height;
-
-}
-.input {
-  appearance: none;
-  border-style: solid;
-  border-width: 1px;
-  padding: 0 $ui-padding;
-}
-
-// Add custom select styles
-.select {
-  //height: 3rem;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.textarea {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: $ui-padding;
-  line-height: 1.5;
-}
-
-.form-control-big,
-.input-big {
-  height: $ui-height-big;
-  line-height: $ui-height-big;
-}
-
-.form-control-small,
-.input-small {
-  height: $ui-height-small;
-  line-height: $ui-height-small;
-}
 
 .form-stacked {
-  .label,
+  label,
   .input,
   .select {
     display: block;

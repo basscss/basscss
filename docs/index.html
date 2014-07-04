@@ -5,36 +5,71 @@
 
 <body>
 
-  <nav class="nav mobile-nav-table bold">
-    {% include _nav.html %}
-  </nav>
+  <div class="px3 bg-dark-gray">
+    <div class="container">
+      <nav class="nav mobile-nav-table nav-big nav-flush bold xnav-dark">
+        {% include _nav.html %}
+      </nav>
+    </div>
+  </div>
 
-  <header class="px2 py4 white bg-dark-gray">
-    <div class="h1 bold mb1 dot dot-blue">B</div>
-    <h1 class="h1 mb0">Basscss</h1>
-    <p class="p caps mb2">Next-level CSS Toolkit</p>
-    <div>
-      <span class="mr1 mobile-hide">
-        <a class="p button button-box-blue" href="//github.com/jxnblk/basscss">View on Github</a>
-      </span>
-      <a class="p button button-box-blue" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
-        </svg>
-        Tweet
-      </a>
+  <header class="px3 py2 blue bg-dark-gray">
+    <div class="container table">
+      <div class="table-cell py4">
+        <div class="xhelvetica h1 bold mb1 dot dot-blue">B</div>
+        <h1 class="avenir caps h0 mb0">Basscss</h1>
+        <h2 class="avenir caps h4 mb0">Next-level CSS Toolkit</h2>
+        <p class="avenir caps">v3.0 &middot; 10KB</p>
+      </div>
+      <div class="center table-cell py2">
+        <span class="mr2 xmobile-hide">
+          <a class="button button-box-blue" href="//github.com/jxnblk/basscss">Github</a>
+        </span>
+        <a class="h5 button button-box-blue" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+          </svg>
+          Tweet
+        </a>
+      </div>
     </div>
   </header>
 
-  <main class="p2">
+  <!--
+    # Value props
+    - Lightweight
+    - Performant
+    - Flexible
+    - Reusable
+    - Extensible
+    - Customizable - Sass vars
+    - Maintainable
+    - Readable
+    - Code, Prototype, and Design Faster
+    - Visual alignment
 
-    <section class="py2">
+    # Features
+    - Type
+    - Forms
+    - Buttons
+    - Grid
+    - Tables
+    - Type scale, white space scale & UI elements
+    - Components
+      - Media Object
+      - Table Object
+      - Nav (pills, tabs, segments, borders)
+  -->
+
+  <main class="container p3">
+
+    <section class="py3">
       <h2 class="h2 bold mb2">Simple, responsive type &amp; layout </h2>
       <p class="h3 mb2">BASSCSS is a lightweight collection of base styles and simple type and layout utilities designed for speed, performance, and scalability. Use it out of the box for simple sites and prototypes or as the base for a larger SASS project.</p>
     </section>
 
 
-    <section class="py2">
+    <section class="py3">
       <div class="table mb1">
         <div class="table-cell center h2 bold p1 mid-gray bg-light-gray rounded">
           1rem
@@ -47,7 +82,7 @@
     </section>
 
       
-    <section id="responsive-type" class="py2">
+    <section id="responsive-type" class="py3">
       <h1 class="h2 mb0">Mobile-First Responsive Type</h1>
       <p class="h4 mb2">More contrast at larger screen widths.</p>
       <div class="mid-gray">
@@ -67,7 +102,7 @@
       </div>
     </section>
 
-    <section id="layout" class="py2">
+    <section id="layout" class="py3">
         <h1 class="h2 mb0">Layout Utilities</h1>
         <p class="h4 mb2">Control whitespace, floats, display, positioning and more.</p>
       <div class="p1 mb2 bg-light-gray rounded">
@@ -116,7 +151,7 @@
       </div>
     </section>
 
-    <section id="buttons" class="py2">
+    <section id="buttons" class="py3">
       <h1 class="h2 mb0">Buttons</h1>
       <p class="h4 mb2">Three sizes for anchor links, submit inputs, and button elements</p>
       <form class="mb2">
@@ -134,7 +169,7 @@
       </div>
     </section>
 
-    <section id="forms" class="py2">
+    <section id="forms" class="py3">
       <h1 class="h2 mb0">Forms</h1>
       <p class="h4 mb2">Structural styles keep everything lined up</p>
       <form class="form mb2 form-light">
@@ -164,133 +199,26 @@
       </form>
     </section>
 
-    <section id="components" class="py2">
-      <h1 class="h2 mb0">Components</h1>
-      <p class="h4 mb2">Create a variety of components without writing any new CSS</p>
-      <div class="oh mt4 mb1">
-        <div class="h2 left p2 mr2 bold white bg-blue rounded">.oh</div>
-        <div class="oh bg-light-gray p1">
-          <h2 class="h4 mb1">Media Object</h2>
-          <p class="h4">Using simple layout utilities</p>
-        </div>
-      </div>
-      <div class="p1 mb4 bg-light-gray rounded">
-{% highlight html %}
-<div class="oh mb1">
-  <div class="h2 left p2 mr2 bold white bg-blue rounded">.oh</div>
-  <div class="oh bg-light-gray p1">
-    <h2 class="h4 mb1">Media Object</h2>
-    <p class="h4">With no new CSS written</p>
-  </div>
-</div>
-{% endhighlight %}
-      </div>
-
-      <div class="clearfix mb1">
-        <div class="left p1 bg-light-gray">Left</div>
-        <div class="right p1 bg-light-gray">Right</div>
-        <div class="oh bold p1 bg-mid-gray">Flexible center</div>
-      </div>
-      <div class="p1 mb4 bg-light-gray rounded">
-{% highlight html %}
-<div class="clearfix mb1">
-  <div class="left p1 bg-light-gray">Left</div>
-  <div class="right p1 bg-light-gray">Right</div>
-  <div class="oh bold p1 bg-mid-gray">Flexible center</div>
-</div>
-{% endhighlight %}
-      </div>
-      <div class="clearfix xleading-3 mb1 bg-light-gray">
-        <div class="left px1 h4 bold leading-3">Nav bar</div>
-        <div class="right px1">
-          <a href="#!">Right</a>
-          <a href="#!" class="button button-small button-gray ml1">Button</a>
-        </div>
-      </div>
-      <div class="p1 mb4 bg-light-gray rounded">
-{% highlight html %}
-<div class="clearfix xleading-3 mb1 bg-light-gray">
-  <div class="left px1 h4 bold leading-3">Nav bar</div>
-  <div class="right px1">
-    <a href="#!">Right</a>
-    <a href="#!" class="button button-small button-gray ml1">Button</a>
-  </div>
-</div>
-{% endhighlight %}
-      </div>
-      <div class="p1 mb1 bg-light-gray rounded">
-        <h2 class="h2">Box</h2>
-        <p class="h4 mb0">Useful for organizing asides and interstitial messaging</p>
-      </div>
-      <div class="p1 mb4 bg-light-gray rounded">
-{% highlight html %}
-<div class="p1 mb1 bg-light-gray rounded">
-  <h2 class="h2">Box</h2>
-  <p class="h4 mb0">Useful for organizing asides and interstitial messaging</p>
-</div>
-{% endhighlight %}
-      </div>
-      <div class="clearfix p1 mb1 bg-light-gray rounded">
-        <h2 class="h3">Pagination</h2>
-        <ul class="list-simple list-inline center">
-          <li><a href="#!" class="inline-block px1">Previous</a></li>
-          <li><a href="#!" class="inline-block px1 mid-gray">1</a></li>
-          <li><a href="#!" class="inline-block px1">2</a></li>
-          <li><a href="#!" class="inline-block px1">3</a></li>
-          <li><a href="#!" class="inline-block px1">4</a></li>
-          <li><a href="#!" class="inline-block px1">5</a></li>
-          <li><a href="#!" class="inline-block px1">Next</a></li>
-        </ul>
-      </div>
-      <div class="p1 mb4 bg-light-gray rounded">
-{% highlight html %}
-<ul class="list-simple list-inline center">
-  <li><a href="#!" class="inline-block px1">Previous</a></li>
-  <li><a href="#!" class="inline-block px1 mid-gray">1</a></li>
-  <li><a href="#!" class="inline-block px1">2</a></li>
-  <li><a href="#!" class="inline-block px1">3</a></li>
-  <li><a href="#!" class="inline-block px1">4</a></li>
-  <li><a href="#!" class="inline-block px1">5</a></li>
-  <li><a href="#!" class="inline-block px1">Next</a></li>
-</ul>
-{% endhighlight %}
-      </div>
-      <div class="relative p2 mb1 bg-light-gray rounded">
-        <h2 class="h3 p4 center">Position anything</h2>
-        <p class="absolute top-0 left-0 p1 mid-gray">Top left</p>
-        <p class="absolute right-0 bottom-0 p1 mb0 mid-gray">Bottom right</p>
-      </div>
-      <div class="p1 mb2 bg-light-gray rounded">
-{% highlight html %}
-<div class="relative p2 mb1 bg-light-gray rounded">
-  <h2 class="h3 p4 center">Position anything</h2>
-  <p class="absolute top-0 left-0 p1 mid-gray">Top left</p>
-  <p class="absolute right-0 bottom-0 p1 mb0 mid-gray">Bottom right</p>
-</div>
-{% endhighlight %}
-      </div>
-    </section>
-
-    <section id="themes" class="py2">
+    <section id="themes" class="py3">
       <h1 class="h2 mb0">Themes</h1>
       <p class="h4">Separation of structure and skin to quickly customize the look and feel</p>
-      <div class="h3 bold oh white rounded">
-        <div class="p1 center bg-dark-gray">.dark-gray</div>
-        <div class="p1 center bg-mid-gray">.mid-gray</div>
-        <div class="p1 center dark bg-light-gray">.light-gray</div>
-        <div class="p1 center bg-blue">.blue</div>
-        <div class="p1 center bg-green">.green</div>
-        <div class="p1 center bg-yellow">.yellow</div>
-        <div class="p1 center bg-red">.red</div>
+      <div class="table table-fixed h4 bold oh white rounded">
+        <div class="table-cell p2 center bg-dark-gray">.dark-gray</div>
+        <div class="table-cell p2 center bg-mid-gray">.mid-gray</div>
+        <div class="table-cell p2 center dark bg-light-gray">.light-gray</div>
+        <div class="table-cell p2 center bg-blue">.blue</div>
+        <div class="table-cell p2 center bg-green">.green</div>
+        <div class="table-cell p2 center bg-yellow">.yellow</div>
+        <div class="table-cell p2 center bg-red">.red</div>
       </div>
     </section>
 
-    <section id="extending" class="py2">
+    <section id="extending" class="py3">
       <h2 class="h2 mb0">Customizing and Extending</h2>
       <p class="h4">Add new styles to build upon BASSCSS. Reusable styles and a separation of structure and skin will help keep code readable, scalable, and generally easier to maintain.</p>
     </section>
 
-    <section class="py2">
+    <section class="py3">
       <h2 class="h2 mb0">Ready to rock?</h2>
       <p class="h4 mb2">Read the documentation and download the source to get started.</p>
       <div class="right-align mobile-center">

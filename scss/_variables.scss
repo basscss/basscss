@@ -2,6 +2,7 @@
 
 // Default whitespace unit
 $space: 1rem !default;
+// Add white space scale
 
 // Typography
 $font-family: 'Helvetica Neue', Helvetica, sans-serif !default;
@@ -34,7 +35,7 @@ $ui-height: 2.25rem !default;
 $ui-height-small: 1.75rem !default;
 $ui-height-big: 3rem !default;
 
-$ui-padding: .5*$space !default;
+$ui-padding: .75*$space !default;
 
 // Grid
 $grid-max-width: 75rem !default;

@@ -9,7 +9,7 @@
     {% include _nav.html %}
   </nav>
 
-  <section id="typography" class="p2">
+  <section id="typography" class="container p2">
     <h1>Hamburger 1</h1>
     <h2>Hamburger 2</h2>
     <h3>Hamburger 3</h3>
@@ -41,12 +41,13 @@
     </ul>
   </section>
 
-  <section id="buttons" class="p2">
+  <section id="buttons" class="container p2">
     <div class="mb1">
       <a href="#!" class="button button-blue">Link Button</a>
       <a href="#!" class="button button-gray">Link Button</a>
       <input type="submit" class="button button-blue" value="Submit Button">
       <input type="submit" class="button button-gray" value="Submit Button">
+      <input type="button" class="button button-gray" value="Submit Button">
       <button class="button button-blue">Real Button</button>
       <button class="button button-gray">Real Button</button>
     </div>
@@ -68,7 +69,7 @@
     </div>
   </section>
 
-  <section id="forms" class="p2">
+  <section id="forms" class="container p2">
     <form class="form form-light">
       <!-- needs labels -->
       <input type="text" class="input mr1 mb1 mobile-block" placeholder="Email Address">
@@ -108,7 +109,7 @@
     </form>
   </section>
 
-  <section id="nav" class="p2">
+  <section id="nav" class="container p2">
     <div class="nav mb1 nav-dark bg-blue">
       <a href="#!">Nav</a>
       <a href="#!">Nav</a>
@@ -156,43 +157,43 @@
     </div>
   </section>
 
-  <section id="grid" class="p2">
-    <div class="row mb1 white">
-      <div class="col col-6"><div class="bg-blue">.col-6</div></div>
-      <div class="col col-6"><div class="bg-blue">.col-6</div></div>
+  <section id="grid" class="container p2">
+    <div class="row mb2 white">
+      <div class="col col-6"><div class="p1 bg-blue">.col-6</div></div>
+      <div class="col col-6"><div class="p1 bg-blue">.col-6</div></div>
+    </div>
+    <div class="row mb2 white">
+      <div class="col col-4"><div class="p1 bg-blue">.col-4</div></div>
+      <div class="col col-4"><div class="p1 bg-blue">.col-4</div></div>
+      <div class="col col-4"><div class="p1 bg-blue">.col-4</div></div>
+    </div>
+    <div class="row mb2 white">
+      <div class="col col-3"><div class="p1 bg-blue">.col-3</div></div>
+      <div class="col col-3"><div class="p1 bg-blue">.col-3</div></div>
+      <div class="col col-3"><div class="p1 bg-blue">.col-3</div></div>
+      <div class="col col-3"><div class="p1 bg-blue">.col-3</div></div>
+    </div>
+    <div class="row mb2 white">
+      <div class="col col-2"><div class="p1 bg-blue">.col-2</div></div>
+      <div class="col col-2"><div class="p1 bg-blue">.col-2</div></div>
+      <div class="col col-2"><div class="p1 bg-blue">.col-2</div></div>
+      <div class="col col-2"><div class="p1 bg-blue">.col-2</div></div>
+      <div class="col col-2"><div class="p1 bg-blue">.col-2</div></div>
+      <div class="col col-2"><div class="p1 bg-blue">.col-2</div></div>
     </div>
     <div class="row mb1 white">
-      <div class="col col-4"><div class="bg-blue">.col-4</div></div>
-      <div class="col col-4"><div class="bg-blue">.col-4</div></div>
-      <div class="col col-4"><div class="bg-blue">.col-4</div></div>
-    </div>
-    <div class="row mb1 white">
-      <div class="col col-3"><div class="bg-blue">.col-3</div></div>
-      <div class="col col-3"><div class="bg-blue">.col-3</div></div>
-      <div class="col col-3"><div class="bg-blue">.col-3</div></div>
-      <div class="col col-3"><div class="bg-blue">.col-3</div></div>
-    </div>
-    <div class="row mb1 white">
-      <div class="col col-2"><div class="bg-blue">.col-2</div></div>
-      <div class="col col-2"><div class="bg-blue">.col-2</div></div>
-      <div class="col col-2"><div class="bg-blue">.col-2</div></div>
-      <div class="col col-2"><div class="bg-blue">.col-2</div></div>
-      <div class="col col-2"><div class="bg-blue">.col-2</div></div>
-      <div class="col col-2"><div class="bg-blue">.col-2</div></div>
-    </div>
-    <div class="row mb1 white">
-      <div class="col col-1"><div class="bg-blue">.col-1</div></div>
-      <div class="col col-1"><div class="bg-blue">.col-1</div></div>
-      <div class="col col-1"><div class="bg-blue">.col-1</div></div>
-      <div class="col col-1"><div class="bg-blue">.col-1</div></div>
-      <div class="col col-1"><div class="bg-blue">.col-1</div></div>
-      <div class="col col-1"><div class="bg-blue">.col-1</div></div>
-      <div class="col col-1"><div class="bg-blue">.col-1</div></div>
-      <div class="col col-1"><div class="bg-blue">.col-1</div></div>
-      <div class="col col-1"><div class="bg-blue">.col-1</div></div>
-      <div class="col col-1"><div class="bg-blue">.col-1</div></div>
-      <div class="col col-1"><div class="bg-blue">.col-1</div></div>
-      <div class="col col-1"><div class="bg-blue">.col-1</div></div>
+      <div class="col col-1"><div class="p1 bg-blue">.col-1</div></div>
+      <div class="col col-1"><div class="p1 bg-blue">.col-1</div></div>
+      <div class="col col-1"><div class="p1 bg-blue">.col-1</div></div>
+      <div class="col col-1"><div class="p1 bg-blue">.col-1</div></div>
+      <div class="col col-1"><div class="p1 bg-blue">.col-1</div></div>
+      <div class="col col-1"><div class="p1 bg-blue">.col-1</div></div>
+      <div class="col col-1"><div class="p1 bg-blue">.col-1</div></div>
+      <div class="col col-1"><div class="p1 bg-blue">.col-1</div></div>
+      <div class="col col-1"><div class="p1 bg-blue">.col-1</div></div>
+      <div class="col col-1"><div class="p1 bg-blue">.col-1</div></div>
+      <div class="col col-1"><div class="p1 bg-blue">.col-1</div></div>
+      <div class="col col-1"><div class="p1 bg-blue">.col-1</div></div>
     </div>
     <pre>
     - col-right
@@ -203,14 +204,16 @@
     </pre>
   </section>
 
-  <section id="colors" class="p2 white">
-    <div class="p2 bg-dark-gray">.dark-gray</div>
-    <div class="p2 bg-mid-gray">.mid-gray</div>
-    <div class="p2 bg-light-gray">.light-gray</div>
-    <div class="p2 bg-blue">.blue</div>
-    <div class="p2 bg-green">.green</div>
-    <div class="p2 bg-yellow">.yellow</div>
-    <div class="p2 bg-red">.red</div>
+  <section id="colors" class="container p2 white">
+    <div class="table table-fixed">
+      <div class="table-cell p2 bg-dark-gray">.dark-gray</div>
+      <div class="table-cell p2 bg-mid-gray">.mid-gray</div>
+      <div class="table-cell p2 bg-light-gray">.light-gray</div>
+      <div class="table-cell p2 bg-blue">.blue</div>
+      <div class="table-cell p2 bg-green">.green</div>
+      <div class="table-cell p2 bg-yellow">.yellow</div>
+      <div class="table-cell p2 bg-red">.red</div>
+    </div>
   </section>
 
   {% include _footer.html %}

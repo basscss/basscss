@@ -24,16 +24,23 @@
 }
 
 .dot {
-  line-height: 2em;
+  line-height: 1.5em;
   text-align: center;
   display: inline-block;
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 50%;
 }
 
 .dot-blue {
   color: white;
+  color: $dark-gray;
   background-color: $blue;
 }
+
+/*
+.bg-transition {
+  transition: background .1s ease-in;
+}
+*/
 
