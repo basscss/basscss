@@ -33,24 +33,19 @@ BASSCSS is a lightweight collection of highly reusable styles and utilities desi
 
 # Documentation
 
-[Getting Started](#getting-started)
-[Typography]
-[Layout](#layout)
-[Grid](#grid)
-[Table Object](#table-object)
-[Forms](#forms)
-[Buttons](#buttons)
-[Tables](#tables)
-[Navigation](#navigation)
-
-## Guide to Web Design Basics
-For a more in-depth take on web design with BASSCSS, read the guide:
-http://jxnblk.github.io/basscss/guide
-
-## Components
-## Themes
-
----
+Contents:
+- [Getting Started](#getting-started)
+  - [Typography](#typography)
+  - [Layout](#layout)
+  - [Grid](#grid)
+  - [Table Object](#table-object)
+  - [Forms](#forms)
+  - [Buttons](#buttons)
+  - [Tables](#tables)
+  - [Navigation](#navigation)
+- [Guide to Web Design Basics](http://basscss.com/guide)
+- [Components](#)
+- [Themes](#)
 
 # Getting Started
 
