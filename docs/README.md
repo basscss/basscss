@@ -206,8 +206,13 @@ Use the structural `.form` class then use the thematic `.form-light` extension.
 ## Stacked Form
 ```html
 <form class="form form-stacked form-light">
+  <label>Email Address</label>
   <input type="text" class="input" placeholder="Email Address">
+  <label>Password</label>
   <input type="text" class="input" placeholder="Password">
+  <label class="checkbox">
+    <input type="checkbox"> Remember Me
+  </label>
   <input type="submit" class="button button-blue" value="Sign In">
 </form>
 ```
@@ -227,7 +232,65 @@ Use the base `.button` class, then extend with your own theme styles to adjust t
 # Tables
 Use the `.table-reset` class to set smart defaults on form elements. Add the `.table-light` class to add borders between rows. Create your own extensions for more complex styles.
 
-`examples: basic, bordered with gray thead`
+## Basic Table
+```html
+<table class="table-reset table-light mb2">
+  <thead>
+    <tr>
+      <th>Artist</th>
+      <th>Album</th>
+      <th>Released</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Phil Collins</td>
+      <td>No Jacket Required</td>
+      <td>1985</td>
+    </tr>
+    <tr>
+      <td>Peter Gabriel</td>
+      <td>So</td>
+      <td>1986</td>
+    </tr>
+    <tr>
+      <td>Huey Lewis and the News</td>
+      <td>Sports</td>
+      <td>1983</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+## Table with thematic styling
+```html
+<table class="table-reset table-light border">
+  <thead class="bold bg-light-gray">
+    <tr>
+      <th>Artist</th>
+      <th>Album</th>
+      <th>Released</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Phil Collins</td>
+      <td>No Jacket Required</td>
+      <td>1985</td>
+    </tr>
+    <tr>
+      <td>Peter Gabriel</td>
+      <td>So</td>
+      <td>1986</td>
+    </tr>
+    <tr>
+      <td>Huey Lewis and the News</td>
+      <td>Sports</td>
+      <td>1983</td>
+    </tr>
+  </tbody>
+</table>
+```
 
 # Navigation
 Use the `.nav` style to control groups of links, including navigation, menus, breadcrumbs, pagination, and segmented controls.

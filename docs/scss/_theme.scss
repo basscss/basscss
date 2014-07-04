@@ -38,6 +38,9 @@
   background-color: $blue;
 }
 
+.border-blue {
+  border: 1px solid $blue;
+}
 /*
 .bg-transition {
   transition: background .1s ease-in;

@@ -15,3 +15,5 @@ pre { overflow: auto; }
 }
 .tracked-in { letter-spacing: -0.025em; }
 .tracked-out { letter-spacing: 0.05em; }
+
+.lh-ui { line-height: $ui-height; }

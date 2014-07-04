@@ -373,6 +373,10 @@ h6, .h6, small {
   .table-reset td {
     vertical-align: top; }
 
+.table-small th, .table-small td {
+  padding: 0.1875rem 0.75rem;
+  line-height: 1.75rem; }
+
 .button {
   font-family: inherit;
   font-weight: bold;
@@ -413,7 +417,7 @@ h6, .h6, small {
 .col-right,
 .col-center,
 .mobile-col,
-.px-gutter {
+.col-px {
   box-sizing: border-box;
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
@@ -553,7 +557,7 @@ h6, .h6, small {
   display: table-cell;
   vertical-align: middle; }
 
-@media (min-width: 32em) {
+@media (min-width: 48em) {
   .table {
     display: table;
     width: 100%; }
@@ -592,7 +596,7 @@ h6, .h6, small {
 .nav-table-fixed {
   table-layout: fixed; }
 
-.nav-item-padding {
+.nav-item-px {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -865,6 +869,9 @@ pre {
 .tracked-out {
   letter-spacing: 0.05em; }
 
+.lh-ui {
+  line-height: 2.25rem; }
+
 .icon {
   display: inline-block;
   width: 1em;
@@ -904,6 +911,9 @@ pre {
   color: white;
   color: #304650;
   background-color: #00bbee; }
+
+.border-blue {
+  border: 1px solid #00bbee; }
 
 /*
 .bg-transition {

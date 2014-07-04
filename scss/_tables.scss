@@ -15,3 +15,9 @@
   td { vertical-align: top; }
 }
 
+.table-small {
+  th, td {
+    padding: .25*$ui-padding $ui-padding;
+    line-height: $ui-height-small;
+  }
+}
