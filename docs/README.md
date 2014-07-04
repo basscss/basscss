@@ -1,4 +1,7 @@
 # Documentation
+For documentation with inline examples see:
+
+http://basscss.com/docs
 
 ## Contents:
 - [Getting Started](#getting-started)
@@ -7,11 +10,13 @@
 - [Grid](#grid)
 - [Responsive Utilities](#responsive-utilities)
 - [Table Object](#table-object)
+- [Lists](#lists)
 - [Forms](#forms)
 - [Buttons](#buttons)
 - [Tables](#tables)
 - [Navigation](#navigation)
 - [Components](#components)
+- [Theme](#theme)
 
 
 # Getting Started
@@ -124,8 +129,38 @@ class           | description
 .px4            | padding-right: 4; padding-left: 4
 .py4            | padding-top: 4; padding-bottom: 4
 
+### Positions
+
+class           | description
+----------------|----------------
+.relative       | position: relative
+.absolute       | position: absolute
+.fixed          | position: fixed
+.top-0          | top: 0
+.right-0        | right: 0
+.bottom-0       | bottom: 0
+.left-0         | left: 0
+.z1             | z-index: 1
+.z2             | z-index: 2
+.z3             | z-index: 3
+.z4             | z-index: 4
+.absolute-center | Centers element within parent
+
 # Grid
 `pull docs from tempo repo`
+
+```
+Examples
+- Basic
+- Nesting
+- Reverse Order (col-right)
+- Offset
+- col-center
+- mobile-col
+- mixed mobile and desktop
+- mixed with mobile-show clearfix
+- container-col-
+```
 
 # Responsive Utilities
 Use these to change layout styles on small devices.
@@ -139,6 +174,22 @@ class           | description
 
 # Table Object
 `pull docs from repo + grid utilities`
+
+```
+Examples
+- basic
+- with grid width utilities
+- table-fixed
+- padding on cells
+- mobile-table
+```
+
+# Lists
+
+class           | description
+----------------|----------------
+.list-reset     | Unstyled list with no left padding
+.list-inline    | Sets list items to inline
 
 # Forms
 Use the structural `.form` class then use the thematic `.form-light` extension.
@@ -210,6 +261,53 @@ Create a variety of components without writing any new CSS.
 
 # Themes
 Use the included example theme to adjust visual styles
+
+## Colors
+
+class           | description
+----------------|----------------
+.white          | color: white
+.dark-gray      | color: $dark-gray
+.mid-gray       | color: $mid-gray
+.light-gray     | color: $light-gray
+.blue           | color: $blue
+.green          | color: $green
+.yellow         | color: $yellow
+.red            | color: $red
+
+## Background Colors
+
+class           | description
+----------------|----------------
+.bg-white       | background-color: white
+.bg-dark-gray   | background-color: $dark-gray
+.bg-mid-gray    | background-color: $mid-gray
+.bg-light-gray  | background-color: $light-gray
+.bg-blue        | background-color: $blue
+.bg-green       | background-color: $green
+.bg-yellow      | background-color: $yellow
+.bg-red         | background-color: $red
+
+## Borders
+Defaults are set with the `$border-color`, `$border-width`, and `$border-radius` variables.
+
+class           | description
+----------------|----------------
+.border         | Border
+.border-top     | Top border
+.border-right   | Right border
+.border-bottom  | Bottom border
+.border-left    | Left border-left
+.rounded        | Default border radius
+.circle         | border-radius: 50%
+
+```
+- colors
+- background-colors
+- backgrounds
+- borders
+- border radii
+```
 
 # Customizing and Extending
 Add new styles to build upon BASSCSS. Reusable styles and a separation of structure and skin will help keep code readable, scalable, and generally easier to maintain.

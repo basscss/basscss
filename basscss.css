@@ -872,14 +872,26 @@ a:hover {
   border-top-color: #cccccc;
 }
 
+.border-right {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #cccccc;
+}
+
 .border-bottom {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #cccccc;
 }
 
+.border-left {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #cccccc;
+}
+
 .rounded {
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .circle {
