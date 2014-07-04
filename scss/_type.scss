@@ -47,20 +47,3 @@ h6, .h6, small { font-size: $h6; }
 .justified    { text-align: justify; }
 
 
-// Typographical Measure
-// Use with the .wrap class to center container
-
-// CHANGED
-// Tie this into grid system
-.measure { max-width: 48rem; }
-.measure-narrow { max-width: 32rem; }
-.measure-wide { max-width: 60rem; }
-
-
-// Leading utilities to control line-height
-// CHANGED - .leading-x
-//.leading-1 { line-height: 1.5rem; }
-//.leading-2 { line-height: 2rem; }
-//.leading-3 { line-height: 3rem; }
-//.leading-4 { line-height: 4rem; }
-

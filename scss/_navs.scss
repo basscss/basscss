@@ -1,0 +1,63 @@
+// Nav Component
+
+
+// Sets line height, display block, padding, and white-space nowrap
+.nav {
+  line-height: $ui-height;
+  & > a,
+  .nav-item {
+    display: block;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  & > a {
+    padding-right: $ui-padding;
+    padding-left: $ui-padding;
+  }
+}
+
+// Sets display table at all sizes
+.mobile-nav-table {
+  display: table;
+  & > a,
+  .nav-item {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+// Sets display table above breakpoint
+@media (min-width: $breakpoint-mobile) {
+  .nav-table {
+    display: table;
+    & > a,
+    .nav-item {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+// Extension to set all nav-table items equal width
+// Use with width 100% to span full width of container
+.nav-table-fixed { table-layout: fixed; }
+
+.nav-item-padding {
+  padding-right: $ui-padding;
+  padding-left: $ui-padding;
+}
+
+
+// Adjust heights
+// Big and small are in line with button naming conventions
+// Support for same sizes in buttons and form elements
+//$nav-big-height: 3rem !default;
+//$nav-small-height: 2rem !default;
+.nav-big   { line-height: $ui-height-big; }
+.nav-small { line-height: $ui-height-small; }
+
+.nav-flush {
+  margin-right: -$ui-padding;
+  margin-left:  -$ui-padding;
+}
+

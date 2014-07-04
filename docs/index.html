@@ -19,7 +19,7 @@
         <div class="xhelvetica h1 bold mb1 dot dot-blue">B</div>
         <h1 class="avenir caps h0 mb0">Basscss</h1>
         <h2 class="avenir caps h4 mb0">Next-level CSS Toolkit</h2>
-        <p class="avenir caps">v3.0 &middot; 10KB</p>
+        <p class="avenir caps">v3.0 &middot; 11KB</p>
       </div>
       <div class="center table-cell py2">
         <span class="mr2 xmobile-hide">
@@ -34,32 +34,6 @@
       </div>
     </div>
   </header>
-
-  <!--
-    # Value props
-    - Lightweight
-    - Performant
-    - Flexible
-    - Reusable
-    - Extensible
-    - Customizable - Sass vars
-    - Maintainable
-    - Readable
-    - Code, Prototype, and Design Faster
-    - Visual alignment
-
-    # Features
-    - Type
-    - Forms
-    - Buttons
-    - Grid
-    - Tables
-    - Type scale, white space scale & UI elements
-    - Components
-      - Media Object
-      - Table Object
-      - Nav (pills, tabs, segments, borders)
-  -->
 
   <main class="container p3">
 
@@ -180,12 +154,18 @@
       </form>
       <form class="clearfix mb2 form form-stacked form-light">
         <h2 class="h4">Stacked Form</h2>
-          <label>Email Address:</label>
+          <label>Email Address</label>
           <input type="text" class="input" placeholder="Email Address">
-          <label>Password:</label>
+          <label>Password</label>
           <input type="text" class="input" placeholder="Password">
-          <label>Select:</label>
+          <label>Select</label>
           <select class="select">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+          <label>Multiple Select</label>
+          <select class="select" multiple>
             <option>Option 1</option>
             <option>Option 2</option>
             <option>Option 3</option>
@@ -193,7 +173,20 @@
           <label for="radio-1" class="radio"> <input name="radios" id="radio-1" type="radio"> Radio 1 </label>
           <label for="radio-2" class="radio"> <input name="radios" id="radio-2" type="radio"> Radio 2 </label>
           <label for="radio-3" class="radio"> <input name="radios" id="radio-3" type="radio"> Radio 3 </label>
+          <div class="mb1">
+            <label for="radio-1b" class="inline-block mr1"> <input name="radios" id="radio-1b" type="radio"> Radio 1 </label>
+            <label for="radio-2b" class="inline-block mr1"> <input name="radios" id="radio-2b" type="radio"> Radio 2 </label>
+            <label for="radio-3b" class="inline-block mr1"> <input name="radios" id="radio-3b" type="radio"> Radio 3 </label>
+          </div>
           <label for="checkbox-1" class="checkbox"> <input id="checkbox-1" type="checkbox"> Checkbox </label>
+          <fieldset class="fieldset">
+            <legend>Radios & Inputs</legend>
+            <label for="radio-1c" class="inline-block mr1"> <input name="radios" id="radio-1c" type="radio"> Radio 1 </label>
+            <label for="radio-2c" class="inline-block mr1"> <input name="radios" id="radio-2c" type="radio"> Radio 2 </label>
+            <label for="radio-3c" class="inline-block mr1"> <input name="radios" id="radio-3c" type="radio"> Radio 3 </label>
+            <label class="label">Input</label>
+            <input type="text" class="input">
+          </fieldset>
           <input type="submit" class="button button-blue mr1" value="Sign In">
           <input type="submit" class="button button-gray" value="Cancel">
       </form>

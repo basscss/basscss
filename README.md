@@ -1,21 +1,58 @@
 # BASSCSS
 
-Simple, responsive CSS/SASS toolkit based on OOCSS principles
+Simple, responsive CSS toolkit based on OOCSS principles
 
 http://basscss.com
 
-BASSCSS is a lightweight collection of base styles and simple type and layout utilities designed for speed, performance, and scalability. Use it out of the box for simple sites and prototypes or as the base for a larger SASS project.
+BASSCSS is a lightweight collection of highly reusable styles and utilities designed for speed, performance, and scalability. Use it out of the box or as the base for a larger project.
+
+# Features
+- Lightweight at about 11KB minified
+- Performant selectors and styles
+- Flexible & reusable styles to handle the bulk of styling needs
+- Extensible & customizable using Sass variables and abstracted structural styles
+- Maintainable & readable code with unabstracted, obvious naming conventions
+- Code, prototype, and design faster by spending less time writing CSS
+- Accurate visual alignment using customizable spacing units
 
 # What's Included
-- Consistent visual rhythm with a baseline grid
-- Responsive type scale
-- Type utilities
-- Layout utilities
-- Button styles
-- Form styles
-- Example theme (skins)
+- Typography Utilities
+- Responsive Type Scale
+- Layout Utilities
+- White Space Scale
+- Forms
+- Tables
+- Buttons
+- Lists
+- Responsive Grid System
+- Layout Components
+- Navigation Components
+- Customizable Theme
 
-# Usage
+---
+
+# Documentation
+
+## [Getting Started](#getting-started)
+### Typography
+### Layout
+### Grid
+### Table Object
+### Forms
+### Buttons
+### Tables
+### Navigation
+
+## Guide to Web Design Basics
+For a more in-depth take on web design with BASSCSS, read the guide:
+http://jxnblk.github.io/basscss/guide
+
+## Components
+## Themes
+
+---
+
+# Getting Started
 
 ## Vanilla CSS
 Include `basscss.min.css` (7KB) out-of-the-box or use the unminified `basscss.css` (9KB) and edit it how you see fit.
@@ -44,17 +81,10 @@ To adjust the font-size for a semantic type element, but keep the size consisten
 .regular { font-weight: normal; }
 .italic { font-style: italic; }
 .caps { text-transform: uppercase; letter-spacing: .2em; }
+.left-align  { text-align: left; }
 .center { text-align: center; }
 .right-align  { text-align: right; }
-
-.measure { max-width: 48rem; }
-.measure-narrow { max-width: 32rem; }
-.measure-wide { max-width: 60rem; }
-
-.leading-1 { line-height: 1.5rem; }
-.leading-2 { line-height: 2rem; }
-.leading-3 { line-height: 3rem; }
-.leading-4 { line-height: 4rem; }
+.justified  { text-align: justify; }
 ```
 
 # Layout utilities
@@ -105,6 +135,7 @@ Use these to change layout behavior for small devices.
 }
 ```
 
+# White Space Scale
 # Margins
 Classes use a shorthand syntax.
 
@@ -211,58 +242,14 @@ Similarly, extend the form classes with custom theme styles.
 </form>
 ```
 
+# Grid System
+
+# Table Object
+
+# Navs
+
 # Components
 Create a variety of components without writing any new CSS
-
-## Media Object
-
-```html
-<div class="clearfix mb1">
-  <img class="left mr1" src="" alt=""/>
-  <div class="oh">
-    Body
-  </div>
-</div>
-```
-
-## Flexible Container with Padding
-
-```html
-<div class="clearfix">
-  <div classs="left p1">Left</div>
-  <div class="right p1">Right</div>
-  <div class="oh p1">Center</div>
-</div>
-```
-
-## Nav Bar
-Uses `.leading-3` to keep elements aligned
-
-```html
-<div class="clearfix leading-3">
-  <div class="left px1">Left</div>
-  <div class="right px1">Right</div>
-</div>
-```
-
-## Box
-
-```html
-<div class="p1 mb1 bg-light-gray rounded">
-  <h2>Title</h2>
-  <p>Content</p>
-</div>
-```
-
-## Positioning
-
-```html
-<div class="relative">
-  <h2 class="p4 center">Position anything</h2>
-  <p class="absolute t0 l0 p1">Top left</p>
-  <p class="absolute r0 b0 p1 mb0">Bottom right</p>
-</div>
-```
 
 # Themes
 Use the included example theme to adjust visual styles
@@ -270,12 +257,19 @@ Use the included example theme to adjust visual styles
 # Customizing and Extending
 Add new styles to build upon BASSCSS. Reusable styles and a separation of structure and skin will help keep code readable, scalable, and generally easier to maintain.
 
-# Checkout the Guide
-For a more in-depth take on web design with BASSCSS, read the guide:
-http://jxnblk.github.io/basscss/guide
+---
 
-## Need a grid system?
-Checkout [Tempo](http://jxnblk.github.io/tempo)
+### Breaking changes from v2
+- New Sass file structure
+- Renamed `.p` and `.small` type scale class to `.h4` and `.h5`
+- Removed `.f1` - `.f5` type scale styles
+- Responsive type is now globally on or off
+- `.list` is now `.list-reset`
+- `.list-inline` no longer includes reset styles
+- Removed responsive margin and padding styles, e.g. `.m-responsive` and `.px-responsive`
+- Renamed positioning utilities from `.t0`, `.r0`, `.b0`, `.l0` to `.top-0`, `.right-0`, `.bottom-0`, `.left-0`
+- `.measure` styles are replaced with `.container-col-` styles in `_grid.scss`
+- Removed `.leading-` utilities
 
 ---
 

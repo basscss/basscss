@@ -13,26 +13,32 @@
 @import "variables";
 
 @import "reset";
+
 @import "type";
 @import "margins";
 @import "padding";
 @import "utilities";
-@import "buttons";
 @import "forms";
 @import "lists";
 @import "positions";
+@import "tables";
 
+// Components
+@import "buttons";
 // New
 @import "grid";
 @import "table-object";
-@import "nav";
+@import "navs";
 
-// @import "dropdown";
 
-// Split theme up
-// Or combine with components?
-// CHANGED file structure
+// Thematic styles
 @import "theme";
 @import "colors";
 @import "borders";
+
+@import "form-themes";
+@import "table-themes";
+
+@import "button-themes";
+@import "nav-themes";
 

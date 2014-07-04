@@ -1,0 +1,32 @@
+// Button Themes
+
+.button {
+  border-radius: $border-radius;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition-property: box-shadow , background-color;
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5);
+  }
+}
+
+.button-blue {
+  color: #fff;
+  background-color: $blue;
+  &:hover {
+    color: #fff;
+    background-color: darken($blue, 20%);
+  }
+}
+
+.button-gray {
+  color: #fff;
+  background-color: $mid-gray;
+  &:hover {
+    color: #fff;
+    background-color: darken($mid-gray, 20%);
+  }
+  &:focus {}
+}
+
