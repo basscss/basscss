@@ -931,6 +931,26 @@ code {
 .outline-blue * {
   box-shadow: 0 0 0 1px rgba(0, 187, 238, 0.75); }
 
+.waves {
+  -webkit-transition: box-shadow .2s linear;
+  transition: box-shadow .2s linear;
+  -webkit-animation: waves .8s linear infinite;
+  animation: waves .8s linear infinite; }
+
+@-webkit-keyframes waves {
+  from {
+    box-shadow: 0 0 0 0 #304650, 0 0 0 1px rgba(0, 187, 238, 0.5); }
+
+  to {
+    box-shadow: 0 0 0 8px #304650, 0 0 0 12px rgba(0, 187, 238, 0); } }
+
+@keyframes waves {
+  from {
+    box-shadow: 0 0 0 0 #304650, 0 0 0 1px rgba(0, 187, 238, 0.5); }
+
+  to {
+    box-shadow: 0 0 0 8px #304650, 0 0 0 12px rgba(0, 187, 238, 0); } }
+
 .highlight {
   color: #667680;
   line-height: 1.5rem; }

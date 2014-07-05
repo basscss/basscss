@@ -58,3 +58,20 @@ code {
 .outline-blue * {
   box-shadow: 0 0 0 1px rgba($blue,.75);
 }
+
+.waves {
+  -webkit-transition: box-shadow .2s linear;
+          transition: box-shadow .2s linear;
+  -webkit-animation: waves .8s linear infinite;
+          animation: waves .8s linear infinite;
+}
+
+@-webkit-keyframes waves {
+  from { box-shadow: 0 0 0 0 $dark-gray, 0 0 0 1px rgba($blue,.5); }
+    to { box-shadow: 0 0 0 8px $dark-gray, 0 0 0 12px rgba($blue,0); }
+}
+@keyframes waves {
+  from { box-shadow: 0 0 0 0 $dark-gray, 0 0 0 1px rgba($blue,.5); }
+    to { box-shadow: 0 0 0 8px $dark-gray, 0 0 0 12px rgba($blue,0); }
+}
+
