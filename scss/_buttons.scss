@@ -10,15 +10,24 @@
   appearance: none;
   white-space: nowrap;
   display: inline-block;
-  line-height: 2rem;
+  line-height: $ui-height;
   height: auto;
-  min-height: 2rem;
-  padding: .5rem 1rem;
-
-  // Add optional FF hack
+  min-height: $ui-height;
+  padding: 0 $ui-padding;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
-.button-big { padding: 1rem 1.5rem; }
+.button-big {
+  line-height: $ui-height-big;
+  min-height: $ui-height-big;
+  padding: 0 1.5*$ui-padding;
+}
 
-.button-small { padding: 0 1rem; }
+.button-small {
+  line-height: $ui-height-small;
+  min-height: $ui-height-small;
+}
 

@@ -1,0 +1,106 @@
+<div class="row">
+  <div class="col col-8">
+    <h1 class="h1">Forms</h1>
+
+    <h2 class="h2 mb0">Basic Inline Form</h2>
+    <p class="h4">
+      Forms run inline by default. Use the <code>.form</code> class to set basic structural styles.
+      Use the <code>.form-light</code> class to style the form's theme.
+    </p>
+    <div class="oh mb3 border rounded">
+      <div class="p2">
+        <form class="form form-light">
+          <label class="mr1">Input:</label>
+          <input type="text" class="input mr1">
+          <input type="submit" class="button button-blue" value="Go">
+        </form>
+      </div>
+      <div class="p2 border-top bg-light-gray">
+{% highlight html %}
+<form class="form form-light">
+  <label class="mr1">Input:</label>
+  <input type="text" class="input mr1">
+  <input type="submit" class="button button-blue" value="Go">
+</form>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <h2 class="h2 mb0">Stacked Form</h2>
+    <p class="h4">
+      Use the <code>.form-stacked</code> class to make forms stack vertically.
+    </p>
+    <div class="oh mb3 border rounded">
+      <div class="p2">
+        <form class="form form-stacked form-light">
+          <label>Email Address</label>
+          <input type="text" class="input" placeholder="Email Address">
+          <label>Password</label>
+          <input type="text" class="input" placeholder="Password">
+          <label class="checkbox">
+            <input type="checkbox"> Remember Me
+          </label>
+          <input type="submit" class="button button-blue" value="Sign In">
+        </form>
+      </div>
+      <div class="p2 border-top bg-light-gray">
+{% highlight html %}
+<form class="form form-stacked form-light">
+  <label>Email Address</label>
+  <input type="text" class="input" placeholder="Email Address">
+  <label>Password</label>
+  <input type="text" class="input" placeholder="Password">
+  <label class="checkbox">
+    <input type="checkbox"> Remember Me
+  </label>
+  <input type="submit" class="button button-blue" value="Sign In">
+</form>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <h2 class="h2 mb0">Form Field Sizes</h2>
+    <p class="h4">
+      Use the <code>.field-big</code> and <code>.field-small</code> classes to adjust the size of form elements.
+      These will align with button sizes.
+    </p>
+    <div class="oh mb3 border rounded">
+      <div class="p2">
+        <form class="form form-light">
+          <label class="mr1">.field-big</label>
+          <input type="text" class="input field-big mr1">
+          <input type="submit" class="button button-big button-blue" value="Go">
+        </form>
+      </div>
+      <div class="p2 border-top bg-light-gray">
+{% highlight html %}
+<form class="form form-light">
+  <label class="mr1">.field-big</label>
+  <input type="text" class="input field-big mr1">
+  <input type="submit" class="button button-big button-blue" value="Go">
+</form>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <div class="oh border rounded">
+      <div class="p2">
+        <form class="form form-light">
+          <label class="mr1">.field-small</label>
+          <input type="text" class="input field-small mr1">
+          <input type="submit" class="button button-small button-blue" value="Go">
+        </form>
+      </div>
+      <div class="p2 border-top bg-light-gray">
+{% highlight html %}
+<form class="form form-light">
+  <label class="mr1">.field-small</label>
+  <input type="text" class="input field-small mr1">
+  <input type="submit" class="button button-small button-blue" value="Go">
+</form>
+{% endhighlight %}
+      </div>
+    </div>
+
+  </div>
+</div>

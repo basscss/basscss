@@ -9,3 +9,7 @@ task :compile do
     system "sass scss/basscss-lite.scss:basscss-lite.min.css --style compressed"
 end # task :compile
 
+task :dev do
+  system "sass scss:. docs/css:docs/css --watch"
+end
+

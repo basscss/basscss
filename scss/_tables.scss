@@ -1,0 +1,23 @@
+// Tables 
+
+.table-reset {
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+  th { text-align: left; }
+  th, td {
+    padding: $ui-padding;
+    line-height: inherit;
+  }
+  th { vertical-align: bottom; }
+  td { vertical-align: top; }
+}
+
+// Extension for smaller tables
+.table-small {
+  th, td {
+    padding: .25*$ui-padding $ui-padding;
+    line-height: $ui-height-small;
+  }
+}

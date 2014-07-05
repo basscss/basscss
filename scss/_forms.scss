@@ -2,47 +2,66 @@
 
 .form {
   font-size: 1rem;
-}
-
-.input {
-  appearance: none;
-  border-style: solid;
-  border-width: 1px;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 100%;
-  height: 3rem;
-  line-height: 2rem;
-  padding: .5rem;
-  border-radius: .25rem;
-}
-
-.select {
-  box-sizing: border-box;
-  height: 3rem;
-  margin-right: 0;
-  margin-left: 0;
-  border-radius: .25rem;
-}
-
-.textarea {
-  box-sizing: border-box;
-  padding: 1rem;
-  line-height: 1.5rem;
-  border-radius: .25rem;
+  .field,
+  .input,
+  .select {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: $ui-height;
+    line-height: $ui-height - $ui-padding;
+  }
+  .input,
+  .select {
+    border-style: solid;
+    border-width: 1px;
+  }
+  .select {
+    margin-right: 0;
+    margin-left: 0;
+    &[multiple] {
+      height: auto;
+    }
+  }
+  .input {
+    padding: .5*$ui-padding $ui-padding;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .textarea {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: $ui-padding;
+    line-height: 1.5;
+  }
+  .field-big,
+  .input-big {
+    height: $ui-height-big;
+  }
+  .field-small,
+  .input-small {
+    height: $ui-height-small;
+    line-height: $ui-height-small - $ui-padding;
+  }
 }
 
 .form-stacked {
-  label,
+  .label,
   .input,
-  .select {
+  .select,
+  .checkbox,
+  .radio,
+  .fieldset,
+  .field {
     display: block;
     width: 100%;
   }
   .input,
   .select,
   .radio,
-  .checkbox {
+  .checkbox,
+  .fieldset,
+  .field {
     margin-bottom: 1rem;
   }
 }

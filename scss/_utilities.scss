@@ -18,23 +18,13 @@
 .full-width { width: 100%; }
 .half-width { width: 50%; }
 
-.mobile-show {
-  display: none;
-}
-
+// Responsive states
+.mobile-show { display: none !important; }
 @media screen and (max-width: 48em) {
   .mobile-show,
-  .mobile-block {
-    display: block;
-  }
-  .mobile-block {
-    width: 100%;
-  }
-  .mobile-hide {
-    display: none;
-  }
-  .mobile-center {
-    text-align: center;
-  }
+  .mobile-block  { display: block !important; }
+  .mobile-block  { width: 100%; }
+  .mobile-hide   { display: none !important; }
+  .mobile-center { text-align: center; }
 }
 

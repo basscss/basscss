@@ -1,0 +1,130 @@
+// Nav Themes
+
+// See _nav.scss for structural styles
+
+// Undo default link styles
+.nav a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.nav-dark {
+  & > a {
+    color: white;
+    &:hover,
+    &:focus {
+      color: white;
+      background-color: $darken-2;
+    }
+  }
+  .active {
+    background-color: $darken-3;
+  }
+}
+
+.nav-light {
+  & > a {
+    color: $dark-gray;
+    &:hover,
+    &:focus {
+      color: $dark-gray;
+      background-color: $darken-1;
+    }
+  }
+  .active {
+    background-color: $darken-2;
+  }
+}
+
+// Bordered treatment - For vertical layouts only
+.nav-borders {
+  border-style: solid;
+  border-width: 1px;
+  border-color: $border-color;
+  & > a {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: $border-color;
+    &:first-child {
+      border-top: 0;
+    }
+  }
+  .active {
+    color: $dark-gray;
+  }
+}
+
+// Pills
+.nav-pills {
+  & > a {
+    border-radius: $border-radius;
+    &:hover,
+    &:focus {
+      background-color: rgba($blue,.125);
+    }
+  }
+  .active {
+    color: white;
+    background-color: $blue;
+    &:hover,
+    &:focus {
+      background-color: darken($blue,10%);
+    }
+  }
+}
+
+// Segmented control styles - For horizontal layouts only
+.nav-segments {
+  box-shadow: inset 0 0 0 1px $blue;
+  border-radius: $border-radius;
+  & > a {
+    border-right: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+    &:hover,
+    &:focus {
+      background-color: rgba($blue,.125);
+    }
+    &:first-child {
+      border-radius: $border-radius 0 0 $border-radius;
+    }
+    &:last-child {
+      border-right: 0;
+      border-radius: 0 $border-radius $border-radius 0;
+    }
+  }
+  .active {
+    color: white;
+    background-color: $blue;
+    &:hover,
+    &:focus {
+      background-color: darken($blue,10%);
+    }
+  }
+  .disabled {
+    color: rgba($dark-gray,.5);
+    &:hover,
+    &:focus {
+      color: rgba($dark-gray,.5);
+      background-color: transparent;
+    }
+  }
+}
+
+// Tabs - For horizontal layout only
+.nav-tabs {
+  & > a {
+    border-radius: $border-radius $border-radius 0 0;
+    border-bottom: 1px solid $border-color;
+    &:hover {
+      background-color: $darken-1;
+    }
+  }
+  .active {
+    background-color: white;
+    border: 1px solid $border-color;
+    border-bottom-color: transparent;
+  }
+}
+

@@ -2,7 +2,7 @@
 
   BASSCSS
 
-  Next-level CSS toolkit - http://jxnblk.github.io/basscss
+  Next-level CSS toolkit - http://basscss.com
 
   Made with love by Jxnblk - ©2014 Brent Jackson
   MIT License http://opensource.org/licenses/MIT
@@ -10,14 +10,34 @@
 */
 
 
+@import "variables";
+
 @import "reset";
+
 @import "type";
 @import "margins";
 @import "padding";
 @import "utilities";
-@import "buttons";
 @import "forms";
 @import "lists";
 @import "positions";
+@import "tables";
+
+// Components
+@import "buttons";
+@import "grid";
+@import "table-object";
+@import "navs";
+
+
+// Thematic styles
 @import "theme";
+@import "colors";
+@import "borders";
+
+@import "form-themes";
+@import "table-themes";
+
+@import "button-themes";
+@import "nav-themes";
 

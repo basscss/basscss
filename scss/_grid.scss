@@ -1,0 +1,56 @@
+// Grid
+
+.container {
+  max-width: $grid-max-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  overflow: hidden;
+  margin-right: -$grid-gutter/2;
+  margin-left: -$grid-gutter/2;
+}
+
+.col,
+.col-right,
+.col-center,
+.mobile-col,
+.col-px {
+  box-sizing: border-box;
+  padding-right: $grid-gutter/2;
+  padding-left: $grid-gutter/2;
+}
+
+// Mobile grid
+.mobile-col { float: left; }
+@for $i from 1 through 11 {
+  .mobile-col-#{$i} { width: percentage($i/12); }
+}
+
+// Desktop grid
+@media screen and (min-width: $breakpoint-desktop) {
+  .col { float: left; }
+  .col-right { float: right; }
+  .col-center { margin-right: auto; margin-left: auto; }
+  @for $i from 1 through 11 {
+    .col-#{$i} { width: percentage($i/12); }
+    .col-offset-#{$i} { margin-left: percentage($i/12); }
+  }
+  .container-col-10 {
+    max-width: (10/12 * ($grid-max-width + $grid-gutter)) - $grid-gutter;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container-col-8 {
+    max-width: (8/12 * ($grid-max-width + $grid-gutter)) - $grid-gutter;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container-col-6 {
+    max-width: (6/12 * ($grid-max-width + $grid-gutter)) - $grid-gutter;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+

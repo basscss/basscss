@@ -1,0 +1,26 @@
+// Table object
+
+.mobile-table {
+  display: table;
+  width: 100%;
+}
+.mobile-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (min-width: $breakpoint-desktop){
+  .table {
+    display: table;
+    width: 100%;
+  }
+  .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.table-fixed {
+  table-layout: fixed;
+}
+

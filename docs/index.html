@@ -1,0 +1,119 @@
+---
+title: Docs
+---
+
+{% include head.html %}
+
+<body>
+
+<div class="px2 bg-dark-gray">
+  <div class="container">
+    <nav class="nav mobile-nav-table nav-big nav-flush bold nav-bass-dark">
+      {% include nav.html %}
+    </nav>
+  </div>
+</div>
+
+<header class="p2 blue bg-dark-gray">
+  <div class="container">
+    <h1 class="avenir h1 caps mb0">Docs</h1>
+    <h2 class="avenir h4 caps ">How to Use BASSCSS</h2>
+  </div>
+</header>
+
+<div class="container px2">
+
+  <div class="row">
+    <div class="col-right col-3 col-offset-1 mobile-hide">
+      <div class="bold py4 nav nav-small nav-flush">
+        <a href="#getting-started">Getting Started</a>
+        <a href="#typography">Typography</a>
+        <a href="#layout">Layout</a>
+        <a href="#grid">Grid</a>
+        <a href="#forms">Forms</a>
+        <a href="#buttons">Buttons</a>
+        <a href="#tables">Tables</a>
+        <a href="#nav">Nav</a>
+        <a href="#components">Components</a>
+        <a href="#theme">Theme</a>
+      </div>
+      <!-- - [Responsive Utilities](#responsive-utilities) - [Table Object](#table-object) - [Lists](#lists) -->
+    </div>
+    <div class="col col-8">
+      <section id="getting-started" class="py3">
+        <h1 class="h1">Getting Started</h1>
+        <h2 class="h2 mb0">Vanilla CSS</h2>
+        <p class="h4">
+          Include <code>basscss.min.css</code> out-of-the-box or use the unminified <code>basscss.css</code> and edit it how you see fit.
+          For lighter-weight projects use <code>basscss-lite.min.css</code>,  which only includes base type and layout styles.
+          Manually adjust the font stack and theme styles to customize the look and feel.
+        </p>
+        <h2 class="h2 mb0">Sass</h2>
+        <p class="h4">Include the files found in the <code>/scss</code> folder and adjust and variables.</p>
+      </section>
+    </div>
+  </div>
+
+  <section id="typography" class="py3">
+    {% include docs/type.html %}
+  </section>
+
+  <section id="layout" class="py3">
+    {% include docs/layout.html %}
+  </section>
+
+  <!-- positions -->
+
+  <!-- table object -->
+
+  <section id="grid" class="py3">
+    {% include docs/grid.html %}
+  </section>
+
+  <section id="forms" class="py3">
+    {% include docs/forms.html %}
+  </section>
+
+  <section id="buttons" class="py3">
+    {% include docs/buttons.html %}
+  </section>
+
+  <section id="tables" class="py3">
+    {% include docs/tables.html %}
+  </section>
+
+  <section id="nav" class="py3">
+    {% include docs/nav.html %}
+  </section>
+
+  <section id="components" class="py3">
+    {% include docs/components.html %}
+  </section>
+
+  <section id="theme" class="py3">
+    {% include docs/theme.html %}
+  </section>
+
+  <section id="extending" class="py3">
+    {% include docs/extending.html %}
+  </section>
+
+  <section id="guide" class="py3">
+    <div class="row">
+      <div class="col col-8">
+        <div class="p2 border rounded">
+          <h1 class="h2 mb0">Guide</h1>
+          <p class="h4">To learn more about web design with BASSCSS, read the guide.</p>
+          <a href="/docs/guide" class="button button-big button-box-blue">Read the Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+{% include footer.html %}
+
+</body>
+</html>
+

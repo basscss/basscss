@@ -1,0 +1,37 @@
+// Form Themes
+
+// See _forms.scss for structural styles
+
+.form-light {
+  .input,
+  .textarea,
+  .select {
+    background-color: white;
+    transition: box-shadow .2s ease;
+    border-color: $border-color;
+    border-radius: $border-radius;
+    &:focus {
+      outline: none;
+      border-color: $blue;
+      box-shadow: 0 0 .125rem rgba($blue,.5);
+    }
+  }
+  .radio input,
+  .checkbox input {
+    transition: box-shadow .2s ease;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5);
+    }
+  }
+  .radio input {
+    border-radius: 50%;
+  }
+  .fieldset {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $border-color;
+    border-radius: $border-radius;
+  }
+}
+
