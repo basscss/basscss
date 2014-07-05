@@ -10,6 +10,6 @@ task :compile do
 end # task :compile
 
 task :dev do
-  system "sass basscss:. docs:docs --watch"
+  system "sass basscss:. docs/css:docs/css --watch"
 end
 

@@ -378,5 +378,5 @@ Add new styles to build upon BASSCSS. Reusable styles and a separation of struct
 # Guide to Web Design
 For more on web design with BASSCSS, read the guide:
 
-http://basscss.com/guide
+http://basscss.com/docs/guide
 

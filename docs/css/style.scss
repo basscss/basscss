@@ -3,12 +3,12 @@
 // Test custom variables
 @import "variables";
 
-@import "../basscss/variables";
+@import "../../basscss/variables";
 
-@import "../basscss/basscss.scss";
+@import "../../basscss/basscss.scss";
 
 // Use default or custom?
-@import "../basscss/theme";
+@import "../../basscss/theme";
 
 @import "type";
 @import "icons";
