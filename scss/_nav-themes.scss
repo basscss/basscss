@@ -1,12 +1,6 @@
 // Nav Themes
-//
-// See _nav.scss for structural styles
 
-// Remove these to add to global vars
-$darken-1: rgba(#000,.125) !default;
-$darken-2: rgba(#000,.25) !default;
-$darken-3: rgba(#000,.375) !default;
-$darken-4: rgba(#000,.5) !default;
+// See _nav.scss for structural styles
 
 // Undo default link styles
 .nav a {
@@ -44,8 +38,7 @@ $darken-4: rgba(#000,.5) !default;
   }
 }
 
-// Bordered treatment
-// For vertical layouts only
+// Bordered treatment - For vertical layouts only
 .nav-borders {
   border-style: solid;
   border-width: 1px;
@@ -59,13 +52,11 @@ $darken-4: rgba(#000,.5) !default;
     }
   }
   .active {
-    //background-color: $darken-2;
     color: $dark-gray;
   }
 }
 
 // Pills
-// Horizontal or vertical layouts
 .nav-pills {
   & > a {
     border-radius: $border-radius;
@@ -84,8 +75,7 @@ $darken-4: rgba(#000,.5) !default;
   }
 }
 
-// Segmented control styles
-// For horizontal layouts only
+// Segmented control styles - For horizontal layouts only
 .nav-segments {
   box-shadow: inset 0 0 0 1px $blue;
   border-radius: $border-radius;
@@ -122,9 +112,7 @@ $darken-4: rgba(#000,.5) !default;
   }
 }
 
-
-// Tabs
-// For horizontal layout only
+// Tabs - For horizontal layout only
 .nav-tabs {
   & > a {
     border-radius: $border-radius $border-radius 0 0;

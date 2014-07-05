@@ -12,15 +12,12 @@ h1, h2, h3, h4, h5, h6 { line-height: $line-height-heading; }
 h1, .h1 { font-size: $h1; }
 h2, .h2 { font-size: $h2; }
 h3, .h3 { font-size: $h3; }
-
 h4, .h4,
 p, dl, ol, ul  { font-size: $h4; }
 h5, .h5        { font-size: $h5; }
 h6, .h6, small { font-size: $h6; }
 
-
 // Responsive Type Scale
-
 @if ($responsive-type) {
   @media screen and (min-width: $breakpoint-desktop) {
     .h1 { font-size: $desktop-h1; }
@@ -32,17 +29,15 @@ h6, .h6, small { font-size: $h6; }
   }
 }
 
-
-
 // Utilities
-
-.bold { font-weight: bold; }
+.bold    { font-weight: bold; }
 .regular { font-weight: normal; }
-.italic { font-style: italic; }
-.caps { text-transform: uppercase; letter-spacing: .2em; }
+.italic  { font-style: italic; }
+.caps    { text-transform: uppercase; letter-spacing: .2em; }
+
+// Alignment
 .left-align   { text-align: left; }
 .center       { text-align: center; }
 .right-align  { text-align: right; }
 .justified    { text-align: justify; }
-
 

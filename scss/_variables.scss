@@ -2,7 +2,6 @@
 
 // Default whitespace unit
 $space: 1rem !default;
-// Add white space scale
 
 // Typography
 $font-family: 'Helvetica Neue', Helvetica, sans-serif !default;
@@ -39,7 +38,6 @@ $ui-padding: .75*$space !default;
 
 // Grid
 $grid-max-width: 75rem !default;
-//$grid-gutter: 1.5 * $space !default;
 $grid-gutter: 2 * $space !default;
 
 // Theme
@@ -52,8 +50,14 @@ $red: #f40 !default;
 $green: #0f6 !default;
 $yellow: #fc0 !default;
 
+// Alpha blacks for UI elements
+$darken-1: rgba(#000,.125) !default;
+$darken-2: rgba(#000,.25) !default;
+$darken-3: rgba(#000,.375) !default;
+$darken-4: rgba(#000,.5) !default;
+
+// Borders
 $border-color: #ccc !default;
 $border-width: 1px !default;
-
 $border-radius: .25rem !default;
 

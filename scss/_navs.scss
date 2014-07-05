@@ -1,6 +1,5 @@
 // Nav Component
 
-
 // Sets line height, display block, padding, and white-space nowrap
 .nav {
   line-height: $ui-height;
@@ -39,23 +38,20 @@
 }
 
 // Extension to set all nav-table items equal width
-// Use with width 100% to span full width of container
+// Use with .full-width to span the full width of container
 .nav-table-fixed { table-layout: fixed; }
 
+// Extension to add padding to .nav-item
 .nav-item-px {
   padding-right: $ui-padding;
   padding-left: $ui-padding;
 }
 
-
-// Adjust heights
-// Big and small are in line with button naming conventions
-// Support for same sizes in buttons and form elements
-//$nav-big-height: 3rem !default;
-//$nav-small-height: 2rem !default;
+// Height extensions
 .nav-big   { line-height: $ui-height-big; }
 .nav-small { line-height: $ui-height-small; }
 
+// Extension to align with surrounding content
 .nav-flush {
   margin-right: -$ui-padding;
   margin-left:  -$ui-padding;

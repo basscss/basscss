@@ -28,7 +28,6 @@
   .mobile-col-#{$i} { width: percentage($i/12); }
 }
 
-
 // Desktop grid
 @media screen and (min-width: $breakpoint-desktop) {
   .col { float: left; }
@@ -38,9 +37,6 @@
     .col-#{$i} { width: percentage($i/12); }
     .col-offset-#{$i} { margin-left: percentage($i/12); }
   }
-  // Consider renaming these
-  // .measure-col-10
-  // .wrap-col-10
   .container-col-10 {
     max-width: (10/12 * ($grid-max-width + $grid-gutter)) - $grid-gutter;
     margin-right: auto;
