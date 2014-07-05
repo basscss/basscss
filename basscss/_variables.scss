@@ -39,7 +39,8 @@ $ui-padding: .75*$space !default;
 
 // Grid
 $grid-max-width: 75rem !default;
-$grid-gutter: 1.5 * $space !default;
+//$grid-gutter: 1.5 * $space !default;
+$grid-gutter: 2 * $space !default;
 
 // Theme
 $blue: #0096cc !default;

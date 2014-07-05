@@ -1,13 +1,5 @@
 // Grid
 
-
-
-
-// Maximum level of pre/post classes to generate
-// Deprecate this and only use offset
-$pre-post-max: 2 !default;
-
-
 .container {
   max-width: $grid-max-width;
   margin-right: auto;
