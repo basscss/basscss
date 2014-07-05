@@ -849,8 +849,7 @@ h1, h2, h3, h4, h5, h6, strong, .bold {
 
 pre, code, samp, .mono {
   font-family: 'Source Code Pro', monospace;
-  font-size: 1em;
-  font-weight: 500; }
+  font-size: 1em; }
 
 pre {
   overflow: auto; }
