@@ -10,6 +10,6 @@ task :compile do
 end # task :compile
 
 task :dev do
-  system "sass ../scss:.. .:. --watch"
+  system "sass scss:. site:site --watch"
 end
 

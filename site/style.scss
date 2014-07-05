@@ -1,7 +1,7 @@
 // Styles for BASSCSS.com
 
 // Test custom variables
-@import "scss/variables";
+@import "variables";
 
 @import "../scss/variables";
 
@@ -10,8 +10,8 @@
 // Use default or custom?
 @import "../scss/theme";
 
-@import "scss/type";
-@import "scss/icons";
-@import "scss/theme";
-@import "scss/highlight";
+@import "type";
+@import "icons";
+@import "theme";
+@import "highlight";
 
