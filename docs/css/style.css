@@ -3,7 +3,7 @@
 
   BASSCSS
 
-  Next-level CSS toolkit - http://jxnblk.github.io/basscss
+  Next-level CSS toolkit - http://basscss.com
 
   Made with love by Jxnblk - ©2014 Brent Jackson
   MIT License http://opensource.org/licenses/MIT
@@ -932,24 +932,22 @@ code {
   box-shadow: 0 0 0 1px rgba(0, 187, 238, 0.75); }
 
 .waves {
-  -webkit-transition: box-shadow .2s linear;
-  transition: box-shadow .2s linear;
-  -webkit-animation: waves .8s linear infinite;
-  animation: waves .8s linear infinite; }
+  -webkit-animation: waves 1.6s linear infinite;
+  animation: waves 1.6s linear infinite; }
 
 @-webkit-keyframes waves {
   from {
     box-shadow: 0 0 0 0 #304650, 0 0 0 1px rgba(0, 187, 238, 0.5); }
 
   to {
-    box-shadow: 0 0 0 8px #304650, 0 0 0 12px rgba(0, 187, 238, 0); } }
+    box-shadow: 0 0 0 8px #304650, 0 0 0 16px rgba(0, 187, 238, 0); } }
 
 @keyframes waves {
   from {
     box-shadow: 0 0 0 0 #304650, 0 0 0 1px rgba(0, 187, 238, 0.5); }
 
   to {
-    box-shadow: 0 0 0 8px #304650, 0 0 0 12px rgba(0, 187, 238, 0); } }
+    box-shadow: 0 0 0 8px #304650, 0 0 0 16px rgba(0, 187, 238, 0); } }
 
 .highlight {
   color: #667680;
