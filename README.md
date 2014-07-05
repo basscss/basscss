@@ -45,7 +45,7 @@ http://basscss.com/docs/guide
 
 ---
 
-### New in v3
+## New in v3
 - Grid System
 - Table Object
 - Nav Component
