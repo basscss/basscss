@@ -27,7 +27,7 @@ For lighter-weight projects use `basscss-lite.min.css`,  which only includes bas
 Manually adjust the font stack and theme styles to customize the look and feel.
 
 ## Sass
-Include the files found in the `scss` folder and adjust as necessary.
+Include the files found in the `/basscss` folder and adjust as necessary.
 
 ### Sass Variables
 Adjust global variables in the `_variables.scss` file.

@@ -3,13 +3,13 @@ require "rake"
 
 desc "Compile CSS"
 task :compile do
-    system "sass ../scss/basscss.scss:../basscss.css --style expanded"
-    system "sass ../scss/basscss.scss:../basscss.min.css --style compressed"
-    system "sass ../scss/basscss-lite.scss:../basscss-lite.css --style expanded"
-    system "sass ../scss/basscss-lite.scss:../basscss-lite.min.css --style compressed"
+    system "sass basscss/basscss.scss:basscss.css --style expanded"
+    system "sass basscss/basscss.scss:basscss.min.css --style compressed"
+    system "sass basscss/basscss-lite.scss:basscss-lite.css --style expanded"
+    system "sass basscss/basscss-lite.scss:basscss-lite.min.css --style compressed"
 end # task :compile
 
 task :dev do
-  system "sass scss:. site:site --watch"
+  system "sass basscss:. docs:docs --watch"
 end
 
