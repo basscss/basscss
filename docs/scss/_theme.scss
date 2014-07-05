@@ -41,9 +41,20 @@
 .border-blue {
   border: 1px solid $blue;
 }
-/*
-.bg-transition {
-  transition: background .1s ease-in;
-}
-*/
 
+.nav-bass {
+  .active { color: $dark-gray; }
+}
+
+.nav-bass-dark {
+  .active { color: white; }
+}
+
+code {
+  background-color: $light-gray;
+  border-radius: $border-radius;
+}
+
+.outline-blue * {
+  box-shadow: 0 0 0 1px rgba($blue,.75);
+}
