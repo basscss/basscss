@@ -24,7 +24,7 @@ title: Guide
 <div class="container-col-8 px2">
 
   <section id="rams-quote" class="py3">
-    <blockquote class="p2 m0 center mid-gray border rounded">
+    <blockquote class="px2 py3 m0 center mid-gray">
       <p class="h2 italic mb0">Good design is as little design as possible</p>
       <cite>&ndash; Dieter Rams</cite>
     </blockquote>
@@ -59,7 +59,7 @@ title: Guide
       It also has some significant front-end performance benefits.
     </p>
     <h2>Example</h2>
-    <div class="p1 mb2 bg-light-gray rounded">
+    <div class="p2 mb2 bg-light-gray border rounded">
 {% highlight html %}
 <div class="h3 p1 mb2 bg-light-gray rounded">
   A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
@@ -144,11 +144,11 @@ title: Guide
       For example, when using a grid system.
     </p>
     <h2 class="h5 mid-gray">Box Model Simulation</h2>
-    <div class="center p1 bg-light-gray">
+    <div class="center p1 blue border-blue">
       <p class="mb0">Margin</p>
-      <div class="m1 py1 px2 bg-mid-gray border border-dark">
+      <div class="m1 py1 px2 border-blue">
         <p class="">Padding</p>
-        <div class="p2 white bg-dark">Content</div>
+        <div class="p2 border-blue">Content</div>
       </div>
     </div>
   </section>
@@ -164,27 +164,32 @@ title: Guide
       Do not set display properties on floated elements.
       When elements are floated, they are set to display block.
     </p>
-    <div class="p1 white bg-mid-gray">
-      <div class="right p1 m1 white bg-blue">.right</div>
-      <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-    </div>
-    <div class="p1 mb2 bg-light-gray">
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="right p1 m1">.right</div>
+        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
+      </div>
+      <div class="p2 bg-light-gray border-top">
 {% highlight html %}
 <div class="right">.right</div>
 <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
 {% endhighlight %}
+      </div>
     </div>
     <p class="h4">
       If an element contains only floated children, such as in a grid system, its height will collapse.
       Clearfixes are used to ensure the parent element maintains the height of its content.
       This container element is using the <code>.clearfix</code> class.
     </p>
-    <div class="clearfix white bg-mid-gray">
-      <div class="left p2 bg-blue">.left</div>
-      <div class="left p2 bg-blue">.left</div>
-      <div class="right p2 bg-blue">.right</div>
-    </div>
-    <div class="p1 mb2 bg-light-gray">
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="clearfix ">
+          <div class="left p2 ">.left</div>
+          <div class="left p2 ">.left</div>
+          <div class="right p2 ">.right</div>
+        </div>
+      </div>
+      <div class="p2 bg-light-gray border-top">
 {% highlight html %}
 <div class="clearfix">
   <div class="left">.left</div>
@@ -192,19 +197,23 @@ title: Guide
   <div class="right">.right</div>
 </div>
 {% endhighlight %}
+      </div>
     </div>
     <p class="h4">
       Overflow hidden crops overflowing content, but can also be used as a clearfix
       because it creates what's called a new <i>block formatting context</i>.
     </p>
-    <div class="oh white bg-mid-gray">
-      <div class="left p2 bg-blue">.left</div>
-      <div class="left p2 bg-blue">
-        .left
-        <div class="p1 bg-mid-gray" style="width:64rem">wider than parent element</div>
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="oh">
+          <div class="left p2">.left</div>
+          <div class="left p2">
+            .left
+            <div class="p1" style="width:64rem">wider than parent element</div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="p1 mb2 bg-light-gray">
+      <div class="p2 bg-light-gray border-top">
 {% highlight html %}
 <div class="oh">
   <div class="left">.left</div>
@@ -214,6 +223,7 @@ title: Guide
   </div>
 </div>
 {% endhighlight %}
+      </div>
     </div>
     <p class="h4">
       Using overflow hidden on an element placed after one or more floated elements will prevent that element from wrapping under the floated elements.
@@ -222,24 +232,31 @@ title: Guide
         Media Object.
       </a>
     </p>
-    <div class="clearfix white bg-mid-gray">
-      <div class="left p1 mr1 bg-blue">.left</div>
-      <p class="oh">.oh (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-    </div>
-    <div class="p1 mb2 bg-light-gray">
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="clearfix">
+          <div class="left p1 mr1">.left</div>
+          <p class="oh">.oh (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
+        </div>
+      </div>
+      <div class="p2 bg-light-gray border-top">
 {% highlight html %}
 <div class="clearfix">
   <div class="left">.left</div>
   <p class="oh">.oh (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
 </div>
 {% endhighlight %}
+      </div>
     </div>
-    <div class="clearfix white bg-light-gray">
-      <div class="left p1 bg-blue">.left</div>
-      <div class="right p1 bg-blue">.right</div>
-      <p class="oh p1 bg-mid-gray">.oh (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-    </div>
-    <div class="p1 mb2 bg-light-gray">
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="clearfix">
+          <div class="left p1">.left</div>
+          <div class="right p1">.right</div>
+          <p class="oh p1">.oh (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+        </div>
+      </div>
+      <div class="p2 bg-light-gray border-top">
 {% highlight html %}
 <div class="clearfix">
   <div class="left">.left</div>
@@ -247,6 +264,7 @@ title: Guide
   <p class="oh">.oh (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
 </div>
 {% endhighlight %}
+      </div>
     </div>
   </section>
 
@@ -263,7 +281,7 @@ title: Guide
       to ensure it never overflows its container.
       Use the <code>.fit</code> class to do this.
     </p>
-    <div class="p1 mb2 bg-light-gray rounded">
+    <div class="p1 mb2 bg-light-gray border rounded">
 {% highlight html %}
 <img src="cat.gif" alt="Cat" class="fit" />
 {% endhighlight %}
@@ -275,14 +293,17 @@ title: Guide
       When using percentage-based widths, remember that the percentage is based on width of the parent,
       so nesting elements with percentage-based widths will get incrementally smaller as you nest.
     </p>
-    <div class="clearfix white bg-mid-gray">
-      <div class="left half-width py1">.left.half-width</div>
-      <div class="left half-width clearfix">
-        <div class="left half-width py1 bg-blue">Nested .left.half-width</div>
-        <div class="left half-width py1">Nested .left.half-width</div>
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="clearfix">
+          <div class="left half-width py1">.left.half-width</div>
+          <div class="left half-width clearfix">
+            <div class="left half-width py1">Nested .left.half-width</div>
+            <div class="left half-width py1">Nested .left.half-width</div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="p1 mb2 bg-light-gray">
+      <div class="p2 bg-light-gray border-top">
 {% highlight html %}
 <div class="clearfix">
   <div class="left half-width">.left.half-width</div>
@@ -292,6 +313,7 @@ title: Guide
   </div>
 </div>
 {% endhighlight %}
+      </div>
     </div>
   </section>
 
@@ -327,14 +349,14 @@ title: Guide
     </p>
     <p class="h4">
       Use the <code>.absolute</code> class along with the
-      <code>.t0</code>,
-      <code>.r0</code>,
-      <code>.b0</code>, and
-      <code>.l0</code> utilities to anchor elements to the top, right, bottom,
+      <code>.top-0</code>,
+      <code>.right-0</code>,
+      <code>.bottom-0</code>, and
+      <code>.left-0</code> utilities to anchor elements to the top, right, bottom,
       or left of their current positioning context.
       Use the padding or margin utilities to add space around the element.
       Using two opposing anchoring utilities, such as
-      <code>.l0</code> and <code>.r0</code>
+      <code>.left-0</code> and <code>.right-0</code>
       will make an element span the full width.
     </p>
     <p class="h4">
@@ -348,19 +370,23 @@ title: Guide
       And be sure you <a href="http://philipwalton.com/articles/what-no-one-told-you-about-z-index/">understand z-index</a> before adding more than four levels.
     </p>
 
-    <div class="relative p4 bg-mid-gray">
-      .relative
-      <div class="absolute t0 r0 p1 m1 white bg-dark">.absolute .t0 .r0</div>
-      <div class="absolute t0 r0 p1 m3 white bg-blue">.absolute .t0 .r0</div>
-    </div>
-    <div class="p1 mb2 bg-light-gray ">
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="relative p4">
+          .relative
+          <div class="absolute top-0 right-0 p1 m1">.absolute .top-0 .right-0</div>
+          <div class="absolute top-0 right-0 p1 m3">.absolute .top-0 .right-0</div>
+        </div>
+      </div>
+      <div class="p2 bg-light-gray border-top">
 {% highlight html %}
-<div class="relative">
+<div class="relative p4">
   .relative
-  <div class="absolute t0 r0 m1">.absolute .t0 .r0 .m1</div>
-  <div class="absolute t0 r0 m3">.absolute .t0 .r0 .m3</div>
+  <div class="absolute top-0 right-0 p1 m1">.absolute .top-0 .right-0</div>
+  <div class="absolute top-0 right-0 p1 m3">.absolute .top-0 .right-0</div>
 </div>
 {% endhighlight %}
+      </div>
     </div>
       
   </section>
