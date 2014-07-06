@@ -68,7 +68,7 @@
         </div>
         <div class="col col-4">
           <h2 class="mb0">Mathematical</h2>
-          <p>Based on a global unit for type and layout</p>
+          <p>Based on a consistent scale for type and layout</p>
         </div>
       </div>
     </section>
@@ -179,16 +179,16 @@
 
     <section id="grid" class="py3">
       <h1 class="h2">Responsive Grid System</h1>
-      <div class="center row mb1 blue">
+      <div class="center row mb2 blue">
         <div class="mobile-col mobile-col-6"><div class="p1 border-blue">.col-6</div></div>
         <div class="mobile-col mobile-col-6"><div class="p1 border-blue">.col-6</div></div>
       </div>
-      <div class="center row mb1 blue">
+      <div class="center row mb2 blue">
         <div class="mobile-col mobile-col-4"><div class="p1 border-blue">.col-4</div></div>
         <div class="mobile-col mobile-col-4"><div class="p1 border-blue">.col-4</div></div>
         <div class="mobile-col mobile-col-4"><div class="p1 border-blue">.col-4</div></div>
       </div>
-      <div class="center row mb1 mobile-hide blue">
+      <div class="center row mb2 mobile-hide blue">
         <div class="col col-3"><div class="p1 border-blue">.col-3</div></div>
         <div class="col col-3"><div class="p1 border-blue">.col-3</div></div>
         <div class="col col-3"><div class="p1 border-blue">.col-3</div></div>
@@ -210,14 +210,14 @@
       <h1 class="h2">Navigation</h1>
       <div class="row">
         <div class="table">
-          <div class="table-cell col-4 col-px">
+          <div class="table-cell col-4 col-px py2">
             <div class="nav mobile-nav-table nav-table-fixed center bold full-width nav-dark bg-blue">
               <a href="#!">Nav</a>
               <a href="#!">Link</a>
               <a href="#!">Link</a>
             </div>
           </div>
-          <div class="table-cell col-4 col-px">
+          <div class="table-cell col-4 col-px py2">
             <div class="nav mobile-nav-table wrap bold mb3 nav-pills">
               <a href="#!" class="active">Nav</a>
               <a href="#!">Link</a>
@@ -229,7 +229,7 @@
               <a href="#!">Link</a>
             </div>
           </div>
-          <div class="table-cell col-4 col-px">
+          <div class="table-cell col-4 col-px py2">
             <div class="nav mobile-nav-table wrap bold mb3 bg-light-gray rounded">
               <a href="#!" class="active">Home</a>
               <span class="nav-item mid-gray">/</span>
@@ -253,13 +253,25 @@
       <h1 class="h2 mb0">Themes</h1>
       <p class="h4">Create your own themes to quickly customize the look and feel</p>
       <div class="table table-fixed center oh white rounded">
-        <div class="table-cell p2 bg-dark-gray">.dark-gray</div>
-        <div class="table-cell p2 bg-mid-gray">.mid-gray</div>
-        <div class="table-cell p2 bg-light-gray">.light-gray</div>
-        <div class="table-cell p2 bg-blue">.blue</div>
-        <div class="table-cell p2 bg-green">.green</div>
-        <div class="table-cell p2 bg-yellow">.yellow</div>
-        <div class="table-cell p2 bg-red">.red</div>
+        <div class="table-cell">
+          <div class="mobile-table table-fixed">
+            <div class="mobile-table-cell p2 bg-dark-gray">.dark-gray</div>
+            <div class="mobile-table-cell p2 bg-mid-gray">.mid-gray</div>
+          </div>
+        </div>
+        <div class="table-cell">
+          <div class="mobile-table table-fixed">
+            <div class="mobile-table-cell p2 dark-gray bg-light-gray">.light-gray</div>
+            <div class="mobile-table-cell p2 bg-blue">.blue</div>
+          </div>
+        </div>
+        <div class="table-cell">
+          <div class="mobile-table table-fixed">
+            <div class="mobile-table-cell p2 bg-green">.green</div>
+            <div class="mobile-table-cell p2 bg-yellow">.yellow</div>
+            <div class="mobile-table-cell p2 bg-red">.red</div>
+          </div>
+        </div>
       </div>
     </section>
       
