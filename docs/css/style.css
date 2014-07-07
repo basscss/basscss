@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 
   BASSCSS
@@ -637,13 +636,13 @@ a {
   color: #00bbee; }
 
 .green {
-  color: #00ff66; }
+  color: #11e966; }
 
 .yellow {
-  color: #ffcc00; }
+  color: #ffdc00; }
 
 .red {
-  color: #ff4400; }
+  color: #f96010; }
 
 .bg-white {
   background-color: #fff; }
@@ -661,13 +660,13 @@ a {
   background-color: #00bbee; }
 
 .bg-green {
-  background-color: #00ff66; }
+  background-color: #11e966; }
 
 .bg-yellow {
-  background-color: #ffcc00; }
+  background-color: #ffdc00; }
 
 .bg-red {
-  background-color: #ff4400; }
+  background-color: #f96010; }
 
 .border {
   border-style: solid;
