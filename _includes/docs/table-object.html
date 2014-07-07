@@ -1,0 +1,141 @@
+<div class="row">
+  <div class="col col-8">
+    <h1 class="h1 mb0">Table Object</h1>
+    <p class="h4">Use this to vertically center elements.</p>
+
+    <h2 class="h2 mb0">Basic Usage</h2>
+    <p class="h4">
+      Apply the <code>.table</code> class to an element, then add <code>.table-cell</code> to its children.
+      The default table collapses on mobile.
+    </p>
+
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="table">
+          <div class="table-cell">
+            <h1 class="mb0">.table-cell<br> This side is taller.</h1>
+          </div>
+          <div class="table-cell">.table-cell</div>
+        </div>
+      </div>
+      <div class="p2 border-top bg-light-gray">
+{% highlight html %}
+<div class="table">
+  <div class="table-cell">
+    <h1 class="mb0">.table-cell<br> This side is taller.</h1>
+  </div>
+  <div class="table-cell">.table-cell</div>
+</div>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <h2 class="h2 mb0">Widths</h2>
+    <p class="h4">To control width, use the table object in conjunction with grid width utilities.</p>
+
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="table">
+          <div class="table-cell col-4"> <h1 class="mb0">.table-cell</h1> </div>
+          <div class="table-cell col-8">.table-cell</div>
+        </div>
+      </div>
+      <div class="p2 border-top bg-light-gray">
+{% highlight html %}
+<div class="table">
+  <div class="table-cell col-4"> <h1 class="mb0">.table-cell</h1> </div>
+  <div class="table-cell col-8">.table-cell</div>
+</div>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <h2 class="h2 mb0">Evenly Spaced Cells</h2>
+    <p class="h4">Use the <code>.table-fixed</code> extension to keep cells equal width.</p>
+
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="table table-fixed">
+          <div class="table-cell"> <h1 class="mb0">.table-cell</h1> </div>
+          <div class="table-cell">.table-cell</div>
+          <div class="table-cell">.table-cell</div>
+        </div>
+      </div>
+      <div class="p2 border-top bg-light-gray">
+{% highlight html %}
+<div class="table table-fixed">
+  <div class="table-cell"> <h1 class="mb0">.table-cell</h1> </div>
+  <div class="table-cell">.table-cell</div>
+  <div class="table-cell">.table-cell</div>
+</div>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <h2 class="h2 mb0">Padding</h2>
+    <p class="h4">Add padding to any <code>.table-cell</code>.</p>
+
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="table">
+          <div class="table-cell p2"> <h1 class="mb0">.table-cell</h1> </div>
+          <div class="table-cell p4">.table-cell</div>
+        </div>
+      </div>
+      <div class="p2 border-top bg-light-gray">
+{% highlight html %}
+<div class="table">
+  <div class="table-cell p2"> <h1 class="mb0">.table-cell</h1> </div>
+  <div class="table-cell p4">.table-cell</div>
+</div>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <h2 class="h2 mb0">Mobile Table Object</h2>
+    <p class="h4">Use the <code>.mobile-table</code> and <code>.mobile-table-cell</code> classes for use at all breakpoints.</p>
+
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="mobile-table">
+          <div class="mobile-table-cell"> <h1 class="mb0">.mobile-table-cell</h1> </div>
+          <div class="mobile-table-cell">.mobile-table-cell</div>
+        </div>
+      </div>
+      <div class="p2 border-top bg-light-gray">
+{% highlight html %}
+<div class="mobile-table">
+  <div class="mobile-table-cell"> <h1 class="mb0">.mobile-table-cell</h1> </div>
+  <div class="mobile-table-cell">.mobile-table-cell</div>
+</div>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <h2 class="h2 mb0">Flag Object</h2>
+    <p class="h4">
+      Replicate the
+      <a href="http://csswizardry.com/2013/05/the-flag-object/" target="_blank">flag object</a>
+      by adding <code>.full-width</code> to one of the cells.
+    </p>
+
+    <div class="oh mb3 border rounded">
+      <div class="p2 blue outline-blue">
+        <div class="mobile-table">
+          <div class="mobile-table-cell p1"> <h1 class="mb0">Flag</h1> </div>
+          <div class="mobile-table-cell full-width">.mobile-table-cell</div>
+        </div>
+      </div>
+      <div class="p2 border-top bg-light-gray">
+{% highlight html %}
+<div class="mobile-table">
+  <div class="mobile-table-cell p1"> <h1 class="mb0">Flag</h1> </div>
+  <div class="mobile-table-cell full-width">.mobile-table-cell</div>
+</div>
+{% endhighlight %}
+      </div>
+    </div>
+
+
+  </div>
+</div>
