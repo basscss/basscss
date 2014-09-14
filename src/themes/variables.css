@@ -1,0 +1,20 @@
+
+:root {
+
+  --dark-gray: #304650;
+  --blue: #0be;
+  --mid-gray: #667680;
+  --light-gray: #f3f9f9;
+  --red: #f96010;
+  --green: #11e966;
+  --yellow: #ffdc00;
+
+  --darken-1: rgba(#000,.125);
+  --darken-2: rgba(#000,.25);
+  --darken-3: rgba(#000,.375);
+
+  --border-color: var(--darken-2);
+  --border-width: 1px;
+  --border-radius: 3px;
+
+}

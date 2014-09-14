@@ -7,50 +7,49 @@
 
 */
 
-@import "basscss-base";
-/*
-@import "basscss-utilities";
-*/
-@import "../utilities";
-@import "basscss-grid";
-@import "basscss-table-object";
+@import 'basscss-base';
+@import 'basscss-utilities';
+@import 'basscss-positions';
+@import 'basscss-grid';
+@import 'basscss-table-object';
 
-svg { max-height: 100% }
+/* Base */
+@import './base/button-extensions';
 
-.icon {
-  width: 1em;
-  height: 1em;
-  position: relative;
-  top: .125em;
-  fill: currentcolor;
-}
+/* @import './base/responsive-type';
+ */
 
-/* Basscss.com Variables */
-/* Set defaults in themes/variables */
-:root {
-  --font-family: 'Open Sans', sans-serif;
-  /* --heading-font-family: 'Avenir Next', 'Open Sans', sans-serif; */
-  --heading-font-weight: 600;
-  --dark-gray: #304650;
-  --blue: #0be;
-  --mid-gray: #667680;
-  --light-gray: #f3f9f9;
-}
 
-.avenir { font-family: 'Avenir Next', 'Open Sans', sans-serif }
 
-.h0 { font-size: 2.75em }
+/* Utilities */
 
-@media (--breakpoint-md) {
-  .h0 { font-size: 4.5em }
-}
 
-@media (--breakpoint-lg) {
-  .h0 { font-size: 5.5em }
-}
+/* Modules */
+@import './modules/icons';
+
+/* @import './modules/simple-grid';
+ * @import './modules/nav-item';
+ */
+
+
 
 /* Themes */
 
-@import "./themes/base";
-@import "./themes/colors";
+@import './themes/base';
+@import './themes/colors';
+@import './themes/borders';
+
+/* @import './themes/nav';
+ */
+
+
+/* Basscss.com site-specific styles
+ * -------------------------------- */
+
+@import './base/fonts';
+@import './base/type-h0';
+
+/* Basscss.com Variables */
+@import './base/variables';
+@import './themes/variables';
 

@@ -1,0 +1,34 @@
+
+.border {
+  border-style: solid;
+  border-width: var(--border-width);
+  border-color: var(--border-color);
+}
+
+.border-top {
+  border-top-style: solid;
+  border-top-width: var(--border-width);
+  border-top-color: var(--border-color);
+}
+
+.border-right {
+  border-right-style: solid;
+  border-right-width: var(--border-width);
+  border-right-color: var(--border-color);
+}
+
+.border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: var(--border-width);
+  border-bottom-color: var(--border-color);
+}
+
+.border-left {
+  border-left-style: solid;
+  border-left-width: var(--border-width);
+  border-left-color: var(--border-color);
+}
+
+.rounded { border-radius: var(--border-radius) }
+.circle  { border-radius: 50% }
+

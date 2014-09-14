@@ -144,6 +144,11 @@ h6,
   font-size: .75rem;
 }
 
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+}
+
 /* Forms */
 
 label {
@@ -180,6 +185,8 @@ select {
 
 
 textarea {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   margin-top: 0;
   margin-bottom: .5em;
 }
@@ -222,9 +229,30 @@ input[type=submit],
   text-decoration: none;
 }
 
-/*
-@import "basscss-utilities";
-*/
+.table-reset {
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.table-reset th {
+  text-align: left;
+}
+
+.table-reset th,
+.table-reset td {
+  padding: $ui-padding;
+  line-height: inherit;
+}
+
+.table-reset th {
+  vertical-align: bottom;
+}
+
+.table-reset td {
+  vertical-align: top;
+}
 
 /* BASSCSS Utilities */
 
@@ -570,6 +598,59 @@ input[type=submit],
   }
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.z1 {
+  z-index: 1;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.z3 {
+  z-index: 3;
+}
+
+.z4 {
+  z-index: 4;
+}
+
+.absolute-center {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: table;
+}
+
 /* Grid */
 
 .container {
@@ -881,9 +962,22 @@ input[type=submit],
   }
 }
 
-svg {
-  max-height: 100%;
+/* Base */
+
+.button-big {
+  padding: 0.375em 1.125em;
 }
+
+.button-small {
+  padding: 0.1875em 0.5625em;
+}
+
+/* @import './base/responsive-type';
+ */
+
+/* Utilities */
+
+/* Modules */
 
 .icon {
   width: 1em;
@@ -893,33 +987,9 @@ svg {
   fill: currentcolor;
 }
 
-/* Basscss.com Variables */
-
-/* Set defaults in themes/variables */
-
-:root {
-  /* --heading-font-family: 'Avenir Next', 'Open Sans', sans-serif; */
-}
-
-.avenir {
-  font-family: 'Avenir Next', 'Open Sans', sans-serif;
-}
-
-.h0 {
-  font-size: 2.75em;
-}
-
-@media (min-width: 52em) {
-  .h0 {
-    font-size: 4.5em;
-  }
-}
-
-@media (min-width: 64em) {
-  .h0 {
-    font-size: 5.5em;
-  }
-}
+/* @import './modules/simple-grid';
+ * @import './modules/nav-item';
+ */
 
 /* Themes */
 
@@ -928,6 +998,15 @@ svg {
 body {
   color: #304650;
   background-color: white;
+}
+
+a {
+  color: #0be;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .dark-gray {
@@ -950,6 +1029,18 @@ body {
   color: #f3f9f9;
 }
 
+.red {
+  color: #f96010;
+}
+
+.green {
+  color: #11e966;
+}
+
+.yellow {
+  color: #ffdc00;
+}
+
 .bg-dark-gray {
   background-color: #304650;
 }
@@ -969,3 +1060,84 @@ body {
 .bg-light-gray {
   background-color: #f3f9f9;
 }
+
+.bg-red {
+  background-color: #f96010;
+}
+
+.bg-green {
+  background-color: #11e966;
+}
+
+.bg-yellow {
+  background-color: #ffdc00;
+}
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, .25);
+}
+
+.border-top {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: rgba(0, 0, 0, .25);
+}
+
+.border-right {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: rgba(0, 0, 0, .25);
+}
+
+.border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 0, 0, .25);
+}
+
+.border-left {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: rgba(0, 0, 0, .25);
+}
+
+.rounded {
+  border-radius: 3px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+/* @import './themes/nav';
+ */
+
+/* Basscss.com site-specific styles
+ * -------------------------------- */
+
+.avenir {
+  font-family: 'Avenir Next', 'Open Sans', sans-serif;
+}
+
+.h0 {
+  font-size: 2.75em;
+}
+
+@media (min-width: 52em) {
+  .h0 {
+    font-size: 4.5em;
+  }
+}
+
+@media (min-width: 64em) {
+  .h0 {
+    font-size: 5.5em;
+  }
+}
+
+/* Basscss.com Variables */
+
+
+

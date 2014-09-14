@@ -38,6 +38,7 @@
     "basscss-base": "latest",
     "basscss-utilities": "latest",
     "basscss-grid": "latest",
-    "basscss-table-object": "latest"
+    "basscss-table-object": "latest",
+    "basscss-positions": "latest"
   }
 }
