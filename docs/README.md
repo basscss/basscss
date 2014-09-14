@@ -1,3 +1,5 @@
+<div data-include="docs/partials/_nav.html"></div>
+
 # Documentation
 For documentation with inline examples see:
 
@@ -380,3 +382,4 @@ For more on web design with BASSCSS, read the guide:
 
 http://basscss.com/docs/guide
 
+<div data-include="docs/partials/_footer.html"></div>

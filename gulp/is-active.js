@@ -1,5 +1,5 @@
 
-var fs = require('fs');
+var path = require('path');
 var cheerio = require('cheerio');
 var through = require('through2');
 
@@ -9,18 +9,19 @@ module.exports = function(options) {
 
   return through.obj(function(file, enc, callback) {
 
-    if (!file.isBuffer()) callback();
-
     var $ = cheerio.load(file.contents.toString());
-    var $includes = $('[data-include]');
+    var $navlinks = $('.gulp-is-active');
 
-    if (!$includes) callback();
+    if (!$navlinks) {
+      this.push(file);
+      callback();
+    }
 
-    $includes.each(function(i) {
-      var path = $(this).data('include');
-      if (!path) return;
-      var partial = fs.readFileSync(path, 'utf8');
-      $(this).replaceWith(partial);
+    $navlinks.each(function(i) {
+      $(this).removeClass('gulp-is-active');
+      if ($(this).attr('href') == '/' + path.dirname(file.relative)) {
+        $(this).addClass('is-active');
+      }
     });
 
     file.contents = new Buffer($.html());

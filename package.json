@@ -39,6 +39,8 @@
     "gulp": "^3.8.8",
     "browser-sync": "^1.3.7",
     "through2": "^0.6.1",
-    "cheerio": "^0.17.0"
+    "cheerio": "^0.17.0",
+    "pygmentize-bundled": "^2.1.1",
+    "marked": "^0.3.2"
   }
 }

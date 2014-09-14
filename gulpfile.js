@@ -12,21 +12,25 @@ var vars = require('rework-vars');
 var colors = require('rework-plugin-colors');
 var calc = require('rework-calc');
 
+// Custom gulp plugins
+var include = require('./gulp/include');
+var example = require('./gulp/include-example');
+var nav = require('./gulp/is-active');
+//var markdown = require('./gulp/markdown');
 
 gulp.task('default', ['rework']);
 
 gulp.task('dev', ['watch', 'serve']);
 
-gulp.task('watch', ['rework', 'include'], function() {
+gulp.task('watch', ['rework', 'render'], function() {
   gulp.watch(
-    ['./**/*.html', './src/**/*.css', './base/**/*', './utilities/**/*', './grid/**/*', '!./_site/**/*'],
-    ['rework', 'include', 'reload']
+    ['./docs/templates/**/*.html', 'docs/partials/**/*', './src/**/*.css', './base/**/*', './utilities/**/*', './grid/**/*', '!./_site/**/*'],
+    ['rework', 'render', 'reload']
   );
 });
 
 
 gulp.task('rework', function() {
-  console.log('rework');
   gulp.src('./src/basscss.css')
     .pipe(rework( rnpm(), media(), vars(), colors(), calc ))
     .pipe(autoprefixer())
@@ -36,16 +40,16 @@ gulp.task('rework', function() {
     .pipe(gulp.dest('.'));
 });
 
-// Custom file includes
-var include = require('./gulp/include');
-gulp.task('include', function() {
+gulp.task('render', function() {
   gulp.src('./docs/templates/**/*.html')
     .pipe(include())
+    .pipe(example())
+    .pipe(nav())
     .pipe(gulp.dest('./'));
 });
 
+
 gulp.task('reload', function() {
-  console.log('reload');
   browsersync.reload();
 });
 

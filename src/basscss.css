@@ -16,8 +16,6 @@
 /* Base */
 @import './base/button-extensions';
 
-@import './base/responsive-type';
-
 /* Utilities */
 
 /* Modules */
@@ -47,6 +45,7 @@
 
 @import './base/fonts';
 @import './base/type-h0';
+@import './base/responsive-type';
 @import './modules/icons';
 @import './themes/basscss-site';
 

@@ -992,31 +992,6 @@ input[type=submit],
   width: 100%;
 }
 
-.xs-center {
-  text-align: center;
-}
-
-@media (min-width: 40em) {
-  .xs-center {
-    text-align: inherit;
-  }
-}
-
-/*
-@media (--breakpoint-typography-sm) {
-  .sm-h1 { }
-  .sm-h2 { }
-  .sm-h3 { }
-  .sm-h4 { }
-}
-
-@media (--breakpoint-typography-md) {
-}
-
-@media (--breakpoint-typography-lg) {
-}
-*/
-
 /* Utilities */
 
 /* Modules */
@@ -1301,12 +1276,69 @@ code {
   }
 }
 
+.xs-center {
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .xs-center {
+    text-align: inherit;
+  }
+}
+
+@media (min-width: 40em) {
+
+
+
+
+
+
+
+}
+
+@media (min-width: 52em) {
+  .md-h1 {
+    font-size: 3rem;
+  }
+
+
+
+
+
+
+}
+
+@media (min-width: 64em) {
+  .lg-h1 {
+    font-size: 4rem;
+  }
+
+
+
+
+
+
+}
+
 .icon {
   width: 1em;
   height: 1em;
   position: relative;
   top: .125em;
   fill: currentcolor;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #304650;
+}
+
+.is-active {
+  color: #304650;
 }
 
 .dot {

@@ -1,4 +1,9 @@
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: var(--dark-gray);
+}
+
+.is-active { color: var(--dark-gray) }
 
 .dot {
   line-height: 1.5em;
