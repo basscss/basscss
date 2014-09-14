@@ -75,12 +75,12 @@ ol,
 ul {
   font-size: 1rem;
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 ol,
 ul {
-  padding-left: 1em;
+  padding-left: 1rem;
 }
 
 pre,
@@ -92,20 +92,20 @@ samp {
 
 pre {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   overflow-x: scroll;
 }
 
 hr {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 blockquote {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-left: 0;
-  padding-left: 2em;
+  padding-left: 2rem;
 }
 
 blockquote,
@@ -155,31 +155,31 @@ label {
   display: block;
 }
 
-input {
-  line-height: 1.75em;
+input:not([type=radio]):not([type=checkbox]) {
+  line-height: 2.25em;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
-  height: 2em;
-  padding: .25em .75em;
-  margin-top: 0;
-  margin-bottom: .5em;
+  height: 2.25em;
   -webkit-appearance: none;
 }
 
-input:not([type=submit]) {
+input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
   display: block;
   width: 100%;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  padding: .25rem 1rem;
 }
 
 select {
-  line-height: 1.75em;
+  line-height: calc(2.25em - .25rem);
   display: block;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   width: 100%;
-  height: 2em;
+  height: 2.25em;
   margin-top: 0;
-  margin-bottom: .5em;
+  margin-bottom: .5rem;
 }
 
 
@@ -188,7 +188,7 @@ textarea {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   margin-top: 0;
-  margin-bottom: .5em;
+  margin-bottom: .5rem;
 }
 
 
@@ -207,20 +207,21 @@ input[type=submit],
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
-  -webkit-appearance: none;
   display: inline-block;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
+  line-height: 2.25em;
+  margin: 0;
   /*
-  line-height: $ui-height - (2 * $ui-padding-y);
-  */
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: .5em;
-  padding: .25em .75em;
+  margin-bottom: var(--space-1);
+  padding: var(--ui-padding-y) var(--ui-padding-x);
+  */
+  padding: 0 1rem;
   height: auto;
   width: auto;
-  min-height: 2em;
+  min-height: 2.25em;
   border: 0;
   -webkit-appearance: none;
 }
@@ -286,6 +287,14 @@ input[type=submit],
 
 .fit {
   max-width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .left {
@@ -388,103 +397,103 @@ input[type=submit],
 }
 
 .m1 {
-  margin: .5em;
+  margin: .5rem;
 }
 
 .mt1 {
-  margin-top: .5em;
+  margin-top: .5rem;
 }
 
 .mr1 {
-  margin-right: .5em;
+  margin-right: .5rem;
 }
 
 .mb1 {
-  margin-bottom: .5em;
+  margin-bottom: .5rem;
 }
 
 .ml1 {
-  margin-left: .5em;
+  margin-left: .5rem;
 }
 
 .m2 {
-  margin: 1em;
+  margin: 1rem;
 }
 
 .mt2 {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .mr2 {
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 .mb2 {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .ml2 {
-  margin-left: 1em;
+  margin-left: 1rem;
 }
 
 .m3 {
-  margin: 2em;
+  margin: 2rem;
 }
 
 .mt3 {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 .mr3 {
-  margin-right: 2em;
+  margin-right: 2rem;
 }
 
 .mb3 {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .ml3 {
-  margin-left: 2em;
+  margin-left: 2rem;
 }
 
 .m4 {
-  margin: 4em;
+  margin: 4rem;
 }
 
 .mt4 {
-  margin-top: 4em;
+  margin-top: 4rem;
 }
 
 .mr4 {
-  margin-right: 4em;
+  margin-right: 4rem;
 }
 
 .mb4 {
-  margin-bottom: 4em;
+  margin-bottom: 4rem;
 }
 
 .ml4 {
-  margin-left: 4em;
+  margin-left: 4rem;
 }
 
 .mxn1 {
-  margin-left: -.5em;
-  margin-right: -.5em;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
 }
 
 .mxn2 {
-  margin-left: -1em;
-  margin-right: -1em;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 .mxn3 {
-  margin-left: -2em;
-  margin-right: -2em;
+  margin-left: -2rem;
+  margin-right: -2rem;
 }
 
 .mxn4 {
-  margin-left: -4em;
-  margin-right: -4em;
+  margin-left: -4rem;
+  margin-right: -4rem;
 }
 
 .mx-auto {
@@ -493,59 +502,59 @@ input[type=submit],
 }
 
 .p1 {
-  padding: .5em;
+  padding: .5rem;
 }
 
 .py1 {
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 
 .px1 {
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 .p2 {
-  padding: 1em;
+  padding: 1rem;
 }
 
 .py2 {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .px2 {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .p3 {
-  padding: 2em;
+  padding: 2rem;
 }
 
 .py3 {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px3 {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .p4 {
-  padding: 4em;
+  padding: 4rem;
 }
 
 .py4 {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .px4 {
-  padding-left: 4em;
-  padding-right: 4em;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 /* Mobile-first breakpoint show/hide */
@@ -965,27 +974,52 @@ input[type=submit],
 /* Base */
 
 .button-big {
-  padding: 0.375em 1.125em;
+  padding: 0.375rem 1.5rem;
 }
 
 .button-small {
-  padding: 0.1875em 0.5625em;
+  /*
+  padding: calc(.75 * var(--ui-padding-y)) calc(.75 * var(--ui-padding-x));
+  */
+  padding: 0 0.5rem;
+  height: 1.75em;
+  min-height: 1.75em;
+  line-height: 1.75em;
 }
 
-/* @import './base/responsive-type';
- */
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.xs-center {
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .xs-center {
+    text-align: inherit;
+  }
+}
+
+/*
+@media (--breakpoint-typography-sm) {
+  .sm-h1 { }
+  .sm-h2 { }
+  .sm-h3 { }
+  .sm-h4 { }
+}
+
+@media (--breakpoint-typography-md) {
+}
+
+@media (--breakpoint-typography-lg) {
+}
+*/
 
 /* Utilities */
 
 /* Modules */
-
-.icon {
-  width: 1em;
-  height: 1em;
-  position: relative;
-  top: .125em;
-  fill: currentcolor;
-}
 
 /* @import './modules/simple-grid';
  * @import './modules/nav-item';
@@ -1007,6 +1041,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+code {
+  background-color: rgba(0, 0, 0, .125);
+  border-radius: 3px;
 }
 
 .dark-gray {
@@ -1073,6 +1112,10 @@ a:hover {
   background-color: #ffdc00;
 }
 
+.icon {
+  fill: currentcolor;
+}
+
 .border {
   border-style: solid;
   border-width: 1px;
@@ -1111,7 +1154,128 @@ a:hover {
   border-radius: 50%;
 }
 
-/* @import './themes/nav';
+.input,
+.textarea,
+.select {
+  background-color: white;
+  -webkit-transition: box-shadow .2s ease;
+          transition: box-shadow .2s ease;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, .25);
+  border-radius: 3px;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  outline: none;
+  border-color: #0be;
+  box-shadow: 0 0 2px rgba(0, 187, 238, .5);
+}
+
+.radio,
+.checkbox {
+  -webkit-transition: box-shadow: .2s ease;
+          transition: box-shadow: .2s ease;
+}
+
+.radio {
+  border-radius: 50%;
+}
+
+.radio:focus,
+.checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 2px rgba(0, 187, 238, .5);
+}
+
+.table-light th,
+.table-light td {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 0, 0, .25);
+}
+
+.button-blue {
+  color: white;
+  background-color: #0be;
+  border-radius: 3px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-property: box-shadow , background-color;
+          transition-property: box-shadow , background-color;
+}
+
+.button-blue:hover {
+  /* darken blue */
+}
+
+.button-blue:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 187, 238, .5);
+}
+
+.button-blue-outline {
+  color: #0be;
+  background-color: transparent;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 2px #0be;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-property: box-shadow, color, background-color;
+          transition-property: box-shadow, color, background-color;
+}
+
+.button-blue-outline:hover {
+  color: white;
+  background-color: #0be;
+}
+
+.button-blue-outline:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #0be, 0 0 0 2px white, 0 0 1px 4px rgba(0, 187, 238, .5);
+}
+
+.button-gray {
+  color: white;
+  background-color: #667680;
+  border-radius: 3px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-property: box-shadow , background-color;
+          transition-property: box-shadow , background-color;
+}
+
+.button-gray:hover {
+  /* darken blue */
+}
+
+.button-gray:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 187, 238, .5);
+}
+
+/* Nav thematic extensions for base .button style
+ */
+
+
+
+
+
+
+
+/*
+ * - segments
+ * - tabs
+ * - pills
+ * - bordered
  */
 
 /* Basscss.com site-specific styles
@@ -1137,7 +1301,66 @@ a:hover {
   }
 }
 
+.icon {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: .125em;
+  fill: currentcolor;
+}
+
+.dot {
+  line-height: 1.5em;
+  text-align: center;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+}
+
+.dot-blue {
+  color: white;
+  background-color: #0be;
+}
+
+.border-blue {
+  border: 1px solid #0be;
+}
+
+.outline-blue * {
+  box-shadow: 0 0 0 1px rgba(0, 187, 238, .75);
+}
+
+.waves {
+  -webkit-animation: waves 1.6s linear infinite;
+          animation: waves 1.6s linear infinite;
+}
+
+@-webkit-keyframes waves {
+  from {
+    box-shadow: 0 0 0 0 #f3f9f9, 0 0 0 1px rgba(0, 187, 238, .5);
+  }
+
+  to {
+    box-shadow: 0 0 0 8px #f3f9f9, 0 0 0 16px rgba(0, 187, 238, 0);
+  }
+}
+
+@keyframes waves {
+  from {
+    box-shadow: 0 0 0 0 #f3f9f9, 0 0 0 1px rgba(0, 187, 238, .5);
+  }
+
+  to {
+    box-shadow: 0 0 0 8px #f3f9f9, 0 0 0 16px rgba(0, 187, 238, 0);
+  }
+}
+
 /* Basscss.com Variables */
 
 
 
+
+
+/* @import './themes/pygments';
+ */

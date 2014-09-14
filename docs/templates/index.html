@@ -1,27 +1,25 @@
 
 <div data-include="docs/partials/_head.html"></div>
 
-  <div class="px2 bg-dark-gray">
+  <div class="px2 theme-dark">
     <div class="container">
-      <nav class="bold">
-        <div data-include="docs/partials/_nav.html"></div>
-      </nav>
+      <div data-include="docs/partials/_nav.html"></div>
     </div>
   </div>
 
-  <header class="p2 blue bg-dark-gray">
-    <div class="container table">
-      <div class="table-cell py4">
-        <div class="h1 bold mb1 dot dot-blue waves">B</div>
-        <h1 class="avenir caps h0 mb0">Basscss</h1>
+  <header class="p2 blue bg-light-gray">
+    <div class="container md-table">
+      <div class="md-table-cell py4">
+        <div class="h0 bold dot dot-blue waves">B</div>
+        <h1 class="avenir caps h0 m0">Basscss</h1>
         <h2 class="avenir caps h4 mb0">Low-level CSS Toolkit</h2>
         <p class="avenir caps">v4.0.0 &middot; (~11KB)</p>
       </div>
-      <div class="center table-cell py2">
+      <div class="center md-table-cell py2">
         <span class="mr2 xmobile-hide">
-          <a class="button button-box-blue" href="//github.com/jxnblk/basscss">Github</a>
+          <a class="button button-blue-outline" href="//github.com/jxnblk/basscss">Github</a>
         </span>
-        <a class="button button-box-blue" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
+        <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
             <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
           </svg>
@@ -104,7 +102,7 @@
           </div>
           <div class="md-table-cell md-col-7 px2 blue">
             <div class="p2 border rounded">
-              <table class="table-reset table-small table-light">
+              <table class="table-reset table-light">
                 <thead class="bold">
                   <tr>
                     <th>Class</th>
@@ -115,7 +113,7 @@
                   <tr><td>.inline</td><td>display: inline</td></tr>
                   <tr><td>.block</td><td>display: block</td></tr>
                   <tr><td>.inline-block</td><td>display: inline-block</td></tr>
-                  <tr><td>.oh</td><td>overflow: hidden</td></tr>
+                  <tr><td>.overflow-hidden</td><td>overflow: hidden</td></tr>
                   <tr><td>.clearfix</td><td>Clears floated children</td></tr>
                   <tr><td>.left</td><td>float: left</td></tr>
                   <tr><td>.right</td><td>float: right</td></tr>
@@ -140,8 +138,8 @@
               <input type="text" class="input">
               <label>Password</label>
               <input type="password" class="input">
-              <label class="checkbox">
-                <input type="checkbox"> Remember Me
+              <label class="mb1">
+                <input type="checkbox" class="xcheckbox"> Remember Me
               </label>
               <input type="submit" class="button button-blue" value="Sign In">
             </form>
@@ -160,13 +158,13 @@
           <div class="md-table-cell md-col-7 px2 blue">
               <div class="center table">
                 <div class="table-cell p1">
-                  <a href="#!" class="button button-big button-blue">Button</a>
+                  <a href="#!" class="h3 button button-big button-blue">Button</a>
                 </div>
                 <div class="table-cell p1">
                   <a href="#!" class="button button-blue">Button</a>
                 </div>
                 <div class="table-cell p1">
-                  <a href="#!" class="button button-small button-blue">Button</a>
+                  <a href="#!" class="h5 button button-small button-blue">Button</a>
                 </div>
               </div>
           </div>
@@ -182,8 +180,8 @@
       </div>
       <div class="center clearfix mxn2 mb2 blue">
         <div class="left col-4 px2"><div class="p1 border-blue">.col-4</div></div>
-        <div class="left col-4"><div class="p1 border-blue">.col-4</div></div>
-        <div class="left col-4"><div class="p1 border-blue">.col-4</div></div>
+        <div class="left col-4 px2"><div class="p1 border-blue">.col-4</div></div>
+        <div class="left col-4 px2"><div class="p1 border-blue">.col-4</div></div>
       </div>
       <div class="center clearfix mxn2 mb2 sm-show blue">
         <div class="sm-left sm-col-3 px2"><div class="p1 border-blue">.col-3</div></div>
@@ -191,7 +189,7 @@
         <div class="sm-left sm-col-3 px2"><div class="p1 border-blue">.col-3</div></div>
         <div class="sm-left sm-col-3 px2"><div class="p1 border-blue">.col-3</div></div>
       </div>
-      <div class="center clearfix mx2 sm-show blue">
+      <div class="center clearfix mxn2 sm-show blue">
         <div class="sm-left sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
         <div class="sm-left sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
         <div class="sm-left sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
@@ -251,7 +249,7 @@
     <section id="theme" class="py3">
       <h1 class="h2 mb0">Themes</h1>
       <p class="h4">Create your own themes to quickly customize the look and feel</p>
-      <div class="sm-table table-fixed center oh white rounded">
+      <div class="sm-table table-fixed center overflow-hidden white rounded">
         <div class="sm-table-cell">
           <div class="table table-fixed">
             <div class="table-cell p2 bg-dark-gray">.dark-gray</div>
@@ -276,15 +274,15 @@
       
     <section class="py4">
       <div class="sm-table">
-        <div class="sm-table-cell col-6">
+        <div class="sm-table-cell sm-col-6">
           <h1 class="h2 mb0">Getting Started</h1>
           <p class="h4 mb2">Read the documentation or visit Github to get started.</p>
         </div>
-        <div class="sm-table-cell center col-6">
+        <div class="sm-table-cell center sm-col-6">
           <div class="inline-block p1">
-            <a href="/docs" class="button button-big button-box-blue">Read the docs</a>
+            <a href="/docs" class="button button-big button-blue-outline">Read the docs</a>
           </div>
-          <a href="//github.com/jxnblk/basscss" class="button button-big button-box-blue">View on Github</a>
+          <a href="//github.com/jxnblk/basscss" class="button button-big button-blue-outline">View on Github</a>
         </div>
       </div>
     </section>

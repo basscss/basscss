@@ -1,7 +1,7 @@
 /* Base Element Themes */
 
 body {
-  color: var(--dark-gray, #222);
+  color: var(--dark-gray);
   background-color: white;
 }
 
@@ -13,4 +13,9 @@ a {
   a:hover {
     text-decoration: underline;
   }
+
+code {
+  background-color: var(--darken-1);
+  border-radius: var(--border-radius);
+}
 

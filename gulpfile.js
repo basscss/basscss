@@ -18,7 +18,10 @@ gulp.task('default', ['rework']);
 gulp.task('dev', ['watch', 'serve']);
 
 gulp.task('watch', ['rework', 'include'], function() {
-  gulp.watch(['./**/*.html', './src/**/*.css', '!./_site/**/*'], ['rework', 'include', 'reload']);
+  gulp.watch(
+    ['./**/*.html', './src/**/*.css', './base/**/*', './utilities/**/*', './grid/**/*', '!./_site/**/*'],
+    ['rework', 'include', 'reload']
+  );
 });
 
 

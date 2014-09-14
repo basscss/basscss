@@ -1,0 +1,19 @@
+
+.button-gray {
+  color: white;
+  background-color: var(--mid-gray);
+  border-radius: var(--border-radius);
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition-property: box-shadow , background-color;
+}
+  
+  .button-gray:hover {
+    /* darken blue */
+  }
+
+  .button-gray:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(var(--blue), .5);
+  }
+

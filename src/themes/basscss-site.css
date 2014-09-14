@@ -1,0 +1,37 @@
+
+
+.dot {
+  line-height: 1.5em;
+  text-align: center;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+}
+
+.dot-blue {
+  color: white;
+  background-color: var(--blue);
+}
+
+.border-blue {
+  border: 1px solid var(--blue);
+}
+
+.outline-blue * {
+  box-shadow: 0 0 0 1px rgba(var(--blue), .75);
+}
+
+.waves {
+  animation: waves 1.6s linear infinite;
+}
+
+@keyframes waves {
+  from {
+    box-shadow: 0 0 0 0 var(--light-gray), 0 0 0 1px rgba(var(--blue), .5);
+  }
+  to {
+    box-shadow: 0 0 0 8px var(--light-gray), 0 0 0 16px rgba(var(--blue), 0);
+  }
+}
+
