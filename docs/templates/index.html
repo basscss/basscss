@@ -1,12 +1,10 @@
 
-<div data-include="docs/templates/_head.html"></div>
-
-<body>
+<div data-include="docs/partials/_head.html"></div>
 
   <div class="px2 bg-dark-gray">
     <div class="container">
       <nav class="bold">
-        <div data-include="docs/templates/_nav.html"></div>
+        <div data-include="docs/partials/_nav.html"></div>
       </nav>
     </div>
   </div>
@@ -17,7 +15,7 @@
         <div class="h1 bold mb1 dot dot-blue waves">B</div>
         <h1 class="avenir caps h0 mb0">Basscss</h1>
         <h2 class="avenir caps h4 mb0">Low-level CSS Toolkit</h2>
-        <p class="avenir caps">v3.0 &middot; 11KB</p>
+        <p class="avenir caps">v4.0.0 &middot; (~11KB)</p>
       </div>
       <div class="center table-cell py2">
         <span class="mr2 xmobile-hide">
@@ -41,30 +39,31 @@
     </section>
 
     <section id="features" class="py4">
-      <div class="row mb2">
-        <div class="col col-4">
+      <div class="clearfix mxn2">
+        <div class="sm-left sm-col-6 md-col-4 px2">
           <h2 class="mb0">Lightweight</h2>
           <p>11KB minified and designed for reusability</p>
         </div>
-        <div class="col col-4">
+        <div class="sm-left sm-col-6 md-col-4 px2">
           <h2 class="mb0">Performant</h2>
           <p>Selectors designed for speed</p>
         </div>
-        <div class="col col-4">
+        <div class="clearfix sm-show md-hide"></div>
+        <div class="sm-left sm-col-6 md-col-4 px2">
           <h2 class="mb0">Flexible</h2>
           <p>Utility styles to handle the bulk of the work</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col col-4">
+        <div class="clearfix md-show"></div>
+        <div class="sm-left sm-col-6 md-col-4 px2">
           <h2 class="mb0">Customizable</h2>
           <p>Sass variables and styles open for extension</p>
         </div>
-        <div class="col col-4">
+        <div class="clearfix sm-show md-hide"></div>
+        <div class="sm-left sm-col-6 md-col-4 px2">
           <h2 class="mb0">Code Faster</h2>
           <p>Spend less time writing CSS</p>
         </div>
-        <div class="col col-4">
+        <div class="sm-left sm-col-6 md-col-4 px2">
           <h2 class="mb0">Mathematical</h2>
           <p>Based on a consistent scale for type and layout</p>
         </div>
@@ -72,13 +71,13 @@
     </section>
 
     <section id="type" class="py3">
-      <div class="row">
-        <div class="table">
-          <div class="table-cell col-5 col-px">
+      <div class="clearfix mxn2">
+        <div class="md-table">
+          <div class="md-table-cell md-col-5 px2">
             <h1 class="h2 mb0">Responsive Type Scale</h1>
             <p class="h4">With type utilities to make fine grain adjustments</p>
           </div>
-          <div class="table-cell col-7 col-px blue">
+          <div class="md-table-cell md-col-7 px2 blue">
             <div class="p2 border rounded">
               <h1 class="h1 mb0">Hamburger 1</h1>
               <h2 class="h2 mb1">Hamburger 2</h2>
@@ -97,13 +96,13 @@
     </section>
 
     <section id="layout" class="py3">
-      <div class="row">
-        <div class="table">
-          <div class="table-cell col-5 col-px">
+      <div class="clearfix mxn2">
+        <div class="md-table">
+          <div class="md-table-cell md-col-5 px2">
             <h1 class="h2 mb0">Layout Utilities</h1>
             <p class="h4">With a suite of basic styles and a white space scale</p>
           </div>
-          <div class="table-cell col-7 col-px blue">
+          <div class="md-table-cell md-col-7 px2 blue">
             <div class="p2 border rounded">
               <table class="table-reset table-small table-light">
                 <thead class="bold">
@@ -129,13 +128,13 @@
     </section>
 
     <section id="forms" class="py3">
-      <div class="row">
-        <div class="table">
-          <div class="table-cell col-5 col-px">
+      <div class="clearfix mxn2">
+        <div class="md-table">
+          <div class="md-table-cell md-col-5 px2">
             <h1 class="h2 mb0">Forms</h1>
             <p class="h4">With styles that work with basic layout utilities</p>
           </div>
-          <div class="table-cell col-7 col-px ">
+          <div class="md-table-cell md-col-7 px2 ">
             <form class="p2 form form-stacked form-light border rounded">
               <label>Username</label>
               <input type="text" class="input">
@@ -152,13 +151,13 @@
     </section>
 
     <section id="buttons" class="py3">
-      <div class="row">
-        <div class="table">
-          <div class="table-cell col-5 col-px">
+      <div class="clearfix mxn2">
+        <div class="md-table">
+          <div class="md-table-cell md-col-5 px2">
             <h1 class="h2 mb0">Buttons</h1>
             <p class="h4">Sized to match forms and other elements</p>
           </div>
-          <div class="table-cell col-7 col-px blue">
+          <div class="md-table-cell md-col-7 px2 blue">
               <div class="center table">
                 <div class="table-cell p1">
                   <a href="#!" class="button button-big button-blue">Button</a>
@@ -177,35 +176,36 @@
 
     <section id="grid" class="py3">
       <h1 class="h2">Responsive Grid System</h1>
-      <div class="center row mb2 blue">
-        <div class="mobile-col mobile-col-6"><div class="p1 border-blue">.col-6</div></div>
-        <div class="mobile-col mobile-col-6"><div class="p1 border-blue">.col-6</div></div>
+      <div class="center clearfix mxn2 mb2 blue">
+        <div class="left col-6 px2"><div class="p1 border-blue">.col-6</div></div>
+        <div class="left col-6 px2"><div class="p1 border-blue">.col-6</div></div>
       </div>
-      <div class="center row mb2 blue">
-        <div class="mobile-col mobile-col-4"><div class="p1 border-blue">.col-4</div></div>
-        <div class="mobile-col mobile-col-4"><div class="p1 border-blue">.col-4</div></div>
-        <div class="mobile-col mobile-col-4"><div class="p1 border-blue">.col-4</div></div>
+      <div class="center clearfix mxn2 mb2 blue">
+        <div class="left col-4 px2"><div class="p1 border-blue">.col-4</div></div>
+        <div class="left col-4"><div class="p1 border-blue">.col-4</div></div>
+        <div class="left col-4"><div class="p1 border-blue">.col-4</div></div>
       </div>
-      <div class="center row mb2 mobile-hide blue">
-        <div class="col col-3"><div class="p1 border-blue">.col-3</div></div>
-        <div class="col col-3"><div class="p1 border-blue">.col-3</div></div>
-        <div class="col col-3"><div class="p1 border-blue">.col-3</div></div>
-        <div class="col col-3"><div class="p1 border-blue">.col-3</div></div>
+      <div class="center clearfix mxn2 mb2 sm-show blue">
+        <div class="sm-left sm-col-3 px2"><div class="p1 border-blue">.col-3</div></div>
+        <div class="sm-left sm-col-3 px2"><div class="p1 border-blue">.col-3</div></div>
+        <div class="sm-left sm-col-3 px2"><div class="p1 border-blue">.col-3</div></div>
+        <div class="sm-left sm-col-3 px2"><div class="p1 border-blue">.col-3</div></div>
       </div>
-      <div class="center row mobile-hide blue">
-        <div class="col col-2"><div class="p1 border-blue">.col-2</div></div>
-        <div class="col col-2"><div class="p1 border-blue">.col-2</div></div>
-        <div class="col col-2"><div class="p1 border-blue">.col-2</div></div>
-        <div class="col col-2"><div class="p1 border-blue">.col-2</div></div>
-        <div class="col col-2"><div class="p1 border-blue">.col-2</div></div>
-        <div class="col col-2"><div class="p1 border-blue">.col-2</div></div>
+      <div class="center clearfix mx2 sm-show blue">
+        <div class="sm-left sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
+        <div class="sm-left sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
+        <div class="sm-left sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
+        <div class="sm-left sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
+        <div class="sm-left sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
+        <div class="sm-left sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
       </div>
     </section>
 
     <!-- layout components - media object etc. -->
 
     <section id="nav" class="py3">
-      <h1 class="h2">Navigation</h1>
+      <h1 class="h2">Navigation - TK</h1>
+      <!--
       <div class="row">
         <div class="table">
           <div class="table-cell col-4 col-px py2">
@@ -245,41 +245,42 @@
           </div>
         </div>
       </div>
+      -->
     </section>
 
     <section id="theme" class="py3">
       <h1 class="h2 mb0">Themes</h1>
       <p class="h4">Create your own themes to quickly customize the look and feel</p>
-      <div class="table table-fixed center oh white rounded">
-        <div class="table-cell">
-          <div class="mobile-table table-fixed">
-            <div class="mobile-table-cell p2 bg-dark-gray">.dark-gray</div>
-            <div class="mobile-table-cell p2 bg-mid-gray">.mid-gray</div>
+      <div class="sm-table table-fixed center oh white rounded">
+        <div class="sm-table-cell">
+          <div class="table table-fixed">
+            <div class="table-cell p2 bg-dark-gray">.dark-gray</div>
+            <div class="table-cell p2 bg-mid-gray">.mid-gray</div>
           </div>
         </div>
-        <div class="table-cell">
-          <div class="mobile-table table-fixed">
-            <div class="mobile-table-cell p2 dark-gray bg-light-gray">.light-gray</div>
-            <div class="mobile-table-cell p2 bg-blue">.blue</div>
+        <div class="sm-table-cell">
+          <div class="table table-fixed">
+            <div class="table-cell p2 dark-gray bg-light-gray">.light-gray</div>
+            <div class="table-cell p2 bg-blue">.blue</div>
           </div>
         </div>
-        <div class="table-cell">
-          <div class="mobile-table table-fixed">
-            <div class="mobile-table-cell p2 bg-green">.green</div>
-            <div class="mobile-table-cell p2 bg-yellow">.yellow</div>
-            <div class="mobile-table-cell p2 bg-red">.red</div>
+        <div class="sm-table-cell">
+          <div class="table table-fixed">
+            <div class="table-cell p2 bg-green">.green</div>
+            <div class="table-cell p2 bg-yellow">.yellow</div>
+            <div class="table-cell p2 bg-red">.red</div>
           </div>
         </div>
       </div>
     </section>
       
     <section class="py4">
-      <div class="table">
-        <div class="table-cell col-6">
+      <div class="sm-table">
+        <div class="sm-table-cell col-6">
           <h1 class="h2 mb0">Getting Started</h1>
           <p class="h4 mb2">Read the documentation or visit Github to get started.</p>
         </div>
-        <div class="table-cell center col-6">
+        <div class="sm-table-cell center col-6">
           <div class="inline-block p1">
             <a href="/docs" class="button button-big button-box-blue">Read the docs</a>
           </div>
@@ -290,5 +291,5 @@
 
   </main>
 
-<div data-include="docs/templates/_footer.html"></div>
+<div data-include="docs/partials/_footer.html"></div>
 

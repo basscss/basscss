@@ -1,131 +1,65 @@
----
-title: Docs
----
-
-{% include head.html %}
-
+<div data-include="docs/partials/_head.html"><!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BASSCSS</title>
+  <meta name="author" content="Jxnblk">
+  <meta name="description" content="Simple, responsive CSS/SASS toolkit based on OOCSS principles">
+  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/basscss.css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400|Open+Sans:400,400italic,600" rel="stylesheet">
+  <link rel="icon" href="/docs/favicon.png">
+</head>
 <body>
+</body></html></div>
 
-<div class="px2 bg-dark-gray">
-  <div class="container">
-    <nav class="nav mobile-nav-table nav-big nav-flush bold nav-bass-dark">
-      {% include nav.html %}
-    </nav>
-  </div>
+<div class="container">
+  <div data-include="docs/partials/_nav.html"><a href="/" class="is-active">Home</a>
+<a href="/docs" class="is-active">Docs</a>
+<a href="/docs/guide" class="is-active">Guide</a>
+<a href="//github.com/jxnblk/basscss" class="">Github</a>
+</div>
 </div>
 
-<header class="p2 blue bg-dark-gray">
-  <div class="container">
-    <h1 class="avenir h1 caps mb0">Docs</h1>
-    <h2 class="avenir h4 caps ">How to Use BASSCSS</h2>
-  </div>
-</header>
-
-<div class="container px2">
-
-  <div class="row">
-    <div class="col-right col-3 col-offset-1 mobile-hide">
-      <div class="bold py4 nav nav-small nav-flush">
-        <a href="#getting-started">Getting Started</a>
-        <a href="#typography">Typography</a>
-        <a href="#layout">Layout</a>
-        <a href="#grid">Grid</a>
-        <a href="#table-object">Table Object</a>
-        <a href="#forms">Forms</a>
-        <a href="#buttons">Buttons</a>
-        <a href="#tables">Tables</a>
-        <a href="#nav">Nav</a>
-        <a href="#components">Components</a>
-        <a href="#theme">Theme</a>
-      </div>
-      <!-- - [Responsive Utilities](#responsive-utilities) - [Table Object](#table-object) - [Lists](#lists) -->
-    </div>
-    <div class="col col-8">
-      <section id="getting-started" class="py3">
-        <h1 class="h1">Getting Started</h1>
-        <div class="p2 mb3 border rounded">
-          <p class="mb2">
-            <a href="https://github.com/jxnblk/basscss/archive/v3.zip" class="bold">Download Source</a>
-            or clone from Github:
-          </p>
-          <div class="p1 bg-light-gray">
-            <pre>git clone https://github.com/jxnblk/basscss.git</pre>
-          </div>
-        </div>
-        <h2 class="h2 mb0">Vanilla CSS</h2>
-        <p class="h4">
-          Include <code>basscss.min.css</code> out-of-the-box or use the unminified <code>basscss.css</code> and edit it how you see fit.
-          For lighter-weight projects use <code>basscss-lite.min.css</code>,  which only includes base type and layout styles.
-          Manually adjust the font stack and theme styles to customize the look and feel.
-        </p>
-        <h2 class="h2 mb0">Sass</h2>
-        <p class="h4">Include the files found in the <code>/scss</code> folder and adjust the variables and styles.</p>
-      </section>
-    </div>
-  </div>
-
-  <section id="typography" class="py3">
-    {% include docs/type.html %}
-  </section>
-
-  <section id="layout" class="py3">
-    {% include docs/layout.html %}
-  </section>
-
-  <!-- positions -->
-
-  <section id="grid" class="py3">
-    {% include docs/grid.html %}
-  </section>
-  
-  <section id="table-object" class="py3">
-    {% include docs/table-object.html %}
-  </section>
-
-  <section id="forms" class="py3">
-    {% include docs/forms.html %}
-  </section>
-
-  <section id="buttons" class="py3">
-    {% include docs/buttons.html %}
-  </section>
-
-  <section id="tables" class="py3">
-    {% include docs/tables.html %}
-  </section>
-
-  <section id="nav" class="py3">
-    {% include docs/nav.html %}
-  </section>
-
-  <section id="components" class="py3">
-    {% include docs/components.html %}
-  </section>
-
-  <section id="theme" class="py3">
-    {% include docs/theme.html %}
-  </section>
-
-  <section id="extending" class="py3">
-    {% include docs/extending.html %}
-  </section>
-
-  <section id="guide" class="py3">
-    <div class="row">
-      <div class="col col-8">
-        <div class="p2 border rounded">
-          <h1 class="h2 mb0">Guide</h1>
-          <p class="h4">To learn more about web design with BASSCSS, read the guide.</p>
-          <a href="/docs/guide" class="button button-big button-box-blue">Read the Guide</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="container">
+  <h1>Docs</h1>
 
 </div>
 
-{% include footer.html %}
+<div data-include="docs/partials/_footer.html"><footer class="container px2 py4 clearfix">
+  <div class="left mobile-block xmobile-center">
+    <div class="table">
+      <div class="table-cell mobile-center">
+        <a class="button button-box-blue" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+            <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4">
+          </svg>
+          Tweet
+        </a>
+      </div>
+      <div class="table-cell">
+        <div class="h5 bold nav mobile-nav-table wrap py2 nav-bass">
+          <a href="/" class="is-active">Home</a>
+          <a href="/docs" class="is-active">Docs</a>
+          <a href="/docs/guide" class="is-active">Guide</a>
+          <a href="//github.com/jxnblk/basscss" class="">Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right right-align mobile-block mobile-center">
+    <p class="h5 lh-ui mb0 py2 mid-gray">
+      <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+        <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 ">
+      </svg>
+      Made with love by
+      <a href="//jxnblk.com">Jxnblk</a>
+    </p>
+  </div>
+</footer>
 
-</body>
-</html>
+
+
+</div>
 

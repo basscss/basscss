@@ -62,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Avenir Next', 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
@@ -221,6 +221,10 @@ input[type=submit],
 .button:hover {
   text-decoration: none;
 }
+
+/*
+@import "basscss-utilities";
+*/
 
 /* BASSCSS Utilities */
 
@@ -516,6 +520,56 @@ input[type=submit],
   padding-right: 4em;
 }
 
+/* Mobile-first breakpoint show/hide */
+
+/* Potentially more confusing than scoped utilities */
+
+.sm-show,
+.md-show,
+.lg-show {
+  display: none !important;
+}
+
+@media (min-width: 40em) {
+  .sm-show {
+    display: block !important;
+  }
+}
+
+@media (min-width: 52em) {
+  .md-show {
+    display: block !important;
+  }
+}
+
+@media (min-width: 64em) {
+  .lg-show {
+    display: block !important;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+@media (min-width: 40em) {
+  .sm-hide {
+    display: none !important;
+  }
+}
+
+@media (min-width: 52em) {
+  .md-hide {
+    display: none !important;
+  }
+}
+
+@media (min-width: 64em) {
+  .lg-hide {
+    display: none !important;
+  }
+}
+
 /* Grid */
 
 .container {
@@ -792,12 +846,12 @@ input[type=submit],
 }
 
 @media (min-width: 40em) {
-  .md-table {
+  .sm-table {
     display: table;
     width: 100%;
   }
 
-  .md-table-cell {
+  .sm-table-cell {
     display: table-cell;
     vertical-align: middle;
   }
@@ -843,7 +897,29 @@ svg {
 
 /* Set defaults in themes/variables */
 
+:root {
+  /* --heading-font-family: 'Avenir Next', 'Open Sans', sans-serif; */
+}
 
+.avenir {
+  font-family: 'Avenir Next', 'Open Sans', sans-serif;
+}
+
+.h0 {
+  font-size: 2.75em;
+}
+
+@media (min-width: 52em) {
+  .h0 {
+    font-size: 4.5em;
+  }
+}
+
+@media (min-width: 64em) {
+  .h0 {
+    font-size: 5.5em;
+  }
+}
 
 /* Themes */
 
