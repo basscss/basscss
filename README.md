@@ -1,6 +1,6 @@
 # BASSCSS
 
-Simple, responsive CSS toolkit based on OOCSS principles
+Low-level CSS toolkit
 
 http://basscss.com
 
