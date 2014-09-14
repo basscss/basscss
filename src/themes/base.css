@@ -1,0 +1,6 @@
+/* Base Element Themes */
+
+body {
+  color: var(--dark-gray, #222);
+  background-color: white;
+}
