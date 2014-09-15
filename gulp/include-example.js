@@ -2,7 +2,7 @@
 var fs = require('fs');
 var cheerio = require('cheerio');
 var through = require('through2');
-var pygments = require('pygmentize-bundled');
+var pygmentize = require('pygmentize-bundled');
 
 module.exports = function(options) {
 

@@ -1010,7 +1010,7 @@ body {
 }
 
 a {
-  color: #0be;
+  color: #009cef;
   text-decoration: none;
 }
 
@@ -1039,7 +1039,7 @@ hr {
 }
 
 .blue {
-  color: #0be;
+  color: #009cef;
 }
 
 .mid-gray {
@@ -1071,7 +1071,7 @@ hr {
 }
 
 .bg-blue {
-  background-color: #0be;
+  background-color: #009cef;
 }
 
 .bg-mid-gray {
@@ -1152,8 +1152,8 @@ hr {
 .textarea:focus,
 .select:focus {
   outline: none;
-  border-color: #0be;
-  box-shadow: 0 0 2px rgba(0, 187, 238, .5);
+  border-color: #009cef;
+  box-shadow: 0 0 2px rgba(0, 156, 239, .5);
 }
 
 .radio,
@@ -1169,7 +1169,7 @@ hr {
 .radio:focus,
 .checkbox:focus {
   outline: none;
-  box-shadow: 0 0 2px rgba(0, 187, 238, .5);
+  box-shadow: 0 0 2px rgba(0, 156, 239, .5);
 }
 
 .table-light th,
@@ -1181,7 +1181,7 @@ hr {
 
 .button-blue {
   color: white;
-  background-color: #0be;
+  background-color: #009cef;
   border-radius: 3px;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
@@ -1197,14 +1197,14 @@ hr {
 
 .button-blue:focus {
   outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 187, 238, .5);
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 156, 239, .5);
 }
 
 .button-blue-outline {
-  color: #0be;
+  color: #009cef;
   background-color: transparent;
   border-radius: 3px;
-  box-shadow: inset 0 0 0 2px #0be;
+  box-shadow: inset 0 0 0 2px #009cef;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
   -webkit-transition-timing-function: ease;
@@ -1215,12 +1215,12 @@ hr {
 
 .button-blue-outline:hover {
   color: white;
-  background-color: #0be;
+  background-color: #009cef;
 }
 
 .button-blue-outline:focus {
   outline: none;
-  box-shadow: inset 0 0 0 2px #0be, 0 0 0 2px white, 0 0 1px 4px rgba(0, 187, 238, .5);
+  box-shadow: inset 0 0 0 2px #009cef, 0 0 0 2px white, 0 0 1px 4px rgba(0, 156, 239, .5);
 }
 
 .button-gray {
@@ -1241,7 +1241,7 @@ hr {
 
 .button-gray:focus {
   outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 187, 238, .5);
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 156, 239, .5);
 }
 
 /* Nav thematic extensions for base .button style
@@ -1359,15 +1359,15 @@ h6 a {
 
 .dot-blue {
   color: white;
-  background-color: #0be;
+  background-color: #009cef;
 }
 
 .border-blue {
-  border: 1px solid #0be;
+  border: 1px solid #009cef;
 }
 
 .outline-blue * {
-  box-shadow: 0 0 0 1px rgba(0, 187, 238, .75);
+  box-shadow: 0 0 0 1px rgba(0, 156, 239, .75);
 }
 
 .waves {
@@ -1377,21 +1377,21 @@ h6 a {
 
 @-webkit-keyframes waves {
   from {
-    box-shadow: 0 0 0 0 #f3f9f9, 0 0 0 1px rgba(0, 187, 238, .5);
+    box-shadow: 0 0 0 0 #f3f9f9, 0 0 0 1px rgba(0, 156, 239, .5);
   }
 
   to {
-    box-shadow: 0 0 0 8px #f3f9f9, 0 0 0 16px rgba(0, 187, 238, 0);
+    box-shadow: 0 0 0 8px #f3f9f9, 0 0 0 16px rgba(0, 156, 239, 0);
   }
 }
 
 @keyframes waves {
   from {
-    box-shadow: 0 0 0 0 #f3f9f9, 0 0 0 1px rgba(0, 187, 238, .5);
+    box-shadow: 0 0 0 0 #f3f9f9, 0 0 0 1px rgba(0, 156, 239, .5);
   }
 
   to {
-    box-shadow: 0 0 0 8px #f3f9f9, 0 0 0 16px rgba(0, 187, 238, 0);
+    box-shadow: 0 0 0 8px #f3f9f9, 0 0 0 16px rgba(0, 156, 239, 0);
   }
 }
 
