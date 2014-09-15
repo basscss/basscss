@@ -16,6 +16,7 @@ var calc = require('rework-calc');
 var include = require('./gulp/include');
 var example = require('./gulp/include-example');
 var nav = require('./gulp/is-active');
+var pygmentize = require('./gulp/pygmentize');
 //var markdown = require('./gulp/markdown');
 
 gulp.task('default', ['rework']);
@@ -40,10 +41,12 @@ gulp.task('rework', function() {
     .pipe(gulp.dest('.'));
 });
 
+
 gulp.task('render', function() {
   gulp.src('./docs/templates/**/*.html')
     .pipe(include())
     .pipe(example())
+    .pipe(pygmentize())
     .pipe(nav())
     .pipe(gulp.dest('./'));
 });

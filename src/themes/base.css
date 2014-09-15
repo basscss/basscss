@@ -19,3 +19,10 @@ code {
   border-radius: var(--border-radius);
 }
 
+hr {
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: var(--border-width);
+  border-bottom-color: var(--border-color);
+}
+

@@ -1023,6 +1023,13 @@ code {
   border-radius: 3px;
 }
 
+hr {
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 0, 0, .25);
+}
+
 .dark-gray {
   color: #304650;
 }

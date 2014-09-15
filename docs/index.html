@@ -14,9 +14,9 @@
 
 <body class="container px2">
 
-<header class="py3">
-  <a href="/" class="avenir h3 caps medium">Basscss</a>
-  <h1 class="avenir md-h1 lg-h1 caps m0">Docs</h1>
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h3 caps medium"><a href="/" class="">Basscss</a> / Docs</div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">Reference</h1>
   <div class="mxn2">
   <a href="/docs" class="button is-active">Reference</a>
   <a href="/docs/principles" class="button">Design Principles</a>
@@ -26,13 +26,126 @@
 </header>
 
 <div class="clearfix mxn2">
-  <div class="sm-left sm-col-9 px2">
-    <h1 class="mt0">Getting Started</h1>
-  </div>
-  <div class="sm-left sm-col-3 px2">
+
+  <div class="sm-right sm-col-3 px2 xs-hide sm-show">
     <a href="#getting-started" class="button button-block">Getting Started</a>
-    <a href="#getting-started" class="button button-block">Typography</a>
+    <a href="#base" class="mt2 button button-block">Base</a>
+    <a href="#typography" class="h5 button button-block">Typography</a>
+    <a href="#forms" class="h5 button button-block">Forms</a>
+    <a href="#buttons" class="h5 button button-block">Buttons</a>
+    <a href="#tables" class="h5 button button-block">Tables</a>
+    <a href="#utilities" class="mt2 button button-block">Utilities</a>
+    <a href="#layout" class="h5 button button-block">Layout</a>
+    <a href="#responsive-states" class="h5 button button-block">Responsive States</a>
+    <a href="#modules" class="mt2 button button-block">Modules</a>
+    <a href="#grid" class="h5 button button-block">Grid</a>
+    <a href="#table-object" class="h5 button button-block">Table Object</a>
+    <a href="#themes" class="mt2 button button-block">Themes</a>
+    <a href="#nav" class="h5 button button-block mid-gray">Nav</a>
+    <a href="#components" class="mt2 button button-block mid-gray">Components</a>
   </div>
+
+  <div class="sm-left sm-col-9 px2">
+
+    <section id="getting-started" class="mb2">
+      <h1 class="md-h1 mt0">Getting Started</h1>
+      <div class="p2 mb3 border rounded">
+        <p class="h3">Get Basscss from one of these sources:</p>
+        <a href="https://github.com/jxnblk/basscss/archive/v3.zip" class="button button-blue">Download Source</a>
+        <h2 class="h4 mb1">Clone from Github:</h2>
+        <div class="p1 mb1 bg-light-gray">
+          <pre class="m0">git clone https://github.com/jxnblk/basscss.git</pre>
+        </div>
+        <h2 class="h4 mb1">CDN link:</h2>
+        <div class="p1 bg-light-gray">
+          <pre class="m0">https://TK</pre>
+        </div>
+      </div>
+      <h2>Vanilla CSS</h2>
+      <p>
+        Include <code>basscss.min.css</code> out-of-the-box or use the unminified <code>basscss.css</code> and edit it how you see fit.
+        For lighter-weight projects use <code>basscss-lite.min.css</code>,  which only includes base type and layout styles.
+        Manually adjust the font stack and theme styles to customize the look and feel.
+      </p>
+      <h2>Rework</h2>
+      <p>Basscss is built with Rework with these dependencies:</p>
+      <ul>
+      </ul>
+      <h2 class="mid-gray">Sass</h2>
+      <p class="mid-gray">Import the files found in the <code>TK</code> folder as partials.</p>
+    </section>
+
+    <hr>
+
+    <section id="base">
+      <h1 class="md-h1">Base</h1>
+      <section id="typography" class="py2">
+        <h1>Typography</h1>
+
+      </section>
+      <section id="forms" class="py2">
+        <h1>Forms</h1>
+
+      </section>
+      <section id="buttons" class="py2">
+        <h1>Buttons</h1>
+
+      </section>
+      <section id="tables" class="py2">
+        <h1>Tables</h1>
+
+      </section>
+    </section>
+
+    <hr>
+
+    <section id="utilities">
+      <h1 class="md-h1">Utilities</h1>
+      <section id="layout" class="py2">
+        <h1>Layout</h1>
+
+      </section>
+      <section id="floats" class="py2">
+        <h1>Floats</h1>
+
+      </section>
+      <section id="margins" class="py2">
+        <h1>Margins</h1>
+
+      </section>
+      <section id="padding" class="py2">
+        <h1>Padding</h1>
+
+      </section>
+      <section id="responsive-states" class="py2">
+        <h1>Responsive States</h1>
+
+      </section>
+    </section>
+
+    <hr>
+
+    <section id="modules">
+      <h1 class="md-h1">Modules</h1>
+      <section id="grid" class="py2">
+        <h1>Grid</h1>
+
+      </section>
+      <section id="table-object" class="py2">
+        <h1>Table Object</h1>
+
+      </section>
+    </section>
+
+    <hr>
+
+    <section id="themes">
+      <h1 class="md-h1">Themes</h1>
+    </section>
+
+
+  </div>
+
 </div>
 
 <footer class="py4">
@@ -49,6 +162,7 @@
       <div class="h5 bold px2">
         <a href="/" class="button button-small">Home</a>
         <a href="/docs" class="button button-small is-active">Docs</a>
+        <a href="/docs/principles" class="button button-small">Design Principles</a>
         <a href="/docs/guide" class="button button-small">Guide</a>
         <a href="//github.com/jxnblk/basscss" class="button button-small">Github</a>
       </div>
