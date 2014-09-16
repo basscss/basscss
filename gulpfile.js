@@ -25,7 +25,7 @@ gulp.task('dev', ['watch', 'serve']);
 
 gulp.task('watch', ['rework', 'render'], function() {
   gulp.watch(
-    ['./docs/templates/**/*.html', 'docs/partials/**/*', './src/**/*.css', './base/**/*', './utilities/**/*', './grid/**/*', '!./_site/**/*'],
+    ['./docs/templates/**/*.html', 'docs/partials/**/*', 'docs/examples/**/*', './src/**/*.css', './base/**/*', './utilities/**/*', './grid/**/*', '!./_site/**/*'],
     ['rework', 'render', 'reload']
   );
 });

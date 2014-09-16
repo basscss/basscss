@@ -41,6 +41,7 @@
     "through2": "^0.6.1",
     "cheerio": "^0.17.0",
     "pygmentize-bundled": "^2.1.1",
-    "marked": "^0.3.2"
+    "marked": "^0.3.2",
+    "fitter-happier-text": "0.0.2"
   }
 }
