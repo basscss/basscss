@@ -19,6 +19,7 @@ var nav = require('./gulp/is-active');
 var pygmentize = require('./gulp/pygmentize');
 //var markdown = require('./gulp/markdown');
 
+
 gulp.task('default', ['rework', 'site-rework']);
 
 gulp.task('dev', ['watch', 'serve']);
@@ -28,6 +29,14 @@ gulp.task('watch', ['rework', 'site-rework', 'render'], function() {
     ['./docs/templates/**/*.html', 'docs/partials/**/*', 'docs/examples/**/*', './docs/css/src/**/*', './src/**/*.css', './basscss-base/**/*', './basscss-utilities/**/*', './basscss-grid/**/*'],
     ['rework', 'site-rework', 'render', 'reload']
   );
+});
+
+gulp.task('reload', function() {
+  browsersync.reload();
+});
+
+gulp.task('serve', function() {
+  browsersync({ server: { baseDir: './' }, open: false });
 });
 
 
@@ -41,6 +50,8 @@ gulp.task('rework', function() {
     .pipe(gulp.dest('.'));
 });
 
+
+// Docs
 gulp.task('site-rework', function() {
   gulp.src('./docs/css/src/index.css')
     .pipe(rework( rnpm(), media(), vars(), colors(), calc ))
@@ -49,7 +60,6 @@ gulp.task('site-rework', function() {
     .pipe(rename('base.min.css'))
     .pipe(gulp.dest('./docs/css'));
 });
-
 
 gulp.task('render', function() {
   gulp.src('./docs/templates/**/*.html')
@@ -60,12 +70,4 @@ gulp.task('render', function() {
     .pipe(gulp.dest('./'));
 });
 
-
-gulp.task('reload', function() {
-  browsersync.reload();
-});
-
-gulp.task('serve', function() {
-  browsersync({ server: { baseDir: './' }, open: false });
-});
 

@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BASSCSS</title>
+  <meta name="author" content="Jxnblk">
+  <meta name="description" content="Simple, responsive CSS/SASS toolkit based on OOCSS principles">
+  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/docs/css/base.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400|Open+Sans:400,400italic,600" rel="stylesheet">
+  <link rel="icon" href="/docs/favicon.png">
+</head>
+
+<body class="container px2">
+
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h4 caps medium">
+    <a href="/" class="">Basscss</a>
+    /
+    <a href="/docs">Docs</a>
+  </div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">Base</h1>
+</header>
+
+<!--
+<h1 class="md-h1 mt0">Base</h1>
+-->
+
+<p class="h3">
+  Base styles handle default structural considerations for HTML elements.
+</p>
+<section id="typography" class="py2">
+  <h1>Typography</h1>
+
+<h2>Base type scale</h2>
+<p>Base type elements are normalized to a simple type scale that works well across devices.</p>
+
+<div data-include-example="docs/examples/headings.html" class="Example">
+<div class="Example_rendered">
+<h1>Hamburger 1</h1>
+<h2>Hamburger 2</h2>
+<h3>Hamburger 3</h3>
+<h4>Hamburger 4</h4>
+<h5>Hamburger 5</h5>
+<h6>Hamburger 6</h6>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;h1&gt;</span>Hamburger 1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Hamburger 2<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Hamburger 3<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Hamburger 4<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Hamburger 5<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>Hamburger 6<span class="nt">&lt;/h6&gt;</span>
+</pre></div>
+</div>
+
+
+</section>
+<section id="forms" class="py2">
+  <h1 class="mb0">Forms</h1>
+<p>
+  Forms use default base styles for their structural appearance
+  and thematic styles for colors and borders.
+  This creates a rhythmic consitency among all forms while allowing thematic
+  differences where needed.
+  Form elements do not rely on nested styles or markup structure,
+  so utility styles can be used for contextual adjustments.
+</p>
+
+<h2>Inline Forms</h2>
+<p>
+  By default, form elements are display inline.
+  Use the default <code>.input</code> theme or create custom themes to control the look.
+</p>
+
+<div data-include-example="docs/examples/form-inline.html" class="Example">
+<div class="Example_rendered">
+<form>
+  <label class="">Search</label>
+  <input type="text" class="input">
+  <button class="button-blue">Go</button>
+</form>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Go<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+</div>
+
+<h2>Stacked Forms</h2>
+<p>
+  Use <code>.block</code> and other utilities to stack form elements.
+  This allows for a lot of flexibility with form layouts.
+</p>
+
+<div data-include-example="docs/examples/form-basic.html" class="Example">
+<div class="Example_rendered">
+<form class="sm-col-6">
+  <label>Email Address</label>
+  <input type="text" class="block full-width input">
+  <label>Password</label>
+  <input type="password" class="block full-width input">
+  <label>Select</label>
+  <select class="block full-width input">
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+    <option>Option 4</option>
+    <option>Option 5</option>
+  </select>
+  <label class="block full-width mb2">
+    <input type="checkbox" checked>
+    Remember me
+  </label>
+  <button class="button-blue">Sign In</button>
+</form>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;sm-col-6&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Email Address<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width input&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width input&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Select<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">&quot;block full-width input&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Option 1<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Option 4<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Option 5<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;block full-width mb2&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    Remember me
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Sign In<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+</div>
+
+
+</section>
+<section id="buttons" class="py2">
+  <h1 class="mb0">Buttons</h1>
+
+<p>
+  Base button styles are defined in <code>base</code>.
+  Use themes and extensions to alter the default look.
+</p>
+
+<div data-include-example="docs/examples/buttons.html" class="Example">
+<div class="Example_rendered">
+<div class="mb1">
+  <button>Button</button>
+  <a href="#!" class="button">Link Button</a>
+</div>
+<div class="mb1">
+  <button class="button-blue">Button Blue</button>
+  <button class="button-blue-outline">Button Blue Outline</button>
+  <button class="button-gray">Button Gray</button>
+</div>
+<div>
+  <button class="button-big button-blue">Button Big</button>
+  <button class="button-small button-blue">Button Small</button>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mb1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Link Button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mb1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Button Blue<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue-outline&quot;</span><span class="nt">&gt;</span>Button Blue Outline<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-gray&quot;</span><span class="nt">&gt;</span>Button Gray<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-big button-blue&quot;</span><span class="nt">&gt;</span>Button Big<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-small button-blue&quot;</span><span class="nt">&gt;</span>Button Small<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+
+</section>
+<section id="tables" class="py2">
+  <h1 class="mb0">Tables</h1>
+<p>
+  Default table structural styles are defined in <code>base</code>.
+  Use the default <code>table-light</code> theme for minimal styling
+  or create custom theme extensions.
+</p>
+
+<div data-include-example="docs/examples/tables.html" class="Example">
+<div class="Example_rendered">
+<table class="table-light">
+  <thead>
+    <tr>
+      <th>Artist</th> <th>Album</th> <th>Release Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
+    <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
+    <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table-light&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Artist<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th&gt;</span>Album<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th&gt;</span>Release Date<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>Huey Lewis and the News<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>Sports<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>1983<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>Phil Collins<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>No Jacket Required<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>1985<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>Peter Gabriel<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>So<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>1986<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+</div>
+
+
+</section>
+
+<div class="right-align">
+  <a href="/docs/utilities" class="button bold">Next: Utilities</a>
+</div>
+
+<footer class="py4">
+  <div class="sm-table">
+    <div class="sm-table-cell nowrap py2 xs-center">
+      <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4">
+        </svg>
+        Tweet
+      </a>
+    </div>
+    <div class="sm-table-cell full-width py2 xs-center">
+      <div class="h5 bold px2">
+        <a href="/" class="button button-small" data-nav-item="">Home</a>
+        <a href="/docs" class="button button-small" data-nav-item="">Docs</a>
+        <!--
+        <a href="/docs/principles" class="button button-small" data-nav-item>Design Principles</a>
+        <a href="/docs/guide" class="button button-small" data-nav-item>Guide</a>
+        -->
+        <a href="//github.com/jxnblk/basscss" class="button button-small">Github</a>
+      </div>
+    </div>
+    <div class="sm-table-cell py2 nowrap right-align">
+      <p class="h5 mb0 xs-center mid-gray">
+        <svg class="icon red" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 ">
+        </svg>
+        Made with love by
+        <a href="//jxnblk.com">Jxnblk</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

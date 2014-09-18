@@ -10,7 +10,7 @@ module.exports = function(options) {
   return through.obj(function(file, enc, callback) {
 
     var $ = cheerio.load(file.contents.toString());
-    var $navlinks = $('.gulp-is-active');
+    var $navlinks = $('[data-nav-item]');
 
     if (!$navlinks) {
       this.push(file);
@@ -18,7 +18,6 @@ module.exports = function(options) {
     }
 
     $navlinks.each(function(i) {
-      $(this).removeClass('gulp-is-active');
       if ($(this).attr('href') == '/' + path.dirname(file.relative)) {
         $(this).addClass('is-active');
       }

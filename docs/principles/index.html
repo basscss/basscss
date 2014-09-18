@@ -15,14 +15,12 @@
 <body class="container px2">
 
   <header class="py3 mb3 border-bottom">
-    <div class="avenir h4 caps medium"><a href="/" class="">Basscss</a> / Docs</div>
+  <div class="avenir h4 caps medium">
+    <a href="/" class="">Basscss</a>
+    /
+    <a href="/docs">Docs</a>
+  </div>
     <h1 class="avenir md-h1 lg-h1 caps m0">Design Principles</h1>
-    <div class="mxn1">
-  <a href="/docs" class="button button-small">Reference</a>
-  <a href="/docs/principles" class="button button-small is-active">Design Principles</a>
-  <a href="/docs/guide" class="button button-small">Guide</a>
-</div>
-
   </header>
 
   <section id="intro">
@@ -194,7 +192,11 @@
 
   </div>
 
-  <footer class="py4">
+<div class="right-align">
+  <a href="/docs/utilities" class="button bold">Next: Base</a>
+</div>
+
+<footer class="py4">
   <div class="sm-table">
     <div class="sm-table-cell nowrap py2 xs-center">
       <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=BASSCSS: Next-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">
@@ -206,10 +208,12 @@
     </div>
     <div class="sm-table-cell full-width py2 xs-center">
       <div class="h5 bold px2">
-        <a href="/" class="button button-small">Home</a>
-        <a href="/docs" class="button button-small">Docs</a>
-        <a href="/docs/principles" class="button button-small is-active">Design Principles</a>
-        <a href="/docs/guide" class="button button-small">Guide</a>
+        <a href="/" class="button button-small" data-nav-item="">Home</a>
+        <a href="/docs" class="button button-small" data-nav-item="">Docs</a>
+        <!--
+        <a href="/docs/principles" class="button button-small" data-nav-item>Design Principles</a>
+        <a href="/docs/guide" class="button button-small" data-nav-item>Guide</a>
+        -->
         <a href="//github.com/jxnblk/basscss" class="button button-small">Github</a>
       </div>
     </div>

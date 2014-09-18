@@ -4,151 +4,43 @@
 <body class="container px2">
 
 <header class="py3 mb3 border-bottom">
-  <div class="avenir h4 caps medium"><a href="/" class="">Basscss</a> / Docs</div>
-  <h1 class="avenir md-h1 lg-h1 caps m0">Reference</h1>
-  <div data-include="docs/partials/_docs-nav.html"></div>
+  <div class="avenir h4 caps medium"><a href="/" class="">Basscss</a><span class="hide"> / Docs</span></div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">Docs</h1>
 </header>
 
-<div class="clearfix mxn2">
-
-  <div class="sm-right sm-col-3 px2 xs-hide sm-show">
-    <a href="#getting-started" class="button button-small block">Getting Started</a>
-    <a href="#base" class="mt2 button button-small block">Base</a>
-    <a href="#typography" class="h5 button button-small block">Typography</a>
-    <a href="#forms" class="h5 button button-small block">Forms</a>
-    <a href="#buttons" class="h5 button button-small block">Buttons</a>
-    <a href="#tables" class="h5 button button-small block">Tables</a>
-    <a href="#utilities" class="mt2 button button-small block">Utilities</a>
-    <a href="#layout" class="h5 button button-small block">Layout</a>
-    <a href="#type-utilities" class="h5 button button-small block">Type Utilities</a>
-    <a href="#responsive-states" class="h5 button button-small block">Responsive States</a>
-    <a href="#modules" class="mt2 button button-small block">Modules</a>
-    <a href="#grid" class="h5 button button-small block">Grid</a>
-    <a href="#table-object" class="h5 button button-small block">Table Object</a>
-    <a href="#themes" class="mt2 button button-small block">Themes</a>
-    <a href="#nav" class="h5 button button-small block mid-gray">Nav</a>
-    <a href="#components" class="mt2 button button-small block mid-gray">Components</a>
+<div id="docs-nav" class="clearfix mxn2">
+  <div class="sm-left sm-col-6 md-col-4 py2">
+    <a href="/docs/getting-started" class="h3 button block" data-nav-item>Getting Started</a>
   </div>
-
-  <div class="sm-left sm-col-9 px2">
-
-    <section id="getting-started" class="mb2">
-      <h1 class="md-h1 mt0">Getting Started</h1>
-      <div class="p2 mb3 border rounded">
-        <p class="h3">Get Basscss from one of these sources:</p>
-        <a href="https://github.com/jxnblk/basscss/archive/v3.zip" class="button button-blue">Download Source</a>
-        <h2 class="h4 mb1">Clone from Github:</h2>
-        <div class="p1 mb1 bg-light-gray">
-          <pre class="m0">git clone https://github.com/jxnblk/basscss.git</pre>
-        </div>
-        <h2 class="h4 mb1">CDN link:</h2>
-        <div class="p1 bg-light-gray">
-          <pre class="m0">https://TK</pre>
-        </div>
-      </div>
-      <h2>Vanilla CSS</h2>
-      <p>
-        Include <code>basscss.min.css</code> out-of-the-box or use the unminified <code>basscss.css</code> and edit it how you see fit.
-        For lighter-weight projects use <code>basscss-lite.min.css</code>,  which only includes base type and layout styles.
-        Manually adjust the font stack and theme styles to customize the look and feel.
-      </p>
-      <h2>Rework</h2>
-      <p>Basscss is built with Rework with these dependencies:</p>
-      <ul>
-        <li>Rework NPM</li>
-        <li>Rework Custom Media</li>
-        <li>Rework Vars</li>
-        <li>Rework Plugin Colors</li>
-        <li>Rework Calc</li>
-      </ul>
-      <p>Getting started with Rework (TK)</p>
-      <h2 class="mid-gray">Sass</h2>
-      <p class="mid-gray">Import the files found in the <code>TK</code> folder as partials. Sass variables are no longer supported in version 4 and up.</p>
-    </section>
-
-    <hr>
-
-    <section id="base">
-      <h1 class="md-h1 mb0">Base</h1>
-      <p class="h3">
-        Base styles handle default structural considerations for HTML elements.
-      </p>
-      <section id="typography" class="py2">
-        <div data-include="docs/partials/reference/_typography.html"></div>
-      </section>
-      <section id="forms" class="py2">
-        <div data-include="docs/partials/reference/_forms.html"></div>
-      </section>
-      <section id="buttons" class="py2">
-        <div data-include="docs/partials/reference/_buttons.html"></div>
-      </section>
-      <section id="tables" class="py2">
-        <div data-include="docs/partials/reference/_tables.html"></div>
-      </section>
-    </section>
-
-    <hr>
-
-    <section id="utilities">
-      <h1 class="md-h1 mb0">Utilities</h1>
-      <p class="h3">
-        Utilities are single-purpose styles to handle common layout tasks.
-      </p>
-      <section id="layout" class="py2">
-        <div data-include="docs/partials/reference/_layout.html"></div>
-      </section>
-      <section id="type-utilities" class="py2">
-        <div data-include="docs/partials/reference/_type-utilities.html"></div>
-      </section>
-      <section id="floats" class="py2">
-        <div data-include="docs/partials/reference/_floats.html"></div>
-      </section>
-      <section id="margins" class="py2">
-        <div data-include="docs/partials/reference/_margins.html"></div>
-      </section>
-      <section id="padding" class="py2">
-        <div data-include="docs/partials/reference/_padding.html"></div>
-      </section>
-      <section id="responsive-states" class="py2">
-        <div data-include="docs/partials/reference/_responsive-states.html"></div>
-      </section>
-    </section>
-
-    <hr>
-
-    <section id="modules">
-      <h1 class="md-h1 mb0">Modules</h1>
-      <p class="h3">Modules are more complex layout styles that are tied to markup structure.</p>
-      <section id="grid" class="py2">
-        <div data-include="docs/partials/reference/_grid.html"></div>
-      </section>
-      <section id="table-object" class="py2">
-        <div data-include="docs/partials/reference/_table-object.html"></div>
-      </section>
-    </section>
-
-    <hr>
-
-    <section id="themes">
-      <h1 class="md-h1 mb0">Themes</h1>
-      <p class="h3">Themes are styles for colors, borders and other decorative styles.</p>
-      <p>
-        Basscss comes with a simple, lightweight theme.
-        Use this as a guide when creating custom themes.
-      </p>
-      <section id="colors" class="py2">
-        <div data-include="docs/partials/reference/_colors.html"></div>
-      </section>
-      <!--
-      <section id="borders" class="py2">
-        <div data-include="docs/partials/reference/_borders.html"></div>
-      </section>
-      -->
-    </section>
-
-
+  <div class="sm-left sm-col-6 md-col-4 py2">
+    <a href="/docs/principles" class="h3 button block" data-nav-item>Design Principles</a>
   </div>
-
+  <div class="clearfix hide sm-show md-hide"></div>
+  <div class="sm-left sm-col-6 md-col-4 py2">
+    <a href="/docs/base" class="h3 button block" data-nav-item>Base</a>
+  </div>
+  <div class="clearfix hide md-show"></div>
+  <div class="sm-left sm-col-6 md-col-4 py2">
+    <a href="/docs/utilities" class="h3 button block" data-nav-item>Utilities</a>
+  </div>
+  <div class="clearfix hide sm-show md-hide"></div>
+  <div class="sm-left sm-col-6 md-col-4 py2">
+    <a href="/docs/modules" class="h3 button block" data-nav-item>Modules</a>
+  </div>
+  <div class="sm-left sm-col-6 md-col-4 py2">
+    <a href="/docs/themes" class="h3 button block" data-nav-item>Themes</a>
+  </div>
+  <div class="clearfix hide sm-show"></div>
+  <div class="sm-left sm-col-6 md-col-4 py2">
+    <a href="/docs/components" class="h3 button block" data-nav-item>Components</a>
+  </div>
+  <div class="sm-left sm-col-6 md-col-4 py2">
+    <a href="/docs/rework" class="h3 button block" data-nav-item>Using Rework</a>
+  </div>
+  <div class="clearfix hide sm-show md-hide"></div>
+  <div class="sm-left sm-col-6 md-col-4 py2">
+    <a href="/docs/guide" class="h3 button block" data-nav-item>Web Design Guide</a>
+  </div>
 </div>
 
 <div data-include="docs/partials/_footer.html"></div>
