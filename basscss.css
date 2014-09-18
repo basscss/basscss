@@ -151,9 +151,7 @@ h6,
 
 /* Forms */
 
-label {
-  display: block;
-}
+
 
 input:not([type=radio]):not([type=checkbox]) {
   line-height: 2.25em;
@@ -164,8 +162,6 @@ input:not([type=radio]):not([type=checkbox]) {
 }
 
 input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
-  display: block;
-  width: 100%;
   margin-top: 0;
   margin-bottom: .5rem;
   padding: .25rem 1rem;
@@ -195,10 +191,6 @@ textarea {
 
 
 
-/* .radio */
-
-/* .checkbox */
-
 /* Buttons */
 
 button,
@@ -212,12 +204,6 @@ input[type=submit],
        box-sizing: border-box;
   line-height: 2.25em;
   margin: 0;
-  /*
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: var(--space-1);
-  padding: var(--ui-padding-y) var(--ui-padding-x);
-  */
   padding: 0 1rem;
   height: auto;
   width: auto;
@@ -230,28 +216,28 @@ input[type=submit],
   text-decoration: none;
 }
 
-.table-reset {
-  border-collapse: collapse;
+table {
+  border-collapse: separate;
   border-spacing: 0;
   max-width: 100%;
   width: 100%;
 }
 
-.table-reset th {
+th {
   text-align: left;
 }
 
-.table-reset th,
-.table-reset td {
-  padding: $ui-padding;
+th,
+td {
+  padding: .25rem 1rem;
   line-height: inherit;
 }
 
-.table-reset th {
+th {
   vertical-align: bottom;
 }
 
-.table-reset td {
+td {
   vertical-align: top;
 }
 
@@ -707,6 +693,12 @@ input[type=submit],
 .col-7 {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
+  width: 58.333333333333336%;
+}
+
+.col-8 {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   width: 66.66666666666666%;
 }
 
@@ -766,6 +758,12 @@ input[type=submit],
   }
 
   .sm-col-7 {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    width: 58.333333333333336%;
+  }
+
+  .sm-col-8 {
     -moz-box-sizing: border-box;
          box-sizing: border-box;
     width: 66.66666666666666%;
@@ -830,6 +828,12 @@ input[type=submit],
   .md-col-7 {
     -moz-box-sizing: border-box;
          box-sizing: border-box;
+    width: 58.333333333333336%;
+  }
+
+  .md-col-8 {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     width: 66.66666666666666%;
   }
 
@@ -890,6 +894,12 @@ input[type=submit],
   }
 
   .lg-col-7 {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    width: 58.333333333333336%;
+  }
+
+  .lg-col-8 {
     -moz-box-sizing: border-box;
          box-sizing: border-box;
     width: 66.66666666666666%;
