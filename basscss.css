@@ -51,7 +51,7 @@ svg {
 /* Typography */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.5;
   font-size: 100%;
 }
@@ -62,8 +62,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: bold;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -981,8 +981,6 @@ td {
   }
 }
 
-/* Base */
-
 .button-big {
   padding: 0.375rem 1.5rem;
 }
@@ -993,10 +991,6 @@ td {
   min-height: 2em;
   line-height: 1em;
 }
-
-/* Utilities */
-
-/* Modules */
 
 /* @import './modules/simple-grid';
  * @import './modules/nav-item';
@@ -1274,172 +1268,3 @@ hr {
  * - bordered
  */
 
-/* Basscss.com site-specific styles
- * -------------------------------- */
-
-.avenir {
-  font-family: 'Avenir Next', 'Open Sans', sans-serif;
-}
-
-.h0 {
-  font-size: 2.75em;
-}
-
-@media (min-width: 52em) {
-  .h0 {
-    font-size: 4.5em;
-  }
-}
-
-@media (min-width: 64em) {
-  .h0 {
-    font-size: 5.5em;
-  }
-}
-
-.xs-center {
-  text-align: center;
-}
-
-@media (min-width: 40em) {
-  .xs-center {
-    text-align: inherit;
-  }
-}
-
-@media (min-width: 40em) {
-
-
-
-
-
-
-
-}
-
-@media (min-width: 52em) {
-  .md-h1 {
-    font-size: 3rem;
-  }
-
-
-
-
-
-
-}
-
-@media (min-width: 64em) {
-  .lg-h1 {
-    font-size: 4rem;
-  }
-
-
-
-
-
-
-}
-
-.icon {
-  width: 1em;
-  height: 1em;
-  position: relative;
-  top: .125em;
-  fill: currentcolor;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: #304650;
-}
-
-.is-active {
-  color: #304650;
-}
-
-.dot {
-  line-height: 1.5em;
-  text-align: center;
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 50%;
-}
-
-.dot-blue {
-  color: white;
-  background-color: #009cef;
-}
-
-.border-blue {
-  border: 1px solid #009cef;
-}
-
-.outline-blue,
-.outline-blue * {
-  box-shadow: 0 0 0 1px rgba(0, 156, 239, .75);
-}
-
-.waves {
-  -webkit-animation: waves 1.6s linear infinite;
-          animation: waves 1.6s linear infinite;
-}
-
-@-webkit-keyframes waves {
-  from {
-    box-shadow: 0 0 0 0 #f3f9f9, 0 0 0 1px rgba(0, 156, 239, .5);
-  }
-
-  to {
-    box-shadow: 0 0 0 8px #f3f9f9, 0 0 0 16px rgba(0, 156, 239, 0);
-  }
-}
-
-@keyframes waves {
-  from {
-    box-shadow: 0 0 0 0 #f3f9f9, 0 0 0 1px rgba(0, 156, 239, .5);
-  }
-
-  to {
-    box-shadow: 0 0 0 8px #f3f9f9, 0 0 0 16px rgba(0, 156, 239, 0);
-  }
-}
-
-.highlight pre {
-  margin-bottom: 0;
-}
-
-/* Example component */
-
-.Example {
-  border: 1px solid rgba(0, 0, 0, .25);
-  border-radius: 3px;
-}
-
-.Example_rendered {
-  padding: 1rem;
-}
-
-.Example_code {
-  padding: 1rem;
-  background-color: #f3f9f9;
-  border-top: 1px solid rgba(0, 0, 0, .25);
-}
-
-.Example_code pre {
-  margin-bottom: 0;
-}
-
-/* Basscss.com Variables */
-
-
-
-
-
-/* @import './themes/pygments';
- */

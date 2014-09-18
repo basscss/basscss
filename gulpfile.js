@@ -19,14 +19,14 @@ var nav = require('./gulp/is-active');
 var pygmentize = require('./gulp/pygmentize');
 //var markdown = require('./gulp/markdown');
 
-gulp.task('default', ['rework']);
+gulp.task('default', ['rework', 'site-rework']);
 
 gulp.task('dev', ['watch', 'serve']);
 
-gulp.task('watch', ['rework', 'render'], function() {
+gulp.task('watch', ['rework', 'site-rework', 'render'], function() {
   gulp.watch(
-    ['./docs/templates/**/*.html', 'docs/partials/**/*', 'docs/examples/**/*', './src/**/*.css', './basscss-base/**/*', './basscss-utilities/**/*', './basscss-grid/**/*'],
-    ['rework', 'render', 'reload']
+    ['./docs/templates/**/*.html', 'docs/partials/**/*', 'docs/examples/**/*', './docs/css/src/**/*', './src/**/*.css', './basscss-base/**/*', './basscss-utilities/**/*', './basscss-grid/**/*'],
+    ['rework', 'site-rework', 'render', 'reload']
   );
 });
 
@@ -39,6 +39,15 @@ gulp.task('rework', function() {
     .pipe(mincss())
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('.'));
+});
+
+gulp.task('site-rework', function() {
+  gulp.src('./docs/css/src/index.css')
+    .pipe(rework( rnpm(), media(), vars(), colors(), calc ))
+    .pipe(autoprefixer())
+    .pipe(mincss())
+    .pipe(rename('base.min.css'))
+    .pipe(gulp.dest('./docs/css'));
 });
 
 

@@ -13,46 +13,24 @@
 @import 'basscss-grid';
 @import 'basscss-table-object';
 
-/* Base */
 @import './base/button-extensions';
-
-/* Utilities */
-
-/* Modules */
 
 /* @import './modules/simple-grid';
  * @import './modules/nav-item';
  */
 
 
-
 /* Themes */
+@import './theme/base';
+@import './theme/colors';
+@import './theme/borders';
+@import './theme/forms';
+@import './theme/tables';
+@import './theme/button-blue';
+@import './theme/button-blue-outline';
+@import './theme/button-gray';
 
-@import './themes/base';
-@import './themes/colors';
-@import './themes/borders';
-@import './themes/forms';
-@import './themes/tables';
-@import './themes/button-blue';
-@import './themes/button-blue-outline';
-@import './themes/button-gray';
+@import './theme/nav';
+@import './theme/variables';
 
-@import './themes/nav';
-
-
-/* Basscss.com site-specific styles
- * -------------------------------- */
-
-@import './base/fonts';
-@import './base/type-h0';
-@import './base/responsive-type';
-@import './modules/icons';
-@import './themes/basscss-site';
-
-/* Basscss.com Variables */
-@import './base/variables';
-@import './themes/variables';
-
-/* @import './themes/pygments';
- */
 

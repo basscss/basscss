@@ -1,0 +1,12 @@
+
+.button-big {
+  padding: calc(1.5 * var(--ui-padding-y)) calc(1.5 * var(--ui-padding-x));
+}
+
+.button-small {
+  padding: calc(.5 * var(--ui-padding-x));
+  height: 2em;
+  min-height: 2em;
+  line-height: 1em;
+}
+

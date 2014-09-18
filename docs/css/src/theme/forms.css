@@ -1,0 +1,35 @@
+
+.input,
+.textarea,
+.select {
+  background-color: white;
+  transition: box-shadow .2s ease;
+  border-style: solid;
+  border-width: var(--border-width);
+  border-color: var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+  .input:focus,
+  .textarea:focus,
+  .select:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 2px rgba(var(--blue),.5);
+  }
+
+.radio,
+.checkbox {
+  transition: box-shadow: .2s ease;
+}
+
+.radio {
+  border-radius: 50%;
+}
+  
+  .radio:focus,
+  .checkbox:focus {
+    outline: none;
+    box-shadow: 0 0 2px rgba(var(--blue),.5);
+  }
+
