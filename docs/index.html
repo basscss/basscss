@@ -17,10 +17,10 @@
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps medium"><a href="/" class="">Basscss</a> / Docs</div>
   <h1 class="avenir md-h1 lg-h1 caps m0">Reference</h1>
-  <div class="mxn2">
-  <a href="/docs" class="button is-active">Reference</a>
-  <a href="/docs/principles" class="button">Design Principles</a>
-  <a href="/docs/guide" class="button">Guide</a>
+  <div class="mxn1">
+  <a href="/docs" class="button button-small is-active">Reference</a>
+  <a href="/docs/principles" class="button button-small">Design Principles</a>
+  <a href="/docs/guide" class="button button-small">Guide</a>
 </div>
 
 </header>
@@ -28,22 +28,22 @@
 <div class="clearfix mxn2">
 
   <div class="sm-right sm-col-3 px2 xs-hide sm-show">
-    <a href="#getting-started" class="button button-block">Getting Started</a>
-    <a href="#base" class="mt2 button button-block">Base</a>
-    <a href="#typography" class="h5 button button-block">Typography</a>
-    <a href="#forms" class="h5 button button-block">Forms</a>
-    <a href="#buttons" class="h5 button button-block">Buttons</a>
-    <a href="#tables" class="h5 button button-block">Tables</a>
-    <a href="#utilities" class="mt2 button button-block">Utilities</a>
-    <a href="#layout" class="h5 button button-block">Layout</a>
-    <a href="#type-utilities" class="h5 button button-block">Type Utilities</a>
-    <a href="#responsive-states" class="h5 button button-block">Responsive States</a>
-    <a href="#modules" class="mt2 button button-block">Modules</a>
-    <a href="#grid" class="h5 button button-block">Grid</a>
-    <a href="#table-object" class="h5 button button-block">Table Object</a>
-    <a href="#themes" class="mt2 button button-block">Themes</a>
-    <a href="#nav" class="h5 button button-block mid-gray">Nav</a>
-    <a href="#components" class="mt2 button button-block mid-gray">Components</a>
+    <a href="#getting-started" class="button button-small button-block">Getting Started</a>
+    <a href="#base" class="mt2 button button-small button-block">Base</a>
+    <a href="#typography" class="h5 button button-small button-block">Typography</a>
+    <a href="#forms" class="h5 button button-small button-block">Forms</a>
+    <a href="#buttons" class="h5 button button-small button-block">Buttons</a>
+    <a href="#tables" class="h5 button button-small button-block">Tables</a>
+    <a href="#utilities" class="mt2 button button-small button-block">Utilities</a>
+    <a href="#layout" class="h5 button button-small button-block">Layout</a>
+    <a href="#type-utilities" class="h5 button button-small button-block">Type Utilities</a>
+    <a href="#responsive-states" class="h5 button button-small button-block">Responsive States</a>
+    <a href="#modules" class="mt2 button button-small button-block">Modules</a>
+    <a href="#grid" class="h5 button button-small button-block">Grid</a>
+    <a href="#table-object" class="h5 button button-small button-block">Table Object</a>
+    <a href="#themes" class="mt2 button button-small button-block">Themes</a>
+    <a href="#nav" class="h5 button button-small button-block mid-gray">Nav</a>
+    <a href="#components" class="mt2 button button-small button-block mid-gray">Components</a>
   </div>
 
   <div class="sm-left sm-col-9 px2">
@@ -123,26 +123,70 @@
   so utility styles can be used for contextual adjustments.
 </p>
 
+<h2>Inline Forms</h2>
+<p>
+  By default, form elements are display inline.
+  Use the default <code>.input</code> theme or create custom themes to control the look.
+</p>
+
+<div data-include-example="docs/examples/form-inline.html" class="Example">
+<div class="Example_rendered">
+<form>
+  <label class="">Search</label>
+  <input type="text" class="input">
+  <button class="button-blue">Go</button>
+</form>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Go<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+</div>
+
+<h2>Stacked Forms</h2>
+<p>
+  Use <code>.block</code> and other utilities to stack form elements.
+  This allows for a lot of flexibility with form layouts.
+</p>
+
 <div data-include-example="docs/examples/form-basic.html" class="Example">
 <div class="Example_rendered">
-<form class="mb2">
+<form class="sm-col-6">
   <label>Email Address</label>
-  <input type="text" class="input">
+  <input type="text" class="block full-width input">
   <label>Password</label>
-  <input type="password" class="input">
-  <label class="mb2">
+  <input type="password" class="block full-width input">
+  <label>Select</label>
+  <select class="block full-width input">
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+    <option>Option 4</option>
+    <option>Option 5</option>
+  </select>
+  <label class="block full-width mb2">
     <input type="checkbox" checked>
     Remember me
   </label>
   <button class="button-blue">Sign In</button>
 </form>
 </div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;mb2&quot;</span><span class="nt">&gt;</span>
+<div class="highlight Example_code"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;sm-col-6&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label&gt;</span>Email Address<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width input&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;mb2&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width input&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Select<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">&quot;block full-width input&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Option 1<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Option 4<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Option 5<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;block full-width mb2&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">checked</span><span class="nt">&gt;</span>
     Remember me
   <span class="nt">&lt;/label&gt;</span>
@@ -152,37 +196,82 @@
 </div>
 
 
-<div data-include-example="docs/examples/form-inline.html" class="Example">
-<div class="Example_rendered">
-<code>WIP</code>
-<form class="mb2">
-  <label class="inline-block">Email Address</label>
-  <input type="text" class="inline-block input">
-  <label class="inline-block">Password</label>
-  <input type="password" class="inline-block input">
-  <button class="button-blue">Sign In</button>
-</form>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;code&gt;</span>WIP<span class="nt">&lt;/code&gt;</span>
-<span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;mb2&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;inline-block&quot;</span><span class="nt">&gt;</span>Email Address<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;inline-block input&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;inline-block&quot;</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;inline-block input&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Sign In<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/form&gt;</span>
-</pre></div>
-</div>
-
-
-
       </section>
       <section id="buttons" class="py2">
         <h1>Buttons</h1>
 
+<p>
+  Base button styles are defined in <code>base</code>.
+  Use themes and extensions to alter the default look.
+</p>
+
+<div data-include-example="docs/examples/buttons.html" class="Example">
+<div class="Example_rendered">
+<div class="mb1">
+  <button>Button</button>
+  <a href="#!" class="button">Link Button</a>
+</div>
+<div class="mb1">
+  <button class="button-blue">Button Blue</button>
+  <button class="button-blue-outline">Button Blue Outline</button>
+  <button class="button-gray">Button Gray</button>
+</div>
+<div>
+  <button class="button-big button-blue">Button Big</button>
+  <button class="button-small button-blue">Button Small</button>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mb1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Link Button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mb1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Button Blue<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue-outline&quot;</span><span class="nt">&gt;</span>Button Blue Outline<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-gray&quot;</span><span class="nt">&gt;</span>Button Gray<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-big button-blue&quot;</span><span class="nt">&gt;</span>Button Big<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-small button-blue&quot;</span><span class="nt">&gt;</span>Button Small<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+
       </section>
       <section id="tables" class="py2">
         <h1>Tables</h1>
+
+
+<div data-include-example="docs/examples/tables.html" class="Example">
+<div class="Example_rendered">
+<table class="table-light">
+  <thead>
+    <tr>
+      <th>Artist</th> <th>Album</th> <th>Release Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
+    <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
+    <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table-light&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Artist<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th&gt;</span>Album<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th&gt;</span>Release Date<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>Huey Lewis and the News<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>Sports<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>1983<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>Phil Collins<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>No Jacket Required<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>1985<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>Peter Gabriel<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>So<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>1986<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+</div>
+
 
       </section>
     </section>

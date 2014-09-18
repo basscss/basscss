@@ -4,13 +4,10 @@
 }
 
 .button-small {
-  /*
-  padding: calc(.75 * var(--ui-padding-y)) calc(.75 * var(--ui-padding-x));
-  */
-  padding: 0 calc(.5 * var(--ui-padding-x));
-  height: 1.75em;
-  min-height: 1.75em;
-  line-height: 1.75em;
+  padding: calc(.5 * var(--ui-padding-x));
+  height: 2em;
+  min-height: 2em;
+  line-height: 1em;
 }
 
 .button-block {

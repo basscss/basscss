@@ -151,9 +151,7 @@ h6,
 
 /* Forms */
 
-label {
-  display: block;
-}
+
 
 input:not([type=radio]):not([type=checkbox]) {
   line-height: 2.25em;
@@ -164,8 +162,6 @@ input:not([type=radio]):not([type=checkbox]) {
 }
 
 input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
-  display: block;
-  width: 100%;
   margin-top: 0;
   margin-bottom: .5rem;
   padding: .25rem 1rem;
@@ -195,10 +191,6 @@ textarea {
 
 
 
-/* .radio */
-
-/* .checkbox */
-
 /* Buttons */
 
 button,
@@ -212,12 +204,6 @@ input[type=submit],
        box-sizing: border-box;
   line-height: 2.25em;
   margin: 0;
-  /*
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: var(--space-1);
-  padding: var(--ui-padding-y) var(--ui-padding-x);
-  */
   padding: 0 1rem;
   height: auto;
   width: auto;
@@ -230,28 +216,28 @@ input[type=submit],
   text-decoration: none;
 }
 
-.table-reset {
+table {
   border-collapse: collapse;
   border-spacing: 0;
   max-width: 100%;
   width: 100%;
 }
 
-.table-reset th {
+th {
   text-align: left;
 }
 
-.table-reset th,
-.table-reset td {
-  padding: $ui-padding;
+th,
+td {
+  padding: .25rem 1rem;
   line-height: inherit;
 }
 
-.table-reset th {
+th {
   vertical-align: bottom;
 }
 
-.table-reset td {
+td {
   vertical-align: top;
 }
 
@@ -978,13 +964,10 @@ input[type=submit],
 }
 
 .button-small {
-  /*
-  padding: calc(.75 * var(--ui-padding-y)) calc(.75 * var(--ui-padding-x));
-  */
-  padding: 0 0.5rem;
-  height: 1.75em;
-  min-height: 1.75em;
-  line-height: 1.75em;
+  padding: 0.5rem;
+  height: 2em;
+  min-height: 2em;
+  line-height: 1em;
 }
 
 .button-block {
@@ -1393,6 +1376,21 @@ h6 a {
   to {
     box-shadow: 0 0 0 8px #f3f9f9, 0 0 0 16px rgba(0, 156, 239, 0);
   }
+}
+
+.Example {
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 3px;
+}
+
+.Example_rendered {
+  padding: 1rem;
+}
+
+.Example_code {
+  padding: 1rem;
+  background-color: #f3f9f9;
+  border-top: 1px solid rgba(0, 0, 0, .25);
 }
 
 /* Basscss.com Variables */

@@ -40,3 +40,18 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
+.Example {
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+  .Example_rendered {
+    padding: var(--space-2);
+  }
+
+  .Example_code {
+    padding: var(--space-2);
+    background-color: var(--light-gray);
+    border-top: var(--border-width) solid var(--border-color);
+  }
+
