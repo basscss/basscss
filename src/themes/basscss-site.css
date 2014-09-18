@@ -23,7 +23,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   border: 1px solid var(--blue);
 }
 
-.outline-blue * {
+.outline-blue, .outline-blue * {
   box-shadow: 0 0 0 1px rgba(var(--blue), .75);
 }
 
@@ -40,6 +40,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
+.highlight pre { margin-bottom: 0 }
+
+/* Example component */
 .Example {
   border: var(--border-width) solid var(--border-color);
   border-radius: var(--border-radius);
@@ -54,4 +57,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     background-color: var(--light-gray);
     border-top: var(--border-width) solid var(--border-color);
   }
+
+  .Example_code pre { margin-bottom: 0 }
 

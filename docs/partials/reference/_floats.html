@@ -1,1 +1,30 @@
-<h1>Floats</h1>
+<h1 class="mb0">Floats</h1>
+<p>These utilities are available in mobile-first breakpoint-based variations.</p>
+<table class="mb2 table-light border rounded">
+  <thead>
+    <tr> <th>Prefix</th> <th>Description</th> </tr>
+  </thead>
+  <tbody>
+    <tr> <td>(no prefix)</td> <td>Not scoped to a breakpoint</td> </tr>
+    <tr> <td>sm-</td> <td>--breakpoint-sm (default: min-width 40em)</td> </tr>
+    <tr> <td>md-</td> <td>--breakpoint-md (default: min-width 52em)</td> </tr>
+    <tr> <td>lg-</td> <td>--breakpoint-lg (default: min-width 64em)</td> </tr>
+  </tbody>
+</table>
+
+<div class="p2 bg-light-gray border rounded" data-pygmentize="css">
+.left  { float: left }
+.right { float: right }
+@media (--breakpoint-sm) {
+  .sm-left  { float: left  }
+  .sm-right { float: right }
+}
+@media (--breakpoint-md) {
+  .md-left  { float: left  }
+  .md-right { float: right }
+}
+@media (--breakpoint-lg) {
+  .lg-left  { float: left  }
+  .lg-right { float: right }
+}
+</div>

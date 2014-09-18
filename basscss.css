@@ -217,7 +217,7 @@ input[type=submit],
 }
 
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0;
   max-width: 100%;
   width: 100%;
@@ -693,6 +693,12 @@ td {
 .col-7 {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
+  width: 58.333333333333336%;
+}
+
+.col-8 {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   width: 66.66666666666666%;
 }
 
@@ -752,6 +758,12 @@ td {
   }
 
   .sm-col-7 {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    width: 58.333333333333336%;
+  }
+
+  .sm-col-8 {
     -moz-box-sizing: border-box;
          box-sizing: border-box;
     width: 66.66666666666666%;
@@ -816,6 +828,12 @@ td {
   .md-col-7 {
     -moz-box-sizing: border-box;
          box-sizing: border-box;
+    width: 58.333333333333336%;
+  }
+
+  .md-col-8 {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     width: 66.66666666666666%;
   }
 
@@ -876,6 +894,12 @@ td {
   }
 
   .lg-col-7 {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    width: 58.333333333333336%;
+  }
+
+  .lg-col-8 {
     -moz-box-sizing: border-box;
          box-sizing: border-box;
     width: 66.66666666666666%;
@@ -968,11 +992,6 @@ td {
   height: 2em;
   min-height: 2em;
   line-height: 1em;
-}
-
-.button-block {
-  display: block;
-  width: 100%;
 }
 
 /* Utilities */
@@ -1075,6 +1094,18 @@ hr {
 
 .bg-yellow {
   background-color: #ffdc00;
+}
+
+.bg-darken-1 {
+  background-color: rgba(0, 0, 0, .125);
+}
+
+.bg-darken-2 {
+  background-color: rgba(0, 0, 0, .25);
+}
+
+.bg-darken-3 {
+  background-color: rgba(0, 0, 0, .375);
 }
 
 .icon {
@@ -1349,6 +1380,7 @@ h6 a {
   border: 1px solid #009cef;
 }
 
+.outline-blue,
 .outline-blue * {
   box-shadow: 0 0 0 1px rgba(0, 156, 239, .75);
 }
@@ -1378,6 +1410,12 @@ h6 a {
   }
 }
 
+.highlight pre {
+  margin-bottom: 0;
+}
+
+/* Example component */
+
 .Example {
   border: 1px solid rgba(0, 0, 0, .25);
   border-radius: 3px;
@@ -1391,6 +1429,10 @@ h6 a {
   padding: 1rem;
   background-color: #f3f9f9;
   border-top: 1px solid rgba(0, 0, 0, .25);
+}
+
+.Example_code pre {
+  margin-bottom: 0;
 }
 
 /* Basscss.com Variables */

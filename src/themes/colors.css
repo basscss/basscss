@@ -17,5 +17,9 @@
 .bg-green      { background-color: var(--green) }
 .bg-yellow     { background-color: var(--yellow) }
 
+.bg-darken-1   { background-color: var(--darken-1) }
+.bg-darken-2   { background-color: var(--darken-2) }
+.bg-darken-3   { background-color: var(--darken-3) }
+
 .icon { fill: currentcolor }
 
