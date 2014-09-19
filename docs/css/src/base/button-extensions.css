@@ -4,7 +4,8 @@
 }
 
 .button-small {
-  padding: calc(.5 * var(--ui-padding-x));
+  /* padding: calc(.5 * var(--ui-padding-x));
+   */
   height: 2em;
   min-height: 2em;
   line-height: 1em;
