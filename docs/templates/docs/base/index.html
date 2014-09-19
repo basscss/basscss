@@ -16,24 +16,37 @@
 <h1 class="md-h1 mt0">Base</h1>
 -->
 
-<p class="h3">
-  Base styles handle default structural considerations for HTML elements.
-</p>
-<section id="typography" class="py2">
-  <div data-include="docs/partials/reference/_typography.html"></div>
-</section>
-<section id="forms" class="py2">
-  <div data-include="docs/partials/reference/_forms.html"></div>
-</section>
-<section id="buttons" class="py2">
-  <div data-include="docs/partials/reference/_buttons.html"></div>
-</section>
-<section id="tables" class="py2">
-  <div data-include="docs/partials/reference/_tables.html"></div>
-</section>
+<div class="clearfix mxn2">
+  <div class="sm-left sm-col-9 px2">
+    <p class="h3">
+      Base element styles define native HTML elements such as headings, paragraphs, buttons, and forms in a systemic and opinionated way.
+      This is the only place naked elements are styled.
+      Core typographical considerations and base-element-derived utilities, such as typefaces and the type scale, are defined here.
+    </p>
+    <section id="typography" class="py2">
+      <div data-include="docs/partials/reference/_typography.html"></div>
+    </section>
+    <section id="forms" class="py2">
+      <div data-include="docs/partials/reference/_forms.html"></div>
+    </section>
+    <section id="buttons" class="py2">
+      <div data-include="docs/partials/reference/_buttons.html"></div>
+    </section>
+    <section id="tables" class="py2">
+      <div data-include="docs/partials/reference/_tables.html"></div>
+    </section>
 
-<div class="right-align">
-  <a href="/docs/utilities" class="button bold">Next: Utilities</a>
+    <div class="clearfix mxn2 py2">
+      <a href="/docs/getting-started" class="left button bold">Previous: Getting Started</a>
+      <a href="/docs/utilities" class="right button bold">Next: Utilities</a>
+    </div>
+  </div>
+  <div class="sm-left sm-col-3 sm-show">
+    <a href="#typography" class="button buttons-small block">Typography</a>
+    <a href="#forms" class="button buttons-small block">Forms</a>
+    <a href="#buttons" class="button buttons-small block">Buttons</a>
+    <a href="#tables" class="button buttons-small block">Tables</a>
+  </div>
 </div>
 
 <div data-include="docs/partials/_footer.html"></div>

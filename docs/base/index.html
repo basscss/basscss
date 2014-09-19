@@ -27,11 +27,15 @@
 <h1 class="md-h1 mt0">Base</h1>
 -->
 
-<p class="h3">
-  Base styles handle default structural considerations for HTML elements.
-</p>
-<section id="typography" class="py2">
-  <h1>Typography</h1>
+<div class="clearfix mxn2">
+  <div class="sm-left sm-col-9 px2">
+    <p class="h3">
+      Base element styles define native HTML elements such as headings, paragraphs, buttons, and forms in a systemic and opinionated way.
+      This is the only place naked elements are styled.
+      Core typographical considerations and base-element-derived utilities, such as typefaces and the type scale, are defined here.
+    </p>
+    <section id="typography" class="py2">
+      <h1>Typography</h1>
 
 <h2>Base type scale</h2>
 <p>Base type elements are normalized to a simple type scale that works well across devices.</p>
@@ -54,10 +58,17 @@
 </pre></div>
 </div>
 
+<h2>Type scale utilities</h2>
+<p>
+  Use the <code>.h1</code> &#x2013; <code>.h6</code> font-size utilities to override an elements defaults.
+</p>
 
-</section>
-<section id="forms" class="py2">
-  <h1 class="mb0">Forms</h1>
+<!-- lists -->
+
+
+    </section>
+    <section id="forms" class="py2">
+      <h1>Forms</h1>
 <p>
   Forms use default base styles for their structural appearance
   and thematic styles for colors and borders.
@@ -140,9 +151,9 @@
 </div>
 
 
-</section>
-<section id="buttons" class="py2">
-  <h1 class="mb0">Buttons</h1>
+    </section>
+    <section id="buttons" class="py2">
+      <h1>Buttons</h1>
 
 <p>
   Base button styles are defined in <code>base</code>.
@@ -181,9 +192,9 @@
 </pre></div>
 </div>
 
-</section>
-<section id="tables" class="py2">
-  <h1 class="mb0">Tables</h1>
+    </section>
+    <section id="tables" class="py2">
+      <h1>Tables</h1>
 <p>
   Default table structural styles are defined in <code>base</code>.
   Use the default <code>table-light</code> theme for minimal styling
@@ -221,10 +232,19 @@
 </div>
 
 
-</section>
+    </section>
 
-<div class="right-align">
-  <a href="/docs/utilities" class="button bold">Next: Utilities</a>
+    <div class="clearfix mxn2 py2">
+      <a href="/docs/getting-started" class="left button bold">Previous: Getting Started</a>
+      <a href="/docs/utilities" class="right button bold">Next: Utilities</a>
+    </div>
+  </div>
+  <div class="sm-left sm-col-3 sm-show">
+    <a href="#typography" class="button buttons-small block">Typography</a>
+    <a href="#forms" class="button buttons-small block">Forms</a>
+    <a href="#buttons" class="button buttons-small block">Buttons</a>
+    <a href="#tables" class="button buttons-small block">Tables</a>
+  </div>
 </div>
 
 <footer class="py4">

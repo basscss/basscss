@@ -23,15 +23,17 @@
   <h1 class="avenir md-h1 lg-h1 caps m0">Utilities</h1>
 </header>
 
-<!--
-<h1 class="md-h1 mt0">Utilities</h1>
--->
 
-<p class="h3">
-  Utilities are single-purpose styles to handle common layout tasks.
-</p>
-<section id="layout" class="py2">
-  <h1 class="mb0">Layout</h1>
+<div class="clearfix mxn2">
+  <div class="sm-left sm-col-9 px2">
+    <p class="h3">
+      Utilities are single-purpose styles that provide the backbone for layout.
+      Once these are set, they should be considered immutable and never change or be extended.
+      Each utility is designed to do one thing and do it well,
+      with the intention of making its usage simple and obvious.
+    </p>
+    <section id="layout" class="py2">
+      <h1>Layout</h1>
 <p>Use the following layout utilities to alter default HTML layout.</p>
 <div class="p2 bg-light-gray border rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.inline</span>       <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span> <span class="p">}</span>
 <span class="nc">.block</span>        <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="p">}</span>
@@ -53,9 +55,9 @@
 </pre></div>
 </div>
 
-</section>
-<section id="type-utilities" class="py2">
-  <h1 class="mb0">Type Utilities</h1>
+    </section>
+    <section id="type-utilities" class="py2">
+      <h1>Type Utilities</h1>
 <p>Use type utilities to alter default typographical styles.</p>
 
 <div data-include-example="docs/examples/type-utilities.html" class="Example">
@@ -80,9 +82,9 @@
 </pre></div>
 </div>
 
-</section>
-<section id="floats" class="py2">
-  <h1 class="mb0">Floats</h1>
+    </section>
+    <section id="floats" class="py2">
+      <h1 class="mb0">Floats</h1>
 <p>These utilities are available in mobile-first breakpoint-based variations.</p>
 <table class="mb2 table-light border rounded">
   <thead>
@@ -113,9 +115,9 @@
 </pre></div>
 </div>
 
-</section>
-<section id="margins" class="py2">
-  <h1 class="mb0">Margins</h1>
+    </section>
+    <section id="margins" class="py2">
+      <h1>Margins</h1>
 <p>
   Margin and padding utilities are based on a global white space scale defined with variables.
   These utilities use a shorthand naming convention.
@@ -179,9 +181,9 @@
 </pre></div>
 </div>
 
-</section>
-<section id="padding" class="py2">
-  <h1 class="mb0">Padding</h1>
+    </section>
+    <section id="padding" class="py2">
+      <h1>Padding</h1>
 <p>Padding utilities are only available in symmetrical orientations.</p>
 
 <div class="p2 bg-light-gray border rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.p1</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
@@ -203,9 +205,9 @@
 </div>
 
 
-</section>
-<section id="responsive-states" class="py2">
-  <h1 class="mb0">Responsive States</h1>
+    </section>
+    <section id="responsive-states" class="py2">
+      <h1>Responsive States</h1>
 <p>Responsive show/hide utitlies use the global mobile-first approach.</p>
 
 <div class="p2 bg-light-gray border rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.sm-show</span><span class="o">,</span> <span class="nc">.md-show</span><span class="o">,</span> <span class="nc">.lg-show</span> <span class="p">{</span>
@@ -240,11 +242,22 @@
 </pre></div>
 </div>
 
-</section>
-
-
-<div class="right-align">
-  <a href="/docs/modules" class="button bold">Next: Modules</a>
+    </section>
+    <div class="clearfix mxn2 py2">
+      <a href="/docs/base" class="left button bold">Previous: Base Elements</a>
+      <a href="/docs/modules" class="right button bold">Next: Modules</a>
+    </div>
+  </div>
+  <div class="sm-left sm-col-3 px2 sm-show">
+    <div class="mxn1">
+      <a href="#layout" class="button block">Layout</a>
+      <a href="#type" class="button block">Type</a>
+      <a href="#floats" class="button block">Floats</a>
+      <a href="#margins" class="button block">Margins</a>
+      <a href="#padding" class="button block">Padding</a>
+      <a href="#responsive-states" class="button block">Responsive States</a>
+    </div>
+  </div>
 </div>
 
 <footer class="py4">
