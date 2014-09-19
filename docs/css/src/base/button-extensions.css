@@ -4,10 +4,15 @@
 }
 
 .button-small {
-  /* padding: calc(.5 * var(--ui-padding-x));
-   */
+  /*
+  line-height: 1em;
   height: 2em;
   min-height: 2em;
-  line-height: 1em;
+   */
+  padding: calc(.5 * var(--ui-padding-y)) var(--ui-padding-x);
+
+  padding: 0 var(--ui-padding-x);
+  line-height: 2;
+  min-height: 1.5em;
 }
 
