@@ -14,186 +14,178 @@
 
 <body class="container px2">
 
-  <header class="py3 mb3 border-bottom">
-  <div class="avenir h4 caps medium">
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h4 caps medium mt2">
     <a href="/" class="">Basscss</a>
     /
     <a href="/docs">Docs</a>
   </div>
-    <h1 class="avenir md-h1 lg-h1 caps m0">Design Principles</h1>
-  </header>
+  <h1 class="avenir md-h1 lg-h1 caps m0">Design Principles</h1>
+</header>
 
-  <section id="intro">
-    <p class="h3">
-      Basscss borrows many ideas from OOCSS while attempting to address common product design considerations through a balance of consistency and flexibility.
-    </p>
-  </section>
+<section id="intro">
+  <p class="h3">
+    Basscss borrows many ideas from OOCSS while attempting to address common product design considerations through a balance of consistency and flexibility.
+  </p>
+</section>
 
-  <div class="clearfix mxn2">
+<div class="clearfix mxn2">
 
-    <div class="sm-right sm-col-3 px2 xs-hide sm-show">
-      <a href="#principles" class="button button-block">Principles</a>
-      <a href="#organizing-principles" class="button button-block">Organizing Principles</a>
-      <a href="#naming-conventions" class="button button-block">Naming Conventions</a>
-    </div>
-
-    <div class="sm-left sm-col-9 px2">
-
-      <section id="principles">
-        <h2>Follow the Open/Closed Principle</h2>
-        <p>
-          Styles should be open for extension, but closed for modification.
-          Avoid styles that require overrides elsewhere or are highly specific to context.
-        </p>
-        <h2>Design with Reuse in Mind</h2>
-        <p>
-          Abstract styles to their most essential form first.
-          Content-agnostic, modular styles allow for design flexiblity and have a longer lifespan.
-          Highly reusable styles can be widely adopted.
-          Always keep structural and thematic considerations separate, and
-          consider layout, interactions, states, and other properties in the most generalized way.
-        </p>
-        <h2>Don&apos;t Make Assumptions</h2>
-        <p>
-          Even if clear design decisions exist, don&apos;t make assumptions in code too early.
-          Design is an iterative process, and building and maintaining good CSS can be an extremely time-intensive process.
-          Build trust and an understanding of the tools and design principles before committing to code.
-          Rely on base styles and utilities and defer pattern creation to your templating system as much as possible.
-        </p>
-        <h2>Clarity over Cleverness</h2>
-        <p>
-          Simple, obvious styles are quicker to internalize, easier to use, and more widely adopted.
-          Avoid abstractions and unclear dependency chains created with preprocessors.
-          Avoid writing styles that have ambiguous applications or are rarely used.
-          Never optimize for the time it takes to type something in CSS &#x2013;
-          this is something that preprocessors should not aim to solve.
-        </p>
-        <h2>Balance Consistency with Flexibility</h2>
-        <p>
-          Styles should maintain consistency while allowing iterative design processes to thrive.
-          Scalable systems, such as typography, type scales, grids, white space scales, and color palettes,
-          should be limited and opinionated.
-          Complex implementations of these systems should be flexible and work independently of each other.
-        </p>
-      </section>
-
-      <section id="organizing-principles">
-        <h1>Organizing Principles</h1>
-        <p>Styles should be organized according to these high-level categories:</p>
-        <ul>
-          <li>Base Elements</li>
-          <li>Immutable Utilities</li>
-          <li>Structural Modules</li>
-          <li>Themes</li>
-          <li>Components</li>
-        </ul>
-        <p>
-          Conceptually, these are based on smart defaults,
-          basic layout considerations, volatility, and cohesion.
-        </p>
-        <h2>Base Elements</h2>
-        <p>
-          Base element styles should define native HTML elements such as headings, paragraphs, buttons, and forms in a systemic and opinionated way. This is the only place to style naked elements, and styles should avoid nesting.
-          Each style should reset and style one element &#x2013;
-          use repetition in code when appropriate to aid in readability and comprehension.
-        </p>
-        <p>
-          Core typographical considerations, such as typefaces and type scale should be defined here.
-          Base-level element-derived utilities, such as a type scale based on headings, can be defined here.
-        </p>
-        <p>
-          These styles should not define thematic characteristics.
-          These styles should never or very rarely be overridden.
-          If overrides are commonly applied later in the source or in use,
-          these styles should be adjusted and made less opinionated.
-        </p>
-        <h2>Immutable Utilities</h2>
-        <p>
-          Utilities provide the backbone for layout and, once set, should never be changed or extended.
-          Each utility should contain as few CSS properties as possible, generally just one or two.
-          Utilities should do one thing and do it well,
-          they should be simple and obvious to use,
-          and they should operate independently.
-        </p>
-        <p>
-          The values used for utilities, such as white space scales, may change over time,
-          but the utilities themselves and their naming conventions should not.
-        </p>
-        <p>
-          Utilities should not define thematic characteristics, such as colors and borders.
-        </p>
-        <!-- Bricks metaphor -->
-        <h2>Structural Modules</h2>
-        <p>
-          Modules imply relationships between elements and are often tied to various markup structures.
-          Once modules are defined they should rarely be changed and carefully handled when they do.
-          Things like grid systems and the media object would be considered modules.
-          Modules should operate independently of thematic styles,
-          be highly reusable, and conform to consistent design layout patterns.
-        </p>
-        <h2>Themes</h2>
-        <p>
-          Themes are colors, borders, transitions, animations, and other properties
-          that are decorative, highly volatile, and likely to change over time.
-          They should be kept completely separate from structural styles,
-          and they should be applied directly to the elements they affect whenever possible.
-          Avoid parent selectors and contextual styles.
-        </p>
-        <p>
-          A suite of thematic utilities for common styles, such as foreground and background colors, borders, and transitions,
-          will allow for flexibility and future stylistic changes.
-        </p>
-        <h2>Components</h2>
-        <p>
-          Components have high cohesion with HTML and Javascript.
-          That is, they are interdependent and inseparable.
-          Naming conventions and organization of components are highly dependent on
-          application architecture and templating engines.
-        </p>
-        <p>
-          Basscss is unopinionated in component implementation but suggests the utilization of folder structure and naming conventions similar to those proposed in
-          <a href="http://bem.info">BEM</a> and
-          <a href="http://suitcss.github.io">Suitcss</a>
-          to clearly distinguish components from low-level styles.
-        </p>
-        <p>
-          Implementation aside, these general guidelines can help create components on top of Basscss:
-        </p>
-        <ul>
-          <li>Components should follow the open/closed principle, and should not be defined early on, but created in a highly-reusable fashion once patterns arise.</li>
-          <li>Base component structural styles should be clearly separated from related thematic extensions.</li>
-          <li>For large, scalable applications, modifying existing components and</li>
-          <li>introducing new components should follow a standardized process.</li>
-          <li>With a small enough team, these are generally unnecessary.</li>
-        </ul>
-      </section>
-
-      <section id="naming-conventions">
-        <h1>Naming Conventions</h1>
-        <p>
-          Avoid naming conventions that imply relationships to specific parts of a user interface.
-          Content-derived names discourage reuse and often result in bloated, duplicative code,
-          while limiting flexibility for solving design problems.
-          Functionally-derived names encourage reuse but create often unnecessary abstractions.
-          Presentational names promote wide reuse but require more coordination outside of the system.
-          Depending on the size, skill, and familiarity of the team, some naming conventions may work better than others.
-        </p>
-        <p>
-          The naming conventions in Basscss are intentionally short and simple to promote
-          understanding, internalization, and clarity.
-          This simple, straightforward naming convention reflects the simplicity of the styles themselves.
-        </p>
-        <p>
-          Keep javascript selectors completely separate from stylistic ones and use a prefix convention (i.e. <code>.js-</code>) to denote them.
-        </p>
-      </section>
-
-    </div>
-
+  <div class="sm-left sm-col-8 md-col-9 px2">
+    <section id="principles">
+      <h2>Follow the Open/Closed Principle</h2>
+      <p>
+        Styles should be open for extension, but closed for modification.
+        Avoid styles that require overrides elsewhere or are highly specific to context.
+      </p>
+      <h2>Design with Reuse in Mind</h2>
+      <p>
+        Abstract styles to their most essential form first.
+        Content-agnostic, modular styles allow for design flexiblity and have a longer lifespan.
+        Highly reusable styles can be widely adopted.
+        Always keep structural and thematic considerations separate, and
+        consider layout, interactions, states, and other properties in the most generalized way.
+      </p>
+      <h2>Don&apos;t Make Assumptions</h2>
+      <p>
+        Even if clear design decisions exist, don&apos;t make assumptions in code too early.
+        Design is an iterative process, and building and maintaining good CSS can be an extremely time-intensive process.
+        Build trust and an understanding of the tools and design principles before committing to code.
+        Rely on base styles and utilities and defer pattern creation to your templating system as much as possible.
+      </p>
+      <h2>Clarity over Cleverness</h2>
+      <p>
+        Simple, obvious styles are quicker to internalize, easier to use, and more widely adopted.
+        Avoid abstractions and unclear dependency chains created with preprocessors.
+        Avoid writing styles that have ambiguous applications or are rarely used.
+        Never optimize for the time it takes to type something in CSS &#x2013;
+        this is something that preprocessors should not aim to solve.
+      </p>
+      <h2>Balance Consistency with Flexibility</h2>
+      <p>
+        Styles should maintain consistency while allowing iterative design processes to thrive.
+        Scalable systems, such as typography, type scales, grids, white space scales, and color palettes,
+        should be limited and opinionated.
+        Complex implementations of these systems should be flexible and work independently of each other.
+      </p>
+    </section>
+    <section id="organizing-principles">
+      <h1>Organizing Principles</h1>
+      <p>Styles should be organized according to these high-level categories:</p>
+      <ul>
+        <li>Base Elements</li>
+        <li>Immutable Utilities</li>
+        <li>Structural Modules</li>
+        <li>Color</li>
+        <li>Components</li>
+      </ul>
+      <p>
+        Conceptually, these are based on smart defaults,
+        basic layout considerations, volatility, and cohesion.
+      </p>
+      <h2>Base Elements</h2>
+      <p>
+        Base element styles should define native HTML elements such as headings, paragraphs, buttons, and forms in a systemic and opinionated way. This is the only place to style naked elements, and styles should avoid nesting.
+        Each style should reset and style one element &#x2013;
+        use repetition in code when appropriate to aid in readability and comprehension.
+      </p>
+      <p>
+        Core typographical considerations, such as typefaces and type scale should be defined here.
+        Base-level element-derived utilities, such as a type scale based on headings, can be defined here.
+      </p>
+      <p>
+        These styles should not define thematic characteristics.
+        These styles should never or very rarely be overridden.
+        If overrides are commonly applied later in the source or in use,
+        these styles should be adjusted and made less opinionated.
+      </p>
+      <h2>Immutable Utilities</h2>
+      <p>
+        Utilities provide the backbone for layout and, once set, should never be changed or extended.
+        Each utility should contain as few CSS properties as possible, generally just one or two.
+        Utilities should do one thing and do it well,
+        they should be simple and obvious to use,
+        and they should operate independently.
+      </p>
+      <p>
+        The values used for utilities, such as white space scales, may change over time,
+        but the utilities themselves and their naming conventions should not.
+      </p>
+      <p>
+        Utilities should not define thematic characteristics, such as colors and borders.
+      </p>
+      <!-- Bricks metaphor -->
+      <h2>Structural Modules</h2>
+      <p>
+        Modules imply relationships between elements and are often tied to various markup structures.
+        Once modules are defined they should rarely be changed and carefully handled when they do.
+        Things like grid systems and the media object would be considered modules.
+        Modules should operate independently of thematic styles,
+        be highly reusable, and conform to consistent design layout patterns.
+      </p>
+      <h2>Color</h2>
+      <p>
+        Color styles include the colors, background colors, borders, shadows and other properties
+        that are decorative and highly likely to change over time.
+        <!--
+        Themes are colors, borders, transitions, animations, and other properties
+        that are decorative, highly volatile, and likely to change over time.
+        -->
+        They should be kept completely separate from structural styles,
+        and they should be applied directly to the elements they affect whenever possible.
+        Avoid parent selectors and contextual styles.
+      </p>
+      <p>
+        A suite of color utilities for common styles, such as foreground and background colors, borders, and transitions,
+        will allow for flexibility and future stylistic changes.
+      </p>
+      <h2>Components</h2>
+      <p>
+        Components have high cohesion with HTML and Javascript.
+        That is, they are interdependent and inseparable.
+        Naming conventions and organization of components are highly dependent on
+        application architecture and templating engines.
+      </p>
+      <p>
+        Basscss is unopinionated in component implementation but suggests the utilization of folder structure and naming conventions similar to those proposed in
+        <a href="http://bem.info">BEM</a> and
+        <a href="http://suitcss.github.io">Suitcss</a>
+        to clearly distinguish components from low-level styles.
+      </p>
+      <p>
+        Implementation aside, these general guidelines can help create components on top of Basscss:
+      </p>
+      <ul>
+        <li>Components should follow the open/closed principle, and should not be defined early on, but created in a highly-reusable fashion once patterns arise.</li>
+        <li>Base component structural styles should be clearly separated from related thematic extensions.</li>
+        <li>For large, scalable applications, modifying existing components and</li>
+        <li>introducing new components should follow a standardized process.</li>
+        <li>With a small enough team, these are generally unnecessary.</li>
+      </ul>
+    </section>
+    <section id="naming-conventions">
+      <h1>Naming Conventions</h1>
+      <p>
+        Avoid naming conventions that imply relationships to specific parts of a user interface.
+        Content-derived names discourage reuse and often result in bloated, duplicative code,
+        while limiting flexibility for solving design problems.
+        Functionally-derived names encourage reuse but create often unnecessary abstractions.
+        Presentational names promote wide reuse but require more coordination outside of the system.
+        Depending on the size, skill, and familiarity of the team, some naming conventions may work better than others.
+      </p>
+      <p>
+        The naming conventions in Basscss are intentionally short and simple to promote
+        understanding, internalization, and clarity.
+        This simple, straightforward naming convention reflects the simplicity of the styles themselves.
+      </p>
+      <p>
+        Keep javascript selectors completely separate from stylistic ones and use a prefix convention (i.e. <code>.js-</code>) to denote them.
+      </p>
+    </section>
   </div>
 
-<div class="right-align">
-  <a href="/docs/utilities" class="button bold">Next: Base</a>
+  <div class="sm-left sm-col-4 md-col-3 px2">
+  </div>
 </div>
 
 <footer class="py4">
