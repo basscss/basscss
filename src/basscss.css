@@ -21,16 +21,16 @@
 
 
 /* Themes */
-@import './theme/base';
-@import './theme/colors';
-@import './theme/borders';
-@import './theme/forms';
-@import './theme/tables';
-@import './theme/button-blue';
-@import './theme/button-blue-outline';
-@import './theme/button-gray';
+@import './color/base';
+@import './color/colors';
+@import './color/borders';
+@import './color/forms';
+@import './color/tables';
+@import './color/button-blue';
+@import './color/button-blue-outline';
+@import './color/button-gray';
 
-@import './theme/nav';
-@import './theme/variables';
+@import './color/nav';
+@import './color/variables';
 
 

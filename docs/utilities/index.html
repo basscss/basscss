@@ -8,7 +8,10 @@
   <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/docs/css/base.min.css">
-  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400|Open+Sans:400,400italic,600" rel="stylesheet">
+  <!--
+    <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400|Open+Sans:400,400italic,600" rel="stylesheet">
+  -->
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400" rel="stylesheet">
   <link rel="icon" href="/docs/favicon.png">
 </head>
 
@@ -29,13 +32,13 @@
     <p class="h3">
       Utilities are single-purpose styles that provide the backbone for layout.
       Once these are set, they should be considered immutable and never change or be extended.
-      Each utility is designed to do one thing and do it well,
-      with the intention of making its usage simple and obvious.
+      Each utility is designed to do one thing well,
+      while making its usage simple and obvious.
     </p>
     <section id="layout" class="py2">
       <h1>Layout</h1>
 <p>Use the following layout utilities to alter default HTML layout.</p>
-<div class="p2 bg-light-gray border rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.inline</span>       <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span> <span class="p">}</span>
+<div class="p2 bg-darken-1 rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.inline</span>       <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span> <span class="p">}</span>
 <span class="nc">.block</span>        <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="p">}</span>
 <span class="nc">.inline-block</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span> <span class="p">}</span>
 
@@ -98,7 +101,7 @@
   </tbody>
 </table>
 
-<div class="p2 bg-light-gray border rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.left</span>  <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span> <span class="p">}</span>
+<div class="p2 bg-darken-1 rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.left</span>  <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span> <span class="p">}</span>
 <span class="nc">.right</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">right</span> <span class="p">}</span>
 <span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-sm</span><span class="o">)</span> <span class="p">{</span>
   <span class="nc">.sm-left</span>  <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span>  <span class="p">}</span>
@@ -122,7 +125,7 @@
   Margin and padding utilities are based on a global white space scale defined with variables.
   These utilities use a shorthand naming convention.
 </p>
-<table class="mb2 border rounded table-light">
+<table class="mb2 bg-darken-1 rounded table-light">
   <thead>
     <tr> <th>Shorthand</th> <th>Description</th> </tr>
   </thead>
@@ -142,7 +145,7 @@
     <tr> <td>4</td> <td>--space-4 (default 4rem)</td> </tr>
 </tbody></table>
 
-<div class="p2 bg-light-gray border rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.m0</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="m">0</span> <span class="p">}</span>
+<div class="p2 bg-darken-1 rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.m0</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="m">0</span> <span class="p">}</span>
 <span class="nc">.mt0</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="m">0</span> <span class="p">}</span>
 <span class="nc">.mr0</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="m">0</span> <span class="p">}</span>
 <span class="nc">.mb0</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
@@ -186,7 +189,7 @@
       <h1>Padding</h1>
 <p>Padding utilities are only available in symmetrical orientations.</p>
 
-<div class="p2 bg-light-gray border rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.p1</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
+<div class="p2 bg-darken-1 rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.p1</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
 <span class="nc">.py1</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
 <span class="nc">.px1</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
 
@@ -208,34 +211,31 @@
     </section>
     <section id="responsive-states" class="py2">
       <h1>Responsive States</h1>
-<p>Responsive show/hide utitlies use the global mobile-first approach.</p>
+<p>
+  These styles allow for conditionally showing and hiding elements
+  using a mobile-first breakpoint approach.
+</p>
 
-<div class="p2 bg-light-gray border rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.sm-show</span><span class="o">,</span> <span class="nc">.md-show</span><span class="o">,</span> <span class="nc">.lg-show</span> <span class="p">{</span>
+<div class="p2 bg-darken-1 rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nc">.sm-show</span><span class="o">,</span> <span class="nc">.md-show</span><span class="o">,</span> <span class="nc">.lg-show</span> <span class="p">{</span>
   <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span>
 <span class="p">}</span>
-
 <span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-sm</span><span class="o">)</span> <span class="p">{</span>
   <span class="nc">.sm-show</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="cp">!important</span> <span class="p">}</span>
 <span class="p">}</span>
-
 <span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-md</span><span class="o">)</span> <span class="p">{</span>
   <span class="nc">.md-show</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="cp">!important</span> <span class="p">}</span>
 <span class="p">}</span>
-
 <span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-lg</span><span class="o">)</span> <span class="p">{</span>
   <span class="nc">.lg-show</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="cp">!important</span> <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="nc">.hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
-
 <span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-sm</span><span class="o">)</span> <span class="p">{</span>
   <span class="nc">.sm-hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
 <span class="p">}</span>
-
 <span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-md</span><span class="o">)</span> <span class="p">{</span>
   <span class="nc">.md-hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
 <span class="p">}</span>
-
 <span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-lg</span><span class="o">)</span> <span class="p">{</span>
   <span class="nc">.lg-hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
 <span class="p">}</span>
@@ -244,8 +244,8 @@
 
     </section>
     <div class="clearfix mxn2 py2">
-      <a href="/docs/base" class="left button bold">Previous: Base Elements</a>
-      <a href="/docs/modules" class="right button bold">Next: Modules</a>
+      <a href="/docs/base" class="left button">Previous: Base Elements</a>
+      <a href="/docs/modules" class="right button">Next: Modules</a>
     </div>
   </div>
   <div class="sm-left sm-col-3 px2 sm-show">

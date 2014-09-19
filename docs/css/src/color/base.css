@@ -15,7 +15,7 @@ a {
   }
 
 code {
-  background-color: var(--darken-1);
+  background-color: var(--light-gray);
   border-radius: var(--border-radius);
 }
 

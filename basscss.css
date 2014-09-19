@@ -196,7 +196,7 @@ textarea {
 button,
 input[type=submit],
 .button {
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;

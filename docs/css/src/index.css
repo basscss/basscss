@@ -10,29 +10,34 @@
 @import "basscss-grid";
 @import "basscss-table-object";
 
+/*
 @import "./base/fonts";
+*/
 @import "./base/responsive-type";
 @import "./base/type-h0";
 @import "./base/icons";
 @import "./base/button-extensions";
 
 :root {
-  --font-family: 'Open Sans', sans-serif;
+  --font-family: 'Avenir Next', 'Helvetica Neue', Verdana, sans-serif;
   --heading-font-weight: 600;
+  --button-font-weight: 500;
+  --h4: 1.125rem;
+  --h5: 1rem;
 }
 
-@import './theme/base';
-@import './theme/colors';
-@import './theme/borders';
-@import './theme/forms';
-@import './theme/tables';
-@import './theme/button-blue';
-@import './theme/button-blue-outline';
-@import './theme/button-gray';
-@import './theme/nav';
+@import './color/base';
+@import './color/colors';
+@import './color/borders';
+@import './color/forms';
+@import './color/tables';
+@import './color/button-blue';
+@import './color/button-blue-outline';
+@import './color/button-gray';
+@import './color/nav';
 
-@import "./theme/site";
-@import "./theme/variables";
+@import "./color/site";
+@import "./color/variables";
 
-@import "./theme/pygments";
+@import "./color/pygments";
 

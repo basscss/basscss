@@ -10,9 +10,11 @@
   --green: #11e966;
   --yellow: #ffdc00;
 
-  --darken-1: rgba(#000,.125);
-  --darken-2: rgba(#000,.25);
-  --darken-3: rgba(#000,.375);
+  --darken-1: rgba(#033,.03125);
+
+  --darken-1: rgba(#036,.0625);
+  --darken-2: rgba(#036,.125);
+  --darken-3: rgba(#036,.25);
 
   --border-color: var(--darken-2);
   --border-width: 1px;
