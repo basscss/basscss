@@ -5,6 +5,24 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 .is-active { color: var(--dark-gray) }
 
+.waves {
+  animation: waves 1.6s linear infinite;
+}
+
+@keyframes waves {
+  from {
+    box-shadow: 0 0 0 0 var(--dark-gray), 0 0 0 1px rgba(var(--bright-blue), .5);
+  }
+  to {
+    box-shadow: 0 0 0 8px var(--dark-gray), 0 0 0 16px rgba(var(--bright-blue), 0);
+  }
+}
+
+@keyframes vibrate {
+  from { transform: translateX(-2px) }
+  to { transform: translateX(2px) }
+}
+
 .dot {
   line-height: 1.625em;
   text-align: center;
@@ -13,8 +31,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   height: 1.5em;
   border-radius: 50%;
 }
+
 .dot:hover {
   text-decoration: none;
+}
+
+.dot-bright-blue:focus {
+  box-shadow: 0 0 0 8px var(--dark-gray), 0 0 0 16px rgba(var(--bright-blue), .5);
+  outline: none;
+  animation: vibrate .1s linear infinite;
 }
 
 .dot-blue {
@@ -35,28 +60,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   box-shadow: 0 0 0 1px rgba(var(--blue), .75);
 }
 
-.waves {
-  animation: waves 1.6s linear infinite;
-}
-
-@keyframes waves {
-  from {
-    box-shadow: 0 0 0 0 var(--dark-gray), 0 0 0 1px rgba(var(--bright-blue), .5);
-  }
-  to {
-    box-shadow: 0 0 0 8px var(--dark-gray), 0 0 0 16px rgba(var(--bright-blue), 0);
-  }
-}
-
 .highlight pre { margin-bottom: 0 }
+
 
 /* Example component */
 .Example {
   background-color: var(--darken-1);
-  /*
-  border: var(--border-width) solid var(--border-color);
-  border-radius: var(--border-radius);
-  */
 }
 
   .Example_rendered {
@@ -66,9 +75,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   .Example_code {
     padding: var(--space-2);
     background-color: var(--darken-1);
-    /*
-    border-top: var(--border-width) solid var(--border-color);
-    */
   }
 
   .Example_code pre {

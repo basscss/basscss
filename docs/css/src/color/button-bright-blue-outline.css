@@ -16,5 +16,5 @@
 
   .button-bright-blue-outline:focus {
     outline: none;
-    box-shadow: inset 0 0 0 2px var(--bright-blue), 0 0 0 2px white, 0 0 1px 4px rgba(var(--blue), .5);
+    box-shadow: inset 0 0 0 2px var(--bright-blue), 0 0 0 2px var(--dark-gray), 0 0 1px 4px rgba(var(--blue), .5);
   }

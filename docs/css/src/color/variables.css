@@ -1,6 +1,7 @@
 
 :root {
 
+  /*
   --dark-gray: #304650;
   --blue: #0076df;
   --mid-gray: #667680;
@@ -8,19 +9,13 @@
   --red: #f96010;
   --green: #11e966;
   --yellow: #ffdc00;
+  --border-color: var(--darken-3);
+  --border-width: 1px;
+  --border-radius: 3px;
+  */
 
   --bright-blue: #0be;
   --bright-blue: #00a3ff;
   --bright-blue: #0096ff;
-
-  --darken-1: rgba(#033,.03125);
-
-  --darken-1: rgba(#036,.03225);
-  --darken-2: rgba(#036,.0625);
-  --darken-3: rgba(#036,.125);
-
-  --border-color: var(--darken-3);
-  --border-width: 1px;
-  --border-radius: 3px;
 
 }
