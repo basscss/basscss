@@ -16,7 +16,7 @@
 <body class="container px2">
 
 <header class="py3 mb3 border-bottom">
-  <div class="avenir h4 caps medium mt2">
+  <div class="avenir h4 caps bold mt2">
     <a href="/" class="">Basscss</a> /
     <a href="/docs">Docs</a>
   </div>
@@ -24,7 +24,7 @@
 </header>
 
 <div class="clearfix mxn2">
-  <div class="sm-col sm-col-9 px2">
+  <div class="sm-col sm-col-9 px2 py2">
 
     <p class="h3">
       The word <i>color</i> is used loosely here to describe
@@ -40,41 +40,89 @@
       
 <div data-include-example="docs/examples/colors.html" class="Example">
 <div class="Example_rendered">
-<div class="center p1 white bg-dark-gray">.dark-gray</div>
-<div class="center p1 white bg-mid-gray">.mid-gray</div>
-<div class="center p1 bg-light-gray">.light-gray</div>
-<div class="center p1 white bg-blue">.blue</div>
-<div class="center p1 white bg-red">.red</div>
-<div class="center p1 white bg-yellow">.yellow</div>
-<div class="center p1 white bg-green">.green</div>
+<h3 class="center">
+  <span class="dark-gray">.dark-gray</span>
+  <span class="mid-gray">.mid-gray</span>
+  <span class="light-gray">.light-gray</span>
+  <span class="white">.white</span>
+  <span class="blue">.blue</span>
+  <span class="red">.red</span>
+  <span class="yellow">.yellow</span>
+  <span class="green">.green</span>
+</h3>
 </div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 white bg-dark-gray&quot;</span><span class="nt">&gt;</span>.dark-gray<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 white bg-mid-gray&quot;</span><span class="nt">&gt;</span>.mid-gray<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 bg-light-gray&quot;</span><span class="nt">&gt;</span>.light-gray<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 white bg-blue&quot;</span><span class="nt">&gt;</span>.blue<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 white bg-red&quot;</span><span class="nt">&gt;</span>.red<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 white bg-yellow&quot;</span><span class="nt">&gt;</span>.yellow<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 white bg-green&quot;</span><span class="nt">&gt;</span>.green<span class="nt">&lt;/div&gt;</span>
+<div class="highlight Example_code"><pre><span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;dark-gray&quot;</span><span class="nt">&gt;</span>.dark-gray<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;mid-gray&quot;</span><span class="nt">&gt;</span>.mid-gray<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;light-gray&quot;</span><span class="nt">&gt;</span>.light-gray<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;white&quot;</span><span class="nt">&gt;</span>.white<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;blue&quot;</span><span class="nt">&gt;</span>.blue<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;red&quot;</span><span class="nt">&gt;</span>.red<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;yellow&quot;</span><span class="nt">&gt;</span>.yellow<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;green&quot;</span><span class="nt">&gt;</span>.green<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/h3&gt;</span>
 </pre></div>
 </div>
     </section>
 
     <section id="backgrounds" class="py2">
       <h1>Background Colors</h1>
-      <!--
-      <div data-include-example="docs/examples/colors.html"></div>
-      -->
+      
+<div data-include-example="docs/examples/backgrounds.html" class="Example">
+<div class="Example_rendered">
+<div class="center p1 white bg-dark-gray">.bg-dark-gray</div>
+<div class="center p1 bg-mid-gray">.bg-mid-gray</div>
+<div class="center p1 bg-light-gray">.bg-light-gray</div>
+<div class="center p1 bg-white">.bg-white</div>
+<div class="center p1 bg-blue">.bg-blue</div>
+<div class="center p1 bg-red">.bg-red</div>
+<div class="center p1 bg-yellow">.bg-yellow</div>
+<div class="center p1 bg-green">.bg-green</div>
+<div class="center p1 bg-darken-1">.bg-darken-1</div>
+<div class="center p1 bg-darken-2">.bg-darken-2</div>
+<div class="center p1 bg-darken-3">.bg-darken-3</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 white bg-dark-gray&quot;</span><span class="nt">&gt;</span>.bg-dark-gray<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 bg-mid-gray&quot;</span><span class="nt">&gt;</span>.bg-mid-gray<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 bg-light-gray&quot;</span><span class="nt">&gt;</span>.bg-light-gray<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 bg-white&quot;</span><span class="nt">&gt;</span>.bg-white<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 bg-blue&quot;</span><span class="nt">&gt;</span>.bg-blue<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 bg-red&quot;</span><span class="nt">&gt;</span>.bg-red<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 bg-yellow&quot;</span><span class="nt">&gt;</span>.bg-yellow<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 bg-green&quot;</span><span class="nt">&gt;</span>.bg-green<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 bg-darken-1&quot;</span><span class="nt">&gt;</span>.bg-darken-1<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 bg-darken-2&quot;</span><span class="nt">&gt;</span>.bg-darken-2<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center p1 bg-darken-3&quot;</span><span class="nt">&gt;</span>.bg-darken-3<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
     </section>
 
     <section id="borders" class="py2">
       <h1>Borders</h1>
-      <!--
-      <div data-include-example="docs/examples/borders.html"></div>
-      -->
+      
+<div data-include-example="docs/examples/borders.html" class="Example">
+<div class="Example_rendered">
+<div class="p1 m1 border bg-white">.border</div>
+<div class="p1 m1 border-top bg-white">.border-top</div>
+<div class="p1 m1 border-right bg-white">.border-right</div>
+<div class="p1 m1 border-bottom bg-white">.border-bottom</div>
+<div class="p1 m1 border-left bg-white">.border-left</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p1 m1 border bg-white&quot;</span><span class="nt">&gt;</span>.border<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p1 m1 border-top bg-white&quot;</span><span class="nt">&gt;</span>.border-top<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p1 m1 border-right bg-white&quot;</span><span class="nt">&gt;</span>.border-right<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p1 m1 border-bottom bg-white&quot;</span><span class="nt">&gt;</span>.border-bottom<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p1 m1 border-left bg-white&quot;</span><span class="nt">&gt;</span>.border-left<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
     </section>
 
     <section id="themes" class="py2">
       <h1>Themes</h1>
+      <p>
+        Basscss also includes basic color styles for links, buttons, form elements, and tables.
+        Customize or extend these styles to create your own theme.
+      </p>
     </section>
 
     <div class="clearfix mxn2 py2">
@@ -83,7 +131,7 @@
 
   </div>
 
-  <div class="sm-col sm-col-3 sm-show">
+  <div class="py2 sm-col sm-col-3 sm-show">
     <a href="#colors" class="button block">Colors</a>
     <a href="#backgrounds" class="button block">Backgrounds</a>
     <a href="#borders" class="button block">Borders</a>

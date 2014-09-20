@@ -7,7 +7,7 @@
 
 */
 
-/* BASSCSS Base */
+/* Basscss Base */
 
 
 
@@ -196,7 +196,7 @@ textarea {
 button,
 input[type=submit],
 .button {
-  font-weight: 700;
+  font-weight: bold;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -225,6 +225,7 @@ table {
 
 th {
   text-align: left;
+  font-weight: bold;
 }
 
 th,
@@ -297,10 +298,6 @@ td {
 
 .regular {
   font-weight: normal;
-}
-
-.medium {
-  font-weight: 500;
 }
 
 .italic {

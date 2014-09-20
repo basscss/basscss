@@ -20,22 +20,20 @@
 @import "./color/site";
 @import "./color/pygments";
 
+/* Custom Media Queries */
+@custom-media --breakpoint-sm (min-width: 40em);
+@custom-media --breakpoint-md (min-width: 52em);
+@custom-media --breakpoint-lg (min-width: 64em);
 
-@import "./color/variables";
 :root {
   --font-family: 'Avenir Next', 'Helvetica Neue', Verdana, sans-serif;
   --heading-font-weight: 600;
-  --button-font-weight: 500;
-  --bold-font-weight: 600;
+  --bold-font-weight: 500;
   --h4: 1.125rem;
   --h5: 1rem;
   --h6: .875rem;
 }
 
-
-/* Custom Media Queries */
-@custom-media --breakpoint-sm (min-width: 40em);
-@custom-media --breakpoint-md (min-width: 52em);
-@custom-media --breakpoint-lg (min-width: 64em);
+@import "./color/variables";
 
 

@@ -16,7 +16,7 @@
 <body class="container px2">
 
 <header class="py3 mb3 border-bottom">
-  <div class="avenir h4 caps medium mt2">
+  <div class="avenir h4 caps bold mt2">
     <a href="/" class="">Basscss</a>
     /
     <a href="/docs">Docs</a>
@@ -25,7 +25,7 @@
 </header>
 
 <div class="clearfix mxn2">
-  <div class="sm-col sm-col-9 px2">
+  <div class="sm-col sm-col-9 px2 py2">
 
     <p class="h3">
       Layout modules are more complex than utilities and are tied to markup structure.
@@ -62,7 +62,11 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
-      <p>Use breakpoint-prefixed column utilities to change the grid at different screen widths.</p>
+      <p>
+        Use
+        <a href="/docs/utility#responsive-states">breakpoint-prefixed</a>
+        column utilities to change the grid at different screen widths.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/grid-breakpoints.html">
 <div class="Example_rendered">
@@ -77,7 +81,10 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
-      <p>Use padding and negative margin utilities to create gutters based on the white space scale.</p>
+      <p>
+        Use padding and negative margin utilities to create gutters based on the
+        <a href="/docs/utility#white-space">white space scale</a>.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/grid-gutters.html">
 <div class="Example_rendered">
@@ -98,7 +105,10 @@
 
     <section id="table-object" class="py2">
       <h1>Table Object</h1>
-      <p>Use the table object to vertically center content.</p>
+      <p>
+        Use the table object to vertically center content.
+        These styles can be combined with grid width and white-space utilities for wide range of layout options.
+      </p>
       
 <div data-include-example="docs/examples/table-object.html" class="Example">
 <div class="Example_rendered">
@@ -128,7 +138,7 @@
 
   </div>
 
-  <div class="sm-col sm-col-3 sm-show">
+  <div class="py2 sm-col sm-col-3 sm-show">
     <a href="#grid" class="button block">Grid</a>
     <a href="#table-object" class="button block">Table Object</a>
   </div>

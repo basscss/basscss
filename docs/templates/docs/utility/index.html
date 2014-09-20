@@ -4,7 +4,7 @@
 <body class="container px2">
 
 <header class="py3 mb3 border-bottom">
-  <div class="avenir h4 caps medium mt2">
+  <div class="avenir h4 caps bold mt2">
     <a href="/" class="">Basscss</a>
     /
     <a href="/docs">Docs</a>
@@ -14,7 +14,7 @@
 
 
 <div class="clearfix mxn2">
-  <div class="sm-col sm-col-9 px2">
+  <div class="sm-col sm-col-9 px2 py2">
 
     <p class="h3">
       Utilities are single-purpose styles that provide the backbone for layout.
@@ -25,7 +25,7 @@
 
     <section id="typography" class="py2">
       <h1>Typography</h1>
-      <p>Use type utilities to alter default typographical styles.</p>
+      <p>Use these utilities to alter default typographic styles.</p>
       <div data-include-example="docs/examples/type-utilities.html"></div>
     </section>
 
@@ -40,7 +40,6 @@
 
     <section id="white-space" class="py2">
       <h1>White Space Scale</h1>
-      <h2>Margins</h2>
       <p>
         Margin and padding utilities are based on a global white space scale defined with variables.
         These utilities use a shorthand naming convention.
@@ -64,11 +63,20 @@
           <tr> <td>3</td> <td>--space-3 (default 2rem)</td> </tr>
           <tr> <td>4</td> <td>--space-4 (default 4rem)</td> </tr>
       </table>
+      <h2>Margins</h2>
+      <p>
+        Use these utilities to reset or alter default margins.
+        Negative x-axis margins are used to offset padding.
+        Margin auto is used to horizontally center block-level elements with a set width.
+      </p>
       <div class="p2 bg-darken-1 rounded">
         <div data-include="docs/examples/margins.html"></div>
       </div>
       <h2>Padding</h2>
-      <p>Padding utilities are only available in symmetrical orientations.</p>
+      <p>
+        Padding utilities are only available in symmetrical orientations.
+        This is to normalize the spacing used around elements.
+      </p>
       <div class="p2 bg-darken-1 rounded">
         <div data-include="docs/examples/padding.html"></div>
       </div>
@@ -96,9 +104,12 @@
         </tbody>
       </table>
       <p>To adjust the default breakpoints, declare custom media queries after importing the file via Rework.</p>
-      <div class="p2 bg-darken-1 rounded">
+      <div class="p2 mb2 bg-darken-1 rounded">
         <div data-include="docs/examples/responsive-states.html"></div>
       </div>
+      <h3>Example</h3>
+      <p>Resize the browser window to see the effect.</p>
+      <div data-include-example="docs/examples/responsive-show-hide.html"></div>
     </section>
 
     <div class="clearfix mxn2 py2">
@@ -108,7 +119,7 @@
 
   </div>
 
-  <div class="sm-col sm-col-3 px2 sm-show">
+  <div class="py2 sm-col sm-col-3 px2 sm-show">
     <div class="mxn1">
       <a href="#typography" class="button block">Typography</a>
       <a href="#layout" class="button block">Layout</a>
