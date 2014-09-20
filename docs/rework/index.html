@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Basscss</title>
+  <meta name="author" content="Jxnblk">
+  <meta name="description" content="Simple, responsive CSS toolkit based on OOCSS principles">
+  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/docs/css/base.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400" rel="stylesheet">
+  <link rel="icon" href="/docs/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/docs/apple-touch-icon.png">
+</head>
+
+<body class="container px2">
+
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h4 caps bold mt2">
+    <a href="/" class="">Basscss</a> /
+    <a href="/docs">Docs</a>
+  </div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">Using Rework</h1>
+</header>
+
+<div class="sm-col-9">
+
+  <section class="py2">
+    <p class="h3">
+      Basscss is built with
+      <a href="https://github.com/reworkcss/rework">Rework</a> and
+      <a href="http://gulpjs.com/">Gulp</a>.
+      If you&#x2019;re new to these, follow this guide to get started.
+    </p>
+  </section>
+
+  <section class="py2">
+    <h2>Building with Gulp and Rework</h2>
+    <p>
+      If you don&#x2019;t have it already,
+      <a href="http://nodejs.org/download/">install Node</a>,
+      which includes NPM.
+      Then, install Gulp globally:
+    </p>
+    <pre class="p1">npm install --global gulp</pre>
+
+    <p>
+      Clone or
+      <a href="https://github.com/jxnblk/basscss/archive/v3.zip">download</a>
+      Basscss, then cd into the basscss directory.
+    </p>
+    <pre class="p1">git clone https://github.com/jxnblk/basscss.git &amp;&amp; cd basscss</pre>
+
+    <p>Install the dependencies for Basscss.</p>
+    <pre class="p1">npm install</pre>
+
+    <p>
+      Duplicate <code>/src/basscss.css</code> to use as a template, make adjustments, then run the following Gulp task from the command line to recompile. This will create uncompressed, minified, and gzipped versions of the file.
+    </p>
+    <pre class="p1">gulp rework</pre>
+
+    <p>To better understand how this is set up, open up <code>gulpfile.js</code> and take a peek.
+
+  </p></section>
+
+  <!--
+  <section class="py2">
+    <h2>Rework</h2>
+    <h3>Variables</h3>
+    <h3>Custom Media Queries</h3>
+    <h3>Imports</h3>
+  </section>
+  -->
+
+
+</div>
+
+
+<footer class="py4">
+  <div class="sm-table">
+    <div class="sm-table-cell nowrap py2 xs-center">
+      <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4">
+        </svg>
+        Tweet
+      </a>
+    </div>
+    <div class="sm-table-cell full-width py2 xs-center">
+      <div class="h5 bold px2">
+        <a href="/" class="button" data-nav-item="">Home</a>
+        <a href="/docs" class="button" data-nav-item="">Docs</a>
+        <a href="//github.com/jxnblk/basscss" class="button">Github</a>
+      </div>
+    </div>
+    <div class="sm-table-cell py2 nowrap right-align">
+      <p class="h5 mb0 xs-center mid-gray">
+        <svg class="icon red" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 ">
+        </svg>
+        Made with love by
+        <a href="//jxnblk.com">Jxnblk</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
