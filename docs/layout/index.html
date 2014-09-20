@@ -2,17 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>BASSCSS</title>
+  <title>Basscss</title>
   <meta name="author" content="Jxnblk">
-  <meta name="description" content="Simple, responsive CSS/SASS toolkit based on OOCSS principles">
+  <meta name="description" content="Simple, responsive CSS toolkit based on OOCSS principles">
   <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/docs/css/base.min.css">
-  <!--
-  <link rel="stylesheet" href="/basscss.min.css" />
-  -->
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400" rel="stylesheet">
   <link rel="icon" href="/docs/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/docs/apple-touch-icon.png">
 </head>
 
 <body class="container px2">
@@ -27,85 +25,81 @@
 </header>
 
 <div class="clearfix mxn2">
-  <div class="sm-left sm-col-9 px2">
+  <div class="sm-col sm-col-9 px2">
 
     <p class="h3">
       Layout modules are more complex than utilities and are tied to markup structure.
       They are designed to be highly reusable and to inter-operate with other styles.
     </p>
+
     <section id="grid" class="py2">
       <h1>Grid</h1>
-<p>
-  The utility-based grid allows a lot of flexibility in creating complex layouts.
-  Start by using a <code>.clearfix</code> container.
-  Optionally use a <code>.container</code> to set a max-width.
-</p>
-
+      <p>
+        The utility-based grid allows a lot of flexibility in creating complex layouts.
+        Start by using a <code>.clearfix</code> container.
+        Optionally use a <code>.container</code> to set a max-width.
+      </p>
 <div class="p2 mb2 bg-darken-1 rounded" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
-
-<p>
-  Add columns using the <code>.left</code> and grid width <code>.col-N</code> classes.
-</p>
-
+      <p>
+        Add columns using the <code>.col</code> and grid width <code>.col-N</code> classes.
+      </p>
+      
 <div class="mb2 Example" data-include-example="docs/examples/grid-floats.html">
 <div class="Example_rendered">
 <div class="clearfix">
-  <div class="left col-6 outline-blue">.left.col-6</div>
-  <div class="left col-6 outline-blue">.left.col-6</div>
+  <div class="col col-6 outline-blue">.col.col-6</div>
+  <div class="col col-6 outline-blue">.col.col-6</div>
 </div>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left col-6 outline-blue&quot;</span><span class="nt">&gt;</span>.left.col-6<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left col-6 outline-blue&quot;</span><span class="nt">&gt;</span>.left.col-6<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col col-6 outline-blue&quot;</span><span class="nt">&gt;</span>.col.col-6<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col col-6 outline-blue&quot;</span><span class="nt">&gt;</span>.col.col-6<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
-
-<p>Use breakpoint-prefixed float and column utilities to change the grid at different screen widths.</p>
-
+      <p>Use breakpoint-prefixed column utilities to change the grid at different screen widths.</p>
+      
 <div class="mb2 Example" data-include-example="docs/examples/grid-breakpoints.html">
 <div class="Example_rendered">
 <div class="clearfix">
-  <div class="sm-left sm-col-6 md-col-5 lg-col-4 outline-blue">.sm-left.sm-col-6.md-col-5.lg-col-4</div>
-  <div class="sm-left sm-col-6 md-col-7 lg-col-8 outline-blue">.sm-left.sm-col-6.md-col-7.lg-col-8</div>
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4 outline-blue">.sm-col.sm-col-6.md-col-5.lg-col-4</div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8 outline-blue">.sm-col.sm-col-6.md-col-7.lg-col-8</div>
 </div>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-left sm-col-6 md-col-5 lg-col-4 outline-blue&quot;</span><span class="nt">&gt;</span>.sm-left.sm-col-6.md-col-5.lg-col-4<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-left sm-col-6 md-col-7 lg-col-8 outline-blue&quot;</span><span class="nt">&gt;</span>.sm-left.sm-col-6.md-col-7.lg-col-8<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-5 lg-col-4 outline-blue&quot;</span><span class="nt">&gt;</span>.sm-col.sm-col-6.md-col-5.lg-col-4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-7 lg-col-8 outline-blue&quot;</span><span class="nt">&gt;</span>.sm-col.sm-col-6.md-col-7.lg-col-8<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
-
-<p>Use padding and negative margin utilities to create gutters based on the white space scale.</p>
-
+      <p>Use padding and negative margin utilities to create gutters based on the white space scale.</p>
+      
 <div class="mb2 Example" data-include-example="docs/examples/grid-gutters.html">
 <div class="Example_rendered">
 <div class="clearfix mxn2">
-  <div class="sm-left sm-col-6 md-col-5 lg-col-4 px2 outline-blue"><div>.px2</div></div>
-  <div class="sm-left sm-col-6 md-col-7 lg-col-8 px2 outline-blue"><div>.px2</div></div>
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2 outline-blue"><div>.px2</div></div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2 outline-blue"><div>.px2</div></div>
 </div>
 <!-- Nested divs for demonstration only -->
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix mxn2&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-left sm-col-6 md-col-5 lg-col-4 px2 outline-blue&quot;</span><span class="nt">&gt;&lt;div&gt;</span>.px2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-left sm-col-6 md-col-7 lg-col-8 px2 outline-blue&quot;</span><span class="nt">&gt;&lt;div&gt;</span>.px2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-5 lg-col-4 px2 outline-blue&quot;</span><span class="nt">&gt;&lt;div&gt;</span>.px2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-7 lg-col-8 px2 outline-blue&quot;</span><span class="nt">&gt;&lt;div&gt;</span>.px2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="c">&lt;!-- Nested divs for demonstration only --&gt;</span>
 </pre></div>
 </div>
-
-
     </section>
+
     <section id="table-object" class="py2">
       <h1>Table Object</h1>
-<p>Use the table object for vertically centering content.</p>
-
+      <p>Use the table object to vertically center content.</p>
+      
 <div data-include-example="docs/examples/table-object.html" class="Example">
 <div class="Example_rendered">
 <div class="table outline-blue">
@@ -125,17 +119,20 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
-
     </section>
+
     <div class="clearfix mxn2 py2">
       <a href="/docs/utility" class="left button">Previous: Utility</a>
       <a href="/docs/color" class="right button">Next: Color</a>
     </div>
+
   </div>
-  <div class="sm-left sm-col-3 sm-show">
+
+  <div class="sm-col sm-col-3 sm-show">
     <a href="#grid" class="button block">Grid</a>
     <a href="#table-object" class="button block">Table Object</a>
   </div>
+
 </div>
 
 <footer class="py4">

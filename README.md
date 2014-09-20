@@ -1,10 +1,10 @@
-# BASSCSS
+# Basscss
 
 Low-level CSS toolkit
 
 http://basscss.com
 
-BASSCSS is a lightweight collection of highly reusable styles and utilities designed for speed, performance, and scalability. Use it out of the box or as the base for a larger project.
+Basscss is a lightweight collection of highly reusable styles and utilities designed for speed, performance, and scalability. Use it out of the box or as the base for a larger project.
 
 # Features
 - Lightweight at about 11KB minified
@@ -39,7 +39,7 @@ http://basscss.com/docs
 ---
 
 # Guide to Web Design
-For more on web design with BASSCSS, read the guide:
+For more on web design with Basscss, read the guide:
 
 http://basscss.com/docs/guide
 

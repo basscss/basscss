@@ -41,7 +41,7 @@ gulp.task('serve', function() {
 
 
 gulp.task('rework', function() {
-  gulp.src('./src/basscss.css')
+  gulp.src('./src/*.css')
     .pipe(rework( rnpm(), media(), vars(), colors(), calc ))
     .pipe(autoprefixer())
     .pipe(gulp.dest('.'))
