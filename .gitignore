@@ -3,10 +3,8 @@ basscss-base
 basscss-utilities
 basscss-grid
 basscss-table-object
-
-
 basscss-buttons
 basscss-positions
-
 basscss-color-basic
+*.gz
 
