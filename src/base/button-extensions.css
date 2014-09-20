@@ -1,12 +1,24 @@
 
 .button-big {
+  /*
   padding: calc(1.5 * var(--ui-padding-y)) calc(1.5 * var(--ui-padding-x));
+  */
+  line-height: calc( 1.125 * var(--ui-height) );
+  min-height: calc( 1.125 * var(--ui-height) );
 }
 
 .button-small {
+  /*
   padding: calc(.5 * var(--ui-padding-x));
   height: 2em;
   min-height: 2em;
   line-height: 1em;
+
+  font-size: var(--h6);
+  line-height: calc( .75 * var(--ui-height) );
+  min-height: calc( .75 * var(--ui-height) );
+  */
+  line-height: 1.875em;
+  min-height: 1.875em;
 }
 

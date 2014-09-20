@@ -2,8 +2,11 @@
 :root {
 
   --dark-gray: #304650;
+  /*
   --blue: #0be;
   --blue: #009cef;
+  */
+  --blue: #0076df;
   --mid-gray: #667680;
   --light-gray: #f3f9f9;
   --red: #f96010;
@@ -12,11 +15,11 @@
 
   --darken-1: rgba(#033,.03125);
 
-  --darken-1: rgba(#036,.0625);
-  --darken-2: rgba(#036,.125);
-  --darken-3: rgba(#036,.25);
+  --darken-1: rgba(#036,.03225);
+  --darken-2: rgba(#036,.0625);
+  --darken-3: rgba(#036,.125);
 
-  --border-color: var(--darken-2);
+  --border-color: var(--darken-3);
   --border-width: 1px;
   --border-radius: 3px;
 

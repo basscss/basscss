@@ -13,9 +13,13 @@
 @import 'basscss-grid';
 @import 'basscss-table-object';
 
-@import './base/button-extensions';
 
-/* @import './modules/simple-grid';
+/* 
+ * Deprecate?
+ * @import './base/button-extensions';
+ *
+ * Add
+ * @import './modules/simple-grid';
  * @import './modules/nav-item';
  */
 

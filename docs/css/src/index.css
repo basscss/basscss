@@ -12,18 +12,20 @@
 
 /*
 @import "./base/fonts";
+@import "../../../src/base/button-extensions";
 */
 @import "./base/responsive-type";
 @import "./base/type-h0";
 @import "./base/icons";
-@import "./base/button-extensions";
 
 :root {
   --font-family: 'Avenir Next', 'Helvetica Neue', Verdana, sans-serif;
   --heading-font-weight: 600;
   --button-font-weight: 500;
+  --bold-font-weight: 600;
   --h4: 1.125rem;
   --h5: 1rem;
+  --h6: .875rem;
 }
 
 @import './color/base';

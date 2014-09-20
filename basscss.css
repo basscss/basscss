@@ -981,18 +981,12 @@ td {
   }
 }
 
-.button-big {
-  padding: 0.375rem 1.5rem;
-}
-
-.button-small {
-  padding: 0.5rem;
-  height: 2em;
-  min-height: 2em;
-  line-height: 1em;
-}
-
-/* @import './modules/simple-grid';
+/* 
+ * Deprecate?
+ * @import './base/button-extensions';
+ *
+ * Add
+ * @import './modules/simple-grid';
  * @import './modules/nav-item';
  */
 

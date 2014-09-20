@@ -36,7 +36,7 @@ gulp.task('reload', function() {
 });
 
 gulp.task('serve', function() {
-  browsersync({ server: { baseDir: './' }, open: false });
+  browsersync({ server: { baseDir: './' }, open: false, ghostMode: false });
 });
 
 
