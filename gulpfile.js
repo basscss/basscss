@@ -4,6 +4,7 @@ var rename = require('gulp-rename');
 var mincss = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var browsersync = require('browser-sync');
+var gzip = require('gulp-gzip');
 
 var rework = require('gulp-rework');
 var rnpm = require('rework-npm');
@@ -17,7 +18,6 @@ var include = require('./gulp/include');
 var example = require('./gulp/include-example');
 var nav = require('./gulp/is-active');
 var pygmentize = require('./gulp/pygmentize');
-//var markdown = require('./gulp/markdown');
 
 
 gulp.task('default', ['rework', 'site-rework']);
@@ -47,6 +47,8 @@ gulp.task('rework', function() {
     .pipe(gulp.dest('.'))
     .pipe(mincss())
     .pipe(rename({ extname: '.min.css' }))
+    .pipe(gulp.dest('.'))
+    .pipe(gzip())
     .pipe(gulp.dest('.'));
 });
 

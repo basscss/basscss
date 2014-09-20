@@ -43,6 +43,7 @@
     "cheerio": "^0.17.0",
     "pygmentize-bundled": "^2.1.1",
     "marked": "^0.3.2",
-    "fitter-happier-text": "0.0.2"
+    "fitter-happier-text": "0.0.2",
+    "gulp-gzip": "0.0.8"
   }
 }

@@ -18,211 +18,135 @@
     </div>
   </header>
 
-  <main class="container px2">
+  <main class="container px2 overflow-hidden">
 
     <section class="py3">
-      <h1 class="h2 mb2">Simple, responsive CSS toolkit based on OOCSS principles</h1>
-      <p class="h3">Basscss is a lightweight collection of highly reusable styles and utilities designed for speed, performance, and scalability. Use it out of the box or as the base for a larger project.</p>
+      <h1 class="h2 mb2">Modular CSS toolkit based on OOCSS principles</h1>
+      <p class="h3">
+        Basscss is a lightweight collection of
+        base element styles, utilities, modules, and color styles
+        designed for speed, performance, and scalability.
+      </p>
     </section>
 
-    <section id="features" class="py4">
+    <section id="features" class="py3">
       <div class="clearfix mxn2">
-        <div class="sm-col sm-col-6 md-col-4 px2">
+        <div class="sm-col sm-col-6 px2">
           <h2 class="mb0">Lightweight</h2>
-          <p>11KB minified and designed for reusability</p>
+          <p>10KB minified, 2KB gzipped</p>
         </div>
-        <div class="sm-col sm-col-6 md-col-4 px2">
-          <h2 class="mb0">Performant</h2>
-          <p>Selectors designed for speed</p>
+        <div class="sm-col sm-col-6 px2">
+          <h2 class="mb0">Modular</h2>
+          <p>Composable and highly reusable structure and styles</p>
         </div>
-        <div class="clearfix sm-show md-hide"></div>
-        <div class="sm-col sm-col-6 md-col-4 px2">
-          <h2 class="mb0">Flexible</h2>
-          <p>Utility styles to handle the bulk of the work</p>
+        <div class="clearfix sm-show"></div>
+        <div class="sm-col sm-col-6 px2">
+          <h2 class="mb0">Consistent and Flexible</h2>
+          <p>Smart defaults balanced with basic utility</p>
         </div>
-        <div class="clearfix md-show"></div>
-        <div class="sm-col sm-col-6 md-col-4 px2">
-          <h2 class="mb0">Customizable</h2>
-          <p>Sass variables and styles open for extension</p>
-        </div>
-        <div class="clearfix sm-show md-hide"></div>
-        <div class="sm-col sm-col-6 md-col-4 px2">
-          <h2 class="mb0">Code Faster</h2>
-          <p>Spend less time writing CSS</p>
-        </div>
-        <div class="sm-col sm-col-6 md-col-4 px2">
-          <h2 class="mb0">Mathematical</h2>
-          <p>Based on a consistent scale for type and layout</p>
+        <div class="sm-col sm-col-6 px2">
+          <h2 class="mb0">Fast</h2>
+          <p>Performant and simple styles to code faster</p>
         </div>
       </div>
     </section>
 
-    <section id="type" class="py3">
-      <div class="clearfix mxn2">
-        <div class="md-table">
-          <div class="md-table-cell md-col-5 px2">
-            <h1 class="h2 mb0">Responsive Type Scale</h1>
-            <p class="h4">With type utilities to make fine grain adjustments</p>
+
+    <section id="base" class="mxn3 py4">
+      <div class="sm-table">
+        <div class="sm-table-cell sm-col-5 px3">
+          <div class="p2 blue border rounded">
+            <h1 class="mt1">Hamburger 1</h1>
+            <h2>Hamburger 2</h2>
+            <h3>Hamburger 3</h3>
           </div>
-          <div class="md-table-cell md-col-7 px2 blue">
-            <div class="p2 border rounded">
-              <h1 class="h1 mb0">Hamburger 1</h1>
-              <h2 class="h2 mb1">Hamburger 2</h2>
-              <h3 class="h3 mb1">Hamburger 3</h3>
-              <p class="h4">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-              <div class="h3">
-                <span class="caps">Caps</span>
-                <span class="italic">Italic</span>
-                <span class="bold">Bold</span>
-                <span class="regular">Regular</span>
-              </div>
+        </div>
+        <div class="sm-table-cell sm-col-7 px3">
+          <h1 class="mt1">Base Elements</h1>
+          <p class="h3">
+            Smart defaults for base elements keep core design elements consistent.
+          </p>
+        </div>
+      </div>
+    </section>
+ 
+    <section id="utility" class="mxn3 py3">
+      <div class="sm-table">
+        <div class="sm-table-cell sm-col-7 px3">
+          <h1 class="mt1">Utility Styles</h1>
+          <p class="h3">
+            Simple, composable typographic and layout utilities based on consistent scales
+            promote faster design and development in the browser and more performant, more readable code.
+          </p>
+        </div>
+        <div class="sm-table-cell sm-col-5 px3">
+          <div class="h3 bold p2 blue border rounded">
+            <div>.block</div>
+            <div>.inline-block</div>
+            <div>.inline</div>
+            <div>.clearfix</div>
+            <div>.left</div>
+            <div>.right</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="utility" class="mxn3 py3">
+      <div class="sm-table">
+        <div class="sm-table-cell sm-col-5 px3">
+          <div class="h4 center bold p2 blue border rounded">
+            <div class="clearfix outline-blue">
+              <div class="col col-6 sm-col-4 py2">.col-6<br> .sm-col-4</div>
+              <div class="col col-6 sm-col-4 py2">.col-6<br> .sm-col-4</div>
+              <div class="col col-6 sm-col-4 py2">.col-6<br> .sm-col-4</div>
+              <div class="col col-6 sm-col-4 py2">.col-6<br> .sm-col-4</div>
+              <div class="col col-6 sm-col-4 py2">.col-6<br> .sm-col-4</div>
+              <div class="col col-6 sm-col-4 py2">.col-6<br> .sm-col-4</div>
             </div>
           </div>
         </div>
+        <div class="sm-table-cell sm-col-7 px3">
+          <h1 class="mt1">Layout Modules</h1>
+          <p class="h3">
+            Flexible, responsive, and reusable layout modules control page structure across a wide variety of devices.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="layout" class="py3">
-      <div class="clearfix mxn2">
-        <div class="md-table">
-          <div class="md-table-cell md-col-5 px2">
-            <h1 class="h2 mb0">Layout Utilities</h1>
-            <p class="h4">With a suite of basic styles and a white space scale</p>
-          </div>
-          <div class="md-table-cell md-col-7 px2 blue">
-            <div class="p2 border rounded">
-              <table class="table-reset table-light">
-                <thead class="bold">
-                  <tr>
-                    <th>Class</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>.inline</td><td>display: inline</td></tr>
-                  <tr><td>.block</td><td>display: block</td></tr>
-                  <tr><td>.inline-block</td><td>display: inline-block</td></tr>
-                  <tr><td>.overflow-hidden</td><td>overflow: hidden</td></tr>
-                  <tr><td>.clearfix</td><td>Clears floated children</td></tr>
-                  <tr><td>.left</td><td>float: left</td></tr>
-                  <tr><td>.right</td><td>float: right</td></tr>
-                </tbody>
-              </table>
-            </div>
+    <section id="utility" class="mxn3 py3">
+      <div class="sm-table">
+        <div class="sm-table-cell sm-col-7 px3">
+          <h1 class="mt1">Color</h1>
+          <p class="h3">
+            Simple, readable color utilities allow for
+            iterative design and flexibility in making design decisions. 
+          </p>
+        </div>
+        <div class="sm-table-cell sm-col-5 px3">
+          <div class="h3 bold center p2 white border rounded">
+            <div class="p1 bg-dark-gray">.dark-gray</div>
+            <div class="p1 bg-blue">.blue</div>
+            <div class="p1 bg-red">.red</div>
+            <div class="p1 bg-yellow">.yellow</div>
+            <div class="p1 bg-green">.green</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="forms" class="py3">
-      <div class="clearfix mxn2">
-        <div class="md-table">
-          <div class="md-table-cell md-col-5 px2">
-            <h1 class="h2 mb0">Forms</h1>
-            <p class="h4">With styles that work with basic layout utilities</p>
-          </div>
-          <div class="md-table-cell md-col-7 px2 ">
-            <form class="p2 form form-stacked form-light border rounded">
-              <label>Username</label>
-              <input type="text" class="block full-width input">
-              <label>Password</label>
-              <input type="password" class="block full-width input">
-              <label class="mb1 block full-width">
-                <input type="checkbox" class="xcheckbox"> Remember Me
-              </label>
-              <input type="submit" class="button button-blue" value="Sign In">
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="buttons" class="py3">
-      <div class="clearfix mxn2">
-        <div class="md-table">
-          <div class="md-table-cell md-col-5 px2">
-            <h1 class="h2 mb0">Buttons</h1>
-            <p class="h4">Sized to match forms and other elements</p>
-          </div>
-          <div class="md-table-cell md-col-7 px2 blue">
-              <div class="center sm-table">
-                <div class="sm-table-cell p1">
-                  <a href="#!" class="h3 button button-big button-blue">Button</a>
-                </div>
-                <div class="sm-table-cell p1">
-                  <a href="#!" class="button button-blue">Button</a>
-                </div>
-                <div class="sm-table-cell p1">
-                  <a href="#!" class="h6 button button-blue">Button</a>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="grid" class="py3">
-      <h1 class="h2">Responsive Grid System</h1>
-      <div class="center clearfix mxn2 mb2 blue">
-        <div class="col col-6 px2"><div class="p1 border-blue">.col-6</div></div>
-        <div class="col col-6 px2"><div class="p1 border-blue">.col-6</div></div>
-      </div>
-      <div class="center clearfix mxn2 mb2 blue">
-        <div class="col col-4 px2"><div class="p1 border-blue">.col-4</div></div>
-        <div class="col col-4 px2"><div class="p1 border-blue">.col-4</div></div>
-        <div class="col col-4 px2"><div class="p1 border-blue">.col-4</div></div>
-      </div>
-      <div class="center clearfix mxn2 mb2 sm-show blue">
-        <div class="sm-col sm-col-3 px2"><div class="p1 border-blue">.col-3</div></div>
-        <div class="sm-col sm-col-3 px2"><div class="p1 border-blue">.col-3</div></div>
-        <div class="sm-col sm-col-3 px2"><div class="p1 border-blue">.col-3</div></div>
-        <div class="sm-col sm-col-3 px2"><div class="p1 border-blue">.col-3</div></div>
-      </div>
-      <div class="center clearfix mxn2 sm-show blue">
-        <div class="sm-col sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
-        <div class="sm-col sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
-        <div class="sm-col sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
-        <div class="sm-col sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
-        <div class="sm-col sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
-        <div class="sm-col sm-col-2 px2"><div class="p1 border-blue">.col-2</div></div>
-      </div>
-    </section>
-
-    <section id="theme" class="py3">
-      <h1 class="h2 mb0">Themes</h1>
-      <p class="h4">Create your own themes to quickly customize the look and feel</p>
-      <div class="sm-table table-fixed center overflow-hidden white rounded">
-        <div class="sm-table-cell">
-          <div class="table table-fixed">
-            <div class="table-cell p2 bg-dark-gray">.dark-gray</div>
-            <div class="table-cell p2 bg-mid-gray">.mid-gray</div>
-          </div>
-        </div>
-        <div class="sm-table-cell">
-          <div class="table table-fixed">
-            <div class="table-cell p2 dark-gray bg-light-gray">.light-gray</div>
-            <div class="table-cell p2 bg-blue">.blue</div>
-          </div>
-        </div>
-        <div class="sm-table-cell">
-          <div class="table table-fixed">
-            <div class="table-cell p2 bg-green">.green</div>
-            <div class="table-cell p2 bg-yellow">.yellow</div>
-            <div class="table-cell p2 bg-red">.red</div>
-          </div>
-        </div>
-      </div>
-    </section>
       
-    <section class="py4">
+    <section id="cta" class="py4">
       <div class="sm-table">
         <div class="sm-table-cell sm-col-6">
-          <h1 class="h2 mb0">Getting Started</h1>
-          <p class="h4 mb2">Read the documentation or visit Github to get started.</p>
+          <h1 class="mb0">Getting Started</h1>
+          <p class="h3 mb2">Read the documentation or visit Github to get started.</p>
         </div>
         <div class="sm-table-cell center sm-col-6">
           <div class="inline-block p1">
-            <a href="/docs" class="h3 button button-blue-outline">Read the docs</a>
+            <a href="/docs" class="h3 button button-blue-outline">Docs</a>
           </div>
           <a href="//github.com/jxnblk/basscss" class="h3 button button-blue-outline">View on Github</a>
         </div>
