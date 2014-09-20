@@ -1,25 +1,6 @@
 
-.dark-gray  { color: var(--dark-gray) }
-.white      { color: white }
-.blue       { color: var(--blue) }
-.mid-gray   { color: var(--mid-gray) }
-.light-gray { color: var(--light-gray) }
-.red        { color: var(--red) }
-.green      { color: var(--green) }
-.yellow     { color: var(--yellow) }
-
-.bg-dark-gray  { background-color: var(--dark-gray) }
-.bg-white      { background-color: white }
-.bg-blue       { background-color: var(--blue) }
-.bg-mid-gray   { background-color: var(--mid-gray) }
-.bg-light-gray { background-color: var(--light-gray) }
-.bg-red        { background-color: var(--red) }
-.bg-green      { background-color: var(--green) }
-.bg-yellow     { background-color: var(--yellow) }
-
-.bg-darken-1   { background-color: var(--darken-1) }
-.bg-darken-2   { background-color: var(--darken-2) }
-.bg-darken-3   { background-color: var(--darken-3) }
+.bright-blue    { color: var(--bright-blue) }
+.bg-bright-blue { background-color: var(--bright-blue) }
 
 .icon { fill: currentcolor }
 

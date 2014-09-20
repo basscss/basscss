@@ -5,6 +5,7 @@ var mincss = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var browsersync = require('browser-sync');
 var gzip = require('gulp-gzip');
+var stylestats = require('gulp-stylestats');
 
 var rework = require('gulp-rework');
 var rnpm = require('rework-npm');
@@ -52,6 +53,11 @@ gulp.task('rework', function() {
     .pipe(gulp.dest('.'));
 });
 
+// Stylestats
+gulp.task('stats', function() {
+  gulp.src('./basscss.css')
+    .pipe(stylestats());
+});
 
 // Docs
 gulp.task('site-rework', function() {

@@ -13,10 +13,18 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   height: 1.5em;
   border-radius: 50%;
 }
+.dot:hover {
+  text-decoration: none;
+}
 
 .dot-blue {
   color: white;
   background-color: var(--blue);
+}
+
+.dot-bright-blue {
+  color: var(--dark-gray);
+  background-color: var(--bright-blue);
 }
 
 .border-blue {
@@ -33,10 +41,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 @keyframes waves {
   from {
-    box-shadow: 0 0 0 0 var(--light-gray), 0 0 0 1px rgba(var(--blue), .5);
+    box-shadow: 0 0 0 0 var(--dark-gray), 0 0 0 1px rgba(var(--bright-blue), .5);
   }
   to {
-    box-shadow: 0 0 0 8px var(--light-gray), 0 0 0 16px rgba(var(--blue), 0);
+    box-shadow: 0 0 0 8px var(--dark-gray), 0 0 0 16px rgba(var(--bright-blue), 0);
   }
 }
 
