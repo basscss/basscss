@@ -37,8 +37,12 @@ module.exports = function(options) {
     $highlights.each(function(i) {
 
       var $self = $(this);
-      var contents = $(this).html();
       var lang = $(this).data('pygmentize') || 'html';
+      if (lang == 'html') {
+        var contents = $(this).html();
+      } else {
+        var contents = $(this).text();
+      }
 
       pygmentize({ lang: lang, format: 'html' }, contents, function(err, result) {
         $self.html(result.toString());

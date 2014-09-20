@@ -63,6 +63,36 @@
 
   </p></section>
 
+  <section class="py2">
+    <p>To use Rework in an existing Gulp file, follow this recipe:</p>
+    <div class="Example_code" data-pygmentize="js"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">gulp</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;gulp&apos;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">rename</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;gulp-rename&apos;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">mincss</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;gulp-minify-css&apos;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">autoprefixer</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;gulp-autoprefixer&apos;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">gzip</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;gulp-gzip&apos;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">rework</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;gulp-rework&apos;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">rnpm</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;rework-npm&apos;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">media</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;rework-custom-media&apos;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">vars</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;rework-vars&apos;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">colors</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;rework-plugin-colors&apos;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">calc</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;rework-calc&apos;</span><span class="p">);</span>
+
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&apos;rework&apos;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">&apos;./src/*.css&apos;</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">rework</span><span class="p">(</span> <span class="nx">rnpm</span><span class="p">(),</span> <span class="nx">media</span><span class="p">(),</span> <span class="nx">vars</span><span class="p">(),</span> <span class="nx">colors</span><span class="p">(),</span> <span class="nx">calc</span> <span class="p">))</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">autoprefixer</span><span class="p">())</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">&apos;./css&apos;</span><span class="p">))</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">mincss</span><span class="p">())</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">rename</span><span class="p">({</span> <span class="nx">extname</span><span class="o">:</span> <span class="s1">&apos;.min.css&apos;</span> <span class="p">}))</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">&apos;./css&apos;</span><span class="p">))</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gzip</span><span class="p">())</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">&apos;./css&apos;</span><span class="p">));</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+  </section>
+
   <!--
   <section class="py2">
     <h2>Rework</h2>
