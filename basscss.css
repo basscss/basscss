@@ -545,8 +545,6 @@ td {
 
 /* Mobile-first breakpoint show/hide */
 
-/* Potentially more confusing than scoped utilities */
-
 .sm-show,
 .md-show,
 .lg-show {
@@ -981,16 +979,9 @@ td {
   }
 }
 
-/* 
- * Deprecate?
- * @import './base/button-extensions';
- *
- * Add
- * @import './modules/simple-grid';
- * @import './modules/nav-item';
+/*
+ * Basscss Color Basic
  */
-
-/* Themes */
 
 /* Base Element Themes */
 
@@ -1000,7 +991,7 @@ body {
 }
 
 a {
-  color: #009cef;
+  color: #0076df;
   text-decoration: none;
 }
 
@@ -1008,8 +999,9 @@ a:hover {
   text-decoration: underline;
 }
 
+pre,
 code {
-  background-color: rgba(0, 0, 0, .125);
+  background-color: #f3f9f9;
   border-radius: 3px;
 }
 
@@ -1017,7 +1009,7 @@ hr {
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: rgba(0, 0, 0, .25);
+  border-bottom-color: rgba(0, 51, 102, .125);
 }
 
 .dark-gray {
@@ -1029,7 +1021,7 @@ hr {
 }
 
 .blue {
-  color: #009cef;
+  color: #0076df;
 }
 
 .mid-gray {
@@ -1061,7 +1053,7 @@ hr {
 }
 
 .bg-blue {
-  background-color: #009cef;
+  background-color: #0076df;
 }
 
 .bg-mid-gray {
@@ -1085,49 +1077,45 @@ hr {
 }
 
 .bg-darken-1 {
-  background-color: rgba(0, 0, 0, .125);
+  background-color: rgba(0, 51, 102, .03125);
 }
 
 .bg-darken-2 {
-  background-color: rgba(0, 0, 0, .25);
+  background-color: rgba(0, 51, 102, .0625);
 }
 
 .bg-darken-3 {
-  background-color: rgba(0, 0, 0, .375);
-}
-
-.icon {
-  fill: currentcolor;
+  background-color: rgba(0, 51, 102, .125);
 }
 
 .border {
   border-style: solid;
   border-width: 1px;
-  border-color: rgba(0, 0, 0, .25);
+  border-color: rgba(0, 51, 102, .125);
 }
 
 .border-top {
   border-top-style: solid;
   border-top-width: 1px;
-  border-top-color: rgba(0, 0, 0, .25);
+  border-top-color: rgba(0, 51, 102, .125);
 }
 
 .border-right {
   border-right-style: solid;
   border-right-width: 1px;
-  border-right-color: rgba(0, 0, 0, .25);
+  border-right-color: rgba(0, 51, 102, .125);
 }
 
 .border-bottom {
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: rgba(0, 0, 0, .25);
+  border-bottom-color: rgba(0, 51, 102, .125);
 }
 
 .border-left {
   border-left-style: solid;
   border-left-width: 1px;
-  border-left-color: rgba(0, 0, 0, .25);
+  border-left-color: rgba(0, 51, 102, .125);
 }
 
 .rounded {
@@ -1146,7 +1134,7 @@ hr {
           transition: box-shadow .2s ease;
   border-style: solid;
   border-width: 1px;
-  border-color: rgba(0, 0, 0, .25);
+  border-color: rgba(0, 51, 102, .125);
   border-radius: 3px;
 }
 
@@ -1154,8 +1142,8 @@ hr {
 .textarea:focus,
 .select:focus {
   outline: none;
-  border-color: #009cef;
-  box-shadow: 0 0 2px rgba(0, 156, 239, .5);
+  border-color: #0076df;
+  box-shadow: 0 0 2px rgba(0, 118, 223, .5);
 }
 
 .radio,
@@ -1171,42 +1159,40 @@ hr {
 .radio:focus,
 .checkbox:focus {
   outline: none;
-  box-shadow: 0 0 2px rgba(0, 156, 239, .5);
+  box-shadow: 0 0 2px rgba(0, 118, 223, .5);
 }
 
 .table-light th,
 .table-light td {
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: rgba(0, 0, 0, .25);
+  border-bottom-color: rgba(0, 51, 102, .125);
 }
 
 .button-blue {
   color: white;
-  background-color: #009cef;
+  background-color: #0076df;
   border-radius: 3px;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
-  -webkit-transition-property: box-shadow , background-color;
-          transition-property: box-shadow , background-color;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
 
-.button-blue:hover {
-  /* darken blue */
-}
+
 
 .button-blue:focus {
   outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 156, 239, .5);
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 118, 223, .5);
 }
 
 .button-blue-outline {
-  color: #009cef;
+  color: #0076df;
   background-color: transparent;
   border-radius: 3px;
-  box-shadow: inset 0 0 0 2px #009cef;
+  box-shadow: inset 0 0 0 2px #0076df;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
   -webkit-transition-timing-function: ease;
@@ -1217,12 +1203,12 @@ hr {
 
 .button-blue-outline:hover {
   color: white;
-  background-color: #009cef;
+  background-color: #0076df;
 }
 
 .button-blue-outline:focus {
   outline: none;
-  box-shadow: inset 0 0 0 2px #009cef, 0 0 0 2px white, 0 0 1px 4px rgba(0, 156, 239, .5);
+  box-shadow: inset 0 0 0 2px #0076df, 0 0 0 2px white, 0 0 1px 4px rgba(0, 118, 223, .5);
 }
 
 .button-gray {
@@ -1233,32 +1219,19 @@ hr {
           transition-duration: .2s;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
-  -webkit-transition-property: box-shadow , background-color;
-          transition-property: box-shadow , background-color;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
 
-.button-gray:hover {
-  /* darken blue */
-}
+
 
 .button-gray:focus {
   outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 156, 239, .5);
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 118, 223, .5);
 }
 
-/* Nav thematic extensions for base .button style
- */
+/* Defaults */
 
 
 
-
-
-
-
-/*
- * - segments
- * - tabs
- * - pills
- * - bordered
- */
-
+/* Custom Media Queries */
