@@ -31,6 +31,7 @@ gulp.task('rework', function() {
     .pipe(gulp.dest('.'));
 });
 
+
 // Create Sass partials
 gulp.task('sassify', function() {
   gulp.src('basscss-base/index.css')
@@ -64,10 +65,10 @@ gulp.task('stats', function() {
 // Site development
 gulp.task('dev', ['watch', 'serve']);
 
-gulp.task('watch', ['rework', 'site-rework', 'render'], function() {
+gulp.task('watch', ['rework', 'site-rework', 'sassify', 'render'], function() {
   gulp.watch(
     ['./docs/templates/**/*.html', 'docs/partials/**/*', 'docs/examples/**/*', './docs/css/src/**/*', './src/**/*.css', './basscss-base/**/*', './basscss-utilities/**/*', './basscss-grid/**/*'],
-    ['rework', 'site-rework', 'render', 'reload']
+    ['rework', 'site-rework', 'sassify', 'render', 'reload']
   );
 });
 
