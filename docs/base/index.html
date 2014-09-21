@@ -35,7 +35,10 @@
       <h1>Typography</h1>
 
       <h2>Base type scale</h2>
-      <p>Base type elements are normalized to a simple type scale that works well across devices.</p>
+      <p>
+        Typographic elements are normalized to a simple type scale that works well across devices.
+        Default top and bottom margins are set for commonly-used typographic elements.
+      </p>
       
 <div data-include-example="docs/examples/headings.html" class="Example">
 <div class="Example_rendered">
@@ -57,7 +60,7 @@
 
       <h2>Type scale utilities</h2>
       <p>
-        Use the <code>.h1</code> &#x2013; <code>.h6</code> font-size utilities to override an element&#x2019;s default size.
+        The <code>.h1</code> &#x2013; <code>.h6</code> font-size utilities can be used to override an element&#x2019;s default size.
       </p>
       
 <div data-include-example="docs/examples/type-scale.html" class="Example">
@@ -94,7 +97,7 @@
       <h2>Inline Forms</h2>
       <p>
         By default, form elements display inline.
-        Use the default <code>.input</code> style or create custom color styles to control the appearance.
+        The default <code>.input</code> color style or custom styles can be used to control appearance.
       </p>
       
 <div data-include-example="docs/examples/form-inline.html" class="Example">
@@ -166,8 +169,9 @@
     <section id="buttons" class="py2">
       <h1>Buttons</h1>
       <p>
-        Base button styles are defined in <code>base</code>.
-        Use color styles and custom extensions to adjust their appearance.
+        Structural styles and resets for buttons are set in base.
+        All buttons share common padding and height, well suited for tap targets on touchscreen displays.
+        Color styles and other custom extensions adjust their surface-level appearance.
       </p>
       
 <div data-include-example="docs/examples/buttons.html" class="Example">
@@ -177,9 +181,9 @@
   <a href="#!" class="button">Link Button</a>
 </div>
 <div class="mb1">
-  <button class="button-blue">Button Blue</button>
-  <button class="button-blue-outline">Button Blue Outline</button>
-  <button class="button-gray">Button Gray</button>
+  <button class="button-blue mb1">Button Blue</button>
+  <button class="button-blue-outline mb1">Button Blue Outline</button>
+  <button class="button-gray mb1">Button Gray</button>
 </div>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mb1&quot;</span><span class="nt">&gt;</span>
@@ -187,9 +191,9 @@
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Link Button<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mb1&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Button Blue<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue-outline&quot;</span><span class="nt">&gt;</span>Button Blue Outline<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-gray&quot;</span><span class="nt">&gt;</span>Button Gray<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue mb1&quot;</span><span class="nt">&gt;</span>Button Blue<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue-outline mb1&quot;</span><span class="nt">&gt;</span>Button Blue Outline<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-gray mb1&quot;</span><span class="nt">&gt;</span>Button Gray<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -198,8 +202,8 @@
     <section id="tables" class="py2">
       <h1>Tables</h1>
       <p>
-        Default table structural styles are defined in <code>base</code>.
-        Use the default <code>table-light</code> color style with other color utilities
+        Default table styles are defined in base.
+        Use the <code>table-light</code> color style with other color utilities
         or create custom theme extensions to suit your needs.
       </p>
       

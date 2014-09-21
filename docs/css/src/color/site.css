@@ -56,11 +56,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   border: 1px solid var(--blue);
 }
 
-.outline-blue, .outline-blue * {
+.outline-blue * {
   box-shadow: 0 0 0 1px rgba(var(--blue), .75);
 }
 
-.highlight pre { margin-bottom: 0 }
+.highlight pre { background-color: transparent; margin-bottom: 0 }
 
 
 /* Example component */

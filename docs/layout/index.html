@@ -46,18 +46,21 @@
 </div>
       <p>
         Add columns using the <code>.col</code> and grid width <code>.col-N</code> classes.
+        <code>.col</code> floats elements left and sets box-sizing to border-box.
+        <code>.col-N</code> sets width according to a 12 column grid.
+        The total number of columns in a row should add up to 12.
       </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/grid-floats.html">
 <div class="Example_rendered">
-<div class="clearfix">
-  <div class="col col-6 outline-blue">.col.col-6</div>
-  <div class="col col-6 outline-blue">.col.col-6</div>
+<div class="clearfix outline-blue">
+  <div class="col col-6">.col.col-6</div>
+  <div class="col col-6">.col.col-6</div>
 </div>
 </div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col col-6 outline-blue&quot;</span><span class="nt">&gt;</span>.col.col-6<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col col-6 outline-blue&quot;</span><span class="nt">&gt;</span>.col.col-6<span class="nt">&lt;/div&gt;</span>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col col-6&quot;</span><span class="nt">&gt;</span>.col.col-6<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col col-6&quot;</span><span class="nt">&gt;</span>.col.col-6<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -65,37 +68,41 @@
         Use
         <a href="/docs/utility/#responsive-states">breakpoint-prefixed</a>
         column utilities to change the grid at different screen widths.
+        Each breakpoint applies to that screen width and up.
+        Unprefixed styles apply to all screen widths.
       </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/grid-breakpoints.html">
 <div class="Example_rendered">
-<div class="clearfix">
-  <div class="sm-col sm-col-6 md-col-5 lg-col-4 outline-blue">.sm-col.sm-col-6.md-col-5.lg-col-4</div>
-  <div class="sm-col sm-col-6 md-col-7 lg-col-8 outline-blue">.sm-col.sm-col-6.md-col-7.lg-col-8</div>
+<div class="clearfix outline-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4">.sm-col.sm-col-6.md-col-5.lg-col-4</div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8">.sm-col.sm-col-6.md-col-7.lg-col-8</div>
 </div>
 </div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-5 lg-col-4 outline-blue&quot;</span><span class="nt">&gt;</span>.sm-col.sm-col-6.md-col-5.lg-col-4<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-7 lg-col-8 outline-blue&quot;</span><span class="nt">&gt;</span>.sm-col.sm-col-6.md-col-7.lg-col-8<span class="nt">&lt;/div&gt;</span>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-5 lg-col-4&quot;</span><span class="nt">&gt;</span>.sm-col.sm-col-6.md-col-5.lg-col-4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-7 lg-col-8&quot;</span><span class="nt">&gt;</span>.sm-col.sm-col-6.md-col-7.lg-col-8<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
       <p>
         Use padding and negative margin utilities to create gutters based on the
         <a href="/docs/utility/#white-space">white space scale</a>.
+        When using negative margin, be sure to compensate for the extra width created with a padded 
+        parent element or by using overflow hidden. Otherwise, horizontal scrolling may occur.
       </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/grid-gutters.html">
 <div class="Example_rendered">
-<div class="clearfix mxn2">
-  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2 outline-blue"><div>.px2</div></div>
-  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2 outline-blue"><div>.px2</div></div>
+<div class="clearfix mxn2 outline-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div>.px2</div></div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2"><div>.px2</div></div>
 </div>
 <!-- Nested divs for demonstration only -->
 </div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix mxn2&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-5 lg-col-4 px2 outline-blue&quot;</span><span class="nt">&gt;&lt;div&gt;</span>.px2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-7 lg-col-8 px2 outline-blue&quot;</span><span class="nt">&gt;&lt;div&gt;</span>.px2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix mxn2 outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-5 lg-col-4 px2&quot;</span><span class="nt">&gt;&lt;div&gt;</span>.px2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-7 lg-col-8 px2&quot;</span><span class="nt">&gt;&lt;div&gt;</span>.px2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="c">&lt;!-- Nested divs for demonstration only --&gt;</span>
 </pre></div>
@@ -107,6 +114,7 @@
       <p>
         Use the table object to vertically center content.
         These styles can be combined with grid width and white-space utilities for a wide range of layout options.
+        Apply padding to <code>.table-cell</code> elements to contol spacing.
       </p>
       
 <div data-include-example="docs/examples/table-object.html" class="Example">

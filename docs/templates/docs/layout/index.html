@@ -34,17 +34,24 @@
 </div>
       <p>
         Add columns using the <code>.col</code> and grid width <code>.col-N</code> classes.
+        <code>.col</code> floats elements left and sets box-sizing to border-box.
+        <code>.col-N</code> sets width according to a 12 column grid.
+        The total number of columns in a row should add up to 12.
       </p>
       <div class="mb2" data-include-example="docs/examples/grid-floats.html"></div>
       <p>
         Use
         <a href="/docs/utility/#responsive-states">breakpoint-prefixed</a>
         column utilities to change the grid at different screen widths.
+        Each breakpoint applies to that screen width and up.
+        Unprefixed styles apply to all screen widths.
       </p>
       <div class="mb2" data-include-example="docs/examples/grid-breakpoints.html"></div>
       <p>
         Use padding and negative margin utilities to create gutters based on the
         <a href="/docs/utility/#white-space">white space scale</a>.
+        When using negative margin, be sure to compensate for the extra width created with a padded 
+        parent element or by using overflow hidden. Otherwise, horizontal scrolling may occur.
       </p>
       <div class="mb2" data-include-example="docs/examples/grid-gutters.html"></div>
     </section>
@@ -54,6 +61,7 @@
       <p>
         Use the table object to vertically center content.
         These styles can be combined with grid width and white-space utilities for a wide range of layout options.
+        Apply padding to <code>.table-cell</code> elements to contol spacing.
       </p>
       <div data-include-example="docs/examples/table-object.html"></div>
     </section>
