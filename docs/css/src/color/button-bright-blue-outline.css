@@ -1,0 +1,20 @@
+
+.button-bright-blue-outline {
+  color: var(--bright-blue);
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  box-shadow: inset 0 0 0 2px var(--bright-blue);
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition-property: box-shadow, color, background-color;
+}
+  
+  .button-bright-blue-outline:hover {
+    color: white;
+    background-color: var(--bright-blue);
+  }
+
+  .button-bright-blue-outline:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--bright-blue), 0 0 0 2px var(--dark-gray), 0 0 1px 4px rgba(var(--blue), .5);
+  }

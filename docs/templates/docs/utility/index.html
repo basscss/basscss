@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<div data-include="docs/partials/_head.html"></div>
+<body class="container px2">
+
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h4 caps bold mt2">
+    <a href="/" class="">Basscss</a> /
+    <a href="/docs">Docs</a>
+  </div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">Utility</h1>
+</header>
+
+
+<div class="clearfix mxn2">
+  <div class="sm-col sm-col-9 px2 py2">
+
+    <p class="h3">
+      Utilities are single-purpose styles that provide the backbone for layout.
+      Once these are set, they should be considered immutable and never change or be extended.
+      Each utility is designed to do one thing well,
+      while making its usage simple and obvious with short, humanized naming conventions.
+    </p>
+
+    <section id="typography" class="py2">
+      <h1>Typography</h1>
+      <p>Use these utilities to alter default typographic styles.</p>
+      <div data-include-example="docs/examples/type-utilities.html"></div>
+    </section>
+
+    <section id="layout" class="py2">
+      <h1>Layout</h1>
+      <p>Use the following layout utilities to alter default HTML layout.</p>
+      <div class="p2 bg-darken-1 rounded">
+        <div data-include="docs/examples/layout-utilities.html"></div>
+      </div>
+
+    </section>
+
+    <section id="white-space" class="py2">
+      <h1>White Space Scale</h1>
+      <p>
+        Margin and padding utilities are based on a global white space scale defined with variables.
+        These utilities use a shorthand naming convention.
+      </p>
+      <table class="mb2 bg-darken-1 rounded table-light">
+        <thead>
+          <tr> <th>Shorthand</th> <th>Description</th> </tr>
+        </thead>
+        <tbody>
+          <tr> <td>m</td> <td>Margin</td> </tr>
+          <tr> <td>p</td> <td>Padding</td> </tr>
+          <tr> <td>t</td> <td>Top</td> </tr>
+          <tr> <td>r</td> <td>Right</td> </tr>
+          <tr> <td>b</td> <td>Bottom</td> </tr>
+          <tr> <td>l</td> <td>Left</td> </tr>
+          <tr> <td>x</td> <td>X-axis (left and right)</td> </tr>
+          <tr> <td>y</td> <td>Y-axis (top and bottom)</td> </tr>
+          <tr> <td>n</td> <td>Negative (margin only)</td> </tr>
+          <tr> <td>1</td> <td>--space-1 (default .5rem)</td> </tr>
+          <tr> <td>2</td> <td>--space-2 (default 1rem)</td> </tr>
+          <tr> <td>3</td> <td>--space-3 (default 2rem)</td> </tr>
+          <tr> <td>4</td> <td>--space-4 (default 4rem)</td> </tr>
+      </table>
+      <h2>Margins</h2>
+      <p>
+        Use these utilities to reset or alter default margins.
+        Negative x-axis margins are used to offset padding.
+        Margin auto is used to horizontally center block-level elements with a set width.
+      </p>
+      <div class="p2 bg-darken-1 rounded">
+        <div data-include="docs/examples/margins.html"></div>
+      </div>
+      <h2>Padding</h2>
+      <p>
+        Padding utilities are only available in symmetrical orientations.
+        This is to normalize the spacing used around elements.
+      </p>
+      <div class="p2 bg-darken-1 rounded">
+        <div data-include="docs/examples/padding.html"></div>
+      </div>
+    </section>
+
+    <section id="responsive-states" class="py2">
+      <h1>Responsive States</h1>
+      <p>
+        These styles allow for conditionally showing and hiding elements using a
+        <a href="/docs/guide/#media-queries">
+          mobile-first approach
+        </a>
+        by default.
+      </p>
+      <h3>Prefix Naming Convention</h3>
+      <table class="mb2 table-light border rounded">
+        <thead>
+          <tr> <th>Prefix</th> <th>Description</th> </tr>
+        </thead>
+        <tbody>
+          <tr> <td>(no prefix)</td> <td>Not scoped to a breakpoint</td> </tr>
+          <tr> <td>sm-</td> <td>--breakpoint-sm (default: min-width 40em)</td> </tr>
+          <tr> <td>md-</td> <td>--breakpoint-md (default: min-width 52em)</td> </tr>
+          <tr> <td>lg-</td> <td>--breakpoint-lg (default: min-width 64em)</td> </tr>
+        </tbody>
+      </table>
+      <p>To adjust the default breakpoints, declare custom media queries after importing the file via Rework.</p>
+      <div class="p2 mb2 bg-darken-1 rounded">
+        <div data-include="docs/examples/responsive-states.html"></div>
+      </div>
+      <h3>Example</h3>
+      <p>Resize the browser window to see the effect.</p>
+      <div data-include-example="docs/examples/responsive-show-hide.html"></div>
+    </section>
+
+    <div class="clearfix mxn2 py2">
+      <a href="/docs/base" class="left button button-nav">
+        Previous:
+        <div class="h3">Base Elements</div>
+      </a>
+      <a href="/docs/layout" class="right button button-nav">
+        Next:
+        <div class="h3">Layout</div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="py2 sm-col sm-col-3 px2 sm-show">
+    <div class="mxn1">
+      <a href="#typography" class="button block button-nav">Typography</a>
+      <a href="#layout" class="button block button-nav">Layout</a>
+      <a href="#white-space" class="button block button-nav">White Space Scale</a>
+      <a href="#responsive-states" class="button block button-nav">Responsive States</a>
+    </div>
+  </div>
+
+</div>
+
+<div data-include="docs/partials/_footer.html"></div>
+
+</body>
+</html>

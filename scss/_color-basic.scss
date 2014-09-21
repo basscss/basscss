@@ -1,0 +1,253 @@
+/*
+ * Basscss Color Basic
+ */
+
+/* Base Element Themes */
+
+body {
+  color: #304650;
+  background-color: white;
+}
+
+a {
+  color: #0076df;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+pre,
+code {
+  background-color: #f3f9f9;
+  border-radius: 3px;
+}
+
+hr {
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 51, 102, .125);
+}
+
+.dark-gray {
+  color: #304650;
+}
+
+.white {
+  color: white;
+}
+
+.blue {
+  color: #0076df;
+}
+
+.mid-gray {
+  color: #667680;
+}
+
+.light-gray {
+  color: #f3f9f9;
+}
+
+.red {
+  color: #f95020;
+}
+
+.green {
+  color: #00d930;
+}
+
+.yellow {
+  color: #ffdc00;
+}
+
+.bg-dark-gray {
+  background-color: #304650;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-blue {
+  background-color: #0076df;
+}
+
+.bg-mid-gray {
+  background-color: #667680;
+}
+
+.bg-light-gray {
+  background-color: #f3f9f9;
+}
+
+.bg-red {
+  background-color: #f95020;
+}
+
+.bg-green {
+  background-color: #00d930;
+}
+
+.bg-yellow {
+  background-color: #ffdc00;
+}
+
+.bg-darken-1 {
+  background-color: rgba(0, 51, 102, .03125);
+}
+
+.bg-darken-2 {
+  background-color: rgba(0, 51, 102, .0625);
+}
+
+.bg-darken-3 {
+  background-color: rgba(0, 51, 102, .125);
+}
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 51, 102, .125);
+}
+
+.border-top {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: rgba(0, 51, 102, .125);
+}
+
+.border-right {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: rgba(0, 51, 102, .125);
+}
+
+.border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 51, 102, .125);
+}
+
+.border-left {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: rgba(0, 51, 102, .125);
+}
+
+.rounded {
+  border-radius: 3px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.input,
+.textarea,
+.select {
+  background-color: white;
+  -webkit-transition: box-shadow .2s ease;
+          transition: box-shadow .2s ease;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 51, 102, .125);
+  border-radius: 3px;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  outline: none;
+  border-color: #0076df;
+  box-shadow: 0 0 2px rgba(0, 118, 223, .5);
+}
+
+.radio,
+.checkbox {
+  -webkit-transition: box-shadow: .2s ease;
+          transition: box-shadow: .2s ease;
+}
+
+.radio {
+  border-radius: 50%;
+}
+
+.radio:focus,
+.checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 2px rgba(0, 118, 223, .5);
+}
+
+.table-light th,
+.table-light td {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 51, 102, .125);
+}
+
+.button-blue {
+  color: white;
+  background-color: #0076df;
+  border-radius: 3px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
+}
+
+
+
+.button-blue:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 118, 223, .5);
+}
+
+.button-blue-outline {
+  color: #0076df;
+  background-color: transparent;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 2px #0076df;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-property: box-shadow, color, background-color;
+          transition-property: box-shadow, color, background-color;
+}
+
+.button-blue-outline:hover {
+  color: white;
+  background-color: #0076df;
+}
+
+.button-blue-outline:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #0076df, 0 0 0 2px white, 0 0 1px 4px rgba(0, 118, 223, .5);
+}
+
+.button-gray {
+  color: white;
+  background-color: #667680;
+  border-radius: 3px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
+}
+
+
+
+.button-gray:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 118, 223, .5);
+}
+
+/* Defaults */
+

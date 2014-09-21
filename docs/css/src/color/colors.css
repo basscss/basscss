@@ -1,0 +1,6 @@
+
+.bright-blue    { color: var(--bright-blue) }
+.bg-bright-blue { background-color: var(--bright-blue) }
+
+.icon { fill: currentcolor }
+

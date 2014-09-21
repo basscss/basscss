@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Basscss</title>
+  <meta name="author" content="Jxnblk">
+  <meta name="description" content="Simple, responsive CSS toolkit based on OOCSS principles">
+  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/docs/css/base.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400" rel="stylesheet">
+  <link rel="icon" href="/docs/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/docs/apple-touch-icon.png">
+</head>
+
+<body class="container px2">
+
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h4 caps bold mt2">
+    <a href="/" class="">Basscss</a> /
+    <a href="/docs">Docs</a>
+  </div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">Utility</h1>
+</header>
+
+
+<div class="clearfix mxn2">
+  <div class="sm-col sm-col-9 px2 py2">
+
+    <p class="h3">
+      Utilities are single-purpose styles that provide the backbone for layout.
+      Once these are set, they should be considered immutable and never change or be extended.
+      Each utility is designed to do one thing well,
+      while making its usage simple and obvious with short, humanized naming conventions.
+    </p>
+
+    <section id="typography" class="py2">
+      <h1>Typography</h1>
+      <p>Use these utilities to alter default typographic styles.</p>
+      
+<div data-include-example="docs/examples/type-utilities.html" class="Example">
+<div class="Example_rendered">
+<p class="bold">Bold</p>
+<p class="regular">Regular</p>
+<p class="italic">Italic</p>
+<p class="caps">Caps</p>
+<p class="left-align">Left align</p>
+<p class="center">Center</p>
+<p class="right-align">Right align</p>
+<p class="justified">Justified Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;bold&quot;</span><span class="nt">&gt;</span>Bold<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;regular&quot;</span><span class="nt">&gt;</span>Regular<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;italic&quot;</span><span class="nt">&gt;</span>Italic<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;caps&quot;</span><span class="nt">&gt;</span>Caps<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;left-align&quot;</span><span class="nt">&gt;</span>Left align<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;</span>Center<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;right-align&quot;</span><span class="nt">&gt;</span>Right align<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;justified&quot;</span><span class="nt">&gt;</span>Justified Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="nt">&lt;/p&gt;</span>
+</pre></div>
+</div>
+    </section>
+
+    <section id="layout" class="py2">
+      <h1>Layout</h1>
+      <p>Use the following layout utilities to alter default HTML layout.</p>
+      <div class="p2 bg-darken-1 rounded">
+        <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.inline</span>       <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span> <span class="p">}</span>
+<span class="nc">.block</span>        <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="p">}</span>
+<span class="nc">.inline-block</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span> <span class="p">}</span>
+
+<span class="nc">.overflow-hidden</span> <span class="p">{</span> <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span> <span class="p">}</span>
+
+<span class="nc">.clearfix</span><span class="nd">:before</span><span class="o">,</span>
+<span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="k">content</span><span class="o">:</span> <span class="s2">&quot; &quot;</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="n">table</span>
+<span class="p">}</span>
+<span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">clear</span><span class="o">:</span> <span class="k">both</span> <span class="p">}</span>
+
+<span class="nc">.left</span>  <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span> <span class="p">}</span>
+<span class="nc">.right</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">right</span> <span class="p">}</span>
+
+<span class="nc">.fit</span> <span class="p">{</span> <span class="k">max-width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span> <span class="p">}</span>
+
+<span class="nc">.half-width</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span> <span class="p">}</span>
+<span class="nc">.full-width</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span> <span class="p">}</span>
+</pre></div>
+</div>
+
+      </div>
+
+    </section>
+
+    <section id="white-space" class="py2">
+      <h1>White Space Scale</h1>
+      <p>
+        Margin and padding utilities are based on a global white space scale defined with variables.
+        These utilities use a shorthand naming convention.
+      </p>
+      <table class="mb2 bg-darken-1 rounded table-light">
+        <thead>
+          <tr> <th>Shorthand</th> <th>Description</th> </tr>
+        </thead>
+        <tbody>
+          <tr> <td>m</td> <td>Margin</td> </tr>
+          <tr> <td>p</td> <td>Padding</td> </tr>
+          <tr> <td>t</td> <td>Top</td> </tr>
+          <tr> <td>r</td> <td>Right</td> </tr>
+          <tr> <td>b</td> <td>Bottom</td> </tr>
+          <tr> <td>l</td> <td>Left</td> </tr>
+          <tr> <td>x</td> <td>X-axis (left and right)</td> </tr>
+          <tr> <td>y</td> <td>Y-axis (top and bottom)</td> </tr>
+          <tr> <td>n</td> <td>Negative (margin only)</td> </tr>
+          <tr> <td>1</td> <td>--space-1 (default .5rem)</td> </tr>
+          <tr> <td>2</td> <td>--space-2 (default 1rem)</td> </tr>
+          <tr> <td>3</td> <td>--space-3 (default 2rem)</td> </tr>
+          <tr> <td>4</td> <td>--space-4 (default 4rem)</td> </tr>
+      </tbody></table>
+      <h2>Margins</h2>
+      <p>
+        Use these utilities to reset or alter default margins.
+        Negative x-axis margins are used to offset padding.
+        Margin auto is used to horizontally center block-level elements with a set width.
+      </p>
+      <div class="p2 bg-darken-1 rounded">
+        <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.m0</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="m">0</span> <span class="p">}</span>
+<span class="nc">.mt0</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="m">0</span> <span class="p">}</span>
+<span class="nc">.mr0</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="m">0</span> <span class="p">}</span>
+<span class="nc">.mb0</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
+<span class="nc">.ml0</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="m">0</span> <span class="p">}</span>
+
+<span class="nc">.m1</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.mt1</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.mr1</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.mb1</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.ml1</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
+
+<span class="nc">.m2</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.mt2</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.mr2</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.mb2</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.ml2</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
+
+<span class="nc">.m3</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.mt3</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.mr3</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.mb3</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.ml3</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
+
+<span class="nc">.m4</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.mt4</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.mr4</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.mb4</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.ml4</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
+
+<span class="nc">.mxn1</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">margin-right</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="p">}</span>
+<span class="nc">.mxn2</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">);</span> <span class="k">margin-right</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">);</span> <span class="p">}</span>
+<span class="nc">.mxn3</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">);</span> <span class="k">margin-right</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">);</span> <span class="p">}</span>
+<span class="nc">.mxn4</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="k">margin-right</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="p">}</span>
+
+<span class="nc">.mx-auto</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> <span class="k">margin-right</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+
+      </div>
+      <h2>Padding</h2>
+      <p>
+        Padding utilities are only available in symmetrical orientations.
+        This is to normalize the spacing used around elements.
+      </p>
+      <div class="p2 bg-darken-1 rounded">
+        <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.p1</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.py1</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.px1</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
+
+<span class="nc">.p2</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.py2</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.px2</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
+
+<span class="nc">.p3</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.py3</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.px3</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
+
+<span class="nc">.p4</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.py4</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.px4</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
+</pre></div>
+</div>
+
+      </div>
+    </section>
+
+    <section id="responsive-states" class="py2">
+      <h1>Responsive States</h1>
+      <p>
+        These styles allow for conditionally showing and hiding elements using a
+        <a href="/docs/guide/#media-queries">
+          mobile-first approach
+        </a>
+        by default.
+      </p>
+      <h3>Prefix Naming Convention</h3>
+      <table class="mb2 table-light border rounded">
+        <thead>
+          <tr> <th>Prefix</th> <th>Description</th> </tr>
+        </thead>
+        <tbody>
+          <tr> <td>(no prefix)</td> <td>Not scoped to a breakpoint</td> </tr>
+          <tr> <td>sm-</td> <td>--breakpoint-sm (default: min-width 40em)</td> </tr>
+          <tr> <td>md-</td> <td>--breakpoint-md (default: min-width 52em)</td> </tr>
+          <tr> <td>lg-</td> <td>--breakpoint-lg (default: min-width 64em)</td> </tr>
+        </tbody>
+      </table>
+      <p>To adjust the default breakpoints, declare custom media queries after importing the file via Rework.</p>
+      <div class="p2 mb2 bg-darken-1 rounded">
+        <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.sm-show</span><span class="o">,</span> <span class="nc">.md-show</span><span class="o">,</span> <span class="nc">.lg-show</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-sm</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.sm-show</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="cp">!important</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-md</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.md-show</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="cp">!important</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-lg</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.lg-show</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="cp">!important</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="nc">.hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
+<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-sm</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.sm-hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-md</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.md-hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-lg</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.lg-hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+      </div>
+      <h3>Example</h3>
+      <p>Resize the browser window to see the effect.</p>
+      
+<div data-include-example="docs/examples/responsive-show-hide.html" class="Example">
+<div class="Example_rendered">
+<h3 class="hide sm-show">Visible from <code>--breakpoint-sm</code> and up.</h3>
+<h3 class="sm-hide red">Hidden from <code>--breakpoint-sm</code> and up.</h3>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;hide sm-show&quot;</span><span class="nt">&gt;</span>Visible from <span class="nt">&lt;code&gt;</span>--breakpoint-sm<span class="nt">&lt;/code&gt;</span> and up.<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;sm-hide red&quot;</span><span class="nt">&gt;</span>Hidden from <span class="nt">&lt;code&gt;</span>--breakpoint-sm<span class="nt">&lt;/code&gt;</span> and up.<span class="nt">&lt;/h3&gt;</span>
+</pre></div>
+</div>
+    </section>
+
+    <div class="clearfix mxn2 py2">
+      <a href="/docs/base" class="left button button-nav">
+        Previous:
+        <div class="h3">Base Elements</div>
+      </a>
+      <a href="/docs/layout" class="right button button-nav">
+        Next:
+        <div class="h3">Layout</div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="py2 sm-col sm-col-3 px2 sm-show">
+    <div class="mxn1">
+      <a href="#typography" class="button block button-nav">Typography</a>
+      <a href="#layout" class="button block button-nav">Layout</a>
+      <a href="#white-space" class="button block button-nav">White Space Scale</a>
+      <a href="#responsive-states" class="button block button-nav">Responsive States</a>
+    </div>
+  </div>
+
+</div>
+
+<footer class="py4">
+  <div class="sm-table">
+    <div class="sm-table-cell nowrap py2 xs-center">
+      <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4">
+        </svg>
+        Tweet
+      </a>
+    </div>
+    <div class="sm-table-cell full-width py2 xs-center">
+      <div class="h5 bold px2">
+        <a href="/" class="button" data-nav-item="">Home</a>
+        <a href="/docs" class="button" data-nav-item="">Docs</a>
+        <a href="//github.com/jxnblk/basscss" class="button">Github</a>
+      </div>
+    </div>
+    <div class="sm-table-cell py2 nowrap right-align">
+      <p class="h5 mb0 xs-center">
+        <svg class="icon red" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 ">
+        </svg>
+        Made with love by
+        <a href="//jxnblk.com">Jxnblk</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

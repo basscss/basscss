@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<div data-include="docs/partials/_head.html"></div>
+<body class="container px2">
+
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h4 caps bold mt2">
+    <a href="/" class="">Basscss</a> /
+    <a href="/docs">Docs</a>
+  </div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">Using Rework</h1>
+</header>
+
+<div class="sm-col-9">
+
+  <section class="py2">
+    <p class="h3">
+      Basscss is built with
+      <a href="https://github.com/reworkcss/rework">Rework</a> and
+      <a href="http://gulpjs.com/">Gulp</a>.
+      If you’re new to these, follow this guide to get started.
+    </p>
+  </section>
+
+  <section class="py2">
+    <h2>Building with Gulp and Rework</h2>
+    <p>
+      If you don’t have it already,
+      <a href="http://nodejs.org/download/">install Node</a>,
+      which includes NPM.
+      Then, install Gulp globally:
+    </p>
+    <pre class="p1">npm install --global gulp</pre>
+
+    <p>
+      Clone or
+      <a href="https://github.com/jxnblk/basscss/archive/v3.zip">download</a>
+      Basscss, then cd into the basscss directory.
+    </p>
+    <pre class="p1">git clone https://github.com/jxnblk/basscss.git && cd basscss</pre>
+
+    <p>Install the dependencies for Basscss.</p>
+    <pre class="p1">npm install</pre>
+
+    <p>
+      Duplicate <code>/src/basscss.css</code> to use as a template, make adjustments, then run the following Gulp task from the command line to recompile. This will create uncompressed, minified, and gzipped versions of the file.
+    </p>
+    <pre class="p1">gulp rework</pre>
+
+    <p>To better understand how this is set up, open up <code>gulpfile.js</code> and take a peek.
+
+  </section>
+
+  <section class="py2">
+    <p>To use Rework in an existing Gulp file, follow this recipe:</p>
+    <div class="Example_code" data-pygmentize="js"><div data-include="docs/examples/gulp-recipe.js"></div></div>
+  </section>
+
+  <!--
+  <section class="py2">
+    <h2>Rework</h2>
+    <h3>Variables</h3>
+    <h3>Custom Media Queries</h3>
+    <h3>Imports</h3>
+  </section>
+  -->
+
+
+</div>
+
+
+<div data-include="docs/partials/_footer.html"></div>
+
+</body>
+</html>
