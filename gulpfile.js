@@ -30,22 +30,22 @@ gulp.task('rework', function() {
 
 // Create Sass partials
 gulp.task('sassify', function() {
-  gulp.src('basscss-base/index.css')
+  gulp.src('./src/modules/base.css')
     .pipe(rework( rnpm(), media(), vars(), colors(), calc )).pipe(autoprefixer())
     .pipe(rename('_base.scss')).pipe(gulp.dest('scss'));
-  gulp.src('basscss-utilities/index.css')
+  gulp.src('./src/modules/utilities.css')
     .pipe(rework( rnpm(), media(), vars(), colors(), calc )).pipe(autoprefixer())
     .pipe(rename('_utilities.scss')).pipe(gulp.dest('scss'));
-  gulp.src('basscss-positions/index.css')
+  gulp.src('./src/modules/positions.css')
     .pipe(rework( rnpm(), media(), vars(), colors(), calc )).pipe(autoprefixer())
     .pipe(rename('_positions.scss')).pipe(gulp.dest('scss'));
-  gulp.src('basscss-grid/index.css')
+  gulp.src('./src/modules/grid.css')
     .pipe(rework( rnpm(), media(), vars(), colors(), calc )).pipe(autoprefixer())
     .pipe(rename('_grid.scss')).pipe(gulp.dest('scss'));
-  gulp.src('basscss-table-object/index.css')
+  gulp.src('./src/modules/table-object.css')
     .pipe(rework( rnpm(), media(), vars(), colors(), calc )).pipe(autoprefixer())
     .pipe(rename('_table-object.scss')).pipe(gulp.dest('scss'));
-  gulp.src('basscss-color-basic/index.css')
+  gulp.src('./src/modules/color-basic.css')
     .pipe(rework( rnpm(), media(), vars(), colors(), calc )).pipe(autoprefixer())
     .pipe(rename('_color-basic.scss')).pipe(gulp.dest('scss'));
 });
