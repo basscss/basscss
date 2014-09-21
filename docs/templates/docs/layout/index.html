@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<div data-include="docs/partials/_head.html"></div>
+<body class="container px2">
+
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h4 caps bold mt2">
+    <a href="/" class="">Basscss</a> /
+    <a href="/docs">Docs</a>
+  </div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">Layout</h1>
+</header>
+
+<div class="clearfix mxn2">
+  <div class="sm-col sm-col-9 px2 py2">
+
+    <p class="h3">
+      Layout modules are more complex than utilities and are tied to markup structure.
+      They are designed to be highly reusable and to inter-operate with other styles.
+    </p>
+
+    <section id="grid" class="py2">
+      <h1>Grid</h1>
+      <p>
+        The utility-based grid allows a lot of flexibility in creating complex layouts.
+        Start by using a <code>.clearfix</code> container.
+        Optionally use a <code>.container</code> to set a max-width.
+      </p>
+<div class="p2 mb2 bg-darken-1 rounded" data-pygmentize>
+<div class="container">
+  <div class="clearfix">
+  </div>
+</div>
+</div>
+      <p>
+        Add columns using the <code>.col</code> and grid width <code>.col-N</code> classes.
+      </p>
+      <div class="mb2" data-include-example="docs/examples/grid-floats.html"></div>
+      <p>
+        Use
+        <a href="/docs/utility#responsive-states">breakpoint-prefixed</a>
+        column utilities to change the grid at different screen widths.
+      </p>
+      <div class="mb2" data-include-example="docs/examples/grid-breakpoints.html"></div>
+      <p>
+        Use padding and negative margin utilities to create gutters based on the
+        <a href="/docs/utility#white-space">white space scale</a>.
+      </p>
+      <div class="mb2" data-include-example="docs/examples/grid-gutters.html"></div>
+    </section>
+
+    <section id="table-object" class="py2">
+      <h1>Table Object</h1>
+      <p>
+        Use the table object to vertically center content.
+        These styles can be combined with grid width and white-space utilities for a wide range of layout options.
+      </p>
+      <div data-include-example="docs/examples/table-object.html"></div>
+    </section>
+
+    <div class="clearfix mxn2 py2">
+      <a href="/docs/utility" class="left button button-nav">
+        Previous:
+        <div class="h3">Utility</div>
+      </a>
+      <a href="/docs/color" class="right button button-nav">
+        Next:
+        <div class="h3">Color</div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="py2 sm-col sm-col-3 sm-show">
+    <a href="#grid" class="button block button-nav">Grid</a>
+    <a href="#table-object" class="button block button-nav">Table Object</a>
+  </div>
+
+</div>
+
+<div data-include="docs/partials/_footer.html"></div>
+
+</body>
+</html>
