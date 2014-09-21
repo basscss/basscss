@@ -7,11 +7,11 @@
 
 */
 
-/* Basscss Base */
+/*
+    Basscss Base
+*/
 
 
-
-/* Reset */
 
 body,
 button {
@@ -47,8 +47,6 @@ img {
 svg {
   max-height: 100%;
 }
-
-/* Typography */
 
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -149,10 +147,6 @@ h6,
   padding-left: 0;
 }
 
-/* Forms */
-
-
-
 input:not([type=radio]):not([type=checkbox]) {
   line-height: 2.25em;
   -moz-box-sizing: border-box;
@@ -186,12 +180,6 @@ textarea {
   margin-top: 0;
   margin-bottom: .5rem;
 }
-
-
-
-
-
-/* Buttons */
 
 button,
 input[type=submit],
@@ -242,7 +230,9 @@ td {
   vertical-align: top;
 }
 
-/* BASSCSS Utilities */
+/*
+    Basscss Utilities
+*/
 
 
 
@@ -510,8 +500,6 @@ td {
   padding-right: 4rem;
 }
 
-/* Mobile-first breakpoint show/hide */
-
 .sm-show,
 .md-show,
 .lg-show {
@@ -557,6 +545,10 @@ td {
     display: none !important;
   }
 }
+
+/*
+    Basscss Positions
+*/
 
 .relative {
   position: relative;
@@ -611,7 +603,9 @@ td {
   display: table;
 }
 
-/* Grid */
+/*
+    Basscss Grid
+*/
 
 .container {
   max-width: 64em;
@@ -1135,12 +1129,3 @@ hr {
 
 /* Defaults */
 
-
-
-/* Custom Media Queries */
-
-/*
-@custom-media --breakpoint-sm (min-width: 40em);
-@custom-media --breakpoint-md (min-width: 52em);
-@custom-media --breakpoint-lg (min-width: 64em);
-*/

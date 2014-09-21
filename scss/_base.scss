@@ -1,8 +1,8 @@
-/* Basscss Base */
+/*
+    Basscss Base
+*/
 
 
-
-/* Reset */
 
 body,
 button {
@@ -38,8 +38,6 @@ img {
 svg {
   max-height: 100%;
 }
-
-/* Typography */
 
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -140,10 +138,6 @@ h6,
   padding-left: 0;
 }
 
-/* Forms */
-
-
-
 input:not([type=radio]):not([type=checkbox]) {
   line-height: 2.25em;
   -moz-box-sizing: border-box;
@@ -177,12 +171,6 @@ textarea {
   margin-top: 0;
   margin-bottom: .5rem;
 }
-
-
-
-
-
-/* Buttons */
 
 button,
 input[type=submit],
