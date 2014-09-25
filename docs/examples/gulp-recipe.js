@@ -5,15 +5,15 @@ var autoprefixer = require('gulp-autoprefixer');
 var gzip = require('gulp-gzip');
 
 var rework = require('gulp-rework');
-var rnpm = require('rework-npm');
-var media = require('rework-custom-media');
-var vars = require('rework-vars');
-var colors = require('rework-plugin-colors');
-var calc = require('rework-calc');
+var reworkNPM = require('rework-npm');
+var reworkMedia = require('rework-custom-media');
+var reworkVars = require('rework-vars');
+var reworkColors = require('rework-plugin-colors');
+var reworkCalc = require('rework-calc');
 
 gulp.task('rework', function() {
   gulp.src('./src/*.css')
-    .pipe(rework( rnpm(), media(), vars(), colors(), calc ))
+    .pipe(rework( reworkNPM(), reworkMedia(), reworkVars(), reworkColors(), reworkCalc ))
     .pipe(autoprefixer())
     .pipe(gulp.dest('./css'))
     .pipe(mincss())

@@ -6,12 +6,7 @@ var mincss = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var gzip = require('gulp-gzip');
 
-var rework = require('gulp-rework');
-var rnpm = require('rework-npm');
-var media = require('rework-custom-media');
-var vars = require('rework-vars');
-var colors = require('rework-plugin-colors');
-var calc = require('rework-calc');
+var basswork = require('gulp-basswork');
 var browsersync = require('browser-sync');
 
 // Site development
@@ -35,8 +30,9 @@ gulp.task('serve', function() {
 // Site stylesheet
 gulp.task('site-rework', function() {
   gulp.src('./docs/css/src/index.css')
-    .pipe(rework( rnpm(), media(), vars(), colors(), calc ))
-    .pipe(autoprefixer())
+    .pipe(basswork())
+    //.pipe(rework( rnpm(), media(), vars(), colors(), calc ))
+    //.pipe(autoprefixer())
     .pipe(mincss())
     .pipe(rename('base.min.css'))
     .pipe(gulp.dest('./docs/css'));

@@ -138,15 +138,23 @@ h6,
   padding-left: 0;
 }
 
-input:not([type=radio]):not([type=checkbox]) {
+input[type=text],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week] {
   line-height: 2.25em;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   height: 2.25em;
   -webkit-appearance: none;
-}
-
-input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
   margin-top: 0;
   margin-bottom: .5rem;
   padding: .25rem 1rem;
@@ -173,7 +181,9 @@ textarea {
 }
 
 button,
+input[type=button],
 input[type=submit],
+input[type=reset],
 .button {
   font-weight: bold;
   text-decoration: none;
