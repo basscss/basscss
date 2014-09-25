@@ -8,7 +8,6 @@
   <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/docs/css/base.min.css">
-  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400" rel="stylesheet">
   <link rel="icon" href="/docs/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/apple-touch-icon.png">
 </head>
@@ -110,6 +109,20 @@
     </div>
   </div>
 </footer>
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Source+Code+Pro::latin' ] }
+  };
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})(); </script>
 
 
 
