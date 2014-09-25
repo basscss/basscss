@@ -166,11 +166,11 @@ input[type=week] {
   -webkit-appearance: none;
   margin-top: 0;
   margin-bottom: .5rem;
-  padding: .25rem 1rem;
+  padding: .25em 1rem;
 }
 
 select {
-  line-height: calc(2.25em - .25rem);
+  line-height: 2em;
   display: block;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
@@ -228,7 +228,7 @@ th {
 
 th,
 td {
-  padding: .25rem 1rem;
+  padding: .25em 1rem;
   line-height: inherit;
 }
 
