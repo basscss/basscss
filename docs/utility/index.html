@@ -253,6 +253,44 @@
 </div>
     </section>
 
+    <section id="positions" class="py2">
+      <h1>Positions</h1>
+      <p>These styles alter the default document flow.</p>
+      <p>
+        <span class="red bold">
+          Use positions with caution. They are often unnecessary and commonly misused.
+        </span><br>
+        See the <a href="/docs/guide/#positions">Guide to Basics</a> for more info.
+      </p>
+      <div class="p2 bg-darken-1 rounded">
+        <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.relative</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">relative</span> <span class="p">}</span>
+<span class="nc">.absolute</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span> <span class="p">}</span>
+<span class="nc">.fixed</span>    <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span> <span class="p">}</span>
+
+<span class="nc">.top-0</span>    <span class="p">{</span> <span class="k">top</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
+<span class="nc">.right-0</span>  <span class="p">{</span> <span class="k">right</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
+<span class="nc">.bottom-0</span> <span class="p">{</span> <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
+<span class="nc">.left-0</span>   <span class="p">{</span> <span class="k">left</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
+
+<span class="nc">.z1</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">1</span> <span class="p">}</span>
+<span class="nc">.z2</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">2</span> <span class="p">}</span>
+<span class="nc">.z3</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">3</span> <span class="p">}</span>
+<span class="nc">.z4</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">4</span> <span class="p">}</span>
+
+<span class="nc">.absolute-center</span> <span class="p">{</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">right</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="n">table</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+      </div>
+    </section>
+
     <div class="clearfix mxn2 py2">
       <a href="/docs/base" class="h3 left button button-nav">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" width="16" height="16" fill="currentcolor">
@@ -276,6 +314,7 @@
       <a href="#layout" class="button block button-nav">Layout</a>
       <a href="#white-space" class="button block button-nav">White Space Scale</a>
       <a href="#responsive-states" class="button block button-nav">Responsive States</a>
+      <a href="#positions" class="button block button-nav">Positions</a>
     </div>
   </div>
 
