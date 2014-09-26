@@ -18,6 +18,21 @@ Basscss is a lightweight collection of base element styles, utilities, layout mo
 
 Learn more at http://basscss.com
 
+## Getting Started
+Download or install Basscss from one of these sources:
+
+```
+git clone https://github.com/jxnblk/basscss.git
+```
+
+```
+npm install basscss
+```
+
+```
+bower install basscss
+```
+
 
 ## Documentation
 View the full documentation with inline examples at:

@@ -4,6 +4,7 @@ var rename = require('gulp-rename');
 var mincss = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var gzip = require('gulp-gzip');
+var header = require('gulp-header');
 
 // Custom Rework wrapper
 var basswork = require('gulp-basswork');
@@ -13,14 +14,23 @@ var stylestats = require('gulp-stylestats');
 gulp.task('default', ['rework']);
 
 gulp.task('rework', function() {
+  var data = require('./package.json');
+  var meta = '/*\n\n' +
+             '    Basscss v' + data.version + '\n\n' +
+             '    ' + data.description + '\n' +
+             '    http://basscss.com' + '\n\n*/\n\n';
   gulp.src('./src/*.css')
     .pipe(basswork())
+    .pipe(header(meta))
     .pipe(gulp.dest('.'))
     .pipe(mincss())
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('.'))
     .pipe(gzip())
     .pipe(gulp.dest('.'));
+});
+
+gulp.task('version', function() {
 });
 
 // Create Sass partials

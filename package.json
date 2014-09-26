@@ -41,7 +41,8 @@
     "gulp-gzip": "0.0.8",
     "gulp-stylestats": "^0.2.7",
     "gulp-basswork": "latest",
-    "basswork": "latest"
+    "basswork": "latest",
+    "gulp-header": "^1.1.1"
   },
   "scripts": {
     "start": "gulp"
