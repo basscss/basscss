@@ -2,7 +2,7 @@
   "name": "basscss",
   "version": "4.0.0",
   "description": "Low-level CSS toolkit",
-  "main": "src/basscss.css",
+  "style": "src/basscss.css",
   "dependencies": {
     "basscss-base": "latest",
     "basscss-utilities": "latest",
