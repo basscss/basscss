@@ -1,5 +1,5 @@
 
-.h0 { font-size: 2.75em }
+.h0 { font-size: 2.75em; line-height: 1 }
 
 @media (--breakpoint-md) {
   .h0 { font-size: 4.5em }

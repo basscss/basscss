@@ -42,7 +42,9 @@
     "gulp-stylestats": "^0.2.7",
     "gulp-basswork": "latest",
     "basswork": "latest",
-    "gulp-header": "^1.1.1"
+    "gulp-header": "^1.1.1",
+    "css": "^2.1.0",
+    "mustache": "^0.8.2"
   },
   "scripts": {
     "start": "gulp"

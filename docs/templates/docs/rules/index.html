@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<div data-include="docs/partials/_head.html"></div>
+<body class="container px2">
+  <style>
+    .overflow-x-scroll { overflow-x: scroll }
+  </style>
+
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h4 caps bold mt2">
+    <a href="/" class="">Basscss</a> /
+    <a href="/docs">Docs</a>
+  </div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">Rules Index</h1>
+</header>
+
+<div class="overflow-x-scroll mb4">
+  <div data-include-rules>
+    <h1>{{ parsed.length }} Styles</h1>
+    <table class="mb4 table-light">
+      <thead class="bold bg-darken-1">
+        <tr> <th>Selector</th> <th>Declarations</th> </tr>
+      </thead>
+      <tbody>
+        {{ #parsed }}
+          <tr class="{{#media}}bg-darken-1{{/media}}">
+            <td class="col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">{{ $index }}</span> -->
+              {{ selectors }}
+            </td>
+            <td class="col-9">
+              {{ #media }}
+              <span class="bold">{{.}}</span>
+              {{ /media }}
+              {{ declarations }}
+            </td>
+          </tr>
+        {{ /parsed }}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div data-include="docs/partials/_footer.html"></div>
+
+</body>
+</html>

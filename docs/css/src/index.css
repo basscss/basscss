@@ -13,6 +13,7 @@
 @import "basscss-color-basic";
 
 
+@import "./base/typography";
 @import "./base/responsive-type";
 @import "./base/type-h0";
 @import "./base/icons";
