@@ -46,7 +46,7 @@
 <p class="left-align">Left align</p>
 <p class="center">Center</p>
 <p class="right-align">Right align</p>
-<p class="justified">Justified Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+<p class="justify">Justify Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;bold&quot;</span><span class="nt">&gt;</span>Bold<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;regular&quot;</span><span class="nt">&gt;</span>Regular<span class="nt">&lt;/p&gt;</span>
@@ -55,7 +55,7 @@
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;left-align&quot;</span><span class="nt">&gt;</span>Left align<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;</span>Center<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;right-align&quot;</span><span class="nt">&gt;</span>Right align<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;justified&quot;</span><span class="nt">&gt;</span>Justified Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;justify&quot;</span><span class="nt">&gt;</span>Justify Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="nt">&lt;/p&gt;</span>
 </pre></div>
 </div>
     </section>
@@ -88,7 +88,48 @@
 </div>
 
       </div>
-
+      <h2>Media Object</h2>
+      <p>Use utilites to create a <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a>.</p>
+      
+<div data-include-example="docs/examples/media-object.html" class="Example">
+<div class="Example_rendered">
+<div class="clearfix mb2 outline-blue">
+  <div class="left p2 mr1">Image</div>
+  <div class="overflow-hidden">
+    <p><b>Body</b> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+  </div>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix mb2 outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left p2 mr1&quot;</span><span class="nt">&gt;</span>Image<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;b&gt;</span>Body<span class="nt">&lt;/b&gt;</span> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+      <h2>Double-Sided Media Object</h2>
+      <p>For a container with a flexible center, use a double-sided media object.</p>
+      
+<div data-include-example="docs/examples/double-media-object.html" class="Example">
+<div class="Example_rendered">
+<div class="clearfix mb2 outline-blue">
+  <div class="left p2 mr1">Image</div>
+  <div class="right p2 ml1">Image</div>
+  <div class="overflow-hidden">
+    <p><b>Body</b> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+  </div>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix mb2 outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left p2 mr1&quot;</span><span class="nt">&gt;</span>Image<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right p2 ml1&quot;</span><span class="nt">&gt;</span>Image<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;b&gt;</span>Body<span class="nt">&lt;/b&gt;</span> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
     </section>
 
     <section id="white-space" class="py2">
@@ -196,7 +237,7 @@
         These styles allow for conditionally showing and hiding elements using a
         <a href="/docs/guide/#media-queries">mobile-first approach</a>.
       </p>
-      <h3>Prefix Naming Convention</h3>
+      <h2>Prefix Naming Convention</h2>
       <table class="mb2 table-light border rounded">
         <thead>
           <tr> <th>Prefix</th> <th>Description</th> </tr>
@@ -239,7 +280,7 @@
 </div>
 
       </div>
-      <h3>Example</h3>
+      <h2>Example</h2>
       <p>Resize the browser window to see the effect.</p>
       
 <div data-include-example="docs/examples/responsive-show-hide.html" class="Example">
@@ -249,6 +290,24 @@
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;hide sm-show&quot;</span><span class="nt">&gt;</span>Visible from <span class="nt">&lt;code&gt;</span>--breakpoint-sm<span class="nt">&lt;/code&gt;</span> and up.<span class="nt">&lt;/h3&gt;</span>
 <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;sm-hide red&quot;</span><span class="nt">&gt;</span>Hidden from <span class="nt">&lt;code&gt;</span>--breakpoint-sm<span class="nt">&lt;/code&gt;</span> and up.<span class="nt">&lt;/h3&gt;</span>
+</pre></div>
+</div>
+      <h2>Responsive Line Break</h2>
+      <p>Control wrapping at different screen widths.</p>
+      
+<div data-include-example="docs/examples/responsive-line-break.html" class="Example">
+<div class="Example_rendered">
+<h1>
+  Responsive Line Break
+  <br class="md-show">
+  To Control Wrapping
+</h1>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;h1&gt;</span>
+  Responsive Line Break
+  <span class="nt">&lt;br</span> <span class="na">class=</span><span class="s">&quot;md-show&quot;</span><span class="nt">&gt;</span>
+  To Control Wrapping
+<span class="nt">&lt;/h1&gt;</span>
 </pre></div>
 </div>
     </section>
@@ -289,6 +348,24 @@
 </div>
 
       </div>
+    </section>
+
+    <section id="variables" class="py2">
+      <h1>Default Variables</h1>
+      <p>
+        Utility styles use the following variables.
+        To alter these defaults, declare new values after importing Basscss with Rework. 
+      </p>
+      <div class="Example_code rounded" data-pygmentize="css"><div class="highlight"><pre><span class="nd">:root</span> <span class="p">{</span>
+  <span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="o">:</span> <span class="o">.</span><span class="m">5</span><span class="n">rem</span><span class="p">;</span>
+  <span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="o">:</span> <span class="m">1</span><span class="n">rem</span><span class="p">;</span>
+  <span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="o">:</span> <span class="m">2</span><span class="n">rem</span><span class="p">;</span>
+  <span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="o">:</span> <span class="m">4</span><span class="n">rem</span><span class="p">;</span>
+  <span class="o">--</span><span class="k">bold</span><span class="o">-</span><span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
     </section>
 
     <div class="clearfix mxn2 py2">

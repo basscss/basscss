@@ -321,7 +321,7 @@ td {
   text-align: right;
 }
 
-.justified {
+.justify {
   text-align: justify;
 }
 
@@ -617,6 +617,8 @@ td {
     Basscss Grid
 */
 
+
+
 .container {
   max-width: 64em;
   margin-left: auto;
@@ -625,6 +627,12 @@ td {
 
 .col {
   float: left;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+.col-right {
+  float: right;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
 }
@@ -673,9 +681,19 @@ td {
   width: 91.66666666666666%;
 }
 
+.col-12 {
+  width: 100%;
+}
+
 @media (min-width: 40em) {
   .sm-col {
     float: left;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+  }
+
+  .sm-col-right {
+    float: right;
     -moz-box-sizing: border-box;
          box-sizing: border-box;
   }
@@ -723,11 +741,21 @@ td {
   .sm-col-11 {
     width: 91.66666666666666%;
   }
+
+  .sm-col-12 {
+    width: 100%;
+  }
 }
 
 @media (min-width: 52em) {
   .md-col {
     float: left;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+  }
+
+  .md-col-right {
+    float: right;
     -moz-box-sizing: border-box;
          box-sizing: border-box;
   }
@@ -775,11 +803,21 @@ td {
   .md-col-11 {
     width: 91.66666666666666%;
   }
+
+  .md-col-12 {
+    width: 100%;
+  }
 }
 
 @media (min-width: 64em) {
   .lg-col {
     float: left;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+  }
+
+  .lg-col-right {
+    float: right;
     -moz-box-sizing: border-box;
          box-sizing: border-box;
   }
@@ -826,6 +864,10 @@ td {
 
   .lg-col-11 {
     width: 91.66666666666666%;
+  }
+
+  .lg-col-12 {
+    width: 100%;
   }
 }
 
