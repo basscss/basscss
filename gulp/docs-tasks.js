@@ -12,10 +12,10 @@ var browsersync = require('browser-sync');
 // Site development
 gulp.task('dev', ['watch', 'serve']);
 
-gulp.task('watch', ['rework', 'site-rework', 'sassify', 'render'], function() {
+gulp.task('watch', ['basswork', 'site-basswork', 'sassify', 'render'], function() {
   gulp.watch(
     ['./docs/templates/**/*.html', 'docs/partials/**/*', 'docs/examples/**/*', './docs/css/src/**/*', './src/**/*.css', './basscss-base/**/*', './basscss-utilities/**/*', './basscss-grid/**/*'],
-    ['rework', 'site-rework', 'sassify', 'render', 'reload']
+    ['basswork', 'site-basswork', 'sassify', 'render', 'reload']
   );
 });
 
@@ -28,11 +28,9 @@ gulp.task('serve', function() {
 });
 
 // Site stylesheet
-gulp.task('site-rework', function() {
+gulp.task('site-basswork', function() {
   gulp.src('./docs/css/src/index.css')
     .pipe(basswork())
-    //.pipe(rework( rnpm(), media(), vars(), colors(), calc ))
-    //.pipe(autoprefixer())
     .pipe(mincss())
     .pipe(rename('base.min.css'))
     .pipe(gulp.dest('./docs/css'));
@@ -43,6 +41,7 @@ var include = require('./include');
 var example = require('./include-example');
 var nav = require('./is-active');
 var pygmentize = require('./pygmentize');
+var glossary = require('./css-glossary');
 
 gulp.task('render', function() {
   gulp.src('./docs/templates/**/*.html')
@@ -53,14 +52,4 @@ gulp.task('render', function() {
     .pipe(glossary({ css: './basscss.css' }))
     .pipe(gulp.dest('./'));
 });
-
-var glossary = require('./css-glossary');
-
-/*
-gulp.task('glossary', function() {
-  gulp.src('./basscss.css')
-    .pipe(glossary({ css: './basscss.css' }));
-});
-*/
-
 

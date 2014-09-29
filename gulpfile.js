@@ -11,9 +11,9 @@ var basswork = require('gulp-basswork');
 
 var stylestats = require('gulp-stylestats');
 
-gulp.task('default', ['rework']);
+gulp.task('default', ['basswork', 'sassify']);
 
-gulp.task('rework', function() {
+gulp.task('basswork', function() {
   var data = require('./package.json');
   var meta = '/*\n\n' +
              '    Basscss v' + data.version + '\n\n' +
