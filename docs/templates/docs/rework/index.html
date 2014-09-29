@@ -26,7 +26,7 @@
   <section class="py2">
     <h2>Building with Gulp and Rework</h2>
     <p>
-      To fully leverage Basscss's modularity and flexibility,
+      To fully leverage Basscss’s modularity and flexibility,
       use Rework to build your own custom stylesheets.
     </p>
     <p>
@@ -37,9 +37,7 @@
     </p>
     <pre class="p1">npm install --global gulp</pre>
     <p>
-      Clone or
-      <a href="https://github.com/jxnblk/basscss/archive/v3.zip">download</a>
-      Basscss, then cd into the basscss directory.
+      Clone or download Basscss, then cd into the basscss directory.
     </p>
     <pre class="p1">git clone https://github.com/jxnblk/basscss.git && cd basscss</pre>
     <p>Install the dependencies for Basscss.</p>
@@ -52,19 +50,28 @@
   </section>
 
   <section class="py2">
-    <h2>Basswork</h2>
+    <h2>Building with Basswork</h2>
     <p>
       Basscss uses
       <a href="http://github.com/jxnblk/basswork">Basswork</a>
       , a custom wrapper around Rework, to simplify development. Basswork is also available as a
       <a href="https://github.com/jxnblk/gulp-basswork">Gulp plugin</a>.
     </p>
+    <h3>Using Basswork in Node</h3>
+    <p>Install basswork along with any Basscss modules you’d like to use.</p>
+    <div class="Example_code mb2" data-pygmentize>npm install --save-dev basswork basscss-base basscss-utilities</div>
+    <p>Pass a source CSS string to Basswork, which will return a compiled CSS string.</p>
+    <div class="Example_code mb2" data-pygmentize="js"><div data-include="docs/examples/basswork.js"></div></div>
     <h3>Using Basswork in an Existing Gulp Project</h3>
-    <p>Install gulp-basswork along with any Basscss modules you'd like to use.</p>
+    <p>Install gulp-basswork along with any Basscss modules you’d like to use.</p>
     <div class="Example_code mb2" data-pygmentize>npm install --save-dev gulp-basswork basscss-base basscss-utilities</div>
     <p>Create a Gulp task.</p>
     <div class="Example_code mb2" data-pygmentize="js"><div data-include="docs/examples/gulp-recipe.js"></div></div>
   </section>
+
+  <section class="py2">
+    <h2>Rework in Practice</h2>
+    <h3>Imports</h3>
     <p>Create a source CSS file to import the Basscss modules.</p>
 <div class="Example_code mb2" data-pygmentize="css">
 @import "basscss-base";
@@ -79,9 +86,9 @@
 @import "basscss-utilities";
 @import "./buttons.css";
 </div>
+    <h3>Variables</h3>
     <p>
-      Set CSS variables after the imports to override Basscss’s defaults.
-      See <a href="http://github.com/reworkcss/rework-vars">Rework Vars</a> for more details on usage.
+      Set CSS variables after the imports to alter Basscss’s default values.
     </p>
 <div class="Example_code mb2" data-pygmentize="css">
 @import "basscss-base";
@@ -91,8 +98,24 @@
   --font-family: Georgia, serif;
 }
 </div>
+    <p>To use variables as property values, follow this syntax:</p>
+<div class="Example_code mb2" data-pygmentize="css">
+.button-red {
+  color: white;
+  background-color: var(--red);
+}
+</div>
+    <p>To set an inline fallback value, place it after the variable name separated by a comma.</p>
+<div class="Example_code mb2" data-pygmentize="css">
+.button-red {
+  color: white;
+  background-color: var(--red, #f00);
+}
+</div>
+    <p>See <a href="http://github.com/reworkcss/rework-vars">Rework Vars</a> for more details on usage.</p>
+    <h3>Custom Media Queries</h3>
     <p>
-      To adjust breakpoints for the media queries,
+      To adjust breakpoints for the default media queries,
       set custom media queries after the imports.
       See <a href="http://github.com/reworkcss/rework-custom-media">Rework Custom Media</a> for more details on usage.
     </p>
@@ -111,15 +134,6 @@
       <a href="https://github.com/suitcss/preprocessor">Suitcss Preprocessor</a>.
     </p>
   </section>
-
-  <!--
-  <section class="py2">
-    <h2>Rework</h2>
-  x  <h3>Variables</h3>
-  x  <h3>Custom Media Queries</h3>
-  x  <h3>Imports</h3>
-  </section>
-  -->
 
 
 </div>
