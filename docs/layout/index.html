@@ -66,6 +66,7 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <h2>Responsive Grid</h2>
       <p>
         Use
         <a href="/docs/utility/#responsive-states">breakpoint-prefixed</a>
@@ -87,6 +88,7 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <h2>Gutters</h2>
       <p>
         Use padding and negative margin utilities to create gutters based on the
         <a href="/docs/utility/#white-space">white space scale</a>.
@@ -109,6 +111,68 @@
 <span class="c">&lt;!-- Nested divs for demonstration only --&gt;</span>
 </pre></div>
 </div>
+      <h2>Nesting</h2>
+      <p>Nest whole grid structures within columns to created nested grids.</p>
+      
+<div class="mb2 Example" data-include-example="docs/examples/grid-nesting.html">
+<div class="Example_rendered">
+<div class="clearfix mxn2 outline-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div>Unnested</div></div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2">
+    <div class="clearfix mxn2">
+      <div class="col col-6 px2"><div>Nested</div></div>
+      <div class="col col-6 px2"><div>Nested</div></div>
+    </div>
+  </div>
+</div>
+<!-- Nested divs for demonstration only -->
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix mxn2 outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-5 lg-col-4 px2&quot;</span><span class="nt">&gt;&lt;div&gt;</span>Unnested<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-6 md-col-7 lg-col-8 px2&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix mxn2&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col col-6 px2&quot;</span><span class="nt">&gt;&lt;div&gt;</span>Nested<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col col-6 px2&quot;</span><span class="nt">&gt;&lt;div&gt;</span>Nested<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- Nested divs for demonstration only --&gt;</span>
+</pre></div>
+</div>
+      <h2>Reversed</h2>
+      <p>To reverse the order of columns, use the <code>.col-right</code> class to float right</p>
+      
+<div class="mb2 Example" data-include-example="docs/examples/grid-reversed.html">
+<div class="Example_rendered">
+<div class="clearfix outline-blue">
+  <div class="col-right col-6">.col-right.col-6</div>
+  <div class="col col-6">.col.col-6</div>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-right col-6&quot;</span><span class="nt">&gt;</span>.col-right.col-6<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col col-6&quot;</span><span class="nt">&gt;</span>.col.col-6<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+      <h2>Centering Columns</h2>
+      <p>Use the <code>.mx-auto</code> class to center columns within their containers.</p>
+      
+<div class="mb2 Example" data-include-example="docs/examples/grid-centered.html">
+<div class="Example_rendered">
+<div class="clearfix mxn2 outline-blue">
+  <div class="col-8 px2 mx-auto">
+    <div>Centered Column</div>
+  </div>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix mxn2 outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-8 px2 mx-auto&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Centered Column<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
     </section>
 
     <section id="table-object" class="py2">
@@ -119,7 +183,7 @@
         Apply padding to <code>.table-cell</code> elements to contol spacing.
       </p>
       
-<div data-include-example="docs/examples/table-object.html" class="Example">
+<div class="mb2 Example" data-include-example="docs/examples/table-object.html">
 <div class="Example_rendered">
 <div class="table outline-blue">
   <div class="table-cell">
@@ -135,6 +199,119 @@
     <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>For vertically centered content<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>.table-cell<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+      <h2>Flag Object</h2>
+      <p>
+        The <a href="http://csswizardry.com/2013/05/the-flag-object/">flag object</a>
+        can be emulated by adding <code>.full-width</code> to one of the cells.
+        To add padding to the body, nest another div within the full-width cell.
+      </p>
+      
+<div class="mb2 Example" data-include-example="docs/examples/table-object-flag.html">
+<div class="Example_rendered">
+<div class="table outline-blue">
+  <div class="table-cell p2">Image</div>
+  <div class="table-cell full-width">
+    <h1 class="m0">Flag Body</h1>
+    <p class="m0">The full-width utility makes the table object behave like the flag object.</p>
+  </div>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell p2&quot;</span><span class="nt">&gt;</span>Image<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell full-width&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>Flag Body<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>The full-width utility makes the table object behave like the flag object.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+      <h2>Equal width cells</h2>
+      <p>Use the <code>.table-fixed</code> extension to create equal-width cells.</p>
+      
+<div class="mb2 Example" data-include-example="docs/examples/table-object-fixed.html">
+<div class="Example_rendered">
+<div class="table table-fixed outline-blue">
+  <div class="table-cell">
+    <h1 class="m0">.table-cell</h1>
+    <p class="m0">For vertically centered content</p>
+  </div>
+  <div class="table-cell">.table-cell</div>
+  <div class="table-cell">.table-cell</div>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table table-fixed outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>.table-cell<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>For vertically centered content<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>.table-cell<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>.table-cell<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+      <h2>Responsive Table Object</h2>
+      <p>
+        Use breakpoint prefixes to keep table objects stacked at smaller screen sizes.
+        This is useful for things like navigation.
+      </p>
+      
+<div class="mb2 Example" data-include-example="docs/examples/table-object-responsive.html">
+<div class="Example_rendered">
+<div class="sm-table mb1 outline-blue">
+  <div class="sm-table-cell">
+    <h1 class="m0">.sm-table-cell</h1>
+    <p class="m0">Only kicks in above the small breakpoint</p>
+  </div>
+  <div class="sm-table-cell">.sm-table-cell</div>
+</div>
+<div class="lg-table outline-blue">
+  <div class="lg-table-cell">
+    <h1 class="m0">.lg-table-cell</h1>
+    <p class="m0">Only kicks in above the large breakpoint</p>
+  </div>
+  <div class="lg-table-cell">.lg-table-cell</div>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-table mb1 outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-table-cell&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>.sm-table-cell<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>Only kicks in above the small breakpoint<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-table-cell&quot;</span><span class="nt">&gt;</span>.sm-table-cell<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;lg-table outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;lg-table-cell&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>.lg-table-cell<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>Only kicks in above the large breakpoint<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;lg-table-cell&quot;</span><span class="nt">&gt;</span>.lg-table-cell<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+      <h2>Table Grid</h2>
+      <p>
+        The table object can be combined with grid width utilities to create vertically centered columns.
+      </p>
+      
+<div class="mb2 Example" data-include-example="docs/examples/table-object-grid.html">
+<div class="Example_rendered">
+<div class="table outline-blue">
+  <div class="table-cell col-7">
+    <h1 class="m0">.table-cell.col-7</h1>
+    <p class="m0">For vertically centered content</p>
+  </div>
+  <div class="table-cell col-5">.table-cell.col-5</div>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table outline-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell col-7&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>.table-cell.col-7<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>For vertically centered content<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell col-5&quot;</span><span class="nt">&gt;</span>.table-cell.col-5<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
