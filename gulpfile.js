@@ -2,7 +2,6 @@
 var gulp = require('gulp');
 var rename = require('gulp-rename');
 var mincss = require('gulp-minify-css');
-var autoprefixer = require('gulp-autoprefixer');
 var gzip = require('gulp-gzip');
 var header = require('gulp-header');
 
