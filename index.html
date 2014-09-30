@@ -32,7 +32,7 @@
   <main class="container px2 overflow-hidden">
 
     <section class="py3">
-      <h1 class="mb2">Modular CSS toolkit based on OOCSS principles</h1>
+      <h1 class="md-h1 mb2">Modular CSS toolkit based on OOCSS principles</h1>
       <p class="h3 md-col-9">
         Basscss is a lightweight collection of
         base element styles, utilities, layout modules, and color styles
@@ -40,33 +40,49 @@
       </p>
     </section>
 
-    <section id="features" class="py3">
-      <div class="clearfix mxn2">
-        <div class="sm-col sm-col-6 px2">
-          <h2 class="mb0">Lightweight</h2>
-          <p>10KB minified, 2KB gzipped</p>
-        </div>
-        <div class="sm-col sm-col-6 px2">
-          <h2 class="mb0">Modular</h2>
-          <p>Composable and highly reusable styles</p>
-        </div>
-        <div class="clearfix sm-show"></div>
-        <div class="sm-col sm-col-6 px2">
-          <h2 class="mb0">Consistent and Flexible</h2>
-          <p>Smart defaults balanced with basic utility</p>
-        </div>
-        <div class="sm-col sm-col-6 px2">
-          <h2 class="mb0">Fast</h2>
-          <p>Performant and simple design to code faster</p>
-        </div>
+    <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+
+    <section id="concepts" class="clearfix mxn2 py3">
+      <div class="sm-col sm-col-6 px2">
+        <h1>Designed for Design</h1>
+        <p>
+          With simple, humanized naming conventions, 
+          Basscss is quick to internalize and easy to wrap your head around,
+          while striking a balance between consistency and flexiblity.
+        </p>
+      </div>
+      <div class="sm-col sm-col-6 px2">
+        <h1>Responsive by Default</h1>
+        <p>
+          The web is inherently flexible, Basscss doesn&#x2019;t break that tradition
+          and provides lightweight solutions to design for all devices.
+        </p>
+      </div>
+      <div class="clearfix sm-show"></div>
+      <div class="sm-col sm-col-6 px2">
+        <h1>Unobtrusive</h1>
+        <p>
+          Basscss doesn&#x2019;t dictate what your site should look like.
+          With extensible base styles and variables for typography, white space, breakpoints, and UI elements,
+          customizing the look and feel is easy.
+        </p>
+      </div>
+      <div class="sm-col sm-col-6 px2">
+        <h1>Mix and Match</h1>
+        <p>
+          With modular styles that work like building blocks,
+          Basscss provides a foundation of reusable and inter-operable styles
+          for greater freedom when designing in the browser.
+        </p>
       </div>
     </section>
 
+    <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
 
     <section id="base" class="mxn3 py4">
       <div class="sm-table">
         <div class="sm-table-cell sm-col-5 px3">
-          <div class="p2 blue border rounded">
+          <div class="p2 blue bg-darken-1 rounded">
             <h1 class="mt1">Hamburger 1</h1>
             <h2>Hamburger 2</h2>
             <h3>Hamburger 3</h3>
@@ -92,7 +108,7 @@
           </p>
         </div>
         <div class="sm-table-cell sm-col-5 px3">
-          <div class="h3 bold p2 blue border rounded">
+          <div class="h3 bold p2 blue bg-darken-1 rounded">
             <div>.block</div>
             <div>.inline-block</div>
             <div>.inline</div>
@@ -104,10 +120,10 @@
       </div>
     </section>
 
-    <section id="utility" class="mxn3 py3">
+    <section id="layout" class="mxn3 py3">
       <div class="sm-table">
         <div class="sm-table-cell sm-col-5 px3">
-          <div class="h4 center bold p2 blue border rounded">
+          <div class="h4 center bold p2 blue bg-darken-1 rounded">
             <div class="clearfix outline-blue">
               <div class="col col-6 sm-col-4 py2">.col-6<br> .sm-col-4</div>
               <div class="col col-6 sm-col-4 py2">.col-6<br> .sm-col-4</div>
@@ -128,29 +144,29 @@
       </div>
     </section>
 
-    <section id="utility" class="mxn3 py3">
+    <section id="color" class="mxn3 py3">
       <div class="sm-table">
         <div class="sm-table-cell sm-col-7 px3">
           <h1 class="mt1">Color</h1>
           <p class="h3">
-            Simple, concrete color utilities encourage
-            iterative design and flexibility over time. 
+            Simple, customizable color utilities encourage
+            iterative design and allow for flexibility over time. 
           </p>
         </div>
         <div class="sm-table-cell sm-col-5 px3">
-          <div class="h3 bold center p2 white border rounded">
-            <div class="p1 bg-dark-gray">.dark-gray</div>
+          <div class="h3 bold center overflow-hidden white rounded">
             <div class="p1 bg-blue">.blue</div>
+            <div class="p1 bg-dark-gray">.dark-gray</div>
+            <div class="p1 bg-mid-gray">.mid-gray</div>
+            <div class="p1 bg-light-gray">.light-gray</div>
             <div class="p1 bg-red">.red</div>
-            <div class="p1 bg-yellow">.yellow</div>
-            <div class="p1 bg-green">.green</div>
           </div>
         </div>
       </div>
     </section>
 
+    <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
 
-      
     <section id="cta" class="py4">
       <div class="sm-table">
         <div class="sm-table-cell sm-col-6">

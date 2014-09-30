@@ -11,10 +11,25 @@ http://basscss.com
 Basscss is a lightweight collection of base element styles, utilities, layout modules, and color styles designed for speed, performance, and scalability.
 
 ## Features
-- **Lightweight** at about 10KB minified, 2KB gzipped
-- **Modular architecture** with composable and highly reusable styles
-- **Balances consistency and flexibility** through smart defaults and basic utilities
-- **Fast** with performant and simple styles to promote faster design and development
+
+### Designed for Design
+With simple, humanized naming conventions,
+Basscss is quick to internalize and easy to wrap your head around,
+while striking a balance between consistency and flexibility.
+
+### Responsive by Default
+The web is inherently flexible, Basscss doesn't break that tradition
+and provides lightweight solutions to design for all devices.
+
+### Unobtrusive
+Basscss doesn't dictate what your site should look like.
+With extensible base styles and variables for typography, white space, breakpoints, and UI elements,
+customizing the look and feel is easy.
+
+### Mix and Match
+With modular styles that work like building blocks,
+Basscss provides a foundation of reusable and inter-operable styles
+for greater freedom when designing in the browser.
 
 Learn more at http://basscss.com
 
@@ -35,7 +50,7 @@ bower install basscss
 
 
 ## Documentation
-View the full documentation with inline examples at:
+View the full documentation with inline examples:
 
 http://basscss.com/docs
 
