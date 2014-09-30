@@ -29,28 +29,6 @@
       Demo page for elements and styles.
     </p>
 
-    <div class="py2"> <input class="input" type="text">
-<input class="input" type="datetime">
-<input class="input" type="datetime-local">
-<input class="input" type="email">
-<input class="input" type="month">
-<input class="input" type="number">
-<input class="input" type="password">
-<input class="input" type="search">
-<input class="input" type="tel">
-<input class="input" type="time">
-<input class="input" type="url">
-<input class="input" type="week">
-<input type="radio">
-<input type="checkbox">
-<input type="button">
-<input type="submit">
-<input type="reset">
-<input type="color">
-<input type="range">
-<input type="file">
-<input type="image">
- </div>
     <div class="py2"> <div class="center p1 white bg-dark-gray">.bg-dark-gray</div>
 <div class="center p1 bg-mid-gray">.bg-mid-gray</div>
 <div class="center p1 bg-light-gray">.bg-light-gray</div>
@@ -90,6 +68,14 @@
   <span class="green">.green</span>
 </h3>
  </div>
+    <div class="py2"> <div class="clearfix mb2 outline-blue">
+  <div class="left p2 mr1">Image</div>
+  <div class="right p2 ml1">Image</div>
+  <div class="overflow-hidden">
+    <p><b>Body</b> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+  </div>
+</div>
+ </div>
     <div class="py2"> <form class="sm-col-6">
   <label>Email Address</label>
   <input type="text" class="block full-width input">
@@ -121,6 +107,12 @@
   <div class="sm-col sm-col-6 md-col-7 lg-col-8">.sm-col.sm-col-6.md-col-7.lg-col-8</div>
 </div>
  </div>
+    <div class="py2"> <div class="clearfix mxn2 outline-blue">
+  <div class="col-8 px2 mx-auto">
+    <div>Centered Column</div>
+  </div>
+</div>
+ </div>
     <div class="py2"> <div class="container">
   <div class="clearfix">
   </div>
@@ -137,12 +129,50 @@
 </div>
 <!-- Nested divs for demonstration only -->
  </div>
+    <div class="py2"> <div class="clearfix mxn2 outline-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div>Unnested</div></div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2">
+    <div class="clearfix mxn2">
+      <div class="col col-6 px2"><div>Nested</div></div>
+      <div class="col col-6 px2"><div>Nested</div></div>
+    </div>
+  </div>
+</div>
+<!-- Nested divs for demonstration only -->
+ </div>
+    <div class="py2"> <div class="clearfix outline-blue">
+  <div class="col-right col-6">.col-right.col-6</div>
+  <div class="col col-6">.col.col-6</div>
+</div>
+ </div>
     <div class="py2"> <h1>Hamburger 1</h1>
 <h2>Hamburger 2</h2>
 <h3>Hamburger 3</h3>
 <h4>Hamburger 4</h4>
 <h5>Hamburger 5</h5>
 <h6>Hamburger 6</h6>
+ </div>
+    <div class="py2"> <input class="input" type="text">
+<input class="input" type="datetime">
+<input class="input" type="datetime-local">
+<input class="input" type="email">
+<input class="input" type="month">
+<input class="input" type="number">
+<input class="input" type="password">
+<input class="input" type="search">
+<input class="input" type="tel">
+<input class="input" type="time">
+<input class="input" type="url">
+<input class="input" type="week">
+<input type="radio">
+<input type="checkbox">
+<input type="button">
+<input type="submit">
+<input type="reset">
+<input type="color">
+<input type="range">
+<input type="file">
+<input type="image">
  </div>
     <div class="py2"> <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.inline</span>       <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span> <span class="p">}</span>
 <span class="nc">.block</span>        <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="p">}</span>
@@ -224,6 +254,37 @@
 </pre></div>
 </div>
  </div>
+    <div class="py2"> <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.relative</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">relative</span> <span class="p">}</span>
+<span class="nc">.absolute</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span> <span class="p">}</span>
+<span class="nc">.fixed</span>    <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span> <span class="p">}</span>
+
+<span class="nc">.top-0</span>    <span class="p">{</span> <span class="k">top</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
+<span class="nc">.right-0</span>  <span class="p">{</span> <span class="k">right</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
+<span class="nc">.bottom-0</span> <span class="p">{</span> <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
+<span class="nc">.left-0</span>   <span class="p">{</span> <span class="k">left</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
+
+<span class="nc">.z1</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">1</span> <span class="p">}</span>
+<span class="nc">.z2</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">2</span> <span class="p">}</span>
+<span class="nc">.z3</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">3</span> <span class="p">}</span>
+<span class="nc">.z4</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">4</span> <span class="p">}</span>
+
+<span class="nc">.absolute-center</span> <span class="p">{</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">right</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="n">table</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+ </div>
+    <div class="py2"> <h1>
+  Responsive Line Break
+  <br class="md-show">
+  To Control Wrapping
+</h1>
+ </div>
     <div class="py2"> <h3 class="hide sm-show">Visible from <code>--breakpoint-sm</code> and up.</h3>
 <h3 class="sm-hide red">Hidden from <code>--breakpoint-sm</code> and up.</h3>
  </div>
@@ -252,12 +313,65 @@
 </pre></div>
 </div>
  </div>
+    <div class="py2"> <table class="table-light bg-white border rounded">
+  <thead class="bg-light-gray">
+    <tr>
+      <th>Artist</th> <th>Album</th> <th>Release Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
+    <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
+    <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
+  </tbody>
+</table>
+ </div>
     <div class="py2"> <div class="table outline-blue">
   <div class="table-cell">
     <h1 class="m0">.table-cell</h1>
     <p class="m0">For vertically centered content</p>
   </div>
   <div class="table-cell">.table-cell</div>
+</div>
+ </div>
+    <div class="py2"> <div class="table table-fixed outline-blue">
+  <div class="table-cell">
+    <h1 class="m0">.table-cell</h1>
+    <p class="m0">For vertically centered content</p>
+  </div>
+  <div class="table-cell">.table-cell</div>
+  <div class="table-cell">.table-cell</div>
+</div>
+ </div>
+    <div class="py2"> <div class="table outline-blue">
+  <div class="table-cell p2">Image</div>
+  <div class="table-cell full-width">
+    <h1 class="m0">Flag Body</h1>
+    <p class="m0">The full-width utility makes the table object behave like the flag object.</p>
+  </div>
+</div>
+ </div>
+    <div class="py2"> <div class="table outline-blue">
+  <div class="table-cell col-7">
+    <h1 class="m0">.table-cell.col-7</h1>
+    <p class="m0">For vertically centered content</p>
+  </div>
+  <div class="table-cell col-5">.table-cell.col-5</div>
+</div>
+ </div>
+    <div class="py2"> <div class="sm-table mb1 outline-blue">
+  <div class="sm-table-cell">
+    <h1 class="m0">.sm-table-cell</h1>
+    <p class="m0">Only kicks in above the small breakpoint</p>
+  </div>
+  <div class="sm-table-cell">.sm-table-cell</div>
+</div>
+<div class="lg-table outline-blue">
+  <div class="lg-table-cell">
+    <h1 class="m0">.lg-table-cell</h1>
+    <p class="m0">Only kicks in above the large breakpoint</p>
+  </div>
+  <div class="lg-table-cell">.lg-table-cell</div>
 </div>
  </div>
     <div class="py2"> <table class="table-light">

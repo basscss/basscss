@@ -12,10 +12,17 @@ var browsersync = require('browser-sync');
 // Site development
 gulp.task('dev', ['watch', 'serve']);
 
-gulp.task('watch', ['basswork', 'site-basswork', 'sassify', 'render'], function() {
+gulp.task('watch', ['basswork', 'site-basswork', 'themes-basswork', 'sassify', 'render'], function() {
   gulp.watch(
-    ['./docs/templates/**/*.html', 'docs/partials/**/*', 'docs/examples/**/*', './docs/css/src/**/*', './src/**/*.css', './basscss-base/**/*', './basscss-utilities/**/*', './basscss-grid/**/*'],
-    ['basswork', 'site-basswork', 'sassify', 'render', 'reload']
+    [
+      './docs/templates/**/*.html',
+      'docs/partials/**/*',
+      'docs/examples/**/*',
+      './docs/css/src/**/*',
+      './src/**/*.css',
+      './docs/themes/bassmap/src/**/*'
+    ],
+    ['basswork', 'site-basswork', 'themes-basswork', 'sassify', 'render', 'reload']
   );
 });
 
@@ -51,5 +58,12 @@ gulp.task('render', function() {
     .pipe(nav())
     .pipe(glossary({ css: './basscss.css' }))
     .pipe(gulp.dest('./'));
+});
+
+// Themes
+gulp.task('themes-basswork', function() {
+  gulp.src('./docs/themes/bassmap/src/bassmap.css')
+    .pipe(basswork())
+    .pipe(gulp.dest('./docs/themes/bassmap'));
 });
 

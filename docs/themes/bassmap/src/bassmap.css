@@ -1,0 +1,122 @@
+
+@import "basscss-base";
+@import "basscss-utilities";
+@import "basscss-positions";
+@import "basscss-grid";
+@import "basscss-table-object";
+
+:root {
+  --font-family: 'Open Sans', sans-serif;
+  --h1: 30px;
+  --h2: 22px;
+  --h3: 15px;
+  --h4: 15px;
+  --h5: 12px;
+  --h6: 12px;
+
+  --ui-height: 40px;
+  --ui-padding-x: 10px;
+  --ui-padding-y: 10px;
+
+  --link-hover: #63b6e5;
+
+  --dark: #404040;
+  --gray: #eee;
+  --light: #f8f8f8;
+  --white: #fff;
+  --blue-light: #3bb2d0;
+  --blue: #3887be;
+  --denim: #3c4e5a;
+  --navy: #28353d;
+  --navy-dark: #222b30;
+  --purple: #8a8acb;
+  --green: #56b881;
+  --yellow: #f1f075;
+  --orange: #ee8a65;
+}
+
+body {
+  color: var(--dark);
+  color: rgba(#000, .75);
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+button,
+input[type=submit],
+input[type=button],
+.button {
+  font-size: 12px;
+}
+
+a:hover {
+  color: var(--blue-light);
+}
+
+.dark {       color: var(--dark); }
+.gray {       color: var(--gray); }
+.light {      color: var(--light); }
+.white {      color: #fff; }
+.blue-light { color: var(--blue-light); }
+.blue {       color: var(--blue); }
+.denim {      color: var(--denim); }
+.navy {       color: var(--navy); }
+.navy-dark {  color: var(--navy-dark); }
+.purple {     color: var(--purple); }
+.green {      color: var(--green); }
+.yellow {     color: var(--yellow); }
+.orange {     color: var(--orange); }
+
+.bg-dark {       background-color: var(--dark); }
+.bg-gray {       background-color: var(--gray); }
+.bg-light {      background-color: var(--light); }
+.bg-white {      background-color: #fff; }
+.bg-blue-light { background-color: var(--blue-light); }
+.bg-blue {       background-color: var(--blue); }
+.bg-denim {      background-color: var(--denim); }
+.bg-navy {       background-color: var(--navy); }
+.bg-navy-dark {  background-color: var(--navy-dark); }
+.bg-purple {     background-color: var(--purple); }
+.bg-green {      background-color: var(--green); }
+.bg-yellow {     background-color: var(--yellow); }
+.bg-orange {     background-color: var(--orange); }
+
+.dark {
+  color: white;
+}
+
+.dark a {
+  color: rgba(#fff, .5);
+}
+
+.dark a:hover {
+  color: white;
+}
+
+.button-blue {
+  color: white;
+  background-color: var(--blue);
+}
+.button-blue:hover {
+  color: white;
+}
+
+.button-purple {
+  color: white;
+  background-color: var(--purple);
+}
+.button-purple:hover {
+  color: white;
+}
+
+.button-gray {
+  color: white;
+  background-color: var(--dark);
+}
+.button-gray:hover {
+  color: white;
+}
+
