@@ -2,10 +2,7 @@
 :root {
 
   /*
-  --dark-gray: #304650;
   --blue: #0076df;
-  --mid-gray: #667680;
-  --light-gray: #f3f9f9;
   --red: #f96010;
   --green: #11e966;
   --yellow: #ffdc00;
@@ -13,6 +10,15 @@
   --border-width: 1px;
   --border-radius: 3px;
   */
+  --dark-gray: #304650;
+  --mid-gray: #667680;
+  --light-gray: #c3c9c9;
+  --lighter-gray: #f3f9f9;
+
+  --darken-1: rgba(#036, .0625);
+  --darken-2: rgba(#036, .125);
+  --darken-3: rgba(#036, .25);
+  --darken-4: rgba(#036, .5);
 
   --bright-blue: #0be;
   --bright-blue: #00a3ff;

@@ -151,7 +151,7 @@ input[type=tel],
 input[type=time],
 input[type=url],
 input[type=week] {
-  line-height: 40px;
+  line-height: 20px;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   height: 40px;
