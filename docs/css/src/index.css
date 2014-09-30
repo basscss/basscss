@@ -18,6 +18,7 @@
 @import "./base/type-h0";
 @import "./base/icons";
 @import "./base/button-sizes";
+@import "./base/folding-table";
 
 @import "./color/site";
 @import "./color/pygments";

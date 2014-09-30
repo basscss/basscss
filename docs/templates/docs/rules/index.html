@@ -17,18 +17,18 @@
 <div class="overflow-x-scroll mb4">
   <div data-include-rules>
     <h1>{{ parsed.length }} Styles</h1>
-    <table class="mb4 table-light">
+    <table class="mb4 folding-table table-light">
       <thead class="bold bg-darken-1">
         <tr> <th>Selector</th> <th>Declarations</th> </tr>
       </thead>
       <tbody>
         {{ #parsed }}
           <tr class="{{#media}}bg-darken-1{{/media}}">
-            <td class="col-3">
+            <td class="sm-col-3">
               <!-- <span class="h6 bold mr1 mid-gray">{{ $index }}</span> -->
               {{ selectors }}
             </td>
-            <td class="col-9">
+            <td class="sm-col-9">
               {{ #media }}
               <span class="bold">{{.}}</span>
               {{ /media }}
