@@ -20,7 +20,8 @@ gulp.task('watch', ['basswork', 'site-basswork', 'themes-basswork', 'sassify', '
       'docs/examples/**/*',
       './docs/css/src/**/*',
       './src/**/*.css',
-      './docs/themes/bassmap/src/**/*'
+      './docs/themes/bassmap/src/**/*',
+      './docs/themes/bassdock/src/**/*'
     ],
     ['basswork', 'site-basswork', 'themes-basswork', 'sassify', 'render', 'reload']
   );
@@ -63,7 +64,8 @@ gulp.task('render', function() {
 // Themes
 gulp.task('themes-basswork', function() {
   gulp.src('./docs/themes/bassmap/src/bassmap.css')
-    .pipe(basswork())
-    .pipe(gulp.dest('./docs/themes/bassmap'));
+    .pipe(basswork()).pipe(gulp.dest('./docs/themes/bassmap'));
+  gulp.src('./docs/themes/bassdock/src/bassdock.css')
+    .pipe(basswork()).pipe(gulp.dest('./docs/themes/bassdock'));
 });
 
