@@ -74,7 +74,7 @@ ul {
 
 ol,
 ul {
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 pre,
@@ -99,7 +99,8 @@ blockquote {
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: 0;
-  padding-left: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 blockquote,

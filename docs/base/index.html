@@ -80,7 +80,74 @@
 </pre></div>
 </div>
 
-      <!-- lists -->
+      <h2>Lists</h2>
+      <p>By default, lists have bullets or numbers and padding left.</p>
+      
+<div class="mb2 Example" data-include-example="docs/examples/lists.html">
+<div class="Example_rendered">
+<ul>
+  <li>Half-Smoke</li>
+  <li>Kielbasa</li>
+  <li>Bologna</li>
+</ul>
+<ol>
+  <li>Prosciutto</li>
+  <li>Andouille</li>
+  <li>Bratwurst</li>
+  <li>Chorizo</li>
+</ol>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Half-Smoke<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Kielbasa<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Bologna<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Prosciutto<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Andouille<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Bratwurst<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Chorizo<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</pre></div>
+</div>
+      <p>To remove default list styling, use <code>.list-reset</code>.</p>
+      
+<div class="mb2 Example" data-include-example="docs/examples/list-reset.html">
+<div class="Example_rendered">
+<ul class="list-reset">
+  <li>List Reset</li>
+  <li>Removes bullets</li>
+  <li>Removes numbers</li>
+  <li>Removes padding</li>
+</ul>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-reset&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List Reset<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Removes bullets<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Removes numbers<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Removes padding<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div>
+</div>
+      <p>To set lists inline, use utilities.</p>
+      
+<div data-include-example="docs/examples/list-inline.html" class="Example">
+<div class="Example_rendered">
+<ul class="list-reset">
+  <li class="inline-block mr1">Half-Smoke</li>
+  <li class="inline-block mr1">Kielbasa</li>
+  <li class="inline-block mr1">Bologna</li>
+  <li class="inline-block mr1">Prosciutto</li>
+</ul>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-reset&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;inline-block mr1&quot;</span><span class="nt">&gt;</span>Half-Smoke<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;inline-block mr1&quot;</span><span class="nt">&gt;</span>Kielbasa<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;inline-block mr1&quot;</span><span class="nt">&gt;</span>Bologna<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;inline-block mr1&quot;</span><span class="nt">&gt;</span>Prosciutto<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div>
+</div>
     </section>
 
     <section id="forms" class="py2">
