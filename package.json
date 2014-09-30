@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/jxnblk/basscss",
   "devDependencies": {
+    "gulp-autoprefixer": "^1.0.1",
     "gulp-rename": "^1.2.0",
     "gulp-rework": "^1.0.2",
     "gulp-minify-css": "^0.3.8",
