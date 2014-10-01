@@ -1,10 +1,13 @@
 
 .h0 { font-size: 2.75em; line-height: 1 }
+.h00 { font-size: 6em; line-height: 1 }
 
 @media (--breakpoint-md) {
   .h0 { font-size: 4.5em }
+  .h00 { font-size: 9em }
 }
 
 @media (--breakpoint-lg) {
   .h0 { font-size: 5.5em }
+  .h00 { font-size: 12em }
 }
