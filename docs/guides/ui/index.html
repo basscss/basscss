@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Basscss</title>
+  <meta name="author" content="Jxnblk">
+  <meta name="description" content="Simple, responsive CSS toolkit based on OOCSS principles">
+  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/docs/css/base.min.css">
+  <link rel="icon" href="/docs/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/docs/apple-touch-icon.png">
+</head>
+
+<body class="container px2">
+
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h4 caps bold mt2">
+    <a href="/">Basscss</a> /
+    <a href="/docs">Docs</a>
+  </div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">User Interface</h1>
+</header>
+
+<div class="clearfix mxn2">
+
+  <div class="sm-col sm-col-9 py2">
+
+    <p class="h3">A guide to creating user interface elements with Basscss</p>
+
+    <section id="navigation" class="py2">
+      <h1>Navigation</h1>
+      
+<div class="mb2 Example" data-include-example="docs/examples/nav-basic.html">
+<div class="Example_rendered">
+<div class="mxn1">
+  <a href="#!" class="button button-narrow">Kittens</a>
+  <a href="#!" class="button button-narrow">Puppies</a>
+  <a href="#!" class="button button-narrow">Baby Goats</a>
+  <a href="#!" class="button button-narrow">Bunnies</a>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mxn1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Kittens<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Puppies<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Baby Goats<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Bunnies<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+      
+<div class="mb2 Example" data-include-example="docs/examples/nav-justified.html">
+<div class="Example_rendered">
+<div class="table table-fixed center">
+  <div class="table-cell">
+    <a href="#!" class="button block">Kittens</a>
+  </div>
+  <div class="table-cell">
+    <a href="#!" class="button block">Puppies</a>
+  </div>
+  <div class="table-cell">
+    <a href="#!" class="button block">Baby Goats</a>
+  </div>
+  <div class="table-cell">
+    <a href="#!" class="button block">Bunnies</a>
+  </div>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table table-fixed center&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block&quot;</span><span class="nt">&gt;</span>Kittens<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block&quot;</span><span class="nt">&gt;</span>Puppies<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block&quot;</span><span class="nt">&gt;</span>Baby Goats<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block&quot;</span><span class="nt">&gt;</span>Bunnies<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+      
+<div data-include-example="docs/examples/nav-stacked.html" class="Example">
+<div class="Example_rendered">
+<div class="sm-col-6 mxn2">
+  <a href="#!" class="button block">Kittens</a>
+  <a href="#!" class="button block">Puppies</a>
+  <a href="#!" class="button block">Baby Goats</a>
+  <a href="#!" class="button block">Bunnies</a>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col-6 mxn2&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block&quot;</span><span class="nt">&gt;</span>Kittens<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block&quot;</span><span class="nt">&gt;</span>Puppies<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block&quot;</span><span class="nt">&gt;</span>Baby Goats<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block&quot;</span><span class="nt">&gt;</span>Bunnies<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+    </section>
+
+    <section id="navbars" class="py2">
+      <h1>Navbars</h1>
+      
+<div class="mb2 Example" data-include-example="docs/examples/navbar-dark.html">
+<div class="Example_rendered">
+<div class="clearfix mb2 white bg-dark-gray">
+  <div class="left py1">
+    <a href="#!" class="button m0 white">Burgers</a>
+    <a href="#!" class="button m0 white">Fries</a>
+  </div>
+  <div class="right py1">
+    <a href="#!" class="button m0 white">My Account</a>
+  </div>
+  <div class="clearfix sm-hide"></div>
+  <div class="overflow-hidden px2 py1">
+    <input type="text" class="mb0 right border rounded white field-light" placeholder="search">
+  </div>
+</div>
+
+<div class="clearfix white bg-blue">
+  <div class="left py1">
+    <a href="#!" class="button m0 white">Burgers</a>
+    <a href="#!" class="button m0 white">Fries</a>
+  </div>
+  <div class="right py1">
+    <a href="#!" class="button m0 white">My Account</a>
+  </div>
+  <div class="clearfix sm-hide"></div>
+  <div class="overflow-hidden px2 py1">
+    <input type="text" class="mb0 right border rounded white field-light" placeholder="search">
+  </div>
+</div>
+
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix mb2 white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left py1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button m0 white&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button m0 white&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right py1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button m0 white&quot;</span><span class="nt">&gt;</span>My Account<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix sm-hide&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden px2 py1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;mb0 right border rounded white field-light&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;search&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix white bg-blue&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left py1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button m0 white&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button m0 white&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right py1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button m0 white&quot;</span><span class="nt">&gt;</span>My Account<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix sm-hide&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden px2 py1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;mb0 right border rounded white field-light&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;search&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+      
+<div class="mb2 Example" data-include-example="docs/examples/navbar-dropdown.html">
+<div class="Example_rendered">
+<div class="clearfix white bg-dark-gray">
+  <div class="left">
+    <a href="#!" class="button py1 m0 white">Burgers</a>
+    <a href="#!" class="button py1 m0 white">Fries</a>
+  </div>
+  <div class="right">
+    <div id="account-menu" class="relative inline-block target-group">
+      <a href="#account-menu" class="button py1 m0 white">My Account</a>
+      <div class="absolute right-0 nowrap target-show bg-white rounded">
+        <ul class="h5 list-reset mb0">
+          <li><a href="#!" class="button">Profile</a></li>
+          <li><a href="#!" class="button">Settings</a></li>
+          <li><a href="#!" class="button">Sign Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix sm-hide"></div>
+  <div class="overflow-hidden px2">
+  </div>
+</div>
+
+
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 white&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 white&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;relative inline-block target-group&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 white&quot;</span><span class="nt">&gt;</span>My Account<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;absolute right-0 nowrap target-show bg-white rounded&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;h5 list-reset mb0&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Sign Out<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix sm-hide&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden px2&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+    </section>
+
+    <section id="breadcrumbs" class="py2">
+      <h1>Breadcrumbs</h1>
+      
+<div data-include-example="docs/examples/breadcrumbs.html" class="Example">
+<div class="Example_rendered">
+<div class="mxn1">
+  <a href="#!" class="button button-narrow">Home</a> /
+  <a href="#!" class="button button-narrow">Kitten</a> /
+  <span class="button button-narrow">Frank</span>
+</div>
+<div class="mxn1 mid-gray">
+  <a href="#!" class="button button-narrow">Home</a>
+  &#x276F;
+  <a href="#!" class="button button-narrow">Kitten</a>
+  &#x276F;
+  <span class="button button-narrow">Frank</span>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mxn1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span> /
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Kitten<span class="nt">&lt;/a&gt;</span> /
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Frank<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mxn1 mid-gray&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+  <span class="ni">&amp;#10095;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Kitten<span class="nt">&lt;/a&gt;</span>
+  <span class="ni">&amp;#10095;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Frank<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+    </section>
+
+    <section id="pagination" class="py2">
+      <h1>Pagination</h1>
+      
+<div class="mb2 Example" data-include-example="docs/examples/pagination.html">
+<div class="Example_rendered">
+<div class="clearfix">
+  <a href="#!" class="button left">&#x276E; Previous</a>
+  <a href="#!" class="button right">Next &#x276F;</a>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button left&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;#10094;</span> Previous<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button right&quot;</span><span class="nt">&gt;</span>Next <span class="ni">&amp;#10095;</span><span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+      
+<div data-include-example="docs/examples/pagination-numbers.html" class="Example">
+<div class="Example_rendered">
+<div class="center">
+  <a href="#!" class="button">&#x276E; Previous</a>
+  <a href="#!" class="button dark-gray">1</a>
+  <a href="#!" class="button">2</a>
+  <a href="#!" class="button">3</a>
+  <a href="#!" class="button">4</a>
+  <a href="#!" class="button">5</a>
+  <a href="#!" class="button">Next &#x276F;</a>
+</div>
+
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;#10094;</span> Previous<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button dark-gray&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Next <span class="ni">&amp;#10095;</span><span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+    </section>
+
+    <section id="boxes" class="py2">
+      <h1>Boxes</h1>
+      <div class="clearfix mxn2">
+        <div class="sm-col sm-col-6 px2 mb2">
+          
+<div data-include-example="docs/examples/box.html" class="Example">
+<div class="Example_rendered">
+<div class="p2 bg-white border rounded">
+  <h1 class="mt0">Basic Box</h1>
+  <p class="mb0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2 bg-white border rounded&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;mt0&quot;</span><span class="nt">&gt;</span>Basic Box<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;mb0&quot;</span><span class="nt">&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        </div>
+        <div class="sm-col sm-col-6 px2 mb2">
+          
+<div data-include-example="docs/examples/box-header.html" class="Example">
+<div class="Example_rendered">
+<div class="overflow-hidden bg-white border rounded">
+  <div class="p2 bg-light-gray">
+    <h1 class="m0">Box with Header</h1>
+  </div>
+  <div class="p2">
+    <p class="m0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+  </div>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden bg-white border rounded&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2 bg-light-gray&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>Box with Header<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        </div>
+      </div>
+      <div class="clearfix mxn2">
+        <div class="sm-col sm-col-6 px2 mb2">
+          
+<div data-include-example="docs/examples/box-image.html" class="Example">
+<div class="Example_rendered">
+<div class="p2 bg-white border rounded">
+  <img src="/docs/placeholder.svg" class="mb2">
+  <h1 class="mt0">Box with Image</h1>
+  <p class="mb0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2 bg-white border rounded&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/docs/placeholder.svg&quot;</span> <span class="na">class=</span><span class="s">&quot;mb2&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;mt0&quot;</span><span class="nt">&gt;</span>Box with Image<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;mb0&quot;</span><span class="nt">&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        </div>
+        <div class="sm-col sm-col-6 px2 mb2">
+          
+<div data-include-example="docs/examples/box-header-footer.html" class="Example">
+<div class="Example_rendered">
+<div class="overflow-hidden bg-white border rounded">
+  <div class="p2 white bg-blue">
+    <h1 class="m0">Box with Header</h1>
+  </div>
+  <div class="p2">
+    <p class="m0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin.</p>
+  </div>
+  <div class="p2 bg-darken-1">
+    <p class="m0 h5">Turkey short loin tenderloin jerky.</p>
+  </div>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden bg-white border rounded&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2 white bg-blue&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>Box with Header<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2 bg-darken-1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;m0 h5&quot;</span><span class="nt">&gt;</span>Turkey short loin tenderloin jerky.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        </div>
+      </div>
+    </section>
+
+    
+<div data-include-example="docs/examples/unicode.html" class="Example">
+<div class="Example_rendered">
+&#x276E;
+&#x276F;
+&#x2716;
+&#x271A;
+</div>
+<div class="highlight Example_code"><pre><span class="ni">&amp;#10094;</span>
+<span class="ni">&amp;#10095;</span>
+<span class="ni">&amp;#10006;</span>
+<span class="ni">&amp;#10010;</span>
+</pre></div>
+</div>
+  </div>
+
+  <div class="sm-col sm-col-3 py2">
+    <a href="#navigation" class="button buttons-nav block">Navigation</a>
+  </div>
+</div>
+
+<footer class="py4">
+  <div class="sm-table">
+    <div class="sm-table-cell nowrap py2 xs-center">
+      <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4">
+        </svg>
+        Tweet
+      </a>
+    </div>
+    <div class="sm-table-cell full-width py2 xs-center">
+      <div class="h5 bold px1">
+        <a href="/" class="button" data-nav-item="">Home</a>
+        <a href="/docs" class="button" data-nav-item="">Docs</a>
+        <br class="sm-hide">
+        <a href="/docs/getting-started" class="button" data-nav-item="">Download</a>
+        <a href="//github.com/jxnblk/basscss" class="button">Github</a>
+      </div>
+    </div>
+    <div class="sm-table-cell py2 nowrap right-align">
+      <p class="h5 mb0 xs-center">
+        <svg class="icon red" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 ">
+        </svg>
+        Made with love by
+        <a href="//jxnblk.com">Jxnblk</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Source+Code+Pro::latin' ] }
+  };
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})(); </script>
+
+
+
+</body>
+</html>
+
