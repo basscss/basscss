@@ -56,7 +56,7 @@ gulp.task('render', function() {
     .pipe(example())
     .pipe(pygmentize())
     .pipe(nav())
-    .pipe(glossary({ css: './basscss.css' }))
+    .pipe(glossary({ css: './basscss.min.css' }))
     .pipe(gulp.dest('./'));
 });
 

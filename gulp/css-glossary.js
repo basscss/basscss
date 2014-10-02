@@ -26,6 +26,7 @@ module.exports = function(options) {
     var obj = css.parse(stylesheet, {});
     var stylesheet = obj.stylesheet;
     stylesheet.parsed = [];
+    stylesheet.size = Math.floor(fs.statSync(src).size / 1000);
 
     for (var i = 0; i < stylesheet.rules.length; i++) {
       var rule = stylesheet.rules[i];

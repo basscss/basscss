@@ -17,7 +17,14 @@
 <div class="overflow-x-scroll mb4">
   <p class="h3">A list of all styles included in Basscss</p>
   <div data-include-rules>
-    <h1>{{ parsed.length }} Styles</h1>
+    <h1 class="inline-block mr2">
+      {{ parsed.length }}
+      <span class="h3">Styles</span>
+    </h1>
+    <h1 class="inline-block mr2">
+      {{ size }}
+      <span class="h3">KB</span>
+    </h1>
     <table class="mb4 folding-table table-light">
       <thead class="bold bg-darken-1">
         <tr> <th>Selectors</th> <th>Declarations</th> </tr>
