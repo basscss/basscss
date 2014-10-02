@@ -20,6 +20,10 @@
   overflow: hidden;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .clearfix:before,
 .clearfix:after {
   content: " ";

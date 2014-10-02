@@ -19,7 +19,7 @@
 
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps bold mt2">
-    <a href="/" class="">Basscss</a> /
+    <a href="/">Basscss</a> /
     <a href="/docs">Docs</a>
   </div>
   <h1 class="avenir md-h1 lg-h1 caps m0">Table of Styles</h1>
@@ -28,7 +28,7 @@
 <div class="overflow-x-scroll mb4">
   <p class="h3">A list of all styles included in Basscss</p>
   <div data-include-rules="">
-    <h1>234 Styles</h1>
+    <h1>250 Styles</h1>
     <table class="mb4 folding-table table-light">
       <thead class="bold bg-darken-1">
         <tr> <th>Selectors</th> <th>Declarations</th> </tr>
@@ -226,33 +226,69 @@
           <tr class="">
             <td class="sm-col-3">
               <!-- <span class="h6 bold mr1 mid-gray">21</span> -->
-              input[type=text], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=week]
+              input, select, textarea, fieldset
             </td>
             <td class="sm-col-9">
-              line-height: 1.75em; -moz-box-sizing: border-box; box-sizing: border-box; height: 2.25em; -webkit-appearance: none; margin-top: 0; margin-bottom: .5rem; padding: .25em 1rem; 
+              margin-top: 0; margin-bottom: .5rem; 
             </td>
           </tr>
           <tr class="">
             <td class="sm-col-3">
               <!-- <span class="h6 bold mr1 mid-gray">22</span> -->
-              select
+              input[type=text], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=week]
             </td>
             <td class="sm-col-9">
-              line-height: 2em; display: block; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 2.25em; margin-top: 0; margin-bottom: .5rem; 
+              line-height: 1.75em; -moz-box-sizing: border-box; box-sizing: border-box; height: 2.25em; -webkit-appearance: none; padding: .25em 1rem; 
             </td>
           </tr>
           <tr class="">
             <td class="sm-col-3">
               <!-- <span class="h6 bold mr1 mid-gray">23</span> -->
-              textarea
+              select
             </td>
             <td class="sm-col-9">
-              -moz-box-sizing: border-box; box-sizing: border-box; margin-top: 0; margin-bottom: .5rem; 
+              line-height: 2em; padding: .25em 1rem; -moz-box-sizing: border-box; box-sizing: border-box; 
             </td>
           </tr>
           <tr class="">
             <td class="sm-col-3">
               <!-- <span class="h6 bold mr1 mid-gray">24</span> -->
+              select:not([multiple])
+            </td>
+            <td class="sm-col-9">
+              height: 2.25em; 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">25</span> -->
+              textarea
+            </td>
+            <td class="sm-col-9">
+              -moz-box-sizing: border-box; box-sizing: border-box; line-height: 1.75em; padding: .25em 1rem; 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">26</span> -->
+              .fieldset-reset
+            </td>
+            <td class="sm-col-9">
+              padding: 0; margin-left: 0; margin-right: 0; border: 0; 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">27</span> -->
+              .fieldset-reset legend
+            </td>
+            <td class="sm-col-9">
+              padding: 0; 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">28</span> -->
               button, input[type=button], input[type=submit], input[type=reset], .button
             </td>
             <td class="sm-col-9">
@@ -261,7 +297,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">25</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">29</span> -->
               .button:hover
             </td>
             <td class="sm-col-9">
@@ -270,16 +306,16 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">26</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">30</span> -->
               table
             </td>
             <td class="sm-col-9">
-              border-collapse: separate; border-spacing: 0; max-width: 100%; width: 100%; 
+              border-collapse: collapse; border-spacing: 0; max-width: 100%; width: 100%; 
             </td>
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">27</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">31</span> -->
               th
             </td>
             <td class="sm-col-9">
@@ -288,7 +324,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">28</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">32</span> -->
               th, td
             </td>
             <td class="sm-col-9">
@@ -297,7 +333,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">29</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">33</span> -->
               th
             </td>
             <td class="sm-col-9">
@@ -306,7 +342,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">30</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">34</span> -->
               td
             </td>
             <td class="sm-col-9">
@@ -315,7 +351,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">31</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">35</span> -->
               .inline
             </td>
             <td class="sm-col-9">
@@ -324,7 +360,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">32</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">36</span> -->
               .block
             </td>
             <td class="sm-col-9">
@@ -333,7 +369,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">33</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">37</span> -->
               .inline-block
             </td>
             <td class="sm-col-9">
@@ -342,7 +378,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">34</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">38</span> -->
               .overflow-hidden
             </td>
             <td class="sm-col-9">
@@ -351,7 +387,16 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">35</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">39</span> -->
+              .overflow-scroll
+            </td>
+            <td class="sm-col-9">
+              overflow: scroll; 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">40</span> -->
               .clearfix:before, .clearfix:after
             </td>
             <td class="sm-col-9">
@@ -360,7 +405,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">36</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">41</span> -->
               .clearfix:after
             </td>
             <td class="sm-col-9">
@@ -369,7 +414,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">37</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">42</span> -->
               .left
             </td>
             <td class="sm-col-9">
@@ -378,7 +423,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">38</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">43</span> -->
               .right
             </td>
             <td class="sm-col-9">
@@ -387,7 +432,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">39</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">44</span> -->
               .fit
             </td>
             <td class="sm-col-9">
@@ -396,7 +441,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">40</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">45</span> -->
               .half-width
             </td>
             <td class="sm-col-9">
@@ -405,7 +450,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">41</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">46</span> -->
               .full-width
             </td>
             <td class="sm-col-9">
@@ -414,7 +459,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">42</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">47</span> -->
               .bold
             </td>
             <td class="sm-col-9">
@@ -423,7 +468,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">43</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">48</span> -->
               .regular
             </td>
             <td class="sm-col-9">
@@ -432,7 +477,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">44</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">49</span> -->
               .italic
             </td>
             <td class="sm-col-9">
@@ -441,7 +486,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">45</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">50</span> -->
               .caps
             </td>
             <td class="sm-col-9">
@@ -450,7 +495,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">46</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">51</span> -->
               .left-align
             </td>
             <td class="sm-col-9">
@@ -459,7 +504,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">47</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">52</span> -->
               .center
             </td>
             <td class="sm-col-9">
@@ -468,7 +513,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">48</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">53</span> -->
               .right-align
             </td>
             <td class="sm-col-9">
@@ -477,7 +522,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">49</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">54</span> -->
               .justify
             </td>
             <td class="sm-col-9">
@@ -486,7 +531,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">50</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">55</span> -->
               .nowrap
             </td>
             <td class="sm-col-9">
@@ -495,7 +540,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">51</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">56</span> -->
               .m0
             </td>
             <td class="sm-col-9">
@@ -504,7 +549,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">52</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">57</span> -->
               .mt0
             </td>
             <td class="sm-col-9">
@@ -513,7 +558,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">53</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">58</span> -->
               .mr0
             </td>
             <td class="sm-col-9">
@@ -522,7 +567,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">54</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">59</span> -->
               .mb0
             </td>
             <td class="sm-col-9">
@@ -531,7 +576,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">55</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">60</span> -->
               .ml0
             </td>
             <td class="sm-col-9">
@@ -540,7 +585,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">56</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">61</span> -->
               .m1
             </td>
             <td class="sm-col-9">
@@ -549,7 +594,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">57</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">62</span> -->
               .mt1
             </td>
             <td class="sm-col-9">
@@ -558,7 +603,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">58</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">63</span> -->
               .mr1
             </td>
             <td class="sm-col-9">
@@ -567,7 +612,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">59</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">64</span> -->
               .mb1
             </td>
             <td class="sm-col-9">
@@ -576,7 +621,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">60</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">65</span> -->
               .ml1
             </td>
             <td class="sm-col-9">
@@ -585,7 +630,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">61</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">66</span> -->
               .m2
             </td>
             <td class="sm-col-9">
@@ -594,7 +639,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">62</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">67</span> -->
               .mt2
             </td>
             <td class="sm-col-9">
@@ -603,7 +648,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">63</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">68</span> -->
               .mr2
             </td>
             <td class="sm-col-9">
@@ -612,7 +657,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">64</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">69</span> -->
               .mb2
             </td>
             <td class="sm-col-9">
@@ -621,7 +666,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">65</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">70</span> -->
               .ml2
             </td>
             <td class="sm-col-9">
@@ -630,7 +675,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">66</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">71</span> -->
               .m3
             </td>
             <td class="sm-col-9">
@@ -639,7 +684,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">67</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">72</span> -->
               .mt3
             </td>
             <td class="sm-col-9">
@@ -648,7 +693,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">68</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">73</span> -->
               .mr3
             </td>
             <td class="sm-col-9">
@@ -657,7 +702,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">69</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">74</span> -->
               .mb3
             </td>
             <td class="sm-col-9">
@@ -666,7 +711,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">70</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">75</span> -->
               .ml3
             </td>
             <td class="sm-col-9">
@@ -675,7 +720,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">71</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">76</span> -->
               .m4
             </td>
             <td class="sm-col-9">
@@ -684,7 +729,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">72</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">77</span> -->
               .mt4
             </td>
             <td class="sm-col-9">
@@ -693,7 +738,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">73</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">78</span> -->
               .mr4
             </td>
             <td class="sm-col-9">
@@ -702,7 +747,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">74</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">79</span> -->
               .mb4
             </td>
             <td class="sm-col-9">
@@ -711,7 +756,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">75</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">80</span> -->
               .ml4
             </td>
             <td class="sm-col-9">
@@ -720,7 +765,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">76</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">81</span> -->
               .mxn1
             </td>
             <td class="sm-col-9">
@@ -729,7 +774,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">77</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">82</span> -->
               .mxn2
             </td>
             <td class="sm-col-9">
@@ -738,7 +783,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">78</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">83</span> -->
               .mxn3
             </td>
             <td class="sm-col-9">
@@ -747,7 +792,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">79</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">84</span> -->
               .mxn4
             </td>
             <td class="sm-col-9">
@@ -756,7 +801,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">80</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">85</span> -->
               .mx-auto
             </td>
             <td class="sm-col-9">
@@ -765,7 +810,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">81</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">86</span> -->
               .p1
             </td>
             <td class="sm-col-9">
@@ -774,7 +819,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">82</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">87</span> -->
               .py1
             </td>
             <td class="sm-col-9">
@@ -783,7 +828,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">83</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">88</span> -->
               .px1
             </td>
             <td class="sm-col-9">
@@ -792,7 +837,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">84</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">89</span> -->
               .p2
             </td>
             <td class="sm-col-9">
@@ -801,7 +846,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">85</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">90</span> -->
               .py2
             </td>
             <td class="sm-col-9">
@@ -810,7 +855,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">86</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">91</span> -->
               .px2
             </td>
             <td class="sm-col-9">
@@ -819,7 +864,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">87</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">92</span> -->
               .p3
             </td>
             <td class="sm-col-9">
@@ -828,7 +873,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">88</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">93</span> -->
               .py3
             </td>
             <td class="sm-col-9">
@@ -837,7 +882,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">89</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">94</span> -->
               .px3
             </td>
             <td class="sm-col-9">
@@ -846,7 +891,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">90</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">95</span> -->
               .p4
             </td>
             <td class="sm-col-9">
@@ -855,7 +900,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">91</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">96</span> -->
               .py4
             </td>
             <td class="sm-col-9">
@@ -864,7 +909,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">92</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">97</span> -->
               .px4
             </td>
             <td class="sm-col-9">
@@ -873,7 +918,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">93</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">98</span> -->
               .sm-show, .md-show, .lg-show
             </td>
             <td class="sm-col-9">
@@ -882,7 +927,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">94</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">99</span> -->
               .sm-show
             </td>
             <td class="sm-col-9">
@@ -892,7 +937,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">95</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">100</span> -->
               .md-show
             </td>
             <td class="sm-col-9">
@@ -902,7 +947,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">96</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">101</span> -->
               .lg-show
             </td>
             <td class="sm-col-9">
@@ -912,7 +957,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">97</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">102</span> -->
               .hide
             </td>
             <td class="sm-col-9">
@@ -921,7 +966,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">98</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">103</span> -->
               .sm-hide
             </td>
             <td class="sm-col-9">
@@ -931,7 +976,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">99</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">104</span> -->
               .md-hide
             </td>
             <td class="sm-col-9">
@@ -941,7 +986,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">100</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">105</span> -->
               .lg-hide
             </td>
             <td class="sm-col-9">
@@ -951,7 +996,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">101</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">106</span> -->
               .relative
             </td>
             <td class="sm-col-9">
@@ -960,7 +1005,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">102</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">107</span> -->
               .absolute
             </td>
             <td class="sm-col-9">
@@ -969,7 +1014,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">103</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">108</span> -->
               .fixed
             </td>
             <td class="sm-col-9">
@@ -978,7 +1023,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">104</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">109</span> -->
               .top-0
             </td>
             <td class="sm-col-9">
@@ -987,7 +1032,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">105</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">110</span> -->
               .right-0
             </td>
             <td class="sm-col-9">
@@ -996,7 +1041,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">106</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">111</span> -->
               .bottom-0
             </td>
             <td class="sm-col-9">
@@ -1005,7 +1050,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">107</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">112</span> -->
               .left-0
             </td>
             <td class="sm-col-9">
@@ -1014,7 +1059,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">108</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">113</span> -->
               .z1
             </td>
             <td class="sm-col-9">
@@ -1023,7 +1068,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">109</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">114</span> -->
               .z2
             </td>
             <td class="sm-col-9">
@@ -1032,7 +1077,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">110</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">115</span> -->
               .z3
             </td>
             <td class="sm-col-9">
@@ -1041,7 +1086,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">111</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">116</span> -->
               .z4
             </td>
             <td class="sm-col-9">
@@ -1050,7 +1095,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">112</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">117</span> -->
               .absolute-center
             </td>
             <td class="sm-col-9">
@@ -1059,7 +1104,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">113</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">118</span> -->
               .container
             </td>
             <td class="sm-col-9">
@@ -1068,7 +1113,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">114</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">119</span> -->
               .col
             </td>
             <td class="sm-col-9">
@@ -1077,7 +1122,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">115</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">120</span> -->
               .col-right
             </td>
             <td class="sm-col-9">
@@ -1086,7 +1131,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">116</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">121</span> -->
               .col-1
             </td>
             <td class="sm-col-9">
@@ -1095,7 +1140,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">117</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">122</span> -->
               .col-2
             </td>
             <td class="sm-col-9">
@@ -1104,7 +1149,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">118</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">123</span> -->
               .col-3
             </td>
             <td class="sm-col-9">
@@ -1113,7 +1158,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">119</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">124</span> -->
               .col-4
             </td>
             <td class="sm-col-9">
@@ -1122,7 +1167,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">120</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">125</span> -->
               .col-5
             </td>
             <td class="sm-col-9">
@@ -1131,7 +1176,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">121</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">126</span> -->
               .col-6
             </td>
             <td class="sm-col-9">
@@ -1140,7 +1185,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">122</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">127</span> -->
               .col-7
             </td>
             <td class="sm-col-9">
@@ -1149,7 +1194,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">123</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">128</span> -->
               .col-8
             </td>
             <td class="sm-col-9">
@@ -1158,7 +1203,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">124</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">129</span> -->
               .col-9
             </td>
             <td class="sm-col-9">
@@ -1167,7 +1212,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">125</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">130</span> -->
               .col-10
             </td>
             <td class="sm-col-9">
@@ -1176,7 +1221,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">126</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">131</span> -->
               .col-11
             </td>
             <td class="sm-col-9">
@@ -1185,7 +1230,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">127</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">132</span> -->
               .col-12
             </td>
             <td class="sm-col-9">
@@ -1194,7 +1239,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">128</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">133</span> -->
               .sm-col
             </td>
             <td class="sm-col-9">
@@ -1204,7 +1249,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">129</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">134</span> -->
               .sm-col-right
             </td>
             <td class="sm-col-9">
@@ -1214,7 +1259,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">130</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">135</span> -->
               .sm-col-1
             </td>
             <td class="sm-col-9">
@@ -1224,7 +1269,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">131</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">136</span> -->
               .sm-col-2
             </td>
             <td class="sm-col-9">
@@ -1234,7 +1279,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">132</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">137</span> -->
               .sm-col-3
             </td>
             <td class="sm-col-9">
@@ -1244,7 +1289,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">133</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">138</span> -->
               .sm-col-4
             </td>
             <td class="sm-col-9">
@@ -1254,7 +1299,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">134</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">139</span> -->
               .sm-col-5
             </td>
             <td class="sm-col-9">
@@ -1264,7 +1309,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">135</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">140</span> -->
               .sm-col-6
             </td>
             <td class="sm-col-9">
@@ -1274,7 +1319,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">136</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">141</span> -->
               .sm-col-7
             </td>
             <td class="sm-col-9">
@@ -1284,7 +1329,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">137</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">142</span> -->
               .sm-col-8
             </td>
             <td class="sm-col-9">
@@ -1294,7 +1339,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">138</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">143</span> -->
               .sm-col-9
             </td>
             <td class="sm-col-9">
@@ -1304,7 +1349,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">139</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">144</span> -->
               .sm-col-10
             </td>
             <td class="sm-col-9">
@@ -1314,7 +1359,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">140</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">145</span> -->
               .sm-col-11
             </td>
             <td class="sm-col-9">
@@ -1324,7 +1369,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">141</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">146</span> -->
               .sm-col-12
             </td>
             <td class="sm-col-9">
@@ -1334,7 +1379,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">142</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">147</span> -->
               .md-col
             </td>
             <td class="sm-col-9">
@@ -1344,7 +1389,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">143</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">148</span> -->
               .md-col-right
             </td>
             <td class="sm-col-9">
@@ -1354,7 +1399,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">144</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">149</span> -->
               .md-col-1
             </td>
             <td class="sm-col-9">
@@ -1364,7 +1409,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">145</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">150</span> -->
               .md-col-2
             </td>
             <td class="sm-col-9">
@@ -1374,7 +1419,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">146</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">151</span> -->
               .md-col-3
             </td>
             <td class="sm-col-9">
@@ -1384,7 +1429,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">147</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">152</span> -->
               .md-col-4
             </td>
             <td class="sm-col-9">
@@ -1394,7 +1439,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">148</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">153</span> -->
               .md-col-5
             </td>
             <td class="sm-col-9">
@@ -1404,7 +1449,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">149</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">154</span> -->
               .md-col-6
             </td>
             <td class="sm-col-9">
@@ -1414,7 +1459,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">150</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">155</span> -->
               .md-col-7
             </td>
             <td class="sm-col-9">
@@ -1424,7 +1469,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">151</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">156</span> -->
               .md-col-8
             </td>
             <td class="sm-col-9">
@@ -1434,7 +1479,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">152</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">157</span> -->
               .md-col-9
             </td>
             <td class="sm-col-9">
@@ -1444,7 +1489,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">153</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">158</span> -->
               .md-col-10
             </td>
             <td class="sm-col-9">
@@ -1454,7 +1499,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">154</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">159</span> -->
               .md-col-11
             </td>
             <td class="sm-col-9">
@@ -1464,7 +1509,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">155</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">160</span> -->
               .md-col-12
             </td>
             <td class="sm-col-9">
@@ -1474,7 +1519,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">156</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">161</span> -->
               .lg-col
             </td>
             <td class="sm-col-9">
@@ -1484,7 +1529,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">157</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">162</span> -->
               .lg-col-right
             </td>
             <td class="sm-col-9">
@@ -1494,7 +1539,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">158</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">163</span> -->
               .lg-col-1
             </td>
             <td class="sm-col-9">
@@ -1504,7 +1549,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">159</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">164</span> -->
               .lg-col-2
             </td>
             <td class="sm-col-9">
@@ -1514,7 +1559,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">160</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">165</span> -->
               .lg-col-3
             </td>
             <td class="sm-col-9">
@@ -1524,7 +1569,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">161</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">166</span> -->
               .lg-col-4
             </td>
             <td class="sm-col-9">
@@ -1534,7 +1579,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">162</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">167</span> -->
               .lg-col-5
             </td>
             <td class="sm-col-9">
@@ -1544,7 +1589,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">163</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">168</span> -->
               .lg-col-6
             </td>
             <td class="sm-col-9">
@@ -1554,7 +1599,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">164</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">169</span> -->
               .lg-col-7
             </td>
             <td class="sm-col-9">
@@ -1564,7 +1609,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">165</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">170</span> -->
               .lg-col-8
             </td>
             <td class="sm-col-9">
@@ -1574,7 +1619,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">166</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">171</span> -->
               .lg-col-9
             </td>
             <td class="sm-col-9">
@@ -1584,7 +1629,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">167</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">172</span> -->
               .lg-col-10
             </td>
             <td class="sm-col-9">
@@ -1594,7 +1639,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">168</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">173</span> -->
               .lg-col-11
             </td>
             <td class="sm-col-9">
@@ -1604,7 +1649,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">169</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">174</span> -->
               .lg-col-12
             </td>
             <td class="sm-col-9">
@@ -1614,7 +1659,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">170</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">175</span> -->
               .table
             </td>
             <td class="sm-col-9">
@@ -1623,7 +1668,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">171</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">176</span> -->
               .table-cell
             </td>
             <td class="sm-col-9">
@@ -1632,7 +1677,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">172</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">177</span> -->
               .table-fixed
             </td>
             <td class="sm-col-9">
@@ -1641,7 +1686,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">173</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">178</span> -->
               .sm-table
             </td>
             <td class="sm-col-9">
@@ -1651,7 +1696,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">174</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">179</span> -->
               .sm-table-cell
             </td>
             <td class="sm-col-9">
@@ -1661,7 +1706,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">175</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">180</span> -->
               .md-table
             </td>
             <td class="sm-col-9">
@@ -1671,7 +1716,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">176</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">181</span> -->
               .md-table-cell
             </td>
             <td class="sm-col-9">
@@ -1681,7 +1726,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">177</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">182</span> -->
               .lg-table
             </td>
             <td class="sm-col-9">
@@ -1691,7 +1736,7 @@
           </tr>
           <tr class="bg-darken-1">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">178</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">183</span> -->
               .lg-table-cell
             </td>
             <td class="sm-col-9">
@@ -1701,7 +1746,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">179</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">184</span> -->
               body
             </td>
             <td class="sm-col-9">
@@ -1710,7 +1755,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">180</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">185</span> -->
               a
             </td>
             <td class="sm-col-9">
@@ -1719,7 +1764,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">181</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">186</span> -->
               a:hover
             </td>
             <td class="sm-col-9">
@@ -1728,7 +1773,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">182</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">187</span> -->
               pre, code
             </td>
             <td class="sm-col-9">
@@ -1737,7 +1782,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">183</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">188</span> -->
               hr
             </td>
             <td class="sm-col-9">
@@ -1746,7 +1791,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">184</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">189</span> -->
               .dark-gray
             </td>
             <td class="sm-col-9">
@@ -1755,7 +1800,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">185</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">190</span> -->
               .white
             </td>
             <td class="sm-col-9">
@@ -1764,7 +1809,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">186</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">191</span> -->
               .blue
             </td>
             <td class="sm-col-9">
@@ -1773,7 +1818,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">187</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">192</span> -->
               .mid-gray
             </td>
             <td class="sm-col-9">
@@ -1782,7 +1827,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">188</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">193</span> -->
               .light-gray
             </td>
             <td class="sm-col-9">
@@ -1791,7 +1836,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">189</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">194</span> -->
               .lighter-gray
             </td>
             <td class="sm-col-9">
@@ -1800,7 +1845,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">190</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">195</span> -->
               .red
             </td>
             <td class="sm-col-9">
@@ -1809,7 +1854,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">191</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">196</span> -->
               .green
             </td>
             <td class="sm-col-9">
@@ -1818,7 +1863,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">192</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">197</span> -->
               .yellow
             </td>
             <td class="sm-col-9">
@@ -1827,7 +1872,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">193</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">198</span> -->
               .bg-dark-gray
             </td>
             <td class="sm-col-9">
@@ -1836,7 +1881,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">194</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">199</span> -->
               .bg-white
             </td>
             <td class="sm-col-9">
@@ -1845,7 +1890,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">195</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">200</span> -->
               .bg-blue
             </td>
             <td class="sm-col-9">
@@ -1854,7 +1899,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">196</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">201</span> -->
               .bg-mid-gray
             </td>
             <td class="sm-col-9">
@@ -1863,7 +1908,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">197</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">202</span> -->
               .bg-light-gray
             </td>
             <td class="sm-col-9">
@@ -1872,7 +1917,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">198</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">203</span> -->
               .bg-lighter-gray
             </td>
             <td class="sm-col-9">
@@ -1881,7 +1926,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">199</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">204</span> -->
               .bg-red
             </td>
             <td class="sm-col-9">
@@ -1890,7 +1935,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">200</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">205</span> -->
               .bg-green
             </td>
             <td class="sm-col-9">
@@ -1899,7 +1944,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">201</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">206</span> -->
               .bg-yellow
             </td>
             <td class="sm-col-9">
@@ -1908,7 +1953,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">202</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">207</span> -->
               .bg-darken-1
             </td>
             <td class="sm-col-9">
@@ -1917,7 +1962,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">203</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">208</span> -->
               .bg-darken-2
             </td>
             <td class="sm-col-9">
@@ -1926,7 +1971,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">204</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">209</span> -->
               .bg-darken-3
             </td>
             <td class="sm-col-9">
@@ -1935,7 +1980,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">205</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">210</span> -->
               .bg-darken-4
             </td>
             <td class="sm-col-9">
@@ -1944,7 +1989,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">206</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">211</span> -->
               .border
             </td>
             <td class="sm-col-9">
@@ -1953,7 +1998,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">207</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">212</span> -->
               .border-top
             </td>
             <td class="sm-col-9">
@@ -1962,7 +2007,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">208</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">213</span> -->
               .border-right
             </td>
             <td class="sm-col-9">
@@ -1971,7 +2016,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">209</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">214</span> -->
               .border-bottom
             </td>
             <td class="sm-col-9">
@@ -1980,7 +2025,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">210</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">215</span> -->
               .border-left
             </td>
             <td class="sm-col-9">
@@ -1989,7 +2034,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">211</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">216</span> -->
               .rounded
             </td>
             <td class="sm-col-9">
@@ -1998,7 +2043,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">212</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">217</span> -->
               .circle
             </td>
             <td class="sm-col-9">
@@ -2007,8 +2052,8 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">213</span> -->
-              .input, .textarea, .select
+              <!-- <span class="h6 bold mr1 mid-gray">218</span> -->
+              .field-light
             </td>
             <td class="sm-col-9">
               background-color: white; -webkit-transition: box-shadow .2s ease; transition: box-shadow .2s ease; border-style: solid; border-width: 1px; border-color: #ccc; border-radius: 3px; 
@@ -2016,8 +2061,8 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">214</span> -->
-              .input:focus, .textarea:focus, .select:focus
+              <!-- <span class="h6 bold mr1 mid-gray">219</span> -->
+              .field-light:focus
             </td>
             <td class="sm-col-9">
               outline: none; border-color: #0076df; box-shadow: 0 0 2px rgba(0, 118, 223, .5); 
@@ -2025,8 +2070,62 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">215</span> -->
-              .radio, .checkbox
+              <!-- <span class="h6 bold mr1 mid-gray">220</span> -->
+              .field-light:disabled
+            </td>
+            <td class="sm-col-9">
+              color: #777; background-color: rgba(0, 0, 0, .125); 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">221</span> -->
+              .field-light:read-only:not(select)
+            </td>
+            <td class="sm-col-9">
+              background-color: rgba(0, 0, 0, .125); 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">222</span> -->
+              .field-light:invalid
+            </td>
+            <td class="sm-col-9">
+              border-color: #f95020; 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">223</span> -->
+              .field-light.has-success
+            </td>
+            <td class="sm-col-9">
+              border-color: #00d930; 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">224</span> -->
+              .field-light.has-warning
+            </td>
+            <td class="sm-col-9">
+              border-color: #ffdc00; 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">225</span> -->
+              .field-light.has-error
+            </td>
+            <td class="sm-col-9">
+              border-color: #f95020; 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">226</span> -->
+              .radio-light, .checkbox-light
             </td>
             <td class="sm-col-9">
               -webkit-transition: box-shadow: .2s ease; transition: box-shadow: .2s ease; 
@@ -2034,8 +2133,8 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">216</span> -->
-              .radio
+              <!-- <span class="h6 bold mr1 mid-gray">227</span> -->
+              .radio-light
             </td>
             <td class="sm-col-9">
               border-radius: 50%; 
@@ -2043,8 +2142,8 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">217</span> -->
-              .radio:focus, .checkbox:focus
+              <!-- <span class="h6 bold mr1 mid-gray">228</span> -->
+              .radio-light:focus, .checkbox-light:focus
             </td>
             <td class="sm-col-9">
               outline: none; box-shadow: 0 0 2px rgba(0, 118, 223, .5); 
@@ -2052,7 +2151,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">218</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">229</span> -->
               .table-light th, .table-light td
             </td>
             <td class="sm-col-9">
@@ -2061,7 +2160,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">219</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">230</span> -->
               .button-blue
             </td>
             <td class="sm-col-9">
@@ -2070,7 +2169,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">220</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">231</span> -->
               .button-blue:hover
             </td>
             <td class="sm-col-9">
@@ -2079,7 +2178,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">221</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">232</span> -->
               .button-blue:active
             </td>
             <td class="sm-col-9">
@@ -2088,7 +2187,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">222</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">233</span> -->
               .button-blue:focus
             </td>
             <td class="sm-col-9">
@@ -2097,7 +2196,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">223</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">234</span> -->
               .button-blue:disabled, .button-blue.disabled
             </td>
             <td class="sm-col-9">
@@ -2106,7 +2205,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">224</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">235</span> -->
               .button-blue-outline
             </td>
             <td class="sm-col-9">
@@ -2115,7 +2214,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">225</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">236</span> -->
               .button-blue-outline:hover
             </td>
             <td class="sm-col-9">
@@ -2124,7 +2223,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">226</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">237</span> -->
               .button-blue-outline:active
             </td>
             <td class="sm-col-9">
@@ -2133,7 +2232,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">227</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">238</span> -->
               .button-blue-outline:focus
             </td>
             <td class="sm-col-9">
@@ -2142,7 +2241,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">228</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">239</span> -->
               .button-blue-outline:disabled, .button-blue-outline.disabled
             </td>
             <td class="sm-col-9">
@@ -2151,7 +2250,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">229</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">240</span> -->
               .button-gray
             </td>
             <td class="sm-col-9">
@@ -2160,7 +2259,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">230</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">241</span> -->
               .button-gray:hover
             </td>
             <td class="sm-col-9">
@@ -2169,7 +2268,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">231</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">242</span> -->
               .button-gray:active
             </td>
             <td class="sm-col-9">
@@ -2178,7 +2277,7 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">232</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">243</span> -->
               .button-gray:focus
             </td>
             <td class="sm-col-9">
@@ -2187,8 +2286,53 @@
           </tr>
           <tr class="">
             <td class="sm-col-3">
-              <!-- <span class="h6 bold mr1 mid-gray">233</span> -->
+              <!-- <span class="h6 bold mr1 mid-gray">244</span> -->
               .button-gray:disabled, .button-gray.disabled
+            </td>
+            <td class="sm-col-9">
+              opacity: .5; 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">245</span> -->
+              .button-red
+            </td>
+            <td class="sm-col-9">
+              color: white; background-color: #f95020; border-radius: 3px; -webkit-transition-duration: .1s; transition-duration: .1s; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-property: box-shadow, background-color; transition-property: box-shadow, background-color; 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">246</span> -->
+              .button-red:hover
+            </td>
+            <td class="sm-col-9">
+              opacity: .875; 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">247</span> -->
+              .button-red:active
+            </td>
+            <td class="sm-col-9">
+              box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, .25); 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">248</span> -->
+              .button-red:focus
+            </td>
+            <td class="sm-col-9">
+              outline: none; box-shadow: 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(249, 80, 32, .5); 
+            </td>
+          </tr>
+          <tr class="">
+            <td class="sm-col-3">
+              <!-- <span class="h6 bold mr1 mid-gray">249</span> -->
+              .button-red:disabled, .button-red.disabled
             </td>
             <td class="sm-col-9">
               opacity: .5; 

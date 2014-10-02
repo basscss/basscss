@@ -66,6 +66,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /* Example component */
 .Example {
   background-color: var(--darken-1);
+  border-radius: var(--border-radius);
 }
 
   .Example_rendered {

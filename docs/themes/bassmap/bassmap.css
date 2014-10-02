@@ -139,6 +139,14 @@ h6,
   padding-left: 0;
 }
 
+input,
+select,
+textarea,
+fieldset {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
 input[type=text],
 input[type=datetime],
 input[type=datetime-local],
@@ -156,20 +164,18 @@ input[type=week] {
        box-sizing: border-box;
   height: 40px;
   -webkit-appearance: none;
-  margin-top: 0;
-  margin-bottom: .5rem;
   padding: 10px 10px;
 }
 
 select {
   line-height: 30px;
-  display: block;
+  padding: 10px 10px;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
-  width: 100%;
+}
+
+select:not([multiple]) {
   height: 40px;
-  margin-top: 0;
-  margin-bottom: .5rem;
 }
 
 
@@ -177,8 +183,19 @@ select {
 textarea {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
-  margin-top: 0;
-  margin-bottom: .5rem;
+  line-height: 20px;
+  padding: 10px 10px;
+}
+
+.fieldset-reset {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+}
+
+.fieldset-reset legend {
+  padding: 0;
 }
 
 button,
@@ -207,7 +224,7 @@ input[type=reset],
 }
 
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0;
   max-width: 100%;
   width: 100%;
@@ -252,6 +269,10 @@ td {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
 }
 
 .clearfix:before,

@@ -16,7 +16,7 @@
 
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps bold mt2">
-    <a href="/" class="">Basscss</a> /
+    <a href="/">Basscss</a> /
     <a href="/docs">Docs</a>
   </div>
   <h1 class="avenir md-h1 lg-h1 caps m0">Base</h1>
@@ -161,22 +161,19 @@
         so utility styles can be used for contextual adjustments.
       </p>
       <h2>Inline Forms</h2>
-      <p>
-        By default, form elements display inline.
-        The default <code>.input</code> color style or custom styles can be used to control appearance.
-      </p>
+      <p>By default, form elements display inline.</p>
       
 <div data-include-example="docs/examples/form-inline.html" class="Example">
 <div class="Example_rendered">
 <form>
-  <label class="">Search</label>
-  <input type="text" class="input">
+  <label>Search</label>
+  <input type="text" class="field-light">
   <button class="button-blue">Go</button>
 </form>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;form&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;field-light&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Go<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
@@ -191,11 +188,11 @@
 <div class="Example_rendered">
 <form class="sm-col-6">
   <label>Email Address</label>
-  <input type="text" class="block full-width input">
+  <input type="text" class="block full-width field-light">
   <label>Password</label>
-  <input type="password" class="block full-width input">
+  <input type="password" class="block full-width field-light">
   <label>Select</label>
-  <select class="block full-width input">
+  <select class="block full-width field-light">
     <option>Option 1</option>
     <option>Option 2</option>
     <option>Option 3</option>
@@ -206,16 +203,17 @@
     <input type="checkbox" checked>
     Remember me
   </label>
-  <button class="button-blue">Sign In</button>
+  <button type="submit" class="button-blue">Sign In</button>
+  <button type="reset" class="button-gray">Cancel</button>
 </form>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;sm-col-6&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label&gt;</span>Email Address<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width input&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width field-light&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width input&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width field-light&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label&gt;</span>Select<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">&quot;block full-width input&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">&quot;block full-width field-light&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;option&gt;</span>Option 1<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;option&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;option&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
@@ -226,7 +224,8 @@
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">checked</span><span class="nt">&gt;</span>
     Remember me
   <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Sign In<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Sign In<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;reset&quot;</span> <span class="na">class=</span><span class="s">&quot;button-gray&quot;</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
@@ -250,6 +249,7 @@
   <button class="button-blue mb1">Button Blue</button>
   <button class="button-blue-outline mb1">Button Blue Outline</button>
   <button class="button-gray mb1">Button Gray</button>
+  <button class="button-red mb1">Button Red</button>
 </div>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mb1&quot;</span><span class="nt">&gt;</span>
@@ -260,6 +260,7 @@
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue mb1&quot;</span><span class="nt">&gt;</span>Button Blue<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue-outline mb1&quot;</span><span class="nt">&gt;</span>Button Blue Outline<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-gray mb1&quot;</span><span class="nt">&gt;</span>Button Gray<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-red mb1&quot;</span><span class="nt">&gt;</span>Button Red<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -275,31 +276,35 @@
       
 <div data-include-example="docs/examples/tables.html" class="Example">
 <div class="Example_rendered">
-<table class="table-light">
-  <thead>
-    <tr>
-      <th>Artist</th> <th>Album</th> <th>Release Date</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
-    <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
-    <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
-  </tbody>
-</table>
+<div class="overflow-scroll">
+  <table class="table-light">
+    <thead>
+      <tr>
+        <th>Artist</th> <th>Album</th> <th>Release Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
+      <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
+      <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
+    </tbody>
+  </table>
 </div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table-light&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th&gt;</span>Artist<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th&gt;</span>Album<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th&gt;</span>Release Date<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-  <span class="nt">&lt;tbody&gt;</span>
-    <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>Huey Lewis and the News<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>Sports<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>1983<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>Phil Collins<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>No Jacket Required<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>1985<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>Peter Gabriel<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>So<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>1986<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/tbody&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-scroll&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table-light&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th&gt;</span>Artist<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th&gt;</span>Album<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th&gt;</span>Release Date<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+      <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>Huey Lewis and the News<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>Sports<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>1983<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>Phil Collins<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>No Jacket Required<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>1985<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>Peter Gabriel<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>So<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>1986<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
     </section>

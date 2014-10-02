@@ -16,7 +16,7 @@
 
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps bold mt2">
-    <a href="/" class="">Basscss</a> /
+    <a href="/">Basscss</a> /
     <a href="/docs">Docs</a>
   </div>
   <h1 class="avenir md-h1 lg-h1 caps m0">Kitchen Sink</h1>
@@ -47,6 +47,12 @@
   <a href="#!" class="button button-gray">Button Gray</a>
 </div>
 <div class="mb1">
+  <button class="button-red">Button Red</button>
+  <input type="button" class="button-red" value="Button Red">
+  <input type="submit" class="button-red" value="Button Red">
+  <a href="#!" class="button button-red">Button Red</a>
+</div>
+<div class="mb1">
   <button class="button-blue-outline">Button Outline</button>
   <input type="button" class="button-blue-outline" value="Button Outline">
   <input type="submit" class="button-blue-outline" value="Button Outline">
@@ -59,16 +65,141 @@
   <a href="#!" class="button button-blue disabled">Button Disabled</a>
 </div>
 <div class="mb1">
+  <button class="button-gray" disabled>Button Disabled</button>
+  <input type="button" class="button-gray" value="Button Disabled" disabled>
+  <input type="submit" class="button-gray" value="Button Disabled" disabled>
+  <a href="#!" class="button button-gray disabled">Button Disabled</a>
+</div>
+<div class="mb1">
+  <button class="button-red" disabled>Button Disabled</button>
+  <input type="button" class="button-red" value="Button Disabled" disabled>
+  <input type="submit" class="button-red" value="Button Disabled" disabled>
+  <a href="#!" class="button button-red disabled">Button Disabled</a>
+</div>
+<div class="mb1">
   <button class="button-blue-outline" disabled>Button Disabled</button>
   <input type="button" class="button-blue-outline" value="Button Disabled" disabled>
   <input type="submit" class="button-blue-outline" value="Button Disabled" disabled>
   <a href="#!" class="button button-blue-outline disabled">Button Disabled</a>
 </div>
-<div class="mb1">
-  <button class="button-gray" disabled>Button Disabled</button>
-  <input type="button" class="button-gray" value="Button Disabled" disabled>
-  <input type="submit" class="button-gray" value="Button Disabled" disabled>
-  <a href="#!" class="button button-gray disabled">Button Disabled</a>
+ </div>
+
+    <div class="py2"> <form>
+
+  <label>Normal</label>
+  <input type="text" class="block full-width field-light">
+  <label>Disabled</label>
+  <input type="text" class="block full-width field-light" value="This is disabled" disabled>
+  <label>Readonly (But still selectable, of course)</label>
+  <input type="text" class="block full-width field-light" value="This is read-only" readonly>
+  <label>Required</label>
+  <input type="text" class="block full-width field-light" required>
+  <label>Optional</label>
+  <input type="text" class="block full-width field-light" optional="">
+  <label>Valid</label>
+  <input type="text" class="block full-width field-light" valid="">
+  <label>Invalid</label>
+  <input type="text" class="block full-width field-light" invalid="">
+  <label>Has Success</label>
+  <input type="text" class="block full-width field-light has-success">
+  <label>Has Warning</label>
+  <input type="text" class="block full-width field-light has-warning">
+  <label>Has Error</label>
+  <input type="text" class="block full-width field-light has-error">
+
+  <fieldset class="fieldset-reset mb0">
+    <legend class="h3 bold">Legend</legend>
+    <label>Input</label>
+    <input type="text" class="block full-width field-light">
+    <label>Textarea</label>
+    <textarea type="text" class="block full-width field-light"></textarea>
+    <label>Select</label>
+    <select id="select-demo" class="full-width field-light">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+      <option>Option 4</option>
+      <option>Option 5</option>
+      <option>Option 6</option>
+    </select>
+    <label>Disabled Select</label>
+    <select id="select-disabled-demo" class="full-width field-light" disabled>
+      <option value="option-1">Option 1</option>
+      <option value="option-2">Option 2</option>
+      <option value="option-3">Option 3</option>
+      <option value="option-4">Option 4</option>
+      <option value="option-5">Option 5</option>
+      <option value="option-6">Option 6</option>
+    </select>
+    <select id="select-multiple-demo" class="full-width field-light" multiple>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+      <option>Option 4</option>
+      <option>Option 5</option>
+      <option>Option 6</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="mb2">
+    <legend>Radios and Checkboxes</legend>
+    <div>
+      <label for="radio-1">
+        <input type="radio" name="radios" id="radio-1" value="option-1"> Radio 1
+      </label>
+      <label for="radio-2">
+        <input type="radio" name="radios" id="radio-2" value="option-2"> Radio 1
+      </label>
+    </div>
+    <div>
+      <label for="checkbox-1">
+        <input type="checkbox" id="checkbox-1" value="option-1"> Checkbox 1
+      </label>
+      <label for="checkbox-2">
+        <input type="checkbox" id="checkbox-2" value="option-2"> Checkbox 2
+      </label>
+    </div>
+  </fieldset>
+
+  <fieldset class="fieldset-reset mb2">
+    <legend class="h3 bold">File Input &amp; Progress</legend>
+    <label>Upload Avatar</label>
+    <input type="file" class="block">
+    <label>Progress</label>
+    <progress value=".3" class="full-width">30%</progress>
+  </fieldset>
+
+  <button type="submit" class="button-blue">Submit</button>
+  <button type="reset" class="button-gray">Reset</button>
+
+</form>
+
+ </div>
+    <hr>
+
+    <div class="py2"> <div class="clearfix mb2 white bg-dark-gray">
+  <div class="left py1">
+    <a href="#!" class="button m0 white">Home</a>
+  </div>
+  <div class="right py1">
+    <a href="#!" class="button m0 white">My Account</a>
+  </div>
+  <div class="clearfix sm-hide"></div>
+  <div class="overflow-hidden px2 py1">
+    <input type="text" class="mb0 full-width border rounded white field-light" placeholder="search">
+  </div>
+</div>
+<div class="clearfix white bg-blue">
+  <div class="left py1">
+    <a href="#!" class="button m0 white">Home</a>
+  </div>
+  <div class="right py1">
+    <a href="#!" class="button m0 white">My Account</a>
+  </div>
+  <div class="clearfix sm-hide"></div>
+  <div class="overflow-hidden px2 py1">
+    <input type="text" class="mb0 full-width border rounded white field-light" placeholder="search">
+  </div>
 </div>
  </div>
 
@@ -212,6 +343,7 @@
   <button class="button-blue mb1">Button Blue</button>
   <button class="button-blue-outline mb1">Button Blue Outline</button>
   <button class="button-gray mb1">Button Gray</button>
+  <button class="button-red mb1">Button Red</button>
 </div>
  </div>
     <div class="py2"> <h3 class="center">
@@ -236,11 +368,11 @@
  </div>
     <div class="py2"> <form class="sm-col-6">
   <label>Email Address</label>
-  <input type="text" class="block full-width input">
+  <input type="text" class="block full-width field-light">
   <label>Password</label>
-  <input type="password" class="block full-width input">
+  <input type="password" class="block full-width field-light">
   <label>Select</label>
-  <select class="block full-width input">
+  <select class="block full-width field-light">
     <option>Option 1</option>
     <option>Option 2</option>
     <option>Option 3</option>
@@ -251,12 +383,13 @@
     <input type="checkbox" checked>
     Remember me
   </label>
-  <button class="button-blue">Sign In</button>
+  <button type="submit" class="button-blue">Sign In</button>
+  <button type="reset" class="button-gray">Cancel</button>
 </form>
  </div>
     <div class="py2"> <form>
-  <label class="">Search</label>
-  <input type="text" class="input">
+  <label>Search</label>
+  <input type="text" class="field-light">
   <button class="button-blue">Go</button>
 </form>
  </div>
@@ -337,6 +470,7 @@
 <span class="nc">.inline-block</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span> <span class="p">}</span>
 
 <span class="nc">.overflow-hidden</span> <span class="p">{</span> <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span> <span class="p">}</span>
+<span class="nc">.overflow-scroll</span> <span class="p">{</span> <span class="k">overflow</span><span class="o">:</span> <span class="k">scroll</span> <span class="p">}</span>
 
 <span class="nc">.clearfix</span><span class="nd">:before</span><span class="o">,</span>
 <span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span>
@@ -471,18 +605,20 @@
 </pre></div>
 </div>
  </div>
-    <div class="py2"> <table class="table-light bg-white border rounded">
-  <thead class="bg-light-gray">
-    <tr>
-      <th>Artist</th> <th>Album</th> <th>Release Date</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
-    <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
-    <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
-  </tbody>
-</table>
+    <div class="py2"> <div class="overflow-scroll">
+  <table class="table-light overflow-hidden bg-white border rounded">
+    <thead class="bg-light-gray">
+      <tr>
+        <th>Artist</th> <th>Album</th> <th>Release Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
+      <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
+      <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
+    </tbody>
+  </table>
+</div>
  </div>
     <div class="py2"> <div class="table outline-blue">
   <div class="table-cell">
@@ -532,18 +668,20 @@
   <div class="lg-table-cell">.lg-table-cell</div>
 </div>
  </div>
-    <div class="py2"> <table class="table-light">
-  <thead>
-    <tr>
-      <th>Artist</th> <th>Album</th> <th>Release Date</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
-    <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
-    <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
-  </tbody>
-</table>
+    <div class="py2"> <div class="overflow-scroll">
+  <table class="table-light">
+    <thead>
+      <tr>
+        <th>Artist</th> <th>Album</th> <th>Release Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
+      <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
+      <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
+    </tbody>
+  </table>
+</div>
  </div>
     <div class="py2"> <p class="h1">Pastrami 1</p>
 <p class="h2">Pastrami 2</p>
