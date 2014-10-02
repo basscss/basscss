@@ -12,6 +12,7 @@
 @import "basscss-table-object";
 @import "basscss-color-basic";
 
+@import "../../../basscss-ui-utilities";
 
 @import "./base/typography";
 @import "./base/responsive-type";
