@@ -35,7 +35,8 @@
 
     <section id="typography" class="py2">
       <h1>Typography</h1>
-      <p>Change typographic styles and defaults with these utilities.</p>      
+      <p>Use these utilities to alter default typographic styles.</p>
+      
 <div data-include-example="docs/examples/type-utilities.html" class="Example">
 <div class="Example_rendered">
 <p class="bold">Bold</p>
@@ -61,7 +62,7 @@
 
     <section id="layout" class="py2">
       <h1>Layout</h1>
-      <p>Change the default document flow with display, float, and other utilities.</p>
+      <p>Use the following layout utilities to alter default HTML layout.</p>
       <div class="p2 bg-darken-1 rounded">
         <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.inline</span>       <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span> <span class="p">}</span>
 <span class="nc">.block</span>        <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="p">}</span>
@@ -89,7 +90,7 @@
 
       </div>
       <h2>Media Object</h2>
-      <p>Create a <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a> using basic utilities.</p>
+      <p>Use utilites to create a <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a>.</p>
       
 <div data-include-example="docs/examples/media-object.html" class="Example">
 <div class="Example_rendered">
@@ -110,6 +111,7 @@
 </div>
       <h2>Double-Sided Media Object</h2>
       <p>For a container with a flexible center, use a double-sided media object.</p>
+      
 <div data-include-example="docs/examples/double-media-object.html" class="Example">
 <div class="Example_rendered">
 <div class="clearfix mb2 outline-blue">
@@ -160,7 +162,7 @@
       </div>
       <h2>Margins</h2>
       <p>
-        Change or reset default margins using the global white space scale.
+        Use these utilities to reset or alter default margins.
         Negative x-axis margins are used to offset padding.
         Margin auto is used to horizontally center block-level elements with a set width.
       </p>
@@ -210,7 +212,7 @@
         Padding utilities are only available in symmetrical orientations.
         This is to normalize the spacing used around elements.
       </p>
-      <div class="p2 mb2 bg-darken-1 rounded">
+      <div class="p2 bg-darken-1 rounded">
         <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.p1</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
 <span class="nc">.py1</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
 <span class="nc">.px1</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
@@ -228,15 +230,8 @@
 <span class="nc">.px4</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
 </pre></div>
 </div>
+
       </div>
-      <p>
-        <b class="bold red">
-          Margins and padding should never be declared outside of these utilities.
-        </b>
-        This is meant to help create consistent rhythm and avoid magic numbers.
-        If, for some reason, the default white space scale does not accomodate your design,
-        customize and extend it before implementation.
-      </p>
     </section>
 
     <section id="responsive-states" class="py2">
