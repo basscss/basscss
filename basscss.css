@@ -1138,22 +1138,22 @@ hr {
   border-color: #f95020;
 }
 
-.field-light.has-success {
+.field-light.is-success {
   border-color: #00d930;
 }
 
-.field-light.has-warning {
+.field-light.is-warning {
   border-color: #ffdc00;
 }
 
-.field-light.has-error {
+.field-light.is-error {
   border-color: #f95020;
 }
 
 .radio-light,
 .checkbox-light {
-  -webkit-transition: box-shadow: .2s ease;
-          transition: box-shadow: .2s ease;
+  -webkit-transition: box-shadow .2s ease;
+          transition: box-shadow .2s ease;
 }
 
 .radio-light {

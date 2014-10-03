@@ -1,0 +1,90 @@
+<form>
+
+  <label>Normal</label>
+  <input type="text" class="block full-width field-light">
+  <label>Disabled</label>
+  <input type="text" class="block full-width field-light" value="This is disabled" disabled>
+  <label>Read-only (But still selectable)</label>
+  <input type="text" class="block full-width field-light" value="This is read-only" readonly>
+  <label>Required</label>
+  <input type="text" class="block full-width field-light" required>
+  <label>Optional</label>
+  <input type="text" class="block full-width field-light" optional>
+  <label>Valid</label>
+  <input type="text" class="block full-width field-light" valid>
+  <label>Invalid</label>
+  <input type="text" class="block full-width field-light" invalid>
+  <label>Has Success</label>
+  <input type="text" class="block full-width field-light has-success">
+  <label>Has Warning</label>
+  <input type="text" class="block full-width field-light has-warning">
+  <label>Has Error</label>
+  <input type="text" class="block full-width field-light has-error">
+
+  <fieldset class="fieldset-reset mb0">
+    <legend class="h3 bold">Legend</legend>
+    <label>Input</label>
+    <input type="text" class="block full-width field-light">
+    <label>Textarea</label>
+    <textarea type="text" class="block full-width field-light"></textarea>
+    <label>Select</label>
+    <select id="select-demo" class="full-width field-light">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+      <option>Option 4</option>
+      <option>Option 5</option>
+      <option>Option 6</option>
+    </select>
+    <label>Disabled Select</label>
+    <select id="select-disabled-demo" class="full-width field-light" disabled>
+      <option value="option-1">Option 1</option>
+      <option value="option-2">Option 2</option>
+      <option value="option-3">Option 3</option>
+      <option value="option-4">Option 4</option>
+      <option value="option-5">Option 5</option>
+      <option value="option-6">Option 6</option>
+    </select>
+    <select id="select-multiple-demo" class="full-width field-light" multiple>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+      <option>Option 4</option>
+      <option>Option 5</option>
+      <option>Option 6</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="mb2">
+    <legend>Radios and Checkboxes</legend>
+    <div>
+      <label for="radio-1">
+        <input type="radio" name="radios" id="radio-1" value="option-1"> Radio 1
+      </label>
+      <label for="radio-2">
+        <input type="radio" name="radios" id="radio-2" value="option-2"> Radio 1
+      </label>
+    </div>
+    <div>
+      <label for="checkbox-1">
+        <input type="checkbox" id="checkbox-1" value="option-1"> Checkbox 1
+      </label>
+      <label for="checkbox-2">
+        <input type="checkbox" id="checkbox-2" value="option-2"> Checkbox 2
+      </label>
+    </div>
+  </fieldset>
+
+  <fieldset class="fieldset-reset mb2">
+    <legend class="h3 bold">File Input & Progress</legend>
+    <label>Upload Avatar</label>
+    <input type="file" class="block">
+    <label>Progress</label>
+    <progress value=".3" class="full-width">30%</progress>
+  </fieldset>
+
+  <button type="submit" class="button-blue">Submit</button>
+  <button type="reset" class="button-gray">Reset</button>
+
+</form>
+
