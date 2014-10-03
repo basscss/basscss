@@ -27,24 +27,19 @@
   },
   "homepage": "https://github.com/jxnblk/basscss",
   "devDependencies": {
-    "gulp-rename": "^1.2.0",
-    "gulp-rework": "^1.0.2",
-    "gulp-minify-css": "^0.3.8",
-    "gulp-watch": "^1.0.3",
     "gulp": "^3.8.8",
-    "browser-sync": "^1.3.7",
-    "through2": "^0.6.1",
-    "cheerio": "^0.17.0",
-    "pygmentize-bundled": "^2.1.1",
-    "marked": "^0.3.2",
-    "fitter-happier-text": "0.0.2",
-    "gulp-gzip": "0.0.8",
-    "gulp-stylestats": "^0.2.7",
     "gulp-basswork": "latest",
-    "basswork": "latest",
+    "gulp-gzip": "0.0.8",
     "gulp-header": "^1.1.1",
+    "gulp-minify-css": "^0.3.8",
+    "gulp-rename": "^1.2.0",
+    "gulp-webserver": "^0.8.3",
+    "cheerio": "^0.17.0",
     "css": "^2.1.0",
-    "mustache": "^0.8.2"
+    "marked": "^0.3.2",
+    "pygmentize-bundled": "^2.1.1",
+    "mustache": "^0.8.2",
+    "through2": "^0.6.1"
   },
   "scripts": {
     "start": "gulp"

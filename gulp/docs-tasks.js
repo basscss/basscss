@@ -1,46 +1,30 @@
 // Site-specific Gulp tasks
 
 var gulp = require('gulp');
+var basswork = require('gulp-basswork');
 var rename = require('gulp-rename');
 var mincss = require('gulp-minify-css');
-var gzip = require('gulp-gzip');
-
-var basswork = require('gulp-basswork');
-var browsersync = require('browser-sync');
+var webserver = require('gulp-webserver');
 
 // Site development
-gulp.task('dev', ['watch', 'serve']);
+gulp.task('dev', ['watch-html', 'watch-css', 'serve']);
 
-gulp.task('watch', ['basswork', 'site-basswork', 'themes-basswork', 'sassify', 'render'], function() {
+gulp.task('watch-html', ['render'], function() {
   gulp.watch(
-    [
-      './docs/templates/**/*.html',
-      'docs/partials/**/*',
-      'docs/examples/**/*',
-      './docs/css/src/**/*',
-      './src/**/*.css',
-      './docs/themes/bassmap/src/**/*',
-      './docs/themes/bassdock/src/**/*'
-    ],
-    ['basswork', 'site-basswork', 'themes-basswork', 'sassify', 'render', 'reload']
+    ['./docs/templates/**/*.html', 'docs/partials/**/*', 'docs/examples/**/*'],
+    ['render']
   );
 });
 
-gulp.task('reload', function() {
-  browsersync.reload();
+gulp.task('watch-css', ['basswork', 'site-basswork', 'themes-basswork', 'sassify'], function() {
+  gulp.watch(
+    ['./src/**/*.css', './docs/css/src/**/*.css', './docs/themes/**/src/**/*.css'],
+    ['basswork', 'site-basswork', 'themes-basswork', 'sassify']
+  );
 });
 
 gulp.task('serve', function() {
-  browsersync({ server: { baseDir: './' }, open: false, ghostMode: false });
-});
-
-// Site stylesheet
-gulp.task('site-basswork', function() {
-  gulp.src('./docs/css/src/index.css')
-    .pipe(basswork())
-    .pipe(mincss())
-    .pipe(rename('base.min.css'))
-    .pipe(gulp.dest('./docs/css'));
+  gulp.src('./').pipe(webserver({}));
 });
 
 // Build site
@@ -58,6 +42,15 @@ gulp.task('render', function() {
     .pipe(nav())
     .pipe(glossary({ css: './basscss.min.css' }))
     .pipe(gulp.dest('./'));
+});
+
+// Site stylesheet
+gulp.task('site-basswork', function() {
+  gulp.src('./docs/css/src/index.css')
+    .pipe(basswork())
+    .pipe(mincss())
+    .pipe(rename('base.min.css'))
+    .pipe(gulp.dest('./docs/css'));
 });
 
 // Themes

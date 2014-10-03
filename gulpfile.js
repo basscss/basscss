@@ -8,8 +8,6 @@ var header = require('gulp-header');
 // Custom Rework wrapper
 var basswork = require('gulp-basswork');
 
-var stylestats = require('gulp-stylestats');
-
 gulp.task('default', ['basswork', 'sassify']);
 
 gulp.task('basswork', function() {
@@ -27,9 +25,6 @@ gulp.task('basswork', function() {
     .pipe(gulp.dest('.'))
     .pipe(gzip())
     .pipe(gulp.dest('.'));
-});
-
-gulp.task('version', function() {
 });
 
 // Create Sass partials
@@ -52,12 +47,6 @@ gulp.task('sassify', function() {
   gulp.src('./src/modules/color-basic.css')
     .pipe(basswork())
     .pipe(rename('_color-basic.scss')).pipe(gulp.dest('scss'));
-});
-
-// Stylestats
-gulp.task('stats', function() {
-  gulp.src('./basscss.css')
-    .pipe(stylestats());
 });
 
 // Site-specific tasks
