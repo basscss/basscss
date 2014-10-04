@@ -47,8 +47,9 @@
       <h1>Navbars</h1>
       <div class="mb2" data-include-example="docs/examples/navbar-dark.html"></div>
       <div class="mb2" data-include-example="docs/examples/navbar-dropdown.html"></div>
-      <div class="mb2" data-include-example="docs/examples/navbar-disclosure.html"></div>
       <div class="mb2" data-include-example="docs/examples/navbar-collapsing.html"></div>
+      <div class="mb2" data-include-example="docs/examples/navbar-disclosure.html"></div>
+      <div class="mb2" data-include-example="docs/examples/navbar-disclosure-complex.html"></div>
     </section>
 
     <section id="breadcrumbs" class="py2">
@@ -65,32 +66,21 @@
 
     <section id="boxes" class="py2">
       <h1>Boxes</h1>
-      <div class="clearfix mxn2">
-        <div class="sm-col sm-col-6 px2 mb2">
-          <div data-include-example="docs/examples/box.html"></div>
-        </div>
-        <div class="sm-col sm-col-6 px2 mb2">
-          <div data-include-example="docs/examples/box-header.html"></div>
-        </div>
-      </div>
-      <div class="clearfix mxn2">
-        <div class="sm-col sm-col-6 px2 mb2">
-          <div data-include-example="docs/examples/box-image.html"></div>
-        </div>
-        <div class="sm-col sm-col-6 px2 mb2">
-          <div data-include-example="docs/examples/box-header-footer.html"></div>
-        </div>
-      </div>
+      <div class="mb2" data-include-example="docs/examples/box.html"></div>
+      <div class="mb2" data-include-example="docs/examples/box-header.html"></div>
+      <div class="mb2" data-include-example="docs/examples/box-image.html"></div>
+      <div class="mb2" data-include-example="docs/examples/box-header-footer.html"></div>
+    </section>
+
+    <section id="flash-messages" class="py2">
+      <h1>Flash Messages</h1>
+      <div data-include-example="docs/examples/flash-messages.html"></div>
     </section>
 
     <section id="badges" class="py2">
       <h1>Badges</h1>
-      <div data-include-example="docs/examples/badges-headings.html"></div>
-    </section>
-
-    <section id="tooltips" class="py2">
-      <h1>Tooltips</h1>
-      <div data-include-example="docs/examples/tooltips.html"></div>
+      <div class="mb2" data-include-example="docs/examples/badges-headings.html"></div>
+      <div data-include-example="docs/examples/badges-colors.html"></div>
     </section>
 
     <section id="button-groups" class="py2">
@@ -103,11 +93,20 @@
 
     <section id="input-groups" class="py2">
       <h1>Input Groups</h1>
-      <div data-include-example="docs/examples/input-group-vertical.html"></div>
+      <div class="mb2" data-include-example="docs/examples/input-group-vertical.html"></div>
       <div data-include-example="docs/examples/input-group-horizontal.html"></div>
     </section>
 
-    <div data-include-example="docs/examples/unicode.html"></div>
+    <section id="dropdowns" class="py2">
+      <h1>Dropdowns</h1>
+      <div data-include-example="docs/examples/dropdown.html"></div>
+    </section>
+
+    <section id="tooltips" class="py2">
+      <h1>Tooltips</h1>
+      <div data-include-example="docs/examples/tooltips.html"></div>
+    </section>
+
   </div>
 
   <div class="sm-col sm-col-3 px2 py2">
@@ -119,21 +118,29 @@
     <a href="#boxes" class="button buttons-nav block">Boxes</a>
     <a href="#flash-messages" class="button buttons-nav block">Flash Messages</a>
     <a href="#badges" class="button buttons-nav block">Badges</a>
-    <a href="#progress-bars" class="button buttons-nav block">Progress Bars</a>
-    <a href="#range-inputs" class="button buttons-nav block">Range Inputs</a>
-    <a href="#media-controls" class="button buttons-nav block">Media Controls</a>
     <a href="#button-groups" class="button buttons-nav block">Button Groups</a>
     <a href="#input-groups" class="button buttons-nav block">Input Groups</a>
     <a href="#dropdowns" class="button buttons-nav block">Dropdowns</a>
     <a href="#tooltips" class="button buttons-nav block">Tooltips</a>
+    <!--
+    <a href="#form-field-sizes" class="button buttons-nav block">Form Field Sizes</a>
+    <a href="#media-controls" class="button buttons-nav block">Media Controls</a>
+    <a href="#progress-bars" class="button buttons-nav block">Progress Bars</a>
+    <a href="#range-inputs" class="button buttons-nav block">Range Inputs</a>
     <a href="#popovers" class="button buttons-nav block">Popovers</a>
     <a href="#modal-overlays" class="button buttons-nav block">Modal Overlays</a>
+    -->
   </div>
 </div>
 
 <div data-include="docs/partials/_footer.html"></div>
 
+<script src="http://d2v52k3cl9vedd.cloudfront.net/geomicons/0.2.0/geomicons.min.js"></script>
+
 <script>
+
+  var icons = document.querySelectorAll('[data-icon]');
+  Geomicons.inject(icons);
 
   var Disclosure = function(el, options) {
     var self = this;
