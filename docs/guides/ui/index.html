@@ -564,7 +564,7 @@ s.parentNode.insertBefore(wf, s);
     this.toggle = function(e) {
       e.stopPropagation();
       self.isOpen = !self.isOpen;
-      console.log('tergle', self.isOpen ? 'open' : 'closed');
+      console.log('toggle', self.isOpen ? 'open' : 'closed');
       if (self.isOpen) {
         self.el.classList.add('is-open');
       } else {

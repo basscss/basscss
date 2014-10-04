@@ -7,15 +7,19 @@ var mincss = require('gulp-minify-css');
 var webserver = require('gulp-webserver');
 var watch = require('gulp-watch');
 
-// Site development
-gulp.task('dev', ['watch-html', 'watch-css', 'serve']);
+var include = require('./include');
+var example = require('./include-example');
+var nav = require('./is-active');
+var pygmentize = require('./pygmentize');
+var glossary = require('./css-glossary');
 
-//gulp.task('watch-html', ['render'], function() {
-//  gulp.watch(
-//    ['./docs/templates/**/*.html', 'docs/partials/**/*', 'docs/examples/**/*'],
-//    ['render']
-//  );
-//});
+
+// Site development
+gulp.task('dev', ['watch-templates', 'watch-includes', 'watch-css', 'serve']);
+
+gulp.task('serve', function() {
+  gulp.src('./').pipe(webserver({}));
+});
 
 gulp.task('watch-css', ['basswork', 'site-basswork', 'themes-basswork', 'sassify'], function() {
   gulp.watch(
@@ -24,22 +28,11 @@ gulp.task('watch-css', ['basswork', 'site-basswork', 'themes-basswork', 'sassify
   );
 });
 
-gulp.task('serve', function() {
-  gulp.src('./').pipe(webserver({}));
-});
-
 // Build site
-var include = require('./include');
-var example = require('./include-example');
-var nav = require('./is-active');
-var pygmentize = require('./pygmentize');
-var glossary = require('./css-glossary');
-
-gulp.task('watch-html', function() {
-//['./docs/templates/**/*.html', 'docs/partials/**/*', 'docs/examples/**/*'],
+gulp.task('watch-templates', function() {
   gulp.src('./docs/templates/**/*.html')
     .pipe(watch('./docs/templates/**/*.html', function(files) {
-    console.log('watch', files);
+      console.log('watch update');
       return files.pipe(include())
         .pipe(example())
         .pipe(pygmentize())
@@ -49,6 +42,11 @@ gulp.task('watch-html', function() {
     }));
 });
 
+gulp.task('watch-includes', function() {
+  gulp.watch(['./docs/examples/**/*', './docs/partials/**/*'], ['render']);
+});
+
+// Render templates
 gulp.task('render', function() {
   gulp.src('./docs/templates/**/*.html')
     .pipe(include())
