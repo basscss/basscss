@@ -18,6 +18,19 @@
 
     <p class="h3">A guide to creating user interface elements with Basscss</p>
 
+    <section id="button-sizes" class="py2">
+      <h1>Button Sizes</h1>
+      <div class="mb2" data-include-example="docs/examples/button-sizes.html"></div>
+      <div class="mb2" data-include-example="docs/examples/button-font-sizes.html"></div>
+    </section>
+
+    <!--
+    <section id="field-sizes" class="py2">
+      <h1>Form Field Sizes</h1>
+      <div class="mb2" data-include-example="docs/examples/field-sizes.html"></div>
+    </section>
+    -->
+
     <section id="navigation" class="py2">
       <h1>Navigation</h1>
       <div class="mb2" data-include-example="docs/examples/nav-basic.html"></div>
@@ -35,6 +48,7 @@
       <div class="mb2" data-include-example="docs/examples/navbar-dark.html"></div>
       <div class="mb2" data-include-example="docs/examples/navbar-dropdown.html"></div>
       <div class="mb2" data-include-example="docs/examples/navbar-disclosure.html"></div>
+      <div class="mb2" data-include-example="docs/examples/navbar-collapsing.html"></div>
     </section>
 
     <section id="breadcrumbs" class="py2">
@@ -45,7 +59,8 @@
     <section id="pagination" class="py2">
       <h1>Pagination</h1>
       <div class="mb2" data-include-example="docs/examples/pagination.html"></div>
-      <div data-include-example="docs/examples/pagination-numbers.html"></div>
+      <div class="mb2" data-include-example="docs/examples/pagination-numbers.html"></div>
+      <div data-include-example="docs/examples/pagination-bordered.html"></div>
     </section>
 
     <section id="boxes" class="py2">
@@ -66,6 +81,11 @@
           <div data-include-example="docs/examples/box-header-footer.html"></div>
         </div>
       </div>
+    </section>
+
+    <section id="badges" class="py2">
+      <h1>Badges</h1>
+      <div data-include-example="docs/examples/badges-headings.html"></div>
     </section>
 
     <section id="tooltips" class="py2">
@@ -91,6 +111,7 @@
   </div>
 
   <div class="sm-col sm-col-3 px2 py2">
+    <a href="#button-sizes" class="button buttons-nav block">Button Sizes</a>
     <a href="#navigation" class="button buttons-nav block">Navigation</a>
     <a href="#navbars" class="button buttons-nav block">Navbars</a>
     <a href="#breadcrumbs" class="button buttons-nav block">Breadcrumbs</a>
@@ -112,23 +133,19 @@
 
 <div data-include="docs/partials/_footer.html"></div>
 
-<style>
-  .Disclosure .Disclosure-show { display: none }
-  .Disclosure.is-open .Disclosure-show { display: block }
-</style>
 <script>
 
   var Disclosure = function(el, options) {
     var self = this;
     this.el = el;
-    this.isOpen = false;
+    this.isActive = false;
     this.toggle = function(e) {
       e.stopPropagation();
-      self.isOpen = !self.isOpen;
-      if (self.isOpen) {
-        self.el.classList.add('is-open');
+      self.isActive = !self.isActive;
+      if (self.isActive) {
+        self.el.classList.add('is-active');
       } else {
-        self.el.classList.remove('is-open');
+        self.el.classList.remove('is-active');
       }
     }
     this.el.addEventListener('click', function(e) {

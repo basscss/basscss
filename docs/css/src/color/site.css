@@ -73,6 +73,18 @@ a.is-active { color: var(--dark-gray) }
     padding: var(--space-2);
   }
 
+  /*
+    .Example_rendered,
+    .Example_rendered h1,
+    .Example_rendered h2,
+    .Example_rendered h3,
+    .Example_rendered h4,
+    .Example_rendered h5,
+    .Example_rendered h6 {
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    }
+  */
+
   .Example_code {
     padding: var(--space-2);
     background-color: var(--darken-1);

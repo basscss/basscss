@@ -21,6 +21,7 @@ module.exports = function(options) {
     $navlinks.each(function(i) {
       if ($(this).attr('href') == '/' + path.dirname(file.relative)) {
         $(this).addClass('is-active');
+        util.log(file.relative, 'is active');
       }
     });
 
