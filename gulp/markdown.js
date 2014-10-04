@@ -4,6 +4,7 @@ var path = require('path');
 var through = require('through2');
 var marked = require('marked');
 var cheerio = require('cheerio');
+var util = require('gulp-util');
 
 //marked.setOptions(require('./marked-options'));
 var renderer = new marked.Renderer();
@@ -21,6 +22,8 @@ module.exports = function(options) {
   var options = options || {};
 
   return through.obj(function(file, enc, callback) {
+
+    util.log('Markdown');
 
     var string = file.contents.toString();
     var html = marked(string);

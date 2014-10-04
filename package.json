@@ -39,7 +39,9 @@
     "marked": "^0.3.2",
     "pygmentize-bundled": "^2.1.1",
     "mustache": "^0.8.2",
-    "through2": "^0.6.1"
+    "through2": "^0.6.1",
+    "gulp-util": "^3.0.1",
+    "gulp-watch": "^1.0.7"
   },
   "scripts": {
     "start": "gulp"

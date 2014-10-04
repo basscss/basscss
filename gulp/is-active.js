@@ -2,6 +2,7 @@
 var path = require('path');
 var cheerio = require('cheerio');
 var through = require('through2');
+var util = require('gulp-util');
 
 module.exports = function(options) {
 
@@ -22,6 +23,8 @@ module.exports = function(options) {
         $(this).addClass('is-active');
       }
     });
+
+    util.log('Checked link active state for ' + file.relative);
 
     file.contents = new Buffer($.html());
     this.push(file);

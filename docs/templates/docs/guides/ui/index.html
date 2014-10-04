@@ -102,6 +102,38 @@
 
 <div data-include="docs/partials/_footer.html"></div>
 
+<style>
+  .Disclosure .Disclosure-show { display: none }
+  .Disclosure.is-open .Disclosure-show { display: block }
+</style>
+<script>
+
+  var Disclosure = function(el, options) {
+    var self = this;
+    this.el = el;
+    this.isOpen = false;
+    this.toggle = function(e) {
+      e.stopPropagation();
+      self.isOpen = !self.isOpen;
+      console.log('tergle', self.isOpen ? 'open' : 'closed');
+      if (self.isOpen) {
+        self.el.classList.add('is-open');
+      } else {
+        self.el.classList.remove('is-open');
+      }
+    }
+    this.el.addEventListener('click', function(e) {
+      self.toggle(e);
+    });
+  };
+
+  var disclosures = document.querySelectorAll('[data-disclosure]');
+  for (var i = 0; i < disclosures.length; i++) {
+    new Disclosure(disclosures[i]);
+  }
+
+</script>
+
 </body>
 </html>
 

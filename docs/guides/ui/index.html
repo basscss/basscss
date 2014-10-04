@@ -175,14 +175,17 @@
     <a href="#!" class="button py1 m0 white">Fries</a>
   </div>
   <div class="right">
-    <div id="account-menu" class="relative inline-block target-group">
-      <a href="#account-menu" class="button py1 m0 white">My Account</a>
-      <div class="absolute right-0 nowrap target-show bg-white rounded">
-        <ul class="h5 list-reset mb0">
-          <li><a href="#!" class="button">Profile</a></li>
-          <li><a href="#!" class="button">Settings</a></li>
-          <li><a href="#!" class="button">Sign Out</a></li>
-        </ul>
+    <div id="account-menu" class="inline-block Disclosure" data-disclosure="">
+      <div class="Disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
+      <div class="relative">
+        <a href="#!" class="button py1 m0 white">My Account</a>
+        <div class="Disclosure-show absolute right-0 nowrap bg-white rounded">
+          <ul class="h5 list-reset mb0">
+            <li><a href="#!" class="button">Profile</a></li>
+            <li><a href="#!" class="button">Settings</a></li>
+            <li><a href="#!" class="button">Sign Out</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -199,14 +202,17 @@
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 white&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;relative inline-block target-group&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 white&quot;</span><span class="nt">&gt;</span>My Account<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;absolute right-0 nowrap target-show bg-white rounded&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;h5 list-reset mb0&quot;</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Sign Out<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;inline-block Disclosure&quot;</span> <span class="na">data-disclosure</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;Disclosure-show fixed top-0 right-0 bottom-0 left-0&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 white&quot;</span><span class="nt">&gt;</span>My Account<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;Disclosure-show absolute right-0 nowrap bg-white rounded&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;h5 list-reset mb0&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Sign Out<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -544,6 +550,38 @@ s.parentNode.insertBefore(wf, s);
 })(); </script>
 
 
+
+<style>
+  .Disclosure .Disclosure-show { display: none }
+  .Disclosure.is-open .Disclosure-show { display: block }
+</style>
+<script>
+
+  var Disclosure = function(el, options) {
+    var self = this;
+    this.el = el;
+    this.isOpen = false;
+    this.toggle = function(e) {
+      e.stopPropagation();
+      self.isOpen = !self.isOpen;
+      console.log('tergle', self.isOpen ? 'open' : 'closed');
+      if (self.isOpen) {
+        self.el.classList.add('is-open');
+      } else {
+        self.el.classList.remove('is-open');
+      }
+    }
+    this.el.addEventListener('click', function(e) {
+      self.toggle(e);
+    });
+  };
+
+  var disclosures = document.querySelectorAll('[data-disclosure]');
+  for (var i = 0; i < disclosures.length; i++) {
+    new Disclosure(disclosures[i]);
+  }
+
+</script>
 
 </body>
 </html>

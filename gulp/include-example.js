@@ -3,6 +3,7 @@ var fs = require('fs');
 var cheerio = require('cheerio');
 var through = require('through2');
 var pygmentize = require('pygmentize-bundled');
+var util = require('gulp-util');
 
 module.exports = function(options) {
 
@@ -14,6 +15,7 @@ module.exports = function(options) {
       this.push(file);
       callback();
     }
+    util.log('Including Example');
     var string = file.contents.toString();
     var self = this;
 
@@ -28,6 +30,7 @@ module.exports = function(options) {
 
     function finish() {
       if (isIncluded >= $includes.length) {
+        util.log('Done including examples');
         file.contents = new Buffer($.html());
         self.push(file);
         callback();
@@ -39,6 +42,8 @@ module.exports = function(options) {
       var $self = $(this);
       var path = $(this).data('include-example');
       var partial = fs.readFileSync(path, 'utf8');
+
+      util.log('Including example in ' + file.relative + ', ' + path);
 
       pygmentize({ lang: 'html', format: 'html' }, partial, function(err, result) {
 

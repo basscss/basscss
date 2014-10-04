@@ -2,6 +2,7 @@
 var fs = require('fs');
 var cheerio = require('cheerio');
 var through = require('through2');
+var util = require('gulp-util');
 
 module.exports = function(options) {
 
@@ -18,6 +19,7 @@ module.exports = function(options) {
 
     $includes.each(function(i) {
       var path = $(this).data('include');
+      util.log('Including: ' + path);
       if (!path) return;
       var partial = fs.readFileSync(path, 'utf8');
       $(this).replaceWith(partial);

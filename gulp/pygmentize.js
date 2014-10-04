@@ -3,6 +3,7 @@ var fs = require('fs');
 var cheerio = require('cheerio');
 var through = require('through2');
 var pygmentize = require('pygmentize-bundled');
+var util = require('gulp-util');
 
 module.exports = function(options) {
 
@@ -28,6 +29,7 @@ module.exports = function(options) {
 
     function finish() {
       if (isHighlighted >= $highlights.length) {
+        util.log('Highlighted ' + file.relative);
         file.contents = new Buffer($.html());
         self.push(file);
         callback();
