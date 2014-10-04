@@ -100,15 +100,3 @@ a.is-active { color: var(--dark-gray) }
   border: 0;
 }
 
-.field-dark {
-  color: white;
-  background-color: var(--darken-3);
-  border: 1px solid var(--darken-1);
-  border-radius: var(--border-radius);
-}
-
-.field-dark:focus {
-  outline: 0;
-  border: 1px solid rgba(#fff,.5);
-}
-
