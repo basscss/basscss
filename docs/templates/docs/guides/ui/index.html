@@ -22,13 +22,19 @@
       <h1>Navigation</h1>
       <div class="mb2" data-include-example="docs/examples/nav-basic.html"></div>
       <div class="mb2" data-include-example="docs/examples/nav-justified.html"></div>
-      <div data-include-example="docs/examples/nav-stacked.html"></div>
+      <div class="mb2" data-include-example="docs/examples/nav-stacked.html"></div>
+      <div class="mb2" data-include-example="docs/examples/nav-tabs.html"></div>
+      <div class="mb2" data-include-example="docs/examples/nav-tabs-table.html"></div>
+      <div class="mb2" data-include-example="docs/examples/nav-bordered.html"></div>
+      <div class="mb2" data-include-example="docs/examples/nav-pills.html"></div>
+      <div class="mb2" data-include-example="docs/examples/nav-ul.html"></div>
     </section>
 
     <section id="navbars" class="py2">
       <h1>Navbars</h1>
       <div class="mb2" data-include-example="docs/examples/navbar-dark.html"></div>
       <div class="mb2" data-include-example="docs/examples/navbar-dropdown.html"></div>
+      <div class="mb2" data-include-example="docs/examples/navbar-disclosure.html"></div>
     </section>
 
     <section id="breadcrumbs" class="py2">
@@ -70,11 +76,15 @@
     <section id="button-groups" class="py2">
       <h1>Button Groups</h1>
       <div data-include-example="docs/examples/button-group.html"></div>
+      <h2>Justified Button Group</h2>
+      <div data-include-example="docs/examples/button-group-justified.html"></div>
+      <div data-include-example="docs/examples/button-group-segments.html"></div>
     </section>
 
     <section id="input-groups" class="py2">
       <h1>Input Groups</h1>
       <div data-include-example="docs/examples/input-group-vertical.html"></div>
+      <div data-include-example="docs/examples/input-group-horizontal.html"></div>
     </section>
 
     <div data-include-example="docs/examples/unicode.html"></div>
@@ -115,7 +125,6 @@
     this.toggle = function(e) {
       e.stopPropagation();
       self.isOpen = !self.isOpen;
-      console.log('toggle', self.isOpen ? 'open' : 'closed');
       if (self.isOpen) {
         self.el.classList.add('is-open');
       } else {

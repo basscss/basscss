@@ -3,7 +3,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: var(--dark-gray);
 }
 
-.is-active { color: var(--dark-gray) }
+a.is-active { color: var(--dark-gray) }
 
 .waves {
   animation: waves 1.6s linear infinite;
@@ -83,12 +83,20 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     background-color: transparent;
   }
 
-.button-nav-light:hover {
-  background-color: var(--darken-2);
-}
-
 .hr-block {
   height: 4px;
   border: 0;
+}
+
+.field-dark {
+  color: white;
+  background-color: var(--darken-3);
+  border: 1px solid var(--darken-1);
+  border-radius: var(--border-radius);
+}
+
+.field-dark:focus {
+  outline: 0;
+  border: 1px solid rgba(#fff,.5);
 }
 
