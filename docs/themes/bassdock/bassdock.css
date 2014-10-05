@@ -22,20 +22,6 @@ textarea {
   font-size: 100%;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-
 img {
   max-width: 100%;
 }
@@ -164,31 +150,29 @@ input[type=tel],
 input[type=time],
 input[type=url],
 input[type=week] {
-  line-height: 1.75em;
+  line-height: 1.75;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   height: 2.25em;
-  -webkit-appearance: none;
   padding: .25em 1rem;
+  -webkit-appearance: none;
 }
 
 select {
-  line-height: 2em;
-  padding: .25em 1rem;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
+  line-height: 1.75;
+  padding: .25em 1rem;
 }
 
 select:not([multiple]) {
   height: 2.25em;
 }
 
-
-
 textarea {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
-  line-height: 1.75em;
+  line-height: 1.75;
   padding: .25em 1rem;
 }
 
@@ -204,9 +188,6 @@ textarea {
 }
 
 button,
-input[type=button],
-input[type=submit],
-input[type=reset],
 .button {
   font-weight: 500;
   text-decoration: none;
@@ -214,14 +195,16 @@ input[type=reset],
   display: inline-block;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
-  line-height: 2.25em;
+  line-height: 1.125;
+  padding: .5em 1rem;
   margin: 0;
-  padding: 0 1rem;
   height: auto;
-  width: auto;
-  min-height: 2.25em;
+  border: 1px solid transparent;
+}
+
+::-moz-focus-inner {
   border: 0;
-  -webkit-appearance: none;
+  padding: 0;
 }
 
 .button:hover {

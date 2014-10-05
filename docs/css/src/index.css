@@ -5,12 +5,12 @@
 */
 
 
-@import "../../../basscss-base";
+@import "basscss-base";
 @import "basscss-utilities";
 @import "basscss-positions";
 @import "basscss-grid";
 @import "basscss-table-object";
-@import "../../../basscss-color-basic";
+@import "basscss-color-basic";
 
 @import "../../../basscss-ui-utilities";
 

@@ -247,15 +247,16 @@ hr {
 }
 
 .button-blue:disabled,
-.button-blue.disabled {
+.button-blue.is-disabled {
   opacity: .5;
 }
 
 .button-blue-outline {
+  line-height: 1;
   color: #0076df;
   background-color: transparent;
   border-radius: 3px;
-  box-shadow: inset 0 0 0 2px #0076df;
+  border: 2px solid #0076df;
   -webkit-transition-duration: .1s;
           transition-duration: .1s;
   -webkit-transition-timing-function: ease-out;
@@ -264,7 +265,8 @@ hr {
           transition-property: box-shadow, background-color;
 }
 
-.button-blue-outline:hover {
+.button-blue-outline:hover,
+.button-blue-outline.is-active {
   color: white;
   background-color: #0076df;
 }
@@ -275,11 +277,11 @@ hr {
 
 .button-blue-outline:focus {
   outline: none;
-  box-shadow: inset 0 0 0 2px #0076df, 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(0, 118, 223, .5);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(0, 118, 223, .5);
 }
 
 .button-blue-outline:disabled,
-.button-blue-outline.disabled {
+.button-blue-outline.is-disabled {
   color: #0076df;
   background-color: transparent;
   opacity: .5;
@@ -311,7 +313,7 @@ hr {
 }
 
 .button-gray:disabled,
-.button-gray.disabled {
+.button-gray.is-disabled {
   opacity: .5;
 }
 
@@ -341,7 +343,7 @@ hr {
 }
 
 .button-red:disabled,
-.button-red.disabled {
+.button-red.is-disabled {
   opacity: .5;
 }
 

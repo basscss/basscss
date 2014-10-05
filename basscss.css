@@ -26,20 +26,6 @@ textarea {
   font-size: 100%;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-
 img {
   max-width: 100%;
 }
@@ -168,31 +154,29 @@ input[type=tel],
 input[type=time],
 input[type=url],
 input[type=week] {
-  line-height: 1.75em;
+  line-height: 1.75;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   height: 2.25em;
-  -webkit-appearance: none;
   padding: .25em 1rem;
+  -webkit-appearance: none;
 }
 
 select {
-  line-height: 2em;
-  padding: .25em 1rem;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
+  line-height: 1.75;
+  padding: .25em 1rem;
 }
 
 select:not([multiple]) {
   height: 2.25em;
 }
 
-
-
 textarea {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
-  line-height: 1.75em;
+  line-height: 1.75;
   padding: .25em 1rem;
 }
 
@@ -208,9 +192,6 @@ textarea {
 }
 
 button,
-input[type=button],
-input[type=submit],
-input[type=reset],
 .button {
   font-weight: bold;
   text-decoration: none;
@@ -218,14 +199,16 @@ input[type=reset],
   display: inline-block;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
-  line-height: 2.25em;
+  line-height: 1.125;
+  padding: .5em 1rem;
   margin: 0;
-  padding: 0 1rem;
   height: auto;
-  width: auto;
-  min-height: 2.25em;
+  border: 1px solid transparent;
+}
+
+::-moz-focus-inner {
   border: 0;
-  -webkit-appearance: none;
+  padding: 0;
 }
 
 .button:hover {
@@ -1199,15 +1182,16 @@ hr {
 }
 
 .button-blue:disabled,
-.button-blue.disabled {
+.button-blue.is-disabled {
   opacity: .5;
 }
 
 .button-blue-outline {
+  line-height: 1;
   color: #0076df;
   background-color: transparent;
   border-radius: 3px;
-  box-shadow: inset 0 0 0 2px #0076df;
+  border: 2px solid #0076df;
   -webkit-transition-duration: .1s;
           transition-duration: .1s;
   -webkit-transition-timing-function: ease-out;
@@ -1216,7 +1200,8 @@ hr {
           transition-property: box-shadow, background-color;
 }
 
-.button-blue-outline:hover {
+.button-blue-outline:hover,
+.button-blue-outline.is-active {
   color: white;
   background-color: #0076df;
 }
@@ -1227,11 +1212,11 @@ hr {
 
 .button-blue-outline:focus {
   outline: none;
-  box-shadow: inset 0 0 0 2px #0076df, 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(0, 118, 223, .5);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(0, 118, 223, .5);
 }
 
 .button-blue-outline:disabled,
-.button-blue-outline.disabled {
+.button-blue-outline.is-disabled {
   color: #0076df;
   background-color: transparent;
   opacity: .5;
@@ -1263,7 +1248,7 @@ hr {
 }
 
 .button-gray:disabled,
-.button-gray.disabled {
+.button-gray.is-disabled {
   opacity: .5;
 }
 
@@ -1293,7 +1278,7 @@ hr {
 }
 
 .button-red:disabled,
-.button-red.disabled {
+.button-red.is-disabled {
   opacity: .5;
 }
 

@@ -6,18 +6,19 @@
   padding-left: var(--space-1);
   padding-right: var(--space-1);
 }
+
 /*
 .button-big {
   padding-top: .5em;
   padding-bottom: .375em;
-  padding-left: var(--ui-padding-x);
-  padding-right: var(--ui-padding-x);
 }
 */
 
+/*
 .button-nav {
   line-height: 1.5em;
   padding-top: .25em;
   padding-bottom: .25em;
   min-height: 1.5em;
 }
+*/
