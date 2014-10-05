@@ -1,24 +1,10 @@
 
 /* Button sizes adjusted for Avenir Next */
+/*
+*/
 .button-small {
   padding-top: .25em;
   padding-bottom: .125em;
   padding-left: var(--space-1);
   padding-right: var(--space-1);
 }
-
-/*
-.button-big {
-  padding-top: .5em;
-  padding-bottom: .375em;
-}
-*/
-
-/*
-.button-nav {
-  line-height: 1.5em;
-  padding-top: .25em;
-  padding-bottom: .25em;
-  min-height: 1.5em;
-}
-*/

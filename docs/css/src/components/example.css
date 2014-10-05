@@ -1,0 +1,21 @@
+/* HTML code example component */
+
+.Example {
+  background-color: var(--darken-1);
+  border-radius: var(--border-radius);
+}
+
+.Example_rendered {
+  padding: var(--space-2);
+}
+
+.Example_code {
+  padding: var(--space-2);
+  background-color: var(--darken-1);
+}
+
+.Example_code pre {
+  margin-bottom: 0;
+  background-color: transparent;
+}
+

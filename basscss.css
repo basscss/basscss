@@ -1,6 +1,6 @@
 /*
 
-    Basscss v4.0.8
+    Basscss v4.0.9
 
     Low-level CSS toolkit
     http://basscss.com
@@ -540,10 +540,6 @@ td {
   }
 }
 
-.hide {
-  display: none !important;
-}
-
 @media (min-width: 40em) {
   .sm-hide {
     display: none !important;
@@ -560,6 +556,18 @@ td {
   .lg-hide {
     display: none !important;
   }
+}
+
+.display-none {
+  display: none !important;
+}
+
+.hide {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /*
@@ -1173,8 +1181,9 @@ hr {
   opacity: .875;
 }
 
-.button-blue:active {
-  box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, .25);
+.button-blue:active,
+.button-blue.is-active {
+  box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, .25);
 }
 
 .button-blue:focus {
@@ -1239,8 +1248,9 @@ hr {
   opacity: .875;
 }
 
-.button-gray:active {
-  box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, .25);
+.button-gray:active,
+.button-gray:is-active {
+  box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, .25);
 }
 
 .button-gray:focus {
@@ -1269,8 +1279,9 @@ hr {
   opacity: .875;
 }
 
-.button-red:active {
-  box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, .25);
+.button-red:active,
+.button-red.is-active {
+  box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, .25);
 }
 
 .button-red:focus {

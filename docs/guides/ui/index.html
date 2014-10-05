@@ -27,32 +27,50 @@
 
   <div class="sm-col sm-col-9 px2 py2">
 
-    <p class="h3">A guide to creating user interface elements with Basscss</p>
+    <p class="h3">
+      Basscss is well suited to create many different user interface elements out of the box.
+      With utility styles and a thoughtfully-architected templating system,
+      you can keep CSS bloat to a minimum, while making iterative design changes to partials and components.
+      Don&#x2019;t try to make CSS do a templating engine&#x2019;s job.
+    </p>
+
+    <p class="red">
+      Note: examples in this guide use the basscss-ui-utilities module,
+      which is not currently part of the main Basscss stylesheet.
+    </p>
 
     <section id="button-sizes" class="py2">
       <h1>Button Sizes</h1>
-      
-<div class="mb2 Example" data-include-example="docs/examples/button-sizes.html">
-<div class="Example_rendered">
-<button type="button" class="button-big button-blue">Big Button</button>
-<button type="button" class="button-blue">Normal</button>
-<button type="button" class="button-small button-blue">Small</button>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-big button-blue&quot;</span><span class="nt">&gt;</span>Big Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-small button-blue&quot;</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
-</pre></div>
-</div>
+      <p>Button sizes can be adjusted with font size utilities.</p>
       
 <div class="mb2 Example" data-include-example="docs/examples/button-font-sizes.html">
 <div class="Example_rendered">
-<button type="button" class="h3 button-big button-blue">Big Button</button>
-<button type="button" class="h5 button-blue">Normal</button>
-<button type="button" class="h6 button-small button-blue">Small</button>
+<button type="button" class="h3 button-blue">Burgers</button>
+<button type="button" class="h4 button-blue">Fries</button>
+<button type="button" class="h6 button-blue">Shakes</button>
 </div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;h3 button-big button-blue&quot;</span><span class="nt">&gt;</span>Big Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;h5 button-blue&quot;</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;h6 button-small button-blue&quot;</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
+<div class="highlight Example_code"><pre><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;h3 button-blue&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;h4 button-blue&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;h6 button-blue&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+</div>
+      <p>
+        To change the line-height and padding but leave the font-size the same,
+        use button size extensions.
+        Font size and button size extensions can also be combined for use together.
+      </p>
+      
+<div data-include-example="docs/examples/button-sizes.html" class="Example">
+<div class="Example_rendered">
+<button type="button" class="button-big button-blue">Burgers</button>
+<button type="button" class="button-blue">Fries</button>
+<button type="button" class="button-small button-blue">Shakes</button>
+<button type="button" class="button-narrow button-blue">Onion Rings</button>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-big button-blue&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-small button-blue&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-narrow button-blue&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/button&gt;</span>
 </pre></div>
 </div>
     </section>
@@ -63,83 +81,82 @@
       <div class="mb2" data-include-example="docs/examples/field-sizes.html"></div>
     </section>
     -->
+
     <section id="button-groups" class="py2">
       <h1>Button Groups</h1>
+      <p>
+        Button groups allow for more flexibility in establishing Gestalt and controlling information density.
+        Use a combination of layout utilities and color extensions to create button groups.
+      </p>
       
-<div data-include-example="docs/examples/button-group.html" class="Example">
+<div class="mb2 Example" data-include-example="docs/examples/button-group.html">
 <div class="Example_rendered">
 <div class="inline-block clearfix">
-  <button type="button" class="left button-gray rounded-left">Button</button>
-  <button type="button" class="left button-blue not-rounded">Button</button>
-  <button type="button" class="left button-blue rounded-right">Button</button>
+  <button type="button" class="left button-blue rounded-left is-active">Burgers</button>
+  <button type="button" class="left button-blue not-rounded">Fries</button>
+  <button type="button" class="left button-blue rounded-right">Shakes</button>
 </div>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;inline-block clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-gray rounded-left&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue not-rounded&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue rounded-right&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue rounded-left is-active&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue not-rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue rounded-right&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
       <h2>Justified Button Group</h2>
+      <p>The table object can be used to create justified button groups.</p>
       
 <div class="mb2 Example" data-include-example="docs/examples/button-group-justified.html">
 <div class="Example_rendered">
 <div class="table table-fixed center">
-  <a href="#!" class="table-cell button button-gray rounded-left">Button</a>
-  <a href="" class="table-cell button button-blue not-rounded">Button</a>
-  <a href="" class="table-cell button button-blue rounded-right">Button</a>
+  <a href="#!" class="table-cell button button-blue rounded-left is-active">Burgers</a>
+  <a href="" class="table-cell button button-blue not-rounded">Fries</a>
+  <a href="" class="table-cell button button-blue rounded-right">Shakes</a>
 </div>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table table-fixed center&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-gray rounded-left&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue not-rounded&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue rounded-right&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue rounded-left is-active&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue not-rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue rounded-right&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>
+        Normally, buttons with borders would double up when placed next to each other.
+        The <code>.x-group-item</code> and <code>.x-group-item-2</code> (for 2px borders) utilities
+        adjust negative margins and focus states to visually collapse borders.
+      </p>
       
-<div data-include-example="docs/examples/button-group-segments.html" class="Example">
+<div class="mb2 Example" data-include-example="docs/examples/button-group-segments.html">
 <div class="Example_rendered">
 <div class="inline-block clearfix">
-  <button type="button" class="left button-blue-outline rounded-left is-active">Hamburger</button>
-  <button type="button" class="left button-blue-outline shift-left-2 not-rounded">Fries</button>
-  <button type="button" class="left button-blue-outline shift-left-2 rounded-right">Shake</button>
+  <button type="button" class="left button-blue-outline x-group-item-2 rounded-left is-active">Burgers</button>
+  <button type="button" class="left button-blue-outline x-group-item-2 not-rounded">Fries</button>
+  <button type="button" class="left button-blue-outline x-group-item-2 rounded-right">Shake</button>
 </div>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;inline-block clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue-outline rounded-left is-active&quot;</span><span class="nt">&gt;</span>Hamburger<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue-outline shift-left-2 not-rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue-outline shift-left-2 rounded-right&quot;</span><span class="nt">&gt;</span>Shake<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue-outline x-group-item-2 rounded-left is-active&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue-outline x-group-item-2 not-rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue-outline x-group-item-2 rounded-right&quot;</span><span class="nt">&gt;</span>Shake<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>Use <code>.y-group-item</code> and <code>.y-group-item-2</code> to stack groups vertically.</p>
       
-<div data-include-example="docs/examples/button-group-segments-justified.html" class="Example">
+<div data-include-example="docs/examples/button-group-segments-vertical.html" class="Example">
 <div class="Example_rendered">
-<div class="table table-fixed center">
-  <div class="table-cell">
-    <button type="button" class="block button-blue-outline rounded-left is-active">Hamburger</button>
-  </div>
-  <div class="table-cell">
-    <button type="button" class="block button-blue-outline shift-left-2 not-rounded">Fries</button>
-  </div>
-  <div class="table-cell">
-    <button type="button" class="block button-blue-outline shift-left-2 rounded-right">Shake</button>
-  </div>
+<div class="inline-block">
+  <button type="button" class="block full-width button-blue-outline y-group-item-2 rounded-top is-active">Burgers</button>
+  <button type="button" class="block full-width button-blue-outline y-group-item-2 not-rounded">Fries</button>
+  <button type="button" class="block full-width button-blue-outline y-group-item-2 rounded-bottom">Shake</button>
 </div>
-
 </div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table table-fixed center&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;block button-blue-outline rounded-left is-active&quot;</span><span class="nt">&gt;</span>Hamburger<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;block button-blue-outline shift-left-2 not-rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;block button-blue-outline shift-left-2 rounded-right&quot;</span><span class="nt">&gt;</span>Shake<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;inline-block&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width button-blue-outline y-group-item-2 rounded-top is-active&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width button-blue-outline y-group-item-2 not-rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width button-blue-outline y-group-item-2 rounded-bottom&quot;</span><span class="nt">&gt;</span>Shake<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -147,59 +164,52 @@
 
     <section id="input-groups" class="py2">
       <h1>Input Groups</h1>
+      <p>
+        Input groups can be created by removing margins, adjusting border radii, and using the group utilities.
+        The <code>hide</code> utility visually hides labels, while keeping them accessible to screen readers.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/input-group-vertical.html">
 <div class="Example_rendered">
 <form class="sm-col-6">
-  <label class="hide">Username</label>
-  <input type="text" class="block full-width mb0 field-light rounded-top no-border-bottom" placeholder="Username">
-  <label class="hide">Password</label>
-  <input type="password" class="block full-width mb0 field-light not-rounded no-border-bottom" placeholder="Password">
+  <label class="hide">Pancakes</label>
+  <input type="text" class="block full-width mb0 field-light rounded-top y-group-item" placeholder="Pancakes">
+  <label class="hide">Making</label>
+  <input type="password" class="block full-width mb0 field-light not-rounded y-group-item" placeholder="Making">
   <label class="hide">Bacon</label>
-  <input type="text" class="block full-width field-light rounded-bottom" placeholder="Bacon">
+  <input type="text" class="block full-width field-light rounded-bottom y-group-item" placeholder="Bacon">
   <button type="submit" class="button-blue">Pancake</button>
 </form>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;sm-col-6&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Username<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width mb0 field-light rounded-top no-border-bottom&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Username&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width mb0 field-light not-rounded no-border-bottom&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Password&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Pancakes<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width mb0 field-light rounded-top y-group-item&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Pancakes&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Making<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width mb0 field-light not-rounded y-group-item&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Making&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Bacon<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width field-light rounded-bottom&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Bacon&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width field-light rounded-bottom y-group-item&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Bacon&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Pancake<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
+      <p>The grid system can also be used to control button or input group widths.</p>
       
 <div data-include-example="docs/examples/input-group-horizontal.html" class="Example">
 <div class="Example_rendered">
-<form class="table">
-  <div class="table-cell">
-    <label class="hide">Username</label>
-    <input type="text" class="block full-width mb0 field-light rounded-left no-border-right" placeholder="Username">
-  </div>
-  <div class="table-cell">
-    <label class="hide">Password</label>
-    <input type="password" class="block full-width mb0 field-light not-rounded no-border-right" placeholder="Password">
-  </div>
-  <div class="table-cell nowrap">
-    <button type="submit" class="block full-width button-blue rounded-right">Sign In</button>
-  </div>
+<form class="clearfix">
+  <label class="hide">Bacon</label>
+  <input type="text" class="col col-4 md-col-5 mb0 field-light rounded-left x-group-item" placeholder="Bacon">
+  <label class="hide">Pancakes</label>
+  <input type="password" class="col col-4 md-col-5 mb0 field-light not-rounded x-group-item" placeholder="Pancakes">
+  <button type="submit" class="col col-4 md-col-2 button-blue rounded-right">Pancake</button>
 </form>
 </div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;table&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Username<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width mb0 field-light rounded-left no-border-right&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Username&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width mb0 field-light not-rounded no-border-right&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Password&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table-cell nowrap&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width button-blue rounded-right&quot;</span><span class="nt">&gt;</span>Sign In<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+<div class="highlight Example_code"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Bacon<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;col col-4 md-col-5 mb0 field-light rounded-left x-group-item&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Bacon&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Pancakes<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;col col-4 md-col-5 mb0 field-light not-rounded x-group-item&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Pancakes&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;col col-4 md-col-2 button-blue rounded-right&quot;</span><span class="nt">&gt;</span>Pancake<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
@@ -207,6 +217,19 @@
 
     <section id="dropdowns" class="py2">
       <h1>Dropdowns</h1>
+      <p>
+        Dropdown menus are used to group similar, secondary or sensitive actions
+        behind a two-step progressive disclosure,
+        while conserving screen real estate.
+        Dropdowns can be created with basic positioning utilities.
+      </p>
+      <p>
+        The wrapping container uses relative positioning to anchor the dropdown body.
+        An invisible fixed position element is used as an overlay to dismiss the dropdown.
+        The dropdown body uses absolute positioning and margin top to align with the trigger element,
+        without affecting the document flow.
+        Be sure dropdowns don&#x2019;t expand beyond the viewport when used near edges or at small screen sizes.
+      </p>
       
 <div data-include-example="docs/examples/dropdown.html" class="Example">
 <div class="Example_rendered">
@@ -241,6 +264,12 @@
 
     <section id="navigation" class="py2">
       <h1>Navigation</h1>
+      <p>
+        In HTML, navigation is essentially just groups of links.
+        By using the same styles as buttons,
+        you can ensure that navigation links are evenly spaced and have large, easy-to-hit targets.
+        Negative margin utilities can help line up text elements with other elements on the page.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/nav-basic.html">
 <div class="Example_rendered">
@@ -259,6 +288,11 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>
+        The table object can be used to create justified navigation.
+        Be sure to test your specific navigation across a range of devices to ensure that 
+        labels fit within the viewport.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/nav-justified.html">
 <div class="Example_rendered">
@@ -293,6 +327,7 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>To stack navigation, use the <code>.block</code> utility.</p>
       
 <div class="mb2 Example" data-include-example="docs/examples/nav-stacked.html">
 <div class="Example_rendered">
@@ -311,6 +346,10 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>
+        Use the <code>.button-nav-tab</code> color style to create tabbed navigation.
+        This only works horizontally, so ensure your navigation fits within a range of viewport widths.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/nav-tabs.html">
 <div class="Example_rendered">
@@ -327,6 +366,7 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>Use the table object to justify tabbed navigation.</p>
       
 <div class="mb2 Example" data-include-example="docs/examples/nav-tabs-table.html">
 <div class="Example_rendered">
@@ -343,17 +383,18 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>Standard color styles can be applied to create a variety of navigation styles.</p>
       
 <div class="mb2 Example" data-include-example="docs/examples/nav-bordered.html">
 <div class="Example_rendered">
-<div class="sm-col-6 border rounded">
+<div class="sm-col-6 bg-white border rounded">
   <a href="#!" class="button block button-nav-light border-bottom dark-gray">Burgers</a>
   <a href="#!" class="button block button-nav-light border-bottom">Fries</a>
   <a href="#!" class="button block button-nav-light border-bottom">Shakes</a>
   <a href="#!" class="button block button-nav-light">Onion Rings</a>
 </div>
 </div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col-6 border rounded&quot;</span><span class="nt">&gt;</span>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col-6 bg-white border rounded&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light border-bottom dark-gray&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light border-bottom&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light border-bottom&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
@@ -361,6 +402,7 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>The <code>.button-blue</code> style can be used to create a pill navigation.</p>
       
 <div class="mb2 Example" data-include-example="docs/examples/nav-pills.html">
 <div class="Example_rendered">
@@ -379,8 +421,12 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>
+        If you&#x2019;d like to wrap your navigation in a <code>ul</code> use the <code>.list-reset</code>
+        style to remove bullets and padding.
+      </p>
       
-<div class="mb2 Example" data-include-example="docs/examples/nav-ul.html">
+<div data-include-example="docs/examples/nav-ul.html" class="Example">
 <div class="Example_rendered">
 <ul class="list-reset mxn1 mb0">
   <li class="inline-block">
@@ -417,6 +463,10 @@
 
     <section id="breadcrumbs" class="py2">
       <h1>Breadcrumbs</h1>
+      <p>
+        Breadcrumbs are a common and well-understood wayfinding pattern used in multi-level hierarchies.
+        Stylistically, these are essentially the same as navigation, but with separators between items.
+      </p>
       
 <div data-include-example="docs/examples/breadcrumbs.html" class="Example">
 <div class="Example_rendered">
@@ -447,6 +497,11 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>
+        Note: this example uses
+        <a href="http://jxnblk.github.io/geomicons-open">Geomicons Open</a>
+        for the icons.
+      </p>
     </section>
 
     <section id="pagination" class="py2">
@@ -574,11 +629,11 @@
 <div class="Example_rendered">
 <div class="clearfix mb2 white bg-dark-gray">
   <div class="left">
-    <a href="#!" class="button py1 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button py1 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
-    <a href="#!" class="button py1 m0 button-nav-dark">My Account</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
   </div>
   <div class="clearfix sm-hide"></div>
   <div class="overflow-hidden px2 py1">
@@ -588,11 +643,11 @@
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix mb2 white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>My Account<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>My Account<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix sm-hide&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden px2 py1&quot;</span><span class="nt">&gt;</span>
@@ -603,11 +658,11 @@
 </div>
       <div class="clearfix mb2 white bg-blue">
   <div class="left">
-    <a href="#!" class="button py1 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button py1 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
-    <a href="#!" class="button py1 m0 button-nav-dark">My Account</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
   </div>
   <div class="clearfix sm-hide"></div>
   <div class="overflow-hidden px2 py1">
@@ -617,11 +672,11 @@
 
 <div class="clearfix mb2 white bg-mid-gray">
   <div class="left">
-    <a href="#!" class="button py1 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button py1 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
-    <a href="#!" class="button py1 m0 button-nav-dark">My Account</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
   </div>
   <div class="clearfix sm-hide"></div>
   <div class="overflow-hidden px2 py1">
@@ -631,11 +686,11 @@
 
 <div class="clearfix mb2 white bg-green">
   <div class="left">
-    <a href="#!" class="button py1 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button py1 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
-    <a href="#!" class="button py1 m0 button-nav-dark">My Account</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
   </div>
   <div class="clearfix sm-hide"></div>
   <div class="overflow-hidden px2 py1">
@@ -645,11 +700,11 @@
 
 <div class="clearfix mb2 white bg-red">
   <div class="left">
-    <a href="#!" class="button py1 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button py1 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
-    <a href="#!" class="button py1 m0 button-nav-dark">My Account</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
   </div>
   <div class="clearfix sm-hide"></div>
   <div class="overflow-hidden px2 py1">
@@ -663,14 +718,14 @@
 <div class="Example_rendered">
 <div class="clearfix white bg-dark-gray">
   <div class="left">
-    <a href="#!" class="button py1 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button py1 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
     <div id="account-menu" class="inline-block disclosure-group" data-disclosure="">
       <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
       <div class="relative">
-        <a href="#!" class="button py1 m0 button-nav-dark">My Account &#x25BE;</a>
+        <a href="#!" class="button py2 m0 button-nav-dark">My Account &#x25BE;</a>
         <div class="disclosure-show absolute right-0 nowrap bg-white rounded" style="min-width:128px">
           <ul class="h5 list-reset mb0">
             <li><a href="#!" class="button block button-nav-light">Profile</a></li>
@@ -690,14 +745,14 @@
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;inline-block disclosure-group&quot;</span> <span class="na">data-disclosure</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show fixed top-0 right-0 bottom-0 left-0&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>My Account <span class="ni">&amp;#9662;</span><span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>My Account <span class="ni">&amp;#9662;</span><span class="nt">&lt;/a&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show absolute right-0 nowrap bg-white rounded&quot;</span> <span class="na">style=</span><span class="s">&quot;min-width:128px&quot;</span><span class="nt">&gt;</span>
           <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;h5 list-reset mb0&quot;</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -719,17 +774,17 @@
 <div class="Example_rendered">
 <div class="relative clearfix white bg-dark-gray">
   <div class="left">
-    <a href="#!" class="button py1 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
   </div>
   <div class="right">
     <div id="account-menu" class="right inline-block disclosure-group" data-disclosure="">
       <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0 md-hide"></div>
-      <a href="#!" class="button py1 m0 button-nav-dark md-hide">Menu &#x25BE;</a>
+      <a href="#!" class="button py2 m0 button-nav-dark md-hide">Menu &#x25BE;</a>
       <div class="disclosure-show absolute right-0 left-0 clearfix nowrap bg-dark-gray rounded-bottom md-static md-show">
-        <a href="#!" class="md-col button block py1 button-nav-dark">Hot Dogs</a>
-        <a href="#!" class="md-col button block py1 button-nav-dark">Fries</a>
-        <a href="#!" class="md-col button block py1 button-nav-dark">Shakes</a>
-        <a href="#!" class="md-col button block py1 button-nav-dark">Onion Rings</a>
+        <a href="#!" class="md-col button block py2 button-nav-dark">Hot Dogs</a>
+        <a href="#!" class="md-col button block py2 button-nav-dark">Fries</a>
+        <a href="#!" class="md-col button block py2 button-nav-dark">Shakes</a>
+        <a href="#!" class="md-col button block py2 button-nav-dark">Onion Rings</a>
       </div>
     </div>
   </div>
@@ -739,17 +794,17 @@
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative clearfix white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;right inline-block disclosure-group&quot;</span> <span class="na">data-disclosure</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show fixed top-0 right-0 bottom-0 left-0 md-hide&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark md-hide&quot;</span><span class="nt">&gt;</span>Menu <span class="ni">&amp;#9662;</span><span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark md-hide&quot;</span><span class="nt">&gt;</span>Menu <span class="ni">&amp;#9662;</span><span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show absolute right-0 left-0 clearfix nowrap bg-dark-gray rounded-bottom md-static md-show&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;md-col button block py1 button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;md-col button block py1 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;md-col button block py1 button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;md-col button block py1 button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;md-col button block py2 button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;md-col button block py2 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;md-col button block py2 button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;md-col button block py2 button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -761,24 +816,24 @@
 <div class="Example_rendered">
 <div class="relative clearfix white bg-dark-gray">
   <div class="left">
-    <a href="#!" class="button py1 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
   </div>
   <div class="right md-show">
-    <a href="#!" class="button py1 m0 button-nav-dark">Hot Dogs</a>
-    <a href="#!" class="button py1 m0 button-nav-dark">Fries</a>
-    <a href="#!" class="button py1 m0 button-nav-dark">Shakes</a>
-    <a href="#!" class="button py1 m0 button-nav-dark">Onion Rings</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Hot Dogs</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Shakes</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Onion Rings</a>
   </div>
   <div class="right md-hide">
     <div id="account-menu" class="inline-block disclosure-group" data-disclosure="">
       <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
-      <a href="#!" class="button py1 m0 button-nav-dark">Menu &#x25BE;</a>
+      <a href="#!" class="button py2 m0 button-nav-dark">Menu &#x25BE;</a>
       <div class="disclosure-show absolute right-0 left-0 nowrap bg-mid-gray rounded-bottom">
-        <ul class="h5 list-reset clearfix py1 mb0">
-          <li class="sm-col sm-col-3"><a href="#!" class="button block button-nav-dark">Hot Dogs</a></li>
-          <li class="sm-col sm-col-3"><a href="#!" class="button block button-nav-dark">Fries</a></li>
-          <li class="sm-col sm-col-3"><a href="#!" class="button block button-nav-dark">Shakes</a></li>
-          <li class="sm-col sm-col-3"><a href="#!" class="button block button-nav-dark">Onion Rings</a></li>
+        <ul class="h5 list-reset py1 mb0">
+          <li><a href="#!" class="button block button-nav-dark">Hot Dogs</a></li>
+          <li><a href="#!" class="button block button-nav-dark">Fries</a></li>
+          <li><a href="#!" class="button block button-nav-dark">Shakes</a></li>
+          <li><a href="#!" class="button block button-nav-dark">Onion Rings</a></li>
         </ul>
       </div>
     </div>
@@ -789,24 +844,24 @@
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative clearfix white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right md-show&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right md-hide&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;inline-block disclosure-group&quot;</span> <span class="na">data-disclosure</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show fixed top-0 right-0 bottom-0 left-0&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Menu <span class="ni">&amp;#9662;</span><span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Menu <span class="ni">&amp;#9662;</span><span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show absolute right-0 left-0 nowrap bg-mid-gray rounded-bottom&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;h5 list-reset clearfix py1 mb0&quot;</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-3&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-3&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-3&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;sm-col sm-col-3&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;h5 list-reset py1 mb0&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
         <span class="nt">&lt;/ul&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -819,18 +874,18 @@
 <div class="Example_rendered">
 <div class="relative clearfix white bg-dark-gray">
   <div class="left">
-    <a href="#!" class="button py1 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
   </div>
   <div class="left md-show">
-    <a href="#!" class="button py1 m0 button-nav-dark">Hot Dogs</a>
-    <a href="#!" class="button py1 m0 button-nav-dark">Fries</a>
-    <a href="#!" class="button py1 m0 button-nav-dark">Shakes</a>
-    <a href="#!" class="button py1 m0 button-nav-dark">Onion Rings</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Hot Dogs</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Shakes</a>
+    <a href="#!" class="button py2 m0 button-nav-dark">Onion Rings</a>
   </div>
   <div class="right">
     <div id="account-menu" class="inline-block disclosure-group" data-disclosure="">
       <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
-      <a href="#!" class="button py1 m0 button-nav-dark">
+      <a href="#!" class="button py2 m0 button-nav-dark">
         <span class="md-hide">Menu &#x25BE;</span>
         <span class="md-show">More &#x25BE;</span>
       </a>
@@ -854,18 +909,18 @@
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative clearfix white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left md-show&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;inline-block disclosure-group&quot;</span> <span class="na">data-disclosure</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show fixed top-0 right-0 bottom-0 left-0&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py1 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;md-hide&quot;</span><span class="nt">&gt;</span>Menu <span class="ni">&amp;#9662;</span><span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;md-show&quot;</span><span class="nt">&gt;</span>More <span class="ni">&amp;#9662;</span><span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
@@ -1022,41 +1077,41 @@
 <div class="mb2 Example" data-include-example="docs/examples/badges-headings.html">
 <div class="Example_rendered">
 <h1>Hamburger
-  <span class="h2 button button-small white bg-red rounded">Fries</span>
+  <span class="h2 inline-block button-small white bg-red rounded">Fries</span>
 </h1>
 <h2>Hamburger
-  <span class="h3 button button-small white bg-red rounded">Fries</span>
+  <span class="h3 inline-block button-small white bg-red rounded">Fries</span>
 </h2>
 <h3>Hamburger
-  <span class="h4 button button-small white bg-red rounded">Fries</span>
+  <span class="h4 inline-block button-small white bg-red rounded">Fries</span>
 </h3>
 <h4>Hamburger
-  <span class="button button-small white bg-red rounded">Fries</span>
+  <span class="inline-block button-small white bg-red rounded">Fries</span>
 </h4>
 <h5>Hamburger
-  <span class="button button-small white bg-red rounded">Fries</span>
+  <span class="inline-block button-small white bg-red rounded">Fries</span>
 </h5>
 <h6>Hamburger
-  <span class="button button-small white bg-red rounded">Fries</span>
+  <span class="inline-block button-small white bg-red rounded">Fries</span>
 </h6>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;h1&gt;</span>Hamburger
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h2 button button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h2 inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;h2&gt;</span>Hamburger
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h3 button button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h3 inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/h2&gt;</span>
 <span class="nt">&lt;h3&gt;</span>Hamburger
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h4 button button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h4 inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/h3&gt;</span>
 <span class="nt">&lt;h4&gt;</span>Hamburger
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/h4&gt;</span>
 <span class="nt">&lt;h5&gt;</span>Hamburger
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/h5&gt;</span>
 <span class="nt">&lt;h6&gt;</span>Hamburger
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/h6&gt;</span>
 </pre></div>
 </div>
@@ -1064,21 +1119,21 @@
 <div data-include-example="docs/examples/badges-colors.html" class="Example">
 <div class="Example_rendered">
 <div>
-  <span class="button button-small white bg-blue rounded">Blue</span>
-  <span class="button button-small white bg-red rounded">Red</span>
-  <span class="button button-small bg-yellow rounded">Yellow</span>
-  <span class="button button-small white bg-green rounded">Green</span>
-  <span class="button button-small white bg-mid-gray rounded">Mid Gray</span>
-  <span class="h6 caps button button-small border rounded">Bordered</span>
+  <span class="inline-block button-small white bg-blue rounded">Blue</span>
+  <span class="inline-block button-small white bg-red rounded">Red</span>
+  <span class="inline-block button-small bg-yellow rounded">Yellow</span>
+  <span class="inline-block button-small white bg-green rounded">Green</span>
+  <span class="inline-block button-small white bg-mid-gray rounded">Mid Gray</span>
+  <span class="inline-block button-small border rounded">Bordered</span>
 </div>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button button-small white bg-blue rounded&quot;</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button button-small bg-yellow rounded&quot;</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button button-small white bg-green rounded&quot;</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button button-small white bg-mid-gray rounded&quot;</span><span class="nt">&gt;</span>Mid Gray<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h6 caps button button-small border rounded&quot;</span><span class="nt">&gt;</span>Bordered<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-blue rounded&quot;</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small bg-yellow rounded&quot;</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-green rounded&quot;</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-mid-gray rounded&quot;</span><span class="nt">&gt;</span>Mid Gray<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small border rounded&quot;</span><span class="nt">&gt;</span>Bordered<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -1129,12 +1184,12 @@
     </div>
     <div class="sm-table-cell full-width py2 xs-center">
       <div class="h5 bold px1">
-        <a href="/" class="button button-narrow" data-nav-item="">Home</a>
-        <a href="/docs" class="button button-narrow" data-nav-item="">Docs</a>
+        <a href="/" class="button button-narrow button-nav-light" data-nav-item="">Home</a>
+        <a href="/docs" class="button button-narrow button-nav-light" data-nav-item="">Docs</a>
         <div class="inline-block">
-          <a href="/docs/getting-started" class="button button-narrow sm-show" data-nav-item="">Download</a>
+          <a href="/docs/getting-started" class="button button-narrow sm-show button-nav-light" data-nav-item="">Download</a>
         </div>
-        <a href="//github.com/jxnblk/basscss" class="button button-narrow">Github</a>
+        <a href="//github.com/jxnblk/basscss" class="button button-narrow button-nav-light">Github</a>
       </div>
     </div>
     <div class="sm-table-cell py2 nowrap right-align">

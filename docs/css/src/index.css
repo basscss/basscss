@@ -26,6 +26,8 @@
 @import "./color/colors";
 @import "./color/button-bright-blue-outline";
 
+@import "./components/example";
+
 /* Custom Media Queries */
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);

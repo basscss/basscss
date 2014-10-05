@@ -536,10 +536,6 @@ td {
   }
 }
 
-.hide {
-  display: none !important;
-}
-
 @media (min-width: 40em) {
   .sm-hide {
     display: none !important;
@@ -556,6 +552,18 @@ td {
   .lg-hide {
     display: none !important;
   }
+}
+
+.display-none {
+  display: none !important;
+}
+
+.hide {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /*
