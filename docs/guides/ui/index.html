@@ -28,7 +28,7 @@
   <div class="sm-col sm-col-9 px2 py2">
 
     <p class="h3">
-      Basscss is well suited to create many different user interface elements out of the box.
+      Basscss can be used to create many different user interface elements out of the box.
       With utility styles and a thoughtfully-architected templating system,
       you can keep CSS bloat to a minimum, while making iterative design changes to partials and components.
       Don&#x2019;t try to make CSS do a templating engine&#x2019;s job.
@@ -468,7 +468,7 @@
         Stylistically, these are essentially the same as navigation, but with separators between items.
       </p>
       
-<div data-include-example="docs/examples/breadcrumbs.html" class="Example">
+<div class="mb2 Example" data-include-example="docs/examples/breadcrumbs.html">
 <div class="Example_rendered">
 <div class="mxn1">
   <a href="#!" class="button button-narrow">Home</a> /
@@ -498,84 +498,92 @@
 </pre></div>
 </div>
       <p>
-        Note: this example uses
-        <a href="http://jxnblk.github.io/geomicons-open">Geomicons Open</a>
-        for the icons.
+        Note: the icons used in this example are from
+        <a href="http://jxnblk.github.io/geomicons-open">Geomicons Open</a>.
       </p>
     </section>
 
     <section id="pagination" class="py2">
       <h1>Pagination</h1>
+      <p>
+        Pagination is used to split up large lists in a user-friendly way and allows for deep linking.
+        Use a combination of layout utilities and button styles to create navigation that suites your design.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/pagination.html">
 <div class="Example_rendered">
 <div class="clearfix">
-  <a href="#!" class="button left">
+  <a href="#!" class="left button button-nav-light">
     <svg class="icon" data-icon="chevron-left"></svg>
     Previous
   </a>
-  <a href="#!" class="button right">
+  <a href="#!" class="right button button-nav-light">
     Next
     <svg class="icon" data-icon="chevron-right"></svg>
   </a>
 </div>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button left&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;left button button-nav-light&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;icon&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;chevron-left&quot;</span><span class="nt">&gt;&lt;/svg&gt;</span>
     Previous
   <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button right&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;right button button-nav-light&quot;</span><span class="nt">&gt;</span>
     Next
     <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;icon&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;chevron-right&quot;</span><span class="nt">&gt;&lt;/svg&gt;</span>
   <span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>
+        Responsive state utilities can be used to progressively enhance pagination
+        with numbers on devices with wider viewports.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/pagination-numbers.html">
 <div class="Example_rendered">
 <div class="center">
   <div class="inline-block clearfix">
-    <a href="#!" class="left button">
+    <a href="#!" class="left button button-nav-light">
       <svg class="icon" data-icon="chevron-left"></svg>
       Previous
     </a>
-    <a href="#!" class="right button">
+    <a href="#!" class="right button button-nav-light">
       Next
       <svg class="icon" data-icon="chevron-right"></svg>
     </a>
     <div class="overflow-hidden sm-show">
-      <a href="#!" class="button dark-gray">1</a>
-      <a href="#!" class="button">2</a>
-      <a href="#!" class="button">3</a>
-      <a href="#!" class="button">4</a>
-      <a href="#!" class="button">5</a>
+      <a href="#!" class="button button-nav-light is-active">1</a>
+      <a href="#!" class="button button-nav-light">2</a>
+      <a href="#!" class="button button-nav-light">3</a>
+      <a href="#!" class="button button-nav-light">4</a>
+      <a href="#!" class="button button-nav-light">5</a>
     </div>
   </div>
 </div>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;inline-block clearfix&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;left button&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;left button button-nav-light&quot;</span><span class="nt">&gt;</span>
       <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;icon&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;chevron-left&quot;</span><span class="nt">&gt;&lt;/svg&gt;</span>
       Previous
     <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;right button&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;right button button-nav-light&quot;</span><span class="nt">&gt;</span>
       Next
       <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;icon&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;chevron-right&quot;</span><span class="nt">&gt;&lt;/svg&gt;</span>
     <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden sm-show&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button dark-gray&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-nav-light is-active&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-nav-light&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-nav-light&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-nav-light&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-nav-light&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>Standard color styles can be used to control the appearance.</p>
       
 <div data-include-example="docs/examples/pagination-bordered.html" class="Example">
 <div class="Example_rendered">
@@ -624,13 +632,25 @@
 
     <section id="navbars" class="py2">
       <h1>Navbars</h1>
+      <p>
+        Navbars are used to visually group global or sub navigation
+        and to separate actions and navigation from content.
+        Using a combination of layout utilities and color styles,
+        you can create a wide range of navbars that are simple to customize and update.
+      </p>
+      <p>
+        This example uses a double sided media object to create a flexible center with a search input
+        that stacks at narrow viewport widths.
+        By applying the <code>.py2</code> utility to the link buttons,
+        they become the height of normal buttons and inputs plus <code>.py1</code>.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/navbar-dark.html">
 <div class="Example_rendered">
 <div class="clearfix mb2 white bg-dark-gray">
   <div class="left">
     <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
     <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
@@ -644,7 +664,7 @@
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix mb2 white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>My Account<span class="nt">&lt;/a&gt;</span>
@@ -656,10 +676,14 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>
+        By using rgba-based color utilities, the color can quickly be changed
+        using background color utilities.
+      </p>
       <div class="clearfix mb2 white bg-blue">
   <div class="left">
     <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
     <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
@@ -673,7 +697,7 @@
 <div class="clearfix mb2 white bg-mid-gray">
   <div class="left">
     <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
     <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
@@ -687,7 +711,7 @@
 <div class="clearfix mb2 white bg-green">
   <div class="left">
     <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
     <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
@@ -701,7 +725,7 @@
 <div class="clearfix mb2 white bg-red">
   <div class="left">
     <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
     <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
@@ -713,13 +737,17 @@
 </div>
 
 
+      <p>
+        Because Basscss is built with inter-operable styles,
+        things like a user account dropdown can be added anywhere in the navbar.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/navbar-dropdown.html">
 <div class="Example_rendered">
 <div class="clearfix white bg-dark-gray">
   <div class="left">
     <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
     <div id="account-menu" class="inline-block disclosure-group" data-disclosure="">
@@ -746,7 +774,7 @@
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;inline-block disclosure-group&quot;</span> <span class="na">data-disclosure</span><span class="nt">&gt;</span>
@@ -769,6 +797,10 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>
+        Using a combination of responsive utilities, you can create a navbar that collapses
+        at narrow viewport widths. Resize the viewport to see the result.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/navbar-collapsing.html">
 <div class="Example_rendered">
@@ -789,8 +821,12 @@
     </div>
   </div>
 </div>
-
-
+<style>
+/* Responsive positioning extension example */
+@media (min-width:52em) {
+  .md-static { position: static }
+}
+</style>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative clearfix white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
@@ -809,66 +845,22 @@
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="c">/* Responsive positioning extension example */</span>
+<span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="nd">:52em</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.md-static</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">static</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
 </pre></div>
 </div>
-      
-<div class="mb2 Example" data-include-example="docs/examples/navbar-disclosure.html">
-<div class="Example_rendered">
-<div class="relative clearfix white bg-dark-gray">
-  <div class="left">
-    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
-  </div>
-  <div class="right md-show">
-    <a href="#!" class="button py2 m0 button-nav-dark">Hot Dogs</a>
-    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
-    <a href="#!" class="button py2 m0 button-nav-dark">Shakes</a>
-    <a href="#!" class="button py2 m0 button-nav-dark">Onion Rings</a>
-  </div>
-  <div class="right md-hide">
-    <div id="account-menu" class="inline-block disclosure-group" data-disclosure="">
-      <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
-      <a href="#!" class="button py2 m0 button-nav-dark">Menu &#x25BE;</a>
-      <div class="disclosure-show absolute right-0 left-0 nowrap bg-mid-gray rounded-bottom">
-        <ul class="h5 list-reset py1 mb0">
-          <li><a href="#!" class="button block button-nav-dark">Hot Dogs</a></li>
-          <li><a href="#!" class="button block button-nav-dark">Fries</a></li>
-          <li><a href="#!" class="button block button-nav-dark">Shakes</a></li>
-          <li><a href="#!" class="button block button-nav-dark">Onion Rings</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative clearfix white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right md-show&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right md-hide&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;inline-block disclosure-group&quot;</span> <span class="na">data-disclosure</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show fixed top-0 right-0 bottom-0 left-0&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Menu <span class="ni">&amp;#9662;</span><span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show absolute right-0 left-0 nowrap bg-mid-gray rounded-bottom&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;h5 list-reset py1 mb0&quot;</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
+      <!--
+      <div class="mb2" data-include-example="docs/examples/navbar-disclosure.html"></div>
+      -->
+      <p>
+        More complex
+        <a href="http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/#priority-plus">Priority Plus</a>
+        style navigations can also be created using responsive utilities.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/navbar-disclosure-complex.html">
 <div class="Example_rendered">
@@ -877,10 +869,10 @@
     <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
   </div>
   <div class="left md-show">
-    <a href="#!" class="button py2 m0 button-nav-dark">Hot Dogs</a>
-    <a href="#!" class="button py2 m0 button-nav-dark">Fries</a>
-    <a href="#!" class="button py2 m0 button-nav-dark">Shakes</a>
-    <a href="#!" class="button py2 m0 button-nav-dark">Onion Rings</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Hot Dogs</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Shakes</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Onion Rings</a>
   </div>
   <div class="right">
     <div id="account-menu" class="inline-block disclosure-group" data-disclosure="">
@@ -904,6 +896,12 @@
     </div>
   </div>
 </div>
+<style>
+/* Responsive positioning extension example */
+@media (max-width:40em) {
+  .xs-left-0 { left: 0 }
+}
+</style>
 
 
 </div>
@@ -912,10 +910,10 @@
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left md-show&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;inline-block disclosure-group&quot;</span> <span class="na">data-disclosure</span><span class="nt">&gt;</span>
@@ -939,6 +937,12 @@
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="c">/* Responsive positioning extension example */</span>
+<span class="k">@media</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:40em</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.xs-left-0</span> <span class="p">{</span> <span class="k">left</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
 </pre></div>
 </div>
     </section>

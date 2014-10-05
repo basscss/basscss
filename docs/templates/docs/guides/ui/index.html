@@ -17,7 +17,7 @@
   <div class="sm-col sm-col-9 px2 py2">
 
     <p class="h3">
-      Basscss is well suited to create many different user interface elements out of the box.
+      Basscss can be used to create many different user interface elements out of the box.
       With utility styles and a thoughtfully-architected templating system,
       you can keep CSS bloat to a minimum, while making iterative design changes to partials and components.
       Don’t try to make CSS do a templating engine’s job.
@@ -137,28 +137,67 @@
         Breadcrumbs are a common and well-understood wayfinding pattern used in multi-level hierarchies.
         Stylistically, these are essentially the same as navigation, but with separators between items.
       </p>
-      <div data-include-example="docs/examples/breadcrumbs.html"></div>
+      <div class="mb2" data-include-example="docs/examples/breadcrumbs.html"></div>
       <p>
-        Note: this example uses
-        <a href="http://jxnblk.github.io/geomicons-open">Geomicons Open</a>
-        for the icons.
+        Note: the icons used in this example are from
+        <a href="http://jxnblk.github.io/geomicons-open">Geomicons Open</a>.
       </p>
     </section>
 
     <section id="pagination" class="py2">
       <h1>Pagination</h1>
+      <p>
+        Pagination is used to split up large lists in a user-friendly way and allows for deep linking.
+        Use a combination of layout utilities and button styles to create navigation that suites your design.
+      </p>
       <div class="mb2" data-include-example="docs/examples/pagination.html"></div>
+      <p>
+        Responsive state utilities can be used to progressively enhance pagination
+        with numbers on devices with wider viewports.
+      </p>
       <div class="mb2" data-include-example="docs/examples/pagination-numbers.html"></div>
+      <p>Standard color styles can be used to control the appearance.</p>
       <div data-include-example="docs/examples/pagination-bordered.html"></div>
     </section>
 
     <section id="navbars" class="py2">
       <h1>Navbars</h1>
+      <p>
+        Navbars are used to visually group global or sub navigation
+        and to separate actions and navigation from content.
+        Using a combination of layout utilities and color styles,
+        you can create a wide range of navbars that are simple to customize and update.
+      </p>
+      <p>
+        This example uses a double sided media object to create a flexible center with a search input
+        that stacks at narrow viewport widths.
+        By applying the <code>.py2</code> utility to the link buttons,
+        they become the height of normal buttons and inputs plus <code>.py1</code>.
+      </p>
       <div class="mb2" data-include-example="docs/examples/navbar-dark.html"></div>
-      <div data-include="docs/examples/navbar-colors.html"></div>
+      <p>
+        By using rgba-based color utilities, the color can quickly be changed
+        using background color utilities.
+      </p>
+      <div class="mb2" data-include="docs/examples/navbar-colors.html"></div>
+      <p>
+        Because Basscss is built with inter-operable styles,
+        things like a user account dropdown can be added anywhere in the navbar.
+      </p>
       <div class="mb2" data-include-example="docs/examples/navbar-dropdown.html"></div>
+      <p>
+        Using a combination of responsive utilities, you can create a navbar that collapses
+        at narrow viewport widths. Resize the viewport to see the result.
+      </p>
       <div class="mb2" data-include-example="docs/examples/navbar-collapsing.html"></div>
+      <!--
       <div class="mb2" data-include-example="docs/examples/navbar-disclosure.html"></div>
+      -->
+      <p>
+        More complex
+        <a href="http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/#priority-plus">Priority Plus</a>
+        style navigations can also be created using responsive utilities.
+      </p>
       <div class="mb2" data-include-example="docs/examples/navbar-disclosure-complex.html"></div>
     </section>
 
