@@ -204,6 +204,7 @@ button,
   margin: 0;
   height: auto;
   border: 1px solid transparent;
+  -webkit-appearance: none;
 }
 
 ::-moz-focus-inner {
