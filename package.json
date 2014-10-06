@@ -9,7 +9,8 @@
     "basscss-grid": "latest",
     "basscss-table-object": "latest",
     "basscss-positions": "latest",
-    "basscss-color-basic": "latest"
+    "basscss-color-basic": "latest",
+    "basscss-ui-utilities": "latest"
   },
   "repository": {
     "type": "git",

@@ -23,11 +23,6 @@
       Don’t try to make CSS do a templating engine’s job.
     </p>
 
-    <p class="red">
-      Note: examples in this guide use the basscss-ui-utilities module,
-      which is not currently part of the main Basscss stylesheet.
-    </p>
-
     <section id="button-sizes" class="py2">
       <h1>Button Sizes</h1>
       <p>Button sizes can be adjusted with font size utilities.</p>
@@ -39,13 +34,6 @@
       </p>
       <div data-include-example="docs/examples/button-sizes.html"></div>
     </section>
-
-    <!--
-    <section id="field-sizes" class="py2">
-      <h1>Form Field Sizes</h1>
-      <div class="mb2" data-include-example="docs/examples/field-sizes.html"></div>
-    </section>
-    -->
 
     <section id="button-groups" class="py2">
       <h1>Button Groups</h1>
@@ -76,24 +64,6 @@
       <div class="mb2" data-include-example="docs/examples/input-group-vertical.html"></div>
       <p>The grid system can also be used to control button or input group widths.</p>
       <div data-include-example="docs/examples/input-group-horizontal.html"></div>
-    </section>
-
-    <section id="dropdowns" class="py2">
-      <h1>Dropdowns</h1>
-      <p>
-        Dropdown menus are used to group similar, secondary or sensitive actions
-        behind a two-step progressive disclosure,
-        while conserving screen real estate.
-        Dropdowns can be created with basic positioning utilities.
-      </p>
-      <p>
-        The wrapping container uses relative positioning to anchor the dropdown body.
-        An invisible fixed position element is used as an overlay to dismiss the dropdown.
-        The dropdown body uses absolute positioning and margin top to align with the trigger element,
-        without affecting the document flow.
-        Be sure dropdowns don’t expand beyond the viewport when used near edges or at small screen sizes.
-      </p>
-      <div data-include-example="docs/examples/dropdown.html"></div>
     </section>
 
     <section id="navigation" class="py2">
@@ -160,6 +130,28 @@
       <div data-include-example="docs/examples/pagination-bordered.html"></div>
     </section>
 
+    <section id="dropdowns" class="py2">
+      <h1>Dropdowns</h1>
+      <p>
+        Dropdown menus are used to group similar, secondary or sensitive actions
+        behind a two-step progressive disclosure,
+        while conserving screen real estate.
+        Dropdowns can be created with basic positioning utilities.
+      </p>
+      <p>
+        The wrapping container uses relative positioning to anchor the dropdown body.
+        An invisible fixed position element is used as an overlay to dismiss the dropdown.
+        The dropdown body uses absolute positioning and margin top to align with the trigger element,
+        without affecting the document flow.
+        Be sure dropdowns don’t expand beyond the viewport when used near edges or at small screen sizes.
+      </p>
+      <div class="mb2" data-include-example="docs/examples/dropdown.html"></div>
+      <p>
+        Note: this example uses a custom JavaScript function for the disclosure mechanism.
+        Use a similar function, component, or directive in your own JavaScript to control behavior.
+      </p>
+    </section>
+
     <section id="navbars" class="py2">
       <h1>Navbars</h1>
       <p>
@@ -203,7 +195,12 @@
 
     <section id="boxes" class="py2">
       <h1>Boxes</h1>
+      <p>
+        Boxes are used to group content and representations of application resources in indexes.
+        Use combinations of layout utilities and color styles to create boxes.
+      </p>
       <div class="mb2" data-include-example="docs/examples/box.html"></div>
+      <p>To create headers and footers, set padding on nested divs then use color styles to control appearance.</p>
       <div class="mb2" data-include-example="docs/examples/box-header.html"></div>
       <div class="mb2" data-include-example="docs/examples/box-image.html"></div>
       <div class="mb2" data-include-example="docs/examples/box-header-footer.html"></div>
@@ -211,21 +208,30 @@
 
     <section id="flash-messages" class="py2">
       <h1>Flash Messages</h1>
+      <p>
+        Flash messages are used to provide feedback after the user has performed an action.
+        Create custom flash message with utilities and color styles.
+      </p>
       <div data-include-example="docs/examples/flash-messages.html"></div>
     </section>
 
     <section id="badges" class="py2">
       <h1>Badges</h1>
+      <p>
+        Badges are used to represent properties and states and
+        to tease quantities of resources behind navigation links.
+        The button size extension can be used in combination with utilities to create badges.
+      </p>
       <div class="mb2" data-include-example="docs/examples/badges-headings.html"></div>
+      <p>
+        Color semantics can be controlled with color styles
+        to represent different qualities of states.
+      </p>
       <div data-include-example="docs/examples/badges-colors.html"></div>
     </section>
 
-    <!--
-    <section id="tooltips" class="py2">
-      <h1>Tooltips</h1>
-      <div data-include-example="docs/examples/tooltips.html"></div>
+    <section id="cta" class="py2">
     </section>
-    -->
 
   </div>
 
@@ -233,23 +239,14 @@
     <a href="#button-sizes" class="button buttons-nav block">Button Sizes</a>
     <a href="#button-groups" class="button buttons-nav block">Button Groups</a>
     <a href="#input-groups" class="button buttons-nav block">Input Groups</a>
-    <a href="#dropdowns" class="button buttons-nav block">Dropdowns</a>
     <a href="#navigation" class="button buttons-nav block">Navigation</a>
     <a href="#breadcrumbs" class="button buttons-nav block">Breadcrumbs</a>
     <a href="#pagination" class="button buttons-nav block">Pagination</a>
+    <a href="#dropdowns" class="button buttons-nav block">Dropdowns</a>
     <a href="#navbars" class="button buttons-nav block">Navbars</a>
     <a href="#boxes" class="button buttons-nav block">Boxes</a>
     <a href="#flash-messages" class="button buttons-nav block">Flash Messages</a>
     <a href="#badges" class="button buttons-nav block">Badges</a>
-    <!--
-    <a href="#tooltips" class="button buttons-nav block">Tooltips</a>
-    <a href="#form-field-sizes" class="button buttons-nav block">Form Field Sizes</a>
-    <a href="#media-controls" class="button buttons-nav block">Media Controls</a>
-    <a href="#progress-bars" class="button buttons-nav block">Progress Bars</a>
-    <a href="#range-inputs" class="button buttons-nav block">Range Inputs</a>
-    <a href="#popovers" class="button buttons-nav block">Popovers</a>
-    <a href="#modal-overlays" class="button buttons-nav block">Modal Overlays</a>
-    -->
   </div>
 </div>
 

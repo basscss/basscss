@@ -34,11 +34,6 @@
       Don&#x2019;t try to make CSS do a templating engine&#x2019;s job.
     </p>
 
-    <p class="red">
-      Note: examples in this guide use the basscss-ui-utilities module,
-      which is not currently part of the main Basscss stylesheet.
-    </p>
-
     <section id="button-sizes" class="py2">
       <h1>Button Sizes</h1>
       <p>Button sizes can be adjusted with font size utilities.</p>
@@ -75,13 +70,6 @@
 </div>
     </section>
 
-    <!--
-    <section id="field-sizes" class="py2">
-      <h1>Form Field Sizes</h1>
-      <div class="mb2" data-include-example="docs/examples/field-sizes.html"></div>
-    </section>
-    -->
-
     <section id="button-groups" class="py2">
       <h1>Button Groups</h1>
       <p>
@@ -111,14 +99,14 @@
 <div class="Example_rendered">
 <div class="table table-fixed center">
   <a href="#!" class="table-cell button button-blue rounded-left is-active">Burgers</a>
-  <a href="" class="table-cell button button-blue not-rounded">Fries</a>
-  <a href="" class="table-cell button button-blue rounded-right">Shakes</a>
+  <a href="#!" class="table-cell button button-blue not-rounded">Fries</a>
+  <a href="#!" class="table-cell button button-blue rounded-right">Shakes</a>
 </div>
 </div>
 <div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table table-fixed center&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue rounded-left is-active&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue not-rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue rounded-right&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue not-rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue rounded-right&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -211,53 +199,6 @@
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;col col-4 md-col-5 mb0 field-light not-rounded x-group-item&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Pancakes&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;col col-4 md-col-2 button-blue rounded-right&quot;</span><span class="nt">&gt;</span>Pancake<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
-</pre></div>
-</div>
-    </section>
-
-    <section id="dropdowns" class="py2">
-      <h1>Dropdowns</h1>
-      <p>
-        Dropdown menus are used to group similar, secondary or sensitive actions
-        behind a two-step progressive disclosure,
-        while conserving screen real estate.
-        Dropdowns can be created with basic positioning utilities.
-      </p>
-      <p>
-        The wrapping container uses relative positioning to anchor the dropdown body.
-        An invisible fixed position element is used as an overlay to dismiss the dropdown.
-        The dropdown body uses absolute positioning and margin top to align with the trigger element,
-        without affecting the document flow.
-        Be sure dropdowns don&#x2019;t expand beyond the viewport when used near edges or at small screen sizes.
-      </p>
-      
-<div data-include-example="docs/examples/dropdown.html" class="Example">
-<div class="Example_rendered">
-<div class="relative inline-block disclosure-group" data-disclosure="">
-  <button type="button" class="button-blue">
-    Burger &#x25BE;
-  </button>
-  <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
-  <div class="disclosure-show absolute left-0 mt1 nowrap bg-dark-gray rounded">
-    <a href="#!" class="button block button-nav-dark">Rare</a>
-    <a href="#!" class="button block button-nav-dark">Medium Rare</a>
-    <a href="#!" class="button block button-nav-dark">Medium</a>
-    <a href="#!" class="button block button-nav-dark">Well Done</a>
-  </div>
-</div>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative inline-block disclosure-group&quot;</span> <span class="na">data-disclosure</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>
-    Burger <span class="ni">&amp;#9662;</span>
-  <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show fixed top-0 right-0 bottom-0 left-0&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show absolute left-0 mt1 nowrap bg-dark-gray rounded&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Rare<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Medium Rare<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Well Done<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
     </section>
@@ -630,6 +571,57 @@
 </div>
     </section>
 
+    <section id="dropdowns" class="py2">
+      <h1>Dropdowns</h1>
+      <p>
+        Dropdown menus are used to group similar, secondary or sensitive actions
+        behind a two-step progressive disclosure,
+        while conserving screen real estate.
+        Dropdowns can be created with basic positioning utilities.
+      </p>
+      <p>
+        The wrapping container uses relative positioning to anchor the dropdown body.
+        An invisible fixed position element is used as an overlay to dismiss the dropdown.
+        The dropdown body uses absolute positioning and margin top to align with the trigger element,
+        without affecting the document flow.
+        Be sure dropdowns don&#x2019;t expand beyond the viewport when used near edges or at small screen sizes.
+      </p>
+      
+<div class="mb2 Example" data-include-example="docs/examples/dropdown.html">
+<div class="Example_rendered">
+<div class="relative inline-block disclosure-group" data-disclosure="">
+  <button type="button" class="button-blue">
+    Burger &#x25BE;
+  </button>
+  <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
+  <div class="disclosure-show absolute left-0 mt1 nowrap bg-dark-gray rounded">
+    <a href="#!" class="button block button-nav-dark">Rare</a>
+    <a href="#!" class="button block button-nav-dark">Medium Rare</a>
+    <a href="#!" class="button block button-nav-dark">Medium</a>
+    <a href="#!" class="button block button-nav-dark">Well Done</a>
+  </div>
+</div>
+</div>
+<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative inline-block disclosure-group&quot;</span> <span class="na">data-disclosure</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>
+    Burger <span class="ni">&amp;#9662;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show fixed top-0 right-0 bottom-0 left-0&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show absolute left-0 mt1 nowrap bg-dark-gray rounded&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Rare<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Medium Rare<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Well Done<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+      <p>
+        Note: this example uses a custom JavaScript function for the disclosure mechanism.
+        Use a similar function, component, or directive in your own JavaScript to control behavior.
+      </p>
+    </section>
+
     <section id="navbars" class="py2">
       <h1>Navbars</h1>
       <p>
@@ -949,6 +941,10 @@
 
     <section id="boxes" class="py2">
       <h1>Boxes</h1>
+      <p>
+        Boxes are used to group content and representations of application resources in indexes.
+        Use combinations of layout utilities and color styles to create boxes.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/box.html">
 <div class="Example_rendered">
@@ -967,6 +963,7 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      <p>To create headers and footers, set padding on nested divs then use color styles to control appearance.</p>
       
 <div class="mb2 Example" data-include-example="docs/examples/box-header.html">
 <div class="Example_rendered">
@@ -1049,6 +1046,10 @@
 
     <section id="flash-messages" class="py2">
       <h1>Flash Messages</h1>
+      <p>
+        Flash messages are used to provide feedback after the user has performed an action.
+        Create custom flash message with utilities and color styles.
+      </p>
       
 <div data-include-example="docs/examples/flash-messages.html" class="Example">
 <div class="Example_rendered">
@@ -1077,6 +1078,11 @@
 
     <section id="badges" class="py2">
       <h1>Badges</h1>
+      <p>
+        Badges are used to represent properties and states and
+        to tease quantities of resources behind navigation links.
+        The button size extension can be used in combination with utilities to create badges.
+      </p>
       
 <div class="mb2 Example" data-include-example="docs/examples/badges-headings.html">
 <div class="Example_rendered">
@@ -1119,6 +1125,10 @@
 <span class="nt">&lt;/h6&gt;</span>
 </pre></div>
 </div>
+      <p>
+        Color semantics can be controlled with color styles
+        to represent different qualities of states.
+      </p>
       
 <div data-include-example="docs/examples/badges-colors.html" class="Example">
 <div class="Example_rendered">
@@ -1143,12 +1153,8 @@
 </div>
     </section>
 
-    <!--
-    <section id="tooltips" class="py2">
-      <h1>Tooltips</h1>
-      <div data-include-example="docs/examples/tooltips.html"></div>
+    <section id="cta" class="py2">
     </section>
-    -->
 
   </div>
 
@@ -1156,23 +1162,14 @@
     <a href="#button-sizes" class="button buttons-nav block">Button Sizes</a>
     <a href="#button-groups" class="button buttons-nav block">Button Groups</a>
     <a href="#input-groups" class="button buttons-nav block">Input Groups</a>
-    <a href="#dropdowns" class="button buttons-nav block">Dropdowns</a>
     <a href="#navigation" class="button buttons-nav block">Navigation</a>
     <a href="#breadcrumbs" class="button buttons-nav block">Breadcrumbs</a>
     <a href="#pagination" class="button buttons-nav block">Pagination</a>
+    <a href="#dropdowns" class="button buttons-nav block">Dropdowns</a>
     <a href="#navbars" class="button buttons-nav block">Navbars</a>
     <a href="#boxes" class="button buttons-nav block">Boxes</a>
     <a href="#flash-messages" class="button buttons-nav block">Flash Messages</a>
     <a href="#badges" class="button buttons-nav block">Badges</a>
-    <!--
-    <a href="#tooltips" class="button buttons-nav block">Tooltips</a>
-    <a href="#form-field-sizes" class="button buttons-nav block">Form Field Sizes</a>
-    <a href="#media-controls" class="button buttons-nav block">Media Controls</a>
-    <a href="#progress-bars" class="button buttons-nav block">Progress Bars</a>
-    <a href="#range-inputs" class="button buttons-nav block">Range Inputs</a>
-    <a href="#popovers" class="button buttons-nav block">Popovers</a>
-    <a href="#modal-overlays" class="button buttons-nav block">Modal Overlays</a>
-    -->
   </div>
 </div>
 
