@@ -20,7 +20,7 @@
       Basscss can be used to create many different user interface elements out of the box.
       With utility styles and a thoughtfully-architected templating system,
       you can keep CSS bloat to a minimum, while making iterative design changes to partials and components.
-      Don’t try to make CSS do a templating engine’s job.
+      You don’t need to make CSS do your templating engine’s job.
     </p>
 
     <section id="button-sizes" class="py2">
@@ -30,40 +30,9 @@
       <p>
         To change the line-height and padding but leave the font-size the same,
         use button size extensions.
-        Font size and button size extensions can also be combined for use together.
+        Font size utilities and button size extensions can be combined for more options.
       </p>
       <div data-include-example="docs/examples/button-sizes.html"></div>
-    </section>
-
-    <section id="button-groups" class="py2">
-      <h1>Button Groups</h1>
-      <p>
-        Button groups allow for more flexibility in establishing Gestalt and controlling information density.
-        Use a combination of layout utilities and color extensions to create button groups.
-      </p>
-      <div class="mb2" data-include-example="docs/examples/button-group.html"></div>
-      <h2>Justified Button Group</h2>
-      <p>The table object can be used to create justified button groups.</p>
-      <div class="mb2" data-include-example="docs/examples/button-group-justified.html"></div>
-      <p>
-        Normally, buttons with borders would double up when placed next to each other.
-        The <code>.x-group-item</code> and <code>.x-group-item-2</code> (for 2px borders) utilities
-        adjust negative margins and focus states to visually collapse borders.
-      </p>
-      <div class="mb2" data-include-example="docs/examples/button-group-segments.html"></div>
-      <p>Use <code>.y-group-item</code> and <code>.y-group-item-2</code> to stack groups vertically.</p>
-      <div data-include-example="docs/examples/button-group-segments-vertical.html"></div>
-    </section>
-
-    <section id="input-groups" class="py2">
-      <h1>Input Groups</h1>
-      <p>
-        Input groups can be created by removing margins, adjusting border radii, and using the group utilities.
-        The <code>hide</code> utility visually hides labels, while keeping them accessible to screen readers.
-      </p>
-      <div class="mb2" data-include-example="docs/examples/input-group-vertical.html"></div>
-      <p>The grid system can also be used to control button or input group widths.</p>
-      <div data-include-example="docs/examples/input-group-horizontal.html"></div>
     </section>
 
     <section id="navigation" class="py2">
@@ -73,6 +42,8 @@
         By using the same styles as buttons,
         you can ensure that navigation links are evenly spaced and have large, easy-to-hit targets.
         Negative margin utilities can help line up text elements with other elements on the page.
+        The <code>.button-nav-light</code> color style can be used for navigation
+        items on light backgrounds. Use <code>.button-nav-dark</code> for dark backgrounds.
       </p>
       <div class="mb2" data-include-example="docs/examples/nav-basic.html"></div>
       <p>
@@ -81,11 +52,11 @@
         labels fit within the viewport.
       </p>
       <div class="mb2" data-include-example="docs/examples/nav-justified.html"></div>
-      <p>To stack navigation, use the <code>.block</code> utility.</p>
+      <p>To stack navigation elements, use the <code>.block</code> utility.</p>
       <div class="mb2" data-include-example="docs/examples/nav-stacked.html"></div>
       <p>
         Use the <code>.button-nav-tab</code> color style to create tabbed navigation.
-        This only works horizontally, so ensure your navigation fits within a range of viewport widths.
+        This only works horizontally, so ensure your navigation fits within narrow viewports.
       </p>
       <div class="mb2" data-include-example="docs/examples/nav-tabs.html"></div>
       <p>Use the table object to justify tabbed navigation.</p>
@@ -108,6 +79,7 @@
         Stylistically, these are essentially the same as navigation, but with separators between items.
       </p>
       <div class="mb2" data-include-example="docs/examples/breadcrumbs.html"></div>
+      <div class="mb2" data-include-example="docs/examples/breadcrumbs-icons.html"></div>
       <p>
         Note: the icons used in this example are from
         <a href="http://jxnblk.github.io/geomicons-open">Geomicons Open</a>.
@@ -130,19 +102,57 @@
       <div data-include-example="docs/examples/pagination-bordered.html"></div>
     </section>
 
+    <section id="button-groups" class="py2">
+      <h1>Button Groups</h1>
+      <p>
+        Button groups allow for more flexibility in establishing Gestalt and controlling information density.
+        Use a combination of layout utilities and color extensions to create button groups.
+        The utilities <code>.rounded-left</code>, <code>.rounded-right</code>,
+        and <code>.not-rounded</code> can be used to override button and form field border radii.
+      </p>
+      <div class="mb2" data-include-example="docs/examples/button-group.html"></div>
+      <h2>Justified Button Group</h2>
+      <p>The table object can be used to create justified button groups.</p>
+      <div class="mb2" data-include-example="docs/examples/button-group-justified.html"></div>
+      <p>
+        Normally, buttons with borders would double up when placed next to each other.
+        The <code>.x-group-item</code> and <code>.x-group-item-2</code> utilities
+        adjust negative margins and focus states to visually collapse borders.
+        Use the <code>.x-group-item-2</code> utility on elements with 2px borders.
+        Functionally, this is similar to how other frameworks handle button and form input groups,
+        but with more direct control over styling.
+      </p>
+      <div class="mb2" data-include-example="docs/examples/button-group-segments.html"></div>
+      <p>Use <code>.y-group-item</code> and <code>.y-group-item-2</code> to group elements vertically.</p>
+      <div data-include-example="docs/examples/button-group-segments-vertical.html"></div>
+    </section>
+
+    <section id="input-groups" class="py2">
+      <h1>Input Groups</h1>
+      <p>
+        Input groups can be created by removing margins, adjusting border radii, and using the group utilities.
+        The <code>hide</code> utility visually hides labels, while keeping them accessible to screen readers.
+      </p>
+      <div class="mb2" data-include-example="docs/examples/input-group-vertical.html"></div>
+      <p>The grid system can be used to control button or input group widths.</p>
+      <div data-include-example="docs/examples/input-group-horizontal.html"></div>
+    </section>
+
     <section id="dropdowns" class="py2">
       <h1>Dropdowns</h1>
       <p>
-        Dropdown menus are used to group similar, secondary or sensitive actions
+        Dropdown menus are used to group secondary or sensitive actions
         behind a two-step progressive disclosure,
         while conserving screen real estate.
         Dropdowns can be created with basic positioning utilities.
       </p>
       <p>
-        The wrapping container uses relative positioning to anchor the dropdown body.
+        The wrapping elements uses relative positioning to anchor the dropdown body.
         An invisible fixed position element is used as an overlay to dismiss the dropdown.
         The dropdown body uses absolute positioning and margin top to align with the trigger element,
         without affecting the document flow.
+        The <code>.disclosure-group</code> utility is used to show and hide
+        child elements with javascript.
         Be sure dropdowns don’t expand beyond the viewport when used near edges or at small screen sizes.
       </p>
       <div class="mb2" data-include-example="docs/examples/dropdown.html"></div>
@@ -188,7 +198,7 @@
       <p>
         More complex
         <a href="http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/#priority-plus">Priority Plus</a>
-        style navigations can also be created using responsive utilities.
+        navigations can also be created using responsive utilities.
       </p>
       <div class="mb2" data-include-example="docs/examples/navbar-disclosure-complex.html"></div>
     </section>
@@ -196,7 +206,7 @@
     <section id="boxes" class="py2">
       <h1>Boxes</h1>
       <p>
-        Boxes are used to group content and representations of application resources in indexes.
+        Boxes are used to group content and collections of application resources.
         Use combinations of layout utilities and color styles to create boxes.
       </p>
       <div class="mb2" data-include-example="docs/examples/box.html"></div>
@@ -210,7 +220,7 @@
       <h1>Flash Messages</h1>
       <p>
         Flash messages are used to provide feedback after the user has performed an action.
-        Create custom flash message with utilities and color styles.
+        Create custom flash messages with utilities and color styles.
       </p>
       <div data-include-example="docs/examples/flash-messages.html"></div>
     </section>
@@ -220,7 +230,8 @@
       <p>
         Badges are used to represent properties and states and
         to tease quantities of resources behind navigation links.
-        The button size extension can be used in combination with utilities to create badges.
+        Button size extensions can be used in combination with
+        other utilities and color styles to create badges.
       </p>
       <div class="mb2" data-include-example="docs/examples/badges-headings.html"></div>
       <p>
@@ -235,13 +246,13 @@
 
   </div>
 
-  <div class="sm-col sm-col-3 px2 py2">
+  <div class="sm-col sm-col-3 px2 py2 sm-show">
     <a href="#button-sizes" class="button buttons-nav block">Button Sizes</a>
-    <a href="#button-groups" class="button buttons-nav block">Button Groups</a>
-    <a href="#input-groups" class="button buttons-nav block">Input Groups</a>
     <a href="#navigation" class="button buttons-nav block">Navigation</a>
     <a href="#breadcrumbs" class="button buttons-nav block">Breadcrumbs</a>
     <a href="#pagination" class="button buttons-nav block">Pagination</a>
+    <a href="#button-groups" class="button buttons-nav block">Button Groups</a>
+    <a href="#input-groups" class="button buttons-nav block">Input Groups</a>
     <a href="#dropdowns" class="button buttons-nav block">Dropdowns</a>
     <a href="#navbars" class="button buttons-nav block">Navbars</a>
     <a href="#boxes" class="button buttons-nav block">Boxes</a>
@@ -249,6 +260,13 @@
     <a href="#badges" class="button buttons-nav block">Badges</a>
   </div>
 </div>
+
+<section id="cta" class="py4">
+  <h2 class="h2">Learn More</h2>
+  <div class="mxn2">
+    <a href="/docs/principles" class="h3 button mb1 button-nav-light">Design Principles</a>
+  </div>
+</section>
 
 <div data-include="docs/partials/_footer.html"></div>
 

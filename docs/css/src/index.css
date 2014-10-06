@@ -11,7 +11,7 @@
 @import "basscss-ui-utilities";
 @import "basscss-grid";
 @import "basscss-table-object";
-@import "../../../basscss-color-basic";
+@import "basscss-color-basic";
 
 
 @import "./base/typography";
