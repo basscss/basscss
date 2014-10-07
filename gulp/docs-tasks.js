@@ -21,10 +21,10 @@ gulp.task('serve', function() {
   gulp.src('./').pipe(webserver({}));
 });
 
-gulp.task('watch-css', ['basswork', 'site-basswork', 'themes-basswork', 'sassify', 'styles'], function() {
+gulp.task('watch-css', ['basswork', 'site-basswork', 'sassify', 'styles'], function() {
   gulp.watch(
-    ['./src/**/*.css', './docs/css/src/**/*.css', './docs/themes/**/src/**/*.css'],
-    ['basswork', 'site-basswork', 'themes-basswork', 'sassify', 'styles']
+    ['./src/**/*.css', './docs/css/src/**/*.css'],
+    ['basswork', 'site-basswork', 'sassify', 'styles']
   );
 });
 
