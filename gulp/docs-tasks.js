@@ -7,7 +7,6 @@ var mincss = require('gulp-minify-css');
 var webserver = require('gulp-webserver');
 var watch = require('gulp-watch');
 
-var nav = require('./is-active');
 var pygmentize = require('./pygmentize');
 var glossary = require('./css-glossary');
 
