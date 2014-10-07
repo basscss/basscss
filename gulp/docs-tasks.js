@@ -7,8 +7,6 @@ var mincss = require('gulp-minify-css');
 var webserver = require('gulp-webserver');
 var watch = require('gulp-watch');
 
-var include = require('./include');
-var example = require('./include-example');
 var nav = require('./is-active');
 var pygmentize = require('./pygmentize');
 var glossary = require('./css-glossary');
@@ -23,47 +21,41 @@ gulp.task('serve', function() {
   gulp.src('./').pipe(webserver({}));
 });
 
-gulp.task('watch-css', ['basswork', 'site-basswork', 'themes-basswork', 'sassify'], function() {
+gulp.task('watch-css', ['basswork', 'site-basswork', 'themes-basswork', 'sassify', 'styles'], function() {
   gulp.watch(
     ['./src/**/*.css', './docs/css/src/**/*.css', './docs/themes/**/src/**/*.css'],
-    ['basswork', 'site-basswork', 'themes-basswork', 'sassify']
+    ['basswork', 'site-basswork', 'themes-basswork', 'sassify', 'styles']
   );
 });
 
-gulp.task('watch-templates', [], function() {
+gulp.task('watch-templates', ['swig'], function() {
   gulp.watch(
     ['./docs/templates/**/*.html'],
     ['swig']
   );
 });
 
-// Build site
-//gulp.task('watch-templates', function() {
-  //  gulp.src('./docs/templates/**/*.html')
-  //    .pipe(watch('./docs/templates/**/*.html', function(files) {
-  //      console.log('watch update');
-  //      return files.pipe(include())
-  //        .pipe(example())
-  //        .pipe(pygmentize())
-  //        .pipe(nav())
-  //        .pipe(glossary({ css: './basscss.min.css' }))
-  //        .pipe(gulp.dest('./'));
-  //    }));
-//});
-
 gulp.task('watch-includes', function() {
-  gulp.watch(['./docs/examples/**/*', './docs/partials/**/*'], ['swig']);
+  gulp.watch(['./docs/examples/**/*', './docs/templates/partials/**/*'], ['swig']);
 });
 
-// Render templates
-gulp.task('render', function() {
-  gulp.src('./docs/templates/**/*.html')
-    .pipe(include())
-    .pipe(example())
+gulp.task('swig', function() {
+  gulp.src([
+      './docs/templates/**/*.html',
+      '!./docs/templates/docs/styles/**/*',
+      '!./docs/templates/layouts/**/*',
+      '!./docs/templates/partials/**/*',
+      '!./docs/templates/examples/**/*'
+    ])
+    .pipe(swig({ defaults: { cache: false } }))
     .pipe(pygmentize())
-    .pipe(nav())
-    .pipe(glossary({ css: './basscss.min.css' }))
     .pipe(gulp.dest('./'));
+});
+
+gulp.task('styles', function() {
+  gulp.src('./docs/templates/docs/styles/*.html')
+    .pipe(glossary({ css: './basscss.min.css' }))
+    .pipe(gulp.dest('./docs/styles'));
 });
 
 // Site stylesheet
@@ -81,21 +73,5 @@ gulp.task('themes-basswork', function() {
     .pipe(basswork()).pipe(gulp.dest('./docs/themes/bassmap'));
   gulp.src('./docs/themes/bassdock/src/bassdock.css')
     .pipe(basswork()).pipe(gulp.dest('./docs/themes/bassdock'));
-});
-
-gulp.task('swig', function() {
-  gulp.src([
-      './docs/templates/**/*.html',
-      '!./docs/templates/docs/styles/**/*',
-      '!./docs/templates/layouts/**/*',
-      '!./docs/templates/partials/**/*',
-      '!./docs/templates/examples/**/*'
-    ])
-    .pipe(swig())
-    //.pipe(example())
-    .pipe(pygmentize())
-    .pipe(nav())
-    .pipe(gulp.dest('./'));
-  // Glossary page
 });
 

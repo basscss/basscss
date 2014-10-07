@@ -42,17 +42,11 @@
   --h5: 1rem;
   --h6: .875rem;
   --container-width: 72em;
-  --border-color: rgba(#000,.25);
   /*
+  --border-color: rgba(#000,.25);
   */
 }
 
-.button-blue:active,
-.button-blue.is-active {
-  border: 1px solid var(--border-color);
-}
-/*
-*/
 
 @import "./color/variables";
 

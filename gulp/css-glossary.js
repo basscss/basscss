@@ -1,10 +1,9 @@
 
 var fs = require('fs');
 var through = require('through2');
-var cheerio = require('cheerio');
 var css = require('css');
-var mustache = require('mustache');
 var util = require('gulp-util');
+var swig = require('swig');
 
 module.exports = function(options) {
 
@@ -14,25 +13,16 @@ module.exports = function(options) {
 
   return through.obj(function(file, encoding, callback) {
 
-    var $ = cheerio.load(file.contents.toString());
-    var $container = $('[data-include-rules]');
-
-    if (!$container.length) {
-      this.push(file);
-      callback();
-      return false;
-    }
-
     util.log('Parsing CSS...');
 
     var stylesheet = fs.readFileSync(src, 'utf8');
     var obj = css.parse(stylesheet, {});
-    var stylesheet = obj.stylesheet;
-    stylesheet.parsed = [];
-    stylesheet.size = Math.floor(fs.statSync(src).size / 1000);
+    var data = obj.stylesheet;
+    data.parsed = [];
+    data.size = Math.floor(fs.statSync(src).size / 1000);
 
-    for (var i = 0; i < stylesheet.rules.length; i++) {
-      var rule = stylesheet.rules[i];
+    for (var i = 0; i < data.rules.length; i++) {
+      var rule = data.rules[i];
       if (rule.selectors) {
         if (rule.declarations) {
           var declarations = rule.declarations;
@@ -40,8 +30,8 @@ module.exports = function(options) {
           for (var j = 0; j < declarations.length; j++) {
             decs += declarations[j].property + ': ' + declarations[j].value + '; ';
           }
-          stylesheet.parsed.push({
-            $index: stylesheet.parsed.length,
+          data.parsed.push({
+            $index: data.parsed.length,
             selectors: rule.selectors.join(', '),
             declarations: decs
           });
@@ -53,10 +43,11 @@ module.exports = function(options) {
           for (var k = 0; k < rule.rules[j].declarations.length; k++) {
             decs += rule.rules[j].declarations[k].property + ': ' + rule.rules[j].declarations[k].value + '; ';
           }
-          stylesheet.parsed.push({
-            $index: stylesheet.parsed.length,
+          data.parsed.push({
+            $index: data.parsed.length,
             selectors: rule.rules[j].selectors.join(', '),
-            declarations: decs, media: rule.media
+            declarations: decs,
+            media: rule.media
           });
         }
       }
@@ -64,13 +55,10 @@ module.exports = function(options) {
 
     util.log('CSS Parsed');
 
-    var rendered = mustache.render($container.html(), stylesheet);
-
+    var rendered = swig.render(file.contents.toString(), { filename: file.path, locals: data });
     util.log('Table of Styles Rendered');
 
-    $container.html(rendered);
-
-    file.contents = new Buffer($.html());
+    file.contents = new Buffer(rendered);
 
     this.push(file);
     callback();
