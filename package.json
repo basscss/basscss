@@ -42,7 +42,8 @@
     "mustache": "^0.8.2",
     "through2": "^0.6.1",
     "gulp-util": "^3.0.1",
-    "gulp-watch": "^1.0.7"
+    "gulp-watch": "^1.0.7",
+    "gulp-swig": "^0.7.2"
   },
   "scripts": {
     "start": "gulp"

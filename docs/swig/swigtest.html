@@ -1,0 +1,11 @@
+{% extends './layouts/layout.html' %}
+
+{% block content %}
+<h1>Swig Test {{ foo }} {{ test }}</h1>
+Foo?
+{% if foo %}
+{{ foo }}
+Fooooo
+  {% include '../examples/dropdown.html' %}
+{% endif %}
+{% endblock %}

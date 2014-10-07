@@ -13,6 +13,8 @@ var nav = require('./is-active');
 var pygmentize = require('./pygmentize');
 var glossary = require('./css-glossary');
 
+var swig = require('gulp-swig');
+
 
 // Site development
 gulp.task('dev', ['watch-templates', 'watch-includes', 'watch-css', 'serve']);
@@ -72,5 +74,16 @@ gulp.task('themes-basswork', function() {
     .pipe(basswork()).pipe(gulp.dest('./docs/themes/bassmap'));
   gulp.src('./docs/themes/bassdock/src/bassdock.css')
     .pipe(basswork()).pipe(gulp.dest('./docs/themes/bassdock'));
+});
+
+gulp.task('swig', function() {
+  gulp.src(['./docs/swig/swigtest.html', '!./docs/swig/layouts'])
+    .pipe(swig())
+    .pipe(gulp.dest('.'));
+  /*
+    var locals = { foo: 'Herro!', test: 'Hi' };
+    var compiled = swig.renderFile('./docs/swig/index.html', locals);
+    console.log(compiled);
+  */
 });
 
