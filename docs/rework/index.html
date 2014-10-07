@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="utf-8">
   <title>Basscss</title>
@@ -12,7 +13,10 @@
   <link rel="apple-touch-icon-precomposed" href="/docs/apple-touch-icon.png">
 </head>
 
+
 <body class="container px2">
+
+
 
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps bold mt2">
@@ -74,12 +78,7 @@
 </pre></div>
 </div>
     <p>Pass a source CSS string to Basswork, which will return a compiled CSS string.</p>
-    <div class="Example_code mb2" data-pygmentize="js"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">basswork</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;basswork&apos;</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;fs&apos;</span><span class="p">);</span>
-
-<span class="kd">var</span> <span class="nx">src</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s1">&apos;./src/base.css&apos;</span><span class="p">,</span> <span class="s1">&apos;utf8&apos;</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">css</span> <span class="o">=</span> <span class="nx">basswork</span><span class="p">(</span><span class="nx">src</span><span class="p">);</span>
-<span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="s1">&apos;./css/base.css&apos;</span><span class="p">,</span> <span class="nx">css</span><span class="p">);</span>
+    <div class="Example_code mb2" data-pygmentize="js"><div class="highlight"><pre>
 </pre></div>
 </div>
     <h2>Using Basswork in an Existing Gulp Project</h2>
@@ -88,20 +87,7 @@
 </pre></div>
 </div>
     <p>Create a Gulp task.</p>
-    <div class="Example_code mb2" data-pygmentize="js"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">gulp</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;gulp&apos;</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">rename</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;gulp-rename&apos;</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">mincss</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;gulp-minify-css&apos;</span><span class="p">);</span>
-
-<span class="kd">var</span> <span class="nx">basswork</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&apos;gulp-basswork&apos;</span><span class="p">);</span>
-
-<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&apos;basswork&apos;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-  <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">&apos;./src/*.css&apos;</span><span class="p">)</span>
-    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">basswork</span><span class="p">())</span>
-    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">&apos;./css&apos;</span><span class="p">))</span>
-    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">mincss</span><span class="p">())</span>
-    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">rename</span><span class="p">({</span> <span class="nx">extname</span><span class="o">:</span> <span class="s1">&apos;.min.css&apos;</span> <span class="p">}))</span>
-    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">&apos;./css&apos;</span><span class="p">))</span>
-<span class="p">});</span>
+    <div class="Example_code mb2" data-pygmentize="js"><div class="highlight"><pre>
 </pre></div>
 </div>
   </section>
@@ -168,7 +154,8 @@
 </div>
 
 
-<footer class="py4">
+
+<footer class="container px2 py4">
   <div class="sm-table">
     <div class="sm-table-cell nowrap py2 xs-center">
       <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">

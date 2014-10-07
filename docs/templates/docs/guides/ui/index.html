@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<div data-include="docs/partials/_head.html"></div>
-<body class="container px2">
+{% extends '../../../layouts/default.html' %}
+
+{% block content %}
 
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps bold mt2">
@@ -26,13 +25,13 @@
     <section id="button-sizes" class="py2">
       <h1>Button Sizes</h1>
       <p>Button sizes can be adjusted with font size utilities.</p>
-      <div class="mb2" data-include-example="docs/examples/button-font-sizes.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'button-font-sizes.html' } %}
       <p>
         To change the line-height and padding but leave the font-size the same,
         use button size extensions.
         Font size utilities and button size extensions can be combined for more options.
       </p>
-      <div data-include-example="docs/examples/button-sizes.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'button-sizes.html' } %}
     </section>
 
     <section id="navigation" class="py2">
@@ -45,31 +44,31 @@
         The <code>.button-nav-light</code> color style can be used for navigation
         items on light backgrounds. Use <code>.button-nav-dark</code> for dark backgrounds.
       </p>
-      <div class="mb2" data-include-example="docs/examples/nav-basic.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'nav-basic.html' } %}
       <p>
         The table object can be used to create justified navigation.
         Be sure to test your specific navigation across a range of devices to ensure that 
         labels fit within the viewport.
       </p>
-      <div class="mb2" data-include-example="docs/examples/nav-justified.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'nav-justified.html' } %}
       <p>To stack navigation elements, use the <code>.block</code> utility.</p>
-      <div class="mb2" data-include-example="docs/examples/nav-stacked.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'nav-stacked.html' } %}
       <p>
         Use the <code>.button-nav-tab</code> color style to create tabbed navigation.
         This only works horizontally, so ensure your navigation fits within narrow viewports.
       </p>
-      <div class="mb2" data-include-example="docs/examples/nav-tabs.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'nav-tabs.html' } %}
       <p>Use the table object to justify tabbed navigation.</p>
-      <div class="mb2" data-include-example="docs/examples/nav-tabs-table.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'nav-tabs-table.html' } %}
       <p>Standard color styles can be applied to create a variety of navigation styles.</p>
-      <div class="mb2" data-include-example="docs/examples/nav-bordered.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'nav-bordered.html' } %}
       <p>The <code>.button-blue</code> style can be used to create a pill navigation.</p>
-      <div class="mb2" data-include-example="docs/examples/nav-pills.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'nav-pills.html' } %}
       <p>
         If you’d like to wrap your navigation in a <code>ul</code> use the <code>.list-reset</code>
         style to remove bullets and padding.
       </p>
-      <div data-include-example="docs/examples/nav-ul.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'nav-ul.html' } %}
     </section>
 
     <section id="breadcrumbs" class="py2">
@@ -78,8 +77,8 @@
         Breadcrumbs are a common and well-understood wayfinding pattern used in multi-level hierarchies.
         Stylistically, these are essentially the same as navigation, but with separators between items.
       </p>
-      <div class="mb2" data-include-example="docs/examples/breadcrumbs.html"></div>
-      <div class="mb2" data-include-example="docs/examples/breadcrumbs-icons.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'breadcrumbs.html' } %}
+      {% include '../../../partials/_example.html' with { file: 'breadcrumbs-icons.html' } %}
       <p>
         Note: the icons used in this example are from
         <a href="http://jxnblk.github.io/geomicons-open">Geomicons Open</a>.
@@ -92,14 +91,14 @@
         Pagination is used to split up large lists in a user-friendly way and allows for deep linking.
         Use a combination of layout utilities and button styles to create navigation that suites your design.
       </p>
-      <div class="mb2" data-include-example="docs/examples/pagination.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'pagination.html' } %}
       <p>
         Responsive state utilities can be used to progressively enhance pagination
         with numbers on devices with wider viewports.
       </p>
-      <div class="mb2" data-include-example="docs/examples/pagination-numbers.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'pagination-numbers.html' } %}
       <p>Standard color styles can be used to control the appearance.</p>
-      <div data-include-example="docs/examples/pagination-bordered.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'pagination-bordered.html' } %}
     </section>
 
     <section id="button-groups" class="py2">
@@ -110,10 +109,10 @@
         The utilities <code>.rounded-left</code>, <code>.rounded-right</code>,
         and <code>.not-rounded</code> can be used to override button and form field border radii.
       </p>
-      <div class="mb2" data-include-example="docs/examples/button-group.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'button-group.html' } %}
       <h2>Justified Button Group</h2>
       <p>The table object can be used to create justified button groups.</p>
-      <div class="mb2" data-include-example="docs/examples/button-group-justified.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'button-group-justified.html' } %}
       <p>
         Normally, buttons with borders would double up when placed next to each other.
         The <code>.x-group-item</code> and <code>.x-group-item-2</code> utilities
@@ -122,9 +121,9 @@
         Functionally, this is similar to how other frameworks handle button and form input groups,
         but with more direct control over styling.
       </p>
-      <div class="mb2" data-include-example="docs/examples/button-group-segments.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'button-group-segments.html' } %}
       <p>Use <code>.y-group-item</code> and <code>.y-group-item-2</code> to group elements vertically.</p>
-      <div data-include-example="docs/examples/button-group-segments-vertical.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'button-group-segments-vertical.html' } %}
     </section>
 
     <section id="input-groups" class="py2">
@@ -133,9 +132,9 @@
         Input groups can be created by removing margins, adjusting border radii, and using the group utilities.
         The <code>hide</code> utility visually hides labels, while keeping them accessible to screen readers.
       </p>
-      <div class="mb2" data-include-example="docs/examples/input-group-vertical.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'input-group-vertical.html' } %}
       <p>The grid system can be used to control button or input group widths.</p>
-      <div data-include-example="docs/examples/input-group-horizontal.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'input-group-horizontal.html' } %}
     </section>
 
     <section id="dropdowns" class="py2">
@@ -155,7 +154,7 @@
         child elements with javascript.
         Be sure dropdowns don’t expand beyond the viewport when used near edges or at small screen sizes.
       </p>
-      <div class="mb2" data-include-example="docs/examples/dropdown.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'dropdown.html' } %}
       <p>
         Note: this example uses a custom JavaScript function for the disclosure mechanism.
         Use a similar function, component, or directive in your own JavaScript to control behavior.
@@ -176,31 +175,28 @@
         By applying the <code>.py2</code> utility to the link buttons,
         they become the height of normal buttons and inputs plus <code>.py1</code>.
       </p>
-      <div class="mb2" data-include-example="docs/examples/navbar-dark.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'navbar-dark.html' } %}
       <p>
         By using rgba-based color utilities, the color can quickly be changed
         using background color utilities.
       </p>
-      <div class="mb2" data-include="docs/examples/navbar-colors.html"></div>
+      {% include '../../../../examples/navbar-colors.html' %}
       <p>
         Because Basscss is built with inter-operable styles,
         things like a user account dropdown can be added anywhere in the navbar.
       </p>
-      <div class="mb2" data-include-example="docs/examples/navbar-dropdown.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'navbar-dropdown.html' } %}
       <p>
         Using a combination of responsive utilities, you can create a navbar that collapses
         at narrow viewport widths. Resize the viewport to see the result.
       </p>
-      <div class="mb2" data-include-example="docs/examples/navbar-collapsing.html"></div>
-      <!--
-      <div class="mb2" data-include-example="docs/examples/navbar-disclosure.html"></div>
-      -->
+      {% include '../../../partials/_example.html' with { file: 'navbar-collapsing.html' } %}
       <p>
         More complex
         <a href="http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/#priority-plus">Priority Plus</a>
         navigations can also be created using responsive utilities.
       </p>
-      <div class="mb2" data-include-example="docs/examples/navbar-disclosure-complex.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'navbar-disclosure-complex.html' } %}
     </section>
 
     <section id="boxes" class="py2">
@@ -209,11 +205,11 @@
         Boxes are used to group content and collections of application resources.
         Use combinations of layout utilities and color styles to create boxes.
       </p>
-      <div class="mb2" data-include-example="docs/examples/box.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'box.html' } %}
       <p>To create headers and footers, set padding on nested divs then use color styles to control appearance.</p>
-      <div class="mb2" data-include-example="docs/examples/box-header.html"></div>
-      <div class="mb2" data-include-example="docs/examples/box-image.html"></div>
-      <div class="mb2" data-include-example="docs/examples/box-header-footer.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'box-header.html' } %}
+      {% include '../../../partials/_example.html' with { file: 'box-image.html' } %}
+      {% include '../../../partials/_example.html' with { file: 'box-header-footer.html' } %}
     </section>
 
     <section id="flash-messages" class="py2">
@@ -222,7 +218,7 @@
         Flash messages are used to provide feedback after the user has performed an action.
         Create custom flash messages with utilities and color styles.
       </p>
-      <div data-include-example="docs/examples/flash-messages.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'flash-messages.html' } %}
     </section>
 
     <section id="badges" class="py2">
@@ -233,12 +229,12 @@
         Button size extensions can be used in combination with
         other utilities and color styles to create badges.
       </p>
-      <div class="mb2" data-include-example="docs/examples/badges-headings.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'badges-headings.html' } %}
       <p>
         Color semantics can be controlled with color styles
         to represent different qualities of states.
       </p>
-      <div data-include-example="docs/examples/badges-colors.html"></div>
+      {% include '../../../partials/_example.html' with { file: 'badges-colors.html' } %}
     </section>
 
     <section id="cta" class="py2">
@@ -267,8 +263,6 @@
     <a href="/docs/principles" class="h3 button mb1 button-nav-light">Design Principles</a>
   </div>
 </section>
-
-<div data-include="docs/partials/_footer.html"></div>
 
 <script src="http://d2v52k3cl9vedd.cloudfront.net/geomicons/0.2.0/geomicons.min.js"></script>
 
@@ -302,6 +296,5 @@
 
 </script>
 
-</body>
-</html>
+{% endblock %}
 

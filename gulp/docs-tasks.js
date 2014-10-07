@@ -30,22 +30,29 @@ gulp.task('watch-css', ['basswork', 'site-basswork', 'themes-basswork', 'sassify
   );
 });
 
-// Build site
-gulp.task('watch-templates', function() {
-  gulp.src('./docs/templates/**/*.html')
-    .pipe(watch('./docs/templates/**/*.html', function(files) {
-      console.log('watch update');
-      return files.pipe(include())
-        .pipe(example())
-        .pipe(pygmentize())
-        .pipe(nav())
-        .pipe(glossary({ css: './basscss.min.css' }))
-        .pipe(gulp.dest('./'));
-    }));
+gulp.task('watch-templates', [], function() {
+  gulp.watch(
+    ['./docs/templates/**/*.html'],
+    ['swig']
+  );
 });
 
+// Build site
+//gulp.task('watch-templates', function() {
+  //  gulp.src('./docs/templates/**/*.html')
+  //    .pipe(watch('./docs/templates/**/*.html', function(files) {
+  //      console.log('watch update');
+  //      return files.pipe(include())
+  //        .pipe(example())
+  //        .pipe(pygmentize())
+  //        .pipe(nav())
+  //        .pipe(glossary({ css: './basscss.min.css' }))
+  //        .pipe(gulp.dest('./'));
+  //    }));
+//});
+
 gulp.task('watch-includes', function() {
-  gulp.watch(['./docs/examples/**/*', './docs/partials/**/*'], ['render']);
+  gulp.watch(['./docs/examples/**/*', './docs/partials/**/*'], ['swig']);
 });
 
 // Render templates
@@ -77,13 +84,18 @@ gulp.task('themes-basswork', function() {
 });
 
 gulp.task('swig', function() {
-  gulp.src(['./docs/swig/swigtest.html', '!./docs/swig/layouts'])
+  gulp.src([
+      './docs/templates/**/*.html',
+      '!./docs/templates/docs/styles/**/*',
+      '!./docs/templates/layouts/**/*',
+      '!./docs/templates/partials/**/*',
+      '!./docs/templates/examples/**/*'
+    ])
     .pipe(swig())
-    .pipe(gulp.dest('.'));
-  /*
-    var locals = { foo: 'Herro!', test: 'Hi' };
-    var compiled = swig.renderFile('./docs/swig/index.html', locals);
-    console.log(compiled);
-  */
+    //.pipe(example())
+    .pipe(pygmentize())
+    .pipe(nav())
+    .pipe(gulp.dest('./'));
+  // Glossary page
 });
 

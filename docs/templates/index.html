@@ -1,174 +1,169 @@
-<!doctype html>
-<html lang="en">
-<div data-include="docs/partials/_head.html"></div>
-<body>
+{% extends './layouts/home.html' %}
 
-  <header class="p2 bright-blue bg-dark-gray">
-    <div class="container sm-table">
-      <div class="sm-table-cell py4">
-        <svg class="h0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" fill="currentcolor">
-          <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
-        </svg>
-        <h1 class="avenir caps h0 mt1 mb0" style="margin-left:-.0625em">Basscss</h1>
-        <h2 class="avenir caps h4 mb0">Low-level CSS Toolkit</h2>
-        <p class="avenir h6 caps bold">v4.1.0 &middot; 14KB (3KB gzipped)</p>
+{% block content %}
+
+<header class="p2 bright-blue bg-dark-gray">
+  <div class="container sm-table">
+    <div class="sm-table-cell py4">
+      <svg class="h0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" fill="currentcolor">
+        <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
+      </svg>
+      <h1 class="avenir caps h0 mt1 mb0" style="margin-left:-.0625em">Basscss</h1>
+      <h2 class="avenir caps h4 mb0">Low-level CSS Toolkit</h2>
+      <p class="avenir h6 caps bold">v4.1.0 &middot; 14KB (3KB gzipped)</p>
+    </div>
+    <div class="xs-center sm-table-cell py2">
+      <a class="h3 button m1 button-bright-blue-outline" href="/docs">Docs</a>
+      <a class="h3 button m1 button-bright-blue-outline" href="//github.com/jxnblk/basscss">Github</a>
+    </div>
+  </div>
+</header>
+
+<main class="container px2 overflow-hidden">
+
+  <section class="py3">
+    <h1 class="md-h1 mb2">Modular CSS toolkit based on OOCSS principles</h1>
+    <p class="h3 md-col-9">
+      Basscss is a lightweight collection of
+      base element styles, utilities, layout modules, and color styles
+      designed for speed, performance, and scalability.
+    </p>
+  </section>
+
+  <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+
+  <section id="concepts" class="clearfix mxn2 py3">
+    <div class="sm-col sm-col-6 px2">
+      <h1>Designed for Design</h1>
+      <p>
+        With simple, humanized naming conventions, 
+        Basscss is quick to internalize and easy to wrap your head around,
+        while striking a balance between consistency and flexiblity.
+      </p>
+    </div>
+    <div class="sm-col sm-col-6 px2">
+      <h1>Responsive by Default</h1>
+      <p>
+        The web is inherently flexible, Basscss doesn’t break that tradition
+        and provides lightweight solutions to design for all devices.
+      </p>
+    </div>
+    <div class="clearfix sm-show"></div>
+    <div class="sm-col sm-col-6 px2">
+      <h1>Unobtrusive</h1>
+      <p>
+        Basscss doesn’t dictate what your site should look like.
+        With extensible base styles and variables for typography, white space, breakpoints, and UI elements,
+        it’s made to be customized.
+      </p>
+    </div>
+    <div class="sm-col sm-col-6 px2">
+      <h1>Mix and Match</h1>
+      <p>
+        With modular styles that work like building blocks,
+        Basscss provides a foundation of reusable and inter-operable styles
+        for greater freedom when designing in the browser.
+      </p>
+    </div>
+  </section>
+
+  <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+
+  <section id="base" class="mxn3 py4">
+    <div class="sm-table">
+      <div class="sm-table-cell sm-col-7 px3">
+        <h1 class="mt1">Base Elements</h1>
+        <p class="h3">
+          Core typographic, form, button, and base element styles keep designs
+          consistent where it matters most.
+        </p>
       </div>
-      <div class="xs-center sm-table-cell py2">
-        <a class="h3 button m1 button-bright-blue-outline" href="/docs">Docs</a>
-        <a class="h3 button m1 button-bright-blue-outline" href="//github.com/jxnblk/basscss">Github</a>
+      <div class="sm-table-cell sm-col-5 px3">
+        <div class="p2 center blue bg-darken-1 rounded">
+          <h1 class="h00 m0 helvetica">Aa</h1>
+        </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main class="container px2 overflow-hidden">
-
-    <section class="py3">
-      <h1 class="md-h1 mb2">Modular CSS toolkit based on OOCSS principles</h1>
-      <p class="h3 md-col-9">
-        Basscss is a lightweight collection of
-        base element styles, utilities, layout modules, and color styles
-        designed for speed, performance, and scalability.
-      </p>
-    </section>
-
-    <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
-
-    <section id="concepts" class="clearfix mxn2 py3">
-      <div class="sm-col sm-col-6 px2">
-        <h1>Designed for Design</h1>
-        <p>
-          With simple, humanized naming conventions, 
-          Basscss is quick to internalize and easy to wrap your head around,
-          while striking a balance between consistency and flexiblity.
+  <section id="utility" class="mxn3 py3">
+    <div class="sm-table">
+      <div class="sm-table-cell sm-col-7 px3">
+        <h1 class="mt1">Utility Styles</h1>
+        <p class="h3">
+          Simple, composable typographic and layout utilities based on common scales
+          promote faster design and development in the browser and more performant, more readable code.
         </p>
       </div>
-      <div class="sm-col sm-col-6 px2">
-        <h1>Responsive by Default</h1>
-        <p>
-          The web is inherently flexible, Basscss doesn’t break that tradition
-          and provides lightweight solutions to design for all devices.
+      <div class="sm-table-cell sm-col-5 px3">
+        <div class="helvetica h1 bold center p2 blue bg-darken-1 rounded">
+          <div>.bold</div>
+          <div>.inline-block</div>
+          <div>.mb4</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="layout" class="mxn3 py3">
+    <div class="sm-table">
+      <div class="sm-table-cell sm-col-7 px3">
+        <h1 class="mt1">Layout Modules</h1>
+        <p class="h3">
+          Flexible, responsive, and reusable layout modules control
+          page structure across a wide variety of devices.
         </p>
       </div>
-      <div class="clearfix sm-show"></div>
-      <div class="sm-col sm-col-6 px2">
-        <h1>Unobtrusive</h1>
-        <p>
-          Basscss doesn’t dictate what your site should look like.
-          With extensible base styles and variables for typography, white space, breakpoints, and UI elements,
-          it’s made to be customized.
+      <div class="sm-table-cell sm-col-5 px3">
+        <div class="p2 bg-darken-1 rounded">
+          <div class="py3 mb2 bg-blue"></div>
+          <div class="helvetica h3 bold center clearfix mxn1 blue">
+            <div class="col col-4 px1"><div class="py4 bg-light-gray">.col-4</div></div>
+            <div class="col col-8 px1"><div class="py4 bg-light-gray">.col-8</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="color" class="mxn3 py3">
+    <div class="sm-table">
+      <div class="sm-table-cell sm-col-7 px3">
+        <h1 class="mt1">Color</h1>
+        <p class="h3">
+          Simple, customizable color utilities encourage
+          iterative design and allow for flexibility over time. 
         </p>
       </div>
-      <div class="sm-col sm-col-6 px2">
-        <h1>Mix and Match</h1>
-        <p>
-          With modular styles that work like building blocks,
-          Basscss provides a foundation of reusable and inter-operable styles
-          for greater freedom when designing in the browser.
-        </p>
-      </div>
-    </section>
-
-    <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
-
-    <section id="base" class="mxn3 py4">
-      <div class="sm-table">
-        <div class="sm-table-cell sm-col-7 px3">
-          <h1 class="mt1">Base Elements</h1>
-          <p class="h3">
-            Core typographic, form, button, and base element styles keep designs
-            consistent where it matters most.
-          </p>
-        </div>
-        <div class="sm-table-cell sm-col-5 px3">
-          <div class="p2 center blue bg-darken-1 rounded">
-            <h1 class="h00 m0 helvetica">Aa</h1>
-          </div>
+      <div class="sm-table-cell sm-col-5 px3">
+        <div class="helvetica h3 bold center overflow-hidden rounded">
+          <div class="p1 white bg-blue">.blue</div>
+          <div class="p1 white bg-green">.green</div>
+          <div class="p1 white bg-yellow">.yellow</div>
+          <div class="p1 white bg-red">.red</div>
         </div>
       </div>
-    </section>
- 
-    <section id="utility" class="mxn3 py3">
-      <div class="sm-table">
-        <div class="sm-table-cell sm-col-7 px3">
-          <h1 class="mt1">Utility Styles</h1>
-          <p class="h3">
-            Simple, composable typographic and layout utilities based on common scales
-            promote faster design and development in the browser and more performant, more readable code.
-          </p>
-        </div>
-        <div class="sm-table-cell sm-col-5 px3">
-          <div class="helvetica h1 bold center p2 blue bg-darken-1 rounded">
-            <div>.bold</div>
-            <div>.inline-block</div>
-            <div>.mb4</div>
-          </div>
-        </div>
+    </div>
+  </section>
+
+  <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+
+  <section id="cta" class="py4">
+    <div class="sm-table">
+      <div class="sm-table-cell sm-col-6">
+        <h1 class="mb0">Get Started</h1>
+        <p class="h3 mb2">View the docs to download Basscss and learn more.</p>
       </div>
-    </section>
-
-    <section id="layout" class="mxn3 py3">
-      <div class="sm-table">
-        <div class="sm-table-cell sm-col-7 px3">
-          <h1 class="mt1">Layout Modules</h1>
-          <p class="h3">
-            Flexible, responsive, and reusable layout modules control
-            page structure across a wide variety of devices.
-          </p>
+      <div class="sm-table-cell center sm-col-6">
+        <div class="inline-block p1">
+          <a href="/docs" class="h3 button button-blue-outline">Docs</a>
         </div>
-        <div class="sm-table-cell sm-col-5 px3">
-          <div class="p2 bg-darken-1 rounded">
-            <div class="py3 mb2 bg-blue"></div>
-            <div class="helvetica h3 bold center clearfix mxn1 blue">
-              <div class="col col-4 px1"><div class="py4 bg-light-gray">.col-4</div></div>
-              <div class="col col-8 px1"><div class="py4 bg-light-gray">.col-8</div></div>
-            </div>
-          </div>
-        </div>
+        <a href="//github.com/jxnblk/basscss" class="h3 button button-blue-outline">View on Github</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="color" class="mxn3 py3">
-      <div class="sm-table">
-        <div class="sm-table-cell sm-col-7 px3">
-          <h1 class="mt1">Color</h1>
-          <p class="h3">
-            Simple, customizable color utilities encourage
-            iterative design and allow for flexibility over time. 
-          </p>
-        </div>
-        <div class="sm-table-cell sm-col-5 px3">
-          <div class="helvetica h3 bold center overflow-hidden rounded">
-            <div class="p1 white bg-blue">.blue</div>
-            <div class="p1 white bg-green">.green</div>
-            <div class="p1 white bg-yellow">.yellow</div>
-            <div class="p1 white bg-red">.red</div>
-          </div>
-        </div>
-      </div>
-    </section>
+</main>
 
-    <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+{% endblock %}
 
-    <section id="cta" class="py4">
-      <div class="sm-table">
-        <div class="sm-table-cell sm-col-6">
-          <h1 class="mb0">Get Started</h1>
-          <p class="h3 mb2">View the docs to download Basscss and learn more.</p>
-        </div>
-        <div class="sm-table-cell center sm-col-6">
-          <div class="inline-block p1">
-            <a href="/docs" class="h3 button button-blue-outline">Docs</a>
-          </div>
-          <a href="//github.com/jxnblk/basscss" class="h3 button button-blue-outline">View on Github</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <div class="container px2">
-    <div data-include="docs/partials/_footer.html"></div>
-  </div>
-
-</body>
-</html>

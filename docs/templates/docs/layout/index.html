@@ -1,7 +1,6 @@
-<!doctype html>
-<html lang="en">
-<div data-include="docs/partials/_head.html"></div>
-<body class="container px2">
+{% extends '../../layouts/default.html' %}
+
+{% block content %}
 
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps bold mt2">
@@ -41,7 +40,7 @@
         <code>.col-N</code> sets width according to a 12 column grid.
         The total number of columns in a row should add up to 12.
       </p>
-      <div class="mb2" data-include-example="docs/examples/grid-floats.html"></div>
+      {% include '../../partials/_example.html' with { file: 'grid-floats.html' } %}
       <h2>Responsive Grid</h2>
       <p>
         Use
@@ -50,7 +49,7 @@
         Each breakpoint applies to that screen width and up.
         Unprefixed styles apply to all screen widths.
       </p>
-      <div class="mb2" data-include-example="docs/examples/grid-breakpoints.html"></div>
+      {% include '../../partials/_example.html' with { file: 'grid-breakpoints.html' } %}
       <h2>Gutters</h2>
       <p>
         Use padding and negative margin utilities to create gutters based on the
@@ -58,16 +57,16 @@
         When using negative margin, be sure to compensate for the extra width created with a padded 
         parent element or by using overflow hidden. Otherwise, horizontal scrolling may occur.
       </p>
-      <div class="mb2" data-include-example="docs/examples/grid-gutters.html"></div>
+      {% include '../../partials/_example.html' with { file: 'grid-gutters.html' } %}
       <h2>Nesting</h2>
       <p>Nest whole grid structures within columns to created nested grids.</p>
-      <div class="mb2" data-include-example="docs/examples/grid-nesting.html"></div>
+      {% include '../../partials/_example.html' with { file: 'grid-nesting.html' } %}
       <h2>Reversed</h2>
       <p>To reverse the order of columns, use the <code>.col-right</code> class to float right</p>
-      <div class="mb2" data-include-example="docs/examples/grid-reversed.html"></div>
+      {% include '../../partials/_example.html' with { file: 'grid-reversed.html' } %}
       <h2>Centering Columns</h2>
       <p>Use the <code>.mx-auto</code> class to center columns within their containers.</p>
-      <div class="mb2" data-include-example="docs/examples/grid-centered.html"></div>
+      {% include '../../partials/_example.html' with { file: 'grid-centered.html' } %}
       <h2>NPM</h2>
       <p>The grid is also available as a standalone NPM module.</p>
       <pre class="Example_code">npm install basscss-grid</pre>
@@ -80,28 +79,28 @@
         These styles can be combined with grid width and white-space utilities for a wide range of layout options.
         Apply padding to <code>.table-cell</code> elements to contol spacing.
       </p>
-      <div class="mb2" data-include-example="docs/examples/table-object.html"></div>
+      {% include '../../partials/_example.html' with { file: 'table-object.html' } %}
       <h2>Flag Object</h2>
       <p>
         The <a href="http://csswizardry.com/2013/05/the-flag-object/">flag object</a>
         can be emulated by adding <code>.full-width</code> to one of the cells.
         To add padding to the body, nest another div within the full-width cell.
       </p>
-      <div class="mb2" data-include-example="docs/examples/table-object-flag.html"></div>
+      {% include '../../partials/_example.html' with { file: 'table-object-flag.html' } %}
       <h2>Equal width cells</h2>
       <p>Use the <code>.table-fixed</code> extension to create equal-width cells.</p>
-      <div class="mb2" data-include-example="docs/examples/table-object-fixed.html"></div>
+      {% include '../../partials/_example.html' with { file: 'table-object-fixed.html' } %}
       <h2>Responsive Table Object</h2>
       <p>
         Use breakpoint prefixes to keep table objects stacked at smaller screen sizes.
         This is useful for things like navigation.
       </p>
-      <div class="mb2" data-include-example="docs/examples/table-object-responsive.html"></div>
+      {% include '../../partials/_example.html' with { file: 'table-object-responsive.html' } %}
       <h2>Table Grid</h2>
       <p>
         The table object can be combined with grid width utilities to create vertically centered columns.
       </p>
-      <div class="mb2" data-include-example="docs/examples/table-object-grid.html"></div>
+      {% include '../../partials/_example.html' with { file: 'table-object-grid.html' } %}
       <h2>NPM</h2>
       <p>The table object is also available as a standalone NPM module.</p>
       <pre class="Example_code">npm install basscss-table-object</pre>
@@ -133,7 +132,5 @@
 
 </div>
 
-<div data-include="docs/partials/_footer.html"></div>
+{% endblock %}
 
-</body>
-</html>

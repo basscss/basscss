@@ -1,7 +1,6 @@
-<!doctype html>
-<html lang="en">
-<div data-include="docs/partials/_head.html"></div>
-<body class="container px2">
+{% extends '../../layouts/default.html' %}
+
+{% block content %}
 
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps bold mt2">
@@ -25,30 +24,30 @@
 
     <section id="colors" class="py2">
       <h1>Colors</h1>
-      <div data-include-example="docs/examples/colors.html"></div>
+      {% include '../../partials/_example.html' with { file: 'colors.html' } %}
     </section>
 
     <section id="backgrounds" class="py2">
       <h1>Background Colors</h1>
-      <div data-include-example="docs/examples/backgrounds.html"></div>
+      {% include '../../partials/_example.html' with { file: 'backgrounds.html' } %}
     </section>
 
     <section id="borders" class="py2">
       <h1>Borders</h1>
-      <div data-include-example="docs/examples/borders.html"></div>
+      {% include '../../partials/_example.html' with { file: 'borders.html' } %}
     </section>
 
     <section id="forms" class="py2">
       <h1>Forms</h1>
       <p>Apply the <code>.field-light</code> color style to input, select, and textarea elements to control appearance.</p>
-      <div class="mb2" data-include-example="docs/examples/form-basic.html"></div>
+      {% include '../../partials/_example.html' with { file: 'form-basic.html' } %}
       <p>
         The <code>.field-light</code> style includes states for disabled and read-only fields,
         as well as success, warning, and error states.
       </p>
-      <div class="mb2" data-include-example="docs/examples/form-states.html"></div>
+      {% include '../../partials/_example.html' with { file: 'form-states.html' } %}
       <p>Use color utilities along with <code>.fieldset-reset</code> to style fieldsets.</p>
-      <div data-include-example="docs/examples/form-fieldset-styled.html"></div>
+      {% include '../../partials/_example.html' with { file: 'form-fieldset-styled.html' } %}
     </section>
 
     <section id="buttons" class="py2">
@@ -61,7 +60,7 @@
         <code>.button-red</code>.
         Customize these styles to suite your needs.
       </p>
-      <div data-include-example="docs/examples/buttons.html"></div>
+      {% include '../../partials/_example.html' with { file: 'buttons.html' } %}
     </section>
 
     <section id="tables" class="py2">
@@ -70,8 +69,8 @@
         Use the <code>.table-light</code> style as a starting point,
         then apply color utilities to style tables.
       </p>
-      <div class="mb2" data-include-example="docs/examples/tables.html"></div>
-      <div data-include-example="docs/examples/table-color-utilities.html"></div>
+      {% include '../../partials/_example.html' with { file: 'tables.html' } %}
+      {% include '../../partials/_example.html' with { file: 'table-color-utilities.html' } %}
     </section>
 
     <section id="variables" class="py2">
@@ -80,7 +79,7 @@
         Colors styles use the following variables.
         To alter these defaults, declare new values after importing Basscss with Rework. 
       </p>
-      <div data-include="docs/examples/color-variables.html"></div>
+      {% include '../../../examples/color-variables.html' %}
     </section>
 
     <section id="npm" class="py2">
@@ -130,8 +129,5 @@
   </div>
 </section>
 
+{% endblock %}
 
-<div data-include="docs/partials/_footer.html"></div>
-
-</body>
-</html>

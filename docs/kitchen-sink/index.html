@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="utf-8">
   <title>Basscss</title>
@@ -12,7 +13,10 @@
   <link rel="apple-touch-icon-precomposed" href="/docs/apple-touch-icon.png">
 </head>
 
+
 <body class="container px2">
+
+
 
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps bold mt2">
@@ -29,751 +33,80 @@
       Demo page for elements and styles.
     </p>
 
-    <div class="py2"> <div>
-  <span class="tooltip tooltip-top tooltip-left tooltip-dark" aria-label="Turkey Bacon Melt">Turkey Top Left</span>
-</div>
-<div>
-  <span class="tooltip tooltip-bottom tooltip-right tooltip-dark" aria-label="Turkey Bacon Avocado Melt">Turkey Bottom Right</span>
-</div>
- </div>
+    <div class="py2"> <div data-include="docs/examples/tooltips.html"></div> </div>
 
     <hr>
 
     <div class="clearfix mxn2 py2">
       <div class="sm-col sm-col-6 px2">
-        <div class="md-col-6">
-  <div class="p2 bg-white border rounded">
-    <h1 class="h2 mt0">Bacon</h1>
-    <p class="mb0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-  </div>
-</div>
-
+        <div data-include="docs/examples/box.html"></div>
       </div>
       <div class="sm-col sm-col-6 px2">
-        <div class="md-col-6">
-  <div class="p2 bg-white border rounded">
-    <img src="/docs/placeholder.svg" class="mb2">
-    <h1 class="h2 mt0">Bacon with Image</h1>
-    <p class="mb0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
-  </div>
-</div>
-
+        <div data-include="docs/examples/box-image.html"></div>
       </div>
     </div>
 
     <div class="clearfix mxn2 py2">
       <div class="sm-col sm-col-6 px2">
-        <div class="md-col-6">
-  <div class="overflow-hidden bg-white border rounded">
-    <div class="p2 bg-light-gray">
-      <h1 class="h2 m0">Bacon with Header</h1>
-    </div>
-    <div class="p2">
-      <p class="m0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-    </div>
-  </div>
-</div>
-
+        <div data-include="docs/examples/box-header.html"></div>
       </div>
       <div class="sm-col sm-col-6 px2">
-        <div class="md-col-6">
-  <div class="overflow-hidden bg-white border rounded">
-    <div class="p2 white bg-blue">
-      <h1 class="h2 m0">Bacon with Header and Footer</h1>
-    </div>
-    <div class="p2">
-      <p class="m0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin.</p>
-    </div>
-    <div class="p2 bg-darken-1">
-      <p class="m0 h5">Turkey short loin tenderloin jerky.</p>
-    </div>
-  </div>
-</div>
-
+        <div data-include="docs/examples/box-header-footer.html"></div>
       </div>
     </div>
 
     <hr>
 
-    <div class="py2"> <div class="mb1">
-  <button>Button</button>
-  <input type="button" class="button" value="Input Button">
-  <input type="submit" class="button" value="Input Submit">
-</div>
-<div class="mb1">
-  <button class="button-blue">Button Blue</button>
-  <input type="button" class="button button-blue" value="Button Blue">
-  <input type="submit" class="button button-blue" value="Button Blue">
-  <a href="#!" class="button button-blue">Button Blue</a>
-</div>
-<div class="mb1">
-  <button class="button-gray">Button Gray</button>
-  <input type="button" class="button button-gray" value="Button Gray">
-  <input type="submit" class="button button-gray" value="Button Gray">
-  <a href="#!" class="button button-gray">Button Gray</a>
-</div>
-<div class="mb1">
-  <button class="button-red">Button Red</button>
-  <input type="button" class="button button-red" value="Button Red">
-  <input type="submit" class="button button-red" value="Button Red">
-  <a href="#!" class="button button-red">Button Red</a>
-</div>
-<div class="mb1">
-  <button class="button-blue-outline">Button Outline</button>
-  <input type="button" class="button button-blue-outline" value="Button Outline">
-  <input type="submit" class="button button-blue-outline" value="Button Outline">
-  <a href="#!" class="button button-blue-outline">Button Outline</a>
-</div>
-<div class="mb1">
-  <button class="button-blue" disabled>Button Disabled</button>
-  <input type="button" class="button button-blue" value="Button Disabled" disabled>
-  <input type="submit" class="button button-blue" value="Button Disabled" disabled>
-  <a href="#!" class="button button-blue is-disabled">Button Disabled</a>
-</div>
-<div class="mb1">
-  <button class="button-gray" disabled>Button Disabled</button>
-  <input type="button" class="button button-gray" value="Button Disabled" disabled>
-  <input type="submit" class="button button-gray" value="Button Disabled" disabled>
-  <a href="#!" class="button button-gray is-disabled">Button Disabled</a>
-</div>
-<div class="mb1">
-  <button class="button-red" disabled>Button Disabled</button>
-  <input type="button" class="button button-red" value="Button Disabled" disabled>
-  <input type="submit" class="button button-red" value="Button Disabled" disabled>
-  <a href="#!" class="button button-red is-disabled">Button Disabled</a>
-</div>
-<div class="mb1">
-  <button class="button-blue-outline" disabled>Button Disabled</button>
-  <input type="button" class="button button-blue-outline" value="Button Disabled" disabled>
-  <input type="submit" class="button button-blue-outline" value="Button Disabled" disabled>
-  <a href="#!" class="button button-blue-outline is-disabled">Button Disabled</a>
-</div>
- </div>
+    <div class="py2"> <div data-include="docs/examples/buttons-test.html"></div> </div>
 
-    <div class="py2"> <form class="sm-col-6">
-  <label>Normal</label>
-  <input type="text" class="block full-width field-light">
-  <label>Disabled</label>
-  <input type="text" class="block full-width field-light" value="This is disabled" disabled>
-  <label>Read-only (But still selectable)</label>
-  <input type="text" class="block full-width field-light" value="This is read-only" readonly>
-  <label>Required</label>
-  <input type="text" class="block full-width field-light" required>
-  <label>Success</label>
-  <input type="text" class="block full-width field-light is-success">
-  <label>Warning</label>
-  <input type="text" class="block full-width field-light is-warning">
-  <label>Error</label>
-  <input type="text" class="block full-width field-light is-error">
-  <button type="submit" class="button-blue">Submit</button>
-  <button type="reset" class="button-gray">Reset</button>
-</form>
- </div>
-    <div class="py2"> <form>
-
-  <label>Normal</label>
-  <input type="text" class="block full-width field-light">
-  <label>Disabled</label>
-  <input type="text" class="block full-width field-light" value="This is disabled" disabled>
-  <label>Read-only (But still selectable)</label>
-  <input type="text" class="block full-width field-light" value="This is read-only" readonly>
-  <label>Required</label>
-  <input type="text" class="block full-width field-light" required>
-  <label>Optional</label>
-  <input type="text" class="block full-width field-light" optional="">
-  <label>Valid</label>
-  <input type="text" class="block full-width field-light" valid="">
-  <label>Invalid</label>
-  <input type="text" class="block full-width field-light" invalid="">
-  <label>Has Success</label>
-  <input type="text" class="block full-width field-light has-success">
-  <label>Has Warning</label>
-  <input type="text" class="block full-width field-light has-warning">
-  <label>Has Error</label>
-  <input type="text" class="block full-width field-light has-error">
-
-  <fieldset class="fieldset-reset mb0">
-    <legend class="h3 bold">Legend</legend>
-    <label>Input</label>
-    <input type="text" class="block full-width field-light">
-    <label>Textarea</label>
-    <textarea type="text" class="block full-width field-light"></textarea>
-    <label>Select</label>
-    <select id="select-demo" class="full-width field-light">
-      <option>Option 1</option>
-      <option>Option 2</option>
-      <option>Option 3</option>
-      <option>Option 4</option>
-      <option>Option 5</option>
-      <option>Option 6</option>
-    </select>
-    <label>Disabled Select</label>
-    <select id="select-disabled-demo" class="full-width field-light" disabled>
-      <option value="option-1">Option 1</option>
-      <option value="option-2">Option 2</option>
-      <option value="option-3">Option 3</option>
-      <option value="option-4">Option 4</option>
-      <option value="option-5">Option 5</option>
-      <option value="option-6">Option 6</option>
-    </select>
-    <select id="select-multiple-demo" class="full-width field-light" multiple>
-      <option>Option 1</option>
-      <option>Option 2</option>
-      <option>Option 3</option>
-      <option>Option 4</option>
-      <option>Option 5</option>
-      <option>Option 6</option>
-    </select>
-  </fieldset>
-
-  <fieldset class="mb2">
-    <legend>Radios and Checkboxes</legend>
-    <div>
-      <label for="radio-1">
-        <input type="radio" name="radios" id="radio-1" value="option-1"> Radio 1
-      </label>
-      <label for="radio-2">
-        <input type="radio" name="radios" id="radio-2" value="option-2"> Radio 1
-      </label>
-    </div>
-    <div>
-      <label for="checkbox-1">
-        <input type="checkbox" id="checkbox-1" value="option-1"> Checkbox 1
-      </label>
-      <label for="checkbox-2">
-        <input type="checkbox" id="checkbox-2" value="option-2"> Checkbox 2
-      </label>
-    </div>
-  </fieldset>
-
-  <fieldset class="fieldset-reset mb2">
-    <legend class="h3 bold">File Input &amp; Progress</legend>
-    <label>Upload Avatar</label>
-    <input type="file" class="block">
-    <label>Progress</label>
-    <progress value=".3" class="full-width">30%</progress>
-  </fieldset>
-
-  <button type="submit" class="button-blue">Submit</button>
-  <button type="reset" class="button-gray">Reset</button>
-
-</form>
-
- </div>
+    <div class="py2"> <div data-include="docs/examples/form-states.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/form-all-elements.html"></div> </div>
     <hr>
 
-    <div class="py2"> <div class="clearfix mb2 white bg-dark-gray">
-  <div class="left">
-    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
-    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
-  </div>
-  <div class="right">
-    <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
-  </div>
-  <div class="clearfix sm-hide"></div>
-  <div class="overflow-hidden px2 py1">
-    <input type="text" class="mb0 right fit field-dark" placeholder="Search">
-  </div>
-</div>
- </div>
+    <div class="py2"> <div data-include="docs/examples/navbar-dark.html"></div> </div>
 
     <hr>
 
-    <div class="py2"> <div class="clearfix outline-blue">
-  <div class="col col-11">.col-11</div>
-  <div class="col col-1">.col-1</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="col col-10">.col-10</div>
-  <div class="col col-2">.col-2</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="col col-9">.col-9</div>
-  <div class="col col-3">.col-3</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="col col-8">.col-8</div>
-  <div class="col col-4">.col-4</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="col col-7">.col-7</div>
-  <div class="col col-5">.col-5</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="col col-6">.col-6</div>
-  <div class="col col-6">.col-6</div>
-</div>
- </div>
-    <div class="py2"> <div class="clearfix outline-blue">
-  <div class="sm-col sm-col-11">.sm-col-11</div>
-  <div class="sm-col sm-col-1">.sm-col-1</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="sm-col sm-col-10">.sm-col-10</div>
-  <div class="sm-col sm-col-2">.sm-col-2</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="sm-col sm-col-9">.sm-col-9</div>
-  <div class="sm-col sm-col-3">.sm-col-3</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="sm-col sm-col-8">.sm-col-8</div>
-  <div class="sm-col sm-col-4">.sm-col-4</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="sm-col sm-col-7">.sm-col-7</div>
-  <div class="sm-col sm-col-5">.sm-col-5</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="sm-col sm-col-6">.sm-col-6</div>
-  <div class="sm-col sm-col-6">.sm-col-6</div>
-</div>
- </div>
-    <div class="py2"> <div class="clearfix outline-blue">
-  <div class="md-col md-col-11">.md-col-11</div>
-  <div class="md-col md-col-1">.md-col-1</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="md-col md-col-10">.md-col-10</div>
-  <div class="md-col md-col-2">.md-col-2</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="md-col md-col-9">.md-col-9</div>
-  <div class="md-col md-col-3">.md-col-3</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="md-col md-col-8">.md-col-8</div>
-  <div class="md-col md-col-4">.md-col-4</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="md-col md-col-7">.md-col-7</div>
-  <div class="md-col md-col-5">.md-col-5</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="md-col md-col-6">.md-col-6</div>
-  <div class="md-col md-col-6">.md-col-6</div>
-</div>
- </div>
-    <div class="py2"> <div class="clearfix outline-blue">
-  <div class="lg-col lg-col-11">.lg-col-11</div>
-  <div class="lg-col lg-col-1">.lg-col-1</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="lg-col lg-col-10">.lg-col-10</div>
-  <div class="lg-col lg-col-2">.lg-col-2</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="lg-col lg-col-9">.lg-col-9</div>
-  <div class="lg-col lg-col-3">.lg-col-3</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="lg-col lg-col-8">.lg-col-8</div>
-  <div class="lg-col lg-col-4">.lg-col-4</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="lg-col lg-col-7">.lg-col-7</div>
-  <div class="lg-col lg-col-5">.lg-col-5</div>
-</div>
-<div class="clearfix outline-blue">
-  <div class="lg-col lg-col-6">.lg-col-6</div>
-  <div class="lg-col lg-col-6">.lg-col-6</div>
-</div>
- </div>
+    <div class="py2"> <div data-include="docs/examples/grid.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/grid-small.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/grid-medium.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/grid-large.html"></div> </div>
 
     <hr>
 
-    <div class="py2"> <div>.sm-show <div class="sm-show red">.sm-show</div> </div>
-<div>.md-show <div class="md-show red">.md-show</div> </div>
-<div>.lg-show <div class="lg-show red">.lg-show</div> </div>
-<div>.sm-hide <div class="sm-hide red">.sm-hide</div> </div>
-<div>.md-hide <div class="md-hide red">.md-hide</div> </div>
-<div>.lg-hide <div class="lg-hide red">.lg-hide</div> </div>
- </div>
-    <div class="py2"> <div class="center p1 white bg-dark-gray">.bg-dark-gray</div>
-<div class="center p1 bg-mid-gray">.bg-mid-gray</div>
-<div class="center p1 bg-light-gray">.bg-light-gray</div>
-<div class="center p1 bg-lighter-gray">.bg-lighter-gray</div>
-<div class="center p1 bg-white">.bg-white</div>
-<div class="center p1 bg-blue">.bg-blue</div>
-<div class="center p1 bg-red">.bg-red</div>
-<div class="center p1 bg-yellow">.bg-yellow</div>
-<div class="center p1 bg-green">.bg-green</div>
-<div class="center p1 bg-darken-1">.bg-darken-1</div>
-<div class="center p1 bg-darken-2">.bg-darken-2</div>
-<div class="center p1 bg-darken-3">.bg-darken-3</div>
-<div class="center p1 bg-darken-4">.bg-darken-4</div>
- </div>
-    <div class="py2"> <div class="p1 m1 border bg-white">.border</div>
-<div class="p1 m1 border-top bg-white">.border-top</div>
-<div class="p1 m1 border-right bg-white">.border-right</div>
-<div class="p1 m1 border-bottom bg-white">.border-bottom</div>
-<div class="p1 m1 border-left bg-white">.border-left</div>
- </div>
-    <div class="py2"> <div class="mb1">
-  <button>Button</button>
-  <a href="#!" class="button">Link Button</a>
-  <input type="button" class="button" value="Input Button">
-</div>
-<div class="mb1">
-  <button class="button-blue mb1">Button Blue</button>
-  <button class="button-blue-outline mb1">Button Blue Outline</button>
-  <button class="button-gray mb1">Button Gray</button>
-  <button class="button-red mb1">Button Red</button>
-</div>
- </div>
-    <div class="py2"> <h3 class="center">
-  <span class="dark-gray">.dark-gray</span>
-  <span class="mid-gray">.mid-gray</span>
-  <span class="light-gray">.light-gray</span>
-  <span class="lighter-gray">.lighter-gray</span>
-  <span class="white">.white</span>
-  <span class="blue">.blue</span>
-  <span class="red">.red</span>
-  <span class="yellow">.yellow</span>
-  <span class="green">.green</span>
-</h3>
- </div>
-    <div class="py2"> <div class="clearfix mb2 outline-blue">
-  <div class="left p2 mr1">Image</div>
-  <div class="right p2 ml1">Image</div>
-  <div class="overflow-hidden">
-    <p><b>Body</b> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
-  </div>
-</div>
- </div>
-    <div class="py2"> <form class="sm-col-6">
-  <label>Email Address</label>
-  <input type="text" class="block full-width field-light">
-  <label>Password</label>
-  <input type="password" class="block full-width field-light">
-  <label>Select</label>
-  <select class="block full-width field-light">
-    <option>Option 1</option>
-    <option>Option 2</option>
-    <option>Option 3</option>
-    <option>Option 4</option>
-    <option>Option 5</option>
-  </select>
-  <label class="block full-width mb2">
-    <input type="checkbox" checked>
-    Remember me
-  </label>
-  <button type="submit" class="button-blue">Sign In</button>
-  <button type="reset" class="button-gray">Cancel</button>
-</form>
- </div>
-    <div class="py2"> <form>
-  <label>Search</label>
-  <input type="text" class="field-light">
-  <button class="button-blue">Go</button>
-</form>
- </div>
-    <div class="py2"> <div class="clearfix outline-blue">
-  <div class="sm-col sm-col-6 md-col-5 lg-col-4">.sm-col.sm-col-6.md-col-5.lg-col-4</div>
-  <div class="sm-col sm-col-6 md-col-7 lg-col-8">.sm-col.sm-col-6.md-col-7.lg-col-8</div>
-</div>
- </div>
-    <div class="py2"> <div class="clearfix mxn2 outline-blue">
-  <div class="col-8 px2 mx-auto">
-    <div>Centered Column</div>
-  </div>
-</div>
- </div>
-    <div class="py2"> <div class="container">
-  <div class="clearfix">
-  </div>
-</div>
- </div>
-    <div class="py2"> <div class="clearfix outline-blue">
-  <div class="col col-6">.col.col-6</div>
-  <div class="col col-6">.col.col-6</div>
-</div>
- </div>
-    <div class="py2"> <div class="clearfix mxn2 outline-blue">
-  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div>.px2</div></div>
-  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2"><div>.px2</div></div>
-</div>
-<!-- Nested divs for demonstration only -->
- </div>
-    <div class="py2"> <div class="clearfix mxn2 outline-blue">
-  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div>Unnested</div></div>
-  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2">
-    <div class="clearfix mxn2">
-      <div class="col col-6 px2"><div>Nested</div></div>
-      <div class="col col-6 px2"><div>Nested</div></div>
-    </div>
-  </div>
-</div>
-<!-- Nested divs for demonstration only -->
- </div>
-    <div class="py2"> <div class="clearfix outline-blue">
-  <div class="col-right col-6">.col-right.col-6</div>
-  <div class="col col-6">.col.col-6</div>
-</div>
- </div>
-    <div class="py2"> <h1>Hamburger 1</h1>
-<h2>Hamburger 2</h2>
-<h3>Hamburger 3</h3>
-<h4>Hamburger 4</h4>
-<h5>Hamburger 5</h5>
-<h6>Hamburger 6</h6>
- </div>
-    <div class="py2"> <input class="input" type="text">
-<input class="input" type="datetime">
-<input class="input" type="datetime-local">
-<input class="input" type="email">
-<input class="input" type="month">
-<input class="input" type="number">
-<input class="input" type="password">
-<input class="input" type="search">
-<input class="input" type="tel">
-<input class="input" type="time">
-<input class="input" type="url">
-<input class="input" type="week">
-<input type="radio">
-<input type="checkbox">
-<input type="button">
-<input type="submit">
-<input type="reset">
-<input type="color">
-<input type="range">
-<input type="file">
-<input type="image">
- </div>
-    <div class="py2"> <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.inline</span>       <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span> <span class="p">}</span>
-<span class="nc">.block</span>        <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="p">}</span>
-<span class="nc">.inline-block</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span> <span class="p">}</span>
-
-<span class="nc">.overflow-hidden</span> <span class="p">{</span> <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span> <span class="p">}</span>
-<span class="nc">.overflow-scroll</span> <span class="p">{</span> <span class="k">overflow</span><span class="o">:</span> <span class="k">scroll</span> <span class="p">}</span>
-
-<span class="nc">.clearfix</span><span class="nd">:before</span><span class="o">,</span>
-<span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span>
-  <span class="k">content</span><span class="o">:</span> <span class="s2">&quot; &quot;</span><span class="p">;</span>
-  <span class="k">display</span><span class="o">:</span> <span class="n">table</span>
-<span class="p">}</span>
-<span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">clear</span><span class="o">:</span> <span class="k">both</span> <span class="p">}</span>
-
-<span class="nc">.left</span>  <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span> <span class="p">}</span>
-<span class="nc">.right</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">right</span> <span class="p">}</span>
-
-<span class="nc">.fit</span> <span class="p">{</span> <span class="k">max-width</span><span class="o">:</span> <span class="m">100%</span> <span class="p">}</span>
-
-<span class="nc">.half-width</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">50%</span> <span class="p">}</span>
-<span class="nc">.full-width</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">100%</span> <span class="p">}</span>
-</pre></div>
-</div>
- </div>
-    <div class="py2"> <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.m0</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.mt0</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.mr0</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.mb0</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.ml0</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="m">0</span> <span class="p">}</span>
-
-<span class="nc">.m1</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mt1</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mr1</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mb1</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.ml1</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-
-<span class="nc">.m2</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mt2</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mr2</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mb2</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.ml2</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-
-<span class="nc">.m3</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mt3</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mr3</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mb3</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.ml3</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-
-<span class="nc">.m4</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mt4</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mr4</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mb4</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.ml4</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-
-<span class="nc">.mxn1</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">margin-right</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="p">}</span>
-<span class="nc">.mxn2</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">);</span> <span class="k">margin-right</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">);</span> <span class="p">}</span>
-<span class="nc">.mxn3</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">);</span> <span class="k">margin-right</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">);</span> <span class="p">}</span>
-<span class="nc">.mxn4</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="k">margin-right</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="p">}</span>
-
-<span class="nc">.mx-auto</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> <span class="k">margin-right</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> <span class="p">}</span>
-</pre></div>
-</div>
- </div>
-    <div class="py2"> <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.p1</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.py1</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.px1</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-
-<span class="nc">.p2</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.py2</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.px2</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-
-<span class="nc">.p3</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.py3</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.px3</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-
-<span class="nc">.p4</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.py4</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.px4</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-</pre></div>
-</div>
- </div>
-    <div class="py2"> <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.relative</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">relative</span> <span class="p">}</span>
-<span class="nc">.absolute</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span> <span class="p">}</span>
-<span class="nc">.fixed</span>    <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span> <span class="p">}</span>
-
-<span class="nc">.top-0</span>    <span class="p">{</span> <span class="k">top</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.right-0</span>  <span class="p">{</span> <span class="k">right</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.bottom-0</span> <span class="p">{</span> <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.left-0</span>   <span class="p">{</span> <span class="k">left</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
-
-<span class="nc">.z1</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">1</span> <span class="p">}</span>
-<span class="nc">.z2</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">2</span> <span class="p">}</span>
-<span class="nc">.z3</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">3</span> <span class="p">}</span>
-<span class="nc">.z4</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">4</span> <span class="p">}</span>
-
-<span class="nc">.absolute-center</span> <span class="p">{</span>
-  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="k">right</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="k">margin</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
-  <span class="k">display</span><span class="o">:</span> <span class="n">table</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
- </div>
-    <div class="py2"> <h1>
-  Responsive Line Break
-  <br class="md-show">
-  To Control Wrapping
-</h1>
- </div>
-    <div class="py2"> <h3 class="hide sm-show">Visible from <code>--breakpoint-sm</code> and up.</h3>
-<h3 class="sm-hide red">Hidden from <code>--breakpoint-sm</code> and up.</h3>
- </div>
-    <div class="py2"> <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.sm-show</span><span class="o">,</span> <span class="nc">.md-show</span><span class="o">,</span> <span class="nc">.lg-show</span> <span class="p">{</span>
-  <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span>
-<span class="p">}</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-sm</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.sm-show</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-md</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.md-show</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-lg</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.lg-show</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="nc">.hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-sm</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.sm-hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-md</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.md-hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-lg</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.lg-hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
- </div>
-    <div class="py2"> <div class="overflow-scroll">
-  <table class="table-light overflow-hidden bg-white border rounded">
-    <thead class="bg-light-gray">
-      <tr>
-        <th>Artist</th> <th>Album</th> <th>Release Date</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
-      <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
-      <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
-    </tbody>
-  </table>
-</div>
- </div>
-    <div class="py2"> <div class="table outline-blue">
-  <div class="table-cell">
-    <h1 class="m0">.table-cell</h1>
-    <p class="m0">For vertically centered content</p>
-  </div>
-  <div class="table-cell">.table-cell</div>
-</div>
- </div>
-    <div class="py2"> <div class="table table-fixed outline-blue">
-  <div class="table-cell">
-    <h1 class="m0">.table-cell</h1>
-    <p class="m0">For vertically centered content</p>
-  </div>
-  <div class="table-cell">.table-cell</div>
-  <div class="table-cell">.table-cell</div>
-</div>
- </div>
-    <div class="py2"> <div class="table outline-blue">
-  <div class="table-cell p2">Image</div>
-  <div class="table-cell full-width">
-    <h1 class="m0">Flag Body</h1>
-    <p class="m0">The full-width utility makes the table object behave like the flag object.</p>
-  </div>
-</div>
- </div>
-    <div class="py2"> <div class="table outline-blue">
-  <div class="table-cell col-7">
-    <h1 class="m0">.table-cell.col-7</h1>
-    <p class="m0">For vertically centered content</p>
-  </div>
-  <div class="table-cell col-5">.table-cell.col-5</div>
-</div>
- </div>
-    <div class="py2"> <div class="sm-table mb1 outline-blue">
-  <div class="sm-table-cell">
-    <h1 class="m0">.sm-table-cell</h1>
-    <p class="m0">Only kicks in above the small breakpoint</p>
-  </div>
-  <div class="sm-table-cell">.sm-table-cell</div>
-</div>
-<div class="lg-table outline-blue">
-  <div class="lg-table-cell">
-    <h1 class="m0">.lg-table-cell</h1>
-    <p class="m0">Only kicks in above the large breakpoint</p>
-  </div>
-  <div class="lg-table-cell">.lg-table-cell</div>
-</div>
- </div>
-    <div class="py2"> <div class="overflow-scroll">
-  <table class="table-light">
-    <thead>
-      <tr>
-        <th>Artist</th> <th>Album</th> <th>Release Date</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
-      <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
-      <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
-    </tbody>
-  </table>
-</div>
- </div>
-    <div class="py2"> <p class="h1">Pastrami 1</p>
-<p class="h2">Pastrami 2</p>
-<p class="h3">Pastrami 3</p>
-<p class="h4">Pastrami 4</p>
-<p class="h5">Pastrami 5</p>
-<p class="h6">Pastrami 6</p>
- </div>
-    <div class="py2"> <p class="bold">Bold</p>
-<p class="regular">Regular</p>
-<p class="italic">Italic</p>
-<p class="caps">Caps</p>
-<p class="left-align">Left align</p>
-<p class="center">Center</p>
-<p class="right-align">Right align</p>
-<p class="justify">Justify Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
- </div>
+    <div class="py2"> <div data-include="docs/examples/responsive-states-test.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/backgrounds.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/borders.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/buttons.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/colors.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/double-media-object.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/form-basic.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/form-inline.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/grid-breakpoints.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/grid-centered.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/grid-container.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/grid-floats.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/grid-gutters.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/grid-nesting.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/grid-reversed.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/headings.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/input-types.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/layout-utilities.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/margins.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/padding.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/positions.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/responsive-line-break.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/responsive-show-hide.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/responsive-states.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/table-color-utilities.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/table-object.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/table-object-fixed.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/table-object-flag.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/table-object-grid.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/table-object-responsive.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/tables.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/type-scale.html"></div> </div>
+    <div class="py2"> <div data-include="docs/examples/type-utilities.html"></div> </div>
 
   </div>
   <div class="sm-col sm-col-3 sm-show">
@@ -783,7 +116,9 @@
   </div>
 </div>
 
-<footer class="py4">
+
+
+<footer class="container px2 py4">
   <div class="sm-table">
     <div class="sm-table-cell nowrap py2 xs-center">
       <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">
