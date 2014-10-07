@@ -1,7 +1,6 @@
-<!doctype html>
-<html lang="en">
-<div data-include="docs/partials/_head.html"></div>
-<body class="container px2">
+{% extends '../../layouts/default.html' %}
+
+{% block content %}
 
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps bold mt2">
@@ -27,21 +26,21 @@
         Typographic elements are normalized to a simple type scale that works well across devices.
         Default top and bottom margins are set for commonly-used typographic elements.
       </p>
-      <div data-include-example="docs/examples/headings.html"></div>
+      {% include '../../partials/_example.html' with { file: 'headings.html' } %}
 
       <h2>Type scale utilities</h2>
       <p>
         The <code>.h1</code> – <code>.h6</code> font-size utilities can be used to override an element’s default size.
       </p>
-      <div data-include-example="docs/examples/type-scale.html"></div>
+      {% include '../../partials/_example.html' with { file: 'type-scale.html' } %}
 
       <h2>Lists</h2>
       <p>By default, lists have bullets or numbers and padding left.</p>
-      <div class="mb2" data-include-example="docs/examples/lists.html"></div>
+      {% include '../../partials/_example.html' with { file: 'lists.html' } %}
       <p>To remove default list styling, use <code>.list-reset</code>.</p>
-      <div class="mb2" data-include-example="docs/examples/list-reset.html"></div>
+      {% include '../../partials/_example.html' with { file: 'list-reset.html' } %}
       <p>To set lists inline, use utilities.</p>
-      <div data-include-example="docs/examples/list-inline.html"></div>
+      {% include '../../partials/_example.html' with { file: 'list-inline.html' } %}
     </section>
 
     <section id="forms" class="py2">
@@ -56,15 +55,15 @@
       </p>
       <h2>Inline Forms</h2>
       <p>By default, form elements display inline.</p>
-      <div data-include-example="docs/examples/form-inline.html"></div>
+      {% include '../../partials/_example.html' with { file: 'form-inline.html' } %}
       <h2>Stacked Forms</h2>
       <p>
         Use <code>.block</code> and other utilities to stack form elements.
         The use of utilities allows for a lot of flexibility when building form layouts.
       </p>
-      <div class="mb2" data-include-example="docs/examples/form-basic.html"></div>
+      {% include '../../partials/_example.html' with { file: 'form-basic.html' } %}
       <p>Fieldsets can be reset with <code>.fieldset-reset</code> to allow for easier styling of the fieldset and legend.</p>
-      <div class="mb2" data-include-example="docs/examples/form-fieldset.html"></div>
+      {% include '../../partials/_example.html' with { file: 'form-fieldset.html' } %}
     </section>
 
     <section id="buttons" class="py2">
@@ -74,7 +73,7 @@
         All buttons share common padding and height, well suited for tap targets on touchscreen displays.
         Color styles and other custom extensions adjust their surface-level appearance.
       </p>
-      <div data-include-example="docs/examples/buttons.html"></div>
+      {% include '../../partials/_example.html' with { file: 'buttons.html' } %}
     </section>
 
     <section id="tables" class="py2">
@@ -84,7 +83,7 @@
         Use the <code>table-light</code> color style with other color utilities
         or create custom theme extensions to suit your needs.
       </p>
-      <div data-include-example="docs/examples/tables.html"></div>
+      {% include '../../partials/_example.html' with { file: 'tables.html' } %}
     </section>
 
     <section id="variables" class="py2">
@@ -93,7 +92,7 @@
         Base styles use the following variables.
         To alter these defaults, declare new values after importing Basscss with Rework. 
       </p>
-      <div data-include="docs/examples/base-variables.html"></div>
+      {% include '../../../examples/base-variables.html' %}
     </section>
 
     <section id="npm" class="py2">
@@ -130,7 +129,4 @@
   </div>
 </div>
 
-<div data-include="docs/partials/_footer.html"></div>
-
-</body>
-</html>
+{% endblock %}

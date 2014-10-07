@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="utf-8">
   <title>Basscss</title>
@@ -12,7 +13,10 @@
   <link rel="apple-touch-icon-precomposed" href="/docs/apple-touch-icon.png">
 </head>
 
+
 <body class="container px2">
+
+
 
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps bold mt2">
@@ -39,16 +43,20 @@
         Default top and bottom margins are set for commonly-used typographic elements.
       </p>
       
-<div data-include-example="docs/examples/headings.html" class="Example">
-<div class="Example_rendered">
-<h1>Hamburger 1</h1>
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <h1>Hamburger 1</h1>
 <h2>Hamburger 2</h2>
 <h3>Hamburger 3</h3>
 <h4>Hamburger 4</h4>
 <h5>Hamburger 5</h5>
 <h6>Hamburger 6</h6>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;h1&gt;</span>Hamburger 1<span class="nt">&lt;/h1&gt;</span>
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;h1&gt;</span>Hamburger 1<span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;h2&gt;</span>Hamburger 2<span class="nt">&lt;/h2&gt;</span>
 <span class="nt">&lt;h3&gt;</span>Hamburger 3<span class="nt">&lt;/h3&gt;</span>
 <span class="nt">&lt;h4&gt;</span>Hamburger 4<span class="nt">&lt;/h4&gt;</span>
@@ -56,22 +64,30 @@
 <span class="nt">&lt;h6&gt;</span>Hamburger 6<span class="nt">&lt;/h6&gt;</span>
 </pre></div>
 </div>
+</div>
+
+
+
 
       <h2>Type scale utilities</h2>
       <p>
         The <code>.h1</code> &#x2013; <code>.h6</code> font-size utilities can be used to override an element&#x2019;s default size.
       </p>
       
-<div data-include-example="docs/examples/type-scale.html" class="Example">
-<div class="Example_rendered">
-<p class="h1">Pastrami 1</p>
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <p class="h1">Pastrami 1</p>
 <p class="h2">Pastrami 2</p>
 <p class="h3">Pastrami 3</p>
 <p class="h4">Pastrami 4</p>
 <p class="h5">Pastrami 5</p>
 <p class="h6">Pastrami 6</p>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;h1&quot;</span><span class="nt">&gt;</span>Pastrami 1<span class="nt">&lt;/p&gt;</span>
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;h1&quot;</span><span class="nt">&gt;</span>Pastrami 1<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;h2&quot;</span><span class="nt">&gt;</span>Pastrami 2<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;h3&quot;</span><span class="nt">&gt;</span>Pastrami 3<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;h4&quot;</span><span class="nt">&gt;</span>Pastrami 4<span class="nt">&lt;/p&gt;</span>
@@ -79,13 +95,20 @@
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;h6&quot;</span><span class="nt">&gt;</span>Pastrami 6<span class="nt">&lt;/p&gt;</span>
 </pre></div>
 </div>
+</div>
+
+
+
 
       <h2>Lists</h2>
       <p>By default, lists have bullets or numbers and padding left.</p>
       
-<div class="mb2 Example" data-include-example="docs/examples/lists.html">
-<div class="Example_rendered">
-<ul>
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <ul>
   <li>Half-Smoke</li>
   <li>Kielbasa</li>
   <li>Bologna</li>
@@ -96,8 +119,9 @@
   <li>Bratwurst</li>
   <li>Chorizo</li>
 </ol>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;ul&gt;</span>
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;ul&gt;</span>
   <span class="nt">&lt;li&gt;</span>Half-Smoke<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;</span>Kielbasa<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;</span>Bologna<span class="nt">&lt;/li&gt;</span>
@@ -110,18 +134,26 @@
 <span class="nt">&lt;/ol&gt;</span>
 </pre></div>
 </div>
+</div>
+
+
+
       <p>To remove default list styling, use <code>.list-reset</code>.</p>
       
-<div class="mb2 Example" data-include-example="docs/examples/list-reset.html">
-<div class="Example_rendered">
-<ul class="list-reset">
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <ul class="list-reset">
   <li>List Reset</li>
   <li>Removes bullets</li>
   <li>Removes numbers</li>
   <li>Removes padding</li>
 </ul>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-reset&quot;</span><span class="nt">&gt;</span>
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-reset&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li&gt;</span>List Reset<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;</span>Removes bullets<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;</span>Removes numbers<span class="nt">&lt;/li&gt;</span>
@@ -129,18 +161,26 @@
 <span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 </div>
+</div>
+
+
+
       <p>To set lists inline, use utilities.</p>
       
-<div data-include-example="docs/examples/list-inline.html" class="Example">
-<div class="Example_rendered">
-<ul class="list-reset">
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <ul class="list-reset">
   <li class="inline-block mr1">Half-Smoke</li>
   <li class="inline-block mr1">Kielbasa</li>
   <li class="inline-block mr1">Bologna</li>
   <li class="inline-block mr1">Prosciutto</li>
 </ul>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-reset&quot;</span><span class="nt">&gt;</span>
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-reset&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;inline-block mr1&quot;</span><span class="nt">&gt;</span>Half-Smoke<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;inline-block mr1&quot;</span><span class="nt">&gt;</span>Kielbasa<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;inline-block mr1&quot;</span><span class="nt">&gt;</span>Bologna<span class="nt">&lt;/li&gt;</span>
@@ -148,6 +188,10 @@
 <span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 </div>
+</div>
+
+
+
     </section>
 
     <section id="forms" class="py2">
@@ -163,30 +207,41 @@
       <h2>Inline Forms</h2>
       <p>By default, form elements display inline.</p>
       
-<div data-include-example="docs/examples/form-inline.html" class="Example">
-<div class="Example_rendered">
-<form>
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <form>
   <label>Search</label>
   <input type="text" class="field-light">
   <button class="button-blue">Go</button>
 </form>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;form&gt;</span>
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;form&gt;</span>
   <span class="nt">&lt;label&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;field-light&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Go<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
+</div>
+
+
+
       <h2>Stacked Forms</h2>
       <p>
         Use <code>.block</code> and other utilities to stack form elements.
         The use of utilities allows for a lot of flexibility when building form layouts.
       </p>
       
-<div class="mb2 Example" data-include-example="docs/examples/form-basic.html">
-<div class="Example_rendered">
-<form class="sm-col-6">
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <form class="sm-col-6">
   <label>Email Address</label>
   <input type="text" class="block full-width field-light">
   <label>Password</label>
@@ -206,8 +261,9 @@
   <button type="submit" class="button-blue">Sign In</button>
   <button type="reset" class="button-gray">Cancel</button>
 </form>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;sm-col-6&quot;</span><span class="nt">&gt;</span>
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;sm-col-6&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label&gt;</span>Email Address<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width field-light&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
@@ -229,11 +285,18 @@
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
+</div>
+
+
+
       <p>Fieldsets can be reset with <code>.fieldset-reset</code> to allow for easier styling of the fieldset and legend.</p>
       
-<div class="mb2 Example" data-include-example="docs/examples/form-fieldset.html">
-<div class="Example_rendered">
-<form class="sm-col-6">
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <form class="sm-col-6">
   <fieldset class="fieldset-reset">
     <legend class="h3 bold">Fieldset Legend</legend>
     <label>Hamburger</label>
@@ -243,8 +306,9 @@
   </fieldset>
   <button type="sumbit" class="button-blue">Submit</button>
 </form>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;sm-col-6&quot;</span><span class="nt">&gt;</span>
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;sm-col-6&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">&quot;fieldset-reset&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">&quot;h3 bold&quot;</span><span class="nt">&gt;</span>Fieldset Legend<span class="nt">&lt;/legend&gt;</span>
     <span class="nt">&lt;label&gt;</span>Hamburger<span class="nt">&lt;/label&gt;</span>
@@ -256,6 +320,10 @@
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
+</div>
+
+
+
     </section>
 
     <section id="buttons" class="py2">
@@ -266,9 +334,12 @@
         Color styles and other custom extensions adjust their surface-level appearance.
       </p>
       
-<div data-include-example="docs/examples/buttons.html" class="Example">
-<div class="Example_rendered">
-<div class="mb1">
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <div class="mb1">
   <button>Button</button>
   <a href="#!" class="button">Link Button</a>
   <input type="button" class="button" value="Input Button">
@@ -279,8 +350,9 @@
   <button class="button-gray mb1">Button Gray</button>
   <button class="button-red mb1">Button Red</button>
 </div>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mb1&quot;</span><span class="nt">&gt;</span>
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mb1&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Link Button<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Input Button&quot;</span><span class="nt">&gt;</span>
@@ -293,6 +365,10 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+</div>
+
+
+
     </section>
 
     <section id="tables" class="py2">
@@ -303,9 +379,12 @@
         or create custom theme extensions to suit your needs.
       </p>
       
-<div data-include-example="docs/examples/tables.html" class="Example">
-<div class="Example_rendered">
-<div class="overflow-scroll">
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <div class="overflow-scroll">
   <table class="table-light">
     <thead>
       <tr>
@@ -319,8 +398,9 @@
     </tbody>
   </table>
 </div>
-</div>
-<div class="highlight Example_code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-scroll&quot;</span><span class="nt">&gt;</span>
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-scroll&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table-light&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;thead&gt;</span>
       <span class="nt">&lt;tr&gt;</span>
@@ -336,6 +416,10 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+</div>
+
+
+
     </section>
 
     <section id="variables" class="py2">
@@ -405,7 +489,9 @@
   </div>
 </div>
 
-<footer class="py4">
+
+
+<footer class="container px2 py4">
   <div class="sm-table">
     <div class="sm-table-cell nowrap py2 xs-center">
       <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">
@@ -417,10 +503,10 @@
     </div>
     <div class="sm-table-cell full-width py2 xs-center">
       <div class="h5 bold px1">
-        <a href="/" class="button button-narrow button-nav-light" data-nav-item="">Home</a>
-        <a href="/docs" class="button button-narrow button-nav-light" data-nav-item="">Docs</a>
+        <a href="/" class="button button-narrow button-nav-light">Home</a>
+        <a href="/docs" class="button button-narrow button-nav-light">Docs</a>
         <div class="inline-block">
-          <a href="/docs/getting-started" class="button button-narrow sm-show button-nav-light" data-nav-item="">Download</a>
+          <a href="/docs/getting-started" class="button button-narrow sm-show button-nav-light">Download</a>
         </div>
         <a href="//github.com/jxnblk/basscss" class="button button-narrow button-nav-light">Github</a>
       </div>

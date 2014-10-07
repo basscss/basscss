@@ -7,11 +7,11 @@ var mincss = require('gulp-minify-css');
 var webserver = require('gulp-webserver');
 var watch = require('gulp-watch');
 
-var include = require('./include');
-var example = require('./include-example');
 var nav = require('./is-active');
 var pygmentize = require('./pygmentize');
 var glossary = require('./css-glossary');
+
+var swig = require('gulp-swig');
 
 
 // Site development
@@ -21,40 +21,41 @@ gulp.task('serve', function() {
   gulp.src('./').pipe(webserver({}));
 });
 
-gulp.task('watch-css', ['basswork', 'site-basswork', 'themes-basswork', 'sassify'], function() {
+gulp.task('watch-css', ['basswork', 'site-basswork', 'sassify', 'styles'], function() {
   gulp.watch(
-    ['./src/**/*.css', './docs/css/src/**/*.css', './docs/themes/**/src/**/*.css'],
-    ['basswork', 'site-basswork', 'themes-basswork', 'sassify']
+    ['./src/**/*.css', './docs/css/src/**/*.css'],
+    ['basswork', 'site-basswork', 'sassify', 'styles']
   );
 });
 
-// Build site
-gulp.task('watch-templates', function() {
-  gulp.src('./docs/templates/**/*.html')
-    .pipe(watch('./docs/templates/**/*.html', function(files) {
-      console.log('watch update');
-      return files.pipe(include())
-        .pipe(example())
-        .pipe(pygmentize())
-        .pipe(nav())
-        .pipe(glossary({ css: './basscss.min.css' }))
-        .pipe(gulp.dest('./'));
-    }));
+gulp.task('watch-templates', ['swig'], function() {
+  gulp.watch(
+    ['./docs/templates/**/*.html'],
+    ['swig']
+  );
 });
 
 gulp.task('watch-includes', function() {
-  gulp.watch(['./docs/examples/**/*', './docs/partials/**/*'], ['render']);
+  gulp.watch(['./docs/examples/**/*', './docs/templates/partials/**/*'], ['swig']);
 });
 
-// Render templates
-gulp.task('render', function() {
-  gulp.src('./docs/templates/**/*.html')
-    .pipe(include())
-    .pipe(example())
+gulp.task('swig', function() {
+  gulp.src([
+      './docs/templates/**/*.html',
+      '!./docs/templates/docs/styles/**/*',
+      '!./docs/templates/layouts/**/*',
+      '!./docs/templates/partials/**/*',
+      '!./docs/templates/examples/**/*'
+    ])
+    .pipe(swig({ defaults: { cache: false } }))
     .pipe(pygmentize())
-    .pipe(nav())
-    .pipe(glossary({ css: './basscss.min.css' }))
     .pipe(gulp.dest('./'));
+});
+
+gulp.task('styles', function() {
+  gulp.src('./docs/templates/docs/styles/*.html')
+    .pipe(glossary({ css: './basscss.min.css' }))
+    .pipe(gulp.dest('./docs/styles'));
 });
 
 // Site stylesheet

@@ -1074,11 +1074,11 @@ hr {
 }
 
 .field-light.is-success {
-  border-color: #00d930;
+  border-color: #00cf26;
 }
 
 .field-light.is-warning {
-  border-color: #ffdc00;
+  border-color: #efcc00;
 }
 
 .field-light.is-error {
@@ -1138,11 +1138,11 @@ hr {
 }
 
 .field-dark.is-success {
-  border-color: #00d930;
+  border-color: #00cf26;
 }
 
 .field-dark.is-warning {
-  border-color: #ffdc00;
+  border-color: #efcc00;
 }
 
 .field-dark.is-error {
@@ -1354,11 +1354,11 @@ hr {
 }
 
 .green {
-  color: #00d930;
+  color: #00cf26;
 }
 
 .yellow {
-  color: #ffdc00;
+  color: #efcc00;
 }
 
 .bg-dark-gray {
@@ -1390,11 +1390,11 @@ hr {
 }
 
 .bg-green {
-  background-color: #00d930;
+  background-color: #00cf26;
 }
 
 .bg-yellow {
-  background-color: #ffdc00;
+  background-color: #efcc00;
 }
 
 .bg-darken-1 {

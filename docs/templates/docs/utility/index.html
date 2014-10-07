@@ -1,7 +1,6 @@
-<!doctype html>
-<html lang="en">
-<div data-include="docs/partials/_head.html"></div>
-<body class="container px2">
+{% extends '../../layouts/default.html' %}
+
+{% block content %}
 
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps bold mt2">
@@ -25,21 +24,21 @@
     <section id="typography" class="py2">
       <h1>Typography</h1>
       <p>Change typographic styles and defaults with these utilities.</p>
-      <div data-include-example="docs/examples/type-utilities.html"></div>
+      {% include '../../partials/_example.html' with { file: 'type-utilities.html' } %}
     </section>
 
     <section id="layout" class="py2">
       <h1>Layout</h1>
       <p>Change the default document flow with display, float, and other utilities.</p>
       <div class="p2 bg-darken-1 rounded">
-        <div data-include="docs/examples/layout-utilities.html"></div>
+        {% include '../../../examples/layout-utilities.html' %}
       </div>
       <h2>Media Object</h2>
       <p>Create a <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a> using basic utilities.</p>
-      <div data-include-example="docs/examples/media-object.html"></div>
+      {% include '../../partials/_example.html' with { file: 'media-object.html' } %}
       <h2>Double-Sided Media Object</h2>
       <p>For a container with a flexible center, use a double-sided media object.</p>
-      <div data-include-example="docs/examples/double-media-object.html"></div>
+      {% include '../../partials/_example.html' with { file: 'double-media-object.html' } %}
     </section>
 
     <section id="white-space" class="py2">
@@ -76,7 +75,7 @@
         Margin auto is used to horizontally center block-level elements with a set width.
       </p>
       <div class="p2 bg-darken-1 rounded">
-        <div data-include="docs/examples/margins.html"></div>
+        {% include '../../../examples/margins.html' %}
       </div>
       <h2>Padding</h2>
       <p>
@@ -84,7 +83,7 @@
         This is to normalize the spacing used around elements.
       </p>
       <div class="p2 mb2 bg-darken-1 rounded">
-        <div data-include="docs/examples/padding.html"></div>
+        {% include '../../../examples/padding.html' %}
       </div>
       <p>
         <b class="bold red">
@@ -121,14 +120,14 @@
         or manually adjust them in CSS.
       </p>
       <div class="p2 mb2 bg-darken-1 rounded">
-        <div data-include="docs/examples/responsive-states.html"></div>
+        {% include '../../../examples/responsive-states.html' %}
       </div>
       <h2>Example</h2>
       <p>Resize the browser window to see the effect.</p>
-      <div data-include-example="docs/examples/responsive-show-hide.html"></div>
+      {% include '../../partials/_example.html' with { file: 'responsive-show-hide.html' } %}
       <h2>Responsive Line Break</h2>
       <p>Control wrapping at different screen widths.</p>
-      <div data-include-example="docs/examples/responsive-line-break.html"></div>
+      {% include '../../partials/_example.html' with { file: 'responsive-line-break.html' } %}
     </section>
 
     <section id="positions" class="py2">
@@ -141,7 +140,7 @@
         See the <a href="/docs/guide/#positions">Guide to Basics</a> for more info.
       </p>
       <div class="p2 bg-darken-1 rounded">
-        <div data-include="docs/examples/positions.html"></div>
+        {% include '../../../examples/positions.html' %}
       </div>
     </section>
 
@@ -151,7 +150,7 @@
         Utility styles use the following variables.
         To alter these defaults, declare new values after importing Basscss with Rework. 
       </p>
-      <div data-include="docs/examples/utility-variables.html"></div>
+      {% include '../../../examples/utility-variables.html' %}
     </section>
 
     <section id="npm" class="py2">
@@ -193,7 +192,5 @@
 
 </div>
 
-<div data-include="docs/partials/_footer.html"></div>
+{% endblock %}
 
-</body>
-</html>

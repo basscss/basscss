@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="utf-8">
   <title>Basscss</title>
@@ -12,7 +13,10 @@
   <link rel="apple-touch-icon-precomposed" href="/docs/apple-touch-icon.png">
 </head>
 
+
 <body class="container px2">
+
+
 
 <header class="py3 mb3 border-bottom">
   <div class="avenir h4 caps bold mt2">
@@ -24,428 +28,430 @@
 </header>
 
 
-  <section id="rams-quote" class="center py3">
-    <blockquote class="py2 m0 mid-gray">
-      <p class="h2 italic mb0">Good design is as little design as possible</p>
-      <cite>&#x2013; Dieter Rams</cite>
-    </blockquote>
-  </section>
+<section id="rams-quote" class="center py3">
+  <blockquote class="py2 m0 mid-gray">
+    <p class="h2 italic mb0">Good design is as little design as possible</p>
+    <cite>&#x2013; Dieter Rams</cite>
+  </blockquote>
+</section>
 
-  <div class="clearfix mxn2">
+<div class="clearfix mxn2">
 
-    <div class="sm-col sm-col-9 px2 py2">
+  <div class="sm-col sm-col-9 px2 py2">
 
-      <!--
-      <p class="h3">A guide to web design basics with Basscss</p>
-      -->
+    <!--
+    <p class="h3">A guide to web design basics with Basscss</p>
+    -->
 
-      <section id="markup" class="mb2">
-        <h1 class="mt0">Document structure</h1>
-        <p class="h4">
-          HTML is a semantically structured markup language.
-          When building anything on the web, start with clean markup that accurately
-          reflects your information hierarchy.
-          When hierarchy changes, be sure to update the markup before making any stylistic changes.
-          The most important parts of web design involve no CSS at all.
-        </p>
-      </section>
+    <section id="markup" class="mb2">
+      <h1 class="mt0">Document structure</h1>
+      <p class="h4">
+        HTML is a semantically structured markup language.
+        When building anything on the web, start with clean markup that accurately
+        reflects your information hierarchy.
+        When hierarchy changes, be sure to update the markup before making any stylistic changes.
+        The most important parts of web design involve no CSS at all.
+      </p>
+    </section>
 
-      <section id="multi-class-pattern" class="py2">
-        <h1>Multiclass CSS pattern</h1>
-        <p class="h4">
-          Basscss is based on Object Oriented CSS (OOCSS) principles.
-          OOCSS has many benefits, including code readability, reusable styles, smaller CSS files,
-          more performant selectors, more flexible markup structure, and code scalability.
-          Basscss is meant to be a very simple and intuitive take on this approach,
-          well suited to designing in the browser, rapid prototyping, or serving as the basis for a larger project.
-        </p>
-        <p class="h4">
-          One of the defining features of OOCSS is the multiclass pattern.
-          This is the practice of using multiple classes on a single HTML element.
-          This can seem strange at first, but once you get the hang of things,
-          it can make designing and building websites much faster and easier.
-          It also has some significant front-end performance benefits.
-        </p>
-        <h2>Example</h2>
-        <div class="p2 mb2 bg-darken-2 rounded">
+    <section id="multi-class-pattern" class="py2">
+      <h1>Multiclass CSS pattern</h1>
+      <p class="h4">
+        Basscss is based on Object Oriented CSS (OOCSS) principles.
+        OOCSS has many benefits, including code readability, reusable styles, smaller CSS files,
+        more performant selectors, more flexible markup structure, and code scalability.
+        Basscss is meant to be a very simple and intuitive take on this approach,
+        well suited to designing in the browser, rapid prototyping, or serving as the basis for a larger project.
+      </p>
+      <p class="h4">
+        One of the defining features of OOCSS is the multiclass pattern.
+        This is the practice of using multiple classes on a single HTML element.
+        This can seem strange at first, but once you get the hang of things,
+        it can make designing and building websites much faster and easier.
+        It also has some significant front-end performance benefits.
+      </p>
+      <h2>Example</h2>
+      <div class="p2 mb2 bg-darken-2 rounded">
 <div data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;h3 p1 mb2 bg-light-gray rounded&quot;</span><span class="nt">&gt;</span>
-  A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
+A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+      </div>
+      <h2>Order</h2>
+      <p class="h4">
+        While the order of classes doesn&#x2019;t matter to the browser, maintaining
+        a consistent order will drastically improve code readability.
+        I recommend the following order:
+      </p>
+      <ol class="h4">
+        <li><strong>Typography</strong> &#x2013; sets the visual hierarchy and is one of the most important parts of web design</li>
+        <li><strong>Positioning</strong> &#x2013; can severely change document flow</li>
+        <li><strong>Layout</strong> &#x2013; can affect other elements and document flow</li>
+        <li><strong>Color &amp; Theme</strong> &#x2013; has little or no effect on layout</li>
+        <li><strong>State</strong> &#x2013; is dynamic and often unnecessary</li>
+      </ol>
+    </section>
+
+    <section id="typography" class="py2">
+      <h1>Writing and Typography</h1>
+      <p class="h4">
+        Good writing and typography are key to successful web design.
+        Typography should serve as the basis for gestalt, user flows, and information hierarchy.
+        Ensure that links, form labels, helper text, buttons, and other microcopy
+        receive as much attention as body copy, and remember the two serve very different purposes.
+      </p>
+    </section>
+
+    <section id="block-level-inline" class="py2">
+      <h1>Block-level and Inline Elements</h1>
+      <p class="h4">
+        There are two basic types of elements in HTML.
+        <a href="https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements">Block-level elements</a>
+        are larger container elements that begin on a new line and take up the entire width
+        of their parent container by default.
+        Block-level elements can also have set widths and heights.
+        They may contain other block-level elements and inline elements.
+      </p>
+      <p class="h4">
+        <a href="https://developer.mozilla.org/en-US/docs/HTML/Inline_elements">Inline elements</a>
+        do not begin a new line and contain content and other inline elements.
+        Inline elements are only as large as the content they contain.
+      </p>
+      <p class="h4">
+        In HTML5, things get a little more complicated, but the basics still apply.
+        Learn more:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories">HTML5 Content Categories</a>.
+      </p>
+    </section>
+
+    <section id="display" class="py2">
+      <h1>Display Property</h1>
+      <p class="h4">
+        Basscss&#x2019;s display utilities override the default behaviors of block-level and inline elements.
+        To make a block-level element inline, use the <code>.inline</code> class.
+        To make inline elements block-level, use <code>.block</code>.
+      </p>
+      <p class="h4">
+        Inline-block is a mix of these two properties.
+        Inline-block elements have a block element box, with optional width and height,
+        but flow with surrounding content like an inline element.
+      </p>
+    </section>
+
+    <section id="box-model" class="py2">
+      <h1>Box Model</h1>
+      <p class="h4">
+        The box-model is the basis of all HTML layout.
+        Understanding how it works is crucial to designing for the web.
+        Block-level elements naturally fill the width of their parents.
+        Margins add space around the element. Borders add space around the element, but within the margins.
+        Padding adds space within the element.
+        If an element has no set width, it will shrink to fit its container.
+      </p>
+      <p class="h4">
+        If an element has a declared width or height, padding and borders will be added to those values.
+        It&#x2019;s often easier to add padding and borders to child elements rather than directly to elements with set widths.
+        For example, when using a grid system.
+      </p>
+      <h2 class="h5 mid-gray">Box Model Simulation</h2>
+      <div class="center p1 blue border-blue">
+        <p class="mb0">Margin</p>
+        <div class="m1 py1 px2 border-blue">
+          <p>Padding</p>
+          <div class="p2 border-blue">Content</div>
         </div>
-        <h2>Order</h2>
-        <p class="h4">
-          While the order of classes doesn&#x2019;t matter to the browser, maintaining
-          a consistent order will drastically improve code readability.
-          I recommend the following order:
-        </p>
-        <ol class="h4">
-          <li><strong>Typography</strong> &#x2013; sets the visual hierarchy and is one of the most important parts of web design</li>
-          <li><strong>Positioning</strong> &#x2013; can severely change document flow</li>
-          <li><strong>Layout</strong> &#x2013; can affect other elements and document flow</li>
-          <li><strong>Color &amp; Theme</strong> &#x2013; has little or no effect on layout</li>
-          <li><strong>State</strong> &#x2013; is dynamic and often unnecessary</li>
-        </ol>
-      </section>
+      </div>
+    </section>
 
-      <section id="typography" class="py2">
-        <h1>Writing and Typography</h1>
-        <p class="h4">
-          Good writing and typography are key to successful web design.
-          Typography should serve as the basis for gestalt, user flows, and information hierarchy.
-          Ensure that links, form labels, helper text, buttons, and other microcopy
-          receive as much attention as body copy, and remember the two serve very different purposes.
-        </p>
-      </section>
-
-      <section id="block-level-inline" class="py2">
-        <h1>Block-level and Inline Elements</h1>
-        <p class="h4">
-          There are two basic types of elements in HTML.
-          <a href="https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements">Block-level elements</a>
-          are larger container elements that begin on a new line and take up the entire width
-          of their parent container by default.
-          Block-level elements can also have set widths and heights.
-          They may contain other block-level elements and inline elements.
-        </p>
-        <p class="h4">
-          <a href="https://developer.mozilla.org/en-US/docs/HTML/Inline_elements">Inline elements</a>
-          do not begin a new line and contain content and other inline elements.
-          Inline elements are only as large as the content they contain.
-        </p>
-        <p class="h4">
-          In HTML5, things get a little more complicated, but the basics still apply.
-          Learn more:
-          <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories">HTML5 Content Categories</a>.
-        </p>
-      </section>
-
-      <section id="display" class="py2">
-        <h1>Display Property</h1>
-        <p class="h4">
-          Basscss&#x2019;s display utilities override the default behaviors of block-level and inline elements.
-          To make a block-level element inline, use the <code>.inline</code> class.
-          To make inline elements block-level, use <code>.block</code>.
-        </p>
-        <p class="h4">
-          Inline-block is a mix of these two properties.
-          Inline-block elements have a block element box, with optional width and height,
-          but flow with surrounding content like an inline element.
-        </p>
-      </section>
-
-      <section id="box-model" class="py2">
-        <h1>Box Model</h1>
-        <p class="h4">
-          The box-model is the basis of all HTML layout.
-          Understanding how it works is crucial to designing for the web.
-          Block-level elements naturally fill the width of their parents.
-          Margins add space around the element. Borders add space around the element, but within the margins.
-          Padding adds space within the element.
-          If an element has no set width, it will shrink to fit its container.
-        </p>
-        <p class="h4">
-          If an element has a declared width or height, padding and borders will be added to those values.
-          It&#x2019;s often easier to add padding and borders to child elements rather than directly to elements with set widths.
-          For example, when using a grid system.
-        </p>
-        <h2 class="h5 mid-gray">Box Model Simulation</h2>
-        <div class="center p1 blue border-blue">
-          <p class="mb0">Margin</p>
-          <div class="m1 py1 px2 border-blue">
-            <p>Padding</p>
-            <div class="p2 border-blue">Content</div>
-          </div>
+    <section id="floats" class="py2">
+      <h1>Floats</h1>
+      <p class="h4">
+        Floats are for wrapping text around images, but are also used for breaking
+        elements out of the normal document flow.
+        When you float an element left or right, the content following the float will flow beside and around the element.
+      </p>
+      <p class="h4">
+        Do not set display properties on floated elements.
+        When elements are floated, they are set to display block.
+      </p>
+      <div class="overflow-hidden mb3 bg-darken-1 rounded">
+        <div class="p2 blue outline-blue">
+          <div class="right p1 m1">.right</div>
+          <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
         </div>
-      </section>
-
-      <section id="floats" class="py2">
-        <h1>Floats</h1>
-        <p class="h4">
-          Floats are for wrapping text around images, but are also used for breaking
-          elements out of the normal document flow.
-          When you float an element left or right, the content following the float will flow beside and around the element.
-        </p>
-        <p class="h4">
-          Do not set display properties on floated elements.
-          When elements are floated, they are set to display block.
-        </p>
-        <div class="overflow-hidden mb3 bg-darken-1 rounded">
-          <div class="p2 blue outline-blue">
-            <div class="right p1 m1">.right</div>
-            <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-          </div>
-          <div class="p2 bg-darken-2">
+        <div class="p2 bg-darken-2">
 <div data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>.right<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;p&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="nt">&lt;/p&gt;</span>
 </pre></div>
 </div>
+        </div>
+      </div>
+      <p class="h4">
+        If an element contains only floated children, such as in a grid system, its height will collapse.
+        Clearfixes are used to ensure the parent element maintains the height of its content.
+        This container element is using the <code>.clearfix</code> class.
+      </p>
+      <div class="overflow-hidden mb3 bg-darken-1 rounded">
+        <div class="p2 blue outline-blue">
+          <div class="clearfix ">
+            <div class="left p2 ">.left</div>
+            <div class="left p2 ">.left</div>
+            <div class="right p2 ">.right</div>
           </div>
         </div>
-        <p class="h4">
-          If an element contains only floated children, such as in a grid system, its height will collapse.
-          Clearfixes are used to ensure the parent element maintains the height of its content.
-          This container element is using the <code>.clearfix</code> class.
-        </p>
-        <div class="overflow-hidden mb3 bg-darken-1 rounded">
-          <div class="p2 blue outline-blue">
-            <div class="clearfix ">
-              <div class="left p2 ">.left</div>
-              <div class="left p2 ">.left</div>
-              <div class="right p2 ">.right</div>
-            </div>
-          </div>
-          <div class="p2 bg-darken-1">
+        <div class="p2 bg-darken-1">
 <div data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>.right<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>.right<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
-          </div>
         </div>
-        <p class="h4">
-          Overflow hidden crops overflowing content, but can also be used as a clearfix
-          because it creates what&#x2019;s called a new <i>block formatting context</i>.
-        </p>
-        <div class="overflow-hidden mb3 bg-darken-1 rounded">
-          <div class="p2 blue outline-blue">
-            <div class="overflow-hidden">
-              <div class="left p2">.left</div>
-              <div class="left p2">
-                .left
-                <div class="p1" style="width:64rem">wider than parent element</div>
-              </div>
+      </div>
+      <p class="h4">
+        Overflow hidden crops overflowing content, but can also be used as a clearfix
+        because it creates what&#x2019;s called a new <i>block formatting context</i>.
+      </p>
+      <div class="overflow-hidden mb3 bg-darken-1 rounded">
+        <div class="p2 blue outline-blue">
+          <div class="overflow-hidden">
+            <div class="left p2">.left</div>
+            <div class="left p2">
+              .left
+              <div class="p1" style="width:64rem">wider than parent element</div>
             </div>
           </div>
-          <div class="p2 bg-darken-1">
+        </div>
+        <div class="p2 bg-darken-1">
 <div data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
-    .left
-    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width:64rem&quot;</span><span class="nt">&gt;</span>wider than parent element<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
+  .left
+  <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;width:64rem&quot;</span><span class="nt">&gt;</span>wider than parent element<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+        </div>
+      </div>
+      <p class="h4">
+        Using overflow hidden on an element placed after one or more floated elements will prevent that element from wrapping under the floated elements.
+        This is the basis of the
+        <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">
+          Media Object.
+        </a>
+      </p>
+      <div class="overflow-hidden mb3 bg-darken-1 rounded">
+        <div class="p2 blue outline-blue">
+          <div class="clearfix">
+            <div class="left p1 mr1">.left</div>
+            <p class="overflow-hidden">.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
           </div>
         </div>
-        <p class="h4">
-          Using overflow hidden on an element placed after one or more floated elements will prevent that element from wrapping under the floated elements.
-          This is the basis of the
-          <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">
-            Media Object.
-          </a>
-        </p>
-        <div class="overflow-hidden mb3 bg-darken-1 rounded">
-          <div class="p2 blue outline-blue">
-            <div class="clearfix">
-              <div class="left p1 mr1">.left</div>
-              <p class="overflow-hidden">.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-            </div>
-          </div>
-          <div class="p2 bg-darken-1">
+        <div class="p2 bg-darken-1">
 <div data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden&quot;</span><span class="nt">&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden&quot;</span><span class="nt">&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+        </div>
+      </div>
+      <div class="overflow-hidden mb3 bg-darken-1 rounded">
+        <div class="p2 blue outline-blue">
+          <div class="clearfix">
+            <div class="left p1">.left</div>
+            <div class="right p1">.right</div>
+            <p class="overflow-hidden p1">.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
           </div>
         </div>
-        <div class="overflow-hidden mb3 bg-darken-1 rounded">
-          <div class="p2 blue outline-blue">
-            <div class="clearfix">
-              <div class="left p1">.left</div>
-              <div class="right p1">.right</div>
-              <p class="overflow-hidden p1">.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-            </div>
-          </div>
-          <div class="p2 bg-darken-1">
+        <div class="p2 bg-darken-1">
 <div data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>.right<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden&quot;</span><span class="nt">&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>.right<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden&quot;</span><span class="nt">&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="widths" class="py2">
-        <h1>Widths</h1>
-        <p class="h4">
-          The default document flow in HTML is fluid.
-          This means that creating fluid and responsive layouts should be very easy to achieve.
-          Avoid using fixed widths at all in your layout.
-          Instead rely heavily on the normal document flow.
-        </p>
-        <p class="h4">
-          For elements with inherit widths, such as images, consider using a max-width of 100%
-          to ensure it never overflows its container.
-          Use the <code>.fit</code> class to do this.
-        </p>
-        <div class="p1 mb2 bg-darken-1 rounded">
+    <section id="widths" class="py2">
+      <h1>Widths</h1>
+      <p class="h4">
+        The default document flow in HTML is fluid.
+        This means that creating fluid and responsive layouts should be very easy to achieve.
+        Avoid using fixed widths at all in your layout.
+        Instead rely heavily on the normal document flow.
+      </p>
+      <p class="h4">
+        For elements with inherit widths, such as images, consider using a max-width of 100%
+        to ensure it never overflows its container.
+        Use the <code>.fit</code> class to do this.
+      </p>
+      <div class="p1 mb2 bg-darken-1 rounded">
 <div data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;cat.gif&quot;</span> <span class="na">alt=</span><span class="s">&quot;Cat&quot;</span> <span class="na">class=</span><span class="s">&quot;fit&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
-        </div>
-        <p class="h4">
-          If you do need to use widths, use percentages.
-          Most grid systems these days use this approach,
-          along with media queries to prevent broken layouts across devices.
-          When using percentage-based widths, remember that the percentage is based on width of the parent,
-          so nesting elements with percentage-based widths will get incrementally smaller as you nest.
-        </p>
-        <div class="overflow-hidden mb3 bg-darken-1 rounded">
-          <div class="p2 blue outline-blue">
-            <div class="clearfix">
-              <div class="left half-width py1">.left.half-width</div>
-              <div class="left half-width clearfix">
-                <div class="left half-width py1">Nested .left.half-width</div>
-                <div class="left half-width py1">Nested .left.half-width</div>
-              </div>
+      </div>
+      <p class="h4">
+        If you do need to use widths, use percentages.
+        Most grid systems these days use this approach,
+        along with media queries to prevent broken layouts across devices.
+        When using percentage-based widths, remember that the percentage is based on width of the parent,
+        so nesting elements with percentage-based widths will get incrementally smaller as you nest.
+      </p>
+      <div class="overflow-hidden mb3 bg-darken-1 rounded">
+        <div class="p2 blue outline-blue">
+          <div class="clearfix">
+            <div class="left half-width py1">.left.half-width</div>
+            <div class="left half-width clearfix">
+              <div class="left half-width py1">Nested .left.half-width</div>
+              <div class="left half-width py1">Nested .left.half-width</div>
             </div>
           </div>
-          <div class="p2 bg-darken-1">
+        </div>
+        <div class="p2 bg-darken-1">
 <div data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left half-width&quot;</span><span class="nt">&gt;</span>.left.half-width<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left half-width clearfix&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left half-width&quot;</span><span class="nt">&gt;</span>Nested .left.half-width<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left half-width&quot;</span><span class="nt">&gt;</span>Nested .left.half-width<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left half-width&quot;</span><span class="nt">&gt;</span>.left.half-width<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left half-width clearfix&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left half-width&quot;</span><span class="nt">&gt;</span>Nested .left.half-width<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left half-width&quot;</span><span class="nt">&gt;</span>Nested .left.half-width<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="media-queries" class="py2">
+      <h1>Media Queries and Mobile-First Approach</h1>
+      <p class="h4">
+        When building responsive websites, best practices suggest using a mobile-first approach.
+        First consider content and user flows, then create layouts that work well
+        at small screen sizes and touch devices.
+        Once that&#x2019;s in a good place use styling to enhance the experience on larger devices.
+        For interactive elements, design for touchscreen-sized tap targets first.
+        This usually translates well for use on desktop computers with pointing devices.
+      </p>
+      <p class="h4">
+        Basscss includes several state utilities for showing and hiding content on mobile devices.
+        Use these with care.
+        Mobile users still want the same content across devices and often switch devices mid-task.
+        Creating a cohesive experience is key to a good experience with your product.
+      </p>
+    </section>
+
+    <section id="positions" class="py2">
+      <h1>Positions</h1>
+      <p class="h4">
+        Positions allow you to move elements out of the default document flow.
+        They can be tricky to use, and I recommend using them as little as possible.
+      </p>
+      <p class="h4">
+        By default, elements have a <code>static</code> position.
+        Use the <code>.relative</code> class to keep elements in the default document flow
+        but create a new positioning context.
+        This is useful when anchoring to specific elements or dealing with <code>z-index</code>.
+      </p>
+      <p class="h4">
+        Use the <code>.absolute</code> class along with the
+        <code>.top-0</code>,
+        <code>.right-0</code>,
+        <code>.bottom-0</code>, and
+        <code>.left-0</code> utilities to anchor elements to the top, right, bottom,
+        or left of their current positioning context.
+        Use the padding or margin utilities to add space around the element.
+        Using two opposing anchoring utilities, such as
+        <code>.left-0</code> and <code>.right-0</code>
+        will make an element span the full width.
+      </p>
+      <p class="h4">
+        Use the <code>.fixed</code> class to give an element fixed positioning relative to the viewport.
+        Use this with caution. It can cause issues with mobile devices and is commonly abused in web design.
+      </p>
+      <p class="h4">
+        By default, positioned elements are stacked one on top of the other based on their position in the document.
+        Try reordering elements in the document before applying z-index properties.
+        If you do need to set z-index, start with the <code>.z1</code> class and work up from there.
+        And be sure you <a href="http://philipwalton.com/articles/what-no-one-told-you-about-z-index/">understand z-index</a> before adding more than four levels.
+      </p>
+
+      <div class="overflow-hidden mb3 bg-darken-1 rounded">
+        <div class="p2 blue outline-blue">
+          <div class="relative p4">
+            .relative
+            <div class="absolute top-0 right-0 p1 m1">.absolute .top-0 .right-0</div>
+            <div class="absolute top-0 right-0 p1 m3">.absolute .top-0 .right-0</div>
           </div>
         </div>
-      </section>
-
-      <section id="media-queries" class="py2">
-        <h1>Media Queries and Mobile-First Approach</h1>
-        <p class="h4">
-          When building responsive websites, best practices suggest using a mobile-first approach.
-          First consider content and user flows, then create layouts that work well
-          at small screen sizes and touch devices.
-          Once that&#x2019;s in a good place use styling to enhance the experience on larger devices.
-          For interactive elements, design for touchscreen-sized tap targets first.
-          This usually translates well for use on desktop computers with pointing devices.
-        </p>
-        <p class="h4">
-          Basscss includes several state utilities for showing and hiding content on mobile devices.
-          Use these with care.
-          Mobile users still want the same content across devices and often switch devices mid-task.
-          Creating a cohesive experience is key to a good experience with your product.
-        </p>
-      </section>
-
-      <section id="positions" class="py2">
-        <h1>Positions</h1>
-        <p class="h4">
-          Positions allow you to move elements out of the default document flow.
-          They can be tricky to use, and I recommend using them as little as possible.
-        </p>
-        <p class="h4">
-          By default, elements have a <code>static</code> position.
-          Use the <code>.relative</code> class to keep elements in the default document flow
-          but create a new positioning context.
-          This is useful when anchoring to specific elements or dealing with <code>z-index</code>.
-        </p>
-        <p class="h4">
-          Use the <code>.absolute</code> class along with the
-          <code>.top-0</code>,
-          <code>.right-0</code>,
-          <code>.bottom-0</code>, and
-          <code>.left-0</code> utilities to anchor elements to the top, right, bottom,
-          or left of their current positioning context.
-          Use the padding or margin utilities to add space around the element.
-          Using two opposing anchoring utilities, such as
-          <code>.left-0</code> and <code>.right-0</code>
-          will make an element span the full width.
-        </p>
-        <p class="h4">
-          Use the <code>.fixed</code> class to give an element fixed positioning relative to the viewport.
-          Use this with caution. It can cause issues with mobile devices and is commonly abused in web design.
-        </p>
-        <p class="h4">
-          By default, positioned elements are stacked one on top of the other based on their position in the document.
-          Try reordering elements in the document before applying z-index properties.
-          If you do need to set z-index, start with the <code>.z1</code> class and work up from there.
-          And be sure you <a href="http://philipwalton.com/articles/what-no-one-told-you-about-z-index/">understand z-index</a> before adding more than four levels.
-        </p>
-
-        <div class="overflow-hidden mb3 bg-darken-1 rounded">
-          <div class="p2 blue outline-blue">
-            <div class="relative p4">
-              .relative
-              <div class="absolute top-0 right-0 p1 m1">.absolute .top-0 .right-0</div>
-              <div class="absolute top-0 right-0 p1 m3">.absolute .top-0 .right-0</div>
-            </div>
-          </div>
-          <div class="p2 bg-darken-1">
+        <div class="p2 bg-darken-1">
 <div data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative p4&quot;</span><span class="nt">&gt;</span>
-  .relative
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;absolute top-0 right-0 p1 m1&quot;</span><span class="nt">&gt;</span>.absolute .top-0 .right-0<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;absolute top-0 right-0 p1 m3&quot;</span><span class="nt">&gt;</span>.absolute .top-0 .right-0<span class="nt">&lt;/div&gt;</span>
+.relative
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;absolute top-0 right-0 p1 m1&quot;</span><span class="nt">&gt;</span>.absolute .top-0 .right-0<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;absolute top-0 right-0 p1 m3&quot;</span><span class="nt">&gt;</span>.absolute .top-0 .right-0<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
-          </div>
         </div>
-          
-      </section>
+      </div>
+        
+    </section>
 
-      <section id="extending-basscss" class="py2">
-        <h1>Extending Basscss</h1>
-        <p class="h4">
-          You can do a lot with Basscss&#x2019;s suite of styles, but if you decide to add new styles to your project,
-          here are some tips and recommendations to keep your code simple and maintainable:
-        </p>
-        <ul class="h4">
-          <li>Keep styles as reusable as possible.</li>
-          <li>Only apply styles to base elements once.</li>
-          <li>Never use ids, attributes (e.g. <code>[type=text]</code>) or the universal selector (<code>*</code>) as selectors.</li>
-          <li>Never use adjoining selectors.</li>
-          <li>Avoid parent and sibling selectors.</li>
-          <li>Prefer using class selectors directly on the elements they&#x2019;re styling.</li>
-          <li>Use clear, descriptive names for selectors.</li>
-          <li>Keep structural styles and theme styles separate.</li>
-          <li>Avoid using mixins and extends in sass &#x2013; it&#x2019;s often easier and more readable (especially for others) to write styles out by hand.</li>
-        </ul>
-        <p>
-          To learn more about building on top of Basscss, I recommend reading the
-          <a href="/docs/principles">Design Principles</a>.
-      </p></section>
-
-    </div>
-
-    <div class="sm-col sm-col-3 px2 py2 xs-hide sm-show">
-      <a href="#markup" class="button block">Document Structure</a>
-      <a href="#multi-class-pattern" class="button block">Multiclass CSS Pattern</a>
-      <a href="#typography" class="button block">Writing and Typography</a>
-      <a href="#block-level-inline" class="button block">Block-Level and Inline Elements</a>
-      <a href="#display" class="button block">Display Property</a>
-      <a href="#box-model" class="button block">Box Model</a>
-      <a href="#floats" class="button block">Floats</a>
-      <a href="#widths" class="button block">Widths</a>
-      <a href="#media-queries" class="button block">Media Queries and Mobile-First Approach</a>
-      <a href="#positions" class="button block">Positions</a>
-      <a href="#extending-basscss" class="button block">Extending Basscss</a>
-    </div>
+    <section id="extending-basscss" class="py2">
+      <h1>Extending Basscss</h1>
+      <p class="h4">
+        You can do a lot with Basscss&#x2019;s suite of styles, but if you decide to add new styles to your project,
+        here are some tips and recommendations to keep your code simple and maintainable:
+      </p>
+      <ul class="h4">
+        <li>Keep styles as reusable as possible.</li>
+        <li>Only apply styles to base elements once.</li>
+        <li>Never use ids, attributes (e.g. <code>[type=text]</code>) or the universal selector (<code>*</code>) as selectors.</li>
+        <li>Never use adjoining selectors.</li>
+        <li>Avoid parent and sibling selectors.</li>
+        <li>Prefer using class selectors directly on the elements they&#x2019;re styling.</li>
+        <li>Use clear, descriptive names for selectors.</li>
+        <li>Keep structural styles and theme styles separate.</li>
+        <li>Avoid using mixins and extends in sass &#x2013; it&#x2019;s often easier and more readable (especially for others) to write styles out by hand.</li>
+      </ul>
+      <p>
+        To learn more about building on top of Basscss, I recommend reading the
+        <a href="/docs/principles">Design Principles</a>.
+    </p></section>
 
   </div>
 
-  <section id="cta" class="py4">
-    <h2 class="h2">Learn More</h2>
-    <div class="mxn2">
-      <a href="/docs/guides/ui" class="h3 button mb1 button-nav-light">UI Elements Guide</a>
-    </div>
-  </section>
+  <div class="sm-col sm-col-3 px2 py2 xs-hide sm-show">
+    <a href="#markup" class="button block">Document Structure</a>
+    <a href="#multi-class-pattern" class="button block">Multiclass CSS Pattern</a>
+    <a href="#typography" class="button block">Writing and Typography</a>
+    <a href="#block-level-inline" class="button block">Block-Level and Inline Elements</a>
+    <a href="#display" class="button block">Display Property</a>
+    <a href="#box-model" class="button block">Box Model</a>
+    <a href="#floats" class="button block">Floats</a>
+    <a href="#widths" class="button block">Widths</a>
+    <a href="#media-queries" class="button block">Media Queries and Mobile-First Approach</a>
+    <a href="#positions" class="button block">Positions</a>
+    <a href="#extending-basscss" class="button block">Extending Basscss</a>
+  </div>
 
-  <footer class="py4">
+</div>
+
+<section id="cta" class="py4">
+  <h2 class="h2">Learn More</h2>
+  <div class="mxn2">
+    <a href="/docs/guides/ui" class="h3 button mb1 button-nav-light">UI Elements Guide</a>
+  </div>
+</section>
+
+
+
+<footer class="container px2 py4">
   <div class="sm-table">
     <div class="sm-table-cell nowrap py2 xs-center">
       <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">
@@ -457,10 +463,10 @@
     </div>
     <div class="sm-table-cell full-width py2 xs-center">
       <div class="h5 bold px1">
-        <a href="/" class="button button-narrow button-nav-light" data-nav-item="">Home</a>
-        <a href="/docs" class="button button-narrow button-nav-light" data-nav-item="">Docs</a>
+        <a href="/" class="button button-narrow button-nav-light">Home</a>
+        <a href="/docs" class="button button-narrow button-nav-light">Docs</a>
         <div class="inline-block">
-          <a href="/docs/getting-started" class="button button-narrow sm-show button-nav-light" data-nav-item="">Download</a>
+          <a href="/docs/getting-started" class="button button-narrow sm-show button-nav-light">Download</a>
         </div>
         <a href="//github.com/jxnblk/basscss" class="button button-narrow button-nav-light">Github</a>
       </div>

@@ -1,23 +1,19 @@
-<!doctype html>
-<html lang="en">
-<div data-include="docs/partials/_head.html"></div>
-<body class="container px2">
+{% extends '../../layouts/default.html' %}
 
-  <header class="py3 mb3 border-bottom">
-    <div class="avenir h4 caps bold mt2">
-      <a href="/">Basscss</a> /
-      <a href="/docs">Docs</a>
-    </div>
-    <h1 class="avenir md-h1 lg-h1 caps m0">This Page Has Moved</h1>
-  </header>
+{% block content %}
 
-  <section class="center mb4 py4">
-    <a href="/docs/guides/basics" class="h3 button button-blue-outline">
-      Basics Guide
-    </a>
-  </section>
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h4 caps bold mt2">
+    <a href="/">Basscss</a> /
+    <a href="/docs">Docs</a>
+  </div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">This Page Has Moved</h1>
+</header>
 
-  <div data-include="docs/partials/_footer.html"></div>
+<section class="center mb4 py4">
+  <a href="/docs/guides/basics" class="h3 button button-blue-outline">
+    Basics Guide
+  </a>
+</section>
 
-</body>
-</html>
+{% endblock %}
