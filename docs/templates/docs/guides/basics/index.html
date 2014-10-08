@@ -159,67 +159,18 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
         Do not set display properties on floated elements.
         When elements are floated, they are set to display block.
       </p>
-      <div class="overflow-hidden mb3 bg-darken-1 rounded">
-        <div class="p2 blue outline-blue">
-          <div class="right p1 m1">.right</div>
-          <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-        </div>
-        <div class="p2 bg-darken-2">
-<div data-pygmentize>
-<div class="right">.right</div>
-<p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-</div>
-        </div>
-      </div>
+      {% include '../../../partials/_example.html' with { file: 'float-right.html' } %}
       <p class="h4">
         If an element contains only floated children, such as in a grid system, its height will collapse.
         Clearfixes are used to ensure the parent element maintains the height of its content.
         This container element is using the <code>.clearfix</code> class.
       </p>
-      <div class="overflow-hidden mb3 bg-darken-1 rounded">
-        <div class="p2 blue outline-blue">
-          <div class="clearfix ">
-            <div class="left p2 ">.left</div>
-            <div class="left p2 ">.left</div>
-            <div class="right p2 ">.right</div>
-          </div>
-        </div>
-        <div class="p2 bg-darken-1">
-<div data-pygmentize>
-<div class="clearfix">
-<div class="left">.left</div>
-<div class="left">.left</div>
-<div class="right">.right</div>
-</div>
-</div>
-        </div>
-      </div>
+      {% include '../../../partials/_example.html' with { file: 'clearfix.html' } %}
       <p class="h4">
         Overflow hidden crops overflowing content, but can also be used as a clearfix
         because it creates what’s called a new <i>block formatting context</i>.
       </p>
-      <div class="overflow-hidden mb3 bg-darken-1 rounded">
-        <div class="p2 blue outline-blue">
-          <div class="overflow-hidden">
-            <div class="left p2">.left</div>
-            <div class="left p2">
-              .left
-              <div class="p1" style="width:64rem">wider than parent element</div>
-            </div>
-          </div>
-        </div>
-        <div class="p2 bg-darken-1">
-<div data-pygmentize>
-<div class="overflow-hidden">
-<div class="left">.left</div>
-<div class="left">
-  .left
-  <div style="width:64rem">wider than parent element</div>
-</div>
-</div>
-</div>
-        </div>
-      </div>
+      {% include '../../../partials/_example.html' with { file: 'overflow-hidden.html' } %}
       <p class="h4">
         Using overflow hidden on an element placed after one or more floated elements will prevent that element from wrapping under the floated elements.
         This is the basis of the
@@ -227,40 +178,8 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
           Media Object.
         </a>
       </p>
-      <div class="overflow-hidden mb3 bg-darken-1 rounded">
-        <div class="p2 blue outline-blue">
-          <div class="clearfix">
-            <div class="left p1 mr1">.left</div>
-            <p class="overflow-hidden">.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-          </div>
-        </div>
-        <div class="p2 bg-darken-1">
-<div data-pygmentize>
-<div class="clearfix">
-<div class="left">.left</div>
-<p class="overflow-hidden">.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-</div>
-</div>
-        </div>
-      </div>
-      <div class="overflow-hidden mb3 bg-darken-1 rounded">
-        <div class="p2 blue outline-blue">
-          <div class="clearfix">
-            <div class="left p1">.left</div>
-            <div class="right p1">.right</div>
-            <p class="overflow-hidden p1">.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-          </div>
-        </div>
-        <div class="p2 bg-darken-1">
-<div data-pygmentize>
-<div class="clearfix">
-<div class="left">.left</div>
-<div class="right">.right</div>
-<p class="overflow-hidden">.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-</div>
-</div>
-        </div>
-      </div>
+      {% include '../../../partials/_example.html' with { file: 'new-block-formatting-context.html' } %}
+      {% include '../../../partials/_example.html' with { file: 'new-block-formatting-context-right.html' } %}
     </section>
 
     <section id="widths" class="py2">
@@ -277,9 +196,7 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
         Use the <code>.fit</code> class to do this.
       </p>
       <div class="p1 mb2 bg-darken-1 rounded">
-<div data-pygmentize>
-<img src="cat.gif" alt="Cat" class="fit">
-</div>
+        <div data-pygmentize><img src="cat.gif" alt="Cat" class="fit"></div>
       </div>
       <p class="h4">
         If you do need to use widths, use percentages.
@@ -288,28 +205,7 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
         When using percentage-based widths, remember that the percentage is based on width of the parent,
         so nesting elements with percentage-based widths will get incrementally smaller as you nest.
       </p>
-      <div class="overflow-hidden mb3 bg-darken-1 rounded">
-        <div class="p2 blue outline-blue">
-          <div class="clearfix">
-            <div class="left half-width py1">.left.half-width</div>
-            <div class="left half-width clearfix">
-              <div class="left half-width py1">Nested .left.half-width</div>
-              <div class="left half-width py1">Nested .left.half-width</div>
-            </div>
-          </div>
-        </div>
-        <div class="p2 bg-darken-1">
-<div data-pygmentize>
-<div class="clearfix">
-<div class="left half-width">.left.half-width</div>
-<div class="left half-width clearfix">
-  <div class="left half-width">Nested .left.half-width</div>
-  <div class="left half-width">Nested .left.half-width</div>
-</div>
-</div>
-</div>
-        </div>
-      </div>
+      {% include '../../../partials/_example.html' with { file: 'nested-widths.html' } %}
     </section>
 
     <section id="media-queries" class="py2">
@@ -364,26 +260,7 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
         If you do need to set z-index, start with the <code>.z1</code> class and work up from there.
         And be sure you <a href="http://philipwalton.com/articles/what-no-one-told-you-about-z-index/">understand z-index</a> before adding more than four levels.
       </p>
-
-      <div class="overflow-hidden mb3 bg-darken-1 rounded">
-        <div class="p2 blue outline-blue">
-          <div class="relative p4">
-            .relative
-            <div class="absolute top-0 right-0 p1 m1">.absolute .top-0 .right-0</div>
-            <div class="absolute top-0 right-0 p1 m3">.absolute .top-0 .right-0</div>
-          </div>
-        </div>
-        <div class="p2 bg-darken-1">
-<div data-pygmentize>
-<div class="relative p4">
-.relative
-<div class="absolute top-0 right-0 p1 m1">.absolute .top-0 .right-0</div>
-<div class="absolute top-0 right-0 p1 m3">.absolute .top-0 .right-0</div>
-</div>
-</div>
-        </div>
-      </div>
-        
+      {% include '../../../partials/_example.html' with { file: 'positioned-elements.html' } %}
     </section>
 
     <section id="extending-basscss" class="py2">

@@ -148,6 +148,50 @@
 
 
 
+      <p>Utility styles for border radii can be used to style images and other elements.</p>
+      
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <img src="/docs/placeholder-square.svg" class="rounded" width="64" height="64">
+<img src="/docs/placeholder-square.svg" class="circle" width="64" height="64">
+<img src="/docs/placeholder-square.svg" class="rounded-top" width="64" height="64">
+<img src="/docs/placeholder-square.svg" class="rounded-right" width="64" height="64">
+<img src="/docs/placeholder-square.svg" class="rounded-bottom" width="64" height="64">
+<img src="/docs/placeholder-square.svg" class="rounded-left" width="64" height="64">
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/docs/placeholder-square.svg&quot;</span> <span class="na">class=</span><span class="s">&quot;rounded&quot;</span> <span class="na">width=</span><span class="s">&quot;64&quot;</span> <span class="na">height=</span><span class="s">&quot;64&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/docs/placeholder-square.svg&quot;</span> <span class="na">class=</span><span class="s">&quot;circle&quot;</span> <span class="na">width=</span><span class="s">&quot;64&quot;</span> <span class="na">height=</span><span class="s">&quot;64&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/docs/placeholder-square.svg&quot;</span> <span class="na">class=</span><span class="s">&quot;rounded-top&quot;</span> <span class="na">width=</span><span class="s">&quot;64&quot;</span> <span class="na">height=</span><span class="s">&quot;64&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/docs/placeholder-square.svg&quot;</span> <span class="na">class=</span><span class="s">&quot;rounded-right&quot;</span> <span class="na">width=</span><span class="s">&quot;64&quot;</span> <span class="na">height=</span><span class="s">&quot;64&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/docs/placeholder-square.svg&quot;</span> <span class="na">class=</span><span class="s">&quot;rounded-bottom&quot;</span> <span class="na">width=</span><span class="s">&quot;64&quot;</span> <span class="na">height=</span><span class="s">&quot;64&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/docs/placeholder-square.svg&quot;</span> <span class="na">class=</span><span class="s">&quot;rounded-left&quot;</span> <span class="na">width=</span><span class="s">&quot;64&quot;</span> <span class="na">height=</span><span class="s">&quot;64&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+</div>
+</div>
+
+
+
+      <p>The <code>.not-rounded</code> utility can be used to override default radii. This is useful for things like input and button groups.</p>
+      
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <button class="button-blue not-rounded">Not Rounded</button>
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue not-rounded&quot;</span><span class="nt">&gt;</span>Not Rounded<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+</div>
+</div>
+
+
+
     </section>
 
     <section id="forms" class="py2">
@@ -293,6 +337,35 @@
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/fieldset&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;sumbit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+</div>
+</div>
+
+
+
+      <p>For forms on dark backgrounds, use the <code>.field-dark</code> style.</p>
+      
+
+
+
+<div class="Example mb2">
+  <div class="Example_rendered">
+    <form class="p2 sm-col-6 white bg-dark-gray rounded">
+  <label>Hamburger</label>
+  <input type="text" class="block full-width field-dark">
+  <label>Hot Dog</label>
+  <input type="text" class="block full-width field-dark">
+  <button class="button-blue">Potato</button>
+</form>
+
+  </div>
+  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;p2 sm-col-6 white bg-dark-gray rounded&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Hamburger<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width field-dark&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Hot Dog<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width field-dark&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Potato<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>

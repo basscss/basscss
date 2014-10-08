@@ -21,3 +21,6 @@ A guide to creating UI elements with Basscss
 ## Media Players
 ## Carousel Alternatives
 
+Don't make your CSS do your templating engine's job.
+
+
