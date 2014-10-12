@@ -57,7 +57,7 @@ gulp.task('swig', function() {
 
 gulp.task('styles', function() {
   gulp.src('./docs/templates/docs/styles/*.html')
-    .pipe(glossary({ css: './basscss.min.css' }))
+    .pipe(glossary({ css: './css/basscss.min.css' }))
     .pipe(gulp.dest('./docs/styles'));
 });
 

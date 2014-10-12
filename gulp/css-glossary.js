@@ -19,7 +19,8 @@ module.exports = function(options) {
     var obj = css.parse(stylesheet, {});
     var data = obj.stylesheet;
     data.parsed = [];
-    data.size = Math.floor(fs.statSync(src).size / 1000);
+    data.size = (Math.round(fs.statSync(src).size / 100) / 10).toFixed(1);
+    data.gzSize = (Math.round(fs.statSync(src + '.gz').size / 100) / 10).toFixed(1) || null;
 
     for (var i = 0; i < data.rules.length; i++) {
       var rule = data.rules[i];
