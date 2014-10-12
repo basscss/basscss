@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 32"
+  width="1024" height="512"
+  fill="#0076df"
+  style="
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+  ">
+  <path fill="#f3f9f9" d="M0 0 H64 V32 H0z"/>
+  <text x="32" y="9" text-anchor="middle">
+    .bold
+  </text>
+  <text x="32" y="19" text-anchor="middle">
+    .inline-block
+  </text>
+  <text x="32" y="28" text-anchor="middle">
+    .mb4
+  </text>
+</svg>
