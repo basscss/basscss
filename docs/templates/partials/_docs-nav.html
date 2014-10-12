@@ -1,8 +1,14 @@
-<div class="mxn1">
-  <a href="/docs/getting-started" class="button button-small block" data-nav-item>Getting Started</a>
-  <a href="/docs/base" class="button button-small block" data-nav-item>Base Elements</a>
-  <a href="/docs/utilities" class="button button-small block" data-nav-item>Utilities</a>
-  <a href="/docs/modules" class="button button-small block" data-nav-item>Modules</a>
-  <a href="/docs/color" class="button button-small block" data-nav-item>Color</a>
-</div>
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h4 caps bold mt2">
+    <a href="/">Basscss</a>
+    {% if isdocs %}
+      / <a href="/docs">Docs</a>
+    {% endif %}
+    {% if isguide %}
+      / <a href="/docs/guides/">Guides</a>
+    {% endif %}
+  </div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">{{ title }}</h1>
+</header>
+
 

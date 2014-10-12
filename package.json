@@ -42,7 +42,9 @@
     "gulp-webserver": "^0.8.3",
     "pygmentize-bundled": "^2.1.1",
     "swig": "^1.4.2",
-    "through2": "^0.6.1"
+    "through2": "^0.6.1",
+    "grunt": "^0.4.5",
+    "swig-highlight": "^0.2.0"
   },
   "scripts": {
     "start": "gulp"

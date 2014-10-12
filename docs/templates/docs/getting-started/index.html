@@ -1,14 +1,10 @@
+{% set title = 'Getting Started' %}
+{% set isdocs = true %}
 {% extends '../../layouts/default.html' %}
 
 {% block content %}
 
-<header class="py3 mb3 border-bottom">
-  <div class="avenir h4 caps bold mt2">
-    <a href="/">Basscss</a> /
-    <a href="/docs">Docs</a>
-  </div>
-  <h1 class="avenir md-h1 lg-h1 caps m0">Getting Started</h1>
-</header>
+{% include '../../partials/_docs-nav.html' %}
 
 <div class="sm-col-9">
 
@@ -21,20 +17,31 @@
       Rework Vars,
       Rework Plugin Colors,
       and Rework Calc.
-      If you’re new to Rework, see <a href="/docs/rework">Using Rework</a>.
       The source also includes compiled CSS.
     </p>
+    <p class="h3 p2 border rounded">
+      To learn more about Rework, see <a href="/docs/rework">Using Rework</a>.
+    </p>
+  </section>
+
+  <section class="py2">
     <h2>Download or install Basscss from one of these sources</h2>
-    <p class="h3 mb1">Download ZIP:</p>
     <a href="https://github.com/jxnblk/basscss/archive/v4.1.2.zip" class="button mb2 button-blue">Download Source</a>
     <p class="h3 mb0">Clone from Github:</p>
     <pre class="Example_code">git clone https://github.com/jxnblk/basscss.git</pre>
-    <p class="h3 mb0">NPM:</p>
-    <pre class="Example_code">npm install basscss</pre>
-    <p class="h3 mb0">Bower:</p>
-    <pre class="Example_code">bower install basscss</pre>
+    <div class="clearfix mxn2">
+      <div class="sm-col sm-col-6 px2">
+        <p class="h3 mb0">NPM:</p>
+        <pre class="Example_code">npm install basscss</pre>
+      </div>
+      <div class="sm-col sm-col-6 px2">
+        <p class="h3 mb0">Bower:</p>
+        <pre class="Example_code">bower install basscss</pre>
+      </div>
+    </div>
   </section>
 
+  {#
   <section class="py2">
     <h2>Plain CSS</h2>
     <p>Alternatively, download the standalone CSS.</p>
@@ -142,6 +149,7 @@
       </div>
     </div>
   </section>
+  #}
 
   <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
 

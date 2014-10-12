@@ -12,7 +12,6 @@ var glossary = require('./css-glossary');
 
 var swig = require('gulp-swig');
 
-
 // Site development
 gulp.task('dev', ['watch-templates', 'watch-includes', 'watch-css', 'serve']);
 
@@ -30,6 +29,15 @@ gulp.task('watch-templates', ['swig'], function() {
 
 gulp.task('watch-includes', function() {
   gulp.watch(['./docs/examples/**/*', './docs/templates/partials/**/*'], ['swig']);
+});
+
+gulp.task('swigtest', function() {
+  var swig = require('swig');
+  var sp = require('./swig-pygments');
+  swig.setTag('highlight', sp.parse, sp.compile, sp.ends, sp.block);
+  swig.renderFile('./test.html', {}, function(err, result) {
+    console.log('result', result);
+  });
 });
 
 gulp.task('swig', function() {

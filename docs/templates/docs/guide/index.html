@@ -1,14 +1,10 @@
+{% set title = 'This page has moved' %}
+{% set isdocs = true %}
 {% extends '../../layouts/default.html' %}
 
 {% block content %}
 
-<header class="py3 mb3 border-bottom">
-  <div class="avenir h4 caps bold mt2">
-    <a href="/">Basscss</a> /
-    <a href="/docs">Docs</a>
-  </div>
-  <h1 class="avenir md-h1 lg-h1 caps m0">This Page Has Moved</h1>
-</header>
+{% include '../../partials/_docs-nav.html' %}
 
 <section class="center mb4 py4">
   <a href="/docs/guides/basics" class="h3 button button-blue-outline">

@@ -1,14 +1,10 @@
+{% set title = 'Base' %}
+{% set isdocs = true %}
 {% extends '../../layouts/default.html' %}
 
 {% block content %}
 
-<header class="py3 mb3 border-bottom">
-  <div class="avenir h4 caps bold mt2">
-    <a href="/">Basscss</a> /
-    <a href="/docs">Docs</a>
-  </div>
-  <h1 class="avenir md-h1 lg-h1 caps m0">Base</h1>
-</header>
+{% include '../../partials/_docs-nav.html' %}
 
 <div class="clearfix mxn2">
   <div class="sm-col sm-col-9 px2 py2">
@@ -17,6 +13,12 @@
       Base element styles control native HTML elements such as headings, paragraphs, buttons, and forms in a systematic and opinionated way.
       These styles include typographical considerations and utilities derived from base elements, such as typefaces, the type scale, forms, and buttons.
     </p>
+
+{#
+{% highlight 'html' %}
+test highlight
+{% endhighlight %}
+#}
 
     <section id="typography" class="py2">
       <h1>Typography</h1>
