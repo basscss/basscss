@@ -20,18 +20,12 @@ gulp.task('serve', function() {
   gulp.src('./').pipe(webserver({}));
 });
 
-gulp.task('watch-css', ['basswork', 'site-basswork', 'sassify', 'styles'], function() {
-  gulp.watch(
-    ['./src/**/*.css', './docs/css/src/**/*.css'],
-    ['basswork', 'site-basswork', 'sassify', 'styles']
-  );
+gulp.task('watch-css', ['basswork', 'site-basswork', 'styles'], function() {
+  gulp.watch(['./src/**/*.css', './docs/css/src/**/*.css'],['basswork', 'site-basswork', 'styles']);
 });
 
 gulp.task('watch-templates', ['swig'], function() {
-  gulp.watch(
-    ['./docs/templates/**/*.html'],
-    ['swig']
-  );
+  gulp.watch(['./docs/templates/**/*.html'], ['swig']);
 });
 
 gulp.task('watch-includes', function() {
@@ -64,13 +58,5 @@ gulp.task('site-basswork', function() {
     .pipe(mincss())
     .pipe(rename('base.min.css'))
     .pipe(gulp.dest('./docs/css'));
-});
-
-// Themes
-gulp.task('themes-basswork', function() {
-  gulp.src('./docs/themes/bassmap/src/bassmap.css')
-    .pipe(basswork()).pipe(gulp.dest('./docs/themes/bassmap'));
-  gulp.src('./docs/themes/bassdock/src/bassdock.css')
-    .pipe(basswork()).pipe(gulp.dest('./docs/themes/bassdock'));
 });
 

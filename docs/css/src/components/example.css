@@ -1,7 +1,7 @@
 /* HTML code example component */
 
 .Example {
-  background-color: var(--darken-1);
+  border: 1px solid var(--darken-1);
   border-radius: var(--border-radius);
 }
 

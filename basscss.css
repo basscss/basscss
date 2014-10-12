@@ -1310,8 +1310,9 @@ hr {
 }
 
 .button-nav-tab {
-  border-bottom: 1px solid #ccc;
+  margin-bottom: -1px;
   border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid #ccc;
 }
 
 .button-nav-tab:hover {
@@ -1319,7 +1320,8 @@ hr {
 }
 
 .button-nav-tab.is-active {
-  border-bottom: 0;
+  background-color: white;
+  border-bottom: 1px solid white;
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
