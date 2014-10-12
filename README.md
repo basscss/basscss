@@ -48,6 +48,19 @@ npm install basscss
 bower install basscss
 ```
 
+CDN:
+```
+<link src="http://d2v52k3cl9vedd.cloudfront.net/basscss/4.1.2/basscss.min.css" rel="stylesheet">
+```
+
+---
+
+## Folder Structure
+- `src`: Uncompiled Rework CSS files
+- `css`: Compiled CSS files
+- `gulp`: Files for Gulp build process
+- `docs`: Files for http://basscss.com site
+
 
 ## Documentation
 View the full documentation with inline examples:

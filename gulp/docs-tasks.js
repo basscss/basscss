@@ -31,18 +31,17 @@ gulp.task('watch-includes', function() {
   gulp.watch(['./docs/examples/**/*', './docs/templates/partials/**/*'], ['swig']);
 });
 
-gulp.task('swigtest', function() {
-  var swig = require('swig');
-  var sp = require('./swig-pygments');
-  swig.setTag('highlight', sp.parse, sp.compile, sp.ends, sp.block);
-  swig.renderFile('./test.html', {}, function(err, result) {
-    console.log('result', result);
-  });
-});
+//gulp.task('swigtest', function() {
+//  var swig = require('swig');
+//  var sp = require('./swig-pygments');
+//  swig.setTag('highlight', sp.parse, sp.compile, sp.ends, sp.block);
+//  swig.renderFile('./test.html', {}, function(err, result) {
+//    console.log('result', result);
+//  });
+//});
 
 gulp.task('swig', function() {
   var version = require('../package.json').version;
-  console.log(version);
   gulp.src([
       './docs/templates/**/*.html',
       '!./docs/templates/docs/styles/**/*',
