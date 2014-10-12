@@ -20,19 +20,19 @@ gulp.task('basswork', function() {
   gulp.src('./src/*.css')
     .pipe(basswork())
     .pipe(header(meta))
-    .pipe(gulp.dest('.'))
+    .pipe(gulp.dest('./css'))
     .pipe(mincss())
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(gulp.dest('.'))
+    .pipe(gulp.dest('./css'))
     .pipe(gzip())
-    .pipe(gulp.dest('.'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('bump', function() {
   var version = require('./package.json').version;
   gulp.src('./bower.json')
     .pipe(bump({version: version}))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('.'));
 });
 
 // Site-specific tasks
