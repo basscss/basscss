@@ -41,6 +41,8 @@ gulp.task('swigtest', function() {
 });
 
 gulp.task('swig', function() {
+  var version = require('../package.json').version;
+  console.log(version);
   gulp.src([
       './docs/templates/**/*.html',
       '!./docs/templates/docs/styles/**/*',
@@ -48,7 +50,7 @@ gulp.task('swig', function() {
       '!./docs/templates/partials/**/*',
       '!./docs/templates/examples/**/*'
     ])
-    .pipe(swig({ defaults: { cache: false } }))
+    .pipe(swig({ defaults: { cache: false }, data: { version: version } }))
     .pipe(pygmentize())
     .pipe(gulp.dest('./'));
 });

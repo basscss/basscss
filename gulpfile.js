@@ -4,6 +4,7 @@ var rename = require('gulp-rename');
 var mincss = require('gulp-minify-css');
 var gzip = require('gulp-gzip');
 var header = require('gulp-header');
+var bump = require('gulp-bump');
 
 // Custom Rework wrapper
 var basswork = require('gulp-basswork');
@@ -25,6 +26,13 @@ gulp.task('basswork', function() {
     .pipe(gulp.dest('.'))
     .pipe(gzip())
     .pipe(gulp.dest('.'));
+});
+
+gulp.task('bump', function() {
+  var version = require('./package.json').version;
+  gulp.src('./bower.json')
+    .pipe(bump({version: version}))
+    .pipe(gulp.dest('./'));
 });
 
 // Site-specific tasks
