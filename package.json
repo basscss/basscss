@@ -44,8 +44,8 @@
     "swig": "^1.4.2",
     "through2": "^0.6.1",
     "grunt": "^0.4.5",
-    "swig-highlight": "^0.2.0",
-    "gulp-bump": "^0.1.11"
+    "gulp-bump": "^0.1.11",
+    "svg-to-png": "^0.6.0"
   },
   "scripts": {
     "start": "gulp"

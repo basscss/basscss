@@ -6,11 +6,11 @@ var rename = require('gulp-rename');
 var mincss = require('gulp-minify-css');
 var webserver = require('gulp-webserver');
 var watch = require('gulp-watch');
+var swig = require('gulp-swig');
+
 
 var pygmentize = require('./pygmentize');
 var glossary = require('./css-glossary');
-
-var swig = require('gulp-swig');
 
 // Site development
 gulp.task('dev', ['watch-templates', 'watch-includes', 'watch-css', 'serve']);
@@ -68,5 +68,12 @@ gulp.task('site-basswork', function() {
     .pipe(mincss())
     .pipe(rename('base.min.css'))
     .pipe(gulp.dest('./docs/css'));
+});
+
+// Create favicons
+gulp.task('favicon', function() {
+  var svgtopng = require('svg-to-png');
+  svgtopng.convert('./docs/favicon.svg', './docs', {});
+  svgtopng.convert('./docs/apple-touch-icon.svg', './docs', {});
 });
 
