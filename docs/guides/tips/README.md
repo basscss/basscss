@@ -1,15 +1,5 @@
 # Tips and Tricks Guide
 
-Dont override, adjust
-Don't contextually select, extend
-Don't modify utilities
-Look it up; RTFM
-Don't Nest
-Don't make assumptions
-Don't mix structure and skin
-Don't mix container and content
-Don't over specify
-
 When using any front end framework you should avoid overriding the built in styles.
 If you would like to customize the defaults, make adjustments to properties and values
 before using the framework and be sure to document any changes to the default behavior.
@@ -38,12 +28,16 @@ make sure to look for patterns and think about reusability, and consider ways in
 can DRY up your code. If you're constantly duplicating the same markup to make something like
 media player controls, those should probably be consolidated into a single partial, helper, or component.
 
+If you're adding something like a background image, consider using inline styles if that
+image will only be used in one place. There's no need to send extra CSS to pages that won't 
+have this background image.
+
 Don't make assumptions early on. Use low-level utilities and basic styles before abstracting into
 monolithic CSS styles. Over time, patterns will emerge that can inform what should be abstracted out.
 
 Don't nest selectors. It may be tempting to add a style for a parent element and all child elements together,
-for example `.list-navigation li a`, but this ties (couples) CSS to markup in a way that makes future adjustments difficult
-and limits the portability of styles.
+for example `.list-navigation li a`, but this ties (couples) CSS to markup
+in a way that makes future adjustments difficult and limits the portability of styles.
 This can also add unnecessary specificity that might be difficult to compensate for in the future.
 By keep all styles within a certain level of specificity, everything remains more interoperable without the
 need for ugly specificity hacks and overrides.
@@ -59,4 +53,12 @@ with the design over time and don't make a huge impact on page layout.
 Keeping structural styles and skins decoupled aids in interoperability and design flexibility.
 
 Don't mix container and content.
+Never use location-dependent styles. Styles should work the same no matter where they are put in the markup.
+Instead of styles like `.page-header h1`, prefer styles such as `.page-heading` and apply it directly to the h1 element.
+
+Avoid magic numbers. The type scale and white space scale in Basscss are intended
+to bring consistency and help normalize web designs. Type sizes should never be specified
+outside of the type scale, and margins and paddings should all be handled with the white space utilities.
+Making one-off adjustments to things like font sizes and margins can quickly lead to code bloat,
+harder-to-read markup, and less consistent designs.
 
