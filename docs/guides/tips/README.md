@@ -8,7 +8,9 @@ be cautious and notify any other contributors of those changes.
 
 Some CSS approaches suggest contextually adjusting styles. The styles in Basscss should never
 be contextually adjusted because this breaks the readability of classes in markup and the ability
-to make quick iterative adjustments. If you need to adjust a style in one particular place,
+to make quick iterative adjustments.
+(Reading styles in markup)
+If you need to adjust a style in one particular place,
 consider how you could make that style as reusable as possible and how those
 adjustments could be made with a style extension. For example, if you want the button in your site header to
 be larger and a different color from other buttons in your site, consider making extensions
