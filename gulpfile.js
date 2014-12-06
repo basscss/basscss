@@ -36,5 +36,5 @@ gulp.task('bump', function() {
 });
 
 // Site-specific tasks
-require('./tasks/docs-tasks');
+require('./tasks/docs');
 

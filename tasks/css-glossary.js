@@ -3,7 +3,7 @@ var fs = require('fs');
 var through = require('through2');
 var css = require('css');
 var util = require('gulp-util');
-var swig = require('swig');
+//var swig = require('swig');
 
 module.exports = function(options) {
 
