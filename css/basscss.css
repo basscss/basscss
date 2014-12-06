@@ -267,6 +267,10 @@ td {
   overflow: scroll;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .clearfix:before,
 .clearfix:after {
   content: " ";

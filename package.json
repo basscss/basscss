@@ -40,13 +40,9 @@
     "gulp-util": "^3.0.1",
     "gulp-watch": "^1.0.7",
     "gulp-webserver": "^0.8.3",
-    "pygmentize-bundled": "^2.1.1",
-    "swig": "^1.4.2",
     "through2": "^0.6.1",
-    "grunt": "^0.4.5",
     "gulp-bump": "^0.1.11",
     "svg-to-png": "^0.6.0",
-    "pygmentize-bundled-cached": "^1.0.0",
     "swig-highlight": "^0.2.0"
   },
   "scripts": {
