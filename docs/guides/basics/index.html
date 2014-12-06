@@ -76,15 +76,13 @@
       </p>
       <h2>Example</h2>
       <div class="p2 mb2 bg-darken-2 rounded">
-<div data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;h3 p1 mb2 bg-light-gray rounded&quot;</span><span class="nt">&gt;</span>
+<code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3 p1 mb2 bg-light-gray rounded"</span>&gt;</span>
 A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code>
       </div>
       <h2>Order</h2>
       <p class="h4">
-        While the order of classes doesn&#x2019;t matter to the browser, maintaining
+        While the order of classes doesn’t matter to the browser, maintaining
         a consistent order will drastically improve code readability.
         I recommend the following order:
       </p>
@@ -92,7 +90,7 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
         <li><strong>Typography</strong> &#x2013; sets the visual hierarchy and is one of the most important parts of web design</li>
         <li><strong>Positioning</strong> &#x2013; can severely change document flow</li>
         <li><strong>Layout</strong> &#x2013; can affect other elements and document flow</li>
-        <li><strong>Color &amp; Theme</strong> &#x2013; has little or no effect on layout</li>
+        <li><strong>Color & Theme</strong> &#x2013; has little or no effect on layout</li>
         <li><strong>State</strong> &#x2013; is dynamic and often unnecessary</li>
       </ol>
     </section>
@@ -132,7 +130,7 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
     <section id="display" class="py2">
       <h1>Display Property</h1>
       <p class="h4">
-        Basscss&#x2019;s display utilities override the default behaviors of block-level and inline elements.
+        Basscss’s display utilities override the default behaviors of block-level and inline elements.
         To make a block-level element inline, use the <code>.inline</code> class.
         To make inline elements block-level, use <code>.block</code>.
       </p>
@@ -155,7 +153,7 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
       </p>
       <p class="h4">
         If an element has a declared width or height, padding and borders will be added to those values.
-        It&#x2019;s often easier to add padding and borders to child elements rather than directly to elements with set widths.
+        It’s often easier to add padding and borders to child elements rather than directly to elements with set widths.
         For example, when using a grid system.
       </p>
       <h2 class="h5 mid-gray">Box Model Simulation</h2>
@@ -191,12 +189,13 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
 </div>
 
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;outline-blue&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right p1&quot;</span><span class="nt">&gt;</span>.right<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
+  <div class="Example_code">
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"outline-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right p1"</span>&gt;</span>.right<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+  </div>
 </div>
 
 
@@ -219,20 +218,21 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
 </div>
 
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix outline-blue&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left p2&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left p2&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right p2&quot;</span><span class="nt">&gt;</span>.right<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
+  <div class="Example_code">
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right p2"</span>&gt;</span>.right<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+  </div>
 </div>
 
 
 
       <p class="h4">
         Overflow hidden crops overflowing content, but can also be used as a clearfix
-        because it creates what&#x2019;s called a new <i>block formatting context</i>.
+        because it creates what’s called a new <i>block formatting context</i>.
       </p>
       
 
@@ -251,17 +251,18 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
 </div>
 
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;outline-blue&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left p2&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left p2&quot;</span><span class="nt">&gt;</span>
+  <div class="Example_code">
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"outline-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2"</span>&gt;</span>
       .left
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p1&quot;</span> <span class="na">style=</span><span class="s">&quot;width:64rem&quot;</span><span class="nt">&gt;</span>wider than parent element<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:64rem"</span>&gt;</span>wider than parent element<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+  </div>
 </div>
 
 
@@ -285,12 +286,13 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
 </div>
 
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix outline-blue&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left p1&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden p1&quot;</span><span class="nt">&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
+  <div class="Example_code">
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p1"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden p1"</span>&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+  </div>
 </div>
 
 
@@ -308,13 +310,14 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
 </div>
 
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix outline-blue&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left p1&quot;</span><span class="nt">&gt;</span>.left<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right p1&quot;</span><span class="nt">&gt;</span>.right<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden p1&quot;</span><span class="nt">&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
+  <div class="Example_code">
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p1"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right p1"</span>&gt;</span>.right<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden p1"</span>&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+  </div>
 </div>
 
 
@@ -335,9 +338,7 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
         Use the <code>.fit</code> class to do this.
       </p>
       <div class="p1 mb2 bg-darken-1 rounded">
-        <div data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;cat.gif&quot;</span> <span class="na">alt=</span><span class="s">&quot;Cat&quot;</span> <span class="na">class=</span><span class="s">&quot;fit&quot;</span><span class="nt">&gt;</span>
-</pre></div>
-</div>
+        <code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"cat.gif"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Cat"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fit"</span>/&gt;</span></code>
       </div>
       <p class="h4">
         If you do need to use widths, use percentages.
@@ -361,15 +362,16 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
 </div>
 
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix outline-blue&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left half-width py1&quot;</span><span class="nt">&gt;</span>.left.half-width<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left half-width clearfix&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left half-width py1&quot;</span><span class="nt">&gt;</span>Nested .left.half-width<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left half-width py1&quot;</span><span class="nt">&gt;</span>Nested .left.half-width<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
+  <div class="Example_code">
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left half-width py1"</span>&gt;</span>.left.half-width<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left half-width clearfix"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left half-width py1"</span>&gt;</span>Nested .left.half-width<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left half-width py1"</span>&gt;</span>Nested .left.half-width<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+  </div>
 </div>
 
 
@@ -382,7 +384,7 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
         When building responsive websites, best practices suggest using a mobile-first approach.
         First consider content and user flows, then create layouts that work well
         at small screen sizes and touch devices.
-        Once that&#x2019;s in a good place use styling to enhance the experience on larger devices.
+        Once that’s in a good place use styling to enhance the experience on larger devices.
         For interactive elements, design for touchscreen-sized tap targets first.
         This usually translates well for use on desktop computers with pointing devices.
       </p>
@@ -443,15 +445,16 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
 </div>
 
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;outline-blue&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative p4&quot;</span><span class="nt">&gt;</span>
+  <div class="Example_code">
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"outline-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"relative p4"</span>&gt;</span>
     .relative
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;absolute top-0 right-0 p1 m1&quot;</span><span class="nt">&gt;</span>.absolute .top-0 .right-0<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;absolute top-0 right-0 p1 m3&quot;</span><span class="nt">&gt;</span>.absolute .top-0 .right-0<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"absolute top-0 right-0 p1 m1"</span>&gt;</span>.absolute .top-0 .right-0<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"absolute top-0 right-0 p1 m3"</span>&gt;</span>.absolute .top-0 .right-0<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+  </div>
 </div>
 
 
@@ -461,7 +464,7 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
     <section id="extending-basscss" class="py2">
       <h1>Extending Basscss</h1>
       <p class="h4">
-        You can do a lot with Basscss&#x2019;s suite of styles, but if you decide to add new styles to your project,
+        You can do a lot with Basscss’s suite of styles, but if you decide to add new styles to your project,
         here are some tips and recommendations to keep your code simple and maintainable:
       </p>
       <ul class="h4">
@@ -470,15 +473,15 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
         <li>Never use ids, attributes (e.g. <code>[type=text]</code>) or the universal selector (<code>*</code>) as selectors.</li>
         <li>Never use adjoining selectors.</li>
         <li>Avoid parent and sibling selectors.</li>
-        <li>Prefer using class selectors directly on the elements they&#x2019;re styling.</li>
+        <li>Prefer using class selectors directly on the elements they’re styling.</li>
         <li>Use clear, descriptive names for selectors.</li>
         <li>Keep structural styles and theme styles separate.</li>
-        <li>Avoid using mixins and extends in sass &#x2013; it&#x2019;s often easier and more readable (especially for others) to write styles out by hand.</li>
+        <li>Avoid using mixins and extends in sass &#x2013; it’s often easier and more readable (especially for others) to write styles out by hand.</li>
       </ul>
       <p>
         To learn more about building on top of Basscss, I recommend reading the
         <a href="/docs/principles">Design Principles</a>.
-    </p></section>
+    </section>
 
   </div>
 
@@ -510,9 +513,9 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
 <footer class="py4">
   <div class="sm-table">
     <div class="sm-table-cell nowrap py2 xs-center">
-      <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
-          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4">
+      <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
         </svg>
         Tweet
       </a>
@@ -529,8 +532,8 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
     </div>
     <div class="sm-table-cell py2 nowrap right-align">
       <p class="h5 mb0 xs-center">
-        <svg class="icon red" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
-          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 ">
+        <svg class="icon red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 " />
         </svg>
         Made with love by
         <a href="//jxnblk.com">Jxnblk</a>

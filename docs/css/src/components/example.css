@@ -14,8 +14,10 @@
   background-color: var(--darken-1);
 }
 
+.Example_code code,
 .Example_code pre {
   margin-bottom: 0;
+  padding: 0;
   background-color: transparent;
 }
 

@@ -6,7 +6,9 @@
   <div class="Example_rendered">
     {% include path %}
   </div>
-  <div class="Example_code" data-pygmentize>{% include path %}</div>
+  <div class="Example_code">
+    <pre>{% highlight 'html' %}{% include path %}{% endhighlight %}</pre>
+  </div>
 </div>
 {#
 <div class="h6 right-align py1 mb2">

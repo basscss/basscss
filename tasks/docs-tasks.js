@@ -9,39 +9,19 @@ var watch = require('gulp-watch');
 var swig = require('gulp-swig');
 
 
-var pygmentize = require('./pygmentize');
+//var pygmentize = require('./pygmentize');
 var glossary = require('./css-glossary');
-
-// Site development
-gulp.task('dev', ['watch-templates', 'watch-includes', 'watch-css', 'serve']);
 
 gulp.task('serve', function() {
   gulp.src('./').pipe(webserver({}));
 });
 
-gulp.task('watch-css', ['basswork', 'site-basswork', 'styles'], function() {
-  gulp.watch(['./src/**/*.css', './docs/css/src/**/*.css'],['basswork', 'site-basswork', 'styles']);
-});
-
-gulp.task('watch-templates', ['swig'], function() {
-  gulp.watch(['./docs/templates/**/*.html'], ['swig']);
-});
-
-gulp.task('watch-includes', function() {
-  gulp.watch(['./docs/examples/**/*', './docs/templates/partials/**/*'], ['swig']);
-});
-
-//gulp.task('swigtest', function() {
-//  var swig = require('swig');
-//  var sp = require('./swig-pygments');
-//  swig.setTag('highlight', sp.parse, sp.compile, sp.ends, sp.block);
-//  swig.renderFile('./test.html', {}, function(err, result) {
-//    console.log('result', result);
-//  });
-//});
-
 gulp.task('swig', function() {
   var version = require('../package.json').version;
+  var setup = function(swig) {
+    require('swig-highlight').apply(swig);
+    //swig.setFilter('highlight', require('./highlight'));
+  };
   gulp.src([
       './docs/templates/**/*.html',
       '!./docs/templates/docs/styles/**/*',
@@ -49,8 +29,16 @@ gulp.task('swig', function() {
       '!./docs/templates/partials/**/*',
       '!./docs/templates/examples/**/*'
     ])
-    .pipe(swig({ defaults: { cache: false }, data: { version: version } }))
-    .pipe(pygmentize())
+    .pipe(swig({
+      setup: setup,
+      defaults: {
+        cache: false
+      },
+      data: {
+        version: version
+      }
+    }))
+    //.pipe(pygmentize())
     .pipe(gulp.dest('./'));
 });
 
@@ -75,4 +63,21 @@ gulp.task('favicon', function() {
   svgtopng.convert('./docs/favicon.svg', './docs', {});
   svgtopng.convert('./docs/apple-touch-icon.svg', './docs', {});
 });
+
+
+// Watch
+gulp.task('watch-css', ['basswork', 'site-basswork', 'styles'], function() {
+  gulp.watch(['./src/**/*.css', './docs/css/src/**/*.css'],['basswork', 'site-basswork', 'styles']);
+});
+
+gulp.task('watch-templates', ['swig'], function() {
+  gulp.watch(['./docs/templates/**/*.html'], ['swig']);
+});
+
+gulp.task('watch-includes', function() {
+  gulp.watch(['./docs/examples/**/*', './docs/templates/partials/**/*'], ['swig']);
+});
+
+// Site development
+gulp.task('dev', ['watch-templates', 'watch-includes', 'watch-css', 'serve']);
 

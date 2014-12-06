@@ -50,11 +50,11 @@
       </p>
       <h2>Example</h2>
       <div class="p2 mb2 bg-darken-2 rounded">
-<div data-pygmentize>
+{% highlight 'html' %}
 <div class="h3 p1 mb2 bg-light-gray rounded">
 A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
 </div>
-</div>
+{% endhighlight %}
       </div>
       <h2>Order</h2>
       <p class="h4">
@@ -190,7 +190,7 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
         Use the <code>.fit</code> class to do this.
       </p>
       <div class="p1 mb2 bg-darken-1 rounded">
-        <div data-pygmentize><img src="cat.gif" alt="Cat" class="fit"></div>
+        {% highlight 'html' %}<img src="cat.gif" alt="Cat" class="fit"/>{% endhighlight %}
       </div>
       <p class="h4">
         If you do need to use widths, use percentages.

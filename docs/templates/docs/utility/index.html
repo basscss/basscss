@@ -25,9 +25,7 @@
     <section id="layout" class="py2">
       <h1>Layout</h1>
       <p>Change the default document flow with display, float, and other utilities.</p>
-      <div class="p2 bg-darken-1 rounded">
-        {% include '../../../examples/layout-utilities.html' %}
-      </div>
+      {% include '../../../examples/layout-utilities.html' %}
       <h2>Media Object</h2>
       <p>Create a <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a> using basic utilities.</p>
       {% include '../../partials/_example.html' with { file: 'media-object.html' } %}
@@ -69,18 +67,14 @@
         Negative x-axis margins are used to offset padding.
         Margin auto is used to horizontally center block-level elements with a set width.
       </p>
-      <div class="p2 bg-darken-1 rounded">
-        {% include '../../../examples/margins.html' %}
-      </div>
+      {% include '../../../examples/margins.html' %}
       <h2>Padding</h2>
       <p>
         Padding utilities are only available in symmetrical orientations.
         This is to normalize the spacing used around elements.
       </p>
-      <div class="p2 mb2 bg-darken-1 rounded">
-        {% include '../../../examples/padding.html' %}
-      </div>
-      <p>
+      {% include '../../../examples/padding.html' %}
+      <p class="mt2">
         <b class="bold red">
           Margins and padding should never be declared outside of these utilities.
         </b>
@@ -114,7 +108,7 @@
         To adjust the default breakpoints, declare custom media queries after importing the file via Rework,
         or manually adjust them in CSS.
       </p>
-      <div class="p2 mb2 bg-darken-1 rounded">
+      <div class="mb2">
         {% include '../../../examples/responsive-states.html' %}
       </div>
       <h2>Example</h2>
@@ -134,9 +128,7 @@
         </span><br>
         See the <a href="/docs/guide/#positions">Guide to Basics</a> for more info.
       </p>
-      <div class="p2 bg-darken-1 rounded">
-        {% include '../../../examples/positions.html' %}
-      </div>
+      {% include '../../../examples/positions.html' %}
     </section>
 
     <section id="variables" class="py2">

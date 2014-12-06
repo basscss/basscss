@@ -22,12 +22,16 @@
 @import "./base/folding-table";
 
 @import "./color/site";
-@import "./color/pygments";
 @import "./color/colors";
 @import "./color/button-bright-blue-outline";
 @import "./color/animations";
 
 @import "./components/example";
+
+@import "./color/highlight";
+/*
+@import "./color/pygments";
+*/
 
 /* Custom Media Queries */
 @custom-media --breakpoint-sm (min-width: 40em);
