@@ -1,0 +1,20 @@
+
+{% macro example(file) %}
+  {% set path = 'examples/' + file %}
+
+  {% if file %}
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      {% include path %}
+    </div>
+    <div class="Example_code">
+      <pre>{% highlight 'html' %}{% include path %}{% endhighlight %}</pre>
+    </div>
+  </div>
+  {#
+  <div class="h6 right-align py1 mb2">
+    <a href="http://github.com/jxnblk/basscss/blob/master/docs/examples/{{ file }}" class="mid-gray" target="_blank">View on Github</a>
+  </div>
+  #}
+  {% endif %}
+{% endmacro %}

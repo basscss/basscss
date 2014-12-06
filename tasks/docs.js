@@ -30,11 +30,10 @@ gulp.task('swig', function() {
     data: data
   };
   gulp.src([
-      // Testing
-      //'./docs/src/templates/index.html',
       './docs/src/templates/**/*.html',
       '!./docs/src/templates/layouts/**/*',
       '!./docs/src/templates/partials/**/*',
+      '!./docs/src/templates/macros/**/*',
       '!./docs/src/templates/examples/**/*'
     ])
     .pipe(swig(options))
@@ -64,7 +63,7 @@ gulp.task('watch-css', ['basswork', 'site-basswork'], function() {
 });
 
 gulp.task('watch-templates', ['swig'], function() {
-  gulp.watch(['./docs/src/templates/**/*.html'], ['swig']);
+  gulp.watch(['./docs/src/templates/**/*.html', './docs/src/model.js'], ['swig']);
 });
 
 gulp.task('watch-includes', function() {

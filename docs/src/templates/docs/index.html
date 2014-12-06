@@ -1,10 +1,11 @@
-{% set title = 'Docs' %}
+{% set page = {} %}
+{% set page.title = 'Docs' %}
 {% set isdocs = false %}
 {% extends 'layouts/default.html' %}
 
 {% block content %}
 
-{% include 'partials/_docs-nav.html' %}
+{% include 'partials/docs-nav.html' %}
 
 <p class="h3">
   Basscss is organized according to four high-level categories:

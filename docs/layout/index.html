@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 
@@ -16,8 +17,6 @@
 
 <body class="container px2">
 
-
-
 <header class="py3 mb3 border-bottom">
   <div class="avenir h5 caps bold mt2 mxn1">
     <a href="/" class="button button-narrow">Basscss</a>
@@ -33,130 +32,133 @@
 
 
 <div class="clearfix mxn2">
+
   <div class="sm-col sm-col-9 px2 py2">
 
-    <p class="h3">
-      Layout modules are more complex than utilities and are tied to markup structure.
-      They are designed to be highly reusable and to inter-operate with other styles.
-    </p>
+    
 
-    <section id="grid" class="py2">
-      <h1>Grid</h1>
-      <p>
-        The utility-based grid allows a lot of flexibility in creating complex layouts.
-        Start by using a <code>.clearfix</code> container.
-      </p>
-      <p>
-        Optionally use a <code>.container</code> to set a max-width.
-        Adjust the container width with the <code>--container-width</code> variable.
-      </p>
+<p class="h3">
+  Layout modules are more complex than utilities and are tied to markup structure.
+  They are designed to be highly reusable and to inter-operate with other styles.
+</p>
+
+<section id="grid" class="py2">
+  <h1>Grid</h1>
+  <p>
+    The utility-based grid allows a lot of flexibility in creating complex layouts.
+    Start by using a <code>.clearfix</code> container.
+  </p>
+  <p>
+    Optionally use a <code>.container</code> to set a max-width.
+    Adjust the container width with the <code>--container-width</code> variable.
+  </p>
 <div class="Example_code mb2">
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix"</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
 </div>
-      <p>
-        Add columns using the <code>.col</code> and grid width <code>.col-N</code> classes.
-        <code>.col</code> floats elements left and sets box-sizing to border-box.
-        <code>.col-N</code> sets width according to a 12 column grid.
-        The total number of columns in a row should add up to 12.
-      </p>
-      
+  <p>
+    Add columns using the <code>.col</code> and grid width <code>.col-N</code> classes.
+    <code>.col</code> floats elements left and sets box-sizing to border-box.
+    <code>.col-N</code> sets width according to a 12 column grid.
+    The total number of columns in a row should add up to 12.
+  </p>
+  
+  
 
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="clearfix outline-blue">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="clearfix outline-blue">
   <div class="col col-6">.col.col-6</div>
   <div class="col col-6">.col.col-6</div>
 </div>
 
-  </div>
-  <div class="Example_code">
-    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6"</span>&gt;</span>.col.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6"</span>&gt;</span>.col.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
+    </div>
   </div>
-</div>
+  
+  
 
+  <h2>Responsive Grid</h2>
+  <p>
+    Use
+    <a href="/docs/utility/#responsive-states">breakpoint-prefixed</a>
+    column utilities to change the grid at different screen widths.
+    Each breakpoint applies to that screen width and up.
+    Unprefixed styles apply to all screen widths.
+  </p>
+  
+  
 
-
-      <h2>Responsive Grid</h2>
-      <p>
-        Use
-        <a href="/docs/utility/#responsive-states">breakpoint-prefixed</a>
-        column utilities to change the grid at different screen widths.
-        Each breakpoint applies to that screen width and up.
-        Unprefixed styles apply to all screen widths.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="clearfix outline-blue">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="clearfix outline-blue">
   <div class="sm-col sm-col-6 md-col-5 lg-col-4">.sm-col.sm-col-6.md-col-5.lg-col-4</div>
   <div class="sm-col sm-col-6 md-col-7 lg-col-8">.sm-col.sm-col-6.md-col-7.lg-col-8</div>
 </div>
 
-  </div>
-  <div class="Example_code">
-    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-5 lg-col-4"</span>&gt;</span>.sm-col.sm-col-6.md-col-5.lg-col-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-7 lg-col-8"</span>&gt;</span>.sm-col.sm-col-6.md-col-7.lg-col-8<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
+    </div>
   </div>
-</div>
+  
+  
 
+  <h2>Gutters</h2>
+  <p>
+    Use padding and negative margin utilities to create gutters based on the
+    <a href="/docs/utility/#white-space">white space scale</a>.
+    When using negative margin, be sure to compensate for the extra width created with a padded 
+    parent element or by using overflow hidden. Otherwise, horizontal scrolling may occur.
+  </p>
+  
+  
 
-
-      <h2>Gutters</h2>
-      <p>
-        Use padding and negative margin utilities to create gutters based on the
-        <a href="/docs/utility/#white-space">white space scale</a>.
-        When using negative margin, be sure to compensate for the extra width created with a padded 
-        parent element or by using overflow hidden. Otherwise, horizontal scrolling may occur.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="clearfix mxn2 outline-blue">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="clearfix mxn2 outline-blue">
   <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div>.px2</div></div>
   <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2"><div>.px2</div></div>
 </div>
 <!-- Nested divs for demonstration only -->
 
-  </div>
-  <div class="Example_code">
-    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2 outline-blue"</span>&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2 outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-5 lg-col-4 px2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>.px2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-7 lg-col-8 px2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>.px2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-comment">&lt;!-- Nested divs for demonstration only --&gt;</span>
 </code></pre>
+    </div>
   </div>
-</div>
+  
+  
 
+  <h2>Nesting</h2>
+  <p>Nest whole grid structures within columns to created nested grids.</p>
+  
+  
 
-
-      <h2>Nesting</h2>
-      <p>Nest whole grid structures within columns to created nested grids.</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="clearfix mxn2 outline-blue">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="clearfix mxn2 outline-blue">
   <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div>Unnested</div></div>
   <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2">
     <div class="clearfix mxn2">
@@ -167,9 +169,9 @@
 </div>
 <!-- Nested divs for demonstration only -->
 
-  </div>
-  <div class="Example_code">
-    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2 outline-blue"</span>&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2 outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-5 lg-col-4 px2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Unnested<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-7 lg-col-8 px2"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2"</span>&gt;</span>
@@ -180,82 +182,82 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-comment">&lt;!-- Nested divs for demonstration only --&gt;</span>
 </code></pre>
+    </div>
   </div>
-</div>
+  
+  
 
+  <h2>Reversed</h2>
+  <p>To reverse the order of columns, use the <code>.col-right</code> class to float right</p>
+  
+  
 
-
-      <h2>Reversed</h2>
-      <p>To reverse the order of columns, use the <code>.col-right</code> class to float right</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="clearfix outline-blue">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="clearfix outline-blue">
   <div class="col-right col-6">.col-right.col-6</div>
   <div class="col col-6">.col.col-6</div>
 </div>
 
-  </div>
-  <div class="Example_code">
-    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-right col-6"</span>&gt;</span>.col-right.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6"</span>&gt;</span>.col.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
+    </div>
   </div>
-</div>
+  
+  
 
+  <h2>Centering Columns</h2>
+  <p>Use the <code>.mx-auto</code> class to center columns within their containers.</p>
+  
+  
 
-
-      <h2>Centering Columns</h2>
-      <p>Use the <code>.mx-auto</code> class to center columns within their containers.</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="clearfix mxn2 outline-blue">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="clearfix mxn2 outline-blue">
   <div class="col-8 px2 mx-auto">
     <div>Centered Column</div>
   </div>
 </div>
 
-  </div>
-  <div class="Example_code">
-    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2 outline-blue"</span>&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2 outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-8 px2 mx-auto"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Centered Column<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
+    </div>
   </div>
-</div>
+  
+  
 
+  <h2>NPM</h2>
+  <p>The grid is also available as a standalone NPM module.</p>
+  <pre class="Example_code">npm install basscss-grid</pre>
+</section>
 
+<section id="table-object" class="py2">
+  <h1>Table Object</h1>
+  <p>
+    Use the table object to vertically center content.
+    These styles can be combined with grid width and white-space utilities for a wide range of layout options.
+    Apply padding to <code>.table-cell</code> elements to contol spacing.
+  </p>
+  
+  
 
-      <h2>NPM</h2>
-      <p>The grid is also available as a standalone NPM module.</p>
-      <pre class="Example_code">npm install basscss-grid</pre>
-    </section>
-
-    <section id="table-object" class="py2">
-      <h1>Table Object</h1>
-      <p>
-        Use the table object to vertically center content.
-        These styles can be combined with grid width and white-space utilities for a wide range of layout options.
-        Apply padding to <code>.table-cell</code> elements to contol spacing.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="table outline-blue">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="table outline-blue">
   <div class="table-cell">
     <h1 class="m0">.table-cell</h1>
     <p class="m0">For vertically centered content</p>
@@ -263,9 +265,9 @@
   <div class="table-cell">.table-cell</div>
 </div>
 
-  </div>
-  <div class="Example_code">
-    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table outline-blue"</span>&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>.table-cell<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>For vertically centered content<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
@@ -273,24 +275,24 @@
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell"</span>&gt;</span>.table-cell<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
+    </div>
   </div>
-</div>
+  
+  
 
+  <h2>Flag Object</h2>
+  <p>
+    The <a href="http://csswizardry.com/2013/05/the-flag-object/">flag object</a>
+    can be emulated by adding <code>.full-width</code> to one of the cells.
+    To add padding to the body, nest another div within the full-width cell.
+  </p>
+  
+  
 
-
-      <h2>Flag Object</h2>
-      <p>
-        The <a href="http://csswizardry.com/2013/05/the-flag-object/">flag object</a>
-        can be emulated by adding <code>.full-width</code> to one of the cells.
-        To add padding to the body, nest another div within the full-width cell.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="table outline-blue">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="table outline-blue">
   <div class="table-cell p2">Image</div>
   <div class="table-cell full-width">
     <h1 class="m0">Flag Body</h1>
@@ -298,9 +300,9 @@
   </div>
 </div>
 
-  </div>
-  <div class="Example_code">
-    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table outline-blue"</span>&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell p2"</span>&gt;</span>Image<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell full-width"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Flag Body<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
@@ -308,20 +310,20 @@
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
+    </div>
   </div>
-</div>
+  
+  
 
+  <h2>Equal width cells</h2>
+  <p>Use the <code>.table-fixed</code> extension to create equal-width cells.</p>
+  
+  
 
-
-      <h2>Equal width cells</h2>
-      <p>Use the <code>.table-fixed</code> extension to create equal-width cells.</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="table table-fixed outline-blue">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="table table-fixed outline-blue">
   <div class="table-cell">
     <h1 class="m0">.table-cell</h1>
     <p class="m0">For vertically centered content</p>
@@ -330,9 +332,9 @@
   <div class="table-cell">.table-cell</div>
 </div>
 
-  </div>
-  <div class="Example_code">
-    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table table-fixed outline-blue"</span>&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table table-fixed outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>.table-cell<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>For vertically centered content<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
@@ -341,23 +343,23 @@
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell"</span>&gt;</span>.table-cell<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
+    </div>
   </div>
-</div>
+  
+  
 
+  <h2>Responsive Table Object</h2>
+  <p>
+    Use breakpoint prefixes to keep table objects stacked at smaller screen sizes.
+    This is useful for things like navigation.
+  </p>
+  
+  
 
-
-      <h2>Responsive Table Object</h2>
-      <p>
-        Use breakpoint prefixes to keep table objects stacked at smaller screen sizes.
-        This is useful for things like navigation.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="sm-table mb1 outline-blue">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="sm-table mb1 outline-blue">
   <div class="sm-table-cell">
     <h1 class="m0">.sm-table-cell</h1>
     <p class="m0">Only kicks in above the small breakpoint</p>
@@ -372,9 +374,9 @@
   <div class="lg-table-cell">.lg-table-cell</div>
 </div>
 
-  </div>
-  <div class="Example_code">
-    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-table mb1 outline-blue"</span>&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-table mb1 outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-table-cell"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>.sm-table-cell<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Only kicks in above the small breakpoint<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
@@ -389,22 +391,22 @@
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lg-table-cell"</span>&gt;</span>.lg-table-cell<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
+    </div>
   </div>
-</div>
+  
+  
 
+  <h2>Table Grid</h2>
+  <p>
+    The table object can be combined with grid width utilities to create vertically centered columns.
+  </p>
+  
+  
 
-
-      <h2>Table Grid</h2>
-      <p>
-        The table object can be combined with grid width utilities to create vertically centered columns.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="table outline-blue">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="table outline-blue">
   <div class="table-cell col-7">
     <h1 class="m0">.table-cell.col-7</h1>
     <p class="m0">For vertically centered content</p>
@@ -412,9 +414,9 @@
   <div class="table-cell col-5">.table-cell.col-5</div>
 </div>
 
-  </div>
-  <div class="Example_code">
-    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table outline-blue"</span>&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell col-7"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>.table-cell.col-7<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>For vertically centered content<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
@@ -422,48 +424,61 @@
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell col-5"</span>&gt;</span>.table-cell.col-5<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
+    </div>
   </div>
+  
+  
+
+  <h2>NPM</h2>
+  <p>The table object is also available as a standalone NPM module.</p>
+  <pre class="Example_code">npm install basscss-table-object</pre>
+</section>
+
+
+
+    
+      <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+      
+  
+
+
+  
+
+
+<div class="clearfix mxn2 py2">
+  
+    <a href="/docs/utility" class="h3 left button">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
+        <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
+      </svg>
+      Utility
+    </a>
+  
+  
+    <a href="/docs/color" class="h3 right button">
+      Color
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
+        <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
+      </svg>
+    </a>
+  
 </div>
 
-
-
-      <h2>NPM</h2>
-      <p>The table object is also available as a standalone NPM module.</p>
-      <pre class="Example_code">npm install basscss-table-object</pre>
-    </section>
-
-    <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
-
-    <div class="clearfix mxn2 py2">
-      <a href="/docs/utility" class="h3 left button">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
-          <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
-        </svg>
-        Utility
-      </a>
-      <a href="/docs/color" class="h3 right button">
-        Color
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
-          <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
-        </svg>
-      </a>
-    </div>
+    
 
   </div>
 
   <div class="py2 sm-col sm-col-3 sm-show">
     
 
-  <a href="/docs/layout/#grid" class="button buttons-nav block">- Grid</a>
+  <a href="/docs/layout/#grid" class="button buttons-nav block">Grid</a>
 
-  <a href="/docs/layout/#table-object" class="button buttons-nav block">- Table Object</a>
+  <a href="/docs/layout/#table-object" class="button buttons-nav block">Table Object</a>
 
 
   </div>
 
 </div>
-
-
 
 <footer class="py4">
   <div class="sm-table">

@@ -12,12 +12,15 @@ module.exports = function() {
     getting_started: {
       title: 'Getting Started',
       description: '',
-      link: '/docs/getting-started'
+      link: '/docs/getting-started',
+      next_page: 'base'
     },
     base: {
       title: 'Base',
       description: '',
       link: '/docs/base',
+      previous_page: 'getting_started',
+      next_page: 'utility',
       sections: [
         { title: 'Typography', link: '/docs/base/#typography' },
         { title: 'Forms', link: '/docs/base/#forms' },
@@ -29,6 +32,8 @@ module.exports = function() {
       title: 'Utility',
       description: '',
       link: '/docs/utility',
+      previous_page: 'base',
+      next_page: 'layout',
       sections: [
         { title: 'Typography', link: '/docs/utility/#typography' },
         { title: 'Layout', link: '/docs/utility/#layout' },
@@ -41,6 +46,8 @@ module.exports = function() {
       title: 'Layout',
       description: '',
       link: '/docs/layout',
+      previous_page: 'utility',
+      next_page: 'color',
       sections: [
         { title: 'Grid', link: '/docs/layout/#grid' },
         { title: 'Table Object', link: '/docs/layout/#table-object' }
@@ -50,6 +57,7 @@ module.exports = function() {
       title: 'Color',
       description: '',
       link: '/docs/color',
+      previous_page: 'layout',
       sections: [
         { title: 'Colors', link: '/docs/color/#colors' },
         { title: 'Backgrounds', link: '/docs/color/#backgrounds' },
@@ -92,6 +100,17 @@ module.exports = function() {
       description: '',
       link: '/docs/guides/ui',
       sections: [
+        { title: 'Button Sizes', link: '/docs/guides/ui/#button-sizes' },
+        { title: 'Navigation', link: '/docs/guides/ui/#navigation' },
+        { title: 'Breadcrumbs', link: '/docs/guides/ui/#breadcrumbs' },
+        { title: 'Pagination', link: '/docs/guides/ui/#pagination' },
+        { title: 'Button Groups', link: '/docs/guides/ui/#button-groups' },
+        { title: 'Input Groups', link: '/docs/guides/ui/#input-groups' },
+        { title: 'Dropdowns', link: '/docs/guides/ui/#dropdowns' },
+        { title: 'Navbars', link: '/docs/guides/ui/#navbars' },
+        { title: 'Boxes', link: '/docs/guides/ui/#boxes' },
+        { title: 'Flash Messages', link: '/docs/guides/ui/#flash-messages' },
+        { title: 'Badges', link: '/docs/guides/ui/#badges' }
       ]
     },
     tips: {

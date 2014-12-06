@@ -1,24 +1,12 @@
 {% set page = guides.layout %}
 {% set isdocs = true %}
 {% set isguide = true %}
-{% extends 'layouts/default.html' %}
+{% extends 'layouts/docs.html' %}
 
 {% block content %}
-{% include 'partials/_docs-nav.html' %}
 
-<div class="clearfix mxn2">
-
-  <div class="sm-col sm-col-9 px2 py2">
-
-    <p class="h3">
-      Make some cool layouts!
-    </p>
-
-  </div>
-
-  <div class="sm-col sm-col-3 px2 py2 sm-show">
-    <a href="#grid" class="button buttons-nav block">Grid</a>
-  </div>
-</div>
+<p class="h3">
+  Make some cool layouts!
+</p>
 
 {% endblock %}
