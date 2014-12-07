@@ -19,8 +19,8 @@
 
 
 <header class="p2 bright-blue bg-dark-gray">
-  <div class="container sm-table">
-    <div class="sm-table-cell py4">
+  <div class="container sm-flex flex-center">
+    <div class="flex-auto py4">
       <svg class="h0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" fill="currentcolor">
         <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
       </svg>
@@ -28,7 +28,7 @@
       <h2 class="avenir caps h4 mb0">Low-level CSS Toolkit</h2>
       <p class="avenir h6 caps bold">v4.1.4 &middot; 3KB</p>
     </div>
-    <div class="xs-center sm-table-cell py2">
+    <div class="xs-center flex-none py2">
       <a class="h3 button m1 button-bright-blue-outline" href="/docs">Docs</a>
       <a class="h3 button m1 button-bright-blue-outline" href="//github.com/jxnblk/basscss">Github</a>
     </div>
@@ -85,92 +85,84 @@
 
   <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
 
-  <section id="base" class="mxn3 py4">
-    <div class="sm-table">
-      <div class="sm-table-cell sm-col-7 px3">
-        <h1 class="mt1">Base Elements</h1>
-        <p class="h3">
-          Core typographic, form, button, and base element styles keep designs
-          consistent where it matters most.
-        </p>
-      </div>
-      <div class="sm-table-cell sm-col-5 px3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32" fill="#0076df"
-          style="
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 32px;
-            font-weight: 700;
-          ">
-          <path fill="#f3f9f9" d="M0 0 H64 V32 H0z"/>
-          <text x="32" y="28" text-anchor="middle">Aa</text>
-        </svg>
-      </div>
+  <section id="base" class="sm-flex flex-center mxn3 py4">
+    <div class="sm-col-5 px3">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32" fill="#0076df"
+        style="
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          font-size: 32px;
+          font-weight: 700;
+        ">
+        <path fill="#f3f9f9" d="M0 0 H64 V32 H0z"/>
+        <text x="32" y="28" text-anchor="middle">Aa</text>
+      </svg>
+    </div>
+    <div class="sm-col-7 px3">
+      <h1 class="mt0">Base Elements</h1>
+      <p class="h3">
+        Core typographic, form, button, and base element styles keep designs
+        consistent where it matters most.
+      </p>
     </div>
   </section>
 
-  <section id="utility" class="mxn3 py3">
-    <div class="sm-table">
-      <div class="sm-table-cell sm-col-7 px3">
-        <h1 class="mt1">Utility Styles</h1>
-        <p class="h3">
-          Simple, composable typographic and layout utilities based on common scales
-          promote faster design and development in the browser and more performant, more readable code.
-        </p>
-      </div>
-      <div class="sm-table-cell sm-col-5 px3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32" fill="#0076df"
-          style="
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 8px;
-            font-weight: 700;
-          ">
-          <path fill="#f3f9f9" d="M0 0 H64 V32 H0z"/>
-          <text x="32" y="9" text-anchor="middle">.bold</text>
-          <text x="32" y="19" text-anchor="middle">.inline-block</text>
-          <text x="32" y="28" text-anchor="middle">.mb4</text>
-        </svg>
-      </div>
+  <section id="utility" class="sm-flex flex-center mxn3 py3">
+    <div class="sm-col-5 px3">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32" fill="#0076df"
+        style="
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          font-size: 8px;
+          font-weight: 700;
+        ">
+        <path fill="#f3f9f9" d="M0 0 H64 V32 H0z"/>
+        <text x="32" y="9" text-anchor="middle">.bold</text>
+        <text x="32" y="19" text-anchor="middle">.inline-block</text>
+        <text x="32" y="28" text-anchor="middle">.mb4</text>
+      </svg>
+    </div>
+    <div class="flex-first sm-col-7 px3">
+      <h1 class="mt0">Utility Styles</h1>
+      <p class="h3">
+        Simple, composable typographic and layout utilities based on common scales
+        promote faster design and development in the browser and more performant, more readable code.
+      </p>
     </div>
   </section>
 
-  <section id="layout" class="mxn3 py3">
-    <div class="sm-table">
-      <div class="sm-table-cell sm-col-7 px3">
-        <h1 class="mt1">Layout Modules</h1>
-        <p class="h3">
-          Flexible, responsive, and reusable layout modules control
-          page structure across a wide variety of devices.
-        </p>
-      </div>
-      <div class="sm-table-cell sm-col-5 px3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32" fill="#0076df">
-          <path fill="#f3f9f9" d="M0 0 H64 V32 H0z"/>
-          <rect x="2" y="2" width="60" height="10"/>
-          <rect x="2" y="14" width="29" height="16"/>
-          <rect x="33" y="14" width="29" height="16"/>
-        </svg>
-      </div>
+  <section id="layout" class="sm-flex flex-center mxn3 py3">
+    <div class="sm-col-5 px3">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32" fill="#0076df">
+        <path fill="#f3f9f9" d="M0 0 H64 V32 H0z"/>
+        <rect x="2" y="2" width="60" height="10"/>
+        <rect x="2" y="14" width="29" height="16"/>
+        <rect x="33" y="14" width="29" height="16"/>
+      </svg>
+    </div>
+    <div class="sm-col-7 px3">
+      <h1 class="mt0">Layout Modules</h1>
+      <p class="h3">
+        Flexible, responsive, and reusable layout modules control
+        page structure across a wide variety of devices.
+      </p>
     </div>
   </section>
 
-  <section id="color" class="mxn3 py3">
-    <div class="sm-table">
-      <div class="sm-table-cell sm-col-7 px3">
-        <h1 class="mt1">Color</h1>
-        <p class="h3">
-          Simple, customizable color utilities encourage
-          iterative design and allow for flexibility over time. 
-        </p>
-      </div>
-      <div class="sm-table-cell sm-col-5 px3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32" fill="#0076df">
-          <path fill="#f3f9f9" d="M0 0 H64 V32 H0z"/>
-          <rect x="2" y="2" width="60" height="7" fill="#0076df"/>
-          <rect x="2" y="9" width="60" height="7" fill="#00cf26"/>
-          <rect x="2" y="16" width="60" height="7" fill="#efcc00"/>
-          <rect x="2" y="23" width="60" height="7" fill="#f95020"/>
-        </svg>
-      </div>
+  <section id="color" class="sm-flex flex-center mxn3 py3">
+    <div class="sm-col-5 px3">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32" fill="#0076df">
+        <path fill="#f3f9f9" d="M0 0 H64 V32 H0z"/>
+        <rect x="2" y="2" width="60" height="7" fill="#0076df"/>
+        <rect x="2" y="9" width="60" height="7" fill="#00cf26"/>
+        <rect x="2" y="16" width="60" height="7" fill="#efcc00"/>
+        <rect x="2" y="23" width="60" height="7" fill="#f95020"/>
+      </svg>
+    </div>
+    <div class="flex-first sm-col-7 px3">
+      <h1 class="mt0">Color</h1>
+      <p class="h3">
+        Simple, customizable color utilities encourage
+        iterative design and allow for flexibility over time. 
+      </p>
     </div>
   </section>
 
@@ -218,9 +210,6 @@
     </div>
     <div class="sm-table-cell py2 nowrap right-align">
       <p class="h5 mb0 xs-center">
-        <svg class="icon red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 " />
-        </svg>
         Made with love by
         <a href="//jxnblk.com">Jxnblk</a>
       </p>

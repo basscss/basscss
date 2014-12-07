@@ -1,9 +1,12 @@
 
+var fs = require('fs');
+var cssstats = require('css-statistics');
 var cssdata = require('./css-data');
 
 module.exports = function() {
 
   var data = {};
+  var cssSource = fs.readFileSync('./css/basscss.css', 'utf8');
 
   data.css = cssdata('./css/basscss.min.css');
   data.version = require('../../package.json').version;
@@ -125,7 +128,7 @@ module.exports = function() {
         { title: 'Utility Styles are Immutable', link: '/docs/guides/tips/#utility-styles' },
         { title: 'Look Before Adding', link: '/docs/guides/tips/#look-before-adding' },
         { title: 'Avoid Magic Numbers', link: '/docs/guides/tips/#avoid-magic-numbers' },
-        { title: 'Don’t Make Assumptions', link: '/docs/guides/tips/#dont-make-assumptions' },
+        //{ title: 'Don’t Make Assumptions', link: '/docs/guides/tips/#dont-make-assumptions' },
         { title: 'Don’t Use Contextual Selectors', link: '/docs/guides/tips/#contextual-selectors' },
         { title: 'Handle Complexity in Markup', link: '/docs/guides/tips/#handle-complexity-in-markup' },
         { title: 'Keep Specificity Low', link: '/docs/guides/tips/#keep-specificity-low' },
@@ -139,10 +142,12 @@ module.exports = function() {
   data.references =  {
     principles: { title: 'Design Principles', link: '/docs/principles' },
     rework: { title: 'Using Rework', link: '/docs/rework' },
-    styles: { title: 'Table of Styles', link: '/docs/styles' }
-    //stats: { title: 'Stats', link: '/docs/stats' },
+    styles: { title: 'Table of Styles', link: '/docs/styles' },
+    stats: { title: 'Stats', link: '/docs/stats' }
     //variables: { title: 'Variables', link: '/docs/variables' }
   };
+
+  data.stats = cssstats(cssSource);
 
   return data;
 

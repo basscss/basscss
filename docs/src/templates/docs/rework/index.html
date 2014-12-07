@@ -52,14 +52,12 @@
   <p>Install basswork along with any Basscss modules you’d like to use.</p>
   <div class="Example_code mb2">{% highlight 'bash' %}npm install --save-dev basswork basscss-base basscss-utilities{% endhighlight %}</div>
   <p>Pass a source CSS string to Basswork, which will return a compiled CSS string.</p>
-  <div class="Example_code mb2">
-    {% highlight 'js' %}{% include 'examples/basswork.js' %}{% endhighlight %}
-  </div>
+  <pre class="Example_code mb2">{% highlight 'js' %}{% include 'examples/basswork.js' %}{% endhighlight %}</pre>
   <h2>Using Basswork in an Existing Gulp Project</h2>
   <p>Install gulp-basswork along with any Basscss modules you’d like to use.</p>
   <div class="Example_code mb2">{% highlight 'bash' %}npm install --save-dev gulp-basswork basscss-base basscss-utilities{% endhighlight %}</div>
   <p>Create a Gulp task.</p>
-  <div class="Example_code mb2">{% highlight 'js' %}{% include 'examples/gulp-recipe.js' %}{% endhighlight %}</div>
+  <pre class="Example_code mb2">{% highlight 'js' %}{% include 'examples/gulp-recipe.js' %}{% endhighlight %}</pre>
 </section>
 
 <section class="py2">
@@ -95,23 +93,19 @@
 }
 {% endhighlight %}</pre>
   <p>To use variables as property values, follow this syntax:</p>
-<div class="Example_code mb2">
-{% highlight 'css' %}
+<pre class="Example_code mb2">{% highlight 'css' %}
 .button-red {
-color: white;
-background-color: var(--red);
+  color: white;
+  background-color: var(--red);
 }
-{% endhighlight %}
-</div>
+{% endhighlight %}</pre>
   <p>To set an inline fallback value, place it after the variable name separated by a comma.</p>
-<div class="Example_code mb2">
-{% highlight 'css' %}
+<pre class="Example_code mb2">{% highlight 'css' %}
 .button-red {
-color: white;
-background-color: var(--red, #f00);
+  color: white;
+  background-color: var(--red, #f00);
 }
-{% endhighlight %}
-</div>
+{% endhighlight %}</pre>
   <p>See <a href="http://github.com/reworkcss/rework-vars">Rework Vars</a> for more details on usage.</p>
   <h2>Custom Media Queries</h2>
   <p>
