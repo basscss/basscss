@@ -1,0 +1,22 @@
+{% extends 'layouts/default.html' %}
+{% set page = {} %}
+{% set page.title = 'Showcase' %}
+{% set isdocs = true %}
+
+{% block content %}
+
+{% include 'partials/docs-nav.html' %}
+
+<p class="h3">
+  Sites built with Basscss
+</p>
+
+<section class="flex flex-wrap mxn2">
+  {% for site in showcase %}
+    <a href="{{ site.url }}" class="h3 sm-col-6 button block button-nav-light" target="_blank">
+      {{ site.title }}
+    </a>
+  {% endfor %}
+</section>
+
+{% endblock %}
