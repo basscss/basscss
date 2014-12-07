@@ -5,14 +5,22 @@
 
 {% block content %}
 
+<!--
 <section id="rams-quote" class="center py3">
   <blockquote class="py2 m0 mid-gray">
     <p class="h2 italic mb0">Good design is as little design as possible</p>
     <cite>&#x2013; Dieter Rams</cite>
   </blockquote>
 </section>
+-->
 
-<section id="markup" class="mb2">
+<p class="h3">
+  Understanding the basics of designing for the web with CSS
+  is essential to using Basscss effectively.
+  This guide covers the fundamentals to help get you started.
+</p>
+
+<section id="markup" class="py2">
   <h1 class="mt0">Document structure</h1>
   <p class="h4">
     HTML is a semantically structured markup language.
@@ -269,12 +277,7 @@ A box with font-size .h3, padding, margin-bottom, a light gray background and ro
     <a href="/docs/principles">Design Principles</a>.
 </section>
 
-<section id="cta" class="py4">
-  <h2 class="h2">Learn More</h2>
-  <div class="mxn2">
-    <a href="/docs/guides/ui" class="h3 button mb1 button-nav-light">UI Elements Guide</a>
-  </div>
-</section>
+{% include 'partials/guides-cta.html' %}
 
 {% endblock %}
 

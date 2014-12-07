@@ -25,7 +25,8 @@ module.exports = function() {
         { title: 'Typography', link: '/docs/base/#typography' },
         { title: 'Forms', link: '/docs/base/#forms' },
         { title: 'Buttons', link: '/docs/base/#buttons' },
-        { title: 'Tables', link: '/docs/base/#tables' }
+        { title: 'Tables', link: '/docs/base/#tables' },
+        { title: 'Variables', link: '/docs/base/#variables' }
       ]
     },
     utility: {
@@ -39,7 +40,8 @@ module.exports = function() {
         { title: 'Layout', link: '/docs/utility/#layout' },
         { title: 'White Space Scale', link: '/docs/utility/#white-space' },
         { title: 'Responsive States', link: '/docs/utility/#responsive-states' },
-        { title: 'Positions', link: '/docs/utility/#positions' }
+        { title: 'Positions', link: '/docs/utility/#positions' },
+        { title: 'Variables', link: '/docs/utility/#variables' }
       ]
     },
     layout: {
@@ -64,7 +66,8 @@ module.exports = function() {
         { title: 'Borders', link: '/docs/color/#borders' },
         { title: 'Forms', link: '/docs/color/#forms' },
         { title: 'Buttons', link: '/docs/color/#buttons' },
-        { title: 'Tables', link: '/docs/color/#tables' }
+        { title: 'Tables', link: '/docs/color/#tables' },
+        { title: 'Variables', link: '/docs/color/#variables' }
       ]
     }
   };
@@ -72,7 +75,7 @@ module.exports = function() {
   data.guides = {
     basics: {
       title: 'Basics',
-      description: '',
+      description: 'CSS and Web Design Fundamentals',
       link: '/docs/guides/basics',
       sections: [
         { title: 'Document Structure', link: '/docs/guides/basics/#markup' },
@@ -88,16 +91,16 @@ module.exports = function() {
         { title: 'Extending Basscss', link: '/docs/guides/basics/#extending-basscss' }
       ]
     },
-    layout: {
-      title: 'Page Layout',
-      description: '',
-      link: '/docs/guides/layout',
-      sections: [
-      ]
-    },
+    //layout: {
+    //  title: 'Page Layout',
+    //  description: '',
+    //  link: '/docs/guides/layout',
+    //  sections: [
+    //  ]
+    //},
     ui: {
       title: 'UI Elements',
-      description: '',
+      description: 'Styling Custom Controls for Interactivity',
       link: '/docs/guides/ui',
       sections: [
         { title: 'Button Sizes', link: '/docs/guides/ui/#button-sizes' },
@@ -115,9 +118,20 @@ module.exports = function() {
     },
     tips: {
       title: 'Tips & Tricks',
-      description: '',
+      description: 'Getting the Most Out of Basscss',
       link: '/docs/guides/tips',
       sections: [
+        { title: 'Avoid Overrides', link: '/docs/guides/tips/#avoid-overrides' },
+        { title: 'Utility Styles are Immutable', link: '/docs/guides/tips/#utility-styles' },
+        { title: 'Look Before Adding', link: '/docs/guides/tips/#look-before-adding' },
+        { title: 'Avoid Magic Numbers', link: '/docs/guides/tips/#avoid-magic-numbers' },
+        { title: 'Don’t Make Assumptions', link: '/docs/guides/tips/#dont-make-assumptions' },
+        { title: 'Don’t Use Contextual Selectors', link: '/docs/guides/tips/#contextual-selectors' },
+        { title: 'Handle Complexity in Markup', link: '/docs/guides/tips/#handle-complexity-in-markup' },
+        { title: 'Keep Specificity Low', link: '/docs/guides/tips/#keep-specificity-low' },
+        { title: 'Don’t Nest Selectors', link: '/docs/guides/tips/#dont-nest-selectors' },
+        { title: 'Don’t Use IDs as Selectors', link: '/docs/guides/tips/#dont-use-ids' },
+        { title: 'Separate Structure and Skin', link: '/docs/guides/tips/#separate-structure-and-skin' }
       ]
     }
   };
