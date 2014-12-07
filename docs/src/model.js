@@ -128,7 +128,6 @@ module.exports = function() {
         { title: 'Utility Styles are Immutable', link: '/docs/guides/tips/#utility-styles' },
         { title: 'Look Before Adding', link: '/docs/guides/tips/#look-before-adding' },
         { title: 'Avoid Magic Numbers', link: '/docs/guides/tips/#avoid-magic-numbers' },
-        //{ title: 'Don’t Make Assumptions', link: '/docs/guides/tips/#dont-make-assumptions' },
         { title: 'Don’t Use Contextual Selectors', link: '/docs/guides/tips/#contextual-selectors' },
         { title: 'Handle Complexity in Markup', link: '/docs/guides/tips/#handle-complexity-in-markup' },
         { title: 'Keep Specificity Low', link: '/docs/guides/tips/#keep-specificity-low' },
