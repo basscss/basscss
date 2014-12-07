@@ -146,6 +146,33 @@ module.exports = function() {
     //variables: { title: 'Variables', link: '/docs/variables' }
   };
 
+  data.showcase = {
+    singlesclub: {
+      title: 'Singles Club',
+      url: 'http://singlesclub.fm/'
+    },
+    pixyll: {
+      title: 'Pixyll',
+      url: 'http://pixyll.com/'
+    },
+    linknest: {
+      title: 'Linknest',
+      url: 'https://linknest.cc/'
+    },
+    assembly_blog: {
+      title: 'Assembly Blog',
+      url: 'http://blog.assembly.com/'
+    },
+    monodraw: {
+      title: 'Monodraw for Mac',
+      url: 'http://monodraw.helftone.com/'
+    },
+    nurturingability: {
+      title: 'Nurturing Ability',
+      url: 'http://www.nurturingability.com.au/'
+    },
+  };
+
   data.stats = cssstats(cssSource);
 
   return data;
