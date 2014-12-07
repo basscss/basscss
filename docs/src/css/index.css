@@ -10,7 +10,7 @@
 @import "basscss-positions";
 @import "basscss-ui-utilities";
 @import "basscss-grid";
-  @import "basscss-table-object";
+@import "basscss-table-object";
 @import "flex-object";
 @import "basscss-color-basic";
 
