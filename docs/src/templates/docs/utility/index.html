@@ -1,0 +1,145 @@
+{% set page = pages.utility %}
+{% set isdocs = true %}
+{% extends 'layouts/docs.html' %}
+
+{% block content %}
+
+<p class="h3">
+  Utilities are single-purpose styles that provide the backbone for layout.
+  Once these are set, they should be considered immutable and never change or be extended.
+  Each utility is designed to do one thing well,
+  while making its usage simple and obvious with short, humanized naming conventions.
+</p>
+
+<section id="typography" class="py2">
+  <h1>Typography</h1>
+  <p>Change typographic styles and defaults with these utilities.</p>
+  {{ macros.example('type-utilities.html') }}
+</section>
+
+<section id="layout" class="py2">
+  <h1>Layout</h1>
+  <p>Change the default document flow with display, float, and other utilities.</p>
+  {% include 'examples/layout-utilities.html' %}
+  <h2>Media Object</h2>
+  <p>Create a <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a> using basic utilities.</p>
+  {{ macros.example('media-object.html') }}
+  <h2>Double-Sided Media Object</h2>
+  <p>For a container with a flexible center, use a double-sided media object.</p>
+  {{ macros.example('double-media-object.html') }}
+</section>
+
+<section id="white-space" class="py2">
+  <h1>White Space Scale</h1>
+  <p>
+    Margin and padding utilities are based on a global white space scale defined with variables.
+    These utilities use a shorthand naming convention.
+  </p>
+  <div class="overflow-scroll">
+    <table class="mb2 bg-darken-1 rounded table-light">
+      <thead class="bg-darken-1">
+        <tr> <th>Shorthand</th> <th>Description</th> </tr>
+      </thead>
+      <tbody>
+        <tr> <td>m</td> <td>Margin</td> </tr>
+        <tr> <td>p</td> <td>Padding</td> </tr>
+        <tr> <td>t</td> <td>Top</td> </tr>
+        <tr> <td>r</td> <td>Right</td> </tr>
+        <tr> <td>b</td> <td>Bottom</td> </tr>
+        <tr> <td>l</td> <td>Left</td> </tr>
+        <tr> <td>x</td> <td>X-axis (left and right)</td> </tr>
+        <tr> <td>y</td> <td>Y-axis (top and bottom)</td> </tr>
+        <tr> <td>n</td> <td>Negative (margin only)</td> </tr>
+        <tr> <td>1</td> <td>--space-1 (default .5rem)</td> </tr>
+        <tr> <td>2</td> <td>--space-2 (default 1rem)</td> </tr>
+        <tr> <td>3</td> <td>--space-3 (default 2rem)</td> </tr>
+        <tr> <td>4</td> <td>--space-4 (default 4rem)</td> </tr>
+    </table>
+  </div>
+  <h2>Margins</h2>
+  <p>
+    Change or reset default margins using the global white space scale.
+    Negative x-axis margins are used to offset padding.
+    Margin auto is used to horizontally center block-level elements with a set width.
+  </p>
+  {% include 'examples/margins.html' %}
+  <h2>Padding</h2>
+  <p>
+    Padding utilities are only available in symmetrical orientations.
+    This is to normalize the spacing used around elements.
+  </p>
+  {% include 'examples/padding.html' %}
+  <p class="mt2">
+    <b class="bold red">
+      Margins and padding should never be declared outside of these utilities.
+    </b>
+    This is meant to help create consistent rhythm and avoid magic numbers.
+    If, for some reason, the default white space scale does not accomodate your design,
+    customize and extend it before implementation.
+  </p>
+</section>
+
+<section id="responsive-states" class="py2">
+  <h1>Responsive States</h1>
+  <p>
+    These styles allow for conditionally showing and hiding elements using a
+    <a href="/docs/guides/basics/#media-queries">mobile-first approach</a>.
+  </p>
+  <h2>Prefix Naming Convention</h2>
+  <div class="overflow-scroll">
+    <table class="mb2 table-light overflow-hidden border rounded">
+      <thead class="bg-darken-1">
+        <tr> <th>Prefix</th> <th>Description</th> </tr>
+      </thead>
+      <tbody>
+        <tr> <td>(no prefix)</td> <td>Not scoped to a breakpoint</td> </tr>
+        <tr> <td>sm-</td> <td>--breakpoint-sm (default: min-width 40em)</td> </tr>
+        <tr> <td>md-</td> <td>--breakpoint-md (default: min-width 52em)</td> </tr>
+        <tr> <td>lg-</td> <td>--breakpoint-lg (default: min-width 64em)</td> </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    To adjust the default breakpoints, declare custom media queries after importing the file via Rework,
+    or manually adjust them in CSS.
+  </p>
+  <div class="mb2">
+    {% include 'examples/responsive-states.html' %}
+  </div>
+  <h2>Example</h2>
+  <p>Resize the browser window to see the effect.</p>
+  {{ macros.example('responsive-show-hide.html') }}
+  <h2>Responsive Line Break</h2>
+  <p>Control wrapping at different screen widths.</p>
+  {{ macros.example('responsive-line-break.html') }}
+</section>
+
+<section id="positions" class="py2">
+  <h1>Positions</h1>
+  <p>These styles alter the default document flow.</p>
+  <p>
+    <span class="red bold">
+      Use positions with caution. They are often unnecessary and commonly misused.
+    </span><br>
+    See the <a href="/docs/guides/basics/#positions">Guide to Basics</a> for more info.
+  </p>
+  {% include 'examples/positions.html' %}
+</section>
+
+<section id="variables" class="py2">
+  <h1>Default Variables</h1>
+  <p>
+    Utility styles use the following variables.
+    To alter these defaults, declare new values after importing Basscss with Rework. 
+  </p>
+  {% include 'examples/utility-variables.html' %}
+</section>
+
+<section id="npm" class="py2">
+  <h1>NPM</h1>
+  <p>Utility styles are also available as a standalone NPM module.</p>
+  <pre class="Example_code">npm install basscss-utilities</pre>
+</section>
+
+{% endblock %}
+

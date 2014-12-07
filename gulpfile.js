@@ -5,6 +5,7 @@ var mincss = require('gulp-minify-css');
 var gzip = require('gulp-gzip');
 var header = require('gulp-header');
 var bump = require('gulp-bump');
+var s3 = require('gulp-s3');
 
 // Custom Rework wrapper
 var basswork = require('gulp-basswork');
@@ -35,6 +36,15 @@ gulp.task('bump', function() {
     .pipe(gulp.dest('.'));
 });
 
+gulp.task('s3', function() {
+  var version = require('./package.json').version;
+  var config = require('./aws.json');
+  gulp.src('./css/*.gz')
+    .pipe(s3(config, {
+      uploadPath: 'basscss/' + version + '/'
+    }));
+});
+
 // Site-specific tasks
-require('./gulp/docs-tasks');
+require('./tasks/docs');
 

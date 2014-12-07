@@ -52,7 +52,7 @@
  </div>
     <div class="py2"> <div class="md-col-6">
   <div class="p2 bg-white border rounded">
-    <img src="/docs/placeholder.svg" class="mb2">
+    <img src="/docs/placeholder.svg" class="mb2" />
     <h1 class="h2 mt0">Bacon with Image</h1>
     <p class="mb0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
   </div>
@@ -170,11 +170,11 @@
   <label>Required</label>
   <input type="text" class="block full-width field-light" required>
   <label>Optional</label>
-  <input type="text" class="block full-width field-light" optional="">
+  <input type="text" class="block full-width field-light" optional>
   <label>Valid</label>
-  <input type="text" class="block full-width field-light" valid="">
+  <input type="text" class="block full-width field-light" valid>
   <label>Invalid</label>
-  <input type="text" class="block full-width field-light" invalid="">
+  <input type="text" class="block full-width field-light" invalid>
   <label>Has Success</label>
   <input type="text" class="block full-width field-light has-success">
   <label>Has Warning</label>
@@ -237,7 +237,7 @@
   </fieldset>
 
   <fieldset class="fieldset-reset mb2">
-    <legend class="h3 bold">File Input &amp; Progress</legend>
+    <legend class="h3 bold">File Input & Progress</legend>
     <label>Upload Avatar</label>
     <input type="file" class="block">
     <label>Progress</label>
@@ -591,111 +591,115 @@
 <input type="file">
 <input type="image">
  </div>
-    <div class="py2"> <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.inline</span>       <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span> <span class="p">}</span>
-<span class="nc">.block</span>        <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="p">}</span>
-<span class="nc">.inline-block</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span> <span class="p">}</span>
+    <div class="py2"> <div class="Example_code">
+<pre>
+<code class="hljs css"><span class="hljs-class">.inline</span>       <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline </span></span></span>}
+<span class="hljs-class">.block</span>        <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block </span></span></span>}
+<span class="hljs-class">.inline-block</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline-block </span></span></span>}
 
-<span class="nc">.overflow-hidden</span> <span class="p">{</span> <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span> <span class="p">}</span>
-<span class="nc">.overflow-scroll</span> <span class="p">{</span> <span class="k">overflow</span><span class="o">:</span> <span class="k">scroll</span> <span class="p">}</span>
+<span class="hljs-class">.overflow-hidden</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden </span></span></span>}
+<span class="hljs-class">.overflow-scroll</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> scroll </span></span></span>}
 
-<span class="nc">.clearfix</span><span class="nd">:before</span><span class="o">,</span>
-<span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span>
-  <span class="k">content</span><span class="o">:</span> <span class="s2">&quot; &quot;</span><span class="p">;</span>
-  <span class="k">display</span><span class="o">:</span> <span class="n">table</span>
-<span class="p">}</span>
-<span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">clear</span><span class="o">:</span> <span class="k">both</span> <span class="p">}</span>
+<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:before</span>,
+<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">" "</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> table
+</span></span></span>}
+<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">clear</span>:<span class="hljs-value"> both </span></span></span>}
 
-<span class="nc">.left</span>  <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span> <span class="p">}</span>
-<span class="nc">.right</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">right</span> <span class="p">}</span>
+<span class="hljs-class">.left</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left </span></span></span>}
+<span class="hljs-class">.right</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> right </span></span></span>}
 
-<span class="nc">.fit</span> <span class="p">{</span> <span class="k">max-width</span><span class="o">:</span> <span class="m">100%</span> <span class="p">}</span>
+<span class="hljs-class">.fit</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span> </span></span></span>}
 
-<span class="nc">.half-width</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">50%</span> <span class="p">}</span>
-<span class="nc">.full-width</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">100%</span> <span class="p">}</span>
-</pre></div>
+<span class="hljs-class">.half-width</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">50%</span> </span></span></span>}
+<span class="hljs-class">.full-width</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span> </span></span></span>}</code></pre>
 </div>
  </div>
-    <div class="py2"> <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.m0</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.mt0</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.mr0</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.mb0</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.ml0</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="m">0</span> <span class="p">}</span>
+    <div class="py2"> <div class="Example_code">
+<pre>
+<code class="hljs css"><span class="hljs-class">.m0</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.mt0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.mr0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.mb0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.ml0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-number">0</span> </span></span></span>}
 
-<span class="nc">.m1</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mt1</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mr1</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mb1</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.ml1</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
+<span class="hljs-class">.m1</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.mt1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.mr1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.mb1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.ml1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
 
-<span class="nc">.m2</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mt2</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mr2</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mb2</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.ml2</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
+<span class="hljs-class">.m2</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.mt2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.mr2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.mb2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.ml2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
 
-<span class="nc">.m3</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mt3</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mr3</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mb3</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.ml3</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
+<span class="hljs-class">.m3</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.mt3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.mr3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.mb3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.ml3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
 
-<span class="nc">.m4</span>  <span class="p">{</span> <span class="k">margin</span><span class="o">:</span>        <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mt4</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span>    <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mr4</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.mb4</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.ml4</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
+<span class="hljs-class">.m4</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.mt4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.mr4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.mb4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.ml4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
 
-<span class="nc">.mxn1</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">margin-right</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="p">}</span>
-<span class="nc">.mxn2</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">);</span> <span class="k">margin-right</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">);</span> <span class="p">}</span>
-<span class="nc">.mxn3</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">);</span> <span class="k">margin-right</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">);</span> <span class="p">}</span>
-<span class="nc">.mxn4</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="k">margin-right</span><span class="o">:</span> <span class="o">-</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="p">}</span>
+<span class="hljs-class">.mxn1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule">}</span></span>
+<span class="hljs-class">.mxn2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule">}</span></span>
+<span class="hljs-class">.mxn3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule">}</span></span>
+<span class="hljs-class">.mxn4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule">}</span></span>
 
-<span class="nc">.mx-auto</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> <span class="k">margin-right</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> <span class="p">}</span>
-</pre></div>
+<span class="hljs-class">.mx-auto</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> auto</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> auto</span></span>; <span class="hljs-rule">}</span></span></code></pre>
 </div>
  </div>
-    <div class="py2"> <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.p1</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.py1</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.px1</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-1</span><span class="p">)</span> <span class="p">}</span>
+    <div class="py2"> <div class="Example_code">
+<pre>
+<code class="hljs css"><span class="hljs-class">.p1</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.py1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.px1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
 
-<span class="nc">.p2</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.py2</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.px2</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-2</span><span class="p">)</span> <span class="p">}</span>
+<span class="hljs-class">.p2</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.py2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.px2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
 
-<span class="nc">.p3</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.py3</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.px3</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-3</span><span class="p">)</span> <span class="p">}</span>
+<span class="hljs-class">.p3</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.py3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.px3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
 
-<span class="nc">.p4</span>  <span class="p">{</span> <span class="k">padding</span><span class="o">:</span>       <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.py4</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span>   <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.px4</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">);</span> <span class="k">padding-right</span><span class="o">:</span>  <span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">space</span><span class="m">-4</span><span class="p">)</span> <span class="p">}</span>
-</pre></div>
+<span class="hljs-class">.p4</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.py4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.px4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}</code></pre>
 </div>
  </div>
 
-    <div class="py2"> <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.relative</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">relative</span> <span class="p">}</span>
-<span class="nc">.absolute</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span> <span class="p">}</span>
-<span class="nc">.fixed</span>    <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span> <span class="p">}</span>
+    <div class="py2"> <div class="Example_code">
+<pre>
+<code class="hljs css"><span class="hljs-class">.relative</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative </span></span></span>}
+<span class="hljs-class">.absolute</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute </span></span></span>}
+<span class="hljs-class">.fixed</span>    <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> fixed </span></span></span>}
 
-<span class="nc">.top-0</span>    <span class="p">{</span> <span class="k">top</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.right-0</span>  <span class="p">{</span> <span class="k">right</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.bottom-0</span> <span class="p">{</span> <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
-<span class="nc">.left-0</span>   <span class="p">{</span> <span class="k">left</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
+<span class="hljs-class">.top-0</span>    <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.right-0</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">right</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.bottom-0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.left-0</span>   <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
 
-<span class="nc">.z1</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">1</span> <span class="p">}</span>
-<span class="nc">.z2</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">2</span> <span class="p">}</span>
-<span class="nc">.z3</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">3</span> <span class="p">}</span>
-<span class="nc">.z4</span> <span class="p">{</span> <span class="k">z-index</span><span class="o">:</span> <span class="m">4</span> <span class="p">}</span>
+<span class="hljs-class">.z1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">1</span> </span></span></span>}
+<span class="hljs-class">.z2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">2</span> </span></span></span>}
+<span class="hljs-class">.z3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">3</span> </span></span></span>}
+<span class="hljs-class">.z4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">4</span> </span></span></span>}
 
-<span class="nc">.absolute-center</span> <span class="p">{</span>
-  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="k">right</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="k">margin</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
-  <span class="k">display</span><span class="o">:</span> <span class="n">table</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
+<span class="hljs-class">.absolute-center</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">right</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> table</span></span>;
+<span class="hljs-rule">}</span></span></code></pre>
 </div>
  </div>
     <div class="py2"> <h1>
@@ -707,36 +711,37 @@
     <div class="py2"> <h3 class="sm-show">Visible from <code>--breakpoint-sm</code> and up.</h3>
 <h3 class="sm-hide red">Hidden from <code>--breakpoint-sm</code> and up.</h3>
  </div>
-    <div class="py2"> <div data-pygmentize="css"><div class="highlight"><pre><span class="nc">.sm-show</span><span class="o">,</span> <span class="nc">.md-show</span><span class="o">,</span> <span class="nc">.lg-show</span> <span class="p">{</span>
-  <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span>
-<span class="p">}</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-sm</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.sm-show</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-md</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.md-show</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-lg</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.lg-show</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-sm</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.sm-hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-md</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.md-hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">--breakpoint-lg</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.lg-hide</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="nc">.display-none</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span> <span class="p">}</span>
-<span class="nc">.hide</span> <span class="p">{</span>
-  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span> <span class="cp">!important</span><span class="p">;</span>
-  <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
-  <span class="k">width</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
-  <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
-  <span class="k">clip</span><span class="o">:</span> <span class="n">rect</span><span class="p">(</span><span class="m">1px</span><span class="o">,</span> <span class="m">1px</span><span class="o">,</span> <span class="m">1px</span><span class="o">,</span> <span class="m">1px</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></div>
+    <div class="py2"> <div class="Example_code">
+<pre>
+<code class="hljs css"><span class="hljs-class">.sm-show</span>, <span class="hljs-class">.md-show</span>, <span class="hljs-class">.lg-show</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span>
+</span></span></span>}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
+  <span class="hljs-class">.sm-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
+  <span class="hljs-class">.md-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
+  <span class="hljs-class">.lg-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
+  <span class="hljs-class">.sm-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
+  <span class="hljs-class">.md-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
+  <span class="hljs-class">.lg-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-class">.display-none</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+<span class="hljs-class">.hide</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">clip</span>:<span class="hljs-value"> <span class="hljs-function">rect</span>(<span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>)</span></span>;
+<span class="hljs-rule">}</span></span></code></pre>
 </div>
  </div>
     <div class="py2"> <div class="overflow-scroll">
@@ -847,30 +852,27 @@
 
 
 <footer class="py4">
-  <div class="sm-table">
-    <div class="sm-table-cell nowrap py2 xs-center">
-      <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
-          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4">
+  <div class="sm-flex flex-center">
+    <div class="flex-none nowrap py2 xs-center">
+      <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
         </svg>
         Tweet
       </a>
     </div>
-    <div class="sm-table-cell full-width py2 xs-center">
+    <div class="flex-auto full-width py2 xs-center">
       <div class="h5 bold px1">
         <a href="/" class="button button-narrow button-nav-light">Home</a>
         <a href="/docs" class="button button-narrow button-nav-light">Docs</a>
         <div class="inline-block">
-          <a href="/docs/getting-started" class="button button-narrow sm-show button-nav-light">Download</a>
+          <a href="/docs/getting-started" class="button button-narrow md-show button-nav-light">Download</a>
         </div>
         <a href="//github.com/jxnblk/basscss" class="button button-narrow button-nav-light">Github</a>
       </div>
     </div>
-    <div class="sm-table-cell py2 nowrap right-align">
-      <p class="h5 mb0 xs-center">
-        <svg class="icon red" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
-          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 ">
-        </svg>
+    <div class="flex-none py2 nowrap right-align">
+      <p class="h5 bold mb0 xs-center">
         Made with love by
         <a href="//jxnblk.com">Jxnblk</a>
       </p>

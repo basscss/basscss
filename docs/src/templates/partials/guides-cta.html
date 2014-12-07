@@ -1,0 +1,17 @@
+{% set heading = heading || 'Other Guides' %}
+
+<section id="guides-cta" class="py4">
+  <h1 class="">{{ heading }}</h1>
+  <div class="clearfix mxn2 mb4">
+    {% for guide in guides %}
+      {% if guide.title != page.title %}
+        <div class="sm-col md-col-6">
+          <a href="{{ guide.link }}" class="h3 button block button-nav-light">
+            <h3 class="h2 m0">{{ guide.title }}</h3>
+            <p class="regular m0">{{ guide.description }}</p>
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

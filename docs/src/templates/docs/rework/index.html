@@ -1,0 +1,126 @@
+{% set page = references.rework %}
+{% set isdocs = true %}
+{% extends 'layouts/docs.html' %}
+
+{% block content %}
+
+<section class="py2">
+  <p class="h3">
+    Basscss is built with
+    <a href="https://github.com/reworkcss/rework">Rework</a> and
+    <a href="http://gulpjs.com/">Gulp</a>.
+    Rework is a preprocessor based on the CSS specification and a flexible plugin architecture.
+    Gulp is a Node.js-based build system for front-end development.
+  </p>
+</section>
+
+<section class="py2">
+  <h1>Building with Gulp and Rework</h1>
+  <p>
+    To fully leverage Basscss’s modularity and flexibility,
+    use Rework to build your own custom stylesheets.
+  </p>
+  <p>
+    If you don’t have it already,
+    <a href="http://nodejs.org/download/">install Node</a>,
+    which includes NPM.
+    Then, install Gulp globally:
+  </p>
+  <pre class="Example_code">npm install --global gulp</pre>
+  <p>
+    Clone or download Basscss, then cd into the basscss directory.
+  </p>
+  <pre class="Example_code">git clone https://github.com/jxnblk/basscss.git && cd basscss</pre>
+  <p>Install the dependencies for Basscss.</p>
+  <pre class="Example_code">npm install</pre>
+  <p>
+    Duplicate <code>/src/basscss.css</code> to use as a template, make adjustments, then run the following Gulp task from the command line to recompile. This will create uncompressed, minified, and gzipped versions of the file.
+  </p>
+  <pre class="Example_code">gulp basswork</pre>
+  <p>To better understand how this is set up, open up <code>gulpfile.js</code> and take a peek.
+</section>
+
+<section class="py2">
+  <h1>Building with Basswork</h1>
+  <p>
+    Basscss uses
+    <a href="http://github.com/jxnblk/basswork">Basswork</a>
+    , a custom wrapper around Rework, to simplify development. Basswork is also available as a
+    <a href="https://github.com/jxnblk/gulp-basswork">Gulp plugin</a>.
+  </p>
+  <h2>Using Basswork in Node</h2>
+  <p>Install basswork along with any Basscss modules you’d like to use.</p>
+  <div class="Example_code mb2">{% highlight 'bash' %}npm install --save-dev basswork basscss-base basscss-utilities{% endhighlight %}</div>
+  <p>Pass a source CSS string to Basswork, which will return a compiled CSS string.</p>
+  <pre class="Example_code mb2">{% highlight 'js' %}{% include 'examples/basswork.js' %}{% endhighlight %}</pre>
+  <h2>Using Basswork in an Existing Gulp Project</h2>
+  <p>Install gulp-basswork along with any Basscss modules you’d like to use.</p>
+  <div class="Example_code mb2">{% highlight 'bash' %}npm install --save-dev gulp-basswork basscss-base basscss-utilities{% endhighlight %}</div>
+  <p>Create a Gulp task.</p>
+  <pre class="Example_code mb2">{% highlight 'js' %}{% include 'examples/gulp-recipe.js' %}{% endhighlight %}</pre>
+</section>
+
+<section class="py2">
+  <h1>Rework in Practice</h1>
+  <h2>Imports</h2>
+  <p>Create a source CSS file to import the Basscss modules.</p>
+<pre class="Example_code mb2">
+{% highlight 'css' %}
+@import "basscss-base";
+@import "basscss-utilities";
+{% endhighlight %}</pre>
+  <p>
+    To import custom files within the same folder, use <code>./</code> to indicate the current folder.
+    See <a href="https://github.com/reworkcss/rework-npm">Rework NPM</a> for more details on usage.
+  </p>
+<pre class="Example_code mb2">
+{% highlight 'css' %}
+@import "basscss-base";
+@import "basscss-utilities";
+@import "./buttons.css";
+{% endhighlight %}</pre>
+  <h2>Variables</h2>
+  <p>
+    Set CSS variables after the imports to alter Basscss’s default values.
+  </p>
+<pre class="Example_code mb2">
+{% highlight 'css' %}
+@import "basscss-base";
+@import "basscss-utilities";
+
+:root {
+  --font-family: Georgia, serif;
+}
+{% endhighlight %}</pre>
+  <p>To use variables as property values, follow this syntax:</p>
+<pre class="Example_code mb2">{% highlight 'css' %}
+.button-red {
+  color: white;
+  background-color: var(--red);
+}
+{% endhighlight %}</pre>
+  <p>To set an inline fallback value, place it after the variable name separated by a comma.</p>
+<pre class="Example_code mb2">{% highlight 'css' %}
+.button-red {
+  color: white;
+  background-color: var(--red, #f00);
+}
+{% endhighlight %}</pre>
+  <p>See <a href="http://github.com/reworkcss/rework-vars">Rework Vars</a> for more details on usage.</p>
+  <h2>Custom Media Queries</h2>
+  <p>
+    To adjust breakpoints for the default media queries,
+    set custom media queries after the imports.
+    See <a href="http://github.com/reworkcss/rework-custom-media">Rework Custom Media</a> for more details on usage.
+  </p>
+<pre class="Example_code mb2">
+{% highlight 'css' %}
+@import "basscss-base";
+@import "basscss-utilities";
+
+@custom-media --breakpoint-sm (min-width: 32em);
+{% endhighlight %}</pre>
+</section>
+
+{% endblock %}
+

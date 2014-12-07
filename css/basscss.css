@@ -1,6 +1,6 @@
 /*
 
-    Basscss v4.1.4
+    Basscss v4.1.5
 
     Low-level CSS toolkit
     http://basscss.com
@@ -265,6 +265,10 @@ td {
 
 .overflow-scroll {
   overflow: scroll;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .clearfix:before,

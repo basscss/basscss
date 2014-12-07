@@ -1,0 +1,95 @@
+{% extends 'layouts/docs.html' %}
+{% set page = pages.base %}
+{% set isdocs = true %}
+
+{% block content %}
+
+    <p class="h3">
+      Base element styles control native HTML elements such as headings, paragraphs, buttons, and forms in a systematic and opinionated way.
+      These styles include typographical considerations and utilities derived from base elements, such as typefaces, the type scale, forms, and buttons.
+    </p>
+
+    <section id="typography" class="py2">
+      <h1>Typography</h1>
+
+      <h2>Base type scale</h2>
+      <p>
+        Typographic elements are normalized to a simple type scale that works well across devices.
+        Default top and bottom margins are set for commonly-used typographic elements.
+      </p>
+      {{ macros.example('headings.html') }}
+
+      <h2>Type scale utilities</h2>
+      <p>
+        The <code>.h1</code> – <code>.h6</code> font-size utilities can be used to override an element’s default size.
+      </p>
+      {{ macros.example('type-scale.html') }}
+
+      <h2>Lists</h2>
+      <p>By default, lists have bullets or numbers and padding left.</p>
+      {{ macros.example('lists.html') }}
+      <p>To remove default list styling, use <code>.list-reset</code>.</p>
+      {{ macros.example('list-reset.html') }}
+      <p>To set lists inline, use utilities.</p>
+      {{ macros.example('list-inline.html') }}
+    </section>
+
+    <section id="forms" class="py2">
+      <h1>Forms</h1>
+      <p>
+        Forms use base styles for their structure
+        with color styles applied to adjust the look and feel.
+        This creates a rhythmic consitency among all forms while allowing thematic
+        differences where needed.
+        Form elements do not rely on nested styles or markup structure,
+        so utility styles can be used for contextual adjustments.
+      </p>
+      <h2>Inline Forms</h2>
+      <p>By default, form elements display inline.</p>
+      {{ macros.example('form-inline.html') }}
+      <h2>Stacked Forms</h2>
+      <p>
+        Use <code>.block</code> and other utilities to stack form elements.
+        The use of utilities allows for a lot of flexibility when building form layouts.
+      </p>
+      {{ macros.example('form-basic.html') }}
+      <p>Fieldsets can be reset with <code>.fieldset-reset</code> to allow for easier styling of the fieldset and legend.</p>
+      {{ macros.example('form-fieldset.html') }}
+    </section>
+
+    <section id="buttons" class="py2">
+      <h1>Buttons</h1>
+      <p>
+        Structural styles and resets for buttons are set in base.
+        All buttons share common padding and height, well suited for tap targets on touchscreen displays.
+        Color styles and other custom extensions adjust their surface-level appearance.
+      </p>
+      {{ macros.example('buttons.html') }}
+    </section>
+
+    <section id="tables" class="py2">
+      <h1>Tables</h1>
+      <p>
+        Default table styles are defined in base.
+        Use the <code>table-light</code> color style with other color utilities
+        or create custom theme extensions to suit your needs.
+      </p>
+      {{ macros.example('tables.html') }}
+    </section>
+
+    <section id="variables" class="py2">
+      <h1>Default Variables</h1>
+      <p>
+        Base styles use the following variables.
+        To alter these defaults, declare new values after importing Basscss with Rework. 
+      </p>
+      <pre class="Example_code">{% highlight 'css' %}{% include 'examples/base-variables.css' %}{% endhighlight %}</pre>
+    </section>
+
+    <section id="npm" class="py2">
+      <h1>NPM</h1>
+      <p>Base styles are also available as a standalone NPM module.</p>
+      <pre class="Example_code">npm install basscss-base</pre>
+    </section>
+
+{% endblock %}

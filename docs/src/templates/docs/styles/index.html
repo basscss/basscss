@@ -1,0 +1,47 @@
+{% set page = references.styles %}
+{% set isdocs = true %}
+{% extends 'layouts/default.html' %}
+
+{% block content %}
+
+{% include 'partials/docs-nav.html' %}
+
+<div class="bold sm-flex flex-center py2">
+  <div class="flex-auto py2">
+    <div class="h0">{{ css.parsed.length }}</div>
+    <div class="h6 caps">Styles</div>
+  </div>
+  <div class="flex-auto py2">
+    <div class="h0 bold">{{ css.size }}<span class="h3">KB</span></div>
+    <div class="h6 caps">minified</div>
+  </div>
+  <div class="flex-auto py2">
+    <div class="h0">{{ css.gzSize }}<span class="h3">KB</span></div>
+    <div class="h6 caps">gzipped</div>
+  </div>
+</div>
+
+<table class="mb4 folding-table table-light">
+  <thead class="bold bg-darken-1">
+    <tr> <th>Selectors</th> <th>Declarations</th> </tr>
+  </thead>
+  <tbody>
+    {% for p in css.parsed %}
+      <tr class="{% if p.media %}bg-darken-1{% endif %}">
+        <td class="sm-col-3">
+          <!-- <span class="h6 bold mr1 mid-gray">{{ $index }}</span> -->
+          {{ p.selectors }}
+        </td>
+        <td class="sm-col-9">
+          {% if p.media %}
+            <span class="bold">{{ p.media }}</span>
+          {% endif %}
+          {{ p.declarations }}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}
+

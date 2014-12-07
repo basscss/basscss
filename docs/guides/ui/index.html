@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 
@@ -16,14 +17,14 @@
 
 <body class="container px2">
 
-
-
 <header class="py3 mb3 border-bottom">
-  <div class="avenir h4 caps bold mt2 mxn1">
+  <div class="avenir h5 caps bold mt2 mxn1">
     <a href="/" class="button button-narrow">Basscss</a>
     
       / <a href="/docs" class="button button-narrow">Docs</a>
     
+    
+      / <a href="/docs/guides/" class="button button-narrow">Guides</a>
     
   </div>
   <h1 class="avenir md-h1 lg-h1 caps m0">UI Elements</h1>
@@ -36,115 +37,120 @@
 
   <div class="sm-col sm-col-9 px2 py2">
 
-    <p class="h3">
-      Basscss can be used to create many different user interface elements out of the box.
-      With utility styles and a thoughtfully-architected templating system,
-      you can keep CSS bloat to a minimum, while making iterative design changes to partials and components.
-      You don&#x2019;t need to make CSS do your templating engine&#x2019;s job.
-    </p>
+    
 
-    <section id="button-sizes" class="py2">
-      <h1>Button Sizes</h1>
-      <p>Button sizes can be adjusted with font size utilities.</p>
-      
+<p class="h3">
+  Basscss can be used to create many different user interface elements out of the box.
+  With utility styles and a thoughtfully-architected templating system,
+  you can keep CSS bloat to a minimum, while making iterative design changes to partials and components.
+  You don’t need to make CSS do your templating engine’s job.
+</p>
 
+<section id="button-sizes" class="py2">
+  <h1>Button Sizes</h1>
+  <p>Button sizes can be adjusted with font size utilities.</p>
+  
+  
 
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <button type="button" class="h3 button-blue">Burgers</button>
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <button type="button" class="h3 button-blue">Burgers</button>
 <button type="button" class="h4 button-blue">Fries</button>
 <button type="button" class="h6 button-blue">Shakes</button>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3 button-blue"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h4 button-blue"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h6 button-blue"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;h3 button-blue&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;h4 button-blue&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;h6 button-blue&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/button&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>
+    To change the line-height and padding but leave the font-size the same,
+    use button size extensions.
+    Font size utilities and button size extensions can be combined for more options.
+  </p>
+  
+  
 
-
-      <p>
-        To change the line-height and padding but leave the font-size the same,
-        use button size extensions.
-        Font size utilities and button size extensions can be combined for more options.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <button type="button" class="button-big button-blue">Burgers</button>
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <button type="button" class="button-big button-blue">Burgers</button>
 <button type="button" class="button-blue">Fries</button>
 <div class="mb1 md-hide"></div>
 <button type="button" class="button-narrow button-blue">Onion Rings</button>
 <button type="button" class="button-small button-blue">Shakes</button>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-big button-blue"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-blue"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb1 md-hide"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-narrow button-blue"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-small button-blue"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-big button-blue&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mb1 md-hide&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-narrow button-blue&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-small button-blue&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/button&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+</section>
 
+<section id="navigation" class="py2">
+  <h1>Navigation</h1>
+  <p>
+    In HTML, navigation is essentially just groups of links.
+    By using the same styles as buttons,
+    you can ensure that navigation links are evenly spaced and have large, easy-to-hit targets.
+    Negative margin utilities can help line up text elements with other elements on the page.
+    The <code>.button-nav-light</code> color style can be used for navigation
+    items on light backgrounds. Use <code>.button-nav-dark</code> for dark backgrounds.
+  </p>
+  
+  
 
-    </section>
-
-    <section id="navigation" class="py2">
-      <h1>Navigation</h1>
-      <p>
-        In HTML, navigation is essentially just groups of links.
-        By using the same styles as buttons,
-        you can ensure that navigation links are evenly spaced and have large, easy-to-hit targets.
-        Negative margin utilities can help line up text elements with other elements on the page.
-        The <code>.button-nav-light</code> color style can be used for navigation
-        items on light backgrounds. Use <code>.button-nav-dark</code> for dark backgrounds.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="mxn1">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="mxn1">
   <a href="#!" class="button button-narrow button-nav-light">Burgers</a>
   <a href="#!" class="button button-narrow button-nav-light">Fries</a>
   <a href="#!" class="button button-narrow button-nav-light">Shakes</a>
   <a href="#!" class="button button-narrow button-nav-light">Onion Rings</a>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mxn1"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mxn1&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>
+    The table object can be used to create justified navigation.
+    Be sure to test your specific navigation across a range of devices to ensure that 
+    labels fit within the viewport.
+  </p>
+  
+  
 
-
-      <p>
-        The table object can be used to create justified navigation.
-        Be sure to test your specific navigation across a range of devices to ensure that 
-        labels fit within the viewport.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="sm-table table-fixed center nowrap">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="sm-table table-fixed center nowrap">
   <div class="sm-table-cell">
     <a href="#!" class="button block button-nav-light">Burgers</a>
   </div>
@@ -159,172 +165,178 @@
   </div>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-table table-fixed center nowrap"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-table-cell"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-table-cell"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-table-cell"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-table-cell"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-table table-fixed center nowrap&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-table-cell&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-table-cell&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-table-cell&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-table-cell&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>To stack navigation elements, use the <code>.block</code> utility.</p>
+  
+  
 
-
-      <p>To stack navigation elements, use the <code>.block</code> utility.</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="sm-col-6 mxn2">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="sm-col-6 mxn2">
   <a href="#!" class="button block button-nav-light">Burgers</a>
   <a href="#!" class="button block button-nav-light">Fries</a>
   <a href="#!" class="button block button-nav-light">Shakes</a>
   <a href="#!" class="button block button-nav-light">Onion Rings</a>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col-6 mxn2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col-6 mxn2&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>
+    Use the <code>.button-nav-tab</code> color style to create tabbed navigation.
+    This only works horizontally, so ensure your navigation fits within narrow viewports.
+  </p>
+  
+  
 
-
-      <p>
-        Use the <code>.button-nav-tab</code> color style to create tabbed navigation.
-        This only works horizontally, so ensure your navigation fits within narrow viewports.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="clearfix border-bottom">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="clearfix border-bottom">
   <a href="#!" class="left button button-nav-tab is-active">Burgers</a>
   <a href="#!" class="left button button-nav-tab">Fries</a>
   <a href="#!" class="left button button-nav-tab">Shakes</a>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix border-bottom"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button button-nav-tab is-active"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button button-nav-tab"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button button-nav-tab"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix border-bottom&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;left button button-nav-tab is-active&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;left button button-nav-tab&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;left button button-nav-tab&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>Use the table object to justify tabbed navigation.</p>
+  
+  
 
-
-      <p>Use the table object to justify tabbed navigation.</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="table table-fixed center">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="table table-fixed center">
   <a href="#!" class="table-cell button button-narrow button-nav-tab is-active">Burgers</a>
   <a href="#!" class="table-cell button button-narrow button-nav-tab">Fries</a>
   <a href="#!" class="table-cell button button-narrow button-nav-tab">Shakes</a>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table table-fixed center"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell button button-narrow button-nav-tab is-active"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell button button-narrow button-nav-tab"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell button button-narrow button-nav-tab"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table table-fixed center&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-narrow button-nav-tab is-active&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-narrow button-nav-tab&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-narrow button-nav-tab&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>Standard color styles can be applied to create a variety of navigation styles.</p>
+  
+  
 
-
-      <p>Standard color styles can be applied to create a variety of navigation styles.</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="sm-col-6 bg-white border rounded">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="sm-col-6 bg-white border rounded">
   <a href="#!" class="button block button-nav-light border-bottom dark-gray">Burgers</a>
   <a href="#!" class="button block button-nav-light border-bottom">Fries</a>
   <a href="#!" class="button block button-nav-light border-bottom">Shakes</a>
   <a href="#!" class="button block button-nav-light">Onion Rings</a>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col-6 bg-white border rounded"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light border-bottom dark-gray"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light border-bottom"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light border-bottom"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sm-col-6 bg-white border rounded&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light border-bottom dark-gray&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light border-bottom&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light border-bottom&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>The <code>.button-blue</code> style can be used to create a pill navigation.</p>
+  
+  
 
-
-      <p>The <code>.button-blue</code> style can be used to create a pill navigation.</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div>
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div>
   <a href="#!" class="button button-blue">Burgers</a>
   <a href="#!" class="button button-nav-light">Fries</a>
   <a href="#!" class="button button-nav-light">Shakes</a>
   <a href="#!" class="button button-nav-light">Onion Rings</a>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-blue"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-nav-light"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-nav-light"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-nav-light"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-blue&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-nav-light&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-nav-light&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-nav-light&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>
+    If you’d like to wrap your navigation in a <code>ul</code> use the <code>.list-reset</code>
+    style to remove bullets and padding.
+  </p>
+  
+  
 
-
-      <p>
-        If you&#x2019;d like to wrap your navigation in a <code>ul</code> use the <code>.list-reset</code>
-        style to remove bullets and padding.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <ul class="list-reset mxn1 mb0">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <ul class="list-reset mxn1 mb0">
   <li class="inline-block">
     <a href="#!" class="button button-narrow button-nav-light">Burgers</a>
   </li>
@@ -339,66 +351,68 @@
   </li>
 </ul>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-reset mxn1 mb0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-reset mxn1 mb0&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;inline-block&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;inline-block&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;inline-block&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;inline-block&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+</section>
 
+<section id="breadcrumbs" class="py2">
+  <h1>Breadcrumbs</h1>
+  <p>
+    Breadcrumbs are a common and well-understood wayfinding pattern used in multi-level hierarchies.
+    Stylistically, these are essentially the same as navigation, but with separators between items.
+  </p>
+  
+  
 
-    </section>
-
-    <section id="breadcrumbs" class="py2">
-      <h1>Breadcrumbs</h1>
-      <p>
-        Breadcrumbs are a common and well-understood wayfinding pattern used in multi-level hierarchies.
-        Stylistically, these are essentially the same as navigation, but with separators between items.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="mxn1">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="mxn1">
   <a href="#!" class="button button-narrow">Home</a> /
   <a href="#!" class="button button-narrow">Hot Dogs</a> /
   <span class="button button-narrow">Frank</span>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mxn1"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> /
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow"</span>&gt;</span>Hot Dogs<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> /
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow"</span>&gt;</span>Frank<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mxn1&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span> /
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span> /
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Frank<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  
+  
 
-
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="mxn1 mid-gray">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="mxn1 mid-gray">
   <a href="#!" class="button button-narrow">Home</a>
   <svg class="icon" data-icon="chevron-right"></svg>
   <a href="#!" class="button button-narrow">Hot Dogs</a>
@@ -406,39 +420,40 @@
   <span class="button button-narrow">Frank</span>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mxn1 mid-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon"</span> <span class="hljs-attribute">data-icon</span>=<span class="hljs-value">"chevron-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow"</span>&gt;</span>Hot Dogs<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon"</span> <span class="hljs-attribute">data-icon</span>=<span class="hljs-value">"chevron-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow"</span>&gt;</span>Frank<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mxn1 mid-gray&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;icon&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;chevron-right&quot;</span><span class="nt">&gt;&lt;/svg&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;icon&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;chevron-right&quot;</span><span class="nt">&gt;&lt;/svg&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button button-narrow&quot;</span><span class="nt">&gt;</span>Frank<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p class="h6">
+    Note: the icons used in this example are from
+    <a href="http://jxnblk.github.io/geomicons-open">Geomicons Open</a>.
+  </p>
+</section>
 
+<section id="pagination" class="py2">
+  <h1>Pagination</h1>
+  <p>
+    Pagination is used to split up large lists in a user-friendly way and allows for deep linking.
+    Use a combination of layout utilities and button styles to create navigation that suites your design.
+  </p>
+  
+  
 
-      <p class="h6">
-        Note: the icons used in this example are from
-        <a href="http://jxnblk.github.io/geomicons-open">Geomicons Open</a>.
-      </p>
-    </section>
-
-    <section id="pagination" class="py2">
-      <h1>Pagination</h1>
-      <p>
-        Pagination is used to split up large lists in a user-friendly way and allows for deep linking.
-        Use a combination of layout utilities and button styles to create navigation that suites your design.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="clearfix">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="clearfix">
   <a href="#!" class="left button button-nav-light">
     <svg class="icon" data-icon="chevron-left"></svg>
     Previous
@@ -449,34 +464,35 @@
   </a>
 </div>
 
-  </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;left button button-nav-light&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;icon&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;chevron-left&quot;</span><span class="nt">&gt;&lt;/svg&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button button-nav-light"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon"</span> <span class="hljs-attribute">data-icon</span>=<span class="hljs-value">"chevron-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
     Previous
-  <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;right button button-nav-light&quot;</span><span class="nt">&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right button button-nav-light"</span>&gt;</span>
     Next
-    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;icon&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;chevron-right&quot;</span><span class="nt">&gt;&lt;/svg&gt;</span>
-  <span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+    <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon"</span> <span class="hljs-attribute">data-icon</span>=<span class="hljs-value">"chevron-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
 
+  <p>
+    Responsive state utilities can be used to progressively enhance pagination
+    with numbers on devices with wider viewports.
+  </p>
+  
+  
 
-
-      <p>
-        Responsive state utilities can be used to progressively enhance pagination
-        with numbers on devices with wider viewports.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="center">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="center">
   <div class="inline-block clearfix">
     <a href="#!" class="left button button-narrow button-nav-light">
       <svg class="icon" data-icon="chevron-left"></svg>
@@ -496,40 +512,41 @@
   </div>
 </div>
 
-  </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;inline-block clearfix&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;left button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;icon&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;chevron-left&quot;</span><span class="nt">&gt;&lt;/svg&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block clearfix"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button button-narrow button-nav-light"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon"</span> <span class="hljs-attribute">data-icon</span>=<span class="hljs-value">"chevron-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
       Previous
-    <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;right button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right button button-narrow button-nav-light"</span>&gt;</span>
       Next
-      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;icon&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;chevron-right&quot;</span><span class="nt">&gt;&lt;/svg&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden sm-show&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light is-active&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow button-nav-light&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+      <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon"</span> <span class="hljs-attribute">data-icon</span>=<span class="hljs-value">"chevron-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden sm-show"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light is-active"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
 
+  <p>Standard color styles can be used to control the appearance.</p>
+  
+  
 
-
-      <p>Standard color styles can be used to control the appearance.</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="center">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="center">
   <div class="inline-block overflow-hidden border rounded">
     <a href="#!" class="left button button-nav-light border-right">
       <svg class="icon" data-icon="chevron-left"></svg>
@@ -547,162 +564,167 @@
   </div>
 </div>
 
-  </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;inline-block overflow-hidden border rounded&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;left button button-nav-light border-right&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;icon&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;chevron-left&quot;</span><span class="nt">&gt;&lt;/svg&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block overflow-hidden border rounded"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button button-nav-light border-right"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon"</span> <span class="hljs-attribute">data-icon</span>=<span class="hljs-value">"chevron-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
       Previous
-    <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;right button button-nav-light &quot;</span><span class="nt">&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right button button-nav-light "</span>&gt;</span>
       Next
-      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;icon&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;chevron-right&quot;</span><span class="nt">&gt;&lt;/svg&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden sm-show&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;left button button-nav-light dark-gray border-right&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;left button button-nav-light border-right&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;left button button-nav-light border-right&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+      <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon"</span> <span class="hljs-attribute">data-icon</span>=<span class="hljs-value">"chevron-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden sm-show"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button button-nav-light dark-gray border-right"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button button-nav-light border-right"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button button-nav-light border-right"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
 
+</section>
 
+<section id="button-groups" class="py2">
+  <h1>Button Groups</h1>
+  <p>
+    Button groups allow for more flexibility in establishing gestalt and controlling information density.
+    Use a combination of layout utilities and color extensions to create button groups.
+    The utilities <code>.rounded-left</code>, <code>.rounded-right</code>,
+    and <code>.not-rounded</code> can be used to override button and form field border radii.
+  </p>
+  
+  
 
-    </section>
-
-    <section id="button-groups" class="py2">
-      <h1>Button Groups</h1>
-      <p>
-        Button groups allow for more flexibility in establishing gestalt and controlling information density.
-        Use a combination of layout utilities and color extensions to create button groups.
-        The utilities <code>.rounded-left</code>, <code>.rounded-right</code>,
-        and <code>.not-rounded</code> can be used to override button and form field border radii.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="inline-block clearfix">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="inline-block clearfix">
   <button type="button" class="left button-blue rounded-left is-active">Burgers</button>
   <button type="button" class="left button-blue border-left not-rounded">Fries</button>
   <button type="button" class="left button-blue border-left rounded-right">Shakes</button>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block clearfix"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button-blue rounded-left is-active"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button-blue border-left not-rounded"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button-blue border-left rounded-right"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;inline-block clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue rounded-left is-active&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue border-left not-rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue border-left rounded-right&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <h2>Justified Button Group</h2>
+  <p>The table object can be used to create justified button groups.</p>
+  
+  
 
-
-      <h2>Justified Button Group</h2>
-      <p>The table object can be used to create justified button groups.</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="table table-fixed center">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="table table-fixed center">
   <a href="#!" class="table-cell button button-blue rounded-left is-active">Burgers</a>
   <a href="#!" class="table-cell button button-blue border-left not-rounded">Fries</a>
   <a href="#!" class="table-cell button button-blue border-left rounded-right">Shakes</a>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table table-fixed center"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell button button-blue rounded-left is-active"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell button button-blue border-left not-rounded"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table-cell button button-blue border-left rounded-right"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;table table-fixed center&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue rounded-left is-active&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue border-left not-rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;table-cell button button-blue border-left rounded-right&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>
+    Normally, buttons with borders would double up when placed next to each other.
+    The <code>.x-group-item</code> and <code>.x-group-item-2</code> utilities
+    adjust negative margins and focus states to visually collapse borders.
+    Use the <code>.x-group-item-2</code> utility on elements with 2px borders.
+    Functionally, this is similar to how other frameworks handle button and form input groups,
+    but with more direct control over styling.
+  </p>
+  
+  
 
-
-      <p>
-        Normally, buttons with borders would double up when placed next to each other.
-        The <code>.x-group-item</code> and <code>.x-group-item-2</code> utilities
-        adjust negative margins and focus states to visually collapse borders.
-        Use the <code>.x-group-item-2</code> utility on elements with 2px borders.
-        Functionally, this is similar to how other frameworks handle button and form input groups,
-        but with more direct control over styling.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="inline-block clearfix">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="inline-block clearfix">
   <button type="button" class="left button-blue-outline x-group-item-2 rounded-left is-active">Burgers</button>
   <button type="button" class="left button-blue-outline x-group-item-2 not-rounded">Fries</button>
   <button type="button" class="left button-blue-outline x-group-item-2 rounded-right">Shake</button>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block clearfix"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button-blue-outline x-group-item-2 rounded-left is-active"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button-blue-outline x-group-item-2 not-rounded"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button-blue-outline x-group-item-2 rounded-right"</span>&gt;</span>Shake<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;inline-block clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue-outline x-group-item-2 rounded-left is-active&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue-outline x-group-item-2 not-rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;left button-blue-outline x-group-item-2 rounded-right&quot;</span><span class="nt">&gt;</span>Shake<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>Use <code>.y-group-item</code> and <code>.y-group-item-2</code> to group elements vertically.</p>
+  
+  
 
-
-      <p>Use <code>.y-group-item</code> and <code>.y-group-item-2</code> to group elements vertically.</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="inline-block">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="inline-block">
   <button type="button" class="block full-width button-blue-outline y-group-item-2 rounded-top is-active">Burgers</button>
   <button type="button" class="block full-width button-blue-outline y-group-item-2 not-rounded">Fries</button>
   <button type="button" class="block full-width button-blue-outline y-group-item-2 rounded-bottom">Shake</button>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block full-width button-blue-outline y-group-item-2 rounded-top is-active"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block full-width button-blue-outline y-group-item-2 not-rounded"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block full-width button-blue-outline y-group-item-2 rounded-bottom"</span>&gt;</span>Shake<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;inline-block&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width button-blue-outline y-group-item-2 rounded-top is-active&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width button-blue-outline y-group-item-2 not-rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width button-blue-outline y-group-item-2 rounded-bottom&quot;</span><span class="nt">&gt;</span>Shake<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+</section>
 
+<section id="input-groups" class="py2">
+  <h1>Input Groups</h1>
+  <p>
+    Input groups can be created by removing margins, adjusting border radii, and using the group utilities.
+    The <code>.hide</code> utility visually hides labels, while keeping them accessible to screen readers.
+  </p>
+  
+  
 
-    </section>
-
-    <section id="input-groups" class="py2">
-      <h1>Input Groups</h1>
-      <p>
-        Input groups can be created by removing margins, adjusting border radii, and using the group utilities.
-        The <code>.hide</code> utility visually hides labels, while keeping them accessible to screen readers.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <form class="sm-col-6">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <form class="sm-col-6">
   <label class="hide">Pancakes</label>
   <input type="text" class="block full-width mb0 field-light rounded-top y-group-item" placeholder="Pancakes">
   <label class="hide">Making</label>
@@ -712,30 +734,31 @@
   <button type="submit" class="button-blue">Pancake</button>
 </form>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col-6"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hide"</span>&gt;</span>Pancakes<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block full-width mb0 field-light rounded-top y-group-item"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Pancakes"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hide"</span>&gt;</span>Making<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"password"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block full-width mb0 field-light not-rounded y-group-item"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Making"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hide"</span>&gt;</span>Bacon<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block full-width field-light rounded-bottom y-group-item"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Bacon"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-blue"</span>&gt;</span>Pancake<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;sm-col-6&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Pancakes<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width mb0 field-light rounded-top y-group-item&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Pancakes&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Making<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width mb0 field-light not-rounded y-group-item&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Making&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Bacon<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;block full-width field-light rounded-bottom y-group-item&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Bacon&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>Pancake<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/form&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>The grid system can be used to control button or input group widths.</p>
+  
+  
 
-
-      <p>The grid system can be used to control button or input group widths.</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <form class="clearfix">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <form class="clearfix">
   <label class="hide">Bacon</label>
   <input type="text" class="col col-4 md-col-5 mb0 field-light rounded-left x-group-item" placeholder="Bacon">
   <label class="hide">Pancakes</label>
@@ -743,48 +766,49 @@
   <button type="submit" class="col col-4 md-col-2 button-blue rounded-right">Pancake</button>
 </form>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hide"</span>&gt;</span>Bacon<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-4 md-col-5 mb0 field-light rounded-left x-group-item"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Bacon"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hide"</span>&gt;</span>Pancakes<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"password"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-4 md-col-5 mb0 field-light not-rounded x-group-item"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Pancakes"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-4 md-col-2 button-blue rounded-right"</span>&gt;</span>Pancake<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Bacon<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;col col-4 md-col-5 mb0 field-light rounded-left x-group-item&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Bacon&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;hide&quot;</span><span class="nt">&gt;</span>Pancakes<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;col col-4 md-col-5 mb0 field-light not-rounded x-group-item&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Pancakes&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;col col-4 md-col-2 button-blue rounded-right&quot;</span><span class="nt">&gt;</span>Pancake<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/form&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+</section>
 
+<section id="dropdowns" class="py2">
+  <h1>Dropdowns</h1>
+  <p>
+    Dropdown menus are used to group secondary or sensitive actions
+    behind a two-step progressive disclosure,
+    while conserving screen real estate.
+    Dropdowns can be created with basic positioning utilities.
+  </p>
+  <p>
+    The wrapping elements uses relative positioning to anchor the dropdown body.
+    An invisible fixed position element is used as an overlay to dismiss the dropdown.
+    The dropdown body uses absolute positioning and margin top to align with the trigger element,
+    without affecting the document flow.
+    The <code>.disclosure-group</code> utility is used to show and hide
+    child elements with javascript.
+    Be sure dropdowns don’t expand beyond the viewport when used near edges or at small screen sizes.
+  </p>
+  
+  
 
-    </section>
-
-    <section id="dropdowns" class="py2">
-      <h1>Dropdowns</h1>
-      <p>
-        Dropdown menus are used to group secondary or sensitive actions
-        behind a two-step progressive disclosure,
-        while conserving screen real estate.
-        Dropdowns can be created with basic positioning utilities.
-      </p>
-      <p>
-        The wrapping elements uses relative positioning to anchor the dropdown body.
-        An invisible fixed position element is used as an overlay to dismiss the dropdown.
-        The dropdown body uses absolute positioning and margin top to align with the trigger element,
-        without affecting the document flow.
-        The <code>.disclosure-group</code> utility is used to show and hide
-        child elements with javascript.
-        Be sure dropdowns don&#x2019;t expand beyond the viewport when used near edges or at small screen sizes.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="relative inline-block disclosure-group" data-disclosure="">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="relative inline-block disclosure-group" data-disclosure>
   <button type="button" class="button-blue">
-    Burger &#x25BE;
+    Burger &#9662;
   </button>
   <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
   <div class="disclosure-show absolute left-0 mt1 nowrap bg-blue rounded animation-fadein">
@@ -795,52 +819,53 @@
   </div>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"relative inline-block disclosure-group"</span> <span class="hljs-attribute">data-disclosure</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-blue"</span>&gt;</span>
+    Burger &amp;#9662;
+  <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disclosure-show fixed top-0 right-0 bottom-0 left-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disclosure-show absolute left-0 mt1 nowrap bg-blue rounded animation-fadein"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Rare<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Medium Rare<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Medium<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Well Done<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative inline-block disclosure-group&quot;</span> <span class="na">data-disclosure=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-blue&quot;</span><span class="nt">&gt;</span>
-    Burger <span class="ni">&amp;#x25BE;</span>
-  <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show fixed top-0 right-0 bottom-0 left-0&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show absolute left-0 mt1 nowrap bg-blue rounded animation-fadein&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Rare<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Medium Rare<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Well Done<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p class="h6">
+    Note: this example uses a custom JavaScript function for the disclosure mechanism.
+    Use a similar function, component, or directive in your own JavaScript to control behavior.
+  </p>
+</section>
 
+<section id="navbars" class="py2">
+  <h1>Navbars</h1>
+  <p>
+    Navbars are used to visually group global or sub navigation
+    and to separate actions and navigation from content.
+    Using a combination of layout utilities and color styles,
+    you can create a wide range of navbars that are simple to customize and update.
+  </p>
+  <p>
+    This example uses a double sided media object to create a flexible center with a search input
+    that stacks at narrow viewport widths.
+    By applying the <code>.py2</code> utility to the link buttons,
+    they become the height of normal buttons and inputs plus <code>.py1</code>.
+  </p>
+  
+  
 
-      <p class="h6">
-        Note: this example uses a custom JavaScript function for the disclosure mechanism.
-        Use a similar function, component, or directive in your own JavaScript to control behavior.
-      </p>
-    </section>
-
-    <section id="navbars" class="py2">
-      <h1>Navbars</h1>
-      <p>
-        Navbars are used to visually group global or sub navigation
-        and to separate actions and navigation from content.
-        Using a combination of layout utilities and color styles,
-        you can create a wide range of navbars that are simple to customize and update.
-      </p>
-      <p>
-        This example uses a double sided media object to create a flexible center with a search input
-        that stacks at narrow viewport widths.
-        By applying the <code>.py2</code> utility to the link buttons,
-        they become the height of normal buttons and inputs plus <code>.py1</code>.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="clearfix mb2 white bg-dark-gray">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="clearfix mb2 white bg-dark-gray">
   <div class="left">
     <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
     <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
@@ -854,30 +879,37 @@
   </div>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mb2 white bg-dark-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow py2 m0 button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>My Account<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix sm-hide"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden px2 py1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb0 right fit field-dark"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Search"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix mb2 white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>My Account<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix sm-hide&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden px2 py1&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;mb0 right fit field-dark&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Search&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>
+    By using rgba-based color utilities, the color can quickly be changed
+    using background color utilities.
+  </p>
+  
+  
 
-
-      <p>
-        By using rgba-based color utilities, the color can quickly be changed
-        using background color utilities.
-      </p>
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
       <div class="clearfix mb2 white bg-blue">
   <div class="left">
     <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
@@ -935,26 +967,90 @@
 </div>
 
 
-      <p>
-        Because Basscss is built with inter-operable styles,
-        things like a user account dropdown can be added anywhere in the navbar.
-      </p>
-      
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mb2 white bg-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow py2 m0 button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>My Account<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix sm-hide"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden px2 py1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb0 right fit field-dark"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Search"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mb2 white bg-mid-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow py2 m0 button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>My Account<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix sm-hide"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden px2 py1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb0 right fit field-dark"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Search"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mb2 white bg-green"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow py2 m0 button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>My Account<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix sm-hide"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden px2 py1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb0 right fit field-dark"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Search"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="clearfix white bg-dark-gray">
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mb2 white bg-red"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow py2 m0 button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>My Account<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix sm-hide"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden px2 py1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb0 right fit field-dark"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Search"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+</code></pre>
+    </div>
+  </div>
+  
+  
+
+  <p>
+    Because Basscss is built with inter-operable styles,
+    things like a user account dropdown can be added anywhere in the navbar.
+  </p>
+  
+  
+
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="clearfix white bg-dark-gray">
   <div class="left">
     <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
     <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
-    <div id="account-menu" class="inline-block disclosure-group" data-disclosure="">
+    <div id="account-menu" class="inline-block disclosure-group" data-disclosure>
       <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
       <div class="relative">
-        <a href="#!" class="button py2 m0 button-nav-dark">My Account &#x25BE;</a>
+        <a href="#!" class="button py2 m0 button-nav-dark">My Account &#9662;</a>
         <div class="disclosure-show absolute right-0 nowrap bg-white rounded" style="min-width:128px">
           <ul class="h5 list-reset mb0">
             <li><a href="#!" class="button block button-nav-light">Profile</a></li>
@@ -972,55 +1068,58 @@
 
 
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix white bg-dark-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow py2 m0 button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"account-menu"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block disclosure-group"</span> <span class="hljs-attribute">data-disclosure</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disclosure-show fixed top-0 right-0 bottom-0 left-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"relative"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>My Account &amp;#9662;<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disclosure-show absolute right-0 nowrap bg-white rounded"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"min-width:128px"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 list-reset mb0"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light"</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light"</span>&gt;</span>Settings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-light"</span>&gt;</span>Sign Out<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix sm-hide"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden px2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;inline-block disclosure-group&quot;</span> <span class="na">data-disclosure=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show fixed top-0 right-0 bottom-0 left-0&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>My Account <span class="ni">&amp;#x25BE;</span><span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show absolute right-0 nowrap bg-white rounded&quot;</span> <span class="na">style=</span><span class="s">&quot;min-width:128px&quot;</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;h5 list-reset mb0&quot;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-light&quot;</span><span class="nt">&gt;</span>Sign Out<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;/ul&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix sm-hide&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden px2&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>
+    Using a combination of responsive utilities, you can create a navbar that collapses
+    at narrow viewport widths. Resize the viewport to see the result.
+  </p>
+  
+  
 
-
-      <p>
-        Using a combination of responsive utilities, you can create a navbar that collapses
-        at narrow viewport widths. Resize the viewport to see the result.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="relative clearfix white bg-dark-gray">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="relative clearfix white bg-dark-gray">
   <div class="left">
     <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
   </div>
   <div class="right">
-    <div id="account-menu" class="right inline-block disclosure-group" data-disclosure="">
+    <div id="account-menu" class="right inline-block disclosure-group" data-disclosure>
       <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0 md-hide"></div>
-      <a href="#!" class="button py2 m0 button-nav-dark md-hide">Menu &#x25BE;</a>
+      <a href="#!" class="button py2 m0 button-nav-dark md-hide">Menu &#9662;</a>
       <div class="disclosure-show absolute right-0 left-0 clearfix nowrap bg-dark-gray rounded-bottom md-static md-show">
         <a href="#!" class="md-col button block py2 button-nav-dark">Hot Dogs</a>
         <a href="#!" class="md-col button block py2 button-nav-dark">Fries</a>
@@ -1037,48 +1136,49 @@
 }
 </style>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"relative clearfix white bg-dark-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"account-menu"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right inline-block disclosure-group"</span> <span class="hljs-attribute">data-disclosure</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disclosure-show fixed top-0 right-0 bottom-0 left-0 md-hide"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark md-hide"</span>&gt;</span>Menu &amp;#9662;<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disclosure-show absolute right-0 left-0 clearfix nowrap bg-dark-gray rounded-bottom md-static md-show"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-col button block py2 button-nav-dark"</span>&gt;</span>Hot Dogs<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-col button block py2 button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-col button block py2 button-nav-dark"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-col button block py2 button-nav-dark"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">style</span>&gt;</span><span class="css">
+<span class="hljs-comment">/* Responsive positioning extension example */</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (min-width:<span class="hljs-number">52em</span>) </span>{
+  <span class="hljs-class">.md-static</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> static </span></span></span>}
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative clearfix white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;right inline-block disclosure-group&quot;</span> <span class="na">data-disclosure=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show fixed top-0 right-0 bottom-0 left-0 md-hide&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark md-hide&quot;</span><span class="nt">&gt;</span>Menu <span class="ni">&amp;#x25BE;</span><span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show absolute right-0 left-0 clearfix nowrap bg-dark-gray rounded-bottom md-static md-show&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;md-col button block py2 button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;md-col button block py2 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;md-col button block py2 button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;md-col button block py2 button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;style&gt;</span>
-<span class="c">/* Responsive positioning extension example */</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="nd">:52em</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.md-static</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">static</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="nt">&lt;/style&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>
+    More complex
+    <a href="http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/#priority-plus">Priority Plus</a>
+    navigations can also be created using responsive utilities.
+  </p>
+  
+  
 
-
-      <p>
-        More complex
-        <a href="http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/#priority-plus">Priority Plus</a>
-        navigations can also be created using responsive utilities.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="relative clearfix white bg-dark-gray">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="relative clearfix white bg-dark-gray">
   <div class="left">
     <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
   </div>
@@ -1089,11 +1189,11 @@
     <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Onion Rings</a>
   </div>
   <div class="right">
-    <div id="account-menu" class="inline-block disclosure-group" data-disclosure="">
+    <div id="account-menu" class="inline-block disclosure-group" data-disclosure>
       <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
       <a href="#!" class="button py2 m0 button-nav-dark">
-        <span class="md-hide">Menu &#x25BE;</span>
-        <span class="md-show">More &#x25BE;</span>
+        <span class="md-hide">Menu &#9662;</span>
+        <span class="md-show">More &#9662;</span>
       </a>
       <div class="disclosure-show absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap bg-mid-gray rounded-bottom animation-fadein">
         <ul class="h5 list-reset py1 mb0">
@@ -1119,93 +1219,97 @@
 
 
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"relative clearfix white bg-dark-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left md-show"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow py2 m0 button-nav-dark"</span>&gt;</span>Hot Dogs<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow py2 m0 button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow py2 m0 button-nav-dark"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow py2 m0 button-nav-dark"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"account-menu"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block disclosure-group"</span> <span class="hljs-attribute">data-disclosure</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disclosure-show fixed top-0 right-0 bottom-0 left-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 m0 button-nav-dark"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-hide"</span>&gt;</span>Menu &amp;#9662;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-show"</span>&gt;</span>More &amp;#9662;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disclosure-show absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap bg-mid-gray rounded-bottom animation-fadein"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 list-reset py1 mb0"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-hide"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Hot Dogs<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-hide"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-hide"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-hide"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Bacon<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Pancakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Sausages<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Waffles<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">style</span>&gt;</span><span class="css">
+<span class="hljs-comment">/* Responsive positioning extension example */</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (max-width:<span class="hljs-number">40em</span>) </span>{
+  <span class="hljs-class">.xs-left-0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span>
+
+
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;relative clearfix white bg-dark-gray&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Burgers<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;left md-show&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-narrow py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;account-menu&quot;</span> <span class="na">class=</span><span class="s">&quot;inline-block disclosure-group&quot;</span> <span class="na">data-disclosure=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show fixed top-0 right-0 bottom-0 left-0&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button py2 m0 button-nav-dark&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;md-hide&quot;</span><span class="nt">&gt;</span>Menu <span class="ni">&amp;#x25BE;</span><span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;md-show&quot;</span><span class="nt">&gt;</span>More <span class="ni">&amp;#x25BE;</span><span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;disclosure-show absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap bg-mid-gray rounded-bottom animation-fadein&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;h5 list-reset py1 mb0&quot;</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;md-hide&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Hot Dogs<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;md-hide&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;md-hide&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Shakes<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;md-hide&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Onion Rings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Bacon<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Pancakes<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Sausages<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;button block button-nav-dark&quot;</span><span class="nt">&gt;</span>Waffles<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;style&gt;</span>
-<span class="c">/* Responsive positioning extension example */</span>
-<span class="k">@media</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:40em</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.xs-left-0</span> <span class="p">{</span> <span class="k">left</span><span class="o">:</span> <span class="m">0</span> <span class="p">}</span>
-<span class="p">}</span>
-<span class="nt">&lt;/style&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+</section>
 
+<section id="boxes" class="py2">
+  <h1>Boxes</h1>
+  <p>
+    Boxes are used to group content and collections of application resources.
+    Use combinations of layout utilities and color styles to create boxes.
+  </p>
+  
+  
 
-    </section>
-
-    <section id="boxes" class="py2">
-      <h1>Boxes</h1>
-      <p>
-        Boxes are used to group content and collections of application resources.
-        Use combinations of layout utilities and color styles to create boxes.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="md-col-6">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="md-col-6">
   <div class="p2 bg-white border rounded">
     <h1 class="h2 mt0">Bacon</h1>
     <p class="mb0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
   </div>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-col-6"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 bg-white border rounded"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 mt0"</span>&gt;</span>Bacon<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb0"</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;md-col-6&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2 bg-white border rounded&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;h2 mt0&quot;</span><span class="nt">&gt;</span>Bacon<span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;mb0&quot;</span><span class="nt">&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>To create headers and footers, set padding on nested divs then use color styles to control appearance.</p>
+  
+  
 
-
-      <p>To create headers and footers, set padding on nested divs then use color styles to control appearance.</p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="md-col-6">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="md-col-6">
   <div class="overflow-hidden bg-white border rounded">
     <div class="p2 bg-light-gray">
       <h1 class="h2 m0">Bacon with Header</h1>
@@ -1216,58 +1320,60 @@
   </div>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-col-6"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden bg-white border rounded"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 bg-light-gray"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 m0"</span>&gt;</span>Bacon with Header<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;md-col-6&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden bg-white border rounded&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2 bg-light-gray&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;h2 m0&quot;</span><span class="nt">&gt;</span>Bacon with Header<span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  
+  
 
-
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="md-col-6">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="md-col-6">
   <div class="p2 bg-white border rounded">
-    <img src="/docs/placeholder.svg" class="mb2">
+    <img src="/docs/placeholder.svg" class="mb2" />
     <h1 class="h2 mt0">Bacon with Image</h1>
     <p class="mb0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
   </div>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-col-6"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 bg-white border rounded"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb2"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 mt0"</span>&gt;</span>Bacon with Image<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb0"</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;md-col-6&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2 bg-white border rounded&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/docs/placeholder.svg&quot;</span> <span class="na">class=</span><span class="s">&quot;mb2&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;h2 mt0&quot;</span><span class="nt">&gt;</span>Bacon with Image<span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;mb0&quot;</span><span class="nt">&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  
+  
 
-
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="md-col-6">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="md-col-6">
   <div class="overflow-hidden bg-white border rounded">
     <div class="p2 white bg-blue">
       <h1 class="h2 m0">Bacon with Header and Footer</h1>
@@ -1281,41 +1387,42 @@
   </div>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-col-6"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden bg-white border rounded"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 white bg-blue"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 m0"</span>&gt;</span>Bacon with Header and Footer<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 bg-darken-1"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0 h5"</span>&gt;</span>Turkey short loin tenderloin jerky.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;md-col-6&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overflow-hidden bg-white border rounded&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2 white bg-blue&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;h2 m0&quot;</span><span class="nt">&gt;</span>Bacon with Header and Footer<span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;m0&quot;</span><span class="nt">&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;p2 bg-darken-1&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;m0 h5&quot;</span><span class="nt">&gt;</span>Turkey short loin tenderloin jerky.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+</section>
 
+<section id="flash-messages" class="py2">
+  <h1>Flash Messages</h1>
+  <p>
+    Flash messages are used to provide feedback after the user has performed an action.
+    Create custom flash messages with utilities and color styles.
+  </p>
+  
+  
 
-    </section>
-
-    <section id="flash-messages" class="py2">
-      <h1>Flash Messages</h1>
-      <p>
-        Flash messages are used to provide feedback after the user has performed an action.
-        Create custom flash messages with utilities and color styles.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div class="bold center p2 mb2 white bg-red rounded">
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div class="bold center p2 mb2 white bg-red rounded">
   Warning! Half-pound burger will be deleted
 </div>
 <div class="bold center p2 mb2 bg-yellow rounded">
@@ -1325,39 +1432,40 @@
   Fries added to order
 </div>
 
-  </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;bold center p2 mb2 white bg-red rounded&quot;</span><span class="nt">&gt;</span>
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"bold center p2 mb2 white bg-red rounded"</span>&gt;</span>
   Warning! Half-pound burger will be deleted
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;bold center p2 mb2 bg-yellow rounded&quot;</span><span class="nt">&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"bold center p2 mb2 bg-yellow rounded"</span>&gt;</span>
   Onion rings cannot connect to the network
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;bold center p2 white bg-green rounded&quot;</span><span class="nt">&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"bold center p2 white bg-green rounded"</span>&gt;</span>
   Fries added to order
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
 
+</section>
 
+<section id="badges" class="py2">
+  <h1>Badges</h1>
+  <p>
+    Badges are used to represent properties and states and
+    to tease quantities of resources behind navigation links.
+    Button size extensions can be used in combination with
+    other utilities and color styles to create badges.
+  </p>
+  
+  
 
-    </section>
-
-    <section id="badges" class="py2">
-      <h1>Badges</h1>
-      <p>
-        Badges are used to represent properties and states and
-        to tease quantities of resources behind navigation links.
-        Button size extensions can be used in combination with
-        other utilities and color styles to create badges.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <h1>Hamburger
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <h1>Hamburger
   <span class="h2 inline-block button-small white bg-red rounded">Fries</span>
 </h1>
 <h2>Hamburger
@@ -1376,42 +1484,43 @@
   <span class="inline-block button-small white bg-red rounded">Fries</span>
 </h6>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Hamburger
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 inline-block button-small white bg-red rounded"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Hamburger
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3 inline-block button-small white bg-red rounded"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>Hamburger
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h4 inline-block button-small white bg-red rounded"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>Hamburger
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block button-small white bg-red rounded"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>Hamburger
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block button-small white bg-red rounded"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h6</span>&gt;</span>Hamburger
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block button-small white bg-red rounded"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;h1&gt;</span>Hamburger
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h2 inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;</span>Hamburger
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h3 inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;</span>Hamburger
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h4 inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;</span>Hamburger
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;</span>Hamburger
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;</span>Hamburger
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Fries<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/h6&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
 
+  <p>
+    Color semantics can be controlled with color styles
+    to represent different qualities of states.
+  </p>
+  
+  
 
-
-      <p>
-        Color semantics can be controlled with color styles
-        to represent different qualities of states.
-      </p>
-      
-
-
-
-<div class="Example mb2">
-  <div class="Example_rendered">
-    <div>
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <div>
   <span class="inline-block button-small white bg-blue rounded">Blue</span>
   <span class="inline-block button-small white bg-red rounded">Red</span>
   <span class="inline-block button-small bg-yellow rounded">Yellow</span>
@@ -1420,49 +1529,53 @@
   <span class="inline-block button-small border rounded">Bordered</span>
 </div>
 
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block button-small white bg-blue rounded"</span>&gt;</span>Blue<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block button-small white bg-red rounded"</span>&gt;</span>Red<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block button-small bg-yellow rounded"</span>&gt;</span>Yellow<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block button-small white bg-green rounded"</span>&gt;</span>Green<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block button-small white bg-mid-gray rounded"</span>&gt;</span>Mid Gray<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block button-small border rounded"</span>&gt;</span>Bordered<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+    </div>
   </div>
-  <div class="Example_code" data-pygmentize=""><div class="highlight"><pre><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-blue rounded&quot;</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-red rounded&quot;</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small bg-yellow rounded&quot;</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-green rounded&quot;</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small white bg-mid-gray rounded&quot;</span><span class="nt">&gt;</span>Mid Gray<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;inline-block button-small border rounded&quot;</span><span class="nt">&gt;</span>Bordered<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-</div>
-</div>
+  
+  
+
+</section>
 
 
 
-    </section>
-
-    <section id="cta" class="py2">
-    </section>
-
-  </div>
-
-  <div class="sm-col sm-col-3 px2 py2 sm-show">
-    <a href="#button-sizes" class="button buttons-nav block">Button Sizes</a>
-    <a href="#navigation" class="button buttons-nav block">Navigation</a>
-    <a href="#breadcrumbs" class="button buttons-nav block">Breadcrumbs</a>
-    <a href="#pagination" class="button buttons-nav block">Pagination</a>
-    <a href="#button-groups" class="button buttons-nav block">Button Groups</a>
-    <a href="#input-groups" class="button buttons-nav block">Input Groups</a>
-    <a href="#dropdowns" class="button buttons-nav block">Dropdowns</a>
-    <a href="#navbars" class="button buttons-nav block">Navbars</a>
-    <a href="#boxes" class="button buttons-nav block">Boxes</a>
-    <a href="#flash-messages" class="button buttons-nav block">Flash Messages</a>
-    <a href="#badges" class="button buttons-nav block">Badges</a>
-  </div>
-</div>
-
-<section id="cta" class="py4">
-  <h2 class="h2">Learn More</h2>
-  <div class="mxn2">
-    <a href="/docs/principles" class="h3 button mb1 button-nav-light">Design Principles</a>
+<section id="guides-cta" class="py4">
+  <h1 class="">Other Guides</h1>
+  <div class="clearfix mxn2 mb4">
+    
+      
+        <div class="sm-col md-col-6">
+          <a href="/docs/guides/basics" class="h3 button block button-nav-light">
+            <h3 class="h2 m0">Basics</h3>
+            <p class="regular m0">CSS and Web Design Fundamentals</p>
+          </a>
+        </div>
+      
+    
+      
+    
+      
+        <div class="sm-col md-col-6">
+          <a href="/docs/guides/tips" class="h3 button block button-nav-light">
+            <h3 class="h2 m0">Tips &amp; Tricks</h3>
+            <p class="regular m0">Getting the Most Out of Basscss</p>
+          </a>
+        </div>
+      
+    
   </div>
 </section>
+
 
 <script src="http://d2v52k3cl9vedd.cloudfront.net/geomicons/0.2.0/geomicons.min.js"></script>
 
@@ -1498,31 +1611,61 @@
 
 
 
+    
+
+  </div>
+
+  <div class="py2 sm-col sm-col-3 sm-show">
+    
+  <a href="/docs/guides/ui/#button-sizes" class="button buttons-nav block">Button Sizes</a>
+
+  <a href="/docs/guides/ui/#navigation" class="button buttons-nav block">Navigation</a>
+
+  <a href="/docs/guides/ui/#breadcrumbs" class="button buttons-nav block">Breadcrumbs</a>
+
+  <a href="/docs/guides/ui/#pagination" class="button buttons-nav block">Pagination</a>
+
+  <a href="/docs/guides/ui/#button-groups" class="button buttons-nav block">Button Groups</a>
+
+  <a href="/docs/guides/ui/#input-groups" class="button buttons-nav block">Input Groups</a>
+
+  <a href="/docs/guides/ui/#dropdowns" class="button buttons-nav block">Dropdowns</a>
+
+  <a href="/docs/guides/ui/#navbars" class="button buttons-nav block">Navbars</a>
+
+  <a href="/docs/guides/ui/#boxes" class="button buttons-nav block">Boxes</a>
+
+  <a href="/docs/guides/ui/#flash-messages" class="button buttons-nav block">Flash Messages</a>
+
+  <a href="/docs/guides/ui/#badges" class="button buttons-nav block">Badges</a>
+
+
+  </div>
+
+</div>
+
 <footer class="py4">
-  <div class="sm-table">
-    <div class="sm-table-cell nowrap py2 xs-center">
-      <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&amp;url=http://basscss.com&amp;via=jxnblk" target="_blank">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
-          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4">
+  <div class="sm-flex flex-center">
+    <div class="flex-none nowrap py2 xs-center">
+      <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
         </svg>
         Tweet
       </a>
     </div>
-    <div class="sm-table-cell full-width py2 xs-center">
+    <div class="flex-auto full-width py2 xs-center">
       <div class="h5 bold px1">
         <a href="/" class="button button-narrow button-nav-light">Home</a>
         <a href="/docs" class="button button-narrow button-nav-light">Docs</a>
         <div class="inline-block">
-          <a href="/docs/getting-started" class="button button-narrow sm-show button-nav-light">Download</a>
+          <a href="/docs/getting-started" class="button button-narrow md-show button-nav-light">Download</a>
         </div>
         <a href="//github.com/jxnblk/basscss" class="button button-narrow button-nav-light">Github</a>
       </div>
     </div>
-    <div class="sm-table-cell py2 nowrap right-align">
-      <p class="h5 mb0 xs-center">
-        <svg class="icon red" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
-          <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 ">
-        </svg>
+    <div class="flex-none py2 nowrap right-align">
+      <p class="h5 bold mb0 xs-center">
         Made with love by
         <a href="//jxnblk.com">Jxnblk</a>
       </p>

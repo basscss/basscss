@@ -1,0 +1,95 @@
+{% extends 'layouts/docs.html' %}
+{% set page = pages.color %}
+{% set isdocs = true %}
+
+{% block content %}
+
+<p class="h3">
+  The word <i>color</i> is used loosely here to describe
+  the surface-level aspects of a design, including
+  colors, backgrounds, borders, shadows and other properties
+  that are decorative and highly likely to change over time.
+  Basscss includes a suite of color utilities as a starting point.
+  Use these as a guide for creating your own styles.
+</p>
+
+<section id="colors" class="py2">
+  <h1>Colors</h1>
+  {{ macros.example('colors.html') }}
+</section>
+
+<section id="backgrounds" class="py2">
+  <h1>Background Colors</h1>
+  {{ macros.example('backgrounds.html') }}
+</section>
+
+<section id="borders" class="py2">
+  <h1>Borders</h1>
+  {{ macros.example('borders.html') }}
+  <p>Utility styles for border radii can be used to style images and other elements.</p>
+  {{ macros.example('border-radii.html') }}
+  <p>The <code>.not-rounded</code> utility can be used to override default radii. This is useful for things like input and button groups.</p>
+  {{ macros.example('not-rounded.html') }}
+</section>
+
+<section id="forms" class="py2">
+  <h1>Forms</h1>
+  <p>Apply the <code>.field-light</code> color style to input, select, and textarea elements to control appearance.</p>
+  {{ macros.example('form-basic.html') }}
+  <p>
+    The <code>.field-light</code> style includes states for disabled and read-only fields,
+    as well as success, warning, and error states.
+  </p>
+  {{ macros.example('form-states.html') }}
+  <p>Use color utilities along with <code>.fieldset-reset</code> to style fieldsets.</p>
+  {{ macros.example('form-fieldset-styled.html') }}
+  <p>For forms on dark backgrounds, use the <code>.field-dark</code> style.</p>
+  {{ macros.example('form-dark.html') }}
+</section>
+
+<section id="buttons" class="py2">
+  <h1>Buttons</h1>
+  <p>
+    Basscss includes the following basic button styles:
+    <code>.button-blue</code>,
+    <code>.button-gray</code>,
+    <code>.button-blue-outline</code>, and
+    <code>.button-red</code>.
+    Customize these styles to suite your needs.
+  </p>
+  {{ macros.example('buttons.html') }}
+  <p>Button styles can be used for navigation. The <code>.button-nav-light</code> style adds a subtle hover effect for links on a light background.</p>
+  {{ macros.example('nav-basic.html') }}
+  <p>For dark backgrounds, use the <code>.button-nav-dark</code> style.</p>
+  {{ macros.example('nav-basic-dark.html') }}
+</section>
+
+<section id="tables" class="py2">
+  <h1>Tables</h1>
+  <p>
+    Use the <code>.table-light</code> style as a starting point,
+    then apply color utilities to style tables.
+  </p>
+  {{ macros.example('tables.html') }}
+  {{ macros.example('table-color-utilities.html') }}
+</section>
+
+<section id="variables" class="py2">
+  <h1>Default Variables</h1>
+  <p>
+    Colors styles use the following variables.
+    To alter these defaults, declare new values after importing Basscss with Rework. 
+  </p>
+  {% include 'examples/color-variables.html' %}
+</section>
+
+<section id="npm" class="py2">
+  <h1>NPM</h1>
+  <p>These basic color styles are also available as a standalone NPM module.</p>
+  <pre class="Example_code">npm install basscss-color-basic</pre>
+</section>
+
+{% include 'partials/guides-cta.html' with { heading: 'Learn More' } %}
+
+{% endblock %}
+
