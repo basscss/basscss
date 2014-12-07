@@ -45,7 +45,8 @@
     "svg-to-png": "^0.6.0",
     "swig-highlight": "^0.2.0",
     "flex-object": "0.0.4",
-    "css-statistics": "0.0.21"
+    "css-statistics": "0.0.21",
+    "gulp-s3": "^0.3.0"
   },
   "scripts": {
     "start": "gulp"
