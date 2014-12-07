@@ -1,6 +1,7 @@
+{% set heading = heading || 'Other Guides' %}
 
 <section id="guides-cta" class="py4">
-  <h1 class="h2">Other Guides</h1>
+  <h1 class="">{{ heading }}</h1>
   <div class="clearfix mxn2 mb4">
     {% for guide in guides %}
       {% if guide.title != page.title %}
