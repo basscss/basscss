@@ -5,23 +5,7 @@
 {% block content %}
 
 <section class="py2">
-  <p class="h3">
-    Basscss is built with <a href="https://github.com/reworkcss/rework">Rework</a>
-    with these dependencies:
-    Rework NPM,
-    Rework Custom Media,
-    Rework Vars,
-    Rework Plugin Colors,
-    and Rework Calc.
-    The source also includes compiled CSS.
-  </p>
-  <p class="h3 p2 border rounded">
-    To learn more about Rework, see <a href="/docs/rework">Using Rework</a>.
-  </p>
-</section>
-
-<section class="py2">
-  <h2>Download or install Basscss from one of these sources</h2>
+  <h2 class="mt0">Download or install Basscss from one of these sources</h2>
   <a href="https://github.com/jxnblk/basscss/archive/v{{version}}.zip" class="h3 button button-big mb2 button-blue">Download Source</a>
   <p class="mb0">Clone from Github:</p>
   <pre class="Example_code">git clone https://github.com/jxnblk/basscss.git</pre>
@@ -42,6 +26,17 @@
     {% endhighlight %}
   </div>
 </section>
+
+<section class="py2">
+  <p class="h3">
+    Basscss is built with <a href="https://github.com/reworkcss/rework">Rework</a>.
+    The source also includes compiled CSS.
+  </p>
+  <p class="h3 p2 border rounded">
+    To learn more about Rework, see <a href="/docs/rework">Using Rework</a>.
+  </p>
+</section>
+
 
 {#
 <section class="py2">
@@ -144,7 +139,7 @@
           <a href="https://github.com/jxnblk/basscss/releases/download/v{{version}}/basscss.css.zip" class="button mb2 button-blue">Download Basscss Complete</a>
           <div class="p1 bg-darken-1 rounded">
             <strong>CDN:</strong>
-            <a href="http://d2v52k3cl9vedd.cloudfront.net/basscss/{{version}}/basscss.min.css">basscss.min.css</a>
+            <a href="{{ asset_path }}{{version}}/basscss.min.css">basscss.min.css</a>
           </div>
         </div>
       </div>

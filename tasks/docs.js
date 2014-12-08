@@ -11,6 +11,7 @@ var fs = require('fs');
 var path = require('path');
 var imageresize = require('gulp-image-resize');
 var imagemin = require('gulp-imagemin');
+var s3 = require('gulp-s3');
 
 gulp.task('serve', function() {
   gulp.src('./').pipe(webserver({}));
@@ -68,17 +69,21 @@ gulp.task('images', function() {
   gulp.src('./docs/src/images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('./docs/images'))
-    ;
-    //.pipe(imageresize({
-    //  width: '640',
-    //  height: '480'
-    //}))
-    //.pipe(imagemin())
-    //.pipe(rename({ suffix: '-640' }))
-    //.pipe(gulp.dest('./docs/images'));
+    .pipe(imageresize({ format: 'jpg' }))
+    .pipe(rename({ extname: '.jpg' }))
+    .pipe(imagemin())
+    .pipe(gulp.dest('./docs/images'))
+    .pipe(imageresize({ width: 640 }))
+    .pipe(rename({ suffix: '-640' }))
+    .pipe(gulp.dest('./docs/images'));
 });
 
 gulp.task('s3-images', function() {
+  var config = require('../aws.json');
+  gulp.src('./docs/images/*')
+    .pipe(s3(config, {
+      uploadPath: 'basscss/assets/'
+    }));
 });
 
 // Watch

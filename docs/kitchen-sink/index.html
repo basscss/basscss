@@ -1,0 +1,900 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Basscss</title>
+  <meta name="author" content="Jxnblk">
+  <meta name="description" content="Simple, responsive CSS toolkit based on OOCSS principles">
+  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/docs/css/base.min.css">
+  <link rel="icon" href="/docs/images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
+</head>
+
+
+<body class="container px2">
+
+
+
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h4 caps bold mt2">
+    <a href="/">Basscss</a> /
+    <a href="/docs">Docs</a>
+  </div>
+  <h1 class="avenir md-h1 lg-h1 caps m0">Kitchen Sink</h1>
+</header>
+
+<div class="clearfix mxn2">
+  <div class="sm-col sm-col-9 px2">
+
+    <p class="h3">
+      Demo page for elements and styles.
+    </p>
+
+    <div class="py2"> <div>
+  <span class="tooltip tooltip-top tooltip-left tooltip-dark" aria-label="Turkey Bacon Melt">Turkey Top Left</span>
+</div>
+<div>
+  <span class="tooltip tooltip-bottom tooltip-right tooltip-dark" aria-label="Turkey Bacon Avocado Melt">Turkey Bottom Right</span>
+</div>
+ </div>
+
+    <hr>
+
+    <div class="py2"> <div class="md-col-6">
+  <div class="p2 bg-white border rounded">
+    <h1 class="h2 mt0">Bacon</h1>
+    <p class="mb0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+  </div>
+</div>
+ </div>
+    <div class="py2"> <div class="md-col-6">
+  <div class="p2 bg-white border rounded">
+    <img src="/docs/placeholder.svg" class="mb2" />
+    <h1 class="h2 mt0">Bacon with Image</h1>
+    <p class="mb0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+  </div>
+</div>
+ </div>
+    <div class="py2"> <div class="md-col-6">
+  <div class="overflow-hidden bg-white border rounded">
+    <div class="p2 bg-light-gray">
+      <h1 class="h2 m0">Bacon with Header</h1>
+    </div>
+    <div class="p2">
+      <p class="m0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+    </div>
+  </div>
+</div>
+ </div>
+    <div class="py2"> <div class="md-col-6">
+  <div class="overflow-hidden bg-white border rounded">
+    <div class="p2 white bg-blue">
+      <h1 class="h2 m0">Bacon with Header and Footer</h1>
+    </div>
+    <div class="p2">
+      <p class="m0">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin.</p>
+    </div>
+    <div class="p2 bg-darken-1">
+      <p class="m0 h5">Turkey short loin tenderloin jerky.</p>
+    </div>
+  </div>
+</div>
+ </div>
+
+    <hr>
+
+    <div class="py2"> <div class="mb1">
+  <button>Button</button>
+  <input type="button" class="button" value="Input Button">
+  <input type="submit" class="button" value="Input Submit">
+</div>
+<div class="mb1">
+  <button class="button-blue">Button Blue</button>
+  <input type="button" class="button button-blue" value="Button Blue">
+  <input type="submit" class="button button-blue" value="Button Blue">
+  <a href="#!" class="button button-blue">Button Blue</a>
+</div>
+<div class="mb1">
+  <button class="button-gray">Button Gray</button>
+  <input type="button" class="button button-gray" value="Button Gray">
+  <input type="submit" class="button button-gray" value="Button Gray">
+  <a href="#!" class="button button-gray">Button Gray</a>
+</div>
+<div class="mb1">
+  <button class="button-red">Button Red</button>
+  <input type="button" class="button button-red" value="Button Red">
+  <input type="submit" class="button button-red" value="Button Red">
+  <a href="#!" class="button button-red">Button Red</a>
+</div>
+<div class="mb1">
+  <button class="button-blue-outline">Button Outline</button>
+  <input type="button" class="button button-blue-outline" value="Button Outline">
+  <input type="submit" class="button button-blue-outline" value="Button Outline">
+  <a href="#!" class="button button-blue-outline">Button Outline</a>
+</div>
+<div class="mb1">
+  <button class="button-blue" disabled>Button Disabled</button>
+  <input type="button" class="button button-blue" value="Button Disabled" disabled>
+  <input type="submit" class="button button-blue" value="Button Disabled" disabled>
+  <a href="#!" class="button button-blue is-disabled">Button Disabled</a>
+</div>
+<div class="mb1">
+  <button class="button-gray" disabled>Button Disabled</button>
+  <input type="button" class="button button-gray" value="Button Disabled" disabled>
+  <input type="submit" class="button button-gray" value="Button Disabled" disabled>
+  <a href="#!" class="button button-gray is-disabled">Button Disabled</a>
+</div>
+<div class="mb1">
+  <button class="button-red" disabled>Button Disabled</button>
+  <input type="button" class="button button-red" value="Button Disabled" disabled>
+  <input type="submit" class="button button-red" value="Button Disabled" disabled>
+  <a href="#!" class="button button-red is-disabled">Button Disabled</a>
+</div>
+<div class="mb1">
+  <button class="button-blue-outline" disabled>Button Disabled</button>
+  <input type="button" class="button button-blue-outline" value="Button Disabled" disabled>
+  <input type="submit" class="button button-blue-outline" value="Button Disabled" disabled>
+  <a href="#!" class="button button-blue-outline is-disabled">Button Disabled</a>
+</div>
+ </div>
+    <div class="py2"> <form class="sm-col-6">
+  <label>Normal</label>
+  <input type="text" class="block full-width field-light">
+  <label>Disabled</label>
+  <input type="text" class="block full-width field-light" value="This is disabled" disabled>
+  <label>Read-only (But still selectable)</label>
+  <input type="text" class="block full-width field-light" value="This is read-only" readonly>
+  <label>Required</label>
+  <input type="text" class="block full-width field-light" required>
+  <label>Success</label>
+  <input type="text" class="block full-width field-light is-success">
+  <label>Warning</label>
+  <input type="text" class="block full-width field-light is-warning">
+  <label>Error</label>
+  <input type="text" class="block full-width field-light is-error">
+  <button type="submit" class="button-blue">Submit</button>
+  <button type="reset" class="button-gray">Reset</button>
+</form>
+ </div>
+    <div class="py2"> <form>
+
+  <label>Normal</label>
+  <input type="text" class="block full-width field-light">
+  <label>Disabled</label>
+  <input type="text" class="block full-width field-light" value="This is disabled" disabled>
+  <label>Read-only (But still selectable)</label>
+  <input type="text" class="block full-width field-light" value="This is read-only" readonly>
+  <label>Required</label>
+  <input type="text" class="block full-width field-light" required>
+  <label>Optional</label>
+  <input type="text" class="block full-width field-light" optional>
+  <label>Valid</label>
+  <input type="text" class="block full-width field-light" valid>
+  <label>Invalid</label>
+  <input type="text" class="block full-width field-light" invalid>
+  <label>Has Success</label>
+  <input type="text" class="block full-width field-light has-success">
+  <label>Has Warning</label>
+  <input type="text" class="block full-width field-light has-warning">
+  <label>Has Error</label>
+  <input type="text" class="block full-width field-light has-error">
+
+  <fieldset class="fieldset-reset mb0">
+    <legend class="h3 bold">Legend</legend>
+    <label>Input</label>
+    <input type="text" class="block full-width field-light">
+    <label>Textarea</label>
+    <textarea type="text" class="block full-width field-light"></textarea>
+    <label>Select</label>
+    <select id="select-demo" class="full-width field-light">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+      <option>Option 4</option>
+      <option>Option 5</option>
+      <option>Option 6</option>
+    </select>
+    <label>Disabled Select</label>
+    <select id="select-disabled-demo" class="full-width field-light" disabled>
+      <option value="option-1">Option 1</option>
+      <option value="option-2">Option 2</option>
+      <option value="option-3">Option 3</option>
+      <option value="option-4">Option 4</option>
+      <option value="option-5">Option 5</option>
+      <option value="option-6">Option 6</option>
+    </select>
+    <select id="select-multiple-demo" class="full-width field-light" multiple>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+      <option>Option 4</option>
+      <option>Option 5</option>
+      <option>Option 6</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="mb2">
+    <legend>Radios and Checkboxes</legend>
+    <div>
+      <label for="radio-1">
+        <input type="radio" name="radios" id="radio-1" value="option-1"> Radio 1
+      </label>
+      <label for="radio-2">
+        <input type="radio" name="radios" id="radio-2" value="option-2"> Radio 1
+      </label>
+    </div>
+    <div>
+      <label for="checkbox-1">
+        <input type="checkbox" id="checkbox-1" value="option-1"> Checkbox 1
+      </label>
+      <label for="checkbox-2">
+        <input type="checkbox" id="checkbox-2" value="option-2"> Checkbox 2
+      </label>
+    </div>
+  </fieldset>
+
+  <fieldset class="fieldset-reset mb2">
+    <legend class="h3 bold">File Input & Progress</legend>
+    <label>Upload Avatar</label>
+    <input type="file" class="block">
+    <label>Progress</label>
+    <progress value=".3" class="full-width">30%</progress>
+  </fieldset>
+
+  <button type="submit" class="button-blue">Submit</button>
+  <button type="reset" class="button-gray">Reset</button>
+
+</form>
+
+ </div>
+
+    <hr>
+
+    <div class="py2"> <div class="clearfix mb2 white bg-dark-gray">
+  <div class="left">
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
+  </div>
+  <div class="right">
+    <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
+  </div>
+  <div class="clearfix sm-hide"></div>
+  <div class="overflow-hidden px2 py1">
+    <input type="text" class="mb0 right fit field-dark" placeholder="Search">
+  </div>
+</div>
+ </div>
+    <div class="py2"> <div class="clearfix mb2 white bg-blue">
+  <div class="left">
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
+  </div>
+  <div class="right">
+    <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
+  </div>
+  <div class="clearfix sm-hide"></div>
+  <div class="overflow-hidden px2 py1">
+    <input type="text" class="mb0 right fit field-dark" placeholder="Search">
+  </div>
+</div>
+
+<div class="clearfix mb2 white bg-mid-gray">
+  <div class="left">
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
+  </div>
+  <div class="right">
+    <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
+  </div>
+  <div class="clearfix sm-hide"></div>
+  <div class="overflow-hidden px2 py1">
+    <input type="text" class="mb0 right fit field-dark" placeholder="Search">
+  </div>
+</div>
+
+<div class="clearfix mb2 white bg-green">
+  <div class="left">
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
+  </div>
+  <div class="right">
+    <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
+  </div>
+  <div class="clearfix sm-hide"></div>
+  <div class="overflow-hidden px2 py1">
+    <input type="text" class="mb0 right fit field-dark" placeholder="Search">
+  </div>
+</div>
+
+<div class="clearfix mb2 white bg-red">
+  <div class="left">
+    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
+    <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
+  </div>
+  <div class="right">
+    <a href="#!" class="button py2 m0 button-nav-dark">My Account</a>
+  </div>
+  <div class="clearfix sm-hide"></div>
+  <div class="overflow-hidden px2 py1">
+    <input type="text" class="mb0 right fit field-dark" placeholder="Search">
+  </div>
+</div>
+
+ </div>
+
+    <hr>
+
+    <div class="py2"> <div class="clearfix outline-blue">
+  <div class="col col-11">.col-11</div>
+  <div class="col col-1">.col-1</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="col col-10">.col-10</div>
+  <div class="col col-2">.col-2</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="col col-9">.col-9</div>
+  <div class="col col-3">.col-3</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="col col-8">.col-8</div>
+  <div class="col col-4">.col-4</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="col col-7">.col-7</div>
+  <div class="col col-5">.col-5</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="col col-6">.col-6</div>
+  <div class="col col-6">.col-6</div>
+</div>
+ </div>
+    <div class="py2"> <div class="clearfix outline-blue">
+  <div class="sm-col sm-col-11">.sm-col-11</div>
+  <div class="sm-col sm-col-1">.sm-col-1</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="sm-col sm-col-10">.sm-col-10</div>
+  <div class="sm-col sm-col-2">.sm-col-2</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="sm-col sm-col-9">.sm-col-9</div>
+  <div class="sm-col sm-col-3">.sm-col-3</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="sm-col sm-col-8">.sm-col-8</div>
+  <div class="sm-col sm-col-4">.sm-col-4</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="sm-col sm-col-7">.sm-col-7</div>
+  <div class="sm-col sm-col-5">.sm-col-5</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="sm-col sm-col-6">.sm-col-6</div>
+  <div class="sm-col sm-col-6">.sm-col-6</div>
+</div>
+ </div>
+    <div class="py2"> <div class="clearfix outline-blue">
+  <div class="md-col md-col-11">.md-col-11</div>
+  <div class="md-col md-col-1">.md-col-1</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="md-col md-col-10">.md-col-10</div>
+  <div class="md-col md-col-2">.md-col-2</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="md-col md-col-9">.md-col-9</div>
+  <div class="md-col md-col-3">.md-col-3</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="md-col md-col-8">.md-col-8</div>
+  <div class="md-col md-col-4">.md-col-4</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="md-col md-col-7">.md-col-7</div>
+  <div class="md-col md-col-5">.md-col-5</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="md-col md-col-6">.md-col-6</div>
+  <div class="md-col md-col-6">.md-col-6</div>
+</div>
+ </div>
+    <div class="py2"> <div class="clearfix outline-blue">
+  <div class="lg-col lg-col-11">.lg-col-11</div>
+  <div class="lg-col lg-col-1">.lg-col-1</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="lg-col lg-col-10">.lg-col-10</div>
+  <div class="lg-col lg-col-2">.lg-col-2</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="lg-col lg-col-9">.lg-col-9</div>
+  <div class="lg-col lg-col-3">.lg-col-3</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="lg-col lg-col-8">.lg-col-8</div>
+  <div class="lg-col lg-col-4">.lg-col-4</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="lg-col lg-col-7">.lg-col-7</div>
+  <div class="lg-col lg-col-5">.lg-col-5</div>
+</div>
+<div class="clearfix outline-blue">
+  <div class="lg-col lg-col-6">.lg-col-6</div>
+  <div class="lg-col lg-col-6">.lg-col-6</div>
+</div>
+ </div>
+
+    <hr>
+
+    <div class="py2"> <div>.sm-show <div class="sm-show red">.sm-show</div> </div>
+<div>.md-show <div class="md-show red">.md-show</div> </div>
+<div>.lg-show <div class="lg-show red">.lg-show</div> </div>
+<div>.sm-hide <div class="sm-hide red">.sm-hide</div> </div>
+<div>.md-hide <div class="md-hide red">.md-hide</div> </div>
+<div>.lg-hide <div class="lg-hide red">.lg-hide</div> </div>
+ </div>
+    <div class="py2"> <div class="center p1 white bg-dark-gray">.bg-dark-gray</div>
+<div class="center p1 bg-mid-gray">.bg-mid-gray</div>
+<div class="center p1 bg-light-gray">.bg-light-gray</div>
+<div class="center p1 bg-lighter-gray">.bg-lighter-gray</div>
+<div class="center p1 bg-white">.bg-white</div>
+<div class="center p1 bg-blue">.bg-blue</div>
+<div class="center p1 bg-red">.bg-red</div>
+<div class="center p1 bg-yellow">.bg-yellow</div>
+<div class="center p1 bg-green">.bg-green</div>
+<div class="center p1 bg-darken-1">.bg-darken-1</div>
+<div class="center p1 bg-darken-2">.bg-darken-2</div>
+<div class="center p1 bg-darken-3">.bg-darken-3</div>
+<div class="center p1 bg-darken-4">.bg-darken-4</div>
+ </div>
+    <div class="py2"> <div class="p1 m1 border bg-lighter-gray">.border</div>
+<div class="p1 m1 border-top bg-lighter-gray">.border-top</div>
+<div class="p1 m1 border-right bg-lighter-gray">.border-right</div>
+<div class="p1 m1 border-bottom bg-lighter-gray">.border-bottom</div>
+<div class="p1 m1 border-left bg-lighter-gray">.border-left</div>
+ </div>
+    <div class="py2"> <div class="mb1">
+  <button>Button</button>
+  <a href="#!" class="button">Link Button</a>
+  <input type="button" class="button" value="Input Button">
+</div>
+<div class="mb1">
+  <button class="button-blue mb1">Button Blue</button>
+  <button class="button-blue-outline mb1">Button Blue Outline</button>
+  <button class="button-gray mb1">Button Gray</button>
+  <button class="button-red mb1">Button Red</button>
+</div>
+ </div>
+    <div class="py2"> <h3 class="center">
+  <span class="dark-gray">.dark-gray</span>
+  <span class="mid-gray">.mid-gray</span>
+  <span class="light-gray">.light-gray</span>
+  <span class="lighter-gray">.lighter-gray</span>
+  <span class="white">.white</span>
+  <span class="blue">.blue</span>
+  <span class="red">.red</span>
+  <span class="yellow">.yellow</span>
+  <span class="green">.green</span>
+</h3>
+ </div>
+
+    <div class="py2"> <div class="clearfix mb2 outline-blue">
+  <div class="left p2 mr1">Image</div>
+  <div class="right p2 ml1">Image</div>
+  <div class="overflow-hidden">
+    <p><b>Body</b> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+  </div>
+</div>
+ </div>
+    <div class="py2"> <form class="sm-col-6">
+  <label>Email Address</label>
+  <input type="text" class="block full-width field-light">
+  <label>Password</label>
+  <input type="password" class="block full-width field-light">
+  <label>Select</label>
+  <select class="block full-width field-light">
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+    <option>Option 4</option>
+    <option>Option 5</option>
+  </select>
+  <label class="block full-width mb2">
+    <input type="checkbox" checked>
+    Remember me
+  </label>
+  <button type="submit" class="button-blue">Sign In</button>
+  <button type="reset" class="button-gray">Cancel</button>
+</form>
+ </div>
+    <div class="py2"> <form>
+  <label>Search</label>
+  <input type="text" class="field-light">
+  <button class="button-blue">Go</button>
+</form>
+ </div>
+    <div class="py2"> <div class="clearfix outline-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4">.sm-col.sm-col-6.md-col-5.lg-col-4</div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8">.sm-col.sm-col-6.md-col-7.lg-col-8</div>
+</div>
+ </div>
+    <div class="py2"> <div class="clearfix mxn2 outline-blue">
+  <div class="col-8 px2 mx-auto">
+    <div>Centered Column</div>
+  </div>
+</div>
+ </div>
+
+    <div class="py2"> <div class="container">
+  <div class="clearfix">
+  </div>
+</div>
+ </div>
+    <div class="py2"> <div class="clearfix outline-blue">
+  <div class="col col-6">.col.col-6</div>
+  <div class="col col-6">.col.col-6</div>
+</div>
+ </div>
+    <div class="py2"> <div class="clearfix mxn2 outline-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div>.px2</div></div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2"><div>.px2</div></div>
+</div>
+<!-- Nested divs for demonstration only -->
+ </div>
+    <div class="py2"> <div class="clearfix mxn2 outline-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div>Unnested</div></div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2">
+    <div class="clearfix mxn2">
+      <div class="col col-6 px2"><div>Nested</div></div>
+      <div class="col col-6 px2"><div>Nested</div></div>
+    </div>
+  </div>
+</div>
+<!-- Nested divs for demonstration only -->
+ </div>
+    <div class="py2"> <div class="clearfix outline-blue">
+  <div class="col-right col-6">.col-right.col-6</div>
+  <div class="col col-6">.col.col-6</div>
+</div>
+ </div>
+
+    <div class="py2"> <h1>Hamburger 1</h1>
+<h2>Hamburger 2</h2>
+<h3>Hamburger 3</h3>
+<h4>Hamburger 4</h4>
+<h5>Hamburger 5</h5>
+<h6>Hamburger 6</h6>
+ </div>
+    <div class="py2"> <input class="input" type="text">
+<input class="input" type="datetime">
+<input class="input" type="datetime-local">
+<input class="input" type="email">
+<input class="input" type="month">
+<input class="input" type="number">
+<input class="input" type="password">
+<input class="input" type="search">
+<input class="input" type="tel">
+<input class="input" type="time">
+<input class="input" type="url">
+<input class="input" type="week">
+<input type="radio">
+<input type="checkbox">
+<input type="button">
+<input type="submit">
+<input type="reset">
+<input type="color">
+<input type="range">
+<input type="file">
+<input type="image">
+ </div>
+    <div class="py2"> <div class="Example_code">
+<pre>
+<code class="hljs css"><span class="hljs-class">.inline</span>       <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline </span></span></span>}
+<span class="hljs-class">.block</span>        <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block </span></span></span>}
+<span class="hljs-class">.inline-block</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline-block </span></span></span>}
+
+<span class="hljs-class">.overflow-hidden</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden </span></span></span>}
+<span class="hljs-class">.overflow-scroll</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> scroll </span></span></span>}
+
+<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:before</span>,
+<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">" "</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> table
+</span></span></span>}
+<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">clear</span>:<span class="hljs-value"> both </span></span></span>}
+
+<span class="hljs-class">.left</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left </span></span></span>}
+<span class="hljs-class">.right</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> right </span></span></span>}
+
+<span class="hljs-class">.fit</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span> </span></span></span>}
+
+<span class="hljs-class">.half-width</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">50%</span> </span></span></span>}
+<span class="hljs-class">.full-width</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span> </span></span></span>}</code></pre>
+</div>
+ </div>
+    <div class="py2"> <div class="Example_code">
+<pre>
+<code class="hljs css"><span class="hljs-class">.m0</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.mt0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.mr0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.mb0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.ml0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-number">0</span> </span></span></span>}
+
+<span class="hljs-class">.m1</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.mt1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.mr1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.mb1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.ml1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+
+<span class="hljs-class">.m2</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.mt2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.mr2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.mb2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.ml2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+
+<span class="hljs-class">.m3</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.mt3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.mr3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.mb3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.ml3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+
+<span class="hljs-class">.m4</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.mt4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.mr4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.mb4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.ml4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+
+<span class="hljs-class">.mxn1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule">}</span></span>
+<span class="hljs-class">.mxn2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule">}</span></span>
+<span class="hljs-class">.mxn3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule">}</span></span>
+<span class="hljs-class">.mxn4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.mx-auto</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> auto</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> auto</span></span>; <span class="hljs-rule">}</span></span></code></pre>
+</div>
+ </div>
+    <div class="py2"> <div class="Example_code">
+<pre>
+<code class="hljs css"><span class="hljs-class">.p1</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.py1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.px1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+
+<span class="hljs-class">.p2</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.py2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.px2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+
+<span class="hljs-class">.p3</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.py3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.px3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+
+<span class="hljs-class">.p4</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.py4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.px4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}</code></pre>
+</div>
+ </div>
+
+    <div class="py2"> <div class="Example_code">
+<pre>
+<code class="hljs css"><span class="hljs-class">.relative</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative </span></span></span>}
+<span class="hljs-class">.absolute</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute </span></span></span>}
+<span class="hljs-class">.fixed</span>    <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> fixed </span></span></span>}
+
+<span class="hljs-class">.top-0</span>    <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.right-0</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">right</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.bottom-0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.left-0</span>   <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+
+<span class="hljs-class">.z1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">1</span> </span></span></span>}
+<span class="hljs-class">.z2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">2</span> </span></span></span>}
+<span class="hljs-class">.z3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">3</span> </span></span></span>}
+<span class="hljs-class">.z4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">4</span> </span></span></span>}
+
+<span class="hljs-class">.absolute-center</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">right</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> table</span></span>;
+<span class="hljs-rule">}</span></span></code></pre>
+</div>
+ </div>
+    <div class="py2"> <h1>
+  Responsive Line Break
+  <br class="md-show">
+  To Control Wrapping
+</h1>
+ </div>
+    <div class="py2"> <h3 class="sm-show">Visible from <code>--breakpoint-sm</code> and up.</h3>
+<h3 class="sm-hide red">Hidden from <code>--breakpoint-sm</code> and up.</h3>
+ </div>
+    <div class="py2"> <div class="Example_code">
+<pre>
+<code class="hljs css"><span class="hljs-class">.sm-show</span>, <span class="hljs-class">.md-show</span>, <span class="hljs-class">.lg-show</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span>
+</span></span></span>}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
+  <span class="hljs-class">.sm-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
+  <span class="hljs-class">.md-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
+  <span class="hljs-class">.lg-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
+  <span class="hljs-class">.sm-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
+  <span class="hljs-class">.md-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
+  <span class="hljs-class">.lg-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-class">.display-none</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+<span class="hljs-class">.hide</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">clip</span>:<span class="hljs-value"> <span class="hljs-function">rect</span>(<span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>)</span></span>;
+<span class="hljs-rule">}</span></span></code></pre>
+</div>
+ </div>
+    <div class="py2"> <div class="overflow-scroll">
+  <table class="table-light overflow-hidden bg-white border rounded">
+    <thead class="bg-light-gray">
+      <tr>
+        <th>Artist</th> <th>Album</th> <th>Release Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
+      <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
+      <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
+    </tbody>
+  </table>
+</div>
+ </div>
+
+    <div class="py2"> <div class="table outline-blue">
+  <div class="table-cell">
+    <h1 class="m0">.table-cell</h1>
+    <p class="m0">For vertically centered content</p>
+  </div>
+  <div class="table-cell">.table-cell</div>
+</div>
+ </div>
+    <div class="py2"> <div class="table table-fixed outline-blue">
+  <div class="table-cell">
+    <h1 class="m0">.table-cell</h1>
+    <p class="m0">For vertically centered content</p>
+  </div>
+  <div class="table-cell">.table-cell</div>
+  <div class="table-cell">.table-cell</div>
+</div>
+ </div>
+    <div class="py2"> <div class="table outline-blue">
+  <div class="table-cell p2">Image</div>
+  <div class="table-cell full-width">
+    <h1 class="m0">Flag Body</h1>
+    <p class="m0">The full-width utility makes the table object behave like the flag object.</p>
+  </div>
+</div>
+ </div>
+    <div class="py2"> <div class="table outline-blue">
+  <div class="table-cell col-7">
+    <h1 class="m0">.table-cell.col-7</h1>
+    <p class="m0">For vertically centered content</p>
+  </div>
+  <div class="table-cell col-5">.table-cell.col-5</div>
+</div>
+ </div>
+    <div class="py2"> <div class="sm-table mb1 outline-blue">
+  <div class="sm-table-cell">
+    <h1 class="m0">.sm-table-cell</h1>
+    <p class="m0">Only kicks in above the small breakpoint</p>
+  </div>
+  <div class="sm-table-cell">.sm-table-cell</div>
+</div>
+<div class="lg-table outline-blue">
+  <div class="lg-table-cell">
+    <h1 class="m0">.lg-table-cell</h1>
+    <p class="m0">Only kicks in above the large breakpoint</p>
+  </div>
+  <div class="lg-table-cell">.lg-table-cell</div>
+</div>
+ </div>
+
+    <div class="py2"> <div class="overflow-scroll">
+  <table class="table-light">
+    <thead>
+      <tr>
+        <th>Artist</th> <th>Album</th> <th>Release Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr> <td>Huey Lewis and the News</td> <td>Sports</td> <td>1983</td> </tr>
+      <tr> <td>Phil Collins</td> <td>No Jacket Required</td> <td>1985</td> </tr>
+      <tr> <td>Peter Gabriel</td> <td>So</td> <td>1986</td> </tr>
+    </tbody>
+  </table>
+</div>
+ </div>
+    <div class="py2"> <p class="h1">Pastrami 1</p>
+<p class="h2">Pastrami 2</p>
+<p class="h3">Pastrami 3</p>
+<p class="h4">Pastrami 4</p>
+<p class="h5">Pastrami 5</p>
+<p class="h6">Pastrami 6</p>
+ </div>
+    <div class="py2"> <p class="bold">Bold</p>
+<p class="regular">Regular</p>
+<p class="italic">Italic</p>
+<p class="caps">Caps</p>
+<p class="left-align">Left align</p>
+<p class="center">Center</p>
+<p class="right-align">Right align</p>
+<p class="justify">Justify Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+ </div>
+
+  </div>
+  <div class="sm-col sm-col-3 sm-show">
+    <!--
+    <a href="#table-object" class="button block">Table Object</a>
+    -->
+  </div>
+</div>
+
+
+
+<footer class="py4">
+  <div class="sm-flex flex-center">
+    <div class="flex-none nowrap py2 xs-center">
+      <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+        </svg>
+        Tweet
+      </a>
+    </div>
+    <div class="flex-auto full-width py2 xs-center">
+      <div class="h5 bold px1">
+        <a href="/" class="button button-narrow button-nav-light">Home</a>
+        <a href="/docs" class="button button-narrow button-nav-light">Docs</a>
+        <div class="inline-block">
+          <a href="/docs/getting-started" class="button button-narrow md-show button-nav-light">Download</a>
+        </div>
+        <a href="//github.com/jxnblk/basscss" class="button button-narrow button-nav-light">Github</a>
+      </div>
+    </div>
+    <div class="flex-none py2 nowrap right-align">
+      <p class="h5 bold mb0 xs-center">
+        Made with love by
+        <a href="//jxnblk.com">Jxnblk</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Source+Code+Pro::latin' ] }
+  };
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})(); </script>
+
+
+
+</body>
+</html>
