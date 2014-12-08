@@ -4,10 +4,10 @@
     View More
   </a>
 </div>
-<div class="sm-flex flex-wrap mxn3">
+<div class="sm-flex flex-wrap mxn2">
   {% for site in showcase %}
     {% if loop.index < 4 %}
-      <div class="sm-col-4 px3 mb2">
+      <div class="sm-col-4 px2 mb2">
         <a href="{{ site.url }}" class="h3 block" title="View {{ site.url }}" target="_blank">
           <img src="/docs/images/{{ site.image }}" class="border" alt="{{ site.title }}"/>
           <div class="h3 bold dark-gray">{{ site.title }}</div>
