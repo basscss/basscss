@@ -9,13 +9,15 @@ var watch = require('gulp-watch');
 var swig = require('gulp-swig');
 var fs = require('fs');
 var path = require('path');
+var imageresize = require('gulp-image-resize');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('serve', function() {
   gulp.src('./').pipe(webserver({}));
 });
 
 gulp.task('swig', function() {
-  var data = require('../docs/src/model.js');
+  var data = require('../docs/src/model');
   var options = {
     setup: function(swig) {
       require('swig-highlight').apply(swig);
@@ -52,10 +54,32 @@ gulp.task('site-basswork', function() {
 // Create favicons
 gulp.task('favicon', function() {
   var svgtopng = require('svg-to-png');
-  svgtopng.convert('./docs/src/favicon.svg', './docs', {});
-  svgtopng.convert('./docs/src/apple-touch-icon.svg', './docs', {});
+  svgtopng.convert('./docs/src/svg/favicon.svg', './docs/images', {});
+  svgtopng.convert('./docs/src/svg/apple-touch-icon.svg', './docs/images', {});
+  svgtopng.convert('./docs/src/svg/built-badge.svg', './docs/images', {});
 });
 
+
+// Showcase Data
+gulp.task('showcase', require('./showcase'));
+
+// Showcase Images
+gulp.task('images', function() {
+  gulp.src('./docs/src/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./docs/images'))
+    ;
+    //.pipe(imageresize({
+    //  width: '640',
+    //  height: '480'
+    //}))
+    //.pipe(imagemin())
+    //.pipe(rename({ suffix: '-640' }))
+    //.pipe(gulp.dest('./docs/images'));
+});
+
+gulp.task('s3-images', function() {
+});
 
 // Watch
 gulp.task('watch-css', ['basswork', 'site-basswork'], function() {

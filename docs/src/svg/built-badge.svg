@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 64 64"
+  width="128"
+  height="128"
+  fill="#0076df">
+  <defs>
+    <path id="circleTop"
+      d="M12 32 A20 20 0 0 1 52 32"/>
+    <path id="circleBottom"
+      d="M4 32 A28 28 0 0 0 60 32"/>
+  </defs>
+  <g transform="rotate(-18 32 32)">
+    <use xlink:href="#circleTop" fill="none" />
+    <use xlink:href="#circleBottom" fill="none" />
+    <circle cx="32" cy="32" r="31" stroke-width="2" fill="none" stroke="#0076df" />
+    <g font-family="'Avenir Next', 'Helvetica Neue'"
+      font-size="10"
+      style="font-weight: bold;text-transform:uppercase;">
+        <text style="">
+          <textPath xlink:href="#circleTop" startOffset="3">
+            Built With
+          </textPath>
+        </text>
+        <text style="letter-spacing: .3em;">
+          <textPath xlink:href="#circleBottom" startOffset="12">
+            Basscss
+          </textPath>
+        </text>
+    </g>
+    <g transform="translate(14 14), scale(.75)">
+      <path d="M24 16 L28 24 L44 22 L24 32 L20 24 L4 26 z"/>
+    </g>
+  </g>
+</svg>

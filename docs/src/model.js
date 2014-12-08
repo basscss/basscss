@@ -8,6 +8,7 @@ module.exports = function() {
   var data = {};
   var cssSource = fs.readFileSync('./css/basscss.css', 'utf8');
 
+  data.asset_path = 'http://d2v52k3cl9vedd.cloudfront.net/basscss/';
   data.css = cssdata('./css/basscss.min.css');
   data.version = require('../../package.json').version;
 
@@ -142,8 +143,54 @@ module.exports = function() {
     principles: { title: 'Design Principles', link: '/docs/principles' },
     rework: { title: 'Using Rework', link: '/docs/rework' },
     styles: { title: 'Table of Styles', link: '/docs/styles' },
+    showcase: { title: 'Built with Basscss', link: '/docs/showcase' },
     stats: { title: 'Stats', link: '/docs/stats' }
     //variables: { title: 'Variables', link: '/docs/variables' }
+  };
+
+  data.showcase = {
+    singlesclub: {
+      title: 'Singles Club',
+      url: 'http://singlesclub.fm/',
+      description: 'Part record club. Part music journal.',
+      image: 'singlesclub.png'
+    },
+    assembly_blog: {
+      title: 'Assembly Blog',
+      url: 'http://blog.assembly.com/',
+      description: '',
+      image: 'assembly_blog.png'
+    },
+    monodraw: {
+      title: 'Monodraw for Mac',
+      url: 'http://monodraw.helftone.com/',
+      description: 'Powerful ASCII art editor designed for the Mac.',
+      image: 'monodraw.png'
+    },
+    pixyll: {
+      title: 'Pixyll',
+      url: 'http://pixyll.com/',
+      description: 'A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.',
+      image: 'pixyll.png'
+    },
+    nurturingability: {
+      title: 'Nurturing Ability',
+      url: 'http://www.nurturingability.com.au/',
+      description: 'Helping our Most Helpless One Family at a Time',
+      image: 'nurturingability.png'
+    },
+    linknest: {
+      title: 'Linknest',
+      url: 'https://linknest.cc/',
+      description: 'Bookmarks made simple',
+      image: 'linknest.png'
+    },
+    cssstats: {
+      title: 'CSS Stats',
+      url: 'http://cssstats.com/',
+      description: 'Potentially interesting stats on stylesheets',
+      image: 'cssstats.png'
+    }
   };
 
   data.stats = cssstats(cssSource);

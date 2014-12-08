@@ -46,7 +46,9 @@
     "swig-highlight": "^0.2.0",
     "flex-object": "0.0.4",
     "css-statistics": "0.0.21",
-    "gulp-s3": "^0.3.0"
+    "gulp-s3": "^0.3.0",
+    "gulp-imagemin": "^2.0.0",
+    "gulp-image-resize": "^0.5.0"
   },
   "scripts": {
     "start": "gulp"
