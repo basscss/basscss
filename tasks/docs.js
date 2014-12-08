@@ -54,8 +54,9 @@ gulp.task('site-basswork', function() {
 // Create favicons
 gulp.task('favicon', function() {
   var svgtopng = require('svg-to-png');
-  svgtopng.convert('./docs/src/favicon.svg', './docs', {});
-  svgtopng.convert('./docs/src/apple-touch-icon.svg', './docs', {});
+  svgtopng.convert('./docs/src/svg/favicon.svg', './docs/images', {});
+  svgtopng.convert('./docs/src/svg/apple-touch-icon.svg', './docs/images', {});
+  svgtopng.convert('./docs/src/svg/built-badge.svg', './docs/images', {});
 });
 
 
