@@ -27,7 +27,7 @@ var plugin = function() {
 };
 
 module.exports = function() {
-  gulp.src('./src/scss/*.css')
+  gulp.src('./scss/src/*.css')
     .pipe(plugin())
     .pipe(rename({ extname: '.scss' }))
     .pipe(gulp.dest('./scss'));
