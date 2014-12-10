@@ -1,23 +1,23 @@
 
 // Converted Variables
 
-$font-family: 'Helvetica Neue', Helvetica, sans-serif;
-$line-height: 1.5;
-$heading-font-family: $font-family;
-$heading-font-weight: bold;
-$heading-line-height: 1.25;
-$monospace-font-family: 'Source Code Pro', Consolas, monospace;
-$h1: 2rem;
-$h2: 1.5rem;
-$h3: 1.25rem;
-$h4: 1rem;
-$h5: .875rem;
-$h6: .75rem;
-$bold-font-weight: bold;
-$space-1: .5rem;
-$space-2: 1rem;
-$space-3: 2rem;
-$space-4: 4rem;
+$font-family: 'Helvetica Neue', Helvetica, sans-serif !default;
+$line-height: 1.5 !default;
+$heading-font-family: $font-family !default;
+$heading-font-weight: bold !default;
+$heading-line-height: 1.25 !default;
+$monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
+$h1: 2rem !default;
+$h2: 1.5rem !default;
+$h3: 1.25rem !default;
+$h4: 1rem !default;
+$h5: .875rem !default;
+$h6: .75rem !default;
+$bold-font-weight: bold !default;
+$space-1: .5rem !default;
+$space-2: 1rem !default;
+$space-3: 2rem !default;
+$space-4: 4rem !default;
 
 // Custom Media Query Variables
 

@@ -1,21 +1,21 @@
 
 // Converted Variables
 
-$blue: #0076df;
-$red: #f95020;
-$green: #00cf26;
-$yellow: #efcc00;
-$dark-gray: #333;
-$mid-gray: #777;
-$light-gray: #ccc;
-$lighter-gray: #eee;
-$darken-1: rgba(#000,.0625);
-$darken-2: rgba(#000,.125);
-$darken-3: rgba(#000,.25);
-$darken-4: rgba(#000,.5);
-$border-color: $light-gray;
-$border-width: 1px;
-$border-radius: 3px;
+$blue: #0076df !default;
+$red: #f95020 !default;
+$green: #00cf26 !default;
+$yellow: #efcc00 !default;
+$dark-gray: #333 !default;
+$mid-gray: #777 !default;
+$light-gray: #ccc !default;
+$lighter-gray: #eee !default;
+$darken-1: rgba(#000,.0625) !default;
+$darken-2: rgba(#000,.125) !default;
+$darken-3: rgba(#000,.25) !default;
+$darken-4: rgba(#000,.5) !default;
+$border-color: $light-gray !default;
+$border-width: 1px !default;
+$border-radius: 3px !default;
 
 // Custom Media Query Variables
 
@@ -65,7 +65,7 @@ hr {
 .field-light:focus {
   outline: none;
   border-color: $blue;
-  box-shadow: 0 0 2px rgba($blue;
+  box-shadow: 0 0 2px rgba($blue,.5);
 }
 
 .field-light:disabled {
@@ -105,7 +105,7 @@ hr {
 .radio-light:focus,
 .checkbox-light:focus {
   outline: none;
-  box-shadow: 0 0 2px rgba($blue;
+  box-shadow: 0 0 2px rgba($blue,.5);
 }
 
 .field-dark {
@@ -171,7 +171,7 @@ hr {
 
 .button-blue:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(white;
+  box-shadow: 0 0 0 2px rgba(white, .5), 0 0 1px 4px rgba($blue, .5);
 }
 
 .button-blue:disabled,
@@ -202,7 +202,7 @@ hr {
 
 .button-blue-outline:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(white;
+  box-shadow: 0 0 0 2px rgba(white, .5), 0 0 1px 4px rgba($blue, .5);
 }
 
 .button-blue-outline:disabled,
@@ -232,7 +232,7 @@ hr {
 
 .button-gray:focus {
   outline: none;
-  box-shadow: 0 0 0 2px white;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba($blue, .5);
 }
 
 .button-gray:disabled,
@@ -260,7 +260,7 @@ hr {
 
 .button-red:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(white;
+  box-shadow: 0 0 0 2px rgba(white, .5), 0 0 1px 4px rgba($red, .5);
 }
 
 .button-red:disabled,
@@ -294,7 +294,7 @@ hr {
 
 .button-nav-tab {
   margin-bottom: -1px;
-  border-radius: $border-radius $border-radius) 0 0;
+  border-radius: $border-radius $border-radius 0 0;
   border-bottom: 1px solid $border-color;
 }
 
@@ -437,19 +437,19 @@ hr {
 }
 
 .rounded-top {
-  border-radius: $border-radius $border-radius) 0 0;
+  border-radius: $border-radius $border-radius 0 0;
 }
 
 .rounded-right {
-  border-radius: 0 $border-radius $border-radius) 0;
+  border-radius: 0 $border-radius $border-radius 0;
 }
 
 .rounded-bottom {
-  border-radius: 0 0 $border-radius $border-radius);
+  border-radius: 0 0 $border-radius $border-radius;
 }
 
 .rounded-left {
-  border-radius: $border-radius 0 0 $border-radius);
+  border-radius: $border-radius 0 0 $border-radius;
 }
 
 .not-rounded {
