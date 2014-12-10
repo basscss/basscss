@@ -56,9 +56,10 @@ CDN:
 ---
 
 ## Folder Structure
-- `src`: Uncompiled Rework CSS files
+- `src`: Uncompiled Rework CSS source files
 - `css`: Compiled CSS files
-- `gulp`: Files for Gulp build process
+- `scss`: Compiled Sass partials
+- `tasks`: Files for Gulp build process
 - `docs`: Files for http://basscss.com site
 
 

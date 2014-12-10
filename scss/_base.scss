@@ -1,0 +1,251 @@
+
+// Converted Variables
+
+$font-family: 'Helvetica Neue', Helvetica, sans-serif !default;
+$line-height: 1.5 !default;
+$heading-font-family: $font-family !default;
+$heading-font-weight: bold !default;
+$heading-line-height: 1.25 !default;
+$monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
+$h1: 2rem !default;
+$h2: 1.5rem !default;
+$h3: 1.25rem !default;
+$h4: 1rem !default;
+$h5: .875rem !default;
+$h6: .75rem !default;
+$bold-font-weight: bold !default;
+$space-1: .5rem !default;
+$space-2: 1rem !default;
+$space-3: 2rem !default;
+$space-4: 4rem !default;
+
+// Custom Media Query Variables
+
+
+/*
+    Basscss Base
+*/
+
+body,
+button {
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+svg {
+  max-height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  line-height: $line-height;
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+p,
+dl,
+ol,
+ul {
+  font-size: $h4;
+  margin-top: 0;
+  margin-bottom: $space-2;
+}
+
+ol,
+ul {
+  padding-left: $space-3;
+}
+
+pre,
+code,
+samp {
+  font-family: $monospace-font-family;
+  font-size: inherit;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: $space-2;
+  overflow-x: scroll;
+}
+
+hr {
+  margin-top: $space-3;
+  margin-bottom: $space-3;
+}
+
+blockquote {
+  margin-top: $space-3;
+  margin-bottom: $space-3;
+  margin-left: 0;
+  padding-left: $space-2;
+  padding-right: $space-2;
+}
+
+blockquote,
+blockquote p {
+  font-size: $h3;
+  font-style: italic;
+}
+
+h1,
+.h1 {
+  font-size: $h1;
+}
+
+h2,
+.h2 {
+  font-size: $h2;
+}
+
+h3,
+.h3 {
+  font-size: $h3;
+}
+
+h4,
+.h4 {
+  font-size: $h4;
+}
+
+h5,
+.h5 {
+  font-size: $h5;
+}
+
+h6,
+.h6 {
+  font-size: $h6;
+}
+
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+}
+
+input,
+select,
+textarea,
+fieldset {
+  margin-top: 0;
+  margin-bottom: $space-1;
+}
+
+input[type=text],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week] {
+  box-sizing: border-box;
+  height: 2.25em;
+  padding: .25em $space-2;
+  -webkit-appearance: none;
+}
+
+select {
+  box-sizing: border-box;
+  line-height: 1.75;
+  padding: .25em $space-2;
+}
+
+select:not([multiple]) {
+  height: 2.25em;
+}
+
+textarea {
+  box-sizing: border-box;
+  line-height: 1.75;
+  padding: .25em $space-2;
+}
+
+.fieldset-reset {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+}
+
+.fieldset-reset legend {
+  padding: 0;
+}
+
+button,
+.button {
+  font-weight: $bold-font-weight;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  line-height: 1.125;
+  padding: .5em $space-2;
+  margin: 0;
+  height: auto;
+  border: 1px solid transparent;
+  -webkit-appearance: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: $bold-font-weight;
+}
+
+th,
+td {
+  padding: .25em $space-2;
+  line-height: inherit;
+}
+
+th {
+  vertical-align: bottom;
+}
+
+td {
+  vertical-align: top;
+}
