@@ -1,0 +1,77 @@
+
+// Converted Variables
+
+$space-1: .5rem;
+$space-2: 1rem;
+$space-3: 2rem;
+$space-4: 4rem;
+
+// Custom Media Query Variables
+
+
+/*
+    Basscss UI Utilities
+*/
+
+.button-small {
+  padding: .25em $space-1;
+}
+
+.button-big {
+  line-height: 1.625;
+}
+
+.button-narrow {
+  padding-left: $space-1;
+  padding-right: $space-1;
+}
+
+.x-group-item {
+  margin-left: -1px;
+}
+
+.x-group-item:first-of-type {
+  margin-left: 0;
+}
+
+.y-group-item {
+  margin-top: -1px;
+}
+
+.y-group-item:first-of-type {
+  margin-top: 0;
+}
+
+/* Extension for 2px border items like .button-blue-outline */
+
+.x-group-item-2 {
+  margin-left: -2px;
+}
+
+.x-group-item-2:first-of-type {
+  margin-left: 0;
+}
+
+.y-group-item-2 {
+  margin-top: -2px;
+}
+
+.y-group-item-2:first-of-type {
+  margin-top: 0;
+}
+
+.x-group-item:focus,
+.x-group-item-2:focus,
+.y-group-item:focus,
+.y-group-item-2:focus {
+  position: relative;
+  z-index: 1;
+}
+
+.disclosure-group .disclosure-show {
+  display: none;
+}
+
+.disclosure-group.is-active .disclosure-show {
+  display: block !important;
+}

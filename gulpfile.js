@@ -48,3 +48,5 @@ gulp.task('s3', function() {
 // Site-specific tasks
 require('./tasks/docs');
 
+gulp.task('sass', require('./tasks/sassify'));
+

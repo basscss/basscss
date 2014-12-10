@@ -1,0 +1,66 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+$breakpoint-sm: '(min-width: 40em)';
+$breakpoint-md: '(min-width: 52em)';
+$breakpoint-lg: '(min-width: 64em)';
+
+/*
+
+  Table Object
+  http://jxnblk.github.io/table-object
+
+*/
+
+.table {
+  display: table;
+  width: 100%;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}
+
+@media #{$breakpoint-sm} {
+  .sm-table {
+    display: table;
+    width: 100%;
+  }
+
+  .sm-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+@media #{$breakpoint-md} {
+  .md-table {
+    display: table;
+    width: 100%;
+  }
+
+  .md-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+@media #{$breakpoint-lg} {
+  .lg-table {
+    display: table;
+    width: 100%;
+  }
+
+  .lg-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
