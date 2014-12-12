@@ -4,13 +4,28 @@
   "description": "Low-level CSS toolkit",
   "style": "src/basscss.css",
   "dependencies": {
-    "basscss-base": "latest",
-    "basscss-utilities": "latest",
     "basscss-grid": "latest",
     "basscss-table-object": "latest",
     "basscss-positions": "latest",
-    "basscss-color-basic": "latest",
-    "basscss-ui-utilities": "latest"
+    "basscss-colors": "latest",
+    "basscss-color-base": "latest",
+    "basscss-color-forms": "latest",
+    "basscss-color-forms-dark": "latest",
+    "basscss-color-tables": "latest",
+    "basscss-color-buttons": "latest",
+    "basscss-color-borders": "latest",
+    "basscss-ui-utility-button-sizes": "latest",
+    "basscss-ui-utility-groups": "latest",
+    "basscss-ui-utility-disclosure-states": "latest",
+    "basscss-base-reset": "latest",
+    "basscss-base-tables": "latest",
+    "basscss-base-buttons": "latest",
+    "basscss-base-forms": "latest",
+    "basscss-base-typography": "latest",
+    "basscss-utility-layout": "latest",
+    "basscss-utility-typography": "latest",
+    "basscss-utility-responsive-states": "latest",
+    "basscss-utility-white-space": "latest"
   },
   "repository": {
     "type": "git",
@@ -51,8 +66,7 @@
     "rework": "^1.0.1",
     "rework-npm": "^1.0.0",
     "svg-to-png": "^0.6.0",
-    "swig-highlight": "^0.2.0",
-    "through2": "^0.6.1"
+    "swig-highlight": "^0.2.0"
   },
   "scripts": {
     "start": "gulp"

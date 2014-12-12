@@ -1,0 +1,108 @@
+
+// Converted Variables
+
+$blue: #0076df !default;
+$red: #f95020 !default;
+$green: #00cf26 !default;
+$yellow: #efcc00 !default;
+$dark-gray: #333 !default;
+$mid-gray: #777 !default;
+$light-gray: #ccc !default;
+$lighter-gray: #eee !default;
+$darken-1: rgba(#000,.0625) !default;
+$darken-2: rgba(#000,.125) !default;
+$darken-3: rgba(#000,.25) !default;
+$darken-4: rgba(#000,.5) !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Colors */
+
+.dark-gray {
+  color: $dark-gray;
+}
+
+.white {
+  color: white;
+}
+
+.blue {
+  color: $blue;
+}
+
+.mid-gray {
+  color: $mid-gray;
+}
+
+.light-gray {
+  color: $light-gray;
+}
+
+.lighter-gray {
+  color: $lighter-gray;
+}
+
+.red {
+  color: $red;
+}
+
+.green {
+  color: $green;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.bg-dark-gray {
+  background-color: $dark-gray;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-mid-gray {
+  background-color: $mid-gray;
+}
+
+.bg-light-gray {
+  background-color: $light-gray;
+}
+
+.bg-lighter-gray {
+  background-color: $lighter-gray;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.bg-darken-1 {
+  background-color: $darken-1;
+}
+
+.bg-darken-2 {
+  background-color: $darken-2;
+}
+
+.bg-darken-3 {
+  background-color: $darken-3;
+}
+
+.bg-darken-4 {
+  background-color: $darken-4;
+}

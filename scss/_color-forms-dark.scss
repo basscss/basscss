@@ -1,0 +1,59 @@
+
+// Converted Variables
+
+$blue: #0076df !default;
+$red: #f95020 !default;
+$green: #00cf26 !default;
+$yellow: #efcc00 !default;
+$dark-gray: #333 !default;
+$mid-gray: #777 !default;
+$light-gray: #ccc !default;
+$lighter-gray: #eee !default;
+$darken-1: rgba(#000,.0625) !default;
+$darken-2: rgba(#000,.125) !default;
+$darken-3: rgba(#000,.25) !default;
+$darken-4: rgba(#000,.5) !default;
+$border-color: $light-gray !default;
+$border-width: 1px !default;
+$border-radius: 3px !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Color Forms Dark */
+
+.field-dark {
+  color: white;
+  background-color: $darken-3;
+  border: 1px solid $darken-1;
+  border-radius: $border-radius;
+}
+
+.field-dark::placeholder {
+  color: rgba(#fff,.75);
+}
+
+.field-dark:focus {
+  outline: 0;
+  border: 1px solid rgba(#fff,.5);
+}
+
+.field-dark:read-only:not(select) {
+  background-color: rgba(#fff,.25);
+}
+
+.field-dark:invalid {
+  border-color: $red;
+}
+
+.field-dark.is-success {
+  border-color: $green;
+}
+
+.field-dark.is-warning {
+  border-color: $yellow;
+}
+
+.field-dark.is-error {
+  border-color: $red;
+}

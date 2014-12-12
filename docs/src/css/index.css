@@ -1,19 +1,31 @@
-/*
-  
-    Basscss.com Styles
+/* Basscss.com Styles */
 
-*/
+@import "basscss-base-reset";
+@import "basscss-base-typography";
+@import 'basscss-base-forms';
+@import 'basscss-base-buttons';
+@import 'basscss-base-tables';
 
+@import 'basscss-utility-layout';
+@import 'basscss-utility-typography';
+@import 'basscss-utility-white-space';
+@import 'basscss-utility-responsive-states';
+@import 'basscss-positions';
+@import 'basscss-ui-utility-button-sizes';
+@import 'basscss-ui-utility-groups';
+@import 'basscss-ui-utility-disclosure-states';
 
-@import "basscss-base";
-@import "basscss-utilities";
-@import "basscss-positions";
-@import "basscss-ui-utilities";
-@import "basscss-grid";
-@import "basscss-table-object";
+@import 'basscss-grid';
+@import 'basscss-table-object';
 @import "flex-object";
-@import "basscss-color-basic";
 
+@import 'basscss-color-base';
+@import 'basscss-color-forms';
+@import 'basscss-color-forms-dark';
+@import 'basscss-color-tables';
+@import 'basscss-color-buttons';
+@import 'basscss-colors';
+@import 'basscss-color-borders';
 
 @import "./base/typography";
 @import "./base/responsive-type";
@@ -35,6 +47,7 @@
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);
 
+
 :root {
   --font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --heading-font-weight: 600;
@@ -47,7 +60,6 @@
   --heading-font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 }
-
 
 @import "./color/variables";
 

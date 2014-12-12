@@ -5,108 +5,11 @@ $space-1: .5rem !default;
 $space-2: 1rem !default;
 $space-3: 2rem !default;
 $space-4: 4rem !default;
-$bold-font-weight: bold !default;
 
 // Custom Media Query Variables
 
-$breakpoint-sm: '(min-width: 40em)';
-$breakpoint-md: '(min-width: 52em)';
-$breakpoint-lg: '(min-width: 64em)';
 
-/*
-    Basscss Utilities
-*/
-
-.inline {
-  display: inline;
-}
-
-.block {
-  display: block;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.overflow-scroll {
-  overflow: scroll;
-}
-
-.overflow-auto {
-  overflow: auto;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.fit {
-  max-width: 100%;
-}
-
-.half-width {
-  width: 50%;
-}
-
-.full-width {
-  width: 100%;
-}
-
-.bold {
-  font-weight: $bold-font-weight;
-}
-
-.regular {
-  font-weight: normal;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.caps {
-  text-transform: uppercase;
-  letter-spacing: .2em;
-}
-
-.left-align {
-  text-align: left;
-}
-
-.center {
-  text-align: center;
-}
-
-.right-align {
-  text-align: right;
-}
-
-.justify {
-  text-align: justify;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
+/* Basscss Utility White Space */
 
 .m0 {
   margin: 0;
@@ -287,58 +190,4 @@ $breakpoint-lg: '(min-width: 64em)';
 .px4 {
   padding-left: $space-4;
   padding-right: $space-4;
-}
-
-.sm-show,
-.md-show,
-.lg-show {
-  display: none !important;
-}
-
-@media #{$breakpoint-sm} {
-  .sm-show {
-    display: block !important;
-  }
-}
-
-@media #{$breakpoint-md} {
-  .md-show {
-    display: block !important;
-  }
-}
-
-@media #{$breakpoint-lg} {
-  .lg-show {
-    display: block !important;
-  }
-}
-
-@media #{$breakpoint-sm} {
-  .sm-hide {
-    display: none !important;
-  }
-}
-
-@media #{$breakpoint-md} {
-  .md-hide {
-    display: none !important;
-  }
-}
-
-@media #{$breakpoint-lg} {
-  .lg-hide {
-    display: none !important;
-  }
-}
-
-.display-none {
-  display: none !important;
-}
-
-.hide {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
 }
