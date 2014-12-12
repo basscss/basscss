@@ -63,6 +63,7 @@
     "gulp-watch": "^1.0.7",
     "gulp-webserver": "^0.8.3",
     "node-sass": "^1.2.3",
+    "postcss": "^3.0.7",
     "rework": "^1.0.1",
     "rework-npm": "^1.0.0",
     "svg-to-png": "^0.6.0",
