@@ -710,11 +710,11 @@ td {
 /* Basscss UI Utility Disclosure States */
 
 .disclosure-show {
-  display: none !important;
+  display: none;
 }
 
 .is-active .disclosure-show {
-  display: block !important;
+  display: block;
 }
 
 /*

@@ -42,7 +42,6 @@
 
 @import "./components/example";
 
-
 /* Custom Media Queries */
 @custom-media --breakpoint-sm (min-width: 36em);
 @custom-media --breakpoint-md (min-width: 52em);
