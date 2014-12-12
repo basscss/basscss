@@ -1,0 +1,65 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+$breakpoint-sm: '(min-width: 40em)';
+$breakpoint-md: '(min-width: 52em)';
+$breakpoint-lg: '(min-width: 64em)';
+
+/* Basscss Utility Responsive States */
+
+.sm-show,
+.md-show,
+.lg-show {
+  display: none !important;
+}
+
+@media #{$breakpoint-sm} {
+  .sm-show {
+    display: block !important;
+  }
+}
+
+@media #{$breakpoint-md} {
+  .md-show {
+    display: block !important;
+  }
+}
+
+@media #{$breakpoint-lg} {
+  .lg-show {
+    display: block !important;
+  }
+}
+
+@media #{$breakpoint-sm} {
+  .sm-hide {
+    display: none !important;
+  }
+}
+
+@media #{$breakpoint-md} {
+  .md-hide {
+    display: none !important;
+  }
+}
+
+@media #{$breakpoint-lg} {
+  .lg-hide {
+    display: none !important;
+  }
+}
+
+.display-none {
+  display: none !important;
+}
+
+.hide {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}

@@ -1,0 +1,78 @@
+
+// Converted Variables
+
+$blue: #0076df !default;
+$red: #f95020 !default;
+$green: #00cf26 !default;
+$yellow: #efcc00 !default;
+$dark-gray: #333 !default;
+$mid-gray: #777 !default;
+$light-gray: #ccc !default;
+$lighter-gray: #eee !default;
+$darken-1: rgba(#000,.0625) !default;
+$darken-2: rgba(#000,.125) !default;
+$darken-3: rgba(#000,.25) !default;
+$darken-4: rgba(#000,.5) !default;
+$border-color: $light-gray !default;
+$border-width: 1px !default;
+$border-radius: 3px !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Color Forms */
+
+.field-light {
+  background-color: white;
+  transition: box-shadow .2s ease;
+  border-style: solid;
+  border-width: $border-width;
+  border-color: $border-color;
+  border-radius: $border-radius;
+}
+
+.field-light:focus {
+  outline: none;
+  border-color: $blue;
+  box-shadow: 0 0 2px rgba($blue,.5);
+}
+
+.field-light:disabled {
+  color: $mid-gray;
+  background-color: $darken-2;
+}
+
+.field-light:read-only:not(select) {
+  background-color: $darken-2;
+}
+
+.field-light:invalid {
+  border-color: $red;
+}
+
+.field-light.is-success {
+  border-color: $green;
+}
+
+.field-light.is-warning {
+  border-color: $yellow;
+}
+
+.field-light.is-error {
+  border-color: $red;
+}
+
+.radio-light,
+.checkbox-light {
+  transition: box-shadow .2s ease;
+}
+
+.radio-light {
+  border-radius: 50%;
+}
+
+.radio-light:focus,
+.checkbox-light:focus {
+  outline: none;
+  box-shadow: 0 0 2px rgba($blue,.5);
+}

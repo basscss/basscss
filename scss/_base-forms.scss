@@ -1,0 +1,65 @@
+
+// Converted Variables
+
+$space-1: .5rem !default;
+$space-2: 1rem !default;
+$space-3: 2rem !default;
+$space-4: 4rem !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Base Forms */
+
+input,
+select,
+textarea,
+fieldset {
+  margin-top: 0;
+  margin-bottom: $space-1;
+}
+
+input[type=text],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week] {
+  box-sizing: border-box;
+  height: 2.25em;
+  padding: .25em $space-2;
+  -webkit-appearance: none;
+}
+
+select {
+  box-sizing: border-box;
+  line-height: 1.75;
+  padding: .25em $space-2;
+}
+
+select:not([multiple]) {
+  height: 2.25em;
+}
+
+textarea {
+  box-sizing: border-box;
+  line-height: 1.75;
+  padding: .25em $space-2;
+}
+
+.fieldset-reset {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+}
+
+.fieldset-reset legend {
+  padding: 0;
+}

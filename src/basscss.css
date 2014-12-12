@@ -1,9 +1,27 @@
 
-@import 'basscss-base';
-@import 'basscss-utilities';
+@import 'basscss-base-reset';
+@import 'basscss-base-typography';
+@import 'basscss-base-forms';
+@import 'basscss-base-buttons';
+@import 'basscss-base-tables';
+
+@import 'basscss-utility-layout';
+@import 'basscss-utility-typography';
+@import 'basscss-utility-white-space';
+@import 'basscss-utility-responsive-states';
 @import 'basscss-positions';
-@import 'basscss-ui-utilities';
+@import 'basscss-ui-utility-button-sizes';
+@import 'basscss-ui-utility-groups';
+@import 'basscss-ui-utility-disclosure-states';
+
 @import 'basscss-grid';
 @import 'basscss-table-object';
-@import 'basscss-color-basic';
+
+@import 'basscss-color-base';
+@import 'basscss-color-forms';
+@import 'basscss-color-forms-dark';
+@import 'basscss-color-tables';
+@import 'basscss-color-buttons';
+@import 'basscss-colors';
+@import 'basscss-color-borders';
 

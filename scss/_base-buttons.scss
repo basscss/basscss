@@ -1,0 +1,37 @@
+
+// Converted Variables
+
+$bold-font-weight: bold !default;
+$space-1: .5rem !default;
+$space-2: 1rem !default;
+$space-3: 2rem !default;
+$space-4: 4rem !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Base Buttons */
+
+button,
+.button {
+  font-weight: $bold-font-weight;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  line-height: 1.125;
+  padding: .5em $space-2;
+  margin: 0;
+  height: auto;
+  border: 1px solid transparent;
+  -webkit-appearance: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.button:hover {
+  text-decoration: none;
+}

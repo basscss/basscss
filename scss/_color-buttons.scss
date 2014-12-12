@@ -1,0 +1,182 @@
+
+// Converted Variables
+
+$blue: #0076df !default;
+$red: #f95020 !default;
+$green: #00cf26 !default;
+$yellow: #efcc00 !default;
+$dark-gray: #333 !default;
+$mid-gray: #777 !default;
+$light-gray: #ccc !default;
+$lighter-gray: #eee !default;
+$darken-1: rgba(#000,.0625) !default;
+$darken-2: rgba(#000,.125) !default;
+$darken-3: rgba(#000,.25) !default;
+$darken-4: rgba(#000,.5) !default;
+$border-color: $light-gray !default;
+$border-width: 1px !default;
+$border-radius: 3px !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Color Buttons */
+
+.button-blue {
+  color: white;
+  background-color: $blue;
+  border-radius: $border-radius;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow, background-color;
+}
+
+.button-blue:hover {
+  opacity: .875;
+}
+
+.button-blue:active,
+.button-blue.is-active {
+  box-shadow: inset 0 0 0 32px rgba(#000,.125), inset 0 2px 3px 0 rgba(#000,.25);
+}
+
+.button-blue:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(white, .5), 0 0 1px 4px rgba($blue, .5);
+}
+
+.button-blue:disabled,
+.button-blue.is-disabled {
+  opacity: .5;
+}
+
+.button-blue-outline {
+  line-height: 1;
+  color: $blue;
+  background-color: transparent;
+  border-radius: $border-radius;
+  border: 2px solid $blue;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow, background-color;
+}
+
+.button-blue-outline:hover,
+.button-blue-outline.is-active {
+  color: white;
+  background-color: $blue;
+}
+
+.button-blue-outline:active {
+  box-shadow: inset 0 3px 3px 0 rgba(#000,.25);
+}
+
+.button-blue-outline:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(white, .5), 0 0 1px 4px rgba($blue, .5);
+}
+
+.button-blue-outline:disabled,
+.button-blue-outline.is-disabled {
+  color: $blue;
+  background-color: transparent;
+  opacity: .5;
+}
+
+.button-gray {
+  color: white;
+  background-color: $mid-gray;
+  border-radius: $border-radius;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow, background-color;
+}
+
+.button-gray:hover {
+  opacity: .875;
+}
+
+.button-gray:active,
+.button-gray:is-active {
+  box-shadow: inset 0 0 0 32px rgba(#000,.125), inset 0 2px 3px 0 rgba(#000,.25);
+}
+
+.button-gray:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba($blue, .5);
+}
+
+.button-gray:disabled,
+.button-gray.is-disabled {
+  opacity: .5;
+}
+
+.button-red {
+  color: white;
+  background-color: $red;
+  border-radius: $border-radius;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow, background-color;
+}
+
+.button-red:hover {
+  opacity: .875;
+}
+
+.button-red:active,
+.button-red.is-active {
+  box-shadow: inset 0 0 0 32px rgba(#000,.125), inset 0 2px 3px 0 rgba(#000,.25);
+}
+
+.button-red:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(white, .5), 0 0 1px 4px rgba($red, .5);
+}
+
+.button-red:disabled,
+.button-red.is-disabled {
+  opacity: .5;
+}
+
+
+
+.button-nav-light:hover {
+  background-color: $darken-1;
+}
+
+.button-nav-light:active,
+.button-nav-light.is-active {
+  color: $dark-gray;
+}
+
+.button-nav-dark {
+  color: white;
+}
+
+.button-nav-dark:hover {
+  background-color: $darken-2;
+}
+
+.button-nav-dark:active,
+.button-nav-dark.is-active {
+  background-color: $darken-2;
+}
+
+.button-nav-tab {
+  margin-bottom: -1px;
+  border-radius: $border-radius $border-radius 0 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.button-nav-tab:hover {
+  background-color: $darken-1;
+}
+
+.button-nav-tab.is-active {
+  background-color: white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid $border-color;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+}

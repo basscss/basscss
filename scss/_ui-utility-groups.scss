@@ -1,30 +1,11 @@
 
 // Converted Variables
 
-$space-1: .5rem !default;
-$space-2: 1rem !default;
-$space-3: 2rem !default;
-$space-4: 4rem !default;
 
 // Custom Media Query Variables
 
 
-/*
-    Basscss UI Utilities
-*/
-
-.button-small {
-  padding: .25em $space-1;
-}
-
-.button-big {
-  line-height: 1.625;
-}
-
-.button-narrow {
-  padding-left: $space-1;
-  padding-right: $space-1;
-}
+/* Basscss UI Utility Groups */
 
 .x-group-item {
   margin-left: -1px;
@@ -66,12 +47,4 @@ $space-4: 4rem !default;
 .y-group-item-2:focus {
   position: relative;
   z-index: 1;
-}
-
-.disclosure-group .disclosure-show {
-  display: none;
-}
-
-.disclosure-group.is-active .disclosure-show {
-  display: block !important;
 }
