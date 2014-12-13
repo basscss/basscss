@@ -72,7 +72,11 @@ module.exports = function() {
             { title: 'Responsive Table Object', link: '/docs/layout/#responsive-table-object' },
             { title: 'Table Grid', link: '/docs/layout/#table-grid' }
           ]
-        }
+        },
+        //{ title: 'Flex Object', link: '/docs/layout/#flex-object',
+        //  subsections: [
+        //  ]
+        //}
       ]
     },
     color: {
