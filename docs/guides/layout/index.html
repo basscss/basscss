@@ -27,7 +27,7 @@
       / <a href="/docs/guides/" class="button button-narrow">Guides</a>
     
   </div>
-  <h1 class="avenir md-h1 lg-h1 caps m0"></h1>
+  <h1 class="avenir h0 h0-responsive caps m0">Page Layout</h1>
 </header>
 
 
@@ -40,8 +40,270 @@
     
 
 <p class="h3">
-  Make some cool layouts!
+  Creating page layouts in Basscss is incredibly fast and flexible.
+  This guide will walk you through common layout patterns to create an entire page with clear information hierarchy.
 </p>
+
+<section id="global-navigation" class="py2">
+  <h1>Global Navigation</h1>
+  
+  
+
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <nav class="clearfix white bg-dark-gray">
+  <div class="left">
+  </div>
+  <div class="right">
+  </div>
+</nav>
+
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix white bg-dark-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
+
+  
+  
+
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <nav class="clearfix white bg-dark-gray">
+  <div class="left">
+    <a href="/" class="button button-nav-dark">Home</a>
+    <a href="/" class="button button-nav-dark">Burgers</a>
+    <a href="/" class="button button-nav-dark">Fries</a>
+  </div>
+  <div class="right">
+    <a href="/" class="button button-nav-dark">About</a>
+  </div>
+</nav>
+
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix white bg-dark-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-nav-dark"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-nav-dark"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
+
+  
+  
+
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <nav class="clearfix white bg-dark-gray">
+  <div class="left">
+    <a href="/" class="button py2 button-nav-dark">Home</a>
+    <a href="/" class="button py2 button-nav-dark">Burgers</a>
+    <a href="/" class="button py2 button-nav-dark">Fries</a>
+  </div>
+  <div class="right">
+    <a href="/" class="button py2 button-nav-dark">About</a>
+  </div>
+</nav>
+
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix white bg-dark-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-nav-dark"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-nav-dark"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
+
+</section>
+
+<section id="hero" class="py2">
+  <h1>Hero</h1>
+  
+  
+
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <header class="px3 py4 white bg-mid-gray">
+  <h1 class="h1 h0-responsive m0 regular">Hamburgers</h1>
+  <p class="h3">Artisinal ground chuck creations</p>
+</header>
+
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"px3 py4 white bg-mid-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 h0-responsive m0 regular"</span>&gt;</span>Hamburgers<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>Artisinal ground chuck creations<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
+
+  
+  
+
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <header class="px3 py4 white bg-mid-gray bg-cover bg-center"
+  style="background-image: url(/docs/src/svg/hero-background.svg)">
+  <h1 class="h1 h0-responsive m0 regular">Hamburgers</h1>
+  <p class="h3">Artisinal ground chuck creations</p>
+</header>
+
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"px3 py4 white bg-mid-gray bg-cover bg-center"</span>
+  <span class="hljs-attribute">style</span>=<span class="hljs-value">"background-image: url(/docs/src/svg/hero-background.svg)"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 h0-responsive m0 regular"</span>&gt;</span>Hamburgers<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>Artisinal ground chuck creations<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
+
+</section>
+
+<section id="three-up" class="py2">
+  <h1>Three Up</h1>
+  
+  
+
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <header class="px3 py4 white bg-mid-gray">
+  <h1 class="h1 h0-responsive m0 regular">Hamburgers</h1>
+  <p class="h3">Artisinal ground chuck creations</p>
+</header>
+
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"px3 py4 white bg-mid-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 h0-responsive m0 regular"</span>&gt;</span>Hamburgers<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>Artisinal ground chuck creations<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
+
+</section>
+
+<section id="blog-teaser" class="py2">
+  <h1>Blog Teaser</h1>
+  
+  
+
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <header class="px3 py4 white bg-mid-gray">
+  <h1 class="h1 h0-responsive m0 regular">Hamburgers</h1>
+  <p class="h3">Artisinal ground chuck creations</p>
+</header>
+
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"px3 py4 white bg-mid-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 h0-responsive m0 regular"</span>&gt;</span>Hamburgers<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>Artisinal ground chuck creations<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
+
+</section>
+
+<section id="gallery" class="py2">
+  <h1>Gallery</h1>
+  
+  
+
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <header class="px3 py4 white bg-mid-gray">
+  <h1 class="h1 h0-responsive m0 regular">Hamburgers</h1>
+  <p class="h3">Artisinal ground chuck creations</p>
+</header>
+
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"px3 py4 white bg-mid-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 h0-responsive m0 regular"</span>&gt;</span>Hamburgers<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>Artisinal ground chuck creations<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
+
+</section>
+
+<section id="footer" class="py2">
+  <h1>Footer</h1>
+  
+  
+
+  
+  <div class="Example mb2">
+    <div class="Example_rendered">
+      <header class="px3 py4 white bg-mid-gray">
+  <h1 class="h1 h0-responsive m0 regular">Hamburgers</h1>
+  <p class="h3">Artisinal ground chuck creations</p>
+</header>
+
+    </div>
+    <div class="Example_code">
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"px3 py4 white bg-mid-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 h0-responsive m0 regular"</span>&gt;</span>Hamburgers<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>Artisinal ground chuck creations<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+  
+  
+
+</section>
 
 
 
@@ -56,6 +318,8 @@
             <p class="regular m0">CSS and Web Design Fundamentals</p>
           </a>
         </div>
+      
+    
       
     
       

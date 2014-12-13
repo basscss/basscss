@@ -115,13 +115,13 @@ module.exports = function() {
         { title: 'Extending Basscss', link: '/docs/guides/basics/#extending-basscss' }
       ]
     },
-    //layout: {
-    //  title: 'Page Layout',
-    //  description: '',
-    //  link: '/docs/guides/layout',
-    //  sections: [
-    //  ]
-    //},
+    layout: {
+      title: 'Page Layout',
+      description: '',
+      link: '/docs/guides/layout',
+      sections: [
+      ]
+    },
     ui: {
       title: 'UI Elements',
       description: 'Styling Custom Controls for Interactivity',

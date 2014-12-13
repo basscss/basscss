@@ -6,8 +6,42 @@
 {% block content %}
 
 <p class="h3">
-  Make some cool layouts!
+  Creating page layouts in Basscss is incredibly fast and flexible.
+  This guide will walk you through common layout patterns to create an entire page with clear information hierarchy.
 </p>
+
+<section id="global-navigation" class="py2">
+  <h1>Global Navigation</h1>
+  {{ macros.example('global-navigation-1.html') }}
+  {{ macros.example('global-navigation-2.html') }}
+  {{ macros.example('global-navigation-3.html') }}
+</section>
+
+<section id="hero" class="py2">
+  <h1>Hero</h1>
+  {{ macros.example('hero-1.html') }}
+  {{ macros.example('hero-2.html') }}
+</section>
+
+<section id="three-up" class="py2">
+  <h1>Three Up</h1>
+  {{ macros.example('hero-1.html') }}
+</section>
+
+<section id="blog-teaser" class="py2">
+  <h1>Blog Teaser</h1>
+  {{ macros.example('hero-1.html') }}
+</section>
+
+<section id="gallery" class="py2">
+  <h1>Gallery</h1>
+  {{ macros.example('hero-1.html') }}
+</section>
+
+<section id="footer" class="py2">
+  <h1>Footer</h1>
+  {{ macros.example('hero-1.html') }}
+</section>
 
 {% include 'partials/guides-cta.html' %}
 

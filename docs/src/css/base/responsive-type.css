@@ -1,27 +1,8 @@
 
-.xs-center { text-align: center }
-
-@media (--breakpoint-sm) {
-  .xs-center { text-align: inherit }
-}
-
-@media (--breakpoint-sm) {
-  .sm-h1 { }
-  .sm-h2 { }
-  .sm-h3 { }
-  .sm-h4 { }
-}
-
 @media (--breakpoint-md) {
   .md-h1 { font-size: 3rem }
-  .md-h2 { }
-  .md-h3 { }
-  .md-h4 { }
 }
 
 @media (--breakpoint-lg) {
   .lg-h1 { font-size: 4rem }
-  .lg-h2 { }
-  .lg-h3 { }
-  .lg-h4 { }
 }
