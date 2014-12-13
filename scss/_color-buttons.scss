@@ -13,6 +13,7 @@ $darken-1: rgba(#000,.0625) !default;
 $darken-2: rgba(#000,.125) !default;
 $darken-3: rgba(#000,.25) !default;
 $darken-4: rgba(#000,.5) !default;
+$hover-background-color: $darken-1 !default;
 $border-color: $light-gray !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
@@ -142,7 +143,7 @@ $border-radius: 3px !default;
 
 
 .button-nav-light:hover {
-  background-color: $darken-1;
+  background-color: $hover-background-color;
 }
 
 .button-nav-light:active,

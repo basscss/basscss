@@ -4,13 +4,12 @@ var rework = require('rework');
 var rnpm = require('rework-npm');
 var postcss = require('postcss');
 
-module.exports = function() {
+module.exports = function(src) {
 
-  var src = fs.readFileSync('./src/basscss.css', 'utf8');
+  var css = fs.readFileSync(src, 'utf8');
   var variables = [];
-  var imported = rework(src).use(rnpm({ })).toString();
+  var imported = rework(css).use(rnpm({ })).toString();
   var root = postcss.parse(imported);
-  var variablesRoot = postcss.parse(':root {\n}');
   var result = '';
 
   function findUniques(array) {
@@ -43,13 +42,7 @@ module.exports = function() {
 
   variables = findUniques(variables);
 
-  variables.forEach(function(d) {
-    variablesRoot.childs[0].append(d);
-  });
-
-  result = variablesRoot.toResult().css;
-
-  fs.writeFileSync('./src/variables.css', result);
+  return variables;
 
 };
 

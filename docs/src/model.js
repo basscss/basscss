@@ -2,6 +2,7 @@
 var fs = require('fs');
 var cssstats = require('css-statistics');
 var cssdata = require('./css-data');
+var variables = require('./variables');
 
 module.exports = function() {
 
@@ -144,8 +145,8 @@ module.exports = function() {
     rework: { title: 'Using Rework', link: '/docs/rework' },
     styles: { title: 'Table of Styles', link: '/docs/styles' },
     showcase: { title: 'Built with Basscss', link: '/docs/showcase' },
-    stats: { title: 'Stats', link: '/docs/stats' }
-    //variables: { title: 'Variables', link: '/docs/variables' }
+    stats: { title: 'Stats', link: '/docs/stats' },
+    variables: { title: 'Variables', link: '/docs/variables' }
   };
 
   data.showcase = {
@@ -193,6 +194,7 @@ module.exports = function() {
     }
   };
 
+  data.defaults = variables('./src/basscss.css');
   data.stats = cssstats(cssSource);
 
   return data;

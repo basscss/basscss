@@ -25,7 +25,8 @@
     "basscss-utility-layout": "latest",
     "basscss-utility-typography": "latest",
     "basscss-utility-responsive-states": "latest",
-    "basscss-utility-white-space": "latest"
+    "basscss-utility-white-space": "latest",
+    "basscss-defaults": "latest"
   },
   "repository": {
     "type": "git",
