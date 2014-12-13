@@ -56,8 +56,23 @@ module.exports = function() {
       previous_page: 'utility',
       next_page: 'color',
       sections: [
-        { title: 'Grid', link: '/docs/layout/#grid' },
-        { title: 'Table Object', link: '/docs/layout/#table-object' }
+        { title: 'Grid', link: '/docs/layout/#grid',
+          subsections: [
+            { title: 'Responsive Grid', link: '/docs/layout/#responsive-grid' },
+            { title: 'Gutters', link: '/docs/layout/#grid-gutters' },
+            { title: 'Nesting', link: '/docs/layout/#grid-nesting' },
+            { title: 'Reversed', link: '/docs/layout/#grid-reversed' },
+            { title: 'Centering Columns', link: '/docs/layout/#grid-centering' }
+          ]
+        },
+        { title: 'Table Object', link: '/docs/layout/#table-object',
+          subsections: [
+            { title: 'Flag Object', link: '/docs/layout/#table-flag-object' },
+            { title: 'Equal Width Cells', link: '/docs/layout/#table-fixed' },
+            { title: 'Responsive Table Object', link: '/docs/layout/#responsive-table-object' },
+            { title: 'Table Grid', link: '/docs/layout/#table-grid' }
+          ]
+        }
       ]
     },
     color: {
