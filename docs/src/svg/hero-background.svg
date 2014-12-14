@@ -1,10 +1,18 @@
 <svg  xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 1024 768" width="1024" height="768">
+  <defs>
+    <radialGradient id="gradient-light">
+      <stop offset="0%" stop-color="rgba(255,255,223,0.25)"/>
+      <stop offset="100%" stop-color="rgba(255,255,223,0)" />
+    </radialGradient>
+  </defs>
   <rect width="1024" height="768" fill="#88c6ff"/>
+  <rect width="1024" height="768" fill="#46616d"/>
   <g>
-    <circle cx="320" cy="387" r="160" fill="#ffffdd" opacity="0.2"/>
-    <circle cx="320" cy="387" r="144" fill="#ffffdd" opacity="0.2"/>
-    <circle cx="320" cy="387" r="128" fill="#ffdd77"/>
+    <circle cx="320" cy="387" r="512" fill="url(#gradient-light)"/>
+    <circle cx="320" cy="387" r="160" fill="#ffffdd" opacity="0.05"/>
+    <circle cx="320" cy="387" r="144" fill="#ffffdd" opacity="0.05"/>
+    <circle cx="320" cy="387" r="128" fill="#f5e657" opacity="0.8"/>
   </g>
   <g id="mountain-1">
     <path
@@ -15,6 +23,15 @@
         L1024 768
         L0 768z
       "
-      fill="#79949f"/>
+      fill="#99848f"/>
+    <path id="mountain-1-shadow"
+      d="M 620 256
+        L1024 620
+        L1024 768
+        L768 512
+        L800 496
+        z
+      "
+      fill="#1f2d34" opacity="0.6"/>
   </g>
 </svg>

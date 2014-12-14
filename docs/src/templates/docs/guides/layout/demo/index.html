@@ -1,0 +1,19 @@
+{% set page = {} %}
+{% set page.title = 'Layout Demo' %}
+{% set isdocs = false %}
+{% extends 'layouts/minimal.html' %}
+
+{% block content %}
+  {% include 'examples/global-navigation-3.html' %}
+  {% include 'examples/hero-2.html' %}
+  {% include 'examples/three-up.html' %}
+  {% include 'examples/blog-teaser.html' %}
+  {% include 'examples/gallery.html' %}
+  {% include 'examples/footer.html' %}
+
+  <div class="flex flex-center p2 xbg-light-gray border-top">
+    <a href="/docs/guides/layout" class="button button-nav-light">Back to Page Layout Guide</a>
+    <div class="flex-auto"></div>
+    <a href="/" class="caps button button-nav-light">Basscss</a>
+  </div>
+{% endblock %}

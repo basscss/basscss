@@ -1,0 +1,21 @@
+<svg  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1024 768" width="1024" height="768">
+  <defs>
+    <radialGradient id="gradient-light">
+      <stop offset="0%" stop-color="rgba(255,255,223,0.25)"/>
+      <stop offset="100%" stop-color="rgba(255,255,223,0)" />
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="768" fill="#88c6ff"/>
+  <rect width="1024" height="768" fill="#46616d"/>
+  <g id="sun" transform="translate(256 64) rotate(15)">
+    <circle cx="512" cy="320" r="512" fill="url(#gradient-light)"/>
+    <circle cx="512" cy="320" r="160" fill="#ffffdd" opacity="0.05"/>
+    <circle cx="512" cy="320" r="144" fill="#ffffdd" opacity="0.05"/>
+    <circle cx="512" cy="320" r="128" fill="#f5e657" opacity="0.8"/>
+    <path d="M512 192 A128 128 0 0 1 512 448 A160 160 0 0 0 512 192" fill="black" opacity="0.1" />
+    <circle cx="512" cy="320" r="132" fill="none" stroke="#f5e657" stroke-width="2" opacity="0.6"/>
+  </g>
+  <g id="planet">
+  </g>
+</svg>
