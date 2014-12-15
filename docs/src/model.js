@@ -56,8 +56,27 @@ module.exports = function() {
       previous_page: 'utility',
       next_page: 'color',
       sections: [
-        { title: 'Grid', link: '/docs/layout/#grid' },
-        { title: 'Table Object', link: '/docs/layout/#table-object' }
+        { title: 'Grid', link: '/docs/layout/#grid',
+          subsections: [
+            { title: 'Responsive Grid', link: '/docs/layout/#responsive-grid' },
+            { title: 'Gutters', link: '/docs/layout/#grid-gutters' },
+            { title: 'Nesting', link: '/docs/layout/#grid-nesting' },
+            { title: 'Reversed', link: '/docs/layout/#grid-reversed' },
+            { title: 'Centering Columns', link: '/docs/layout/#grid-centering' }
+          ]
+        },
+        { title: 'Table Object', link: '/docs/layout/#table-object',
+          subsections: [
+            { title: 'Flag Object', link: '/docs/layout/#table-flag-object' },
+            { title: 'Equal Width Cells', link: '/docs/layout/#table-fixed' },
+            { title: 'Responsive Table Object', link: '/docs/layout/#responsive-table-object' },
+            { title: 'Table Grid', link: '/docs/layout/#table-grid' }
+          ]
+        },
+        //{ title: 'Flex Object', link: '/docs/layout/#flex-object',
+        //  subsections: [
+        //  ]
+        //}
       ]
     },
     color: {
@@ -96,13 +115,19 @@ module.exports = function() {
         { title: 'Extending Basscss', link: '/docs/guides/basics/#extending-basscss' }
       ]
     },
-    //layout: {
-    //  title: 'Page Layout',
-    //  description: '',
-    //  link: '/docs/guides/layout',
-    //  sections: [
-    //  ]
-    //},
+    layout: {
+      title: 'Page Layout',
+      description: 'Using the Grid System to Create an Entire Page',
+      link: '/docs/guides/layout',
+      sections: [
+        { title: 'Global Navigation', link: '/docs/guides/layout/#global-navigation' },
+        { title: 'Hero Banner', link: '/docs/guides/layout/#hero-banner' },
+        { title: 'Three-Up', link: '/docs/guides/layout/#three-up' },
+        { title: 'Blog Teaser', link: '/docs/guides/layout/#blog-teaser' },
+        { title: 'Gallery', link: '/docs/guides/layout/#gallery' },
+        { title: 'Footer', link: '/docs/guides/layout/#footer' }
+      ]
+    },
     ui: {
       title: 'UI Elements',
       description: 'Styling Custom Controls for Interactivity',
@@ -142,9 +167,9 @@ module.exports = function() {
 
   data.references =  {
     principles: { title: 'Design Principles', link: '/docs/principles' },
+    showcase: { title: 'Built with Basscss', link: '/docs/showcase' },
     rework: { title: 'Using Rework', link: '/docs/rework' },
     styles: { title: 'Table of Styles', link: '/docs/styles' },
-    showcase: { title: 'Built with Basscss', link: '/docs/showcase' },
     stats: { title: 'Stats', link: '/docs/stats' },
     variables: { title: 'Variables', link: '/docs/variables' }
   };

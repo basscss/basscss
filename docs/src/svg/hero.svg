@@ -1,0 +1,66 @@
+<svg  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1024 680" width="1024" height="680">
+  <defs>
+    <radialGradient id="gradient-flare">
+      <stop offset="0%" stop-color="rgba(255,223,191,0.125)"/>
+      <stop offset="100%" stop-color="rgba(255,255,223,0)" />
+    </radialGradient>
+    <linearGradient id="gradient-horizon" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#493640"/>
+      <stop offset="100%" stop-color="#2b3c43"/>
+    </linearGradient>
+    <linearGradient id="gradient-light" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f60"/>
+      <stop offset="100%" stop-color="#06f"/>
+    </linearGradient>
+    <filter id="filter-multiply">
+      <feBlend in="SourceGraphic" in2="backgroundImage" mode="multiply"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="768" fill="#1f282b"/>
+  <g id="stars">
+    <circle cx="128" cy="128" r="4" fill="#ffff9d" opacity="0.8"/>
+    <circle cx="64" cy="96" r="3" fill="#ffff9d" opacity="0.6"/>
+    <circle cx="320" cy="160" r="3" fill="#ffff9d" opacity="0.4"/>
+    <circle cx="500" cy="240" r="3" fill="#ffff9d" opacity="0.4"/>
+    <circle cx="300" cy="350" r="3" fill="#ffff9d" opacity="0.4"/>
+    <circle cx="100" cy="260" r="3" fill="#ffff9d" opacity="0.4"/>
+    <circle cx="700" cy="260" r="2" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="310" cy="330" r="2" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="310" cy="300" r="2" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="510" cy="130" r="2" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="420" cy="250" r="2" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="120" cy="270" r="2" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="220" cy="200" r="2" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="210" cy="400" r="2" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="180" cy="410" r="2" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="80" cy="380" r="2" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="90" cy="340" r="2" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="190" cy="330" r="2" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="20" cy="340" r="1" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="40" cy="310" r="1" fill="#ffff9d" opacity="0.2"/>
+    <circle cx="50" cy="315" r="1" fill="#ffff9d" opacity="0.2"/>
+  </g>
+  <g id="sun" transform="translate(320 64)">
+    <circle cx="512" cy="320" r="160" fill="#ffcfdd" opacity="0.05"/>
+    <circle cx="512" cy="320" r="144" fill="#ffcfdd" opacity="0.05"/>
+    <circle cx="512" cy="320" r="128" fill="#ffa626" opacity="0.9"/>
+    <circle cx="480" cy="320" r="20" fill="#000" opacity="0.1"/>
+    <circle cx="448" cy="280" r="16" fill="#000" opacity="0.1"/>
+    <circle cx="500" cy="250" r="12" fill="#000" opacity="0.1"/>
+    <path d="M512 192 A128 128 0 0 1 512 448 A160 160 0 0 0 512 192" fill="black" opacity="0.1" />
+    <circle cx="512" cy="320" r="132" fill="none" stroke="#ffa626" stroke-width="2" opacity="0.6"/>
+  </g>
+  <g id="horizon">
+    <rect x="0" y="448" width="1024" height="320" fill="url(#gradient-horizon)"/>
+    <rect x="0" y="432" width="1024" height="16" fill="#c9f" filter="url(#filter-multiply)" opacity="0.125"/>
+  </g>
+  <g id="solar-flare">
+    <circle cx="768" cy="384" r="512" fill="url(#gradient-flare)" filter="url(#filter-multiply)"/>
+    <circle cx="672" cy="384" r="256" fill="none" stroke="#f90" filter="url(#filter-multiply)" opacity="0.125"/>
+    <circle cx="640" cy="400" r="320" fill="none" stroke="#c9f" filter="url(#filter-multiply)" opacity="0.125"/>
+    <circle cx="320" cy="492" r="64" fill="#f90" filter="url(#filter-multiply)" opacity="0.125"/>
+    <circle cx="272" cy="512" r="40" fill="#c9f" filter="url(#filter-multiply)" opacity="0.125"/>
+  </g>
+  <rect x="0" y="0" width="1024" height="768" fill="url(#gradient-light)" filter="url(#filter-multiply)" opacity="0.125"/>
+</svg>

@@ -1,3 +1,10 @@
 {% for item in page.sections %}
   <a href="{{ item.link }}" class="button button-nav-light block">{{ item.title }}</a>
+  {% if item.subsections %}
+    <div class="mb1">
+      {% for s in item.subsections %}
+        <a href="{{ s.link }}" class="h6 button button-nav-light block">{{ s.title }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
 {% endfor %}
