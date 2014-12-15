@@ -167,9 +167,9 @@ module.exports = function() {
 
   data.references =  {
     principles: { title: 'Design Principles', link: '/docs/principles' },
+    showcase: { title: 'Built with Basscss', link: '/docs/showcase' },
     rework: { title: 'Using Rework', link: '/docs/rework' },
     styles: { title: 'Table of Styles', link: '/docs/styles' },
-    showcase: { title: 'Built with Basscss', link: '/docs/showcase' },
     stats: { title: 'Stats', link: '/docs/stats' },
     variables: { title: 'Variables', link: '/docs/variables' }
   };
