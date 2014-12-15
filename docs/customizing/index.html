@@ -1,0 +1,223 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Basscss</title>
+  <meta name="author" content="Jxnblk">
+  <meta name="description" content="Simple, responsive CSS toolkit based on OOCSS principles">
+  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/docs/css/base.min.css">
+  <link rel="icon" href="/docs/images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
+</head>
+
+
+<body class="container px2">
+
+<header class="py3 mb3 border-bottom">
+  <div class="avenir h5 caps bold mt2 mxn1">
+    <a href="/" class="button button-narrow">Basscss</a>
+    
+      / <a href="/docs" class="button button-narrow">Docs</a>
+    
+    
+  </div>
+  <h1 class="avenir h0 h0-responsive caps m0">Custom Builds</h1>
+</header>
+
+
+
+
+<div class="clearfix mxn2">
+
+  <div class="sm-col sm-col-9 px2 py2">
+
+    
+
+<section class="py2">
+  <p class="h3">
+    Basscss is built with
+    <a href="https://github.com/reworkcss/rework">Rework</a> and
+    <a href="http://gulpjs.com/">Gulp</a>.
+    Rework is a preprocessor based on the CSS specification and a flexible plugin architecture.
+    Gulp is a Node.js-based build system for front-end development.
+  </p>
+</section>
+
+<section class="py2">
+  <h1>Building with Gulp and Rework</h1>
+  <p>
+    To fully leverage Basscss’s modularity and flexibility,
+    use Rework to build your own custom stylesheets.
+  </p>
+  <p>
+    If you don’t have it already,
+    <a href="http://nodejs.org/download/">install Node</a>,
+    which includes NPM.
+    Then, install Gulp globally:
+  </p>
+  <pre class="Example_code">npm install --global gulp</pre>
+  <p>
+    Clone or download Basscss, then cd into the basscss directory.
+  </p>
+  <pre class="Example_code">git clone https://github.com/jxnblk/basscss.git && cd basscss</pre>
+  <p>Install the dependencies for Basscss.</p>
+  <pre class="Example_code">npm install</pre>
+  <p>
+    Duplicate <code>/src/basscss.css</code> to use as a template, make adjustments, then run the following Gulp task from the command line to recompile. This will create uncompressed, minified, and gzipped versions of the file.
+  </p>
+  <pre class="Example_code">gulp basswork</pre>
+  <p>To better understand how this is set up, open up <code>gulpfile.js</code> and take a peek.
+</section>
+
+<section class="py2">
+  <h1>Building with Basswork</h1>
+  <p>
+    Basscss uses
+    <a href="http://github.com/jxnblk/basswork">Basswork</a>
+    , a custom wrapper around Rework, to simplify development. Basswork is also available as a
+    <a href="https://github.com/jxnblk/gulp-basswork">Gulp plugin</a>.
+  </p>
+  <h2>Using Basswork in Node</h2>
+  <p>Install basswork along with any Basscss modules you’d like to use.</p>
+  <div class="Example_code mb2"><code class="hljs bash">npm install --save-dev basswork basscss-base basscss-utilities</code></div>
+  <p>Pass a source CSS string to Basswork, which will return a compiled CSS string.</p>
+  <pre class="Example_code mb2"><code class="hljs js"><span class="hljs-keyword">var</span> basswork = <span class="hljs-built_in">require</span>(<span class="hljs-string">'basswork'</span>);
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+
+<span class="hljs-keyword">var</span> src = fs.readFileSync(<span class="hljs-string">'./src/base.css'</span>, <span class="hljs-string">'utf8'</span>);
+<span class="hljs-keyword">var</span> css = basswork(src);
+fs.writeFileSync(<span class="hljs-string">'./css/base.css'</span>, css);
+</code></pre>
+  <h2>Using Basswork in an Existing Gulp Project</h2>
+  <p>Install gulp-basswork along with any Basscss modules you’d like to use.</p>
+  <div class="Example_code mb2"><code class="hljs bash">npm install --save-dev gulp-basswork basscss-base basscss-utilities</code></div>
+  <p>Create a Gulp task.</p>
+  <pre class="Example_code mb2"><code class="hljs js"><span class="hljs-keyword">var</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp'</span>);
+<span class="hljs-keyword">var</span> rename = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-rename'</span>);
+<span class="hljs-keyword">var</span> mincss = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-minify-css'</span>);
+
+<span class="hljs-keyword">var</span> basswork = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-basswork'</span>);
+
+gulp.task(<span class="hljs-string">'basswork'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  gulp.src(<span class="hljs-string">'./src/*.css'</span>)
+    .pipe(basswork())
+    .pipe(gulp.dest(<span class="hljs-string">'./css'</span>))
+    .pipe(mincss())
+    .pipe(rename({ extname: <span class="hljs-string">'.min.css'</span> }))
+    .pipe(gulp.dest(<span class="hljs-string">'./css'</span>))
+});
+</code></pre>
+</section>
+
+<section class="py2">
+  <h1>Rework in Practice</h1>
+  <h2>Imports</h2>
+  <p>Create a source CSS file to import the Basscss modules.</p>
+<pre class="Example_code mb2">
+<code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-utilities"</span></span>;</code></pre>
+  <p>
+    To import custom files within the same folder, use <code>./</code> to indicate the current folder.
+    See <a href="https://github.com/reworkcss/rework-npm">Rework NPM</a> for more details on usage.
+  </p>
+<pre class="Example_code mb2">
+<code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-utilities"</span></span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"./buttons.css"</span></span>;</code></pre>
+  <h2>Variables</h2>
+  <p>
+    Set CSS variables after the imports to alter Basscss’s default values.
+  </p>
+<pre class="Example_code mb2">
+<code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-utilities"</span></span>;
+
+<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--font-family</span>:<span class="hljs-value"> Georgia, serif</span></span>;
+<span class="hljs-rule">}</span></span></code></pre>
+  <p>To use variables as property values, follow this syntax:</p>
+<pre class="Example_code mb2"><code class="hljs css"><span class="hljs-class">.button-red</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> white</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red)</span></span>;
+<span class="hljs-rule">}</span></span></code></pre>
+  <p>To set an inline fallback value, place it after the variable name separated by a comma.</p>
+<pre class="Example_code mb2"><code class="hljs css"><span class="hljs-class">.button-red</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> white</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red, <span class="hljs-hexcolor">#f00</span>)</span></span>;
+<span class="hljs-rule">}</span></span></code></pre>
+  <p>See <a href="http://github.com/reworkcss/rework-vars">Rework Vars</a> for more details on usage.</p>
+  <h2>Custom Media Queries</h2>
+  <p>
+    To adjust breakpoints for the default media queries,
+    set custom media queries after the imports.
+    See <a href="http://github.com/reworkcss/rework-custom-media">Rework Custom Media</a> for more details on usage.
+  </p>
+<pre class="Example_code mb2">
+<code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-utilities"</span></span>;
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-sm (min-width: <span class="hljs-number">32em</span>)</span>;</code></pre>
+</section>
+
+
+
+    
+
+  </div>
+
+  <div class="sticky top-0 px2 py2 sm-col sm-col-3 sm-show">
+    
+
+  </div>
+
+</div>
+
+<footer class="py4">
+  <div class="flex flex-wrap flex-center">
+    <div class="flex-none nowrap py2 mr2">
+      <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+        </svg>
+        Tweet
+      </a>
+    </div>
+    <div class="sm-hide full-width"></div>
+    <a href="/" class="button button-narrow button-nav-light">Home</a>
+    <a href="/docs" class="button button-narrow button-nav-light">Docs</a>
+    <div class="inline-block">
+      <a href="/docs/getting-started" class="button button-narrow md-show button-nav-light">Download</a>
+    </div>
+    <a href="//github.com/jxnblk/basscss" class="button button-narrow button-nav-light">Github</a>
+    <div class="flex-grow"></div>
+    <div class="flex-none py2 nowrap">
+      <p class="h5 bold mb0">
+        Made with love by
+        <a href="//jxnblk.com">Jxnblk</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Source+Code+Pro::latin' ] }
+  };
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})(); </script>
+
+
+
+</body>
+</html>

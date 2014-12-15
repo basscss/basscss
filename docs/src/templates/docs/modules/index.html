@@ -1,0 +1,26 @@
+{% set page = references.modules %}
+{% set isdocs = true %}
+{% extends 'layouts/docs.html' %}
+
+{% block content %}
+
+<p class="h3">
+  Basscss is a collection of CSS modules that can be used independently.
+  This is a list of all currently available modules.
+</p>
+
+<section class="py2">
+  <div class="list-reset sm-flex flex-wrap mxn2">
+    {% for module in modules %}
+      <div class="md-col-6 px2 mb2">
+        <a href="{{ module.permalink }}" class="block">
+          <span class="h3 bold">{{ module.name }}</span>
+          <span class="h6">{{ module.version }}</span>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}
+
