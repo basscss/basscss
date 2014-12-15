@@ -41,11 +41,17 @@
 
 <p class="h3">
   Creating page layouts in Basscss is incredibly fast and flexible.
-  This guide will walk you through common layout patterns to create an entire page with clear information hierarchy.
+  This guide will walk you through common layout patterns to create an entire page with a basic information hierarchy.
+  To see what’s in this guide, check out the
+  <a href="/docs/guides/layout/demo">demo</a>
+  before you start, or just jump right in.
 </p>
 
 <section id="global-navigation" class="py2">
   <h1>Global Navigation</h1>
+  <p>
+    To start off, make a global navigation using the grid system and other utilities.
+  </p>
   
   
 
@@ -81,10 +87,23 @@
   
   
 
+  <p>
+    For the navigation links, use button styles to provide large hit targets
+    and a consistent visual spacing.
+    Use the margin and padding utilities to fine tune the spacing.
+    The left side uses the <code>.sm-col</code> class to float left above the small breakpoint.
+    The right side uses <code>.sm-col-right</code>.
+    By not defining a column width, each side will be as wide as its contents.
+  </p>
 </section>
 
-<section id="hero" class="py2">
-  <h1>Hero</h1>
+<section id="hero-banner" class="py2">
+  <h1>Hero Banner</h1>
+  <p>
+    Next create a hero banner using utility styles.
+    Note: This example uses the optional <code>basscss-utility-headings</code> and 
+    <code>basscss-background-images</code> utility modules for the large heading and background image.
+  </p>
   
   
 
@@ -112,7 +131,19 @@
   
   
 
-
+  <p>
+    A combination of utility styles is all that’s needed to create this banner.
+    To fine tune the placement of a background image in a banner,
+    consider adjusting the source image or placing page-specific styles directly in the head of the document.
+    Since this image will only be used on this one page and it’s fairly small,
+    an inline style has been used.
+    This is to help reduce the size of the stylesheet by not including one-off styles.
+  </p>
+  <p>
+    After seeing the global navigation above the hero,
+    try moving it into the banner and removing the background color for a different look.
+    Move the padding for the banner content into a nested div to adjust the layout.
+  </p>
   
   
 
@@ -168,6 +199,12 @@
 
 <section id="three-up" class="py2">
   <h1>Three Up</h1>
+  <p>
+    Next, use the grid system to create a three-up row of features.
+    Note the use of <code>sm-</code> prefixed grid utility styles that only work from the small breakpoint up.
+    The row itself uses the <code>.mxn2</code> utility to compensate for each column’s <code>.px2</code> padding.
+    To control the spacing of typographic elements, each heading has its bottom margin removed.
+  </p>
   
   
 
@@ -219,6 +256,15 @@
 
 <section id="blog-teaser" class="py2">
   <h1>Blog Teaser</h1>
+  <p>
+    To showcase the latest posts from the blog, create a new section.
+    Use the grid system to create a wide left column
+    and a narrow right column for direct links to blog post categories.
+    The columns have two different widths defined for the small and medium breakpoints.
+    This makes the right column relatively smaller for larger viewports.
+    Use the <code>.sm-show</code> responsive utility to hide the sidebar when the viewport is narrower
+    than the small breakpoint.
+  </p>
   
   
 
@@ -226,13 +272,13 @@
   <div class="Example mb2">
     <div class="Example_rendered">
       <section class="container px2 py3">
-  <h1>
+  <h1 class="mt0">
     <a href="#" class="dark-gray">
       Blog
     </a>
   </h1>
   <div class="clearfix mxn2">
-    <div class="sm-col sm-col-8 px2">
+    <div class="sm-col sm-col-8 md-col-9 px2">
       <div>
         <h2 class="h3">
           <a href="#" class="dark-gray">
@@ -252,7 +298,7 @@
         <a href="#">Read more</a>
       </div>
     </div>
-    <div class="sm-col sm-col-4 px2 sm-show">
+    <div class="sm-col sm-col-4 md-col-3 px2 sm-show">
       <h3 class="h4">Categories</h3>
       <ul class="list-reset">
         <li><a href="#" class="">Bacon</a></li>
@@ -269,13 +315,13 @@
     </div>
     <div class="Example_code">
       <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container px2 py3"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mt0"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dark-gray"</span>&gt;</span>
       Blog
     <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-8 px2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-8 md-col-9 px2"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dark-gray"</span>&gt;</span>
@@ -295,7 +341,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Read more<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-4 px2 sm-show"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-4 md-col-3 px2 sm-show"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h4"</span>&gt;</span>Categories<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-reset"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">""</span>&gt;</span>Bacon<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
@@ -318,6 +364,11 @@
 
 <section id="gallery" class="py2">
   <h1>Gallery</h1>
+  <p>
+    Next, create a thumbnail gallery with 12 images.
+    Twelve is divisible by 6, 4, 3, and 2 so no widows will appear
+    when dividing up the thumbnails by those numbers in our grid.
+  </p>
   
   
 
@@ -481,17 +532,27 @@
   
   
 
+  <p>
+    The display block utility is used on the links and images to control spacing,
+    and each thumbnail uses <code>.mb3</code> to keep the vertical spacing equal to the gutters.
+    Although it’s unnecessary for images of the same dimension,
+    clearfix elements with responsive utilities are used to ensure each column wraps at the appropriate point.
+  </p>
 </section>
 
 <section id="footer" class="py2">
   <h1>Footer</h1>
+  <p>
+    Finally, create a footer with a dark background that fills the width of the viewport.
+    Note the container is placed inside the footer element to control max-width.
+  </p>
   
   
 
   
   <div class="Example mb2">
     <div class="Example_rendered">
-      <div class="white bg-dark-gray">
+      <footer class="white bg-dark-gray">
   <div class="px2 py3 container">
     <div class="clearfix mxn2">
       <div class="col col-6 md-col-3">
@@ -549,11 +610,11 @@
     </div>
     <p class="h6 mb0">&copy; 2014 Hamburgers, LLC</p>
   </div>
-</div>
+</footer>
 
     </div>
     <div class="Example_code">
-      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"white bg-dark-gray"</span>&gt;</span>
+      <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">footer</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"white bg-dark-gray"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"px2 py3 container"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 md-col-3"</span>&gt;</span>
@@ -611,13 +672,21 @@
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h6 mb0"</span>&gt;</span>&amp;copy; 2014 Hamburgers, LLC<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">footer</span>&gt;</span>
 </code></pre>
     </div>
   </div>
   
   
 
+</section>
+
+<section id="conclusion" class="py2">
+  <p class="h3">
+    At this point, you should have created a page resembling the
+    <a href="/docs/guides/layout/demo">demo</a>.
+    Be sure to check out the other guides to learn more about using Basscss.
+  </p>
 </section>
 
 
@@ -665,8 +734,26 @@
 
   </div>
 
-  <div class="px2 py2 sm-col sm-col-3 sm-show">
+  <div class="sticky top-0 px2 py2 sm-col sm-col-3 sm-show">
     
+  <a href="/docs/guides/layout/#global-navigation" class="button button-nav-light block">Global Navigation</a>
+  
+
+  <a href="/docs/guides/layout/#hero-banner" class="button button-nav-light block">Hero Banner</a>
+  
+
+  <a href="/docs/guides/layout/#three-up" class="button button-nav-light block">Three-Up</a>
+  
+
+  <a href="/docs/guides/layout/#blog-teaser" class="button button-nav-light block">Blog Teaser</a>
+  
+
+  <a href="/docs/guides/layout/#gallery" class="button button-nav-light block">Gallery</a>
+  
+
+  <a href="/docs/guides/layout/#footer" class="button button-nav-light block">Footer</a>
+  
+
 
   </div>
 

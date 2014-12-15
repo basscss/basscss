@@ -117,9 +117,15 @@ module.exports = function() {
     },
     layout: {
       title: 'Page Layout',
-      description: '',
+      description: 'Using the Grid System to Create an Entire Page',
       link: '/docs/guides/layout',
       sections: [
+        { title: 'Global Navigation', link: '/docs/guides/layout/#global-navigation' },
+        { title: 'Hero Banner', link: '/docs/guides/layout/#hero-banner' },
+        { title: 'Three-Up', link: '/docs/guides/layout/#three-up' },
+        { title: 'Blog Teaser', link: '/docs/guides/layout/#blog-teaser' },
+        { title: 'Gallery', link: '/docs/guides/layout/#gallery' },
+        { title: 'Footer', link: '/docs/guides/layout/#footer' }
       ]
     },
     ui: {
