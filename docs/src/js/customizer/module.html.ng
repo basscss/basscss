@@ -1,0 +1,6 @@
+<label>
+  <input type="checkbox" ng-model="module.isActive" ng-change="build()">
+  <div class="h3 bold">{{ module.name }}</div>
+  <div class="h5">{{ module.version }}</div>
+  <div class="h5">{{ module.description }}</div>
+</label>

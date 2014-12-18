@@ -44,13 +44,18 @@
   },
   "homepage": "https://github.com/jxnblk/basscss",
   "devDependencies": {
+    "basscss-background-images": "latest",
+    "basscss-utility-headings": "latest",
+    "brfs": "^1.2.0",
     "cheerio": "^0.17.0",
     "css": "^2.1.0",
     "css-scss": "0.0.5",
     "css-statistics": "0.0.21",
+    "custom-css": "0.0.6",
     "flex-object": "0.0.4",
     "gulp": "^3.8.8",
     "gulp-basswork": "latest",
+    "gulp-browserify": "^0.5.0",
     "gulp-bump": "^0.1.11",
     "gulp-gzip": "0.0.8",
     "gulp-header": "^1.1.1",
@@ -68,48 +73,43 @@
     "rework": "^1.0.1",
     "rework-npm": "^1.0.0",
     "svg-to-png": "^0.6.0",
-    "swig-highlight": "^0.2.0",
-    "basscss-utility-headings": "latest",
-    "basscss-background-images": "latest",
-    "custom-css": "0.0.5",
-    "gulp-browserify": "^0.5.0",
-    "brfs": "^1.2.0"
+    "swig-highlight": "^0.2.0"
   },
   "scripts": {
     "start": "gulp"
   },
   "css": {
-    "modules": {
-      "basscss-base-reset": "latest",
-      "basscss-base-typography": "latest",
-      "basscss-base-forms": "latest",
-      "basscss-base-buttons": "latest",
-      "basscss-base-tables": "latest",
-      "basscss-utility-layout": "latest",
-      "basscss-utility-typography": "latest",
-      "basscss-utility-white-space": "latest",
-      "basscss-utility-responsive-states": "latest",
-      "basscss-ui-utility-button-sizes": "latest",
-      "basscss-ui-utility-groups": "latest",
-      "basscss-ui-utility-disclosure-states": "latest",
-      "basscss-positions": "latest",
-      "basscss-grid": "latest",
-      "basscss-table-object": "latest",
-      "basscss-color-base": "latest",
-      "basscss-color-forms": "latest",
-      "basscss-color-forms-dark": "latest",
-      "basscss-color-tables": "latest",
-      "basscss-color-buttons": "latest",
-      "basscss-colors": "latest",
-      "basscss-color-borders": "latest"
-    },
-    "variables": {
-      "basscss-defaults": "latest"
-    },
-    "optionalModules": {
-      "flex-object": "latest",
-      "basscss-utility-headings": "latest",
-      "basscss-background-images": "latest"
-    }
+    "modules": [
+      "basscss-base-reset",
+      "basscss-base-typography",
+      "basscss-base-forms",
+      "basscss-base-buttons",
+      "basscss-base-tables",
+      "basscss-utility-layout",
+      "basscss-utility-typography",
+      "basscss-utility-white-space",
+      "basscss-utility-responsive-states",
+      "basscss-ui-utility-button-sizes",
+      "basscss-ui-utility-groups",
+      "basscss-ui-utility-disclosure-states",
+      "basscss-positions",
+      "basscss-grid",
+      "basscss-table-object",
+      "basscss-color-base",
+      "basscss-color-forms",
+      "basscss-color-forms-dark",
+      "basscss-color-tables",
+      "basscss-color-buttons",
+      "basscss-colors",
+      "basscss-color-borders"
+    ],
+    "variables": [
+      "basscss-defaults"
+    ],
+    "optionalModules": [
+      "flex-object",
+      "basscss-utility-headings",
+      "basscss-background-images"
+    ]
   }
 }

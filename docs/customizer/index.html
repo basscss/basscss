@@ -40,10 +40,10 @@
 </div>
 
 
-<div ng-app="custom-css" class="border-bottom">
-  <div custom-css src="data.json" class="md-flex flex-stretch">
+<div ng-app="app" class="border-bottom">
+  <div custom-css class="md-flex flex-stretch">
     <div class="md-col-8 px3 py3">
-      <section class="mb3">
+      <section class="mb3" custom-css-collection src="modules.json">
         <div class="sm-flex flex-center mb2">
           <h2 class="flex-auto m0 py1">Standard Modules </h2>
           <a href class="h5 ml2 mr2 button-nav-light" ng-click="deselectAll(modules)">Deselect All</a>
@@ -52,35 +52,32 @@
         <form>
           <ol class="list-reset sm-flex flex-wrap mxn2">
             <li ng-repeat="module in modules"
-              custom-css-module
-              class="flex border-box sm-col-6 px2 mb3"></li>
+              class="flex border-box sm-col-6 px2 mb3">
+              <div css-module></div>
+            </li>
           </ol>
         </form>
       </section>
-      <section class="py3">
+      <section class="py3" custom-css-collection src="optionals.json">
         <h2>Optional Modules</h2>
         <form>
           <ol class="list-reset sm-flex flex-wrap mxn2">
             <li ng-repeat="module in optionalModules"
-              custom-css-module
-              class="flex border-box sm-col-6 px2 mb3"></li>
+              class="flex border-box sm-col-6 px2 mb3">
+              <div css-module></div>
+            </li>
           </ol>
         </form>
       </section>
-      <section class="py3">
+      <section class="py3" custom-css-collection src="variables.json" variables="true">
         <h2>Variables</h2>
         <form>
-          <div ng-repeat="module in variables"
-            ng-if="module.ast.stylesheet.rules">
-            <ol class="list-reset sm-flex flex-wrap"
-              ng-repeat="rule in module.ast.stylesheet.rules"
-              ng-if="rule.selectors[0] == ':root'">
-              <li class="sm-col-6 lg-col-4" ng-repeat="v in rule.declarations">
-                <label class="h5 bold">{{ v.property }}:</label>
-                <input type="text" class="block field-light" ng-model="v.value" ng-change="build()">
-              </li>
-            </ol>
-          </div>
+          <ol class="list-reset sm-flex flex-wrap">
+            <li class="sm-col-6 lg-col-4" ng-repeat="v in variables">
+              <label class="h5 bold">{{ v.property }}:</label>
+              <input type="text" class="block field-light" ng-model="v.value" ng-change="build()">
+            </li>
+          </ol>
         </form>
       </section>
     </div>
@@ -106,6 +103,7 @@
     </div>
   </div>
 </div>
+
 
 
 <div class="px3 xbg-dark-gray">
@@ -154,7 +152,7 @@ s.parentNode.insertBefore(wf, s);
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-<script src="app.min.js"></script>
+<script src="app.js"></script>
 
 
 

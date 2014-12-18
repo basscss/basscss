@@ -1,11 +1,4 @@
-/*
-
-    Basscss v4.1.7
-
-    Low-level CSS toolkit
-    http://basscss.com
-
-*/
+/* Basscss.com Styles */
 
 body,
 button {
@@ -31,7 +24,7 @@ svg {
 /* Basscss Base Typography */
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-size: 100%;
 }
@@ -42,8 +35,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -53,7 +46,7 @@ p,
 dl,
 ol,
 ul {
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -112,17 +105,17 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 h5,
 .h5 {
-  font-size: .875rem;
+  font-size: 1rem;
 }
 
 h6,
 .h6 {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 
 .list-reset {
@@ -196,7 +189,7 @@ textarea {
 
 button,
 .button {
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -232,7 +225,7 @@ table {
 
 th {
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 th,
@@ -310,7 +303,7 @@ td {
 /* Basscss Utility Typography */
 
 .bold {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .regular {
@@ -541,7 +534,7 @@ td {
   display: none !important;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 36em) {
   .sm-show {
     display: block !important;
   }
@@ -559,7 +552,7 @@ td {
   }
 }
 
-@media (min-width: 40em) {
+@media (min-width: 36em) {
   .sm-hide {
     display: none !important;
   }
@@ -717,6 +710,38 @@ td {
   display: block;
 }
 
+/* Basscss Utility Headings */
+
+.h00 {
+  font-size: 4rem;
+}
+
+.h0 {
+  font-size: 3rem;
+}
+
+@media (min-width: 52em) {
+  .h00-responsive {
+    font-size: 8vw;
+  }
+
+  .h0-responsive {
+    font-size: 6vw;
+  }
+}
+
+@media (min-width: 96em) {
+  .h00-responsive {
+    font-size: 7.68rem;
+  }
+
+  .h0-responsive {
+    font-size: 5.76rem;
+  }
+}
+
+
+
 /*
     Basscss Grid
 */
@@ -724,7 +749,7 @@ td {
 
 
 .container {
-  max-width: 64em;
+  max-width: 76rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -789,7 +814,7 @@ td {
   width: 100%;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 36em) {
   .sm-col {
     float: left;
     -moz-box-sizing: border-box;
@@ -996,7 +1021,7 @@ td {
   table-layout: fixed;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 36em) {
   .sm-table {
     display: table;
     width: 100%;
@@ -1032,10 +1057,157 @@ td {
   }
 }
 
+/*
+ * Basscss Flex Object
+ */
+
+.flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-reverse {
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.flex-center {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-baseline {
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.flex-stretch {
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.flex-start {
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-end {
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex-justify-start {
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-justify-end {
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-justify-center {
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-justify-around {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.flex-justify-between {
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-first {
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.flex-last {
+  -webkit-order: 1024;
+      -ms-flex-order: 1024;
+          order: 1024;
+}
+
+.flex-auto {
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.flex-grow {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.flex-none {
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+}
+
+.flex-wrap > div {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+@media (min-width: 36em) {
+  .sm-flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 52em) {
+  .md-flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 64em) {
+  .lg-flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 /* Basscss Color Base */
 
 body {
-  color: #333;
+  color: #304650;
   background-color: white;
 }
 
@@ -1050,7 +1222,7 @@ a:hover {
 
 pre,
 code {
-  background-color: #eee;
+  background-color: #f3f9f9;
   border-radius: 3px;
 }
 
@@ -1058,7 +1230,7 @@ hr {
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #ccc;
+  border-bottom-color: #c3c9c9;
 }
 
 
@@ -1071,7 +1243,7 @@ hr {
           transition: box-shadow .2s ease;
   border-style: solid;
   border-width: 1px;
-  border-color: #ccc;
+  border-color: #c3c9c9;
   border-radius: 3px;
 }
 
@@ -1082,7 +1254,7 @@ hr {
 }
 
 .field-light:disabled {
-  color: #777;
+  color: #667680;
   background-color: rgba(0, 0, 0, .125);
 }
 
@@ -1182,7 +1354,7 @@ hr {
 .table-light td {
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #ccc;
+  border-bottom-color: #c3c9c9;
 }
 
 
@@ -1258,7 +1430,7 @@ hr {
 
 .button-gray {
   color: white;
-  background-color: #777;
+  background-color: #667680;
   border-radius: 3px;
   -webkit-transition-duration: .1s;
           transition-duration: .1s;
@@ -1321,12 +1493,12 @@ hr {
 
 
 .button-nav-light:hover {
-  background-color: rgba(0, 0, 0, .0625);
+  background-color: rgba(0, 118, 223, .0625);
 }
 
 .button-nav-light:active,
 .button-nav-light.is-active {
-  color: #333;
+  color: #304650;
 }
 
 .button-nav-dark {
@@ -1345,7 +1517,7 @@ hr {
 .button-nav-tab {
   margin-bottom: -1px;
   border-radius: 3px 3px 0 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #c3c9c9;
 }
 
 .button-nav-tab:hover {
@@ -1355,9 +1527,9 @@ hr {
 .button-nav-tab.is-active {
   background-color: white;
   border-bottom: 1px solid white;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  border-top: 1px solid #c3c9c9;
+  border-left: 1px solid #c3c9c9;
+  border-right: 1px solid #c3c9c9;
 }
 
 
@@ -1365,7 +1537,7 @@ hr {
 /* Basscss Colors */
 
 .dark-gray {
-  color: #333;
+  color: #304650;
 }
 
 .white {
@@ -1377,15 +1549,15 @@ hr {
 }
 
 .mid-gray {
-  color: #777;
+  color: #667680;
 }
 
 .light-gray {
-  color: #ccc;
+  color: #c3c9c9;
 }
 
 .lighter-gray {
-  color: #eee;
+  color: #f3f9f9;
 }
 
 .red {
@@ -1401,7 +1573,7 @@ hr {
 }
 
 .bg-dark-gray {
-  background-color: #333;
+  background-color: #304650;
 }
 
 .bg-white {
@@ -1413,15 +1585,15 @@ hr {
 }
 
 .bg-mid-gray {
-  background-color: #777;
+  background-color: #667680;
 }
 
 .bg-light-gray {
-  background-color: #ccc;
+  background-color: #c3c9c9;
 }
 
 .bg-lighter-gray {
-  background-color: #eee;
+  background-color: #f3f9f9;
 }
 
 .bg-red {
@@ -1459,31 +1631,31 @@ hr {
 .border {
   border-style: solid;
   border-width: 1px;
-  border-color: #ccc;
+  border-color: #c3c9c9;
 }
 
 .border-top {
   border-top-style: solid;
   border-top-width: 1px;
-  border-top-color: #ccc;
+  border-top-color: #c3c9c9;
 }
 
 .border-right {
   border-right-style: solid;
   border-right-width: 1px;
-  border-right-color: #ccc;
+  border-right-color: #c3c9c9;
 }
 
 .border-bottom {
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #ccc;
+  border-bottom-color: #c3c9c9;
 }
 
 .border-left {
   border-left-style: solid;
   border-left-width: 1px;
-  border-left-color: #ccc;
+  border-left-color: #c3c9c9;
 }
 
 .rounded {
@@ -1516,5 +1688,396 @@ hr {
 
 
 
-/* Basscss Defaults */
+/* Basscss Background Images */
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-right {
+  background-position: right;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.monospace {
+  font-family: 'Source Code Pro', Consolas, monospace;
+}
+
+.helvetica {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+@media (min-width: 52em) {
+  .md-h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .lg-h1 {
+    font-size: 4rem;
+  }
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: -.125em;
+  vertical-align: middle;
+  fill: currentcolor;
+}
+
+/* Button sizes adjusted for Avenir Next */
+
+/*
+*/
+
+.button-small {
+  padding-top: .25em;
+  padding-bottom: .125em;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+/* Responsive folding table module
+ */
+
+@media (max-width: 32em) {
+  .folding-table,
+  .folding-table thead,
+  .folding-table tr,
+  .folding-table th,
+  .folding-table tbody,
+  .folding-table td {
+    display: block;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .folding-table td:first-child {
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+
+  .folding-table td:last-child {
+    padding-bottom: 1rem;
+  }
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.border-box {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #304650;
+}
+
+/*
+a.is-active { color: var(--dark-gray) }
+*/
+
+.border-blue {
+  border: 1px solid #0076df;
+}
+
+.outline-blue * {
+  box-shadow: 0 0 0 1px rgba(0, 118, 223, .75);
+}
+
+.highlight pre {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.hr-block {
+  height: 4px;
+  border: 0;
+}
+
+.bright-blue {
+  color: #0096ff;
+}
+
+.bg-bright-blue {
+  background-color: #0096ff;
+}
+
+.button-bright-blue-outline {
+  color: #0096ff;
+  background-color: transparent;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 2px #0096ff;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-property: box-shadow, color, background-color;
+          transition-property: box-shadow, color, background-color;
+}
+
+.button-bright-blue-outline:hover {
+  color: white;
+  background-color: #0096ff;
+}
+
+.button-bright-blue-outline:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #0096ff, 0 0 0 2px #304650, 0 0 1px 4px rgba(0, 118, 223, .5);
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: .5;
+    display: none;
+  }
+
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: .5;
+    display: none;
+  }
+
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+    display: none;
+  }
+}
+
+.animation-fadein {
+  -webkit-animation: fadein .1s ease-out forwards;
+          animation: fadein .1s ease-out forwards;
+}
+
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  /*
+  background: #f8f8f8;
+  */
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header,
+.hljs-javadoc {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.hljs-dartdoc,
+.tex .hljs-formula {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body {
+  color: #008080;
+}
+
+.hljs-regexp {
+  color: #009926;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #990073;
+}
+
+.hljs-built_in {
+  color: #0086b3;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.diff .hljs-change {
+  background: #0086b3;
+}
+
+.hljs-chunk {
+  color: #aaa;
+}
+
+/* HTML code example component */
+
+.Example {
+  border: 1px solid rgba(0, 0, 0, .0625);
+  border-radius: 3px;
+}
+
+.Example_rendered {
+  padding: 1rem;
+}
+
+.Example_code {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, .0625);
+}
+
+.Example_code code,
+.Example_code pre {
+  margin-bottom: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+/* Custom Media Queries */
+
+
 
