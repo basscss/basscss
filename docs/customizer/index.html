@@ -50,9 +50,9 @@
           <a href class="h5 button-nav-light" ng-click="selectAll(modules)">Select All</a>
         </div>
         <form>
-          <ol class="list-reset sm-flex flex-wrap mxn2">
+          <ol class="list-reset border-top">
             <li ng-repeat="module in modules"
-              class="flex border-box sm-col-6 px2 mb3">
+              class="border-bottom">
               <div css-module></div>
             </li>
           </ol>
@@ -61,9 +61,9 @@
       <section class="py3" custom-css-collection src="optionals.json">
         <h2>Optional Modules</h2>
         <form>
-          <ol class="list-reset sm-flex flex-wrap mxn2">
-            <li ng-repeat="module in optionalModules"
-              class="flex border-box sm-col-6 px2 mb3">
+          <ol class="list-reset border-top">
+            <li ng-repeat="module in modules"
+              class="border-bottom">
               <div css-module></div>
             </li>
           </ol>
@@ -72,10 +72,9 @@
       <section class="py3" custom-css-collection src="variables.json" variables="true">
         <h2>Variables</h2>
         <form>
-          <ol class="list-reset sm-flex flex-wrap">
-            <li class="sm-col-6 lg-col-4" ng-repeat="v in variables">
-              <label class="h5 bold">{{ v.property }}:</label>
-              <input type="text" class="block field-light" ng-model="v.value" ng-change="build()">
+          <ol class="list-reset sm-flex flex-wrap mxn2">
+            <li class="border-box sm-col-6 lg-col-4 px2" ng-repeat="variable in variables">
+              <div variable-field></div>
             </li>
           </ol>
         </form>

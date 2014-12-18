@@ -1,6 +1,8 @@
-<label>
+<label class="flex flex-baseline button button-nav-light"
+  ng-class="{'bg-light-blue': module.isActive }">
   <input type="checkbox" ng-model="module.isActive" ng-change="build()">
-  <div class="h3 bold">{{ module.name }}</div>
-  <div class="h5">{{ module.version }}</div>
-  <div class="h5">{{ module.description }}</div>
+
+  <div class="h3 bold px1">{{ module.name }}</div>
+  <div class="flex-auto px1 h5 regular">{{ module.description }}</div>
+  <div class="h6">v{{ module.version }}</div>
 </label>

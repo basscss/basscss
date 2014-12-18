@@ -8,6 +8,7 @@
 
   --bright-blue: #0096ff;
 
-  --hover-background-color: rgba(var(--blue), .0625);
+  --light-blue: rgba(var(--blue), .0625);
+  --hover-background-color: var(--light-blue);
 
 }

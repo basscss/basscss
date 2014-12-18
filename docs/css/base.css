@@ -1845,6 +1845,10 @@ a.is-active { color: var(--dark-gray) }
   background-color: #0096ff;
 }
 
+.bg-light-blue {
+  background-color: rgba(0, 118, 223, .0625);
+}
+
 .button-bright-blue-outline {
   color: #0096ff;
   background-color: transparent;
