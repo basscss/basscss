@@ -39,6 +39,12 @@ gulp.task('images', require('./tasks/images'));
 // Upload Showcase images to S3
 gulp.task('s3-images', require('./tasks/s3-images'));
 
+// Create data json file for custom-css
+gulp.task('customizer-data', require('./tasks/customizer-data'));
+
+// Compile JS for customizer
+gulp.task('customizer-js', require('./tasks/customizer-js'));
+
 // Site development
 gulp.task('dev', ['watch-templates', 'watch-css', 'serve']);
 

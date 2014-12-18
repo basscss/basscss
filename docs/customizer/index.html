@@ -14,11 +14,12 @@
 </head>
 
 
-<body class="container px2">
+<body>
 
 
 
-<header class="py3 mb3 border-bottom">
+<div class="px2">
+  <header class="py3 mb3 border-bottom">
   <div class="avenir h5 caps bold mt2 mxn1">
     <a href="/" class="button button-narrow">Basscss</a>
     
@@ -26,65 +27,24 @@
     
     
   </div>
-  <h1 class="avenir h0 h0-responsive caps m0">Stats</h1>
+  <h1 class="avenir h0 h0-responsive caps m0">Customizer</h1>
 </header>
 
 
 
 
-<section id="top-level" class="py2">
-<div class="sm-flex flex-wrap bold caps">
-  <div class="sm-col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">290</h1>
-    <div class="h6">Rules</div>
-  </div>
-  <div class="sm-col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">348</h1>
-    <div class="h6">Selectors</div>
-  </div>
-  <div class="sm-col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">460</h1>
-    <div class="h6">Declarations</div>
-  </div>
-  <div class="sm-col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">79</h1>
-    <div class="h6">Properties</div>
-  </div>
-  <div class="sm-col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">3</h1>
-    <div class="h6">Media Queries</div>
-  </div>
-  <div class="sm-col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">8</h1>
-    <div class="h6">Unique Font Sizes</div>
-  </div>
-  <div class="sm-col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">2</h1>
-    <div class="h6">Unique Floats</div>
-  </div>
-  <div class="sm-col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">13</h1>
-    <div class="h6">Unique Widths</div>
-  </div>
-  <div class="sm-col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">3</h1>
-    <div class="h6">Unique Heights</div>
-  </div>
-  <div class="sm-col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">10</h1>
-    <div class="h6">Unique Colors</div>
-  </div>
-  <div class="sm-col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">15</h1>
-    <div class="h6">Unique Background Colors</div>
-  </div>
+  <p class="h3">
+    If you're uncomfortable with NPM, create custom builds of Basscss with this web app.
+  </p>
+
 </div>
-</section>
 
+<div ng-app="custom-css" class="border-top border-bottom">
+  <div custom-css src="data.json"></div>
+</div>
 
-
-
-<footer class="py4">
+<div class="px2 xbg-dark-gray">
+  <footer class="py4">
   <div class="flex flex-wrap flex-center">
     <div class="flex-none nowrap py2 mr2">
       <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
@@ -124,6 +84,12 @@ wf.async = 'true';
 var s = document.getElementsByTagName('script')[0];
 s.parentNode.insertBefore(wf, s);
 })(); </script>
+
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+<script src="customizer.min.js"></script>
 
 
 

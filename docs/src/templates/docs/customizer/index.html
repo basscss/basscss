@@ -1,0 +1,29 @@
+{% set page = {} %}
+{% set page.title = 'Customizer' %}
+{% set isdocs = true %}
+{% extends 'layouts/minimal.html' %}
+
+{% block content %}
+
+<div class="px2">
+  {% include 'partials/docs-nav.html' %}
+
+  <p class="h3">
+    If you're uncomfortable with NPM, create custom builds of Basscss with this web app.
+  </p>
+
+</div>
+
+<div ng-app="custom-css" class="border-top border-bottom">
+  <div custom-css src="data.json"></div>
+</div>
+
+<div class="px2 xbg-dark-gray">
+  {% include 'partials/footer.html' %}
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+<script src="customizer.min.js"></script>
+
+{% endblock %}
+
