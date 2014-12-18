@@ -1,5 +1,5 @@
 
-require('custom-css/js/app.min.js');
+require('custom-css/js/app.js');
 
-var app = angular.module('app', ['customCss']);
+//var app = angular.module('app', ['customCss']);
 
