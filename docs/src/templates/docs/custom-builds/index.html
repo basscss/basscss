@@ -7,121 +7,182 @@
 
 <section class="py2">
   <p class="h3">
-    Basscss is built with
-    <a href="https://github.com/reworkcss/rework">Rework</a> and
-    <a href="http://gulpjs.com/">Gulp</a>.
-    Rework is a preprocessor based on the CSS specification and a flexible plugin architecture.
-    Gulp is a Node.js-based build system for front-end development.
+    Basscss is a collection of interoperable CSS modules
+    and can be used in conjunction with many other frameworks, libraries, and stylesheets.
+    While the source code is written in spec-based CSS,
+    it can also be incorporated into Sass projects through NPM or Bower,
+    or customized with the <a href="/docs/customize">web-based tool</a>.
   </p>
 </section>
 
-<section class="py2">
-  <h1>Building with Gulp and Rework</h1>
+<section id="rework" class="py2">
+  <h1>Rework</h1>
   <p>
-    To fully leverage Basscss’s modularity and flexibility,
-    use Rework to build your own custom stylesheets.
+    Rework is the most native way to incorporate Basscss into a project,
+    and its concepts should be somewhat familiar to those who use other preprocessors,
+    such as Sass or Less, and to those who are comfortable with the command line.
   </p>
   <p>
-    If you don’t have it already,
-    <a href="http://nodejs.org/download/">install Node</a>,
-    which includes NPM.
-    Then, install Gulp globally:
+    Rework is a Node-based preprocessor with a plugin architecture and syntax based on the CSS specification.
+    Rework requires NPM, and Basscss uses this package management system for its modular architecture.
+    If you prefer using Bower, see the <a href="/docs/custom-builds/#bower">Bower Section</a> below.
   </p>
-  <pre class="Example_code">npm install --global gulp</pre>
+  <h2>Bassplate</h2>
   <p>
-    Clone or download Basscss, then cd into the basscss directory.
+    The quickest way to get familiar with using Rework is through the official boilerplate project
+    <a href="//github.com/jxnblk/bassplate">Bassplate</a>,
+    which includes Gulp tasks and basic file and folder structure for building a simple website.
   </p>
-  <pre class="Example_code">git clone https://github.com/jxnblk/basscss.git && cd basscss</pre>
-  <p>Install the dependencies for Basscss.</p>
-  <pre class="Example_code">npm install</pre>
   <p>
-    Duplicate <code>/src/basscss.css</code> to use as a template, make adjustments, then run the following Gulp task from the command line to recompile. This will create uncompressed, minified, and gzipped versions of the file.
+    To get started, clone the repo, install dependencies, and run the default Gulp task.
   </p>
-  <pre class="Example_code">gulp basswork</pre>
-  <p>To better understand how this is set up, open up <code>gulpfile.js</code> and take a peek.
-</section>
-
-<section class="py2">
-  <h1>Building with Basswork</h1>
-  <p>
-    Basscss uses
-    <a href="http://github.com/jxnblk/basswork">Basswork</a>
-    , a custom wrapper around Rework, to simplify development. Basswork is also available as a
-    <a href="https://github.com/jxnblk/gulp-basswork">Gulp plugin</a>.
-  </p>
-  <h2>Using Basswork in Node</h2>
-  <p>Install basswork along with any Basscss modules you’d like to use.</p>
-  <div class="Example_code mb2">{% highlight 'bash' %}npm install --save-dev basswork basscss-base basscss-utilities{% endhighlight %}</div>
-  <p>Pass a source CSS string to Basswork, which will return a compiled CSS string.</p>
-  <pre class="Example_code mb2">{% highlight 'js' %}{% include 'examples/basswork.js' %}{% endhighlight %}</pre>
-  <h2>Using Basswork in an Existing Gulp Project</h2>
-  <p>Install gulp-basswork along with any Basscss modules you’d like to use.</p>
-  <div class="Example_code mb2">{% highlight 'bash' %}npm install --save-dev gulp-basswork basscss-base basscss-utilities{% endhighlight %}</div>
-  <p>Create a Gulp task.</p>
-  <pre class="Example_code mb2">{% highlight 'js' %}{% include 'examples/gulp-recipe.js' %}{% endhighlight %}</pre>
-</section>
-
-<section class="py2">
-  <h1>Rework in Practice</h1>
-  <h2>Imports</h2>
-  <p>Create a source CSS file to import the Basscss modules.</p>
-<pre class="Example_code mb2">
-{% highlight 'css' %}
-@import "basscss-base";
-@import "basscss-utilities";
+<pre>{% highlight 'bash' %}
+git clone https://github.com/jxnblk/bassplate.git new-project
+cd new-project
+rm -rf .git
+npm install
+gulp
 {% endhighlight %}</pre>
   <p>
-    To import custom files within the same folder, use <code>./</code> to indicate the current folder.
-    See <a href="https://github.com/reworkcss/rework-npm">Rework NPM</a> for more details on usage.
+    This will start a server at <code>http://localhost:8000</code> and watch the <code>/src</code> folder for changes.
+    Edit the files in <code>/src/css</code> to customize the compiled stylesheet.
   </p>
-<pre class="Example_code mb2">
-{% highlight 'css' %}
-@import "basscss-base";
-@import "basscss-utilities";
-@import "./buttons.css";
-{% endhighlight %}</pre>
-  <h2>Variables</h2>
+  <h2>Basswork</h2>
   <p>
-    Set CSS variables after the imports to alter Basscss’s default values.
+    To set up Basscss in an existing Node-base build system,
+    use <a href="//github.com/jxnblk/basswork">Basswork</a>
+    or <a href="//github.com/jxnblk/gulp-basswork">Gulp Basswork</a> to compile a set of modules.
   </p>
-<pre class="Example_code mb2">
-{% highlight 'css' %}
-@import "basscss-base";
-@import "basscss-utilities";
+  <h2>NPM Packages</h2>
+  <p>
+    All individual Basscss modules are available on NPM.
+    For a list of available packages, see the
+    <a href="/docs/modules">Modules</a> page.
+  </p>
+</section>
 
-:root {
-  --font-family: Georgia, serif;
+<section id="rework-syntax" class="py2">
+  <h1>Rework Syntax</h1>
+  <p>
+    To import modules that have been installed through NPM,
+    use the following syntax:
+  </p>
+
+<pre>{% highlight 'css' %}
+@import 'basscss-base-typography';
+@import 'basscss-defaults';
+{% endhighlight %}</pre>
+
+  <p>
+    To import modules relative to the parent file,
+    use this syntax:
+  </p>
+
+<pre>{% highlight 'css' %}
+@import './custom-buttons';
+{% endhighlight %}</pre>
+
+  <p>
+    Import variables last.
+    Just as with other CSS declarations,
+    whatever is last in the source code is used.
+  </p>
+
+<pre>{% highlight 'css' %}
+@import 'basscss-utility-layout';
+@import './variables';
+{% endhighlight %}</pre>
+
+  <p>
+    To use variables in declarations, follow this CSS syntax:
+  </p>
+
+<pre>{% highlight 'css' %}
+.button-primary {
+  background-color: var(--blue);
 }
 {% endhighlight %}</pre>
-  <p>To use variables as property values, follow this syntax:</p>
-<pre class="Example_code mb2">{% highlight 'css' %}
-.button-red {
-  color: white;
-  background-color: var(--red);
-}
-{% endhighlight %}</pre>
-  <p>To set an inline fallback value, place it after the variable name separated by a comma.</p>
-<pre class="Example_code mb2">{% highlight 'css' %}
-.button-red {
-  color: white;
-  background-color: var(--red, #f00);
-}
-{% endhighlight %}</pre>
-  <p>See <a href="http://github.com/reworkcss/rework-vars">Rework Vars</a> for more details on usage.</p>
-  <h2>Custom Media Queries</h2>
-  <p>
-    To adjust breakpoints for the default media queries,
-    set custom media queries after the imports.
-    See <a href="http://github.com/reworkcss/rework-custom-media">Rework Custom Media</a> for more details on usage.
-  </p>
-<pre class="Example_code mb2">
-{% highlight 'css' %}
-@import "basscss-base";
-@import "basscss-utilities";
 
-@custom-media --breakpoint-sm (min-width: 32em);
+  <p>
+    For more, see the <a href="/docs/rework">Using Rework</a> page.
+  </p>
+</section>
+
+<section id="bower" class="py2">
+  <h1>Bower</h1>
+  <p>
+    Although Basscss’s individual modules are distributed through NPM,
+    the core package is available through Bower,
+    which contains the compiled CSS as well as the standard set of modules as Sass partials.
+  </p>
+  <p>
+    To get started, install the package:
+  </p>
+<pre>{% highlight 'bash' %}
+bower install basscss
 {% endhighlight %}</pre>
 </section>
+
+<section id="sass" class="py2">
+  <h1>Sass</h1>
+  <p>
+    The core package includes the standard modules as Sass partials in the <code>scss</code> folder.
+    Import individual modules in your own file as needed,
+    with the default variables file first.
+  </p>
+
+<pre>{% highlight 'scss' %}
+@import: 'basscss/scss/defaults';
+@import: 'basscss/scss/utility-layout';
+{% endhighlight %}</pre>
+
+  <p>
+    To override the default values,
+    include your own variable definitions before Basscss.
+  </p>
+
+<pre>{% highlight 'scss' %}
+// Custom variables
+@import: 'variables';
+
+// Basscss
+@import: 'basscss/scss/defaults';
+@import: 'basscss/scss/utility-layout';
+{% endhighlight %}</pre>
+
+  <h2>Sass with Bower</h2>
+  <p>
+    If you’re using Bower and node-sass in your build process,
+    add <code>bower_components/basscss/scss</code> to the <code>includePaths</code> option.
+  </p>
+
+<pre>{% highlight 'js' %}
+var options = {
+  includePaths: ['bower_components/']
+}
+{% endhighlight %}</pre>
+
+  <p>
+    This will allow you to import modules without specifying the folder in your own Sass files.
+  </p>
+
+<pre>{% highlight 'scss' %}
+@import "basscss/scss/defaults";
+@import "basscss/scss/base-reset";
+@import "basscss/scss/base-typography";
+{% endhighlight %}</pre>
+</section>
+
+<section id="web-tool" class="py2">
+  <h1>Web App</h1>
+  <p>
+    If you’re not ready to dive into the command line,
+    you can create custom builds of Basscss with the
+    <a href="/docs/customize">Customize</a>
+    web tool.
+  </p>
+</section>
+
 
 {% endblock %}
 
