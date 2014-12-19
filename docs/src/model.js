@@ -84,7 +84,6 @@ module.exports = function() {
       title: 'Color',
       description: '',
       link: '/docs/color',
-      previous_page: 'layout',
       sections: [
         { title: 'Colors', link: '/docs/color/#colors' },
         { title: 'Backgrounds', link: '/docs/color/#backgrounds' },
@@ -167,9 +166,34 @@ module.exports = function() {
   };
 
   data.references =  {
-    principles: { title: 'Design Principles', link: '/docs/principles' },
+    principles: {
+      title: 'Design Principles', link: '/docs/principles',
+      sections: [
+        { title: 'Principles', link: '/docs/principles/#principles' },
+        { title: 'Organization', link: '/docs/principles/#organization' },
+        { title: 'Naming Conventions', link: '/docs/principles/#naming-conventions' },
+      ]
+    },
     showcase: { title: 'Built with Basscss', link: '/docs/showcase' },
-    rework: { title: 'Using Rework', link: '/docs/rework' },
+    customBuilds: {
+      title: 'Custom Builds', link: '/docs/custom-builds',
+      sections: [
+        { title: 'Rework', link: '/docs/custom-builds/#rework' },
+        { title: 'Rework Syntax', link: '/docs/custom-builds/#rework-syntax' },
+        { title: 'Sass', link: '/docs/custom-builds/#sass' },
+        { title: 'Web App', link: '/docs/custom-builds/#web-app' }
+      ]
+    },
+    customize: { title: 'Customize', link: '/docs/customize' },
+    rework: {
+      title: 'Using Rework', link: '/docs/rework',
+      sections: [
+        { title: 'Imports', link: '/docs/rework/#imports' },
+        { title: 'Variables', link: '/docs/rework/#variables' },
+        { title: 'Custom Media Queries', link: '/docs/rework/#custom-media-queries' },
+        { title: 'Custom Builds', link: '/docs/rework/#custom-builds' },
+      ]
+    },
     modules: { title: 'Modules', link: '/docs/modules' },
     styles: { title: 'Table of Styles', link: '/docs/styles' },
     stats: { title: 'Stats', link: '/docs/stats' },
