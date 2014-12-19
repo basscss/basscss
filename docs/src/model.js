@@ -167,7 +167,14 @@ module.exports = function() {
   };
 
   data.references =  {
-    principles: { title: 'Design Principles', link: '/docs/principles' },
+    principles: {
+      title: 'Design Principles', link: '/docs/principles',
+      sections: [
+        { title: 'Principles', link: '/docs/principles/#principles' },
+        { title: 'Organization', link: '/docs/principles/#organization' },
+        { title: 'Naming Conventions', link: '/docs/principles/#naming-conventions' },
+      ]
+    },
     showcase: { title: 'Built with Basscss', link: '/docs/showcase' },
     customBuilds: {
       title: 'Custom Builds', link: '/docs/custom-builds',
@@ -179,7 +186,15 @@ module.exports = function() {
       ]
     },
     customize: { title: 'Customize', link: '/docs/customize' },
-    rework: { title: 'Using Rework', link: '/docs/rework' },
+    rework: {
+      title: 'Using Rework', link: '/docs/rework',
+      sections: [
+        { title: 'Imports', link: '/docs/rework/#imports' },
+        { title: 'Variables', link: '/docs/rework/#variables' },
+        { title: 'Custom Media Queries', link: '/docs/rework/#custom-media-queries' },
+        { title: 'Custom Builds', link: '/docs/rework/#custom-builds' },
+      ]
+    },
     modules: { title: 'Modules', link: '/docs/modules' },
     styles: { title: 'Table of Styles', link: '/docs/styles' },
     stats: { title: 'Stats', link: '/docs/stats' },

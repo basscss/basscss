@@ -13,9 +13,8 @@
   </p>
 </section>
 
-<section class="py2">
-  <h1>Rework Syntax</h1>
-  <h2>Imports</h2>
+<section id="imports" class="py2">
+  <h1>Imports</h1>
   <p>Create a source CSS file to import the Basscss modules.</p>
 <pre class="Example_code mb2">
 {% highlight 'css' %}
@@ -32,10 +31,14 @@
 @import "basscss-utilities";
 @import "./buttons.css";
 {% endhighlight %}</pre>
-  <h2>Variables</h2>
+</section>
+
+<section id="variables" class="py2">
+  <h1>Variables</h1>
   <p>
     Set CSS variables after the imports to alter Basscss’s default values.
   </p>
+
 <pre class="Example_code mb2">
 {% highlight 'css' %}
 @import "basscss-base";
@@ -45,27 +48,38 @@
   --font-family: Georgia, serif;
 }
 {% endhighlight %}</pre>
+
   <p>To use variables as property values, follow this syntax:</p>
+
 <pre class="Example_code mb2">{% highlight 'css' %}
 .button-red {
   color: white;
   background-color: var(--red);
 }
 {% endhighlight %}</pre>
+
   <p>To set an inline fallback value, place it after the variable name separated by a comma.</p>
+
 <pre class="Example_code mb2">{% highlight 'css' %}
 .button-red {
   color: white;
   background-color: var(--red, #f00);
 }
 {% endhighlight %}</pre>
-  <p>See <a href="http://github.com/reworkcss/rework-vars">Rework Vars</a> for more details on usage.</p>
-  <h2>Custom Media Queries</h2>
+
+  <p>
+    See <a href="http://github.com/reworkcss/rework-vars">Rework Vars</a> for more details on usage.
+  </p>
+</section>
+
+<section id="custom-media-queries" class="py2">
+  <h1>Custom Media Queries</h1>
   <p>
     To adjust breakpoints for the default media queries,
     set custom media queries after the imports.
     See <a href="http://github.com/reworkcss/rework-custom-media">Rework Custom Media</a> for more details on usage.
   </p>
+
 <pre class="Example_code mb2">
 {% highlight 'css' %}
 @import "basscss-base";
@@ -73,9 +87,10 @@
 
 @custom-media --breakpoint-sm (min-width: 32em);
 {% endhighlight %}</pre>
+
 </section>
 
-<section class="py2">
+<section id="custom-builds" class="py2">
   <h1>Custom Builds</h1>
   <p>
     To learn more about creating custom builds of Basscss,
