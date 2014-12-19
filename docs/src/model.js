@@ -84,7 +84,6 @@ module.exports = function() {
       title: 'Color',
       description: '',
       link: '/docs/color',
-      previous_page: 'layout',
       sections: [
         { title: 'Colors', link: '/docs/color/#colors' },
         { title: 'Backgrounds', link: '/docs/color/#backgrounds' },

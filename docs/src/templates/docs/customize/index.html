@@ -13,7 +13,8 @@
 
 {% raw %}
 <div ng-app="app" class="px2">
-  <div custom-css class="md-flex flex-stretch mxn2">
+  <div custom-css class="md-flex flex-stretch mxn2"
+    ng-init="options = { header: '/*\n  Basscss Custom Build\n  http://basscss.com\n*/'}">
     <div class="md-col-8 px2 py3">
       <section class="mb3" custom-css-collection src="modules.json">
         <div class="sm-flex flex-center mb2">

@@ -44,6 +44,7 @@
   },
   "homepage": "https://github.com/jxnblk/basscss",
   "devDependencies": {
+    "angular-local-storage": "^0.1.5",
     "basscss-background-images": "latest",
     "basscss-utility-headings": "latest",
     "brfs": "^1.2.0",
@@ -51,7 +52,7 @@
     "css": "^2.1.0",
     "css-scss": "0.0.5",
     "css-statistics": "0.0.21",
-    "custom-css": "0.0.6",
+    "custom-css": "0.0.7",
     "flex-object": "0.0.4",
     "gulp": "^3.8.8",
     "gulp-basswork": "latest",
