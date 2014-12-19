@@ -10,6 +10,13 @@ var app = angular.module('app', ['custom-css', 'LocalStorageModule']);
 app.directive('cssModule', require('./module'));
 app.directive('variableField', require('./variable-field'));
 
+app.controller('AppCtrl', function($scope) {
+  $scope.options = {
+    header: '/*\n  Basscss Custom Build\n  http://basscss.com\n*/'
+  };
+});
+
+
 },{"./module":2,"./variable-field":3,"angular-local-storage":4,"custom-css":5}],2:[function(require,module,exports){
 
 
