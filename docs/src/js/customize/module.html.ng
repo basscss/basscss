@@ -1,0 +1,10 @@
+<label class="button block button-nav-light"
+  ng-class="{'bg-light-blue': module.isActive }">
+  <div class="sm-flex flex-baseline mxn2">
+    <input type="checkbox" ng-model="module.isActive" ng-change="build()">
+
+    <div class="h3 bold sm-col-4 px1">{{ module.name }}</div>
+    <div class="flex-auto sm-col-7 px1 h5 regular">{{ module.description }}</div>
+    <div class="h6 px1">v{{ module.version }}</div>
+  </div>
+</label>

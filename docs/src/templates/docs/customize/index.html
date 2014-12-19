@@ -1,0 +1,101 @@
+{% set page = {} %}
+{% set page.title = 'Customize' %}
+{% set isdocs = true %}
+{% extends 'layouts/minimal.html' %}
+
+{% block content %}
+
+<div class="px2">
+  {% include 'partials/docs-nav.html' %}
+  <p class="h3">
+    Create custom builds without touching the command line.
+  </p>
+</div>
+
+{% raw %}
+<div ng-app="app" class="px2">
+  <div custom-css class="md-flex flex-stretch mxn2">
+    <div class="md-col-8 px2 py3">
+      <section class="mb3" custom-css-collection src="modules.json">
+        <div class="sm-flex flex-center mb2">
+          <h2 class="flex-auto m0 py1">Standard Modules </h2>
+          <a href class="h6 ml2 mr2 button xbutton-small button-gray" ng-click="deselectAll(modules)">Deselect All</a>
+          <a href class="h6 button xbutton-small button-gray" ng-click="selectAll(modules)">Select All</a>
+        </div>
+        <form>
+          <ol class="list-reset border-top">
+            <li ng-repeat="module in modules"
+              class="border-bottom">
+              <div css-module></div>
+            </li>
+          </ol>
+        </form>
+      </section>
+      <section class="py3" custom-css-collection src="optionals.json">
+        <h2>Optional Modules</h2>
+        <form>
+          <ol class="list-reset border-top">
+            <li ng-repeat="module in modules"
+              class="border-bottom">
+              <div css-module></div>
+            </li>
+          </ol>
+        </form>
+      </section>
+      <section class="py3" custom-css-collection src="variables.json" variables="true">
+        <h2>Variables</h2>
+        <form>
+          <ol class="list-reset sm-flex flex-wrap mxn2">
+            <li class="border-box sm-col-6 lg-col-4 px2" ng-repeat="variable in variables">
+              <div variable-field></div>
+            </li>
+          </ol>
+        </form>
+      </section>
+    </div>
+    <div class="flex flex-column md-col-4 px2 py3">
+      <div class="sm-flex flex-center mb2">
+        <div class="flex-auto py1">
+          <h2 class="m0">Compiled CSS ({{ fileSize | filesize }})</h2>
+        </div>
+        <a class="flex-none button button-blue"
+          ng-href="{{ downloadURL }}"
+          download="basscss-custom.css">
+            Download
+        </a>
+      </div>
+      <textarea class="flex-grow full-width bg-dark-gray field-dark monospace" style="min-height:80vh">{{ compiled }}</textarea>
+      <div class="mb2">
+        <a class="flex-none button button-blue"
+          ng-href="{{ downloadURL }}"
+          download="basscss-custom.css">
+            Download
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="py3 border-bottom">
+    <p class="h5">
+      This tool only scratches the surface of what’s possible with Basscss’s modular architecture.
+      To learn more about custom builds from the command line, see
+      <a href="/docs/custom-builds">Custom Builds</a>.
+    </p>
+    <p class="h5">
+      Note: vendor prefixes are not included in the compiled CSS.
+      Use a tool like Autoprefixer if you need vendor prefixes.
+    </p>
+  </div>
+</div>
+
+
+{% endraw %}
+
+<div class="px2">
+  {% include 'partials/footer.html' %}
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+<script src="app.js"></script>
+
+{% endblock %}
+

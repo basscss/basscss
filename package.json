@@ -44,13 +44,18 @@
   },
   "homepage": "https://github.com/jxnblk/basscss",
   "devDependencies": {
+    "basscss-background-images": "latest",
+    "basscss-utility-headings": "latest",
+    "brfs": "^1.2.0",
     "cheerio": "^0.17.0",
     "css": "^2.1.0",
     "css-scss": "0.0.5",
     "css-statistics": "0.0.21",
+    "custom-css": "0.0.6",
     "flex-object": "0.0.4",
     "gulp": "^3.8.8",
     "gulp-basswork": "latest",
+    "gulp-browserify": "^0.5.0",
     "gulp-bump": "^0.1.11",
     "gulp-gzip": "0.0.8",
     "gulp-header": "^1.1.1",
@@ -68,11 +73,43 @@
     "rework": "^1.0.1",
     "rework-npm": "^1.0.0",
     "svg-to-png": "^0.6.0",
-    "swig-highlight": "^0.2.0",
-    "basscss-utility-headings": "latest",
-    "basscss-background-images": "latest"
+    "swig-highlight": "^0.2.0"
   },
   "scripts": {
     "start": "gulp"
+  },
+  "css": {
+    "modules": [
+      "basscss-base-reset",
+      "basscss-base-typography",
+      "basscss-base-forms",
+      "basscss-base-buttons",
+      "basscss-base-tables",
+      "basscss-utility-layout",
+      "basscss-utility-typography",
+      "basscss-utility-white-space",
+      "basscss-utility-responsive-states",
+      "basscss-ui-utility-button-sizes",
+      "basscss-ui-utility-groups",
+      "basscss-ui-utility-disclosure-states",
+      "basscss-positions",
+      "basscss-grid",
+      "basscss-table-object",
+      "basscss-color-base",
+      "basscss-color-forms",
+      "basscss-color-forms-dark",
+      "basscss-color-tables",
+      "basscss-color-buttons",
+      "basscss-colors",
+      "basscss-color-borders"
+    ],
+    "variables": [
+      "basscss-defaults"
+    ],
+    "optionalModules": [
+      "flex-object",
+      "basscss-utility-headings",
+      "basscss-background-images"
+    ]
   }
 }

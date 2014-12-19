@@ -39,8 +39,14 @@ gulp.task('images', require('./tasks/images'));
 // Upload Showcase images to S3
 gulp.task('s3-images', require('./tasks/s3-images'));
 
+// Create data json file for custom-css
+gulp.task('customizer-data', require('./tasks/customizer-data'));
+
+// Compile JS for customizer
+gulp.task('customizer-js', require('./tasks/customizer-js'));
+
 // Site development
-gulp.task('dev', ['watch-templates', 'watch-css', 'serve']);
+gulp.task('dev', ['watch-templates', 'watch-css', 'watch-js', 'serve']);
 
 // Watch for changes
 gulp.task('watch-css', ['basswork', 'site-basswork'], function() {
@@ -54,4 +60,6 @@ gulp.task('watch-templates', ['swig'], function() {
     ], ['swig']);
 });
 
-
+gulp.task('watch-js', ['customizer-js'], function() {
+  gulp.watch(['./docs/src/js/**/*'], ['customizer-js']);
+});
