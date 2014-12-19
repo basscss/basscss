@@ -1,7 +1,7 @@
-{% set page = {} %}
-{% set page.title = 'Custom Builds' %}
-{% set isdocs = true %}
 {% extends 'layouts/docs.html' %}
+{% set page = references.customBuilds %}
+{% set isdocs = true %}
+{% set megafooter = true %}
 
 {% block content %}
 
@@ -11,7 +11,7 @@
     and can be used in conjunction with many other frameworks, libraries, and stylesheets.
     While the source code is written in spec-based CSS,
     it can also be incorporated into Sass projects through NPM or Bower,
-    or customized with the <a href="/docs/customize">web-based tool</a>.
+    or customized with the <a href="/docs/customize">Customize</a> web app.
   </p>
 </section>
 
@@ -110,17 +110,6 @@ gulp
 
 <section id="bower" class="py2">
   <h1>Bower</h1>
-  <p>
-    Although Basscss’s individual modules are distributed through NPM,
-    the core package is available through Bower,
-    which contains the compiled CSS as well as the standard set of modules as Sass partials.
-  </p>
-  <p>
-    To get started, install the package:
-  </p>
-<pre>{% highlight 'bash' %}
-bower install basscss
-{% endhighlight %}</pre>
 </section>
 
 <section id="sass" class="py2">
@@ -152,7 +141,18 @@ bower install basscss
 
   <h2>Sass with Bower</h2>
   <p>
-    If you’re using Bower and node-sass in your build process,
+    Although Basscss’s individual modules are distributed through NPM,
+    the core package is available through Bower,
+    which contains the compiled CSS as well as the standard set of modules as Sass partials.
+  </p>
+  <p>
+    To get started, install the package:
+  </p>
+<pre>{% highlight 'bash' %}
+bower install basscss
+{% endhighlight %}</pre>
+  <p>
+    To import modules without specifying the Bower folder,
     add <code>bower_components/basscss/scss</code> to the <code>includePaths</code> option.
   </p>
 
@@ -162,10 +162,6 @@ var options = {
 }
 {% endhighlight %}</pre>
 
-  <p>
-    This will allow you to import modules without specifying the folder in your own Sass files.
-  </p>
-
 <pre>{% highlight 'scss' %}
 @import "basscss/scss/defaults";
 @import "basscss/scss/base-reset";
@@ -173,14 +169,13 @@ var options = {
 {% endhighlight %}</pre>
 </section>
 
-<section id="web-tool" class="py2">
+<section id="web-app" class="py2">
   <h1>Web App</h1>
   <p>
     If you’re not ready to dive into the command line,
-    you can create custom builds of Basscss with the
-    <a href="/docs/customize">Customize</a>
-    web tool.
+    you can create custom builds of Basscss with the web app.
   </p>
+  <a href="/docs/customize" class="button button-blue-outline">Customize</a>
 </section>
 
 

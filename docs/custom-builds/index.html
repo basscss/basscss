@@ -43,7 +43,7 @@
     and can be used in conjunction with many other frameworks, libraries, and stylesheets.
     While the source code is written in spec-based CSS,
     it can also be incorporated into Sass projects through NPM or Bower,
-    or customized with the <a href="/docs/customize">web-based tool</a>.
+    or customized with the <a href="/docs/customize">Customize</a> web app.
   </p>
 </section>
 
@@ -132,15 +132,6 @@ gulp</code></pre>
 
 <section id="bower" class="py2">
   <h1>Bower</h1>
-  <p>
-    Although Basscss’s individual modules are distributed through NPM,
-    the core package is available through Bower,
-    which contains the compiled CSS as well as the standard set of modules as Sass partials.
-  </p>
-  <p>
-    To get started, install the package:
-  </p>
-<pre><code class="hljs bash">bower install basscss</code></pre>
 </section>
 
 <section id="sass" class="py2">
@@ -168,7 +159,16 @@ gulp</code></pre>
 
   <h2>Sass with Bower</h2>
   <p>
-    If you’re using Bower and node-sass in your build process,
+    Although Basscss’s individual modules are distributed through NPM,
+    the core package is available through Bower,
+    which contains the compiled CSS as well as the standard set of modules as Sass partials.
+  </p>
+  <p>
+    To get started, install the package:
+  </p>
+<pre><code class="hljs bash">bower install basscss</code></pre>
+  <p>
+    To import modules without specifying the Bower folder,
     add <code>bower_components/basscss/scss</code> to the <code>includePaths</code> option.
   </p>
 
@@ -176,23 +176,18 @@ gulp</code></pre>
   includePaths: [<span class="hljs-string">'bower_components/'</span>]
 }</code></pre>
 
-  <p>
-    This will allow you to import modules without specifying the folder in your own Sass files.
-  </p>
-
 <pre><code class="hljs scss"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss/scss/defaults"</span>;</span>
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss/scss/base-reset"</span>;</span>
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss/scss/base-typography"</span>;</span></code></pre>
 </section>
 
-<section id="web-tool" class="py2">
+<section id="web-app" class="py2">
   <h1>Web App</h1>
   <p>
     If you’re not ready to dive into the command line,
-    you can create custom builds of Basscss with the
-    <a href="/docs/customize">Customize</a>
-    web tool.
+    you can create custom builds of Basscss with the web app.
   </p>
+  <a href="/docs/customize" class="button button-blue-outline">Customize</a>
 </section>
 
 
@@ -202,12 +197,86 @@ gulp</code></pre>
 
   </div>
 
-  <div class="sticky top-0 px2 py2 sm-col sm-col-3 sm-show">
-    
+  
+    <div class="sticky top-0 px2 py2 sm-col sm-col-3 sm-show">
+      
+  <a href="/docs/custom-builds/#rework" class="button button-nav-light block">Rework</a>
+  
 
+  <a href="/docs/custom-builds/#rework-syntax" class="button button-nav-light block">Rework Syntax</a>
+  
+
+  <a href="/docs/custom-builds/#sass" class="button button-nav-light block">Sass</a>
+  
+
+  <a href="/docs/custom-builds/#web-app" class="button button-nav-light block">Web App</a>
+  
+
+
+    </div>
+  
+
+</div>
+
+
+  <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+<div id="docs-footer" class="flex flex-wrap mxn2">
+
+  <div class="col-6 sm-col-3 mb1">
+    <h2 class="h5 px2 mt0">Usage</h2>
+    
+      <a href="/docs/getting-started" class="h5 button block button-nav-light">Getting Started</a>
+    
+      <a href="/docs/base" class="h5 button block button-nav-light">Base</a>
+    
+      <a href="/docs/utility" class="h5 button block button-nav-light">Utility</a>
+    
+      <a href="/docs/layout" class="h5 button block button-nav-light">Layout</a>
+    
+      <a href="/docs/color" class="h5 button block button-nav-light">Color</a>
+    
+  </div>
+
+  <div class="col-6 sm-col-3 mb1">
+    <h2 class="h5 px2 mt0">Guides</h2>
+    
+      <a href="/docs/guides/basics" class="h5 button block button-nav-light">Basics</a>
+    
+      <a href="/docs/guides/layout" class="h5 button block button-nav-light">Page Layout</a>
+    
+      <a href="/docs/guides/ui" class="h5 button block button-nav-light">UI Elements</a>
+    
+      <a href="/docs/guides/tips" class="h5 button block button-nav-light">Tips &amp; Tricks</a>
+    
+  </div>
+
+  <div class="flex-auto sm-col-6 mb1">
+    <h2 class="h5 px2 mt0">Reference</h2>
+    <div class="flex flex-wrap">
+      
+        <a href="/docs/principles" class="h5 button block col-6 button-nav-light">Design Principles</a>
+      
+        <a href="/docs/showcase" class="h5 button block col-6 button-nav-light">Built with Basscss</a>
+      
+        <a href="/docs/custom-builds" class="h5 button block col-6 button-nav-light">Custom Builds</a>
+      
+        <a href="/docs/customize" class="h5 button block col-6 button-nav-light">Customize</a>
+      
+        <a href="/docs/rework" class="h5 button block col-6 button-nav-light">Using Rework</a>
+      
+        <a href="/docs/modules" class="h5 button block col-6 button-nav-light">Modules</a>
+      
+        <a href="/docs/styles" class="h5 button block col-6 button-nav-light">Table of Styles</a>
+      
+        <a href="/docs/stats" class="h5 button block col-6 button-nav-light">Stats</a>
+      
+        <a href="/docs/variables" class="h5 button block col-6 button-nav-light">Variables</a>
+      
+    </div>
   </div>
 
 </div>
+
 
 <footer class="py4">
   <div class="flex flex-wrap flex-center mxn1">

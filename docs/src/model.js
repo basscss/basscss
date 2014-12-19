@@ -169,6 +169,16 @@ module.exports = function() {
   data.references =  {
     principles: { title: 'Design Principles', link: '/docs/principles' },
     showcase: { title: 'Built with Basscss', link: '/docs/showcase' },
+    customBuilds: {
+      title: 'Custom Builds', link: '/docs/custom-builds',
+      sections: [
+        { title: 'Rework', link: '/docs/custom-builds/#rework' },
+        { title: 'Rework Syntax', link: '/docs/custom-builds/#rework-syntax' },
+        { title: 'Sass', link: '/docs/custom-builds/#sass' },
+        { title: 'Web App', link: '/docs/custom-builds/#web-app' }
+      ]
+    },
+    customize: { title: 'Customize', link: '/docs/customize' },
     rework: { title: 'Using Rework', link: '/docs/rework' },
     modules: { title: 'Modules', link: '/docs/modules' },
     styles: { title: 'Table of Styles', link: '/docs/styles' },
