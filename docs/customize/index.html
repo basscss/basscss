@@ -18,7 +18,7 @@
 
 
 
-<div class="px3">
+<div class="px2">
   <header class="py3 mb3 border-bottom">
   <div class="avenir h5 caps bold mt2 mxn1">
     <a href="/" class="button button-narrow">Basscss</a>
@@ -27,27 +27,25 @@
     
     
   </div>
-  <h1 class="avenir h0 h0-responsive caps m0">Customizer</h1>
+  <h1 class="avenir h0 h0-responsive caps m0">Customize</h1>
 </header>
-
 
 
 
   <p class="h3">
     Create custom builds without touching the command line.
   </p>
-
 </div>
 
 
-<div ng-app="app" class="border-bottom">
-  <div custom-css class="md-flex flex-stretch">
-    <div class="md-col-8 px3 py3">
+<div ng-app="app" class="px2">
+  <div custom-css class="md-flex flex-stretch mxn2">
+    <div class="md-col-8 px2 py3">
       <section class="mb3" custom-css-collection src="modules.json">
         <div class="sm-flex flex-center mb2">
           <h2 class="flex-auto m0 py1">Standard Modules </h2>
-          <a href class="h5 ml2 mr2 button-nav-light" ng-click="deselectAll(modules)">Deselect All</a>
-          <a href class="h5 button-nav-light" ng-click="selectAll(modules)">Select All</a>
+          <a href class="h6 ml2 mr2 button xbutton-small button-gray" ng-click="deselectAll(modules)">Deselect All</a>
+          <a href class="h6 button xbutton-small button-gray" ng-click="selectAll(modules)">Select All</a>
         </div>
         <form>
           <ol class="list-reset border-top">
@@ -80,7 +78,7 @@
         </form>
       </section>
     </div>
-    <div class="flex flex-column md-col-4 px3 py3">
+    <div class="flex flex-column md-col-4 px2 py3">
       <div class="sm-flex flex-center mb2">
         <div class="flex-auto py1">
           <h2 class="m0">Compiled CSS ({{ fileSize | filesize }})</h2>
@@ -101,11 +99,23 @@
       </div>
     </div>
   </div>
+  <div class="py3 border-bottom">
+    <p class="h5">
+      This tool only scratches the surface of what’s possible with Basscss’s modular architecture.
+      To learn more about custom builds from the command line, see
+      <a href="/docs/custom-builds">Custom Builds</a>.
+    </p>
+    <p class="h5">
+      Note: vendor prefixes are not included in the compiled CSS.
+      Use a tool like Autoprefixer if you need vendor prefixes.
+    </p>
+  </div>
 </div>
 
 
 
-<div class="px3 xbg-dark-gray">
+
+<div class="px2">
   <footer class="py4">
   <div class="flex flex-wrap flex-center">
     <div class="flex-none nowrap py2 mr2">

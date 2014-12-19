@@ -1,28 +1,26 @@
 {% set page = {} %}
-{% set page.title = 'Customizer' %}
+{% set page.title = 'Customize' %}
 {% set isdocs = true %}
 {% extends 'layouts/minimal.html' %}
 
 {% block content %}
 
-<div class="px3">
+<div class="px2">
   {% include 'partials/docs-nav.html' %}
-
   <p class="h3">
     Create custom builds without touching the command line.
   </p>
-
 </div>
 
 {% raw %}
-<div ng-app="app" class="border-bottom">
-  <div custom-css class="md-flex flex-stretch">
-    <div class="md-col-8 px3 py3">
+<div ng-app="app" class="px2">
+  <div custom-css class="md-flex flex-stretch mxn2">
+    <div class="md-col-8 px2 py3">
       <section class="mb3" custom-css-collection src="modules.json">
         <div class="sm-flex flex-center mb2">
           <h2 class="flex-auto m0 py1">Standard Modules </h2>
-          <a href class="h5 ml2 mr2 button-nav-light" ng-click="deselectAll(modules)">Deselect All</a>
-          <a href class="h5 button-nav-light" ng-click="selectAll(modules)">Select All</a>
+          <a href class="h6 ml2 mr2 button xbutton-small button-gray" ng-click="deselectAll(modules)">Deselect All</a>
+          <a href class="h6 button xbutton-small button-gray" ng-click="selectAll(modules)">Select All</a>
         </div>
         <form>
           <ol class="list-reset border-top">
@@ -55,7 +53,7 @@
         </form>
       </section>
     </div>
-    <div class="flex flex-column md-col-4 px3 py3">
+    <div class="flex flex-column md-col-4 px2 py3">
       <div class="sm-flex flex-center mb2">
         <div class="flex-auto py1">
           <h2 class="m0">Compiled CSS ({{ fileSize | filesize }})</h2>
@@ -76,11 +74,23 @@
       </div>
     </div>
   </div>
+  <div class="py3 border-bottom">
+    <p class="h5">
+      This tool only scratches the surface of what’s possible with Basscss’s modular architecture.
+      To learn more about custom builds from the command line, see
+      <a href="/docs/custom-builds">Custom Builds</a>.
+    </p>
+    <p class="h5">
+      Note: vendor prefixes are not included in the compiled CSS.
+      Use a tool like Autoprefixer if you need vendor prefixes.
+    </p>
+  </div>
 </div>
+
 
 {% endraw %}
 
-<div class="px3 xbg-dark-gray">
+<div class="px2">
   {% include 'partials/footer.html' %}
 </div>
 

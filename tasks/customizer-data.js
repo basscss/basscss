@@ -9,9 +9,9 @@ module.exports = function() {
   var optionals = cssdata(p.css.optionalModules);
   var variables = cssdata(p.css.variables);
 
-  fs.writeFileSync('./docs/customizer/modules.json', JSON.stringify(modules));
-  fs.writeFileSync('./docs/customizer/optionals.json', JSON.stringify(optionals));
-  fs.writeFileSync('./docs/customizer/variables.json', JSON.stringify(variables));
+  fs.writeFileSync('./docs/customize/modules.json', JSON.stringify(modules));
+  fs.writeFileSync('./docs/customize/optionals.json', JSON.stringify(optionals));
+  fs.writeFileSync('./docs/customize/variables.json', JSON.stringify(variables));
 
 };
 
