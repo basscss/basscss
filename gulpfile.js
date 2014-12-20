@@ -18,6 +18,12 @@ gulp.task('s3', require('./tasks/s3'));
 // Convert CSS syntax to SCSS
 gulp.task('sassify', require('./tasks/sassify'));
 
+// Create download packages
+gulp.task('zip', require('./tasks/zip'));
+
+// Build for new release ['bump', 's3', 
+gulp.task('release', ['bump', 's3', 'sassify', 'zip']);
+
 
 // Site-specific tasks
 
@@ -49,8 +55,8 @@ gulp.task('customizer-js', require('./tasks/customizer-js'));
 gulp.task('dev', ['watch-templates', 'watch-css', 'watch-js', 'serve']);
 
 // Watch for changes
-gulp.task('watch-css', ['basswork', 'site-basswork'], function() {
-  gulp.watch(['./src/**/*.css', './docs/src/css/**/*.css'], ['basswork', 'site-basswork']);
+gulp.task('watch-css', ['basswork', 'site-basswork', 'customizer-data'], function() {
+  gulp.watch(['./src/**/*.css', './docs/src/css/**/*.css'], ['basswork', 'site-basswork', 'customizer-data']);
 });
 
 gulp.task('watch-templates', ['swig'], function() {
