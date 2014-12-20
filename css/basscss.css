@@ -154,16 +154,14 @@ input[type=tel],
 input[type=time],
 input[type=url],
 input[type=week] {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   height: 2.25em;
   padding: .25em 1rem;
   -webkit-appearance: none;
 }
 
 select {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   line-height: 1.75;
   padding: .25em 1rem;
 }
@@ -173,8 +171,7 @@ select:not([multiple]) {
 }
 
 textarea {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   line-height: 1.75;
   padding: .25em 1rem;
 }
@@ -200,8 +197,7 @@ button,
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   line-height: 1.125;
   padding: .5em 1rem;
   margin: 0;
@@ -589,9 +585,7 @@ td {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/*
-    Basscss Positions
-*/
+/* Basscss Positions */
 
 .relative {
   position: relative;
@@ -717,11 +711,7 @@ td {
   display: block;
 }
 
-/*
-    Basscss Grid
-*/
-
-
+/* Basscss Grid */
 
 .container {
   max-width: 64em;
@@ -731,14 +721,12 @@ td {
 
 .col {
   float: left;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .col-right {
   float: right;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .col-1 {
@@ -792,14 +780,12 @@ td {
 @media (min-width: 40em) {
   .sm-col {
     float: left;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .sm-col-right {
     float: right;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .sm-col-1 {
@@ -854,14 +840,12 @@ td {
 @media (min-width: 52em) {
   .md-col {
     float: left;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .md-col-right {
     float: right;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .md-col-1 {
@@ -916,14 +900,12 @@ td {
 @media (min-width: 64em) {
   .lg-col {
     float: left;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .lg-col-right {
     float: right;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .lg-col-1 {
@@ -974,6 +956,8 @@ td {
     width: 100%;
   }
 }
+
+
 
 /*
 
