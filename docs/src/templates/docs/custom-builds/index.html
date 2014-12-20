@@ -27,7 +27,7 @@
   <p>
     Rework is a Node-based preprocessor with a plugin architecture and syntax based on the CSS specification.
     Rework requires NPM, and Basscss uses this package management system for its modular architecture.
-    If you prefer using Bower, see the <a href="/docs/custom-builds/#bower">Bower Section</a> below.
+    If you prefer using Bower, see the <a href="/docs/custom-builds/#sass-with-bower">Bower Section</a> below.
   </p>
   <h2>Bassplate</h2>
   <p>
@@ -51,6 +51,7 @@ gulp
   </p>
   <h2>Basswork</h2>
   <p>
+    Basswork is a CSS preprocessor for Basscss built with Rework.
     To set up Basscss in an existing Node-base build system,
     use <a href="//github.com/jxnblk/basswork">Basswork</a>
     or <a href="//github.com/jxnblk/gulp-basswork">Gulp Basswork</a> to compile a set of modules.
@@ -110,10 +111,6 @@ gulp
   </p>
 </section>
 
-<section id="bower" class="py2">
-  <h1>Bower</h1>
-</section>
-
 <section id="sass" class="py2">
   <h1>Sass</h1>
   <p>
@@ -141,7 +138,7 @@ gulp
 @import: 'basscss/scss/utility-layout';
 {% endhighlight %}</pre>
 
-  <h2>Sass with Bower</h2>
+  <h2 id="sass-with-bower">Sass with Bower</h2>
   <p>
     Although Basscss’s individual modules are distributed through NPM,
     the core package is available through Bower,
