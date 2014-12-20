@@ -40,82 +40,13 @@
 <section class="py2">
   <p class="h3">
     Basscss is built with
-    <a href="https://github.com/reworkcss/rework">Rework</a> and
-    <a href="http://gulpjs.com/">Gulp</a>.
+    <a href="https://github.com/reworkcss/rework">Rework</a>.
     Rework is a preprocessor based on the CSS specification and a flexible plugin architecture.
-    Gulp is a Node.js-based build system for front-end development.
   </p>
 </section>
 
-<section class="py2">
-  <h1>Building with Gulp and Rework</h1>
-  <p>
-    To fully leverage Basscss’s modularity and flexibility,
-    use Rework to build your own custom stylesheets.
-  </p>
-  <p>
-    If you don’t have it already,
-    <a href="http://nodejs.org/download/">install Node</a>,
-    which includes NPM.
-    Then, install Gulp globally:
-  </p>
-  <pre class="Example_code">npm install --global gulp</pre>
-  <p>
-    Clone or download Basscss, then cd into the basscss directory.
-  </p>
-  <pre class="Example_code">git clone https://github.com/jxnblk/basscss.git && cd basscss</pre>
-  <p>Install the dependencies for Basscss.</p>
-  <pre class="Example_code">npm install</pre>
-  <p>
-    Duplicate <code>/src/basscss.css</code> to use as a template, make adjustments, then run the following Gulp task from the command line to recompile. This will create uncompressed, minified, and gzipped versions of the file.
-  </p>
-  <pre class="Example_code">gulp basswork</pre>
-  <p>To better understand how this is set up, open up <code>gulpfile.js</code> and take a peek.
-</section>
-
-<section class="py2">
-  <h1>Building with Basswork</h1>
-  <p>
-    Basscss uses
-    <a href="http://github.com/jxnblk/basswork">Basswork</a>
-    , a custom wrapper around Rework, to simplify development. Basswork is also available as a
-    <a href="https://github.com/jxnblk/gulp-basswork">Gulp plugin</a>.
-  </p>
-  <h2>Using Basswork in Node</h2>
-  <p>Install basswork along with any Basscss modules you’d like to use.</p>
-  <div class="Example_code mb2"><code class="hljs bash">npm install --save-dev basswork basscss-base basscss-utilities</code></div>
-  <p>Pass a source CSS string to Basswork, which will return a compiled CSS string.</p>
-  <pre class="Example_code mb2"><code class="hljs js"><span class="hljs-keyword">var</span> basswork = <span class="hljs-built_in">require</span>(<span class="hljs-string">'basswork'</span>);
-<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
-
-<span class="hljs-keyword">var</span> src = fs.readFileSync(<span class="hljs-string">'./src/base.css'</span>, <span class="hljs-string">'utf8'</span>);
-<span class="hljs-keyword">var</span> css = basswork(src);
-fs.writeFileSync(<span class="hljs-string">'./css/base.css'</span>, css);
-</code></pre>
-  <h2>Using Basswork in an Existing Gulp Project</h2>
-  <p>Install gulp-basswork along with any Basscss modules you’d like to use.</p>
-  <div class="Example_code mb2"><code class="hljs bash">npm install --save-dev gulp-basswork basscss-base basscss-utilities</code></div>
-  <p>Create a Gulp task.</p>
-  <pre class="Example_code mb2"><code class="hljs js"><span class="hljs-keyword">var</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp'</span>);
-<span class="hljs-keyword">var</span> rename = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-rename'</span>);
-<span class="hljs-keyword">var</span> mincss = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-minify-css'</span>);
-
-<span class="hljs-keyword">var</span> basswork = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-basswork'</span>);
-
-gulp.task(<span class="hljs-string">'basswork'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
-  gulp.src(<span class="hljs-string">'./src/*.css'</span>)
-    .pipe(basswork())
-    .pipe(gulp.dest(<span class="hljs-string">'./css'</span>))
-    .pipe(mincss())
-    .pipe(rename({ extname: <span class="hljs-string">'.min.css'</span> }))
-    .pipe(gulp.dest(<span class="hljs-string">'./css'</span>))
-});
-</code></pre>
-</section>
-
-<section class="py2">
-  <h1>Rework in Practice</h1>
-  <h2>Imports</h2>
+<section id="imports" class="py2">
+  <h1>Imports</h1>
   <p>Create a source CSS file to import the Basscss modules.</p>
 <pre class="Example_code mb2">
 <code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
@@ -128,10 +59,14 @@ gulp.task(<span class="hljs-string">'basswork'</span>, <span class="hljs-functio
 <code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-utilities"</span></span>;
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"./buttons.css"</span></span>;</code></pre>
-  <h2>Variables</h2>
+</section>
+
+<section id="variables" class="py2">
+  <h1>Variables</h1>
   <p>
     Set CSS variables after the imports to alter Basscss’s default values.
   </p>
+
 <pre class="Example_code mb2">
 <code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-utilities"</span></span>;
@@ -139,28 +74,48 @@ gulp.task(<span class="hljs-string">'basswork'</span>, <span class="hljs-functio
 <span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
   <span class="hljs-rule"><span class="hljs-attribute">--font-family</span>:<span class="hljs-value"> Georgia, serif</span></span>;
 <span class="hljs-rule">}</span></span></code></pre>
+
   <p>To use variables as property values, follow this syntax:</p>
+
 <pre class="Example_code mb2"><code class="hljs css"><span class="hljs-class">.button-red</span> <span class="hljs-rules">{
   <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> white</span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red)</span></span>;
 <span class="hljs-rule">}</span></span></code></pre>
+
   <p>To set an inline fallback value, place it after the variable name separated by a comma.</p>
+
 <pre class="Example_code mb2"><code class="hljs css"><span class="hljs-class">.button-red</span> <span class="hljs-rules">{
   <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> white</span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red, <span class="hljs-hexcolor">#f00</span>)</span></span>;
 <span class="hljs-rule">}</span></span></code></pre>
-  <p>See <a href="http://github.com/reworkcss/rework-vars">Rework Vars</a> for more details on usage.</p>
-  <h2>Custom Media Queries</h2>
+
+  <p>
+    See <a href="http://github.com/reworkcss/rework-vars">Rework Vars</a> for more details on usage.
+  </p>
+</section>
+
+<section id="custom-media-queries" class="py2">
+  <h1>Custom Media Queries</h1>
   <p>
     To adjust breakpoints for the default media queries,
     set custom media queries after the imports.
     See <a href="http://github.com/reworkcss/rework-custom-media">Rework Custom Media</a> for more details on usage.
   </p>
+
 <pre class="Example_code mb2">
 <code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-utilities"</span></span>;
 
 <span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-sm (min-width: <span class="hljs-number">32em</span>)</span>;</code></pre>
+
+</section>
+
+<section id="custom-builds" class="py2">
+  <h1>Custom Builds</h1>
+  <p>
+    To learn more about creating custom builds of Basscss,
+    see <a href="/docs/custom-builds">Custom Builds</a>.
+  </p>
 </section>
 
 
@@ -169,16 +124,87 @@ gulp.task(<span class="hljs-string">'basswork'</span>, <span class="hljs-functio
 
   </div>
 
-  <div class="sticky top-0 px2 py2 sm-col sm-col-3 sm-show">
-    
+  
+    <div class="sticky top-0 px2 py2 sm-col sm-col-3 sm-show">
+      
+  <a href="/docs/rework/#imports" class="button button-nav-light block">Imports</a>
+  
 
-  </div>
+  <a href="/docs/rework/#variables" class="button button-nav-light block">Variables</a>
+  
+
+  <a href="/docs/rework/#custom-media-queries" class="button button-nav-light block">Custom Media Queries</a>
+  
+
+  <a href="/docs/rework/#custom-builds" class="button button-nav-light block">Custom Builds</a>
+  
+
+
+    </div>
+  
 
 </div>
 
+
+  <div id="docs-footer" class="border-top">
+  <div class="flex flex-wrap mt3 mxn2">
+    <div class="col-6 sm-col-3 mb1">
+      <h2 class="h5 px2 mt0">Usage</h2>
+      
+        <a href="/docs/getting-started" class="h5 button block button-nav-light">Getting Started</a>
+      
+        <a href="/docs/base" class="h5 button block button-nav-light">Base</a>
+      
+        <a href="/docs/utility" class="h5 button block button-nav-light">Utility</a>
+      
+        <a href="/docs/layout" class="h5 button block button-nav-light">Layout</a>
+      
+        <a href="/docs/color" class="h5 button block button-nav-light">Color</a>
+      
+    </div>
+    <div class="col-6 sm-col-3 mb1">
+      <h2 class="h5 px2 mt0">Guides</h2>
+      
+        <a href="/docs/guides/basics" class="h5 button block button-nav-light">Basics</a>
+      
+        <a href="/docs/guides/layout" class="h5 button block button-nav-light">Page Layout</a>
+      
+        <a href="/docs/guides/ui" class="h5 button block button-nav-light">UI Elements</a>
+      
+        <a href="/docs/guides/tips" class="h5 button block button-nav-light">Tips &amp; Tricks</a>
+      
+    </div>
+    <div class="flex-auto sm-col-6 mb1">
+      <h2 class="h5 px2 mt0">Reference</h2>
+      <div class="flex flex-wrap">
+        
+          <a href="/docs/principles" class="h5 button block col-6 button-nav-light">Design Principles</a>
+        
+          <a href="/docs/showcase" class="h5 button block col-6 button-nav-light">Built with Basscss</a>
+        
+          <a href="/docs/custom-builds" class="h5 button block col-6 button-nav-light">Custom Builds</a>
+        
+          <a href="/docs/customize" class="h5 button block col-6 button-nav-light">Customize</a>
+        
+          <a href="/docs/rework" class="h5 button block col-6 button-nav-light">Using Rework</a>
+        
+          <a href="/docs/modules" class="h5 button block col-6 button-nav-light">Modules</a>
+        
+          <a href="/docs/styles" class="h5 button block col-6 button-nav-light">Table of Styles</a>
+        
+          <a href="/docs/stats" class="h5 button block col-6 button-nav-light">Stats</a>
+        
+          <a href="/docs/variables" class="h5 button block col-6 button-nav-light">Variables</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <footer class="py4">
-  <div class="flex flex-wrap flex-center">
-    <div class="flex-none nowrap py2 mr2">
+  <div class="flex flex-wrap flex-center mxn1">
+    <div class="flex-none nowrap px1 py2 mr2">
       <a class="button button-blue-outline" href="https://twitter.com/intent/tweet?text=Basscss: Low-Level CSS Toolkit&url=http://basscss.com&via=jxnblk" target="_blank">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
           <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
@@ -194,7 +220,7 @@ gulp.task(<span class="hljs-string">'basswork'</span>, <span class="hljs-functio
     </div>
     <a href="//github.com/jxnblk/basscss" class="button button-narrow button-nav-light">Github</a>
     <div class="flex-grow"></div>
-    <div class="flex-none py2 nowrap">
+    <div class="flex-none px1 py2 nowrap">
       <p class="h5 bold mb0">
         Made with love by
         <a href="//jxnblk.com">Jxnblk</a>

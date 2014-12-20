@@ -1,7 +1,6 @@
-{% set page = {} %}
-{% set page.title = 'Customize' %}
-{% set isdocs = true %}
 {% extends 'layouts/minimal.html' %}
+{% set page = references.customize %}
+{% set isdocs = true %}
 
 {% block content %}
 
@@ -13,7 +12,7 @@
 </div>
 
 {% raw %}
-<div ng-app="app" class="px2">
+<div ng-app="app" class="px2" ng-controller="AppCtrl">
   <div custom-css class="md-flex flex-stretch mxn2">
     <div class="md-col-8 px2 py3">
       <section class="mb3" custom-css-collection src="modules.json">

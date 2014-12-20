@@ -10,7 +10,7 @@
 
 <div class="clearfix mxn2">
 
-  <div class="sm-col sm-col-9 px2 py2">
+  <div class="{% if !fullwidth %}sm-col sm-col-9 {% endif %}px2 py2">
 
     {% block content %}{% endblock %}
 
@@ -21,12 +21,17 @@
 
   </div>
 
-  <div class="sticky top-0 px2 py2 sm-col sm-col-3 sm-show">
-    {% include 'partials/in-page-nav.html' %}
-  </div>
+  {% if !fullwidth %}
+    <div class="sticky top-0 px2 py2 sm-col sm-col-3 sm-show">
+      {% include 'partials/in-page-nav.html' %}
+    </div>
+  {% endif %}
 
 </div>
 
+{% if megafooter %}
+  {% include 'partials/docs-mega-footer.html' %}
+{% endif %}
 {% include 'partials/footer.html' %}
 
 </body>

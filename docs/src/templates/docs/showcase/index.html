@@ -1,11 +1,9 @@
-{% extends 'layouts/default.html' %}
-{% set page = {} %}
-{% set page.title = 'Built with Basscss' %}
+{% extends 'layouts/docs.html' %}
+{% set page = references.showcase %}
 {% set isdocs = true %}
+{% set fullwidth = true %}
 
 {% block content %}
-
-{% include 'partials/docs-nav.html' %}
 
 <div class="flex flex-center mb2">
   <p class="flex-auto h3 m0">
