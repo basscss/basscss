@@ -1,10 +1,10 @@
-{% extends 'layouts/default.html' %}
+{% extends 'layouts/docs.html' %}
 {% set page = {} %}
 {% set page.title = 'Guides' %}
 {% set isdocs = true %}
+{% set fullwidth = true %}
 
 {% block content %}
-{% include 'partials/docs-nav.html' %}
 
 <p class="h3 mb4">
   Guides to help you leverage Basscss to its fullest potential.
@@ -13,7 +13,7 @@
   {% for guide in guides %}
     <div class="sm-col sm-col-6 mb3">
       <a href="{{ guide.link }}" class="h3 button block button-nav-light">
-        <h3 class="h2 m0">{{ guide.title }}</h3>
+        <h3 class="h1 m0">{{ guide.title }}</h3>
         <p class="regular m0">{{ guide.description }}</p>
       </a>
     </div>
@@ -22,8 +22,6 @@
     {% endif %}
   {% endfor %}
 </div>
-
-<hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
 
 {% endblock %}
 

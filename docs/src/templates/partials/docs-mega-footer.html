@@ -1,22 +1,22 @@
 <div id="docs-footer" class="border-top">
   <div class="flex flex-wrap mt3 mxn2">
     <div class="col-6 sm-col-3 mb1">
-      <h2 class="h5 px2 mt0">Usage</h2>
+      <h2 class="h6 caps px2 mt0">Usage</h2>
       {% for page in pages %}
         <a href="{{ page.link }}" class="h5 button block button-nav-light">{{ page.title }}</a>
       {% endfor %}
     </div>
     <div class="col-6 sm-col-3 mb1">
-      <h2 class="h5 px2 mt0">Guides</h2>
+      <h2 class="h6 caps px2 mt0">Guides</h2>
       {% for guide in guides %}
         <a href="{{ guide.link }}" class="h5 button block button-nav-light">{{ guide.title }}</a>
       {% endfor %}
     </div>
     <div class="flex-auto sm-col-6 mb1">
-      <h2 class="h5 px2 mt0">Reference</h2>
+      <h2 class="h6 caps px2 mt0">Reference</h2>
       <div class="flex flex-wrap">
         {% for reference in references %}
-          <a href="{{ reference.link }}" class="h5 button block col-6 button-nav-light">{{ reference.title }}</a>
+          <a href="{{ reference.link }}" class="h5 button block col-6 md-col-4 button-nav-light">{{ reference.title }}</a>
         {% endfor %}
       </div>
     </div>
