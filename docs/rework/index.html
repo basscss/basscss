@@ -48,15 +48,13 @@
 <section id="imports" class="py2">
   <h1>Imports</h1>
   <p>Create a source CSS file to import the Basscss modules.</p>
-<pre class="Example_code mb2">
-<code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
+<pre class="mb2"><code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-utilities"</span></span>;</code></pre>
   <p>
     To import custom files within the same folder, use <code>./</code> to indicate the current folder.
     See <a href="https://github.com/reworkcss/rework-npm">Rework NPM</a> for more details on usage.
   </p>
-<pre class="Example_code mb2">
-<code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
+<pre class="mb2"><code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-utilities"</span></span>;
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"./buttons.css"</span></span>;</code></pre>
 </section>
@@ -67,8 +65,7 @@
     Set CSS variables after the imports to alter Basscss’s default values.
   </p>
 
-<pre class="Example_code mb2">
-<code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
+<pre class="mb2"><code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-utilities"</span></span>;
 
 <span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
@@ -77,14 +74,14 @@
 
   <p>To use variables as property values, follow this syntax:</p>
 
-<pre class="Example_code mb2"><code class="hljs css"><span class="hljs-class">.button-red</span> <span class="hljs-rules">{
+<pre class="mb2"><code class="hljs css"><span class="hljs-class">.button-red</span> <span class="hljs-rules">{
   <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> white</span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red)</span></span>;
 <span class="hljs-rule">}</span></span></code></pre>
 
   <p>To set an inline fallback value, place it after the variable name separated by a comma.</p>
 
-<pre class="Example_code mb2"><code class="hljs css"><span class="hljs-class">.button-red</span> <span class="hljs-rules">{
+<pre class="mb2"><code class="hljs css"><span class="hljs-class">.button-red</span> <span class="hljs-rules">{
   <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> white</span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red, <span class="hljs-hexcolor">#f00</span>)</span></span>;
 <span class="hljs-rule">}</span></span></code></pre>
@@ -102,7 +99,7 @@
     See <a href="http://github.com/reworkcss/rework-custom-media">Rework Custom Media</a> for more details on usage.
   </p>
 
-<pre class="Example_code mb2">
+<pre class="mb2">
 <code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-base"</span></span>;
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss-utilities"</span></span>;
 

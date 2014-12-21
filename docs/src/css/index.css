@@ -48,7 +48,6 @@
 @import "./color/animations";
 @import "./color/highlight";
 
-@import "./components/example";
 
 /* Custom Media Queries */
 @custom-media --breakpoint-sm (min-width: 36em);
