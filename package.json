@@ -52,6 +52,7 @@
     "css": "^2.1.0",
     "css-scss": "0.0.5",
     "css-statistics": "0.0.21",
+    "cssstats": "^1.0.1",
     "custom-css": "0.0.7",
     "flex-object": "0.0.4",
     "gulp": "^3.8.8",

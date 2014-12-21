@@ -1,6 +1,6 @@
 
 var fs = require('fs');
-var cssstats = require('css-statistics');
+var cssstats = require('cssstats');
 var cssdata = require('./css-data');
 var variables = require('./variables');
 var modules = require('./modules');
