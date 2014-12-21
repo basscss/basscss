@@ -207,6 +207,12 @@ module.exports = function() {
       description: 'Part record club. Part music journal.',
       image: 'singlesclub-640.jpg'
     },
+    colepeters: {
+      title: 'Cole Peters',
+      url: 'http://colepeters.com/',
+      description: 'Designer, writer, sound artist',
+      image: 'colepeters.png'
+    },
     assembly_blog: {
       title: 'Assembly Blog',
       url: 'http://blog.assembly.com/',
