@@ -31,12 +31,15 @@ module.exports = function() {
 
   modules.forEach(function(module) {
     var filename = './node_modules/' + module + '/README.md';
+    var data = require('../node_modules/' + module + '/package.json');
     //var title = require('../node_modules/' + module + '/package.json').name;
     var top = '{% extends "layouts/docs.html" %}\n' + 
       '{% set page = {} %}\n' +
       '{% set page.title = "' + module + '" %}\n' +
       '{% set isdocs = true %}\n' +
       '{% set ismodule = true %}\n' +
+      '{% set module = {} %}\n' +
+      '{% set module.version = "' + data.version + '" %}\n' +
       '{% block content %}\n\n';
     var bottom = '\n\n{% endblock %}\n';
     gulp.src(filename)

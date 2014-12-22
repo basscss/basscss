@@ -28,7 +28,12 @@
       / <a href="/docs/modules" class="button button-narrow">Modules</a>
     
   </div>
-  <h1 class="avenir h0 h0-responsive caps m0">basscss-base-typography</h1>
+  
+    <h1 class="avenir h0 m0">
+      basscss-base-typography
+      <span class="h3 caps">v0.0.2</span>
+    </h1>
+  
 </header>
 
 
@@ -41,8 +46,107 @@
     
 
 <h1 id="basscss-base-typography">Basscss Base Typography</h1>
-<p>Base typography styles module for Basscss</p>
-<p><a href="http://basscss.com">http://basscss.com</a></p>
+<p class="hide">Base typography styles module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<h2 id="base-type-scale">Base type scale</h2>
+<p>Typographic elements are normalized to a simple type scale that works well across devices. Default top and bottom margins are set for commonly-used typographic elements.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <h1>Hamburger 1</h1>
+<h2>Hamburger 2</h2>
+<h3>Hamburger 3</h3>
+<h4>Hamburger 4</h4>
+<h5>Hamburger 5</h5>
+<h6>Hamburger 6</h6>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Hamburger 1<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Hamburger 2<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>Hamburger 3<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>Hamburger 4<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>Hamburger 5<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h6</span>&gt;</span>Hamburger 6<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span></pre>
+</div>
+<h2 id="type-scale-utilities">Type scale utilities</h2>
+<p>The <code>.h1</code> – <code>.h6</code> font-size utilities can be used to override an element’s default size.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <p class="h1">Pastrami 1</p>
+<p class="h2">Pastrami 2</p>
+<p class="h3">Pastrami 3</p>
+<p class="h4">Pastrami 4</p>
+<p class="h5">Pastrami 5</p>
+<p class="h6">Pastrami 6</p>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1"</span>&gt;</span>Pastrami 1<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2"</span>&gt;</span>Pastrami 2<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>Pastrami 3<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h4"</span>&gt;</span>Pastrami 4<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5"</span>&gt;</span>Pastrami 5<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h6"</span>&gt;</span>Pastrami 6<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+</div>
+<h2 id="lists">Lists</h2>
+<p>By default, lists have bullets or numbers and padding left.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <ul>
+  <li>Half-Smoke</li>
+  <li>Kielbasa</li>
+  <li>Bologna</li>
+</ul>
+<ol>
+  <li>Prosciutto</li>
+  <li>Andouille</li>
+  <li>Bratwurst</li>
+  <li>Chorizo</li>
+</ol>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Half-Smoke<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Kielbasa<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Bologna<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Prosciutto<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Andouille<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Bratwurst<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Chorizo<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span></pre>
+</div>
+<p>To remove default list styling, use <code>.list-reset</code>.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <ul class="list-reset">
+  <li>List Reset</li>
+  <li>Removes bullets</li>
+  <li>Removes numbers</li>
+  <li>Removes padding</li>
+</ul>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-reset"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>List Reset<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Removes bullets<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Removes numbers<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Removes padding<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></pre>
+</div>
+<p>To set lists inline, use utilities.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <ul class="list-reset">
+  <li class="inline-block mr1">Half-Smoke</li>
+  <li class="inline-block mr1">Kielbasa</li>
+  <li class="inline-block mr1">Bologna</li>
+  <li class="inline-block mr1">Prosciutto</li>
+</ul>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-reset"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block mr1"</span>&gt;</span>Half-Smoke<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block mr1"</span>&gt;</span>Kielbasa<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block mr1"</span>&gt;</span>Bologna<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inline-block mr1"</span>&gt;</span>Prosciutto<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></pre>
+</div>
 
 
 
