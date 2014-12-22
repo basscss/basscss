@@ -54,13 +54,13 @@
     "css-statistics": "0.0.21",
     "cssstats": "^1.0.1",
     "custom-css": "0.0.7",
-    "flex-object": "0.0.4",
+    "flex-object": "^1.0.1",
     "gulp": "^3.8.8",
     "gulp-basswork": "latest",
     "gulp-browserify": "^0.5.0",
     "gulp-bump": "^0.1.11",
     "gulp-gzip": "0.0.8",
-    "gulp-header": "^1.1.1",
+    "gulp-header": "^1.2.2",
     "gulp-image-resize": "^0.5.0",
     "gulp-imagemin": "^2.0.0",
     "gulp-minify-css": "^0.3.8",
@@ -76,7 +76,10 @@
     "rework-npm": "^1.0.0",
     "svg-to-png": "^0.6.0",
     "swig-highlight": "^0.2.0",
-    "gulp-zip": "^2.0.2"
+    "gulp-zip": "^2.0.2",
+    "gulp-marked": "^1.0.0",
+    "marked-example": "^1.0.2",
+    "gulp-footer": "^1.0.5"
   },
   "scripts": {
     "start": "gulp"

@@ -8,7 +8,6 @@ module.exports = function() {
   var options = {
     setup: function(swig) {
       require('swig-highlight').apply(swig);
-      console.log('PATH', path.resolve(__dirname, '../docs/src/templates') );
       swig.setDefaults({
         loader: swig.loaders.fs(path.resolve(__dirname, '../docs/src/templates'))
       });
