@@ -66,6 +66,7 @@ gulp.task('watch-css', ['basswork', 'site-basswork', 'customizer-data'], functio
 gulp.task('watch-templates', ['module-docs', 'swig'], function() {
   gulp.watch([
       './docs/src/templates/**/*',
+      '!./docs/src/templates/docs/modules/**/*',
       './docs/src/model.js'
     ], ['swig']);
 });
