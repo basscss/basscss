@@ -3,22 +3,24 @@ var fs = require('fs');
 
 module.exports = function() {
 
-  var modules = [];
+  var result = [];
   var npmUrl = '//www.npmjs.com/package/';
+  var sources = require('../../package.json').css;
 
-  var dependencies = Object.keys(require('../../package.json').dependencies);
-  dependencies.forEach(function(d) {
-    var version = require(d + '/package.json').version;
-    var description = require(d + '/package.json').description;
-    modules.push({
-      name: d,
-      version: version,
-      description: description,
-      permalink: npmUrl + d
+  var modules = sources.modules;
+  modules = modules.concat(sources.optionalModules);
+  modules.forEach(function(module) {
+    var pkg = require(module + '/package.json');
+    result.push({
+      name: module,
+      version: pkg.version,
+      description: pkg.description,
+      npmLink: npmUrl + module,
+      githubLink: pkg.homepage
     });
   });
 
-  return modules;
+  return result;
 
 };
 

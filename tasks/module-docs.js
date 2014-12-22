@@ -12,9 +12,9 @@ module.exports = function() {
 
   var exampleOptions = {
     classes: {
-      container: '',
-      rendered: '',
-      code: ''
+      container: 'mb2 bg-darken-1 rounded',
+      rendered: 'p2',
+      code: 'm0 p2 bg-darken-1 rounded-bottom'
     }
   };
 
@@ -30,7 +30,6 @@ module.exports = function() {
   modules = modules.concat(sources.optionalModules);
 
   modules.forEach(function(module) {
-    console.log(module);
     var filename = './node_modules/' + module + '/README.md';
     //var title = require('../node_modules/' + module + '/package.json').name;
     var top = '{% extends "layouts/docs.html" %}\n' + 
@@ -40,9 +39,6 @@ module.exports = function() {
       '{% set ismodule = true %}\n' +
       '{% block content %}\n\n';
     var bottom = '\n\n{% endblock %}\n';
-    var md = fs.readFileSync(filename, 'utf8');
-    if (!md) return
-    console.log(md);
     gulp.src(filename)
       .pipe(marked(markedOptions))
       .pipe(header(top))
