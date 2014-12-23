@@ -4,12 +4,23 @@
 {% set isdocs = true %}
 {% set ismodule = true %}
 {% set module = {} %}
-{% set module.version = "0.0.1" %}
+{% set module.version = "0.0.2" %}
 {% block content %}
 
 <h1 id="basscss-color-base">Basscss Color Base</h1>
-<p>Base element color styles module for Basscss</p>
-<p><a href="http://basscss.com">http://basscss.com</a></p>
+<p class="hide">Base element color styles module for Basscss</p>
 
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Sets color styles for the body tag, links, pre, code, and hr tags.</p>
+<h2 id="default-variables">Default Variables</h2>
+<pre><span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--blue</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#0076df</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--dark-gray</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#333</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--light-gray</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ccc</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--lighter-gray</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#eee</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--border-radius</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--border-width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--light-gray)</span></span>;
+<span class="hljs-rule">}</span></span></pre>
 
 {% endblock %}

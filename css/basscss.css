@@ -959,12 +959,7 @@ td {
 
 
 
-/*
-
-  Table Object
-  http://jxnblk.github.io/table-object
-
-*/
+/* Basscss Table Object */
 
 .table {
   display: table;

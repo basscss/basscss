@@ -4,12 +4,70 @@
 {% set isdocs = true %}
 {% set ismodule = true %}
 {% set module = {} %}
-{% set module.version = "0.0.1" %}
+{% set module.version = "0.0.2" %}
 {% block content %}
 
 <h1 id="basscss-colors">Basscss Colors</h1>
-<p>Color styles module for Basscss</p>
-<p><a href="http://basscss.com">http://basscss.com</a></p>
+<p class="hide">Color styles module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Use this suite of color and background color utilities to directly style elements.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <h3 class="center">
+  <span class="dark-gray">.dark-gray</span>
+  <span class="mid-gray">.mid-gray</span>
+  <span class="light-gray">.light-gray</span>
+  <span class="lighter-gray">.lighter-gray</span>
+  <span class="white">.white</span>
+  <span class="blue">.blue</span>
+  <span class="red">.red</span>
+  <span class="yellow">.yellow</span>
+  <span class="green">.green</span>
+</h3>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dark-gray"</span>&gt;</span>.dark-gray<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mid-gray"</span>&gt;</span>.mid-gray<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"light-gray"</span>&gt;</span>.light-gray<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lighter-gray"</span>&gt;</span>.lighter-gray<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"white"</span>&gt;</span>.white<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"blue"</span>&gt;</span>.blue<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"red"</span>&gt;</span>.red<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"yellow"</span>&gt;</span>.yellow<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"green"</span>&gt;</span>.green<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span></pre>
+</div>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="center p1 white bg-dark-gray">.bg-dark-gray</div>
+<div class="center p1 bg-mid-gray">.bg-mid-gray</div>
+<div class="center p1 bg-light-gray">.bg-light-gray</div>
+<div class="center p1 bg-lighter-gray">.bg-lighter-gray</div>
+<div class="center p1 bg-white">.bg-white</div>
+<div class="center p1 bg-blue">.bg-blue</div>
+<div class="center p1 bg-red">.bg-red</div>
+<div class="center p1 bg-yellow">.bg-yellow</div>
+<div class="center p1 bg-green">.bg-green</div>
+<div class="center p1 bg-darken-1">.bg-darken-1</div>
+<div class="center p1 bg-darken-2">.bg-darken-2</div>
+<div class="center p1 bg-darken-3">.bg-darken-3</div>
+<div class="center p1 bg-darken-4">.bg-darken-4</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 white bg-dark-gray"</span>&gt;</span>.bg-dark-gray<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-mid-gray"</span>&gt;</span>.bg-mid-gray<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-light-gray"</span>&gt;</span>.bg-light-gray<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-lighter-gray"</span>&gt;</span>.bg-lighter-gray<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-white"</span>&gt;</span>.bg-white<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-blue"</span>&gt;</span>.bg-blue<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-red"</span>&gt;</span>.bg-red<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-yellow"</span>&gt;</span>.bg-yellow<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-green"</span>&gt;</span>.bg-green<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-darken-1"</span>&gt;</span>.bg-darken-1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-darken-2"</span>&gt;</span>.bg-darken-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-darken-3"</span>&gt;</span>.bg-darken-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-darken-4"</span>&gt;</span>.bg-darken-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
 
 
 {% endblock %}

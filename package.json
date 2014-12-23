@@ -4,45 +4,30 @@
   "description": "Low-level CSS toolkit",
   "style": "src/basscss.css",
   "dependencies": {
-    "basscss-base-reset": "latest",
-    "basscss-base-typography": "latest",
-    "basscss-base-forms": "latest",
-    "basscss-base-buttons": "latest",
-    "basscss-base-tables": "latest",
-    "basscss-utility-layout": "latest",
-    "basscss-utility-typography": "latest",
-    "basscss-utility-responsive-states": "latest",
-    "basscss-utility-white-space": "latest",
-    "basscss-positions": "latest",
-    "basscss-ui-utility-button-sizes": "latest",
-    "basscss-ui-utility-groups": "latest",
-    "basscss-ui-utility-disclosure-states": "latest",
-    "basscss-grid": "latest",
-    "basscss-table-object": "latest",
-    "basscss-colors": "latest",
-    "basscss-color-base": "latest",
-    "basscss-color-forms": "latest",
-    "basscss-color-forms-dark": "latest",
-    "basscss-color-tables": "latest",
-    "basscss-color-buttons": "latest",
-    "basscss-color-borders": "latest",
-    "basscss-defaults": "latest"
+    "basscss-base-reset": "0.0.2",
+    "basscss-base-buttons": "0.0.2",
+    "basscss-base-forms": "0.0.2",
+    "basscss-base-typography": "0.0.2",
+    "basscss-base-tables": "0.0.2",
+    "basscss-utility-typography": "0.0.2",
+    "basscss-utility-layout": "0.0.2",
+    "basscss-utility-responsive-states": "0.0.2",
+    "basscss-utility-white-space": "0.0.3",
+    "basscss-ui-utility-button-sizes": "0.0.2",
+    "basscss-ui-utility-disclosure-states": "0.0.2",
+    "basscss-ui-utility-groups": "0.0.1",
+    "basscss-positions": "0.0.5",
+    "basscss-table-object": "0.0.7",
+    "basscss-grid": "0.0.14",
+    "basscss-color-forms": "0.0.2",
+    "basscss-color-base": "0.0.2",
+    "basscss-color-forms-dark": "0.0.2",
+    "basscss-color-borders": "0.0.2",
+    "basscss-color-tables": "0.0.2",
+    "basscss-colors": "0.0.2",
+    "basscss-color-buttons": "0.0.3",
+    "basscss-defaults": "0.0.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jxnblk/basscss.git"
-  },
-  "keywords": [
-    "CSS",
-    "OOCSS",
-    "framework"
-  ],
-  "author": "Brent Jackson",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jxnblk/basscss/issues"
-  },
-  "homepage": "https://github.com/jxnblk/basscss",
   "devDependencies": {
     "angular-local-storage": "^0.1.5",
     "basscss-background-images": "latest",
@@ -81,9 +66,6 @@
     "marked-example": "^1.0.2",
     "gulp-footer": "^1.0.5"
   },
-  "scripts": {
-    "start": "gulp"
-  },
   "css": {
     "modules": [
       "basscss-base-reset",
@@ -117,5 +99,23 @@
       "basscss-utility-headings",
       "basscss-background-images"
     ]
-  }
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "keywords": [
+    "CSS",
+    "OOCSS",
+    "framework"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jxnblk/basscss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jxnblk/basscss/issues"
+  },
+  "homepage": "https://github.com/jxnblk/basscss"
 }
