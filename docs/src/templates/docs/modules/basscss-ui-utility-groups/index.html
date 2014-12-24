@@ -3,13 +3,11 @@
 {% set page.title = "basscss-ui-utility-groups" %}
 {% set isdocs = true %}
 {% set ismodule = true %}
-{% set module = {} %}
+{% set module = modules.basscssUiUtilityGroups %}
 {% set module.version = "0.0.1" %}
 {% block content %}
 
-<h1 id="basscss-ui-utility-groups">Basscss UI Utility Groups</h1>
-<p>UI group utilities module for Basscss</p>
-<p><a href="http://basscss.com">http://basscss.com</a></p>
+{{ module.content | safe }}
 
 
 {% endblock %}

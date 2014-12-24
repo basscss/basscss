@@ -3,85 +3,11 @@
 {% set page.title = "basscss-utility-responsive-states" %}
 {% set isdocs = true %}
 {% set ismodule = true %}
-{% set module = {} %}
+{% set module = modules.basscssUtilityResponsiveStates %}
 {% set module.version = "0.0.2" %}
 {% block content %}
 
-<h1 id="basscss-utility-responsive-states">Basscss Utility Responsive States</h1>
-<p class="hide">Responsive state utilities module for Basscss</p>
-
-<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>These styles allow for conditionally showing and hiding elements using a mobile-first approach.</p>
-<h2 id="prefix-naming-convention">Prefix Naming Convention</h2>
-<div class="overflow-scroll">
-  <table class="mb2 table-light overflow-hidden border rounded">
-    <thead class="bg-darken-1">
-      <tr> <th>Prefix</th> <th>Description</th> </tr>
-    </thead>
-    <tbody>
-      <tr> <td>(no prefix)</td> <td>Not scoped to a breakpoint</td> </tr>
-      <tr> <td>sm-</td> <td>--breakpoint-sm (default: min-width 40em)</td> </tr>
-      <tr> <td>md-</td> <td>--breakpoint-md (default: min-width 52em)</td> </tr>
-      <tr> <td>lg-</td> <td>--breakpoint-lg (default: min-width 64em)</td> </tr>
-    </tbody>
-  </table>
-</div>
-
-<p>To adjust the default breakpoints, declare custom media queries after importing the file via Rework, or manually adjust them in CSS.</p>
-<pre><span class="hljs-class">.sm-show</span>, <span class="hljs-class">.md-show</span>, <span class="hljs-class">.lg-show</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span>
-</span></span></span>}
-<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
-  <span class="hljs-class">.sm-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
-}
-<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
-  <span class="hljs-class">.md-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
-}
-<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
-  <span class="hljs-class">.lg-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
-}
-<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
-  <span class="hljs-class">.sm-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
-}
-<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
-  <span class="hljs-class">.md-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
-}
-<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
-  <span class="hljs-class">.lg-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
-}
-<span class="hljs-class">.display-none</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
-<span class="hljs-class">.hide</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute <span class="hljs-important">!important</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">clip</span>:<span class="hljs-value"> <span class="hljs-function">rect</span>(<span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>)</span></span>;
-<span class="hljs-rule">}</span></span></pre><h2 id="example">Example</h2>
-<p>Resize the browser window to see the effect.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <h3 class="sm-show">Visible from <code>--breakpoint-sm</code> and up.</h3>
-<h3 class="sm-hide red">Hidden from <code>--breakpoint-sm</code> and up.</h3>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-show"</span>&gt;</span>Visible from <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>--breakpoint-sm<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span> and up.<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-hide red"</span>&gt;</span>Hidden from <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>--breakpoint-sm<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span> and up.<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span></pre>
-</div>
-<h2 id="responsive-line-break">Responsive Line Break</h2>
-<p>Control wrapping at different screen widths.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <h1>
-  Responsive Line Break
-  <br class="md-show">
-  To Control Wrapping
-</h1>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>
-  Responsive Line Break
-  <span class="hljs-tag">&lt;<span class="hljs-title">br</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-show"</span>&gt;</span>
-  To Control Wrapping
-<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span></pre>
-</div>
+{{ module.content | safe }}
 
 
 {% endblock %}

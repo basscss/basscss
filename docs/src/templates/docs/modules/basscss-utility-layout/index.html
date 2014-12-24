@@ -3,74 +3,11 @@
 {% set page.title = "basscss-utility-layout" %}
 {% set isdocs = true %}
 {% set ismodule = true %}
-{% set module = {} %}
+{% set module = modules.basscssUtilityLayout %}
 {% set module.version = "0.0.2" %}
 {% block content %}
 
-<h1 id="basscss-utility-layout">Basscss Utility Layout</h1>
-<p class="hide">Layout utilities module for Basscss</p>
-
-<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>Change the default document flow with display, float, and other utilities.</p>
-<pre><span class="hljs-class">.inline</span>       <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline </span></span></span>}
-<span class="hljs-class">.block</span>        <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block </span></span></span>}
-<span class="hljs-class">.inline-block</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline-block </span></span></span>}
-
-<span class="hljs-class">.overflow-hidden</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden </span></span></span>}
-<span class="hljs-class">.overflow-auto</span>   <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> auto </span></span></span>}
-<span class="hljs-class">.overflow-scroll</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> scroll </span></span></span>}
-
-<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:before</span>,
-<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">" "</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> table
-</span></span></span>}
-<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">clear</span>:<span class="hljs-value"> both </span></span></span>}
-
-<span class="hljs-class">.left</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left </span></span></span>}
-<span class="hljs-class">.right</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> right </span></span></span>}
-
-<span class="hljs-class">.fit</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span> </span></span></span>}
-
-<span class="hljs-class">.half-width</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">50%</span> </span></span></span>}
-<span class="hljs-class">.full-width</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span> </span></span></span>}</pre><h2 id="media-object">Media Object</h2>
-<p>Create a media object using basic utilities.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="clearfix mb2 outline-blue">
-  <div class="left p2 mr1">Image</div>
-  <div class="overflow-hidden">
-    <p><b>Body</b> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
-  </div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mb2 outline-blue"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2 mr1"</span>&gt;</span>Image<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">b</span>&gt;</span>Body<span class="hljs-tag">&lt;/<span class="hljs-title">b</span>&gt;</span> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="double-sided-media-object">Double-Sided Media Object</h2>
-<p>For a container with a flexible center, use a double-sided media object.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="clearfix mb2 outline-blue">
-  <div class="left p2 mr1">Image</div>
-  <div class="right p2 ml1">Image</div>
-  <div class="overflow-hidden">
-    <p><b>Body</b> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
-  </div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mb2 outline-blue"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2 mr1"</span>&gt;</span>Image<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right p2 ml1"</span>&gt;</span>Image<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">b</span>&gt;</span>Body<span class="hljs-tag">&lt;/<span class="hljs-title">b</span>&gt;</span> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
+{{ module.content | safe }}
 
 
 {% endblock %}

@@ -3,80 +3,11 @@
 {% set page.title = "basscss-color-buttons" %}
 {% set isdocs = true %}
 {% set ismodule = true %}
-{% set module = {} %}
+{% set module = modules.basscssColorButtons %}
 {% set module.version = "0.0.3" %}
 {% block content %}
 
-<h1 id="basscss-color-buttons">Basscss Color Buttons</h1>
-<p class="hide">Button color styles module for Basscss</p>
-
-<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>Basscss includes the following basic button styles:
-<code>.button-blue</code>,
-<code>.button-gray</code>,
-<code>.button-blue-outline</code>, and
-<code>.button-red</code>.
-Customize these styles to suite your needs.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="mb1">
-  <button>Button</button>
-  <a href="#!" class="button">Link Button</a>
-  <input type="button" class="button" value="Input Button">
-</div>
-<div class="mb1">
-  <button class="button-blue mb1">Button Blue</button>
-  <button class="button-blue-outline mb1">Button Blue Outline</button>
-  <button class="button-gray mb1">Button Gray</button>
-  <button class="button-red mb1">Button Red</button>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb1"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Input Button"</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb1"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-blue mb1"</span>&gt;</span>Button Blue<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-blue-outline mb1"</span>&gt;</span>Button Blue Outline<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-gray mb1"</span>&gt;</span>Button Gray<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-red mb1"</span>&gt;</span>Button Red<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<p>Button styles can be used for navigation. The <code>.button-nav-light</code> style adds a subtle hover effect for links on a light background.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="mxn1">
-  <a href="#!" class="button button-narrow button-nav-light">Burgers</a>
-  <a href="#!" class="button button-narrow button-nav-light">Fries</a>
-  <a href="#!" class="button button-narrow button-nav-light">Shakes</a>
-  <a href="#!" class="button button-narrow button-nav-light">Onion Rings</a>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mxn1"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-light"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<p>For dark backgrounds, use the <code>.button-nav-dark</code> style.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="bg-dark-gray">
-  <a href="#!" class="button button-narrow button-nav-dark">Burgers</a>
-  <a href="#!" class="button button-narrow button-nav-dark">Fries</a>
-  <a href="#!" class="button button-narrow button-nav-dark">Shakes</a>
-  <a href="#!" class="button button-narrow button-nav-dark">Onion Rings</a>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"bg-dark-gray"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-dark"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-nav-dark"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
+{{ module.content | safe }}
 
 
 {% endblock %}

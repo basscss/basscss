@@ -3,13 +3,11 @@
 {% set page.title = "basscss-background-images" %}
 {% set isdocs = true %}
 {% set ismodule = true %}
-{% set module = {} %}
+{% set module = modules.basscssBackgroundImages %}
 {% set module.version = "0.0.1" %}
 {% block content %}
 
-<h1 id="basscss-background-images">Basscss Background Images</h1>
-<p>Background image utilities module for Basscss</p>
-<p><a href="http://basscss.com">http://basscss.com</a></p>
+{{ module.content | safe }}
 
 
 {% endblock %}

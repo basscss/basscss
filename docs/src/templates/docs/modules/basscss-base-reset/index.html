@@ -3,14 +3,11 @@
 {% set page.title = "basscss-base-reset" %}
 {% set isdocs = true %}
 {% set ismodule = true %}
-{% set module = {} %}
+{% set module = modules.basscssBaseReset %}
 {% set module.version = "0.0.2" %}
 {% block content %}
 
-<h1 id="basscss-base-reset">Basscss Base Reset</h1>
-<p><p class="hide">Base element reset module for Basscss</a></p>
-<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>This lightweight reset for base elements sets margin 0 for the body and button elements, sets font-family inherit for form elements, and sets max-width 100% for images.</p>
+{{ module.content | safe }}
 
 
 {% endblock %}

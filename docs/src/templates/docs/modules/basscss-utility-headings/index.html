@@ -3,27 +3,11 @@
 {% set page.title = "basscss-utility-headings" %}
 {% set isdocs = true %}
 {% set ismodule = true %}
-{% set module = {} %}
+{% set module = modules.basscssUtilityHeadings %}
 {% set module.version = "0.0.5" %}
 {% block content %}
 
-<h1 id="basscss-utility-headings">Basscss Utility Headings</h1>
-<p class="hide">Responsive heading utilities module for Basscss</p>
-
-<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>Use <code>.h0</code> and <code>.h00</code> to create headings larger than the default h1.
-Add <code>.h0-responsive</code> or <code>h00-responsive</code> to use vw based sizes at larger viewports.
-Adjust the width of the browser to see the difference.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <h1 class="h00 h00-responsive">Hamburger 00</h1>
-<h1 class="h0 h0-responsive">Hamburger 0</h1>
-<h1 class="h1 h1-responsive">Hamburger 1</h1>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h00 h00-responsive"</span>&gt;</span>Hamburger 00<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h0 h0-responsive"</span>&gt;</span>Hamburger 0<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 h1-responsive"</span>&gt;</span>Hamburger 1<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span></pre>
-</div>
+{{ module.content | safe }}
 
 
 {% endblock %}

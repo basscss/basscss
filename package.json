@@ -26,7 +26,8 @@
     "basscss-color-tables": "0.0.2",
     "basscss-colors": "0.0.2",
     "basscss-color-buttons": "0.0.3",
-    "basscss-defaults": "0.0.3"
+    "basscss-defaults": "0.0.3",
+    "marked": "^0.3.2"
   },
   "devDependencies": {
     "angular-local-storage": "^0.1.5",
@@ -64,7 +65,8 @@
     "gulp-zip": "^2.0.2",
     "gulp-marked": "^1.0.0",
     "marked-example": "^1.0.2",
-    "gulp-footer": "^1.0.5"
+    "gulp-footer": "^1.0.5",
+    "camel-case": "^1.0.2"
   },
   "css": {
     "modules": [

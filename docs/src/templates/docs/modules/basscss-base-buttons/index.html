@@ -3,43 +3,11 @@
 {% set page.title = "basscss-base-buttons" %}
 {% set isdocs = true %}
 {% set ismodule = true %}
-{% set module = {} %}
+{% set module = modules.basscssBaseButtons %}
 {% set module.version = "0.0.2" %}
 {% block content %}
 
-<h1 id="basscss-base-buttons">Basscss Base Buttons</h1>
-<p class="hide">Base button styles module for Basscss</p>
-
-<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>Structural styles and resets for buttons are set in this base element styles module.
-All buttons share common padding and height, well suited for tap targets on touchscreen displays.
-Color styles in other modules and other custom extensions adjust their surface-level appearance.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="mb1">
-  <button>Button</button>
-  <a href="#!" class="button">Link Button</a>
-  <input type="button" class="button" value="Input Button">
-</div>
-<div class="mb1">
-  <button class="button-blue mb1">Button Blue</button>
-  <button class="button-blue-outline mb1">Button Blue Outline</button>
-  <button class="button-gray mb1">Button Gray</button>
-  <button class="button-red mb1">Button Red</button>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb1"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Input Button"</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb1"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-blue mb1"</span>&gt;</span>Button Blue<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-blue-outline mb1"</span>&gt;</span>Button Blue Outline<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-gray mb1"</span>&gt;</span>Button Gray<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button-red mb1"</span>&gt;</span>Button Red<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
+{{ module.content | safe }}
 
 
 {% endblock %}

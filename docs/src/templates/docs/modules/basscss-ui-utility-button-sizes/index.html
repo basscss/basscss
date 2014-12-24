@@ -3,13 +3,11 @@
 {% set page.title = "basscss-ui-utility-button-sizes" %}
 {% set isdocs = true %}
 {% set ismodule = true %}
-{% set module = {} %}
+{% set module = modules.basscssUiUtilityButtonSizes %}
 {% set module.version = "0.0.2" %}
 {% block content %}
 
-<h1 id="basscss-ui-utility-button-sizes">Basscss UI Utility Button Sizes</h1>
-<p>Button size extension utilities module for Basscss</p>
-<p><a href="http://basscss.com">http://basscss.com</a></p>
+{{ module.content | safe }}
 
 
 {% endblock %}
