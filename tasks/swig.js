@@ -3,20 +3,21 @@ var gulp = require('gulp');
 var path = require('path');
 var swig = require('gulp-swig');
 
+var data = require('../docs/src/model');
+var options = {
+  setup: function(swig) {
+    require('swig-highlight').apply(swig);
+    swig.setDefaults({
+      loader: swig.loaders.fs(path.resolve(__dirname, '../docs/src/templates'))
+    });
+  },
+  defaults: {
+    cache: false
+  },
+  data: data
+};
+
 module.exports = function() {
-  var data = require('../docs/src/model');
-  var options = {
-    setup: function(swig) {
-      require('swig-highlight').apply(swig);
-      swig.setDefaults({
-        loader: swig.loaders.fs(path.resolve(__dirname, '../docs/src/templates'))
-      });
-    },
-    defaults: {
-      cache: false
-    },
-    data: data
-  };
   gulp.src([
       './docs/src/templates/**/*.html',
       '!./docs/src/templates/layouts/**/*',
