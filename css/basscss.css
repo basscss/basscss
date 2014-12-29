@@ -1,6 +1,6 @@
 /*
 
-    Basscss v4.1.7
+    Basscss v4.1.8
 
     Low-level CSS toolkit
     http://basscss.com
@@ -959,12 +959,7 @@ td {
 
 
 
-/*
-
-  Table Object
-  http://jxnblk.github.io/table-object
-
-*/
+/* Basscss Table Object */
 
 .table {
   display: table;

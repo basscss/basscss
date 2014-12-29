@@ -5,6 +5,7 @@
 
     <div class="h3 bold sm-col-4 px1">{{ module.name }}</div>
     <div class="flex-auto sm-col-7 px1 h5 regular">{{ module.description }}</div>
+    <div ng-if="module.optional" class="h6 caps px1 red">Optional</div>
     <div class="h6 px1">v{{ module.version }}</div>
   </div>
 </label>

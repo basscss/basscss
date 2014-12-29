@@ -1,24 +1,57 @@
 
 var fs = require('fs');
+var path = require('path');
+var marked = require('marked');
+var markedExample = require('marked-example');
+var camelcase = require('camel-case');
+var cheerio = require('cheerio');
 
 module.exports = function() {
 
-  var modules = [];
+  var result = {};
   var npmUrl = '//www.npmjs.com/package/';
+  var sources = require('../../package.json').basscss;
 
-  var dependencies = Object.keys(require('../../package.json').dependencies);
-  dependencies.forEach(function(d) {
-    var version = require(d + '/package.json').version;
-    var description = require(d + '/package.json').description;
-    modules.push({
-      name: d,
-      version: version,
-      description: description,
-      permalink: npmUrl + d
-    });
+  var exampleOptions = {
+    classes: {
+      container: 'mb2 bg-darken-1 rounded',
+      rendered: 'p2',
+      code: 'm0 p2 bg-darken-1 rounded-bottom'
+    }
+  };
+
+  var renderer = new marked.Renderer();
+  renderer.code = markedExample(exampleOptions);
+
+  var modules = sources.modules;
+
+  modules.forEach(function(module) {
+    var pkg = require(module + '/package.json');
+    var md = fs.readFileSync('./node_modules/' + module + '/README.md', 'utf8');
+    var content = marked(md, { renderer: renderer });
+    var isOptional;
+    if (pkg.basscss) isOptional = pkg.basscss.optional || false;
+
+    var $ = cheerio.load(content);
+    var header = cheerio.load('');
+    var title = $.root().children().first('h1').html();
+    title = title.replace('Basscss ', '');
+    header.root().append($.root().children().first('h1')).append($.root().children().first('p'));
+
+    result[camelcase(module)] = {
+      name: module,
+      version: pkg.version,
+      description: pkg.description,
+      title: title,
+      header: header.html(),
+      content: $.html(),
+      optional: isOptional,
+      npmLink: npmUrl + module,
+      githubLink: pkg.homepage
+    };
   });
 
-  return modules;
+  return result;
 
 };
 
