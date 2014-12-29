@@ -46,7 +46,7 @@
         <div class="flex-auto py1">
           <h2 class="h4 m0">Compiled CSS ({{ fileSize | filesize }})</h2>
         </div>
-        <a class="flex-none button button-blue"
+        <a class="flex-none h6 button button-blue"
           ng-href="{{ downloadURL }}"
           download="basscss-custom.css">
             Download
@@ -54,7 +54,7 @@
       </div>
       <pre class="flex-grow" style="min-height:80vh" ng-bind-html="compiled | highlight"></pre>
       <div class="mb2">
-        <a class="flex-none button button-blue"
+        <a class="flex-none h6 button button-blue"
           ng-href="{{ downloadURL }}"
           download="basscss-custom.css">
             Download
@@ -62,8 +62,8 @@
       </div>
     </div>
   </div>
-  <div class="py3 border-bottom">
-    <p class="h5">
+  <div class="sm-col-8 py3">
+    <p>
       This tool only scratches the surface of what’s possible with Basscss’s modular architecture.
       To learn more about custom builds from the command line, see
       <a href="/docs/custom-builds">Custom Builds</a>.
