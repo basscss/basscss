@@ -54,7 +54,9 @@ module.exports = function() {
       '{{ module.content | safe }}\n' +
       '\n\n{% endblock %}\n';
 
-    fs.writeFileSync(path.join(__dirname, '../docs/src/templates/docs/modules/' + module + '/index.html'), html);
+    var dir = path.join(__dirname, '../docs/src/templates/docs/modules/' + module);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir);
+    fs.writeFileSync(dir + '/index.html', html);
   });
 
 };

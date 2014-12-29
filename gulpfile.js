@@ -74,3 +74,4 @@ gulp.task('watch-templates', ['module-docs', 'swig'], function() {
 gulp.task('watch-js', ['customizer-js'], function() {
   gulp.watch(['./docs/src/js/**/*'], ['customizer-js']);
 });
+
