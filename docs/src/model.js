@@ -31,8 +31,7 @@ module.exports = function() {
         { title: 'Typography', link: '/docs/base/#typography' },
         { title: 'Forms', link: '/docs/base/#forms' },
         { title: 'Buttons', link: '/docs/base/#buttons' },
-        { title: 'Tables', link: '/docs/base/#tables' },
-        { title: 'Variables', link: '/docs/base/#variables' }
+        { title: 'Tables', link: '/docs/base/#tables' }
       ]
     },
     utility: {
@@ -46,8 +45,7 @@ module.exports = function() {
         { title: 'Layout', link: '/docs/utility/#layout' },
         { title: 'White Space Scale', link: '/docs/utility/#white-space' },
         { title: 'Responsive States', link: '/docs/utility/#responsive-states' },
-        { title: 'Positions', link: '/docs/utility/#positions' },
-        { title: 'Variables', link: '/docs/utility/#variables' }
+        { title: 'Positions', link: '/docs/utility/#positions' }
       ]
     },
     layout: {
@@ -74,10 +72,9 @@ module.exports = function() {
             { title: 'Table Grid', link: '/docs/layout/#table-grid' }
           ]
         },
-        //{ title: 'Flex Object', link: '/docs/layout/#flex-object',
-        //  subsections: [
-        //  ]
-        //}
+        { title: 'Flex Object', link: '/docs/layout/#flex-object',
+          subsections: []
+        }
       ]
     },
     color: {
@@ -90,8 +87,7 @@ module.exports = function() {
         { title: 'Borders', link: '/docs/color/#borders' },
         { title: 'Forms', link: '/docs/color/#forms' },
         { title: 'Buttons', link: '/docs/color/#buttons' },
-        { title: 'Tables', link: '/docs/color/#tables' },
-        { title: 'Variables', link: '/docs/color/#variables' }
+        { title: 'Tables', link: '/docs/color/#tables' }
       ]
     }
   };

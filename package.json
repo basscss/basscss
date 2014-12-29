@@ -17,7 +17,7 @@
     "basscss-color-forms-dark": "0.0.2",
     "basscss-color-tables": "0.0.2",
     "basscss-colors": "0.0.2",
-    "basscss-defaults": "0.0.3",
+    "basscss-defaults": "^0.1.0",
     "basscss-grid": "0.0.14",
     "basscss-positions": "0.0.5",
     "basscss-table-object": "0.0.7",
