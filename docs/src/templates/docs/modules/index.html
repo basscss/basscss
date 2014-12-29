@@ -16,8 +16,11 @@
     {% for module in modules %}
       <div class="md-col-6 px2 mb2">
         <a href="/docs/modules/{{ module.name }}" class="h3 bold block">
-          {{ module.name }}
+          {{ module.title }}
           <span class="h6">v{{ module.version }}</span>
+          {% if module.optional %}
+            <span class="h6 caps red">Optional</span>
+          {% endif %}
         </a>
         <div>
           {{ module.description }}

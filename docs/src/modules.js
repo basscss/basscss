@@ -26,22 +26,28 @@ module.exports = function() {
   var modules = sources.modules;
   modules = modules.concat(sources.optionalModules);
 
-  //result.size = modules.length;
-
   modules.forEach(function(module) {
     var pkg = require(module + '/package.json');
     var md = fs.readFileSync('./node_modules/' + module + '/README.md', 'utf8');
     var content = marked(md, { renderer: renderer });
+    var isOptional;
+    if (pkg.basscss) isOptional = pkg.basscss.optional || false;
 
     var $ = cheerio.load(content);
-    $.root().children().first('h1').remove();
-    $.root().children().first('a').remove();
+    var header = cheerio.load('');
+    var title = $.root().children().first('h1').html();
+    title = title.replace('Basscss ', '');
+    header.root().append($.root().children().first('h1')).append($.root().children().first('p'));
+
 
     result[camelcase(module)] = {
       name: module,
       version: pkg.version,
       description: pkg.description,
+      title: title,
+      header: header.html(),
       content: $.html(),
+      optional: isOptional,
       npmLink: npmUrl + module,
       githubLink: pkg.homepage
     };
