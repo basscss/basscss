@@ -1,10 +1,10 @@
 /* Basscss.com Styles */
 
 @import "basscss-base-reset";
-@import "basscss-base-typography";
 @import 'basscss-base-forms';
 @import 'basscss-base-buttons';
 @import 'basscss-base-tables';
+@import "basscss-base-typography";
 
 @import 'basscss-utility-layout';
 @import 'basscss-utility-typography';
@@ -64,9 +64,8 @@
   --h5: 1rem;
   --h6: .875rem;
   --container-width: 76rem;
-
   --heading-font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
+  --button-font-size: .875rem;
 }
 
 @import "./color/variables";
