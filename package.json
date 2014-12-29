@@ -68,9 +68,10 @@
     "marked-example": "^1.0.2",
     "gulp-footer": "^1.0.5",
     "camel-case": "^1.0.2",
-    "marked": "^0.3.2"
+    "marked": "^0.3.2",
+    "highlight.js": "^8.4.0"
   },
-  "css": {
+  "basscss": {
     "modules": [
       "basscss-base-reset",
       "basscss-base-typography",
@@ -93,15 +94,13 @@
       "basscss-color-tables",
       "basscss-color-buttons",
       "basscss-colors",
-      "basscss-color-borders"
-    ],
-    "variables": [
-      "basscss-defaults"
-    ],
-    "optionalModules": [
+      "basscss-color-borders",
       "flex-object",
       "basscss-utility-headings",
       "basscss-background-images"
+    ],
+    "variables": [
+      "basscss-defaults"
     ]
   },
   "scripts": {

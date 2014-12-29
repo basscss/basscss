@@ -10,7 +10,7 @@ module.exports = function() {
 
   var result = {};
   var npmUrl = '//www.npmjs.com/package/';
-  var sources = require('../../package.json').css;
+  var sources = require('../../package.json').basscss;
 
   var exampleOptions = {
     classes: {
@@ -24,7 +24,6 @@ module.exports = function() {
   renderer.code = markedExample(exampleOptions);
 
   var modules = sources.modules;
-  modules = modules.concat(sources.optionalModules);
 
   modules.forEach(function(module) {
     var pkg = require(module + '/package.json');
@@ -38,7 +37,6 @@ module.exports = function() {
     var title = $.root().children().first('h1').html();
     title = title.replace('Basscss ', '');
     header.root().append($.root().children().first('h1')).append($.root().children().first('p'));
-
 
     result[camelcase(module)] = {
       name: module,

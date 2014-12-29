@@ -23,10 +23,9 @@ module.exports = function() {
     renderer: { code: markedExample(exampleOptions) }
   };
 
-  var sources = require('../package.json').css;
+  var sources = require('../package.json').basscss;
 
   var modules = sources.modules;
-  modules = modules.concat(sources.optionalModules);
 
   modules.forEach(function(module) {
     var filename = './node_modules/' + module + '/README.md';
