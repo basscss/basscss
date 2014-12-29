@@ -29,7 +29,7 @@
     "basscss-utility-responsive-states": "0.0.2",
     "basscss-utility-typography": "0.0.2",
     "basscss-utility-white-space": "0.0.3",
-    "flex-object": "^1.0.3"
+    "flex-object": "^1.0.4"
   },
   "devDependencies": {
     "angular-local-storage": "^0.1.5",
