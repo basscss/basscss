@@ -1,0 +1,24 @@
+{% extends "layouts/module.html" %}
+{% set page = modules.basscssUtilityHeadings %}
+{% set isdocs = true %}
+{% set module = modules.basscssUtilityHeadings %}
+{% block content %}
+
+<!-- {{ module.header | safe }} -->
+<div class="flex flex-wrap flex-center mb3">
+<div class="flex-auto">
+<h1 class="h4 m0">{{ module.name }}
+<span class="h6">v{{ module.version }}</span>
+{% if module.optional %}<span class="h6 caps red">Optional</span>
+{% endif %}</h1>
+<h1 class="caps m0">{{ module.title }}</h1>
+</div>
+<div class="mxn1 mb2">
+<a href="{{ module.npmLink }}" class="h6 button button-narrow button-nav-light">NPM</a>
+<a href="{{ module.githubLink }}" class="h6 button button-narrow button-nav-light">Github</a>
+</div>
+</div>
+{{ module.content | safe }}
+
+
+{% endblock %}

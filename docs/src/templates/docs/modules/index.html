@@ -6,21 +6,25 @@
 {% block content %}
 
 <p class="h3">
-  Basscss is a collection of {{ modules.length }} CSS modules that can be used independently.
+  Basscss is a collection of CSS modules that can be used independently.<br class="sm-show">
   This is a list of all currently available modules.
+  Note: not all modules are included in the standard Basscss package.
 </p>
 
 <section class="py2">
   <div class="list-reset sm-flex flex-wrap mxn2">
     {% for module in modules %}
       <div class="md-col-6 px2 mb2">
-        <a href="{{ module.permalink }}" class="h3 bold block">
-          {{ module.name }}
+        <a href="/docs/modules/{{ module.name }}" class="h3 bold block">
+          {{ module.title }}
           <span class="h6">v{{ module.version }}</span>
+          {% if module.optional %}
+            <span class="h6 caps red">Optional</span>
+          {% endif %}
         </a>
-        <div>
+        <p>
           {{ module.description }}
-        </div>
+        </p>
       </div>
     {% endfor %}
   </div>

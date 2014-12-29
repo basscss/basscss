@@ -36,6 +36,9 @@ gulp.task('swig', require('./tasks/swig'));
 // Compile CSS for docs site
 gulp.task('site-basswork', require('./tasks/site-basswork'));
 
+// Autogenerate docs for modules
+gulp.task('module-docs', require('./tasks/module-docs'));
+
 // Create favicons
 gulp.task('favicon', require('./tasks/favicon'));
 
@@ -51,6 +54,7 @@ gulp.task('customizer-data', require('./tasks/customizer-data'));
 // Compile JS for customizer
 gulp.task('customizer-js', require('./tasks/customizer-js'));
 
+
 // Site development
 gulp.task('dev', ['watch-templates', 'watch-css', 'watch-js', 'serve']);
 
@@ -59,9 +63,10 @@ gulp.task('watch-css', ['basswork', 'site-basswork', 'customizer-data'], functio
   gulp.watch(['./src/**/*.css', './docs/src/css/**/*.css'], ['basswork', 'site-basswork', 'customizer-data']);
 });
 
-gulp.task('watch-templates', ['swig'], function() {
+gulp.task('watch-templates', ['module-docs', 'swig'], function() {
   gulp.watch([
       './docs/src/templates/**/*',
+      '!./docs/src/templates/docs/modules/**/*',
       './docs/src/model.js'
     ], ['swig']);
 });
