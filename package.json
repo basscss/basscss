@@ -67,7 +67,8 @@
     "gulp-footer": "^1.0.5",
     "camel-case": "^1.0.2",
     "marked": "^0.3.2",
-    "highlight.js": "^8.4.0"
+    "highlight.js": "^8.4.0",
+    "humanize-plus": "^1.5.0"
   },
   "basscss": {
     "modules": [
