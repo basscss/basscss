@@ -18,7 +18,7 @@
 
 
 
-<header class="p2 bright-blue bg-dark-gray">
+<header class="px2 bright-blue bg-dark-gray bg-triangles">
   <div class="container sm-flex flex-center">
     <div class="flex-auto py4">
       <svg class="h00 h00-responsive icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" fill="currentcolor">
@@ -26,16 +26,16 @@
       </svg>
       <h1 class="avenir caps h0 h00-responsive m0 white" style="margin-left:-.0625em">Basscss</h1>
       <h2 class="avenir caps h4 mb0">Low-level CSS Toolkit</h2>
-      <p class="avenir h6 caps bold">v4.1.8 &middot; 3KB</p>
+      <p class="avenir h6 caps bold">v4.1.8 &middot; 3 KB</p>
     </div>
-    <div class="sm-show flex-auto center">
-      <a class="h2 m2 button bright-blue button-bright-blue-outline" href="/docs/getting-started">Download</a>
+    <div class="sm-show flex-auto center mt4 mb1">
+      <a class="h4 m2 button button-big button-bright-blue-outline" href="/docs/getting-started">Download</a>
     </div>
   </div>
   <div class="flex flex-center mxn2">
     <div class="flex-auto"></div>
-    <a class="h4 button bright-blue" href="/docs">Docs</a>
-    <a class="h4 button bright-blue" href="//github.com/jxnblk/basscss">Github</a>
+    <a class="h6 caps button py2 bright-blue" href="/docs">Docs</a>
+    <a class="h6 caps button py2 bright-blue" href="//github.com/jxnblk/basscss">Github</a>
   </div>
 </header>
 
@@ -222,25 +222,36 @@
 
   <section id="cta" class="sm-flex flex-center py4 mb4">
     <div class="flex-auto">
-      <h1 class="mb0">Get Started</h1>
-      <p class="h3 mb2">View the docs to download Basscss and learn more.</p>
+      <h1 class="m0">Get Started</h1>
+      <p class="h3 m0">View the docs to download Basscss and learn more.</p>
     </div>
     <div class="flex-grow center">
-      <a href="/docs/getting-started" class="h3 button button-blue">Download Basscss</a>
+      <a href="/docs/getting-started" class="h4 button button-big button-blue">Download Basscss</a>
     </div>
   </section>
 
 </main>
 
+<style>
+  .bg-triangles {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image:
+      linear-gradient(-45deg, rgba(255,63,0,.15), rgba(0,255,127,.1)),
+      url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 384" fill="#09f"> <polygon points="64 0 128 128 0 128" opacity="0.05"/> <polygon points="64 0 192 0 128 128" opacity="0.15"/> <polygon points="192 0 128 128 256 128" opacity="0.2"/> <polygon points="192 0 320 0 256 128" opacity="0.25"/> <polygon points="320 0 256 128 384 128" opacity="0.15"/> <polygon points="320 0 448 0 384 128" opacity="0.1"/> <polygon points="448 0 384 128 512 128" opacity="0.05"/> <polygon points="448 0 576 0 512 128" opacity="0.02"/> <polygon points="64 256 128 128 0 128" opacity="0.10"/> <polygon points="128 128 64 256 192 256" opacity="0.15"/> <polygon points="128 128 256 128 192 256" opacity="0.25"/> <polygon points="256 128 192 256 320 256" opacity="0.25"/> <polygon points="256 128 384 128 320 256" opacity="0.2"/> <polygon points="384 128 320 256 448 256" opacity="0.15"/> <polygon points="384 128 512 128 448 256" opacity="0.05"/> <polygon points="64 256 128 384 0 384" opacity="0.05"/> <polygon points="64 256 192 256 128 384" opacity="0.1"/> <polygon points="192 256 128 384 256 384" opacity="0.15"/> <polygon points="192 256 320 256 256 384" opacity="0.2"/> <polygon points="320 256 256 384 384 384" opacity="0.1"/> <polygon points="320 256 448 256 384 384" opacity="0.1"/> <polygon points="448 256 384 384 512 384" opacity="0.05"/> </svg> ');
+  }
+</style>
+
 
 
 <div class="container px2">
   <footer class="mb4">
-  <div class="flex flex-wrap flex-center h6 caps mxn1">
-    <a href="/" class="button button-narrow py2 button-nav-light">Home</a>
-    <a href="/docs" class="button button-narrow py2 button-nav-light">Docs</a>
-    <a href="/docs/getting-started" class="button button-narrow py2 button-nav-light">Download</a>
-    <a href="//github.com/jxnblk/basscss" class="button button-narrow py2 button-nav-light">Github</a>
+  <div class="flex flex-wrap flex-center caps mxn1">
+    <a href="/" class="h6 button button-narrow py2 button-nav-light">Home</a>
+    <a href="/docs" class="h6 button button-narrow py2 button-nav-light">Docs</a>
+    <a href="/docs/getting-started" class="h6 button button-narrow py2 button-nav-light">Download</a>
+    <a href="//github.com/jxnblk/basscss" class="h6 button button-narrow py2 button-nav-light">Github</a>
     <div class="flex-grow"></div>
     <div class="flex-none px1 py2 nowrap">
       <p class="h6 bold mb0">

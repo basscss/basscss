@@ -2,6 +2,29 @@
 // Converted Variables
 
 $blue: #0076df !default;
+$light-gray: #ccc !default;
+$dark-gray: #333 !default;
+$border-radius: 3px !default;
+$blue: #0076df !default;
+$border-radius: 3px !default;
+$blue: #0076df !default;
+$border-radius: 3px !default;
+$mid-gray: #777 !default;
+$blue: #0076df !default;
+$border-radius: 3px !default;
+$red: #f95020 !default;
+$border-radius: 3px !default;
+$dark-gray: #333 !default;
+$darken-1: rgba(#000,.0625) !default;
+$hover-background-color: $darken-1 !default;
+$border-radius: 3px !default;
+$darken-2: rgba(#000,.125) !default;
+$light-gray: #ccc !default;
+$darken-1: rgba(#000,.0625) !default;
+$hover-background-color: $darken-1 !default;
+$border-color: $light-gray !default;
+$border-radius: 3px !default;
+$blue: #0076df !default;
 $red: #f95020 !default;
 $green: #00cf26 !default;
 $yellow: #efcc00 !default;
@@ -22,6 +45,38 @@ $border-radius: 3px !default;
 
 
 /* Basscss Color Buttons */
+
+/* Basscss Button Light Gray */
+
+.button-light-gray {
+  color: $dark-gray;
+  background-color: $light-gray;
+  border-radius: $border-radius;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow, background-color;
+}
+
+.button-light-gray:hover {
+  opacity: .875;
+}
+
+.button-light-gray:active,
+.button-light-gray:is-active {
+  box-shadow: inset 0 0 0 32px rgba(#000,.125), inset 0 2px 3px 0 rgba(#000,.25);
+}
+
+.button-light-gray:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba($blue, .5);
+}
+
+.button-light-gray:disabled,
+.button-light-gray.is-disabled {
+  opacity: .5;
+}
+
+/* Basscss Button Blue */
 
 .button-blue {
   color: white;
@@ -51,8 +106,10 @@ $border-radius: 3px !default;
   opacity: .5;
 }
 
+/* Basscss Button Blue Outline */
+
 .button-blue-outline {
-  line-height: 1;
+  line-height: 1rem;
   color: $blue;
   background-color: transparent;
   border-radius: $border-radius;
@@ -84,6 +141,8 @@ $border-radius: 3px !default;
   opacity: .5;
 }
 
+/* Basscss Button Gray */
+
 .button-gray {
   color: white;
   background-color: $mid-gray;
@@ -111,6 +170,8 @@ $border-radius: 3px !default;
 .button-gray.is-disabled {
   opacity: .5;
 }
+
+/* Basscss Button Red */
 
 .button-red {
   color: white;
@@ -140,7 +201,7 @@ $border-radius: 3px !default;
   opacity: .5;
 }
 
-
+/* Basscss Button Nav Light */
 
 .button-nav-light:hover {
   background-color: $hover-background-color;
@@ -150,6 +211,8 @@ $border-radius: 3px !default;
 .button-nav-light.is-active {
   color: $dark-gray;
 }
+
+/* Basscss Button Nav Dark */
 
 .button-nav-dark {
   color: white;
@@ -164,6 +227,8 @@ $border-radius: 3px !default;
   background-color: $darken-2;
 }
 
+/* Basscss Button Nav Tab */
+
 .button-nav-tab {
   margin-bottom: -1px;
   border-radius: $border-radius $border-radius 0 0;
@@ -171,7 +236,7 @@ $border-radius: 3px !default;
 }
 
 .button-nav-tab:hover {
-  background-color: $darken-1;
+  background-color: $hover-background-color;
 }
 
 .button-nav-tab.is-active {

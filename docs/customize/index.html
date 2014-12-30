@@ -47,8 +47,8 @@
       <section class="mb3" custom-css-collection src="modules.json">
         <div class="sm-flex flex-center mb2">
           <h2 class="flex-auto m0 py1">Modules</h2>
-          <a href class="h6 mr2 button button-gray" ng-click="deselectAll(modules)">Deselect All</a>
-          <a href class="h6 button button-gray" ng-click="selectAll(modules)">Select All</a>
+          <a href class="mr2 button button-small button-gray" ng-click="deselectAll(modules)">Deselect All</a>
+          <a href class="button button-small button-gray" ng-click="selectAll(modules)">Select All</a>
         </div>
         <form>
           <ol class="list-reset border-top">
@@ -75,7 +75,7 @@
         <div class="flex-auto py1">
           <h2 class="h4 m0">Compiled CSS ({{ fileSize | filesize }})</h2>
         </div>
-        <a class="flex-none h6 button button-blue"
+        <a class="flex-none button button-blue"
           ng-href="{{ downloadURL }}"
           download="basscss-custom.css">
             Download
@@ -83,7 +83,7 @@
       </div>
       <pre class="flex-grow" style="min-height:80vh" ng-bind-html="compiled | highlight"></pre>
       <div class="mb2">
-        <a class="flex-none h6 button button-blue"
+        <a class="flex-none button button-blue"
           ng-href="{{ downloadURL }}"
           download="basscss-custom.css">
             Download
@@ -164,11 +164,11 @@
 </div>
 
   <footer class="mb4">
-  <div class="flex flex-wrap flex-center h6 caps mxn1">
-    <a href="/" class="button button-narrow py2 button-nav-light">Home</a>
-    <a href="/docs" class="button button-narrow py2 button-nav-light">Docs</a>
-    <a href="/docs/getting-started" class="button button-narrow py2 button-nav-light">Download</a>
-    <a href="//github.com/jxnblk/basscss" class="button button-narrow py2 button-nav-light">Github</a>
+  <div class="flex flex-wrap flex-center caps mxn1">
+    <a href="/" class="h6 button button-narrow py2 button-nav-light">Home</a>
+    <a href="/docs" class="h6 button button-narrow py2 button-nav-light">Docs</a>
+    <a href="/docs/getting-started" class="h6 button button-narrow py2 button-nav-light">Download</a>
+    <a href="//github.com/jxnblk/basscss" class="h6 button button-narrow py2 button-nav-light">Github</a>
     <div class="flex-grow"></div>
     <div class="flex-none px1 py2 nowrap">
       <p class="h6 bold mb0">

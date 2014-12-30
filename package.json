@@ -5,23 +5,23 @@
   "style": "src/basscss.css",
   "dependencies": {
     "basscss-background-images": "0.0.4",
-    "basscss-base-buttons": "0.0.2",
-    "basscss-base-forms": "0.0.2",
+    "basscss-base-buttons": "^1.0.0",
+    "basscss-base-forms": "^1.0.1",
     "basscss-base-reset": "0.0.3",
-    "basscss-base-tables": "0.0.2",
+    "basscss-base-tables": "^0.1.0",
     "basscss-base-typography": "0.0.3",
     "basscss-color-base": "0.0.2",
     "basscss-color-borders": "0.0.2",
-    "basscss-color-buttons": "0.0.3",
+    "basscss-color-buttons": "^0.1.1",
     "basscss-color-forms": "0.0.2",
     "basscss-color-forms-dark": "0.0.2",
     "basscss-color-tables": "0.0.2",
     "basscss-colors": "0.0.2",
-    "basscss-defaults": "0.0.3",
+    "basscss-defaults": "^0.2.0",
     "basscss-grid": "0.0.14",
     "basscss-positions": "0.0.5",
     "basscss-table-object": "0.0.7",
-    "basscss-ui-utility-button-sizes": "0.0.4",
+    "basscss-ui-utility-button-sizes": "^1.0.0",
     "basscss-ui-utility-disclosure-states": "0.0.6",
     "basscss-ui-utility-groups": "0.0.4",
     "basscss-utility-headings": "0.0.6",
@@ -29,7 +29,7 @@
     "basscss-utility-responsive-states": "0.0.2",
     "basscss-utility-typography": "0.0.2",
     "basscss-utility-white-space": "0.0.3",
-    "flex-object": "^1.0.3"
+    "flex-object": "^1.0.4"
   },
   "devDependencies": {
     "angular-local-storage": "^0.1.5",
@@ -67,7 +67,8 @@
     "gulp-footer": "^1.0.5",
     "camel-case": "^1.0.2",
     "marked": "^0.3.2",
-    "highlight.js": "^8.4.0"
+    "highlight.js": "^8.4.0",
+    "humanize-plus": "^1.5.0"
   },
   "basscss": {
     "modules": [

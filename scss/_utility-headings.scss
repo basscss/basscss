@@ -1,0 +1,54 @@
+
+// Converted Variables
+
+$h00: 4rem !default;
+$h0: 3rem !default;
+$h00-responsive: 8vw !default;
+$h0-responsive: 6vw !default;
+$h1-responsive: 4vw !default;
+$h00-responsive-max: 7.68rem !default;
+$h0-responsive-max: 5.76rem !default;
+$h1-responsive-max: 3.84rem !default;
+
+// Custom Media Query Variables
+
+$breakpoint-md: '(min-width: 52em)';
+$breakpoint-xl: '(min-width: 96em)';
+
+/* Basscss Utility Headings */
+
+.h00 {
+  font-size: $h00;
+}
+
+.h0 {
+  font-size: $h0;
+}
+
+@media #{$breakpoint-md} {
+  .h00-responsive {
+    font-size: $h00-responsive;
+  }
+
+  .h0-responsive {
+    font-size: $h0-responsive;
+  }
+
+  .h1-responsive {
+    font-size: $h1-responsive;
+  }
+}
+
+@media #{$breakpoint-xl} {
+  .h00-responsive {
+    font-size: $h00-responsive-max;
+  }
+
+  .h0-responsive {
+    font-size: $h0-responsive-max;
+  }
+
+  .h1-responsive {
+    font-size: $h1-responsive-max;
+  }
+}

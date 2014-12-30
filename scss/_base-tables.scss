@@ -6,6 +6,9 @@ $space-1: .5rem !default;
 $space-2: 1rem !default;
 $space-3: 2rem !default;
 $space-4: 4rem !default;
+$table-header-font-weight: $bold-font-weight !default;
+$table-cell-padding-x: $space-2 !default;
+$table-cell-padding-y: .25rem !default;
 
 // Custom Media Query Variables
 
@@ -21,12 +24,12 @@ table {
 
 th {
   text-align: left;
-  font-weight: $bold-font-weight;
+  font-weight: $table-header-font-weight;
 }
 
 th,
 td {
-  padding: .25em $space-2;
+  padding: $table-cell-padding-y $table-cell-padding-x;
   line-height: inherit;
 }
 

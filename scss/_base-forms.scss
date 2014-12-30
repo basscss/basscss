@@ -5,6 +5,10 @@ $space-1: .5rem !default;
 $space-2: 1rem !default;
 $space-3: 2rem !default;
 $space-4: 4rem !default;
+$form-field-font-size: 1rem !default;
+$form-field-height: 2.25rem !default;
+$form-field-padding-y: .5rem !default;
+$form-field-padding-x: .5rem !default;
 
 // Custom Media Query Variables
 
@@ -15,6 +19,7 @@ input,
 select,
 textarea,
 fieldset {
+  font-size: $form-field-font-size;
   margin-top: 0;
   margin-bottom: $space-1;
 }
@@ -32,25 +37,27 @@ input[type=time],
 input[type=url],
 input[type=week] {
   box-sizing: border-box;
-  height: 2.25em;
-  padding: .25em $space-2;
+  height: $form-field-height;
+  padding: $form-field-padding-y $form-field-padding-x;
+  vertical-align: middle;
   -webkit-appearance: none;
 }
 
 select {
   box-sizing: border-box;
   line-height: 1.75;
-  padding: .25em $space-2;
+  padding: $form-field-padding-y $form-field-padding-x;
 }
 
 select:not([multiple]) {
-  height: 2.25em;
+  height: $form-field-height;
+  vertical-align: middle;
 }
 
 textarea {
   box-sizing: border-box;
   line-height: 1.75;
-  padding: .25em $space-2;
+  padding: $form-field-padding-y $form-field-padding-x;
 }
 
 .fieldset-reset {
