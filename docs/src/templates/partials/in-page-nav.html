@@ -1,5 +1,6 @@
 {% for item in page.sections %}
   <a href="{{ item.link }}" class="button button-nav-light block">{{ item.title }}</a>
+  {#
   {% if item.subsections %}
     <div class="mb1">
       {% for s in item.subsections %}
@@ -7,4 +8,5 @@
       {% endfor %}
     </div>
   {% endif %}
+  #}
 {% endfor %}

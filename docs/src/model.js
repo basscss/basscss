@@ -28,10 +28,10 @@ module.exports = function() {
       previous_page: 'getting_started',
       next_page: 'utility',
       sections: [
-        { title: 'Typography', link: '/docs/base/#typography' },
-        { title: 'Forms', link: '/docs/base/#forms' },
-        { title: 'Buttons', link: '/docs/base/#buttons' },
-        { title: 'Tables', link: '/docs/base/#tables' }
+        { title: 'Typography', id: 'typography', link: '/docs/base/#typography', module: 'basscssBaseTypography' },
+        { title: 'Forms', id: 'forms', link: '/docs/base/#forms', module: 'basscssBaseForms' },
+        { title: 'Buttons', id: 'buttons', link: '/docs/base/#buttons', module: 'basscssBaseButtons' },
+        { title: 'Tables', id: 'tables', link: '/docs/base/#tables', module: 'basscssBaseTables' }
       ]
     },
     utility: {
@@ -41,11 +41,11 @@ module.exports = function() {
       previous_page: 'base',
       next_page: 'layout',
       sections: [
-        { title: 'Typography', link: '/docs/utility/#typography' },
-        { title: 'Layout', link: '/docs/utility/#layout' },
-        { title: 'White Space Scale', link: '/docs/utility/#white-space' },
-        { title: 'Responsive States', link: '/docs/utility/#responsive-states' },
-        { title: 'Positions', link: '/docs/utility/#positions' }
+        { title: 'Typography', id: 'typography', link: '/docs/utility/#typography', module: 'basscssUtilityTypography' },
+        { title: 'Layout', id: 'layout', link: '/docs/utility/#layout', module: 'basscssUtilityLayout' },
+        { title: 'White Space Scale', id: 'white-space', link: '/docs/utility/#white-space', module: 'basscssUtilityWhiteSpace' },
+        { title: 'Responsive States', id: 'responsive-states', link: '/docs/utility/#responsive-states', module: 'basscssUtilityResponsiveStates' },
+        { title: 'Positions', id: 'positions', link: '/docs/utility/#positions', module: 'basscssPositions' }
       ]
     },
     layout: {
@@ -55,24 +55,36 @@ module.exports = function() {
       previous_page: 'utility',
       next_page: 'color',
       sections: [
-        { title: 'Grid', link: '/docs/layout/#grid',
+        {
+          title: 'Grid',
+          link: '/docs/layout/#grid',
+          id: 'grid',
+          module: 'basscssGrid',
           subsections: [
-            { title: 'Responsive Grid', link: '/docs/layout/#responsive-grid' },
-            { title: 'Gutters', link: '/docs/layout/#grid-gutters' },
-            { title: 'Nesting', link: '/docs/layout/#grid-nesting' },
-            { title: 'Reversed', link: '/docs/layout/#grid-reversed' },
-            { title: 'Centering Columns', link: '/docs/layout/#grid-centering' }
+            //{ title: 'Responsive Grid', link: '/docs/layout/#responsive-grid' },
+            //{ title: 'Gutters', link: '/docs/layout/#grid-gutters' },
+            //{ title: 'Nesting', link: '/docs/layout/#grid-nesting' },
+            //{ title: 'Reversed', link: '/docs/layout/#grid-reversed' },
+            //{ title: 'Centering Columns', link: '/docs/layout/#grid-centering' }
           ]
         },
-        { title: 'Table Object', link: '/docs/layout/#table-object',
+        {
+          title: 'Table Object',
+          link: '/docs/layout/#table-object',
+          id: 'table-object',
+          module: 'basscssTableObject',
           subsections: [
-            { title: 'Flag Object', link: '/docs/layout/#table-flag-object' },
-            { title: 'Equal Width Cells', link: '/docs/layout/#table-fixed' },
-            { title: 'Responsive Table Object', link: '/docs/layout/#responsive-table-object' },
-            { title: 'Table Grid', link: '/docs/layout/#table-grid' }
+            //{ title: 'Flag Object', link: '/docs/layout/#table-flag-object' },
+            //{ title: 'Equal Width Cells', link: '/docs/layout/#table-fixed' },
+            //{ title: 'Responsive Table Object', link: '/docs/layout/#responsive-table-object' },
+            //{ title: 'Table Grid', link: '/docs/layout/#table-grid' }
           ]
         },
-        { title: 'Flex Object', link: '/docs/layout/#flex-object',
+        {
+          title: 'Flex Object',
+          link: '/docs/layout/#flex-object',
+          id: 'flex-object',
+          module: 'flexObject',
           subsections: []
         }
       ]
@@ -82,12 +94,12 @@ module.exports = function() {
       description: '',
       link: '/docs/color',
       sections: [
-        { title: 'Colors', link: '/docs/color/#colors' },
-        { title: 'Backgrounds', link: '/docs/color/#backgrounds' },
-        { title: 'Borders', link: '/docs/color/#borders' },
-        { title: 'Forms', link: '/docs/color/#forms' },
-        { title: 'Buttons', link: '/docs/color/#buttons' },
-        { title: 'Tables', link: '/docs/color/#tables' }
+        { title: 'Colors', link: '/docs/color/#colors', id: 'colors', module: 'basscssColors' },
+        { title: 'Borders', link: '/docs/color/#borders', id: 'borders', module: 'basscssColorBorders' },
+        { title: 'Forms', link: '/docs/color/#forms', id: 'forms', module: 'basscssColorForms' },
+        { title: 'Forms Dark', link: '/docs/color/#forms-dark', id: 'forms-dark', module: 'basscssColorFormsDark' },
+        { title: 'Buttons', link: '/docs/color/#buttons', id: 'buttons', module: 'basscssColorButtons' },
+        { title: 'Tables', link: '/docs/color/#tables', id: 'tables', module: 'basscssColorTables' }
       ]
     }
   };
