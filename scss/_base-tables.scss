@@ -16,7 +16,7 @@ $table-cell-padding-y: .25rem !default;
 /* Basscss Base Tables */
 
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0;
   max-width: 100%;
   width: 100%;
