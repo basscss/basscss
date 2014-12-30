@@ -55,6 +55,8 @@
 @custom-media --breakpoint-lg (min-width: 64em);
 
 
+@import "basscss-defaults";
+
 :root {
   --font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --heading-font-weight: 600;
