@@ -1,0 +1,99 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+$breakpoint-sm: '(min-width: 40em)';
+$breakpoint-md: '(min-width: 52em)';
+$breakpoint-lg: '(min-width: 64em)';
+
+/*
+ * Basscss Flex Object
+ */
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.flex-baseline {
+  align-items: baseline;
+}
+
+.flex-stretch {
+  align-items: stretch;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.flex-first {
+  order: -1;
+}
+
+.flex-last {
+  order: 1024;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-grow {
+  flex: 1 0 auto;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.flex > div {
+  box-sizing: border-box;
+}
+
+@media #{$breakpoint-sm} {
+  .sm-flex {
+    display: flex;
+  }
+
+  .sm-flex > div {
+    box-sizing: border-box;
+  }
+}
+
+@media #{$breakpoint-md} {
+  .md-flex {
+    display: flex;
+  }
+
+  .md-flex > div {
+    box-sizing: border-box;
+  }
+}
+
+@media #{$breakpoint-lg} {
+  .lg-flex {
+    display: flex;
+  }
+
+  .lg-flex > div {
+    box-sizing: border-box;
+  }
+}

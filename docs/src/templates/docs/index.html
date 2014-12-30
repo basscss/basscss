@@ -24,6 +24,7 @@
         <a href="{{ page.link }}" class="h2 button block button-nav-light">{{ page.title }}</a>
         {% for section in page.sections %}
           <a href="{{ section.link }}" class="h5 button block button-nav-light">{{ section.title }}</a>
+          {#
           {% if section.subsections %}
             <div class="mb1">
               {% for s in section.subsections %}
@@ -31,6 +32,7 @@
               {% endfor %}
             </div>
           {% endif %}
+          #}
         {% endfor %}
       </div>
     {% endif %}

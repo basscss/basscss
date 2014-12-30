@@ -1,6 +1,6 @@
 /*
 
-    Basscss v4.1.8
+    Basscss v4.2.0
 
     Low-level CSS toolkit
     http://basscss.com
@@ -138,6 +138,7 @@ input,
 select,
 textarea,
 fieldset {
+  font-size: 1rem;
   margin-top: 0;
   margin-bottom: .5rem;
 }
@@ -155,25 +156,27 @@ input[type=time],
 input[type=url],
 input[type=week] {
   box-sizing: border-box;
-  height: 2.25em;
-  padding: .25em 1rem;
+  height: 2.25rem;
+  padding: .5rem .5rem;
+  vertical-align: middle;
   -webkit-appearance: none;
 }
 
 select {
   box-sizing: border-box;
   line-height: 1.75;
-  padding: .25em 1rem;
+  padding: .5rem .5rem;
 }
 
 select:not([multiple]) {
-  height: 2.25em;
+  height: 2.25rem;
+  vertical-align: middle;
 }
 
 textarea {
   box-sizing: border-box;
   line-height: 1.75;
-  padding: .25em 1rem;
+  padding: .5rem .5rem;
 }
 
 .fieldset-reset {
@@ -193,16 +196,18 @@ textarea {
 
 button,
 .button {
+  font-size: inherit;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
   box-sizing: border-box;
-  line-height: 1.125;
-  padding: .5em 1rem;
+  line-height: 1.125rem;
+  padding: .5rem 1rem;
   margin: 0;
   height: auto;
   border: 1px solid transparent;
+  vertical-align: middle;
   -webkit-appearance: none;
 }
 
@@ -233,7 +238,7 @@ th {
 
 th,
 td {
-  padding: .25em 1rem;
+  padding: .25rem 1rem;
   line-height: inherit;
 }
 
@@ -640,77 +645,6 @@ td {
   display: table;
 }
 
-/* Basscss UI Utility Button Sizes */
-
-.button-small {
-  padding: .25em .5rem;
-}
-
-.button-big {
-  line-height: 1.625;
-}
-
-.button-narrow {
-  padding-left: .5rem;
-  padding-right: .5rem;
-}
-
-
-
-/* Basscss UI Utility Groups */
-
-.x-group-item {
-  margin-left: -1px;
-}
-
-.x-group-item:first-of-type {
-  margin-left: 0;
-}
-
-.y-group-item {
-  margin-top: -1px;
-}
-
-.y-group-item:first-of-type {
-  margin-top: 0;
-}
-
-/* Extension for 2px border items like .button-blue-outline */
-
-.x-group-item-2 {
-  margin-left: -2px;
-}
-
-.x-group-item-2:first-of-type {
-  margin-left: 0;
-}
-
-.y-group-item-2 {
-  margin-top: -2px;
-}
-
-.y-group-item-2:first-of-type {
-  margin-top: 0;
-}
-
-.x-group-item:focus,
-.x-group-item-2:focus,
-.y-group-item:focus,
-.y-group-item-2:focus {
-  position: relative;
-  z-index: 1;
-}
-
-/* Basscss UI Utility Disclosure States */
-
-.disclosure-show {
-  display: none;
-}
-
-.is-active .disclosure-show {
-  display: block;
-}
-
 /* Basscss Grid */
 
 .container {
@@ -1070,19 +1004,19 @@ hr {
 }
 
 .field-light:invalid {
-  border-color: #f95020;
+  border-color: #ff4919;
 }
 
 .field-light.is-success {
-  border-color: #00cf26;
+  border-color: #00df3f;
 }
 
 .field-light.is-warning {
-  border-color: #efcc00;
+  border-color: #ffcf00;
 }
 
 .field-light.is-error {
-  border-color: #f95020;
+  border-color: #ff4919;
 }
 
 .radio-light,
@@ -1138,19 +1072,19 @@ hr {
 }
 
 .field-dark:invalid {
-  border-color: #f95020;
+  border-color: #ff4919;
 }
 
 .field-dark.is-success {
-  border-color: #00cf26;
+  border-color: #00df3f;
 }
 
 .field-dark.is-warning {
-  border-color: #efcc00;
+  border-color: #ffcf00;
 }
 
 .field-dark.is-error {
-  border-color: #f95020;
+  border-color: #ff4919;
 }
 
 
@@ -1167,6 +1101,43 @@ hr {
 
 
 /* Basscss Color Buttons */
+
+/* Basscss Button Light Gray */
+
+.button-light-gray {
+  color: #333;
+  background-color: #ccc;
+  border-radius: 3px;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
+}
+
+.button-light-gray:hover {
+  opacity: .875;
+}
+
+.button-light-gray:active,
+.button-light-gray:is-active {
+  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
+}
+
+.button-light-gray:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 118, 223, .5);
+}
+
+.button-light-gray:disabled,
+.button-light-gray.is-disabled {
+  opacity: .5;
+}
+
+
+
+/* Basscss Button Blue */
 
 .button-blue {
   color: white;
@@ -1199,8 +1170,12 @@ hr {
   opacity: .5;
 }
 
+
+
+/* Basscss Button Blue Outline */
+
 .button-blue-outline {
-  line-height: 1;
+  line-height: 1rem;
   color: #0076df;
   background-color: transparent;
   border-radius: 3px;
@@ -1235,6 +1210,10 @@ hr {
   opacity: .5;
 }
 
+
+
+/* Basscss Button Gray */
+
 .button-gray {
   color: white;
   background-color: #777;
@@ -1266,9 +1245,13 @@ hr {
   opacity: .5;
 }
 
+
+
+/* Basscss Button Red */
+
 .button-red {
   color: white;
-  background-color: #f95020;
+  background-color: #ff4919;
   border-radius: 3px;
   -webkit-transition-duration: .1s;
           transition-duration: .1s;
@@ -1289,7 +1272,7 @@ hr {
 
 .button-red:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(249, 80, 32, .5);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(255, 73, 25, .5);
 }
 
 .button-red:disabled,
@@ -1299,6 +1282,8 @@ hr {
 
 
 
+/* Basscss Button Nav Light */
+
 .button-nav-light:hover {
   background-color: rgba(0, 0, 0, .0625);
 }
@@ -1307,6 +1292,10 @@ hr {
 .button-nav-light.is-active {
   color: #333;
 }
+
+
+
+/* Basscss Button Nav Dark */
 
 .button-nav-dark {
   color: white;
@@ -1320,6 +1309,10 @@ hr {
 .button-nav-dark.is-active {
   background-color: rgba(0, 0, 0, .125);
 }
+
+
+
+/* Basscss Button Nav Tab */
 
 .button-nav-tab {
   margin-bottom: -1px;
@@ -1338,6 +1331,8 @@ hr {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
+
+
 
 
 
@@ -1368,15 +1363,15 @@ hr {
 }
 
 .red {
-  color: #f95020;
+  color: #ff4919;
 }
 
 .green {
-  color: #00cf26;
+  color: #00df3f;
 }
 
 .yellow {
-  color: #efcc00;
+  color: #ffcf00;
 }
 
 .bg-dark-gray {
@@ -1404,15 +1399,15 @@ hr {
 }
 
 .bg-red {
-  background-color: #f95020;
+  background-color: #ff4919;
 }
 
 .bg-green {
-  background-color: #00cf26;
+  background-color: #00df3f;
 }
 
 .bg-yellow {
-  background-color: #efcc00;
+  background-color: #ffcf00;
 }
 
 .bg-darken-1 {

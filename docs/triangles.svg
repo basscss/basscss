@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 512 384" fill="#09f">
+  <polygon points="64 0 128 128 0 128" opacity="0.05"/> 
+  <polygon points="64 0 192 0 128 128" opacity="0.15"/>
+  <polygon points="192 0 128 128 256 128" opacity="0.2"/>
+  <polygon points="192 0 320 0 256 128" opacity="0.25"/>
+  <polygon points="320 0 256 128 384 128" opacity="0.15"/>
+  <polygon points="320 0 448 0 384 128" opacity="0.1"/>
+  <polygon points="448 0 384 128 512 128" opacity="0.05"/>
+  <polygon points="448 0 576 0 512 128" opacity="0.02"/>
+  <polygon points="64 256 128 128 0 128" opacity="0.10"/> 
+  <polygon points="128 128 64 256 192 256" opacity="0.15"/> 
+  <polygon points="128 128 256 128 192 256" opacity="0.25"/> 
+  <polygon points="256 128 192 256 320 256" opacity="0.25"/> 
+  <polygon points="256 128 384 128 320 256" opacity="0.2"/> 
+  <polygon points="384 128 320 256 448 256" opacity="0.15"/> 
+  <polygon points="384 128 512 128 448 256" opacity="0.05"/> 
+  <polygon points="64 256 128 384 0 384" opacity="0.05"/> 
+  <polygon points="64 256 192 256 128 384" opacity="0.1"/> 
+  <polygon points="192 256 128 384 256 384" opacity="0.15"/> 
+  <polygon points="192 256 320 256 256 384" opacity="0.2"/> 
+  <polygon points="320 256 256 384 384 384" opacity="0.1"/> 
+  <polygon points="320 256 448 256 384 384" opacity="0.1"/> 
+  <polygon points="448 256 384 384 512 384" opacity="0.05"/> 
+</svg>
