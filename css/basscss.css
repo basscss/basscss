@@ -1,6 +1,6 @@
 /*
 
-    Basscss v4.2.0
+    Basscss v4.2.2
 
     Low-level CSS toolkit
     http://basscss.com
@@ -225,7 +225,7 @@ button,
 /* Basscss Base Tables */
 
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0;
   max-width: 100%;
   width: 100%;
@@ -1096,6 +1096,10 @@ hr {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #ccc;
+}
+
+.table-light tr:last-child td {
+  border-bottom: 0;
 }
 
 
