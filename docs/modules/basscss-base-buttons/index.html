@@ -179,7 +179,7 @@
 <div class="flex flex-wrap flex-center mb3">
 <div class="flex-auto">
 <h1 class="h4 m0">basscss-base-buttons
-<span class="h6">v1.0.0</span>
+<span class="h6">v1.0.2</span>
 </h1>
 <h1 class="caps m0">Base Buttons</h1>
 </div>
@@ -219,6 +219,15 @@ Color styles in other modules and other custom extensions adjust their surface-l
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-red mb1&quot;</span>&gt;</span>Button Red<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
+<h2 id="default-variables">Default Variables</h2>
+<p>To customize base button styles, use the following variables.</p>
+<pre><span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--button-font-size</span>:<span class="hljs-value"> inherit</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--button-font-weight</span>:<span class="hljs-value"> bold</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--button-line-height</span>:<span class="hljs-value"> <span class="hljs-number">1.125rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--button-padding-y</span>:<span class="hljs-value"> .<span class="hljs-number">5rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--button-padding-x</span>:<span class="hljs-value"> <span class="hljs-number">1rem</span></span></span>;
+<span class="hljs-rule">}</span></span></pre><p>Note: adjusting the line-height and padding may require adjustments to form element variables to maintain vertical alignment.</p>
 
 
 

@@ -179,7 +179,7 @@
 <div class="flex flex-wrap flex-center mb3">
 <div class="flex-auto">
 <h1 class="h4 m0">basscss-base-forms
-<span class="h6">v1.0.2</span>
+<span class="h6">v1.0.4</span>
 </h1>
 <h1 class="caps m0">Base Forms</h1>
 </div>
@@ -257,7 +257,8 @@ The use of utilities allows for a lot of flexibility when building form layouts.
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;reset&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-gray&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></pre>
 </div>
-<p>Fieldsets can be reset with .fieldset-reset to allow for easier styling of the fieldset and legend.</p>
+<h2 id="fieldsets">Fieldsets</h2>
+<p>Fieldsets can be reset with <code>.fieldset-reset</code> to allow for easier styling of the fieldset and legend.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <form class="sm-col-6">
@@ -282,7 +283,14 @@ The use of utilities allows for a lot of flexibility when building form layouts.
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;sumbit&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue&quot;</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></pre>
 </div>
-
+<h2 id="default-variables">Default Variables</h2>
+<p>To customize base form field styles, use the following variables.</p>
+<pre><span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--form-field-font-size</span>:<span class="hljs-value"> <span class="hljs-number">1rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--form-field-height</span>:<span class="hljs-value"> <span class="hljs-number">2.25rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--form-field-padding-y</span>:<span class="hljs-value"> .<span class="hljs-number">5rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--form-field-padding-x</span>:<span class="hljs-value"> .<span class="hljs-number">5rem</span></span></span>;
+<span class="hljs-rule">}</span></span></pre>
 
 
 

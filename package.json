@@ -5,8 +5,8 @@
   "style": "src/basscss.css",
   "dependencies": {
     "basscss-background-images": "0.0.4",
-    "basscss-base-buttons": "^1.0.0",
-    "basscss-base-forms": "^1.0.1",
+    "basscss-base-buttons": "^1.0.2",
+    "basscss-base-forms": "^1.0.4",
     "basscss-base-reset": "0.0.3",
     "basscss-base-tables": "^0.1.0",
     "basscss-base-typography": "0.0.3",
