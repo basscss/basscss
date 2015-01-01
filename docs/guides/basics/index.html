@@ -41,212 +41,135 @@
   <div class="sm-col sm-col-9 px2 py2">
 
     
-
-<!--
-<section id="rams-quote" class="center py3">
-  <blockquote class="py2 m0 mid-gray">
-    <p class="h2 italic mb0">Good design is as little design as possible</p>
-    <cite>&#x2013; Dieter Rams</cite>
-  </blockquote>
-</section>
--->
-
 <p class="h3">
   Understanding the basics of designing for the web with CSS
   is essential to using Basscss effectively.
   This guide covers the fundamentals to help get you started.
 </p>
 
-<section id="markup" class="py2">
-  <h1 class="mt0">Document structure</h1>
-  <p class="h4">
-    HTML is a semantically structured markup language.
-    When building anything on the web, start with clean markup that accurately
-    reflects your information hierarchy.
-    When hierarchy changes, be sure to update the markup before making any stylistic changes.
-    The most important parts of web design involve no CSS at all.
-  </p>
-</section>
-
-<section id="multi-class-pattern" class="py2">
-  <h1>Multiclass CSS pattern</h1>
-  <p class="h4">
-    Basscss is based on Object Oriented CSS (OOCSS) principles.
-    OOCSS has many benefits, including code readability, reusable styles, smaller CSS files,
-    more performant selectors, more flexible markup structure, and code scalability.
-    Basscss is meant to be a very simple and intuitive take on this approach,
-    well suited to designing in the browser, rapid prototyping, or serving as the basis for a larger project.
-  </p>
-  <p class="h4">
-    One of the defining features of OOCSS is the multiclass pattern.
-    This is the practice of using multiple classes on a single HTML element.
-    This can seem strange at first, but once you get the hang of things,
-    it can make designing and building websites much faster and easier.
-    It also has some significant front-end performance benefits.
-  </p>
-  <h2>Example</h2>
-  <pre class="mb2"><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3 p1 mb2 bg-light-gray rounded"</span>&gt;</span>
+<h1 id="document-structure">Document structure</h1>
+<p>HTML is a semantically structured markup language.
+When building anything on the web, start with clean markup that accurately
+reflects your information hierarchy.
+When hierarchy changes, be sure to update the markup before making any stylistic changes.
+The most important parts of web design involve no CSS at all.</p>
+<h1 id="multiclass-css-pattern">Multiclass CSS pattern</h1>
+<p>Basscss is based on Object Oriented CSS (OOCSS) principles.
+OOCSS has many benefits, including code readability, reusable styles, smaller CSS files,
+more performant selectors, more flexible markup structure, and code scalability.
+Basscss is meant to be a very simple and intuitive take on this approach,
+well suited to designing in the browser, rapid prototyping, or serving as the basis for a larger project.</p>
+<p>One of the defining features of OOCSS is the multiclass pattern.
+This is the practice of using multiple classes on a single HTML element.
+This can seem strange at first, but once you get the hang of things,
+it can make designing and building websites much faster and easier.
+It also has some significant front-end performance benefits.</p>
+<h2 id="example">Example</h2>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="h3 p1 mb2 bg-light-gray rounded">
   A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
-  <h2>Order</h2>
-  <p class="h4">
-    While the order of classes doesn’t matter to the browser, maintaining
-    a consistent order will drastically improve code readability.
-    I recommend the following order:
-  </p>
-  <ol class="h4">
-    <li><strong>Typography</strong> &#x2013; sets the visual hierarchy and is one of the most important parts of web design</li>
-    <li><strong>Positioning</strong> &#x2013; can severely change document flow</li>
-    <li><strong>Layout</strong> &#x2013; can affect other elements and document flow</li>
-    <li><strong>Color & Theme</strong> &#x2013; has little or no effect on layout</li>
-    <li><strong>State</strong> &#x2013; is dynamic and often unnecessary</li>
-  </ol>
-</section>
-
-<section id="typography" class="py2">
-  <h1>Writing and Typography</h1>
-  <p class="h4">
-    Good writing and typography are key to successful web design.
-    Typography should serve as the basis for gestalt, user flows, and information hierarchy.
-    Ensure that links, form labels, helper text, buttons, and other microcopy
-    receive as much attention as body copy, and remember the two serve very different purposes.
-  </p>
-</section>
-
-<section id="block-level-inline" class="py2">
-  <h1>Block-level and Inline Elements</h1>
-  <p class="h4">
-    There are two basic types of elements in HTML.
-    <a href="https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements">Block-level elements</a>
-    are larger container elements that begin on a new line and take up the entire width
-    of their parent container by default.
-    Block-level elements can also have set widths and heights.
-    They may contain other block-level elements and inline elements.
-  </p>
-  <p class="h4">
-    <a href="https://developer.mozilla.org/en-US/docs/HTML/Inline_elements">Inline elements</a>
-    do not begin a new line and contain content and other inline elements.
-    Inline elements are only as large as the content they contain.
-  </p>
-  <p class="h4">
-    In HTML5, things get a little more complicated, but the basics still apply.
-    Learn more:
-    <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories">HTML5 Content Categories</a>.
-  </p>
-</section>
-
-<section id="display" class="py2">
-  <h1>Display Property</h1>
-  <p class="h4">
-    Basscss’s display utilities override the default behaviors of block-level and inline elements.
-    To make a block-level element inline, use the <code>.inline</code> class.
-    To make inline elements block-level, use <code>.block</code>.
-  </p>
-  <p class="h4">
-    Inline-block is a mix of these two properties.
-    Inline-block elements have a block element box, with optional width and height,
-    but flow with surrounding content like an inline element.
-  </p>
-</section>
-
-<section id="box-model" class="py2">
-  <h1>Box Model</h1>
-  <p class="h4">
-    The box-model is the basis of all HTML layout.
-    Understanding how it works is crucial to designing for the web.
-    Block-level elements naturally fill the width of their parents.
-    Margins add space around the element. Borders add space around the element, but within the margins.
-    Padding adds space within the element.
-    If an element has no set width, it will shrink to fit its container.
-  </p>
-  <p class="h4">
-    If an element has a declared width or height, padding and borders will be added to those values.
-    It’s often easier to add padding and borders to child elements rather than directly to elements with set widths.
-    For example, when using a grid system.
-  </p>
-  <h2 class="h5 mid-gray">Box Model Simulation</h2>
-  <div class="center p1 blue border-blue">
-    <p class="mb0">Margin</p>
-    <div class="m1 py1 px2 border-blue">
-      <p>Padding</p>
-      <div class="p2 border-blue">Content</div>
-    </div>
+</div>
   </div>
-</section>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3 p1 mb2 bg-light-gray rounded"</span>&gt;</span>
+  A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h1 id="order">Order</h1>
+<p>While the order of classes doesn’t matter to the browser, maintaining
+a consistent order will drastically improve code readability.
+I recommend the following order:</p>
+<ol>
+<li><strong>Typography</strong> &#x2013; sets the visual hierarchy and is one of the most important parts of web design</li></li>
+<li><strong>Positioning</strong> &#x2013; can severely change document flow</li></li>
+<li><strong>Layout</strong> &#x2013; can affect other elements and document flow</li></li>
+<li><strong>Color &amp; Theme</strong> &#x2013; has little or no effect on layout</li></li>
+<li><strong>State</strong> &#x2013; is dynamic and often unnecessary</li></li>
+</ol>
+<h1 id="writing-and-typography">Writing and Typography</h1>
+<p>Good writing and typography are key to successful web design.
+Typography should serve as the basis for gestalt, user flows, and information hierarchy.
+Ensure that links, form labels, helper text, buttons, and other microcopy
+receive as much attention as body copy, and remember the two serve very different purposes.</p>
+<h1 id="block-level-and-inline-elements">Block-level and Inline Elements</h1>
+<p>There are two basic types of elements in HTML.
+<a href="https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements">Block-level elements</a>
+are larger container elements that begin on a new line and take up the entire width
+of their parent container by default.
+Block-level elements can also have set widths and heights.
+They may contain other block-level elements and inline elements.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/HTML/Inline_elements">Inline Elements</a>
+do not begin a new line and contain content and other inline elements.
+Inline elements are only as large as the content they contain.</p>
+<p>In HTML5, things get a little more complicated, but the basics still apply.
+Learn more:
+<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories">HTML5 Content Categories</a>.</p>
+<h1 id="display-property">Display Property</h1>
+<p>Basscss’s display utilities override the default behaviors of block-level and inline elements.
+To make a block-level element inline, use the <code>.inline</code> class.
+To make inline elements block-level, use <code>.block</code>.</p>
+<p>Inline-block is a mix of these two properties.
+Inline-block elements have a block element box, with optional width and height,
+but flow with surrounding content like an inline element.</p>
+<h1 id="box-model">Box Model</h1>
+<p>The box-model is the basis of all HTML layout.
+Understanding how it works is crucial to designing for the web.
+Block-level elements naturally fill the width of their parents.
+Margins add space around the element. Borders add space around the element, but within the margins.
+Padding adds space within the element.
+If an element has no set width, it will shrink to fit its container.</p>
+<p>If an element has a declared width or height, padding and borders will be added to those values.
+It’s often easier to add padding and borders to child elements rather than directly to elements with set widths.
+For example, when using a grid system.</p>
+<h2 id="box-model-simulation">Box Model Simulation</h2>
+<div class="center p1 blue border-blue">
+  <p class="mb0">Margin</p>
+  <div class="m1 py1 px2 border-blue">
+    <p>Padding</p>
+    <div class="p2 border-blue">Content</div>
+  </div>
+</div>
 
-<section id="floats" class="py2">
-  <h1>Floats</h1>
-  <p class="h4">
-    Floats are for wrapping text around images, but are also used for breaking
-    elements out of the normal document flow.
-    When you float an element left or right, the content following the float will flow beside and around the element.
-  </p>
-  <p class="h4">
-    Do not set display properties on floated elements.
-    When elements are floated, they are set to display block.
-  </p>
-  
-  
-
-  
-    <div class="mb3 border rounded">
-      <div class="p2">
-        <div class="outline-blue">
+<h1 id="floats">Floats</h1>
+<p>Floats are for wrapping text around images, but are also used for breaking
+elements out of the normal document flow.
+When you float an element left or right, the content following the float will flow beside and around the element.</p>
+<p>Do not set display properties on floated elements.
+When elements are floated, they are set to display block.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="outline-blue">
   <div class="right p1">.right</div>
   <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
 </div>
-
-      </div>
-      <div class="m0">
-        <pre class="m0 not-rounded"><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"outline-blue"</span>&gt;</span>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right p1"</span>&gt;</span>.right<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-</code></pre>
-      </div>
-    </div>
-  
-
-  <p class="h4">
-    If an element contains only floated children, such as in a grid system, its height will collapse.
-    Clearfixes are used to ensure the parent element maintains the height of its content.
-    This container element is using the <code>.clearfix</code> class.
-  </p>
-  
-  
-
-  
-    <div class="mb3 border rounded">
-      <div class="p2">
-        <div class="clearfix outline-blue">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>If an element contains only floated children, such as in a grid system, its height will collapse.
+Clearfixes are used to ensure the parent element maintains the height of its content.
+This container element is using the <code>.clearfix</code> class.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix outline-blue">
   <div class="left p2">.left</div>
   <div class="left p2">.left</div>
   <div class="right p2">.right</div>
 </div>
-
-      </div>
-      <div class="m0">
-        <pre class="m0 not-rounded"><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right p2"</span>&gt;</span>.right<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-</code></pre>
-      </div>
-    </div>
-  
-
-  <p class="h4">
-    Overflow hidden crops overflowing content, but can also be used as a clearfix
-    because it creates what’s called a new <i>block formatting context</i>.
-  </p>
-  
-  
-
-  
-    <div class="mb3 border rounded">
-      <div class="p2">
-        <div class="outline-blue">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Overflow hidden crops overflowing content, but can also be used as a clearfix
+because it creates what’s called a new <em>block formatting context</em>.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="outline-blue">
   <div class="overflow-hidden">
     <div class="left p2">.left</div>
     <div class="left p2">
@@ -255,10 +178,8 @@
     </div>
   </div>
 </div>
-
-      </div>
-      <div class="m0">
-        <pre class="m0 not-rounded"><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"outline-blue"</span>&gt;</span>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2"</span>&gt;</span>
@@ -266,260 +187,141 @@
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:64rem"</span>&gt;</span>wider than parent element<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-</code></pre>
-      </div>
-    </div>
-  
-
-  <p class="h4">
-    Using overflow hidden on an element placed after one or more floated elements will prevent that element from wrapping under the floated elements.
-    This is the basis of the
-    <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">
-      Media Object.
-    </a>
-  </p>
-  
-  
-
-  
-    <div class="mb3 border rounded">
-      <div class="p2">
-        <div class="clearfix outline-blue">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Using overflow hidden on an element placed after one or more floated elements will prevent that element from wrapping under the floated elements.
+This is the basis of the
+<a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">Media Object</a>.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix outline-blue">
   <div class="left p1">.left</div>
   <p class="overflow-hidden p1">.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
 </div>
-
-      </div>
-      <div class="m0">
-        <pre class="m0 not-rounded"><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p1"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden p1"</span>&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-</code></pre>
-      </div>
-    </div>
-  
-
-  
-  
-
-  
-    <div class="mb3 border rounded">
-      <div class="p2">
-        <div class="clearfix outline-blue">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix outline-blue">
   <div class="left p1">.left</div>
   <div class="right p1">.right</div>
   <p class="overflow-hidden p1">.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
 </div>
-
-      </div>
-      <div class="m0">
-        <pre class="m0 not-rounded"><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p1"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right p1"</span>&gt;</span>.right<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden p1"</span>&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-</code></pre>
-      </div>
-    </div>
-  
-
-</section>
-
-<section id="widths" class="py2">
-  <h1>Widths</h1>
-  <p class="h4">
-    The default document flow in HTML is fluid.
-    This means that creating fluid and responsive layouts should be very easy to achieve.
-    Avoid using fixed widths at all in your layout.
-    Instead rely heavily on the normal document flow.
-  </p>
-  <p class="h4">
-    For elements with inherit widths, such as images, consider using a max-width of 100%
-    to ensure it never overflows its container.
-    Use the <code>.fit</code> class to do this.
-  </p>
-  <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"cat.gif"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Cat"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fit"</span>/&gt;</span></code></pre>
-  <p class="h4">
-    If you do need to use widths, use percentages.
-    Most grid systems these days use this approach,
-    along with media queries to prevent broken layouts across devices.
-    When using percentage-based widths, remember that the percentage is based on width of the parent,
-    so nesting elements with percentage-based widths will get incrementally smaller as you nest.
-  </p>
-  
-  
-
-  
-    <div class="mb3 border rounded">
-      <div class="p2">
-        <div class="clearfix outline-blue">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h1 id="widths">Widths</h1>
+<p>The default document flow in HTML is fluid.
+This means that creating fluid and responsive layouts should be very easy to achieve.
+Avoid using fixed widths at all in your layout.
+Instead rely heavily on the normal document flow.</p>
+<p>For elements with inherit widths, such as images, consider using a max-width of 100%
+to ensure it never overflows its container.
+Use the <code>.fit</code> class to do this.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <img src="/docs/placeholder.svg" alt="Basscss" class="fit"/>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Basscss"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fit"</span>/&gt;</span></pre>
+</div>
+<p>If you do need to use widths, use percentages.
+Most grid systems these days use this approach,
+along with media queries to prevent broken layouts across devices.
+When using percentage-based widths, remember that the percentage is based on width of the parent,
+so nesting elements with percentage-based widths will get incrementally smaller as you nest.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix outline-blue">
   <div class="left half-width py1">.left.half-width</div>
   <div class="left half-width clearfix">
     <div class="left half-width py1">Nested .left.half-width</div>
     <div class="left half-width py1">Nested .left.half-width</div>
   </div>
 </div>
-
-      </div>
-      <div class="m0">
-        <pre class="m0 not-rounded"><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left half-width py1"</span>&gt;</span>.left.half-width<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left half-width clearfix"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left half-width py1"</span>&gt;</span>Nested .left.half-width<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left half-width py1"</span>&gt;</span>Nested .left.half-width<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-</code></pre>
-      </div>
-    </div>
-  
-
-</section>
-
-<section id="media-queries" class="py2">
-  <h1>Media Queries and Mobile-First Approach</h1>
-  <p class="h4">
-    When building responsive websites, best practices suggest using a mobile-first approach.
-    First consider content and user flows, then create layouts that work well
-    at small screen sizes and touch devices.
-    Once that’s in a good place use styling to enhance the experience on larger devices.
-    For interactive elements, design for touchscreen-sized tap targets first.
-    This usually translates well for use on desktop computers with pointing devices.
-  </p>
-  <p class="h4">
-    Basscss includes several state utilities for showing and hiding content on mobile devices.
-    Use these with care.
-    Mobile users still want the same content across devices and often switch devices mid-task.
-    Creating a cohesive experience is key to a good experience with your product.
-  </p>
-</section>
-
-<section id="positions" class="py2">
-  <h1>Positions</h1>
-  <p class="h4">
-    Positions allow you to move elements out of the default document flow.
-    They can be tricky to use, and I recommend using them as little as possible.
-  </p>
-  <p class="h4">
-    By default, elements have a <code>static</code> position.
-    Use the <code>.relative</code> class to keep elements in the default document flow
-    but create a new positioning context.
-    This is useful when anchoring to specific elements or dealing with <code>z-index</code>.
-  </p>
-  <p class="h4">
-    Use the <code>.absolute</code> class along with the
-    <code>.top-0</code>,
-    <code>.right-0</code>,
-    <code>.bottom-0</code>, and
-    <code>.left-0</code> utilities to anchor elements to the top, right, bottom,
-    or left of their current positioning context.
-    Use the padding or margin utilities to add space around the element.
-    Using two opposing anchoring utilities, such as
-    <code>.left-0</code> and <code>.right-0</code>
-    will make an element span the full width.
-  </p>
-  <p class="h4">
-    Use the <code>.fixed</code> class to give an element fixed positioning relative to the viewport.
-    Use this with caution. It can cause issues with mobile devices and is commonly abused in web design.
-  </p>
-  <p class="h4">
-    By default, positioned elements are stacked one on top of the other based on their position in the document.
-    Try reordering elements in the document before applying z-index properties.
-    If you do need to set z-index, start with the <code>.z1</code> class and work up from there.
-    And be sure you <a href="http://philipwalton.com/articles/what-no-one-told-you-about-z-index/">understand z-index</a> before adding more than four levels.
-  </p>
-  
-  
-
-  
-    <div class="mb3 border rounded">
-      <div class="p2">
-        <div class="outline-blue">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h1 id="media-queries-and-mobile-first-approach">Media Queries and Mobile-First Approach</h1>
+<p>When building responsive websites, best practices suggest using a mobile-first approach.
+First consider content and user flows, then create layouts that work well
+at small screen sizes and touch devices.
+Once that’s in a good place use styling to enhance the experience on larger devices.
+For interactive elements, design for touchscreen-sized tap targets first.
+This usually translates well for use on desktop computers with pointing devices.</p>
+<p>Basscss includes several state utilities for showing and hiding content on mobile devices.
+Use these with care.
+Mobile users still want the same content across devices and often switch devices mid-task.
+Creating a cohesive experience is key to a good experience with your product.</p>
+<h1 id="positions">Positions</h1>
+<p>Positions allow you to move elements out of the default document flow.
+They can be tricky to use, and I recommend using them as little as possible.</p>
+<p>By default, elements have a <code>static</code> position.
+Use the <code>.relative</code> class to keep elements in the default document flow
+but create a new positioning context.
+This is useful when anchoring to specific elements or dealing with <code>z-index</code>.</p>
+<p>Use the <code>.absolute</code> class along with the <code>.top-0</code>, <code>.right-0</code>, <code>.bottom-0</code>, and
+<code>.left-0</code> utilities to anchor elements to the top, right, bottom,
+or left of their current positioning context.
+Use the padding or margin utilities to add space around the element.
+Using two opposing anchoring utilities, such as
+<code>.left-0</code> and <code>.right-0</code> will make an element span the full width.</p>
+<p>Use the <code>.fixed</code> class to give an element fixed positioning relative to the viewport.
+Use this with caution. It can cause issues with mobile devices and is commonly abused in web design.</p>
+<p>By default, positioned elements are stacked one on top of the other based on their position in the document.
+Try reordering elements in the document before applying z-index properties.
+If you do need to set z-index, start with the <code>.z1</code> class and work up from there.
+And be sure you
+<a href="http://philipwalton.com/articles/what-no-one-told-you-about-z-index/">understand z-index</a>
+before adding more than four levels.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="outline-blue">
   <div class="relative p4">
     .relative
     <div class="absolute top-0 right-0 p1 m1">.absolute .top-0 .right-0</div>
     <div class="absolute top-0 right-0 p1 m3">.absolute .top-0 .right-0</div>
   </div>
 </div>
-
-      </div>
-      <div class="m0">
-        <pre class="m0 not-rounded"><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"outline-blue"</span>&gt;</span>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"outline-blue"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"relative p4"</span>&gt;</span>
     .relative
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"absolute top-0 right-0 p1 m1"</span>&gt;</span>.absolute .top-0 .right-0<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"absolute top-0 right-0 p1 m3"</span>&gt;</span>.absolute .top-0 .right-0<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-</code></pre>
-      </div>
-    </div>
-  
-
-</section>
-
-<section id="extending-basscss" class="py2">
-  <h1>Extending Basscss</h1>
-  <p class="h4">
-    You can do a lot with Basscss’s suite of styles, but if you decide to add new styles to your project,
-    here are some tips and recommendations to keep your code simple and maintainable:
-  </p>
-  <ul class="h4">
-    <li>Keep styles as reusable as possible.</li>
-    <li>Only apply styles to base elements once.</li>
-    <li>Never use ids, attributes (e.g. <code>[type=text]</code>) or the universal selector (<code>*</code>) as selectors.</li>
-    <li>Never use adjoining selectors.</li>
-    <li>Avoid parent and sibling selectors.</li>
-    <li>Prefer using class selectors directly on the elements they’re styling.</li>
-    <li>Use clear, descriptive names for selectors.</li>
-    <li>Keep structural styles and theme styles separate.</li>
-    <li>Avoid using mixins and extends in sass &#x2013; it’s often easier and more readable (especially for others) to write styles out by hand.</li>
-  </ul>
-  <p>
-    To learn more about building on top of Basscss, I recommend reading the
-    <a href="/docs/principles">Design Principles</a>.
-</section>
-
-
-
-<section id="guides-cta" class="py4">
-  <h1 class="">Other Guides</h1>
-  <div class="md-flex flex-wrap mxn2 mb4">
-    
-      
-    
-      
-        <div class="md-col-6">
-          <a href="/docs/guides/layout" class="h3 button block button-nav-light">
-            <h3 class="h2 m0">Page Layout</h3>
-            <p class="regular m0">Using the Grid System to Create an Entire Page</p>
-          </a>
-        </div>
-      
-    
-      
-        <div class="md-col-6">
-          <a href="/docs/guides/ui" class="h3 button block button-nav-light">
-            <h3 class="h2 m0">UI Elements</h3>
-            <p class="regular m0">Styling Custom Controls for Interactivity</p>
-          </a>
-        </div>
-      
-    
-      
-        <div class="md-col-6">
-          <a href="/docs/guides/tips" class="h3 button block button-nav-light">
-            <h3 class="h2 m0">Tips &amp; Tricks</h3>
-            <p class="regular m0">Getting the Most Out of Basscss</p>
-          </a>
-        </div>
-      
-    
-  </div>
-</section>
-
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h1 id="extending-basscss">Extending Basscss</h1>
+<p>You can do a lot with Basscss’s suite of styles, but if you decide to add new styles to your project,
+here are some tips and recommendations to keep your code simple and maintainable:</p>
+<ul>
+<li>Keep styles as reusable as possible.</li>
+<li>Only apply styles to base elements once.</li>
+<li>Never use ids, attributes (e.g. <code>[type=text]</code>) or the universal selector (<code>*</code>) as selectors.</li>
+<li>Never use adjoining selectors.</li>
+<li>Avoid parent and sibling selectors.</li>
+<li>Prefer using class selectors directly on the elements they’re styling.</li>
+<li>Use clear, descriptive names for selectors.</li>
+<li>Keep structural styles and theme styles separate.</li>
+<li>Avoid using mixins and extends in sass &#x2013; it’s often easier and more readable (especially for others) to write styles out by hand.</li>
+</ul>
+<p>To learn more about building on top of Basscss, I recommend reading the
+<a href="/docs/principles">Design Principles</a>.</p>
+<p></p>
 
 
 
@@ -530,19 +332,19 @@
   
     <div class="sticky top-0 px2 py2 sm-col sm-col-3 sm-show">
       
-  <a href="/docs/guides/basics/#markup" class="button button-nav-light block">Document Structure</a>
+  <a href="/docs/guides/basics/#document-structure" class="button button-nav-light block">Document Structure</a>
   
 
-  <a href="/docs/guides/basics/#multi-class-pattern" class="button button-nav-light block">Multiclass CSS Pattern</a>
+  <a href="/docs/guides/basics/#multiclass-css-pattern" class="button button-nav-light block">Multiclass CSS Pattern</a>
   
 
-  <a href="/docs/guides/basics/#typography" class="button button-nav-light block">Typography</a>
+  <a href="/docs/guides/basics/#writing-and-typography" class="button button-nav-light block">Typography</a>
   
 
-  <a href="/docs/guides/basics/#block-level-inline" class="button button-nav-light block">Block-Level and Inline Elements</a>
+  <a href="/docs/guides/basics/#block-level-and-inline-elements" class="button button-nav-light block">Block-Level and Inline Elements</a>
   
 
-  <a href="/docs/guides/basics/#display" class="button button-nav-light block">Display Property</a>
+  <a href="/docs/guides/basics/#display-property" class="button button-nav-light block">Display Property</a>
   
 
   <a href="/docs/guides/basics/#box-model" class="button button-nav-light block">Box Model</a>
@@ -554,7 +356,7 @@
   <a href="/docs/guides/basics/#widths" class="button button-nav-light block">Widths</a>
   
 
-  <a href="/docs/guides/basics/#media-queries" class="button button-nav-light block">Media Queries and Mobile-First Approach</a>
+  <a href="/docs/guides/basics/#media-queries-and-mobile-first-approach" class="button button-nav-light block">Media Queries and Mobile-First Approach</a>
   
 
   <a href="/docs/guides/basics/#positions" class="button button-nav-light block">Positions</a>
@@ -570,55 +372,55 @@
 </div>
 
 
-  <div id="docs-footer" class="border-top border-bottom">
-  <div class="flex flex-wrap mt2 mb1 mxn2">
+  <div id="docs-footer" class="mt4 border-top border-bottom">
+  <div class="flex flex-wrap mt2 mb1 mxn1">
     <div class="col-6 sm-col-3 mb1">
-      <h2 class="h6 caps px2 py1 m0">Usage</h2>
+      <h2 class="h6 caps px1 py1 m0">Usage</h2>
       
-        <a href="/docs/getting-started" class="h5 button block button-nav-light">Getting Started</a>
+        <a href="/docs/getting-started" class="h5 button block button-small button-nav-light">Getting Started</a>
       
-        <a href="/docs/base" class="h5 button block button-nav-light">Base</a>
+        <a href="/docs/base" class="h5 button block button-small button-nav-light">Base</a>
       
-        <a href="/docs/utility" class="h5 button block button-nav-light">Utility</a>
+        <a href="/docs/utility" class="h5 button block button-small button-nav-light">Utility</a>
       
-        <a href="/docs/layout" class="h5 button block button-nav-light">Layout</a>
+        <a href="/docs/layout" class="h5 button block button-small button-nav-light">Layout</a>
       
-        <a href="/docs/color" class="h5 button block button-nav-light">Color</a>
+        <a href="/docs/color" class="h5 button block button-small button-nav-light">Color</a>
       
     </div>
     <div class="col-6 sm-col-3 mb1">
-      <h2 class="h6 caps px2 py1 m0">Guides</h2>
+      <h2 class="h6 caps px1 py1 m0">Guides</h2>
       
-        <a href="/docs/guides/basics" class="h5 button block button-nav-light">Basics</a>
+        <a href="/docs/guides/basics" class="h5 button block button-small button-nav-light">Basics</a>
       
-        <a href="/docs/guides/layout" class="h5 button block button-nav-light">Page Layout</a>
+        <a href="/docs/guides/layout" class="h5 button block button-small button-nav-light">Page Layout</a>
       
-        <a href="/docs/guides/ui" class="h5 button block button-nav-light">UI Elements</a>
+        <a href="/docs/guides/ui" class="h5 button block button-small button-nav-light">UI Elements</a>
       
-        <a href="/docs/guides/tips" class="h5 button block button-nav-light">Tips &amp; Tricks</a>
+        <a href="/docs/guides/tips" class="h5 button block button-small button-nav-light">Tips &amp; Tricks</a>
       
     </div>
     <div class="flex-auto sm-col-6 mb1">
-      <h2 class="h6 caps px2 py1 m0">Reference</h2>
+      <h2 class="h6 caps px1 py1 m0">Reference</h2>
       <div class="flex flex-wrap">
         
-          <a href="/docs/principles" class="h5 button block col-6 md-col-4 button-nav-light">Design Principles</a>
+          <a href="/docs/principles" class="h5 button block button-small col-6 button-nav-light">Design Principles</a>
         
-          <a href="/docs/showcase" class="h5 button block col-6 md-col-4 button-nav-light">Built with Basscss</a>
+          <a href="/docs/showcase" class="h5 button block button-small col-6 button-nav-light">Built with Basscss</a>
         
-          <a href="/docs/custom-builds" class="h5 button block col-6 md-col-4 button-nav-light">Custom Builds</a>
+          <a href="/docs/custom-builds" class="h5 button block button-small col-6 button-nav-light">Custom Builds</a>
         
-          <a href="/docs/customize" class="h5 button block col-6 md-col-4 button-nav-light">Customize</a>
+          <a href="/docs/customize" class="h5 button block button-small col-6 button-nav-light">Customize</a>
         
-          <a href="/docs/rework" class="h5 button block col-6 md-col-4 button-nav-light">Using Rework</a>
+          <a href="/docs/rework" class="h5 button block button-small col-6 button-nav-light">Using Rework</a>
         
-          <a href="/docs/modules" class="h5 button block col-6 md-col-4 button-nav-light">Modules</a>
+          <a href="/docs/modules" class="h5 button block button-small col-6 button-nav-light">Modules</a>
         
-          <a href="/docs/styles" class="h5 button block col-6 md-col-4 button-nav-light">Table of Styles</a>
+          <a href="/docs/styles" class="h5 button block button-small col-6 button-nav-light">Table of Styles</a>
         
-          <a href="/docs/stats" class="h5 button block col-6 md-col-4 button-nav-light">Stats</a>
+          <a href="/docs/stats" class="h5 button block button-small col-6 button-nav-light">Stats</a>
         
-          <a href="/docs/variables" class="h5 button block col-6 md-col-4 button-nav-light">Variables</a>
+          <a href="/docs/variables" class="h5 button block button-small col-6 button-nav-light">Variables</a>
         
       </div>
     </div>
@@ -626,7 +428,7 @@
 </div>
 
 
-<footer class="mb4">
+<footer class="mt2 mb2">
   <div class="flex flex-wrap flex-center caps mxn1">
     <a href="/" class="h6 button button-narrow py2 button-nav-light">Home</a>
     <a href="/docs" class="h6 button button-narrow py2 button-nav-light">Docs</a>

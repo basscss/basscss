@@ -1,6 +1,5 @@
 {% extends 'layouts/minimal.html' %}
 {% set page = references.customize %}
-{% set isdocs = true %}
 
 {% block content %}
 
@@ -18,8 +17,8 @@
       <section class="mb3" custom-css-collection src="modules.json">
         <div class="sm-flex flex-center mb2">
           <h2 class="flex-auto m0 py1">Modules</h2>
-          <a href class="mr2 button button-small button-gray" ng-click="deselectAll(modules)">Deselect All</a>
-          <a href class="button button-small button-gray" ng-click="selectAll(modules)">Select All</a>
+          <a href class="mr2 button button-small button-light-gray" ng-click="deselectAll(modules)">Deselect All</a>
+          <a href class="button button-small button-light-gray" ng-click="selectAll(modules)">Select All</a>
         </div>
         <form>
           <ol class="list-reset border-top">
@@ -52,7 +51,7 @@
             Download
         </a>
       </div>
-      <pre class="flex-grow" style="min-height:80vh" ng-bind-html="compiled | highlight"></pre>
+      <pre class="flex-auto" style="min-height:80vh" ng-bind-html="compiled | highlight"></pre>
       <div class="mb2">
         <a class="flex-none button button-blue"
           ng-href="{{ downloadURL }}"

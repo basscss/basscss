@@ -111,15 +111,15 @@ module.exports = function() {
       description: 'CSS and Web Design Fundamentals',
       link: '/docs/guides/basics',
       sections: [
-        { title: 'Document Structure', link: '/docs/guides/basics/#markup' },
-        { title: 'Multiclass CSS Pattern', link: '/docs/guides/basics/#multi-class-pattern' },
-        { title: 'Typography', link: '/docs/guides/basics/#typography' },
-        { title: 'Block-Level and Inline Elements', link: '/docs/guides/basics/#block-level-inline' },
-        { title: 'Display Property', link: '/docs/guides/basics/#display' },
+        { title: 'Document Structure', link: '/docs/guides/basics/#document-structure' },
+        { title: 'Multiclass CSS Pattern', link: '/docs/guides/basics/#multiclass-css-pattern' },
+        { title: 'Typography', link: '/docs/guides/basics/#writing-and-typography' },
+        { title: 'Block-Level and Inline Elements', link: '/docs/guides/basics/#block-level-and-inline-elements' },
+        { title: 'Display Property', link: '/docs/guides/basics/#display-property' },
         { title: 'Box Model', link: '/docs/guides/basics/#box-model' },
         { title: 'Floats', link: '/docs/guides/basics/#floats' },
         { title: 'Widths', link: '/docs/guides/basics/#widths' },
-        { title: 'Media Queries and Mobile-First Approach', link: '/docs/guides/basics/#media-queries' },
+        { title: 'Media Queries and Mobile-First Approach', link: '/docs/guides/basics/#media-queries-and-mobile-first-approach' },
         { title: 'Positions', link: '/docs/guides/basics/#positions' },
         { title: 'Extending Basscss', link: '/docs/guides/basics/#extending-basscss' }
       ]
@@ -161,14 +161,14 @@ module.exports = function() {
       link: '/docs/guides/tips',
       sections: [
         { title: 'Avoid Overrides', link: '/docs/guides/tips/#avoid-overrides' },
-        { title: 'Utility Styles are Immutable', link: '/docs/guides/tips/#utility-styles' },
+        { title: 'Utility Styles are Immutable', link: '/docs/guides/tips/#utility-styles-are-immutable' },
         { title: 'Look Before Adding', link: '/docs/guides/tips/#look-before-adding' },
         { title: 'Avoid Magic Numbers', link: '/docs/guides/tips/#avoid-magic-numbers' },
-        { title: 'Don’t Use Contextual Selectors', link: '/docs/guides/tips/#contextual-selectors' },
+        { title: 'Don’t Use Contextual Selectors', link: '/docs/guides/tips/#don-t-use-contextual-selectors' },
         { title: 'Handle Complexity in Markup', link: '/docs/guides/tips/#handle-complexity-in-markup' },
         { title: 'Keep Specificity Low', link: '/docs/guides/tips/#keep-specificity-low' },
-        { title: 'Don’t Nest Selectors', link: '/docs/guides/tips/#dont-nest-selectors' },
-        { title: 'Don’t Use IDs as Selectors', link: '/docs/guides/tips/#dont-use-ids' },
+        { title: 'Don’t Nest Selectors', link: '/docs/guides/tips/#don-t-nest-selectors' },
+        { title: 'Don’t Use IDs as Selectors', link: '/docs/guides/tips/#don-t-use-ids-as-selectors' },
         { title: 'Separate Structure and Skin', link: '/docs/guides/tips/#separate-structure-and-skin' }
       ]
     }
@@ -178,8 +178,12 @@ module.exports = function() {
     principles: {
       title: 'Design Principles', link: '/docs/principles',
       sections: [
-        { title: 'Principles', link: '/docs/principles/#principles' },
-        { title: 'Organization', link: '/docs/principles/#organization' },
+        { title: 'Open/Closed Principle', link: '/docs/principles/#follow-the-open-closed-principle' },
+        { title: 'Design with Reuse in Mind', link: '/docs/principles/#design-with-reuse-in-mind' },
+        { title: 'Don’t Make Assumptions', link: '/docs/principles/#don-t-make-assumptions' },
+        { title: 'Clarity Over Cleverness', link: '/docs/principles/#clarity-over-cleverness' },
+        { title: 'Balance Consistency with Flexibility', link: '/docs/principles/#balance-consistency-with-flexibility' },
+        { title: 'Organizing Principles', link: '/docs/principles/#organizing-principles' },
         { title: 'Naming Conventions', link: '/docs/principles/#naming-conventions' },
       ]
     },

@@ -1,41 +1,22 @@
 
 var fs = require('fs');
-var gulp = require('gulp');
 var path = require('path');
-var rename = require('gulp-rename');
-var header = require('gulp-header');
-var footer = require('gulp-footer');
-var marked = require('gulp-marked');
-var markedExample = require('marked-example');
 var camelcase = require('camel-case');
+var swig = require('swig');
 
 module.exports = function() {
 
-  var exampleOptions = {
-    classes: {
-      container: 'mb2 bg-darken-1 rounded',
-      rendered: 'p2',
-      code: 'm0 p2 bg-darken-1 rounded-bottom'
-    }
-  };
+  var modules = require('../package.json').basscss.modules;
+  var model = require('../docs/src/model.js')();
 
-  var markedOptions = {
-    renderer: { code: markedExample(exampleOptions) }
-  };
-
-  var sources = require('../package.json').basscss;
-
-  var modules = sources.modules;
+  swig.setDefaults({
+    loader: swig.loaders.fs(path.resolve(__dirname, '../docs/src/templates'))
+  });
 
   modules.forEach(function(module) {
     var filename = './node_modules/' + module + '/README.md';
-    var data = require('../node_modules/' + module + '/package.json');
     var html = '{% extends "layouts/module.html" %}\n' + 
-      '{% set page = modules.' + camelcase(module) + ' %}\n' +
-      '{% set isdocs = true %}\n' +
-      '{% set module = modules.' + camelcase(module) + ' %}\n' +
       '{% block content %}\n\n' +
-      '<!-- {{ module.header | safe }} -->\n' +
       '<div class="flex flex-wrap flex-center mb3">\n' +
       '<div class="flex-auto">\n' +
       '<h1 class="h4 m0">{{ module.name }}\n' +
@@ -54,9 +35,15 @@ module.exports = function() {
       '{{ module.content | safe }}\n' +
       '\n\n{% endblock %}\n';
 
-    var dir = path.join(__dirname, '../docs/src/templates/docs/modules/' + module);
+    var tpl = swig.compile(html, { filename: '/docs/modules/' + camelcase(module) + '.html' });
+    model.page = model.modules[camelcase(module)];
+    model.module = model.modules[camelcase(module)];
+
+    var rendered = tpl(model);
+
+    var dir = path.join(__dirname, '../docs/modules/' + module);
     if (!fs.existsSync(dir)) fs.mkdirSync(dir);
-    fs.writeFileSync(dir + '/index.html', html);
+    fs.writeFileSync(dir + '/index.html', rendered);
   });
 
 };
