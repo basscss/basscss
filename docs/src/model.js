@@ -161,14 +161,14 @@ module.exports = function() {
       link: '/docs/guides/tips',
       sections: [
         { title: 'Avoid Overrides', link: '/docs/guides/tips/#avoid-overrides' },
-        { title: 'Utility Styles are Immutable', link: '/docs/guides/tips/#utility-styles' },
+        { title: 'Utility Styles are Immutable', link: '/docs/guides/tips/#utility-styles-are-immutable' },
         { title: 'Look Before Adding', link: '/docs/guides/tips/#look-before-adding' },
         { title: 'Avoid Magic Numbers', link: '/docs/guides/tips/#avoid-magic-numbers' },
-        { title: 'Don’t Use Contextual Selectors', link: '/docs/guides/tips/#contextual-selectors' },
+        { title: 'Don’t Use Contextual Selectors', link: '/docs/guides/tips/#don-t-use-contextual-selectors' },
         { title: 'Handle Complexity in Markup', link: '/docs/guides/tips/#handle-complexity-in-markup' },
         { title: 'Keep Specificity Low', link: '/docs/guides/tips/#keep-specificity-low' },
-        { title: 'Don’t Nest Selectors', link: '/docs/guides/tips/#dont-nest-selectors' },
-        { title: 'Don’t Use IDs as Selectors', link: '/docs/guides/tips/#dont-use-ids' },
+        { title: 'Don’t Nest Selectors', link: '/docs/guides/tips/#don-t-nest-selectors' },
+        { title: 'Don’t Use IDs as Selectors', link: '/docs/guides/tips/#don-t-use-ids-as-selectors' },
         { title: 'Separate Structure and Skin', link: '/docs/guides/tips/#separate-structure-and-skin' }
       ]
     }
@@ -178,8 +178,12 @@ module.exports = function() {
     principles: {
       title: 'Design Principles', link: '/docs/principles',
       sections: [
-        { title: 'Principles', link: '/docs/principles/#principles' },
-        { title: 'Organization', link: '/docs/principles/#organization' },
+        { title: 'Open/Closed Principle', link: '/docs/principles/#follow-the-open-closed-principle' },
+        { title: 'Design with Reuse in Mind', link: '/docs/principles/#design-with-reuse-in-mind' },
+        { title: 'Don’t Make Assumptions', link: '/docs/principles/#don-t-make-assumptions' },
+        { title: 'Clarity Over Cleverness', link: '/docs/principles/#clarity-over-cleverness' },
+        { title: 'Balance Consistency with Flexibility', link: '/docs/principles/#balance-consistency-with-flexibility' },
+        { title: 'Organizing Principles', link: '/docs/principles/#organizing-principles' },
         { title: 'Naming Conventions', link: '/docs/principles/#naming-conventions' },
       ]
     },

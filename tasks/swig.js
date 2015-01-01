@@ -42,7 +42,11 @@ var mdSwig = function(opt) {
     var html = marked(matter.body, { renderer: renderer });
     var layout = matter.attributes.layout || null;
     var page = matter.attributes.page || null;
+    var isguide = matter.attributes.isguide || false;
     html = '{% block content %}\n' + html + '\n{% endblock %}\n';
+    if (isguide) {
+      html = '{% set isguide = true %}\n' + html;
+    }
     if (page) {
       html = '{% set page = ' + page + ' %}\n' + html;
     }
