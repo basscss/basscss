@@ -111,15 +111,15 @@ module.exports = function() {
       description: 'CSS and Web Design Fundamentals',
       link: '/docs/guides/basics',
       sections: [
-        { title: 'Document Structure', link: '/docs/guides/basics/#markup' },
-        { title: 'Multiclass CSS Pattern', link: '/docs/guides/basics/#multi-class-pattern' },
-        { title: 'Typography', link: '/docs/guides/basics/#typography' },
-        { title: 'Block-Level and Inline Elements', link: '/docs/guides/basics/#block-level-inline' },
-        { title: 'Display Property', link: '/docs/guides/basics/#display' },
+        { title: 'Document Structure', link: '/docs/guides/basics/#document-structure' },
+        { title: 'Multiclass CSS Pattern', link: '/docs/guides/basics/#multiclass-css-pattern' },
+        { title: 'Typography', link: '/docs/guides/basics/#writing-and-typography' },
+        { title: 'Block-Level and Inline Elements', link: '/docs/guides/basics/#block-level-and-inline-elements' },
+        { title: 'Display Property', link: '/docs/guides/basics/#display-property' },
         { title: 'Box Model', link: '/docs/guides/basics/#box-model' },
         { title: 'Floats', link: '/docs/guides/basics/#floats' },
         { title: 'Widths', link: '/docs/guides/basics/#widths' },
-        { title: 'Media Queries and Mobile-First Approach', link: '/docs/guides/basics/#media-queries' },
+        { title: 'Media Queries and Mobile-First Approach', link: '/docs/guides/basics/#media-queries-and-mobile-first-approach' },
         { title: 'Positions', link: '/docs/guides/basics/#positions' },
         { title: 'Extending Basscss', link: '/docs/guides/basics/#extending-basscss' }
       ]
