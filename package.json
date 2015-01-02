@@ -72,7 +72,8 @@
     "front-matter": "^0.2.0",
     "gulp-data": "^1.1.1",
     "gulp-marked": "^1.0.0",
-    "through2": "^0.6.3"
+    "through2": "^0.6.3",
+    "basscss-highlight": "0.0.1"
   },
   "basscss": {
     "modules": [
