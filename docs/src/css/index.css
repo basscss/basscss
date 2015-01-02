@@ -46,7 +46,7 @@
 @import "./color/colors";
 @import "./color/button-bright-blue-outline";
 @import "./color/animations";
-@import "./color/highlight";
+@import "basscss-highlight";
 
 
 /* Custom Media Queries */
