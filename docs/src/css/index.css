@@ -6,12 +6,13 @@
 @import 'basscss-base-tables';
 @import "basscss-base-typography";
 
+@import 'basscss-ui-utility-button-sizes';
+
 @import 'basscss-utility-layout';
 @import 'basscss-utility-typography';
 @import 'basscss-utility-white-space';
 @import 'basscss-utility-responsive-states';
 @import 'basscss-positions';
-@import 'basscss-ui-utility-button-sizes';
 @import 'basscss-ui-utility-groups';
 @import 'basscss-ui-utility-disclosure-states';
 
@@ -36,7 +37,6 @@
 @import "./base/responsive-type";
 
 @import "./base/icons";
-@import "./base/button-sizes";
 @import "./base/folding-table";
 
 @import "./utility/positions";
@@ -46,7 +46,7 @@
 @import "./color/colors";
 @import "./color/button-bright-blue-outline";
 @import "./color/animations";
-@import "./color/highlight";
+@import "basscss-highlight";
 
 
 /* Custom Media Queries */
@@ -61,13 +61,16 @@
   --font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --heading-font-weight: 600;
   --bold-font-weight: 600;
+  --button-font-weight: 600;
   --h0: 2.25rem;
   --h4: 1.125rem;
-  --h5: 1rem;
+  --h5: .875rem;
   --h6: .75rem;
   --container-width: 76rem;
   --heading-font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --button-font-size: .875rem;
+  --darken-1: rgba(#000, .03125);
+  --darken-2: rgba(#000, .0625);
 }
 
 @import "./color/variables";

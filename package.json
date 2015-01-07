@@ -5,8 +5,8 @@
   "style": "src/basscss.css",
   "dependencies": {
     "basscss-background-images": "0.0.4",
-    "basscss-base-buttons": "^1.0.0",
-    "basscss-base-forms": "^1.0.2",
+    "basscss-base-buttons": "^1.0.2",
+    "basscss-base-forms": "^1.0.4",
     "basscss-base-reset": "0.0.3",
     "basscss-base-tables": "^0.1.1",
     "basscss-base-typography": "0.0.3",
@@ -61,13 +61,19 @@
     "svg-to-png": "^0.6.0",
     "swig-highlight": "^0.2.0",
     "gulp-zip": "^2.0.2",
-    "gulp-marked": "^1.0.0",
     "marked-example": "^1.0.3",
     "gulp-footer": "^1.0.5",
     "camel-case": "^1.0.2",
     "marked": "^0.3.2",
     "highlight.js": "^8.4.0",
-    "humanize-plus": "^1.5.0"
+    "humanize-plus": "^1.5.0",
+    "swig": "^1.4.2",
+    "swig-marked": "0.0.1",
+    "front-matter": "^0.2.0",
+    "gulp-data": "^1.1.1",
+    "gulp-marked": "^1.0.0",
+    "through2": "^0.6.3",
+    "basscss-highlight": "0.0.1"
   },
   "basscss": {
     "modules": [

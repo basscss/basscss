@@ -1,7 +1,7 @@
+{% extends 'layouts/default.html' %}
 {% set page = {} %}
 {% set page.title = 'Docs' %}
-{% set isdocs = false %}
-{% extends 'layouts/default.html' %}
+{% set hide_docs_breadcrumb = true %}
 
 {% block content %}
 
@@ -23,7 +23,7 @@
       <div class="col col-6 md-col-3 py1">
         <a href="{{ page.link }}" class="h2 button block button-nav-light">{{ page.title }}</a>
         {% for section in page.sections %}
-          <a href="{{ section.link }}" class="h5 button block button-nav-light">{{ section.title }}</a>
+          <a href="{{ section.link }}" class="h5 button button-small px2 block button-nav-light">{{ section.title }}</a>
           {#
           {% if section.subsections %}
             <div class="mb1">

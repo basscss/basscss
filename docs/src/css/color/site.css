@@ -7,7 +7,10 @@ pre {
   padding: var(--space-2);
   background-color: var(--darken-1);
 }
-code { background-color: var(--darken-1) }
+p code {
+  color: var(--blue);
+  background-color: var(--light-blue);
+}
 pre code {
   padding: 0;
   background-color: transparent;
