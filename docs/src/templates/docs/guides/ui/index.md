@@ -204,23 +204,21 @@ Responsive state utilities can be used to progressively enhance pagination
 with numbers on devices with wider viewports.
 
 ```html
-<div class="center">
-  <div class="inline-block clearfix">
-    <a href="#!" class="left button button-narrow button-nav-light">
-      <svg class="icon" data-icon="chevron-left"></svg>
-      Previous
-    </a>
-    <a href="#!" class="right button button-narrow button-nav-light">
-      Next
-      <svg class="icon" data-icon="chevron-right"></svg>
-    </a>
-    <div class="overflow-hidden sm-show">
-      <a href="#!" class="button button-narrow button-nav-light is-active">1</a>
-      <a href="#!" class="button button-narrow button-nav-light">2</a>
-      <a href="#!" class="button button-narrow button-nav-light">3</a>
-      <a href="#!" class="button button-narrow button-nav-light">4</a>
-      <a href="#!" class="button button-narrow button-nav-light">5</a>
-    </div>
+<div class="clearfix">
+  <a href="#!" class="left button button-narrow button-nav-light">
+    <svg class="icon" data-icon="chevron-left"></svg>
+    Previous
+  </a>
+  <a href="#!" class="right button button-narrow button-nav-light">
+    Next
+    <svg class="icon" data-icon="chevron-right"></svg>
+  </a>
+  <div class="overflow-hidden sm-show center">
+    <a href="#!" class="button button-narrow button-nav-light is-active">1</a>
+    <a href="#!" class="button button-narrow button-nav-light">2</a>
+    <a href="#!" class="button button-narrow button-nav-light">3</a>
+    <a href="#!" class="button button-narrow button-nav-light">4</a>
+    <a href="#!" class="button button-narrow button-nav-light">5</a>
   </div>
 </div>
 ```
