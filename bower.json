@@ -1,12 +1,12 @@
 {
   "name": "basscss",
-  "version": "4.2.2",
+  "version": "4.2.3",
   "homepage": "https://github.com/jxnblk/basscss",
   "authors": [
     "Brent Jackson <jxnblk@gmail.com>"
   ],
   "description": "Low-level CSS Toolkit",
-  "main": "basscss.css",
+  "main": "./css/basscss.css",
   "keywords": [
     "CSS",
     "OOCSS",

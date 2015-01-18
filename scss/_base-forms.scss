@@ -1,10 +1,6 @@
 
 // Converted Variables
 
-$space-1: .5rem !default;
-$space-2: 1rem !default;
-$space-3: 2rem !default;
-$space-4: 4rem !default;
 $form-field-font-size: 1rem !default;
 $form-field-height: 2.25rem !default;
 $form-field-padding-y: .5rem !default;
@@ -21,7 +17,7 @@ textarea,
 fieldset {
   font-size: $form-field-font-size;
   margin-top: 0;
-  margin-bottom: $space-1;
+  margin-bottom: $space-1 /* Fallback value:  .5rem */;
 }
 
 input[type=text],
