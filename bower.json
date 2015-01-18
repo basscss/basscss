@@ -6,7 +6,7 @@
     "Brent Jackson <jxnblk@gmail.com>"
   ],
   "description": "Low-level CSS Toolkit",
-  "main": "basscss.css",
+  "main": "./css/basscss.css",
   "keywords": [
     "CSS",
     "OOCSS",
