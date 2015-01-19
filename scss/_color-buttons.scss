@@ -2,28 +2,21 @@
 // Converted Variables
 
 $blue: #0076df !default;
+$border-radius: 3px !default;
+$blue: #0076df !default;
+$border-radius: 3px !default;
+$border-width: 1px !default;
+$red: #f95020 !default;
+$border-radius: 3px !default;
+$blue: #0076df !default;
 $light-gray: #ccc !default;
 $dark-gray: #333 !default;
-$border-radius: 3px !default;
-$blue: #0076df !default;
-$border-radius: 3px !default;
-$blue: #0076df !default;
-$border-radius: 3px !default;
-$mid-gray: #777 !default;
-$blue: #0076df !default;
-$border-radius: 3px !default;
-$red: #f95020 !default;
 $border-radius: 3px !default;
 $dark-gray: #333 !default;
 $darken-1: rgba(#000,.0625) !default;
 $hover-background-color: $darken-1 !default;
 $border-radius: 3px !default;
 $darken-2: rgba(#000,.125) !default;
-$light-gray: #ccc !default;
-$darken-1: rgba(#000,.0625) !default;
-$hover-background-color: $darken-1 !default;
-$border-color: $light-gray !default;
-$border-radius: 3px !default;
 $blue: #0076df !default;
 $red: #f95020 !default;
 $green: #00cf26 !default;
@@ -45,36 +38,6 @@ $border-radius: 3px !default;
 
 
 /* Basscss Color Buttons */
-
-/* Basscss Button Light Gray */
-
-.button-light-gray {
-  color: $dark-gray;
-  background-color: $light-gray;
-  border-radius: $border-radius;
-  transition-duration: .1s;
-  transition-timing-function: ease-out;
-  transition-property: box-shadow, background-color;
-}
-
-.button-light-gray:hover {
-  opacity: .875;
-}
-
-.button-light-gray:active,
-.button-light-gray:is-active {
-  box-shadow: inset 0 0 0 32px rgba(#000,.125), inset 0 2px 3px 0 rgba(#000,.25);
-}
-
-.button-light-gray:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba($blue, .5);
-}
-
-.button-light-gray:disabled,
-.button-light-gray.is-disabled {
-  opacity: .5;
-}
 
 /* Basscss Button Blue */
 
@@ -109,11 +72,10 @@ $border-radius: 3px !default;
 /* Basscss Button Blue Outline */
 
 .button-blue-outline {
-  line-height: 1rem;
   color: $blue;
   background-color: transparent;
   border-radius: $border-radius;
-  border: 2px solid $blue;
+  border: $border-width solid $blue;
   transition-duration: .1s;
   transition-timing-function: ease-out;
   transition-property: box-shadow, background-color;
@@ -138,36 +100,6 @@ $border-radius: 3px !default;
 .button-blue-outline.is-disabled {
   color: $blue;
   background-color: transparent;
-  opacity: .5;
-}
-
-/* Basscss Button Gray */
-
-.button-gray {
-  color: white;
-  background-color: $mid-gray;
-  border-radius: $border-radius;
-  transition-duration: .1s;
-  transition-timing-function: ease-out;
-  transition-property: box-shadow, background-color;
-}
-
-.button-gray:hover {
-  opacity: .875;
-}
-
-.button-gray:active,
-.button-gray:is-active {
-  box-shadow: inset 0 0 0 32px rgba(#000,.125), inset 0 2px 3px 0 rgba(#000,.25);
-}
-
-.button-gray:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba($blue, .5);
-}
-
-.button-gray:disabled,
-.button-gray.is-disabled {
   opacity: .5;
 }
 
@@ -201,6 +133,36 @@ $border-radius: 3px !default;
   opacity: .5;
 }
 
+/* Basscss Button Light Gray */
+
+.button-light-gray {
+  color: $dark-gray;
+  background-color: $light-gray;
+  border-radius: $border-radius;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow, background-color;
+}
+
+.button-light-gray:hover {
+  opacity: .875;
+}
+
+.button-light-gray:active,
+.button-light-gray:is-active {
+  box-shadow: inset 0 0 0 32px rgba(#000,.125), inset 0 2px 3px 0 rgba(#000,.25);
+}
+
+.button-light-gray:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba($blue, .5);
+}
+
+.button-light-gray:disabled,
+.button-light-gray.is-disabled {
+  opacity: .5;
+}
+
 /* Basscss Button Nav Light */
 
 .button-nav-light:hover {
@@ -225,24 +187,4 @@ $border-radius: 3px !default;
 .button-nav-dark:active,
 .button-nav-dark.is-active {
   background-color: $darken-2;
-}
-
-/* Basscss Button Nav Tab */
-
-.button-nav-tab {
-  margin-bottom: -1px;
-  border-radius: $border-radius $border-radius 0 0;
-  border-bottom: 1px solid $border-color;
-}
-
-.button-nav-tab:hover {
-  background-color: $hover-background-color;
-}
-
-.button-nav-tab.is-active {
-  background-color: white;
-  border-bottom: 1px solid white;
-  border-top: 1px solid $border-color;
-  border-left: 1px solid $border-color;
-  border-right: 1px solid $border-color;
 }

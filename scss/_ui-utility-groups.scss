@@ -1,6 +1,7 @@
 
 // Converted Variables
 
+$border-width: 1px !default;
 
 // Custom Media Query Variables
 
@@ -8,7 +9,7 @@
 /* Basscss UI Utility Groups */
 
 .x-group-item {
-  margin-left: -1px;
+  margin-left: -$border-width;
 }
 
 .x-group-item:first-of-type {
@@ -16,35 +17,15 @@
 }
 
 .y-group-item {
-  margin-top: -1px;
+  margin-top: -$border-width;
 }
 
 .y-group-item:first-of-type {
   margin-top: 0;
 }
 
-/* Extension for 2px border items like .button-blue-outline */
-
-.x-group-item-2 {
-  margin-left: -2px;
-}
-
-.x-group-item-2:first-of-type {
-  margin-left: 0;
-}
-
-.y-group-item-2 {
-  margin-top: -2px;
-}
-
-.y-group-item-2:first-of-type {
-  margin-top: 0;
-}
-
 .x-group-item:focus,
-.x-group-item-2:focus,
-.y-group-item:focus,
-.y-group-item-2:focus {
+.y-group-item:focus {
   position: relative;
   z-index: 1;
 }

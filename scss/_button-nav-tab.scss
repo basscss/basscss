@@ -1,0 +1,34 @@
+
+// Converted Variables
+
+$dark-gray: #333 !default;
+$light-gray: #ccc !default;
+$darken-1: rgba(#000,.0625) !default;
+$hover-background-color: $darken-1 !default;
+$border-color: $light-gray !default;
+$border-radius: 3px !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Button Nav Tab */
+
+.button-nav-tab {
+  margin-bottom: -1px;
+  border-radius: $border-radius $border-radius 0 0;
+  border-bottom: 1px solid $border-color;
+  color: $dark-gray;
+  background-color: transparent;
+}
+
+.button-nav-tab:hover {
+  background-color: $hover-background-color;
+}
+
+.button-nav-tab.is-active {
+  background-color: white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid $border-color;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+}
