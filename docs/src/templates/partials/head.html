@@ -5,7 +5,11 @@
   <meta name="description" content="Simple, responsive CSS toolkit based on OOCSS principles">
   <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/docs/css/base.min.css">
+  {% if stylesheet %}
+    <link rel="stylesheet" href="{{ stylesheet }}">
+  {% else %}
+    <link rel="stylesheet" href="/docs/css/base.min.css">
+  {% endif %}
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
 </head>
