@@ -1,12 +1,18 @@
 
 :root {
 
+  --darken-1: rgba(#000, .03125);
+  --darken-2: rgba(#000, .0625);
+
   --dark-gray: #304650;
   --mid-gray: #667680;
   --light-gray: #c3c9c9;
   --lighter-gray: #f3f9f9;
 
-  --bright-blue: #0096ff;
+  --blue: #0089ff;
+  --red: #f95c10;
+  --green: #00ef60;
+  --yellow: #ffdf00;
 
   --light-blue: rgba(var(--blue), .0625);
   --hover-background-color: var(--light-blue);

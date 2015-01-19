@@ -1,11 +1,11 @@
 
-<a href="/" class="inline-block px2 mt2 bright-blue">
+<a href="/" class="inline-block px2 mt2">
   <svg class="h1 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
 </a>
 
-<a href="/" class="h4 caps mb3 button block bright-blue">Basscss</a>
+<a href="/" class="h4 caps mb3 button block">Basscss</a>
 
 <ul class="list-reset mb3">
   {% for p in pages %}
@@ -20,11 +20,11 @@
         {{ p.title }}
       </a>
       {% if p.title == page.title && page.title != 'Getting Started' %}
-        <ul class="list-reset mb0 py1 bg-darken-3">
+        <ul class="list-reset mb0 py1 bg-darken-2">
           {% for item in p.sections %}
             <li>
               <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
-                {{ item.title }}
+                <span class="ml1">{{ item.title }}</span>
               </a>
             </li>
           {% endfor %}
@@ -54,12 +54,12 @@
   </a>
 </h3>
 {% if module || page.title == 'Modules' %}
-  <ul class="list-reset mb0 py1 bg-darken-3">
+  <ul class="list-reset mb0 py1 bg-darken-2">
     {% for m in modules %}
       <li>
         <a href="/docs/modules/{{ m.name }}"
           class="button block button-small px2 {% if module.name == m.name %}white bg-mid-gray{% else %}button-nav-dark{% endif %}">
-            {{ m.title }}
+          <span class="block ml1">{{ m.title }}</span>
         </a>
       </li>
     {% endfor %}

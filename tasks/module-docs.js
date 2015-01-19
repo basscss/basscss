@@ -17,24 +17,9 @@ module.exports = function() {
   modules.forEach(function(module) {
     var filename = './node_modules/' + module + '/README.md';
     var html = '{% extends "layouts/docs.html" %}\n' + 
-      '{% block content %}\n\n' +
-      '<div class="flex flex-wrap flex-center mb3">\n' +
-      '<div class="flex-auto">\n' +
-      '<h1 class="h4 m0">{{ module.name }}\n' +
-      '<span class="h6">v{{ module.version }}</span>\n' +
-      '{% if module.optional %}' +
-      '<span class="h6 caps red">Optional</span>\n' +
-      '{% endif %}' +
-      '</h1>\n' +
-      '<h1 class="caps m0">{{ module.title }}</h1>\n' +
-      '</div>\n' +
-      '<div class="mxn1 mb2">\n' +
-      '<a href="{{ module.npmLink }}" class="h6 button button-narrow button-nav-light">NPM</a>\n' +
-      '<a href="{{ module.githubLink }}" class="h6 button button-narrow button-nav-light">Github</a>\n' +
-      '</div>\n' +
-      '</div>\n' +
+      '{% block content %}\n' +
       '{{ module.content | safe }}\n' +
-      '\n\n{% endblock %}\n';
+      '{% endblock %}\n';
 
     var tpl = swig.compile(html, { filename: '/docs/modules/' + camelcase(module) + '.html' });
     model.page = model.modules[camelcase(module)];
