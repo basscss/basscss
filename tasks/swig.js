@@ -66,8 +66,6 @@ module.exports = function() {
       './docs/src/templates/**/*.html',
       '!./docs/src/templates/layouts/**/*',
       '!./docs/src/templates/partials/**/*',
-      '!./docs/src/templates/macros/**/*',
-      '!./docs/src/templates/examples/**/*'
     ])
     .pipe(swig(options))
     .pipe(gulp.dest('./'));
