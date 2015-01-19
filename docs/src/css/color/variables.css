@@ -14,6 +14,8 @@
   --green: #00ef60;
   --yellow: #ffdf00;
 
+  --bright-blue: #00b9ff;
+
   --light-blue: rgba(var(--blue), .0625);
   --hover-background-color: var(--light-blue);
 

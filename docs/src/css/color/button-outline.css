@@ -1,0 +1,24 @@
+
+.button-outline {
+  color: current-color;
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  /*
+  border: 2px solid;
+  */
+  box-shadow: inset 0 0 0 2px;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition-property: box-shadow, color, background-color;
+}
+  
+  .button-outline:hover {
+    color: var(--blue);
+    background-color: white;
+    box-shadow: inset 0 0 0 2px white, 0 0 0 2px var(--dark-gray), 0 0 1px 4px rgba(white, .5);
+  }
+
+  .button-outline:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px white, 0 0 0 2px var(--dark-gray), 0 0 1px 4px rgba(white, .5);
+  }
