@@ -4,35 +4,34 @@
 
 {% include 'partials/head.html' %}
 
-<body class="container px2">
+<body>
 
-{% include 'partials/docs-nav.html' %}
-
-<div class="clearfix mxn2">
-
-  <div class="{% if !fullwidth %}sm-col sm-col-9 {% endif %}px2 py2">
-
-    {% block content %}{% endblock %}
-
-    {% if page.next_page || page.previous_page %}
-      <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
-      {% include 'partials/pagination.html' %}
-    {% endif %}
-
-  </div>
-
-  {% if !fullwidth %}
-    <div class="sticky top-0 px2 py2 sm-col sm-col-3 sm-show">
-      {% include 'partials/in-page-nav.html' %}
+<div class="px2">
+  <div class="clearfix flex flex-stretch mxn2">
+    <div class="{% if !fullwidth %}sm-col-right sm-col-9 md-col-10 flex-last{% else %}full-width{% endif %} flex flex-column" style="min-height:100vh">
+      <div class="flex-auto full-width {% if !flush_container %}container-small{% endif %}">
+        {% include 'partials/page-header.html' %}
+        <div class="px2 py2">
+          {% block content %}{% endblock %}
+          {% if page.next_page || page.previous_page %}
+            <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+            {% include 'partials/pagination.html' %}
+          {% endif %}
+        </div>
+      </div>
+      <div>
+        {% include 'partials/footer.html' %}
+      </div>
     </div>
-  {% endif %}
-
+    {% if !fullwidth %}
+      <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show border-right" style="min-height:100vh">
+          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto">
+            {% include 'partials/side-nav.html' %}
+          </div>
+      </div>
+    {% endif %}
+  </div>
 </div>
-
-{% if hide_megafooter != true %}
-  {% include 'partials/docs-mega-footer.html' %}
-{% endif %}
-{% include 'partials/footer.html' %}
 
 </body>
 </html>

@@ -1,17 +1,15 @@
-{% extends 'layouts/minimal.html' %}
+{% extends 'layouts/docs.html' %}
 {% set page = references.customize %}
+{% set flush_container = true %}
 
 {% block content %}
 
-<div class="px2">
-  {% include 'partials/docs-nav.html' %}
-  <p class="h3">
-    Create custom builds without touching the command line.
-  </p>
-</div>
+<p class="h3">
+  Create custom builds without touching the command line.
+</p>
 
 {% raw %}
-<div ng-app="app" class="px2" ng-controller="AppCtrl">
+<div ng-app="app" ng-controller="AppCtrl">
   <div custom-css class="md-flex flex-stretch mxn2">
     <div class="md-col-8 px2 py3">
       <section class="mb3" custom-css-collection src="modules.json">
@@ -76,11 +74,6 @@
 
 
 {% endraw %}
-
-<div class="px2">
-  {% include 'partials/docs-mega-footer.html' %}
-  {% include 'partials/footer.html' %}
-</div>
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-sanitize.min.js"></script>

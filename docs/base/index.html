@@ -15,30 +15,36 @@
 </head>
 
 
-<body class="container px2">
+<body>
 
-<header class="py3 mb3 border-bottom">
-  <div class="avenir h5 caps bold mt2 mxn1">
-    <a href="/" class="button button-narrow">Basscss</a>
+<div class="px2">
+  <div class="clearfix flex flex-stretch mxn2">
+    <div class="sm-col-right sm-col-9 md-col-10 flex-last flex flex-column" style="min-height:100vh">
+      <div class="flex-auto full-width container-small">
+        <header class="px2">
+  <div class="py3 mb1 border-bottom">
+    
+      <h1 class="avenir h0 h0-responsive caps m0">Base</h1>
+    
+  </div>
+</header>
+
+<div class="px2">
+  <div class="avenir h6 bold mxn1 mb3">
+    <a href="/" class="button button-narrow">Home</a>
     
       / <a href="/docs" class="button button-narrow">Docs</a>
     
     
     
+    / <a href="/docs/base" class="button button-narrow dark-gray">Base</a>
   </div>
-  
-    <h1 class="avenir h0 h0-responsive caps m0">Base</h1>
-  
-</header>
+</div>
 
 
 
-
-<div class="clearfix mxn2">
-
-  <div class="sm-col sm-col-9 px2 py2">
-
-    
+        <div class="px2 py2">
+          
 
 <p class="h3">
   Base element styles control native HTML elements such as headings, paragraphs, buttons, and forms in a systematic and opinionated way.
@@ -349,10 +355,9 @@ with other color utilities or create custom theme extensions to suit your needs.
 
 
 
-
-    
-      <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
-      
+          
+            <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+            
   
 
 
@@ -378,89 +383,11 @@ with other color utilities or create custom theme extensions to suit your needs.
   
 </div>
 
-    
-
-  </div>
-
-  
-    <div class="sticky top-0 px2 py2 sm-col sm-col-3 sm-show">
-      
-  <a href="/docs/base/#typography" class="button button-nav-light block">Typography</a>
-  
-
-  <a href="/docs/base/#forms" class="button button-nav-light block">Forms</a>
-  
-
-  <a href="/docs/base/#buttons" class="button button-nav-light block">Buttons</a>
-  
-
-  <a href="/docs/base/#tables" class="button button-nav-light block">Tables</a>
-  
-
-
-    </div>
-  
-
-</div>
-
-
-  <div id="docs-footer" class="mt4 border-top border-bottom">
-  <div class="flex flex-wrap mt2 mb1 mxn1">
-    <div class="col-6 sm-col-3 mb1">
-      <h2 class="h6 caps px1 py1 m0">Usage</h2>
-      
-        <a href="/docs/getting-started" class="h5 button block button-small button-nav-light">Getting Started</a>
-      
-        <a href="/docs/base" class="h5 button block button-small button-nav-light">Base</a>
-      
-        <a href="/docs/utility" class="h5 button block button-small button-nav-light">Utility</a>
-      
-        <a href="/docs/layout" class="h5 button block button-small button-nav-light">Layout</a>
-      
-        <a href="/docs/color" class="h5 button block button-small button-nav-light">Color</a>
-      
-    </div>
-    <div class="col-6 sm-col-3 mb1">
-      <h2 class="h6 caps px1 py1 m0">Guides</h2>
-      
-        <a href="/docs/guides/basics" class="h5 button block button-small button-nav-light">Basics</a>
-      
-        <a href="/docs/guides/layout" class="h5 button block button-small button-nav-light">Page Layout</a>
-      
-        <a href="/docs/guides/ui" class="h5 button block button-small button-nav-light">UI Elements</a>
-      
-        <a href="/docs/guides/tips" class="h5 button block button-small button-nav-light">Tips &amp; Tricks</a>
-      
-    </div>
-    <div class="flex-auto sm-col-6 mb1">
-      <h2 class="h6 caps px1 py1 m0">Reference</h2>
-      <div class="flex flex-wrap">
-        
-          <a href="/docs/principles" class="h5 button block button-small col-6 button-nav-light">Design Principles</a>
-        
-          <a href="/docs/showcase" class="h5 button block button-small col-6 button-nav-light">Built with Basscss</a>
-        
-          <a href="/docs/custom-builds" class="h5 button block button-small col-6 button-nav-light">Custom Builds</a>
-        
-          <a href="/docs/customize" class="h5 button block button-small col-6 button-nav-light">Customize</a>
-        
-          <a href="/docs/rework" class="h5 button block button-small col-6 button-nav-light">Using Rework</a>
-        
-          <a href="/docs/modules" class="h5 button block button-small col-6 button-nav-light">Modules</a>
-        
-          <a href="/docs/styles" class="h5 button block button-small col-6 button-nav-light">Table of Styles</a>
-        
-          <a href="/docs/stats" class="h5 button block button-small col-6 button-nav-light">Stats</a>
-        
-          <a href="/docs/variables" class="h5 button block button-small col-6 button-nav-light">Variables</a>
-        
+          
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-
-
-<footer class="mt2 mb2">
+      <div>
+        <footer class="mt4 px1 border-top">
   <div class="flex flex-wrap flex-center caps mxn1">
     <a href="/" class="h6 button button-narrow py2 button-nav-light">Home</a>
     <a href="/docs" class="h6 button button-narrow py2 button-nav-light">Docs</a>
@@ -469,8 +396,7 @@ with other color utilities or create custom theme extensions to suit your needs.
     <div class="flex-grow"></div>
     <div class="flex-none px1 py2 nowrap">
       <p class="h6 bold mb0">
-        Made with love by
-        <a href="//jxnblk.com">Jxnblk</a>
+        Made by <a href="//jxnblk.com">Jxnblk</a>
       </p>
     </div>
   </div>
@@ -491,6 +417,217 @@ s.parentNode.insertBefore(wf, s);
 })(); </script>
 
 
+      </div>
+    </div>
+    
+      <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show border-right" style="min-height:100vh">
+          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto">
+            
+<a href="/" class="h4 caps mt3 mb3 button block button-nav-light">Basscss</a>
+
+<ul class="list-reset mb3">
+  
+    <li>
+      <a href="/docs/getting-started" class="h4 button block
+          
+            button-nav-light
+          
+        ">
+        Getting Started
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/base" class="h4 button block
+          
+            white bg-blue
+          
+        ">
+        Base
+      </a>
+      
+        <ul class="list-reset mb0 bg-darken-1">
+          
+            <li>
+              <a href="/docs/base/#typography" class="button button-small px2 block button-nav-light">
+                Typography
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/base/#forms" class="button button-small px2 block button-nav-light">
+                Forms
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/base/#buttons" class="button button-small px2 block button-nav-light">
+                Buttons
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/base/#tables" class="button button-small px2 block button-nav-light">
+                Tables
+              </a>
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/utility" class="h4 button block
+          
+            button-nav-light
+          
+        ">
+        Utility
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/layout" class="h4 button block
+          
+            button-nav-light
+          
+        ">
+        Layout
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/color" class="h4 button block
+          
+            button-nav-light
+          
+        ">
+        Color
+      </a>
+      
+    </li>
+  
+</ul>
+
+<h3 class="mb0"><a href="/docs/guides" class="h6 caps button block button-nav-light">Guides</a></h3>
+<ul class="list-reset mb3">
+  
+    <li>
+      <a href="/docs/guides/basics"
+        class="button block  button-nav-light ">
+        Basics
+      </a>
+    </li>
+  
+    <li>
+      <a href="/docs/guides/layout"
+        class="button block  button-nav-light ">
+        Page Layout
+      </a>
+    </li>
+  
+    <li>
+      <a href="/docs/guides/ui"
+        class="button block  button-nav-light ">
+        UI Elements
+      </a>
+    </li>
+  
+    <li>
+      <a href="/docs/guides/tips"
+        class="button block  button-nav-light ">
+        Tips &amp; Tricks
+      </a>
+    </li>
+  
+</ul>
+
+<h3 class="h6 caps px2 mb0">Reference</h3>
+<ul class="list-reset mb4">
+  
+    <li>
+      <a href="/docs/principles"
+        class="button block  button-nav-light ">
+        Design Principles
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/showcase"
+        class="button block  button-nav-light ">
+        Built with Basscss
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/custom-builds"
+        class="button block  button-nav-light ">
+        Custom Builds
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/customize"
+        class="button block  button-nav-light ">
+        Customize
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/rework"
+        class="button block  button-nav-light ">
+        Using Rework
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/modules"
+        class="button block  button-nav-light ">
+        Modules
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/styles"
+        class="button block  button-nav-light ">
+        Table of Styles
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/stats"
+        class="button block  button-nav-light ">
+        Stats
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/variables"
+        class="button block  button-nav-light ">
+        Variables
+      </a>
+      
+    </li>
+  
+</ul>
+
+
+          </div>
+      </div>
+    
+  </div>
+</div>
 
 </body>
 </html>

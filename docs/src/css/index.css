@@ -71,6 +71,20 @@
   --button-font-size: .875rem;
   --darken-1: rgba(#000, .03125);
   --darken-2: rgba(#000, .0625);
+
+  --h0-responsive:  5vw;
+  --h0-responsive-max:  4.8rem;
+  /*
+  --h00:    4rem;
+  --h0:     3rem;
+  --h00-responsive: 8vw;
+  --h0-responsive:  6vw;
+  --h1-responsive:  4vw;
+  --h00-responsive-max: 7.68rem;
+  --h0-responsive-max:  5.76rem;
+  --h1-responsive-max:  3.84rem;
+  */
+
 }
 
 @import "./color/variables";

@@ -1,0 +1,66 @@
+
+<a href="/" class="h4 caps mt3 mb3 button block button-nav-light">Basscss</a>
+
+<ul class="list-reset mb3">
+  {% for p in pages %}
+    <li>
+      <a href="{{ p.link }}" class="h4 button block
+          {% if p.title == page.title %}
+            white bg-blue
+          {% else %}
+            button-nav-light
+          {% endif %}
+        ">
+        {{ p.title }}
+      </a>
+      {% if p.title == page.title && page.title != 'Getting Started' %}
+        <ul class="list-reset mb0 bg-darken-1">
+          {% for item in p.sections %}
+            <li>
+              <a href="{{ item.link }}" class="button button-small px2 block button-nav-light">
+                {{ item.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3 class="mb0"><a href="/docs/guides" class="h6 caps button block button-nav-light">Guides</a></h3>
+<ul class="list-reset mb3">
+  {% for guide in guides %}
+    <li>
+      <a href="{{ guide.link }}"
+        class="button block {% if guide.title == page.title %} white bg-blue {% else %} button-nav-light {% endif %}">
+        {{ guide.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<h3 class="h6 caps px2 mb0">Reference</h3>
+<ul class="list-reset mb4">
+  {% for ref in references %}
+    <li>
+      <a href="{{ ref.link }}"
+        class="button block {% if ref.title == page.title %} white bg-blue {% else %} button-nav-light {% endif %}">
+        {{ ref.title }}
+      </a>
+      {% if ref.title == 'Modules' && module %}
+        <ul class="list-reset mb0 bg-darken-1">
+          {% for m in modules %}
+            <li>
+              <a href="/docs/modules/{{ m.name }}"
+                class="button block button-small px2 {% if module.name == m.name %}white bg-blue{% else %}button-nav-light{% endif %}">
+                  {{ m.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+

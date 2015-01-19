@@ -7,15 +7,16 @@ var swig = require('swig');
 module.exports = function() {
 
   var modules = require('../package.json').basscss.modules;
-  var model = require('../docs/src/model.js')();
+  var model = new require('../docs/src/model.js')();
 
+  require('swig-highlight').apply(swig);
   swig.setDefaults({
     loader: swig.loaders.fs(path.resolve(__dirname, '../docs/src/templates'))
   });
 
   modules.forEach(function(module) {
     var filename = './node_modules/' + module + '/README.md';
-    var html = '{% extends "layouts/module.html" %}\n' + 
+    var html = '{% extends "layouts/docs.html" %}\n' + 
       '{% block content %}\n\n' +
       '<div class="flex flex-wrap flex-center mb3">\n' +
       '<div class="flex-auto">\n' +

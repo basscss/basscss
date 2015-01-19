@@ -3,11 +3,15 @@
 
 {% include 'partials/head.html' %}
 
-<body class="container px2">
+<body>
 
-{% block content %}{% endblock %}
+<div class="px2">
 
-{% include 'partials/footer.html' %}
+  {% block content %}{% endblock %}
+
+  {% include 'partials/footer.html' %}
+
+</div>
 
 </body>
 </html>
