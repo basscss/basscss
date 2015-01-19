@@ -278,8 +278,7 @@ The use of utilities allows for a lot of flexibility when building form layouts.
           
 
 <p>Structural styles and resets for buttons are set in this base element styles module.
-All buttons share common padding and height, well suited for tap targets on touchscreen displays.
-Color styles in other modules and other custom extensions adjust their surface-level appearance.</p>
+All buttons share common padding and height, well suited for tap targets on touchscreen displays.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="mb1">
@@ -287,22 +286,27 @@ Color styles in other modules and other custom extensions adjust their surface-l
   <a href="#!" class="button">Link Button</a>
   <input type="button" class="button" value="Input Button">
 </div>
-<div class="mb1">
-  <button class="button-blue mb1">Button Blue</button>
-  <button class="button-blue-outline mb1">Button Blue Outline</button>
-  <button class="button-gray mb1">Button Gray</button>
-  <button class="button-red mb1">Button Red</button>
-</div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Color style modules and other custom extensions adjust their surface-level appearance.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="mb1">
+  <button class="button-blue mb1">Button Blue</button>
+  <button class="button-blue-outline mb1">Button Blue Outline</button>
+  <button class="button-light-gray mb1">Button Light Gray</button>
+  <button class="button-red mb1">Button Red</button>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue mb1&quot;</span>&gt;</span>Button Blue<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue-outline mb1&quot;</span>&gt;</span>Button Blue Outline<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-gray mb1&quot;</span>&gt;</span>Button Gray<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-light-gray mb1&quot;</span>&gt;</span>Button Light Gray<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-red mb1&quot;</span>&gt;</span>Button Red<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
@@ -677,38 +681,36 @@ and <code>.not-rounded</code> can be used to override button and form field bord
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <p>Normally, buttons with borders would double up when placed next to each other.
-The <code>.x-group-item</code> and <code>.x-group-item-2</code> utilities
-adjust negative margins and focus states to visually collapse borders.</p>
-<p>Use the <code>.x-group-item-2</code> utility on elements with 2px borders.
+The <code>.x-group-item</code> utility adjusts negative margins and focus states to visually collapse borders.
 Functionally, this is similar to how other frameworks handle button and form input groups,
 but with more direct control over styling.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="inline-block clearfix">
-  <button type="button" class="left button-blue-outline x-group-item-2 rounded-left is-active">Burgers</button>
-  <button type="button" class="left button-blue-outline x-group-item-2 not-rounded">Fries</button>
-  <button type="button" class="left button-blue-outline x-group-item-2 rounded-right">Shake</button>
+  <button type="button" class="left button-blue-outline x-group-item rounded-left is-active">Burgers</button>
+  <button type="button" class="left button-blue-outline x-group-item not-rounded">Fries</button>
+  <button type="button" class="left button-blue-outline x-group-item rounded-right">Shake</button>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;inline-block clearfix&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left button-blue-outline x-group-item-2 rounded-left is-active&quot;</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left button-blue-outline x-group-item-2 not-rounded&quot;</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left button-blue-outline x-group-item-2 rounded-right&quot;</span>&gt;</span>Shake<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left button-blue-outline x-group-item rounded-left is-active&quot;</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left button-blue-outline x-group-item not-rounded&quot;</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left button-blue-outline x-group-item rounded-right&quot;</span>&gt;</span>Shake<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<p>Use <code>.y-group-item</code> and <code>.y-group-item-2</code> to group elements vertically.</p>
+<p>Use <code>.y-group-item</code> to group elements vertically.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="inline-block">
-  <button type="button" class="block full-width button-blue-outline y-group-item-2 rounded-top is-active">Burgers</button>
-  <button type="button" class="block full-width button-blue-outline y-group-item-2 not-rounded">Fries</button>
-  <button type="button" class="block full-width button-blue-outline y-group-item-2 rounded-bottom">Shake</button>
+  <button type="button" class="block full-width button-blue-outline y-group-item rounded-top is-active">Burgers</button>
+  <button type="button" class="block full-width button-blue-outline y-group-item not-rounded">Fries</button>
+  <button type="button" class="block full-width button-blue-outline y-group-item rounded-bottom">Shake</button>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;inline-block&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width button-blue-outline y-group-item-2 rounded-top is-active&quot;</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width button-blue-outline y-group-item-2 not-rounded&quot;</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width button-blue-outline y-group-item-2 rounded-bottom&quot;</span>&gt;</span>Shake<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width button-blue-outline y-group-item rounded-top is-active&quot;</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width button-blue-outline y-group-item not-rounded&quot;</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width button-blue-outline y-group-item rounded-bottom&quot;</span>&gt;</span>Shake<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="input-groups">Input Groups</h2>
@@ -754,33 +756,6 @@ The <code>.hide</code> utility visually hides labels, while keeping them accessi
   <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col col-4 md-col-5 mb0 field-light not-rounded x-group-item&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Pancakes&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;submit&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col col-4 md-col-2 button-blue rounded-right&quot;</span>&gt;</span>Pancake<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></pre>
-</div>
-
-          <hr>
-        
-          <h2>UI Utility Disclosure States</h2>
-          
-
-<p>Toggle the visibility of child elements. This is useful for things like dropdown menus that are controlled with Javascript.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div>
-  <div class="disclosure-show">Hidden</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;disclosure-show&quot;</span>&gt;</span>Hidden<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="is-active">
-  <div class="disclosure-show">Visible</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;is-active&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;disclosure-show&quot;</span>&gt;</span>Visible<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 
           <hr>
@@ -1092,6 +1067,82 @@ This is useful for things like navigation.</p>
 <span class="hljs-rule">}</span></span></pre>
           <hr>
         
+          <h2>Color Buttons</h2>
+          
+
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Includes the following basic button modules:
+<code>.button-blue</code>,
+<code>.button-blue-outline</code>,
+<code>.button-light-gray</code>,
+<code>.button-red</code>,
+<code>.button-nav-light</code>, and
+<code>.button-nav-dark</code>.</p>
+<p>Use these styles on button elements, or with the <code>basscss-base-buttons</code> module for links and input buttons.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="mb1">
+  <button>Button</button>
+  <a href="#!" class="button">Link Button</a>
+  <input type="button" class="button" value="Input Button">
+</div>
+<div class="mb1">
+  <button class="button-blue mb1">Button Blue</button>
+  <button class="button-blue-outline mb1">Button Blue Outline</button>
+  <button class="button-light-gray mb1">Button Light Gray</button>
+  <button class="button-red mb1">Button Red</button>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue mb1&quot;</span>&gt;</span>Button Blue<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue-outline mb1&quot;</span>&gt;</span>Button Blue Outline<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-light-gray mb1&quot;</span>&gt;</span>Button Light Gray<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-red mb1&quot;</span>&gt;</span>Button Red<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Button styles can be used for navigation. The <code>.button-nav-light</code> style adds a subtle hover effect for links on a light background.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="mxn1">
+  <a href="#!" class="button button-narrow button-nav-light">Burgers</a>
+  <a href="#!" class="button button-narrow button-nav-light">Fries</a>
+  <a href="#!" class="button button-narrow button-nav-light">Shakes</a>
+  <a href="#!" class="button button-narrow button-nav-light">Onion Rings</a>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mxn1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-light&quot;</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-light&quot;</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-light&quot;</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-light&quot;</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>For dark backgrounds, use the <code>.button-nav-dark</code> style.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="bg-dark-gray">
+  <a href="#!" class="button button-narrow button-nav-dark">Burgers</a>
+  <a href="#!" class="button button-narrow button-nav-dark">Fries</a>
+  <a href="#!" class="button button-narrow button-nav-dark">Shakes</a>
+  <a href="#!" class="button button-narrow button-nav-dark">Onion Rings</a>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bg-dark-gray&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-dark&quot;</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-dark&quot;</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-dark&quot;</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-dark&quot;</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+
+          <hr>
+        
           <h2>Color Forms</h2>
           
 
@@ -1331,75 +1382,177 @@ These add focus states that are consistent with the other form elements.</p>
 
           <hr>
         
-          <h2>Color Buttons</h2>
+          <h2>Button Blue</h2>
           
 
-
-<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>Basscss includes the following basic button styles:
-<code>.button-blue</code>,
-<code>.button-gray</code>,
-<code>.button-blue-outline</code>, and
-<code>.button-red</code>.
-Customize these styles to suite your needs.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="mb1">
-  <button>Button</button>
-  <a href="#!" class="button">Link Button</a>
-  <input type="button" class="button" value="Input Button">
-</div>
-<div class="mb1">
-  <button class="button-blue mb1">Button Blue</button>
-  <button class="button-blue-outline mb1">Button Blue Outline</button>
-  <button class="button-gray mb1">Button Gray</button>
-  <button class="button-red mb1">Button Red</button>
+  <button class="button-blue">Button</button>
+  <a href="#!" class="button button-blue">Link Button</a>
+  <input type="button" class="button button-blue" value="Input Button">
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue mb1&quot;</span>&gt;</span>Button Blue<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue-outline mb1&quot;</span>&gt;</span>Button Blue Outline<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-gray mb1&quot;</span>&gt;</span>Button Gray<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-red mb1&quot;</span>&gt;</span>Button Red<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-blue&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-blue&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<p>Button styles can be used for navigation. The <code>.button-nav-light</code> style adds a subtle hover effect for links on a light background.</p>
+
+          <hr>
+        
+          <h2>Button Blue Outline</h2>
+          
+
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="mxn1">
-  <a href="#!" class="button button-narrow button-nav-light">Burgers</a>
-  <a href="#!" class="button button-narrow button-nav-light">Fries</a>
-  <a href="#!" class="button button-narrow button-nav-light">Shakes</a>
-  <a href="#!" class="button button-narrow button-nav-light">Onion Rings</a>
+    <div class="mb1">
+  <button class="button-blue-outline">Button</button>
+  <a href="#!" class="button button-blue-outline">Link Button</a>
+  <input type="button" class="button button-blue-outline" value="Input Button">
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mxn1&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-light&quot;</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-light&quot;</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-light&quot;</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-light&quot;</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue-outline&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-blue-outline&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-blue-outline&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<p>For dark backgrounds, use the <code>.button-nav-dark</code> style.</p>
+
+          <hr>
+        
+          <h2>Button Gray</h2>
+          
+
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="bg-dark-gray">
-  <a href="#!" class="button button-narrow button-nav-dark">Burgers</a>
-  <a href="#!" class="button button-narrow button-nav-dark">Fries</a>
-  <a href="#!" class="button button-narrow button-nav-dark">Shakes</a>
-  <a href="#!" class="button button-narrow button-nav-dark">Onion Rings</a>
+    <div class="mb1">
+  <button class="button-gray">Button</button>
+  <a href="#!" class="button button-gray">Link Button</a>
+  <input type="button" class="button button-gray" value="Input Button">
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bg-dark-gray&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-dark&quot;</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-dark&quot;</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-dark&quot;</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-dark&quot;</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-gray&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-gray&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-gray&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+
+          <hr>
+        
+          <h2>Basscss</h2>
+          
+
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="mb1">
+  <button class="button-light-gray">Button</button>
+  <a href="#!" class="button button-light-gray">Link Button</a>
+  <input type="button" class="button button-light-gray" value="Input Button">
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-light-gray&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-light-gray&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-light-gray&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+
+          <hr>
+        
+          <h2>Button Red</h2>
+          
+
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="mb1">
+  <button class="button-red">Button</button>
+  <a href="#!" class="button button-red">Link Button</a>
+  <input type="button" class="button button-red" value="Input Button">
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-red&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-red&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-red&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+
+          <hr>
+        
+          <h2>Button Nav Light</h2>
+          
+
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="mb1">
+  <button class="button-nav-light">Button</button>
+  <a href="#!" class="button button-nav-light">Link Button</a>
+  <input type="button" class="button button-nav-light" value="Input Button">
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-nav-light&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-nav-light&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-nav-light&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+
+          <hr>
+        
+          <h2>Button Nav Dark</h2>
+          
+
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="mb1 bg-dark-gray">
+  <button class="button-nav-dark">Button</button>
+  <a href="#!" class="button button-nav-dark">Link Button</a>
+  <input type="button" class="button button-nav-dark" value="Input Button">
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1 bg-dark-gray&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-nav-dark&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-nav-dark&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-nav-dark&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="mb1 bg-blue">
+  <button class="button-nav-dark">Button</button>
+  <a href="#!" class="button button-nav-dark">Link Button</a>
+  <input type="button" class="button button-nav-dark" value="Input Button">
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1 bg-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-nav-dark&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-nav-dark&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-nav-dark&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+
+          <hr>
+        
+          <h2>Button Nav Tab</h2>
+          
+
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix mb1">
+  <button class="left button-nav-tab">Button</button>
+  <a href="#!" class="left button button-nav-tab">Link Button</a>
+  <input type="button" class="left button button-nav-tab" value="Input Button">
+  <a href="#!" class="left button button-nav-tab is-active">Active</a>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix mb1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left button-nav-tab&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left button button-nav-tab&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left button button-nav-tab&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left button button-nav-tab is-active&quot;</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 

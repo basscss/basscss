@@ -577,12 +577,14 @@ These add focus states that are consistent with the other form elements.</p>
 
 
 <p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>Basscss includes the following basic button styles:
+<p>Includes the following basic button modules:
 <code>.button-blue</code>,
-<code>.button-gray</code>,
-<code>.button-blue-outline</code>, and
-<code>.button-red</code>.
-Customize these styles to suite your needs.</p>
+<code>.button-blue-outline</code>,
+<code>.button-light-gray</code>,
+<code>.button-red</code>,
+<code>.button-nav-light</code>, and
+<code>.button-nav-dark</code>.</p>
+<p>Use these styles on button elements, or with the <code>basscss-base-buttons</code> module for links and input buttons.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="mb1">
@@ -593,7 +595,7 @@ Customize these styles to suite your needs.</p>
 <div class="mb1">
   <button class="button-blue mb1">Button Blue</button>
   <button class="button-blue-outline mb1">Button Blue Outline</button>
-  <button class="button-gray mb1">Button Gray</button>
+  <button class="button-light-gray mb1">Button Light Gray</button>
   <button class="button-red mb1">Button Red</button>
 </div>
   </div>
@@ -605,7 +607,7 @@ Customize these styles to suite your needs.</p>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue mb1&quot;</span>&gt;</span>Button Blue<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue-outline mb1&quot;</span>&gt;</span>Button Blue Outline<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-gray mb1&quot;</span>&gt;</span>Button Gray<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-light-gray mb1&quot;</span>&gt;</span>Button Light Gray<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-red mb1&quot;</span>&gt;</span>Button Red<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
@@ -725,40 +727,40 @@ Customize these styles to suite your needs.</p>
 
 <section id="guides-cta" class="py4">
   <h1 class="">Learn More</h1>
-  <div class="md-flex flex-wrap mxn2 mb4">
+  <div class="md-flex flex-wrap flex-stretch mxn2 mb4">
     
       
-        <div class="md-col-6">
-          <a href="/docs/guides/basics" class="h3 button block button-nav-light">
-            <h3 class="h2 m0">Basics</h3>
-            <p class="regular m0">Understanding the basics of designing for the web with CSS is essential to using Basscss effectively. This guide covers the fundamentals to help get you started.</p>
+        <div class="flex flex-auto md-col-6 px2 py2">
+          <a href="/docs/guides/basics" class="block-link block full-width px2 py3 white bg-blue rounded">
+            <h3 class="h2 mt0">Basics</h3>
+            <p class="mt0">Understanding the basics of designing for the web with CSS is essential to using Basscss effectively. This guide covers the fundamentals to help get you started.</p>
           </a>
         </div>
       
     
       
-        <div class="md-col-6">
-          <a href="/docs/guides/layout" class="h3 button block button-nav-light">
-            <h3 class="h2 m0">Page Layout</h3>
-            <p class="regular m0">Creating page layouts in Basscss is incredibly fast and flexible. This guide will walk you through common layout patterns to create an entire page with a basic information hierarchy.</p>
+        <div class="flex flex-auto md-col-6 px2 py2">
+          <a href="/docs/guides/layout" class="block-link block full-width px2 py3 white bg-blue rounded">
+            <h3 class="h2 mt0">Page Layout</h3>
+            <p class="mt0">Creating page layouts in Basscss is incredibly fast and flexible. This guide will walk you through common layout patterns to create an entire page with a basic information hierarchy.</p>
           </a>
         </div>
       
     
       
-        <div class="md-col-6">
-          <a href="/docs/guides/ui" class="h3 button block button-nav-light">
-            <h3 class="h2 m0">UI Elements</h3>
-            <p class="regular m0">Basscss can be used to create many different user interface elements out of the box. With utility styles and a thoughtfully-architected templating system, you can keep CSS bloat to a minimum, while making iterative design changes to partials and components.</p>
+        <div class="flex flex-auto md-col-6 px2 py2">
+          <a href="/docs/guides/ui" class="block-link block full-width px2 py3 white bg-blue rounded">
+            <h3 class="h2 mt0">UI Elements</h3>
+            <p class="mt0">Basscss can be used to create many different user interface elements out of the box. With utility styles and a thoughtfully-architected templating system, you can keep CSS bloat to a minimum, while making iterative design changes to partials and components.</p>
           </a>
         </div>
       
     
       
-        <div class="md-col-6">
-          <a href="/docs/guides/tips" class="h3 button block button-nav-light">
-            <h3 class="h2 m0">Tips &amp; Tricks</h3>
-            <p class="regular m0">Basscss is a versatile starting point for any project. These tips and tricks will help you build on top of its foundation in an elegant and maintainable way.</p>
+        <div class="flex flex-auto md-col-6 px2 py2">
+          <a href="/docs/guides/tips" class="block-link block full-width px2 py3 white bg-blue rounded">
+            <h3 class="h2 mt0">Tips &amp; Tricks</h3>
+            <p class="mt0">Basscss is a versatile starting point for any project. These tips and tricks will help you build on top of its foundation in an elegant and maintainable way.</p>
           </a>
         </div>
       

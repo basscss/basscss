@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -202,7 +202,7 @@
   </a>
 </h3>
 
-  <ul class="list-reset mb0 py1 bg-darken-2">
+  <ul class="list-reset mb3 py1 bg-darken-2">
     
       <li>
         <a href="/docs/modules/basscss-base-reset"
@@ -282,13 +282,6 @@
       </li>
     
       <li>
-        <a href="/docs/modules/basscss-ui-utility-disclosure-states"
-          class="button block button-small px2 button-nav-dark">
-          <span class="block ml1">UI Utility Disclosure States</span>
-        </a>
-      </li>
-    
-      <li>
         <a href="/docs/modules/basscss-positions"
           class="button block button-small px2 button-nav-dark">
           <span class="block ml1">Positions</span>
@@ -317,6 +310,13 @@
       </li>
     
       <li>
+        <a href="/docs/modules/basscss-color-buttons"
+          class="button block button-small px2 white bg-mid-gray">
+          <span class="block ml1">Color Buttons</span>
+        </a>
+      </li>
+    
+      <li>
         <a href="/docs/modules/basscss-color-forms"
           class="button block button-small px2 button-nav-dark">
           <span class="block ml1">Color Forms</span>
@@ -338,9 +338,58 @@
       </li>
     
       <li>
-        <a href="/docs/modules/basscss-color-buttons"
-          class="button block button-small px2 white bg-mid-gray">
-          <span class="block ml1">Color Buttons</span>
+        <a href="/docs/modules/basscss-button-blue"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Button Blue</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-blue-outline"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Button Blue Outline</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-gray"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Button Gray</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-light-gray"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Basscss</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-red"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Button Red</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-nav-light"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Button Nav Light</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-nav-dark"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Button Nav Dark</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-nav-tab"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Button Nav Tab</span>
         </a>
       </li>
     
@@ -400,7 +449,7 @@
         <h1 class="h1 xh1-responsive caps m0">Color Buttons</h1>
         <h2 class="h3 m0">
           basscss-color-buttons
-          <span class="h5">v0.1.1</span>
+          <span class="h5">v1.0.1</span>
           
         </h2>
       </div>
@@ -434,12 +483,14 @@
 
 
 <p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>Basscss includes the following basic button styles:
+<p>Includes the following basic button modules:
 <code>.button-blue</code>,
-<code>.button-gray</code>,
-<code>.button-blue-outline</code>, and
-<code>.button-red</code>.
-Customize these styles to suite your needs.</p>
+<code>.button-blue-outline</code>,
+<code>.button-light-gray</code>,
+<code>.button-red</code>,
+<code>.button-nav-light</code>, and
+<code>.button-nav-dark</code>.</p>
+<p>Use these styles on button elements, or with the <code>basscss-base-buttons</code> module for links and input buttons.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="mb1">
@@ -450,7 +501,7 @@ Customize these styles to suite your needs.</p>
 <div class="mb1">
   <button class="button-blue mb1">Button Blue</button>
   <button class="button-blue-outline mb1">Button Blue Outline</button>
-  <button class="button-gray mb1">Button Gray</button>
+  <button class="button-light-gray mb1">Button Light Gray</button>
   <button class="button-red mb1">Button Red</button>
 </div>
   </div>
@@ -462,7 +513,7 @@ Customize these styles to suite your needs.</p>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue mb1&quot;</span>&gt;</span>Button Blue<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue-outline mb1&quot;</span>&gt;</span>Button Blue Outline<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-gray mb1&quot;</span>&gt;</span>Button Gray<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-light-gray mb1&quot;</span>&gt;</span>Button Light Gray<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-red mb1&quot;</span>&gt;</span>Button Red<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>

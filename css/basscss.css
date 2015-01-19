@@ -1104,43 +1104,6 @@ hr {
 
 
 
-/* Basscss Color Buttons */
-
-/* Basscss Button Light Gray */
-
-.button-light-gray {
-  color: #333;
-  background-color: #ccc;
-  border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-
-.button-light-gray:hover {
-  opacity: .875;
-}
-
-.button-light-gray:active,
-.button-light-gray:is-active {
-  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
-}
-
-.button-light-gray:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 118, 223, .5);
-}
-
-.button-light-gray:disabled,
-.button-light-gray.is-disabled {
-  opacity: .5;
-}
-
-
-
 /* Basscss Button Blue */
 
 .button-blue {
@@ -1179,11 +1142,10 @@ hr {
 /* Basscss Button Blue Outline */
 
 .button-blue-outline {
-  line-height: 1rem;
   color: #0076df;
   background-color: transparent;
   border-radius: 3px;
-  border: 2px solid #0076df;
+  border: 1px solid #0076df;
   -webkit-transition-duration: .1s;
           transition-duration: .1s;
   -webkit-transition-timing-function: ease-out;
@@ -1211,41 +1173,6 @@ hr {
 .button-blue-outline.is-disabled {
   color: #0076df;
   background-color: transparent;
-  opacity: .5;
-}
-
-
-
-/* Basscss Button Gray */
-
-.button-gray {
-  color: white;
-  background-color: #777;
-  border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-
-.button-gray:hover {
-  opacity: .875;
-}
-
-.button-gray:active,
-.button-gray:is-active {
-  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
-}
-
-.button-gray:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 118, 223, .5);
-}
-
-.button-gray:disabled,
-.button-gray.is-disabled {
   opacity: .5;
 }
 
@@ -1286,7 +1213,51 @@ hr {
 
 
 
+/*
+  @import 'basscss-button-gray';
+*/
+
+/* Basscss Button Light Gray */
+
+.button-light-gray {
+  color: #333;
+  background-color: #ccc;
+  border-radius: 3px;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
+}
+
+.button-light-gray:hover {
+  opacity: .875;
+}
+
+.button-light-gray:active,
+.button-light-gray:is-active {
+  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
+}
+
+.button-light-gray:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 118, 223, .5);
+}
+
+.button-light-gray:disabled,
+.button-light-gray.is-disabled {
+  opacity: .5;
+}
+
+
+
 /* Basscss Button Nav Light */
+
+.button-nav-light {
+  color: #0076df;
+  background-color: transparent;
+}
 
 .button-nav-light:hover {
   background-color: rgba(0, 0, 0, .0625);
@@ -1303,6 +1274,7 @@ hr {
 
 .button-nav-dark {
   color: white;
+  background-color: transparent;
 }
 
 .button-nav-dark:hover {
@@ -1313,30 +1285,6 @@ hr {
 .button-nav-dark.is-active {
   background-color: rgba(0, 0, 0, .125);
 }
-
-
-
-/* Basscss Button Nav Tab */
-
-.button-nav-tab {
-  margin-bottom: -1px;
-  border-radius: 3px 3px 0 0;
-  border-bottom: 1px solid #ccc;
-}
-
-.button-nav-tab:hover {
-  background-color: rgba(0, 0, 0, .0625);
-}
-
-.button-nav-tab.is-active {
-  background-color: white;
-  border-bottom: 1px solid white;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-}
-
-
 
 
 

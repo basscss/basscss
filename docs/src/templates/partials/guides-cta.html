@@ -2,13 +2,13 @@
 
 <section id="guides-cta" class="py4">
   <h1 class="">{{ heading }}</h1>
-  <div class="md-flex flex-wrap mxn2 mb4">
+  <div class="md-flex flex-wrap flex-stretch mxn2 mb4">
     {% for guide in guides %}
       {% if guide.title != page.title %}
-        <div class="md-col-6">
-          <a href="{{ guide.link }}" class="h3 button block button-nav-light">
-            <h3 class="h2 m0">{{ guide.title }}</h3>
-            <p class="regular m0">{{ guide.description }}</p>
+        <div class="flex flex-auto md-col-6 px2 py2">
+          <a href="{{ guide.link }}" class="block-link block full-width px2 py3 white bg-blue rounded">
+            <h3 class="h2 mt0">{{ guide.title }}</h3>
+            <p class="mt0">{{ guide.description }}</p>
           </a>
         </div>
       {% endif %}

@@ -14,7 +14,7 @@ isguide: true
 Note: this guide makes use of optional modules that are not included in the core Basscss package:
 <a href="/docs/modules/basscss-ui-utility-button-sizes">UI Utility Button Sizes</a>,
 <a href="/docs/modules/basscss-ui-utility-groups">UI Utility Groups</a>, and
-<a href="/docs/modules/basscss-ui-utility-disclosure-states">UI Utility Disclosure States</a>.
+<a href="/docs/modules/basscss-button-nav-tab">Button Nav Tab</a>.
 
 
 # Button Sizes
@@ -273,27 +273,25 @@ The table object can be used to create justified button groups.
 ```
 
 Normally, buttons with borders would double up when placed next to each other.
-The `.x-group-item` and `.x-group-item-2` utilities
-adjust negative margins and focus states to visually collapse borders.
-Use the `.x-group-item-2` utility on elements with 2px borders.
+The `.x-group-item` utility adjusts negative margins and focus states to visually collapse borders.
 Functionally, this is similar to how other frameworks handle button and form input groups,
 but with more direct control over styling.
 
 ```html
 <div class="inline-block clearfix">
-  <button type="button" class="left button-blue-outline x-group-item-2 rounded-left is-active">Burgers</button>
-  <button type="button" class="left button-blue-outline x-group-item-2 not-rounded">Fries</button>
-  <button type="button" class="left button-blue-outline x-group-item-2 rounded-right">Shake</button>
+  <button type="button" class="left button-blue-outline x-group-item rounded-left is-active">Burgers</button>
+  <button type="button" class="left button-blue-outline x-group-item not-rounded">Fries</button>
+  <button type="button" class="left button-blue-outline x-group-item rounded-right">Shake</button>
 </div>
 ```
 
-Use `.y-group-item` and `.y-group-item-2` to group elements vertically.
+Use `.y-group-item` to group elements vertically.
 
 ```html
 <div class="inline-block">
-  <button type="button" class="block full-width button-blue-outline y-group-item-2 rounded-top is-active">Burgers</button>
-  <button type="button" class="block full-width button-blue-outline y-group-item-2 not-rounded">Fries</button>
-  <button type="button" class="block full-width button-blue-outline y-group-item-2 rounded-bottom">Shake</button>
+  <button type="button" class="block full-width button-blue-outline y-group-item rounded-top is-active">Burgers</button>
+  <button type="button" class="block full-width button-blue-outline y-group-item not-rounded">Fries</button>
+  <button type="button" class="block full-width button-blue-outline y-group-item rounded-bottom">Shake</button>
 </div>
 ```
 
@@ -339,17 +337,15 @@ The wrapping elements uses relative positioning to anchor the dropdown body.
 An invisible fixed position element is used as an overlay to dismiss the dropdown.
 The dropdown body uses absolute positioning and margin top to align with the trigger element,
 without affecting the document flow.
-The `.disclosure-group` utility is used to show and hide
-child elements with javascript.
 Be sure dropdowns don’t expand beyond the viewport when used near edges or at small screen sizes.
 
 ```html
-<div class="relative inline-block disclosure-group" data-disclosure>
+<div class="relative inline-block" data-disclosure>
   <button type="button" class="button-blue">
     Burger &#9662;
   </button>
-  <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
-  <div class="disclosure-show absolute left-0 mt1 nowrap bg-blue rounded animation-fadein">
+  <div data-details class="fixed top-0 right-0 bottom-0 left-0"></div>
+  <div data-details class="absolute left-0 mt1 nowrap bg-blue rounded animation-fadein">
     <a href="#!" class="button block button-nav-dark">Rare</a>
     <a href="#!" class="button block button-nav-dark">Medium Rare</a>
     <a href="#!" class="button block button-nav-dark">Medium</a>
@@ -460,11 +456,11 @@ things like a user account dropdown can be added anywhere in the navbar.
     <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Fries</a>
   </div>
   <div class="right">
-    <div id="account-menu" class="inline-block disclosure-group" data-disclosure>
-      <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
+    <div id="account-menu" class="inline-block" data-disclosure>
+      <div data-details class="fixed top-0 right-0 bottom-0 left-0"></div>
       <div class="relative">
         <a href="#!" class="button py2 m0 button-nav-dark">My Account &#9662;</a>
-        <div class="disclosure-show absolute right-0 nowrap bg-white rounded" style="min-width:128px">
+        <div data-details class="absolute right-0 nowrap bg-white rounded" style="min-width:128px">
           <ul class="h5 list-reset mb0">
             <li><a href="#!" class="button block button-nav-light">Profile</a></li>
             <li><a href="#!" class="button block button-nav-light">Settings</a></li>
@@ -478,35 +474,6 @@ things like a user account dropdown can be added anywhere in the navbar.
   <div class="overflow-hidden px2">
   </div>
 </div>
-```
-
-Using a combination of responsive utilities, you can create a navbar that collapses
-at narrow viewport widths. Resize the viewport to see the result.
-
-```html
-<div class="relative clearfix white bg-dark-gray">
-  <div class="left">
-    <a href="#!" class="button py2 m0 button-nav-dark">Burgers</a>
-  </div>
-  <div class="right">
-    <div id="account-menu" class="right inline-block disclosure-group" data-disclosure>
-      <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0 md-hide"></div>
-      <a href="#!" class="button py2 m0 button-nav-dark md-hide">Menu &#9662;</a>
-      <div class="disclosure-show absolute right-0 left-0 clearfix nowrap bg-dark-gray rounded-bottom md-static md-show">
-        <a href="#!" class="md-col button block py2 button-nav-dark">Hot Dogs</a>
-        <a href="#!" class="md-col button block py2 button-nav-dark">Fries</a>
-        <a href="#!" class="md-col button block py2 button-nav-dark">Shakes</a>
-        <a href="#!" class="md-col button block py2 button-nav-dark">Onion Rings</a>
-      </div>
-    </div>
-  </div>
-</div>
-<style>
-/* Responsive positioning extension example */
-@media (min-width:52em) {
-  .md-static { position: static }
-}
-</style>
 ```
 
 More complex
@@ -525,13 +492,13 @@ navigations can also be created using responsive utilities.
     <a href="#!" class="button button-narrow py2 m0 button-nav-dark">Onion Rings</a>
   </div>
   <div class="right">
-    <div id="account-menu" class="inline-block disclosure-group" data-disclosure>
-      <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
+    <div id="account-menu" class="inline-block" data-disclosure>
+      <div data-details class="fixed top-0 right-0 bottom-0 left-0"></div>
       <a href="#!" class="button py2 m0 button-nav-dark">
         <span class="md-hide">Menu &#9662;</span>
         <span class="md-show">More &#9662;</span>
       </a>
-      <div class="disclosure-show absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap bg-mid-gray rounded-bottom animation-fadein">
+      <div data-details class="absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap bg-mid-gray rounded-bottom animation-fadein">
         <ul class="h5 list-reset py1 mb0">
           <li class="md-hide"><a href="#!" class="button block button-nav-dark">Hot Dogs</a></li>
           <li class="md-hide"><a href="#!" class="button block button-nav-dark">Fries</a></li>
@@ -680,26 +647,38 @@ to represent different qualities of states.
   Geomicons.inject(icons);
 
   var Disclosure = function(el, options) {
-    var self = this;
-    this.el = el;
-    this.isActive = false;
-    this.toggle = function(e) {
+    el.isActive = false;
+    el.details = el.querySelectorAll('[data-details]');
+    el.hide = function() {
+      for (var i = 0; i < el.details.length; i++) {
+        el.details[i].style.display = 'none';
+      }
+    };
+    el.show = function() {
+      for (var i = 0; i < el.details.length; i++) {
+        el.details[i].style.display = 'block';
+      }
+    };
+    el.toggle = function(e) {
       e.stopPropagation();
-      self.isActive = !self.isActive;
-      if (self.isActive) {
-        self.el.classList.add('is-active');
+      el.isActive = !el.isActive;
+      if (el.isActive) {
+        el.show();
       } else {
-        self.el.classList.remove('is-active');
+        el.hide();
       }
     }
-    this.el.addEventListener('click', function(e) {
-      self.toggle(e);
+    el.addEventListener('click', function(e) {
+      el.toggle(e);
     });
+    el.hide();
+    return el;
   };
 
   var disclosures = document.querySelectorAll('[data-disclosure]');
+
   for (var i = 0; i < disclosures.length; i++) {
-    new Disclosure(disclosures[i]);
+    disclosures[i] = new Disclosure(disclosures[i]);
   }
 
 </script>

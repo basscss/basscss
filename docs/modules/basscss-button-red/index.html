@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -202,7 +202,7 @@
   </a>
 </h3>
 
-  <ul class="list-reset mb0 py1 bg-darken-2">
+  <ul class="list-reset mb3 py1 bg-darken-2">
     
       <li>
         <a href="/docs/modules/basscss-base-reset"
@@ -282,13 +282,6 @@
       </li>
     
       <li>
-        <a href="/docs/modules/basscss-ui-utility-disclosure-states"
-          class="button block button-small px2 white bg-mid-gray">
-          <span class="block ml1">UI Utility Disclosure States</span>
-        </a>
-      </li>
-    
-      <li>
         <a href="/docs/modules/basscss-positions"
           class="button block button-small px2 button-nav-dark">
           <span class="block ml1">Positions</span>
@@ -317,6 +310,13 @@
       </li>
     
       <li>
+        <a href="/docs/modules/basscss-color-buttons"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Color Buttons</span>
+        </a>
+      </li>
+    
+      <li>
         <a href="/docs/modules/basscss-color-forms"
           class="button block button-small px2 button-nav-dark">
           <span class="block ml1">Color Forms</span>
@@ -338,9 +338,58 @@
       </li>
     
       <li>
-        <a href="/docs/modules/basscss-color-buttons"
+        <a href="/docs/modules/basscss-button-blue"
           class="button block button-small px2 button-nav-dark">
-          <span class="block ml1">Color Buttons</span>
+          <span class="block ml1">Button Blue</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-blue-outline"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Button Blue Outline</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-gray"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Button Gray</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-light-gray"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Basscss</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-red"
+          class="button block button-small px2 white bg-mid-gray">
+          <span class="block ml1">Button Red</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-nav-light"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Button Nav Light</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-nav-dark"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Button Nav Dark</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/modules/basscss-button-nav-tab"
+          class="button block button-small px2 button-nav-dark">
+          <span class="block ml1">Button Nav Tab</span>
         </a>
       </li>
     
@@ -397,18 +446,16 @@
   <div class="flex flex-wrap flex-center py3 mb1 border-bottom">
     
       <div class="flex-auto">
-        <h1 class="h1 xh1-responsive caps m0">UI Utility Disclosure States</h1>
+        <h1 class="h1 xh1-responsive caps m0">Button Red</h1>
         <h2 class="h3 m0">
-          basscss-ui-utility-disclosure-states
-          <span class="h5">v0.0.6</span>
-          
-            <span class="h6 caps red">Optional</span>
+          basscss-button-red
+          <span class="h5">v0.0.1</span>
           
         </h2>
       </div>
       <div class="mxn1">
-        <a href="//www.npmjs.com/package/basscss-ui-utility-disclosure-states" class="h5 button button-narrow button-nav-light">NPM</a>
-        <a href="https://github.com/jxnblk/basscss-ui-utility-disclosure-states" class="h5 button button-narrow button-nav-light">Github</a>
+        <a href="//www.npmjs.com/package/basscss-button-red" class="h5 button button-narrow button-nav-light">NPM</a>
+        <a href="https://github.com/jxnblk/basscss-button-red" class="h5 button button-narrow button-nav-light">Github</a>
       </div>
     
   </div>
@@ -424,7 +471,7 @@
     
       / <a href="/docs/modules/" class="button button-narrow">Modules</a>
     
-    / <a href="" class="button button-narrow dark-gray">UI Utility Disclosure States</a>
+    / <a href="" class="button button-narrow dark-gray">Button Red</a>
   </div>
 </div>
 
@@ -434,25 +481,18 @@
           
 
 
-<p>Toggle the visibility of child elements. This is useful for things like dropdown menus that are controlled with Javascript.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div>
-  <div class="disclosure-show">Hidden</div>
+    <div class="mb1">
+  <button class="button-red">Button</button>
+  <a href="#!" class="button button-red">Link Button</a>
+  <input type="button" class="button button-red" value="Input Button">
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;disclosure-show&quot;</span>&gt;</span>Hidden<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="is-active">
-  <div class="disclosure-show">Visible</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;is-active&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;disclosure-show&quot;</span>&gt;</span>Visible<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-red&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-red&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-red&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 
