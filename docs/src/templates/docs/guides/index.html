@@ -4,20 +4,14 @@
 
 {% block content %}
 
-<p class="h3 mb4">
-  Guides to help you leverage Basscss to its fullest potential.
-</p>
-<div class="clearfix mxn2 mb4">
+<div class="flex flex-wrap flex-stretch mxn2 mb4">
   {% for guide in guides %}
-    <div class="sm-col sm-col-6 mb3">
-      <a href="{{ guide.link }}" class="h3 button block button-nav-light">
-        <h3 class="h1 m0">{{ guide.title }}</h3>
-        <p class="regular m0">{{ guide.description }}</p>
+    <div class="flex flex-auto sm-col-6 mb3 px2">
+      <a href="{{ guide.link }}" class="block-link block full-width px2 py3 white bg-blue rounded">
+        <h3 class="h2 mt0">{{ guide.title }}</h3>
+        <p class="regular mt0">{{ guide.description }}</p>
       </a>
     </div>
-    {% if loop.index % 2 == 0 %}
-      <div class="clearfix"></div>
-    {% endif %}
   {% endfor %}
 </div>
 

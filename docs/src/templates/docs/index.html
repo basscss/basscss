@@ -13,48 +13,50 @@
   base elements, immutable utilities, layout modules, and color styles.
 </p>
 
-<div class="mxn2 py1">
+<div class="mxn2 mb2 py1">
   <a href="/docs/getting-started" class="h2 button block button-nav-light">Getting Started</a>
 </div>
 
-<div class="clearfix mxn2 mb4">
+<div class="flex flex-wrap mxn2 mb3">
   {% for page in pages %}
     {% if page.title != 'Getting Started' %}
-      <div class="col col-6 md-col-3 py1">
+      <div class="col-6 md-col-3 py1">
         <a href="{{ page.link }}" class="h2 button block button-nav-light">{{ page.title }}</a>
+        {#
         {% for section in page.sections %}
           <a href="{{ section.link }}" class="h5 button button-small px2 block button-nav-light">{{ section.title }}</a>
-          {#
-          {% if section.subsections %}
-            <div class="mb1">
-              {% for s in section.subsections %}
-                <a href="{{ s.link }}" class="h6 button button-nav-light block">{{ s.title }}</a>
-              {% endfor %}
-            </div>
-          {% endif %}
-          #}
         {% endfor %}
+        #}
       </div>
     {% endif %}
   {% endfor %}
 </div>
 
-<hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+<hr class="hide ml0 col-5 sm-col-3 hr-block bg-blue">
 
 <h2 class="h5 avenir caps">Guides</h2>
-<div class="clearfix mxn2 mb4">
+<div class="flex flex-wrap mxn2 mb4">
   {% for guide in guides %}
-    <div class="sm-col sm-col-6 md-col-3 py1">
-      <a href="{{ guide.link }}" class="h3 button block button-nav-light">{{ guide.title }}</a>
+    <div class="col-6 md-col-3 py1">
+      <a href="{{ guide.link }}" class="h4 button block button-nav-light">{{ guide.title }}</a>
     </div>
   {% endfor %}
 </div>
 
 <h2 class="h5 avenir caps">Reference</h2>
-<div class="sm-flex flex-wrap mxn2 mb4">
+<div class="flex flex-wrap mxn2 mb4">
   {% for reference in references %}
-    <div class="sm-col-6 md-col-3 py1">
-      <a href="{{ reference.link }}" class="h3 button block button-nav-light">{{ reference.title }}</a>
+    <div class="col-6 md-col-3 py1">
+      <a href="{{ reference.link }}" class="h4 button block button-nav-light">{{ reference.title }}</a>
+    </div>
+  {% endfor %}
+</div>
+
+<h2 class="h5 avenir caps">Modules</h2>
+<div class="flex flex-wrap mxn2 mb4">
+  {% for m in modules %}
+    <div class="col-6 md-col-3 py1">
+      <a href="/docs/modules/{{ m.name }}" class="h4 button block button-nav-light">{{ m.title }}</a>
     </div>
   {% endfor %}
 </div>

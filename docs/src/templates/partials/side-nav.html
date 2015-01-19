@@ -24,7 +24,7 @@
           {% for item in p.sections %}
             <li>
               <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
-                <span class="ml1">{{ item.title }}</span>
+                <span class="block ml1">{{ item.title }}</span>
               </a>
             </li>
           {% endfor %}
@@ -41,6 +41,30 @@
       <a href="{{ guide.link }}"
         class="button block {% if guide.title == page.title %} white bg-blue {% else %} button-nav-dark {% endif %}">
         {{ guide.title }}
+      </a>
+      {% if guide.title == page.title %}
+        <ul class="list-reset mb0 py1 bg-darken-2">
+          {% for item in guide.sections %}
+            <li>
+              <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">{{ item.title }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+
+<h3 class="h6 caps px2 py1 mb0">Reference</h3>
+<ul class="list-reset mb3">
+  {% for ref in references %}
+    <li>
+      <a href="{{ ref.link }}"
+        class="button block {% if ref.title == page.title || ref.title == 'Modules' && module %} white bg-blue {% else %} button-nav-dark {% endif %}">
+        {{ ref.title }}
       </a>
     </li>
   {% endfor %}
@@ -66,18 +90,6 @@
   </ul>
 {% endif %}
 
-
-<h3 class="h6 caps px2 py1 mb0">Reference</h3>
-<ul class="list-reset mb3">
-  {% for ref in references %}
-    <li>
-      <a href="{{ ref.link }}"
-        class="button block {% if ref.title == page.title || ref.title == 'Modules' && module %} white bg-blue {% else %} button-nav-dark {% endif %}">
-        {{ ref.title }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
 
 <a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">
   Github

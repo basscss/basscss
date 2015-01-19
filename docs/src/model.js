@@ -108,7 +108,7 @@ module.exports = function() {
   data.guides = {
     basics: {
       title: 'Basics',
-      description: 'CSS and Web Design Fundamentals',
+      description: 'Understanding the basics of designing for the web with CSS is essential to using Basscss effectively. This guide covers the fundamentals to help get you started.',
       link: '/docs/guides/basics',
       sections: [
         { title: 'Document Structure', link: '/docs/guides/basics/#document-structure' },
@@ -126,7 +126,7 @@ module.exports = function() {
     },
     layout: {
       title: 'Page Layout',
-      description: 'Using the Grid System to Create an Entire Page',
+      description: 'Creating page layouts in Basscss is incredibly fast and flexible. This guide will walk you through common layout patterns to create an entire page with a basic information hierarchy.',
       link: '/docs/guides/layout',
       sections: [
         { title: 'Global Navigation', link: '/docs/guides/layout/#global-navigation' },
@@ -139,7 +139,7 @@ module.exports = function() {
     },
     ui: {
       title: 'UI Elements',
-      description: 'Styling Custom Controls for Interactivity',
+      description: 'Basscss can be used to create many different user interface elements out of the box. With utility styles and a thoughtfully-architected templating system, you can keep CSS bloat to a minimum, while making iterative design changes to partials and components.',
       link: '/docs/guides/ui',
       sections: [
         { title: 'Button Sizes', link: '/docs/guides/ui/#button-sizes' },
@@ -157,7 +157,7 @@ module.exports = function() {
     },
     tips: {
       title: 'Tips & Tricks',
-      description: 'Getting the Most Out of Basscss',
+      description: 'Basscss is a versatile starting point for any project. These tips and tricks will help you build on top of its foundation in an elegant and maintainable way.',
       link: '/docs/guides/tips',
       sections: [
         { title: 'Avoid Overrides', link: '/docs/guides/tips/#avoid-overrides' },
