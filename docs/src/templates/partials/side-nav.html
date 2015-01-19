@@ -34,7 +34,11 @@
   {% endfor %}
 </ul>
 
-<h3 class="mb0"><a href="/docs/guides" class="h6 caps button block button-nav-dark">Guides</a></h3>
+<h3 class="mb0">
+  <a href="/docs/guides" class="h6 caps button block {% if page.title == 'Guides' %}white bg-blue{% else %}button-nav-dark{% endif %}">
+    Guides
+  </a>
+</h3>
 <ul class="list-reset mb3">
   {% for guide in guides %}
     <li>
