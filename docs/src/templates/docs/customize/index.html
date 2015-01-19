@@ -1,19 +1,16 @@
-{% extends 'layouts/minimal.html' %}
+{% extends 'layouts/docs.html' %}
 {% set page = references.customize %}
 
 {% block content %}
 
-<div class="px2">
-  {% include 'partials/docs-nav.html' %}
-  <p class="h3">
-    Create custom builds without touching the command line.
-  </p>
-</div>
+<p class="h3">
+  Create custom builds without touching the command line.
+</p>
 
 {% raw %}
-<div ng-app="app" class="px2" ng-controller="AppCtrl">
-  <div custom-css class="md-flex flex-stretch mxn2">
-    <div class="md-col-8 px2 py3">
+<div ng-app="app" ng-controller="AppCtrl">
+  <div custom-css class="">
+    <div class="py3">
       <section class="mb3" custom-css-collection src="modules.json">
         <div class="sm-flex flex-center mb2">
           <h2 class="flex-auto m0 py1">Modules</h2>
@@ -40,7 +37,7 @@
         </form>
       </section>
     </div>
-    <div class="flex flex-column md-col-4 px2 py3">
+    <div class="flex flex-column py3">
       <div class="sm-flex flex-center mb2">
         <div class="flex-auto py1">
           <h2 class="h4 m0">Compiled CSS ({{ fileSize | filesize }})</h2>
@@ -51,36 +48,31 @@
             Download
         </a>
       </div>
-      <pre class="flex-auto" style="min-height:80vh" ng-bind-html="compiled | highlight"></pre>
+      <pre class="flex-auto" style="height:60vh" ng-bind-html="compiled | highlight"></pre>
       <div class="mb2">
-        <a class="flex-none button button-blue"
+        <a class="button mb2 button-blue"
           ng-href="{{ downloadURL }}"
           download="basscss-custom.css">
             Download
         </a>
+        <p class="h5">
+          Note: vendor prefixes are not included in the compiled CSS.
+          Use a tool like Autoprefixer if you need vendor prefixes.
+        </p>
       </div>
     </div>
   </div>
-  <div class="sm-col-8 py3">
+  <div class="py3">
     <p>
       This tool only scratches the surface of what’s possible with Basscss’s modular architecture.
       To learn more about custom builds from the command line, see
       <a href="/docs/custom-builds">Custom Builds</a>.
-    </p>
-    <p class="h5">
-      Note: vendor prefixes are not included in the compiled CSS.
-      Use a tool like Autoprefixer if you need vendor prefixes.
     </p>
   </div>
 </div>
 
 
 {% endraw %}
-
-<div class="px2">
-  {% include 'partials/docs-mega-footer.html' %}
-  {% include 'partials/footer.html' %}
-</div>
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-sanitize.min.js"></script>

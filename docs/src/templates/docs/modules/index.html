@@ -1,6 +1,6 @@
 {% extends 'layouts/docs.html' %}
-{% set page = references.modules %}
-{% set fullwidth = true %}
+{% set page = {} %}
+{% set page.title = 'Modules' %}
 
 {% block content %}
 
@@ -11,19 +11,19 @@
 </p>
 
 <section class="py2">
-  <div class="list-reset sm-flex flex-wrap mxn2">
+  <div class="list-reset md-flex flex-wrap mxn2">
     {% for module in modules %}
-      <div class="md-col-6 px2 mb2">
-        <a href="/docs/modules/{{ module.name }}" class="h3 bold block">
-          {{ module.title }}
+      <div class="md-col-6 mb2">
+        <a href="/docs/modules/{{ module.name }}" class="button block button-nav-light">
+          <span class="h3">{{ module.title }}</span>
           <span class="h6">v{{ module.version }}</span>
           {% if module.optional %}
             <span class="h6 caps red">Optional</span>
           {% endif %}
+          <div class="h4 regular mt1 dark-gray">
+            {{ module.description }}
+          </div>
         </a>
-        <p>
-          {{ module.description }}
-        </p>
       </div>
     {% endfor %}
   </div>

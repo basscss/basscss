@@ -207,7 +207,6 @@ module.exports = function() {
         { title: 'Custom Builds', link: '/docs/rework/#custom-builds' },
       ]
     },
-    modules: { title: 'Modules', link: '/docs/modules' },
     styles: { title: 'Table of Styles', link: '/docs/styles' },
     stats: { title: 'Stats', link: '/docs/stats' },
     variables: { title: 'Variables', link: '/docs/variables' },

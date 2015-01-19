@@ -1,0 +1,27 @@
+<header class="px2 mt3">
+  <div class="py3 mb1 border-bottom">
+    {% if module %}
+      <h1 class="avenir h1 h1-responsive caps m0">{{ page.title }}</h1>
+    {% else %}
+      <h1 class="avenir h0 h0-responsive caps m0">{{ page.title }}</h1>
+    {% endif %}
+  </div>
+</header>
+
+<div class="px2">
+  <div class="avenir h6 bold mxn1 mb3">
+    <a href="/" class="button button-narrow">Home</a>
+    {% if !hide_docs_breadcrumb %}
+      / <a href="/docs" class="button button-narrow">Docs</a>
+    {% endif %}
+    {% if isguide %}
+      / <a href="/docs/guides/" class="button button-narrow">Guides</a>
+    {% endif %}
+    {% if module %}
+      / <a href="/docs/modules/" class="button button-narrow">Modules</a>
+    {% endif %}
+    / <a href="{{ page.link }}" class="button button-narrow dark-gray">{{ page.title }}</a>
+  </div>
+</div>
+
+

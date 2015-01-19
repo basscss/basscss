@@ -1,0 +1,85 @@
+
+<a href="/" class="inline-block px2 mt2 bright-blue">
+  <svg class="h1 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" fill="currentcolor">
+    <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
+  </svg>
+</a>
+
+<a href="/" class="h4 caps mb3 button block bright-blue">Basscss</a>
+
+<ul class="list-reset mb3">
+  {% for p in pages %}
+    <li>
+      <a href="{{ p.link }}" class="button block
+          {% if p.title == page.title %}
+            white bg-blue
+          {% else %}
+            button-nav-dark
+          {% endif %}
+        ">
+        {{ p.title }}
+      </a>
+      {% if p.title == page.title && page.title != 'Getting Started' %}
+        <ul class="list-reset mb0 py1 bg-darken-3">
+          {% for item in p.sections %}
+            <li>
+              <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
+                {{ item.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3 class="mb0"><a href="/docs/guides" class="h6 caps button block button-nav-dark">Guides</a></h3>
+<ul class="list-reset mb3">
+  {% for guide in guides %}
+    <li>
+      <a href="{{ guide.link }}"
+        class="button block {% if guide.title == page.title %} white bg-blue {% else %} button-nav-dark {% endif %}">
+        {{ guide.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+<h3 class="mb0">
+  <a href="/docs/modules"
+    class="h6 caps button block {% if page.title == 'Modules' || module %}white bg-blue{% else %}button-nav-dark{% endif %}">
+    Modules
+  </a>
+</h3>
+{% if module || page.title == 'Modules' %}
+  <ul class="list-reset mb0 py1 bg-darken-3">
+    {% for m in modules %}
+      <li>
+        <a href="/docs/modules/{{ m.name }}"
+          class="button block button-small px2 {% if module.name == m.name %}white bg-mid-gray{% else %}button-nav-dark{% endif %}">
+            {{ m.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+
+<h3 class="h6 caps px2 py1 mb0">Reference</h3>
+<ul class="list-reset mb3">
+  {% for ref in references %}
+    <li>
+      <a href="{{ ref.link }}"
+        class="button block {% if ref.title == page.title || ref.title == 'Modules' && module %} white bg-blue {% else %} button-nav-dark {% endif %}">
+        {{ ref.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">
+  Github
+</a>
+
