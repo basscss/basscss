@@ -1,11 +1,3 @@
-basscss-base
-basscss-utilities
-basscss-grid
-basscss-table-object
-basscss-buttons
-basscss-positions
-basscss-color-basic
-basscss-ui-utilities
 *.gz
 aws.json
 
