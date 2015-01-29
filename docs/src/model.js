@@ -1,7 +1,6 @@
 
 var fs = require('fs');
 var cssstats = require('cssstats');
-var cssdata = require('./css-data');
 var variables = require('./variables');
 var modules = require('./modules');
 var Humanize = require('humanize-plus');
@@ -12,7 +11,6 @@ module.exports = function() {
   var cssSource = fs.readFileSync('./css/basscss.css', 'utf8');
 
   data.asset_path = 'http://d2v52k3cl9vedd.cloudfront.net/basscss/';
-  data.css = cssdata('./css/basscss.min.css');
   data.version = require('../../package.json').version;
 
   data.pages = {

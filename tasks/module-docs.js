@@ -1,7 +1,7 @@
 
 var fs = require('fs');
 var path = require('path');
-var camelcase = require('camel-case');
+var _ = require('lodash');
 var swig = require('swig');
 
 module.exports = function() {
@@ -21,9 +21,9 @@ module.exports = function() {
       '{{ module.content | safe }}\n' +
       '{% endblock %}\n';
 
-    var tpl = swig.compile(html, { filename: '/docs/modules/' + camelcase(module) + '.html' });
-    model.page = model.modules[camelcase(module)];
-    model.module = model.modules[camelcase(module)];
+    var tpl = swig.compile(html, { filename: '/docs/modules/' + _.camelCase(module) + '.html' });
+    model.page = model.modules[_.camelCase(module)];
+    model.module = model.modules[_.camelCase(module)];
 
     var rendered = tpl(model);
 

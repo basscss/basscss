@@ -5,15 +5,15 @@
 
 <div class="bold flex flex-center py2">
   <div class="flex-auto py2">
-    <div class="h0 h0-responsive">{{ css.parsed.length }}</div>
+    <div class="h0 h0-responsive">{{ stats.rules.length }}</div>
     <div class="h6 caps">Styles</div>
   </div>
   <div class="flex-auto py2">
-    <div class="h0 h0-responsive bold">{{ css.size }}<span class="h3">KB</span></div>
+    <div class="h0 h0-responsive bold">{{ stats.size }}<span class="h3">KB</span></div>
     <div class="h6 caps">minified</div>
   </div>
   <div class="flex-auto py2">
-    <div class="h0 h0-responsive">{{ css.gzSize }}<span class="h3">KB</span></div>
+    <div class="h0 h0-responsive">{{ stats.gzipSize }}<span class="h3">KB</span></div>
     <div class="h6 caps">gzipped</div>
   </div>
 </div>
@@ -23,17 +23,16 @@
     <tr> <th>Selectors</th> <th>Declarations</th> </tr>
   </thead>
   <tbody>
-    {% for p in css.parsed %}
-      <tr class="{% if p.media %}bg-darken-1{% endif %}">
+    <!-- need to account for media queries with cssstats -->
+    {% for rule in stats.rules %}
+      <tr>
         <td class="sm-col-3">
-          <!-- <span class="h6 bold mr1 mid-gray">{{ $index }}</span> -->
-          {{ p.selectors }}
+          {{ rule.selector }}
         </td>
         <td class="sm-col-9">
-          {% if p.media %}
-            <span class="bold">{{ p.media }}</span>
-          {% endif %}
-          {{ p.declarations }}
+          {% for dec in rule.declarations %}
+            {{ dec.prop }}: {{ dec.value }};
+          {% endfor %}
         </td>
       </tr>
     {% endfor %}

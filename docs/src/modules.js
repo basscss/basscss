@@ -3,7 +3,7 @@ var fs = require('fs');
 var path = require('path');
 var marked = require('marked');
 var markedExample = require('marked-example');
-var camelcase = require('camel-case');
+var _ = require('lodash');
 var cheerio = require('cheerio');
 
 module.exports = function() {
@@ -38,7 +38,7 @@ module.exports = function() {
     title = title.replace('Basscss ', '');
     header.root().append($.root().children().first('h1')).append($.root().children().first('p'));
 
-    result[camelcase(module)] = {
+    result[_.camelCase(module)] = {
       name: module,
       version: pkg.version,
       description: pkg.description,
