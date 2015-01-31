@@ -15,7 +15,7 @@ var options = {
   setup: function(swig) {
     require('swig-highlight').apply(swig);
     swig.setDefaults({
-      loader: swig.loaders.fs(path.resolve(__dirname, '../docs/src/templates'))
+      loader: swig.loaders.fs(path.resolve(__dirname, '../docs/src'))
     });
   },
   defaults: {
@@ -40,6 +40,10 @@ var mdSwig = function(opt) {
     var contents = file.contents.toString();
     var matter = fm(contents);
     var html = marked(matter.body, { renderer: renderer });
+    //console.log('matter', matter.attributes.page);
+    //if (matter.attributes.page == 'guides.basics') {
+    //  //console.log('md', html);
+    //}
     var layout = matter.attributes.layout || null;
     var page = matter.attributes.page || null;
     var isguide = matter.attributes.isguide || false;
@@ -62,11 +66,7 @@ var mdSwig = function(opt) {
 };
 
 module.exports = function() {
-  gulp.src([
-      './docs/src/templates/**/*.html',
-      '!./docs/src/templates/layouts/**/*',
-      '!./docs/src/templates/partials/**/*',
-    ])
+  gulp.src([ './docs/src/templates/**/*.html' ])
     .pipe(swig(options))
     .pipe(gulp.dest('./'));
 

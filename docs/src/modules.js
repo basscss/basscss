@@ -29,6 +29,7 @@ module.exports = function() {
     var pkg = require(module + '/package.json');
     var md = fs.readFileSync('./node_modules/' + module + '/README.md', 'utf8');
     var content = marked(md, { renderer: renderer });
+    //console.log('md', content);
     var isOptional;
     if (pkg.basscss) isOptional = pkg.basscss.optional || false;
 
