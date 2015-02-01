@@ -1,15 +1,15 @@
 <head>
   <meta charset="utf-8">
-  <title>Basscss</title>
-  <meta name="author" content="Jxnblk">
-  <meta name="description" content="Simple, responsive CSS toolkit based on OOCSS principles">
-  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
+  <title><%= title %></title>
+  <meta name="author" content="<%= author %>">
+  <meta name="description" content="<%= description %>">
+  <% if (obj.keywords) { %>
+    <meta name="keywords" content="<% keywords.forEach(function(keyword) { %><%= keyword %>, <% }) %>">
+  <% } %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% if stylesheet %}
-    <link rel="stylesheet" href="{{ stylesheet }}">
-  {% else %}
-    <link rel="stylesheet" href="/docs/css/base.min.css">
-  {% endif %}
+  <% if (obj.stylesheet) { %>
+    <link rel="stylesheet" href="<%= stylesheet %>">
+  <% } %>
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
 </head>

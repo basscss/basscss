@@ -30,11 +30,11 @@ gulp.task('release', ['bump', 's3', 'sassify', 'zip']);
 // Run webserver
 gulp.task('serve', require('./tasks/serve'));
 
-// Compile lodash templates
-gulp.task('tpl', require('./tasks/tpl'));
+// NEW Compile lodash templates
+gulp.task('lodocs', require('./tasks/lodocs'));
 
-// Compile Swig templates
-gulp.task('swig', require('./tasks/swig'));
+// OLD Compile Swig templates
+  //gulp.task('swig', require('./tasks/swig'));
 
 // Compile CSS for docs site
 gulp.task('site-basswork', require('./tasks/site-basswork'));
@@ -66,12 +66,8 @@ gulp.task('watch-css', ['basswork', 'site-basswork', 'customizer-data'], functio
   gulp.watch(['./src/**/*.css', './docs/src/css/**/*.css'], ['basswork', 'site-basswork', 'customizer-data']);
 });
 
-gulp.task('watch-templates', ['swig'], function() {
-  gulp.watch([
-      './docs/src/templates/**/*',
-      '!./docs/src/templates/docs/modules/**/*',
-      './docs/src/model.js'
-    ], ['swig']);
+gulp.task('watch-templates', ['lodocs'], function() {
+  gulp.watch(['./docs/src/**/*'], ['lodocs']);
 });
 
 gulp.task('watch-js', ['customizer-js'], function() {

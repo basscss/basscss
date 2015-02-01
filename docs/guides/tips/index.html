@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Basscss</title>
-  <meta name="author" content="Jxnblk">
-  <meta name="description" content="Simple, responsive CSS toolkit based on OOCSS principles">
-  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
+  <meta name="author" content="Brent Jackson">
+  <meta name="description" content="Low-level CSS toolkit">
+  
+    <meta name="keywords" content="CSS, OOCSS, framework, ">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="/docs/css/base.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/0.0.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
 </head>
 
-
 <body>
 
-  <div class="px2 ">
+<div class="px2 ">
   <div class="clearfix flex flex-stretch mxn2">
     
       <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
@@ -33,239 +33,91 @@
 <a href="/" class="h4 caps mb3 button block">Basscss</a>
 
 <ul class="list-reset mb3">
-  
+  {% for p in pages %}
     <li>
-      <a href="/docs/getting-started" class="button block
-          
+      <a href="{{ p.link }}" class="button block
+          {% if p.title == page.title %}
+            white bg-blue
+          {% else %}
             button-nav-dark
-          
+          {% endif %}
         ">
-        Getting Started
+        {{ p.title }}
       </a>
-      
+      {% if p.title == page.title && page.title != 'Getting Started' %}
+        <ul class="list-reset mb0 py1 bg-darken-2">
+          {% for item in p.sections %}
+            <li>
+              <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">{{ item.title }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </li>
-  
-    <li>
-      <a href="/docs/base" class="button block
-          
-            button-nav-dark
-          
-        ">
-        Base
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/utility" class="button block
-          
-            button-nav-dark
-          
-        ">
-        Utility
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/layout" class="button block
-          
-            button-nav-dark
-          
-        ">
-        Layout
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/color" class="button block
-          
-            button-nav-dark
-          
-        ">
-        Color
-      </a>
-      
-    </li>
-  
+  {% endfor %}
 </ul>
 
 <h3 class="mb0">
-  <a href="/docs/guides" class="h6 caps button block button-nav-dark">
+  <a href="/docs/guides" class="h6 caps button block {% if page.title == 'Guides' %}white bg-blue{% else %}button-nav-dark{% endif %}">
     Guides
   </a>
 </h3>
 <ul class="list-reset mb3">
-  
+  {% for guide in guides %}
     <li>
-      <a href="/docs/guides/basics"
-        class="button block  button-nav-dark ">
-        Basics
+      <a href="{{ guide.link }}"
+        class="button block {% if guide.title == page.title %} white bg-blue {% else %} button-nav-dark {% endif %}">
+        {{ guide.title }}
       </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/guides/layout"
-        class="button block  button-nav-dark ">
-        Page Layout
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/guides/ui"
-        class="button block  button-nav-dark ">
-        UI Elements
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/guides/tips"
-        class="button block  white bg-blue ">
-        Tips &amp; Tricks
-      </a>
-      
+      {% if guide.title == page.title %}
         <ul class="list-reset mb0 py1 bg-darken-2">
-          
+          {% for item in guide.sections %}
             <li>
-              <a href="/docs/guides/tips/#avoid-overrides" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Avoid Overrides</span>
+              <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">{{ item.title }}</span>
               </a>
             </li>
-          
-            <li>
-              <a href="/docs/guides/tips/#utility-styles-are-immutable" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Utility Styles are Immutable</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/tips/#look-before-adding" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Look Before Adding</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/tips/#avoid-magic-numbers" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Avoid Magic Numbers</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/tips/#don-t-use-contextual-selectors" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Don’t Use Contextual Selectors</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/tips/#handle-complexity-in-markup" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Handle Complexity in Markup</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/tips/#keep-specificity-low" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Keep Specificity Low</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/tips/#don-t-nest-selectors" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Don’t Nest Selectors</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/tips/#don-t-use-ids-as-selectors" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Don’t Use IDs as Selectors</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/tips/#separate-structure-and-skin" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Separate Structure and Skin</span>
-              </a>
-            </li>
-          
+          {% endfor %}
         </ul>
-      
+      {% endif %}
     </li>
-  
+  {% endfor %}
 </ul>
 
 
 <h3 class="h6 caps px2 py1 mb0">Reference</h3>
 <ul class="list-reset mb3">
-  
+  {% for ref in references %}
     <li>
-      <a href="/docs/principles"
-        class="button block  button-nav-dark ">
-        Design Principles
+      <a href="{{ ref.link }}"
+        class="button block {% if ref.title == page.title || ref.title == 'Modules' && module %} white bg-blue {% else %} button-nav-dark {% endif %}">
+        {{ ref.title }}
       </a>
     </li>
-  
-    <li>
-      <a href="/docs/showcase"
-        class="button block  button-nav-dark ">
-        Built with Basscss
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/custom-builds"
-        class="button block  button-nav-dark ">
-        Custom Builds
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/customize"
-        class="button block  button-nav-dark ">
-        Customize
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/rework"
-        class="button block  button-nav-dark ">
-        Using Rework
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/styles"
-        class="button block  button-nav-dark ">
-        Table of Styles
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/stats"
-        class="button block  button-nav-dark ">
-        Stats
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/variables"
-        class="button block  button-nav-dark ">
-        Variables
-      </a>
-    </li>
-  
+  {% endfor %}
 </ul>
 
 
 <h3 class="mb0">
   <a href="/docs/modules"
-    class="h6 caps button block button-nav-dark">
+    class="h6 caps button block {% if page.title == 'Modules' || module %}white bg-blue{% else %}button-nav-dark{% endif %}">
     Modules
   </a>
 </h3>
-
+{% if module || page.title == 'Modules' %}
+  <ul class="list-reset mb3 py1 bg-darken-2">
+    {% for m in modules %}
+      <li>
+        <a href="/docs/modules/{{ m.name }}"
+          class="button block button-small px2 {% if module.name == m.name %}white bg-mid-gray{% else %}button-nav-dark{% endif %}">
+          <span class="block ml1">{{ m.title }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
 
 
 <a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">
@@ -281,7 +133,7 @@
         <header class="px2 mt3">
   <div class="flex flex-wrap flex-center py3 mb1 border-bottom">
     
-      <h1 class="h0 h0-responsive caps m0">Tips &amp; Tricks</h1>
+      <h1 class="h0 h0-responsive caps m0">Tips & Tricks</h1>
     
   </div>
 </header>
@@ -293,18 +145,15 @@
       / <a href="/docs" class="button button-narrow">Docs</a>
     
     
-      / <a href="/docs/guides/" class="button button-narrow">Guides</a>
     
-    
-    / <a href="/docs/guides/tips" class="button button-narrow dark-gray">Tips &amp; Tricks</a>
+    / <a href="" class="button button-narrow dark-gray">Tips & Tricks</a>
   </div>
 </div>
 
 
 
         <div class="px2 py2">
-          
-<p class="h3">
+          <p class="h3">
   Basscss is a versatile starting point for any project.
   These tips and tricks will help you build on top of its foundation
   in an elegant and maintainable way.
@@ -389,8 +238,12 @@ IDs also create excessive specificity that will trump the majority of Basscss’
 often differ by location, can change with the design over time, and don’t have a huge impact on page layout.
 Keeping structural styles and skins decoupled aids in interoperability and design flexibility.</p>
 
-
+          <!--
           
+            <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+            
+          
+          -->
         </div>
       </div>
       <div>

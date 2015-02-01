@@ -1,39 +1,39 @@
 <header class="px2 mt3">
   <div class="flex flex-wrap flex-center py3 mb1 border-bottom">
-    {% if !module %}
-      <h1 class="h0 h0-responsive caps m0">{{ page.title }}</h1>
-    {% else %}
+    <% if (!obj.module) { %>
+      <h1 class="h0 h0-responsive caps m0"><%= page.title %></h1>
+    <% } else { %>
       <div class="flex-auto">
-        <h1 class="h1 xh1-responsive caps m0">{{ module.title }}</h1>
+        <h1 class="h1 xh1-responsive caps m0"><%= module.title %></h1>
         <h2 class="h3 m0">
-          {{ module.name }}
-          <span class="h5">v{{ module.version }}</span>
-          {% if module.optional %}
+          <%= module.name %>
+          <span class="h5">v<%= module.version %></span>
+          <% if (module.optional) { %>
             <span class="h6 caps red">Optional</span>
-          {% endif %}
+          <% } %>
         </h2>
       </div>
       <div class="mxn1">
-        <a href="{{ module.npmLink }}" class="h5 button button-narrow button-nav-light">NPM</a>
-        <a href="{{ module.githubLink }}" class="h5 button button-narrow button-nav-light">Github</a>
+        <a href="<%= module.npmLink %>" class="h5 button button-narrow button-nav-light">NPM</a>
+        <a href="<%= module.homepage %>" class="h5 button button-narrow button-nav-light">Github</a>
       </div>
-    {% endif %}
+    <% } %>
   </div>
 </header>
 
 <div class="px2">
   <div class="avenir h5 bold mxn1 mb3">
     <a href="/" class="button button-narrow">Home</a>
-    {% if !hide_docs_breadcrumb %}
+    <% if (!obj.hide_docs_breadcrumb) { %>
       / <a href="/docs" class="button button-narrow">Docs</a>
-    {% endif %}
-    {% if isguide %}
+    <% } %>
+    <% if (obj.isguide) { %>
       / <a href="/docs/guides/" class="button button-narrow">Guides</a>
-    {% endif %}
-    {% if module %}
+    <% } %>
+    <% if (obj.module) { %>
       / <a href="/docs/modules/" class="button button-narrow">Modules</a>
-    {% endif %}
-    / <a href="{{ page.link }}" class="button button-narrow dark-gray">{{ page.title }}</a>
+    <% } %>
+    / <a href="<%= page.link %>" class="button button-narrow dark-gray"><%= page.title %></a>
   </div>
 </div>
 

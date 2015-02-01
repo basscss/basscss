@@ -2,7 +2,7 @@
 var fs = require('fs');
 var cssstats = require('cssstats');
 var variables = require('./variables');
-var modules = require('./modules');
+//var modules = require('./modules');
 var Humanize = require('humanize-plus');
 
 module.exports = function() {
@@ -261,11 +261,10 @@ module.exports = function() {
     }
   };
 
-  data.modules = modules();
   data.defaults = variables('./src/basscss.css');
-  data.stats = cssstats(cssSource);
-  data.stats.sizeKB = Humanize.fileSize(data.stats.size);
-  data.stats.gzipSizeKB = Humanize.fileSize(data.stats.gzipSize);
+  //data.stats = cssstats(cssSource);
+  //data.stats.sizeKB = Humanize.fileSize(data.stats.size);
+  //data.stats.gzipSizeKB = Humanize.fileSize(data.stats.gzipSize);
 
   return data;
 

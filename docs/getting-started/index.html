@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Basscss</title>
-  <meta name="author" content="Jxnblk">
-  <meta name="description" content="Simple, responsive CSS toolkit based on OOCSS principles">
-  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
+  <meta name="author" content="Brent Jackson">
+  <meta name="description" content="Low-level CSS toolkit">
+  
+    <meta name="keywords" content="CSS, OOCSS, framework, ">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="/docs/css/base.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/0.0.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
 </head>
 
-
 <body>
 
-  <div class="px2 ">
+<div class="px2 ">
   <div class="clearfix flex flex-stretch mxn2">
     
       <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
@@ -33,175 +33,91 @@
 <a href="/" class="h4 caps mb3 button block">Basscss</a>
 
 <ul class="list-reset mb3">
-  
+  {% for p in pages %}
     <li>
-      <a href="/docs/getting-started" class="button block
-          
+      <a href="{{ p.link }}" class="button block
+          {% if p.title == page.title %}
             white bg-blue
-          
-        ">
-        Getting Started
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/base" class="button block
-          
+          {% else %}
             button-nav-dark
-          
+          {% endif %}
         ">
-        Base
+        {{ p.title }}
       </a>
-      
+      {% if p.title == page.title && page.title != 'Getting Started' %}
+        <ul class="list-reset mb0 py1 bg-darken-2">
+          {% for item in p.sections %}
+            <li>
+              <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">{{ item.title }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </li>
-  
-    <li>
-      <a href="/docs/utility" class="button block
-          
-            button-nav-dark
-          
-        ">
-        Utility
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/layout" class="button block
-          
-            button-nav-dark
-          
-        ">
-        Layout
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/color" class="button block
-          
-            button-nav-dark
-          
-        ">
-        Color
-      </a>
-      
-    </li>
-  
+  {% endfor %}
 </ul>
 
 <h3 class="mb0">
-  <a href="/docs/guides" class="h6 caps button block button-nav-dark">
+  <a href="/docs/guides" class="h6 caps button block {% if page.title == 'Guides' %}white bg-blue{% else %}button-nav-dark{% endif %}">
     Guides
   </a>
 </h3>
 <ul class="list-reset mb3">
-  
+  {% for guide in guides %}
     <li>
-      <a href="/docs/guides/basics"
-        class="button block  button-nav-dark ">
-        Basics
+      <a href="{{ guide.link }}"
+        class="button block {% if guide.title == page.title %} white bg-blue {% else %} button-nav-dark {% endif %}">
+        {{ guide.title }}
       </a>
-      
+      {% if guide.title == page.title %}
+        <ul class="list-reset mb0 py1 bg-darken-2">
+          {% for item in guide.sections %}
+            <li>
+              <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">{{ item.title }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </li>
-  
-    <li>
-      <a href="/docs/guides/layout"
-        class="button block  button-nav-dark ">
-        Page Layout
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/guides/ui"
-        class="button block  button-nav-dark ">
-        UI Elements
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/guides/tips"
-        class="button block  button-nav-dark ">
-        Tips &amp; Tricks
-      </a>
-      
-    </li>
-  
+  {% endfor %}
 </ul>
 
 
 <h3 class="h6 caps px2 py1 mb0">Reference</h3>
 <ul class="list-reset mb3">
-  
+  {% for ref in references %}
     <li>
-      <a href="/docs/principles"
-        class="button block  button-nav-dark ">
-        Design Principles
+      <a href="{{ ref.link }}"
+        class="button block {% if ref.title == page.title || ref.title == 'Modules' && module %} white bg-blue {% else %} button-nav-dark {% endif %}">
+        {{ ref.title }}
       </a>
     </li>
-  
-    <li>
-      <a href="/docs/showcase"
-        class="button block  button-nav-dark ">
-        Built with Basscss
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/custom-builds"
-        class="button block  button-nav-dark ">
-        Custom Builds
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/customize"
-        class="button block  button-nav-dark ">
-        Customize
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/rework"
-        class="button block  button-nav-dark ">
-        Using Rework
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/styles"
-        class="button block  button-nav-dark ">
-        Table of Styles
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/stats"
-        class="button block  button-nav-dark ">
-        Stats
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/variables"
-        class="button block  button-nav-dark ">
-        Variables
-      </a>
-    </li>
-  
+  {% endfor %}
 </ul>
 
 
 <h3 class="mb0">
   <a href="/docs/modules"
-    class="h6 caps button block button-nav-dark">
+    class="h6 caps button block {% if page.title == 'Modules' || module %}white bg-blue{% else %}button-nav-dark{% endif %}">
     Modules
   </a>
 </h3>
-
+{% if module || page.title == 'Modules' %}
+  <ul class="list-reset mb3 py1 bg-darken-2">
+    {% for m in modules %}
+      <li>
+        <a href="/docs/modules/{{ m.name }}"
+          class="button block button-small px2 {% if module.name == m.name %}white bg-mid-gray{% else %}button-nav-dark{% endif %}">
+          <span class="block ml1">{{ m.title }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
 
 
 <a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">
@@ -230,20 +146,23 @@
     
     
     
-    / <a href="/docs/getting-started" class="button button-narrow dark-gray">Getting Started</a>
+    / <a href="" class="button button-narrow dark-gray">Getting Started</a>
   </div>
 </div>
 
 
 
         <div class="px2 py2">
-          
+          {% extends 'layouts/docs.html' %}
+{% set page = pages.getting_started %}
+
+{% block content %}
 
 <section class="py2">
   <h2 class="m0">Download or install from one of these sources</h2>
   <div class="mxn2 py3">
     <a href="/css/basscss.zip" class="h4 button m2 button-big button-blue">Download CSS</a>
-    <a href="https://github.com/jxnblk/basscss/archive/v4.2.4.zip" class="h4 button m2 button-big button-blue">Download Source</a>
+    <a href="https://github.com/jxnblk/basscss/archive/v{{version}}.zip" class="h4 button m2 button-big button-blue">Download Source</a>
   </div>
   <p class="mb0">Clone from Github:</p>
   <pre>git clone https://github.com/jxnblk/basscss.git</pre>
@@ -252,7 +171,7 @@
   <p class="mb0">Bower:</p>
   <pre>bower install basscss</pre>
   <p class="mb0">CDN:</p>
-  <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://d2v52k3cl9vedd.cloudfront.net/basscss/4.2.4/basscss.min.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span>&gt;</span></code></pre>
+  <pre>{% highlight 'html' %}<link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/{{version}}/basscss.min.css" rel="stylesheet">{% endhighlight %}</pre>
 </section>
 
 <section class="py2">
@@ -261,27 +180,15 @@
   </p>
 </section>
 
+{% endblock %}
 
+
+          <!--
           
             <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
             
-
-  
-
-
-<div class="clearfix mxn2 py2">
-  
-  
-    <a href="/docs/base" class="h3 right button">
-      Base
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
-        <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
-      </svg>
-    </a>
-  
-</div>
-
           
+          -->
         </div>
       </div>
       <div>

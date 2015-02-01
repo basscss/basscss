@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Basscss</title>
-  <meta name="author" content="Jxnblk">
-  <meta name="description" content="Simple, responsive CSS toolkit based on OOCSS principles">
-  <meta name="keywords" content="CSS, SASS, OOCSS, framework, boilerplate, minimal">
+  <meta name="author" content="Brent Jackson">
+  <meta name="description" content="Low-level CSS toolkit">
+  
+    <meta name="keywords" content="CSS, OOCSS, framework, ">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="/docs/css/base.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/0.0.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
 </head>
 
-
 <body>
 
-  <div class="px2 ">
+<div class="px2 ">
   <div class="clearfix flex flex-stretch mxn2">
     
       <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
@@ -33,245 +33,91 @@
 <a href="/" class="h4 caps mb3 button block">Basscss</a>
 
 <ul class="list-reset mb3">
-  
+  {% for p in pages %}
     <li>
-      <a href="/docs/getting-started" class="button block
-          
+      <a href="{{ p.link }}" class="button block
+          {% if p.title == page.title %}
+            white bg-blue
+          {% else %}
             button-nav-dark
-          
+          {% endif %}
         ">
-        Getting Started
+        {{ p.title }}
       </a>
-      
+      {% if p.title == page.title && page.title != 'Getting Started' %}
+        <ul class="list-reset mb0 py1 bg-darken-2">
+          {% for item in p.sections %}
+            <li>
+              <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">{{ item.title }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </li>
-  
-    <li>
-      <a href="/docs/base" class="button block
-          
-            button-nav-dark
-          
-        ">
-        Base
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/utility" class="button block
-          
-            button-nav-dark
-          
-        ">
-        Utility
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/layout" class="button block
-          
-            button-nav-dark
-          
-        ">
-        Layout
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/color" class="button block
-          
-            button-nav-dark
-          
-        ">
-        Color
-      </a>
-      
-    </li>
-  
+  {% endfor %}
 </ul>
 
 <h3 class="mb0">
-  <a href="/docs/guides" class="h6 caps button block button-nav-dark">
+  <a href="/docs/guides" class="h6 caps button block {% if page.title == 'Guides' %}white bg-blue{% else %}button-nav-dark{% endif %}">
     Guides
   </a>
 </h3>
 <ul class="list-reset mb3">
-  
+  {% for guide in guides %}
     <li>
-      <a href="/docs/guides/basics"
-        class="button block  white bg-blue ">
-        Basics
+      <a href="{{ guide.link }}"
+        class="button block {% if guide.title == page.title %} white bg-blue {% else %} button-nav-dark {% endif %}">
+        {{ guide.title }}
       </a>
-      
+      {% if guide.title == page.title %}
         <ul class="list-reset mb0 py1 bg-darken-2">
-          
+          {% for item in guide.sections %}
             <li>
-              <a href="/docs/guides/basics/#document-structure" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Document Structure</span>
+              <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">{{ item.title }}</span>
               </a>
             </li>
-          
-            <li>
-              <a href="/docs/guides/basics/#multiclass-css-pattern" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Multiclass CSS Pattern</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/basics/#writing-and-typography" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Typography</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/basics/#block-level-and-inline-elements" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Block-Level and Inline Elements</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/basics/#display-property" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Display Property</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/basics/#box-model" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Box Model</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/basics/#floats" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Floats</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/basics/#widths" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Widths</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/basics/#media-queries-and-mobile-first-approach" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Media Queries and Mobile-First Approach</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/basics/#positions" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Positions</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/basics/#extending-basscss" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Extending Basscss</span>
-              </a>
-            </li>
-          
+          {% endfor %}
         </ul>
-      
+      {% endif %}
     </li>
-  
-    <li>
-      <a href="/docs/guides/layout"
-        class="button block  button-nav-dark ">
-        Page Layout
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/guides/ui"
-        class="button block  button-nav-dark ">
-        UI Elements
-      </a>
-      
-    </li>
-  
-    <li>
-      <a href="/docs/guides/tips"
-        class="button block  button-nav-dark ">
-        Tips &amp; Tricks
-      </a>
-      
-    </li>
-  
+  {% endfor %}
 </ul>
 
 
 <h3 class="h6 caps px2 py1 mb0">Reference</h3>
 <ul class="list-reset mb3">
-  
+  {% for ref in references %}
     <li>
-      <a href="/docs/principles"
-        class="button block  button-nav-dark ">
-        Design Principles
+      <a href="{{ ref.link }}"
+        class="button block {% if ref.title == page.title || ref.title == 'Modules' && module %} white bg-blue {% else %} button-nav-dark {% endif %}">
+        {{ ref.title }}
       </a>
     </li>
-  
-    <li>
-      <a href="/docs/showcase"
-        class="button block  button-nav-dark ">
-        Built with Basscss
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/custom-builds"
-        class="button block  button-nav-dark ">
-        Custom Builds
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/customize"
-        class="button block  button-nav-dark ">
-        Customize
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/rework"
-        class="button block  button-nav-dark ">
-        Using Rework
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/styles"
-        class="button block  button-nav-dark ">
-        Table of Styles
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/stats"
-        class="button block  button-nav-dark ">
-        Stats
-      </a>
-    </li>
-  
-    <li>
-      <a href="/docs/variables"
-        class="button block  button-nav-dark ">
-        Variables
-      </a>
-    </li>
-  
+  {% endfor %}
 </ul>
 
 
 <h3 class="mb0">
   <a href="/docs/modules"
-    class="h6 caps button block button-nav-dark">
+    class="h6 caps button block {% if page.title == 'Modules' || module %}white bg-blue{% else %}button-nav-dark{% endif %}">
     Modules
   </a>
 </h3>
-
+{% if module || page.title == 'Modules' %}
+  <ul class="list-reset mb3 py1 bg-darken-2">
+    {% for m in modules %}
+      <li>
+        <a href="/docs/modules/{{ m.name }}"
+          class="button block button-small px2 {% if module.name == m.name %}white bg-mid-gray{% else %}button-nav-dark{% endif %}">
+          <span class="block ml1">{{ m.title }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
 
 
 <a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">
@@ -299,18 +145,15 @@
       / <a href="/docs" class="button button-narrow">Docs</a>
     
     
-      / <a href="/docs/guides/" class="button button-narrow">Guides</a>
     
-    
-    / <a href="/docs/guides/basics" class="button button-narrow dark-gray">Basics</a>
+    / <a href="" class="button button-narrow dark-gray">Basics</a>
   </div>
 </div>
 
 
 
         <div class="px2 py2">
-          
-<p class="h3">
+          <p class="h3">
   Understanding the basics of designing for the web with CSS
   is essential to using Basscss effectively.
   This guide covers the fundamentals to help get you started.
@@ -334,16 +177,10 @@ This can seem strange at first, but once you get the hang of things,
 it can make designing and building websites much faster and easier.
 It also has some significant front-end performance benefits.</p>
 <h2 id="example">Example</h2>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h3 p1 mb2 bg-light-gray rounded">
+<pre><code class="lang-html">&lt;div class=&quot;h3 p1 mb2 bg-light-gray rounded&quot;&gt;
   A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3 p1 mb2 bg-light-gray rounded"</span>&gt;</span>
-  A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
+&lt;/div&gt;
+</code></pre>
 <h1 id="order">Order</h1>
 <p>While the order of classes doesn’t matter to the browser, maintaining
 a consistent order will drastically improve code readability.
@@ -405,88 +242,46 @@ elements out of the normal document flow.
 When you float an element left or right, the content following the float will flow beside and around the element.</p>
 <p>Do not set display properties on floated elements.
 When elements are floated, they are set to display block.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="outline-blue">
-  <div class="right p1">.right</div>
-  <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"outline-blue"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right p1"</span>&gt;</span>.right<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
+<pre><code class="lang-html">&lt;div class=&quot;outline-blue&quot;&gt;
+  &lt;div class=&quot;right p1&quot;&gt;.right&lt;/div&gt;
+  &lt;p&gt;Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
 <p>If an element contains only floated children, such as in a grid system, its height will collapse.
 Clearfixes are used to ensure the parent element maintains the height of its content.
 This container element is using the <code>.clearfix</code> class.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="clearfix outline-blue">
-  <div class="left p2">.left</div>
-  <div class="left p2">.left</div>
-  <div class="right p2">.right</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right p2"</span>&gt;</span>.right<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
+<pre><code class="lang-html">&lt;div class=&quot;clearfix outline-blue&quot;&gt;
+  &lt;div class=&quot;left p2&quot;&gt;.left&lt;/div&gt;
+  &lt;div class=&quot;left p2&quot;&gt;.left&lt;/div&gt;
+  &lt;div class=&quot;right p2&quot;&gt;.right&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 <p>Overflow hidden crops overflowing content, but can also be used as a clearfix
 because it creates what’s called a new <em>block formatting context</em>.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="outline-blue">
-  <div class="overflow-hidden">
-    <div class="left p2">.left</div>
-    <div class="left p2">
+<pre><code class="lang-html">&lt;div class=&quot;outline-blue&quot;&gt;
+  &lt;div class=&quot;overflow-hidden&quot;&gt;
+    &lt;div class=&quot;left p2&quot;&gt;.left&lt;/div&gt;
+    &lt;div class=&quot;left p2&quot;&gt;
       .left
-      <div class="p1" style="width:64rem">wider than parent element</div>
-    </div>
-  </div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"outline-blue"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p2"</span>&gt;</span>
-      .left
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:64rem"</span>&gt;</span>wider than parent element<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
+      &lt;div class=&quot;p1&quot; style=&quot;width:64rem&quot;&gt;wider than parent element&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 <p>Using overflow hidden on an element placed after one or more floated elements will prevent that element from wrapping under the floated elements.
 This is the basis of the
 <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">Media Object</a>.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="clearfix outline-blue">
-  <div class="left p1">.left</div>
-  <p class="overflow-hidden p1">.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p1"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden p1"</span>&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="clearfix outline-blue">
-  <div class="left p1">.left</div>
-  <div class="right p1">.right</div>
-  <p class="overflow-hidden p1">.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.</p>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left p1"</span>&gt;</span>.left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right p1"</span>&gt;</span>.right<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden p1"</span>&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
+<pre><code class="lang-html">&lt;div class=&quot;clearfix outline-blue&quot;&gt;
+  &lt;div class=&quot;left p1&quot;&gt;.left&lt;/div&gt;
+  &lt;p class=&quot;overflow-hidden p1&quot;&gt;.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="lang-html">&lt;div class=&quot;clearfix outline-blue&quot;&gt;
+  &lt;div class=&quot;left p1&quot;&gt;.left&lt;/div&gt;
+  &lt;div class=&quot;right p1&quot;&gt;.right&lt;/div&gt;
+  &lt;p class=&quot;overflow-hidden p1&quot;&gt;.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
 <h1 id="widths">Widths</h1>
 <p>The default document flow in HTML is fluid.
 This means that creating fluid and responsive layouts should be very easy to achieve.
@@ -495,35 +290,21 @@ Instead rely heavily on the normal document flow.</p>
 <p>For elements with inherit widths, such as images, consider using a max-width of 100%
 to ensure it never overflows its container.
 Use the <code>.fit</code> class to do this.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <img src="/docs/placeholder.svg" alt="Basscss" class="fit"/>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Basscss"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fit"</span>/&gt;</span></pre>
-</div>
+<pre><code class="lang-html">&lt;img src=&quot;/docs/placeholder.svg&quot; alt=&quot;Basscss&quot; class=&quot;fit&quot;/&gt;
+</code></pre>
 <p>If you do need to use widths, use percentages.
 Most grid systems these days use this approach,
 along with media queries to prevent broken layouts across devices.
 When using percentage-based widths, remember that the percentage is based on width of the parent,
 so nesting elements with percentage-based widths will get incrementally smaller as you nest.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="clearfix outline-blue">
-  <div class="left half-width py1">.left.half-width</div>
-  <div class="left half-width clearfix">
-    <div class="left half-width py1">Nested .left.half-width</div>
-    <div class="left half-width py1">Nested .left.half-width</div>
-  </div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix outline-blue"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left half-width py1"</span>&gt;</span>.left.half-width<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left half-width clearfix"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left half-width py1"</span>&gt;</span>Nested .left.half-width<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left half-width py1"</span>&gt;</span>Nested .left.half-width<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
+<pre><code class="lang-html">&lt;div class=&quot;clearfix outline-blue&quot;&gt;
+  &lt;div class=&quot;left half-width py1&quot;&gt;.left.half-width&lt;/div&gt;
+  &lt;div class=&quot;left half-width clearfix&quot;&gt;
+    &lt;div class=&quot;left half-width py1&quot;&gt;Nested .left.half-width&lt;/div&gt;
+    &lt;div class=&quot;left half-width py1&quot;&gt;Nested .left.half-width&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 <h1 id="media-queries-and-mobile-first-approach">Media Queries and Mobile-First Approach</h1>
 <p>When building responsive websites, best practices suggest using a mobile-first approach.
 First consider content and user flows, then create layouts that work well
@@ -556,24 +337,14 @@ If you do need to set z-index, start with the <code>.z1</code> class and work up
 And be sure you
 <a href="http://philipwalton.com/articles/what-no-one-told-you-about-z-index/">understand z-index</a>
 before adding more than four levels.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="outline-blue">
-  <div class="relative p4">
+<pre><code class="lang-html">&lt;div class=&quot;outline-blue&quot;&gt;
+  &lt;div class=&quot;relative p4&quot;&gt;
     .relative
-    <div class="absolute top-0 right-0 p1 m1">.absolute .top-0 .right-0</div>
-    <div class="absolute top-0 right-0 p1 m3">.absolute .top-0 .right-0</div>
-  </div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"outline-blue"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"relative p4"</span>&gt;</span>
-    .relative
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"absolute top-0 right-0 p1 m1"</span>&gt;</span>.absolute .top-0 .right-0<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"absolute top-0 right-0 p1 m3"</span>&gt;</span>.absolute .top-0 .right-0<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
+    &lt;div class=&quot;absolute top-0 right-0 p1 m1&quot;&gt;.absolute .top-0 .right-0&lt;/div&gt;
+    &lt;div class=&quot;absolute top-0 right-0 p1 m3&quot;&gt;.absolute .top-0 .right-0&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 <h1 id="extending-basscss">Extending Basscss</h1>
 <p>You can do a lot with Basscss’s suite of styles, but if you decide to add new styles to your project,
 here are some tips and recommendations to keep your code simple and maintainable:</p>
@@ -590,10 +361,14 @@ here are some tips and recommendations to keep your code simple and maintainable
 </ul>
 <p>To learn more about building on top of Basscss, I recommend reading the
 <a href="/docs/principles">Design Principles</a>.</p>
-<p></p>
+<p>{# {% include &quot;partials/guides-cta.html&quot; %} #}</p>
 
-
+          <!--
           
+            <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+            
+          
+          -->
         </div>
       </div>
       <div>

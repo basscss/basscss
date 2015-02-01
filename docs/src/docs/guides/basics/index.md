@@ -1,5 +1,4 @@
 ---
-layout: 'layouts/docs.html'
 page: guides.basics
 isguide: true
 ---

@@ -1,11 +1,15 @@
-{% extends 'layouts/docs.html' %}
-{% set page = {} %}
-{% set page.title = 'Docs' %}
+<%
+  /*extend('./layouts/docs.html')*/
+  var page = {};
+  page.title = 'Docs';
+  var fullwidth = true;
+%>
+<!--
 {% set hide_docs_breadcrumb = true %}
 {% set flush_container = true %}
 {% set fullwidth = true %}
+-->
 
-{% block content %}
 
 <p class="h3">
   Basscss is organized according to four high-level categories:
@@ -13,23 +17,18 @@
   base elements, immutable utilities, layout modules, and color styles.
 </p>
 
+<!--
 <div class="mxn2 mb2 py1">
   <a href="/docs/getting-started" class="h2 button block button-nav-light">Getting Started</a>
 </div>
+-->
 
 <div class="flex flex-wrap mxn2 mb3">
-  {% for page in pages %}
-    {% if page.title != 'Getting Started' %}
-      <div class="col-6 md-col-3 py1">
-        <a href="{{ page.link }}" class="h2 button block button-nav-light">{{ page.title }}</a>
-        {#
-        {% for section in page.sections %}
-          <a href="{{ section.link }}" class="h5 button button-small px2 block button-nav-light">{{ section.title }}</a>
-        {% endfor %}
-        #}
-      </div>
-    {% endif %}
-  {% endfor %}
+  <% _.forIn(routes.docs.routes, function(route) { %>
+    <div class="col-6 md-col-3 py1">
+      <a href="<%= route.path %>" class="h2 button block button-nav-light"><%= route.title %></a>
+    </div>
+  <% }) %>
 </div>
 
 <hr class="hide ml0 col-5 sm-col-3 hr-block bg-blue">
@@ -61,5 +60,4 @@
   {% endfor %}
 </div>
 
-{% endblock %}
 

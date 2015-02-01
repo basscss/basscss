@@ -1,5 +1,4 @@
 ---
-page: guides.tips
 isguide: true
 ---
 

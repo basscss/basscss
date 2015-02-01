@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-{% include 'partials/head.html' %}
-
+<%= include('head') %>
 <body>
 
-  <div class="px2 {% if fullwidth %}container{% endif %}">
+<div class="px2 <%= obj.fullwidth ? 'container' : '' %>">
   <div class="clearfix flex flex-stretch mxn2">
-    {% if !fullwidth %}
+    <% if (!obj.fullwidth) { %>
       <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
           <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto white bg-dark-gray">
-            {% include 'partials/side-nav.html' %}
+            <%= include('side-nav') %>
           </div>
       </div>
-    {% endif %}
-    <div class="{% if !fullwidth %}sm-col sm-col-9 md-col-10{% else %}full-width{% endif %} flex flex-column" style="min-height:100vh">
-      <div class="flex-auto full-width {% if !flush_container %}container-small{% endif %}">
-        {% include 'partials/page-header.html' %}
+    <% } %>
+    <div class="<%= !obj.fullwidth ? 'sm-col sm-col-9 md-col-10' : 'full-width' %> flex flex-column" style="min-height:100vh">
+      <div class="flex-auto full-width <%= !obj.flush_container ? 'container-small' : '' %>">
+        <%= include('page-header') %>
         <div class="px2 py2">
-          {% block content %}{% endblock %}
-          {% if page.next_page || page.previous_page %}
+          <%= content %>
+          <!--
+          <% //if page.next_page || page.previous_page %>
             <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
-            {% include 'partials/pagination.html' %}
-          {% endif %}
+            <% //include 'partials/pagination.html' %>
+          <% //endif %>
+          -->
         </div>
       </div>
       <div>
-        {% include 'partials/footer.html' %}
+        <%= include('footer') %>
       </div>
     </div>
   </div>

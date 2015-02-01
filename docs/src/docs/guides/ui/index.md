@@ -1,7 +1,4 @@
 ---
-# layout: 'layouts/docs.html'
-page: guides.ui
-isguide: true
 ---
 
 <p class="h3">
