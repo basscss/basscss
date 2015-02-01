@@ -1,7 +1,3 @@
-{% extends 'layouts/docs.html' %}
-{% set page = pages.utility %}
-
-{% block content %}
 
 <p class="h3">
   Utilities are single-purpose styles that provide the backbone for layout.
@@ -10,12 +6,12 @@
   while making its usage simple and obvious with short, humanized naming conventions.
 </p>
 
-{% for section in page.sections %}
-  <section id="{{ section.id }}" class="py2">
-    <h1>{{ section.title }}</h1>
-    {{ modules[section.module].content | safe }}
-  </section>
-{% endfor %}
-
-{% endblock %}
+<% if (obj.page.sections) { %>
+  <% page.sections.forEach(function(section) { %>
+    <section id="<%= section.name %>" class="py2">
+      <h1><%= section.name %></h1>
+      <%= modules[section.module].content %>
+    </section>
+  <% }) %>
+<% }  %>
 

@@ -1,19 +1,15 @@
-{% extends 'layouts/docs.html' %}
-{% set page = pages.layout %}
-
-{% block content %}
 
 <p class="h3">
   Layout modules are more complex than utilities and are tied to markup structure.
   They are designed to be highly reusable and to inter-operate with other styles.
 </p>
 
-{% for section in page.sections %}
-  <section id="{{ section.id }}" class="py2">
-    <h1>{{ section.title }}</h1>
-    {{ modules[section.module].content | safe }}
-  </section>
-{% endfor %}
-
-{% endblock %}
+<% if (obj.page.sections) { %>
+  <% page.sections.forEach(function(section) { %>
+    <section id="<%= section.name %>" class="py2">
+      <h1><%= section.name %></h1>
+      <%= modules[section.module].content %>
+    </section>
+  <% }) %>
+<% }  %>
 

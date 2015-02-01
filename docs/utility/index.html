@@ -33,6 +33,87 @@
 <a href="/" class="h4 caps mb3 button block">Basscss</a>
 
 <ul class="list-reset mb3">
+  
+    <li>
+      <a href="/docs/getting-started" class="button block button-nav-dark ">
+        Getting Started
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/base" class="button block button-nav-dark ">
+        Base
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/utility" class="button block white bg-blue ">
+        Utility
+      </a>
+      
+        <ul class="list-reset mb0 py1 bg-darken-2">
+          
+            <li>
+              <a href="/docs/utility#typography" class="button button-small px2 block button-nav-dark">
+                Typography
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/utility#layout" class="button button-small px2 block button-nav-dark">
+                Layout
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/utility#white-space-scale" class="button button-small px2 block button-nav-dark">
+                White space scale
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/utility#responsive-states" class="button button-small px2 block button-nav-dark">
+                Responsive states
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/utility#positions" class="button button-small px2 block button-nav-dark">
+                Positions
+              </a>
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/layout" class="button block button-nav-dark ">
+        Layout
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/color" class="button block button-nav-dark ">
+        Color
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/guides" class="button block button-nav-dark ">
+        Guides
+      </a>
+      
+    </li>
+  
+</ul>
+
+<!--
+<ul class="list-reset mb3">
   {% for p in pages %}
     <li>
       <a href="{{ p.link }}" class="button block
@@ -118,6 +199,7 @@
     {% endfor %}
   </ul>
 {% endif %}
+-->
 
 
 <a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">
@@ -153,11 +235,7 @@
 
 
         <div class="px2 py2">
-          {% extends 'layouts/docs.html' %}
-{% set page = pages.utility %}
-
-{% block content %}
-
+          
 <p class="h3">
   Utilities are single-purpose styles that provide the backbone for layout.
   Once these are set, they should be considered immutable and never change or be extended.
@@ -165,14 +243,283 @@
   while making its usage simple and obvious with short, humanized naming conventions.
 </p>
 
-{% for section in page.sections %}
-  <section id="{{ section.id }}" class="py2">
-    <h1>{{ section.title }}</h1>
-    {{ modules[section.module].content | safe }}
-  </section>
-{% endfor %}
 
-{% endblock %}
+  
+    <section id="typography" class="py2">
+      <h1>typography</h1>
+      <h1 id="basscss-utility-typography">Basscss Utility Typography</h1>
+<p class="hide">Typography utilities module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Change typographic styles and defaults with these utilities.</p>
+<pre><code class="lang-html">&lt;p class=&quot;bold&quot;&gt;Bold&lt;/p&gt;
+&lt;p class=&quot;regular&quot;&gt;Regular&lt;/p&gt;
+&lt;p class=&quot;italic&quot;&gt;Italic&lt;/p&gt;
+&lt;p class=&quot;caps&quot;&gt;Caps&lt;/p&gt;
+&lt;p class=&quot;left-align&quot;&gt;Left align&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;Center&lt;/p&gt;
+&lt;p class=&quot;right-align&quot;&gt;Right align&lt;/p&gt;
+&lt;p class=&quot;justify&quot;&gt;Justify Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.&lt;/p&gt;
+</code></pre>
+
+    </section>
+  
+    <section id="layout" class="py2">
+      <h1>layout</h1>
+      <h1 id="basscss-utility-layout">Basscss Utility Layout</h1>
+<p class="hide">Layout utilities module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Change the default document flow with display, float, and other utilities.</p>
+<pre><code class="lang-css">.inline       { display: inline }
+.block        { display: block }
+.inline-block { display: inline-block }
+
+.overflow-hidden { overflow: hidden }
+.overflow-auto   { overflow: auto }
+.overflow-scroll { overflow: scroll }
+
+.clearfix:before,
+.clearfix:after {
+  content: &quot; &quot;;
+  display: table
+}
+.clearfix:after { clear: both }
+
+.left  { float: left }
+.right { float: right }
+
+.fit { max-width: 100% }
+
+.half-width { width: 50% }
+.full-width { width: 100% }
+</code></pre>
+<h2 id="media-object">Media Object</h2>
+<p>Create a media object using basic utilities.</p>
+<pre><code class="lang-html">&lt;div class=&quot;clearfix mb2 outline-blue&quot;&gt;
+  &lt;div class=&quot;left p2 mr1&quot;&gt;Image&lt;/div&gt;
+  &lt;div class=&quot;overflow-hidden&quot;&gt;
+    &lt;p&gt;&lt;b&gt;Body&lt;/b&gt; Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="double-sided-media-object">Double-Sided Media Object</h2>
+<p>For a container with a flexible center, use a double-sided media object.</p>
+<pre><code class="lang-html">&lt;div class=&quot;clearfix mb2 outline-blue&quot;&gt;
+  &lt;div class=&quot;left p2 mr1&quot;&gt;Image&lt;/div&gt;
+  &lt;div class=&quot;right p2 ml1&quot;&gt;Image&lt;/div&gt;
+  &lt;div class=&quot;overflow-hidden&quot;&gt;
+    &lt;p&gt;&lt;b&gt;Body&lt;/b&gt; Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+    </section>
+  
+    <section id="white-space-scale" class="py2">
+      <h1>white-space-scale</h1>
+      <h1 id="basscss-utility-white-space">Basscss Utility White Space</h1>
+<p class="hide">White space margin and padding utilities module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Margin and padding utilities are based on a global white space scale defined with variables.
+These utilities use a shorthand naming convention.</p>
+<div class="overflow-scroll">
+  <table class="mb2 bg-darken-1 rounded table-light">
+    <thead class="bg-darken-1">
+      <tr> <th>Shorthand</th> <th>Description</th> </tr>
+    </thead>
+    <tbody>
+      <tr> <td>m</td> <td>Margin</td> </tr>
+      <tr> <td>p</td> <td>Padding</td> </tr>
+      <tr> <td>t</td> <td>Top</td> </tr>
+      <tr> <td>r</td> <td>Right</td> </tr>
+      <tr> <td>b</td> <td>Bottom</td> </tr>
+      <tr> <td>l</td> <td>Left</td> </tr>
+      <tr> <td>x</td> <td>X-axis (left and right)</td> </tr>
+      <tr> <td>y</td> <td>Y-axis (top and bottom)</td> </tr>
+      <tr> <td>n</td> <td>Negative (margin only)</td> </tr>
+      <tr> <td>1</td> <td>--space-1 (default .5rem)</td> </tr>
+      <tr> <td>2</td> <td>--space-2 (default 1rem)</td> </tr>
+      <tr> <td>3</td> <td>--space-3 (default 2rem)</td> </tr>
+      <tr> <td>4</td> <td>--space-4 (default 4rem)</td> </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="margins">Margins</h2>
+<p>Change or reset default margins using the global white space scale.
+Negative x-axis margins are used to offset padding.
+Margin auto is used to horizontally center block-level elements with a set width.</p>
+<pre><code class="lang-css">.m0  { margin:        0 }
+.mt0 { margin-top:    0 }
+.mr0 { margin-right:  0 }
+.mb0 { margin-bottom: 0 }
+.ml0 { margin-left:   0 }
+
+.m1  { margin:        var(--space-1) }
+.mt1 { margin-top:    var(--space-1) }
+.mr1 { margin-right:  var(--space-1) }
+.mb1 { margin-bottom: var(--space-1) }
+.ml1 { margin-left:   var(--space-1) }
+
+.m2  { margin:        var(--space-2) }
+.mt2 { margin-top:    var(--space-2) }
+.mr2 { margin-right:  var(--space-2) }
+.mb2 { margin-bottom: var(--space-2) }
+.ml2 { margin-left:   var(--space-2) }
+
+.m3  { margin:        var(--space-3) }
+.mt3 { margin-top:    var(--space-3) }
+.mr3 { margin-right:  var(--space-3) }
+.mb3 { margin-bottom: var(--space-3) }
+.ml3 { margin-left:   var(--space-3) }
+
+.m4  { margin:        var(--space-4) }
+.mt4 { margin-top:    var(--space-4) }
+.mr4 { margin-right:  var(--space-4) }
+.mb4 { margin-bottom: var(--space-4) }
+.ml4 { margin-left:   var(--space-4) }
+
+.mxn1 { margin-left: -var(--space-1); margin-right: -var(--space-1); }
+.mxn2 { margin-left: -var(--space-2); margin-right: -var(--space-2); }
+.mxn3 { margin-left: -var(--space-3); margin-right: -var(--space-3); }
+.mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+</code></pre>
+<h2 id="padding">Padding</h2>
+<p>Padding utilities are only available in symmetrical orientations.
+This is to normalize the spacing used around elements.</p>
+<pre><code class="lang-css">.p1  { padding:       var(--space-1) }
+.py1 { padding-top:   var(--space-1); padding-bottom: var(--space-1) }
+.px1 { padding-left:  var(--space-1); padding-right:  var(--space-1) }
+
+.p2  { padding:       var(--space-2) }
+.py2 { padding-top:   var(--space-2); padding-bottom: var(--space-2) }
+.px2 { padding-left:  var(--space-2); padding-right:  var(--space-2) }
+
+.p3  { padding:       var(--space-3) }
+.py3 { padding-top:   var(--space-3); padding-bottom: var(--space-3) }
+.px3 { padding-left:  var(--space-3); padding-right:  var(--space-3) }
+
+.p4  { padding:       var(--space-4) }
+.py4 { padding-top:   var(--space-4); padding-bottom: var(--space-4) }
+.px4 { padding-left:  var(--space-4); padding-right:  var(--space-4) }
+</code></pre>
+<p><span class="red">Margins and padding should never be declared outside of these utilities.</span>
+This is meant to help create consistent rhythm and avoid magic numbers.
+If, for some reason, the default white space scale does not accomodate your design,
+customize and extend it before implementation.</p>
+
+    </section>
+  
+    <section id="responsive-states" class="py2">
+      <h1>responsive-states</h1>
+      <h1 id="basscss-utility-responsive-states">Basscss Utility Responsive States</h1>
+<p class="hide">Responsive state utilities module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>These styles allow for conditionally showing and hiding elements using a mobile-first approach.</p>
+<h2 id="prefix-naming-convention">Prefix Naming Convention</h2>
+<div class="overflow-scroll">
+  <table class="mb2 table-light overflow-hidden border rounded">
+    <thead class="bg-darken-1">
+      <tr> <th>Prefix</th> <th>Description</th> </tr>
+    </thead>
+    <tbody>
+      <tr> <td>(no prefix)</td> <td>Not scoped to a breakpoint</td> </tr>
+      <tr> <td>sm-</td> <td>--breakpoint-sm (default: min-width 40em)</td> </tr>
+      <tr> <td>md-</td> <td>--breakpoint-md (default: min-width 52em)</td> </tr>
+      <tr> <td>lg-</td> <td>--breakpoint-lg (default: min-width 64em)</td> </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>To adjust the default breakpoints, declare custom media queries after importing the file via Rework, or manually adjust them in CSS.</p>
+<pre><code class="lang-css">.sm-show, .md-show, .lg-show {
+  display: none !important
+}
+@media (--breakpoint-sm) {
+  .sm-show { display: block !important }
+}
+@media (--breakpoint-md) {
+  .md-show { display: block !important }
+}
+@media (--breakpoint-lg) {
+  .lg-show { display: block !important }
+}
+@media (--breakpoint-sm) {
+  .sm-hide { display: none !important }
+}
+@media (--breakpoint-md) {
+  .md-hide { display: none !important }
+}
+@media (--breakpoint-lg) {
+  .lg-hide { display: none !important }
+}
+.display-none { display: none !important }
+.hide {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+</code></pre>
+<h2 id="example">Example</h2>
+<p>Resize the browser window to see the effect.</p>
+<pre><code class="lang-html">&lt;h3 class=&quot;sm-show&quot;&gt;Visible from &lt;code&gt;--breakpoint-sm&lt;/code&gt; and up.&lt;/h3&gt;
+&lt;h3 class=&quot;sm-hide red&quot;&gt;Hidden from &lt;code&gt;--breakpoint-sm&lt;/code&gt; and up.&lt;/h3&gt;
+</code></pre>
+<h2 id="responsive-line-break">Responsive Line Break</h2>
+<p>Control wrapping at different screen widths.</p>
+<pre><code class="lang-html">&lt;h1&gt;
+  Responsive Line Break
+  &lt;br class=&quot;md-show&quot;&gt;
+  To Control Wrapping
+&lt;/h1&gt;
+</code></pre>
+
+    </section>
+  
+    <section id="positions" class="py2">
+      <h1>positions</h1>
+      <h1 id="basscss-positions">Basscss Positions</h1>
+<p class="hide">Positioning utilities for Basscss.</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>These styles alter the default document flow.</p>
+<p><span class="red">Use positions with caution.
+They are often unnecessary and commonly misused.</span><br>
+See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for more info.</p>
+<pre><code class="lang-css">.relative { position: relative }
+.absolute { position: absolute }
+.fixed    { position: fixed }
+
+.top-0    { top: 0 }
+.right-0  { right: 0 }
+.bottom-0 { bottom: 0 }
+.left-0   { left: 0 }
+
+.z1 { z-index: 1 }
+.z2 { z-index: 2 }
+.z3 { z-index: 3 }
+.z4 { z-index: 4 }
+
+.absolute-center {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: table;
+}
+</code></pre>
+
+    </section>
+  
+
 
 
           <!--

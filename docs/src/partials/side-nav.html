@@ -8,6 +8,28 @@
 <a href="/" class="h4 caps mb3 button block">Basscss</a>
 
 <ul class="list-reset mb3">
+  <% _.forIn(routes.docs.routes, function(route, key) { %>
+    <li>
+      <a href="<%= route.path %>" class="button block <%= obj.page.title == route.title ? 'white bg-blue' : 'button-nav-dark' %> ">
+        <%= route.title %>
+      </a>
+      <% if (obj.page && obj.page.title == route.title) { %>
+        <ul class="list-reset mb0 py1 bg-darken-2">
+          <% _.forIn(route.sections, function(section) { %>
+            <li>
+              <a href="<%= route.path + '#' + section.name %>" class="button button-small px2 block button-nav-dark">
+                <%= capitalize(section.name) %>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+      <% } %>
+    </li>
+  <% }) %>
+</ul>
+
+<!--
+<ul class="list-reset mb3">
   {% for p in pages %}
     <li>
       <a href="{{ p.link }}" class="button block
@@ -93,6 +115,7 @@
     {% endfor %}
   </ul>
 {% endif %}
+-->
 
 
 <a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">

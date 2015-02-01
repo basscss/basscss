@@ -33,6 +33,57 @@
 <a href="/" class="h4 caps mb3 button block">Basscss</a>
 
 <ul class="list-reset mb3">
+  
+    <li>
+      <a href="/docs/getting-started" class="button block button-nav-dark ">
+        Getting Started
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/base" class="button block button-nav-dark ">
+        Base
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/utility" class="button block button-nav-dark ">
+        Utility
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/layout" class="button block button-nav-dark ">
+        Layout
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/color" class="button block button-nav-dark ">
+        Color
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/guides" class="button block white bg-blue ">
+        Guides
+      </a>
+      
+        <ul class="list-reset mb0 py1 bg-darken-2">
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+<!--
+<ul class="list-reset mb3">
   {% for p in pages %}
     <li>
       <a href="{{ p.link }}" class="button block
@@ -118,6 +169,7 @@
     {% endfor %}
   </ul>
 {% endif %}
+-->
 
 
 <a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">
@@ -153,12 +205,7 @@
 
 
         <div class="px2 py2">
-          {% extends 'layouts/docs.html' %}
-{% set page = {} %}
-{% set page.title = 'Guides' %}
-
-{% block content %}
-
+          
 <div class="flex flex-wrap flex-stretch mxn2 mb4">
   {% for guide in guides %}
     <div class="flex flex-auto sm-col-6 mb3 px2">
@@ -170,7 +217,6 @@
   {% endfor %}
 </div>
 
-{% endblock %}
 
 
           <!--

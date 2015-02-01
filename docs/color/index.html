@@ -33,6 +33,93 @@
 <a href="/" class="h4 caps mb3 button block">Basscss</a>
 
 <ul class="list-reset mb3">
+  
+    <li>
+      <a href="/docs/getting-started" class="button block button-nav-dark ">
+        Getting Started
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/base" class="button block button-nav-dark ">
+        Base
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/utility" class="button block button-nav-dark ">
+        Utility
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/layout" class="button block button-nav-dark ">
+        Layout
+      </a>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/color" class="button block white bg-blue ">
+        Color
+      </a>
+      
+        <ul class="list-reset mb0 py1 bg-darken-2">
+          
+            <li>
+              <a href="/docs/color#colors" class="button button-small px2 block button-nav-dark">
+                Colors
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/color#borders" class="button button-small px2 block button-nav-dark">
+                Borders
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/color#forms" class="button button-small px2 block button-nav-dark">
+                Forms
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/color#forms-dark" class="button button-small px2 block button-nav-dark">
+                Forms dark
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/color#buttons" class="button button-small px2 block button-nav-dark">
+                Buttons
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/color#tables" class="button button-small px2 block button-nav-dark">
+                Tables
+              </a>
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/guides" class="button block button-nav-dark ">
+        Guides
+      </a>
+      
+    </li>
+  
+</ul>
+
+<!--
+<ul class="list-reset mb3">
   {% for p in pages %}
     <li>
       <a href="{{ p.link }}" class="button block
@@ -118,6 +205,7 @@
     {% endfor %}
   </ul>
 {% endif %}
+-->
 
 
 <a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">
@@ -153,11 +241,7 @@
 
 
         <div class="px2 py2">
-          {% extends 'layouts/docs.html' %}
-{% set page = pages.color %}
-
-{% block content %}
-
+          
 <p class="h3">
   The word <i>color</i> is used loosely here to describe
   the surface-level aspects of a design, including
@@ -167,16 +251,253 @@
   Use these as a guide for creating your own styles.
 </p>
 
-{% for section in page.sections %}
-  <section id="{{ section.id }}" class="py2">
-    <h1>{{ section.title }}</h1>
-    {{ modules[section.module].content | safe }}
-  </section>
-{% endfor %}
+
+  
+    <section id="colors" class="py2">
+      <h1>colors</h1>
+      <h1 id="basscss-colors">Basscss Colors</h1>
+<p class="hide">Color styles module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Use this suite of color and background color utilities to directly style elements.</p>
+<pre><code class="lang-html">&lt;h3 class=&quot;center&quot;&gt;
+  &lt;span class=&quot;dark-gray&quot;&gt;.dark-gray&lt;/span&gt;
+  &lt;span class=&quot;mid-gray&quot;&gt;.mid-gray&lt;/span&gt;
+  &lt;span class=&quot;light-gray&quot;&gt;.light-gray&lt;/span&gt;
+  &lt;span class=&quot;lighter-gray&quot;&gt;.lighter-gray&lt;/span&gt;
+  &lt;span class=&quot;white&quot;&gt;.white&lt;/span&gt;
+  &lt;span class=&quot;blue&quot;&gt;.blue&lt;/span&gt;
+  &lt;span class=&quot;red&quot;&gt;.red&lt;/span&gt;
+  &lt;span class=&quot;yellow&quot;&gt;.yellow&lt;/span&gt;
+  &lt;span class=&quot;green&quot;&gt;.green&lt;/span&gt;
+&lt;/h3&gt;
+</code></pre>
+<pre><code class="lang-html">&lt;div class=&quot;center p1 white bg-dark-gray&quot;&gt;.bg-dark-gray&lt;/div&gt;
+&lt;div class=&quot;center p1 bg-mid-gray&quot;&gt;.bg-mid-gray&lt;/div&gt;
+&lt;div class=&quot;center p1 bg-light-gray&quot;&gt;.bg-light-gray&lt;/div&gt;
+&lt;div class=&quot;center p1 bg-lighter-gray&quot;&gt;.bg-lighter-gray&lt;/div&gt;
+&lt;div class=&quot;center p1 bg-white&quot;&gt;.bg-white&lt;/div&gt;
+&lt;div class=&quot;center p1 bg-blue&quot;&gt;.bg-blue&lt;/div&gt;
+&lt;div class=&quot;center p1 bg-red&quot;&gt;.bg-red&lt;/div&gt;
+&lt;div class=&quot;center p1 bg-yellow&quot;&gt;.bg-yellow&lt;/div&gt;
+&lt;div class=&quot;center p1 bg-green&quot;&gt;.bg-green&lt;/div&gt;
+&lt;div class=&quot;center p1 bg-darken-1&quot;&gt;.bg-darken-1&lt;/div&gt;
+&lt;div class=&quot;center p1 bg-darken-2&quot;&gt;.bg-darken-2&lt;/div&gt;
+&lt;div class=&quot;center p1 bg-darken-3&quot;&gt;.bg-darken-3&lt;/div&gt;
+&lt;div class=&quot;center p1 bg-darken-4&quot;&gt;.bg-darken-4&lt;/div&gt;
+</code></pre>
+
+    </section>
+  
+    <section id="borders" class="py2">
+      <h1>borders</h1>
+      <h1 id="basscss-color-borders">Basscss Color Borders</h1>
+<p class="hide">Border color styles module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<pre><code class="lang-html">&lt;div class=&quot;p1 m1 border bg-lighter-gray&quot;&gt;.border&lt;/div&gt;
+&lt;div class=&quot;p1 m1 border-top bg-lighter-gray&quot;&gt;.border-top&lt;/div&gt;
+&lt;div class=&quot;p1 m1 border-right bg-lighter-gray&quot;&gt;.border-right&lt;/div&gt;
+&lt;div class=&quot;p1 m1 border-bottom bg-lighter-gray&quot;&gt;.border-bottom&lt;/div&gt;
+&lt;div class=&quot;p1 m1 border-left bg-lighter-gray&quot;&gt;.border-left&lt;/div&gt;
+</code></pre>
+<p>Utility styles for border radii can be used to style images and other elements.</p>
+<pre><code class="lang-html">&lt;img src=&quot;/docs/placeholder-square.svg&quot; class=&quot;rounded&quot; width=&quot;64&quot; height=&quot;64&quot; /&gt;
+&lt;img src=&quot;/docs/placeholder-square.svg&quot; class=&quot;circle&quot; width=&quot;64&quot; height=&quot;64&quot; /&gt;
+&lt;img src=&quot;/docs/placeholder-square.svg&quot; class=&quot;rounded-top&quot; width=&quot;64&quot; height=&quot;64&quot; /&gt;
+&lt;img src=&quot;/docs/placeholder-square.svg&quot; class=&quot;rounded-right&quot; width=&quot;64&quot; height=&quot;64&quot; /&gt;
+&lt;img src=&quot;/docs/placeholder-square.svg&quot; class=&quot;rounded-bottom&quot; width=&quot;64&quot; height=&quot;64&quot; /&gt;
+&lt;img src=&quot;/docs/placeholder-square.svg&quot; class=&quot;rounded-left&quot; width=&quot;64&quot; height=&quot;64&quot; /&gt;
+</code></pre>
+<p>The <code>.not-rounded</code> utility can be used to override default radii.
+This is useful for things like input and button groups.</p>
+<pre><code class="lang-html">&lt;button class=&quot;button-blue not-rounded&quot;&gt;Not Rounded&lt;/button&gt;
+</code></pre>
+
+    </section>
+  
+    <section id="forms" class="py2">
+      <h1>forms</h1>
+      <h1 id="basscss-color-forms">Basscss Color Forms</h1>
+<p class="hide">Form color styles module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Basic color styles for form elements on a light background.</p>
+<h1 id="input-fields">Input Fields</h1>
+<p>To style the color, background, and border styles for form fields, use the <code>.field-light</code> style.</p>
+<pre><code class="lang-html">&lt;label&gt;Input&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;block full-width field-light&quot;&gt;
+&lt;label&gt;Select&lt;/label&gt;
+&lt;select class=&quot;block full-width field-light&quot;&gt;
+  &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+&lt;/select&gt;
+&lt;label&gt;Textarea&lt;/label&gt;
+&lt;textarea class=&quot;block full-width field-light&quot;&gt;&lt;/textarea&gt;
+</code></pre>
+<p>The <code>.field-light</code> style includes states for disabled and read-only fields, as well as success, warning, and error states.</p>
+<pre><code class="lang-html">&lt;label&gt;Normal&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;block full-width field-light&quot;&gt;
+&lt;label&gt;Disabled&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;block full-width field-light&quot; disabled value=&quot;This is disabled&quot;&gt;
+&lt;label&gt;Read Only&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;block full-width field-light&quot; readonly value=&quot;This is read-only&quot;&gt;
+&lt;label&gt;Required&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;block full-width field-light&quot; required&gt;
+&lt;label&gt;Success&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;block full-width field-light is-success&quot;&gt;
+&lt;label&gt;Warning&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;block full-width field-light is-warning&quot;&gt;
+&lt;label&gt;Error&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;block full-width field-light is-error&quot;&gt;
+</code></pre>
+<p>Style radio buttons and checkboxes with the <code>.radio-light</code> and <code>.checkbox-light</code> styles.
+These add focus states that are consistent with the other form elements.</p>
+<pre><code class="lang-html">&lt;label class=&quot;block&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;checkbox-light&quot;&gt;
+  Checkbox
+&lt;/label&gt;
+&lt;label class=&quot;block&quot;&gt;
+  &lt;input type=&quot;radio&quot; class=&quot;radio-light&quot;&gt;
+  Radio
+&lt;/label&gt;
+</code></pre>
+
+    </section>
+  
+    <section id="forms-dark" class="py2">
+      <h1>forms-dark</h1>
+      <h1 id="basscss-color-forms-dark">Basscss Color Forms Dark</h1>
+<p class="hide">Dark themed form color styles module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Color styles for form elements on dark backgrounds.</p>
+<h1 id="input-fields">Input Fields</h1>
+<p>To style the color, background, and border styles for form fields on dark backgrounds, use the <code>.field-dark</code> style.</p>
+<pre><code class="lang-html">&lt;form class=&quot;p2 white bg-dark-gray&quot;&gt;
+  &lt;label&gt;Input&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;block full-width field-dark&quot;&gt;
+  &lt;label&gt;Select&lt;/label&gt;
+  &lt;select class=&quot;block full-width field-dark&quot;&gt;
+    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;label&gt;Textarea&lt;/label&gt;
+  &lt;textarea class=&quot;block full-width field-dark&quot;&gt;&lt;/textarea&gt;
+&lt;/form&gt;
+</code></pre>
+<p>The <code>.field-dark</code> style includes states for disabled and read-only fields, as well as success, warning, and error states.</p>
+<pre><code class="lang-html">&lt;form class=&quot;p2 white bg-dark-gray&quot;&gt;
+  &lt;label&gt;Normal&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;block full-width field-dark&quot;&gt;
+  &lt;label&gt;Disabled&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;block full-width field-dark&quot; disabled value=&quot;This is disabled&quot;&gt;
+  &lt;label&gt;Read Only&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;block full-width field-dark&quot; readonly value=&quot;This is read-only&quot;&gt;
+  &lt;label&gt;Required&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;block full-width field-dark&quot; required&gt;
+  &lt;label&gt;Success&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;block full-width field-dark is-success&quot;&gt;
+  &lt;label&gt;Warning&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;block full-width field-dark is-warning&quot;&gt;
+  &lt;label&gt;Error&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;block full-width field-dark is-error&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+
+    </section>
+  
+    <section id="buttons" class="py2">
+      <h1>buttons</h1>
+      <h1 id="basscss-color-buttons">Basscss Color Buttons</h1>
+<p class="hide">Button color styles module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Includes the following basic button modules:
+<code>.button-blue</code>,
+<code>.button-blue-outline</code>,
+<code>.button-light-gray</code>,
+<code>.button-red</code>,
+<code>.button-nav-light</code>, and
+<code>.button-nav-dark</code>.</p>
+<p>Use these styles on button elements, or with the <code>basscss-base-buttons</code> module for links and input buttons.</p>
+<pre><code class="lang-html">&lt;div class=&quot;mb1&quot;&gt;
+  &lt;button&gt;Button&lt;/button&gt;
+  &lt;a href=&quot;#!&quot; class=&quot;button&quot;&gt;Link Button&lt;/a&gt;
+  &lt;input type=&quot;button&quot; class=&quot;button&quot; value=&quot;Input Button&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mb1&quot;&gt;
+  &lt;button class=&quot;button-blue mb1&quot;&gt;Button Blue&lt;/button&gt;
+  &lt;button class=&quot;button-blue-outline mb1&quot;&gt;Button Blue Outline&lt;/button&gt;
+  &lt;button class=&quot;button-light-gray mb1&quot;&gt;Button Light Gray&lt;/button&gt;
+  &lt;button class=&quot;button-red mb1&quot;&gt;Button Red&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Button styles can be used for navigation. The <code>.button-nav-light</code> style adds a subtle hover effect for links on a light background.</p>
+<pre><code class="lang-html">&lt;div class=&quot;mxn1&quot;&gt;
+  &lt;a href=&quot;#!&quot; class=&quot;button button-narrow button-nav-light&quot;&gt;Burgers&lt;/a&gt;
+  &lt;a href=&quot;#!&quot; class=&quot;button button-narrow button-nav-light&quot;&gt;Fries&lt;/a&gt;
+  &lt;a href=&quot;#!&quot; class=&quot;button button-narrow button-nav-light&quot;&gt;Shakes&lt;/a&gt;
+  &lt;a href=&quot;#!&quot; class=&quot;button button-narrow button-nav-light&quot;&gt;Onion Rings&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+<p>For dark backgrounds, use the <code>.button-nav-dark</code> style.</p>
+<pre><code class="lang-html">&lt;div class=&quot;bg-dark-gray&quot;&gt;
+  &lt;a href=&quot;#!&quot; class=&quot;button button-narrow button-nav-dark&quot;&gt;Burgers&lt;/a&gt;
+  &lt;a href=&quot;#!&quot; class=&quot;button button-narrow button-nav-dark&quot;&gt;Fries&lt;/a&gt;
+  &lt;a href=&quot;#!&quot; class=&quot;button button-narrow button-nav-dark&quot;&gt;Shakes&lt;/a&gt;
+  &lt;a href=&quot;#!&quot; class=&quot;button button-narrow button-nav-dark&quot;&gt;Onion Rings&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+
+    </section>
+  
+    <section id="tables" class="py2">
+      <h1>tables</h1>
+      <h1 id="basscss-color-tables">Basscss Color Tables</h1>
+<p class="hide">Table color styles module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Use the <code>.table-light</code> style as a starting point, then apply color utilities to style tables.</p>
+<pre><code class="lang-html">&lt;div class=&quot;overflow-scroll&quot;&gt;
+  &lt;table class=&quot;table-light&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Artist&lt;/th&gt; &lt;th&gt;Album&lt;/th&gt; &lt;th&gt;Release Date&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt; &lt;td&gt;Huey Lewis and the News&lt;/td&gt; &lt;td&gt;Sports&lt;/td&gt; &lt;td&gt;1983&lt;/td&gt; &lt;/tr&gt;
+      &lt;tr&gt; &lt;td&gt;Phil Collins&lt;/td&gt; &lt;td&gt;No Jacket Required&lt;/td&gt; &lt;td&gt;1985&lt;/td&gt; &lt;/tr&gt;
+      &lt;tr&gt; &lt;td&gt;Peter Gabriel&lt;/td&gt; &lt;td&gt;So&lt;/td&gt; &lt;td&gt;1986&lt;/td&gt; &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="lang-html">&lt;div class=&quot;overflow-scroll&quot;&gt;
+  &lt;table class=&quot;table-light overflow-hidden bg-white border rounded&quot;&gt;
+    &lt;thead class=&quot;bg-light-gray&quot;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Artist&lt;/th&gt; &lt;th&gt;Album&lt;/th&gt; &lt;th&gt;Release Date&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt; &lt;td&gt;Huey Lewis and the News&lt;/td&gt; &lt;td&gt;Sports&lt;/td&gt; &lt;td&gt;1983&lt;/td&gt; &lt;/tr&gt;
+      &lt;tr&gt; &lt;td&gt;Phil Collins&lt;/td&gt; &lt;td&gt;No Jacket Required&lt;/td&gt; &lt;td&gt;1985&lt;/td&gt; &lt;/tr&gt;
+      &lt;tr&gt; &lt;td&gt;Peter Gabriel&lt;/td&gt; &lt;td&gt;So&lt;/td&gt; &lt;td&gt;1986&lt;/td&gt; &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+
+    </section>
+  
+
 
 {% include 'partials/guides-cta.html' with { heading: 'Learn More' } %}
 
-{% endblock %}
 
 
           <!--

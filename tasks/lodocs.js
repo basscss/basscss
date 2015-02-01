@@ -24,16 +24,17 @@ data.defaults = require('../docs/src/variables')('./src/basscss.css');
 
 data.modules = data.basscss.modules;
 
-data.partials = {};
-data.partials.head = fs.readFileSync('./docs/src/partials/head.html', 'utf8');
-data.partials.footer = fs.readFileSync('./docs/src/partials/footer.html', 'utf8');
-data.partials['side-nav'] = fs.readFileSync('./docs/src/partials/side-nav.html', 'utf8');
-data.partials['page-header'] = fs.readFileSync('./docs/src/partials/page-header.html', 'utf8');
+  data.partials = {};
+  data.partials.head = fs.readFileSync('./docs/src/partials/head.html', 'utf8');
+  data.partials.footer = fs.readFileSync('./docs/src/partials/footer.html', 'utf8');
+  data.partials['side-nav'] = fs.readFileSync('./docs/src/partials/side-nav.html', 'utf8');
+  data.partials['page-header'] = fs.readFileSync('./docs/src/partials/page-header.html', 'utf8');
 
-
-module.exports = function() {
   var lodocs = new Lodocs();
   lodocs.init(data);
+
+module.exports = function() {
+
   lodocs.compile();
 };
 
