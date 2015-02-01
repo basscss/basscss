@@ -14,11 +14,22 @@
         <%= route.title %>
       </a>
       <% if (obj.page && obj.page.title == route.title) { %>
-        <ul class="list-reset mb0 py1 bg-darken-2">
+        <ul class="list-reset mb0 bg-darken-2">
           <% _.forIn(route.sections, function(section) { %>
             <li>
               <a href="<%= route.path + '#' + section.name %>" class="button button-small px2 block button-nav-dark">
-                <%= capitalize(section.name) %>
+                <span class="block ml1"><%= capitalize(section.name) %></span>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+      <% } %>
+      <% if (route.routes) { %>
+        <ul class="list-reset mb0 py1">
+          <% _.forIn(route.routes, function(subroute) { %>
+            <li>
+              <a href="<%= subroute.path %>" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"><%= subroute.title %></span>
               </a>
             </li>
           <% }) %>

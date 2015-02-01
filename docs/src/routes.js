@@ -1,13 +1,13 @@
 
 module.exports = {
   home: {
-    path: '/'
+    path: '/',
+    layout: './layouts/base.html',
   },
   //404: {
   //  path: '/'
   //},
   docs: {
-    layout: './layouts/docs.html',
     routes: {
       'getting-started': {
         title: 'Getting Started',
@@ -52,13 +52,32 @@ module.exports = {
       guides: {
         routes: {
           basics: {},
-          layout: {},
-          ui: {},
+          layout: {
+            title: 'Page Layout',
+            routes: {
+              demo: {}
+            }
+          },
+          ui: {
+            title: 'UI Elements'
+          },
           tips: {
             title: 'Tips & Tricks'
           },
+          'custom-builds': {},
+          rework: {
+            title: 'Using Rework'
+          },
         }
-      }
+      },
+      principles: {},
+      showcase: {
+        title: 'Built with Basscss',
+      },
+      customize: {},
+      styles: { title: 'Table of Styles' },
+      stats: { },
+      variables: { },
     }
   }
 };

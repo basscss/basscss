@@ -39,12 +39,14 @@
         Getting Started
       </a>
       
+      
     </li>
   
     <li>
       <a href="/docs/base" class="button block button-nav-dark ">
         Base
       </a>
+      
       
     </li>
   
@@ -53,34 +55,14 @@
         Utility
       </a>
       
+      
     </li>
   
     <li>
-      <a href="/docs/layout" class="button block white bg-blue ">
+      <a href="/docs/layout" class="button block button-nav-dark ">
         Layout
       </a>
       
-        <ul class="list-reset mb0 py1 bg-darken-2">
-          
-            <li>
-              <a href="/docs/layout#grid" class="button button-small px2 block button-nav-dark">
-                Grid
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/layout#table-object" class="button button-small px2 block button-nav-dark">
-                Table object
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/layout#flex-object" class="button button-small px2 block button-nav-dark">
-                Flex object
-              </a>
-            </li>
-          
-        </ul>
       
     </li>
   
@@ -89,12 +71,102 @@
         Color
       </a>
       
+      
     </li>
   
     <li>
       <a href="/docs/guides" class="button block button-nav-dark ">
         Guides
       </a>
+      
+      
+        <ul class="list-reset mb0 py1">
+          
+            <li>
+              <a href="/docs/guides/basics" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">Basics</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/guides/layout" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">Page Layout</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/guides/ui" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">UI Elements</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/guides/tips" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">Tips & Tricks</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/guides/custom-builds" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">Custom builds</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/guides/rework" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">Using Rework</span>
+              </a>
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="/docs/principles" class="button block button-nav-dark ">
+        Principles
+      </a>
+      
+      
+    </li>
+  
+    <li>
+      <a href="/docs/showcase" class="button block button-nav-dark ">
+        Built with Basscss
+      </a>
+      
+      
+    </li>
+  
+    <li>
+      <a href="/docs/customize" class="button block button-nav-dark ">
+        Customize
+      </a>
+      
+      
+    </li>
+  
+    <li>
+      <a href="/docs/styles" class="button block button-nav-dark ">
+        Table of Styles
+      </a>
+      
+      
+    </li>
+  
+    <li>
+      <a href="/docs/stats" class="button block button-nav-dark ">
+        Stats
+      </a>
+      
+      
+    </li>
+  
+    <li>
+      <a href="/docs/variables" class="button block button-nav-dark ">
+        Variables
+      </a>
+      
       
     </li>
   
@@ -203,7 +275,7 @@
         <header class="px2 mt3">
   <div class="flex flex-wrap flex-center py3 mb1 border-bottom">
     
-      <h1 class="h0 h0-responsive caps m0">Layout</h1>
+      <h1 class="h0 h0-responsive caps m0">Page Layout</h1>
     
   </div>
 </header>
@@ -216,7 +288,7 @@
     
     
     
-    / <a href="" class="button button-narrow dark-gray">Layout</a>
+    / <a href="" class="button button-narrow dark-gray">Page Layout</a>
   </div>
 </div>
 
@@ -234,17 +306,30 @@
 
 <h1 id="global-navigation">Global Navigation</h1>
 <p>To start off, make a global navigation using the grid system and other utilities.</p>
-<pre><code class="lang-html">&lt;nav class=&quot;clearfix white bg-dark-gray&quot;&gt;
-  &lt;div class=&quot;sm-col&quot;&gt;
-    &lt;a href=&quot;/&quot; class=&quot;button py2 button-nav-dark&quot;&gt;Home&lt;/a&gt;
-    &lt;a href=&quot;/&quot; class=&quot;button py2 button-nav-dark&quot;&gt;Burgers&lt;/a&gt;
-    &lt;a href=&quot;/&quot; class=&quot;button py2 button-nav-dark&quot;&gt;Fries&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;sm-col-right&quot;&gt;
-    &lt;a href=&quot;/&quot; class=&quot;button py2 button-nav-dark&quot;&gt;About&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;
-</code></pre>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <nav class="clearfix white bg-dark-gray">
+  <div class="sm-col">
+    <a href="/" class="button py2 button-nav-dark">Home</a>
+    <a href="/" class="button py2 button-nav-dark">Burgers</a>
+    <a href="/" class="button py2 button-nav-dark">Fries</a>
+  </div>
+  <div class="sm-col-right">
+    <a href="/" class="button py2 button-nav-dark">About</a>
+  </div>
+</nav>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix white bg-dark-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-nav-dark"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col-right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-nav-dark"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span></pre>
+</div>
 <p>For the navigation links, use button styles to provide large hit targets
 and a consistent visual spacing.
 Use the margin and padding utilities to fine tune the spacing.
@@ -255,13 +340,22 @@ By not defining a column width, each side will be as wide as its contents.</p>
 <p>Next create a hero banner using utility styles.
 Note: This example uses the optional <code>basscss-utility-headings</code> and 
 <code>basscss-background-images</code> utility modules for the large heading and background image.</p>
-<pre><code class="lang-html">&lt;header class=&quot;center px3 py4 white bg-mid-gray bg-cover bg-center&quot;
-  style=&quot;background-image: url(/docs/src/svg/hero.svg)&quot;&gt;
-  &lt;h1 class=&quot;h1 h0-responsive caps mt4 mb0 regular&quot;&gt;Hamburgers&lt;/h1&gt;
-  &lt;p class=&quot;h3&quot;&gt;Artisinal ground chuck creations&lt;/p&gt;
-  &lt;a href=&quot;#&quot; class=&quot;h3 button button-big mb4 button-blue&quot;&gt;Pancake&lt;/a&gt;
-&lt;/header&gt;
-</code></pre>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <header class="center px3 py4 white bg-mid-gray bg-cover bg-center"
+  style="background-image: url(/docs/src/svg/hero.svg)">
+  <h1 class="h1 h0-responsive caps mt4 mb0 regular">Hamburgers</h1>
+  <p class="h3">Artisinal ground chuck creations</p>
+  <a href="#" class="h3 button button-big mb4 button-blue">Pancake</a>
+</header>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center px3 py4 white bg-mid-gray bg-cover bg-center"</span>
+  <span class="hljs-attribute">style</span>=<span class="hljs-value">"background-image: url(/docs/src/svg/hero.svg)"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 h0-responsive caps mt4 mb0 regular"</span>&gt;</span>Hamburgers<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>Artisinal ground chuck creations<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3 button button-big mb4 button-blue"</span>&gt;</span>Pancake<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span></pre>
+</div>
 <p>A combination of utility styles is all that’s needed to create this banner.
 To fine tune the placement of a background image in a banner,
 consider adjusting the source image or placing page-specific styles directly in the head of the document.
@@ -271,47 +365,87 @@ This is to help reduce the size of the stylesheet by not including one-off style
 <p>After seeing the global navigation above the hero,
 try moving it into the banner and removing the background color for a different look.
 Move the padding for the banner content into a nested div to adjust the layout.</p>
-<pre><code class="lang-html">&lt;header class=&quot;white bg-mid-gray bg-cover bg-center&quot;
-  style=&quot;background-image: url(/docs/src/svg/hero.svg)&quot;&gt;
-  &lt;nav class=&quot;clearfix white&quot;&gt;
-    &lt;div class=&quot;sm-col&quot;&gt;
-      &lt;a href=&quot;/&quot; class=&quot;button py2 button-nav-dark&quot;&gt;Home&lt;/a&gt;
-      &lt;a href=&quot;/&quot; class=&quot;button py2 button-nav-dark&quot;&gt;Burgers&lt;/a&gt;
-      &lt;a href=&quot;/&quot; class=&quot;button py2 button-nav-dark&quot;&gt;Fries&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;sm-col-right&quot;&gt;
-      &lt;a href=&quot;/&quot; class=&quot;button py2 button-nav-dark&quot;&gt;About&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/nav&gt;
-  &lt;div class=&quot;center px2 py4&quot;&gt;
-    &lt;h1 class=&quot;h1 h0-responsive caps mt4 mb0 regular&quot;&gt;Hamburgers&lt;/h1&gt;
-    &lt;p class=&quot;h3&quot;&gt;Artisinal ground chuck creations&lt;/p&gt;
-    &lt;a href=&quot;#&quot; class=&quot;h3 button button-big mb4 button-blue&quot;&gt;Pancake&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/header&gt;
-</code></pre>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <header class="white bg-mid-gray bg-cover bg-center"
+  style="background-image: url(/docs/src/svg/hero.svg)">
+  <nav class="clearfix white">
+    <div class="sm-col">
+      <a href="/" class="button py2 button-nav-dark">Home</a>
+      <a href="/" class="button py2 button-nav-dark">Burgers</a>
+      <a href="/" class="button py2 button-nav-dark">Fries</a>
+    </div>
+    <div class="sm-col-right">
+      <a href="/" class="button py2 button-nav-dark">About</a>
+    </div>
+  </nav>
+  <div class="center px2 py4">
+    <h1 class="h1 h0-responsive caps mt4 mb0 regular">Hamburgers</h1>
+    <p class="h3">Artisinal ground chuck creations</p>
+    <a href="#" class="h3 button button-big mb4 button-blue">Pancake</a>
+  </div>
+</header>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"white bg-mid-gray bg-cover bg-center"</span>
+  <span class="hljs-attribute">style</span>=<span class="hljs-value">"background-image: url(/docs/src/svg/hero.svg)"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix white"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-nav-dark"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-nav-dark"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-nav-dark"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col-right"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-nav-dark"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center px2 py4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 h0-responsive caps mt4 mb0 regular"</span>&gt;</span>Hamburgers<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>Artisinal ground chuck creations<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3 button button-big mb4 button-blue"</span>&gt;</span>Pancake<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span></pre>
+</div>
 <h1 id="three-up">Three Up</h1>
 <p>Next, use the grid system to create a three-up row of features.
 Note the use of <code>sm-</code> prefixed grid utility styles that only work from the small breakpoint up.
 The row itself uses the <code>.mxn2</code> utility to compensate for each column’s <code>.px2</code> padding.
 To control the spacing of typographic elements, each heading has its bottom margin removed.</p>
-<pre><code class="lang-html">&lt;section class=&quot;container px2 py3&quot;&gt;
-  &lt;div class=&quot;clearfix mxn2&quot;&gt;
-    &lt;div class=&quot;sm-col sm-col-4 px2&quot;&gt;
-      &lt;h2 class=&quot;h1 mb0&quot;&gt;Bacon&lt;/h2&gt;
-      &lt;p&gt;Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;sm-col sm-col-4 px2&quot;&gt;
-      &lt;h2 class=&quot;h1 mb0&quot;&gt;Bratwurst&lt;/h2&gt;
-      &lt;p&gt;Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;sm-col sm-col-4 px2&quot;&gt;
-      &lt;h2 class=&quot;h1 mb0&quot;&gt;Andouille&lt;/h2&gt;
-      &lt;p&gt;Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-</code></pre>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <section class="container px2 py3">
+  <div class="clearfix mxn2">
+    <div class="sm-col sm-col-4 px2">
+      <h2 class="h1 mb0">Bacon</h2>
+      <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+    </div>
+    <div class="sm-col sm-col-4 px2">
+      <h2 class="h1 mb0">Bratwurst</h2>
+      <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+    </div>
+    <div class="sm-col sm-col-4 px2">
+      <h2 class="h1 mb0">Andouille</h2>
+      <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+    </div>
+  </div>
+</section>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container px2 py3"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-4 px2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 mb0"</span>&gt;</span>Bacon<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-4 px2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 mb0"</span>&gt;</span>Bratwurst<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-4 px2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 mb0"</span>&gt;</span>Andouille<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span></pre>
+</div>
 <h1 id="blog-teaser">Blog Teaser</h1>
 <p>To showcase the latest posts from the blog, create a new section.
 Use the grid system to create a wide left column
@@ -320,126 +454,246 @@ The columns have two different widths defined for the small and medium breakpoin
 This makes the right column relatively smaller for larger viewports.
 Use the <code>.sm-show</code> responsive utility to hide the sidebar when the viewport is narrower
 than the small breakpoint.</p>
-<pre><code class="lang-html">&lt;section class=&quot;container px2 py3&quot;&gt;
-  &lt;h1 class=&quot;mt0&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot;dark-gray&quot;&gt;
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <section class="container px2 py3">
+  <h1 class="mt0">
+    <a href="#" class="dark-gray">
       Blog
-    &lt;/a&gt;
-  &lt;/h1&gt;
-  &lt;div class=&quot;clearfix mxn2&quot;&gt;
-    &lt;div class=&quot;sm-col sm-col-8 md-col-9 px2&quot;&gt;
-      &lt;div&gt;
-        &lt;h2 class=&quot;h3&quot;&gt;
-          &lt;a href=&quot;#&quot; class=&quot;dark-gray&quot;&gt;
+    </a>
+  </h1>
+  <div class="clearfix mxn2">
+    <div class="sm-col sm-col-8 md-col-9 px2">
+      <div>
+        <h2 class="h3">
+          <a href="#" class="dark-gray">
             Blog Post Title
-          &lt;/a&gt;
-        &lt;/h2&gt;
-        &lt;p&gt;Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.&lt;/p&gt;
-        &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        &lt;h2 class=&quot;h3&quot;&gt;
-          &lt;a href=&quot;#&quot; class=&quot;dark-gray&quot;&gt;
+          </a>
+        </h2>
+        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+        <a href="#">Read more</a>
+      </div>
+      <div>
+        <h2 class="h3">
+          <a href="#" class="dark-gray">
             Blog Post Title
-          &lt;/a&gt;
-        &lt;/h2&gt;
-        &lt;p&gt;Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.&lt;/p&gt;
-        &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;sm-col sm-col-4 md-col-3 px2 sm-show&quot;&gt;
-      &lt;h3 class=&quot;h4&quot;&gt;Categories&lt;/h3&gt;
-      &lt;ul class=&quot;list-reset&quot;&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;&quot;&gt;Bacon&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;&quot;&gt;Bratwurst&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;&quot;&gt;Andouille&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;&quot;&gt;Pork Loin&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;&quot;&gt;Corned Beef&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;&quot;&gt;Pastrami&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-</code></pre>
+          </a>
+        </h2>
+        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+    <div class="sm-col sm-col-4 md-col-3 px2 sm-show">
+      <h3 class="h4">Categories</h3>
+      <ul class="list-reset">
+        <li><a href="#" class="">Bacon</a></li>
+        <li><a href="#" class="">Bratwurst</a></li>
+        <li><a href="#" class="">Andouille</a></li>
+        <li><a href="#" class="">Pork Loin</a></li>
+        <li><a href="#" class="">Corned Beef</a></li>
+        <li><a href="#" class="">Pastrami</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container px2 py3"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mt0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dark-gray"</span>&gt;</span>
+      Blog
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-8 md-col-9 px2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dark-gray"</span>&gt;</span>
+            Blog Post Title
+          <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Read more<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dark-gray"</span>&gt;</span>
+            Blog Post Title
+          <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Read more<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-4 md-col-3 px2 sm-show"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h4"</span>&gt;</span>Categories<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-reset"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">""</span>&gt;</span>Bacon<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">""</span>&gt;</span>Bratwurst<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">""</span>&gt;</span>Andouille<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">""</span>&gt;</span>Pork Loin<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">""</span>&gt;</span>Corned Beef<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">""</span>&gt;</span>Pastrami<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span></pre>
+</div>
 <h1 id="gallery">Gallery</h1>
 <p>Next, create a thumbnail gallery with 12 images.
 Twelve is divisible by 6, 4, 3, and 2 so no widows will appear
 when dividing up the thumbnails by those numbers in our grid.</p>
-<pre><code class="lang-html">&lt;section class=&quot;container px2 py3&quot;&gt;
-  &lt;h1 class=&quot;mt0&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot;dark-gray&quot;&gt;
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <section class="container px2 py3">
+  <h1 class="mt0">
+    <a href="#" class="dark-gray">
       Gallery
-    &lt;/a&gt;
-  &lt;/h1&gt;
-  &lt;div class=&quot;clearfix mxn2&quot;&gt;
-    &lt;div class=&quot;col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;block&quot;&gt;
-        &lt;img src=&quot;/docs/placeholder.svg&quot; class=&quot;block&quot; /&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;block&quot;&gt;
-        &lt;img src=&quot;/docs/placeholder.svg&quot; class=&quot;block&quot; /&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;block&quot;&gt;
-        &lt;img src=&quot;/docs/placeholder.svg&quot; class=&quot;block&quot; /&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;sm-show md-hide clearfix&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;block&quot;&gt;
-        &lt;img src=&quot;/docs/placeholder.svg&quot; class=&quot;block&quot; /&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;md-show lg-hide clearfix&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;block&quot;&gt;
-        &lt;img src=&quot;/docs/placeholder.svg&quot; class=&quot;block&quot; /&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;block&quot;&gt;
-        &lt;img src=&quot;/docs/placeholder.svg&quot; class=&quot;block&quot; /&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;sm-show md-hide clearfix&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;block&quot;&gt;
-        &lt;img src=&quot;/docs/placeholder.svg&quot; class=&quot;block&quot; /&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;block&quot;&gt;
-        &lt;img src=&quot;/docs/placeholder.svg&quot; class=&quot;block&quot; /&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;md-show lg-hide clearfix&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;block&quot;&gt;
-        &lt;img src=&quot;/docs/placeholder.svg&quot; class=&quot;block&quot; /&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;sm-show md-hide clearfix&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;block&quot;&gt;
-        &lt;img src=&quot;/docs/placeholder.svg&quot; class=&quot;block&quot; /&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;block&quot;&gt;
-        &lt;img src=&quot;/docs/placeholder.svg&quot; class=&quot;block&quot; /&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;block&quot;&gt;
-        &lt;img src=&quot;/docs/placeholder.svg&quot; class=&quot;block&quot; /&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-</code></pre>
+    </a>
+  </h1>
+  <div class="clearfix mxn2">
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="sm-show md-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="md-show lg-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="sm-show md-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="md-show lg-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="sm-show md-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+  </div>
+</section>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container px2 py3"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mt0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dark-gray"</span>&gt;</span>
+      Gallery
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-show md-hide clearfix"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-show lg-hide clearfix"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-show md-hide clearfix"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-show lg-hide clearfix"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-show md-hide clearfix"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/placeholder.svg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span></pre>
+</div>
 <p>The display block utility is used on the links and images to control spacing,
 and each thumbnail uses <code>.mb3</code> to keep the vertical spacing equal to the gutters.
 Although it’s unnecessary for images of the same dimension,
@@ -447,66 +701,128 @@ clearfix elements with responsive utilities are used to ensure each column wraps
 <h1 id="footer">Footer</h1>
 <p>Finally, create a footer with a dark background that fills the width of the viewport.
 Note the container is placed inside the footer element to control max-width.</p>
-<pre><code class="lang-html">&lt;footer class=&quot;white bg-dark-gray&quot;&gt;
-  &lt;div class=&quot;px2 py3 container&quot;&gt;
-    &lt;div class=&quot;clearfix mxn2&quot;&gt;
-      &lt;div class=&quot;col col-6 md-col-3&quot;&gt;
-        &lt;ul class=&quot;list-reset&quot;&gt;
-          &lt;li&gt;
-            &lt;h3 class=&quot;h4 m0&quot;&gt;
-              &lt;a href=&quot;#&quot; class=&quot;button block button-nav-dark&quot;&gt;Home&lt;/a&gt;
-            &lt;/h3&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Bacon&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Bratwurst&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Andouille&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Pork Loin&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col col-6 md-col-3&quot;&gt;
-        &lt;ul class=&quot;list-reset&quot;&gt;
-          &lt;li&gt;
-            &lt;h3 class=&quot;h4 m0&quot;&gt;
-              &lt;a href=&quot;#&quot; class=&quot;button block button-nav-dark&quot;&gt;Categories&lt;/a&gt;
-            &lt;/h3&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Bacon&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Bratwurst&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Andouille&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Pork Loin&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col col-6 md-col-3&quot;&gt;
-        &lt;ul class=&quot;list-reset&quot;&gt;
-          &lt;li&gt;
-            &lt;h3 class=&quot;h4 m0&quot;&gt;
-              &lt;a href=&quot;#&quot; class=&quot;button block button-nav-dark&quot;&gt;Categories&lt;/a&gt;
-            &lt;/h3&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Bacon&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Bratwurst&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Andouille&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Pork Loin&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col col-6 md-col-3&quot;&gt;
-        &lt;ul class=&quot;list-reset&quot;&gt;
-          &lt;li&gt;
-            &lt;h3 class=&quot;h4 m0&quot;&gt;
-              &lt;a href=&quot;#&quot; class=&quot;button block button-nav-dark&quot;&gt;About&lt;/a&gt;
-            &lt;/h3&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Bacon&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Bratwurst&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Andouille&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 button block button-nav-dark&quot;&gt;Pork Loin&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;p class=&quot;h6 mb0&quot;&gt;&amp;copy; 2014 Hamburgers, LLC&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/footer&gt;
-</code></pre>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <footer class="white bg-dark-gray">
+  <div class="px2 py3 container">
+    <div class="clearfix mxn2">
+      <div class="col col-6 md-col-3">
+        <ul class="list-reset">
+          <li>
+            <h3 class="h4 m0">
+              <a href="#" class="button block button-nav-dark">Home</a>
+            </h3>
+          </li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bacon</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bratwurst</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Andouille</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Pork Loin</a></li>
+        </ul>
+      </div>
+      <div class="col col-6 md-col-3">
+        <ul class="list-reset">
+          <li>
+            <h3 class="h4 m0">
+              <a href="#" class="button block button-nav-dark">Categories</a>
+            </h3>
+          </li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bacon</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bratwurst</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Andouille</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Pork Loin</a></li>
+        </ul>
+      </div>
+      <div class="col col-6 md-col-3">
+        <ul class="list-reset">
+          <li>
+            <h3 class="h4 m0">
+              <a href="#" class="button block button-nav-dark">Categories</a>
+            </h3>
+          </li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bacon</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bratwurst</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Andouille</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Pork Loin</a></li>
+        </ul>
+      </div>
+      <div class="col col-6 md-col-3">
+        <ul class="list-reset">
+          <li>
+            <h3 class="h4 m0">
+              <a href="#" class="button block button-nav-dark">About</a>
+            </h3>
+          </li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bacon</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bratwurst</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Andouille</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Pork Loin</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="h6 mb0">&copy; 2014 Hamburgers, LLC</p>
+  </div>
+</footer>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">footer</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"white bg-dark-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"px2 py3 container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 md-col-3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-reset"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h4 m0"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Bacon<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Bratwurst<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Andouille<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Pork Loin<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 md-col-3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-reset"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h4 m0"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Categories<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Bacon<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Bratwurst<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Andouille<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Pork Loin<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 md-col-3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-reset"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h4 m0"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>Categories<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Bacon<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Bratwurst<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Andouille<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Pork Loin<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 md-col-3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-reset"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h4 m0"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-nav-dark"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Bacon<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Bratwurst<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Andouille<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 button block button-nav-dark"</span>&gt;</span>Pork Loin<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h6 mb0"</span>&gt;</span>&amp;copy; 2014 Hamburgers, LLC<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">footer</span>&gt;</span></pre>
+</div>
 <p class="h3">
   At this point, you should have created a page resembling the
   <a href="/docs/guides/layout/demo">demo</a>.

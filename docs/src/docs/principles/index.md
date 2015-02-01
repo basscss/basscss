@@ -1,6 +1,3 @@
----
-page: references.principles
----
 
 <p class="h3">
   Basscss borrows many ideas from OOCSS while attempting to address common product design considerations through a balance of consistency and flexibility.

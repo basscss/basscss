@@ -13,7 +13,7 @@ data.root = path.join(__dirname, '..');
 data.source = path.join(__dirname, '../docs/src');
 data.dest = path.join(__dirname, '..');
 
-data.layout = './layouts/base.html';
+data.layout = './layouts/docs.html';
 data.stylesheet = 'http://d2v52k3cl9vedd.cloudfront.net/bassdock/0.0.3/bassdock.min.css';
 data.asset_path = 'http://d2v52k3cl9vedd.cloudfront.net/basscss/';
 
