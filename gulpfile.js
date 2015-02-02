@@ -33,15 +33,6 @@ gulp.task('serve', require('./tasks/serve'));
 // NEW Compile lodash templates
 gulp.task('lodocs', require('./tasks/lodocs'));
 
-// OLD Compile Swig templates
-  //gulp.task('swig', require('./tasks/swig'));
-
-// Compile CSS for docs site
-gulp.task('site-basswork', require('./tasks/site-basswork'));
-
-// Autogenerate docs for modules
-//gulp.task('module-docs', require('./tasks/module-docs'));
-
 // Create favicons
 gulp.task('favicon', require('./tasks/favicon'));
 
@@ -62,8 +53,8 @@ gulp.task('customizer-js', require('./tasks/customizer-js'));
 gulp.task('dev', ['watch-templates', 'watch-css', 'watch-js', 'serve']);
 
 // Watch for changes
-gulp.task('watch-css', ['basswork', 'site-basswork', 'customizer-data'], function() {
-  gulp.watch(['./src/**/*.css', './docs/src/css/**/*.css'], ['basswork', 'site-basswork', 'customizer-data']);
+gulp.task('watch-css', ['basswork', 'customizer-data'], function() {
+  gulp.watch(['./src/**/*.css', './docs/src/css/**/*.css'], ['basswork', 'customizer-data']);
 });
 
 gulp.task('watch-templates', ['lodocs'], function() {
