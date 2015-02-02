@@ -24,17 +24,33 @@ data.defaults = require('../docs/src/variables')('./src/basscss.css');
 
 data.modules = data.basscss.modules;
 
-  data.partials = {};
-  data.partials.head = fs.readFileSync('./docs/src/partials/head.html', 'utf8');
-  data.partials.footer = fs.readFileSync('./docs/src/partials/footer.html', 'utf8');
-  data.partials['side-nav'] = fs.readFileSync('./docs/src/partials/side-nav.html', 'utf8');
-  data.partials['page-header'] = fs.readFileSync('./docs/src/partials/page-header.html', 'utf8');
+data.routes.docs.routes.modules = {
+  title: 'Modules',
+  routes: {}
+};
 
-  var lodocs = new Lodocs();
-  lodocs.init(data);
+// Create routes for each module
+data.modules.forEach(function(m) {
+  var modulesRoutes = data.routes.docs.routes.modules.routes;
+  modulesRoutes[m] = {
+    source: m
+  };
+});
+
+data.partials = {};
+data.partials.head = fs.readFileSync('./docs/src/partials/head.html', 'utf8');
+data.partials.footer = fs.readFileSync('./docs/src/partials/footer.html', 'utf8');
+data.partials['side-nav'] = fs.readFileSync('./docs/src/partials/side-nav.html', 'utf8');
+data.partials['page-header'] = fs.readFileSync('./docs/src/partials/page-header.html', 'utf8');
+
+data.helpers = require('../docs/src/helpers');
+
+var lodocs = new Lodocs();
+lodocs.init(data);
+
 
 module.exports = function() {
-
+  console.log('lodocs task');
   lodocs.compile();
 };
 

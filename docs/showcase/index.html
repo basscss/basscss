@@ -34,7 +34,7 @@
 
 <ul class="list-reset mb3">
   
-    <li>
+    <li class="">
       <a href="/docs/getting-started" class="button block button-nav-dark ">
         Getting Started
       </a>
@@ -42,7 +42,7 @@
       
     </li>
   
-    <li>
+    <li class="">
       <a href="/docs/base" class="button block button-nav-dark ">
         Base
       </a>
@@ -50,7 +50,7 @@
       
     </li>
   
-    <li>
+    <li class="">
       <a href="/docs/utility" class="button block button-nav-dark ">
         Utility
       </a>
@@ -58,7 +58,7 @@
       
     </li>
   
-    <li>
+    <li class="">
       <a href="/docs/layout" class="button block button-nav-dark ">
         Layout
       </a>
@@ -66,7 +66,7 @@
       
     </li>
   
-    <li>
+    <li class="">
       <a href="/docs/color" class="button block button-nav-dark ">
         Color
       </a>
@@ -74,7 +74,7 @@
       
     </li>
   
-    <li>
+    <li class="mt3 mb3">
       <a href="/docs/guides" class="button block button-nav-dark ">
         Guides
       </a>
@@ -108,7 +108,7 @@
           
             <li>
               <a href="/docs/guides/custom-builds" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Custom builds</span>
+                <span class="block ml1">Custom Builds</span>
               </a>
             </li>
           
@@ -122,7 +122,7 @@
       
     </li>
   
-    <li>
+    <li class="">
       <a href="/docs/principles" class="button block button-nav-dark ">
         Principles
       </a>
@@ -130,7 +130,7 @@
       
     </li>
   
-    <li>
+    <li class="">
       <a href="/docs/showcase" class="button block white bg-blue ">
         Built with Basscss
       </a>
@@ -142,7 +142,7 @@
       
     </li>
   
-    <li>
+    <li class="">
       <a href="/docs/customize" class="button block button-nav-dark ">
         Customize
       </a>
@@ -150,7 +150,7 @@
       
     </li>
   
-    <li>
+    <li class="">
       <a href="/docs/styles" class="button block button-nav-dark ">
         Table of Styles
       </a>
@@ -158,7 +158,7 @@
       
     </li>
   
-    <li>
+    <li class="">
       <a href="/docs/stats" class="button block button-nav-dark ">
         Stats
       </a>
@@ -166,7 +166,7 @@
       
     </li>
   
-    <li>
+    <li class="">
       <a href="/docs/variables" class="button block button-nav-dark ">
         Variables
       </a>
@@ -174,96 +174,212 @@
       
     </li>
   
-</ul>
-
-<!--
-<ul class="list-reset mb3">
-  {% for p in pages %}
-    <li>
-      <a href="{{ p.link }}" class="button block
-          {% if p.title == page.title %}
-            white bg-blue
-          {% else %}
-            button-nav-dark
-          {% endif %}
-        ">
-        {{ p.title }}
+    <li class="mt3 mb3">
+      <a href="/docs/modules" class="button block button-nav-dark ">
+        Modules
       </a>
-      {% if p.title == page.title && page.title != 'Getting Started' %}
-        <ul class="list-reset mb0 py1 bg-darken-2">
-          {% for item in p.sections %}
+      
+      
+        <ul class="list-reset mb0 py1">
+          
             <li>
-              <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">{{ item.title }}</span>
+              <a href="/docs/modules/basscss-base-reset" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Base Reset</span>
               </a>
             </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
-
-<h3 class="mb0">
-  <a href="/docs/guides" class="h6 caps button block {% if page.title == 'Guides' %}white bg-blue{% else %}button-nav-dark{% endif %}">
-    Guides
-  </a>
-</h3>
-<ul class="list-reset mb3">
-  {% for guide in guides %}
-    <li>
-      <a href="{{ guide.link }}"
-        class="button block {% if guide.title == page.title %} white bg-blue {% else %} button-nav-dark {% endif %}">
-        {{ guide.title }}
-      </a>
-      {% if guide.title == page.title %}
-        <ul class="list-reset mb0 py1 bg-darken-2">
-          {% for item in guide.sections %}
+          
             <li>
-              <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">{{ item.title }}</span>
+              <a href="/docs/modules/basscss-base-typography" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Base Typography</span>
               </a>
             </li>
-          {% endfor %}
+          
+            <li>
+              <a href="/docs/modules/basscss-base-forms" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Base Forms</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-base-buttons" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Base Buttons</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-base-tables" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Base Tables</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-utility-layout" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Utility Layout</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-utility-typography" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Utility Typography</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-utility-white-space" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Utility White Space</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-utility-responsive-states" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Utility Responsive States</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-ui-utility-button-sizes" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Ui Utility Button Sizes</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-ui-utility-groups" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Ui Utility Groups</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-positions" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Positions</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-grid" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Grid</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-table-object" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Table Object</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-color-base" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Color Base</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-color-buttons" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Color Buttons</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-color-forms" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Color Forms</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-color-forms-dark" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Color Forms Dark</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-color-tables" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Color Tables</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-button-blue" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Button Blue</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-button-blue-outline" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Button Blue Outline</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-button-gray" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Button Gray</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-button-light-gray" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Button Light Gray</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-button-red" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Button Red</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-button-nav-light" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Button Nav Light</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-button-nav-dark" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Button Nav Dark</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-button-nav-tab" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Button Nav Tab</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-colors" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Colors</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-color-borders" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Color Borders</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/flex-object" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">Flex Object</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-utility-headings" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Utility Headings</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-background-images" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Background Images</span>
+              </a>
+            </li>
+          
         </ul>
-      {% endif %}
+      
     </li>
-  {% endfor %}
+  
 </ul>
 
-
-<h3 class="h6 caps px2 py1 mb0">Reference</h3>
-<ul class="list-reset mb3">
-  {% for ref in references %}
-    <li>
-      <a href="{{ ref.link }}"
-        class="button block {% if ref.title == page.title || ref.title == 'Modules' && module %} white bg-blue {% else %} button-nav-dark {% endif %}">
-        {{ ref.title }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
-
-
-<h3 class="mb0">
-  <a href="/docs/modules"
-    class="h6 caps button block {% if page.title == 'Modules' || module %}white bg-blue{% else %}button-nav-dark{% endif %}">
-    Modules
-  </a>
-</h3>
-{% if module || page.title == 'Modules' %}
-  <ul class="list-reset mb3 py1 bg-darken-2">
-    {% for m in modules %}
-      <li>
-        <a href="/docs/modules/{{ m.name }}"
-          class="button block button-small px2 {% if module.name == m.name %}white bg-mid-gray{% else %}button-nav-dark{% endif %}">
-          <span class="block ml1">{{ m.title }}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
--->
 
 
 <a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">
@@ -278,9 +394,7 @@
       <div class="flex-auto full-width container-small">
         <header class="px2 mt3">
   <div class="flex flex-wrap flex-center py3 mb1 border-bottom">
-    
-      <h1 class="h0 h0-responsive caps m0">Built with Basscss</h1>
-    
+    <h1 class="h0 h0-responsive caps m0">Built with Basscss</h1>
   </div>
 </header>
 
@@ -288,11 +402,18 @@
   <div class="avenir h5 bold mxn1 mb3">
     <a href="/" class="button button-narrow">Home</a>
     
-      / <a href="/docs" class="button button-narrow">Docs</a>
+      
+      /
+      <a href="/docs" class="button button-narrow ">
+        Docs
+      </a>
+      
+      /
+      <a href="/docs/showcase" class="button button-narrow dark-gray">
+        Built with Basscss
+      </a>
+      
     
-    
-    
-    / <a href="" class="button button-narrow dark-gray">Built with Basscss</a>
   </div>
 </div>
 

@@ -1,12 +1,11 @@
 
+var modules = {};
+
 module.exports = {
   home: {
     path: '/',
     layout: './layouts/base.html',
   },
-  //404: {
-  //  path: '/'
-  //},
   docs: {
     routes: {
       'getting-started': {
@@ -80,4 +79,7 @@ module.exports = {
       variables: { },
     }
   }
+  //404: {
+  //  path: '/'
+  //},
 };

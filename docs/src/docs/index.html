@@ -1,14 +1,6 @@
 <%
-  /*extend('./layouts/docs.html')*/
-  var page = {};
-  page.title = 'Docs';
   var fullwidth = true;
 %>
-<!--
-{% set hide_docs_breadcrumb = true %}
-{% set flush_container = true %}
-{% set fullwidth = true %}
--->
 
 
 <p class="h3">
@@ -17,11 +9,6 @@
   base elements, immutable utilities, layout modules, and color styles.
 </p>
 
-<!--
-<div class="mxn2 mb2 py1">
-  <a href="/docs/getting-started" class="h2 button block button-nav-light">Getting Started</a>
-</div>
--->
 
 <div class="flex flex-wrap mxn2 mb3">
   <% _.forIn(routes.docs.routes, function(route) { %>
@@ -31,33 +18,30 @@
   <% }) %>
 </div>
 
-<hr class="hide ml0 col-5 sm-col-3 hr-block bg-blue">
+<hr>
 
-<h2 class="h5 avenir caps">Guides</h2>
-<div class="flex flex-wrap mxn2 mb4">
-  {% for guide in guides %}
-    <div class="col-6 md-col-3 py1">
-      <a href="{{ guide.link }}" class="h4 button block button-nav-light">{{ guide.title }}</a>
-    </div>
-  {% endfor %}
-</div>
+<ul class="flex flex-wrap list-reset mb3 mxn2">
+  <% _.forIn(routes.docs.routes, function(route, key) { %>
+    <li class="sm-col-6 md-col-3">
+      <a href="<%= route.path %>" class="button block button-nav-light">
+        <%= route.title %>
+      </a>
+      <% if (route.routes) { %>
+        <ul class="list-reset mb0 py1">
+          <% _.forIn(route.routes, function(subroute) { %>
+            <li>
+              <a href="<%= subroute.path %>" class="button button-small px2 block button-nav-light">
+                <%= removePrefix(subroute.title) %>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+      <% } %>
+    </li>
+  <% }) %>
+</ul>
 
-<h2 class="h5 avenir caps">Reference</h2>
-<div class="flex flex-wrap mxn2 mb4">
-  {% for reference in references %}
-    <div class="col-6 md-col-3 py1">
-      <a href="{{ reference.link }}" class="h4 button block button-nav-light">{{ reference.title }}</a>
-    </div>
-  {% endfor %}
-</div>
+<hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
 
-<h2 class="h5 avenir caps">Modules</h2>
-<div class="flex flex-wrap mxn2 mb4">
-  {% for m in modules %}
-    <div class="col-6 md-col-3 py1">
-      <a href="/docs/modules/{{ m.name }}" class="h4 button block button-nav-light">{{ m.title }}</a>
-    </div>
-  {% endfor %}
-</div>
 
 

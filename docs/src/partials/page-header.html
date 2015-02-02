@@ -1,39 +1,20 @@
 <header class="px2 mt3">
   <div class="flex flex-wrap flex-center py3 mb1 border-bottom">
-    <% if (!obj.module) { %>
-      <h1 class="h0 h0-responsive caps m0"><%= page.title %></h1>
-    <% } else { %>
-      <div class="flex-auto">
-        <h1 class="h1 xh1-responsive caps m0"><%= module.title %></h1>
-        <h2 class="h3 m0">
-          <%= module.name %>
-          <span class="h5">v<%= module.version %></span>
-          <% if (module.optional) { %>
-            <span class="h6 caps red">Optional</span>
-          <% } %>
-        </h2>
-      </div>
-      <div class="mxn1">
-        <a href="<%= module.npmLink %>" class="h5 button button-narrow button-nav-light">NPM</a>
-        <a href="<%= module.homepage %>" class="h5 button button-narrow button-nav-light">Github</a>
-      </div>
-    <% } %>
+    <h1 class="h0 h0-responsive caps m0"><%= removePrefix(page.title) %></h1>
   </div>
 </header>
 
 <div class="px2">
   <div class="avenir h5 bold mxn1 mb3">
     <a href="/" class="button button-narrow">Home</a>
-    <% if (!obj.hide_docs_breadcrumb) { %>
-      / <a href="/docs" class="button button-narrow">Docs</a>
+    <% if (obj.page.breadcrumbs) { %>
+      <% obj.page.breadcrumbs.forEach(function(crumb, i) { %>
+      /
+      <a href="<%= crumb.path %>" class="button button-narrow <%= (i == page.breadcrumbs.length - 1) ? 'dark-gray' : '' %>">
+        <%= removePrefix(crumb.title) %>
+      </a>
+      <% }) %>
     <% } %>
-    <% if (obj.isguide) { %>
-      / <a href="/docs/guides/" class="button button-narrow">Guides</a>
-    <% } %>
-    <% if (obj.module) { %>
-      / <a href="/docs/modules/" class="button button-narrow">Modules</a>
-    <% } %>
-    / <a href="<%= page.link %>" class="button button-narrow dark-gray"><%= page.title %></a>
   </div>
 </div>
 

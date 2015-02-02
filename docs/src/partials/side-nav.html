@@ -9,7 +9,7 @@
 
 <ul class="list-reset mb3">
   <% _.forIn(routes.docs.routes, function(route, key) { %>
-    <li>
+    <li class="<%= route.routes ? 'mt3 mb3' : '' %>">
       <a href="<%= route.path %>" class="button block <%= obj.page.title == route.title ? 'white bg-blue' : 'button-nav-dark' %> ">
         <%= route.title %>
       </a>
@@ -29,7 +29,7 @@
           <% _.forIn(route.routes, function(subroute) { %>
             <li>
               <a href="<%= subroute.path %>" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"><%= subroute.title %></span>
+                <span class="block ml1"><%= removePrefix(subroute.title) %></span>
               </a>
             </li>
           <% }) %>
@@ -39,94 +39,6 @@
   <% }) %>
 </ul>
 
-<!--
-<ul class="list-reset mb3">
-  {% for p in pages %}
-    <li>
-      <a href="{{ p.link }}" class="button block
-          {% if p.title == page.title %}
-            white bg-blue
-          {% else %}
-            button-nav-dark
-          {% endif %}
-        ">
-        {{ p.title }}
-      </a>
-      {% if p.title == page.title && page.title != 'Getting Started' %}
-        <ul class="list-reset mb0 py1 bg-darken-2">
-          {% for item in p.sections %}
-            <li>
-              <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">{{ item.title }}</span>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
-
-<h3 class="mb0">
-  <a href="/docs/guides" class="h6 caps button block {% if page.title == 'Guides' %}white bg-blue{% else %}button-nav-dark{% endif %}">
-    Guides
-  </a>
-</h3>
-<ul class="list-reset mb3">
-  {% for guide in guides %}
-    <li>
-      <a href="{{ guide.link }}"
-        class="button block {% if guide.title == page.title %} white bg-blue {% else %} button-nav-dark {% endif %}">
-        {{ guide.title }}
-      </a>
-      {% if guide.title == page.title %}
-        <ul class="list-reset mb0 py1 bg-darken-2">
-          {% for item in guide.sections %}
-            <li>
-              <a href="{{ item.link }}" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">{{ item.title }}</span>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
-
-
-<h3 class="h6 caps px2 py1 mb0">Reference</h3>
-<ul class="list-reset mb3">
-  {% for ref in references %}
-    <li>
-      <a href="{{ ref.link }}"
-        class="button block {% if ref.title == page.title || ref.title == 'Modules' && module %} white bg-blue {% else %} button-nav-dark {% endif %}">
-        {{ ref.title }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
-
-
-<h3 class="mb0">
-  <a href="/docs/modules"
-    class="h6 caps button block {% if page.title == 'Modules' || module %}white bg-blue{% else %}button-nav-dark{% endif %}">
-    Modules
-  </a>
-</h3>
-{% if module || page.title == 'Modules' %}
-  <ul class="list-reset mb3 py1 bg-darken-2">
-    {% for m in modules %}
-      <li>
-        <a href="/docs/modules/{{ m.name }}"
-          class="button block button-small px2 {% if module.name == m.name %}white bg-mid-gray{% else %}button-nav-dark{% endif %}">
-          <span class="block ml1">{{ m.title }}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
--->
 
 
 <a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">
