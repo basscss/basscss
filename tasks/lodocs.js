@@ -51,7 +51,6 @@ lodocs.init(data);
 
 
 module.exports = function() {
-  console.log('lodocs task');
   lodocs.compile();
 };
 
