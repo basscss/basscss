@@ -2,9 +2,9 @@
 <div class="flex flex-wrap flex-stretch mxn2 mb4">
   <% _.forIn(page.routes, function(guide, key) { %>
     <div class="flex flex-auto sm-col-6 mb3 px2">
-      <a href="<%= guide.path %>" class="block-link block full-width px2 py3 white bg-blue rounded">
+      <a href="<%= guide.path %>" class="block-link block full-width px2 py3 dark-gray bg-lighter-gray rounded">
         <h3 class="h2 mt0"><%= guide.title %></h3>
-        <p class="mt0"><%= guide.description %></p>
+        <p class="m0"><%= guide.description %></p>
       </a>
     </div>
   <% }) %>
