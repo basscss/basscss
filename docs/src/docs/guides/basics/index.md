@@ -1,6 +1,4 @@
 ---
-page: guides.basics
-isguide: true
 ---
 
 <p class="h3">
@@ -267,6 +265,5 @@ here are some tips and recommendations to keep your code simple and maintainable
 To learn more about building on top of Basscss, I recommend reading the
 [Design Principles](/docs/principles).
 
-{# {% include "partials/guides-cta.html" %} #}
 
 

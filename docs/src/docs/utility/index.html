@@ -9,7 +9,7 @@
 <% if (obj.page.sections) { %>
   <% page.sections.forEach(function(section) { %>
     <section id="<%= section.name %>" class="py2">
-      <h1><%= section.name %></h1>
+      <h1><%= capitalize(section.name) %></h1>
       <%= modules[section.module].content %>
     </section>
   <% }) %>

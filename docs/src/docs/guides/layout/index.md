@@ -1,6 +1,4 @@
 ---
-page: guides.layout
-isguide: true
 ---
 
 <p class="h3">
@@ -329,6 +327,4 @@ Note the container is placed inside the footer element to control max-width.
   Be sure to check out the other guides to learn more about using Basscss.
 </p>
 
-
-{# {% include 'partials/guides-cta.html' %} #}
 

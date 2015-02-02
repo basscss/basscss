@@ -10,19 +10,19 @@
 <section id="imports" class="py2">
   <h1>Imports</h1>
   <p>Create a source CSS file to import the Basscss modules.</p>
-<pre class="mb2">{% highlight 'css' %}
+<pre class="mb2">
 @import "basscss-base";
 @import "basscss-utilities";
-{% endhighlight %}</pre>
+</pre>
   <p>
     To import custom files within the same folder, use <code>./</code> to indicate the current folder.
     See <a href="https://github.com/reworkcss/rework-npm">Rework NPM</a> for more details on usage.
   </p>
-<pre class="mb2">{% highlight 'css' %}
+<pre class="mb2">
 @import "basscss-base";
 @import "basscss-utilities";
 @import "./buttons.css";
-{% endhighlight %}</pre>
+</pre>
 </section>
 
 <section id="variables" class="py2">
@@ -31,32 +31,32 @@
     Set CSS variables after the imports to alter Basscss’s default values.
   </p>
 
-<pre class="mb2">{% highlight 'css' %}
+<pre class="mb2">
 @import "basscss-base";
 @import "basscss-utilities";
 
 :root {
   --font-family: Georgia, serif;
 }
-{% endhighlight %}</pre>
+</pre>
 
   <p>To use variables as property values, follow this syntax:</p>
 
-<pre class="mb2">{% highlight 'css' %}
+<pre class="mb2">
 .button-red {
   color: white;
   background-color: var(--red);
 }
-{% endhighlight %}</pre>
+</pre>
 
   <p>To set an inline fallback value, place it after the variable name separated by a comma.</p>
 
-<pre class="mb2">{% highlight 'css' %}
+<pre class="mb2">
 .button-red {
   color: white;
   background-color: var(--red, #f00);
 }
-{% endhighlight %}</pre>
+</pre>
 
   <p>
     See <a href="http://github.com/reworkcss/rework-vars">Rework Vars</a> for more details on usage.
@@ -72,12 +72,11 @@
   </p>
 
 <pre class="mb2">
-{% highlight 'css' %}
 @import "basscss-base";
 @import "basscss-utilities";
 
 @custom-media --breakpoint-sm (min-width: 32em);
-{% endhighlight %}</pre>
+</pre>
 
 </section>
 
@@ -85,7 +84,7 @@
   <h1>Custom Builds</h1>
   <p>
     To learn more about creating custom builds of Basscss,
-    see <a href="/docs/custom-builds">Custom Builds</a>.
+    see <a href="/docs/guides/custom-builds">Custom Builds</a>.
   </p>
 </section>
 

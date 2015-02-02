@@ -1,6 +1,9 @@
 <head>
   <meta charset="utf-8">
-  <title><%= title %></title>
+  <title>
+    <%= title %>
+    <%= (obj.page.title && obj.page.title !== 'Home') ? ' | ' + page.title : '' %>
+  </title>
   <meta name="author" content="<%= author %>">
   <meta name="description" content="<%= description %>">
   <% if (obj.keywords) { %>

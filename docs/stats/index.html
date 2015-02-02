@@ -2,7 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Basscss</title>
+  <title>
+    Basscss
+     | Stats
+  </title>
   <meta name="author" content="Brent Jackson">
   <meta name="description" content="Low-level CSS toolkit">
   
@@ -124,7 +127,7 @@
   
     <li class="">
       <a href="/docs/principles" class="button block button-nav-dark ">
-        Principles
+        Design Principles
       </a>
       
       
@@ -420,70 +423,63 @@
 
 
         <div class="px2 py2">
-          {% extends 'layouts/docs.html' %}
-{% set page = references.stats %}
-
-{% block content %}
-
+          
 <section id="top-level" class="py2">
 <div class="flex flex-wrap bold caps">
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.sizeKB }}</h1>
+    <h1 class="h0 h0-responsive m0">18 KB</h1>
     <div class="h6">File Size</div>
   </div>
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.gzipSizeKB }}</h1>
+    <h1 class="h0 h0-responsive m0">3 KB</h1>
     <div class="h6">Gzipped</div>
   </div>
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.rules.length }}</h1>
+    <h1 class="h0 h0-responsive m0">275</h1>
     <div class="h6">Rules</div>
   </div>
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.selectors.length }}</h1>
+    <h1 class="h0 h0-responsive m0">330</h1>
     <div class="h6">Selectors</div>
   </div>
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.declarations.all.length }}</h1>
+    <h1 class="h0 h0-responsive m0">443</h1>
     <div class="h6">Declarations</div>
   </div>
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.aggregates.properties.length }}</h1>
+    <h1 class="h0 h0-responsive m0">76</h1>
     <div class="h6">Properties</div>
   </div>
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.aggregates.mediaQueries.length }}</h1>
+    <h1 class="h0 h0-responsive m0">3</h1>
     <div class="h6">Media Queries</div>
   </div>
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.aggregates.fontSize.unique }}</h1>
+    <h1 class="h0 h0-responsive m0">8</h1>
     <div class="h6">Unique Font Sizes</div>
   </div>
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.aggregates.float.unique }}</h1>
+    <h1 class="h0 h0-responsive m0">2</h1>
     <div class="h6">Unique Floats</div>
   </div>
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.aggregates.width.unique }}</h1>
+    <h1 class="h0 h0-responsive m0">13</h1>
     <div class="h6">Unique Widths</div>
   </div>
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.aggregates.height.unique }}</h1>
+    <h1 class="h0 h0-responsive m0">3</h1>
     <div class="h6">Unique Heights</div>
   </div>
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.aggregates.color.unique }}</h1>
+    <h1 class="h0 h0-responsive m0">10</h1>
     <div class="h6">Unique Colors</div>
   </div>
   <div class="col-6 md-col-4 mb3">
-    <h1 class="h0 h0-responsive m0">{{ stats.aggregates.backgroundColor.unique }}</h1>
+    <h1 class="h0 h0-responsive m0">15</h1>
     <div class="h6">Unique Background Colors</div>
   </div>
 </div>
 </section>
-
-
-{% endblock %}
 
 
           <!--

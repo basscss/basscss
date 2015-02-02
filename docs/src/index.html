@@ -1,7 +1,4 @@
 
-<!--% extends 'layouts/home.html' %>
--->
-
 <header class="px2 xbright-blue white bg-dark-gray bg-triangles">
   <div class="container sm-flex flex-center">
     <div class="flex-auto py4">
@@ -70,8 +67,6 @@
       </p>
     </div>
   </section>
-
-  <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
 
   <section id="base" class="sm-flex flex-center mxn2 py4">
     <div class="sm-col-5 px2">
@@ -150,10 +145,8 @@
     </div>
   </section>
 
-  <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
-
   <section id="showcase" class="py3">
-    {% include 'partials/showcase-widget.html' %}
+    <%= include('showcase-widget') %>
   </section>
 
   <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">

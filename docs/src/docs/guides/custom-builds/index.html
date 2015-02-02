@@ -1,17 +1,8 @@
-{% extends 'layouts/docs.html' %}
-{% set page = references.customBuilds %}
-
-{% block content %}
 
 <section class="py2">
   <p class="h3">
     Basscss is a collection of interoperable CSS modules
     and can be used in conjunction with many other frameworks, libraries, and stylesheets.
-    {#
-    While the source code is written in spec-based CSS,
-    it can also be incorporated into Sass projects through NPM or Bower,
-    or customized with the <a href="/docs/customize">Customize</a> web app.
-    #}
   </p>
 </section>
 
@@ -25,7 +16,7 @@
   <p>
     Rework is a Node-based preprocessor with a plugin architecture and syntax based on the CSS specification.
     Rework requires NPM, and Basscss uses this package management system for its modular architecture.
-    If you prefer using Bower, see the <a href="/docs/custom-builds/#sass-with-bower">Bower Section</a> below.
+    If you prefer using Bower, see the <a href="/docs/guides/custom-builds/#sass-with-bower">Bower Section</a> below.
   </p>
   <h2>Bassplate</h2>
   <p>
@@ -36,13 +27,13 @@
   <p>
     To get started, clone the repo, install dependencies, and run the default Gulp task.
   </p>
-<pre>{% highlight 'bash' %}
+<pre>
 git clone https://github.com/jxnblk/bassplate.git new-project
 cd new-project
 rm -rf .git
 npm install
 gulp
-{% endhighlight %}</pre>
+</pre>
   <p>
     This will start a server at <code>http://localhost:8000</code> and watch the <code>/src</code> folder for changes.
     Edit the files in <code>/src/css</code> to customize the compiled stylesheet.
@@ -69,19 +60,19 @@ gulp
     use the following syntax:
   </p>
 
-<pre>{% highlight 'css' %}
+<pre>
 @import 'basscss-base-typography';
 @import 'basscss-defaults';
-{% endhighlight %}</pre>
+</pre>
 
   <p>
     To import modules relative to the parent file,
     use this syntax:
   </p>
 
-<pre>{% highlight 'css' %}
+<pre>
 @import './custom-buttons';
-{% endhighlight %}</pre>
+</pre>
 
   <p>
     Import variables last.
@@ -89,23 +80,23 @@ gulp
     whatever is last in the source code is used.
   </p>
 
-<pre>{% highlight 'css' %}
+<pre>
 @import 'basscss-utility-layout';
 @import './variables';
-{% endhighlight %}</pre>
+</pre>
 
   <p>
     To use variables in declarations, follow this CSS syntax:
   </p>
 
-<pre>{% highlight 'css' %}
+<pre>
 .button-primary {
   background-color: var(--blue);
 }
-{% endhighlight %}</pre>
+</pre>
 
   <p>
-    For more, see the <a href="/docs/rework">Using Rework</a> page.
+    For more, see the <a href="/docs/guides/rework">Using Rework</a> page.
   </p>
 </section>
 
@@ -117,24 +108,24 @@ gulp
     with the default variables file first.
   </p>
 
-<pre>{% highlight 'scss' %}
+<pre>
 @import: 'basscss/scss/defaults';
 @import: 'basscss/scss/utility-layout';
-{% endhighlight %}</pre>
+</pre>
 
   <p>
     To override the default values,
     include your own variable definitions before Basscss.
   </p>
 
-<pre>{% highlight 'scss' %}
+<pre>
 // Custom variables
 @import: 'variables';
 
 // Basscss
 @import: 'basscss/scss/defaults';
 @import: 'basscss/scss/utility-layout';
-{% endhighlight %}</pre>
+</pre>
 
   <h2 id="sass-with-bower">Sass with Bower</h2>
   <p>
@@ -145,25 +136,25 @@ gulp
   <p>
     To get started, install the package:
   </p>
-<pre>{% highlight 'bash' %}
+<pre>
 bower install basscss
-{% endhighlight %}</pre>
+</pre>
   <p>
     To import modules without specifying the Bower folder,
     add <code>bower_components/basscss/scss</code> to the <code>includePaths</code> option.
   </p>
 
-<pre>{% highlight 'js' %}
+<pre>
 var options = {
   includePaths: ['bower_components/']
 }
-{% endhighlight %}</pre>
+</pre>
 
-<pre>{% highlight 'scss' %}
+<pre>
 @import "basscss/scss/defaults";
 @import "basscss/scss/base-reset";
 @import "basscss/scss/base-typography";
-{% endhighlight %}</pre>
+</pre>
 </section>
 
 <section id="web-app" class="py2 mb4">
@@ -175,6 +166,4 @@ var options = {
   <a href="/docs/customize" class="button button-blue-outline">Customize</a>
 </section>
 
-
-{% endblock %}
 

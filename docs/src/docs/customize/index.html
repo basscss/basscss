@@ -1,13 +1,8 @@
-{% extends 'layouts/docs.html' %}
-{% set page = references.customize %}
-
-{% block content %}
 
 <p class="h3">
   Create custom builds without touching the command line.
 </p>
 
-{% raw %}
 <div ng-app="app" ng-controller="AppCtrl">
   <div custom-css class="">
     <div class="py3">
@@ -66,17 +61,12 @@
     <p>
       This tool only scratches the surface of what’s possible with Basscss’s modular architecture.
       To learn more about custom builds from the command line, see
-      <a href="/docs/custom-builds">Custom Builds</a>.
+      <a href="/docs/guides/custom-builds">Custom Builds</a>.
     </p>
   </div>
 </div>
 
-
-{% endraw %}
-
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-sanitize.min.js"></script>
 <script src="app.js"></script>
-
-{% endblock %}
 

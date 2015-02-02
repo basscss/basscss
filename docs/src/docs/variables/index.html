@@ -1,17 +1,10 @@
-{% extends 'layouts/docs.html' %}
-{% set page = references.variables %}
-
-{% block content %}
 
 <p class="h3">
   Global default variables for all Basscss modules.
 </p>
 
-<pre>{% highlight 'css' %}
-:root {
-{% for v in defaults %}{% autoescape false %}
-  {{ v.prop }}: {{ v.value }};{% endautoescape %} {% endfor %}
+<pre>
+:root {<% defaults.forEach(function(v) { %>
+  <%= v.prop %>: <%= v.value %>;<% }) %>
 }
-{% endhighlight %}</pre>
-
-{% endblock %}
+</pre>

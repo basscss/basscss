@@ -2,7 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Basscss</title>
+  <title>
+    Basscss
+     | Demo
+  </title>
   <meta name="author" content="Brent Jackson">
   <meta name="description" content="Low-level CSS toolkit">
   
@@ -18,656 +21,235 @@
 
 <body>
 
-<div class="px2 ">
-  <div class="clearfix flex flex-stretch mxn2">
-    
-      <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
-          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto white bg-dark-gray">
-            
-<a href="/" class="inline-block px2 mt2">
-  <svg class="h1 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" fill="currentcolor">
-    <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
-  </svg>
-</a>
+  
 
-<a href="/" class="h4 caps mb3 button block">Basscss</a>
-
-<ul class="list-reset mb3">
-  
-    <li class="">
-      <a href="/docs/getting-started" class="button block button-nav-dark ">
-        Getting Started
-      </a>
-      
-      
-    </li>
-  
-    <li class="">
-      <a href="/docs/base" class="button block button-nav-dark ">
-        Base
-      </a>
-      
-      
-    </li>
-  
-    <li class="">
-      <a href="/docs/utility" class="button block button-nav-dark ">
-        Utility
-      </a>
-      
-      
-    </li>
-  
-    <li class="">
-      <a href="/docs/layout" class="button block button-nav-dark ">
-        Layout
-      </a>
-      
-      
-    </li>
-  
-    <li class="">
-      <a href="/docs/color" class="button block button-nav-dark ">
-        Color
-      </a>
-      
-      
-    </li>
-  
-    <li class="mt3 mb3">
-      <a href="/docs/guides" class="button block button-nav-dark ">
-        Guides
-      </a>
-      
-      
-        <ul class="list-reset mb0 py1">
-          
-            <li>
-              <a href="/docs/guides/basics" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Basics</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/layout" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Page Layout</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/ui" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">UI Elements</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/tips" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Tips & Tricks</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/custom-builds" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Custom Builds</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/guides/rework" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Using Rework</span>
-              </a>
-            </li>
-          
-        </ul>
-      
-    </li>
-  
-    <li class="">
-      <a href="/docs/principles" class="button block button-nav-dark ">
-        Principles
-      </a>
-      
-      
-    </li>
-  
-    <li class="">
-      <a href="/docs/showcase" class="button block button-nav-dark ">
-        Built with Basscss
-      </a>
-      
-      
-    </li>
-  
-    <li class="">
-      <a href="/docs/customize" class="button block button-nav-dark ">
-        Customize
-      </a>
-      
-      
-    </li>
-  
-    <li class="">
-      <a href="/docs/styles" class="button block button-nav-dark ">
-        Table of Styles
-      </a>
-      
-      
-    </li>
-  
-    <li class="">
-      <a href="/docs/stats" class="button block button-nav-dark ">
-        Stats
-      </a>
-      
-      
-    </li>
-  
-    <li class="">
-      <a href="/docs/variables" class="button block button-nav-dark ">
-        Variables
-      </a>
-      
-      
-    </li>
-  
-    <li class="mt3 mb3">
-      <a href="/docs/modules" class="button block button-nav-dark ">
-        Modules
-      </a>
-      
-      
-        <ul class="list-reset mb0 py1">
-          
-            <li>
-              <a href="/docs/modules/basscss-base-reset" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Base Reset</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-base-typography" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Base Typography</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-base-forms" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Base Forms</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-base-buttons" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Base Buttons</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-base-tables" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Base Tables</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-utility-layout" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Utility Layout</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-utility-typography" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Utility Typography</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-utility-white-space" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Utility White Space</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-utility-responsive-states" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Utility Responsive States</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-ui-utility-button-sizes" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Ui Utility Button Sizes</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-ui-utility-groups" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Ui Utility Groups</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-positions" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Positions</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-grid" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Grid</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-table-object" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Table Object</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-color-base" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Color Base</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-color-buttons" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Color Buttons</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-color-forms" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Color Forms</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-color-forms-dark" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Color Forms Dark</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-color-tables" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Color Tables</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-button-blue" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Button Blue</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-button-blue-outline" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Button Blue Outline</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-button-gray" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Button Gray</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-button-light-gray" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Button Light Gray</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-button-red" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Button Red</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-button-nav-light" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Button Nav Light</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-button-nav-dark" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Button Nav Dark</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-button-nav-tab" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Button Nav Tab</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-colors" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Colors</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-color-borders" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Color Borders</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/flex-object" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Flex Object</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-utility-headings" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Utility Headings</span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="/docs/modules/basscss-background-images" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1"> Background Images</span>
-              </a>
-            </li>
-          
-        </ul>
-      
-    </li>
-  
-</ul>
-
-
-
-<a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">
-  Github
-</a>
-
-
-          </div>
-      </div>
-    
-    <div class="sm-col sm-col-9 md-col-10 flex flex-column" style="min-height:100vh">
-      <div class="flex-auto full-width container-small">
-        <header class="px2 mt3">
-  <div class="flex flex-wrap flex-center py3 mb1 border-bottom">
-    <h1 class="h0 h0-responsive caps m0">Demo</h1>
+<header class="white bg-mid-gray bg-cover bg-center"
+  style="background-image: url(/docs/src/svg/hero.svg)">
+  <nav class="clearfix white">
+    <div class="sm-col">
+      <a href="/" class="button py2 button-nav-dark">Home</a>
+      <a href="/" class="button py2 button-nav-dark">Burgers</a>
+      <a href="/" class="button py2 button-nav-dark">Fries</a>
+    </div>
+    <div class="sm-col-right">
+      <a href="/" class="button py2 button-nav-dark">About</a>
+    </div>
+  </nav>
+  <div class="center px2 py4">
+    <h1 class="h1 h0-responsive caps mt4 mb0 regular">Hamburgers</h1>
+    <p class="h3">Artisinal ground chuck creations</p>
+    <a href="#" class="h3 button button-big mb4 button-blue">Pancake</a>
   </div>
 </header>
 
-<div class="px2">
-  <div class="avenir h5 bold mxn1 mb3">
-    <a href="/" class="button button-narrow">Home</a>
-    
-      
-      /
-      <a href="/docs" class="button button-narrow ">
-        Docs
-      </a>
-      
-      /
-      <a href="/docs/guides" class="button button-narrow ">
-        Guides
-      </a>
-      
-      /
-      <a href="/docs/guides/layout" class="button button-narrow ">
-        Page Layout
-      </a>
-      
-      /
-      <a href="/docs/guides/layout/demo" class="button button-narrow dark-gray">
-        Demo
-      </a>
-      
-    
+
+<section class="container px2 py3">
+  <div class="clearfix mxn2">
+    <div class="sm-col sm-col-4 px2">
+      <h2 class="h1 mb0">Bacon</h2>
+      <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+    </div>
+    <div class="sm-col sm-col-4 px2">
+      <h2 class="h1 mb0">Bratwurst</h2>
+      <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+    </div>
+    <div class="sm-col sm-col-4 px2">
+      <h2 class="h1 mb0">Andouille</h2>
+      <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+    </div>
   </div>
+</section>
+
+
+<section class="container px2 py3">
+  <h1 class="mt0">
+    <a href="#" class="dark-gray">
+      Blog
+    </a>
+  </h1>
+  <div class="clearfix mxn2">
+    <div class="sm-col sm-col-8 md-col-9 px2">
+      <div>
+        <h2 class="h3">
+          <a href="#" class="dark-gray">
+            Blog Post Title
+          </a>
+        </h2>
+        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+        <a href="#">Read more</a>
+      </div>
+      <div>
+        <h2 class="h3">
+          <a href="#" class="dark-gray">
+            Blog Post Title
+          </a>
+        </h2>
+        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+    <div class="sm-col sm-col-4 md-col-3 px2 sm-show">
+      <h3 class="h4">Categories</h3>
+      <ul class="list-reset">
+        <li><a href="#" class="">Bacon</a></li>
+        <li><a href="#" class="">Bratwurst</a></li>
+        <li><a href="#" class="">Andouille</a></li>
+        <li><a href="#" class="">Pork Loin</a></li>
+        <li><a href="#" class="">Corned Beef</a></li>
+        <li><a href="#" class="">Pastrami</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="container px2 py3">
+  <h1 class="mt0">
+    <a href="#" class="dark-gray">
+      Gallery
+    </a>
+  </h1>
+  <div class="clearfix mxn2">
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="sm-show md-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="md-show lg-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="sm-show md-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="md-show lg-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="sm-show md-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/docs/placeholder.svg" class="block" />
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="white bg-dark-gray">
+  <div class="px2 py3 container">
+    <div class="clearfix mxn2">
+      <div class="col col-6 md-col-3">
+        <ul class="list-reset">
+          <li>
+            <h3 class="h4 m0">
+              <a href="#" class="button block button-nav-dark">Home</a>
+            </h3>
+          </li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bacon</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bratwurst</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Andouille</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Pork Loin</a></li>
+        </ul>
+      </div>
+      <div class="col col-6 md-col-3">
+        <ul class="list-reset">
+          <li>
+            <h3 class="h4 m0">
+              <a href="#" class="button block button-nav-dark">Categories</a>
+            </h3>
+          </li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bacon</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bratwurst</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Andouille</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Pork Loin</a></li>
+        </ul>
+      </div>
+      <div class="col col-6 md-col-3">
+        <ul class="list-reset">
+          <li>
+            <h3 class="h4 m0">
+              <a href="#" class="button block button-nav-dark">Categories</a>
+            </h3>
+          </li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bacon</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bratwurst</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Andouille</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Pork Loin</a></li>
+        </ul>
+      </div>
+      <div class="col col-6 md-col-3">
+        <ul class="list-reset">
+          <li>
+            <h3 class="h4 m0">
+              <a href="#" class="button block button-nav-dark">About</a>
+            </h3>
+          </li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bacon</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Bratwurst</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Andouille</a></li>
+          <li><a href="#" class="h5 button block button-nav-dark">Pork Loin</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="h6 mb0">&copy; 2014 Hamburgers, LLC</p>
+  </div>
+</footer>
+
+
+<div class="flex flex-wrap flex-center h6 caps p2 border-top">
+  <a href="/" class="button button-narrow">Basscss</a>
+  / <a href="/docs" class="button button-narrow">Docs</a>
+  / <a href="/docs/guides/" class="button button-narrow">Guides</a>
+  / <a href="/docs/guides/layout" class="button button-narrow">Page Layout</a>
 </div>
 
 
 
-        <div class="px2 py2">
-          {% extends 'layouts/minimal.html' %}
-{% set page = {} %}
-{% set page.title = 'Layout Demo' %}
-
-{% block content %}
-
-  <header class="white bg-mid-gray bg-cover bg-center"
-    style="background-image: url(/docs/src/svg/hero.svg)">
-    <nav class="clearfix white">
-      <div class="sm-col">
-        <a href="/" class="button py2 button-nav-dark">Home</a>
-        <a href="/" class="button py2 button-nav-dark">Burgers</a>
-        <a href="/" class="button py2 button-nav-dark">Fries</a>
-      </div>
-      <div class="sm-col-right">
-        <a href="/" class="button py2 button-nav-dark">About</a>
-      </div>
-    </nav>
-    <div class="center px2 py4">
-      <h1 class="h1 h0-responsive caps mt4 mb0 regular">Hamburgers</h1>
-      <p class="h3">Artisinal ground chuck creations</p>
-      <a href="#" class="h3 button button-big mb4 button-blue">Pancake</a>
-    </div>
-  </header>
-
-
-  <section class="container px2 py3">
-    <div class="clearfix mxn2">
-      <div class="sm-col sm-col-4 px2">
-        <h2 class="h1 mb0">Bacon</h2>
-        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-      </div>
-      <div class="sm-col sm-col-4 px2">
-        <h2 class="h1 mb0">Bratwurst</h2>
-        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-      </div>
-      <div class="sm-col sm-col-4 px2">
-        <h2 class="h1 mb0">Andouille</h2>
-        <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container px2 py3">
-    <h1 class="mt0">
-      <a href="#" class="dark-gray">
-        Blog
-      </a>
-    </h1>
-    <div class="clearfix mxn2">
-      <div class="sm-col sm-col-8 md-col-9 px2">
-        <div>
-          <h2 class="h3">
-            <a href="#" class="dark-gray">
-              Blog Post Title
-            </a>
-          </h2>
-          <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-          <a href="#">Read more</a>
-        </div>
-        <div>
-          <h2 class="h3">
-            <a href="#" class="dark-gray">
-              Blog Post Title
-            </a>
-          </h2>
-          <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
-          <a href="#">Read more</a>
-        </div>
-      </div>
-      <div class="sm-col sm-col-4 md-col-3 px2 sm-show">
-        <h3 class="h4">Categories</h3>
-        <ul class="list-reset">
-          <li><a href="#" class="">Bacon</a></li>
-          <li><a href="#" class="">Bratwurst</a></li>
-          <li><a href="#" class="">Andouille</a></li>
-          <li><a href="#" class="">Pork Loin</a></li>
-          <li><a href="#" class="">Corned Beef</a></li>
-          <li><a href="#" class="">Pastrami</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container px2 py3">
-    <h1 class="mt0">
-      <a href="#" class="dark-gray">
-        Gallery
-      </a>
-    </h1>
-    <div class="clearfix mxn2">
-      <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
-        <a href="#" class="block">
-          <img src="/docs/placeholder.svg" class="block" />
-        </a>
-      </div>
-      <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
-        <a href="#" class="block">
-          <img src="/docs/placeholder.svg" class="block" />
-        </a>
-      </div>
-      <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
-        <a href="#" class="block">
-          <img src="/docs/placeholder.svg" class="block" />
-        </a>
-      </div>
-      <div class="sm-show md-hide clearfix"></div>
-      <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
-        <a href="#" class="block">
-          <img src="/docs/placeholder.svg" class="block" />
-        </a>
-      </div>
-      <div class="md-show lg-hide clearfix"></div>
-      <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
-        <a href="#" class="block">
-          <img src="/docs/placeholder.svg" class="block" />
-        </a>
-      </div>
-      <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
-        <a href="#" class="block">
-          <img src="/docs/placeholder.svg" class="block" />
-        </a>
-      </div>
-      <div class="sm-show md-hide clearfix"></div>
-      <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
-        <a href="#" class="block">
-          <img src="/docs/placeholder.svg" class="block" />
-        </a>
-      </div>
-      <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
-        <a href="#" class="block">
-          <img src="/docs/placeholder.svg" class="block" />
-        </a>
-      </div>
-      <div class="md-show lg-hide clearfix"></div>
-      <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
-        <a href="#" class="block">
-          <img src="/docs/placeholder.svg" class="block" />
-        </a>
-      </div>
-      <div class="sm-show md-hide clearfix"></div>
-      <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
-        <a href="#" class="block">
-          <img src="/docs/placeholder.svg" class="block" />
-        </a>
-      </div>
-      <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
-        <a href="#" class="block">
-          <img src="/docs/placeholder.svg" class="block" />
-        </a>
-      </div>
-      <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
-        <a href="#" class="block">
-          <img src="/docs/placeholder.svg" class="block" />
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  <footer class="white bg-dark-gray">
-    <div class="px2 py3 container">
-      <div class="clearfix mxn2">
-        <div class="col col-6 md-col-3">
-          <ul class="list-reset">
-            <li>
-              <h3 class="h4 m0">
-                <a href="#" class="button block button-nav-dark">Home</a>
-              </h3>
-            </li>
-            <li><a href="#" class="h5 button block button-nav-dark">Bacon</a></li>
-            <li><a href="#" class="h5 button block button-nav-dark">Bratwurst</a></li>
-            <li><a href="#" class="h5 button block button-nav-dark">Andouille</a></li>
-            <li><a href="#" class="h5 button block button-nav-dark">Pork Loin</a></li>
-          </ul>
-        </div>
-        <div class="col col-6 md-col-3">
-          <ul class="list-reset">
-            <li>
-              <h3 class="h4 m0">
-                <a href="#" class="button block button-nav-dark">Categories</a>
-              </h3>
-            </li>
-            <li><a href="#" class="h5 button block button-nav-dark">Bacon</a></li>
-            <li><a href="#" class="h5 button block button-nav-dark">Bratwurst</a></li>
-            <li><a href="#" class="h5 button block button-nav-dark">Andouille</a></li>
-            <li><a href="#" class="h5 button block button-nav-dark">Pork Loin</a></li>
-          </ul>
-        </div>
-        <div class="col col-6 md-col-3">
-          <ul class="list-reset">
-            <li>
-              <h3 class="h4 m0">
-                <a href="#" class="button block button-nav-dark">Categories</a>
-              </h3>
-            </li>
-            <li><a href="#" class="h5 button block button-nav-dark">Bacon</a></li>
-            <li><a href="#" class="h5 button block button-nav-dark">Bratwurst</a></li>
-            <li><a href="#" class="h5 button block button-nav-dark">Andouille</a></li>
-            <li><a href="#" class="h5 button block button-nav-dark">Pork Loin</a></li>
-          </ul>
-        </div>
-        <div class="col col-6 md-col-3">
-          <ul class="list-reset">
-            <li>
-              <h3 class="h4 m0">
-                <a href="#" class="button block button-nav-dark">About</a>
-              </h3>
-            </li>
-            <li><a href="#" class="h5 button block button-nav-dark">Bacon</a></li>
-            <li><a href="#" class="h5 button block button-nav-dark">Bratwurst</a></li>
-            <li><a href="#" class="h5 button block button-nav-dark">Andouille</a></li>
-            <li><a href="#" class="h5 button block button-nav-dark">Pork Loin</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="h6 mb0">&copy; 2014 Hamburgers, LLC</p>
-    </div>
-  </footer>
-
-
-  <div class="flex flex-wrap flex-center h6 caps p2 border-top">
-    <a href="/" class="button button-narrow">Basscss</a>
-    / <a href="/docs" class="button button-narrow">Docs</a>
-    / <a href="/docs/guides/" class="button button-narrow">Guides</a>
-    / <a href="/docs/guides/layout" class="button button-narrow">Page Layout</a>
-  </div>
-
-{% endblock %}
-
-          <!--
-          
-            <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
-            
-          
-          -->
-        </div>
-      </div>
-      <div>
-        <footer class="mt4 px2 border-top">
+  <footer class="mt4 px2 border-top">
   <div class="flex flex-wrap flex-center caps mxn2">
     <a href="/" class="h6 button py2 button-nav-light">Home</a>
     <a href="/docs" class="h6 button py2 button-nav-light">Docs</a>
@@ -706,10 +288,6 @@ s.parentNode.insertBefore(wf, s);
 </script>
 
 
-      </div>
-    </div>
-  </div>
-</div>
 
 </body>
 </html>

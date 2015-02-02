@@ -2,7 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Basscss</title>
+  <title>
+    Basscss
+     | Variables
+  </title>
   <meta name="author" content="Brent Jackson">
   <meta name="description" content="Low-level CSS toolkit">
   
@@ -124,7 +127,7 @@
   
     <li class="">
       <a href="/docs/principles" class="button block button-nav-dark ">
-        Principles
+        Design Principles
       </a>
       
       
@@ -420,23 +423,62 @@
 
 
         <div class="px2 py2">
-          {% extends 'layouts/docs.html' %}
-{% set page = references.variables %}
-
-{% block content %}
-
+          
 <p class="h3">
   Global default variables for all Basscss modules.
 </p>
 
-<pre>{% highlight 'css' %}
+<pre>
 :root {
-{% for v in defaults %}{% autoescape false %}
-  {{ v.prop }}: {{ v.value }};{% endautoescape %} {% endfor %}
+  --font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  --line-height: 1.5;
+  --heading-font-family: var(--font-family);
+  --heading-font-weight: bold;
+  --heading-line-height: 1.25;
+  --monospace-font-family: 'Source Code Pro', Consolas, monospace;
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --h4: 1rem;
+  --h5: .875rem;
+  --h6: .75rem;
+  --bold-font-weight: bold;
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+  --form-field-font-size: 1rem;
+  --form-field-height: 2.25rem;
+  --form-field-padding-y: .5rem;
+  --form-field-padding-x: .5rem;
+  --button-font-size: inherit;
+  --button-font-weight: bold;
+  --button-line-height: 1.125rem;
+  --button-padding-y: .5rem;
+  --button-padding-x: 1rem;
+  --table-header-font-weight: var(--bold-font-weight);
+  --table-cell-padding-x: var(--space-2);
+  --table-cell-padding-y: .25rem;
+  --container-width: 64em;
+  --blue: #0076df;
+  --red: #ff4919;
+  --green: #00df3f;
+  --yellow: #ffcf00;
+  --dark-gray: #333;
+  --mid-gray: #777;
+  --light-gray: #ccc;
+  --lighter-gray: #eee;
+  --darken-1: rgba(#000,.0625);
+  --darken-2: rgba(#000,.125);
+  --darken-3: rgba(#000,.25);
+  --darken-4: rgba(#000,.5);
+  --border-color: var(--light-gray);
+  --border-width: 1px;
+  --border-radius: 3px;
+  --button-nav-light-color: var(--blue, inherit);
+  --hover-background-color: var(--darken-1);
 }
-{% endhighlight %}</pre>
-
-{% endblock %}
+</pre>
 
           <!--
           

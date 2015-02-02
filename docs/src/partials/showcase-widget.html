@@ -1,18 +1,20 @@
 <div class="flex flex-center mb2">
   <h1 class="flex-auto m0">Built with Basscss</h1>
-  <a href="/docs/showcase" class="flex-none button button-nav-light">
+  <a href="/docs/showcase" class="flex-none button">
     View More
   </a>
 </div>
 <div class="sm-flex flex-wrap mxn2">
-  {% for site in showcase %}
-    {% if loop.index < 4 %}
+  <% var i = 0 %>
+  <% _.forIn(showcase, function(site, key) { %>
+    <% if (i < 3) { %>
       <div class="sm-col-4 px2 mb2">
-        <a href="{{ site.url }}" class="h3 block" title="View {{ site.url }}" target="_blank">
-          <img src="{{ asset_path }}assets/{{ site.image }}" class="border" alt="{{ site.title }}"/>
-          <div class="h3 bold dark-gray">{{ site.title }}</div>
+        <a href="<%= site.url %>" class="h3 block" title="View <%= site.url %>" target="_blank">
+          <img src="<%= asset_path %>assets/<%= site.image %>" class="border" alt="<%= site.title %>"/>
+          <div class="h3 bold dark-gray"><%= site.title %></div>
         </a>
       </div>
-    {% endif %}
-  {% endfor %}
+    <% } %>
+    <% i++ %>
+  <% }) %>
 </div>

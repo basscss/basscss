@@ -2,7 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Basscss</title>
+  <title>
+    Basscss
+     | Built with Basscss
+  </title>
   <meta name="author" content="Brent Jackson">
   <meta name="description" content="Low-level CSS toolkit">
   
@@ -124,7 +127,7 @@
   
     <li class="">
       <a href="/docs/principles" class="button block button-nav-dark ">
-        Principles
+        Design Principles
       </a>
       
       
@@ -420,11 +423,7 @@
 
 
         <div class="px2 py2">
-          {% extends 'layouts/docs.html' %}
-{% set page = references.showcase %}
-
-{% block content %}
-
+          
 <div class="flex flex-center mb2">
   <p class="flex-auto h3 m0">
     A showcase of sites built with Basscss
@@ -433,15 +432,71 @@
 </div>
 
 <section class="sm-flex flex-wrap mxn2 py3">
-  {% for site in showcase %}
+  
     <div class="sm-col-6 md-col-4 px2 mb4">
-      <a href="{{ site.url }}" class="h3 block" title="View {{ site.url }}" target="_blank">
-        <img src="{{ asset_path }}assets/{{ site.image }}" class="border" alt="{{ site.title }}"/>
-        <div class="h3 bold dark-gray">{{ site.title }}</div>
-        <div class="h5 dark-gray">{{ site.description }}</div>
+      <a href="http://singlesclub.fm/" class="h3 block" title="View http://singlesclub.fm/" target="_blank">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/basscss/assets/singlesclub-640.jpg" class="border" alt="Singles Club"/>
+        <div class="h3 bold dark-gray">Singles Club</div>
+        <div class="h5 dark-gray">Part record club. Part music journal.</div>
       </a>
     </div>
-  {% endfor %}
+    
+    <div class="sm-col-6 md-col-4 px2 mb4">
+      <a href="http://colepeters.com/" class="h3 block" title="View http://colepeters.com/" target="_blank">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/basscss/assets/colepeters.png" class="border" alt="Cole Peters"/>
+        <div class="h3 bold dark-gray">Cole Peters</div>
+        <div class="h5 dark-gray">Designer, writer, sound artist</div>
+      </a>
+    </div>
+    
+    <div class="sm-col-6 md-col-4 px2 mb4">
+      <a href="http://blog.assembly.com/" class="h3 block" title="View http://blog.assembly.com/" target="_blank">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/basscss/assets/assembly_blog-640.jpg" class="border" alt="Assembly Blog"/>
+        <div class="h3 bold dark-gray">Assembly Blog</div>
+        <div class="h5 dark-gray"></div>
+      </a>
+    </div>
+    
+    <div class="sm-col-6 md-col-4 px2 mb4">
+      <a href="http://monodraw.helftone.com/" class="h3 block" title="View http://monodraw.helftone.com/" target="_blank">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/basscss/assets/monodraw-640.jpg" class="border" alt="Monodraw for Mac"/>
+        <div class="h3 bold dark-gray">Monodraw for Mac</div>
+        <div class="h5 dark-gray">Powerful ASCII art editor designed for the Mac.</div>
+      </a>
+    </div>
+    
+    <div class="sm-col-6 md-col-4 px2 mb4">
+      <a href="http://pixyll.com/" class="h3 block" title="View http://pixyll.com/" target="_blank">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/basscss/assets/pixyll-640.jpg" class="border" alt="Pixyll"/>
+        <div class="h3 bold dark-gray">Pixyll</div>
+        <div class="h5 dark-gray">A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.</div>
+      </a>
+    </div>
+    
+    <div class="sm-col-6 md-col-4 px2 mb4">
+      <a href="http://www.nurturingability.com.au/" class="h3 block" title="View http://www.nurturingability.com.au/" target="_blank">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/basscss/assets/nurturingability-640.jpg" class="border" alt="Nurturing Ability"/>
+        <div class="h3 bold dark-gray">Nurturing Ability</div>
+        <div class="h5 dark-gray">Helping our Most Helpless One Family at a Time</div>
+      </a>
+    </div>
+    
+    <div class="sm-col-6 md-col-4 px2 mb4">
+      <a href="https://linknest.cc/" class="h3 block" title="View https://linknest.cc/" target="_blank">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/basscss/assets/linknest-640.jpg" class="border" alt="Linknest"/>
+        <div class="h3 bold dark-gray">Linknest</div>
+        <div class="h5 dark-gray">Bookmarks made simple</div>
+      </a>
+    </div>
+    
+    <div class="sm-col-6 md-col-4 px2 mb4">
+      <a href="http://cssstats.com/" class="h3 block" title="View http://cssstats.com/" target="_blank">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/basscss/assets/cssstats-640.jpg" class="border" alt="CSS Stats"/>
+        <div class="h3 bold dark-gray">CSS Stats</div>
+        <div class="h5 dark-gray">Potentially interesting stats on stylesheets</div>
+      </a>
+    </div>
+    
 </section>
 
 <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
@@ -455,7 +510,6 @@
   </p>
 </section>
 
-{% endblock %}
 
           <!--
           

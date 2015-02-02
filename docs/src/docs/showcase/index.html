@@ -1,7 +1,3 @@
-{% extends 'layouts/docs.html' %}
-{% set page = references.showcase %}
-
-{% block content %}
 
 <div class="flex flex-center mb2">
   <p class="flex-auto h3 m0">
@@ -11,15 +7,15 @@
 </div>
 
 <section class="sm-flex flex-wrap mxn2 py3">
-  {% for site in showcase %}
+  <% _.forIn(showcase, function(site) { %>
     <div class="sm-col-6 md-col-4 px2 mb4">
-      <a href="{{ site.url }}" class="h3 block" title="View {{ site.url }}" target="_blank">
-        <img src="{{ asset_path }}assets/{{ site.image }}" class="border" alt="{{ site.title }}"/>
-        <div class="h3 bold dark-gray">{{ site.title }}</div>
-        <div class="h5 dark-gray">{{ site.description }}</div>
+      <a href="<%= site.url %>" class="h3 block" title="View <%= site.url %>" target="_blank">
+        <img src="<%= asset_path %>assets/<%= site.image %>" class="border" alt="<%= site.title %>"/>
+        <div class="h3 bold dark-gray"><%= site.title %></div>
+        <div class="h5 dark-gray"><%= site.description %></div>
       </a>
     </div>
-  {% endfor %}
+    <% }) %>
 </section>
 
 <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
@@ -33,4 +29,3 @@
   </p>
 </section>
 
-{% endblock %}

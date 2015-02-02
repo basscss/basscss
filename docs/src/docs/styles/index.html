@@ -1,19 +1,15 @@
-{% extends 'layouts/docs.html' %}
-{% set page = references.styles %}
-
-{% block content %}
 
 <div class="bold flex flex-center py2">
   <div class="flex-auto py2">
-    <div class="h0 h0-responsive">{{ stats.rules.length }}</div>
+    <div class="h0 h0-responsive"><%= stats.rules.length %></div>
     <div class="h6 caps">Styles</div>
   </div>
   <div class="flex-auto py2">
-    <div class="h0 h0-responsive bold">{{ stats.sizeKB }}</div>
+    <div class="h0 h0-responsive bold"><%= stats.sizeKB %></div>
     <div class="h6 caps">minified</div>
   </div>
   <div class="flex-auto py2">
-    <div class="h0 h0-responsive">{{ stats.gzipSizeKB }}</div>
+    <div class="h0 h0-responsive"><%= stats.gzipSizeKB %></div>
     <div class="h6 caps">gzipped</div>
   </div>
 </div>
@@ -24,20 +20,18 @@
   </thead>
   <tbody>
     <!-- need to account for media queries with cssstats -->
-    {% for rule in stats.rules %}
+    <% stats.rules.forEach(function(rule) { %>
       <tr>
         <td class="sm-col-3">
-          {{ rule.selector }}
+          <%= rule.selector %>
         </td>
         <td class="sm-col-9">
-          {% for dec in rule.declarations %}
-            {{ dec.prop }}: {{ dec.value }};
-          {% endfor %}
+          <% rule.declarations.forEach(function(dec) { %>
+            <%= dec.prop %>: <%= dec.value %>;
+            <% }) %>
         </td>
       </tr>
-    {% endfor %}
+      <% }) %>
   </tbody>
 </table>
-
-{% endblock %}
 
