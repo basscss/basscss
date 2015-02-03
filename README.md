@@ -50,7 +50,7 @@ bower install basscss
 
 CDN:
 ```
-<link src="http://d2v52k3cl9vedd.cloudfront.net/basscss/4.1.2/basscss.min.css" rel="stylesheet">
+<link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/4.1.2/basscss.min.css" rel="stylesheet">
 ```
 
 ---
