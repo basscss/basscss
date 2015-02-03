@@ -148,15 +148,15 @@ module.exports = {
       showcase: {
         title: 'Built with Basscss',
       },
-      customize: {},
       styles: { title: 'Table of Styles' },
       stats: { },
       variables: { },
+      customize: {},
     }
-  }
-  //404: {
-  //  path: '/',
-  //  filename: '404.html',
-  //  layout: './layouts/base.html'
-  //},
+  },
+  404: {
+    path: '/',
+    filename: '404.html',
+    layout: './layouts/base.html'
+  },
 };

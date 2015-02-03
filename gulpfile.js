@@ -31,7 +31,7 @@ gulp.task('release', ['bump', 's3', 'sassify', 'zip']);
 gulp.task('serve', require('./tasks/serve'));
 
 // NEW Compile lodash templates
-gulp.task('lodocs', require('./tasks/lodocs'));
+gulp.task('autobass', require('./tasks/autobass'));
 
 // Create favicons
 gulp.task('favicon', require('./tasks/favicon'));
@@ -57,8 +57,8 @@ gulp.task('watch-css', ['basswork', 'customizer-data'], function() {
   gulp.watch(['./src/**/*.css', './docs/src/css/**/*.css'], ['basswork', 'customizer-data']);
 });
 
-gulp.task('watch-templates', ['lodocs'], function() {
-  gulp.watch(['./docs/src/docs/**/*', './docs/src/partials/**/*', './docs/src/layouts/**/*'], ['lodocs']);
+gulp.task('watch-templates', ['autobass'], function() {
+  gulp.watch(['./docs/src/**/*', './docs/src/partials/**/*', './docs/src/layouts/**/*'], ['autobass']);
 });
 
 gulp.task('watch-js', ['customizer-js'], function() {

@@ -2,8 +2,7 @@
 var fs = require('fs');
 var path = require('path');
 
-//var _ = require('lodash');
-var Lodocs = require('../../lodocs');
+var Autobass = require('autobass');
 
 
 // Data
@@ -47,11 +46,11 @@ data.partials.pagination = fs.readFileSync('./docs/src/partials/pagination.html'
 
 data.helpers = require('../docs/src/helpers');
 
-var lodocs = new Lodocs();
-lodocs.init(data);
+var autobass = new Autobass();
+autobass.init(data);
 
 
 module.exports = function() {
-  lodocs.compile();
+  autobass.compile();
 };
 
