@@ -46,9 +46,9 @@ data.partials.pagination = fs.readFileSync('./docs/src/partials/pagination.html'
 
 data.helpers = require('../docs/src/helpers');
 
+
 var autobass = new Autobass();
 autobass.init(data);
-
 
 module.exports = function() {
   autobass.compile();

@@ -1,10 +1,12 @@
 
 var gulp = require('gulp');
-var imagemin = require('gulp-imagemin');
-var imageresize = require('gulp-image-resize');
-var rename = require('gulp-rename');
 
 module.exports = function() {
+
+  var imagemin = require('gulp-imagemin');
+  var imageresize = require('gulp-image-resize');
+  var rename = require('gulp-rename');
+
   gulp.src('./docs/src/images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('./docs/images'))
