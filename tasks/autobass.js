@@ -4,7 +4,6 @@ var path = require('path');
 
 var Autobass = require('autobass');
 
-
 // Data
 var data = require('../package.json');
 
