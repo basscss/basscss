@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "angular-local-storage": "^0.1.5",
+    "autobass": "^1.0.3",
     "basscss-highlight": "0.0.1",
     "brfs": "^1.2.0",
     "cheerio": "^0.17.0",
@@ -47,7 +48,7 @@
     "cssstats": "^1.0.1",
     "custom-css": "0.0.7",
     "gulp": "^3.8.8",
-    "gulp-basswork": "^0.0.11",
+    "gulp-basswork": "^0.1.0",
     "gulp-browserify": "^0.5.0",
     "gulp-bump": "^0.1.11",
     "gulp-gzip": "0.0.8",
@@ -65,8 +66,7 @@
     "postcss": "^3.0.7",
     "rework": "^1.0.1",
     "rework-npm": "^1.0.0",
-    "svg-to-png": "^0.6.0",
-    "autobass": "^1.0.3"
+    "svg-to-png": "^0.6.0"
   },
   "basscss": {
     "modules": [
