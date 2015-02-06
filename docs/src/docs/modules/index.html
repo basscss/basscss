@@ -1,0 +1,27 @@
+
+<p class="h3">
+  Basscss is a collection of CSS modules that can be used independently.<br class="sm-show">
+  This is a list of all currently available modules.
+  Note: not all modules are included in the standard Basscss package.
+</p>
+
+<section class="py2">
+  <div class="list-reset md-flex flex-wrap mxn2">
+    <% _.forIn(routes.docs.routes.modules.routes, function(module) { %>
+      <div class="md-col-6 mb2">
+        <a href="<%= module.path %>" class="button block button-nav-light">
+          <span class="h3"><%= removePrefix(module.title) %></span>
+          <span class="h6">v<%= module.version %></span>
+          <% if (module.basscss && module.basscss.optional) { %>
+            <span class="h6 caps red">Optional</span>
+          <% } %>
+          <div class="h4 regular mt1 dark-gray">
+            <%= module.description %>
+          </div>
+        </a>
+      </div>
+    <% }) %>
+  </div>
+</section>
+
+

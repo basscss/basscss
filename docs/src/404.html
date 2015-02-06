@@ -1,0 +1,34 @@
+
+<div class="center p4 blue bg-dark-gray">
+  <a href="/">
+    <svg class="h00 h00-responsive icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" fill="currentcolor">
+      <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
+    </svg>
+  </a>
+  <h1 class="h00 h00-responsive caps m0 py3">404</h1>
+  <p class="h3 bold caps m0">Page Not Found</p>
+</div>
+
+<div class="container px2 py4">
+  <ul class="sm-flex flex-wrap list-reset mb3 mxn2">
+    <% _.forIn(routes.docs.routes, function(route, key) { %>
+    <li class="<%= (!route.routes && key != 'getting-started') ? 'sm-col-6 md-col-3 py2' : 'full-width py1 mt2 mb2' %>">
+        <a href="<%= route.path %>" class="h3 button block button-nav-light <%= route.routes ? 'h5 caps' : '' %>">
+          <%= route.title %>
+        </a>
+        <% if (route.routes) { %>
+          <ul class="sm-flex flex-wrap list-reset mb0 py1">
+            <% _.forIn(route.routes, function(subroute) { %>
+              <li class="sm-col-6 md-col-3 py1">
+                <a href="<%= subroute.path %>" class="h3 button button-small px2 block button-nav-light">
+                  <%= removePrefix(subroute.title) %>
+                </a>
+              </li>
+            <% }) %>
+          </ul>
+        <% } %>
+      </li>
+    <% }) %>
+  </ul>
+</div>
+

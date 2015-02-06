@@ -1,0 +1,15 @@
+
+<p class="h3">
+  Base element styles control native HTML elements such as headings, paragraphs, buttons, and forms in a systematic and opinionated way.
+  These styles include typographical considerations and utilities derived from base elements, such as typefaces, the type scale, forms, and buttons.
+</p>
+
+<% if (obj.page.sections) { %>
+  <% page.sections.forEach(function(section) { %>
+    <section id="<%= section.name %>" class="py2">
+      <h1><%= capitalize(section.name) %></h1>
+      <%= modules[section.module].content %>
+    </section>
+  <% }) %>
+<% }  %>
+

@@ -1,9 +1,6 @@
 
 var gulp = require('gulp');
 
-// Custom Rework wrapper
-var basswork = require('gulp-basswork');
-
 gulp.task('default', ['basswork']);
 
 // Compile source modules to production CSS
@@ -30,14 +27,8 @@ gulp.task('release', ['bump', 's3', 'sassify', 'zip']);
 // Run webserver
 gulp.task('serve', require('./tasks/serve'));
 
-// Compile Swig templates
-gulp.task('swig', require('./tasks/swig'));
-
-// Compile CSS for docs site
-gulp.task('site-basswork', require('./tasks/site-basswork'));
-
-// Autogenerate docs for modules
-gulp.task('module-docs', require('./tasks/module-docs'));
+// Compile templates
+gulp.task('autobass', require('./tasks/autobass'));
 
 // Create favicons
 gulp.task('favicon', require('./tasks/favicon'));
@@ -59,16 +50,12 @@ gulp.task('customizer-js', require('./tasks/customizer-js'));
 gulp.task('dev', ['watch-templates', 'watch-css', 'watch-js', 'serve']);
 
 // Watch for changes
-gulp.task('watch-css', ['basswork', 'site-basswork', 'customizer-data'], function() {
-  gulp.watch(['./src/**/*.css', './docs/src/css/**/*.css'], ['basswork', 'site-basswork', 'customizer-data']);
+gulp.task('watch-css', ['basswork', 'customizer-data'], function() {
+  gulp.watch(['./src/**/*.css', './docs/src/css/**/*.css'], ['basswork', 'customizer-data']);
 });
 
-gulp.task('watch-templates', ['module-docs', 'swig'], function() {
-  gulp.watch([
-      './docs/src/templates/**/*',
-      '!./docs/src/templates/docs/modules/**/*',
-      './docs/src/model.js'
-    ], ['swig']);
+gulp.task('watch-templates', ['autobass'], function() {
+  gulp.watch(['./docs/src/**/*'], ['autobass']);
 });
 
 gulp.task('watch-js', ['customizer-js'], function() {

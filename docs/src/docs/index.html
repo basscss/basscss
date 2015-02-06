@@ -1,0 +1,42 @@
+<%
+  extend('./layouts/base.html');
+%>
+
+<div class="container">
+
+  <%= include('page-header') %>
+
+  <div class="px2">
+
+    <p class="h3">
+      Basscss is organized according to four high-level categories:
+      <br class="md-show">
+      base elements, immutable utilities, layout modules, and color styles.
+    </p>
+
+    <ul class="sm-flex flex-wrap list-reset mb3 mxn2">
+      <% _.forIn(routes.docs.routes, function(route, key) { %>
+      <li class="<%= (!route.routes && key != 'getting-started') ? 'sm-col-6 md-col-3 py2' : 'full-width py1 mt2 mb2' %>">
+          <a href="<%= route.path %>" class="h3 button block button-nav-light <%= route.routes ? 'h5 caps' : '' %>">
+            <%= route.title %>
+          </a>
+          <% if (route.routes) { %>
+            <ul class="sm-flex flex-wrap list-reset mb0 py1">
+              <% _.forIn(route.routes, function(subroute) { %>
+                <li class="sm-col-6 md-col-3 py1">
+                  <a href="<%= subroute.path %>" class="h3 button button-small px2 block button-nav-light">
+                    <%= removePrefix(subroute.title) %>
+                  </a>
+                </li>
+              <% }) %>
+            </ul>
+          <% } %>
+        </li>
+      <% }) %>
+    </ul>
+
+    <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
+
+  </div>
+</div>
+

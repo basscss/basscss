@@ -1,0 +1,20 @@
+
+<p class="h3">
+  The word <i>color</i> is used loosely here to describe
+  the surface-level aspects of a design, including
+  colors, backgrounds, borders, shadows and other properties
+  that are decorative and highly likely to change over time.
+  Basscss includes a suite of color utilities as a starting point.
+  Use these as a guide for creating your own styles.
+</p>
+
+<% if (obj.page.sections) { %>
+  <% page.sections.forEach(function(section) { %>
+    <section id="<%= section.name %>" class="py2">
+      <h1><%= capitalize(section.name) %></h1>
+      <%= modules[section.module].content %>
+    </section>
+  <% }) %>
+<% }  %>
+
+

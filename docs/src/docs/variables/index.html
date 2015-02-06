@@ -1,0 +1,10 @@
+
+<p class="h3">
+  Global default variables for all Basscss modules.
+</p>
+
+<pre>
+:root {<% defaults.forEach(function(v) { %>
+  <%= v.prop %>: <%= v.value %>;<% }) %>
+}
+</pre>

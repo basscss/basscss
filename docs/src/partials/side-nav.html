@@ -1,0 +1,47 @@
+
+<a href="/" class="inline-block px2 mt2">
+  <svg class="h1 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" fill="currentcolor">
+    <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
+  </svg>
+</a>
+
+<a href="/" class="h4 caps mb3 button block">Basscss</a>
+
+<ul class="list-reset mb3">
+  <% _.forIn(routes.docs.routes, function(route, key) { %>
+    <li class="<%= route.routes ? 'mt3 mb3' : '' %>">
+      <a href="<%= route.path %>" class="button block <%= obj.page.title == route.title ? 'white bg-blue' : 'button-nav-dark' %> ">
+        <%= route.title %>
+      </a>
+      <% if (obj.page && obj.page.title == route.title) { %>
+        <ul class="list-reset mb0 bg-darken-2">
+          <% _.forIn(route.sections, function(section) { %>
+            <li>
+              <a href="<%= route.path + '#' + section.name %>" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"><%= capitalize(section.name) %></span>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+      <% } %>
+      <% if (route.routes) { %>
+        <ul class="list-reset mb0 py1">
+          <% _.forIn(route.routes, function(subroute) { %>
+            <li>
+              <a href="<%= subroute.path %>" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"><%= removePrefix(subroute.title) %></span>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+      <% } %>
+    </li>
+  <% }) %>
+</ul>
+
+
+
+<a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray xbutton-nav-dark">
+  Github
+</a>
+

@@ -1,0 +1,17 @@
+
+<p class="h3">
+  Utilities are single-purpose styles that provide the backbone for layout.
+  Once these are set, they should be considered immutable and never change or be extended.
+  Each utility is designed to do one thing well,
+  while making its usage simple and obvious with short, humanized naming conventions.
+</p>
+
+<% if (obj.page.sections) { %>
+  <% page.sections.forEach(function(section) { %>
+    <section id="<%= section.name %>" class="py2">
+      <h1><%= capitalize(section.name) %></h1>
+      <%= modules[section.module].content %>
+    </section>
+  <% }) %>
+<% }  %>
+
