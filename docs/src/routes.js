@@ -34,17 +34,20 @@ module.exports = {
       layout: {
         sections: [
           { name: 'grid', module: 'basscss-grid' }, 
-          { name: 'table-object', module: 'basscss-table-object' }, 
+          //{ name: 'table-object', module: 'basscss-table-object' }, 
           { name: 'flex-object', module: 'flex-object' }, 
         ]
       },
       color: {
         sections: [
+          { name: 'base', module: 'basscss-color-base' }, 
           { name: 'colors', module: 'basscss-colors' }, 
           { name: 'borders', module: 'basscss-color-borders' }, 
           { name: 'forms', module: 'basscss-color-forms' }, 
           { name: 'forms-dark', module: 'basscss-color-forms-dark' }, 
-          { name: 'buttons', module: 'basscss-color-buttons' }, 
+          { name: 'button-outline', module: 'basscss-button-outline' }, 
+          { name: 'button-transparent', module: 'basscss-button-transparent' }, 
+          //{ name: 'buttons', module: 'basscss-color-buttons' }, 
           { name: 'tables', module: 'basscss-color-tables' }, 
         ]
       },

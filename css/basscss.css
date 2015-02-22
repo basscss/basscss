@@ -1097,7 +1097,7 @@ hr {
 .button:focus {
   outline: none;
   border-color: rgba(0, 0, 0, .125);
-  box-shadow: 0 0 1px 2px rgba(0, 0, 0, .25);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, .25);
 }
 
 .button:active,
@@ -1387,8 +1387,8 @@ input[type=range] {
           transition-duration: .1s;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
+  -webkit-transition-property: box-shadow;
+          transition-property: box-shadow;
 }
 
 .button-transparent:before {
@@ -1416,18 +1416,19 @@ input[type=range] {
 }
 
 .button-transparent:hover:before {
-  opacity: .125;
+  opacity: .0625;
+  opacity: .09375;
 }
 
 .button-transparent:focus {
   outline: none;
-  border: 1px solid currentcolor;
-  box-shadow: 0 0 3px 1px;
+  border-color: transparent;
+  box-shadow: 0 0 3px;
 }
 
-.button-transparent:active,
-.button-transparent.is-active {
-  box-shadow: inset 0 1px 5px 0, 0 0 1px;
+.button-transparent:active:before,
+.button-transparent.is-active:before {
+  opacity: .0625;
 }
 
 .button-transparent:disabled,

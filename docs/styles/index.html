@@ -300,6 +300,18 @@
             </li>
           
             <li>
+              <a href="/docs/modules/basscss-button-outline" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Button Outline</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-button-transparent" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Button Transparent</span>
+              </a>
+            </li>
+          
+            <li>
               <a href="/docs/modules/basscss-button-blue" class="button button-small px2 block button-nav-dark">
                 <span class="block ml1"> Button Blue</span>
               </a>
@@ -432,11 +444,11 @@
           
 <div class="bold flex flex-center py2">
   <div class="flex-auto py2">
-    <div class="h0 h0-responsive">327</div>
+    <div class="h0 h0-responsive">336</div>
     <div class="h6 caps">Styles</div>
   </div>
   <div class="flex-auto py2">
-    <div class="h0 h0-responsive bold">22 KB</div>
+    <div class="h0 h0-responsive bold">23 KB</div>
     <div class="h6 caps">minified</div>
   </div>
   <div class="flex-auto py2">
@@ -3051,7 +3063,7 @@ code
             
             border-color: rgba(0, 0, 0, .125);
             
-            box-shadow: 0 0 1px 2px rgba(0, 0, 0, .25);
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, .25);
             
         </td>
       </tr>
@@ -3358,6 +3370,157 @@ code
       
       <tr>
         <td class="sm-col-3">
+          input[type=range]
+        </td>
+        <td class="sm-col-9">
+          
+            vertical-align: middle;
+            
+            background-color: transparent;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .range-light
+        </td>
+        <td class="sm-col-9">
+          
+            color: inherit;
+            
+            -webkit-appearance: none;
+            
+            padding-top: .5rem;
+            
+            padding-bottom: .5rem;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .range-light::-webkit-slider-thumb
+        </td>
+        <td class="sm-col-9">
+          
+            -webkit-appearance: none;
+            
+            width: .5rem;
+            
+            height: 1.25rem;
+            
+            border-radius: 3px;
+            
+            background-color: currentcolor;
+            
+            cursor: pointer;
+            
+            margin-top: -0.5rem;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .range-light::-moz-range-thumb
+        </td>
+        <td class="sm-col-9">
+          
+            width: .5rem;
+            
+            height: 1.25rem;
+            
+            border-radius: 3px;
+            
+            border-color: transparent;
+            
+            border-width: 0;
+            
+            background-color: currentcolor;
+            
+            cursor: pointer;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .range-light::-webkit-slider-runnable-track
+        </td>
+        <td class="sm-col-9">
+          
+            height: 0.25rem;
+            
+            cursor: pointer;
+            
+            border-radius: 3px;
+            
+            background-color: rgba(0, 0, 0, .25);
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .range-light::-moz-range-track
+        </td>
+        <td class="sm-col-9">
+          
+            height: 0.25rem;
+            
+            cursor: pointer;
+            
+            border-radius: 3px;
+            
+            background-color: rgba(0, 0, 0, .25);
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .range-light:focus
+        </td>
+        <td class="sm-col-9">
+          
+            outline: none;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .range-light:focus::-webkit-slider-thumb
+        </td>
+        <td class="sm-col-9">
+          
+            outline: none;
+            
+            border: 0;
+            
+            box-shadow: 0 0 1px 2px currentcolor;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .range-light:focus::-moz-range-thumb
+        </td>
+        <td class="sm-col-9">
+          
+            outline: none;
+            
+            border: 0;
+            
+            box-shadow: 0 0 1px 2px currentcolor;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
           .table-light th,
 .table-light td
         </td>
@@ -3548,9 +3711,9 @@ code
             
             transition-timing-function: ease-out;
             
-            -webkit-transition-property: box-shadow, background-color;
+            -webkit-transition-property: box-shadow;
             
-            transition-property: box-shadow, background-color;
+            transition-property: box-shadow;
             
         </td>
       </tr>
@@ -3615,7 +3778,9 @@ code
         </td>
         <td class="sm-col-9">
           
-            opacity: .125;
+            opacity: .0625;
+            
+            opacity: .09375;
             
         </td>
       </tr>
@@ -3628,21 +3793,21 @@ code
           
             outline: none;
             
-            border: 1px solid currentcolor;
+            border-color: transparent;
             
-            box-shadow: 0 0 3px 1px;
+            box-shadow: 0 0 3px;
             
         </td>
       </tr>
       
       <tr>
         <td class="sm-col-3">
-          .button-transparent:active,
-.button-transparent.is-active
+          .button-transparent:active:before,
+.button-transparent.is-active:before
         </td>
         <td class="sm-col-9">
           
-            box-shadow: inset 0 1px 5px 0, 0 0 1px;
+            opacity: .0625;
             
         </td>
       </tr>

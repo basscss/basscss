@@ -77,6 +77,12 @@
         <ul class="list-reset mb0 bg-darken-2">
           
             <li>
+              <a href="/docs/color#base" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">Base</span>
+              </a>
+            </li>
+          
+            <li>
               <a href="/docs/color#colors" class="button button-small px2 block button-nav-dark">
                 <span class="block ml1">Colors</span>
               </a>
@@ -101,8 +107,14 @@
             </li>
           
             <li>
-              <a href="/docs/color#buttons" class="button button-small px2 block button-nav-dark">
-                <span class="block ml1">Buttons</span>
+              <a href="/docs/color#button-outline" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">Button Outline</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/color#button-transparent" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1">Button Transparent</span>
               </a>
             </li>
           
@@ -336,6 +348,18 @@
             </li>
           
             <li>
+              <a href="/docs/modules/basscss-button-outline" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Button Outline</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="/docs/modules/basscss-button-transparent" class="button button-small px2 block button-nav-dark">
+                <span class="block ml1"> Button Transparent</span>
+              </a>
+            </li>
+          
+            <li>
               <a href="/docs/modules/basscss-button-blue" class="button button-small px2 block button-nav-dark">
                 <span class="block ml1"> Button Blue</span>
               </a>
@@ -475,137 +499,71 @@
   Use these as a guide for creating your own styles.
 </p>
 
-<div class="p4 border border-red">
-  <h1 class="red">Button Test</h1>
-  <button>Button</button>
-  <button class="button">Button</button>
-  <button class="button black bg-aqua">Button</button>
-  <button class="button bg-navy">Button</button>
-  <button class="button bg-teal">Button</button>
-  <button class="button bg-green">Button</button>
-  <button class="button bg-olive">Button</button>
-  <button class="button bg-lime">Button</button>
-  <button class="button black bg-yellow">Button</button>
-  <button class="button bg-orange">Button</button>
-  <button class="button bg-red">Button</button>
-  <button class="button bg-fuchsia">Button</button>
-  <button class="button bg-purple">Button</button>
-  <button class="button bg-maroon">Button</button>
-  <button class="button black bg-darken-1">Button</button>
-  <button class="button black bg-darken-2">Button</button>
-  <button class="button black bg-darken-3">Button</button>
-  <button class="button black bg-darken-4">Button</button>
-  <hr>
-  <button class="button button-red">Button</button>
-  <button class="button button-blue-outline">Button</button>
-  <a href="#" class="button">Button</a>
-  <a href="#" class="button bg-red">Button</a>
-  <a href="#" class="button bg-teal">Button</a>
-  <a href="#" class="button button-nav-light">Button</a>
-  <div class="p2 bg-black">
-    <a href="#" class="button button-nav-dark">Button</a>
+
+  
+    <section id="base" class="py2">
+      <h1>Base</h1>
+      
+
+<p>Sets color styles for the body tag, links, pre, code, hr tags, and the <code>.button</code> utility.</p>
+<h2 id="buttons">Buttons</h2>
+<p>Default buttons have a blue background. Use color utilities to alter the appearance.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <button class="button mb1">Button</button>
+<button class="button mb1 bg-black">Button</button>
+<button class="button mb1 bg-gray">Button</button>
+<button class="button mb1 black bg-silver">Button</button>
+<button class="button mb1 black bg-aqua">Button</button>
+<button class="button mb1 bg-navy">Button</button>
+<button class="button mb1 bg-teal">Button</button>
+<button class="button mb1 bg-green">Button</button>
+<button class="button mb1 bg-olive">Button</button>
+<button class="button mb1 bg-lime">Button</button>
+<button class="button mb1 black bg-yellow">Button</button>
+<button class="button mb1 bg-orange">Button</button>
+<button class="button mb1 bg-red">Button</button>
+<button class="button mb1 bg-fuchsia">Button</button>
+<button class="button mb1 bg-purple">Button</button>
+<button class="button mb1 bg-maroon">Button</button>
+<button class="button mb1 black bg-darken-1">Button</button>
+<button class="button mb1 black bg-darken-2">Button</button>
+<button class="button mb1 black bg-darken-3">Button</button>
+<button class="button mb1 bg-darken-4">Button</button>
   </div>
-  <hr>
-  <button class="button-outline">Button</button>
-  <button class="button-outline aqua">Button</button>
-  <button class="button-outline blue">Button</button>
-  <button class="button-outline navy">Button</button>
-  <button class="button-outline teal">Button</button>
-  <button class="button-outline green">Button</button>
-  <button class="button-outline olive">Button</button>
-  <button class="button-outline lime">Button</button>
-  <button class="button-outline yellow">Button</button>
-  <button class="button-outline orange">Button</button>
-  <button class="button-outline red">Button</button>
-  <button class="button-outline fuchsia">Button</button>
-  <button class="button-outline purple">Button</button>
-  <button class="button-outline maroon">Button</button>
-  <a href="#!" class="button button-outline">Button</a>
-  <a href="#!" class="button button-outline aqua">Button</a>
-  <a href="#!" class="button button-outline blue">Button</a>
-  <a href="#!" class="button button-outline navy">Button</a>
-  <a href="#!" class="button button-outline teal">Button</a>
-  <a href="#!" class="button button-outline green">Button</a>
-  <a href="#!" class="button button-outline olive">Button</a>
-  <a href="#!" class="button button-outline lime">Button</a>
-  <a href="#!" class="button button-outline yellow">Button</a>
-  <a href="#!" class="button button-outline orange">Button</a>
-  <a href="#!" class="button button-outline red">Button</a>
-  <a href="#!" class="button button-outline fuchsia">Button</a>
-  <a href="#!" class="button button-outline purple">Button</a>
-  <a href="#!" class="button button-outline maroon">Button</a>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-black&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-gray&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 black bg-silver&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 black bg-aqua&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-navy&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-teal&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-green&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-olive&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-lime&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 black bg-yellow&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-orange&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-red&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-fuchsia&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-purple&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-maroon&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 black bg-darken-1&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 black bg-darken-2&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 black bg-darken-3&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button mb1 bg-darken-4&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
 </div>
-
-<div class="p4 border border-red">
-  <button class="button-transparent">Button</button>
-  <button class="button-transparent blue">Button</button>
-  <button class="button-transparent green">Button</button>
-  <button class="button-transparent red">Button</button>
-  <button class="button-transparent purple">Button</button>
-  <div class="m2 p2 bg-black white">
-    <button class="button-transparent">Button</button>
-    <button class="button-transparent yellow">Button</button>
-  </div>
-</div>
-
-<div class="p2 border border-red">
-  <form>
-    <input type="range" class="full-width range-light">
-    <input type="range" class="full-width blue range-light">
-  </form>
-</div>
-
-<div class="p4 border border-red">
-  <h1 class="red">Testing colors</h1>
-  <div class="white flex flex-wrap mxn2">
-    <div class="p2 m2 bg-black">black</div>
-    <div class="p2 m2 bg-gray">gray</div>
-    <div class="p2 m2 bg-silver">silver</div>
-    <div class="p2 m2 bg-lighter-gray">!!! lighter-gray</div>
-    <div class="p2 m2 bg-aqua">aqua</div>
-    <div class="p2 m2 bg-blue">blue</div>
-    <div class="p2 m2 bg-navy">navy</div>
-    <div class="p2 m2 bg-teal">teal</div>
-    <div class="p2 m2 bg-green">green</div>
-    <div class="p2 m2 bg-olive">olive</div>
-    <div class="p2 m2 bg-lime">lime</div>
-    <div class="p2 m2 bg-yellow">yellow</div>
-    <div class="p2 m2 bg-orange">orange</div>
-    <div class="p2 m2 bg-red">red</div>
-    <div class="p2 m2 bg-fuchsia">fuchsia</div>
-    <div class="p2 m2 bg-purple">purple</div>
-    <div class="p2 m2 bg-maroon">maroon</div>
-    <div class="p2 m2 bg-darken-1">darken-1</div>
-    <div class="p2 m2 bg-darken-2">darken-2</div>
-    <div class="p2 m2 bg-darken-3">darken-3</div>
-    <div class="p2 m2 bg-darken-4">darken-4</div>
-  </div>
-  <div class="flex flex-wrap mxn2">
-    <div class="p2 m2 black border border-black">black</div>
-    <div class="p2 m2 gray border border-gray">gray</div>
-    <div class="p2 m2 silver border border-silver">silver</div>
-    <div class="p2 m2 lighter-gray border border-lighter-gray">!!! lighter-gray</div>
-    <div class="p2 m2 aqua border border-aqua">aqua</div>
-    <div class="p2 m2 blue border border-blue">blue</div>
-    <div class="p2 m2 navy border border-navy">navy</div>
-    <div class="p2 m2 teal border border-teal">teal</div>
-    <div class="p2 m2 green border border-green">green</div>
-    <div class="p2 m2 olive border border-olive">olive</div>
-    <div class="p2 m2 lime border border-lime">lime</div>
-    <div class="p2 m2 yellow border border-yellow">yellow</div>
-    <div class="p2 m2 orange border border-orange">orange</div>
-    <div class="p2 m2 red border border-red">red</div>
-    <div class="p2 m2 fuchsia border border-fuchsia">fuchsia</div>
-    <div class="p2 m2 purple border border-purple">purple</div>
-    <div class="p2 m2 maroon border border-maroon">maroon</div>
-    <div class="p2 m2 border border-darken-1">darken-1</div>
-    <div class="p2 m2 border border-darken-2">darken-2</div>
-    <div class="p2 m2 border border-darken-3">darken-3</div>
-    <div class="p2 m2 border border-darken-4">darken-4</div>
-  </div>
-</div>
-
-
+<h2 id="default-variables">Default Variables</h2>
+<p>Uses colors from <a href="//clrs.cc">mrmrs/colors</a> in addition to these defaults:</p>
+<pre>:root {
+  --darken-1: rgba(#000,.0625);
+  --darken-2: rgba(#000,.125);
+  --darken-3: rgba(#000,.25);
+  --darken-4: rgba(#000,.5);
+  --border-color: var(--darken-2);
+  --border-radius: 3px;
+  --border-width: 1px;
+}</pre>
+    </section>
   
     <section id="colors" class="py2">
       <h1>Colors</h1>
@@ -662,7 +620,7 @@
 <div class="center p1 bg-white">.bg-white</div>
 <div class="center p1 bg-aqua">.bg-aqua</div>
 <div class="center p1 bg-blue">.bg-blue</div>
-<div class="center p1 bg-navy">.bg-navy</div>
+<div class="center p1 white bg-navy">.bg-navy</div>
 <div class="center p1 bg-teal">.bg-teal</div>
 <div class="center p1 bg-green">.bg-green</div>
 <div class="center p1 bg-olive">.bg-olive</div>
@@ -672,7 +630,7 @@
 <div class="center p1 bg-red">.bg-red</div>
 <div class="center p1 bg-fuchsia">.bg-fuchsia</div>
 <div class="center p1 bg-purple">.bg-purple</div>
-<div class="center p1 bg-maroon">.bg-maroon</div>
+<div class="center p1 white bg-maroon">.bg-maroon</div>
 <div class="center p1 bg-darken-1">.bg-darken-1</div>
 <div class="center p1 bg-darken-2">.bg-darken-2</div>
 <div class="center p1 bg-darken-3">.bg-darken-3</div>
@@ -684,7 +642,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-white&quot;</span>&gt;</span>.bg-white<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-aqua&quot;</span>&gt;</span>.bg-aqua<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-blue&quot;</span>&gt;</span>.bg-blue<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-navy&quot;</span>&gt;</span>.bg-navy<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 white bg-navy&quot;</span>&gt;</span>.bg-navy<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-teal&quot;</span>&gt;</span>.bg-teal<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-green&quot;</span>&gt;</span>.bg-green<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-olive&quot;</span>&gt;</span>.bg-olive<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -694,7 +652,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-red&quot;</span>&gt;</span>.bg-red<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-fuchsia&quot;</span>&gt;</span>.bg-fuchsia<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-purple&quot;</span>&gt;</span>.bg-purple<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-maroon&quot;</span>&gt;</span>.bg-maroon<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 white bg-maroon&quot;</span>&gt;</span>.bg-maroon<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-darken-1&quot;</span>&gt;</span>.bg-darken-1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-darken-2&quot;</span>&gt;</span>.bg-darken-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-darken-3&quot;</span>&gt;</span>.bg-darken-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -970,79 +928,64 @@ These add focus states that are consistent with the other form elements.</p>
 
     </section>
   
-    <section id="buttons" class="py2">
-      <h1>Buttons</h1>
+    <section id="button-outline" class="py2">
+      <h1>Button Outline</h1>
       
 
+<p>The <code>button-outline</code> style inherits color from its parent.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="blue">
+  <button class="button-outline">Button</button>
+  <a href="#!" class="button button-outline">Link Button</a>
+  <input type="button" class="button button-outline" value="Input Button">
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-outline&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-outline&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-outline&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Use utility styles to change the color.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <button class="button-outline green">Button</button>
+<button class="button-outline red">Button</button>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-outline green&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-outline red&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+</div>
 
-<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>Includes the following basic button modules:
-<code>.button-blue</code>,
-<code>.button-blue-outline</code>,
-<code>.button-light-gray</code>,
-<code>.button-red</code>,
-<code>.button-nav-light</code>, and
-<code>.button-nav-dark</code>.</p>
-<p>Use these styles on button elements, or with the <code>basscss-base-buttons</code> module for links and input buttons.</p>
+    </section>
+  
+    <section id="button-transparent" class="py2">
+      <h1>Button Transparent</h1>
+      
+
+<p>The <code>button-transparent</code> style inherits color from its parent.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="mb1">
-  <button>Button</button>
-  <a href="#!" class="button">Link Button</a>
-  <input type="button" class="button" value="Input Button">
-</div>
-<div class="mb1">
-  <button class="button-blue mb1">Button Blue</button>
-  <button class="button-blue-outline mb1">Button Blue Outline</button>
-  <button class="button-light-gray mb1">Button Light Gray</button>
-  <button class="button-red mb1">Button Red</button>
+    <div class="blue">
+  <button class="button-transparent">Button</button>
+  <a href="#!" class="button button-transparent">Link Button</a>
+  <input type="button" class="button button-transparent" value="Input Button">
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue mb1&quot;</span>&gt;</span>Button Blue<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue-outline mb1&quot;</span>&gt;</span>Button Blue Outline<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-light-gray mb1&quot;</span>&gt;</span>Button Light Gray<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-red mb1&quot;</span>&gt;</span>Button Red<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-transparent&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<p>Button styles can be used for navigation. The <code>.button-nav-light</code> style adds a subtle hover effect for links on a light background.</p>
+<p>Use utility styles to change the color.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="mxn1">
-  <a href="#!" class="button button-narrow button-nav-light">Burgers</a>
-  <a href="#!" class="button button-narrow button-nav-light">Fries</a>
-  <a href="#!" class="button button-narrow button-nav-light">Shakes</a>
-  <a href="#!" class="button button-narrow button-nav-light">Onion Rings</a>
-</div>
+    <button class="button-transparent green">Button</button>
+<button class="button-transparent red">Button</button>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mxn1&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-light&quot;</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-light&quot;</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-light&quot;</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-light&quot;</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<p>For dark backgrounds, use the <code>.button-nav-dark</code> style.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="bg-dark-gray">
-  <a href="#!" class="button button-narrow button-nav-dark">Burgers</a>
-  <a href="#!" class="button button-narrow button-nav-dark">Fries</a>
-  <a href="#!" class="button button-narrow button-nav-dark">Shakes</a>
-  <a href="#!" class="button button-narrow button-nav-dark">Onion Rings</a>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bg-dark-gray&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-dark&quot;</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-dark&quot;</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-dark&quot;</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-narrow button-nav-dark&quot;</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-transparent green&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-transparent red&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
 </div>
 
     </section>
