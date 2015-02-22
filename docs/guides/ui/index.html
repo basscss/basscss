@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="/css/basscss.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.0.0/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -25,7 +25,7 @@
   <div class="clearfix flex flex-stretch mxn2">
     
       <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
-          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto white bg-dark-gray">
+          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto white bg-slate">
             
 <a href="/" class="inline-block px2 mt2">
   <svg class="h1 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" fill="currentcolor">
@@ -450,9 +450,8 @@
 </p>
 
 <p>Note: this guide makes use of optional modules that are not included in the core Basscss package:
-<a href="/docs/modules/basscss-ui-utility-button-sizes">UI Utility Button Sizes</a>,
-<a href="/docs/modules/basscss-ui-utility-groups">UI Utility Groups</a>, and
-<a href="/docs/modules/basscss-button-nav-tab">Button Nav Tab</a>.</p>
+<a href="/docs/modules/basscss-ui-utility-button-sizes">UI Utility Button Sizes</a> and
+<a href="/docs/modules/basscss-ui-utility-groups">UI Utility Groups</a>.</p>
 <h1 id="button-sizes">Button Sizes</h1>
 <p>Button font sizes can be adjusted with font size utilities.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
@@ -557,37 +556,28 @@ labels fit within the viewport.</p>
   <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-transparent"</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<p>Use the <code>.button-nav-tab</code> color style to create tabbed navigation.
-This only works horizontally, so ensure your navigation fits within narrow viewports.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="clearfix border-bottom">
+<!--
+Use the `.button-nav-tab` color style to create tabbed navigation.
+This only works horizontally, so ensure your navigation fits within narrow viewports.
+
+```html
+<div class="clearfix border-bottom">
   <a href="#!" class="left button button-nav-tab is-active">Burgers</a>
   <a href="#!" class="left button button-nav-tab">Fries</a>
   <a href="#!" class="left button button-nav-tab">Shakes</a>
 </div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix border-bottom"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button button-nav-tab is-active"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button button-nav-tab"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left button button-nav-tab"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<p>Use the flex object to justify tabbed navigation.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="flex center">
+```
+
+Use the flex object to justify tabbed navigation.
+
+```html
+<div class="flex center">
   <a href="#!" class="flex-auto button button-narrow button-nav-tab is-active">Burgers</a>
   <a href="#!" class="flex-auto button button-narrow button-nav-tab">Fries</a>
   <a href="#!" class="flex-auto button button-narrow button-nav-tab">Shakes</a>
 </div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex center"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto button button-narrow button-nav-tab is-active"</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto button button-narrow button-nav-tab"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto button button-narrow button-nav-tab"</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
+```
+-->
 <p>Standard color styles can be applied to create a variety of navigation styles.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
@@ -738,11 +728,11 @@ with numbers on devices with wider viewports.</p>
     <svg class="icon" data-icon="chevron-right"></svg>
   </a>
   <div class="overflow-hidden sm-show center">
-    <a href="#!" class="button button-narrow button-transparent is-active">1</a>
-    <a href="#!" class="button button-narrow button-transparent">2</a>
-    <a href="#!" class="button button-narrow button-transparent">3</a>
-    <a href="#!" class="button button-narrow button-transparent">4</a>
-    <a href="#!" class="button button-narrow button-transparent">5</a>
+    <a href="#!" class="button bg-gray">1</a>
+    <a href="#!" class="button button-transparent">2</a>
+    <a href="#!" class="button button-transparent">3</a>
+    <a href="#!" class="button button-transparent">4</a>
+    <a href="#!" class="button button-transparent">5</a>
   </div>
 </div>
   </div>
@@ -756,11 +746,11 @@ with numbers on devices with wider viewports.</p>
     <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon"</span> <span class="hljs-attribute">data-icon</span>=<span class="hljs-value">"chevron-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden sm-show center"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-transparent is-active"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-transparent"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-transparent"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-transparent"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-narrow button-transparent"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button bg-gray"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-transparent"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-transparent"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-transparent"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-transparent"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
@@ -932,7 +922,7 @@ Be sure dropdowns don’t expand beyond the viewport when used near edges or at 
     Burger &#9662;
   </button>
   <div data-details class="fixed top-0 right-0 bottom-0 left-0"></div>
-  <div data-details class="absolute left-0 mt1 nowrap bg-blue rounded animation-fadein">
+  <div data-details class="absolute left-0 mt1 nowrap white bg-blue rounded animation-fadein">
     <a href="#!" class="button block button-transparent">Rare</a>
     <a href="#!" class="button block button-transparent">Medium Rare</a>
     <a href="#!" class="button block button-transparent">Medium</a>
@@ -945,7 +935,7 @@ Be sure dropdowns don’t expand beyond the viewport when used near edges or at 
     Burger &amp;#9662;
   <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">data-details</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fixed top-0 right-0 bottom-0 left-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">data-details</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"absolute left-0 mt1 nowrap bg-blue rounded animation-fadein"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">data-details</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"absolute left-0 mt1 nowrap white bg-blue rounded animation-fadein"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-transparent"</span>&gt;</span>Rare<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-transparent"</span>&gt;</span>Medium Rare<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-transparent"</span>&gt;</span>Medium<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
@@ -1184,7 +1174,7 @@ navigations can also be created using responsive utilities.</p>
         <span class="md-hide">Menu &#9662;</span>
         <span class="md-show">More &#9662;</span>
       </a>
-      <div data-details class="absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap bg-mid-gray rounded-bottom animation-fadein">
+      <div data-details class="absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap black bg-gray rounded-bottom animation-fadein">
         <ul class="h5 list-reset py1 mb0">
           <li class="md-hide"><a href="#!" class="button block button-transparent">Hot Dogs</a></li>
           <li class="md-hide"><a href="#!" class="button block button-transparent">Fries</a></li>
@@ -1223,7 +1213,7 @@ navigations can also be created using responsive utilities.</p>
         <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-hide"</span>&gt;</span>Menu &amp;#9662;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-show"</span>&gt;</span>More &amp;#9662;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">data-details</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap bg-mid-gray rounded-bottom animation-fadein"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">data-details</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap black bg-gray rounded-bottom animation-fadein"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h5 list-reset py1 mb0"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-hide"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-transparent"</span>&gt;</span>Hot Dogs<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-hide"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#!"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-transparent"</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>

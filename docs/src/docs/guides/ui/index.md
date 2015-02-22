@@ -9,9 +9,8 @@
 </p>
 
 Note: this guide makes use of optional modules that are not included in the core Basscss package:
-<a href="/docs/modules/basscss-ui-utility-button-sizes">UI Utility Button Sizes</a>,
-<a href="/docs/modules/basscss-ui-utility-groups">UI Utility Groups</a>, and
-<a href="/docs/modules/basscss-button-nav-tab">Button Nav Tab</a>.
+<a href="/docs/modules/basscss-ui-utility-button-sizes">UI Utility Button Sizes</a> and
+<a href="/docs/modules/basscss-ui-utility-groups">UI Utility Groups</a>.
 
 
 # Button Sizes
@@ -84,7 +83,7 @@ To stack navigation elements, use the `.block` utility.
   <a href="#!" class="button block button-transparent">Onion Rings</a>
 </div>
 ```
-
+<!--
 Use the `.button-nav-tab` color style to create tabbed navigation.
 This only works horizontally, so ensure your navigation fits within narrow viewports.
 
@@ -105,6 +104,7 @@ Use the flex object to justify tabbed navigation.
   <a href="#!" class="flex-auto button button-narrow button-nav-tab">Shakes</a>
 </div>
 ```
+-->
 
 Standard color styles can be applied to create a variety of navigation styles.
 
@@ -211,11 +211,11 @@ with numbers on devices with wider viewports.
     <svg class="icon" data-icon="chevron-right"></svg>
   </a>
   <div class="overflow-hidden sm-show center">
-    <a href="#!" class="button button-narrow button-transparent is-active">1</a>
-    <a href="#!" class="button button-narrow button-transparent">2</a>
-    <a href="#!" class="button button-narrow button-transparent">3</a>
-    <a href="#!" class="button button-narrow button-transparent">4</a>
-    <a href="#!" class="button button-narrow button-transparent">5</a>
+    <a href="#!" class="button bg-gray">1</a>
+    <a href="#!" class="button button-transparent">2</a>
+    <a href="#!" class="button button-transparent">3</a>
+    <a href="#!" class="button button-transparent">4</a>
+    <a href="#!" class="button button-transparent">5</a>
   </div>
 </div>
 ```
@@ -342,7 +342,7 @@ Be sure dropdowns don’t expand beyond the viewport when used near edges or at 
     Burger &#9662;
   </button>
   <div data-details class="fixed top-0 right-0 bottom-0 left-0"></div>
-  <div data-details class="absolute left-0 mt1 nowrap bg-blue rounded animation-fadein">
+  <div data-details class="absolute left-0 mt1 nowrap white bg-blue rounded animation-fadein">
     <a href="#!" class="button block button-transparent">Rare</a>
     <a href="#!" class="button block button-transparent">Medium Rare</a>
     <a href="#!" class="button block button-transparent">Medium</a>
@@ -495,7 +495,7 @@ navigations can also be created using responsive utilities.
         <span class="md-hide">Menu &#9662;</span>
         <span class="md-show">More &#9662;</span>
       </a>
-      <div data-details class="absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap bg-mid-gray rounded-bottom animation-fadein">
+      <div data-details class="absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap black bg-gray rounded-bottom animation-fadein">
         <ul class="h5 list-reset py1 mb0">
           <li class="md-hide"><a href="#!" class="button block button-transparent">Hot Dogs</a></li>
           <li class="md-hide"><a href="#!" class="button block button-transparent">Fries</a></li>

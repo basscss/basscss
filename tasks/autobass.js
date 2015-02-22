@@ -13,8 +13,8 @@ data.dest = path.join(__dirname, '..');
 
 data.layout = './layouts/docs.html';
 data.baseurl = '//basscss.com';
-//data.stylesheet = 'http://d2v52k3cl9vedd.cloudfront.net/bassdock/0.0.3/bassdock.min.css';
-data.stylesheet = '/css/basscss.css';
+data.stylesheet = 'http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.0.0/bassdock.min.css';
+//data.stylesheet = '/css/basscss.css';
 data.asset_path = 'http://d2v52k3cl9vedd.cloudfront.net/basscss/';
 
 data.routes = require('../docs/src/routes');

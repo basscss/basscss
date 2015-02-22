@@ -95,11 +95,11 @@ For example, when using a grid system.
 
 ## Box Model Simulation
 
-<div class="center p1 blue border-blue">
+<div class="center p1 blue border border-blue">
   <p class="mb0">Margin</p>
-  <div class="m1 py1 px2 border-blue">
+  <div class="m1 py1 px2 border border-blue">
     <p>Padding</p>
-    <div class="p2 border-blue">Content</div>
+    <div class="p2 border border-blue">Content</div>
   </div>
 </div>
 

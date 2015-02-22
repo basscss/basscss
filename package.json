@@ -1,6 +1,6 @@
 {
   "name": "basscss",
-  "version": "4.2.4",
+  "version": "5.0.0-beta1",
   "description": "Low-level CSS toolkit",
   "style": "src/basscss.css",
   "dependencies": {
@@ -26,7 +26,7 @@
     "basscss-color-forms": "0.0.2",
     "basscss-color-forms-dark": "0.0.2",
     "basscss-color-tables": "^0.1.0",
-    "basscss-colors": "^1.0.2",
+    "basscss-colors": "^1.0.3",
     "basscss-defaults": "^1.0.0",
     "basscss-grid": "0.0.14",
     "basscss-input-range": "^1.0.2",
