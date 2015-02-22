@@ -432,11 +432,11 @@
           
 <div class="bold flex flex-center py2">
   <div class="flex-auto py2">
-    <div class="h0 h0-responsive">339</div>
+    <div class="h0 h0-responsive">327</div>
     <div class="h6 caps">Styles</div>
   </div>
   <div class="flex-auto py2">
-    <div class="h0 h0-responsive bold">23 KB</div>
+    <div class="h0 h0-responsive bold">22 KB</div>
     <div class="h6 caps">minified</div>
   </div>
   <div class="flex-auto py2">
@@ -3385,6 +3385,282 @@ code
       
       <tr>
         <td class="sm-col-3">
+          .button-outline
+        </td>
+        <td class="sm-col-9">
+          
+            position: relative;
+            
+            z-index: 2;
+            
+            color: inherit;
+            
+            background-color: transparent;
+            
+            border-radius: 3px;
+            
+            border: 1px solid currentcolor;
+            
+            -webkit-transition-duration: .1s;
+            
+            transition-duration: .1s;
+            
+            -webkit-transition-timing-function: ease-out;
+            
+            transition-timing-function: ease-out;
+            
+            -webkit-transition-property: box-shadow, background-color;
+            
+            transition-property: box-shadow, background-color;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-outline:before
+        </td>
+        <td class="sm-col-9">
+          
+            content: '';
+            
+            width: 100%;
+            
+            height: 100%;
+            
+            display: block;
+            
+            position: absolute;
+            
+            z-index: -1;
+            
+            top: -1px;
+            
+            left: -1px;
+            
+            border: 1px solid transparent;
+            
+            background-color: currentcolor;
+            
+            border-radius: 3px;
+            
+            -webkit-transition-duration: .1s;
+            
+            transition-duration: .1s;
+            
+            -webkit-transition-timing-function: ease-out;
+            
+            transition-timing-function: ease-out;
+            
+            -webkit-transition-property: opacity;
+            
+            transition-property: opacity;
+            
+            opacity: 0;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-outline:hover
+        </td>
+        <td class="sm-col-9">
+          
+            box-shadow: none;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-outline:hover:before
+        </td>
+        <td class="sm-col-9">
+          
+            opacity: .125;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-outline:focus
+        </td>
+        <td class="sm-col-9">
+          
+            outline: none;
+            
+            border: 1px solid currentcolor;
+            
+            box-shadow: 0 0 3px 1px;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-outline:active,
+.button-outline.is-active
+        </td>
+        <td class="sm-col-9">
+          
+            box-shadow: inset 0 1px 5px 0, 0 0 1px;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-outline:disabled,
+.button-outline.is-disabled
+        </td>
+        <td class="sm-col-9">
+          
+            opacity: .5;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-transparent
+        </td>
+        <td class="sm-col-9">
+          
+            position: relative;
+            
+            z-index: 2;
+            
+            color: inherit;
+            
+            background-color: transparent;
+            
+            border-radius: 0;
+            
+            border: 1px solid transparent;
+            
+            -webkit-transition-duration: .1s;
+            
+            transition-duration: .1s;
+            
+            -webkit-transition-timing-function: ease-out;
+            
+            transition-timing-function: ease-out;
+            
+            -webkit-transition-property: box-shadow, background-color;
+            
+            transition-property: box-shadow, background-color;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-transparent:before
+        </td>
+        <td class="sm-col-9">
+          
+            content: '';
+            
+            width: 100%;
+            
+            height: 100%;
+            
+            display: block;
+            
+            position: absolute;
+            
+            z-index: -1;
+            
+            top: -1px;
+            
+            left: -1px;
+            
+            border: 1px solid transparent;
+            
+            background-color: currentcolor;
+            
+            -webkit-transition-duration: .1s;
+            
+            transition-duration: .1s;
+            
+            -webkit-transition-timing-function: ease-out;
+            
+            transition-timing-function: ease-out;
+            
+            -webkit-transition-property: opacity;
+            
+            transition-property: opacity;
+            
+            opacity: 0;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-transparent:hover
+        </td>
+        <td class="sm-col-9">
+          
+            box-shadow: none;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-transparent:hover:before
+        </td>
+        <td class="sm-col-9">
+          
+            opacity: .125;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-transparent:focus
+        </td>
+        <td class="sm-col-9">
+          
+            outline: none;
+            
+            border: 1px solid currentcolor;
+            
+            box-shadow: 0 0 3px 1px;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-transparent:active,
+.button-transparent.is-active
+        </td>
+        <td class="sm-col-9">
+          
+            box-shadow: inset 0 1px 5px 0, 0 0 1px;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
+          .button-transparent:disabled,
+.button-transparent.is-disabled
+        </td>
+        <td class="sm-col-9">
+          
+            opacity: .5;
+            
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="sm-col-3">
           .bg-cover
         </td>
         <td class="sm-col-9">
@@ -3456,386 +3732,6 @@ code
         <td class="sm-col-9">
           
             background-position: left;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-blue
-        </td>
-        <td class="sm-col-9">
-          
-            color: white;
-            
-            background-color: #0074d9;
-            
-            border-radius: 3px;
-            
-            -webkit-transition-duration: .1s;
-            
-            transition-duration: .1s;
-            
-            -webkit-transition-timing-function: ease-out;
-            
-            transition-timing-function: ease-out;
-            
-            -webkit-transition-property: box-shadow, background-color;
-            
-            transition-property: box-shadow, background-color;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-blue:hover
-        </td>
-        <td class="sm-col-9">
-          
-            opacity: .875;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-blue:active,
-.button-blue.is-active
-        </td>
-        <td class="sm-col-9">
-          
-            box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-blue:focus
-        </td>
-        <td class="sm-col-9">
-          
-            outline: none;
-            
-            box-shadow: 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(0, 116, 217, .5);
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-blue:disabled,
-.button-blue.is-disabled
-        </td>
-        <td class="sm-col-9">
-          
-            opacity: .5;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-blue-outline
-        </td>
-        <td class="sm-col-9">
-          
-            color: #0074d9;
-            
-            background-color: transparent;
-            
-            border-radius: 3px;
-            
-            border: 1px solid #0074d9;
-            
-            -webkit-transition-duration: .1s;
-            
-            transition-duration: .1s;
-            
-            -webkit-transition-timing-function: ease-out;
-            
-            transition-timing-function: ease-out;
-            
-            -webkit-transition-property: box-shadow, background-color;
-            
-            transition-property: box-shadow, background-color;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-blue-outline:hover,
-.button-blue-outline.is-active
-        </td>
-        <td class="sm-col-9">
-          
-            color: white;
-            
-            background-color: #0074d9;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-blue-outline:active
-        </td>
-        <td class="sm-col-9">
-          
-            box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, .25);
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-blue-outline:focus
-        </td>
-        <td class="sm-col-9">
-          
-            outline: none;
-            
-            box-shadow: 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(0, 116, 217, .5);
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-blue-outline:disabled,
-.button-blue-outline.is-disabled
-        </td>
-        <td class="sm-col-9">
-          
-            color: #0074d9;
-            
-            background-color: transparent;
-            
-            opacity: .5;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-red
-        </td>
-        <td class="sm-col-9">
-          
-            color: white;
-            
-            background-color: #ff4136;
-            
-            border-radius: 3px;
-            
-            -webkit-transition-duration: .1s;
-            
-            transition-duration: .1s;
-            
-            -webkit-transition-timing-function: ease-out;
-            
-            transition-timing-function: ease-out;
-            
-            -webkit-transition-property: box-shadow, background-color;
-            
-            transition-property: box-shadow, background-color;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-red:hover
-        </td>
-        <td class="sm-col-9">
-          
-            opacity: .875;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-red:active,
-.button-red.is-active
-        </td>
-        <td class="sm-col-9">
-          
-            box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-red:focus
-        </td>
-        <td class="sm-col-9">
-          
-            outline: none;
-            
-            box-shadow: 0 0 0 2px rgba(255, 255, 255, .5), 0 0 1px 4px rgba(255, 65, 54, .5);
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-red:disabled,
-.button-red.is-disabled
-        </td>
-        <td class="sm-col-9">
-          
-            opacity: .5;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-light-gray
-        </td>
-        <td class="sm-col-9">
-          
-            color: #222;
-            
-            background-color: #ddd;
-            
-            border-radius: 3px;
-            
-            -webkit-transition-duration: .1s;
-            
-            transition-duration: .1s;
-            
-            -webkit-transition-timing-function: ease-out;
-            
-            transition-timing-function: ease-out;
-            
-            -webkit-transition-property: box-shadow, background-color;
-            
-            transition-property: box-shadow, background-color;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-light-gray:hover
-        </td>
-        <td class="sm-col-9">
-          
-            opacity: .875;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-light-gray:active,
-.button-light-gray:is-active
-        </td>
-        <td class="sm-col-9">
-          
-            box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-light-gray:focus
-        </td>
-        <td class="sm-col-9">
-          
-            outline: none;
-            
-            box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 116, 217, .5);
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-light-gray:disabled,
-.button-light-gray.is-disabled
-        </td>
-        <td class="sm-col-9">
-          
-            opacity: .5;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-nav-light
-        </td>
-        <td class="sm-col-9">
-          
-            color: #0074d9;
-            
-            background-color: transparent;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-nav-light:hover
-        </td>
-        <td class="sm-col-9">
-          
-            background-color: rgba(0, 0, 0, .0625);
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-nav-light:active,
-.button-nav-light.is-active
-        </td>
-        <td class="sm-col-9">
-          
-            color: #222;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-nav-dark
-        </td>
-        <td class="sm-col-9">
-          
-            color: white;
-            
-            background-color: transparent;
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-nav-dark:hover
-        </td>
-        <td class="sm-col-9">
-          
-            background-color: rgba(0, 0, 0, .125);
-            
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="sm-col-3">
-          .button-nav-dark:active,
-.button-nav-dark.is-active
-        </td>
-        <td class="sm-col-9">
-          
-            background-color: rgba(0, 0, 0, .125);
             
         </td>
       </tr>
