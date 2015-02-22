@@ -31,7 +31,7 @@ app.controller('AppCtrl', function($scope) {
 module.exports = function() {
   return {
     scope: true,
-    template: "<label class=\"button block button-nav-light\"\n  ng-class=\"{'bg-light-blue': module.isActive }\">\n  <div class=\"sm-flex flex-center mxn2\">\n    <input type=\"checkbox\" class=\"m0\" ng-model=\"module.isActive\" ng-change=\"build()\">\n\n    <div class=\"h4 bold sm-col-4 px1\">{{ module.name }}</div>\n    <div class=\"flex-auto sm-col-7 px1 h5 regular\">{{ module.description }}</div>\n    <div ng-if=\"module.optional\" class=\"h6 caps px1 red\">Optional</div>\n    <div class=\"h6 px1\">v{{ module.version }}</div>\n  </div>\n</label>\n"
+    template: "<label class=\"button block button-transparent\"\n  ng-class=\"{'bg-light-blue': module.isActive }\">\n  <div class=\"sm-flex flex-center mxn2\">\n    <input type=\"checkbox\" class=\"m0\" ng-model=\"module.isActive\" ng-change=\"build()\">\n\n    <div class=\"h4 bold sm-col-4 px1\">{{ module.name }}</div>\n    <div class=\"flex-auto sm-col-7 px1 h5 regular\">{{ module.description }}</div>\n    <div ng-if=\"module.optional\" class=\"h6 caps px1 red\">Optional</div>\n    <div class=\"h6 px1\">v{{ module.version }}</div>\n  </div>\n</label>\n"
   }
 };
 

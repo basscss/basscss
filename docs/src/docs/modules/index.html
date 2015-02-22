@@ -9,13 +9,13 @@
   <div class="list-reset md-flex flex-wrap mxn2">
     <% _.forIn(routes.docs.routes.modules.routes, function(module) { %>
       <div class="md-col-6 mb2">
-        <a href="<%= module.path %>" class="button block button-nav-light">
-          <span class="h3"><%= removePrefix(module.title) %></span>
-          <span class="h6">v<%= module.version %></span>
+        <a href="<%= module.path %>" class="button block button-transparent">
+          <span class="h3 blue"><%= removePrefix(module.title) %></span>
+          <span class="h6 blue">v<%= module.version %></span>
           <% if (module.basscss && module.basscss.optional) { %>
             <span class="h6 caps red">Optional</span>
           <% } %>
-          <div class="h4 regular mt1 dark-gray">
+          <div class="h4 regular mt1">
             <%= module.description %>
           </div>
         </a>

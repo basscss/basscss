@@ -9,8 +9,8 @@
       <section class="mb3" custom-css-collection src="modules.json">
         <div class="sm-flex flex-center mb2">
           <h2 class="flex-auto m0 py1">Modules</h2>
-          <a href class="mr2 button button-small button-blue-outline" ng-click="deselectAll(modules)">Deselect All</a>
-          <a href class="button button-small button-blue-outline" ng-click="selectAll(modules)">Select All</a>
+          <a href class="mr2 button button-small button-outline blue" ng-click="deselectAll(modules)">Deselect All</a>
+          <a href class="button button-small button-outline blue" ng-click="selectAll(modules)">Select All</a>
         </div>
         <form>
           <ol class="list-reset border-top">
@@ -37,7 +37,7 @@
         <div class="flex-auto py1">
           <h2 class="h4 m0">Compiled CSS ({{ fileSize | filesize }})</h2>
         </div>
-        <a class="flex-none button button-blue"
+        <a class="flex-none button"
           ng-href="{{ downloadURL }}"
           download="basscss-custom.css">
             Download
@@ -45,7 +45,7 @@
       </div>
       <pre class="flex-auto" style="height:60vh" ng-bind-html="compiled | highlight"></pre>
       <div class="mb2">
-        <a class="button mb2 button-blue"
+        <a class="button mb2"
           ng-href="{{ downloadURL }}"
           download="basscss-custom.css">
             Download
