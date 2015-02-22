@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/0.0.3/bassdock.min.css">
+    <link rel="stylesheet" href="/css/basscss.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -400,7 +400,7 @@
        
         <h2 class="h3 m0">
           basscss-color-base
-          <span class="h5">v0.0.2</span>
+          <span class="h5">v1.0.0</span>
           
         </h2>
       
@@ -443,19 +443,18 @@
         <div class="px2 py2">
           
 
-
-<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>Sets color styles for the body tag, links, pre, code, and hr tags.</p>
+<p>Sets color styles for the body tag, links, pre, code, hr tags, and the <code>.button</code> utility.</p>
 <h2 id="default-variables">Default Variables</h2>
-<pre><span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">--blue</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#0076df</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">--dark-gray</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#333</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">--light-gray</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ccc</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">--lighter-gray</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#eee</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">--border-radius</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">--border-width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">--border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--light-gray)</span></span>;
-<span class="hljs-rule">}</span></span></pre>
+<p>Uses colors from <a href="//clrs.cc">mrmrs/colors</a> in addition to these defaults:</p>
+<pre>:root {
+  --darken-1: rgba(#000,.0625);
+  --darken-2: rgba(#000,.125);
+  --darken-3: rgba(#000,.25);
+  --darken-4: rgba(#000,.5);
+  --border-color: var(--darken-2);
+  --border-radius: 3px;
+  --border-width: 1px;
+}</pre>
           
 
 

@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/0.0.3/bassdock.min.css">
+    <link rel="stylesheet" href="/css/basscss.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -436,6 +436,23 @@
 
 <pre>
 :root {
+  --form-field-font-size: 1rem;
+  --form-field-height: 2.25rem;
+  --form-field-padding-y: .5rem;
+  --form-field-padding-x: .5rem;
+  --button-font-size: inherit;
+  --button-font-weight: bold;
+  --button-line-height: 1.125rem;
+  --button-padding-y: .5rem;
+  --button-padding-x: 1rem;
+  --bold-font-weight: bold;
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+  --table-header-font-weight: var(--bold-font-weight);
+  --table-cell-padding-x: var(--space-2);
+  --table-cell-padding-y: .25rem;
   --font-family: 'Helvetica Neue', Helvetica, sans-serif;
   --line-height: 1.5;
   --heading-font-family: var(--font-family);
@@ -448,39 +465,35 @@
   --h4: 1rem;
   --h5: .875rem;
   --h6: .75rem;
-  --bold-font-weight: bold;
-  --space-1: .5rem;
-  --space-2: 1rem;
-  --space-3: 2rem;
-  --space-4: 4rem;
-  --form-field-font-size: 1rem;
-  --form-field-height: 2.25rem;
-  --form-field-padding-y: .5rem;
-  --form-field-padding-x: .5rem;
-  --button-font-size: inherit;
-  --button-font-weight: bold;
-  --button-line-height: 1.125rem;
-  --button-padding-y: .5rem;
-  --button-padding-x: 1rem;
-  --table-header-font-weight: var(--bold-font-weight);
-  --table-cell-padding-x: var(--space-2);
-  --table-cell-padding-y: .25rem;
   --container-width: 64em;
-  --blue: #0076df;
-  --red: #ff4919;
-  --green: #00df3f;
-  --yellow: #ffcf00;
-  --dark-gray: #333;
-  --mid-gray: #777;
-  --light-gray: #ccc;
-  --lighter-gray: #eee;
+  --aqua: #7fdbff;
+  --blue: #0074d9;
+  --navy: #001f3f;
+  --teal: #39cccc;
+  --green: #2ecc40;
+  --olive: #3d9970;
+  --lime: #01ff70;
+  --yellow: #ffdc00;
+  --orange: #ff851b;
+  --red: #ff4136;
+  --fuchsia: #f012be;
+  --purple: #b10dc9;
+  --maroon: #85144b;
+  --white: #fff;
+  --silver: #ddd;
+  --gray: #aaa;
+  --black: #222;
   --darken-1: rgba(#000,.0625);
   --darken-2: rgba(#000,.125);
   --darken-3: rgba(#000,.25);
   --darken-4: rgba(#000,.5);
-  --border-color: var(--light-gray);
+  --border-color: var(--darken-2);
   --border-width: 1px;
   --border-radius: 3px;
+  --dark-gray: var(--black);
+  --mid-gray: var(--gray);
+  --light-gray: var(--silver);
+  --lighter-gray: #eee;
   --button-nav-light-color: var(--blue, inherit);
   --hover-background-color: var(--darken-1);
 }

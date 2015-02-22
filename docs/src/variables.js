@@ -1,5 +1,6 @@
 
 var fs = require('fs');
+var path = require('path');
 var rework = require('rework');
 var rnpm = require('rework-npm');
 var postcss = require('postcss');
@@ -8,7 +9,10 @@ module.exports = function(src) {
 
   var css = fs.readFileSync(src, 'utf8');
   var variables = [];
-  var imported = rework(css).use(rnpm({ })).toString();
+  var source = path.join(__dirname, '../../src/basscss.css');
+  var imported = rework(css, { source: source })
+    .use(rnpm())
+    .toString();
   var root = postcss.parse(imported);
   var result = '';
 

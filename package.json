@@ -10,13 +10,22 @@
     "basscss-base-reset": "0.0.3",
     "basscss-base-tables": "^0.1.1",
     "basscss-base-typography": "0.0.3",
-    "basscss-color-base": "0.0.2",
+    "basscss-button-blue": "0.0.1",
+    "basscss-button-blue-outline": "0.0.3",
+    "basscss-button-gray": "0.0.1",
+    "basscss-button-light-gray": "0.0.3",
+    "basscss-button-nav-dark": "0.0.3",
+    "basscss-button-nav-light": "0.0.2",
+    "basscss-button-nav-tab": "0.0.3",
+    "basscss-button-red": "0.0.1",
+    "basscss-color-base": "^1.0.0",
     "basscss-color-borders": "0.0.2",
+    "basscss-color-buttons": "^1.0.1",
     "basscss-color-forms": "0.0.2",
     "basscss-color-forms-dark": "0.0.2",
     "basscss-color-tables": "^0.1.0",
-    "basscss-colors": "0.0.2",
-    "basscss-defaults": "^0.2.0",
+    "basscss-colors": "^1.0.1",
+    "basscss-defaults": "^1.0.0",
     "basscss-grid": "0.0.14",
     "basscss-positions": "0.0.5",
     "basscss-table-object": "0.0.7",
@@ -27,16 +36,7 @@
     "basscss-utility-responsive-states": "0.0.2",
     "basscss-utility-typography": "0.0.2",
     "basscss-utility-white-space": "0.0.3",
-    "flex-object": "^1.0.4",
-    "basscss-button-gray": "0.0.1",
-    "basscss-button-nav-light": "0.0.2",
-    "basscss-button-blue": "0.0.1",
-    "basscss-button-red": "0.0.1",
-    "basscss-button-nav-dark": "0.0.3",
-    "basscss-button-light-gray": "0.0.3",
-    "basscss-button-nav-tab": "0.0.3",
-    "basscss-button-blue-outline": "0.0.3",
-    "basscss-color-buttons": "^1.0.1"
+    "flex-object": "^1.0.4"
   },
   "devDependencies": {
     "angular-local-storage": "^0.1.5",
@@ -66,7 +66,8 @@
     "postcss": "^3.0.7",
     "rework": "^1.0.1",
     "rework-npm": "^1.0.0",
-    "svg-to-png": "^0.6.0"
+    "svg-to-png": "^0.6.0",
+    "watch": "^0.14.0"
   },
   "basscss": {
     "modules": [
@@ -108,7 +109,9 @@
     ]
   },
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "css": "basswork src/basscss.css css/basscss.css",
+    "watch:css": "watch 'npm run css' ./src"
   },
   "author": "Brent Jackson",
   "license": "MIT",
