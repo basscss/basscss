@@ -7,7 +7,14 @@
       </svg>
       <h1 class="avenir caps h0 h0-responsive m0" style="margin-left:-.0625em">Basscss</h1>
       <h2 class="avenir caps h4 mb0">Low-level CSS Toolkit</h2>
-      <p class="avenir h6 caps bold bright-blue">v<%= version %> &middot; <%= stats.gzipSizeKB %></p>
+      <p class="avenir h5 caps bold bright-blue">v<%= version %> (<%= stats.gzipSizeKB %>)
+        <!--
+        <% version.split('.').map(function(n, i, arr) { %><%=
+          (i == 0) ? '<span class="">v' + n + '</span>' : '<sup>' + n + '</sup>'
+        %><%= (i == arr.length -1) ? '' : '<sup>.</sup>' %><% }) %>
+        (<%= stats.gzipSizeKB %>)
+        -->
+      </p>
     </div>
     <div class="sm-show flex-auto center mt3 mb1">
       <a class="h4 m2 button button-big bright-blue button-outline" href="/docs/getting-started">Download</a>
@@ -31,9 +38,9 @@
     </p>
   </section>
 
-  <hr class="ml0 xcol-5 xsm-col-3 hr-block bg-blue">
+  <hr class="ml0 hr-block bg-aqua">
 
-  <section id="concepts" class="clearfix mxn2 py3">
+  <section id="concepts" class="clearfix mxn2 py4">
     <div class="sm-col sm-col-6 px2">
       <h1>Designed for Design</h1>
       <p>
@@ -68,7 +75,7 @@
     </div>
   </section>
 
-  <section id="base" class="sm-flex flex-center mxn2 py4">
+  <section id="base" class="sm-flex flex-center mxn2 py3">
     <div class="sm-col-5 px2 py1">
       <div class="h00 h00-responsive bold center m0 py2 blue bg-aqua">Aa</div>
     </div>
@@ -114,7 +121,7 @@
     </div>
   </section>
 
-  <section id="color" class="sm-flex flex-center mxn2 py3">
+  <section id="color" class="sm-flex flex-center mxn2 mb4 py3">
     <div class="sm-col-5 px2 py1">
       <div class="">
         <div class="flex">
@@ -148,11 +155,13 @@
     </div>
   </section>
 
-  <section id="showcase" class="py3">
+  <hr class="ml0 hr-block bg-aqua">
+
+  <section id="showcase" class="py4">
     <%= include('showcase-widget') %>
   </section>
 
-  <hr class="ml0 hr-block bg-blue">
+  <hr class="ml0 hr-block bg-aqua">
 
   <section id="cta" class="sm-flex flex-center py4 mb4">
     <div class="flex-auto">
