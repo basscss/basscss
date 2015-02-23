@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 512 384" fill="#09f">
+  viewBox="0 0 512 384" fill="#09f" opacity="0.5">
   <filter id="screen"><feBlend mode="screen"/></filter>
   <g filter="url(#screen)">
     <polygon points="64 0 128 128 0 128" opacity="0.05"/> 
