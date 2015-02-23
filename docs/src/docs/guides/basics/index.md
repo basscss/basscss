@@ -30,7 +30,7 @@ It also has some significant front-end performance benefits.
 ## Example
 
 ```html
-<div class="h3 p1 mb2 bg-light-gray rounded">
+<div class="h3 p1 mb2 bg-silver rounded">
   A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
 </div>
 ```

@@ -15,7 +15,7 @@
 To start off, make a global navigation using the grid system and other utilities.
 
 ```html
-<nav class="clearfix white bg-dark-gray">
+<nav class="clearfix white bg-black">
   <div class="sm-col">
     <a href="/" class="button py2 button-transparent">Home</a>
     <a href="/" class="button py2 button-transparent">Burgers</a>
@@ -42,7 +42,7 @@ Note: This example uses the optional `basscss-utility-headings` and
 `basscss-background-images` utility modules for the large heading and background image.
 
 ```html
-<header class="center px3 py4 white bg-mid-gray bg-cover bg-center"
+<header class="center px3 py4 white bg-gray bg-cover bg-center"
   style="background-image: url(/docs/src/svg/hero.svg)">
   <h1 class="h1 h0-responsive caps mt4 mb0 regular">Hamburgers</h1>
   <p class="h3">Artisinal ground chuck creations</p>
@@ -62,7 +62,7 @@ try moving it into the banner and removing the background color for a different 
 Move the padding for the banner content into a nested div to adjust the layout.
 
 ```html
-<header class="white bg-mid-gray bg-cover bg-center"
+<header class="white bg-gray bg-cover bg-center"
   style="background-image: url(/docs/src/svg/hero.svg)">
   <nav class="clearfix white">
     <div class="sm-col">
@@ -123,7 +123,7 @@ than the small breakpoint.
 ```html
 <section class="container px2 py3">
   <h1 class="mt0">
-    <a href="#" class="dark-gray">
+    <a href="#" class="black">
       Blog
     </a>
   </h1>
@@ -131,7 +131,7 @@ than the small breakpoint.
     <div class="sm-col sm-col-8 md-col-9 px2">
       <div>
         <h2 class="h3">
-          <a href="#" class="dark-gray">
+          <a href="#" class="black">
             Blog Post Title
           </a>
         </h2>
@@ -140,7 +140,7 @@ than the small breakpoint.
       </div>
       <div>
         <h2 class="h3">
-          <a href="#" class="dark-gray">
+          <a href="#" class="black">
             Blog Post Title
           </a>
         </h2>
@@ -173,7 +173,7 @@ when dividing up the thumbnails by those numbers in our grid.
 ```html
 <section class="container px2 py3">
   <h1 class="mt0">
-    <a href="#" class="dark-gray">
+    <a href="#" class="black">
       Gallery
     </a>
   </h1>
@@ -259,7 +259,7 @@ Finally, create a footer with a dark background that fills the width of the view
 Note the container is placed inside the footer element to control max-width.
 
 ```html
-<footer class="white bg-dark-gray">
+<footer class="white bg-black">
   <div class="px2 py3 container">
     <div class="clearfix mxn2">
       <div class="col col-6 md-col-3">

@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.0.0/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.0.1/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -393,7 +393,7 @@
 
 
 
-<a href="//github.com/jxnblk/basscss" class="button block mb4 light-gray button-transparent">
+<a href="//github.com/jxnblk/basscss" class="button block mb4 muted button-transparent">
   Github
 </a>
 
@@ -412,7 +412,7 @@
        
         <h2 class="h3 m0">
           basscss-base-forms
-          <span class="h5">v1.0.4</span>
+          <span class="h5">v1.0.5</span>
           
         </h2>
       
@@ -466,13 +466,13 @@ so utility styles can be used for contextual adjustments.</p>
     <form>
   <label>Search</label>
   <input type="text" class="mb0 field-light">
-  <button class="button-blue">Go</button>
+  <button class="button">Go</button>
 </form>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb0 field-light&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue&quot;</span>&gt;</span>Go<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span>&gt;</span>Go<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></pre>
 </div>
 <h2 id="stacked-forms">Stacked Forms</h2>
@@ -497,8 +497,8 @@ The use of utilities allows for a lot of flexibility when building form layouts.
     <input type="checkbox" checked>
     Remember me
   </label>
-  <button type="submit" class="button-blue">Sign In</button>
-  <button type="reset" class="button-gray">Cancel</button>
+  <button type="submit" class="button">Sign In</button>
+  <button type="reset" class="button bg-gray">Cancel</button>
 </form>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col-6&quot;</span>&gt;</span>
@@ -518,8 +518,8 @@ The use of utilities allows for a lot of flexibility when building form layouts.
     <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">checked</span>&gt;</span>
     Remember me
   <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;submit&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue&quot;</span>&gt;</span>Sign In<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;reset&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-gray&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;submit&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span>&gt;</span>Sign In<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;reset&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button bg-gray&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></pre>
 </div>
 <h2 id="fieldsets">Fieldsets</h2>
@@ -534,7 +534,7 @@ The use of utilities allows for a lot of flexibility when building form layouts.
     <label>Hot Dog</label>
     <input type="text" class="block full-width field-light">
   </fieldset>
-  <button type="sumbit" class="button-blue">Submit</button>
+  <button type="sumbit" class="button">Submit</button>
 </form>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col-6&quot;</span>&gt;</span>
@@ -545,7 +545,7 @@ The use of utilities allows for a lot of flexibility when building form layouts.
     <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Hot Dog<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width field-light&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;sumbit&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue&quot;</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;sumbit&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></pre>
 </div>
 <h2 id="default-variables">Default Variables</h2>

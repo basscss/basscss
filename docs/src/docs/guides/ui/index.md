@@ -110,7 +110,7 @@ Standard color styles can be applied to create a variety of navigation styles.
 
 ```html
 <div class="sm-col-6 bg-white border rounded">
-  <a href="#!" class="button block button-transparent border-bottom dark-gray">Burgers</a>
+  <a href="#!" class="button block button-transparent border-bottom">Burgers</a>
   <a href="#!" class="button block button-transparent border-bottom">Fries</a>
   <a href="#!" class="button block button-transparent border-bottom">Shakes</a>
   <a href="#!" class="button block button-transparent">Onion Rings</a>
@@ -234,7 +234,7 @@ Standard color styles can be used to control the appearance.
       <svg class="icon" data-icon="chevron-right"></svg>
     </a>
     <div class="overflow-hidden sm-show">
-      <a href="#!" class="left button button-transparent dark-gray border-right">1</a>
+      <a href="#!" class="left button button-transparent border-right">1</a>
       <a href="#!" class="left button button-transparent border-right">2</a>
       <a href="#!" class="left button button-transparent border-right">3</a>
     </div>
@@ -370,7 +370,7 @@ By applying the `.py2` utility to the link buttons,
 they become the height of normal buttons and inputs plus `.py1`.
 
 ```html
-<div class="clearfix mb2 white bg-dark-gray">
+<div class="clearfix mb2 white bg-black">
   <div class="left">
     <a href="#!" class="button py2 m0 button-transparent">Burgers</a>
     <a href="#!" class="button button-narrow py2 m0 button-transparent">Fries</a>
@@ -402,7 +402,7 @@ using background color utilities.
     <input type="text" class="mb0 right fit field-dark" placeholder="Search">
   </div>
 </div>
-<div class="clearfix mb2 white bg-mid-gray">
+<div class="clearfix mb2 white bg-gray">
   <div class="left">
     <a href="#!" class="button py2 m0 button-transparent">Burgers</a>
     <a href="#!" class="button button-narrow py2 m0 button-transparent">Fries</a>
@@ -478,7 +478,7 @@ More complex
 navigations can also be created using responsive utilities.
 
 ```html
-<div class="relative clearfix white bg-dark-gray">
+<div class="relative clearfix white bg-black">
   <div class="left">
     <a href="#!" class="button py2 m0 button-transparent">Burgers</a>
   </div>
@@ -538,7 +538,7 @@ To create headers and footers, set padding on nested divs then use color styles 
 ```html
 <div class="md-col-6">
   <div class="overflow-hidden bg-white border rounded">
-    <div class="p2 bg-light-gray">
+    <div class="p2 bg-silver">
       <h1 class="h2 m0">Bacon with Header</h1>
     </div>
     <div class="p2">
@@ -629,7 +629,7 @@ to represent different qualities of states.
   <span class="bold inline-block px1 white bg-red rounded">Red</span>
   <span class="bold inline-block px1 bg-yellow rounded">Yellow</span>
   <span class="bold inline-block px1 white bg-green rounded">Green</span>
-  <span class="bold inline-block px1 white bg-mid-gray rounded">Mid Gray</span>
+  <span class="bold inline-block px1 white bg-gray rounded">Gray</span>
   <span class="bold inline-block px1 border rounded">Bordered</span>
 </div>
 ```

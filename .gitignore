@@ -1,6 +1,3 @@
 *.gz
 aws.json
 
-src/bmod/
-bmod/
-

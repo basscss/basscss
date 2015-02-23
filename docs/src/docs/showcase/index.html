@@ -9,10 +9,10 @@
 <section class="sm-flex flex-wrap mxn2 py3">
   <% _.forIn(showcase, function(site) { %>
     <div class="sm-col-6 md-col-4 px2 mb4">
-      <a href="<%= site.url %>" class="h3 block" title="View <%= site.url %>" target="_blank">
+      <a href="<%= site.url %>" class="h3 block black" title="View <%= site.url %>" target="_blank">
         <img src="<%= asset_path %>assets/<%= site.image %>" class="border" alt="<%= site.title %>"/>
-        <div class="h3 bold dark-gray"><%= site.title %></div>
-        <div class="h5 dark-gray"><%= site.description %></div>
+        <div class="h3 bold"><%= site.title %></div>
+        <div class="h5"><%= site.description %></div>
       </a>
     </div>
     <% }) %>

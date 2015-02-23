@@ -5,8 +5,8 @@
   "style": "src/basscss.css",
   "dependencies": {
     "basscss-background-images": "0.0.4",
-    "basscss-base-buttons": "^1.0.3",
-    "basscss-base-forms": "^1.0.4",
+    "basscss-base-buttons": "^1.0.4",
+    "basscss-base-forms": "^1.0.5",
     "basscss-base-reset": "0.0.3",
     "basscss-base-tables": "^0.1.1",
     "basscss-base-typography": "0.0.3",
@@ -21,12 +21,12 @@
     "basscss-button-red": "0.0.1",
     "basscss-button-transparent": "0.0.2",
     "basscss-color-base": "^1.0.1",
-    "basscss-color-borders": "0.0.2",
+    "basscss-color-borders": "0.0.3",
     "basscss-color-buttons": "^1.0.1",
-    "basscss-color-forms": "0.0.2",
-    "basscss-color-forms-dark": "0.0.2",
+    "basscss-color-forms": "0.0.3",
+    "basscss-color-forms-dark": "0.0.3",
     "basscss-color-tables": "^0.1.0",
-    "basscss-colors": "^1.0.3",
+    "basscss-colors": "^1.0.5",
     "basscss-defaults": "^1.0.0",
     "basscss-grid": "0.0.14",
     "basscss-input-range": "^1.0.2",
@@ -39,7 +39,7 @@
     "basscss-utility-responsive-states": "0.0.2",
     "basscss-utility-typography": "0.0.2",
     "basscss-utility-white-space": "0.0.3",
-    "flex-object": "^1.0.4"
+    "flex-object": "^1.0.5"
   },
   "devDependencies": {
     "angular-local-storage": "^0.1.5",

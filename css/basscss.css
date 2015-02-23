@@ -1784,6 +1784,12 @@ input[type=range] {
   border-color: rgba(0, 0, 0, .5);
 }
 
+/* Opacity */
+
+.muted {
+  opacity: .5;
+}
+
 /*
 
    COLOR VARIABLES
