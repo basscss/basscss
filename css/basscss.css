@@ -1831,18 +1831,3 @@ input[type=range] {
 :root {
   /* Legacy support */
 }
-
-/* Deprecated
-
-@import 'basscss-table-object';
-@import 'basscss-button-gray';
-
-@import 'basscss-button-blue';
-@import 'basscss-button-blue-outline';
-@import 'basscss-button-red';
-
-@import 'basscss-button-light-gray';
-@import 'basscss-button-nav-light';
-@import 'basscss-button-nav-dark';
-
-*/

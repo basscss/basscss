@@ -180,67 +180,67 @@ when dividing up the thumbnails by those numbers in our grid.
   <div class="clearfix mxn2">
     <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
       <a href="#" class="block">
-        <img src="/docs/placeholder.svg" class="block" />
+        <img src="/docs/images/placeholder.svg" class="block" />
       </a>
     </div>
     <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
       <a href="#" class="block">
-        <img src="/docs/placeholder.svg" class="block" />
+        <img src="/docs/images/placeholder.svg" class="block" />
       </a>
     </div>
     <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
       <a href="#" class="block">
-        <img src="/docs/placeholder.svg" class="block" />
+        <img src="/docs/images/placeholder.svg" class="block" />
       </a>
     </div>
     <div class="sm-show md-hide clearfix"></div>
     <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
       <a href="#" class="block">
-        <img src="/docs/placeholder.svg" class="block" />
+        <img src="/docs/images/placeholder.svg" class="block" />
       </a>
     </div>
     <div class="md-show lg-hide clearfix"></div>
     <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
       <a href="#" class="block">
-        <img src="/docs/placeholder.svg" class="block" />
+        <img src="/docs/images/placeholder.svg" class="block" />
       </a>
     </div>
     <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
       <a href="#" class="block">
-        <img src="/docs/placeholder.svg" class="block" />
+        <img src="/docs/images/placeholder.svg" class="block" />
       </a>
     </div>
     <div class="sm-show md-hide clearfix"></div>
     <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
       <a href="#" class="block">
-        <img src="/docs/placeholder.svg" class="block" />
+        <img src="/docs/images/placeholder.svg" class="block" />
       </a>
     </div>
     <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
       <a href="#" class="block">
-        <img src="/docs/placeholder.svg" class="block" />
+        <img src="/docs/images/placeholder.svg" class="block" />
       </a>
     </div>
     <div class="md-show lg-hide clearfix"></div>
     <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
       <a href="#" class="block">
-        <img src="/docs/placeholder.svg" class="block" />
+        <img src="/docs/images/placeholder.svg" class="block" />
       </a>
     </div>
     <div class="sm-show md-hide clearfix"></div>
     <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
       <a href="#" class="block">
-        <img src="/docs/placeholder.svg" class="block" />
+        <img src="/docs/images/placeholder.svg" class="block" />
       </a>
     </div>
     <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
       <a href="#" class="block">
-        <img src="/docs/placeholder.svg" class="block" />
+        <img src="/docs/images/placeholder.svg" class="block" />
       </a>
     </div>
     <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
       <a href="#" class="block">
-        <img src="/docs/placeholder.svg" class="block" />
+        <img src="/docs/images/placeholder.svg" class="block" />
       </a>
     </div>
   </div>

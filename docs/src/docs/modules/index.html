@@ -12,9 +12,6 @@
         <a href="<%= module.path %>" class="button block button-transparent">
           <span class="h3 blue"><%= removePrefix(module.title) %></span>
           <span class="h6 blue">v<%= module.version %></span>
-          <% if (module.basscss && module.basscss.optional) { %>
-            <span class="h6 caps red">Optional</span>
-          <% } %>
           <div class="h4 regular mt1">
             <%= module.description %>
           </div>

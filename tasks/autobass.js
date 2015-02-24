@@ -23,6 +23,7 @@ data.stats = require('../docs/src/stats');
 data.defaults = require('../docs/src/variables')('./src/basscss.css');
 
 data.modules = data.basscss.modules;
+data.optional_modules = data.basscss.optional_modules;
 
 data.routes.docs.routes.modules = {
   title: 'Modules',

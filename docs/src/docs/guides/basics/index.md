@@ -177,7 +177,7 @@ to ensure it never overflows its container.
 Use the `.fit` class to do this.
 
 ```html
-<img src="/docs/placeholder.svg" alt="Basscss" class="fit"/>
+<img src="/docs/images/placeholder.svg" alt="Basscss" class="fit"/>
 ```
 
 If you do need to use widths, use percentages.
