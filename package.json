@@ -1,6 +1,6 @@
 {
   "name": "basscss",
-  "version": "4.2.4",
+  "version": "5.0.0",
   "description": "Low-level CSS toolkit",
   "style": "src/basscss.css",
   "dependencies": {
