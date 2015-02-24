@@ -1,14 +1,24 @@
 
 // Converted Variables
 
-$blue: #0076df !default;
-$red: #f95020 !default;
-$green: #00cf26 !default;
-$yellow: #efcc00 !default;
-$dark-gray: #333 !default;
-$mid-gray: #777 !default;
-$light-gray: #ccc !default;
-$lighter-gray: #eee !default;
+$aqua: #7fdbff !default;
+$blue: #0074d9 !default;
+$navy: #001f3f !default;
+$teal: #39cccc !default;
+$green: #2ecc40 !default;
+$olive: #3d9970 !default;
+$lime: #01ff70 !default;
+$yellow: #ffdc00 !default;
+$orange: #ff851b !default;
+$red: #ff4136 !default;
+$fuchsia: #f012be !default;
+$purple: #b10dc9 !default;
+$maroon: #85144b !default;
+$white: #fff !default;
+$silver: #ddd !default;
+$gray: #aaa !default;
+$black: #111 !default;
+$black: #222 !default;
 $darken-1: rgba(#000,.0625) !default;
 $darken-2: rgba(#000,.125) !default;
 $darken-3: rgba(#000,.25) !default;
@@ -19,76 +29,150 @@ $darken-4: rgba(#000,.5) !default;
 
 /* Basscss Colors */
 
+/* Color */
+
+.black,
 .dark-gray {
-  color: $dark-gray;
+  color: $black;
+}
+
+.gray,
+.mid-gray {
+  color: $gray;
+}
+
+.silver,
+.light-gray {
+  color: $silver;
 }
 
 .white {
-  color: white;
+  color: $white;
+}
+
+.aqua {
+  color: $aqua;
 }
 
 .blue {
   color: $blue;
 }
 
-.mid-gray {
-  color: $mid-gray;
+.navy {
+  color: $navy;
 }
 
-.light-gray {
-  color: $light-gray;
-}
-
-.lighter-gray {
-  color: $lighter-gray;
-}
-
-.red {
-  color: $red;
+.teal {
+  color: $teal;
 }
 
 .green {
   color: $green;
 }
 
+.olive {
+  color: $olive;
+}
+
+.lime {
+  color: $lime;
+}
+
 .yellow {
   color: $yellow;
 }
 
+.orange {
+  color: $orange;
+}
+
+.red {
+  color: $red;
+}
+
+.fuchsia {
+  color: $fuchsia;
+}
+
+.purple {
+  color: $purple;
+}
+
+.maroon {
+  color: $maroon;
+}
+
+/* Background Color */
+
+.bg-black,
 .bg-dark-gray {
-  background-color: $dark-gray;
+  background-color: $black;
+}
+
+.bg-gray,
+.bg-mid-gray {
+  background-color: $gray;
+}
+
+.bg-silver,
+.bg-light-gray {
+  background-color: $silver;
 }
 
 .bg-white {
-  background-color: white;
+  background-color: $white;
+}
+
+.bg-aqua {
+  background-color: $aqua;
 }
 
 .bg-blue {
   background-color: $blue;
 }
 
-.bg-mid-gray {
-  background-color: $mid-gray;
+.bg-navy {
+  background-color: $navy;
 }
 
-.bg-light-gray {
-  background-color: $light-gray;
-}
-
-.bg-lighter-gray {
-  background-color: $lighter-gray;
-}
-
-.bg-red {
-  background-color: $red;
+.bg-teal {
+  background-color: $teal;
 }
 
 .bg-green {
   background-color: $green;
 }
 
+.bg-olive {
+  background-color: $olive;
+}
+
+.bg-lime {
+  background-color: $lime;
+}
+
 .bg-yellow {
   background-color: $yellow;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-fuchsia {
+  background-color: $fuchsia;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
+.bg-maroon {
+  background-color: $maroon;
 }
 
 .bg-darken-1 {
@@ -106,3 +190,105 @@ $darken-4: rgba(#000,.5) !default;
 .bg-darken-4 {
   background-color: $darken-4;
 }
+
+/* Border Color */
+
+.border-aqua {
+  border-color: $aqua;
+}
+
+.border-blue {
+  border-color: $blue;
+}
+
+.border-navy {
+  border-color: $navy;
+}
+
+.border-teal {
+  border-color: $teal;
+}
+
+.border-green {
+  border-color: $green;
+}
+
+.border-olive {
+  border-color: $olive;
+}
+
+.border-lime {
+  border-color: $lime;
+}
+
+.border-yellow {
+  border-color: $yellow;
+}
+
+.border-orange {
+  border-color: $orange;
+}
+
+.border-red {
+  border-color: $red;
+}
+
+.border-fuchsia {
+  border-color: $fuchsia;
+}
+
+.border-purple {
+  border-color: $purple;
+}
+
+.border-maroon {
+  border-color: $maroon;
+}
+
+.border-black {
+  border-color: $black;
+}
+
+.border-gray {
+  border-color: $gray;
+}
+
+.border-silver {
+  border-color: $silver;
+}
+
+.border-white {
+  border-color: $white;
+}
+
+.border-darken-1 {
+  border-color: $darken-1;
+}
+
+.border-darken-2 {
+  border-color: $darken-2;
+}
+
+.border-darken-3 {
+  border-color: $darken-3;
+}
+
+.border-darken-4 {
+  border-color: $darken-4;
+}
+
+/* Opacity */
+
+.muted {
+  opacity: .5;
+}
+
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/

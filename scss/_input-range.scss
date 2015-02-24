@@ -1,0 +1,79 @@
+
+// Converted Variables
+
+$border-radius: $border-radius /* Fallback value:  3px */ !default;
+$form-field-height: $form-field-height /* Fallback value:  2.25rem */ !default;
+$form-field-padding-y: $form-field-padding-y /* Fallback value:  .5rem */ !default;
+$form-field-padding-x: $form-field-padding-x /* Fallback value:  .5rem */ !default;
+$darken-3: rgba(#000, .25) !default;
+$range-thumb-width: $form-field-padding-x !default;
+$range-thumb-height: ( $form-field-height - ($form-field-padding-y * 2) ) !default;
+$range-track-height: ( $form-field-padding-y / 2 ) !default;
+$range-thumb-offset: ( $range-thumb-height / -2 + ($range-track-height / 2) ) !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Input Range */
+
+input[type=range] {
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+.range-light {
+  color: inherit;
+  -webkit-appearance: none;
+  padding-top: $form-field-padding-y;
+  padding-bottom: $form-field-padding-y;
+}
+
+.range-light::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: $range-thumb-width;
+  height: $range-thumb-height;
+  border-radius: $border-radius;
+  background-color: currentcolor;
+  cursor: pointer;
+  margin-top: $range-thumb-offset;
+}
+
+.range-light::-moz-range-thumb {
+  width: $range-thumb-width;
+  height: $range-thumb-height;
+  border-radius: $border-radius;
+  border-color: transparent;
+  border-width: 0;
+  background-color: currentcolor;
+  cursor: pointer;
+}
+
+.range-light::-webkit-slider-runnable-track {
+  height: $range-track-height;
+  cursor: pointer;
+  border-radius: $border-radius;
+  background-color: $darken-3;
+}
+
+.range-light::-moz-range-track {
+  height: $range-track-height;
+  cursor: pointer;
+  border-radius: $border-radius;
+  background-color: $darken-3;
+}
+
+.range-light:focus {
+  outline: none;
+}
+
+.range-light:focus::-webkit-slider-thumb {
+  outline: none;
+  border: 0;
+  box-shadow: 0 0 1px 2px currentcolor;
+}
+
+.range-light:focus::-moz-range-thumb {
+  outline: none;
+  border: 0;
+  box-shadow: 0 0 1px 2px currentcolor;
+}

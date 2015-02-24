@@ -1,19 +1,28 @@
 
 // Converted Variables
 
-$blue: #0076df !default;
-$red: #f95020 !default;
-$green: #00cf26 !default;
-$yellow: #efcc00 !default;
-$dark-gray: #333 !default;
-$mid-gray: #777 !default;
-$light-gray: #ccc !default;
-$lighter-gray: #eee !default;
+$aqua: #7fdbff !default;
+$blue: #0074d9 !default;
+$navy: #001f3f !default;
+$teal: #39cccc !default;
+$green: #2ecc40 !default;
+$olive: #3d9970 !default;
+$lime: #01ff70 !default;
+$yellow: #ffdc00 !default;
+$orange: #ff851b !default;
+$red: #ff4136 !default;
+$fuchsia: #f012be !default;
+$purple: #b10dc9 !default;
+$maroon: #85144b !default;
+$white: #fff !default;
+$silver: #ddd !default;
+$gray: #aaa !default;
+$black: #111 !default;
 $darken-1: rgba(#000,.0625) !default;
 $darken-2: rgba(#000,.125) !default;
 $darken-3: rgba(#000,.25) !default;
 $darken-4: rgba(#000,.5) !default;
-$border-color: $light-gray !default;
+$border-color: $darken-2 !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
 
@@ -22,8 +31,18 @@ $border-radius: 3px !default;
 
 /* Basscss Color Base */
 
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/
+
 body {
-  color: $dark-gray;
+  color: $black;
   background-color: white;
 }
 
@@ -38,7 +57,7 @@ a:hover {
 
 pre,
 code {
-  background-color: $lighter-gray;
+  background-color: $silver;
   border-radius: $border-radius;
 }
 
@@ -47,4 +66,35 @@ hr {
   border-bottom-style: solid;
   border-bottom-width: $border-width;
   border-bottom-color: $border-color;
+}
+
+.button {
+  color: white;
+  background-color: $blue;
+  border-radius: $border-radius;
+  transition-duration: .05s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow, background-color;
+}
+
+.button:hover {
+  box-shadow: inset 0 0 0 20rem $darken-1;
+}
+
+.button:focus {
+  outline: none;
+  border-color: $darken-2;
+  box-shadow: 0 0 2px 1px $darken-3;
+}
+
+.button:active,
+.button.is-active {
+  box-shadow: inset 0 0 0 20rem $darken-2,
+    inset 0 3px 4px 0 $darken-3,
+    0 0 1px $darken-2;
+}
+
+.button:disabled,
+.button.is-disabled {
+  opacity: .5;
 }

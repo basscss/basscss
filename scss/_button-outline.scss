@@ -1,0 +1,64 @@
+
+// Converted Variables
+
+$border-width: 1px !default;
+$border-radius: 3px !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Button Outline */
+
+.button-outline {
+  position: relative;
+  z-index: 2;
+  color: inherit;
+  background-color: transparent;
+  border-radius: $border-radius;
+  border: $border-width solid currentcolor;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: box-shadow, background-color;
+}
+
+.button-outline:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -1px;
+  left: -1px;
+  border: 1px solid transparent;
+  background-color: currentcolor;
+  border-radius: $border-radius;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  transition-property: opacity;
+  opacity: 0;
+}
+
+.button-outline:hover {
+  box-shadow: none;
+}
+
+.button-outline:hover:before {
+  opacity: .125;
+}
+
+.button-outline:focus {
+  outline: none;
+  border: $border-width solid currentcolor;
+  box-shadow: 0 0 3px 1px;
+}
+
+.button-outline:active,
+.button-outline.is-active {
+  box-shadow: inset 0 1px 5px 0, 0 0 1px;
+}
+
+.button-outline:disabled,
+.button-outline.is-disabled {
+  opacity: .5;
+}
