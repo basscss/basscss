@@ -47,6 +47,8 @@
     "basscss-highlight": "0.0.1",
     "brfs": "^1.2.0",
     "cheerio": "^0.17.0",
+    "colorable": "^1.0.5",
+    "colors.css": "^2.0.4",
     "css-scss": "0.0.5",
     "cssstats": "^1.0.1",
     "custom-css": "0.0.7",
