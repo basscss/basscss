@@ -645,6 +645,23 @@ h6,
   display: table;
 }
 
+/* Basscss UI Utility Button Sizes */
+
+.button-small {
+  padding: .25rem .5rem;
+}
+
+.button-big {
+  padding: 1rem 1.25rem;
+}
+
+.button-narrow {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+
+
 /* Basscss Grid */
 
 .container {

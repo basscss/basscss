@@ -84,6 +84,7 @@
       "basscss-utility-white-space",
       "basscss-utility-responsive-states",
       "basscss-positions",
+      "basscss-ui-utility-button-sizes",
       "basscss-grid",
       "flex-object",
       "basscss-color-base",
@@ -99,7 +100,6 @@
     ],
     "optional_modules": [
       "basscss-utility-headings",
-      "basscss-ui-utility-button-sizes",
       "basscss-ui-utility-groups",
       "basscss-table-object",
       "basscss-color-buttons",
