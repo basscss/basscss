@@ -1,16 +1,10 @@
 
 module.exports = {
-  singlesclub: {
-    title: 'Singles Club',
-    url: 'http://singlesclub.fm/',
-    description: 'Part record club. Part music journal.',
-    image: 'singlesclub-640.jpg'
-  },
-  colepeters: {
-    title: 'Cole Peters',
-    url: 'http://colepeters.com/',
-    description: 'Designer, writer, sound artist',
-    image: 'colepeters.png'
+  monodraw: {
+    title: 'Monodraw for Mac',
+    url: 'http://monodraw.helftone.com/',
+    description: 'Powerful ASCII art editor designed for the Mac.',
+    image: 'monodraw-640.jpg'
   },
   assembly_blog: {
     title: 'Assembly Blog',
@@ -18,11 +12,11 @@ module.exports = {
     description: '',
     image: 'assembly_blog-640.jpg'
   },
-  monodraw: {
-    title: 'Monodraw for Mac',
-    url: 'http://monodraw.helftone.com/',
-    description: 'Powerful ASCII art editor designed for the Mac.',
-    image: 'monodraw-640.jpg'
+  singlesclub: {
+    title: 'Singles Club',
+    url: 'http://singlesclub.fm/',
+    description: 'Part record club. Part music journal.',
+    image: 'singlesclub-640.jpg'
   },
   pixyll: {
     title: 'Pixyll',
@@ -47,6 +41,14 @@ module.exports = {
     url: 'http://cssstats.com/',
     description: 'Potentially interesting stats on stylesheets',
     image: 'cssstats-640.jpg'
-  }
+  },
+  /* Updated to custom CSS
+    colepeters: {
+      title: 'Cole Peters',
+      url: 'http://colepeters.com/',
+      description: 'Designer, writer, sound artist',
+      image: 'colepeters.png'
+    },
+  */
 };
 

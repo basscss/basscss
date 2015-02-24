@@ -12,7 +12,9 @@ data.source = path.join(__dirname, '../docs/src');
 data.dest = path.join(__dirname, '..');
 
 data.layout = './layouts/docs.html';
-data.stylesheet = 'http://d2v52k3cl9vedd.cloudfront.net/bassdock/0.0.3/bassdock.min.css';
+data.baseurl = '//basscss.com';
+data.stylesheet = 'http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.0.1/bassdock.min.css';
+//data.stylesheet = '/css/basscss.css';
 data.asset_path = 'http://d2v52k3cl9vedd.cloudfront.net/basscss/';
 
 data.routes = require('../docs/src/routes');
@@ -21,6 +23,7 @@ data.stats = require('../docs/src/stats');
 data.defaults = require('../docs/src/variables')('./src/basscss.css');
 
 data.modules = data.basscss.modules;
+data.optional_modules = data.basscss.optional_modules;
 
 data.routes.docs.routes.modules = {
   title: 'Modules',
@@ -44,7 +47,6 @@ data.partials['showcase-widget'] = fs.readFileSync('./docs/src/partials/showcase
 data.partials.pagination = fs.readFileSync('./docs/src/partials/pagination.html', 'utf8');
 
 data.helpers = require('../docs/src/helpers');
-
 
 var autobass = new Autobass();
 autobass.init(data);

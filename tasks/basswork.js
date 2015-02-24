@@ -13,7 +13,8 @@ module.exports = function() {
              '    ' + data.description + '\n' +
              '    http://basscss.com' + '\n\n*/\n\n';
   gulp.src('./src/basscss.css')
-    .pipe(basswork())
+    .pipe(basswork({ source: '../src/basscss.css' }))
+    //.pipe(basswork())
     .pipe(header(meta))
     .pipe(gulp.dest('./css'))
     .pipe(mincss())

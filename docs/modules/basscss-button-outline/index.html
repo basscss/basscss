@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>
     Basscss
-     | Basscss Color Forms Dark
+     | Basscss Button Outline
   </title>
   <meta name="author" content="Brent Jackson">
   <meta name="description" content="Low-level CSS toolkit">
@@ -341,19 +341,19 @@
   <div class="flex flex-wrap flex-center py3 mb1 border-bottom">
     <div class="flex-auto">
       <h1 class="h1 caps m0">
-         Color Forms Dark
+         Button Outline
       </h1>
        
         <h2 class="h3 m0">
-          basscss-color-forms-dark
-          <span class="h5">v0.0.3</span>
+          basscss-button-outline
+          <span class="h5">v0.0.1</span>
         </h2>
       
     </div>
     
       <div class="mxn2">
-        <a href="//npmjs.com/package/basscss-color-forms-dark" class="button button-transparent blue">NPM</a>
-        <a href="https://github.com/jxnblk/basscss-color-forms-dark" class="button button-transparent blue">Github</a>
+        <a href="//npmjs.com/package/basscss-button-outline" class="button button-transparent blue">NPM</a>
+        <a href="https://github.com/jxnblk/basscss-button-outline" class="button button-transparent blue">Github</a>
       </div>
     
   </div>
@@ -375,8 +375,8 @@
       </a>
       
       /
-      <a href="/docs/modules/basscss-color-forms-dark" class="button button-narrow button-transparent ">
-         Color Forms Dark
+      <a href="/docs/modules/basscss-button-outline" class="button button-narrow button-transparent ">
+         Button Outline
       </a>
       
     
@@ -388,75 +388,29 @@
         <div class="px2 py2">
           
 
-
-<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>Color styles for form elements on dark backgrounds.</p>
-<h2 id="input-fields">Input Fields</h2>
-<p>To style the color, background, and border styles for form fields on dark backgrounds, use the <code>.field-dark</code> style.</p>
+<p>The <code>button-outline</code> style inherits color from its parent.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <form class="p2 white bg-dark-gray">
-  <label>Input</label>
-  <input type="text" class="block full-width field-dark">
-  <label>Select</label>
-  <select class="block full-width field-dark">
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
-  </select>
-  <label>Textarea</label>
-  <textarea class="block full-width field-dark"></textarea>
-</form>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p2 white bg-dark-gray&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Input<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width field-dark&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width field-dark&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;1&quot;</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;2&quot;</span>&gt;</span>Two<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;3&quot;</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Textarea<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width field-dark&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></pre>
+    <div class="blue">
+  <button class="button-outline">Button</button>
+  <a href="#!" class="button button-outline">Link Button</a>
+  <input type="button" class="button button-outline" value="Input Button">
 </div>
-<p>The <code>.field-dark</code> style includes states for disabled and read-only fields, as well as success, warning, and error states.</p>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-outline&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#!&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-outline&quot;</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-outline&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Input Button&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Use utility styles to change the color.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <form class="p2 white bg-dark-gray">
-  <label>Normal</label>
-  <input type="text" class="block full-width field-dark">
-  <label>Disabled</label>
-  <input type="text" class="block full-width field-dark" disabled value="This is disabled">
-  <label>Read Only</label>
-  <input type="text" class="block full-width field-dark" readonly value="This is read-only">
-  <label>Required</label>
-  <input type="text" class="block full-width field-dark" required>
-  <label>Success</label>
-  <input type="text" class="block full-width field-dark is-success">
-  <label>Warning</label>
-  <input type="text" class="block full-width field-dark is-warning">
-  <label>Error</label>
-  <input type="text" class="block full-width field-dark is-error">
-</form>
+    <button class="button-outline green">Button</button>
+<button class="button-outline red">Button</button>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p2 white bg-dark-gray&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width field-dark&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width field-dark&quot;</span> <span class="hljs-attribute">disabled</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;This is disabled&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Read Only<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width field-dark&quot;</span> <span class="hljs-attribute">readonly</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;This is read-only&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Required<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width field-dark&quot;</span> <span class="hljs-attribute">required</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width field-dark is-success&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width field-dark is-warning&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block full-width field-dark is-error&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></pre>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-outline green&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-outline red&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
 </div>
 
           
@@ -464,16 +418,16 @@
 
   <div class="clearfix mxn2 py2">
     
-      <a href="/docs/modules/basscss-color-forms" class="h3 left button button-transparent blue">
+      <a href="/docs/modules/basscss-color-tables" class="h3 left button button-transparent blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
-        Basscss Color Forms
+        Basscss Color Tables
       </a>
     
     
-      <a href="/docs/modules/basscss-input-range" class="h3 right button button-transparent blue">
-        Basscss Input Range
+      <a href="/docs/modules/basscss-button-transparent" class="h3 right button button-transparent blue">
+        Basscss Button Transparent
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
         </svg>

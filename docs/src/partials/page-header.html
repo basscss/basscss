@@ -8,16 +8,13 @@
         <h2 class="h3 m0">
           <%= page.name %>
           <span class="h5">v<%= page.version %></span>
-          <% if (obj.page.basscss && obj.page.basscss.optional) { %>
-            <span class="h6 caps red">Optional</span>
-          <% } %>
         </h2>
       <% } %>
     </div>
     <% if (obj.page.npmLink) { %>
       <div class="mxn2">
-        <a href="<%= page.npmLink %>" class="button button-nav-light">NPM</a>
-        <a href="<%= page.homepage %>" class="button button-nav-light">Github</a>
+        <a href="<%= page.npmLink %>" class="button button-transparent blue">NPM</a>
+        <a href="<%= page.homepage %>" class="button button-transparent blue">Github</a>
       </div>
     <% } %>
   </div>
@@ -25,11 +22,11 @@
 
 <div class="px2">
   <div class="avenir h5 bold mxn1 mb3">
-    <a href="/" class="button button-narrow">Home</a>
+    <a href="/" class="button button-narrow button-transparent blue">Home</a>
     <% if (obj.page.breadcrumbs) { %>
       <% obj.page.breadcrumbs.forEach(function(crumb, i) { %>
       /
-      <a href="<%= crumb.path %>" class="button button-narrow <%= (i == page.breadcrumbs.length - 1) ? 'dark-gray' : '' %>">
+      <a href="<%= crumb.path %>" class="button button-narrow button-transparent <%= (i == page.breadcrumbs.length - 1) ? '' : 'blue' %>">
         <%= removePrefix(crumb.title) %>
       </a>
       <% }) %>

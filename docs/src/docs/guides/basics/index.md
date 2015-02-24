@@ -30,7 +30,7 @@ It also has some significant front-end performance benefits.
 ## Example
 
 ```html
-<div class="h3 p1 mb2 bg-light-gray rounded">
+<div class="h3 p1 mb2 bg-silver rounded">
   A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
 </div>
 ```
@@ -95,11 +95,11 @@ For example, when using a grid system.
 
 ## Box Model Simulation
 
-<div class="center p1 blue border-blue">
+<div class="center p1 blue border border-blue">
   <p class="mb0">Margin</p>
-  <div class="m1 py1 px2 border-blue">
+  <div class="m1 py1 px2 border border-blue">
     <p>Padding</p>
-    <div class="p2 border-blue">Content</div>
+    <div class="p2 border border-blue">Content</div>
   </div>
 </div>
 
@@ -177,7 +177,7 @@ to ensure it never overflows its container.
 Use the `.fit` class to do this.
 
 ```html
-<img src="/docs/placeholder.svg" alt="Basscss" class="fit"/>
+<img src="/docs/images/placeholder.svg" alt="Basscss" class="fit"/>
 ```
 
 If you do need to use widths, use percentages.
