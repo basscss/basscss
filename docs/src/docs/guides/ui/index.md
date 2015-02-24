@@ -8,9 +8,9 @@
   You don’t need to make CSS do your templating engine’s job.
 </p>
 
-Note: this guide makes use of optional modules that are not included in the core Basscss package:
-<a href="/docs/modules/basscss-ui-utility-button-sizes">UI Utility Button Sizes</a> and
-<a href="/docs/modules/basscss-ui-utility-groups">UI Utility Groups</a>.
+Note: this guide makes use of the optional
+<a href="/docs/modules/basscss-ui-utility-groups">UI Utility Groups</a>
+module that is not included in the default Basscss package.
 
 
 # Button Sizes
