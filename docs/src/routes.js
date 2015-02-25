@@ -155,6 +155,9 @@ module.exports = {
       styles: { title: 'Table of Styles' },
       stats: { },
       variables: { },
+      'color-combinations': {
+        title: 'Color Combos'
+      },
       customize: {},
     }
   },
