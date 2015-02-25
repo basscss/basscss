@@ -1,10 +1,9 @@
 
 <% if (obj.colorCombinations) { %>
 
-  <h1>
-    <%= obj.colorCombinations.length %> 
-    Readable Color Combinations
-  </h1>
+  <p>
+    Basscss’s default color palette has <b><%= obj.colorCombinations.length %></b> readable color combinations.
+  </p>
 
   <h1>Level AAA</h1>
   <% obj.colorCombinations.forEach(function(combo) { %>
@@ -16,7 +15,6 @@
   <h1>Level AA</h1>
   <% obj.colorCombinations.forEach(function(combo) { %>
     <% if (combo.contrast > 4.5 && combo.contrast < 7) { %>
-      <% console.log(combo.name, combo.accessibility, typeof combo.accessibility) %>
       <%= include('color-combo-card', combo) %>
     <% } %>
   <% }) %>
@@ -25,6 +23,7 @@
   <p>Readable at 18 point and above</p>
   <% obj.colorCombinations.forEach(function(combo) { %>
     <% if (combo.contrast > 3 && combo.contrast < 4.5) { %>
+      <%= include('color-combo-card', combo) %>
     <% } %>
   <% }) %>
 

@@ -156,7 +156,7 @@ module.exports = {
       stats: { },
       variables: { },
       'color-combinations': {
-        title: 'Color Combinations'
+        title: 'Color Combos'
       },
       customize: {},
     }

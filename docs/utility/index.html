@@ -207,7 +207,7 @@
   
     <li class="">
       <a href="/docs/color-combinations" class="button block button-transparent  ">
-        Color Combinations
+        Color Combos
       </a>
       
       
@@ -433,11 +433,98 @@
       <h1>Typography</h1>
       
 
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Change typographic styles and defaults with these utilities.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <p class="bold">Bold</p>
+<p class="regular">Regular</p>
+<p class="italic">Italic</p>
+<p class="caps">Caps</p>
+<p class="left-align">Left align</p>
+<p class="center">Center</p>
+<p class="right-align">Right align</p>
+<p class="justify">Justify Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bold&quot;</span>&gt;</span>Bold<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;regular&quot;</span>&gt;</span>Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;italic&quot;</span>&gt;</span>Italic<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;caps&quot;</span>&gt;</span>Caps<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left-align&quot;</span>&gt;</span>Left align<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center&quot;</span>&gt;</span>Center<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;right-align&quot;</span>&gt;</span>Right align<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;justify&quot;</span>&gt;</span>Justify Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+</div>
+
     </section>
   
     <section id="layout" class="py2">
       <h1>Layout</h1>
       
+
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Change the default document flow with display, float, and other utilities.</p>
+<pre><span class="hljs-class">.inline</span>       <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline </span></span></span>}
+<span class="hljs-class">.block</span>        <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block </span></span></span>}
+<span class="hljs-class">.inline-block</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline-block </span></span></span>}
+
+<span class="hljs-class">.overflow-hidden</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden </span></span></span>}
+<span class="hljs-class">.overflow-auto</span>   <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> auto </span></span></span>}
+<span class="hljs-class">.overflow-scroll</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> scroll </span></span></span>}
+
+<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:before</span>,
+<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">&quot; &quot;</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> table
+</span></span></span>}
+<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">clear</span>:<span class="hljs-value"> both </span></span></span>}
+
+<span class="hljs-class">.left</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left </span></span></span>}
+<span class="hljs-class">.right</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> right </span></span></span>}
+
+<span class="hljs-class">.fit</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span> </span></span></span>}
+
+<span class="hljs-class">.half-width</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">50%</span> </span></span></span>}
+<span class="hljs-class">.full-width</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span> </span></span></span>}</pre><h2 id="media-object">Media Object</h2>
+<p>Create a media object using basic utilities.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix mb2 outline-blue">
+  <div class="left p2 mr1">Image</div>
+  <div class="overflow-hidden">
+    <p><b>Body</b> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix mb2 outline-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left p2 mr1&quot;</span>&gt;</span>Image<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;overflow-hidden&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">b</span>&gt;</span>Body<span class="hljs-tag">&lt;/<span class="hljs-title">b</span>&gt;</span> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="double-sided-media-object">Double-Sided Media Object</h2>
+<p>For a container with a flexible center, use a double-sided media object.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix mb2 outline-blue">
+  <div class="left p2 mr1">Image</div>
+  <div class="right p2 ml1">Image</div>
+  <div class="overflow-hidden">
+    <p><b>Body</b> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix mb2 outline-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left p2 mr1&quot;</span>&gt;</span>Image<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;right p2 ml1&quot;</span>&gt;</span>Image<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;overflow-hidden&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">b</span>&gt;</span>Body<span class="hljs-tag">&lt;/<span class="hljs-title">b</span>&gt;</span> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
 
     </section>
   
@@ -445,11 +532,173 @@
       <h1>White Space Scale</h1>
       
 
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Margin and padding utilities are based on a global white space scale defined with variables.
+These utilities use a shorthand naming convention.</p>
+<div class="overflow-scroll">
+  <table class="mb2 bg-darken-1 rounded table-light">
+    <thead class="bg-darken-1">
+      <tr> <th>Shorthand</th> <th>Description</th> </tr>
+    </thead>
+    <tbody>
+      <tr> <td>m</td> <td>Margin</td> </tr>
+      <tr> <td>p</td> <td>Padding</td> </tr>
+      <tr> <td>t</td> <td>Top</td> </tr>
+      <tr> <td>r</td> <td>Right</td> </tr>
+      <tr> <td>b</td> <td>Bottom</td> </tr>
+      <tr> <td>l</td> <td>Left</td> </tr>
+      <tr> <td>x</td> <td>X-axis (left and right)</td> </tr>
+      <tr> <td>y</td> <td>Y-axis (top and bottom)</td> </tr>
+      <tr> <td>n</td> <td>Negative (margin only)</td> </tr>
+      <tr> <td>1</td> <td>--space-1 (default .5rem)</td> </tr>
+      <tr> <td>2</td> <td>--space-2 (default 1rem)</td> </tr>
+      <tr> <td>3</td> <td>--space-3 (default 2rem)</td> </tr>
+      <tr> <td>4</td> <td>--space-4 (default 4rem)</td> </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="margins">Margins</h2>
+<p>Change or reset default margins using the global white space scale.
+Negative x-axis margins are used to offset padding.
+Margin auto is used to horizontally center block-level elements with a set width.</p>
+<pre><span class="hljs-class">.m0</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.mt0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.mr0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.mb0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.ml0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-number">0</span> </span></span></span>}
+
+<span class="hljs-class">.m1</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.mt1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.mr1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.mb1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.ml1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+
+<span class="hljs-class">.m2</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.mt2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.mr2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.mb2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.ml2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+
+<span class="hljs-class">.m3</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.mt3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.mr3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.mb3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.ml3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+
+<span class="hljs-class">.m4</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.mt4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value">    <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.mr4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.mb4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.ml4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+
+<span class="hljs-class">.mxn1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule">}</span></span>
+<span class="hljs-class">.mxn2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule">}</span></span>
+<span class="hljs-class">.mxn3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule">}</span></span>
+<span class="hljs-class">.mxn4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.mx-auto</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> auto</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> auto</span></span>; <span class="hljs-rule">}</span></span></pre><h2 id="padding">Padding</h2>
+<p>Padding utilities are only available in symmetrical orientations.
+This is to normalize the spacing used around elements.</p>
+<pre><span class="hljs-class">.p1</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.py1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+<span class="hljs-class">.px1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) </span></span></span>}
+
+<span class="hljs-class">.p2</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.py2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+<span class="hljs-class">.px2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) </span></span></span>}
+
+<span class="hljs-class">.p3</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.py3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+<span class="hljs-class">.px3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) </span></span></span>}
+
+<span class="hljs-class">.p4</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.py4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value">   <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}
+<span class="hljs-class">.px4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) </span></span></span>}</pre><p><span class="red">Margins and padding should never be declared outside of these utilities.</span>
+This is meant to help create consistent rhythm and avoid magic numbers.
+If, for some reason, the default white space scale does not accomodate your design,
+customize and extend it before implementation.</p>
+
     </section>
   
     <section id="responsive-states" class="py2">
       <h1>Responsive States</h1>
       
+
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>These styles allow for conditionally showing and hiding elements using a mobile-first approach.</p>
+<h2 id="prefix-naming-convention">Prefix Naming Convention</h2>
+<div class="overflow-scroll">
+  <table class="mb2 table-light overflow-hidden border rounded">
+    <thead class="bg-darken-1">
+      <tr> <th>Prefix</th> <th>Description</th> </tr>
+    </thead>
+    <tbody>
+      <tr> <td>(no prefix)</td> <td>Not scoped to a breakpoint</td> </tr>
+      <tr> <td>sm-</td> <td>--breakpoint-sm (default: min-width 40em)</td> </tr>
+      <tr> <td>md-</td> <td>--breakpoint-md (default: min-width 52em)</td> </tr>
+      <tr> <td>lg-</td> <td>--breakpoint-lg (default: min-width 64em)</td> </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>To adjust the default breakpoints, declare custom media queries after importing the file via Rework, or manually adjust them in CSS.</p>
+<pre><span class="hljs-class">.sm-show</span>, <span class="hljs-class">.md-show</span>, <span class="hljs-class">.lg-show</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span>
+</span></span></span>}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
+  <span class="hljs-class">.sm-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
+  <span class="hljs-class">.md-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
+  <span class="hljs-class">.lg-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
+  <span class="hljs-class">.sm-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
+  <span class="hljs-class">.md-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
+  <span class="hljs-class">.lg-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+}
+<span class="hljs-class">.display-none</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+<span class="hljs-class">.hide</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">clip</span>:<span class="hljs-value"> <span class="hljs-function">rect</span>(<span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>)</span></span>;
+<span class="hljs-rule">}</span></span></pre><h2 id="example">Example</h2>
+<p>Resize the browser window to see the effect.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <h3 class="sm-show">Visible from <code>--breakpoint-sm</code> and up.</h3>
+<h3 class="sm-hide red">Hidden from <code>--breakpoint-sm</code> and up.</h3>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-show&quot;</span>&gt;</span>Visible from <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>--breakpoint-sm<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span> and up.<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-hide red&quot;</span>&gt;</span>Hidden from <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>--breakpoint-sm<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span> and up.<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span></pre>
+</div>
+<h2 id="responsive-line-break">Responsive Line Break</h2>
+<p>Control wrapping at different screen widths.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <h1>
+  Responsive Line Break
+  <br class="md-show">
+  To Control Wrapping
+</h1>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>
+  Responsive Line Break
+  <span class="hljs-tag">&lt;<span class="hljs-title">br</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;md-show&quot;</span>&gt;</span>
+  To Control Wrapping
+<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span></pre>
+</div>
 
     </section>
   
@@ -457,11 +706,57 @@
       <h1>Positions</h1>
       
 
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>These styles alter the default document flow.</p>
+<p><span class="red">Use positions with caution.
+They are often unnecessary and commonly misused.</span><br>
+See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for more info.</p>
+<pre><span class="hljs-class">.relative</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative </span></span></span>}
+<span class="hljs-class">.absolute</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute </span></span></span>}
+<span class="hljs-class">.fixed</span>    <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> fixed </span></span></span>}
+
+<span class="hljs-class">.top-0</span>    <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.right-0</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">right</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.bottom-0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.left-0</span>   <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+
+<span class="hljs-class">.z1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">1</span> </span></span></span>}
+<span class="hljs-class">.z2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">2</span> </span></span></span>}
+<span class="hljs-class">.z3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">3</span> </span></span></span>}
+<span class="hljs-class">.z4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">4</span> </span></span></span>}
+
+<span class="hljs-class">.absolute-center</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">right</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> table</span></span>;
+<span class="hljs-rule">}</span></span></pre>
     </section>
   
     <section id="button-sizes" class="py2">
       <h1>Button Sizes</h1>
       
+
+<p>These utilities extend the <code>basscss-base-buttons</code> styles.
+To change the line-height and padding but leave the font-size the same,
+use button size extensions.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <button type="button" class="button-big button-blue">Burgers</button>
+<button type="button" class="button-blue">Fries</button>
+<div class="mb1 md-hide"></div>
+<button type="button" class="button-narrow button-blue">Onion Rings</button>
+<button type="button" class="button-small button-blue">Shakes</button>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-big button-blue&quot;</span>&gt;</span>Burgers<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-blue&quot;</span>&gt;</span>Fries<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mb1 md-hide&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-narrow button-blue&quot;</span>&gt;</span>Onion Rings<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-small button-blue&quot;</span>&gt;</span>Shakes<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+</div>
 
     </section>
   

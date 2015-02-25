@@ -15,6 +15,10 @@ Object.keys(result).map(function(key) {
   });
 });
 
+combinations.sort(function(a, b) {
+  return b.contrast - a.contrast;
+});
+
 
 module.exports = combinations;
 

@@ -167,7 +167,7 @@
   
     <li class="">
       <a href="/docs/color-combinations" class="button block button-transparent  ">
-        Color Combinations
+        Color Combos
       </a>
       
       
@@ -395,6 +395,128 @@
 
         <div class="px2 py2">
           
+
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>The utility-based grid allows a lot of flexibility in creating complex layouts.
+Start by using a <code>.clearfix</code> container.</p>
+<p>Optionally use a <code>.container</code> to set a max-width.
+Adjust the container width with the <code>--container-width</code> variable.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="container">
+  <div class="clearfix">
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;container&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Add columns using the <code>.col</code> and grid width <code>.col-N</code> classes.
+<code>.col</code> floats elements left and sets box-sizing to border-box.
+<code>.col-N</code> sets width according to a 12 column grid.
+The total number of columns in a row should add up to 12.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix outline-blue">
+  <div class="col col-6">.col.col-6</div>
+  <div class="col col-6">.col.col-6</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix outline-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col col-6&quot;</span>&gt;</span>.col.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col col-6&quot;</span>&gt;</span>.col.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="responsive-grid">Responsive Grid</h2>
+<p>Use breakpoint-prefixed column utilities to change the grid at different screen widths.
+Each breakpoint applies to that screen width and up.
+Unprefixed styles apply to all screen widths.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix outline-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4">.sm-col.sm-col-6.md-col-5.lg-col-4</div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8">.sm-col.sm-col-6.md-col-7.lg-col-8</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix outline-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col sm-col-6 md-col-5 lg-col-4&quot;</span>&gt;</span>.sm-col.sm-col-6.md-col-5.lg-col-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col sm-col-6 md-col-7 lg-col-8&quot;</span>&gt;</span>.sm-col.sm-col-6.md-col-7.lg-col-8<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="gutters">Gutters</h2>
+<p>Use padding and negative margin utilities to create gutters based on the white space scale.
+When using negative margin, be sure to compensate for the extra width created
+with a padded parent element or by using overflow hidden.
+Otherwise, horizontal scrolling may occur.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix mxn2 outline-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div>.px2</div></div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2"><div>.px2</div></div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix mxn2 outline-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col sm-col-6 md-col-5 lg-col-4 px2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>.px2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col sm-col-6 md-col-7 lg-col-8 px2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>.px2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="nesting">Nesting</h2>
+<p>Nest whole grid structures within columns to created nested grids.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix mxn2 outline-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div>Unnested</div></div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2">
+    <div class="clearfix mxn2">
+      <div class="col col-6 px2"><div>Nested</div></div>
+      <div class="col col-6 px2"><div>Nested</div></div>
+    </div>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix mxn2 outline-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col sm-col-6 md-col-5 lg-col-4 px2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Unnested<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col sm-col-6 md-col-7 lg-col-8 px2&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix mxn2&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col col-6 px2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Nested<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col col-6 px2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Nested<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="reversed">Reversed</h2>
+<p>To reverse the order of columns, use the <code>.col-right</code> class to float right</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix outline-blue">
+  <div class="col-right col-6">.col-right.col-6</div>
+  <div class="col col-6">.col.col-6</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix outline-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-right col-6&quot;</span>&gt;</span>.col-right.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col col-6&quot;</span>&gt;</span>.col.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="centering-columns">Centering Columns</h2>
+<p>Use the <code>.mx-auto</code> class to center columns within their containers.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix mxn2 outline-blue">
+  <div class="col-8 px2 mx-auto">
+    <div>Centered Column</div>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix mxn2 outline-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-8 px2 mx-auto&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Centered Column<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
 
           
 
