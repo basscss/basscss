@@ -4,13 +4,15 @@
   <div class="p3" style="color:<%= pair.hex %>;background-color:<%= hex %>">
     <div class="flex flex-center">
       <h1 class="h00 h00-responsive m0 flex-auto">
-        <% if (typeof obj.accessibility !== 'undefined') { %>
-          <% if (obj.accessibility.aaa) { %>Aaa
-          <% } else if (obj.accessibility.aa) { %>Aa
-          <% } else if (obj.accessibility.aaLarge) { %>Aa <span class="h1">Large</span><% } %>
-        <% } else { %>
-          Xx
-        <% } %>
+        <a href="//basscss.com<%= obj.page.path %>/#<%= name %>-on-<%= pair.name %>"
+          class="<%= pair.name %>">
+          <% if (typeof obj.accessibility !== 'undefined') { %>
+            <% if (obj.accessibility.aaa) { %>Aaa
+            <% } else if (obj.accessibility.aa) { %>Aa
+            <% } else if (obj.accessibility.aaLarge) { %>Aa <span class="h1">Large</span>
+            <% } else { %>Xx<% } %>
+          <% } %>
+        </a>
       </h1>
       <div class="right-align">
         <div class="h2 bold"><%= contrast.toFixed(2) %></div>
