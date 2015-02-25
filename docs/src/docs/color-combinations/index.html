@@ -1,22 +1,32 @@
 
 <% if (obj.colorCombinations) { %>
-  <div class="flex flex-wrap">
-    <% obj.colorCombinations.forEach(function(combo) { %>
-      <% if (combo.contrast > 4.5) { %>
-      <section id="<%= combo.name %>"
-        class="col-4"
-        style="color:<%= combo.color.hex %>;background-color:<%= combo.hex %>">
-          <div class="p2">
-            <h1>
-              <%= capitalize(combo.color.name) %> on
-              <%= capitalize(combo.name) %>
-              (<%= combo.contrast.toFixed(2) %>)
-            </h1>
-            <div class="monospace"><%= combo.hex %> <%= combo.color.hex %></div>
-          </div>
-        </section>
-      <% } %>
-    <% }) %>
-  </div>
+
+  <h1>
+    <%= obj.colorCombinations.length %> 
+    Readable Color Combinations
+  </h1>
+
+  <h1>Level AAA</h1>
+  <% obj.colorCombinations.forEach(function(combo) { %>
+    <% if (combo.contrast > 7) { %>
+      <%= include('color-combo-card', combo) %>
+    <% } %>
+  <% }) %>
+
+  <h1>Level AA</h1>
+  <% obj.colorCombinations.forEach(function(combo) { %>
+    <% if (combo.contrast > 4.5 && combo.contrast < 7) { %>
+      <% console.log(combo.name, combo.accessibility, typeof combo.accessibility) %>
+      <%= include('color-combo-card', combo) %>
+    <% } %>
+  <% }) %>
+
+  <h1>Level AA Large Text</h1>
+  <p>Readable at 18 point and above</p>
+  <% obj.colorCombinations.forEach(function(combo) { %>
+    <% if (combo.contrast > 3 && combo.contrast < 4.5) { %>
+    <% } %>
+  <% }) %>
+
 <% }  %>
 

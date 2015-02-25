@@ -1,0 +1,31 @@
+
+<section id="<%= name %>-on-<%= pair.name %>" class=" mb3">
+  <div class="px2 py3" style="color:<%= pair.hex %>;background-color:<%= hex %>">
+
+    <div class="flex flex-center">
+      <h1 class="h00 h00-responsive">
+        <% if (typeof obj.accessibility !== 'undefined') { %>
+          <% if (accessibility.aaa) { %>
+            Aaa
+          <% } else if (accessiblity.aa) { %>
+            Aa
+          <% } else if (accessibility.aaLarge) { %>
+            Aa Large
+          <% } %>
+        <% } else { %>
+          Xx
+        <% } %>
+      </h1>
+      <div class="">
+        <div class="h3 bold"><%= contrast.toFixed(2) %></div>
+        <div>Ratio</div>
+      </div>
+    </div>
+    <h2 class="h1 m0 flex-auto">
+      <%= capitalize(pair.name) %> on
+      <%= capitalize(name) %>
+    </h2>
+    <div class="monospace"><%= hex %> <%= pair.hex %></div>
+
+  </div>
+</section>

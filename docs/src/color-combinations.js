@@ -2,25 +2,17 @@
 var colorable = require('colorable');
 var colors = require('colors.css/js/colors');
 
-//var colors = [];
-//Object.keys(colorsObj).map(function(key) {
-//  var color = colorsObj[key];
-//  colors.push(color);
-//});
-
-var result = colorable(colors);
-
-//console.log(result);
+var result = colorable(colors, { threshold: 3 });
 
 var combinations = [];
 
 Object.keys(result).map(function(key) {
   var color = result[key];
   color.combinations.map(function(combo) {
-    combo.color = color;
+    combo.pair = color;
     combinations.push(combo);
+    //console.log(combo.accessibility, combo.name);
   });
-  //combinations = combinations.concat(color.combinations);
 });
 
 
