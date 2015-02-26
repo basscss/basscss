@@ -7,7 +7,7 @@
 <% if (obj.page.sections) { %>
   <% page.sections.forEach(function(section) { %>
     <section id="<%= section.name %>" class="py2">
-      <h1><%= capitalize(section.name) %></h1>
+      <%= include('section-header', { section: section, module: modules[section.module] }) %>
       <%= modules[section.module].content %>
     </section>
   <% }) %>
