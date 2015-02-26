@@ -1,34 +1,42 @@
 
-<% _.forIn(modules, function(module, key) { %>
-  <div class="flex flex-center mxn2 mb1">
-    <h2 class="flex-auto m0 px2">
-      <%= module.name %>
-      <span class="h5">v<%= module.version %></span>
-    </h2>
-    <a href="/docs/modules/<%= module.name %>" class="button button-transparent blue">
-      Details
-    </a>
-  </div>
-  <table class="mb4 folding-table table-light">
-    <thead class="bold bg-darken-1">
-      <tr> <th>Selectors</th> <th>Declarations</th> </tr>
-    </thead>
-    <tbody>
-      <% module.stats.rules.forEach(function(rule) { %>
-        <% if (rule.selector != ':root') { %>
-          <tr>
-            <td class="sm-col-3">
-              <%= rule.selector %>
-            </td>
-            <td class="sm-col-9">
-              <% rule.declarations.forEach(function(dec) { %>
-                <%= dec.prop %>: <%= dec.value %>;
-                <% }) %>
-            </td>
-          </tr>
-        <% } %>
-      <% }) %>
-    </tbody>
-  </table>
+<% /* _.forIn(modules, function(module, key) { */ %>
+<% _.forIn(routes.docs.routes, function(primaryPage) { %>
+  <% if (primaryPage.sections) { %>
+    <% _.forIn(primaryPage.sections, function(section) { %>
+
+      <div class="flex flex-center mxn2 mb1">
+        <h2 class="flex-auto m0 px2">
+          <%= section.module %>
+          <span class="h5">v<%= modules[section.module].version %></span>
+        </h2>
+        <a href="<%= primaryPage.path + '/#' + removePrefix(section.module) %>"
+          class="button button-transparent blue">
+          Details
+        </a>
+      </div>
+      <table class="mb4 folding-table table-light">
+        <thead class="bold bg-darken-1">
+          <tr> <th>Selectors</th> <th>Declarations</th> </tr>
+        </thead>
+        <tbody>
+          <% modules[section.module].stats.rules.forEach(function(rule) { %>
+            <% if (rule.selector != ':root') { %>
+              <tr>
+                <td class="sm-col-3">
+                  <%= rule.selector %>
+                </td>
+                <td class="sm-col-9">
+                  <% rule.declarations.forEach(function(dec) { %>
+                    <%= dec.prop %>: <%= dec.value %>;
+                    <% }) %>
+                </td>
+              </tr>
+            <% } %>
+          <% }) %>
+        </tbody>
+      </table>
+
+    <% }) %>
+  <% } %>
 <% }) %>
 

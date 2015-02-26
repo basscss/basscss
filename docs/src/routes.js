@@ -16,6 +16,7 @@ module.exports = {
         previous_page: 'getting_started',
         next_page: 'utility',
         sections: [
+          { name: 'reset', module: 'basscss-base-reset' }, 
           { name: 'typography', module: 'basscss-base-typography' }, 
           { name: 'forms', module: 'basscss-base-forms' }, 
           { name: 'buttons', module: 'basscss-base-buttons' }, 
@@ -24,8 +25,8 @@ module.exports = {
       },
       utility: {
         sections: [
-          { name: 'typography', module: 'basscss-utility-typography' }, 
           { name: 'layout', module: 'basscss-utility-layout' }, 
+          { name: 'typography', module: 'basscss-utility-typography' }, 
           { name: 'white-space-scale', module: 'basscss-utility-white-space' }, 
           { name: 'responsive-states', module: 'basscss-utility-responsive-states' }, 
           { name: 'positions', module: 'basscss-positions' }, 
@@ -35,7 +36,6 @@ module.exports = {
       layout: {
         sections: [
           { name: 'grid', module: 'basscss-grid' }, 
-          //{ name: 'table-object', module: 'basscss-table-object' }, 
           { name: 'flex-object', module: 'flex-object' }, 
         ]
       },
@@ -48,6 +48,7 @@ module.exports = {
           { name: 'borders', module: 'basscss-color-borders' }, 
           { name: 'forms', module: 'basscss-color-forms' }, 
           { name: 'forms-dark', module: 'basscss-color-forms-dark' }, 
+          //{ name: 'input-range', module: 'basscss-color-input-range' }, 
           { name: 'tables', module: 'basscss-color-tables' }, 
           { name: 'background-images', module: 'basscss-background-images' }, 
         ]
