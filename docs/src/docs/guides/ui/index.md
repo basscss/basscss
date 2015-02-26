@@ -9,7 +9,7 @@
 </p>
 
 Note: this guide makes use of the optional
-<a href="/docs/modules/basscss-ui-utility-groups">UI Utility Groups</a>
+<a href="//npmjs.com/package/basscss-ui-utility-groups" target="_blank">UI Utility Groups</a>
 module that is not included in the default Basscss package.
 
 
@@ -175,7 +175,7 @@ Stylistically, these are essentially the same as navigation, but with separators
 
 <p class="h5">
   Note: the icons used in this example are from
-  <a href="http://jxnblk.github.io/geomicons-open">Geomicons Open</a>.
+  <a href="http://geomicons.com">Geomicons Open</a>.
 </p>
 
 

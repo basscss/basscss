@@ -38,8 +38,7 @@ By not defining a column width, each side will be as wide as its contents.
 # Hero Banner
 
 Next create a hero banner using utility styles.
-Note: This example uses the optional `basscss-utility-headings` and 
-`basscss-background-images` utility modules for the large heading and background image.
+Note: This example uses the optional `basscss-utility-headings` module for the large heading.
 
 ```html
 <header class="center px3 py4 white bg-gray bg-cover bg-center"
