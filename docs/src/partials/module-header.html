@@ -1,0 +1,23 @@
+
+<header class="mt3 mb1 border-bottom">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#<%= removePrefix(module.name) %>">
+          <%= capitalize(removePrefix(module.name)) %>
+        </a>
+      </h1>
+      <% if (module.version) { %>
+        <h2 class="h5 m0">
+          <%= module.name %>
+          v<%= module.version %>
+        </h2>
+      <% } %>
+    </div>
+    <div class="mxn2">
+      <a href="<%= module.npmLink %>" class="button button-transparent blue">NPM</a>
+      <a href="<%= module.homepage %>" class="button button-transparent blue">Github</a>
+    </div>
+  </div>
+</header>
+

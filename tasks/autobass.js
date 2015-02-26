@@ -32,12 +32,12 @@ data.routes.docs.routes.modules = {
 };
 
 // Create routes for each module
-data.modules.forEach(function(m) {
-  var modulesRoutes = data.routes.docs.routes.modules.routes;
-  modulesRoutes[m] = {
-    source: m
-  };
-});
+//data.modules.forEach(function(m) {
+//  var modulesRoutes = data.routes.docs.routes.modules.routes;
+//  modulesRoutes[m] = {
+//    source: m
+//  };
+//});
 
 data.partials = {};
 data.partials.head = fs.readFileSync('./docs/src/partials/head.html', 'utf8');
@@ -48,6 +48,10 @@ data.partials['showcase-widget'] = fs.readFileSync('./docs/src/partials/showcase
 data.partials.pagination = fs.readFileSync('./docs/src/partials/pagination.html', 'utf8');
 data.partials['color-combo-card'] = fs.readFileSync('./docs/src/partials/color-combo-card.html', 'utf8');
 data.partials['section-header'] = fs.readFileSync('./docs/src/partials/section-header.html', 'utf8');
+
+data.partials['module-section'] = fs.readFileSync('./docs/src/partials/module-section.html', 'utf8');
+data.partials['module-header'] = fs.readFileSync('./docs/src/partials/module-header.html', 'utf8');
+data.partials['module-footer'] = fs.readFileSync('./docs/src/partials/module-footer.html', 'utf8');
 
 data.helpers = require('../docs/src/helpers');
 

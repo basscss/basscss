@@ -1,0 +1,6 @@
+
+<section id="<%= removePrefix(module.name) %>" class="py2">
+  <%= include('module-header', { module: module }) %>
+  <%= module.content %>
+  <%= include('module-footer', { module: module }) %>
+</section>

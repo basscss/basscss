@@ -17,7 +17,7 @@
         <ul class="list-reset mb0 bg-darken-2">
           <% _.forIn(route.sections, function(section) { %>
             <li>
-              <a href="<%= route.path + '#' + section.name %>" class="button button-small px2 block button-transparent">
+              <a href="<%= route.path + '#' + removePrefix(section.module) %>" class="button button-small px2 block button-transparent">
                 <span class="block ml1"><%= capitalize(section.name) %></span>
               </a>
             </li>

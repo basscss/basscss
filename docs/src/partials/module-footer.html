@@ -1,0 +1,38 @@
+
+<footer>
+  <% if (module.css) { %>
+    <hr>
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        <%= fileSize(module.stats.size) %>
+        (<%= fileSize(module.stats.gzipSize) %> Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="<%= module.name %>-stats" class="bold caps flex flex-center flex-wrap mb3 mxn2">
+      <div class="col-6 sm-col-3 px2">
+        <div class="h6">
+          <%= module.stats.rules.length %> Rules
+        </div>
+      </div>
+      <div class="col-6 sm-col-3 px2">
+        <div class="h6">
+          <%= module.stats.selectors.length %> Selectors
+        </div>
+      </div>
+      <div class="col-6 sm-col-3 px2">
+        <div class="h6">
+          <%= module.stats.declarations.all.length %> Declarations
+        </div>
+      </div>
+      <div class="col-6 sm-col-3 px2">
+        <div class="h6">
+          <%= module.stats.aggregates.properties.length %> Properties
+        </div>
+      </div>
+    </div>
+    <pre id="<%= module.name %>-css-source" style="max-height:50vh"><%= highlightCss(module.css) %></pre>
+  <% } %>
+</footer>

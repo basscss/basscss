@@ -1074,7 +1074,7 @@ body {
 }
 
 a {
-  color: #0074d9;
+  color: #0076df;
   text-decoration: none;
 }
 
@@ -1097,7 +1097,7 @@ hr {
 
 .button {
   color: white;
-  background-color: #0074d9;
+  background-color: #0076df;
   border-radius: 3px;
   -webkit-transition-duration: .05s;
           transition-duration: .05s;
@@ -1145,8 +1145,8 @@ hr {
 
 .field-light:focus {
   outline: none;
-  border-color: #0074d9;
-  box-shadow: 0 0 2px rgba(0, 116, 217, .5);
+  border-color: #0076df;
+  box-shadow: 0 0 2px rgba(0, 118, 223, .5);
 }
 
 .field-light:disabled {
@@ -1159,19 +1159,19 @@ hr {
 }
 
 .field-light:invalid {
-  border-color: #ff4136;
+  border-color: #f95020;
 }
 
 .field-light.is-success {
-  border-color: #2ecc40;
+  border-color: #00cf26;
 }
 
 .field-light.is-warning {
-  border-color: #ffdc00;
+  border-color: #efcc00;
 }
 
 .field-light.is-error {
-  border-color: #ff4136;
+  border-color: #f95020;
 }
 
 .radio-light,
@@ -1187,7 +1187,7 @@ hr {
 .radio-light:focus,
 .checkbox-light:focus {
   outline: none;
-  box-shadow: 0 0 2px rgba(0, 116, 217, .5);
+  box-shadow: 0 0 2px rgba(0, 118, 223, .5);
 }
 
 
@@ -1227,19 +1227,19 @@ hr {
 }
 
 .field-dark:invalid {
-  border-color: #ff4136;
+  border-color: #f95020;
 }
 
 .field-dark.is-success {
-  border-color: #2ecc40;
+  border-color: #00cf26;
 }
 
 .field-dark.is-warning {
-  border-color: #ffdc00;
+  border-color: #efcc00;
 }
 
 .field-dark.is-error {
-  border-color: #ff4136;
+  border-color: #f95020;
 }
 
 
@@ -1579,7 +1579,7 @@ input[type=range] {
 }
 
 .blue {
-  color: #0074d9;
+  color: #0076df;
 }
 
 .navy {
@@ -1591,7 +1591,7 @@ input[type=range] {
 }
 
 .green {
-  color: #2ecc40;
+  color: #00cf26;
 }
 
 .olive {
@@ -1603,7 +1603,7 @@ input[type=range] {
 }
 
 .yellow {
-  color: #ffdc00;
+  color: #efcc00;
 }
 
 .orange {
@@ -1611,7 +1611,7 @@ input[type=range] {
 }
 
 .red {
-  color: #ff4136;
+  color: #f95020;
 }
 
 .fuchsia {
@@ -1652,7 +1652,7 @@ input[type=range] {
 }
 
 .bg-blue {
-  background-color: #0074d9;
+  background-color: #0076df;
 }
 
 .bg-navy {
@@ -1664,7 +1664,7 @@ input[type=range] {
 }
 
 .bg-green {
-  background-color: #2ecc40;
+  background-color: #00cf26;
 }
 
 .bg-olive {
@@ -1676,7 +1676,7 @@ input[type=range] {
 }
 
 .bg-yellow {
-  background-color: #ffdc00;
+  background-color: #efcc00;
 }
 
 .bg-orange {
@@ -1684,7 +1684,7 @@ input[type=range] {
 }
 
 .bg-red {
-  background-color: #ff4136;
+  background-color: #f95020;
 }
 
 .bg-fuchsia {
@@ -1722,7 +1722,7 @@ input[type=range] {
 }
 
 .border-blue {
-  border-color: #0074d9;
+  border-color: #0076df;
 }
 
 .border-navy {
@@ -1734,7 +1734,7 @@ input[type=range] {
 }
 
 .border-green {
-  border-color: #2ecc40;
+  border-color: #00cf26;
 }
 
 .border-olive {
@@ -1746,7 +1746,7 @@ input[type=range] {
 }
 
 .border-yellow {
-  border-color: #ffdc00;
+  border-color: #efcc00;
 }
 
 .border-orange {
@@ -1754,7 +1754,7 @@ input[type=range] {
 }
 
 .border-red {
-  border-color: #ff4136;
+  border-color: #f95020;
 }
 
 .border-fuchsia {
@@ -1807,43 +1807,11 @@ input[type=range] {
   opacity: .5;
 }
 
-/*
-
-   COLOR VARIABLES
-
-   - Cool
-   - Warm
-   - Gray Scale
-
-*/
-
-:root {
-  /* Cool */
-  /* Warm */
-  /* Gray scale */
-}
-
 
 
 /* Variables */
 
 /* Basscss Defaults */
-
-/*
-
-   COLOR VARIABLES
-
-   - Cool
-   - Warm
-   - Gray Scale
-
-*/
-
-:root {
-  /* Cool */
-  /* Warm */
-  /* Gray scale */
-}
 
 :root {
   /* Legacy support */

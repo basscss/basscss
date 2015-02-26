@@ -10,10 +10,7 @@
 
 <% if (obj.page.sections) { %>
   <% page.sections.forEach(function(section) { %>
-    <section id="<%= section.name %>" class="py2">
-      <%= include('section-header', { section: section, module: modules[section.module] }) %>
-      <%= modules[section.module].content %>
-    </section>
+    <%= include('module-section', { module: modules[section.module] }) %>
   <% }) %>
 <% }  %>
 
