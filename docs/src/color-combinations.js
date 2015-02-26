@@ -2,7 +2,7 @@
 var colorable = require('colorable');
 var colors = require('colors.css/js/colors');
 
-var result = colorable(colors, { threshold: 3 });
+var result = colorable(colors, { threshold: 3.5 });
 
 var combinations = [];
 
