@@ -394,6 +394,7 @@
 
 
         <div class="px2 py2">
+
           
 
 <p>Forms use base styles for their structure with color styles applied to adjust the look and feel.
@@ -497,6 +498,112 @@ The use of utilities allows for a lot of flexibility when building form layouts.
   <span class="hljs-rule"><span class="hljs-attribute">--form-field-padding-y</span>:<span class="hljs-value"> .<span class="hljs-number">5rem</span></span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">--form-field-padding-x</span>:<span class="hljs-value"> .<span class="hljs-number">5rem</span></span></span>;
 <span class="hljs-rule">}</span></span></pre>
+
+          
+            <hr>
+            <h2 class="">Stats</h2>
+            <div class="bold caps flex flex-center flex-wrap mb3 mxn2">
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  8
+                </h1>
+                <div class="h6">Rules</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  22
+                </h1>
+                <div class="h6">Selectors</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  25
+                </h1>
+                <div class="h6">Declarations</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  16
+                </h1>
+                <div class="h6">Properties</div>
+              </div>
+            </div>
+          
+
+          
+            <div class="flex flex-center">
+              <h2 class="flex-auto">CSS</h2>
+              <div class="h5 bold">
+                1 KB
+                (405 bytes Gzipped)
+              </div>
+            </div>
+            <pre style="max-height:50vh"><span class="hljs-comment">/* Basscss Base Forms */</span>
+
+<span class="hljs-tag">input</span>,
+<span class="hljs-tag">select</span>,
+<span class="hljs-tag">textarea</span>,
+<span class="hljs-tag">fieldset</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--form-field-font-size)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>, .<span class="hljs-number">5rem</span>)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=text]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=datetime]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=datetime-local]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=email]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=month]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=number]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=password]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=search]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=tel]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=time]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=url]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=week]</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--form-field-height)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--form-field-padding-y) <span class="hljs-function">var</span>(--form-field-padding-x)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">vertical-align</span>:<span class="hljs-value"> middle</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">-webkit-appearance</span>:<span class="hljs-value"> none</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-tag">select</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">line-height</span>:<span class="hljs-value"> <span class="hljs-number">1.75</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--form-field-padding-y) <span class="hljs-function">var</span>(--form-field-padding-x)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-tag">select</span><span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[multiple]</span>) <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--form-field-height)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">vertical-align</span>:<span class="hljs-value"> middle</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-tag">textarea</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">line-height</span>:<span class="hljs-value"> <span class="hljs-number">1.75</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--form-field-padding-y) <span class="hljs-function">var</span>(--form-field-padding-x)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.fieldset-reset</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.fieldset-reset</span> <span class="hljs-tag">legend</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--form-field-font-size</span>:<span class="hljs-value"> <span class="hljs-number">1rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--form-field-height</span>:<span class="hljs-value"> <span class="hljs-number">2.25rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--form-field-padding-y</span>:<span class="hljs-value"> .<span class="hljs-number">5rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--form-field-padding-x</span>:<span class="hljs-value"> .<span class="hljs-number">5rem</span></span></span>;
+<span class="hljs-rule">}</span></span></pre>
+          
+
           
 
 

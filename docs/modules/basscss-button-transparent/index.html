@@ -394,6 +394,7 @@
 
 
         <div class="px2 py2">
+
           
 
 <p>The <code>button-transparent</code> style inherits color from its parent.</p>
@@ -444,6 +445,107 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-transparent fuchsia&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button-transparent purple&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
 </div>
+
+
+          
+            <hr>
+            <h2 class="">Stats</h2>
+            <div class="bold caps flex flex-center flex-wrap mb3 mxn2">
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  8
+                </h1>
+                <div class="h6">Rules</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  10
+                </h1>
+                <div class="h6">Selectors</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  32
+                </h1>
+                <div class="h6">Declarations</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  20
+                </h1>
+                <div class="h6">Properties</div>
+              </div>
+            </div>
+          
+
+          
+            <div class="flex flex-center">
+              <h2 class="flex-auto">CSS</h2>
+              <div class="h5 bold">
+                1 KB
+                (403 bytes Gzipped)
+              </div>
+            </div>
+            <pre style="max-height:50vh"><span class="hljs-comment">/* Basscss Button Transparent */</span>
+
+<span class="hljs-class">.button-transparent</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">2</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> inherit</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> transparent</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-width) solid transparent</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transition-duration</span>:<span class="hljs-value"> .<span class="hljs-number">1s</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transition-timing-function</span>:<span class="hljs-value"> ease-out</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transition-property</span>:<span class="hljs-value"> box-shadow</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.button-transparent</span><span class="hljs-pseudo">:before</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">''</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> -<span class="hljs-number">1</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> -<span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> -<span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid transparent</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> currentcolor</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transition-duration</span>:<span class="hljs-value"> .<span class="hljs-number">1s</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transition-timing-function</span>:<span class="hljs-value"> ease-out</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transition-property</span>:<span class="hljs-value"> opacity</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.button-transparent</span><span class="hljs-pseudo">:hover</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> none</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.button-transparent</span><span class="hljs-pseudo">:hover</span><span class="hljs-pseudo">:before</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"> .<span class="hljs-number">0625</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"> .<span class="hljs-number">09375</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.button-transparent</span><span class="hljs-pseudo">:focus</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">outline</span>:<span class="hljs-value"> none</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> transparent</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">3px</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.button-transparent</span><span class="hljs-pseudo">:active</span><span class="hljs-pseudo">:before</span>,
+<span class="hljs-class">.button-transparent</span><span class="hljs-class">.is-active</span><span class="hljs-pseudo">:before</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"> .<span class="hljs-number">0625</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.button-transparent</span><span class="hljs-pseudo">:disabled</span>,
+<span class="hljs-class">.button-transparent</span><span class="hljs-class">.is-disabled</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"> .<span class="hljs-number">5</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--border-width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+<span class="hljs-rule">}</span></span></pre>
+          
 
           
 

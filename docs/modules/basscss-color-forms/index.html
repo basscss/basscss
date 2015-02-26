@@ -394,6 +394,7 @@
 
 
         <div class="px2 py2">
+
           
 
 
@@ -480,6 +481,122 @@ These add focus states that are consistent with the other form elements.</p>
   Radio
 <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span></pre>
 </div>
+
+
+          
+            <hr>
+            <h2 class="">Stats</h2>
+            <div class="bold caps flex flex-center flex-wrap mb3 mxn2">
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  12
+                </h1>
+                <div class="h6">Rules</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  14
+                </h1>
+                <div class="h6">Selectors</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  35
+                </h1>
+                <div class="h6">Declarations</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  21
+                </h1>
+                <div class="h6">Properties</div>
+              </div>
+            </div>
+          
+
+          
+            <div class="flex flex-center">
+              <h2 class="flex-auto">CSS</h2>
+              <div class="h5 bold">
+                1 KB
+                (471 bytes Gzipped)
+              </div>
+            </div>
+            <pre style="max-height:50vh">/* Basscss Color Forms */
+
+.field-light {
+  background-color: white;
+  transition: box-shadow .2s ease;
+  border-style: solid;
+  border-width: var(--border-width);
+  border-color: var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.field-light:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 2px rgba(var(--blue),.5);
+}
+
+.field-light:disabled {
+  color: var(--mid-gray);
+  background-color: var(--darken-2);
+}
+
+.field-light:read-only:not(select) {
+  background-color: var(--darken-2);
+}
+
+.field-light:invalid {
+  border-color: var(--red);
+}
+
+.field-light.is-success {
+  border-color: var(--green);
+}
+
+.field-light.is-warning {
+  border-color: var(--yellow);
+}
+
+.field-light.is-error {
+  border-color: var(--red);
+}
+
+.radio-light,
+.checkbox-light {
+  transition: box-shadow .2s ease;
+}
+
+.radio-light {
+  border-radius: 50%;
+}
+
+.radio-light:focus,
+.checkbox-light:focus {
+  outline: none;
+  box-shadow: 0 0 2px rgba(var(--blue),.5);
+}
+
+:root {
+  --blue: #0076df;
+  --red: #f95020;
+  --green: #00cf26;
+  --yellow: #efcc00;
+  --dark-gray: #333;
+  --mid-gray: #777;
+  --light-gray: #ccc;
+  --lighter-gray: #eee;
+  --darken-1: rgba(#000,.0625);
+  --darken-2: rgba(#000,.125);
+  --darken-3: rgba(#000,.25);
+  --darken-4: rgba(#000,.5);
+  --border-color: var(--light-gray);
+  --border-width: 1px;
+  --border-radius: 3px;
+}</pre>
+          
 
           
 

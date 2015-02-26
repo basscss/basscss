@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "angular-local-storage": "^0.1.5",
-    "autobass": "^1.0.3",
+    "autobass": "^1.1.0",
     "basscss-highlight": "0.0.1",
     "brfs": "^1.2.0",
     "cheerio": "^0.17.0",

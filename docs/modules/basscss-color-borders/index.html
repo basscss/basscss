@@ -394,6 +394,7 @@
 
 
         <div class="px2 py2">
+
           
 
 
@@ -437,6 +438,114 @@ This is useful for things like input and button groups.</p>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button not-rounded&quot;</span>&gt;</span>Not Rounded<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
 </div>
+
+
+          
+            <hr>
+            <h2 class="">Stats</h2>
+            <div class="bold caps flex flex-center flex-wrap mb3 mxn2">
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  13
+                </h1>
+                <div class="h6">Rules</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  13
+                </h1>
+                <div class="h6">Selectors</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  26
+                </h1>
+                <div class="h6">Declarations</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  17
+                </h1>
+                <div class="h6">Properties</div>
+              </div>
+            </div>
+          
+
+          
+            <div class="flex flex-center">
+              <h2 class="flex-auto">CSS</h2>
+              <div class="h5 bold">
+                1 KB
+                (296 bytes Gzipped)
+              </div>
+            </div>
+            <pre style="max-height:50vh"><span class="hljs-comment">/* Basscss Color Borders */</span>
+
+<span class="hljs-class">.border</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-style</span>:<span class="hljs-value"> solid</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-width</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-width)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-color)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.border-top</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-top-style</span>:<span class="hljs-value"> solid</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top-width</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-width)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-color)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.border-right</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-right-style</span>:<span class="hljs-value"> solid</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-right-width</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-width)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-right-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-color)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.border-bottom</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-bottom-style</span>:<span class="hljs-value"> solid</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-bottom-width</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-width)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-bottom-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-color)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.border-left</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-left-style</span>:<span class="hljs-value"> solid</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-left-width</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-width)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-left-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-color)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.rounded</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-radius)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.circle</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.rounded-top</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-radius) <span class="hljs-function">var</span>(--border-radius) <span class="hljs-number">0</span> <span class="hljs-number">0</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.rounded-right</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-function">var</span>(--border-radius) <span class="hljs-function">var</span>(--border-radius) <span class="hljs-number">0</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.rounded-bottom</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-function">var</span>(--border-radius) <span class="hljs-function">var</span>(--border-radius)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.rounded-left</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-radius) <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-function">var</span>(--border-radius)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.not-rounded</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--light-gray</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ccc</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--light-gray)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--border-width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--border-radius</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
+<span class="hljs-rule">}</span></span></pre>
+          
 
           
 

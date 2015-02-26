@@ -394,6 +394,7 @@
 
 
         <div class="px2 py2">
+
           
 
 
@@ -469,6 +470,109 @@
   To Control Wrapping
 <span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span></pre>
 </div>
+
+
+          
+            <hr>
+            <h2 class="">Stats</h2>
+            <div class="bold caps flex flex-center flex-wrap mb3 mxn2">
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  9
+                </h1>
+                <div class="h6">Rules</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  11
+                </h1>
+                <div class="h6">Selectors</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  13
+                </h1>
+                <div class="h6">Declarations</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  6
+                </h1>
+                <div class="h6">Properties</div>
+              </div>
+            </div>
+          
+
+          
+            <div class="flex flex-center">
+              <h2 class="flex-auto">CSS</h2>
+              <div class="h5 bold">
+                890 bytes
+                (295 bytes Gzipped)
+              </div>
+            </div>
+            <pre style="max-height:50vh"><span class="hljs-comment">/* Basscss Utility Responsive States */</span>
+
+<span class="hljs-class">.sm-show</span>,
+<span class="hljs-class">.md-show</span>,
+<span class="hljs-class">.lg-show</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
+  <span class="hljs-class">.sm-show</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule">}</span></span>
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
+  <span class="hljs-class">.md-show</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule">}</span></span>
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
+  <span class="hljs-class">.lg-show</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule">}</span></span>
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
+  <span class="hljs-class">.sm-hide</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule">}</span></span>
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
+  <span class="hljs-class">.md-hide</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule">}</span></span>
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
+  <span class="hljs-class">.lg-hide</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule">}</span></span>
+}
+
+<span class="hljs-class">.display-none</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.hide</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">clip</span>:<span class="hljs-value"> <span class="hljs-function">rect</span>(<span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-sm (min-width: <span class="hljs-number">40em</span>)</span>;
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-md (min-width: <span class="hljs-number">52em</span>)</span>;
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-lg (min-width: <span class="hljs-number">64em</span>)</span>;</pre>
+          
 
           
 

@@ -394,6 +394,7 @@
 
 
         <div class="px2 py2">
+
           
 <p class="hide">CSS layout module using flexbox</p>
 <a href="http://jxnblk.com/flex-object" class="hide">jxnblk.com/flex-object</a><p></p>
@@ -731,6 +732,143 @@ All other utilities will only work at the set breakpoint.</p>
 <pre><span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-sm (min-width: <span class="hljs-number">40em</span>)</span>;
 <span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-md (min-width: <span class="hljs-number">52em</span>)</span>;
 <span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-lg (min-width: <span class="hljs-number">64em</span>)</span>;</pre>
+
+          
+            <hr>
+            <h2 class="">Stats</h2>
+            <div class="bold caps flex flex-center flex-wrap mb3 mxn2">
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  20
+                </h1>
+                <div class="h6">Rules</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  20
+                </h1>
+                <div class="h6">Selectors</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  20
+                </h1>
+                <div class="h6">Declarations</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  7
+                </h1>
+                <div class="h6">Properties</div>
+              </div>
+            </div>
+          
+
+          
+            <div class="flex flex-center">
+              <h2 class="flex-auto">CSS</h2>
+              <div class="h5 bold">
+                1 KB
+                (348 bytes Gzipped)
+              </div>
+            </div>
+            <pre style="max-height:50vh"><span class="hljs-comment">/*
+ * Basscss Flex Object
+ */</span>
+
+<span class="hljs-class">.flex</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> flex</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex-column</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">flex-direction</span>:<span class="hljs-value"> column</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex-wrap</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">flex-wrap</span>:<span class="hljs-value"> wrap</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex-center</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">align-items</span>:<span class="hljs-value"> center</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex-baseline</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">align-items</span>:<span class="hljs-value"> baseline</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex-stretch</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">align-items</span>:<span class="hljs-value"> stretch</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex-start</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">align-items</span>:<span class="hljs-value"> flex-start</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex-end</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">align-items</span>:<span class="hljs-value"> flex-end</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex-first</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">order</span>:<span class="hljs-value"> -<span class="hljs-number">1</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex-last</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">order</span>:<span class="hljs-value"> <span class="hljs-number">1024</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex-auto</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">flex</span>:<span class="hljs-value"> <span class="hljs-number">1</span> <span class="hljs-number">1</span> auto</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex-grow</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">flex</span>:<span class="hljs-value"> <span class="hljs-number">1</span> <span class="hljs-number">0</span> auto</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex-none</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">flex</span>:<span class="hljs-value"> none</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.flex</span> &gt; <span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
+  <span class="hljs-class">.sm-flex</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> flex</span></span>;
+  <span class="hljs-rule">}</span></span>
+
+  <span class="hljs-class">.sm-flex</span> &gt; <span class="hljs-tag">div</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  <span class="hljs-rule">}</span></span>
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
+  <span class="hljs-class">.md-flex</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> flex</span></span>;
+  <span class="hljs-rule">}</span></span>
+
+  <span class="hljs-class">.md-flex</span> &gt; <span class="hljs-tag">div</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  <span class="hljs-rule">}</span></span>
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
+  <span class="hljs-class">.lg-flex</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> flex</span></span>;
+  <span class="hljs-rule">}</span></span>
+
+  <span class="hljs-class">.lg-flex</span> &gt; <span class="hljs-tag">div</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  <span class="hljs-rule">}</span></span>
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-sm (min-width: <span class="hljs-number">40em</span>)</span>;
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-md (min-width: <span class="hljs-number">52em</span>)</span>;
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-lg (min-width: <span class="hljs-number">64em</span>)</span>;</pre>
+          
+
           
 
 

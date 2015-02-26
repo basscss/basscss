@@ -394,6 +394,7 @@
 
 
         <div class="px2 py2">
+
           
 
 <p>Structural styles and resets for buttons are set in this base element styles module.
@@ -440,6 +441,83 @@ All buttons share common padding and height, well suited for tap targets on touc
   <span class="hljs-rule"><span class="hljs-attribute">--button-padding-y</span>:<span class="hljs-value"> .<span class="hljs-number">5rem</span></span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">--button-padding-x</span>:<span class="hljs-value"> <span class="hljs-number">1rem</span></span></span>;
 <span class="hljs-rule">}</span></span></pre><p>Note: adjusting the line-height and padding may require adjustments to form element variables to maintain vertical alignment.</p>
+
+
+          
+            <hr>
+            <h2 class="">Stats</h2>
+            <div class="bold caps flex flex-center flex-wrap mb3 mxn2">
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  4
+                </h1>
+                <div class="h6">Rules</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  5
+                </h1>
+                <div class="h6">Selectors</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  21
+                </h1>
+                <div class="h6">Declarations</div>
+              </div>
+              <div class="col-6 sm-col-3 px2">
+                <h1 class="h0 h1-responsive m0">
+                  18
+                </h1>
+                <div class="h6">Properties</div>
+              </div>
+            </div>
+          
+
+          
+            <div class="flex flex-center">
+              <h2 class="flex-auto">CSS</h2>
+              <div class="h5 bold">
+                723 bytes
+                (334 bytes Gzipped)
+              </div>
+            </div>
+            <pre style="max-height:50vh"><span class="hljs-comment">/* Basscss Base Buttons */</span>
+
+<span class="hljs-tag">button</span>,
+<span class="hljs-class">.button</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--button-font-size)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--button-font-weight)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> none</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">cursor</span>:<span class="hljs-value"> pointer</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline-block</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">line-height</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--button-line-height)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--button-padding-y) <span class="hljs-function">var</span>(--button-padding-x)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid transparent</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">vertical-align</span>:<span class="hljs-value"> middle</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">-webkit-appearance</span>:<span class="hljs-value"> none</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-pseudo">::-moz-focus-inner</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.button</span><span class="hljs-pseudo">:hover</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> none</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--button-font-size</span>:<span class="hljs-value"> inherit</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--button-font-weight</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--bold-font-weight, bold)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--button-line-height</span>:<span class="hljs-value"> <span class="hljs-number">1.125rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--button-padding-y</span>:<span class="hljs-value"> .<span class="hljs-number">5rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--button-padding-x</span>:<span class="hljs-value"> <span class="hljs-number">1rem</span></span></span>;
+<span class="hljs-rule">}</span></span></pre>
+          
 
           
 
