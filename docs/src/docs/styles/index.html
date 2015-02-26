@@ -1,37 +1,34 @@
 
-<div class="bold flex flex-center py2">
-  <div class="flex-auto py2">
-    <div class="h0 h0-responsive"><%= stats.rules.length %></div>
-    <div class="h6 caps">Styles</div>
+<% _.forIn(modules, function(module, key) { %>
+  <div class="flex flex-center mxn2 mb1">
+    <h2 class="flex-auto m0 px2">
+      <%= module.name %>
+      <span class="h5">v<%= module.version %></span>
+    </h2>
+    <a href="/docs/modules/<%= module.name %>" class="button button-transparent blue">
+      Details
+    </a>
   </div>
-  <div class="flex-auto py2">
-    <div class="h0 h0-responsive bold"><%= stats.sizeKB %></div>
-    <div class="h6 caps">minified</div>
-  </div>
-  <div class="flex-auto py2">
-    <div class="h0 h0-responsive"><%= stats.gzipSizeKB %></div>
-    <div class="h6 caps">gzipped</div>
-  </div>
-</div>
-
-<table class="mb4 folding-table table-light">
-  <thead class="bold bg-darken-1">
-    <tr> <th>Selectors</th> <th>Declarations</th> </tr>
-  </thead>
-  <tbody>
-    <!-- need to account for media queries with cssstats -->
-    <% stats.rules.forEach(function(rule) { %>
-      <tr>
-        <td class="sm-col-3">
-          <%= rule.selector %>
-        </td>
-        <td class="sm-col-9">
-          <% rule.declarations.forEach(function(dec) { %>
-            <%= dec.prop %>: <%= dec.value %>;
-            <% }) %>
-        </td>
-      </tr>
+  <table class="mb4 folding-table table-light">
+    <thead class="bold bg-darken-1">
+      <tr> <th>Selectors</th> <th>Declarations</th> </tr>
+    </thead>
+    <tbody>
+      <% module.stats.rules.forEach(function(rule) { %>
+        <% if (rule.selector != ':root') { %>
+          <tr>
+            <td class="sm-col-3">
+              <%= rule.selector %>
+            </td>
+            <td class="sm-col-9">
+              <% rule.declarations.forEach(function(dec) { %>
+                <%= dec.prop %>: <%= dec.value %>;
+                <% }) %>
+            </td>
+          </tr>
+        <% } %>
       <% }) %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+<% }) %>
 
