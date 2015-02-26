@@ -20,6 +20,13 @@
           <a href="<%= route.path %>" class="h3 button block button-transparent blue <%= route.routes ? 'h5 caps' : '' %>">
             <%= route.title %>
           </a>
+          <% if (route.sections) { %>
+            <% _.forIn(route.sections, function(section, key) { %>
+              <a href="<%= route.path %>#<%= removePrefix(section.module) %>" class="h5 button block button-transparent blue">
+                <%= capitalize(section.name) %>
+              </a>
+            <% }) %>
+          <% } %>
           <% if (route.routes) { %>
             <ul class="sm-flex flex-wrap list-reset mb0 py1">
               <% _.forIn(route.routes, function(subroute) { %>

@@ -27,17 +27,9 @@ data.modules = data.basscss.modules;
 data.optional_modules = data.basscss.optional_modules;
 
 data.routes.docs.routes.modules = {
-  title: 'Modules',
-  routes: {}
+  title: 'Modules'
 };
 
-// Create routes for each module
-//data.modules.forEach(function(m) {
-//  var modulesRoutes = data.routes.docs.routes.modules.routes;
-//  modulesRoutes[m] = {
-//    source: m
-//  };
-//});
 
 data.partials = {};
 data.partials.head = fs.readFileSync('./docs/src/partials/head.html', 'utf8');
