@@ -22,7 +22,7 @@
           </a>
           <% if (route.sections) { %>
             <% _.forIn(route.sections, function(section, key) { %>
-              <a href="<%= route.path %>#<%= removePrefix(section.module) %>" class="h5 button block button-transparent blue">
+              <a href="<%= route.path %>/#<%= removePrefix(section.module) %>" class="h5 button block button-transparent blue">
                 <%= capitalize(section.name) %>
               </a>
             <% }) %>
