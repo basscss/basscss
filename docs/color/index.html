@@ -119,6 +119,12 @@
             </li>
           
             <li>
+              <a href="/docs/color#input-range" class="button button-small px2 block button-transparent">
+                <span class="block ml1">Input Range</span>
+              </a>
+            </li>
+          
+            <li>
               <a href="/docs/color#color-tables" class="button button-small px2 block button-transparent">
                 <span class="block ml1">Tables</span>
               </a>
@@ -2004,6 +2010,160 @@ These add focus states that are consistent with the other form elements.</p>
   --border-color: var(--light-gray);
   --border-width: 1px;
   --border-radius: 3px;
+}</pre>
+  
+</footer>
+
+</section>
+
+  
+    
+<section id="input-range" class="py2">
+  
+<header class="mt3 mb1 border-bottom">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#input-range">
+          Input Range
+        </a>
+      </h1>
+      
+        <h2 class="h5 m0">
+          basscss-input-range
+          v1.0.2
+        </h2>
+      
+    </div>
+    <div class="mxn2">
+      <a href="//npmjs.com/package/basscss-input-range" class="button button-transparent blue">NPM</a>
+      <a href="https://github.com/jxnblk/basscss-input-range" class="button button-transparent blue">Github</a>
+    </div>
+  </div>
+</header>
+
+
+  
+
+<p>The <code>.range-light</code> style inherits color from its parent. Use color utilities to change the slider thumb color.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <input type="range" class="full-width range-light">
+<input type="range" class="full-width blue range-light">
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;range&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;full-width range-light&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;range&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;full-width blue range-light&quot;</span>&gt;</span></pre>
+</div>
+
+  
+<footer>
+  
+    <hr>
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        2 KB
+        (519 bytes Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-input-range-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          10 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          10 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          44 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          24 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-input-range-css-source" style="max-height:50vh">/* Basscss Input Range */
+
+input[type=range] {
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+.range-light {
+  color: inherit;
+  -webkit-appearance: none;
+  padding-top: var(--form-field-padding-y);
+  padding-bottom: var(--form-field-padding-y);
+}
+
+.range-light::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: var(--range-thumb-width);
+  height: var(--range-thumb-height);
+  border-radius: var(--border-radius);
+  background-color: currentcolor;
+  cursor: pointer;
+  margin-top: var(--range-thumb-offset);
+}
+
+.range-light::-moz-range-thumb {
+  width: var(--range-thumb-width);
+  height: var(--range-thumb-height);
+  border-radius: var(--border-radius);
+  border-color: transparent;
+  border-width: 0;
+  background-color: currentcolor;
+  cursor: pointer;
+}
+
+.range-light::-webkit-slider-runnable-track {
+  height: var(--range-track-height);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background-color: var(--darken-3);
+}
+
+.range-light::-moz-range-track {
+  height: var(--range-track-height);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background-color: var(--darken-3);
+}
+
+.range-light:focus {
+  outline: none;
+}
+
+.range-light:focus::-webkit-slider-thumb {
+  outline: none;
+  border: 0;
+  box-shadow: 0 0 1px 2px currentcolor;
+}
+
+.range-light:focus::-moz-range-thumb {
+  outline: none;
+  border: 0;
+  box-shadow: 0 0 1px 2px currentcolor;
+}
+
+:root {
+  --border-radius: var(--border-radius, 3px);
+  --form-field-height: var(--form-field-height, 2.25rem);
+  --form-field-padding-y: var(--form-field-padding-y, .5rem);
+  --form-field-padding-x: var(--form-field-padding-x, .5rem);
+  --darken-3: rgba(#000, .25);
+  --range-thumb-width: var(--form-field-padding-x);
+  --range-thumb-height: calc( var(--form-field-height) - (var(--form-field-padding-y) * 2) );
+  --range-track-height: calc( var(--form-field-padding-y) / 2 );
+  --range-thumb-offset: calc( var(--range-thumb-height) / -2 + (var(--range-track-height) / 2) );
 }</pre>
   
 </footer>

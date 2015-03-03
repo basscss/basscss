@@ -112,7 +112,8 @@
       "basscss-button-red",
       "basscss-button-nav-light",
       "basscss-button-nav-dark",
-      "basscss-button-nav-tab"
+      "basscss-button-nav-tab",
+      "basscss-highlight"
     ],
     "variables": [
       "basscss-defaults"
