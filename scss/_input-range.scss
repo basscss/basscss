@@ -10,6 +10,7 @@ $range-thumb-width: $form-field-padding-x !default;
 $range-thumb-height: ( $form-field-height - ($form-field-padding-y * 2) ) !default;
 $range-track-height: ( $form-field-padding-y / 2 ) !default;
 $range-thumb-offset: ( $range-thumb-height / -2 + ($range-track-height / 2) ) !default;
+$range-thumb-pseudo-size: $form-field-height !default;
 
 // Custom Media Query Variables
 
@@ -30,12 +31,26 @@ input[type=range] {
 
 .range-light::-webkit-slider-thumb {
   -webkit-appearance: none;
+  position: relative;
   width: $range-thumb-width;
   height: $range-thumb-height;
   border-radius: $border-radius;
   background-color: currentcolor;
   cursor: pointer;
   margin-top: $range-thumb-offset;
+}
+
+/* Touch screen friendly pseudo element */
+
+.range-light::-webkit-slider-thumb:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: ( -.5 * $range-thumb-pseudo-size + (.5 * $range-thumb-height) );
+  left: ( (-.5 * $range-thumb-pseudo-size) + (.5 * $range-thumb-width) );
+  width: $range-thumb-pseudo-size;
+  height: $range-thumb-pseudo-size;
+  opacity: 0;
 }
 
 .range-light::-moz-range-thumb {
