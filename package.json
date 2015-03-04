@@ -29,8 +29,9 @@
     "basscss-colors": "^1.0.5",
     "basscss-defaults": "^1.0.0",
     "basscss-grid": "0.0.14",
-    "basscss-input-range": "^1.0.2",
+    "basscss-input-range": "^1.1.0",
     "basscss-positions": "0.0.5",
+    "basscss-responsive-white-space": "0.0.1",
     "basscss-table-object": "0.0.7",
     "basscss-ui-utility-button-sizes": "^1.0.0",
     "basscss-ui-utility-groups": "^1.0.1",
@@ -101,6 +102,7 @@
       "basscss-colors"
     ],
     "optional_modules": [
+      "basscss-responsive-white-space",
       "basscss-utility-headings",
       "basscss-ui-utility-groups",
       "basscss-table-object",

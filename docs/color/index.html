@@ -2031,7 +2031,7 @@ These add focus states that are consistent with the other form elements.</p>
       
         <h2 class="h5 m0">
           basscss-input-range
-          v1.0.2
+          v1.1.0
         </h2>
       
     </div>
@@ -2064,29 +2064,29 @@ These add focus states that are consistent with the other form elements.</p>
       <!--
       <div class="h5 bold">
         2 KB
-        (519 bytes Gzipped)
+        (665 bytes Gzipped)
       </div>
       -->
     </div>
     <div id="basscss-input-range-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          10 Rules
+          11 Rules
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          10 Selectors
+          11 Selectors
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          44 Declarations
+          54 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          24 Properties
+          31 Properties
         </div>
       </div>
     </div>
@@ -2106,12 +2106,26 @@ input[type=range] {
 
 .range-light::-webkit-slider-thumb {
   -webkit-appearance: none;
+  position: relative;
   width: var(--range-thumb-width);
   height: var(--range-thumb-height);
   border-radius: var(--border-radius);
   background-color: currentcolor;
   cursor: pointer;
   margin-top: var(--range-thumb-offset);
+}
+
+/* Touch screen friendly pseudo element */
+
+.range-light::-webkit-slider-thumb:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc( -.5 * var(--range-thumb-pseudo-size) + (.5 * var(--range-thumb-height)) );
+  left: calc( (-.5 * var(--range-thumb-pseudo-size)) + (.5 * var(--range-thumb-width)) );
+  width: var(--range-thumb-pseudo-size);
+  height: var(--range-thumb-pseudo-size);
+  opacity: 0;
 }
 
 .range-light::-moz-range-thumb {
@@ -2164,6 +2178,7 @@ input[type=range] {
   --range-thumb-height: calc( var(--form-field-height) - (var(--form-field-padding-y) * 2) );
   --range-track-height: calc( var(--form-field-padding-y) / 2 );
   --range-thumb-offset: calc( var(--range-thumb-height) / -2 + (var(--range-track-height) / 2) );
+  --range-thumb-pseudo-size: var(--form-field-height);
 }</pre>
   
 </footer>

@@ -5212,7 +5212,7 @@ code
       <div class="flex flex-center mxn2 mb1">
         <h2 class="flex-auto m0 px2">
           basscss-input-range
-          <span class="h5">v1.0.2</span>
+          <span class="h5">v1.1.0</span>
         </h2>
         <a href="/docs/color/#input-range"
           class="button button-transparent blue">
@@ -5268,6 +5268,8 @@ code
                   
                     -webkit-appearance: none;
                     
+                    position: relative;
+                    
                     width: var(--range-thumb-width);
                     
                     height: var(--range-thumb-height);
@@ -5279,6 +5281,33 @@ code
                     cursor: pointer;
                     
                     margin-top: var(--range-thumb-offset);
+                    
+                </td>
+              </tr>
+            
+          
+            
+              <tr>
+                <td class="sm-col-3">
+                  .range-light::-webkit-slider-thumb:before
+                </td>
+                <td class="sm-col-9">
+                  
+                    content: '';
+                    
+                    display: block;
+                    
+                    position: absolute;
+                    
+                    top: calc( -.5 * var(--range-thumb-pseudo-size) + (.5 * var(--range-thumb-height)) );
+                    
+                    left: calc( (-.5 * var(--range-thumb-pseudo-size)) + (.5 * var(--range-thumb-width)) );
+                    
+                    width: var(--range-thumb-pseudo-size);
+                    
+                    height: var(--range-thumb-pseudo-size);
+                    
+                    opacity: 0;
                     
                 </td>
               </tr>

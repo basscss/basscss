@@ -1260,12 +1260,26 @@ input[type=range] {
 
 .range-light::-webkit-slider-thumb {
   -webkit-appearance: none;
+  position: relative;
   width: .5rem;
   height: 1.25rem;
   border-radius: 3px;
   background-color: currentcolor;
   cursor: pointer;
   margin-top: -0.5rem;
+}
+
+/* Touch screen friendly pseudo element */
+
+.range-light::-webkit-slider-thumb:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.875rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  opacity: 0;
 }
 
 .range-light::-moz-range-thumb {
