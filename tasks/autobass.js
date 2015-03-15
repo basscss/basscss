@@ -39,7 +39,6 @@ data.partials['page-header'] = fs.readFileSync('./docs/src/partials/page-header.
 data.partials['showcase-widget'] = fs.readFileSync('./docs/src/partials/showcase-widget.html', 'utf8');
 data.partials.pagination = fs.readFileSync('./docs/src/partials/pagination.html', 'utf8');
 data.partials['color-combo-card'] = fs.readFileSync('./docs/src/partials/color-combo-card.html', 'utf8');
-data.partials['section-header'] = fs.readFileSync('./docs/src/partials/section-header.html', 'utf8');
 
 data.partials['module-section'] = fs.readFileSync('./docs/src/partials/module-section.html', 'utf8');
 data.partials['module-header'] = fs.readFileSync('./docs/src/partials/module-header.html', 'utf8');

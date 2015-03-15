@@ -1,32 +1,20 @@
 <header class="px2 mt3">
   <div class="flex flex-wrap flex-center py3 mb1 border-bottom">
     <div class="flex-auto">
-      <h1 class="<%= obj.page.version ? 'h1' : 'h0 h0-responsive' %> caps m0">
+      <h1 class="h0 h0-responsive caps m0">
         <%= removePrefix(page.title) %>
       </h1>
-      <% if (obj.page.version) { %> 
-        <h2 class="h3 m0">
-          <%= page.name %>
-          <span class="h5">v<%= page.version %></span>
-        </h2>
-      <% } %>
     </div>
-    <% if (obj.page.npmLink) { %>
-      <div class="mxn2">
-        <a href="<%= page.npmLink %>" class="button button-transparent blue">NPM</a>
-        <a href="<%= page.homepage %>" class="button button-transparent blue">Github</a>
-      </div>
-    <% } %>
   </div>
 </header>
 
 <div class="px2">
-  <div class="avenir h5 bold mxn1 mb3">
-    <a href="/" class="button button-narrow button-transparent blue">Home</a>
+  <div class="avenir h5 bold mb3">
+    <a href="/" class="button button-small mr1 button-link blue">Home</a>
     <% if (obj.page.breadcrumbs) { %>
       <% obj.page.breadcrumbs.forEach(function(crumb, i) { %>
       /
-      <a href="<%= crumb.path %>" class="button button-narrow button-transparent <%= (i == page.breadcrumbs.length - 1) ? '' : 'blue' %>">
+      <a href="<%= crumb.path %>" class="button button-small ml1 mr1 button-link <%= (i == page.breadcrumbs.length - 1) ? '' : 'blue' %>">
         <%= removePrefix(crumb.title) %>
       </a>
       <% }) %>
