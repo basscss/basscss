@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.0.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.2.0/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -249,14 +249,12 @@
   This guide covers the fundamentals to help get you started.
 </p>
 
-<h1 id="document-structure">Document structure</h1>
-<p>HTML is a semantically structured markup language.
+<h1 id="document-structure"><a href="#document-structure">Document structure</a></h1><p>HTML is a semantically structured markup language.
 When building anything on the web, start with clean markup that accurately
 reflects your information hierarchy.
 When hierarchy changes, be sure to update the markup before making any stylistic changes.
 The most important parts of web design involve no CSS at all.</p>
-<h1 id="multiclass-css-pattern">Multiclass CSS pattern</h1>
-<p>Basscss is based on Object Oriented CSS (OOCSS) principles.
+<h1 id="multiclass-css-pattern"><a href="#multiclass-css-pattern">Multiclass CSS pattern</a></h1><p>Basscss is based on Object Oriented CSS (OOCSS) principles.
 OOCSS has many benefits, including code readability, reusable styles, smaller CSS files,
 more performant selectors, more flexible markup structure, and code scalability.
 Basscss is meant to be a very simple and intuitive take on this approach,
@@ -266,8 +264,7 @@ This is the practice of using multiple classes on a single HTML element.
 This can seem strange at first, but once you get the hang of things,
 it can make designing and building websites much faster and easier.
 It also has some significant front-end performance benefits.</p>
-<h2 id="example">Example</h2>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
+<h2 id="example"><a href="#example">Example</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="h3 p1 mb2 bg-silver rounded">
   A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
@@ -277,8 +274,7 @@ It also has some significant front-end performance benefits.</p>
   A box with font-size .h3, padding, margin-bottom, a light gray background and rounded corners
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<h1 id="order">Order</h1>
-<p>While the order of classes doesn’t matter to the browser, maintaining
+<h1 id="order"><a href="#order">Order</a></h1><p>While the order of classes doesn’t matter to the browser, maintaining
 a consistent order will drastically improve code readability.
 I recommend the following order:</p>
 <ol>
@@ -288,13 +284,11 @@ I recommend the following order:</p>
 <li><strong>Color &amp; Theme</strong> &#x2013; has little or no effect on layout</li></li>
 <li><strong>State</strong> &#x2013; is dynamic and often unnecessary</li></li>
 </ol>
-<h1 id="writing-and-typography">Writing and Typography</h1>
-<p>Good writing and typography are key to successful web design.
+<h1 id="writing-and-typography"><a href="#writing-and-typography">Writing and Typography</a></h1><p>Good writing and typography are key to successful web design.
 Typography should serve as the basis for gestalt, user flows, and information hierarchy.
 Ensure that links, form labels, helper text, buttons, and other microcopy
 receive as much attention as body copy, and remember the two serve very different purposes.</p>
-<h1 id="block-level-and-inline-elements">Block-level and Inline Elements</h1>
-<p>There are two basic types of elements in HTML.
+<h1 id="block-level-and-inline-elements"><a href="#block-level-and-inline-elements">Block-level and Inline Elements</a></h1><p>There are two basic types of elements in HTML.
 <a href="https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements">Block-level elements</a>
 are larger container elements that begin on a new line and take up the entire width
 of their parent container by default.
@@ -306,15 +300,13 @@ Inline elements are only as large as the content they contain.</p>
 <p>In HTML5, things get a little more complicated, but the basics still apply.
 Learn more:
 <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories">HTML5 Content Categories</a>.</p>
-<h1 id="display-property">Display Property</h1>
-<p>Basscss’s display utilities override the default behaviors of block-level and inline elements.
+<h1 id="display-property"><a href="#display-property">Display Property</a></h1><p>Basscss’s display utilities override the default behaviors of block-level and inline elements.
 To make a block-level element inline, use the <code>.inline</code> class.
 To make inline elements block-level, use <code>.block</code>.</p>
 <p>Inline-block is a mix of these two properties.
 Inline-block elements have a block element box, with optional width and height,
 but flow with surrounding content like an inline element.</p>
-<h1 id="box-model">Box Model</h1>
-<p>The box-model is the basis of all HTML layout.
+<h1 id="box-model"><a href="#box-model">Box Model</a></h1><p>The box-model is the basis of all HTML layout.
 Understanding how it works is crucial to designing for the web.
 Block-level elements naturally fill the width of their parents.
 Margins add space around the element. Borders add space around the element, but within the margins.
@@ -323,8 +315,7 @@ If an element has no set width, it will shrink to fit its container.</p>
 <p>If an element has a declared width or height, padding and borders will be added to those values.
 It’s often easier to add padding and borders to child elements rather than directly to elements with set widths.
 For example, when using a grid system.</p>
-<h2 id="box-model-simulation">Box Model Simulation</h2>
-<div class="center p1 blue border border-blue">
+<h2 id="box-model-simulation"><a href="#box-model-simulation">Box Model Simulation</a></h2><div class="center p1 blue border border-blue">
   <p class="mb0">Margin</p>
   <div class="m1 py1 px2 border border-blue">
     <p>Padding</p>
@@ -332,8 +323,7 @@ For example, when using a grid system.</p>
   </div>
 </div>
 
-<h1 id="floats">Floats</h1>
-<p>Floats are for wrapping text around images, but are also used for breaking
+<h1 id="floats"><a href="#floats">Floats</a></h1><p>Floats are for wrapping text around images, but are also used for breaking
 elements out of the normal document flow.
 When you float an element left or right, the content following the float will flow beside and around the element.</p>
 <p>Do not set display properties on floated elements.
@@ -420,8 +410,7 @@ This is the basis of the
   <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden p1"</span>&gt;</span>.overflow-hidden (overflow hidden) Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin. Bacon t-bone hamburger turkey capicola rump short loin. Drumstick pork fatback pork chop doner pork belly prosciutto pastrami sausage. Ground round prosciutto shank pastrami corned beef venison tail. Turkey short loin tenderloin jerky porchetta pork loin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<h1 id="widths">Widths</h1>
-<p>The default document flow in HTML is fluid.
+<h1 id="widths"><a href="#widths">Widths</a></h1><p>The default document flow in HTML is fluid.
 This means that creating fluid and responsive layouts should be very easy to achieve.
 Avoid using fixed widths at all in your layout.
 Instead rely heavily on the normal document flow.</p>
@@ -457,8 +446,7 @@ so nesting elements with percentage-based widths will get incrementally smaller 
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<h1 id="media-queries-and-mobile-first-approach">Media Queries and Mobile-First Approach</h1>
-<p>When building responsive websites, best practices suggest using a mobile-first approach.
+<h1 id="media-queries-and-mobile-first-approach"><a href="#media-queries-and-mobile-first-approach">Media Queries and Mobile-First Approach</a></h1><p>When building responsive websites, best practices suggest using a mobile-first approach.
 First consider content and user flows, then create layouts that work well
 at small screen sizes and touch devices.
 Once that’s in a good place use styling to enhance the experience on larger devices.
@@ -468,8 +456,7 @@ This usually translates well for use on desktop computers with pointing devices.
 Use these with care.
 Mobile users still want the same content across devices and often switch devices mid-task.
 Creating a cohesive experience is key to a good experience with your product.</p>
-<h1 id="positions">Positions</h1>
-<p>Positions allow you to move elements out of the default document flow.
+<h1 id="positions"><a href="#positions">Positions</a></h1><p>Positions allow you to move elements out of the default document flow.
 They can be tricky to use, and I recommend using them as little as possible.</p>
 <p>By default, elements have a <code>static</code> position.
 Use the <code>.relative</code> class to keep elements in the default document flow
@@ -507,8 +494,7 @@ before adding more than four levels.</p>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<h1 id="extending-basscss">Extending Basscss</h1>
-<p>You can do a lot with Basscss’s suite of styles, but if you decide to add new styles to your project,
+<h1 id="extending-basscss"><a href="#extending-basscss">Extending Basscss</a></h1><p>You can do a lot with Basscss’s suite of styles, but if you decide to add new styles to your project,
 here are some tips and recommendations to keep your code simple and maintainable:</p>
 <ul>
 <li>Keep styles as reusable as possible.</li>

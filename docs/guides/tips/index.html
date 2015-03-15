@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.0.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.2.0/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -249,8 +249,7 @@
   in an elegant and maintainable way.
 </p>
 
-<h1 id="avoid-overrides">Avoid Overrides</h1>
-<p>When using any front end framework you should avoid overriding the built in styles.
+<h1 id="avoid-overrides"><a href="#avoid-overrides">Avoid Overrides</a></h1><p>When using any front end framework you should avoid overriding the built in styles.
 Customize default values in the framework with variables where possible.
 If using variables doesn’t suite your needs,
 consider adding styles that extend, but don&#39;t override, the defaults.</p>
@@ -259,25 +258,21 @@ make adjustments to the declared properties and values
 before beginning to use the framework and be sure to document any changes to the default behavior.
 If you do make adjustments after the framework has been set up in a project,
 be cautious and notify any other contributors of those changes.</p>
-<h1 id="utility-styles-are-immutable">Utility Styles are Immutable</h1>
-<p>The utility styles in Basscss should be considered immutable. These styles aid in scalability,
+<h1 id="utility-styles-are-immutable"><a href="#utility-styles-are-immutable">Utility Styles are Immutable</a></h1><p>The utility styles in Basscss should be considered immutable. These styles aid in scalability,
 maintenance, and readability by clearing stating what they do. For example, <code>.block</code> should always
 set display block and do nothing else. This is similar to the concept of doing one thing and doing it well.
 If a particular style or utility doesn’t suite the needs of the element it’s applied to,
 remove it and replace it with more appropriate styles.</p>
-<h1 id="look-before-adding">Look Before Adding</h1>
-<p>Before writing any new styles on top of Basscss, check the source code or documentation to see
+<h1 id="look-before-adding"><a href="#look-before-adding">Look Before Adding</a></h1><p>Before writing any new styles on top of Basscss, check the source code or documentation to see
 if there is already a style that will do what you need. Chances are, there is,
 or there is a combination of styles that can acheive the same thing.</p>
-<h1 id="avoid-magic-numbers">Avoid Magic Numbers</h1>
-<p>The type scale and white space scale in Basscss are intended
+<h1 id="avoid-magic-numbers"><a href="#avoid-magic-numbers">Avoid Magic Numbers</a></h1><p>The type scale and white space scale in Basscss are intended
 to bring consistency and help normalize visual design considerations.
 Type sizes should never be specified outside of the type scale,
 and margins and paddings should all be handled with the white space utilities.
 Making one-off adjustments to things like font sizes and margins can quickly lead to code bloat,
 harder-to-read markup, and a less consistent designs.</p>
-<h1 id="don-t-use-contextual-selectors">Don’t Use Contextual Selectors</h1>
-<p>Some approaches to CSS suggest adjusting styles with contextual selectors.
+<h1 id="don-t-use-contextual-selectors"><a href="#don-t-use-contextual-selectors">Don’t Use Contextual Selectors</a></h1><p>Some approaches to CSS suggest adjusting styles with contextual selectors.
 The styles in Basscss should never be contextually adjusted.
 Doing so would break the readability of classes in markup and the ability
 to make quick iterative adjustments.
@@ -293,8 +288,7 @@ be larger and a different color from other buttons in your site,
 consider making extensions like <code>.button-bigger</code> and <code>.button-orange</code>.
 This will help your future self and others understand
 what the styles are doing without having to reference the CSS.</p>
-<h1 id="handle-complexity-in-markup">Handle Complexity in Markup</h1>
-<p>Large projects will inevitably become more complex.
+<h1 id="handle-complexity-in-markup"><a href="#handle-complexity-in-markup">Handle Complexity in Markup</a></h1><p>Large projects will inevitably become more complex.
 Handling and maintaining that complexity in markup templates
 is much easier than adding complexity to your stylesheet.
 Before abstracting combinations of styles out in to new styles,
@@ -306,25 +300,21 @@ make use of things like partials, helpers, or components to keep things maintain
 <p>If you’re adding something like a background image,
 consider using inline styles if that image will only be used in one place.
 There’s no need to send extra CSS to pages that don’t contain this background image.</p>
-<h1 id="keep-specificity-low">Keep Specificity Low</h1>
-<p>Keeping specificity consistently low in a stylesheet helps mitigate the need to override styles
+<h1 id="keep-specificity-low"><a href="#keep-specificity-low">Keep Specificity Low</a></h1><p>Keeping specificity consistently low in a stylesheet helps mitigate the need to override styles
 with highly specific styles or the <code>!important</code> flag.
 High specificity in a stylesheet should be considered a code smell
 and generally leads to more problems than it solves.
 Basscss keeps selector specificity as low as possible to ensure interoperability and portability.</p>
-<h1 id="don-t-nest-selectors">Don’t Nest Selectors</h1>
-<p>Don’t nest selectors. It may be tempting to add a style for a parent element and all child elements together,
+<h1 id="don-t-nest-selectors"><a href="#don-t-nest-selectors">Don’t Nest Selectors</a></h1><p>Don’t nest selectors. It may be tempting to add a style for a parent element and all child elements together,
 for example <code>.list-navigation li a</code>,
 but this creates a tight coupling between CSS and markup
 and makes future adjustments more difficult and limits the portability of styles.
 Nesting selectors can also add unnecessary specificity that might be difficult to compensate for in the future.</p>
-<h1 id="don-t-use-ids-as-selectors">Don’t Use IDs as Selectors</h1>
-<p>Never use IDs as CSS selectors. IDs are useful to reference parts of an HTML document,
+<h1 id="don-t-use-ids-as-selectors"><a href="#don-t-use-ids-as-selectors">Don’t Use IDs as Selectors</a></h1><p>Never use IDs as CSS selectors. IDs are useful to reference parts of an HTML document,
 and work well as speedy JavaScript selectors, but they have limited applications in CSS.
 Because only one element ID exists per document, the reusability of styles with ID selectors is inheritly limited.
 IDs also create excessive specificity that will trump the majority of Basscss’s styles.</p>
-<h1 id="separate-structure-and-skin">Separate Structure and Skin</h1>
-<p>Keep structure and skin separate. Properties like colors, backgrounds and borders
+<h1 id="separate-structure-and-skin"><a href="#separate-structure-and-skin">Separate Structure and Skin</a></h1><p>Keep structure and skin separate. Properties like colors, backgrounds and borders
 often differ by location, can change with the design over time, and don’t have a huge impact on page layout.
 Keeping structural styles and skins decoupled aids in interoperability and design flexibility.</p>
 

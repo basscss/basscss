@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.0.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.2.0/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -246,33 +246,27 @@
   Basscss borrows many ideas from OOCSS while attempting to address common product design considerations through a balance of consistency and flexibility.
 </p>
 
-<h2 id="follow-the-open-closed-principle">Follow the Open/Closed Principle</h2>
-<p>Styles should be open for extension, but closed for modification.
+<h2 id="follow-the-open-closed-principle"><a href="#follow-the-open-closed-principle">Follow the Open/Closed Principle</a></h2><p>Styles should be open for extension, but closed for modification.
 Avoid styles that require overrides elsewhere or are highly specific to context.</p>
-<h2 id="design-with-reuse-in-mind">Design with Reuse in Mind</h2>
-<p>Abstract styles to their most essential form first.
+<h2 id="design-with-reuse-in-mind"><a href="#design-with-reuse-in-mind">Design with Reuse in Mind</a></h2><p>Abstract styles to their most essential form first.
 Content-agnostic, modular styles allow for design flexiblity and have a longer lifespan.
 Highly reusable styles can be widely adopted.
 Always keep structural and thematic considerations separate, and
 consider layout, interactions, states, and other properties in the most generalized way.</p>
-<h2 id="don-t-make-assumptions">Don’t Make Assumptions</h2>
-<p>Even if clear design decisions exist, don’t make assumptions in code too early.
+<h2 id="don-t-make-assumptions"><a href="#don-t-make-assumptions">Don’t Make Assumptions</a></h2><p>Even if clear design decisions exist, don’t make assumptions in code too early.
 Design is an iterative process, and building and maintaining good CSS can be an extremely time-intensive process.
 Build trust and an understanding of the tools and design principles before committing to code.
 Rely on base styles and utilities and defer pattern creation to your templating system as much as possible.</p>
-<h2 id="clarity-over-cleverness">Clarity over Cleverness</h2>
-<p>Simple, obvious styles are quicker to internalize, easier to use, and more widely adopted.
+<h2 id="clarity-over-cleverness"><a href="#clarity-over-cleverness">Clarity over Cleverness</a></h2><p>Simple, obvious styles are quicker to internalize, easier to use, and more widely adopted.
 Avoid abstractions and unclear dependency chains created with preprocessors.
 Avoid creating styles that have ambiguous applications or are rarely used.
 Never optimize for the time it takes to type something in CSS –
 this is something that preprocessors should not aim to solve.</p>
-<h2 id="balance-consistency-with-flexibility">Balance Consistency with Flexibility</h2>
-<p>Styles should maintain consistency while allowing iterative design processes to thrive.
+<h2 id="balance-consistency-with-flexibility"><a href="#balance-consistency-with-flexibility">Balance Consistency with Flexibility</a></h2><p>Styles should maintain consistency while allowing iterative design processes to thrive.
 Scalable systems, such as typography, type scales, grids, white space scales, and color palettes,
 should be limited and opinionated.
 Complex implementations of these systems should be flexible and work independently of each other.</p>
-<h1 id="organizing-principles">Organizing Principles</h1>
-<p>Styles should be organized according to these high-level categories:</p>
+<h1 id="organizing-principles"><a href="#organizing-principles">Organizing Principles</a></h1><p>Styles should be organized according to these high-level categories:</p>
 <ul>
 <li>Base Elements</li>
 <li>Immutable Utilities</li>
@@ -282,8 +276,7 @@ Complex implementations of these systems should be flexible and work independent
 </ul>
 <p>Conceptually, these are based on smart defaults,
 basic layout considerations, volatility, and cohesion.</p>
-<h2 id="base-elements">Base Elements</h2>
-<p>Base element styles should define native HTML elements such as headings, paragraphs, buttons, and forms in a systemic and opinionated way. This is the only place to style naked elements, and styles should avoid nesting.
+<h2 id="base-elements"><a href="#base-elements">Base Elements</a></h2><p>Base element styles should define native HTML elements such as headings, paragraphs, buttons, and forms in a systemic and opinionated way. This is the only place to style naked elements, and styles should avoid nesting.
 Each style should reset and style one element –
 use repetition in code when appropriate to aid in readability and comprehension.</p>
 <p>Core typographical considerations, such as typefaces and type scale should be defined here.
@@ -292,8 +285,7 @@ Base-level element-derived utilities, such as a type scale based on headings, ca
 These styles should never or very rarely be overridden.
 If overrides are commonly applied later in the source or in use,
 these styles should be adjusted and made less opinionated.</p>
-<h2 id="immutable-utilities">Immutable Utilities</h2>
-<p>Utilities provide the backbone for layout and, once set, should never be changed or extended.
+<h2 id="immutable-utilities"><a href="#immutable-utilities">Immutable Utilities</a></h2><p>Utilities provide the backbone for layout and, once set, should never be changed or extended.
 Each utility should contain as few CSS properties as possible, generally just one or two.
 Utilities should do one thing and do it well,
 they should be simple and obvious to use,
@@ -301,14 +293,12 @@ and they should operate independently.</p>
 <p>The values used for utilities, such as white space scales, may change over time,
 but the utilities themselves and their naming conventions should not.</p>
 <p>Utilities should not define thematic characteristics, such as colors and borders.</p>
-<h2 id="layout-modules">Layout Modules</h2>
-<p>Layout modules imply relationships between elements and are often tied to various markup structures.
+<h2 id="layout-modules"><a href="#layout-modules">Layout Modules</a></h2><p>Layout modules imply relationships between elements and are often tied to various markup structures.
 These include things like grid systems and the media object.
 Once these are defined they should rarely be changed and carefully handled when they do.
 Layout modules should operate independently of thematic styles,
 be highly reusable, and conform to consistent design layout patterns.</p>
-<h2 id="color">Color</h2>
-<p>The word <em>color</em> is used loosely here to describe
+<h2 id="color"><a href="#color">Color</a></h2><p>The word <em>color</em> is used loosely here to describe
 the surface-level aspects of a design, including
 colors, backgrounds, borders, shadows and other properties
 that are decorative and highly likely to change over time.
@@ -317,8 +307,7 @@ and they should be applied directly to the elements they affect whenever possibl
 Avoid parent selectors and contextual styles.</p>
 <p>A suite of color utilities for common styles, such as foreground and background colors, borders, and transitions,
 will allow for flexibility and future stylistic changes.</p>
-<h2 id="components">Components</h2>
-<p>Components have high cohesion with HTML and Javascript.
+<h2 id="components"><a href="#components">Components</a></h2><p>Components have high cohesion with HTML and Javascript.
 That is, they are interdependent and inseparable.
 Naming conventions and organization of components are highly dependent on
 application architecture and templating engines.</p>
@@ -332,8 +321,7 @@ to clearly distinguish components from low-level styles.</p>
 <li>For large, scalable applications, modifying existing components and introducing new components should follow a standardized process.</li>
 <li>With a small enough team, these are generally unnecessary.</li>
 </ul>
-<h1 id="naming-conventions">Naming Conventions</h1>
-<p>Avoid naming conventions that imply relationships to specific parts of a user interface.
+<h1 id="naming-conventions"><a href="#naming-conventions">Naming Conventions</a></h1><p>Avoid naming conventions that imply relationships to specific parts of a user interface.
 Content-derived names discourage reuse and often result in bloated, duplicative code,
 while limiting flexibility for solving design problems.
 Functionally-derived names encourage reuse but create often unnecessary abstractions.

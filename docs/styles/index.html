@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.0.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.2.0/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -5418,6 +5418,103 @@ code
                     border: 0;
                     
                     box-shadow: 0 0 1px 2px currentcolor;
+                    
+                </td>
+              </tr>
+            
+          
+            
+          
+        </tbody>
+      </table>
+
+    
+
+      <div class="flex flex-center mxn2 mb1">
+        <h2 class="flex-auto m0 px2">
+          basscss-progress
+          <span class="h5">v1.0.0</span>
+        </h2>
+        <a href="/docs/color/#progress"
+          class="button button-transparent blue">
+          Details
+        </a>
+      </div>
+      <table class="mb4 folding-table table-light">
+        <thead class="bold bg-darken-1">
+          <tr> <th>Selectors</th> <th>Declarations</th> </tr>
+        </thead>
+        <tbody>
+          
+            
+              <tr>
+                <td class="sm-col-3">
+                  .progress
+                </td>
+                <td class="sm-col-9">
+                  
+                    display: block;
+                    
+                    width: 100%;
+                    
+                    height: calc( var(--form-field-height) / 4 );
+                    
+                    margin: var(--form-field-padding-y) 0;
+                    
+                    background-color: var(--darken-2);
+                    
+                    border: 0;
+                    
+                    border-radius: 10000px;
+                    
+                    overflow: hidden;
+                    
+                    -webkit-appearance: none;
+                    
+                    cursor: pointer;
+                    
+                </td>
+              </tr>
+            
+          
+            
+              <tr>
+                <td class="sm-col-3">
+                  .progress::-webkit-progress-bar
+                </td>
+                <td class="sm-col-9">
+                  
+                    -webkit-appearance: none;
+                    
+                    background-color: var(--darken-2);
+                    
+                </td>
+              </tr>
+            
+          
+            
+              <tr>
+                <td class="sm-col-3">
+                  .progress::-webkit-progress-value
+                </td>
+                <td class="sm-col-9">
+                  
+                    -webkit-appearance: none;
+                    
+                    background-color: currentColor;
+                    
+                </td>
+              </tr>
+            
+          
+            
+              <tr>
+                <td class="sm-col-3">
+                  .progress::-moz-progress-bar
+                </td>
+                <td class="sm-col-9">
+                  
+                    background-color: currentColor;
                     
                 </td>
               </tr>

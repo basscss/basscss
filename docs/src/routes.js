@@ -49,6 +49,7 @@ module.exports = {
           { name: 'forms', module: 'basscss-color-forms' }, 
           { name: 'forms-dark', module: 'basscss-color-forms-dark' }, 
           { name: 'input-range', module: 'basscss-input-range' }, 
+          { name: 'progress', module: 'basscss-progress' }, 
           { name: 'tables', module: 'basscss-color-tables' }, 
           { name: 'background-images', module: 'basscss-background-images' }, 
         ]
