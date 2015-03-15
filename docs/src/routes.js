@@ -89,7 +89,7 @@ module.exports = {
           },
           ui: {
             title: 'UI Elements',
-            description: 'Basscss can be used to create many different user interface elements out of the box. With utility styles and a thoughtfully-architected templating system, you can keep CSS bloat to a minimum, while making iterative design changes to partials and components.',
+            description: 'Creating user interface elements while keeping CSS bloat to a minimum and allowing for flexibility in making iterative design decisions',
             //sections: [
             //  { title: 'Button Sizes', link: '/docs/guides/ui/#button-sizes' },
             //  { title: 'Navigation', link: '/docs/guides/ui/#navigation' },
@@ -121,6 +121,8 @@ module.exports = {
             //],
           },
           'custom-builds': {
+            title: 'Custom Builds',
+            description: 'Using NPM, Bower, Rework, Sass, and other tools to customize Basscss for your needs.',
             //sections: [
             //  { title: 'Rework', link: '/docs/custom-builds/#rework' },
             //  { title: 'Rework Syntax', link: '/docs/custom-builds/#rework-syntax' },
@@ -130,6 +132,7 @@ module.exports = {
           },
           rework: {
             title: 'Using Rework',
+            description: 'Getting started with and using Rework, the CSS4 based preprocessor',
             //sections: [
             //  { title: 'Imports', link: '/docs/rework/#imports' },
             //  { title: 'Variables', link: '/docs/rework/#variables' },
