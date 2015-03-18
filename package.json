@@ -41,6 +41,7 @@
     "basscss-utility-responsive-states": "0.0.2",
     "basscss-utility-typography": "0.0.2",
     "basscss-utility-white-space": "0.0.3",
+    "deep-diff": "^0.3.0",
     "flex-object": "^1.0.5"
   },
   "devDependencies": {
@@ -84,6 +85,7 @@
     "rework-custom-media": "^0.2.0",
     "rework-npm": "^1.0.0",
     "rework-plugin-colors": "^1.0.3",
+    "rework-suit": "^4.0.0",
     "rework-vars": "^3.1.1",
     "suitcss-preprocessor": "^0.4.0",
     "svg-to-png": "^0.6.0",

@@ -906,81 +906,94 @@ h6,
  */
 
 .flex {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
 .flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .flex-wrap {
   -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .flex-center {
+  -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flex-baseline {
+  -webkit-box-align: baseline;
   -webkit-align-items: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .flex-stretch {
+  -webkit-box-align: stretch;
   -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .flex-start {
+  -webkit-box-align: start;
   -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .flex-end {
+  -webkit-box-align: end;
   -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .flex-first {
+  -webkit-box-ordinal-group: 0;
   -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 .flex-last {
+  -webkit-box-ordinal-group: 1025;
   -webkit-order: 1024;
-  -ms-flex-order: 1024;
-  order: 1024;
+      -ms-flex-order: 1024;
+          order: 1024;
 }
 
 .flex-auto {
+  -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .flex-grow {
+  -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .flex-none {
+  -webkit-box-flex: 0;
   -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
+      -ms-flex: none;
+          flex: none;
 }
 
 .flex > div {
@@ -989,6 +1002,7 @@ h6,
 
 @media (min-width: 40em) {
   .sm-flex {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1001,6 +1015,7 @@ h6,
 
 @media (min-width: 52em) {
   .md-flex {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1013,6 +1028,7 @@ h6,
 
 @media (min-width: 64em) {
   .lg-flex {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1075,11 +1091,11 @@ hr {
   background-color: #0076df ;
   border-radius: 3px;
   -webkit-transition-duration: .05s;
-  transition-duration: .05s;
+          transition-duration: .05s;
   -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
   -webkit-transition-property: box-shadow, background-color;
-  transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
 
 .button:hover {
@@ -1111,7 +1127,7 @@ hr {
 .field-light {
   background-color: white;
   -webkit-transition: box-shadow .2s ease;
-  transition: box-shadow .2s ease;
+          transition: box-shadow .2s ease;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(#000,.125);
@@ -1152,7 +1168,7 @@ hr {
 .radio-light,
 .checkbox-light {
   -webkit-transition: box-shadow .2s ease;
-  transition: box-shadow .2s ease;
+          transition: box-shadow .2s ease;
 }
 
 .radio-light {
@@ -1355,11 +1371,11 @@ input[type=range] {
   border-radius: 3px;
   border: 1px solid currentcolor;
   -webkit-transition-duration: .1s;
-  transition-duration: .1s;
+          transition-duration: .1s;
   -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
   -webkit-transition-property: box-shadow, background-color;
-  transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
 
 .button-outline:before {
@@ -1375,11 +1391,11 @@ input[type=range] {
   background-color: currentcolor;
   border-radius: 3px;
   -webkit-transition-duration: .1s;
-  transition-duration: .1s;
+          transition-duration: .1s;
   -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
   -webkit-transition-property: opacity;
-  transition-property: opacity;
+          transition-property: opacity;
   opacity: 0;
 }
 
@@ -1421,11 +1437,11 @@ input[type=range] {
   border-radius: 0;
   border: 1px solid transparent;
   -webkit-transition-duration: .1s;
-  transition-duration: .1s;
+          transition-duration: .1s;
   -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
   -webkit-transition-property: box-shadow;
-  transition-property: box-shadow;
+          transition-property: box-shadow;
 }
 
 .button-transparent:before {
@@ -1440,11 +1456,11 @@ input[type=range] {
   border: 1px solid transparent;
   background-color: currentcolor;
   -webkit-transition-duration: .1s;
-  transition-duration: .1s;
+          transition-duration: .1s;
   -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
   -webkit-transition-property: opacity;
-  transition-property: opacity;
+          transition-property: opacity;
   opacity: 0;
 }
 
