@@ -62,6 +62,7 @@ var results = {
   suitcssPlugin: autoprefixer()
     .process(
       rework(src)
+      .use(reworkColors())
       .use(reworkSuit())
       .toString()
     ).css,
@@ -104,7 +105,7 @@ function logStats(processor) {
 describe('basscss-processors', function() {
   
   function testProcessors(processor) {
-    it(processor + 'should be a string', function() {
+    it(processor + ' result should be a string', function() {
       assert.equal(typeof results[processor], 'string');
     });
     it('Should have the same number of rules as ' + processor, function() {
