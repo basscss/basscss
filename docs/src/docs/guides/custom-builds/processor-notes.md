@@ -92,12 +92,13 @@ var css = autoprefixer()
 ---
 
 ### Basscss modules using rework-plugin-colors
-- defaults
+- x defaults
 - (v4 button modules)
-- color-basic
-- color-forms
-- color-forms-dark
-- colors
-- highlight
-- progress
+- x color-basic
+- x color-forms
+- x color-forms-dark
+- x colors
+- ~ highlight
+- x progress
+- x input range
 

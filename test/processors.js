@@ -12,7 +12,8 @@ var reworkCalc = require('rework-calc');
 var reworkCustomMedia = require('rework-custom-media');
 var reworkNpm = require('rework-npm');
 var reworkVars = require('rework-vars');
-var reworkColors = require('rework-plugin-colors');
+var reworkColor = require('rework-color-function');
+var reworkPluginColors = require('rework-plugin-colors');
 var autoprefixer = require('autoprefixer');
 
 // Other processors
@@ -42,7 +43,8 @@ var results = {
       .use(reworkVars())
       .use(reworkCustomMedia())
       .use(reworkCalc)
-      .use(reworkColors())
+      .use(reworkColor)
+      //.use(reworkPluginColors())
       .toString()
   ).css,
   basswork: basswork(src),
@@ -50,13 +52,12 @@ var results = {
   myth: autoprefixer().process(
     rework(src)
       .use(reworkNpm())
-      .use(reworkColors())
       .use(myth({ features: { import: false } }))
       .toString()
   ).css,
   suitcss: autoprefixer().process(
     rework(src)
-      .use(reworkColors())
+      .use(reworkColor)
       .use(reworkSuit())
       .toString()
   ).css,
@@ -80,6 +81,10 @@ var stats = {
   suitcss: cssstats(minified.suitcss),
 };
 
+function writeCss(processor) {
+  var css = results[processor];
+  fs.writeFileSync(path.join(__dirname, './results/'+processor+'.css'), css);
+};
 
 describe('basscss-processors', function() {
   
@@ -103,6 +108,7 @@ describe('basscss-processors', function() {
 
   processors.forEach(function(processor) {
     testProcessors(processor);
+    writeCss(processor);
   });
 
 

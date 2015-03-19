@@ -1146,7 +1146,7 @@ hr {
 .field-light:focus {
   outline: none;
   border-color: #0074d9;
-  box-shadow: 0 0 2px rgba(0, 116, 217, .5);
+  box-shadow: 0 0 2px rgba(0, 116, 217, 0.5);
 }
 
 .field-light:disabled {
@@ -1187,10 +1187,8 @@ hr {
 .radio-light:focus,
 .checkbox-light:focus {
   outline: none;
-  box-shadow: 0 0 2px rgba(0, 116, 217, .5);
+  box-shadow: 0 0 2px rgba(0, 116, 217, 0.5);
 }
-
-
 
 /* Basscss Color Forms Dark */
 
@@ -1241,8 +1239,6 @@ hr {
 .field-dark.is-error {
   border-color: #ff4136;
 }
-
-
 
 /* Basscss Input Range */
 
@@ -1852,43 +1848,11 @@ input[type=range] {
   opacity: .5;
 }
 
-/*
-
-   COLOR VARIABLES
-
-   - Cool
-   - Warm
-   - Gray Scale
-
-*/
-
-:root {
-  /* Cool */
-  /* Warm */
-  /* Gray scale */
-}
-
 
 
 /* Variables */
 
 /* Basscss Defaults */
-
-/*
-
-   COLOR VARIABLES
-
-   - Cool
-   - Warm
-   - Gray Scale
-
-*/
-
-:root {
-  /* Cool */
-  /* Warm */
-  /* Gray scale */
-}
 
 :root {
   /* Legacy support */
