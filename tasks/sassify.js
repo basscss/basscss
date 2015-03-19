@@ -10,7 +10,7 @@ module.exports = function() {
   modules.forEach(function(m) {
     var cssString = '@import "' + m + '";';
     var imported = rework(cssString)
-      .use(rnpm({ }))
+      .use(rnpm())
       .toString();
     var result = cssscss(imported);
     var filename = m.replace('basscss-', '') + '.scss';

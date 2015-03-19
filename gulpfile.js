@@ -1,10 +1,13 @@
 
 var gulp = require('gulp');
 
-gulp.task('default', ['basswork']);
+gulp.task('default', ['css']);
 
 // Compile source modules to production CSS
 gulp.task('basswork', require('./tasks/basswork'));
+
+  // Cssnext test
+  gulp.task('css', require('./tasks/css'));
 
 // Bump Bower version because Bower makes no sense
 gulp.task('bump', require('./tasks/bump'));
@@ -44,8 +47,8 @@ gulp.task('customizer-js', require('./tasks/customizer-js'));
 gulp.task('dev', ['watch-templates', 'watch-css', 'watch-js', 'serve']);
 
 // Watch for changes
-gulp.task('watch-css', ['basswork', 'customizer-data'], function() {
-  gulp.watch(['./src/**/*.css', './docs/src/css/**/*.css'], ['basswork', 'customizer-data']);
+gulp.task('watch-css', ['css', 'customizer-data'], function() {
+  gulp.watch(['./src/**/*.css', './docs/src/css/**/*.css'], ['css', 'customizer-data']);
 });
 
 gulp.task('watch-templates', ['autobass'], function() {

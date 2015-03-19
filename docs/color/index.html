@@ -332,7 +332,7 @@
       
         <h2 class="h5 m0">
           basscss-color-base
-          v1.1.1
+          v1.1.2
         </h2>
       
     </div>
@@ -401,7 +401,7 @@
       <!--
       <div class="h5 bold">
         2 KB
-        (704 bytes Gzipped)
+        (703 bytes Gzipped)
       </div>
       -->
     </div>
@@ -521,10 +521,10 @@ hr {
 }
 
 :root {
-  --darken-1: rgba(#000,.0625);
-  --darken-2: rgba(#000,.125);
-  --darken-3: rgba(#000,.25);
-  --darken-4: rgba(#000,.5);
+  --darken-1: rgba(0,0,0,.0625);
+  --darken-2: rgba(0,0,0,.125);
+  --darken-3: rgba(0,0,0,.25);
+  --darken-4: rgba(0,0,0,.5);
   --border-color: var(--darken-2);
   --border-width: 1px;
   --border-radius: 3px;
@@ -1698,33 +1698,66 @@ These add focus states that are consistent with the other form elements.</p>
       <!--
       <div class="h5 bold">
         1 KB
-        (363 bytes Gzipped)
+        (584 bytes Gzipped)
       </div>
       -->
     </div>
     <div id="basscss-color-forms-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          11 Rules
+          12 Rules
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          13 Selectors
+          14 Selectors
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          20 Declarations
+          37 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          9 Properties
+          26 Properties
         </div>
       </div>
     </div>
     <pre id="basscss-color-forms-css-source" style="max-height:50vh"><span class="hljs-comment">/* Basscss Color Forms */</span>
+
+<span class="hljs-comment">/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/</span>
+
+<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-comment">/* Cool */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">--aqua</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#7fdbff</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--blue</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#0074d9</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--navy</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#001f3f</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--teal</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#39cccc</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--green</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#2ecc40</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--olive</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#3d9970</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--lime</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#01ff70</span></span></span>;
+  <span class="hljs-comment">/* Warm */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">--yellow</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ffdc00</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--orange</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ff851b</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--red</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ff4136</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--fuchsia</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#f012be</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--purple</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#b10dc9</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--maroon</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#85144b</span></span></span>;
+  <span class="hljs-comment">/* Gray scale */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">--white</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#fff</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--silver</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ddd</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--gray</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#aaa</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--black</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#111</span></span></span>;
+<span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.field-light</span> <span class="hljs-rules">{
   <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> white</span></span>;
@@ -1737,8 +1770,8 @@ These add focus states that are consistent with the other form elements.</p>
 
 <span class="hljs-class">.field-light</span><span class="hljs-pseudo">:focus</span> <span class="hljs-rules">{
   <span class="hljs-rule"><span class="hljs-attribute">outline</span>:<span class="hljs-value"> none</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--blue, blue)</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-function">color</span>(<span class="hljs-function">var</span>(--blue, blue) <span class="hljs-function">alpha</span>(.<span class="hljs-number">5</span>))</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--blue)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-function">color</span>(<span class="hljs-function">var</span>(--blue) <span class="hljs-function">alpha</span>(.<span class="hljs-number">5</span>))</span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.field-light</span><span class="hljs-pseudo">:disabled</span> <span class="hljs-rules">{
@@ -1751,19 +1784,19 @@ These add focus states that are consistent with the other form elements.</p>
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.field-light</span><span class="hljs-pseudo">:invalid</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red, red)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red)</span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.field-light</span><span class="hljs-class">.is-success</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--green, green)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--green)</span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.field-light</span><span class="hljs-class">.is-warning</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--yellow, yellow)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--yellow)</span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.field-light</span><span class="hljs-class">.is-error</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red, red)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red)</span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.radio-light</span>,
@@ -1778,7 +1811,7 @@ These add focus states that are consistent with the other form elements.</p>
 <span class="hljs-class">.radio-light</span><span class="hljs-pseudo">:focus</span>,
 <span class="hljs-class">.checkbox-light</span><span class="hljs-pseudo">:focus</span> <span class="hljs-rules">{
   <span class="hljs-rule"><span class="hljs-attribute">outline</span>:<span class="hljs-value"> none</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-function">color</span>(<span class="hljs-function">var</span>(--blue, blue) <span class="hljs-function">alpha</span>(.<span class="hljs-number">5</span>))</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-function">color</span>(<span class="hljs-function">var</span>(--blue) <span class="hljs-function">alpha</span>(.<span class="hljs-number">5</span>))</span></span>;
 <span class="hljs-rule">}</span></span></pre>
   
 </footer>
@@ -1891,34 +1924,67 @@ These add focus states that are consistent with the other form elements.</p>
       <h2 class="flex-auto">CSS Source</h2>
       <!--
       <div class="h5 bold">
-        653 bytes
-        (271 bytes Gzipped)
+        1 KB
+        (498 bytes Gzipped)
       </div>
       -->
     </div>
     <div id="basscss-color-forms-dark-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          8 Rules
+          9 Rules
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          8 Selectors
+          9 Selectors
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          12 Declarations
+          29 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          6 Properties
+          23 Properties
         </div>
       </div>
     </div>
     <pre id="basscss-color-forms-dark-css-source" style="max-height:50vh"><span class="hljs-comment">/* Basscss Color Forms Dark */</span>
+
+<span class="hljs-comment">/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/</span>
+
+<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-comment">/* Cool */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">--aqua</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#7fdbff</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--blue</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#0074d9</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--navy</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#001f3f</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--teal</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#39cccc</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--green</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#2ecc40</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--olive</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#3d9970</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--lime</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#01ff70</span></span></span>;
+  <span class="hljs-comment">/* Warm */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">--yellow</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ffdc00</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--orange</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ff851b</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--red</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ff4136</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--fuchsia</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#f012be</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--purple</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#b10dc9</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--maroon</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#85144b</span></span></span>;
+  <span class="hljs-comment">/* Gray scale */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">--white</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#fff</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--silver</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ddd</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--gray</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#aaa</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--black</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#111</span></span></span>;
+<span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.field-dark</span> <span class="hljs-rules">{
   <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> white</span></span>;
@@ -1941,19 +2007,19 @@ These add focus states that are consistent with the other form elements.</p>
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.field-dark</span><span class="hljs-pseudo">:invalid</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red, red)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red)</span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.field-dark</span><span class="hljs-class">.is-success</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--green, green)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--green)</span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.field-dark</span><span class="hljs-class">.is-warning</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--yellow, yellow)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--yellow)</span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.field-dark</span><span class="hljs-class">.is-error</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red, red)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red)</span></span>;
 <span class="hljs-rule">}</span></span></pre>
   
 </footer>

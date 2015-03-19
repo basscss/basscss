@@ -44,7 +44,6 @@ var results = {
       .use(reworkCustomMedia())
       .use(reworkCalc)
       .use(reworkColor)
-      //.use(reworkPluginColors())
       .toString()
   ).css,
   basswork: basswork(src),
@@ -63,27 +62,36 @@ var results = {
   ).css,
 };
 
-var minified = {
-  release: new Cleancss().minify(results.release).styles,
-  rework: new Cleancss().minify(results.rework).styles,
-  basswork: new Cleancss().minify(results.basswork).styles,
-  cssnext: new Cleancss().minify(results.cssnext).styles,
-  myth: new Cleancss().minify(results.myth).styles,
-  suitcss: new Cleancss().minify(results.suitcss).styles,
-};
+var minified = {};
+minified.release = new Cleancss().minify(results.release).styles;
+processors.forEach(function(processor) {
+  minified[processor] = new Cleancss().minify(results[processor]).styles;
+});
 
-var stats = {
-  release: cssstats(minified.release),
-  rework: cssstats(minified.rework),
-  basswork: cssstats(minified.basswork),
-  cssnext: cssstats(minified.cssnext),
-  myth: cssstats(minified.myth),
-  suitcss: cssstats(minified.suitcss),
-};
+var stats = {};
+stats.release = cssstats(minified.release);
+processors.forEach(function(processor) {
+  stats[processor] = cssstats(minified[processor]);
+});
+
 
 function writeCss(processor) {
   var css = results[processor];
-  fs.writeFileSync(path.join(__dirname, './results/'+processor+'.css'), css);
+  var dir = path.join(__dirname, './results');
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+  }
+  fs.writeFileSync(dir + '/' + processor + '.css', css);
+};
+
+function writeDeclarations(processor) {
+  var string = '\n';
+  var dir = path.join(__dirname, './results');
+  stats[processor].declarations.all.forEach(function(dec, i) {
+    var releaseDec = stats.release.declarations.all[i] || {};
+    string += dec.prop + ': ' + dec.value + '\n' + releaseDec.prop + ': ' + releaseDec.value + '\n\n';
+  });
+  fs.writeFileSync(dir + '/' + processor + '-declarations.txt', string);
 };
 
 describe('basscss-processors', function() {
@@ -109,6 +117,7 @@ describe('basscss-processors', function() {
   processors.forEach(function(processor) {
     testProcessors(processor);
     writeCss(processor);
+    writeDeclarations(processor);
   });
 
 
