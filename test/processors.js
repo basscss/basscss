@@ -6,8 +6,6 @@ var assert = require('assert');
 var cssstats = require('cssstats');
 var Cleancss = require('clean-css');
 
-//var deepDiff = require('deep-diff').diff;
-
 // Rework
 var rework = require('rework');
 var reworkCalc = require('rework-calc');
@@ -31,24 +29,22 @@ var src = fs.readFileSync(path.join(__dirname, '../src/basscss.css'), 'utf8');
 var processors = [
   'rework',
   'basswork',
-  'suitcssPlugin',
-  //'suitcss',
+  'suitcss',
   'myth',
   'cssnext',
 ];
 
 var results = {
   release: fs.readFileSync(path.join(__dirname, '../css/basscss.css'), 'utf8'),
-  rework: autoprefixer()
-            .process(
-              rework(src)
-                .use(reworkNpm())
-                .use(reworkVars())
-                .use(reworkCustomMedia())
-                .use(reworkCalc)
-                .use(reworkColors())
-                .toString()
-            ).css,
+  rework: autoprefixer().process(
+    rework(src)
+      .use(reworkNpm())
+      .use(reworkVars())
+      .use(reworkCustomMedia())
+      .use(reworkCalc)
+      .use(reworkColors())
+      .toString()
+  ).css,
   basswork: basswork(src),
   cssnext: cssnext(src, { features: { rem: false } }),
   myth: autoprefixer().process(
@@ -58,14 +54,12 @@ var results = {
       .use(myth({ features: { import: false } }))
       .toString()
   ).css,
-  suitcss: suitcss(src), // Seems to have an issue with outdated autoprefixer
-  suitcssPlugin: autoprefixer()
-    .process(
-      rework(src)
+  suitcss: autoprefixer().process(
+    rework(src)
       .use(reworkColors())
       .use(reworkSuit())
       .toString()
-    ).css,
+  ).css,
 };
 
 var minified = {
@@ -75,7 +69,6 @@ var minified = {
   cssnext: new Cleancss().minify(results.cssnext).styles,
   myth: new Cleancss().minify(results.myth).styles,
   suitcss: new Cleancss().minify(results.suitcss).styles,
-  suitcssPlugin: new Cleancss().minify(results.suitcssPlugin).styles,
 };
 
 var stats = {
@@ -85,21 +78,7 @@ var stats = {
   cssnext: cssstats(minified.cssnext),
   myth: cssstats(minified.myth),
   suitcss: cssstats(minified.suitcss),
-  suitcssPlugin: cssstats(minified.suitcssPlugin),
 };
-
-function logStats(processor) {
-  var log = 'Stats diff for ' + processor + '\n\n';
-  stats[processor].declarations.all.forEach(function(decl, i) {
-    var original = stats.release.declarations.all[i] || false;
-    var value;
-    if (original) {
-      value = original.toString().trim(); 
-    }
-    log += 'original:test ' + value + ' : ' + decl.toString().trim() + '\n';
-  });
-  fs.writeFileSync(path.join(__dirname, './results/log-' + processor + '.log'), log);
-}
 
 
 describe('basscss-processors', function() {
@@ -123,7 +102,6 @@ describe('basscss-processors', function() {
   };
 
   processors.forEach(function(processor) {
-    logStats(processor);
     testProcessors(processor);
   });
 
