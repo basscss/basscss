@@ -15,9 +15,12 @@ $border-width: 1px !default;
   background-color: transparent;
   border-radius: 0;
   border: $border-width solid transparent;
-  transition-duration: .1s;
-  transition-timing-function: ease-out;
-  transition-property: box-shadow;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow;
+          transition-property: box-shadow;
 }
 
 .button-transparent:before {
@@ -31,9 +34,12 @@ $border-width: 1px !default;
   left: -1px;
   border: 1px solid transparent;
   background-color: currentcolor;
-  transition-duration: .1s;
-  transition-timing-function: ease-out;
-  transition-property: opacity;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
   opacity: 0;
 }
 

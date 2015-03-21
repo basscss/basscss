@@ -8,39 +8,14 @@ $bold-font-weight: bold !default;
 
 /* Basscss Utility Typography */
 
-.bold {
-  font-weight: $bold-font-weight;
-}
+.bold    { font-weight: $bold-font-weight }
+.regular { font-weight: normal }
+.italic  { font-style: italic }
+.caps    { text-transform: uppercase; letter-spacing: .2em; }
 
-.regular {
-  font-weight: normal;
-}
+.left-align   { text-align: left }
+.center       { text-align: center }
+.right-align  { text-align: right }
+.justify      { text-align: justify }
 
-.italic {
-  font-style: italic;
-}
-
-.caps {
-  text-transform: uppercase;
-  letter-spacing: .2em;
-}
-
-.left-align {
-  text-align: left;
-}
-
-.center {
-  text-align: center;
-}
-
-.right-align {
-  text-align: right;
-}
-
-.justify {
-  text-align: justify;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
+.nowrap { white-space: nowrap }

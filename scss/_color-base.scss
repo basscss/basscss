@@ -18,10 +18,10 @@ $white: #fff !default;
 $silver: #ddd !default;
 $gray: #aaa !default;
 $black: #111 !default;
-$darken-1: rgba(#000,.0625) !default;
-$darken-2: rgba(#000,.125) !default;
-$darken-3: rgba(#000,.25) !default;
-$darken-4: rgba(#000,.5) !default;
+$darken-1: rgba(0,0,0,.0625) !default;
+$darken-2: rgba(0,0,0,.125) !default;
+$darken-3: rgba(0,0,0,.25) !default;
+$darken-4: rgba(0,0,0,.5) !default;
 $border-color: $darken-2 !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
@@ -47,17 +47,16 @@ body {
 }
 
 a {
-  color: $blue;
+  color: $link-color /* Fallback value:  $blue  */;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+  a:hover {
+    text-decoration: underline;
+  }
 
-pre,
-code {
-  background-color: $silver;
+pre, code {
+  background-color: $pre-background-color /* Fallback value:  $silver  */;
   border-radius: $border-radius;
 }
 
@@ -70,11 +69,14 @@ hr {
 
 .button {
   color: white;
-  background-color: $blue;
+  background-color: $button-background-color /* Fallback value:  $blue  */;
   border-radius: $border-radius;
-  transition-duration: .05s;
-  transition-timing-function: ease-out;
-  transition-property: box-shadow, background-color;
+  -webkit-transition-duration: .05s;
+          transition-duration: .05s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
 
 .button:hover {

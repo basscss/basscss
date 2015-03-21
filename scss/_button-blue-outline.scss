@@ -15,11 +15,14 @@ $border-width: 1px !default;
   background-color: transparent;
   border-radius: $border-radius;
   border: $border-width solid $blue;
-  transition-duration: .1s;
-  transition-timing-function: ease-out;
-  transition-property: box-shadow, background-color;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
-
+  
 .button-blue-outline:hover,
 .button-blue-outline.is-active {
   color: white;

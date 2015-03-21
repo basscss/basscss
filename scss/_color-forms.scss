@@ -1,30 +1,43 @@
 
 // Converted Variables
 
-$blue: #0076df !default;
-$red: #f95020 !default;
-$green: #00cf26 !default;
-$yellow: #efcc00 !default;
-$dark-gray: #333 !default;
-$mid-gray: #777 !default;
-$light-gray: #ccc !default;
-$lighter-gray: #eee !default;
-$darken-1: rgba(#000,.0625) !default;
-$darken-2: rgba(#000,.125) !default;
-$darken-3: rgba(#000,.25) !default;
-$darken-4: rgba(#000,.5) !default;
-$border-color: $light-gray !default;
-$border-width: 1px !default;
-$border-radius: 3px !default;
+$aqua: #7fdbff !default;
+$blue: #0074d9 !default;
+$navy: #001f3f !default;
+$teal: #39cccc !default;
+$green: #2ecc40 !default;
+$olive: #3d9970 !default;
+$lime: #01ff70 !default;
+$yellow: #ffdc00 !default;
+$orange: #ff851b !default;
+$red: #ff4136 !default;
+$fuchsia: #f012be !default;
+$purple: #b10dc9 !default;
+$maroon: #85144b !default;
+$white: #fff !default;
+$silver: #ddd !default;
+$gray: #aaa !default;
+$black: #111 !default;
 
 // Custom Media Query Variables
 
 
 /* Basscss Color Forms */
 
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/
+
 .field-light {
   background-color: white;
-  transition: box-shadow .2s ease;
+  -webkit-transition: box-shadow .2s ease;
+          transition: box-shadow .2s ease;
   border-style: solid;
   border-width: $border-width;
   border-color: $border-color;
@@ -34,7 +47,7 @@ $border-radius: 3px !default;
 .field-light:focus {
   outline: none;
   border-color: $blue;
-  box-shadow: 0 0 2px rgba($blue,.5);
+  box-shadow: 0 0 2px color($blue alpha(.5));
 }
 
 .field-light:disabled {
@@ -62,17 +75,19 @@ $border-radius: 3px !default;
   border-color: $red;
 }
 
+
 .radio-light,
 .checkbox-light {
-  transition: box-shadow .2s ease;
+  -webkit-transition: box-shadow .2s ease;
+          transition: box-shadow .2s ease;
 }
 
 .radio-light {
   border-radius: 50%;
 }
-
+  
 .radio-light:focus,
 .checkbox-light:focus {
   outline: none;
-  box-shadow: 0 0 2px rgba($blue,.5);
+  box-shadow: 0 0 2px color($blue alpha(.5));
 }

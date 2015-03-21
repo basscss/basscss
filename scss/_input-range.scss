@@ -5,7 +5,7 @@ $border-radius: $border-radius /* Fallback value:  3px */ !default;
 $form-field-height: $form-field-height /* Fallback value:  2.25rem */ !default;
 $form-field-padding-y: $form-field-padding-y /* Fallback value:  .5rem */ !default;
 $form-field-padding-x: $form-field-padding-x /* Fallback value:  .5rem */ !default;
-$darken-3: rgba(#000, .25) !default;
+$darken-3: rgba(0,0,0, .25) !default;
 $range-thumb-width: $form-field-padding-x !default;
 $range-thumb-height: ( $form-field-height - ($form-field-padding-y * 2) ) !default;
 $range-track-height: ( $form-field-padding-y / 2 ) !default;
@@ -41,7 +41,6 @@ input[type=range] {
 }
 
 /* Touch screen friendly pseudo element */
-
 .range-light::-webkit-slider-thumb:before {
   content: '';
   display: block;

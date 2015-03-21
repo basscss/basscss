@@ -5,7 +5,6 @@ $blue: #0076df !default;
 $border-radius: 3px !default;
 $blue: #0076df !default;
 $border-radius: 3px !default;
-$border-width: 1px !default;
 $red: #f95020 !default;
 $border-radius: 3px !default;
 $blue: #0076df !default;
@@ -45,11 +44,14 @@ $border-radius: 3px !default;
   color: white;
   background-color: $blue;
   border-radius: $border-radius;
-  transition-duration: .1s;
-  transition-timing-function: ease-out;
-  transition-property: box-shadow, background-color;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
-
+  
 .button-blue:hover {
   opacity: .875;
 }
@@ -68,19 +70,21 @@ $border-radius: 3px !default;
 .button-blue.is-disabled {
   opacity: .5;
 }
-
 /* Basscss Button Blue Outline */
 
 .button-blue-outline {
   color: $blue;
   background-color: transparent;
   border-radius: $border-radius;
-  border: $border-width solid $blue;
-  transition-duration: .1s;
-  transition-timing-function: ease-out;
-  transition-property: box-shadow, background-color;
+  border: 1px solid $blue;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
-
+  
 .button-blue-outline:hover,
 .button-blue-outline.is-active {
   color: white;
@@ -102,18 +106,20 @@ $border-radius: 3px !default;
   background-color: transparent;
   opacity: .5;
 }
-
 /* Basscss Button Red */
 
 .button-red {
   color: white;
   background-color: $red;
   border-radius: $border-radius;
-  transition-duration: .1s;
-  transition-timing-function: ease-out;
-  transition-property: box-shadow, background-color;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
-
+  
 .button-red:hover {
   opacity: .875;
 }
@@ -132,18 +138,20 @@ $border-radius: 3px !default;
 .button-red.is-disabled {
   opacity: .5;
 }
-
 /* Basscss Button Light Gray */
 
 .button-light-gray {
   color: $dark-gray;
   background-color: $light-gray;
   border-radius: $border-radius;
-  transition-duration: .1s;
-  transition-timing-function: ease-out;
-  transition-property: box-shadow, background-color;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
-
+  
 .button-light-gray:hover {
   opacity: .875;
 }
@@ -168,12 +176,10 @@ $border-radius: 3px !default;
 .button-nav-light:hover {
   background-color: $hover-background-color;
 }
-
 .button-nav-light:active,
 .button-nav-light.is-active {
   color: $dark-gray;
 }
-
 /* Basscss Button Nav Dark */
 
 .button-nav-dark {

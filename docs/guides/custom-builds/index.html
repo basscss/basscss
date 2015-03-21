@@ -116,8 +116,8 @@
             </li>
           
             <li>
-              <a href="/docs/guides/rework" class="button button-small px2 block button-transparent">
-                <span class="block ml1">Using Rework</span>
+              <a href="/docs/guides/css4" class="button button-small px2 block button-transparent">
+                <span class="block ml1">CSS4 Syntax</span>
               </a>
             </li>
           
@@ -241,175 +241,49 @@
 
         <div class="px2 py2">
 
-          
-<section class="py2">
-  <p class="h3">
-    Basscss is a collection of interoperable CSS modules
-    and can be used in conjunction with many other frameworks, libraries, and stylesheets.
-  </p>
-</section>
+          <p class="h3">
+  Basscss is a collection of interoperable CSS modules
+  and can be used in conjunction with many other frameworks, libraries, and stylesheets.
+</p>
 
-<section id="rework" class="py2">
-  <h1>Rework</h1>
-  <p>
-    Rework is the most native way to incorporate Basscss into a project,
-    and its concepts should be somewhat familiar to those who use other preprocessors,
-    such as Sass or Less, and to those who are comfortable with the command line.
-  </p>
-  <p>
-    Rework is a Node-based preprocessor with a plugin architecture and syntax based on the CSS specification.
-    Rework requires NPM, and Basscss uses this package management system for its modular architecture.
-    If you prefer using Bower, see the <a href="/docs/guides/custom-builds/#sass-with-bower">Bower Section</a> below.
-  </p>
-  <h2>Bassplate</h2>
-  <p>
-    The quickest way to get familiar with using Rework is through the official boilerplate project
-    <a href="//github.com/jxnblk/bassplate">Bassplate</a>,
-    which includes Gulp tasks and basic file and folder structure for building a simple website.
-  </p>
-  <p>
-    To get started, clone the repo, install dependencies, and run the default Gulp task.
-  </p>
-<pre>
-git clone https://github.com/jxnblk/bassplate.git new-project
-cd new-project
+<h1 id="css4"><a href="#css4">CSS4</a></h1><p>Basscss is written in CSS4 and uses <a href="https://cssnext.github.io/">cssnext</a> to post-process down to CSS3 for use in today’s browsers. Basscss can also be post-processed with <a href="https://github.com/reworkcss/rework">Rework</a>. To learn more about using CSS4 features, see the <a href="/docs/guides/css4">CSS4 Guide</a>.</p>
+<h1 id="bassplate"><a href="#bassplate">Bassplate</a></h1><p>The quickest way to start customizing Basscss is through the official boilerplate project
+<a href="//github.com/jxnblk/bassplate">Bassplate</a>,
+which includes scripts and basic file and folder structure for building a simple website.</p>
+<p>To get started, clone the repo, install dependencies, and run the start script.</p>
+<pre>git <span class="hljs-built_in">clone</span> https://github.com/jxnblk/bassplate.git new-project
+<span class="hljs-built_in">cd</span> new-project
 rm -rf .git
 npm install
-gulp
-</pre>
-  <p>
-    This will start a server at <code>http://localhost:8000</code> and watch the <code>/src</code> folder for changes.
-    Edit the files in <code>/src/css</code> to customize the compiled stylesheet.
-  </p>
-  <h2>Basswork</h2>
-  <p>
-    Basswork is a CSS preprocessor for Basscss built with Rework.
-    To set up Basscss in an existing Node-base build system,
-    use <a href="//github.com/jxnblk/basswork">Basswork</a>
-    or <a href="//github.com/jxnblk/gulp-basswork">Gulp Basswork</a> to compile a set of modules.
-  </p>
-  <h2>NPM Packages</h2>
-  <p>
-    All individual Basscss modules are available on NPM.
-    For a list of available packages, see the
-    <a href="/docs/modules">Modules</a> page.
-  </p>
-</section>
+npm start</pre><p>This will start a server at <code>http://localhost:8000</code> and watch the <code>/src</code> folder for changes.
+Edit the files in <code>/src/css</code> to customize the compiled stylesheet.</p>
+<h1 id="npm-packages"><a href="#npm-packages">Npm Packages</a></h1><p>All individual Basscss modules are available on npm. For a list of available packages, see the <a href="http://basscss.com/docs/modules">Modules</a> page.</p>
+<h1 id="importing-files"><a href="#importing-files">Importing files</a></h1><p>Basscss uses npm to manage its CSS modules. Cssnext automatically inlines files with the following syntax.
+If you’re using Rework or Myth, be sure to use the <code>rework-npm</code> plugin to correctly import files.</p>
+<p>To import modules that have been installed through npm, use the following syntax:</p>
+<pre><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'basscss-base-typography'</span></span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'basscss-defaults'</span></span>;</pre><p>To import modules relative to the parent file, use this syntax:</p>
+<pre><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'./custom-buttons'</span></span>;</pre><p>Import custom properties (variables) last. Just as with other CSS declarations, whatever is last in the source code is used.</p>
+<pre><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'basscss-utility-layout'</span></span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'./variables'</span></span>;</pre><h1 id="sass"><a href="#sass">Sass</a></h1><p>Although Basscss is written in spec-compliant CSS,
+you can also incorporate it into an existing Sass project with the <a href="https://github.com/jxnblk/css-scss">css-to-scss</a> compiled partials in the <code>/scss</code> folder. Be sure to include the variables file <code>basscss/scss/defaults</code> before all other partials.</p>
+<pre><span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'basscss/scss/defaults'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'basscss/scss/utility-layout'</span>;</span></pre><p>To override the default values, include your own variable definitions before Basscss.</p>
+<pre><span class="hljs-comment">// Custom variables</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'variables'</span>;</span>
 
-<section id="rework-syntax" class="py2">
-  <h1>Rework Syntax</h1>
-  <p>
-    To import modules that have been installed through NPM,
-    use the following syntax:
-  </p>
-
-<pre>
-@import 'basscss-base-typography';
-@import 'basscss-defaults';
-</pre>
-
-  <p>
-    To import modules relative to the parent file,
-    use this syntax:
-  </p>
-
-<pre>
-@import './custom-buttons';
-</pre>
-
-  <p>
-    Import variables last.
-    Just as with other CSS declarations,
-    whatever is last in the source code is used.
-  </p>
-
-<pre>
-@import 'basscss-utility-layout';
-@import './variables';
-</pre>
-
-  <p>
-    To use variables in declarations, follow this CSS syntax:
-  </p>
-
-<pre>
-.button-primary {
-  background-color: var(--blue);
-}
-</pre>
-
-  <p>
-    For more, see the <a href="/docs/guides/rework">Using Rework</a> page.
-  </p>
-</section>
-
-<section id="sass" class="py2">
-  <h1>Sass</h1>
-  <p>
-    The core package includes the standard modules as Sass partials in the <code>scss</code> folder.
-    Import individual modules in your own file as needed,
-    with the default variables file first.
-  </p>
-
-<pre>
-@import: 'basscss/scss/defaults';
-@import: 'basscss/scss/utility-layout';
-</pre>
-
-  <p>
-    To override the default values,
-    include your own variable definitions before Basscss.
-  </p>
-
-<pre>
-// Custom variables
-@import: 'variables';
-
-// Basscss
-@import: 'basscss/scss/defaults';
-@import: 'basscss/scss/utility-layout';
-</pre>
-
-  <h2 id="sass-with-bower">Sass with Bower</h2>
-  <p>
-    Although Basscss’s individual modules are distributed through NPM,
-    the core package is available through Bower,
-    which contains the compiled CSS as well as the standard set of modules as Sass partials.
-  </p>
-  <p>
-    To get started, install the package:
-  </p>
-<pre>
-bower install basscss
-</pre>
-  <p>
-    To import modules without specifying the Bower folder,
-    add <code>bower_components/basscss/scss</code> to the <code>includePaths</code> option.
-  </p>
-
-<pre>
-var options = {
-  includePaths: ['bower_components/']
-}
-</pre>
-
-<pre>
-@import "basscss/scss/defaults";
-@import "basscss/scss/base-reset";
-@import "basscss/scss/base-typography";
-</pre>
-</section>
-
-<section id="web-app" class="py2 mb4">
-  <h1>Web App</h1>
-  <p>
-    If you’re not ready to dive into the command line,
-    you can create custom builds of Basscss with the web app.
-  </p>
-  <a href="/docs/customize" class="button button-outline blue">Customize</a>
-</section>
-
-
+<span class="hljs-comment">// Basscss</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'basscss/scss/defaults'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'basscss/scss/utility-layout'</span>;</span></pre><h2 id="sass-with-bower"><a href="#sass-with-bower">Sass with Bower</a></h2><p>Although Basscss’s individual modules are distributed through npm, the core package is available through Bower, which contains the compiled CSS as well as the standard set of modules as Sass partials.</p>
+<p>To get started, install the package:</p>
+<pre>bower install basscss</pre><p>To import modules without specifying the Bower folder,
+add <code>bower_components/basscss/scss</code> to the <code>includePaths</code> option in node-sass.</p>
+<pre><span class="hljs-keyword">var</span> options = {
+  includePaths: [<span class="hljs-string">'bower_components/'</span>]
+}</pre><pre><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss/scss/defaults"</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss/scss/base-reset"</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss/scss/base-typography"</span>;</span></pre><h1 id="customizer-web-app"><a href="#customizer-web-app">Customizer Web App</a></h1><p>If you’re not ready to dive into the command line, you can create custom builds of Basscss with the web app.</p>
+<p><a href="/docs/customize" class="button button-outline blue">Customize</a></p>
 
 
           
@@ -429,8 +303,8 @@ var options = {
       </a>
     
     
-      <a href="/docs/guides/rework" class="h3 right button button-link blue">
-        Using Rework
+      <a href="/docs/guides/css4" class="h3 right button button-link blue">
+        CSS4 Syntax
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
         </svg>

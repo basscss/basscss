@@ -1,0 +1,152 @@
+
+// Converted Variables
+
+$monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
+$blue: #0076df !default;
+$red: #f95020 !default;
+$green: #00cf26 !default;
+$yellow: #efcc00 !default;
+$dark-gray: #333 !default;
+$mid-gray: #777 !default;
+$light-gray: #ccc !default;
+$purple: #f92080 !default;
+$dark-blue: #00369f !default;
+$dark-green: #00ab37 !default;
+$dark-green: #009f06 !default;
+$light-pink: #ffdddd !default;
+$light-green: #ddffdd !default;
+$hljs-comment: $mid-gray !default;
+$hljs-keyword: $dark-gray !default;
+$hljs-number: $dark-green !default;
+$hljs-string: $red !default;
+$hljs-title: $red !default;
+$hljs-type: $dark-blue !default;
+$hljs-tag: $dark-blue !default;
+$hljs-attribute: $dark-green !default;
+$hljs-regexp: $dark-green !default;
+$hljs-symbol: $purple !default;
+$hljs-built-in: $dark-blue !default;
+$hljs-preprocessor: $mid-gray !default;
+$hljs-deletion: $light-pink !default;
+$hljs-addition: $light-green !default;
+$hljs-change: $dark-blue !default;
+$hljs-chunk: $light-gray !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Highlight */
+
+.hljs {
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header,
+.hljs-javadoc {
+  color: $hljs-comment;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: $hljs-keyword;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: $hljs-number;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.hljs-dartdoc,
+.tex .hljs-formula {
+  color: $hljs-string;
+}
+
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: $hljs-title;
+  font-weight: bold;
+}
+
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: $hljs-type;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: $hljs-tag;
+  font-weight: normal;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body {
+  color: $hljs-attribute;
+}
+
+.hljs-regexp {
+  color: $hljs-regexp;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: $hljs-symbol;
+}
+
+.hljs-built_in {
+  color: $hljs-built-in;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: $hljs-preprocessor;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: $hljs-deletion;
+}
+
+.hljs-addition {
+  background: $hljs-addition;
+}
+
+.diff .hljs-change {
+  background: $hljs-change;
+}
+
+.hljs-chunk {
+  color: $hljs-chunk;
+}

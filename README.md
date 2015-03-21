@@ -6,9 +6,9 @@ http://basscss.com
 
 ---
 
-## Modular CSS toolkit based on OOCSS principles
+## Lightning-Fast Modular CSS
 
-Basscss is a lightweight collection of base element styles, utilities, layout modules, and color styles designed for speed, performance, and scalability.
+Basscss is a lightweight collection of base element styles, immutable utilities, layout modules, and color styles designed for speed, performance, and scalability.
 
 ## Features
 
@@ -31,35 +31,17 @@ With modular styles that work like building blocks,
 Basscss provides a foundation of reusable and inter-operable styles
 for greater freedom when designing in the browser.
 
-Learn more at http://basscss.com
-
 ## Getting Started
-Download or install Basscss from one of these sources:
 
-```
-git clone https://github.com/jxnblk/basscss.git
-```
-
-```
-npm install basscss
-```
-
-```
-bower install basscss
-```
-
-CDN:
-```
-<link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/4.1.2/basscss.min.css" rel="stylesheet">
-```
+http://basscss.com/docs/getting-started
 
 ---
 
 ## Folder Structure
-- `src`: Uncompiled Rework CSS source files
-- `css`: Compiled CSS files
-- `scss`: Compiled Sass partials
-- `tasks`: Files for Gulp build process
+- `src`: CSS4 source files
+- `css`: Processed CSS files for browser compatibility
+- `scss`: Sass partials converted from CSS4 syntax
+- `scripts`: Compilation and build scripts
 - `docs`: Files for http://basscss.com site
 
 
@@ -68,11 +50,14 @@ View the full documentation with inline examples:
 
 http://basscss.com/docs
 
-### Guide to Web Design Basics
-http://basscss.com/docs/guide
+### Guides
+http://basscss.com/docs/guides
 
 ### Design Principles
 http://basscss.com/docs/principles
+
+### Examples
+http://basscss.com/docs/showcase
 
 ---
 

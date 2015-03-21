@@ -10,51 +10,36 @@ $breakpoint-lg: '(min-width: 64em)';
 
 /* Basscss Utility Responsive States */
 
-.sm-show,
-.md-show,
-.lg-show {
-  display: none !important;
+.sm-show, .md-show, .lg-show {
+  display: none !important
 }
 
 @media #{$breakpoint-sm} {
-  .sm-show {
-    display: block !important;
-  }
+  .sm-show { display: block !important }
 }
 
 @media #{$breakpoint-md} {
-  .md-show {
-    display: block !important;
-  }
+  .md-show { display: block !important }
 }
 
 @media #{$breakpoint-lg} {
-  .lg-show {
-    display: block !important;
-  }
+  .lg-show { display: block !important }
 }
+
 
 @media #{$breakpoint-sm} {
-  .sm-hide {
-    display: none !important;
-  }
+  .sm-hide { display: none !important }
 }
 
 @media #{$breakpoint-md} {
-  .md-hide {
-    display: none !important;
-  }
+  .md-hide { display: none !important }
 }
 
 @media #{$breakpoint-lg} {
-  .lg-hide {
-    display: none !important;
-  }
+  .lg-hide { display: none !important }
 }
 
-.display-none {
-  display: none !important;
-}
+.display-none { display: none !important }
 
 .hide {
   position: absolute !important;
