@@ -2,8 +2,8 @@
 
 ## Specification conformance
 
-- Consider removing `rework-plugin-colors`
-- Consider using `color()`
+- x Consider removing `rework-plugin-colors`
+- x Consider using `color()`
 - Try using `rework-import` in place of `rework-npm`
 
 
