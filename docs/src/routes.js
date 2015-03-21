@@ -76,7 +76,7 @@ module.exports = {
           },
           'custom-builds': {
             title: 'Custom Builds',
-            description: 'Using NPM, Bower, Rework, Sass, and other tools to customize Basscss for your needs.',
+            description: 'Using NPM, Cssnext, Bower, Sass, and other tools to customize Basscss for your needs.',
           },
           css4: {
             title: 'CSS4 Syntax',
