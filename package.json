@@ -25,6 +25,7 @@
     "basscss-button-blue-outline": "0.0.3",
     "basscss-button-gray": "0.0.1",
     "basscss-button-light-gray": "0.0.3",
+    "basscss-button-link": "^1.0.1",
     "basscss-button-nav-dark": "0.0.3",
     "basscss-button-nav-light": "0.0.2",
     "basscss-button-nav-tab": "0.0.3",

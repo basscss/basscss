@@ -26,7 +26,7 @@ $darken-2: rgba(0,0,0, .125) !default;
 
 .progress::-webkit-progress-bar {
   -webkit-appearance: none;
-  background-color: $darken-2;
+  background-color: $darken-2
 }
 
 .progress::-webkit-progress-value {

@@ -16,7 +16,6 @@ $breakpoint-lg: '(min-width: 64em)';
   margin-left: auto;
   margin-right: auto;
 }
-
 .col {
   float: left;
   box-sizing: border-box;
@@ -74,8 +73,8 @@ $breakpoint-lg: '(min-width: 64em)';
 .col-12 {
   width: 100%;
 }
-
 @media #{$breakpoint-sm} {
+
   .sm-col {
     float: left;
     box-sizing: border-box;
@@ -133,9 +132,10 @@ $breakpoint-lg: '(min-width: 64em)';
   .sm-col-12 {
     width: 100%;
   }
-}
 
+}
 @media #{$breakpoint-md} {
+
   .md-col {
     float: left;
     box-sizing: border-box;
@@ -193,9 +193,10 @@ $breakpoint-lg: '(min-width: 64em)';
   .md-col-12 {
     width: 100%;
   }
-}
 
+}
 @media #{$breakpoint-lg} {
+
   .lg-col {
     float: left;
     box-sizing: border-box;
@@ -253,4 +254,5 @@ $breakpoint-lg: '(min-width: 64em)';
   .lg-col-12 {
     width: 100%;
   }
+
 }

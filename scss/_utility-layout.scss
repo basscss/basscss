@@ -7,56 +7,25 @@
 
 /* Basscss Utility Layout */
 
-.inline {
-  display: inline;
-}
+.inline       { display: inline }
+.block        { display: block }
+.inline-block { display: inline-block }
 
-.block {
-  display: block;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.overflow-scroll {
-  overflow: scroll;
-}
-
-.overflow-auto {
-  overflow: auto;
-}
+.overflow-hidden { overflow: hidden }
+.overflow-scroll { overflow: scroll }
+.overflow-auto   { overflow: auto }
 
 .clearfix:before,
 .clearfix:after {
   content: " ";
-  display: table;
+  display: table
 }
+.clearfix:after { clear: both }
 
-.clearfix:after {
-  clear: both;
-}
+.left  { float: left }
+.right { float: right }
 
-.left {
-  float: left;
-}
+.fit { max-width: 100% }
 
-.right {
-  float: right;
-}
-
-.fit {
-  max-width: 100%;
-}
-
-.half-width {
-  width: 50%;
-}
-
-.full-width {
-  width: 100%;
-}
+.half-width { width: 50% }
+.full-width { width: 100% }

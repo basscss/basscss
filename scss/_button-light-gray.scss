@@ -15,11 +15,14 @@ $border-radius: 3px !default;
   color: $dark-gray;
   background-color: $light-gray;
   border-radius: $border-radius;
-  transition-duration: .1s;
-  transition-timing-function: ease-out;
-  transition-property: box-shadow, background-color;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
-
+  
 .button-light-gray:hover {
   opacity: .875;
 }

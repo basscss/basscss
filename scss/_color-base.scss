@@ -51,12 +51,11 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+  a:hover {
+    text-decoration: underline;
+  }
 
-pre,
-code {
+pre, code {
   background-color: $pre-background-color /* Fallback value:  $silver  */;
   border-radius: $border-radius;
 }
@@ -72,9 +71,12 @@ hr {
   color: white;
   background-color: $button-background-color /* Fallback value:  $blue  */;
   border-radius: $border-radius;
-  transition-duration: .05s;
-  transition-timing-function: ease-out;
-  transition-property: box-shadow, background-color;
+  -webkit-transition-duration: .05s;
+          transition-duration: .05s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
 
 .button:hover {

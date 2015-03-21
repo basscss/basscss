@@ -30,12 +30,7 @@ body {
   font-size: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family;
   font-weight: $heading-font-weight;
   line-height: $heading-line-height;
@@ -43,23 +38,17 @@ h6 {
   margin-bottom: .5em;
 }
 
-p,
-dl,
-ol,
-ul {
+p, dl, ol, ul {
   font-size: $h4;
   margin-top: 0;
   margin-bottom: $space-2;
 }
 
-ol,
-ul {
+ol, ul {
   padding-left: $space-3;
 }
 
-pre,
-code,
-samp {
+pre, code, samp {
   font-family: $monospace-font-family;
   font-size: inherit;
 }
@@ -82,42 +71,18 @@ blockquote {
   padding-left: $space-2;
   padding-right: $space-2;
 }
+  blockquote,
+  blockquote p {
+    font-size: $h3;
+    font-style: italic;
+  }
 
-blockquote,
-blockquote p {
-  font-size: $h3;
-  font-style: italic;
-}
-
-h1,
-.h1 {
-  font-size: $h1;
-}
-
-h2,
-.h2 {
-  font-size: $h2;
-}
-
-h3,
-.h3 {
-  font-size: $h3;
-}
-
-h4,
-.h4 {
-  font-size: $h4;
-}
-
-h5,
-.h5 {
-  font-size: $h5;
-}
-
-h6,
-.h6 {
-  font-size: $h6;
-}
+h1, .h1 { font-size: $h1 }
+h2, .h2 { font-size: $h2 }
+h3, .h3 { font-size: $h3 }
+h4, .h4 { font-size: $h4 }
+h5, .h5 { font-size: $h5 }
+h6, .h6 { font-size: $h6 }
 
 .list-reset {
   list-style: none;

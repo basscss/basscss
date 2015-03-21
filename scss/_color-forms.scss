@@ -36,7 +36,8 @@ $black: #111 !default;
 
 .field-light {
   background-color: white;
-  transition: box-shadow .2s ease;
+  -webkit-transition: box-shadow .2s ease;
+          transition: box-shadow .2s ease;
   border-style: solid;
   border-width: $border-width;
   border-color: $border-color;
@@ -74,15 +75,17 @@ $black: #111 !default;
   border-color: $red;
 }
 
+
 .radio-light,
 .checkbox-light {
-  transition: box-shadow .2s ease;
+  -webkit-transition: box-shadow .2s ease;
+          transition: box-shadow .2s ease;
 }
 
 .radio-light {
   border-radius: 50%;
 }
-
+  
 .radio-light:focus,
 .checkbox-light:focus {
   outline: none;

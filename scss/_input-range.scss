@@ -41,7 +41,6 @@ input[type=range] {
 }
 
 /* Touch screen friendly pseudo element */
-
 .range-light::-webkit-slider-thumb:before {
   content: '';
   display: block;

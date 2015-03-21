@@ -7,11 +7,11 @@ var pkg = require('../package.json');
 
 var options = {
   features: {
-    rem: false,
     customProperties: false,
-    reduced: false,
-    customMediaQueries: false,
-    //color: false,
+    customMedia: false,
+    calc: false,
+    colorFunction: false,
+    rem: false,
     //autoprefixer: false,
   }
 };

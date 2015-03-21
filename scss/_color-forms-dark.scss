@@ -41,6 +41,18 @@ $black: #111 !default;
   border-radius: $border-radius /* Fallback value:  3px */;
 }
 
+.field-dark::-webkit-input-placeholder {
+  color: rgba(255,255,255,.75);
+}
+
+.field-dark::-moz-placeholder {
+  color: rgba(255,255,255,.75);
+}
+
+.field-dark:-ms-input-placeholder {
+  color: rgba(255,255,255,.75);
+}
+
 .field-dark::placeholder {
   color: rgba(255,255,255,.75);
 }

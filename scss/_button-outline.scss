@@ -16,9 +16,12 @@ $border-radius: 3px !default;
   background-color: transparent;
   border-radius: $border-radius;
   border: $border-width solid currentcolor;
-  transition-duration: .1s;
-  transition-timing-function: ease-out;
-  transition-property: box-shadow, background-color;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
 }
 
 .button-outline:before {
@@ -33,9 +36,12 @@ $border-radius: 3px !default;
   border: 1px solid transparent;
   background-color: currentcolor;
   border-radius: $border-radius;
-  transition-duration: .1s;
-  transition-timing-function: ease-out;
-  transition-property: opacity;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
   opacity: 0;
 }
 
