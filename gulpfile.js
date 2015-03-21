@@ -1,4 +1,19 @@
 
+// Replace all tasks with npm run scripts
+// - [x] css (previously basswork)
+// - [x] css header
+// - [x] minify css
+// - [x] autobass
+// - [x] sassify
+// - [x] serve
+// - [ ] bower bump
+// - [ ] s3
+// - [ ] zip
+// - [ ] favicon
+// - [ ] customizer-data
+// - [ ] customizer-js
+
+
 var gulp = require('gulp');
 
 gulp.task('default', ['css']);
@@ -6,8 +21,8 @@ gulp.task('default', ['css']);
 // Compile source modules to production CSS
 //gulp.task('basswork', require('./tasks/basswork'));
 
-  // Cssnext test
-  gulp.task('css', require('./tasks/css'));
+// Cssnext test
+gulp.task('css', require('./tasks/css'));
 
 // Bump Bower version because Bower makes no sense
 gulp.task('bump', require('./tasks/bump'));
@@ -40,7 +55,6 @@ gulp.task('favicon', require('./tasks/favicon'));
 gulp.task('customizer-data', require('./tasks/customizer-data'));
 
 // Compile JS for customizer
-gulp.task('customizer-js', require('./tasks/customizer-js'));
 
 
 // Site development

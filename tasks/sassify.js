@@ -4,7 +4,8 @@ var cssscss = require('css-scss');
 var rework = require('rework');
 var rnpm = require('rework-npm');
 
-module.exports = function() {
+//module.exports = function() {
+
   var modules = require('../package.json').basscss.modules;
   modules = modules.concat(require('../package.json').basscss.variables);
   modules.forEach(function(m) {
@@ -18,5 +19,5 @@ module.exports = function() {
     fs.writeFileSync('./scss/' + filename, result);
   });
  
-};
+//};
 

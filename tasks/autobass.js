@@ -49,7 +49,7 @@ data.helpers = require('../docs/src/helpers');
 var autobass = new Autobass();
 autobass.init(data);
 
-module.exports = function() {
+//module.exports = function() {
   autobass.compile();
-};
+//};
 

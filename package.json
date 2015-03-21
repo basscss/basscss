@@ -3,6 +3,17 @@
   "version": "5.1.0",
   "description": "Low-level CSS toolkit",
   "style": "src/basscss.css",
+  "scripts": {
+    "test": "mocha test",
+    "css": "node scripts/css",
+    "watch:css": "watch 'npm run css' ./src",
+    "sassify": "node scripts/sassify",
+    "watch:sassify": "watch 'npm run sassify' ./src",
+    "html": "node tasks/autobass",
+    "watch:html": "watch 'npm run html' ./docs/src",
+    "serve": "http-server -p 8000",
+    "start": "npm run watch:css & npm run watch:sassify & npm run watch:html & npm run serve"
+  },
   "dependencies": {
     "basscss-background-images": "0.0.5",
     "basscss-base-buttons": "^1.0.5",
@@ -76,7 +87,9 @@
     "gulp-webserver": "^0.8.3",
     "gulp-zip": "^2.0.2",
     "highlight.js": "^8.4.0",
+    "http-server": "^0.8.0",
     "humanize-plus": "^1.5.0",
+    "jszip": "^2.5.0",
     "mocha": "^2.2.1",
     "myth": "^1.4.0",
     "postcss": "^3.0.7",
@@ -139,12 +152,6 @@
     "variables": [
       "basscss-defaults"
     ]
-  },
-  "scripts": {
-    "test": "mocha test",
-    "start": "gulp",
-    "css": "basswork src/basscss.css css/basscss.css",
-    "watch:css": "watch 'npm run css' ./src"
   },
   "author": "Brent Jackson",
   "license": "MIT",
