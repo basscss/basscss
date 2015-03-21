@@ -58,19 +58,6 @@ module.exports = {
         routes: {
           basics: {
             description: 'Understanding the basics of designing for the web with CSS is essential to using Basscss effectively. This guide covers the fundamentals to help get you started.',
-            //sections: [
-            //  { title: 'Document Structure', link: '/docs/guides/basics/#document-structure' },
-            //  { title: 'Multiclass CSS Pattern', link: '/docs/guides/basics/#multiclass-css-pattern' },
-            //  { title: 'Typography', link: '/docs/guides/basics/#writing-and-typography' },
-            //  { title: 'Block-Level and Inline Elements', link: '/docs/guides/basics/#block-level-and-inline-elements' },
-            //  { title: 'Display Property', link: '/docs/guides/basics/#display-property' },
-            //  { title: 'Box Model', link: '/docs/guides/basics/#box-model' },
-            //  { title: 'Floats', link: '/docs/guides/basics/#floats' },
-            //  { title: 'Widths', link: '/docs/guides/basics/#widths' },
-            //  { title: 'Media Queries and Mobile-First Approach', link: '/docs/guides/basics/#media-queries-and-mobile-first-approach' },
-            //  { title: 'Positions', link: '/docs/guides/basics/#positions' },
-            //  { title: 'Extending Basscss', link: '/docs/guides/basics/#extending-basscss' }
-            //]
           },
           layout: {
             title: 'Page Layout',
@@ -78,81 +65,27 @@ module.exports = {
               demo: {}
             },
             description: 'Creating page layouts in Basscss is incredibly fast and flexible. This guide will walk you through common layout patterns to create an entire page with a basic information hierarchy.',
-            //sections: [
-            //  { title: 'Global Navigation', link: '/docs/guides/layout/#global-navigation' },
-            //  { title: 'Hero Banner', link: '/docs/guides/layout/#hero-banner' },
-            //  { title: 'Three-Up', link: '/docs/guides/layout/#three-up' },
-            //  { title: 'Blog Teaser', link: '/docs/guides/layout/#blog-teaser' },
-            //  { title: 'Gallery', link: '/docs/guides/layout/#gallery' },
-            //  { title: 'Footer', link: '/docs/guides/layout/#footer' }
-            //]
           },
           ui: {
             title: 'UI Elements',
             description: 'Creating user interface elements while keeping CSS bloat to a minimum and allowing for flexibility in making iterative design decisions',
-            //sections: [
-            //  { title: 'Button Sizes', link: '/docs/guides/ui/#button-sizes' },
-            //  { title: 'Navigation', link: '/docs/guides/ui/#navigation' },
-            //  { title: 'Breadcrumbs', link: '/docs/guides/ui/#breadcrumbs' },
-            //  { title: 'Pagination', link: '/docs/guides/ui/#pagination' },
-            //  { title: 'Button Groups', link: '/docs/guides/ui/#button-groups' },
-            //  { title: 'Input Groups', link: '/docs/guides/ui/#input-groups' },
-            //  { title: 'Dropdowns', link: '/docs/guides/ui/#dropdowns' },
-            //  { title: 'Navbars', link: '/docs/guides/ui/#navbars' },
-            //  { title: 'Boxes', link: '/docs/guides/ui/#boxes' },
-            //  { title: 'Flash Messages', link: '/docs/guides/ui/#flash-messages' },
-            //  { title: 'Badges', link: '/docs/guides/ui/#badges' }
-            //]
           },
           tips: {
             title: 'Tips & Tricks',
             description: 'Basscss is a versatile starting point for any project. These tips and tricks will help you build on top of its foundation in an elegant and maintainable way.',
-            //sections: [
-            //  { title: 'Avoid Overrides', link: '/docs/guides/tips/#avoid-overrides' },
-            //  { title: 'Utility Styles are Immutable', link: '/docs/guides/tips/#utility-styles-are-immutable' },
-            //  { title: 'Look Before Adding', link: '/docs/guides/tips/#look-before-adding' },
-            //  { title: 'Avoid Magic Numbers', link: '/docs/guides/tips/#avoid-magic-numbers' },
-            //  { title: 'Don’t Use Contextual Selectors', link: '/docs/guides/tips/#don-t-use-contextual-selectors' },
-            //  { title: 'Handle Complexity in Markup', link: '/docs/guides/tips/#handle-complexity-in-markup' },
-            //  { title: 'Keep Specificity Low', link: '/docs/guides/tips/#keep-specificity-low' },
-            //  { title: 'Don’t Nest Selectors', link: '/docs/guides/tips/#don-t-nest-selectors' },
-            //  { title: 'Don’t Use IDs as Selectors', link: '/docs/guides/tips/#don-t-use-ids-as-selectors' },
-            //  { title: 'Separate Structure and Skin', link: '/docs/guides/tips/#separate-structure-and-skin' }
-            //],
           },
           'custom-builds': {
             title: 'Custom Builds',
             description: 'Using NPM, Bower, Rework, Sass, and other tools to customize Basscss for your needs.',
-            //sections: [
-            //  { title: 'Rework', link: '/docs/custom-builds/#rework' },
-            //  { title: 'Rework Syntax', link: '/docs/custom-builds/#rework-syntax' },
-            //  { title: 'Sass', link: '/docs/custom-builds/#sass' },
-            //  { title: 'Web App', link: '/docs/custom-builds/#web-app' }
-            //]
           },
-          rework: {
-            title: 'Using Rework',
-            description: 'Getting started with and using Rework, the CSS4 based preprocessor',
-            //sections: [
-            //  { title: 'Imports', link: '/docs/rework/#imports' },
-            //  { title: 'Variables', link: '/docs/rework/#variables' },
-            //  { title: 'Custom Media Queries', link: '/docs/rework/#custom-media-queries' },
-            //  { title: 'Custom Builds', link: '/docs/rework/#custom-builds' },
-            //]
+          css4: {
+            title: 'CSS4 Syntax',
+            description: 'Getting started with CSS4 features, including custom properties and custom media queries',
           },
         }
       },
       principles: {
         title: 'Design Principles',
-        //sections: [
-        //  { name: 'design-with-reuse-in-mind', title: 'Open/Closed Principle' },
-        //  { name: 'design-with-reuse-in-mind' },
-        //  { name: 'dont-make-assumptions' },
-        //  { name: 'clarity-over-cleverness' },
-        //  { name: 'balance-consistency-with-flexibility' },
-        //  { name: 'organizing-principles' },
-        //  { name: 'naming-conventions' },
-        //]
       },
       showcase: {
         title: 'Built with Basscss',
