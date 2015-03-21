@@ -9,8 +9,12 @@
     "watch:css": "watch 'npm run css' ./src",
     "sassify": "node scripts/sassify",
     "watch:sassify": "watch 'npm run sassify' ./src",
-    "html": "node tasks/autobass",
+    "html": "node scripts/autobass",
     "watch:html": "watch 'npm run html' ./docs/src",
+    "bower-bump": "node scripts/bower-bump",
+    "s3": "",
+    "zip": "node scripts/zip",
+    "release": "npm run css && npm run zip && npm run sassify && npm run bower-bump",
     "serve": "http-server -p 8000",
     "start": "npm run watch:css & npm run watch:sassify & npm run watch:html & npm run serve"
   },

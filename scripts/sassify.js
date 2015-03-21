@@ -12,7 +12,6 @@ var options = {
     calc: false,
     colorFunction: false,
     rem: false,
-    //autoprefixer: false,
   }
 };
 

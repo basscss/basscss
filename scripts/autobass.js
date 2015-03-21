@@ -14,7 +14,6 @@ data.dest = path.join(__dirname, '..');
 data.layout = './layouts/docs.html';
 data.baseurl = '//basscss.com';
 data.stylesheet = 'http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.2.0/bassdock.min.css';
-//data.stylesheet = '/css/basscss.css';
 data.asset_path = 'http://d2v52k3cl9vedd.cloudfront.net/basscss/';
 
 data.routes = require('../docs/src/routes');
@@ -46,10 +45,9 @@ data.partials['module-footer'] = fs.readFileSync('./docs/src/partials/module-foo
 
 data.helpers = require('../docs/src/helpers');
 
+// Init and compile
 var autobass = new Autobass();
 autobass.init(data);
 
-//module.exports = function() {
-  autobass.compile();
-//};
+autobass.compile();
 
