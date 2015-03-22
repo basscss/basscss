@@ -15,6 +15,8 @@
     "s3": "node scripts/s3",
     "gzip": "gzip -c css/basscss.min.css > css/basscss.min.css.gz",
     "zip": "node scripts/zip",
+    "customizer:data": "node scripts/customizer",
+    "customizer:js": "browserify docs/src/docs/customize/app.js -t uglifyify -o docs/customize/app.min.js",
     "release": "npm run css && npm run zip && npm run sassify && npm run bower-bump",
     "serve": "http-server -p 8000",
     "start": "npm run watch:css & npm run watch:sassify & npm run watch:html & npm run serve"
@@ -64,6 +66,7 @@
   "devDependencies": {
     "autobass": "^1.2.0",
     "basswork": "^1.3.0",
+    "browserify": "^9.0.3",
     "clean-css": "^3.1.8",
     "colorable": "^1.0.5",
     "colors.css": "^2.0.4",
@@ -71,7 +74,7 @@
     "css-validator": "^0.5.1",
     "cssnext": "^1.1.0",
     "cssstats": "^1.0.1",
-    "custom-css": "0.0.7",
+    "custom-css": "^1.0.1",
     "doiuse": "^0.3.2",
     "gzip-js": "^0.3.2",
     "highlight.js": "^8.4.0",
@@ -81,6 +84,7 @@
     "mocha": "^2.2.1",
     "myth": "^1.4.0",
     "postcss": "^3.0.7",
+    "react": "^0.13.1",
     "rework": "^1.0.1",
     "rework-calc": "^1.1.0",
     "rework-color-function": "^1.2.1",
@@ -91,6 +95,7 @@
     "rework-vars": "^3.1.1",
     "s3": "^4.4.0",
     "suitcss-preprocessor": "^0.4.0",
+    "uglifyify": "^3.0.1",
     "watch": "^0.14.0"
   },
   "basscss": {

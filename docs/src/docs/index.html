@@ -16,8 +16,8 @@
 
     <ul class="sm-flex flex-wrap list-reset mb3">
       <% _.forIn(routes.docs.routes, function(route, key) { %>
-      <li class="<%= (!route.routes && key != 'getting-started') ? 'sm-col-6 md-col-3 py2' : 'full-width py1 mt2 mb2' %>">
-          <a href="<%= route.path %>" class="h3 button button-link blue <%= route.routes ? 'h5 caps' : '' %>">
+      <li class="<%= (!route.routes && key != 'getting-started') ? 'sm-col-6 md-col-3 py1' : 'full-width py1 mt2 mb2' %>">
+          <a href="<%= route.path %>" class="h3 button button-small button-link blue <%= route.routes ? 'h5 caps' : '' %>">
             <%= route.title %>
           </a>
           <% if (route.sections) { %>

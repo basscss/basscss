@@ -3,70 +3,41 @@
   Create custom builds without touching the command line.
 </p>
 
-<div ng-app="app" ng-controller="AppCtrl">
-  <div custom-css class="">
-    <div class="py3">
-      <section class="mb3" custom-css-collection src="modules.json">
-        <div class="sm-flex flex-center mb2">
-          <h2 class="flex-auto m0 py1">Modules</h2>
-          <a href class="mr2 button button-small button-outline blue" ng-click="deselectAll(modules)">Deselect All</a>
-          <a href class="button button-small button-outline blue" ng-click="selectAll(modules)">Select All</a>
-        </div>
-        <form>
-          <ol class="list-reset border-top">
-            <li ng-repeat="module in modules"
-              class="border-bottom">
-              <div css-module></div>
-            </li>
-          </ol>
-        </form>
-      </section>
-      <section class="py3" custom-css-collection src="variables.json" variables="true">
-        <h2>Variables</h2>
-        <form>
-          <ol class="list-reset sm-flex flex-wrap mxn2">
-            <li class="border-box sm-col-6 lg-col-4 px2" ng-repeat="variable in variables">
-              <div variable-field></div>
-            </li>
-          </ol>
-        </form>
-      </section>
-    </div>
-    <div class="flex flex-column py3">
-      <div class="sm-flex flex-center mb2">
-        <div class="flex-auto py1">
-          <h2 class="h4 m0">Compiled CSS ({{ fileSize | filesize }})</h2>
-        </div>
-        <a class="flex-none button"
-          ng-href="{{ downloadURL }}"
-          download="basscss-custom.css">
-            Download
-        </a>
-      </div>
-      <pre class="flex-auto" style="height:60vh" ng-bind-html="compiled | highlight"></pre>
-      <div class="mb2">
-        <a class="button mb2"
-          ng-href="{{ downloadURL }}"
-          download="basscss-custom.css">
-            Download
-        </a>
-        <p class="h5">
-          Note: vendor prefixes are not included in the compiled CSS.
-          Use a tool like Autoprefixer if you need vendor prefixes.
-        </p>
-      </div>
-    </div>
+<div id="customizer-app" class="mb4">
+
+  <div class="center">
+    <svg id="loading-indicator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="currentColor" class="inline-block mb2 black">
+      <path opacity=".1" d="M14 0 H18 V8 H14 z" transform="rotate(0 16 16)">
+      <animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0"/>
+      </path>
+      <path opacity=".1" d="M14 0 H18 V8 H14 z" transform="rotate(45 16 16)">
+      <animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.125s"/>
+      </path>
+      <path opacity=".1" d="M14 0 H18 V8 H14 z" transform="rotate(90 16 16)">
+      <animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.25s"/>
+      </path>
+      <path opacity=".1" d="M14 0 H18 V8 H14 z" transform="rotate(135 16 16)">
+      <animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.375s"/>
+      </path>
+      <path opacity=".1" d="M14 0 H18 V8 H14 z" transform="rotate(180 16 16)">
+      <animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.5s"/>
+      </path>
+      <path opacity=".1" d="M14 0 H18 V8 H14 z" transform="rotate(225 16 16)">
+      <animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.675s"/>
+      </path>
+      <path opacity=".1" d="M14 0 H18 V8 H14 z" transform="rotate(270 16 16)">
+      <animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.75s"/>
+      </path>
+      <path opacity=".1" d="M14 0 H18 V8 H14 z" transform="rotate(315 16 16)">
+      <animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.875s"/>
+      </path>
+    </svg>
+    <div>Loading...</div>
   </div>
-  <div class="py3">
-    <p>
-      This tool only scratches the surface of what’s possible with Basscss’s modular architecture.
-      To learn more about custom builds from the command line, see
-      <a href="/docs/guides/custom-builds">Custom Builds</a>.
-    </p>
-  </div>
+
 </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-sanitize.min.js"></script>
-<script src="app.js"></script>
+<!-- This tool only scratches the surface of what’s possible with Basscss’s modular architecture. To learn more about custom builds from the command line, see Custom Builds. -->
+
+<script src="app.min.js"></script>
 
