@@ -21,7 +21,6 @@ $black: #111 !default;
 
 // Custom Media Query Variables
 
-
 /* Basscss Color Forms */
 
 /*
@@ -47,7 +46,7 @@ $black: #111 !default;
 .field-light:focus {
   outline: none;
   border-color: $blue;
-  box-shadow: 0 0 2px color($blue alpha(.5));
+  box-shadow: 0 0 2px rgba($blue, .5);
 }
 
 .field-light:disabled {
@@ -75,7 +74,6 @@ $black: #111 !default;
   border-color: $red;
 }
 
-
 .radio-light,
 .checkbox-light {
   -webkit-transition: box-shadow .2s ease;
@@ -85,9 +83,9 @@ $black: #111 !default;
 .radio-light {
   border-radius: 50%;
 }
-  
+
 .radio-light:focus,
 .checkbox-light:focus {
   outline: none;
-  box-shadow: 0 0 2px color($blue alpha(.5));
+  box-shadow: 0 0 2px rgba($blue, .5);
 }
