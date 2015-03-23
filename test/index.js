@@ -7,6 +7,7 @@ var cssnext = require('cssnext');
 var validator = require('css-validator');
 
 var processors = require('./processors');
+var scss = require('./scss');
 var usage = require('./doiuse');
 var validate = require('./validate');
 
@@ -17,7 +18,8 @@ var css = cssnext(src);
 describe('basscss', function() {
 
   processors(src);
-  validate(css);
+  scss();
+  //validate(css);
   //usage(css);
 
 });

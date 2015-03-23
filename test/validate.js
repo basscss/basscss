@@ -11,7 +11,10 @@ module.exports = function(css) {
       assert.equal(typeof css, 'string');
     });
 
+    var stream = validator({ text: css });
+    //console.log(stream);
 
+    /*
     validator({ text: css }, function (err, data) {
       if (err) { console.error(err); }
       console.log(data);
@@ -27,6 +30,7 @@ module.exports = function(css) {
       });
 
     });
+    */
 
 };
 

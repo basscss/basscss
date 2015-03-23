@@ -46,8 +46,9 @@
     "basscss-color-forms-dark": "^0.1.1",
     "basscss-color-tables": "^0.1.0",
     "basscss-colors": "^1.0.6",
-    "basscss-defaults": "^1.0.1",
+    "basscss-defaults": "^1.0.2",
     "basscss-grid": "0.0.14",
+    "basscss-highlight": "0.0.1",
     "basscss-input-range": "^1.1.1",
     "basscss-positions": "0.0.5",
     "basscss-progress": "^1.0.1",
@@ -60,7 +61,6 @@
     "basscss-utility-responsive-states": "0.0.2",
     "basscss-utility-typography": "0.0.2",
     "basscss-utility-white-space": "0.0.3",
-    "basscss-highlight": "0.0.1",
     "flex-object": "^1.0.5"
   },
   "devDependencies": {
@@ -83,6 +83,7 @@
     "jszip": "^2.5.0",
     "mocha": "^2.2.1",
     "myth": "^1.4.0",
+    "node-sass": "^3.0.0-alpha.0",
     "postcss": "^3.0.7",
     "react": "^0.13.1",
     "rework": "^1.0.1",
