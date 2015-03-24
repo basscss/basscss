@@ -66,6 +66,10 @@ module.exports = {
             },
             description: 'Creating page layouts in Basscss is incredibly fast and flexible. This guide will walk you through common layout patterns to create an entire page with a basic information hierarchy.',
           },
+          'flex-layout': {
+            title: 'Flex Object Layout',
+            description: 'Solving page-level and micro layout problems with the flex object and other utilities',
+          },
           ui: {
             title: 'UI Elements',
             description: 'Creating user interface elements while keeping CSS bloat to a minimum and allowing for flexibility in making iterative design decisions',

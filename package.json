@@ -17,7 +17,7 @@
     "zip": "node scripts/zip",
     "customizer:data": "node scripts/customizer",
     "customizer:js": "browserify docs/src/docs/customize/app.js -t uglifyify -o docs/customize/app.min.js",
-    "release": "npm run css && npm run zip && npm run sassify && npm run bower-bump",
+    "release": "npm run css && npm run zip && npm run sassify && npm run bower-bump && npm run customizer:data && npm run customizer:js",
     "serve": "http-server -p 8000",
     "start": "npm run watch:css & npm run watch:sassify & npm run watch:html & npm run serve"
   },
@@ -60,8 +60,8 @@
     "basscss-utility-layout": "0.0.2",
     "basscss-utility-responsive-states": "0.0.2",
     "basscss-utility-typography": "0.0.2",
-    "basscss-utility-white-space": "0.0.3",
-    "flex-object": "^1.0.5"
+    "basscss-utility-white-space": "0.0.4",
+    "flex-object": "^1.0.6"
   },
   "devDependencies": {
     "autobass": "^1.2.0",
@@ -71,7 +71,6 @@
     "colorable": "^1.0.5",
     "colors.css": "^2.0.4",
     "css-scss": "0.0.5",
-    "css-validator": "^0.5.1",
     "cssnext": "^1.1.0",
     "cssstats": "^1.0.1",
     "custom-css": "^1.0.1",
