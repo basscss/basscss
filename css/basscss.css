@@ -727,6 +727,28 @@ hr {
 }
 /* Basscss Color Forms */
 
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/
+
+:root {
+
+  /* Cool */
+
+
+  /* Warm */
+
+
+  /* Gray scale */
+
+}
+
 .field-light {
   background-color: white;
   -webkit-transition: box-shadow .2s ease;
@@ -785,6 +807,28 @@ hr {
   box-shadow: 0 0 2px rgba(0, 116, 217, 0.5);
 }
 /* Basscss Color Forms Dark */
+
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/
+
+:root {
+
+  /* Cool */
+
+
+  /* Warm */
+
+
+  /* Gray scale */
+
+}
 
 .field-dark {
   color: white;

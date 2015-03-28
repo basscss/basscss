@@ -4,9 +4,9 @@
 
 // Custom Media Query Variables
 
-$breakpoint-sm: '(min-width: 40em)';
-$breakpoint-md: '(min-width: 52em)';
-$breakpoint-lg: '(min-width: 64em)';
+$breakpoint-sm: '(min-width: 40em)' !default;
+$breakpoint-md: '(min-width: 52em)' !default;
+$breakpoint-lg: '(min-width: 64em)' !default;
 
 /*
  * Basscss Flex Object

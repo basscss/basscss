@@ -101,6 +101,9 @@ module.exports = {
         title: 'Color Combos'
       },
       customize: {},
+      resources: {
+        title: 'Tools & Resources'
+      },
     }
   },
   404: {
