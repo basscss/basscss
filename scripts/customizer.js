@@ -3,7 +3,6 @@
 
 var fs = require('fs');
 var path = require('path');
-var webpack = require("webpack");
 var customCssData = require('custom-css/tasks/data');
 var pkg = require('../package.json');
 
