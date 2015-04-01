@@ -277,7 +277,7 @@
     
 <section id="grid" class="py2">
   
-<header class="mt3 mb1 border-bottom">
+<header class="mt3 mb2 border-bottom">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -288,7 +288,7 @@
       
         <h2 class="h5 m0">
           basscss-grid
-          v0.0.14
+          v0.0.15
         </h2>
       
     </div>
@@ -303,9 +303,9 @@
   
 
 <p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>The utility-based grid allows a lot of flexibility in creating complex layouts.
-Start by using a <code>.clearfix</code> container.</p>
-<p>Optionally use a <code>.container</code> to set a max-width.
+<p>The utility-based grid allows a lot of flexibility in creating complex layouts.</p>
+<p>Start by using a <code>.clearfix</code> container.
+Optionally use a <code>.container</code> to set a max-width.
 Adjust the container width with the <code>--container-width</code> variable.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
@@ -338,6 +338,20 @@ The total number of columns in a row should add up to 12.</p>
 <h2 id="responsive-grid"><a href="#responsive-grid">Responsive Grid</a></h2><p>Use breakpoint-prefixed column utilities to change the grid at different screen widths.
 Each breakpoint applies to that screen width and up.
 Unprefixed styles apply to all screen widths.</p>
+<p>Start the grid from the small breakpoint and up with the <code>.sm-col</code> and <code>.sm-col-6</code> utilities.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix outline-blue">
+  <div class="sm-col sm-col-6">.sm-col.sm-col-6</div>
+  <div class="sm-col sm-col-6">.sm-col.sm-col-6</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix outline-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col sm-col-6&quot;</span>&gt;</span>.sm-col.sm-col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col sm-col-6&quot;</span>&gt;</span>.sm-col.sm-col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Add grid width adjustments for larger breakpoints.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="clearfix outline-blue">
@@ -354,6 +368,7 @@ Unprefixed styles apply to all screen widths.</p>
 When using negative margin, be sure to compensate for the extra width created
 with a padded parent element or by using overflow hidden.
 Otherwise, horizontal scrolling may occur.</p>
+<p>Create gutters with a width of 2 on the white space scale using <code>mxn2</code> and <code>px2</code>.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="clearfix mxn2 outline-blue">
@@ -364,6 +379,27 @@ Otherwise, horizontal scrolling may occur.</p>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix mxn2 outline-blue&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col sm-col-6 md-col-5 lg-col-4 px2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>.px2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col sm-col-6 md-col-7 lg-col-8 px2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>.px2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>For larger or smaller gutters, use any of the white space utilities.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix mxn1 outline-blue">
+  <div class="col col-6 px1"><div>.px1</div></div>
+  <div class="col col-6 px1"><div>.px1</div></div>
+</div>
+<div class="clearfix mxn3 outline-blue">
+  <div class="col col-6 px3"><div>.px3</div></div>
+  <div class="col col-6 px3"><div>.px3</div></div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix mxn1 outline-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col col-6 px1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>.px1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col col-6 px1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>.px1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix mxn3 outline-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col col-6 px3&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>.px3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col col-6 px3&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>.px3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="nesting"><a href="#nesting">Nesting</a></h2><p>Nest whole grid structures within columns to created nested grids.</p>
@@ -415,6 +451,32 @@ Otherwise, horizontal scrolling may occur.</p>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-8 px2 mx-auto&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Centered Column<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="breakpoint-based-floats"><a href="#breakpoint-based-floats">Breakpoint Based Floats</a></h2><p>Column float utilities can be used independently of width utilities.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix border border-blue">
+  <div class="sm-col p2 border border-blue">.sm-col</div>
+  <div class="overflow-hidden border border-blue">.overflow-hidden</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;clearfix border border-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-col p2 border border-blue&quot;</span>&gt;</span>.sm-col<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;overflow-hidden border border-blue&quot;</span>&gt;</span>.overflow-hidden<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="width-utilities"><a href="#width-utilities">Width Utilities</a></h2><p>Column width utilities can also be used independently to add percentage based widths to any block or inline-block element.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="border border-blue">
+  <div class="right sm-col-6 md-col-4 p2 border border-blue">.sm-col-6.md-col-4</div>
+  <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;border border-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;right sm-col-6 md-col-4 p2 border border-blue&quot;</span>&gt;</span>.sm-col-6.md-col-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 
@@ -717,7 +779,7 @@ Otherwise, horizontal scrolling may occur.</p>
     
 <section id="flex-object" class="py2">
   
-<header class="mt3 mb1 border-bottom">
+<header class="mt3 mb2 border-bottom">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -728,7 +790,7 @@ Otherwise, horizontal scrolling may occur.</p>
       
         <h2 class="h5 m0">
           flex-object
-          v1.0.6
+          v1.0.7
         </h2>
       
     </div>
@@ -751,53 +813,53 @@ This sets the element to <code>display: flex</code> and enables a flex context f
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="flex">
-  <a href="#" class="button button-transparent">Link</a>
-  <a href="#" class="button button-transparent">Link</a>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="-flex-wrap"><a href="#-flex-wrap">.flex-wrap</a></h2><p>To wrap elements, use the <code>.flex-wrap</code> utility.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="flex flex-wrap">
-  <a href="#" class="button button-transparent">Home</a>
-  <a href="#" class="button button-transparent">Nav Item</a>
-  <a href="#" class="button button-transparent">Nav Item</a>
-  <a href="#" class="button button-transparent">Nav Item</a>
-  <a href="#" class="button button-transparent">Nav Item</a>
-  <a href="#" class="button button-transparent">Nav Item</a>
-  <a href="#" class="button button-transparent">Nav Item</a>
-  <a href="#" class="button button-transparent">Nav Item</a>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex flex-wrap&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="-flex-column"><a href="#-flex-column">.flex-column</a></h2><p>To arrange items vertically, use the <code>.flex-column</code> utility.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="flex flex-column">
-  <div class="p1 blue border border-blue">Row</div>
-  <div class="p1 blue border border-blue">Row</div>
-  <div class="p1 blue border border-blue">Row</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex flex-column&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p1 blue border border-blue&quot;</span>&gt;</span>Row<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p1 blue border border-blue&quot;</span>&gt;</span>Row<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p1 blue border border-blue&quot;</span>&gt;</span>Row<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="alignment"><a href="#alignment">Alignment</a></h2><p>Use these utilities to control vertical alignment of child elements.</p>
@@ -806,16 +868,16 @@ This sets the element to <code>display: flex</code> and enables a flex context f
   <div class="MarkedExample-rendered p2">
     <div class="flex flex-center">
   <div class="flex-auto px2 py4 blue border border-blue">
-    <h1 class="m0">Big</h1>
+    <h1 class="m0">Hamburger</h1>
   </div>
-  <div class="px2 blue border border-blue">Small</div>
+  <div class="px2 blue border border-blue">Hot dog</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex flex-center&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto px2 py4 blue border border-blue&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>Big<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 blue border border-blue&quot;</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 blue border border-blue&quot;</span>&gt;</span>Hot dog<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h3 id="-flex-stretch"><a href="#-flex-stretch">.flex-stretch</a></h3><p>To stretch all elements to fill the height of the parent, use the <code>.flex-stretch</code> utility.</p>
@@ -823,16 +885,16 @@ This sets the element to <code>display: flex</code> and enables a flex context f
   <div class="MarkedExample-rendered p2">
     <div class="flex flex-stretch">
   <div class="flex-auto px2 py4 blue border border-blue">
-    <h1 class="m0">Big</h1>
+    <h1 class="m0">Hamburger</h1>
   </div>
-  <div class="px2 blue border border-blue">Small</div>
+  <div class="px2 blue border border-blue">Hot dog</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex flex-stretch&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto px2 py4 blue border border-blue&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>Big<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 blue border border-blue&quot;</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 blue border border-blue&quot;</span>&gt;</span>Hot dog<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h3 id="-flex-stretch-with-nested-content"><a href="#-flex-stretch-with-nested-content">.flex-stretch with nested content</a></h3><p>To ensure nested elements stretch as well, add the <code>.flex</code> class to relevant elements.</p>
@@ -840,22 +902,22 @@ This sets the element to <code>display: flex</code> and enables a flex context f
   <div class="MarkedExample-rendered p2">
     <div class="flex flex-stretch">
   <div class="flex-auto px2 py4 blue border border-blue">
-    <h1 class="m0">Big</h1>
+    <h1 class="m0">Hamburger</h1>
   </div>
   <div class="flex blue border border-blue">
     <div class="px2 white bg-blue">
-      Small
+      Hot dog
     </div>
   </div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex flex-stretch&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto px2 py4 blue border border-blue&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>Big<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex blue border border-blue&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 white bg-blue&quot;</span>&gt;</span>
-      Small
+      Hot dog
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
@@ -865,16 +927,16 @@ This sets the element to <code>display: flex</code> and enables a flex context f
   <div class="MarkedExample-rendered p2">
     <div class="flex flex-baseline blue border-bottom border-blue">
   <div class="flex-auto px2">
-    <h1 class="m0">Big</h1>
+    <h1 class="m0">Hamburger</h1>
   </div>
-  <div class="px2">Small</div>
+  <div class="px2">Hot dog</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex flex-baseline blue border-bottom border-blue&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto px2&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>Big<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2&quot;</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2&quot;</span>&gt;</span>Hot dog<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h3 id="-flex-start"><a href="#-flex-start">.flex-start</a></h3><p>To align child elements to the top, use the <code>.flex-start</code> utility.</p>
@@ -882,16 +944,16 @@ This sets the element to <code>display: flex</code> and enables a flex context f
   <div class="MarkedExample-rendered p2">
     <div class="flex flex-start blue border-top border-blue">
   <div class="flex-auto px2">
-    <h1 class="m0">Big</h1>
+    <h1 class="m0">Hamburger</h1>
   </div>
-  <div class="px2">Small</div>
+  <div class="px2">Hot dog</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex flex-start blue border-top border-blue&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto px2&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>Big<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2&quot;</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2&quot;</span>&gt;</span>Hot dog<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h3 id="-flex-end"><a href="#-flex-end">.flex-end</a></h3><p>To align child elements to the bottom, use the <code>.flex-end</code> utility.</p>
@@ -899,16 +961,16 @@ This sets the element to <code>display: flex</code> and enables a flex context f
   <div class="MarkedExample-rendered p2">
     <div class="flex flex-end blue border-bottom border-blue">
   <div class="flex-auto px2">
-    <h1 class="m0">Big</h1>
+    <h1 class="m0">Hamburger</h1>
   </div>
-  <div class="px2">Small</div>
+  <div class="px2">Hot dog</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex flex-end blue border-bottom border-blue&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto px2&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>Big<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2&quot;</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2&quot;</span>&gt;</span>Hot dog<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="responsive-utilities"><a href="#responsive-utilities">Responsive Utilities</a></h2><p>To set display flex only at certain breakpoints and up,
@@ -917,47 +979,47 @@ All other utilities will only work at the set breakpoint.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="sm-flex flex-center mb2 blue">
-  <div class="border border-blue">
+  <div class="p1 border border-blue">
     <h2 class="m0">.sm-flex</h2>
   </div>
-  <div class="flex-auto border border-blue">Div</div>
-  <div class="border border-blue">Div</div>
+  <div class="flex-auto p1 border border-blue">Hamburger</div>
+  <div class="p1 border border-blue">Hamburger</div>
 </div>
 <div class="md-flex flex-center mb2 blue">
-  <div class="border border-blue">
+  <div class="p1 border border-blue">
     <h2 class="m0">.md-flex</h2>
   </div>
-  <div class="flex-auto border border-blue">Div</div>
-  <div class="border border-blue">Div</div>
+  <div class="flex-auto p1 border border-blue">Hamburger</div>
+  <div class="p1 border border-blue">Hamburger</div>
 </div>
 <div class="lg-flex flex-center mb2 blue">
-  <div class="border border-blue">
+  <div class="p1 border border-blue">
     <h2 class="m0">.lg-flex</h2>
   </div>
-  <div class="flex-auto border border-blue">Div</div>
-  <div class="border border-blue">Div</div>
+  <div class="flex-auto p1 border border-blue">Hamburger</div>
+  <div class="p1 border border-blue">Hamburger</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-flex flex-center mb2 blue&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;border border-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p1 border border-blue&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>.sm-flex<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto border border-blue&quot;</span>&gt;</span>Div<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;border border-blue&quot;</span>&gt;</span>Div<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto p1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;md-flex flex-center mb2 blue&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;border border-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p1 border border-blue&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>.md-flex<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto border border-blue&quot;</span>&gt;</span>Div<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;border border-blue&quot;</span>&gt;</span>Div<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto p1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;lg-flex flex-center mb2 blue&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;border border-blue&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p1 border border-blue&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;m0&quot;</span>&gt;</span>.lg-flex<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto border border-blue&quot;</span>&gt;</span>Div<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;border border-blue&quot;</span>&gt;</span>Div<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto p1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="child-elements"><a href="#child-elements">Child elements</a></h2><p>To control the size and behavior of child elements, use these utilities.</p>
@@ -965,78 +1027,78 @@ All other utilities will only work at the set breakpoint.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="flex">
-  <a href="#" class="button button-transparent">Nav Item</a>
-  <a href="#" class="button button-transparent">Nav Item</a>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
   <div class="flex-auto blue border border-blue"></div>
-  <a href="#" class="button button-transparent">Nav Item</a>
+  <div class="px2 py1 border border-blue">Hamburger</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto blue border border-blue&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h3 id="-flex-grow"><a href="#-flex-grow">.flex-grow</a></h3><p>To make an element grow, but not shrink, use the <code>.flex-grow</code> utility.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="flex">
-  <a href="#" class="button button-transparent">Nav Item</a>
-  <a href="#" class="button button-transparent">Nav Item</a>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
   <div class="flex-grow blue border border-blue"></div>
-  <a href="#" class="button button-transparent">Nav Item</a>
+  <div class="px2 py1 border border-blue">Hamburger</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-grow blue border border-blue&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button button-transparent&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h3 id="-flex-none"><a href="#-flex-none">.flex-none</a></h3><p>To prevent an element from growing or shrinking, use the <code>.flex-none</code> utility.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="flex">
-  <a href="#" class="flex-auto m1 button">Nav Item</a>
-  <a href="#" class="flex-auto m1 button">Nav Item</a>
-  <a href="#" class="flex-none m1 button">Nav Item</a>
+  <div class="flex-auto px2 py1 border border-blue">Hamburger</div>
+  <div class="flex-auto px2 py1 border border-blue">Hamburger</div>
+  <div class="flex-none px2 py1 border border-blue">Hamburger</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto m1 button&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto m1 button&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-none m1 button&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-none px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="ordering"><a href="#ordering">Ordering</a></h2><p>To change the order of child elements, use the <code>.flex-first</code> and <code>.flex-last</code> utilities.</p>
 <h3 id="-flex-first"><a href="#-flex-first">.flex-first</a></h3><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="flex">
-  <a href="#" class="button">Nav Item</a>
-  <a href="#" class="flex-first button">Nav Item First</a>
-  <a href="#" class="button">Nav Item</a>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="flex-first px2 py1 border border-blue">First Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-first button&quot;</span>&gt;</span>Nav Item First<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-first px2 py1 border border-blue&quot;</span>&gt;</span>First Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h3 id="-flex-last"><a href="#-flex-last">.flex-last</a></h3><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="flex">
-  <a href="#" class="button">Nav Item</a>
-  <a href="#" class="flex-last button">Nav Item Last</a>
-  <a href="#" class="button">Nav Item</a>
+  <div class="px2 py1 border border-blue">Hamburger</div>
+  <div class="flex-last px2 py1 border border-blue">Last Hamburger</div>
+  <div class="px2 py1 border border-blue">Hamburger</div>
 </div>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-last button&quot;</span>&gt;</span>Nav Item Last<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;button&quot;</span>&gt;</span>Nav Item<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-last px2 py1 border border-blue&quot;</span>&gt;</span>Last Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;px2 py1 border border-blue&quot;</span>&gt;</span>Hamburger<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="parent-element-utilities"><a href="#parent-element-utilities">Parent Element Utilities</a></h2><pre><span class="hljs-class">.flex</span>          <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> flex </span></span></span>}

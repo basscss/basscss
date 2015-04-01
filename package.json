@@ -47,7 +47,7 @@
     "basscss-color-tables": "^0.1.0",
     "basscss-colors": "^1.0.6",
     "basscss-defaults": "^1.0.2",
-    "basscss-grid": "0.0.14",
+    "basscss-grid": "^0.0.15",
     "basscss-highlight": "0.0.1",
     "basscss-input-range": "^1.1.1",
     "basscss-positions": "0.0.5",
@@ -61,7 +61,7 @@
     "basscss-utility-responsive-states": "0.0.2",
     "basscss-utility-typography": "0.0.2",
     "basscss-utility-white-space": "0.0.4",
-    "flex-object": "^1.0.6"
+    "flex-object": "^1.0.7"
   },
   "devDependencies": {
     "autobass": "^1.2.0",
