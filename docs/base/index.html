@@ -25,7 +25,7 @@
   <div class="clearfix flex flex-stretch mxn2">
     
       <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
-          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto white bg-slate">
+          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto border-right xwhite xbg-slate">
             
 <a href="/" class="h1 button block button-transparent blue mt2">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
@@ -252,7 +252,7 @@
     <div class="sm-col sm-col-9 md-col-10 flex flex-column" style="min-height:100vh">
       <div class="flex-auto full-width container-small">
         <header class="px2 mt3">
-  <div class="flex flex-wrap flex-center py3 mb1 border-bottom">
+  <div class="flex flex-wrap flex-center py2">
     <div class="flex-auto">
       <h1 class="h0 h0-responsive caps m0">
         Base
@@ -260,6 +260,8 @@
     </div>
   </div>
 </header>
+
+<hr class="ml2 mr2 hr-block bg-aqua">
 
 <div class="px2">
   <div class="avenir h5 bold mb3">
@@ -904,7 +906,7 @@ The use of utilities allows for a lot of flexibility when building form layouts.
       
         <h2 class="h5 m0">
           basscss-base-buttons
-          v1.0.6
+          v1.0.5
         </h2>
       
     </div>
@@ -962,25 +964,25 @@ All buttons share common padding and height, well suited for tap targets on touc
       <h2 class="flex-auto">CSS Source</h2>
       <!--
       <div class="h5 bold">
-        813 bytes
-        (356 bytes Gzipped)
+        723 bytes
+        (334 bytes Gzipped)
       </div>
       -->
     </div>
     <div id="basscss-base-buttons-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          5 Rules
+          4 Rules
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          9 Selectors
+          5 Selectors
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          22 Declarations
+          21 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
@@ -1006,13 +1008,6 @@ All buttons share common padding and height, well suited for tap targets on touc
   <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid transparent</span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">vertical-align</span>:<span class="hljs-value"> middle</span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">-webkit-appearance</span>:<span class="hljs-value"> none</span></span>;
-<span class="hljs-rule">}</span></span>
-
-<span class="hljs-tag">button</span><span class="hljs-pseudo">:after</span>,
-<span class="hljs-tag">button</span><span class="hljs-pseudo">:before</span>,
-<span class="hljs-class">.button</span><span class="hljs-pseudo">:after</span>,
-<span class="hljs-class">.button</span><span class="hljs-pseudo">:before</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-pseudo">::-moz-focus-inner</span> <span class="hljs-rules">{
@@ -1222,8 +1217,12 @@ td {
         </div>
       </div>
       <div>
-        <footer class="mt4 border-top">
-  <div class="container px2">
+        <div class="container-small px2">
+  <hr class="mb0 hr-block bg-aqua">
+</div>
+
+<footer class="mb3">
+  <div class="container-small px2">
     <div class="flex flex-wrap flex-center caps mxn2">
       <a href="/" class="h6 button button-small m2 button-link">Home</a>
       <a href="/docs" class="h6 button button-small m2 button-link">Docs</a>

@@ -29,13 +29,6 @@ button,
   -webkit-appearance: none;
 }
 
-button:after,
-button:before,
-.button:after,
-.button:before {
-  box-sizing: border-box;
-}
-
 ::-moz-focus-inner {
   border: 0;
   padding: 0;
