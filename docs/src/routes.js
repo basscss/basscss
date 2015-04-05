@@ -7,6 +7,7 @@ module.exports = {
     layout: './layouts/base.html',
   },
   docs: {
+    layout: './layouts/base.html',
     routes: {
       'getting-started': {
         title: 'Getting Started',
@@ -96,7 +97,6 @@ module.exports = {
       },
       styles: { title: 'Table of Styles' },
       stats: { },
-      variables: { },
       'color-combinations': {
         title: 'Color Combos'
       },

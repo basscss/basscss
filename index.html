@@ -22,20 +22,15 @@
 <body>
 
   
-<style> .b2 { border-width: 2px } </style>
-
-<header class="px2 bg-cover bg-center xbg-triangles"
-  style="xbackground-image:url(/docs/images/triangles.svg)">
-  <div class="container flex flex-center py2">
+<header class="container px2 py2">
+  <div class="flex flex-baseline">
+    <div class="flex-auto"></div>
     <a class="h6 caps button button-small mr2 button-link " href="/docs">Docs</a>
     <a class="h6 caps button button-small button-link " href="//github.com/jxnblk/basscss">Github</a>
-    <div class="flex-auto"></div>
-    <a class="h6 caps button button-small button-link" href="#">Tweet</a>
   </div>
-  <div class="xp3"></div>
-  <div class="container sm-flex flex-center">
-    <div class="flex-auto sm-col-9 py4 ">
-      <svg class="h00 h00-responsive mb2 blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" fill="currentcolor" width="1em" height="0.4em">
+  <div class="flex flex-center flex-wrap py3 mxn2">
+    <div class="flex-auto px2 py3">
+      <svg class="h00 h00-responsive mb2 aqua" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" fill="currentcolor" width="1em" height="0.4em">
         <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
       </svg>
       <h1 class="avenir caps h1 h1-responsive m0" style="margin-left:-.0625em">Basscss</h1>
@@ -43,17 +38,24 @@
       <p class="avenir h5 caps bold">v5.2.1 (5 KB)
       </p>
     </div>
-    <div class="sm-show flex-auto center">
-      <a class="h4 m2 button button-big blue b2 button-outline" href="/docs/getting-started">Download</a>
+    <div class="flex-none px2">
+      <a class="h4 button button-big" href="/docs/getting-started">Download</a>
+    </div>
+    <div class="flex-none px2">
+      <a class="button button-outline b2 blue"
+        href="https://twitter.com/intent/tweet?text=Basscss:%20Low-level%20CSS%20toolkit&url=http://basscss.com&via=jxnblk">
+        Tweet
+      </a>
     </div>
   </div>
 </header>
 
+
 <main class="container px2 overflow-hidden">
 
-  <hr class="hr-block bg-aqua">
+  <hr class="b2 border-aqua">
 
-  <section class="py3">
+  <section class="py2">
     <h1 class="h0 mt0 mb2">Lightning-Fast, Modular CSS with No Side Effects</h1>
     <p class="h3 mb0 md-col-9">
       Basscss is a lightweight collection of
@@ -61,7 +63,7 @@
     </p>
   </section>
 
-  <hr class="ml0 hr-block bg-aqua">
+  <hr class="ml0 b2 border-aqua">
 
   <section id="concepts" class="sm-flex flex-wrap mxn2 py4">
     <div class="sm-col-6 px2">
@@ -189,7 +191,7 @@
     </div>
   </section>
 
-  <hr class="ml0 hr-block bg-aqua">
+  <hr class="ml0 b2 border-aqua">
 
   <section id="showcase" class="py4">
     <div class="flex flex-center mb2">
@@ -253,40 +255,28 @@
 
   </section>
 
-  <hr class="ml0 hr-block bg-aqua">
+  <hr class="ml0 b2 border-aqua">
 
-  <section id="cta" class="sm-flex flex-center py4 mb4">
+  <section id="cta" class="sm-flex flex-center py4">
     <div class="flex-auto">
       <h1 class="m0">Get Started</h1>
       <p class="h3 m0">View the docs to download Basscss and learn more.</p>
     </div>
     <div class="flex-grow center">
-      <a href="/docs/getting-started" class="h4 button m2 button-big">Download Basscss</a>
+      <a href="/docs/getting-started" class="h4 button m2 button-big">Download</a>
     </div>
   </section>
 
 </main>
 
-<style>
-  .bg-triangles {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image:
-    linear-gradient(-45deg, rgba(255,63,0,.15), rgba(0,255,127,.1)),
-    url(/docs/images/triangles.svg);
-  }
-</style>
 
 
-
-  <div class="container-small px2">
-  <hr class="mb0 hr-block bg-aqua">
-</div>
+  <div class="container px2">
+    <hr class="mb0 b2 border-aqua">
 
 <footer class="mb3">
-  <div class="container-small px2">
-    <div class="flex flex-wrap flex-center caps mxn2">
+  <div class="">
+    <div class="flex flex-wrap flex-baseline caps mxn2">
       <a href="/" class="h6 button button-small m2 button-link">Home</a>
       <a href="/docs" class="h6 button button-small m2 button-link">Docs</a>
       <a href="/docs/getting-started" class="h6 button button-small m2 button-link">Download</a>
@@ -294,12 +284,13 @@
       <div class="flex-grow"></div>
       <div class="flex-none p2 nowrap">
         <p class="h6 bold m0">
-          Made by <a href="//jxnblk.com">Jxnblk</a>
+          Made by <a href="//jxnblk.com" class="h6 button button-small button-link">Jxnblk</a>
         </p>
       </div>
     </div>
   </div>
 </footer>
+
 
 <script type="text/javascript">
   WebFontConfig = {
@@ -325,6 +316,8 @@ s.parentNode.insertBefore(wf, s);
 </script>
 
 
+
+  </div>
 
 </body>
 </html>

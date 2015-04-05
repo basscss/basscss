@@ -1,29 +1,11 @@
-<%
-var guideColors = {
-  basics: 'blue',
-  layout: 'teal',
-  'flex-layout': 'purple',
-  ui: 'green',
-  tips: 'olive',
-  'custom-builds': 'orange',
-  css4: 'fuchsia',
-};
-%>
 
-<div class="flex flex-wrap flex-stretch mxn2 mb4">
-  <% _.forIn(page.routes, function(guide, key) { %>
-    <div class="flex flex-auto sm-col-6 mb3 px2">
-      <a href="<%= guide.path %>"
-        class="button button-outline full-width block p3 <%= guideColors[key] %>">
-        <h3 class="h2 mt0">
-          <%= guide.title %>
-        </h3>
-        <p class="m0" style="line-height:1.5">
-          <%= guide.description %>
-        </p>
-      </a>
-    </div>
-  <% }) %>
-</div>
+<% _.forIn(page.routes, function(guide, key) { %>
+  <h3 class="h2 mb0">
+    <a href="<%= guide.path %>" class="h2 button button-small button-link blue"> 
+      <%= guide.title %>
+    </a>
+  </h3>
+  <p class="mb3"><%= guide.description %></p>
+<% }) %>
 
 

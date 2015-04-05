@@ -13,65 +13,13 @@
       </div>
     <% } %>
     <div class="<%= !obj.fullwidth ? 'sm-col sm-col-9 md-col-10' : 'full-width' %> flex flex-column" style="min-height:100vh">
-      <div class="flex-auto full-width <%= !obj.fullwidth ? 'container-small' : 'container' %>">
+      <div class="flex-auto full-width px2 <%= !obj.fullwidth ? 'container-small' : 'container' %>">
         <%= include('page-header') %>
-        <div class="px2 py2">
-
+        <div class="py2">
           <%= content %>
-
-          <% if (obj.page.stats) { %>
-            <hr>
-            <h2 class="">Stats</h2>
-            <div class="bold caps flex flex-center flex-wrap mb3 mxn2">
-              <div class="col-6 sm-col-3 px2">
-                <h1 class="h0 h1-responsive m0">
-                  <%= page.stats.rules.length %>
-                </h1>
-                <div class="h6">Rules</div>
-              </div>
-              <div class="col-6 sm-col-3 px2">
-                <h1 class="h0 h1-responsive m0">
-                  <%= page.stats.selectors.length %>
-                </h1>
-                <div class="h6">Selectors</div>
-              </div>
-              <div class="col-6 sm-col-3 px2">
-                <h1 class="h0 h1-responsive m0">
-                  <%= page.stats.declarations.all.length %>
-                </h1>
-                <div class="h6">Declarations</div>
-              </div>
-              <div class="col-6 sm-col-3 px2">
-                <h1 class="h0 h1-responsive m0">
-                  <%= page.stats.aggregates.properties.length %>
-                </h1>
-                <div class="h6">Properties</div>
-              </div>
-            </div>
-          <% } %>
-
-          <% if (obj.page.css) { %>
-            <div class="flex flex-center">
-              <h2 class="flex-auto">CSS</h2>
-              <div class="h5 bold">
-                <%= fileSize(page.stats.size) %>
-                (<%= fileSize(page.stats.gzipSize) %> Gzipped)
-              </div>
-            </div>
-            <pre style="max-height:50vh"><%= highlightCss(obj.page.css) %></pre>
-          <% } %>
-
           <%= include('pagination') %>
-          <!--
-          <% //if page.next_page || page.previous_page %>
-            <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
-            <% //include 'partials/pagination.html' %>
-          <% //endif %>
-          -->
+          <%= include('footer') %>
         </div>
-      </div>
-      <div>
-        <%= include('footer') %>
       </div>
     </div>
   </div>

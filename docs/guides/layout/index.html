@@ -27,7 +27,7 @@
       <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
           <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto border-right xwhite xbg-slate">
             
-<a href="/" class="h1 button block button-transparent blue mt2">
+<a href="/" class="h1 button block button-transparent aqua mt2">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
@@ -164,14 +164,6 @@
     </li>
   
     <li class="">
-      <a href="/docs/variables" class="button block button-transparent  ">
-        Variables
-      </a>
-      
-      
-    </li>
-  
-    <li class="">
       <a href="/docs/color-combinations" class="button block button-transparent  ">
         Color Combos
       </a>
@@ -207,7 +199,7 @@
 
 
 
-<a href="//github.com/jxnblk/basscss" class="button block mb4 muted button-transparent">
+<a href="//github.com/jxnblk/basscss" class="button block mb4 button-transparent">
   Github
 </a>
 
@@ -216,20 +208,11 @@
       </div>
     
     <div class="sm-col sm-col-9 md-col-10 flex flex-column" style="min-height:100vh">
-      <div class="flex-auto full-width container-small">
-        <header class="px2 mt3">
-  <div class="flex flex-wrap flex-center py2">
-    <div class="flex-auto">
-      <h1 class="h0 h0-responsive caps m0">
-        Page Layout
-      </h1>
-    </div>
-  </div>
-</header>
-
-<hr class="ml2 mr2 hr-block bg-aqua">
-
-<div class="px2">
+      <div class="flex-auto full-width px2 container-small">
+        <header class="mt4">
+  <h1 class="h0 h0-responsive caps m0">
+    Page Layout
+  </h1>
   <div class="avenir h5 bold mb3">
     <a href="/" class="button button-small mr1 button-link blue">Home</a>
     
@@ -251,12 +234,13 @@
       
     
   </div>
-</div>
+  <hr class="b2 border-aqua">
+</header>
 
 
 
-        <div class="px2 py2">
 
+        <div class="py2">
           <p class="h3">
   Creating page layouts in Basscss is incredibly fast and flexible.
   This guide will walk you through common layout patterns to create an entire page with a basic information hierarchy.
@@ -302,14 +286,14 @@ Note: This example uses the optional <code>basscss-utility-headings</code> modul
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <header class="center px3 py4 white bg-gray bg-cover bg-center"
-  style="background-image: url(/docs/src/svg/hero.svg)">
+  style="background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)">
   <h1 class="h1 h0-responsive caps mt4 mb0 regular">Hamburgers</h1>
   <p class="h3">Artisinal ground chuck creations</p>
   <a href="#" class="h3 button button-big mb4">Pancake</a>
 </header>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center px3 py4 white bg-gray bg-cover bg-center"</span>
-  <span class="hljs-attribute">style</span>=<span class="hljs-value">"background-image: url(/docs/src/svg/hero.svg)"</span>&gt;</span>
+  <span class="hljs-attribute">style</span>=<span class="hljs-value">"background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h1 h0-responsive caps mt4 mb0 regular"</span>&gt;</span>Hamburgers<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3"</span>&gt;</span>Artisinal ground chuck creations<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h3 button button-big mb4"</span>&gt;</span>Pancake<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
@@ -327,7 +311,7 @@ Move the padding for the banner content into a nested div to adjust the layout.<
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <header class="white bg-gray bg-cover bg-center"
-  style="background-image: url(/docs/src/svg/hero.svg)">
+  style="background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)">
   <nav class="clearfix white">
     <div class="sm-col">
       <a href="/" class="button py2 button-transparent">Home</a>
@@ -346,7 +330,7 @@ Move the padding for the banner content into a nested div to adjust the layout.<
 </header>
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"white bg-gray bg-cover bg-center"</span>
-  <span class="hljs-attribute">style</span>=<span class="hljs-value">"background-image: url(/docs/src/svg/hero.svg)"</span>&gt;</span>
+  <span class="hljs-attribute">style</span>=<span class="hljs-value">"background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix white"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button py2 button-transparent"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
@@ -786,11 +770,6 @@ Note the container is placed inside the footer element to control max-width.</p>
 
 
 
-
-          
-
-          
-
           
 
 
@@ -815,22 +794,11 @@ Note the container is placed inside the footer element to control max-width.</p>
 
 
 
-          <!--
-          
-            <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
-            
-          
-          -->
-        </div>
-      </div>
-      <div>
-        <div class="container-small px2">
-  <hr class="mb0 hr-block bg-aqua">
-</div>
+          <hr class="mb0 b2 border-aqua">
 
 <footer class="mb3">
-  <div class="container-small px2">
-    <div class="flex flex-wrap flex-center caps mxn2">
+  <div class="">
+    <div class="flex flex-wrap flex-baseline caps mxn2">
       <a href="/" class="h6 button button-small m2 button-link">Home</a>
       <a href="/docs" class="h6 button button-small m2 button-link">Docs</a>
       <a href="/docs/getting-started" class="h6 button button-small m2 button-link">Download</a>
@@ -838,12 +806,13 @@ Note the container is placed inside the footer element to control max-width.</p>
       <div class="flex-grow"></div>
       <div class="flex-none p2 nowrap">
         <p class="h6 bold m0">
-          Made by <a href="//jxnblk.com">Jxnblk</a>
+          Made by <a href="//jxnblk.com" class="h6 button button-small button-link">Jxnblk</a>
         </p>
       </div>
     </div>
   </div>
 </footer>
+
 
 <script type="text/javascript">
   WebFontConfig = {
@@ -869,6 +838,8 @@ s.parentNode.insertBefore(wf, s);
 </script>
 
 
+
+        </div>
       </div>
     </div>
   </div>

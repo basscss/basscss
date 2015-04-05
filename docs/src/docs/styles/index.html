@@ -4,18 +4,18 @@
   <% if (primaryPage.sections) { %>
     <% _.forIn(primaryPage.sections, function(section) { %>
 
-      <div class="flex flex-center mxn2 mb1">
-        <h2 class="flex-auto m0 px2">
+      <div class="flex flex-center mb1">
+        <h2 class="flex-auto m0">
           <%= section.module %>
           <span class="h5">v<%= modules[section.module].version %></span>
         </h2>
         <a href="<%= primaryPage.path + '/#' + removePrefix(section.module) %>"
-          class="button button-transparent blue">
+          class="button button-small button-link blue">
           Details
         </a>
       </div>
-      <table class="mb4 folding-table table-light">
-        <thead class="bold bg-darken-1">
+      <table class="mb4 folding-table table-flush table-light">
+        <thead class="bold">
           <tr> <th>Selectors</th> <th>Declarations</th> </tr>
         </thead>
         <tbody>

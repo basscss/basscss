@@ -22,7 +22,7 @@
     "start": "npm run watch:css & npm run watch:sassify & npm run watch:html & npm run serve"
   },
   "dependencies": {
-    "basscss-background-images": "0.0.5",
+    "basscss-background-images": "0.0.6",
     "basscss-base-buttons": "^1.0.5",
     "basscss-base-forms": "^1.0.6",
     "basscss-base-reset": "0.0.3",
