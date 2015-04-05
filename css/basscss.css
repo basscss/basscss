@@ -669,7 +669,6 @@ body {
 }
 
 a {
-  color: #0074d9 ;
   color: #0074d9;
   text-decoration: none;
 }
@@ -679,7 +678,6 @@ a {
   }
 
 pre, code {
-  background-color: #ddd ;
   background-color: #ddd;
   border-radius: 3px;
 }
@@ -693,7 +691,6 @@ hr {
 
 .button {
   color: white;
-  background-color: #0074d9 ;
   background-color: #0074d9;
   border-radius: 3px;
   -webkit-transition-duration: .05s;
@@ -986,9 +983,7 @@ input[type=range] {
 
 .table-light th,
 .table-light td {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: rgba(0,0,0,.125);
+  border-bottom: 1px solid rgba(0,0,0,.125);
 }
 
 .table-light tr:last-child td {

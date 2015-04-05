@@ -11,7 +11,6 @@ Object.keys(result).map(function(key) {
   color.combinations.map(function(combo) {
     combo.pair = color;
     combinations.push(combo);
-    //console.log(combo.accessibility, combo.name);
   });
 });
 

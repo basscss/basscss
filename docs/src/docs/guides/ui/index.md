@@ -342,7 +342,7 @@ Be sure dropdowns don’t expand beyond the viewport when used near edges or at 
     Burger &#9662;
   </button>
   <div data-details class="fixed top-0 right-0 bottom-0 left-0"></div>
-  <div data-details class="absolute left-0 mt1 nowrap white bg-blue rounded animation-fadein">
+  <div data-details class="absolute left-0 mt1 nowrap white bg-blue rounded">
     <a href="#!" class="button block button-transparent">Rare</a>
     <a href="#!" class="button block button-transparent">Medium Rare</a>
     <a href="#!" class="button block button-transparent">Medium</a>
@@ -495,7 +495,7 @@ navigations can also be created using responsive utilities.
         <span class="md-hide">Menu &#9662;</span>
         <span class="md-show">More &#9662;</span>
       </a>
-      <div data-details class="absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap black bg-gray rounded-bottom animation-fadein">
+      <div data-details class="absolute right-0 xs-left-0 sm-col-6 md-col-4 lg-col-3 nowrap black bg-gray rounded-bottom">
         <ul class="h5 list-reset py1 mb0">
           <li class="md-hide"><a href="#!" class="button block button-transparent">Hot Dogs</a></li>
           <li class="md-hide"><a href="#!" class="button block button-transparent">Fries</a></li>

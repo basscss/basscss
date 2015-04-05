@@ -12,7 +12,6 @@ module.exports = {
     return Humanize.fileSize(n);
   },
   highlightCss: function(string) {
-    //return hljs.highlightAuto(string).value;
     return hljs.highlight('css', string).value;
   },
 };

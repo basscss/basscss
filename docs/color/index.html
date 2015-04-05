@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.2.0/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.0/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -280,7 +280,7 @@
     <div class="sm-col sm-col-9 md-col-10 flex flex-column" style="min-height:100vh">
       <div class="flex-auto full-width px2 container-small">
         <header class="mt4">
-  <h1 class="h0 h0-responsive caps m0">
+  <h1 class="h1 h1-responsive caps m0">
     Color
   </h1>
   <div class="avenir h5 bold mb3">
@@ -332,7 +332,7 @@
       
         <h2 class="h5 m0">
           basscss-color-base
-          v1.1.2
+          v1.2.0
         </h2>
       
     </div>
@@ -401,7 +401,7 @@
       <!--
       <div class="h5 bold">
         2 KB
-        (703 bytes Gzipped)
+        (718 bytes Gzipped)
       </div>
       -->
     </div>
@@ -418,12 +418,12 @@
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          47 Declarations
+          50 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          37 Properties
+          40 Properties
         </div>
       </div>
     </div>
@@ -468,7 +468,7 @@ body {
 }
 
 a {
-  color: var(--link-color, var(--blue) );
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -478,7 +478,7 @@ a:hover {
 
 pre,
 code {
-  background-color: var(--pre-background-color, var(--silver) );
+  background-color: var(--pre-background-color);
   border-radius: var(--border-radius);
 }
 
@@ -491,7 +491,7 @@ hr {
 
 .button {
   color: white;
-  background-color: var(--button-background-color, var(--blue) );
+  background-color: var(--button-background-color);
   border-radius: var(--border-radius);
   transition-duration: .05s;
   transition-timing-function: ease-out;
@@ -528,6 +528,9 @@ hr {
   --border-color: var(--darken-2);
   --border-width: 1px;
   --border-radius: 3px;
+  --link-color: var(--blue, blue);
+  --button-background-color: var(--blue, blue);
+  --pre-background-color: transparent;
 }</pre>
   
 </footer>
@@ -2320,7 +2323,7 @@ input[type=range] {
       
         <h2 class="h5 m0">
           basscss-color-tables
-          v0.1.0
+          v0.1.1
         </h2>
       
     </div>
@@ -2409,8 +2412,8 @@ input[type=range] {
       <h2 class="flex-auto">CSS Source</h2>
       <!--
       <div class="h5 bold">
-        330 bytes
-        (179 bytes Gzipped)
+        284 bytes
+        (175 bytes Gzipped)
       </div>
       -->
     </div>
@@ -2427,33 +2430,31 @@ input[type=range] {
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          7 Declarations
+          5 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          7 Properties
+          4 Properties
         </div>
       </div>
     </div>
-    <pre id="basscss-color-tables-css-source" style="max-height:50vh"><span class="hljs-comment">/* Basscss Color Tables */</span>
+    <pre id="basscss-color-tables-css-source" style="max-height:50vh">/* Basscss Color Tables */
 
-<span class="hljs-class">.table-light</span> <span class="hljs-tag">th</span>,
-<span class="hljs-class">.table-light</span> <span class="hljs-tag">td</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-bottom-style</span>:<span class="hljs-value"> solid</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border-bottom-width</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-width)</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border-bottom-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-color)</span></span>;
-<span class="hljs-rule">}</span></span>
+.table-light th,
+.table-light td {
+  border-bottom: var(--border-width) solid var(--border-color);
+}
 
-<span class="hljs-class">.table-light</span> <span class="hljs-tag">tr</span><span class="hljs-pseudo">:last-child</span> <span class="hljs-tag">td</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-<span class="hljs-rule">}</span></span>
+.table-light tr:last-child td {
+  border-bottom: 0;
+}
 
-<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">--light-gray</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ccc</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">--border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--light-gray)</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">--border-width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
-<span class="hljs-rule">}</span></span></pre>
+:root {
+  --darken-2: rgba(0,0,0,.125);
+  --border-color: var(--darken-2);
+  --border-width: 1px;
+}</pre>
   
 </footer>
 
