@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "basscss-background-images": "0.0.6",
-    "basscss-base-buttons": "^1.0.5",
+    "basscss-base-buttons": "^1.0.7",
     "basscss-base-forms": "^1.0.6",
     "basscss-base-reset": "0.0.3",
     "basscss-base-tables": "^0.1.1",
@@ -71,6 +71,7 @@
     "colorable": "^1.0.5",
     "colors.css": "^2.0.4",
     "css-scss": "0.0.7",
+    "css-validator": "^0.5.1",
     "cssnext": "^1.1.0",
     "cssstats": "^1.0.1",
     "custom-css": "^1.0.1",

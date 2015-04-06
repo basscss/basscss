@@ -24,9 +24,16 @@ button,
   padding: $button-padding-y $button-padding-x;
   margin: 0;
   height: auto;
-  border: 1px solid transparent;
+  border: $border-width solid transparent;
   vertical-align: middle;
   -webkit-appearance: none;
+}
+
+button:after,
+button:before,
+.button:after,
+.button:before {
+  box-sizing: border-box;
 }
 
 ::-moz-focus-inner {

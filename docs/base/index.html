@@ -890,7 +890,7 @@ The use of utilities allows for a lot of flexibility when building form layouts.
       
         <h2 class="h5 m0">
           basscss-base-buttons
-          v1.0.5
+          v1.0.7
         </h2>
       
     </div>
@@ -948,25 +948,25 @@ All buttons share common padding and height, well suited for tap targets on touc
       <h2 class="flex-auto">CSS Source</h2>
       <!--
       <div class="h5 bold">
-        723 bytes
-        (334 bytes Gzipped)
+        829 bytes
+        (361 bytes Gzipped)
       </div>
       -->
     </div>
     <div id="basscss-base-buttons-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          4 Rules
+          5 Rules
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          5 Selectors
+          9 Selectors
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          21 Declarations
+          22 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
@@ -989,9 +989,16 @@ All buttons share common padding and height, well suited for tap targets on touc
   <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--button-padding-y) <span class="hljs-function">var</span>(--button-padding-x)</span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> auto</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid transparent</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-width) solid transparent</span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">vertical-align</span>:<span class="hljs-value"> middle</span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">-webkit-appearance</span>:<span class="hljs-value"> none</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-tag">button</span><span class="hljs-pseudo">:after</span>,
+<span class="hljs-tag">button</span><span class="hljs-pseudo">:before</span>,
+<span class="hljs-class">.button</span><span class="hljs-pseudo">:after</span>,
+<span class="hljs-class">.button</span><span class="hljs-pseudo">:before</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-pseudo">::-moz-focus-inner</span> <span class="hljs-rules">{
