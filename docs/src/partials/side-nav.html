@@ -10,7 +10,7 @@
 <ul class="list-reset mb3">
   <% _.forIn(routes.docs.routes, function(route, key) { %>
     <li class="<%= route.routes ? 'mt3 mb3' : '' %>">
-      <a href="<%= route.path %>" class="button block button-transparent <%= obj.page.title == route.title ? 'xblack bg-aqua' : '' %> ">
+      <a href="<%= route.path %>" class="button block button-transparent <%= obj.page.title == route.title ? 'bg-aqua' : '' %> ">
         <%= route.title %>
       </a>
       <% if (obj.page && obj.page.title == route.title && route.sections) { %>
