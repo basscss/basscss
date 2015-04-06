@@ -12,7 +12,9 @@ $border-width: 1px !default;
 
 .table-light th,
 .table-light td {
-  border-bottom: $border-width solid $border-color;
+  border-bottom-width: $border-width;
+  border-bottom-style: solid;
+  border-bottom-color: $border-color;
 }
 
 .table-light tr:last-child td {

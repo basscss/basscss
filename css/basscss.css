@@ -990,7 +990,9 @@ input[type=range] {
 
 .table-light th,
 .table-light td {
-  border-bottom: 1px solid rgba(0,0,0,.125);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0,0,0,.125);
 }
 
 .table-light tr:last-child td {

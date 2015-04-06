@@ -2323,7 +2323,7 @@ input[type=range] {
       
         <h2 class="h5 m0">
           basscss-color-tables
-          v0.1.1
+          v0.1.2
         </h2>
       
     </div>
@@ -2412,8 +2412,8 @@ input[type=range] {
       <h2 class="flex-auto">CSS Source</h2>
       <!--
       <div class="h5 bold">
-        284 bytes
-        (175 bytes Gzipped)
+        338 bytes
+        (188 bytes Gzipped)
       </div>
       -->
     </div>
@@ -2430,12 +2430,12 @@ input[type=range] {
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          5 Declarations
+          7 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          4 Properties
+          7 Properties
         </div>
       </div>
     </div>
@@ -2443,7 +2443,9 @@ input[type=range] {
 
 .table-light th,
 .table-light td {
-  border-bottom: var(--border-width) solid var(--border-color);
+  border-bottom-width: var(--border-width);
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
 }
 
 .table-light tr:last-child td {
