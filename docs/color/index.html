@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.2.0/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.0/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -21,13 +21,13 @@
 
 <body>
 
-<div class="px2 ">
+<div class="px2">
   <div class="clearfix flex flex-stretch mxn2">
     
       <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
-          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto white bg-slate">
+          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto border-right">
             
-<a href="/" class="h1 button block button-transparent blue mt2">
+<a href="/" class="h1 button block button-transparent aqua mt2">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
@@ -70,11 +70,11 @@
     </li>
   
     <li class="">
-      <a href="/docs/color" class="button block button-transparent white bg-blue ">
+      <a href="/docs/color" class="button block button-transparent bg-aqua ">
         Color
       </a>
       
-        <ul class="list-reset mb0 bg-darken-2">
+        <ul class="list-reset">
           
             <li>
               <a href="/docs/color#color-base" class="button button-small px2 block button-transparent">
@@ -234,14 +234,6 @@
     </li>
   
     <li class="">
-      <a href="/docs/variables" class="button block button-transparent  ">
-        Variables
-      </a>
-      
-      
-    </li>
-  
-    <li class="">
       <a href="/docs/color-combinations" class="button block button-transparent  ">
         Color Combos
       </a>
@@ -277,7 +269,7 @@
 
 
 
-<a href="//github.com/jxnblk/basscss" class="button block mb4 muted button-transparent">
+<a href="//github.com/jxnblk/basscss" class="button block mb4 button-transparent">
   Github
 </a>
 
@@ -286,18 +278,11 @@
       </div>
     
     <div class="sm-col sm-col-9 md-col-10 flex flex-column" style="min-height:100vh">
-      <div class="flex-auto full-width container-small">
-        <header class="px2 mt3">
-  <div class="flex flex-wrap flex-center py3 mb1 border-bottom">
-    <div class="flex-auto">
-      <h1 class="h0 h0-responsive caps m0">
-        Color
-      </h1>
-    </div>
-  </div>
-</header>
-
-<div class="px2">
+      <div class="flex-auto full-width px2 container-small">
+        <header class="mt4">
+  <h1 class="h1 h1-responsive caps m0">
+    Color
+  </h1>
   <div class="avenir h5 bold mb3">
     <a href="/" class="button button-small mr1 button-link blue">Home</a>
     
@@ -314,12 +299,13 @@
       
     
   </div>
-</div>
+  <hr class="b2 border-aqua">
+</header>
 
 
 
-        <div class="px2 py2">
 
+        <div class="py2">
           
 <p class="h3">
   The word <i>color</i> is used loosely here to describe
@@ -335,7 +321,7 @@
     
 <section id="color-base" class="py2">
   
-<header class="mt3 mb2 border-bottom">
+<header class="mt3 mb2">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -346,7 +332,7 @@
       
         <h2 class="h5 m0">
           basscss-color-base
-          v1.1.2
+          v1.2.0
         </h2>
       
     </div>
@@ -355,6 +341,7 @@
       <a href="https://github.com/jxnblk/basscss-color-base" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
 </header>
 
 
@@ -409,13 +396,12 @@
   
 <footer>
   
-    <hr>
     <div class="flex flex-center">
       <h2 class="flex-auto">CSS Source</h2>
       <!--
       <div class="h5 bold">
         2 KB
-        (703 bytes Gzipped)
+        (718 bytes Gzipped)
       </div>
       -->
     </div>
@@ -432,12 +418,12 @@
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          47 Declarations
+          50 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          37 Properties
+          40 Properties
         </div>
       </div>
     </div>
@@ -482,7 +468,7 @@ body {
 }
 
 a {
-  color: var(--link-color, var(--blue) );
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -492,7 +478,7 @@ a:hover {
 
 pre,
 code {
-  background-color: var(--pre-background-color, var(--silver) );
+  background-color: var(--pre-background-color);
   border-radius: var(--border-radius);
 }
 
@@ -505,7 +491,7 @@ hr {
 
 .button {
   color: white;
-  background-color: var(--button-background-color, var(--blue) );
+  background-color: var(--button-background-color);
   border-radius: var(--border-radius);
   transition-duration: .05s;
   transition-timing-function: ease-out;
@@ -542,6 +528,9 @@ hr {
   --border-color: var(--darken-2);
   --border-width: 1px;
   --border-radius: 3px;
+  --link-color: var(--blue, blue);
+  --button-background-color: var(--blue, blue);
+  --pre-background-color: transparent;
 }</pre>
   
 </footer>
@@ -552,7 +541,7 @@ hr {
     
 <section id="button-outline" class="py2">
   
-<header class="mt3 mb2 border-bottom">
+<header class="mt3 mb2">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -572,6 +561,7 @@ hr {
       <a href="https://github.com/jxnblk/basscss-button-outline" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
 </header>
 
 
@@ -628,7 +618,6 @@ hr {
   
 <footer>
   
-    <hr>
     <div class="flex flex-center">
       <h2 class="flex-auto">CSS Source</h2>
       <!--
@@ -729,7 +718,7 @@ hr {
     
 <section id="button-transparent" class="py2">
   
-<header class="mt3 mb2 border-bottom">
+<header class="mt3 mb2">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -749,6 +738,7 @@ hr {
       <a href="https://github.com/jxnblk/basscss-button-transparent" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
 </header>
 
 
@@ -805,7 +795,6 @@ hr {
   
 <footer>
   
-    <hr>
     <div class="flex flex-center">
       <h2 class="flex-auto">CSS Source</h2>
       <!--
@@ -905,7 +894,7 @@ hr {
     
 <section id="colors" class="py2">
   
-<header class="mt3 mb2 border-bottom">
+<header class="mt3 mb2">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -925,6 +914,7 @@ hr {
       <a href="https://github.com/jxnblk/basscss-colors" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
 </header>
 
 
@@ -1082,7 +1072,6 @@ The color values used in this module are from <a href="http://clrs.cc/">mrmrs/co
   
 <footer>
   
-    <hr>
     <div class="flex flex-center">
       <h2 class="flex-auto">CSS Source</h2>
       <!--
@@ -1419,7 +1408,7 @@ The color values used in this module are from <a href="http://clrs.cc/">mrmrs/co
     
 <section id="color-borders" class="py2">
   
-<header class="mt3 mb2 border-bottom">
+<header class="mt3 mb2">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -1439,6 +1428,7 @@ The color values used in this module are from <a href="http://clrs.cc/">mrmrs/co
       <a href="https://github.com/jxnblk/basscss-color-borders" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
 </header>
 
 
@@ -1488,7 +1478,6 @@ This is useful for things like input and button groups.</p>
   
 <footer>
   
-    <hr>
     <div class="flex flex-center">
       <h2 class="flex-auto">CSS Source</h2>
       <!--
@@ -1595,7 +1584,7 @@ This is useful for things like input and button groups.</p>
     
 <section id="color-forms" class="py2">
   
-<header class="mt3 mb2 border-bottom">
+<header class="mt3 mb2">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -1615,6 +1604,7 @@ This is useful for things like input and button groups.</p>
       <a href="https://github.com/jxnblk/basscss-color-forms" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
 </header>
 
 
@@ -1706,7 +1696,6 @@ These add focus states that are consistent with the other form elements.</p>
   
 <footer>
   
-    <hr>
     <div class="flex flex-center">
       <h2 class="flex-auto">CSS Source</h2>
       <!--
@@ -1836,7 +1825,7 @@ These add focus states that are consistent with the other form elements.</p>
     
 <section id="color-forms-dark" class="py2">
   
-<header class="mt3 mb2 border-bottom">
+<header class="mt3 mb2">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -1856,6 +1845,7 @@ These add focus states that are consistent with the other form elements.</p>
       <a href="https://github.com/jxnblk/basscss-color-forms-dark" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
 </header>
 
 
@@ -1933,7 +1923,6 @@ These add focus states that are consistent with the other form elements.</p>
   
 <footer>
   
-    <hr>
     <div class="flex flex-center">
       <h2 class="flex-auto">CSS Source</h2>
       <!--
@@ -2044,7 +2033,7 @@ These add focus states that are consistent with the other form elements.</p>
     
 <section id="input-range" class="py2">
   
-<header class="mt3 mb2 border-bottom">
+<header class="mt3 mb2">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -2064,6 +2053,7 @@ These add focus states that are consistent with the other form elements.</p>
       <a href="https://github.com/jxnblk/basscss-input-range" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
 </header>
 
 
@@ -2081,7 +2071,6 @@ These add focus states that are consistent with the other form elements.</p>
   
 <footer>
   
-    <hr>
     <div class="flex flex-center">
       <h2 class="flex-auto">CSS Source</h2>
       <!--
@@ -2212,7 +2201,7 @@ input[type=range] {
     
 <section id="progress" class="py2">
   
-<header class="mt3 mb2 border-bottom">
+<header class="mt3 mb2">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -2232,6 +2221,7 @@ input[type=range] {
       <a href="https://github.com/jxnblk/basscss-progress" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
 </header>
 
 
@@ -2247,7 +2237,6 @@ input[type=range] {
   
 <footer>
   
-    <hr>
     <div class="flex flex-center">
       <h2 class="flex-auto">CSS Source</h2>
       <!--
@@ -2323,7 +2312,7 @@ input[type=range] {
     
 <section id="color-tables" class="py2">
   
-<header class="mt3 mb2 border-bottom">
+<header class="mt3 mb2">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -2334,7 +2323,7 @@ input[type=range] {
       
         <h2 class="h5 m0">
           basscss-color-tables
-          v0.1.0
+          v0.1.2
         </h2>
       
     </div>
@@ -2343,6 +2332,7 @@ input[type=range] {
       <a href="https://github.com/jxnblk/basscss-color-tables" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
 </header>
 
 
@@ -2418,13 +2408,12 @@ input[type=range] {
   
 <footer>
   
-    <hr>
     <div class="flex flex-center">
       <h2 class="flex-auto">CSS Source</h2>
       <!--
       <div class="h5 bold">
-        330 bytes
-        (179 bytes Gzipped)
+        338 bytes
+        (188 bytes Gzipped)
       </div>
       -->
     </div>
@@ -2450,24 +2439,24 @@ input[type=range] {
         </div>
       </div>
     </div>
-    <pre id="basscss-color-tables-css-source" style="max-height:50vh"><span class="hljs-comment">/* Basscss Color Tables */</span>
+    <pre id="basscss-color-tables-css-source" style="max-height:50vh">/* Basscss Color Tables */
 
-<span class="hljs-class">.table-light</span> <span class="hljs-tag">th</span>,
-<span class="hljs-class">.table-light</span> <span class="hljs-tag">td</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-bottom-style</span>:<span class="hljs-value"> solid</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border-bottom-width</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-width)</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border-bottom-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-color)</span></span>;
-<span class="hljs-rule">}</span></span>
+.table-light th,
+.table-light td {
+  border-bottom-width: var(--border-width);
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+}
 
-<span class="hljs-class">.table-light</span> <span class="hljs-tag">tr</span><span class="hljs-pseudo">:last-child</span> <span class="hljs-tag">td</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-<span class="hljs-rule">}</span></span>
+.table-light tr:last-child td {
+  border-bottom: 0;
+}
 
-<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">--light-gray</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ccc</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">--border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--light-gray)</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">--border-width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
-<span class="hljs-rule">}</span></span></pre>
+:root {
+  --darken-2: rgba(0,0,0,.125);
+  --border-color: var(--darken-2);
+  --border-width: 1px;
+}</pre>
   
 </footer>
 
@@ -2477,7 +2466,7 @@ input[type=range] {
     
 <section id="background-images" class="py2">
   
-<header class="mt3 mb2 border-bottom">
+<header class="mt3 mb2">
   <div class="flex flex-wrap flex-center py1">
     <div class="flex-auto m0">
       <h1 class="m0">
@@ -2488,7 +2477,7 @@ input[type=range] {
       
         <h2 class="h5 m0">
           basscss-background-images
-          v0.0.5
+          v0.0.6
         </h2>
       
     </div>
@@ -2497,6 +2486,7 @@ input[type=range] {
       <a href="https://github.com/jxnblk/basscss-background-images" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
 </header>
 
 
@@ -2504,70 +2494,69 @@ input[type=range] {
 <p>Use the <code>.bg-cover</code> or <code>.bg-contain</code> utilities to control background size.</p>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="p4 bg-cover" style="background-image: url(http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg)">
-  <code>.bg-cover</code>
+    <div class="p4 bg-cover white bg-gray" style="background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)">
+  <h1>.bg-cover</h1>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p4 bg-cover&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image: url(http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg)&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.bg-cover<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p4 bg-cover white bg-gray&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>.bg-cover<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <p>Use background position utilities to control position.</p>
 <h2 id="-bg-center"><a href="#-bg-center">.bg-center</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="p4 bg-cover bg-center" style="background-image: url(http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg)">
-  <code>.bg-center</code>
+    <div class="p4 bg-cover bg-center white bg-gray" style="background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)">
+  <h1>.bg-center</h1>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p4 bg-cover bg-center&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image: url(http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg)&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.bg-center<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p4 bg-cover bg-center white bg-gray&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>.bg-center<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="-bg-top"><a href="#-bg-top">.bg-top</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="p4 bg-cover bg-top" style="background-image: url(http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg)">
-  <code>.bg-top</code>
+    <div class="p4 bg-cover bg-top white bg-gray" style="background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)">
+  <h1>.bg-top</h1>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p4 bg-cover bg-top&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image: url(http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg)&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.bg-top<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p4 bg-cover bg-top white bg-gray&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>.bg-top<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="-bg-right"><a href="#-bg-right">.bg-right</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="p4 bg-cover bg-right" style="background-image: url(http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg)">
-  <code>.bg-right</code>
+    <div class="p4 bg-cover bg-right white bg-gray" style="background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)">
+  <h1>.bg-right</h1>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p4 bg-cover bg-right&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image: url(http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg)&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.bg-right<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p4 bg-cover bg-right white bg-gray&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>.bg-right<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="-bg-bottom"><a href="#-bg-bottom">.bg-bottom</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="p4 bg-cover bg-bottom" style="background-image: url(http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg)">
-  <code>.bg-bottom</code>
+    <div class="p4 bg-cover bg-bottom white bg-gray" style="background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)">
+  <h1>.bg-bottom</h1>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p4 bg-cover bg-bottom&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image: url(http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg)&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.bg-bottom<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p4 bg-cover bg-bottom white bg-gray&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>.bg-bottom<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="-bg-left"><a href="#-bg-left">.bg-left</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="p4 bg-cover bg-left" style="background-image: url(http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg)">
-  <code>.bg-left</code>
+    <div class="p4 bg-cover bg-left white bg-gray" style="background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)">
+  <h1>.bg-left</h1>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p4 bg-cover bg-left&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image: url(http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg)&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.bg-left<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;p4 bg-cover bg-left white bg-gray&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>.bg-left<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 
   
 <footer>
   
-    <hr>
     <div class="flex flex-center">
       <h2 class="flex-auto">CSS Source</h2>
       <!--
@@ -2638,11 +2627,6 @@ input[type=range] {
 
 
 
-
-          
-
-          
-
           
 
 
@@ -2667,18 +2651,11 @@ input[type=range] {
 
 
 
-          <!--
-          
-            <hr class="ml0 col-5 sm-col-3 hr-block bg-blue">
-            
-          
-          -->
-        </div>
-      </div>
-      <div>
-        <footer class="mt4 border-top">
-  <div class="container px2">
-    <div class="flex flex-wrap flex-center caps mxn2">
+          <hr class="mb0 b2 border-aqua">
+
+<footer class="mb3">
+  <div class="">
+    <div class="flex flex-wrap flex-baseline caps mxn2">
       <a href="/" class="h6 button button-small m2 button-link">Home</a>
       <a href="/docs" class="h6 button button-small m2 button-link">Docs</a>
       <a href="/docs/getting-started" class="h6 button button-small m2 button-link">Download</a>
@@ -2686,12 +2663,13 @@ input[type=range] {
       <div class="flex-grow"></div>
       <div class="flex-none p2 nowrap">
         <p class="h6 bold m0">
-          Made by <a href="//jxnblk.com">Jxnblk</a>
+          Made by <a href="//jxnblk.com" class="h6 button button-small button-link">Jxnblk</a>
         </p>
       </div>
     </div>
   </div>
 </footer>
+
 
 <script type="text/javascript">
   WebFontConfig = {
@@ -2717,6 +2695,8 @@ s.parentNode.insertBefore(wf, s);
 </script>
 
 
+
+        </div>
       </div>
     </div>
   </div>

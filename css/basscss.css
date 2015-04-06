@@ -676,7 +676,6 @@ body {
 }
 
 a {
-  color: #0074d9 ;
   color: #0074d9;
   text-decoration: none;
 }
@@ -686,7 +685,6 @@ a {
   }
 
 pre, code {
-  background-color: #ddd ;
   background-color: #ddd;
   border-radius: 3px;
 }
@@ -700,7 +698,6 @@ hr {
 
 .button {
   color: white;
-  background-color: #0074d9 ;
   background-color: #0074d9;
   border-radius: 3px;
   -webkit-transition-duration: .05s;
@@ -733,6 +730,28 @@ hr {
   opacity: .5;
 }
 /* Basscss Color Forms */
+
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/
+
+:root {
+
+  /* Cool */
+
+
+  /* Warm */
+
+
+  /* Gray scale */
+
+}
 
 .field-light {
   background-color: white;
@@ -792,6 +811,28 @@ hr {
   box-shadow: 0 0 2px rgba(0, 116, 217, 0.5);
 }
 /* Basscss Color Forms Dark */
+
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/
+
+:root {
+
+  /* Cool */
+
+
+  /* Warm */
+
+
+  /* Gray scale */
+
+}
 
 .field-dark {
   color: white;
@@ -949,8 +990,8 @@ input[type=range] {
 
 .table-light th,
 .table-light td {
-  border-bottom-style: solid;
   border-bottom-width: 1px;
+  border-bottom-style: solid;
   border-bottom-color: rgba(0,0,0,.125);
 }
 

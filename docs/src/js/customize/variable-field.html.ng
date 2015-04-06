@@ -1,2 +1,0 @@
-<label class="h5 bold">{{ variable.property }}</label>
-<input type="text" class="block full-width field-light" ng-model="variable.value" ng-change="build()">

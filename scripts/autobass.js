@@ -13,14 +13,13 @@ data.dest = path.join(__dirname, '..');
 
 data.layout = './layouts/docs.html';
 data.baseurl = '//basscss.com';
-data.stylesheet = 'http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.2.0/bassdock.min.css';
+data.stylesheet = 'http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.0/bassdock.min.css';
 
 data.asset_path = 'http://d2v52k3cl9vedd.cloudfront.net/basscss/';
 
 data.routes = require('../docs/src/routes');
 data.showcase = require('../docs/src/showcase');
 data.stats = require('../docs/src/stats');
-data.defaults = require('../docs/src/variables')('./src/basscss.css');
 data.colorCombinations = require('../docs/src/color-combinations');
 
 data.modules = data.basscss.modules;

@@ -1,5 +1,5 @@
 
-<a href="/" class="h1 button block button-transparent blue mt2">
+<a href="/" class="h1 button block button-transparent aqua mt2">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
@@ -10,11 +10,11 @@
 <ul class="list-reset mb3">
   <% _.forIn(routes.docs.routes, function(route, key) { %>
     <li class="<%= route.routes ? 'mt3 mb3' : '' %>">
-      <a href="<%= route.path %>" class="button block button-transparent <%= obj.page.title == route.title ? 'white bg-blue' : '' %> ">
+      <a href="<%= route.path %>" class="button block button-transparent <%= obj.page.title == route.title ? 'bg-aqua' : '' %> ">
         <%= route.title %>
       </a>
-      <% if (obj.page && obj.page.title == route.title) { %>
-        <ul class="list-reset mb0 bg-darken-2">
+      <% if (obj.page && obj.page.title == route.title && route.sections) { %>
+        <ul class="list-reset">
           <% _.forIn(route.sections, function(section) { %>
             <li>
               <a href="<%= route.path + '#' + removePrefix(section.module) %>" class="button button-small px2 block button-transparent">
@@ -41,7 +41,7 @@
 
 
 
-<a href="//github.com/jxnblk/basscss" class="button block mb4 muted button-transparent">
+<a href="//github.com/jxnblk/basscss" class="button block mb4 button-transparent">
   Github
 </a>
 

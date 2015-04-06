@@ -22,8 +22,8 @@
     "start": "npm run watch:css & npm run watch:sassify & npm run watch:html & npm run serve"
   },
   "dependencies": {
-    "basscss-background-images": "0.0.5",
-    "basscss-base-buttons": "^1.0.5",
+    "basscss-background-images": "0.0.6",
+    "basscss-base-buttons": "^1.0.7",
     "basscss-base-forms": "^1.0.6",
     "basscss-base-reset": "0.0.3",
     "basscss-base-tables": "^0.1.1",
@@ -44,7 +44,7 @@
     "basscss-color-buttons": "^1.0.1",
     "basscss-color-forms": "^1.1.1",
     "basscss-color-forms-dark": "^0.1.1",
-    "basscss-color-tables": "^0.1.0",
+    "basscss-color-tables": "^0.1.2",
     "basscss-colors": "^1.0.6",
     "basscss-defaults": "^1.0.2",
     "basscss-grid": "^0.0.15",

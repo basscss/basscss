@@ -42,7 +42,7 @@ Note: This example uses the optional `basscss-utility-headings` module for the l
 
 ```html
 <header class="center px3 py4 white bg-gray bg-cover bg-center"
-  style="background-image: url(/docs/src/svg/hero.svg)">
+  style="background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)">
   <h1 class="h1 h0-responsive caps mt4 mb0 regular">Hamburgers</h1>
   <p class="h3">Artisinal ground chuck creations</p>
   <a href="#" class="h3 button button-big mb4">Pancake</a>
@@ -62,7 +62,7 @@ Move the padding for the banner content into a nested div to adjust the layout.
 
 ```html
 <header class="white bg-gray bg-cover bg-center"
-  style="background-image: url(/docs/src/svg/hero.svg)">
+  style="background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)">
   <nav class="clearfix white">
     <div class="sm-col">
       <a href="/" class="button py2 button-transparent">Home</a>

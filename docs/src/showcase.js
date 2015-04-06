@@ -36,12 +36,6 @@ module.exports = {
     description: 'A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.',
     image: 'pixyll-640.jpg'
   },
-  //scienceparkse: {
-  //  title: 'Science Park',
-  //  url: 'http://www.sciencpark.se/',
-  //  description: '', // No meta tag description
-  //  image: 'screenshot-sciencepark--2015-02-24-12-01-08-640.jpg'
-  //},
   nurturingability: {
     title: 'Nurturing Ability',
     url: 'http://www.nurturingability.com.au/',
@@ -60,13 +54,5 @@ module.exports = {
     description: 'Potentially interesting stats on stylesheets',
     image: 'cssstats-640.jpg'
   },
-  /* Updated to custom CSS
-    colepeters: {
-      title: 'Cole Peters',
-      url: 'http://colepeters.com/',
-      description: 'Designer, writer, sound artist',
-      image: 'colepeters.png'
-    },
-  */
 };
 

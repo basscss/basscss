@@ -8,15 +8,14 @@ var doiuse = require('doiuse');
 
 module.exports = function(css) {
 
-    //console.log('doiuse');
+  describe('doiuse', function(done) {
     postcss(doiuse({
       browsers:['ie >= 6', '> 1%'],
       onFeatureUsage: function(usageInfo) {
         console.log(usageInfo.message);
+        done();
       }
     })).process(css);
-
-  describe('doiuse', function() {
   });
 
 

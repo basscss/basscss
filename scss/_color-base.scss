@@ -25,6 +25,9 @@ $darken-4: rgba(0,0,0,.5) !default;
 $border-color: $darken-2 !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
+$link-color: $blue /* Fallback value:  blue */ !default;
+$button-background-color: $blue /* Fallback value:  blue */ !default;
+$pre-background-color: transparent !default;
 
 // Custom Media Query Variables
 
@@ -47,7 +50,7 @@ body {
 }
 
 a {
-  color: $link-color /* Fallback value:  $blue  */;
+  color: $link-color;
   text-decoration: none;
 }
 
@@ -56,7 +59,7 @@ a {
   }
 
 pre, code {
-  background-color: $pre-background-color /* Fallback value:  $silver  */;
+  background-color: $pre-background-color;
   border-radius: $border-radius;
 }
 
@@ -69,7 +72,7 @@ hr {
 
 .button {
   color: white;
-  background-color: $button-background-color /* Fallback value:  $blue  */;
+  background-color: $button-background-color;
   border-radius: $border-radius;
   -webkit-transition-duration: .05s;
           transition-duration: .05s;
