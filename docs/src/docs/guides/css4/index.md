@@ -3,7 +3,7 @@
   Custom media queries and custom properties are powerful CSS4 features that
   provide more flexibility than similar features found in CSS preprocessors such as Sass and Less,
   with the potential for native browser support in the near future.
-  With post-processors like [cssnext](https://github.com/jxnblk/css-scss) and [Rework](https://github.com/reworkcss/rework), you can start using these features today.
+  With post-processors like [cssnext](https://github.com/cssnext/cssnext) and [Rework](https://github.com/reworkcss/rework), you can start using these features today.
 </p>
 
 # Custom Properties
