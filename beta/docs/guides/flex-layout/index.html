@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>
+    Basscss
+    
+  </title>
+  <meta name="author" content="Brent Jackson">
+  <meta name="description" content="Low-level CSS toolkit">
+  
+    <meta name="keywords" content="CSS, OOCSS, framework, ">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.0/bassdock.min.css">
+  
+  <link rel="icon" href="/docs/images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
+</head>
+
+<body>
+
+<div class="px2">
+  <div class="clearfix flex flex-stretch mxn2">
+    
+      <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
+          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto border-right">
+            
+
+
+<a href="/" class="h1 button block button-transparent aqua mt2">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
+    <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
+  </svg>
+</a>
+
+<a href="/" class="h4 caps mb3 button block button-transparent">Basscss</a>
+
+<ul class="list-reset mb3">
+  
+  <li>
+    <a href="/">
+      Home
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs">
+      Docs
+    </a>
+    
+      
+  <li>
+    <a href="/docs/getting-started">
+      Getting-started
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/base">
+      Base
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/utility">
+      Utility
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/layout">
+      Layout
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/color">
+      Color
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides">
+      Guides
+    </a>
+    
+      
+  <li>
+    <a href="/docs/guides/basics">
+      Basics
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides/layout">
+      Page-layout
+    </a>
+    
+      
+  <li>
+    <a href="/docs/guides/layout/demo">
+      Demo
+    </a>
+    
+  </li>
+
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides/flex-layout">
+      Flex Object Layout
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides/ui">
+      UI Elements
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides/tips">
+      Tips & Tricks
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides/custom-builds">
+      Custom Builds
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides/css4">
+      CSS4 Syntax
+    </a>
+    
+  </li>
+
+    
+  </li>
+
+  <li>
+    <a href="/docs/principles">
+      Design Principles
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/showcase">
+      Built with Basscss
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/styles">
+      Table of Styles
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/stats">
+      Stats
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/color-combinations">
+      Color Combos
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/customize">
+      Customize
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/resources">
+      Tools & Resources
+    </a>
+    
+  </li>
+
+    
+  </li>
+
+</ul>
+
+
+
+<a href="//github.com/jxnblk/basscss" class="button block mb4 button-transparent">
+  Github
+</a>
+
+
+          </div>
+      </div>
+    
+    <div class="sm-col sm-col-9 md-col-10 flex flex-column" style="min-height:100vh">
+      <div class="flex-auto full-width px2 container-small">
+        <header class="mt4">
+  <h1 class="h1 h1-responsive caps m0">
+    false
+  </h1>
+  <div class="avenir h5 bold mb3">
+    <a href="/" class="button button-small mr1 button-link blue">Home</a>
+    
+  </div>
+  <hr class="b2 border-aqua">
+</header>
+
+
+
+
+        <div class="py2">
+          <p class="h3">
+  The flex object can help solve many page-level and micro layout problems and can be combined with other utilities for a wide range of applications.
+  This guide demonstrates several solutions to common layout problems using the flex object and other Basscss utilities.
+</p>
+
+<p>Many of the examples in this post are inspired by Philip Walton&#39;s excellent <a href="http://philipwalton.github.io/solved-by-flexbox/">Solved by Flexbox</a> project.</p>
+<h2 id="vertical-alignment"><a href="#vertical-alignment">Vertical Alignment</a></h2><p>One of the most obvious use-cases for flexbox, is vertical alignment. To vertically align elements with the Flex Object, add the <code>.flex</code> and <code>.flex-center</code> classes to the parent container and set a height. This demo uses min-height 100vh to fill the height of the viewport. To horizontally center the child element, use the <code>.mx-auto</code> class to set margin auto on the x-axis.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="flex flex-center p2" style="min-height:128px">
+  <div class="bold p2 mx-auto border border-blue blue">
+    Vertically Aligned Div
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex flex-center p2"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"min-height:128px"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"bold p2 mx-auto border border-blue blue"</span>&gt;</span>
+    Vertically Aligned Div
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="sticky-footer"><a href="#sticky-footer">Sticky Footer</a></h2><p>To ensure that a page&#39;s footer stays flush to the bottom when the content is shorter than the height of the viewport,
+use a combination of <code>.flex</code> and <code>.flex-column</code> on the body element or other parent container and set its min-height to 100vh.
+Add <code>.flex-auto</code> to the main content area to make it fill the available space.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <!-- Note: min-height is set to 60vh for demonstration only. -->
+<!-- Use 100vh to fill the viewport height. -->
+<div class="flex flex-column" style="min-height:60vh">
+  <header class="p2 border border-blue">
+    <h1 class="h2 m0">Flex Object Sticky Footer</h1>
+  </header>
+  <main class="flex-auto p2">
+    <h1>Main content area</h1>
+  </main>
+  <footer class="p2 border border-blue">
+    <p class="m0">Footer</p>
+  </footer>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-comment">&lt;!-- Note: min-height is set to 60vh for demonstration only. --&gt;</span>
+<span class="hljs-comment">&lt;!-- Use 100vh to fill the viewport height. --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex flex-column"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"min-height:60vh"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 m0"</span>&gt;</span>Flex Object Sticky Footer<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">main</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Main content area<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">main</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">footer</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Footer<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">footer</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="holy-grail"><a href="#holy-grail">Holy Grail</a></h2><p>The Holy Grail layout is a classic CSS layout problem with several different possible solutions.
+The layout consists of a header, three columns, and a footer. The center column should be fluid, with fixed-width columns to the left and right, all columns should have equal height, the left column should be after the main content in HTML source order, and the footer should stick to the bottom of the viewport if there&#39;s not enough content to fill the space.
+For more on this layout, see the <a href="http://alistapart.com/article/holygrail">A List Apart article</a>.</p>
+<p>This demo uses the same technique as the sticky footer example, along with the <code>.flex-first</code> utility to visually change the order of the columns.
+By default, the columns will all be equal height when using display flex on the parent.
+Each fixed-width column uses inline-styles, but you may want to use a grid system or some custom CSS to better handle the layout at small viewport widths.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <!-- Note: min-height is set to 60vh for demonstration only. -->
+<!-- Use 100vh to fill the viewport height. -->
+<div class="flex flex-column" style="min-height:60vh">
+  <header class="p2 border border-blue">
+    <h1 class="h2 m0">Flex Object Holy Grail</h1>
+  </header>
+  <div class="flex-auto sm-flex">
+    <main class="flex-auto p2">
+      <h1>Main content</h1>
+      <p>Sorry it's not 100% responsive, but the sidebars have to be fixed width for this demo.</p>
+    </main>
+    <nav class="flex-first border border-blue" style="width:8rem">
+      <ul class="list-reset mt2 mb2">
+        <li><a href="#" class="button block button-transparent">Link</a>
+        <li><a href="#" class="button block button-transparent">Link</a>
+        <li><a href="#" class="button block button-transparent">Link</a>
+      </ul>
+    </nav>
+    <aside class="p2 border border-blue" style="width:8rem">
+      <p>Sidebar</p>
+    </aside>
+  </div>
+  <footer class="p2 border border-blue">
+    <p class="m0">Footer</p>
+  </footer>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-comment">&lt;!-- Note: min-height is set to 60vh for demonstration only. --&gt;</span>
+<span class="hljs-comment">&lt;!-- Use 100vh to fill the viewport height. --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex flex-column"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"min-height:60vh"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 m0"</span>&gt;</span>Flex Object Holy Grail<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto sm-flex"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">main</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Main content<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Sorry it's not 100% responsive, but the sidebars have to be fixed width for this demo.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">main</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-first border border-blue"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:8rem"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-reset mt2 mb2"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-transparent"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-transparent"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button block button-transparent"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">aside</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:8rem"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Sidebar<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">aside</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">footer</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Footer<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">footer</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="input-groups"><a href="#input-groups">Input Groups</a></h2><p>To group buttons or other elements with inputs, add <code>.flex</code> to a container element and remove margins from the child elements.
+Borders and border radii can be controlled using utility styles.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="p2">
+  <div class="flex mb2">
+    <label for="search-input" class="hide">Search</label>
+    <input
+      type="search"
+      id="search-input"
+      class="flex-auto m0 field-light rounded-left"
+      placeholder="Search">
+    <button class="button rounded-right border black bg-silver">Go</button>
+  </div>
+  <div class="flex mb2">
+    <label for="search-input" class="hide">Search</label>
+    <input
+      type="search"
+      id="search-input"
+      class="flex-auto m0 field-light rounded-left"
+      placeholder="Search">
+    <button class="button not-rounded black bg-silver">Button</button>
+    <button class="button rounded-right border-left black bg-silver">Go</button>
+  </div>
+  <div class="flex mb2">
+    <button class="button rounded-left black bg-silver">Button</button>
+    <label for="search-input" class="hide">Search</label>
+    <input
+      type="search"
+      id="search-input"
+      class="flex-auto m0 field-light not-rounded"
+      placeholder="Search">
+    <button class="button rounded-right border-left black bg-silver">Go</button>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mb2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"search-input"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hide"</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span>
+      <span class="hljs-attribute">type</span>=<span class="hljs-value">"search"</span>
+      <span class="hljs-attribute">id</span>=<span class="hljs-value">"search-input"</span>
+      <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto m0 field-light rounded-left"</span>
+      <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Search"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button rounded-right border black bg-silver"</span>&gt;</span>Go<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mb2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"search-input"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hide"</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span>
+      <span class="hljs-attribute">type</span>=<span class="hljs-value">"search"</span>
+      <span class="hljs-attribute">id</span>=<span class="hljs-value">"search-input"</span>
+      <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto m0 field-light rounded-left"</span>
+      <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Search"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button not-rounded black bg-silver"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button rounded-right border-left black bg-silver"</span>&gt;</span>Go<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mb2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button rounded-left black bg-silver"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"search-input"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hide"</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span>
+      <span class="hljs-attribute">type</span>=<span class="hljs-value">"search"</span>
+      <span class="hljs-attribute">id</span>=<span class="hljs-value">"search-input"</span>
+      <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto m0 field-light not-rounded"</span>
+      <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Search"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button rounded-right border-left black bg-silver"</span>&gt;</span>Go<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="media-object"><a href="#media-object">Media Object</a></h2><p>The <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">Media Object</a>
+is a classic OOCSS solution for setting a fluid column next to an image. To acheive this with the Flex Object, add <code>.flex</code> to the container element and <code>.flex-auto</code> to the Media Object&#39;s body. To vertically center the body, add <code>.flex-center</code> to the container. This technique can also be used for multiple combinations of images and other content.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="p2">
+  <h2>Media Object</h2>
+  <div class="flex mb2">
+    <img src="/docs/images/placeholder-square.svg"
+      width="96" height="96"
+      class="flex-none mr2" />
+    <div class="flex-auto">
+      <p class="m0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, soluta, ut obcaecati, laudantium nobis.</p>
+    </div>
+  </div>
+  <h2>Centered Media Object (aka Flag Object)</h2>
+  <div class="flex flex-center mb2">
+    <img src="/docs/images/placeholder-square.svg"
+      width="96" height="96"
+      class="flex-none mr2" />
+    <div class="flex-auto">
+      <p class="m0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, soluta, ut obcaecati, laudantium nobis.</p>
+    </div>
+  </div>
+  <h2>Double-Sided Media Object</h2>
+  <div class="flex flex-center mb2">
+    <img src="/docs/images/placeholder-square.svg"
+      width="96" height="96"
+      class="flex-none mr2" />
+    <div class="flex-auto">
+      <p class="m0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, soluta, ut obcaecati, laudantium nobis.</p>
+    </div>
+    <img src="/docs/images/placeholder-square.svg"
+      width="96" height="96"
+      class="flex-none ml2" />
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Media Object<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mb2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span>
+      <span class="hljs-attribute">width</span>=<span class="hljs-value">"96"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"96"</span>
+      <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-none mr2"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, soluta, ut obcaecati, laudantium nobis.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Centered Media Object (aka Flag Object)<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex flex-center mb2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span>
+      <span class="hljs-attribute">width</span>=<span class="hljs-value">"96"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"96"</span>
+      <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-none mr2"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, soluta, ut obcaecati, laudantium nobis.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Double-Sided Media Object<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex flex-center mb2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span>
+      <span class="hljs-attribute">width</span>=<span class="hljs-value">"96"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"96"</span>
+      <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-none mr2"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, soluta, ut obcaecati, laudantium nobis.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span>
+      <span class="hljs-attribute">width</span>=<span class="hljs-value">"96"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"96"</span>
+      <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-none ml2"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="automatic-grid"><a href="#automatic-grid">Automatic Grid</a></h2><p>To create columns that automatically fill the amount of space available, add <code>.flex-auto</code> each column. This is handy when the number of items in a row dynamically changes.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="center p2">
+  <div class="flex mxn2">
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+  </div>
+  <div class="flex mxn2">
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+  </div>
+  <div class="flex mxn2">
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+  </div>
+  <div class="flex mxn2">
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+  </div>
+  <div class="flex mxn2">
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="grid-with-individual-column-sizing"><a href="#grid-with-individual-column-sizing">Grid with Individual Column Sizing</a></h2><p>Setting a width on one or more columns can allow for more fine-grained control.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="center flex-auto p2">
+  <div class="flex mxn2">
+    <div class="flex-none col-6 p2"><div class="p2 border border-blue">1/2</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">auto</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">auto</div></div>
+  </div>
+  <div class="flex mxn2">
+    <div class="col-4 p2"><div class="p2 border border-blue">1/3</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">auto</div></div>
+  </div>
+  <div class="flex mxn2">
+    <div class="col-3 p2"><div class="p2 border border-blue">1/4</div></div>
+    <div class="flex-auto p2"><div class="p2 border border-blue">auto</div></div>
+    <div class="col-4 p2"><div class="p2 border border-blue">1/3</div></div>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center flex-auto p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-none col-6 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>1/2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-4 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>1/3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-3 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>1/4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-4 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>1/3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="responsive-grid"><a href="#responsive-grid">Responsive Grid</a></h2><p>To only set display flex from a certain breakpoint and up, use <code>.sm-flex</code>, <code>.md-flex</code>, or <code>.lg-flex</code>. 
+The flex context for child elements will only be enabled from that breakpoint and up, so all other Flex Object utilities stay the same.
+Add <code>.flex-wrap</code> to rows where columns should wrap, and use grid column width utilities to set different widths for different breakpoints.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="center p2">
+  <div class="flex mxn2">
+    <div class="col-6 p2"><div class="p2 border border-blue">.col-6</div></div>
+    <div class="col-6 p2"><div class="p2 border border-blue">.col-6</div></div>
+  </div>
+  <hr>
+  <div class="flex flex-wrap mxn2">
+    <div class="col-6 md-col-3 p2"><div class="p2 border border-blue">.col-6 .md-col-3</div></div>
+    <div class="col-6 md-col-3 p2"><div class="p2 border border-blue">.col-6 .md-col-3</div></div>
+    <div class="col-6 md-col-3 p2"><div class="p2 border border-blue">.col-6 .md-col-3</div></div>
+    <div class="col-6 md-col-3 p2"><div class="p2 border border-blue">.col-6 .md-col-3</div></div>
+  </div>
+  <hr>
+  <div class="sm-flex flex-wrap mxn2">
+    <div class="sm-col-6 lg-col-2 p2"><div class="p2 border border-blue">.sm-col-6 .lg-col-2</div></div>
+    <div class="sm-col-6 lg-col-2 p2"><div class="p2 border border-blue">.sm-col-6 .lg-col-2</div></div>
+    <div class="sm-col-6 lg-col-2 p2"><div class="p2 border border-blue">.sm-col-6 .lg-col-2</div></div>
+    <div class="sm-col-6 lg-col-2 p2"><div class="p2 border border-blue">.sm-col-6 .lg-col-2</div></div>
+    <div class="sm-col-6 lg-col-2 p2"><div class="p2 border border-blue">.sm-col-6 .lg-col-2</div></div>
+    <div class="sm-col-6 lg-col-2 p2"><div class="p2 border border-blue">.sm-col-6 .lg-col-2</div></div>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-6 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-6 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">hr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex flex-wrap mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-6 md-col-3 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.col-6 .md-col-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-6 md-col-3 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.col-6 .md-col-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-6 md-col-3 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.col-6 .md-col-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-6 md-col-3 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.col-6 .md-col-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">hr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-flex flex-wrap mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col-6 lg-col-2 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.sm-col-6 .lg-col-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col-6 lg-col-2 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.sm-col-6 .lg-col-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col-6 lg-col-2 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.sm-col-6 .lg-col-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col-6 lg-col-2 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.sm-col-6 .lg-col-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col-6 lg-col-2 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.sm-col-6 .lg-col-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col-6 lg-col-2 p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.sm-col-6 .lg-col-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="nested-grid"><a href="#nested-grid">Nested Grid</a></h2><p>To nest elements, add <code>.flex</code> to the column that contains nested columns.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="center flex-auto p2">
+  <div class="flex flex-center mxn2">
+    <div class="flex-auto p2"><div class="p2 border border-blue">.flex-auto</div></div>
+    <div class="sm-flex col-6 p2 border border-blue">
+      <div class="flex-auto"><div class="p2 border border-blue">.flex-auto</div></div>
+      <div class="flex-auto"><div class="p2 border border-blue">.flex-auto</div></div>
+    </div>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center flex-auto p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex flex-center mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-flex col-6 p2 border border-blue"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="staggered-boxes"><a href="#staggered-boxes">Staggered Boxes</a></h2><p>To stagger content differently than its source order in HTML, use the <code>.flex-first</code> or <code>.flex-last</code> utilities.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="center flex-auto p2">
+  <p>Resize the viewport to see the effect.</p>
+  <div class="sm-flex flex-center">
+    <img src="/docs/images/placeholder.svg" width="256" width="192" class="flex-last m2" />
+    <div class="flex-auto p2 border border-blue">.flex-auto</div>
+  </div>
+  <div class="sm-flex flex-center">
+    <img src="/docs/images/placeholder.svg" width="256" width="192" class="m2" />
+    <div class="flex-auto p2 border border-blue">.flex-auto</div>
+  </div>
+  <div class="sm-flex flex-center">
+    <img src="/docs/images/placeholder.svg" width="256" width="192" class="flex-last m2" />
+    <div class="flex-auto p2 border border-blue">.flex-auto</div>
+  </div>
+  <div class="sm-flex flex-center">
+    <img src="/docs/images/placeholder.svg" width="256" width="192" class="m2" />
+    <div class="flex-auto p2 border border-blue">.flex-auto</div>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center flex-auto p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Resize the viewport to see the effect.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-flex flex-center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"192"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-last m2"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-flex flex-center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"192"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m2"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-flex flex-center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"192"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-last m2"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-flex flex-center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"192"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m2"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto p2 border border-blue"</span>&gt;</span>.flex-auto<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="equal-height-columns"><a href="#equal-height-columns">Equal Height Columns</a></h2><p>Columns with different amounts of content should be the same height by default. To ensure that nested elements also maintain equal height, add <code>.flex</code> to the parent column.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="px2">
+  <div class="flex mxn2">
+    <div class="col-6 p2 border border-blue">
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui tempore, odio sit ad magni eaque expedita fugit autem, error, facilis excepturi omnis. Pariatur iste possimus soluta quos, deserunt, laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui tempore, odio sit ad magni eaque expedita fugit autem, error, facilis excepturi omnis. Pariatur iste possimus soluta quos, deserunt, laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui tempore, odio sit ad magni eaque expedita fugit autem, error, facilis excepturi omnis. Pariatur iste possimus soluta quos, deserunt, laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui tempore, odio sit ad magni eaque expedita fugit autem, error, facilis excepturi omnis. Pariatur iste possimus soluta quos, deserunt, laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui tempore, odio sit ad magni eaque expedita fugit autem, error, facilis excepturi omnis. Pariatur iste possimus soluta quos, deserunt, laborum.</p>
+      </div>
+    </div>
+    <div class="col-6 flex p2 border border-blue">
+      <div class="col-12 border border-blue">Equal height column</div>
+    </div>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"px2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-6 p2 border border-blue"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui tempore, odio sit ad magni eaque expedita fugit autem, error, facilis excepturi omnis. Pariatur iste possimus soluta quos, deserunt, laborum.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui tempore, odio sit ad magni eaque expedita fugit autem, error, facilis excepturi omnis. Pariatur iste possimus soluta quos, deserunt, laborum.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui tempore, odio sit ad magni eaque expedita fugit autem, error, facilis excepturi omnis. Pariatur iste possimus soluta quos, deserunt, laborum.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui tempore, odio sit ad magni eaque expedita fugit autem, error, facilis excepturi omnis. Pariatur iste possimus soluta quos, deserunt, laborum.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui tempore, odio sit ad magni eaque expedita fugit autem, error, facilis excepturi omnis. Pariatur iste possimus soluta quos, deserunt, laborum.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-6 flex p2 border border-blue"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-12 border border-blue"</span>&gt;</span>Equal height column<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="cards"><a href="#cards">Cards</a></h2><p>Taking this same approach, you can create a collection of cards, that maintain the same height per row.
+Percentage based grid utilities are used to set different widths at different breakpoints.
+This method also works well when the number of items changes dynamically.</p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="p2">
+  <div class="flex flex-wrap mxn2">
+    <div class="flex col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="p1 border rounded">
+        <img src="/docs/images/placeholder-square.svg" width="256" height="auto" />
+        <p class="m0">Card</p>
+      </div>
+    </div>
+    <div class="flex col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="p1 border rounded">
+        <img src="/docs/images/placeholder-square.svg" width="256" height="auto" />
+        <p class="m0">Card</p>
+        <p class="m0">Card that is taller than the others</p>
+      </div>
+    </div>
+    <div class="flex col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="p1 border rounded">
+        <img src="/docs/images/placeholder-square.svg" width="256" height="auto" />
+        <p class="m0">Card</p>
+      </div>
+    </div>
+    <div class="flex col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="p1 border rounded">
+        <img src="/docs/images/placeholder-square.svg" width="256" height="auto" />
+        <p class="m0">Card</p>
+      </div>
+    </div>
+    <div class="flex col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="p1 border rounded">
+        <img src="/docs/images/placeholder-square.svg" width="256" height="auto" />
+        <p class="m0">Card</p>
+      </div>
+    </div>
+    <div class="flex col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="p1 border rounded">
+        <img src="/docs/images/placeholder-square.svg" width="256" height="auto" />
+        <p class="m0">Card</p>
+      </div>
+    </div>
+    <div class="flex col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="p1 border rounded">
+        <img src="/docs/images/placeholder-square.svg" width="256" height="auto" />
+        <p class="m0">Card</p>
+      </div>
+    </div>
+    <div class="flex col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="p1 border rounded">
+        <img src="/docs/images/placeholder-square.svg" width="256" height="auto" />
+        <p class="m0">Card</p>
+      </div>
+    </div>
+    <div class="flex col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="p1 border rounded">
+        <img src="/docs/images/placeholder-square.svg" width="256" height="auto" />
+        <p class="m0">Card</p>
+      </div>
+    </div>
+    <div class="flex col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="p1 border rounded">
+        <img src="/docs/images/placeholder-square.svg" width="256" height="auto" />
+        <p class="m0">Card</p>
+      </div>
+    </div>
+    <div class="flex col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="p1 border rounded">
+        <img src="/docs/images/placeholder-square.svg" width="256" height="auto" />
+        <p class="m0">Card</p>
+      </div>
+    </div>
+    <div class="flex col-6 sm-col-4 md-col-3 lg-col-2 p2">
+      <div class="p1 border rounded">
+        <img src="/docs/images/placeholder-square.svg" width="256" height="auto" />
+        <p class="m0">Card</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex flex-wrap mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex col-6 sm-col-4 md-col-3 lg-col-2 p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1 border rounded"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"auto"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex col-6 sm-col-4 md-col-3 lg-col-2 p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1 border rounded"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"auto"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card that is taller than the others<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex col-6 sm-col-4 md-col-3 lg-col-2 p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1 border rounded"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"auto"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex col-6 sm-col-4 md-col-3 lg-col-2 p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1 border rounded"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"auto"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex col-6 sm-col-4 md-col-3 lg-col-2 p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1 border rounded"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"auto"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex col-6 sm-col-4 md-col-3 lg-col-2 p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1 border rounded"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"auto"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex col-6 sm-col-4 md-col-3 lg-col-2 p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1 border rounded"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"auto"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex col-6 sm-col-4 md-col-3 lg-col-2 p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1 border rounded"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"auto"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex col-6 sm-col-4 md-col-3 lg-col-2 p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1 border rounded"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"auto"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex col-6 sm-col-4 md-col-3 lg-col-2 p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1 border rounded"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"auto"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex col-6 sm-col-4 md-col-3 lg-col-2 p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1 border rounded"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"auto"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex col-6 sm-col-4 md-col-3 lg-col-2 p2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p1 border rounded"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/docs/images/placeholder-square.svg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"256"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"auto"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>Card<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+
+          
+
+
+
+
+          <hr class="mb0 b2 border-aqua">
+
+<footer class="mb3">
+  <div class="">
+    <div class="flex flex-wrap flex-baseline caps mxn2">
+      <a href="/" class="h6 button button-small m2 button-link">Home</a>
+      <a href="/docs" class="h6 button button-small m2 button-link">Docs</a>
+      <a href="/docs/getting-started" class="h6 button button-small m2 button-link">Download</a>
+      <a href="//github.com/jxnblk/basscss" class="h6 button button-small m2 button-link">Github</a>
+      <div class="flex-grow"></div>
+      <div class="flex-none p2 nowrap">
+        <p class="h6 bold m0">
+          Made by <a href="//jxnblk.com" class="h6 button button-small button-link">Jxnblk</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Source+Code+Pro::latin' ] }
+  };
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})(); </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4603832-12', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

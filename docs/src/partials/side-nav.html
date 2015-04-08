@@ -1,9 +1,12 @@
 
 <% function renderLink(route) { %>
   <li>
-    <a href="<%= route.path %>">
+    <a href="<%= route.fullpath %>">
       <%= route.title %>
     </a>
+    <% if (route.routes) { %>
+      <% route.routes.map(renderLink) %>
+    <% } %>
   </li>
 <% } %>
 

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>
+    Basscss
+    
+  </title>
+  <meta name="author" content="Brent Jackson">
+  <meta name="description" content="Low-level CSS toolkit">
+  
+    <meta name="keywords" content="CSS, OOCSS, framework, ">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.0/bassdock.min.css">
+  
+  <link rel="icon" href="/docs/images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
+</head>
+
+<body>
+
+<div class="px2">
+  <div class="clearfix flex flex-stretch mxn2">
+    
+      <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
+          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto border-right">
+            
+
+
+<a href="/" class="h1 button block button-transparent aqua mt2">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
+    <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
+  </svg>
+</a>
+
+<a href="/" class="h4 caps mb3 button block button-transparent">Basscss</a>
+
+<ul class="list-reset mb3">
+  
+  <li>
+    <a href="/">
+      Home
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs">
+      Docs
+    </a>
+    
+      
+  <li>
+    <a href="/docs/getting-started">
+      Getting-started
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/base">
+      Base
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/utility">
+      Utility
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/layout">
+      Layout
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/color">
+      Color
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides">
+      Guides
+    </a>
+    
+      
+  <li>
+    <a href="/docs/guides/basics">
+      Basics
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides/layout">
+      Page-layout
+    </a>
+    
+      
+  <li>
+    <a href="/docs/guides/layout/demo">
+      Demo
+    </a>
+    
+  </li>
+
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides/flex-layout">
+      Flex Object Layout
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides/ui">
+      UI Elements
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides/tips">
+      Tips & Tricks
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides/custom-builds">
+      Custom Builds
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/guides/css4">
+      CSS4 Syntax
+    </a>
+    
+  </li>
+
+    
+  </li>
+
+  <li>
+    <a href="/docs/principles">
+      Design Principles
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/showcase">
+      Built with Basscss
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/styles">
+      Table of Styles
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/stats">
+      Stats
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/color-combinations">
+      Color Combos
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/customize">
+      Customize
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="/docs/resources">
+      Tools & Resources
+    </a>
+    
+  </li>
+
+    
+  </li>
+
+</ul>
+
+
+
+<a href="//github.com/jxnblk/basscss" class="button block mb4 button-transparent">
+  Github
+</a>
+
+
+          </div>
+      </div>
+    
+    <div class="sm-col sm-col-9 md-col-10 flex flex-column" style="min-height:100vh">
+      <div class="flex-auto full-width px2 container-small">
+        <header class="mt4">
+  <h1 class="h1 h1-responsive caps m0">
+    false
+  </h1>
+  <div class="avenir h5 bold mb3">
+    <a href="/" class="button button-small mr1 button-link blue">Home</a>
+    
+  </div>
+  <hr class="b2 border-aqua">
+</header>
+
+
+
+
+        <div class="py2">
+          <p class="h3">
+  Basscss is a versatile starting point for any project.
+  These tips and tricks will help you build on top of its foundation
+  in an elegant and maintainable way.
+</p>
+
+<h1 id="avoid-overrides"><a href="#avoid-overrides">Avoid Overrides</a></h1><p>When using any front end framework you should avoid overriding the built in styles.
+Customize default values in the framework with variables where possible.
+If using variables doesn’t suite your needs,
+consider adding styles that extend, but don&#39;t override, the defaults.</p>
+<p>If you want to alter the defaults in the source code,
+make adjustments to the declared properties and values
+before beginning to use the framework and be sure to document any changes to the default behavior.
+If you do make adjustments after the framework has been set up in a project,
+be cautious and notify any other contributors of those changes.</p>
+<h1 id="utility-styles-are-immutable"><a href="#utility-styles-are-immutable">Utility Styles are Immutable</a></h1><p>The utility styles in Basscss should be considered immutable. These styles aid in scalability,
+maintenance, and readability by clearing stating what they do. For example, <code>.block</code> should always
+set display block and do nothing else. This is similar to the concept of doing one thing and doing it well.
+If a particular style or utility doesn’t suite the needs of the element it’s applied to,
+remove it and replace it with more appropriate styles.</p>
+<h1 id="look-before-adding"><a href="#look-before-adding">Look Before Adding</a></h1><p>Before writing any new styles on top of Basscss, check the source code or documentation to see
+if there is already a style that will do what you need. Chances are, there is,
+or there is a combination of styles that can acheive the same thing.</p>
+<h1 id="avoid-magic-numbers"><a href="#avoid-magic-numbers">Avoid Magic Numbers</a></h1><p>The type scale and white space scale in Basscss are intended
+to bring consistency and help normalize visual design considerations.
+Type sizes should never be specified outside of the type scale,
+and margins and paddings should all be handled with the white space utilities.
+Making one-off adjustments to things like font sizes and margins can quickly lead to code bloat,
+harder-to-read markup, and a less consistent designs.</p>
+<h1 id="don-t-use-contextual-selectors"><a href="#don-t-use-contextual-selectors">Don’t Use Contextual Selectors</a></h1><p>Some approaches to CSS suggest adjusting styles with contextual selectors.
+The styles in Basscss should never be contextually adjusted.
+Doing so would break the readability of classes in markup and the ability
+to make quick iterative adjustments.
+One of the major advantages of Basscss’s approach is the clarity of reading classes in markup
+and the portability of styles.
+For example, your navigation might exist in the header element today,
+but future design decisions may require moving elements around.</p>
+<p>If you need to adjust a style in one particular place,
+consider how you could make that style as reusable as possible and how those
+adjustments could be made with a style extension.
+For example, if you want the button in your site header to
+be larger and a different color from other buttons in your site,
+consider making extensions like <code>.button-bigger</code> and <code>.button-orange</code>.
+This will help your future self and others understand
+what the styles are doing without having to reference the CSS.</p>
+<h1 id="handle-complexity-in-markup"><a href="#handle-complexity-in-markup">Handle Complexity in Markup</a></h1><p>Large projects will inevitably become more complex.
+Handling and maintaining that complexity in markup templates
+is much easier than adding complexity to your stylesheet.
+Before abstracting combinations of styles out in to new styles,
+make sure to look for patterns and think about reusability,
+and consider ways in which your templating engine can DRY up your code.
+If you’re constantly duplicating the same markup to create UI elements like
+media player controls or modals,
+make use of things like partials, helpers, or components to keep things maintainable.</p>
+<p>If you’re adding something like a background image,
+consider using inline styles if that image will only be used in one place.
+There’s no need to send extra CSS to pages that don’t contain this background image.</p>
+<h1 id="keep-specificity-low"><a href="#keep-specificity-low">Keep Specificity Low</a></h1><p>Keeping specificity consistently low in a stylesheet helps mitigate the need to override styles
+with highly specific styles or the <code>!important</code> flag.
+High specificity in a stylesheet should be considered a code smell
+and generally leads to more problems than it solves.
+Basscss keeps selector specificity as low as possible to ensure interoperability and portability.</p>
+<h1 id="don-t-nest-selectors"><a href="#don-t-nest-selectors">Don’t Nest Selectors</a></h1><p>Don’t nest selectors. It may be tempting to add a style for a parent element and all child elements together,
+for example <code>.list-navigation li a</code>,
+but this creates a tight coupling between CSS and markup
+and makes future adjustments more difficult and limits the portability of styles.
+Nesting selectors can also add unnecessary specificity that might be difficult to compensate for in the future.</p>
+<h1 id="don-t-use-i-ds-as-selectors"><a href="#don-t-use-i-ds-as-selectors">Don’t Use IDs as Selectors</a></h1><p>Never use IDs as CSS selectors. IDs are useful to reference parts of an HTML document,
+and work well as speedy JavaScript selectors, but they have limited applications in CSS.
+Because only one element ID exists per document, the reusability of styles with ID selectors is inheritly limited.
+IDs also create excessive specificity that will trump the majority of Basscss’s styles.</p>
+<h1 id="separate-structure-and-skin"><a href="#separate-structure-and-skin">Separate Structure and Skin</a></h1><p>Keep structure and skin separate. Properties like colors, backgrounds and borders
+often differ by location, can change with the design over time, and don’t have a huge impact on page layout.
+Keeping structural styles and skins decoupled aids in interoperability and design flexibility.</p>
+
+          
+
+
+
+
+          <hr class="mb0 b2 border-aqua">
+
+<footer class="mb3">
+  <div class="">
+    <div class="flex flex-wrap flex-baseline caps mxn2">
+      <a href="/" class="h6 button button-small m2 button-link">Home</a>
+      <a href="/docs" class="h6 button button-small m2 button-link">Docs</a>
+      <a href="/docs/getting-started" class="h6 button button-small m2 button-link">Download</a>
+      <a href="//github.com/jxnblk/basscss" class="h6 button button-small m2 button-link">Github</a>
+      <div class="flex-grow"></div>
+      <div class="flex-none p2 nowrap">
+        <p class="h6 bold m0">
+          Made by <a href="//jxnblk.com" class="h6 button button-small button-link">Jxnblk</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Source+Code+Pro::latin' ] }
+  };
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})(); </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4603832-12', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
