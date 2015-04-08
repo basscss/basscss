@@ -1,5 +1,27 @@
 
-<% _.forIn(routes.docs.routes, function(primaryPage) { %>
+<% function renderPrimaryPage(page) { %>
+  <li>
+    <% if (page.sections) { %>
+      <ul>
+        <%= page.sections.map(renderSection) %>
+      </ul>
+    <% } %>
+  </li>
+<% } %>
+
+<% function renderSection(section) { %>
+  <li>
+    <%= section.module %>
+  </li>
+<% } %>
+
+
+<ul>
+  <%= routes[1].routes.map(renderPrimaryPage) %>
+</ul>
+
+
+<% /* _.forIn(routes.docs.routes, function(primaryPage) { %>
   <% if (primaryPage.sections) { %>
     <% _.forIn(primaryPage.sections, function(section) { %>
 
@@ -37,5 +59,5 @@
 
     <% }) %>
   <% } %>
-<% }) %>
+<% }) */ %>
 

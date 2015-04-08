@@ -123,10 +123,10 @@ module.exports = [
         title: 'Built with Basscss',
         path: '/showcase',
       },
-      //{
-      //  name: 'Table of Styles',
-      //  path: '/styles'
-      //},
+      {
+        name: 'Table of Styles',
+        path: '/styles'
+      },
       {
         name: 'stats',
         path: '/stats'

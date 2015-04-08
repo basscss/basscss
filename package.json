@@ -75,6 +75,8 @@
     "cssstats": "^1.0.1",
     "custom-css": "^1.0.1",
     "doiuse": "^0.3.2",
+    "fs-extra": "^0.18.0",
+    "get-module-info": "^1.0.0",
     "gzip-js": "^0.3.2",
     "highlight.js": "^8.4.0",
     "http-server": "^0.8.0",

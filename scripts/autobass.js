@@ -1,9 +1,11 @@
 
 var _ = require('lodash');
-var fs = require('fs');
+var fs = require('fs-extra');
 var path = require('path');
 var autobass = require('autobass');
+
 var helpers = require('../docs/src/helpers');
+var modules = require('../docs/src/modules');
 
 // Data
 var data = require('../package.json');
@@ -22,12 +24,9 @@ data.showcase = require('../docs/src/showcase');
 data.stats = require('../docs/src/stats');
 data.colorCombinations = require('../docs/src/color-combinations');
 
-data.modules = data.basscss.modules;
+//data.modules = data.basscss.modules;
+data.modules = modules;
 data.optional_modules = data.basscss.optional_modules;
-
-//data.routes.docs.routes.modules = {
-//  title: 'Modules'
-//};
 
 
 data.partials = {};
@@ -50,6 +49,18 @@ Object.keys(helpers).forEach(function(key) {
 
 
 var pages = autobass(data);
-console.log(pages);
+
+function writePage(page) {
+  var pagePath = path.join(__dirname, '../beta' + page.fullpath);
+  fs.ensureDirSync(pagePath);
+  fs.writeFileSync(pagePath + '/index.html', page.body);
+  console.log((pagePath + ' written'));
+  if (page.routes) {
+    page.routes.forEach(writePage);
+  }
+}
+
+pages.forEach(writePage);
+
 
 
