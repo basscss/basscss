@@ -1,21 +1,24 @@
 
-var modules = {};
+//var modules = {};
 
-module.exports = {
-  home: {
+module.exports = [
+  {
+    name: 'home',
     path: '/',
     layout: './layouts/base.html',
   },
-  docs: {
+  {
+    name: 'docs',
+    path: '/docs',
     layout: './layouts/base.html',
-    routes: {
-      'getting-started': {
-        title: 'Getting Started',
-        next_page: 'base'
+    routes: [
+      {
+        name: 'getting-started',
+        path: '/getting-started',
       },
-      base: {
-        previous_page: 'getting_started',
-        next_page: 'utility',
+      {
+        name: 'base',
+        path: '/base',
         sections: [
           { name: 'reset', module: 'basscss-base-reset' }, 
           { name: 'typography', module: 'basscss-base-typography' }, 
@@ -24,7 +27,9 @@ module.exports = {
           { name: 'tables', module: 'basscss-base-tables' }, 
         ]
       },
-      utility: {
+      {
+        name: 'utility',
+        path: '/utility',
         sections: [
           { name: 'layout', module: 'basscss-utility-layout' }, 
           { name: 'typography', module: 'basscss-utility-typography' }, 
@@ -34,13 +39,17 @@ module.exports = {
           { name: 'button-sizes', module: 'basscss-ui-utility-button-sizes' }, 
         ]
       },
-      layout: {
+      {
+        name: 'layout',
+        path: '/layout',
         sections: [
           { name: 'grid', module: 'basscss-grid' }, 
           { name: 'flex-object', module: 'flex-object' }, 
         ]
       },
-      color: {
+      {
+        name: 'color',
+        path: '/color',
         sections: [
           { name: 'base', module: 'basscss-color-base' }, 
           { name: 'button-outline', module: 'basscss-button-outline' }, 
@@ -55,60 +64,96 @@ module.exports = {
           { name: 'background-images', module: 'basscss-background-images' }, 
         ]
       },
-      guides: {
-        routes: {
-          basics: {
+      {
+        name: 'guides',
+        path: '/guides',
+        routes: [
+          {
+            name: 'basics',
+            path: '/basics',
             description: 'Understanding the basics of designing for the web with CSS is essential to using Basscss effectively. This guide covers the fundamentals to help get you started.',
           },
-          layout: {
-            title: 'Page Layout',
-            routes: {
-              demo: {}
-            },
+          {
+            name: 'page-layout',
+            path: '/layout',
+            routes: [
+              { name: 'demo', path: '/demo' }
+            ],
             description: 'Creating page layouts in Basscss is incredibly fast and flexible. This guide will walk you through common layout patterns to create an entire page with a basic information hierarchy.',
           },
-          'flex-layout': {
+          {
+            name: 'flex-layout',
             title: 'Flex Object Layout',
+            path: '/flex-layout',
             description: 'Solving page-level and micro layout problems with the flex object and other utilities',
           },
-          ui: {
+          {
+            name: 'ui',
             title: 'UI Elements',
+            path: '/ui',
             description: 'Creating user interface elements while keeping CSS bloat to a minimum and allowing for flexibility in making iterative design decisions',
           },
-          tips: {
+          {
+            name: 'tips',
             title: 'Tips & Tricks',
+            path: '/tips',
             description: 'Basscss is a versatile starting point for any project. These tips and tricks will help you build on top of its foundation in an elegant and maintainable way.',
           },
-          'custom-builds': {
+          {
+            name: 'custom-builds',
             title: 'Custom Builds',
+            path: '/custom-builds',
             description: 'Using NPM, Cssnext, Bower, Sass, and other tools to customize Basscss for your needs.',
           },
-          css4: {
+          {
+            name: 'css4',
             title: 'CSS4 Syntax',
+            path: '/css4',
             description: 'Getting started with CSS4 features, including custom properties and custom media queries',
           },
-        }
+        ]
       },
-      principles: {
+      {
+        name: 'principles',
         title: 'Design Principles',
+        path: '/principles'
       },
-      showcase: {
+      {
+        name: 'showcase',
         title: 'Built with Basscss',
+        path: '/showcase',
       },
-      styles: { title: 'Table of Styles' },
-      stats: { },
-      'color-combinations': {
-        title: 'Color Combos'
+      //{
+      //  name: 'Table of Styles',
+      //  path: '/styles'
+      //},
+      {
+        name: 'stats',
+        path: '/stats'
       },
-      customize: {},
-      resources: {
-        title: 'Tools & Resources'
+      {
+        name: 'color-combinations',
+        title: 'Color Combos',
+        path: '/color-combinations'
       },
-    }
+      {
+        name: 'customize',
+        path: '/customize'
+      },
+      {
+        name: 'resources',
+        title: 'Tools & Resources',
+        path: '/resources'
+      },
+    ]
   },
-  404: {
-    path: '/',
-    filename: '404.html',
-    layout: './layouts/base.html'
-  },
-};
+  // Need filename option
+  //{
+  //  name: '404',
+  //  filename: '404.html',
+  //  path: '/',
+  //  filename: '404.html',
+  //  layout: './layouts/base.html'
+  //},
+];
+

@@ -1,17 +1,17 @@
 
+var _ = require('lodash');
 var fs = require('fs');
 var path = require('path');
-
-var Autobass = require('autobass');
+var autobass = require('autobass');
+var helpers = require('../docs/src/helpers');
 
 // Data
 var data = require('../package.json');
 
-data.root = path.join(__dirname, '..');
-data.source = path.join(__dirname, '../docs/src');
-data.dest = path.join(__dirname, '..');
+data.src = path.join(__dirname, '../docs/src');
 
-data.layout = './layouts/docs.html';
+data.layout = fs.readFileSync(path.join(__dirname, '../docs/src/layouts/docs.html'), 'utf8');
+data.title = _.capitalize(data.name);
 data.baseurl = '//basscss.com';
 data.stylesheet = 'http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.0/bassdock.min.css';
 
@@ -25,9 +25,9 @@ data.colorCombinations = require('../docs/src/color-combinations');
 data.modules = data.basscss.modules;
 data.optional_modules = data.basscss.optional_modules;
 
-data.routes.docs.routes.modules = {
-  title: 'Modules'
-};
+//data.routes.docs.routes.modules = {
+//  title: 'Modules'
+//};
 
 
 data.partials = {};
@@ -43,11 +43,13 @@ data.partials['module-section'] = fs.readFileSync('./docs/src/partials/module-se
 data.partials['module-header'] = fs.readFileSync('./docs/src/partials/module-header.html', 'utf8');
 data.partials['module-footer'] = fs.readFileSync('./docs/src/partials/module-footer.html', 'utf8');
 
-data.helpers = require('../docs/src/helpers');
 
-// Init and compile
-var autobass = new Autobass();
-autobass.init(data);
+Object.keys(helpers).forEach(function(key) {
+  data[key] = helpers[key];
+});
 
-autobass.compile();
+
+var pages = autobass(data);
+console.log(pages);
+
 
