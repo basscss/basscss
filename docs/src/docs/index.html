@@ -1,9 +1,36 @@
 
+<h1>Getting Started</h1>
+<p class="h3 m0">Download or install from one of these sources</p>
+
+<div class="mxn2 py3">
+  <a href="/css/basscss.zip" class="h4 button m2 button-big">Download CSS</a>
+  <a href="https://github.com/jxnblk/basscss/archive/v<%= version %>.zip" class="h4 button m2 button-big">Download Source</a>
+</div>
+
+<p class="mb0">Clone from Github:</p>
+<pre>git clone https://github.com/jxnblk/basscss.git</pre>
+<p class="mb0">NPM:</p>
+<pre>npm install basscss</pre>
+<p class="mb0">Bower:</p>
+<pre>bower install basscss</pre>
+<p class="mb0">CDN:</p>
+<pre>&lt;link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/<%= version %>/basscss.min.css" rel="stylesheet"&gt;</pre>
+
+<p class="h3">
+  Basscss is organized according to four high-level categories:
+  <br class="md-show">
+  base elements, immutable utilities, layout modules, and color styles.
+</p>
+
+<!-- Backup
 <% function renderLink(route) { %>
   <li>
-    <a href="<%= route.path %>">
+    <a href="<%= route.path %>" class="h3 button button-small button-link blue">
       <%= route.title %>
     </a>
+    <% if (route.routes) { %>
+      <% route.routes.map(renderLink) %>
+    <% } %>
   </li>
 <% } %>
 
@@ -15,7 +42,8 @@
     base elements, immutable utilities, layout modules, and color styles.
   </p>
   <ul class="list-reset mb3">
-    <% routes.map(renderLink) %>
+    <% routes[1].routes.map(renderLink) %>
   </ul>
 </div>
+-->
 

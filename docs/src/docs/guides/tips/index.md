@@ -1,6 +1,3 @@
----
-isguide: true
----
 
 <p class="h3">
   Basscss is a versatile starting point for any project.

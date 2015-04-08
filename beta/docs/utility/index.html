@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>
     Basscss
-    
+     | Utility
   </title>
   <meta name="author" content="Brent Jackson">
   <meta name="description" content="Low-level CSS toolkit">
@@ -17,216 +17,35 @@
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
+  <style>
+    @media (min-width: 40em) {
+      .sm-fixed { position: fixed }
+      .sm-w12m { width: 12em }
+      .sm-ml12m { margin-left: 12em }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="px2">
-  <div class="clearfix flex flex-stretch mxn2">
-    
-      <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
-          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto border-right">
-            
-
-
-<a href="/" class="h1 button block button-transparent aqua mt2">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
-    <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
-  </svg>
-</a>
-
-<a href="/" class="h4 caps mb3 button block button-transparent">Basscss</a>
-
-<ul class="list-reset mb3">
-  
-  <li>
-    <a href="/">
-      Home
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs">
-      Docs
-    </a>
-    
-      
-  <li>
-    <a href="/docs/getting-started">
-      Getting-started
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/base">
-      Base
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/utility">
-      Utility
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/layout">
-      Layout
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/color">
-      Color
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides">
-      Guides
-    </a>
-    
-      
-  <li>
-    <a href="/docs/guides/basics">
-      Basics
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides/layout">
-      Page-layout
-    </a>
-    
-      
-  <li>
-    <a href="/docs/guides/layout/demo">
-      Demo
-    </a>
-    
-  </li>
-
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides/flex-layout">
-      Flex Object Layout
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides/ui">
-      UI Elements
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides/tips">
-      Tips & Tricks
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides/custom-builds">
-      Custom Builds
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides/css4">
-      CSS4 Syntax
-    </a>
-    
-  </li>
-
-    
-  </li>
-
-  <li>
-    <a href="/docs/principles">
-      Design Principles
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/showcase">
-      Built with Basscss
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/styles">
-      Table of Styles
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/stats">
-      Stats
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/color-combinations">
-      Color Combos
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/customize">
-      Customize
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/resources">
-      Tools & Resources
-    </a>
-    
-  </li>
-
-    
-  </li>
-
-</ul>
-
-
-
-<a href="//github.com/jxnblk/basscss" class="button block mb4 button-transparent">
-  Github
-</a>
-
-
-          </div>
-      </div>
-    
-    <div class="sm-col sm-col-9 md-col-10 flex flex-column" style="min-height:100vh">
-      <div class="flex-auto full-width px2 container-small">
-        <header class="mt4">
+<div class="sm-ml12m">
+  <div class="container-small px2 py2">
+    <header class="mt4">
   <h1 class="h1 h1-responsive caps m0">
-    false
+    Utility
   </h1>
   <div class="avenir h5 bold mb3">
     <a href="/" class="button button-small mr1 button-link blue">Home</a>
     
+      
+        /
+        <a href="/docs" class="button button-small ml1 mr1 button-link blue">
+          Docs
+        </a>
+      
+    
+    /
+    <span class="h5 bold inline-block ml1" style="vertical-align:middle">Utility</span>
   </div>
   <hr class="b2 border-aqua">
 </header>
@@ -234,8 +53,7 @@
 
 
 
-        <div class="py2">
-          
+    
 <p class="h3">
   Utilities are single-purpose styles that provide the backbone for layout.
   Once these are set, they should be considered immutable and never change or be extended.
@@ -244,30 +62,1113 @@
 </p>
 
 
-
-
-          
-
-
-
-
-          <hr class="mb0 b2 border-aqua">
-
-<footer class="mb3">
-  <div class="">
-    <div class="flex flex-wrap flex-baseline caps mxn2">
-      <a href="/" class="h6 button button-small m2 button-link">Home</a>
-      <a href="/docs" class="h6 button button-small m2 button-link">Docs</a>
-      <a href="/docs/getting-started" class="h6 button button-small m2 button-link">Download</a>
-      <a href="//github.com/jxnblk/basscss" class="h6 button button-small m2 button-link">Github</a>
-      <div class="flex-grow"></div>
-      <div class="flex-none p2 nowrap">
-        <p class="h6 bold m0">
-          Made by <a href="//jxnblk.com" class="h6 button button-small button-link">Jxnblk</a>
-        </p>
-      </div>
+  
+    
+<section id="utility-layout" class="py2">
+  
+<header class="mt3 mb2">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#utility-layout">
+          Utility-layout
+        </a>
+      </h1>
+      
+        <h2 class="h5 m0">
+          basscss-utility-layout
+          v0.0.2
+        </h2>
+      
+    </div>
+    <div>
+      <a href="" class="button button-small mr1 button-link blue">NPM</a>
+      <a href="https://github.com/jxnblk/basscss-utility-layout" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
+</header>
+
+
+  <h1 id="basscss-utility-layout">Basscss Utility Layout</h1>
+<p class="hide">Layout utilities module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Change the default document flow with display, float, and other utilities.</p>
+<pre><code class="lang-css">.inline       { display: inline }
+.block        { display: block }
+.inline-block { display: inline-block }
+
+.overflow-hidden { overflow: hidden }
+.overflow-auto   { overflow: auto }
+.overflow-scroll { overflow: scroll }
+
+.clearfix:before,
+.clearfix:after {
+  content: &quot; &quot;;
+  display: table
+}
+.clearfix:after { clear: both }
+
+.left  { float: left }
+.right { float: right }
+
+.fit { max-width: 100% }
+
+.half-width { width: 50% }
+.full-width { width: 100% }
+</code></pre>
+<h2 id="media-object">Media Object</h2>
+<p>Create a media object using basic utilities.</p>
+<pre><code class="lang-html">&lt;div class=&quot;clearfix mb2 outline-blue&quot;&gt;
+  &lt;div class=&quot;left p2 mr1&quot;&gt;Image&lt;/div&gt;
+  &lt;div class=&quot;overflow-hidden&quot;&gt;
+    &lt;p&gt;&lt;b&gt;Body&lt;/b&gt; Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="double-sided-media-object">Double-Sided Media Object</h2>
+<p>For a container with a flexible center, use a double-sided media object.</p>
+<pre><code class="lang-html">&lt;div class=&quot;clearfix mb2 outline-blue&quot;&gt;
+  &lt;div class=&quot;left p2 mr1&quot;&gt;Image&lt;/div&gt;
+  &lt;div class=&quot;right p2 ml1&quot;&gt;Image&lt;/div&gt;
+  &lt;div class=&quot;overflow-hidden&quot;&gt;
+    &lt;p&gt;&lt;b&gt;Body&lt;/b&gt; Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+  
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        486 bytes
+        (250 bytes Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-utility-layout-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          13 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          14 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          14 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          7 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-utility-layout-css-source" style="max-height:50vh"><span class="hljs-comment">/* Basscss Utility Layout */</span>
+
+<span class="hljs-class">.inline</span>       <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline </span></span></span>}
+<span class="hljs-class">.block</span>        <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block </span></span></span>}
+<span class="hljs-class">.inline-block</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline-block </span></span></span>}
+
+<span class="hljs-class">.overflow-hidden</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden </span></span></span>}
+<span class="hljs-class">.overflow-scroll</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> scroll </span></span></span>}
+<span class="hljs-class">.overflow-auto</span>   <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> auto </span></span></span>}
+
+<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:before</span>,
+<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">" "</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> table
+</span></span></span>}
+<span class="hljs-class">.clearfix</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">clear</span>:<span class="hljs-value"> both </span></span></span>}
+
+<span class="hljs-class">.left</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left </span></span></span>}
+<span class="hljs-class">.right</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> right </span></span></span>}
+
+<span class="hljs-class">.fit</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span> </span></span></span>}
+
+<span class="hljs-class">.half-width</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">50%</span> </span></span></span>}
+<span class="hljs-class">.full-width</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span> </span></span></span>}
+
+
+</pre>
+  
+</footer>
+
+</section>
+
+  
+    
+<section id="utility-typography" class="py2">
+  
+<header class="mt3 mb2">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#utility-typography">
+          Utility-typography
+        </a>
+      </h1>
+      
+        <h2 class="h5 m0">
+          basscss-utility-typography
+          v0.0.2
+        </h2>
+      
+    </div>
+    <div>
+      <a href="" class="button button-small mr1 button-link blue">NPM</a>
+      <a href="https://github.com/jxnblk/basscss-utility-typography" class="button button-small mr1 button-link blue">Github</a>
+    </div>
+  </div>
+  <hr class="mt1 b2 border-aqua">
+</header>
+
+
+  <h1 id="basscss-utility-typography">Basscss Utility Typography</h1>
+<p class="hide">Typography utilities module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Change typographic styles and defaults with these utilities.</p>
+<pre><code class="lang-html">&lt;p class=&quot;bold&quot;&gt;Bold&lt;/p&gt;
+&lt;p class=&quot;regular&quot;&gt;Regular&lt;/p&gt;
+&lt;p class=&quot;italic&quot;&gt;Italic&lt;/p&gt;
+&lt;p class=&quot;caps&quot;&gt;Caps&lt;/p&gt;
+&lt;p class=&quot;left-align&quot;&gt;Left align&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;Center&lt;/p&gt;
+&lt;p class=&quot;right-align&quot;&gt;Right align&lt;/p&gt;
+&lt;p class=&quot;justify&quot;&gt;Justify Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.&lt;/p&gt;
+</code></pre>
+
+  
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        431 bytes
+        (244 bytes Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-utility-typography-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          10 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          10 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          11 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          7 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-utility-typography-css-source" style="max-height:50vh"><span class="hljs-comment">/* Basscss Utility Typography */</span>
+
+<span class="hljs-class">.bold</span>    <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--bold-font-weight) </span></span></span>}
+<span class="hljs-class">.regular</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> normal </span></span></span>}
+<span class="hljs-class">.italic</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">font-style</span>:<span class="hljs-value"> italic </span></span></span>}
+<span class="hljs-class">.caps</span>    <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">text-transform</span>:<span class="hljs-value"> uppercase</span></span>; <span class="hljs-rule"><span class="hljs-attribute">letter-spacing</span>:<span class="hljs-value"> .<span class="hljs-number">2em</span></span></span>; <span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.left-align</span>   <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> left </span></span></span>}
+<span class="hljs-class">.center</span>       <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> center </span></span></span>}
+<span class="hljs-class">.right-align</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> right </span></span></span>}
+<span class="hljs-class">.justify</span>      <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> justify </span></span></span>}
+
+<span class="hljs-class">.nowrap</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">white-space</span>:<span class="hljs-value"> nowrap </span></span></span>}
+
+<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--bold-font-weight</span>:<span class="hljs-value"> bold</span></span>;
+<span class="hljs-rule">}</span></span>
+
+</pre>
+  
+</footer>
+
+</section>
+
+  
+    
+<section id="utility-white-space" class="py2">
+  
+<header class="mt3 mb2">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#utility-white-space">
+          Utility-white-space
+        </a>
+      </h1>
+      
+        <h2 class="h5 m0">
+          basscss-utility-white-space
+          v0.0.4
+        </h2>
+      
+    </div>
+    <div>
+      <a href="" class="button button-small mr1 button-link blue">NPM</a>
+      <a href="https://github.com/jxnblk/basscss-utility-white-space" class="button button-small mr1 button-link blue">Github</a>
+    </div>
+  </div>
+  <hr class="mt1 b2 border-aqua">
+</header>
+
+
+  <h1 id="basscss-utility-white-space">Basscss Utility White Space</h1>
+<p class="hide">White space margin and padding utilities module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Margin and padding utilities are based on a global white space scale defined with variables.
+These utilities use a shorthand naming convention.</p>
+<div class="overflow-scroll">
+  <table class="mb2 bg-darken-1 rounded table-light">
+    <thead class="bg-darken-1">
+      <tr> <th>Shorthand</th> <th>Description</th> </tr>
+    </thead>
+    <tbody>
+      <tr> <td>m</td> <td>Margin</td> </tr>
+      <tr> <td>p</td> <td>Padding</td> </tr>
+      <tr> <td>t</td> <td>Top</td> </tr>
+      <tr> <td>r</td> <td>Right</td> </tr>
+      <tr> <td>b</td> <td>Bottom</td> </tr>
+      <tr> <td>l</td> <td>Left</td> </tr>
+      <tr> <td>x</td> <td>X-axis (left and right)</td> </tr>
+      <tr> <td>y</td> <td>Y-axis (top and bottom)</td> </tr>
+      <tr> <td>n</td> <td>Negative (margin only)</td> </tr>
+      <tr> <td>1</td> <td>--space-1 (default .5rem)</td> </tr>
+      <tr> <td>2</td> <td>--space-2 (default 1rem)</td> </tr>
+      <tr> <td>3</td> <td>--space-3 (default 2rem)</td> </tr>
+      <tr> <td>4</td> <td>--space-4 (default 4rem)</td> </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="margins">Margins</h2>
+<p>Change or reset default margins using the global white space scale.
+Negative x-axis margins are used to offset padding.
+Margin auto is used to horizontally center block-level elements with a set width.</p>
+<pre><code class="lang-css">.m0  { margin:        0 }
+.mt0 { margin-top:    0 }
+.mr0 { margin-right:  0 }
+.mb0 { margin-bottom: 0 }
+.ml0 { margin-left:   0 }
+
+.m1  { margin:        var(--space-1) }
+.mt1 { margin-top:    var(--space-1) }
+.mr1 { margin-right:  var(--space-1) }
+.mb1 { margin-bottom: var(--space-1) }
+.ml1 { margin-left:   var(--space-1) }
+
+.m2  { margin:        var(--space-2) }
+.mt2 { margin-top:    var(--space-2) }
+.mr2 { margin-right:  var(--space-2) }
+.mb2 { margin-bottom: var(--space-2) }
+.ml2 { margin-left:   var(--space-2) }
+
+.m3  { margin:        var(--space-3) }
+.mt3 { margin-top:    var(--space-3) }
+.mr3 { margin-right:  var(--space-3) }
+.mb3 { margin-bottom: var(--space-3) }
+.ml3 { margin-left:   var(--space-3) }
+
+.m4  { margin:        var(--space-4) }
+.mt4 { margin-top:    var(--space-4) }
+.mr4 { margin-right:  var(--space-4) }
+.mb4 { margin-bottom: var(--space-4) }
+.ml4 { margin-left:   var(--space-4) }
+
+.mxn1 { margin-left: -var(--space-1); margin-right: -var(--space-1); }
+.mxn2 { margin-left: -var(--space-2); margin-right: -var(--space-2); }
+.mxn3 { margin-left: -var(--space-3); margin-right: -var(--space-3); }
+.mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+</code></pre>
+<h2 id="padding">Padding</h2>
+<p>Padding utilities are only available in symmetrical orientations.
+This is to normalize the spacing used around elements.</p>
+<pre><code class="lang-css">.p1  { padding:       var(--space-1) }
+.py1 { padding-top:   var(--space-1); padding-bottom: var(--space-1) }
+.px1 { padding-left:  var(--space-1); padding-right:  var(--space-1) }
+
+.p2  { padding:       var(--space-2) }
+.py2 { padding-top:   var(--space-2); padding-bottom: var(--space-2) }
+.px2 { padding-left:  var(--space-2); padding-right:  var(--space-2) }
+
+.p3  { padding:       var(--space-3) }
+.py3 { padding-top:   var(--space-3); padding-bottom: var(--space-3) }
+.px3 { padding-left:  var(--space-3); padding-right:  var(--space-3) }
+
+.p4  { padding:       var(--space-4) }
+.py4 { padding-top:   var(--space-4); padding-bottom: var(--space-4) }
+.px4 { padding-left:  var(--space-4); padding-right:  var(--space-4) }
+</code></pre>
+<p><span class="red">Margins and padding should never be declared outside of these utilities.</span>
+This is meant to help create consistent rhythm and avoid magic numbers.
+If, for some reason, the default white space scale does not suit your design,
+customize and extend it before implementation.</p>
+
+  
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        2 KB
+        (433 bytes Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-utility-white-space-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          43 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          43 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          59 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          14 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-utility-white-space-css-source" style="max-height:50vh">/* Basscss Utility White Space */
+
+.m0  { margin:        0 }
+.mt0 { margin-top:    0 }
+.mr0 { margin-right:  0 }
+.mb0 { margin-bottom: 0 }
+.ml0 { margin-left:   0 }
+
+.m1  { margin:        var(--space-1) }
+.mt1 { margin-top:    var(--space-1) }
+.mr1 { margin-right:  var(--space-1) }
+.mb1 { margin-bottom: var(--space-1) }
+.ml1 { margin-left:   var(--space-1) }
+
+.m2  { margin:        var(--space-2) }
+.mt2 { margin-top:    var(--space-2) }
+.mr2 { margin-right:  var(--space-2) }
+.mb2 { margin-bottom: var(--space-2) }
+.ml2 { margin-left:   var(--space-2) }
+
+.m3  { margin:        var(--space-3) }
+.mt3 { margin-top:    var(--space-3) }
+.mr3 { margin-right:  var(--space-3) }
+.mb3 { margin-bottom: var(--space-3) }
+.ml3 { margin-left:   var(--space-3) }
+
+.m4  { margin:        var(--space-4) }
+.mt4 { margin-top:    var(--space-4) }
+.mr4 { margin-right:  var(--space-4) }
+.mb4 { margin-bottom: var(--space-4) }
+.ml4 { margin-left:   var(--space-4) }
+
+.mxn1 { margin-left: -var(--space-1); margin-right: -var(--space-1); }
+.mxn2 { margin-left: -var(--space-2); margin-right: -var(--space-2); }
+.mxn3 { margin-left: -var(--space-3); margin-right: -var(--space-3); }
+.mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+.p1  { padding:       var(--space-1) }
+.py1 { padding-top:   var(--space-1); padding-bottom: var(--space-1) }
+.px1 { padding-left:  var(--space-1); padding-right:  var(--space-1) }
+
+.p2  { padding:       var(--space-2) }
+.py2 { padding-top:   var(--space-2); padding-bottom: var(--space-2) }
+.px2 { padding-left:  var(--space-2); padding-right:  var(--space-2) }
+
+.p3  { padding:       var(--space-3) }
+.py3 { padding-top:   var(--space-3); padding-bottom: var(--space-3) }
+.px3 { padding-left:  var(--space-3); padding-right:  var(--space-3) }
+
+.p4  { padding:       var(--space-4) }
+.py4 { padding-top:   var(--space-4); padding-bottom: var(--space-4) }
+.px4 { padding-left:  var(--space-4); padding-right:  var(--space-4) }
+
+:root {
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+}
+
+</pre>
+  
+</footer>
+
+</section>
+
+  
+    
+<section id="utility-responsive-states" class="py2">
+  
+<header class="mt3 mb2">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#utility-responsive-states">
+          Utility-responsive-states
+        </a>
+      </h1>
+      
+        <h2 class="h5 m0">
+          basscss-utility-responsive-states
+          v0.0.2
+        </h2>
+      
+    </div>
+    <div>
+      <a href="" class="button button-small mr1 button-link blue">NPM</a>
+      <a href="https://github.com/jxnblk/basscss-utility-responsive-states" class="button button-small mr1 button-link blue">Github</a>
+    </div>
+  </div>
+  <hr class="mt1 b2 border-aqua">
+</header>
+
+
+  <h1 id="basscss-utility-responsive-states">Basscss Utility Responsive States</h1>
+<p class="hide">Responsive state utilities module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>These styles allow for conditionally showing and hiding elements using a mobile-first approach.</p>
+<h2 id="prefix-naming-convention">Prefix Naming Convention</h2>
+<div class="overflow-scroll">
+  <table class="mb2 table-light overflow-hidden border rounded">
+    <thead class="bg-darken-1">
+      <tr> <th>Prefix</th> <th>Description</th> </tr>
+    </thead>
+    <tbody>
+      <tr> <td>(no prefix)</td> <td>Not scoped to a breakpoint</td> </tr>
+      <tr> <td>sm-</td> <td>--breakpoint-sm (default: min-width 40em)</td> </tr>
+      <tr> <td>md-</td> <td>--breakpoint-md (default: min-width 52em)</td> </tr>
+      <tr> <td>lg-</td> <td>--breakpoint-lg (default: min-width 64em)</td> </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>To adjust the default breakpoints, declare custom media queries after importing the file via Rework, or manually adjust them in CSS.</p>
+<pre><code class="lang-css">.sm-show, .md-show, .lg-show {
+  display: none !important
+}
+@media (--breakpoint-sm) {
+  .sm-show { display: block !important }
+}
+@media (--breakpoint-md) {
+  .md-show { display: block !important }
+}
+@media (--breakpoint-lg) {
+  .lg-show { display: block !important }
+}
+@media (--breakpoint-sm) {
+  .sm-hide { display: none !important }
+}
+@media (--breakpoint-md) {
+  .md-hide { display: none !important }
+}
+@media (--breakpoint-lg) {
+  .lg-hide { display: none !important }
+}
+.display-none { display: none !important }
+.hide {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+</code></pre>
+<h2 id="example">Example</h2>
+<p>Resize the browser window to see the effect.</p>
+<pre><code class="lang-html">&lt;h3 class=&quot;sm-show&quot;&gt;Visible from &lt;code&gt;--breakpoint-sm&lt;/code&gt; and up.&lt;/h3&gt;
+&lt;h3 class=&quot;sm-hide red&quot;&gt;Hidden from &lt;code&gt;--breakpoint-sm&lt;/code&gt; and up.&lt;/h3&gt;
+</code></pre>
+<h2 id="responsive-line-break">Responsive Line Break</h2>
+<p>Control wrapping at different screen widths.</p>
+<pre><code class="lang-html">&lt;h1&gt;
+  Responsive Line Break
+  &lt;br class=&quot;md-show&quot;&gt;
+  To Control Wrapping
+&lt;/h1&gt;
+</code></pre>
+
+  
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        845 bytes
+        (297 bytes Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-utility-responsive-states-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          9 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          11 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          13 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          6 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-utility-responsive-states-css-source" style="max-height:50vh"><span class="hljs-comment">/* Basscss Utility Responsive States */</span>
+
+<span class="hljs-class">.sm-show</span>, <span class="hljs-class">.md-show</span>, <span class="hljs-class">.lg-show</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span>
+</span></span></span>}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
+  <span class="hljs-class">.sm-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
+  <span class="hljs-class">.md-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
+  <span class="hljs-class">.lg-show</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block <span class="hljs-important">!important</span> </span></span></span>}
+}
+
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
+  <span class="hljs-class">.sm-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
+  <span class="hljs-class">.md-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
+  <span class="hljs-class">.lg-hide</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+}
+
+<span class="hljs-class">.display-none</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span> </span></span></span>}
+
+<span class="hljs-class">.hide</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">clip</span>:<span class="hljs-value"> <span class="hljs-function">rect</span>(<span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-sm (min-width: <span class="hljs-number">40em</span>)</span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-md (min-width: <span class="hljs-number">52em</span>)</span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-lg (min-width: <span class="hljs-number">64em</span>)</span>;
+
+</pre>
+  
+</footer>
+
+</section>
+
+  
+    
+<section id="positions" class="py2">
+  
+<header class="mt3 mb2">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#positions">
+          Positions
+        </a>
+      </h1>
+      
+        <h2 class="h5 m0">
+          basscss-positions
+          v0.0.5
+        </h2>
+      
+    </div>
+    <div>
+      <a href="" class="button button-small mr1 button-link blue">NPM</a>
+      <a href="https://github.com/jxnblk/basscss-positions" class="button button-small mr1 button-link blue">Github</a>
+    </div>
+  </div>
+  <hr class="mt1 b2 border-aqua">
+</header>
+
+
+  <h1 id="basscss-positions">Basscss Positions</h1>
+<p class="hide">Positioning utilities for Basscss.</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>These styles alter the default document flow.</p>
+<p><span class="red">Use positions with caution.
+They are often unnecessary and commonly misused.</span><br>
+See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for more info.</p>
+<pre><code class="lang-css">.relative { position: relative }
+.absolute { position: absolute }
+.fixed    { position: fixed }
+
+.top-0    { top: 0 }
+.right-0  { right: 0 }
+.bottom-0 { bottom: 0 }
+.left-0   { left: 0 }
+
+.z1 { z-index: 1 }
+.z2 { z-index: 2 }
+.z3 { z-index: 3 }
+.z4 { z-index: 4 }
+
+.absolute-center {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: table;
+}
+</code></pre>
+
+  
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        392 bytes
+        (216 bytes Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-positions-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          12 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          12 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          17 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          8 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-positions-css-source" style="max-height:50vh"><span class="hljs-comment">/* Basscss Positions */</span>
+
+<span class="hljs-class">.relative</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative </span></span></span>}
+<span class="hljs-class">.absolute</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute </span></span></span>}
+<span class="hljs-class">.fixed</span>    <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> fixed </span></span></span>}
+
+<span class="hljs-class">.top-0</span>    <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.right-0</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">right</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.bottom-0</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+<span class="hljs-class">.left-0</span>   <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+
+<span class="hljs-class">.z1</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">1</span> </span></span></span>}
+<span class="hljs-class">.z2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">2</span> </span></span></span>}
+<span class="hljs-class">.z3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">3</span> </span></span></span>}
+<span class="hljs-class">.z4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">4</span> </span></span></span>}
+
+<span class="hljs-class">.absolute-center</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">right</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> table</span></span>;
+<span class="hljs-rule">}</span></span>
+
+</pre>
+  
+</footer>
+
+</section>
+
+  
+    
+<section id="ui-utility-button-sizes" class="py2">
+  
+<header class="mt3 mb2">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#ui-utility-button-sizes">
+          Ui-utility-button-sizes
+        </a>
+      </h1>
+      
+        <h2 class="h5 m0">
+          basscss-ui-utility-button-sizes
+          v1.0.0
+        </h2>
+      
+    </div>
+    <div>
+      <a href="" class="button button-small mr1 button-link blue">NPM</a>
+      <a href="https://github.com/jxnblk/basscss-ui-utility-button-sizes" class="button button-small mr1 button-link blue">Github</a>
+    </div>
+  </div>
+  <hr class="mt1 b2 border-aqua">
+</header>
+
+
+  <h1 id="basscss-ui-utility-button-sizes">Basscss UI Utility Button Sizes</h1>
+<p>Button size extension utilities module for Basscss - <a href="http://basscss.com">http://basscss.com</a></p>
+<p>These utilities extend the <code>basscss-base-buttons</code> styles.
+To change the line-height and padding but leave the font-size the same,
+use button size extensions.</p>
+<pre><code class="lang-html">&lt;button type=&quot;button&quot; class=&quot;button-big button-blue&quot;&gt;Burgers&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;button-blue&quot;&gt;Fries&lt;/button&gt;
+&lt;div class=&quot;mb1 md-hide&quot;&gt;&lt;/div&gt;
+&lt;button type=&quot;button&quot; class=&quot;button-narrow button-blue&quot;&gt;Onion Rings&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;button-small button-blue&quot;&gt;Shakes&lt;/button&gt;
+</code></pre>
+
+  
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        469 bytes
+        (191 bytes Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-ui-utility-button-sizes-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          4 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          4 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          9 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          8 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-ui-utility-button-sizes-css-source" style="max-height:50vh">/* Basscss UI Utility Button Sizes */
+
+.button-small {
+  padding: var(--button-small-padding-y) var(--button-small-padding-x);
+}
+
+.button-big {
+  padding: var(--button-big-padding-y) var(--button-big-padding-x);
+}
+
+.button-narrow {
+  padding-left: var(--space-1);
+  padding-right: var(--space-1);
+}
+
+:root {
+  --space-1: .5rem;
+  --button-small-padding-y: .25rem;
+  --button-small-padding-x: .5rem;
+  --button-big-padding-y: 1rem;
+  --button-big-padding-x: 1.25rem;
+}
+
+</pre>
+  
+</footer>
+
+</section>
+
+  
+
+
+
+    
+
+
+  <div class="clearfix mxn2 py2">
+    
+      <a href="/docs/base" class="h3 left button ml2 mr2 button-link blue">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
+          <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
+        </svg>
+        Base
+      </a>
+    
+    
+      <a href="/docs/layout" class="h3 right button ml2 mr2 button-link blue">
+        Layout
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
+          <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
+        </svg>
+      </a>
+    
+  </div>
+
+
+
+  </div>
+</div>
+
+<div class="sm-hide fixed top-0 right-0">
+  <a href="#nav" class="button button-transparent">Menu</a>
+</div>
+
+<div id="nav" class="sm-fixed sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
+  
+
+<hr class="sm-hide mt1 mb1 b2 border-aqua">
+
+<a href="/" class="h1 button block button-transparent aqua">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
+    <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
+  </svg>
+</a>
+
+<a href="/" class="h4 caps button block button-transparent">Basscss</a>
+
+<ul class="flex flex-wrap list-reset mt2 mb1">
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/base"
+      class="block button button-transparent
+      ">
+      Base
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/utility"
+      class="block button button-transparent
+      bg-aqua">
+      Utility
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/layout"
+      class="block button button-transparent
+      ">
+      Layout
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color"
+      class="block button button-transparent
+      ">
+      Color
+    </a>
+    
+  </li>
+
+  <li class="col-12 mt2 mb2">
+    <a href="/docs/guides"
+      class="block button button-transparent
+      ">
+      Guides
+    </a>
+    
+      <ul class="h6 flex flex-wrap list-reset mb0">
+        
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/basics"
+      class="block button button-transparent
+      ">
+      Basics
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/layout"
+      class="block button button-transparent
+      ">
+      Page-layout
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/flex-layout"
+      class="block button button-transparent
+      ">
+      Flex Object Layout
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/ui"
+      class="block button button-transparent
+      ">
+      UI Elements
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/tips"
+      class="block button button-transparent
+      ">
+      Tips & Tricks
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/custom-builds"
+      class="block button button-transparent
+      ">
+      Custom Builds
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/css4"
+      class="block button button-transparent
+      ">
+      CSS4 Syntax
+    </a>
+    
+  </li>
+
+      </ul>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/principles"
+      class="block button button-transparent
+      ">
+      Design Principles
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/showcase"
+      class="block button button-transparent
+      ">
+      Built with Basscss
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/styles"
+      class="block button button-transparent
+      ">
+      Table of Styles
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/stats"
+      class="block button button-transparent
+      ">
+      Stats
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color-combinations"
+      class="block button button-transparent
+      ">
+      Color Combos
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/customize"
+      class="block button button-transparent
+      ">
+      Customize
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/resources"
+      class="block button button-transparent
+      ">
+      Tools & Resources
+    </a>
+    
+  </li>
+
+</ul>
+
+<hr class="mt1 mb1 b2 border-aqua">
+
+<footer class="flex flex-wrap mb2">
+  <a href="//github.com/jxnblk/basscss" class="h6 block col-6 sm-col-12 px2 button button-small button-transparent">Github</a>
+  <a href="//jxnblk.com" class="h6 block col-6 sm-col-12 px2 button button-small button-transparent">
+    Made by Jxnblk
+  </a>
+  </p>
 </footer>
 
 
@@ -296,11 +1197,13 @@ s.parentNode.insertBefore(wf, s);
 
 
 
-        </div>
-      </div>
-    </div>
-  </div>
+
+
+
+
+
 </div>
+
 
 </body>
 </html>

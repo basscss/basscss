@@ -2,10 +2,12 @@
 var _ = require('lodash');
 var fs = require('fs-extra');
 var path = require('path');
-var autobass = require('autobass');
+var autobass = require('../../autobass');
+var stringify = require('json-stringify-safe');
 
 var helpers = require('../docs/src/helpers');
 var modules = require('../docs/src/modules');
+
 
 // Data
 var data = require('../package.json');
@@ -20,6 +22,7 @@ data.stylesheet = 'http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.0/bassdock.
 data.asset_path = 'http://d2v52k3cl9vedd.cloudfront.net/basscss/';
 
 data.routes = require('../docs/src/routes');
+//data.docs = data.routes[1].routes;
 data.showcase = require('../docs/src/showcase');
 data.stats = require('../docs/src/stats');
 data.colorCombinations = require('../docs/src/color-combinations');
@@ -47,11 +50,10 @@ Object.keys(helpers).forEach(function(key) {
   data[key] = helpers[key];
 });
 
-
 var pages = autobass(data);
 
 function writePage(page) {
-  var pagePath = path.join(__dirname, '../beta' + page.fullpath);
+  var pagePath = path.join(__dirname, '../beta' + page.path);
   fs.ensureDirSync(pagePath);
   fs.writeFileSync(pagePath + '/index.html', page.body);
   console.log((pagePath + ' written'));

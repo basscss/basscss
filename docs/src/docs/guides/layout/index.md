@@ -1,12 +1,7 @@
----
----
 
 <p class="h3">
   Creating page layouts in Basscss is incredibly fast and flexible.
   This guide will walk you through common layout patterns to create an entire page with a basic information hierarchy.
-  To see what’s in this guide, check out the
-  <a href="/docs/guides/layout/demo">demo</a>
-  before you start, or just jump right in.
 </p>
 
 
@@ -321,8 +316,6 @@ Note the container is placed inside the footer element to control max-width.
 
 
 <p class="h3">
-  At this point, you should have created a page resembling the
-  <a href="/docs/guides/layout/demo">demo</a>.
   Be sure to check out the other guides to learn more about using Basscss.
 </p>
 

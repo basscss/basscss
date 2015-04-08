@@ -1,5 +1,3 @@
----
----
 
 <p class="h3">
   Basscss is a collection of interoperable CSS modules

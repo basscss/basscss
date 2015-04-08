@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>
     Basscss
-    
+     | Base
   </title>
   <meta name="author" content="Brent Jackson">
   <meta name="description" content="Low-level CSS toolkit">
@@ -17,216 +17,35 @@
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
+  <style>
+    @media (min-width: 40em) {
+      .sm-fixed { position: fixed }
+      .sm-w12m { width: 12em }
+      .sm-ml12m { margin-left: 12em }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="px2">
-  <div class="clearfix flex flex-stretch mxn2">
-    
-      <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
-          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto border-right">
-            
-
-
-<a href="/" class="h1 button block button-transparent aqua mt2">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
-    <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
-  </svg>
-</a>
-
-<a href="/" class="h4 caps mb3 button block button-transparent">Basscss</a>
-
-<ul class="list-reset mb3">
-  
-  <li>
-    <a href="/">
-      Home
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs">
-      Docs
-    </a>
-    
-      
-  <li>
-    <a href="/docs/getting-started">
-      Getting-started
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/base">
-      Base
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/utility">
-      Utility
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/layout">
-      Layout
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/color">
-      Color
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides">
-      Guides
-    </a>
-    
-      
-  <li>
-    <a href="/docs/guides/basics">
-      Basics
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides/layout">
-      Page-layout
-    </a>
-    
-      
-  <li>
-    <a href="/docs/guides/layout/demo">
-      Demo
-    </a>
-    
-  </li>
-
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides/flex-layout">
-      Flex Object Layout
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides/ui">
-      UI Elements
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides/tips">
-      Tips & Tricks
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides/custom-builds">
-      Custom Builds
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/guides/css4">
-      CSS4 Syntax
-    </a>
-    
-  </li>
-
-    
-  </li>
-
-  <li>
-    <a href="/docs/principles">
-      Design Principles
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/showcase">
-      Built with Basscss
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/styles">
-      Table of Styles
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/stats">
-      Stats
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/color-combinations">
-      Color Combos
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/customize">
-      Customize
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs/resources">
-      Tools & Resources
-    </a>
-    
-  </li>
-
-    
-  </li>
-
-</ul>
-
-
-
-<a href="//github.com/jxnblk/basscss" class="button block mb4 button-transparent">
-  Github
-</a>
-
-
-          </div>
-      </div>
-    
-    <div class="sm-col sm-col-9 md-col-10 flex flex-column" style="min-height:100vh">
-      <div class="flex-auto full-width px2 container-small">
-        <header class="mt4">
+<div class="sm-ml12m">
+  <div class="container-small px2 py2">
+    <header class="mt4">
   <h1 class="h1 h1-responsive caps m0">
-    false
+    Base
   </h1>
   <div class="avenir h5 bold mb3">
     <a href="/" class="button button-small mr1 button-link blue">Home</a>
     
+      
+        /
+        <a href="/docs" class="button button-small ml1 mr1 button-link blue">
+          Docs
+        </a>
+      
+    
+    /
+    <span class="h5 bold inline-block ml1" style="vertical-align:middle">Base</span>
   </div>
   <hr class="b2 border-aqua">
 </header>
@@ -234,38 +53,969 @@
 
 
 
-        <div class="py2">
-          
+    
 <p class="h3">
   Base element styles control native HTML elements such as headings, paragraphs, buttons, and forms in a systematic and opinionated way.
   These styles include typographical considerations and utilities derived from base elements, such as typefaces, the type scale, forms, and buttons.
 </p>
 
 
-
-
-          
-
-
-
-
-          <hr class="mb0 b2 border-aqua">
-
-<footer class="mb3">
-  <div class="">
-    <div class="flex flex-wrap flex-baseline caps mxn2">
-      <a href="/" class="h6 button button-small m2 button-link">Home</a>
-      <a href="/docs" class="h6 button button-small m2 button-link">Docs</a>
-      <a href="/docs/getting-started" class="h6 button button-small m2 button-link">Download</a>
-      <a href="//github.com/jxnblk/basscss" class="h6 button button-small m2 button-link">Github</a>
-      <div class="flex-grow"></div>
-      <div class="flex-none p2 nowrap">
-        <p class="h6 bold m0">
-          Made by <a href="//jxnblk.com" class="h6 button button-small button-link">Jxnblk</a>
-        </p>
-      </div>
+  
+    
+<section id="base-reset" class="py2">
+  
+<header class="mt3 mb2">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#base-reset">
+          Base-reset
+        </a>
+      </h1>
+      
+        <h2 class="h5 m0">
+          basscss-base-reset
+          v0.0.3
+        </h2>
+      
+    </div>
+    <div>
+      <a href="" class="button button-small mr1 button-link blue">NPM</a>
+      <a href="https://github.com/jxnblk/basscss-base-reset" class="button button-small mr1 button-link blue">Github</a>
     </div>
   </div>
+  <hr class="mt1 b2 border-aqua">
+</header>
+
+
+  <h1 id="basscss-base-reset">Basscss Base Reset</h1>
+<p>Base element reset module for Basscss <a href="http://basscss.com">http://basscss.com</a></p>
+<p>This lightweight reset for base elements sets margin 0 for the body and button elements, sets font-family inherit for form elements, and sets max-width 100% for images.</p>
+
+  
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        159 bytes
+        (135 bytes Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-base-reset-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          4 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          8 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          5 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          5 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-base-reset-css-source" style="max-height:50vh">
+<span class="hljs-tag">body</span>, <span class="hljs-tag">button</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> </span></span></span>}
+
+<span class="hljs-tag">button</span>, <span class="hljs-tag">input</span>, <span class="hljs-tag">select</span>, <span class="hljs-tag">textarea</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> inherit</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-tag">img</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span> </span></span></span>}
+<span class="hljs-tag">svg</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">max-height</span>:<span class="hljs-value"> <span class="hljs-number">100%</span> </span></span></span>}
+
+</pre>
+  
+</footer>
+
+</section>
+
+  
+    
+<section id="base-typography" class="py2">
+  
+<header class="mt3 mb2">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#base-typography">
+          Base-typography
+        </a>
+      </h1>
+      
+        <h2 class="h5 m0">
+          basscss-base-typography
+          v0.0.3
+        </h2>
+      
+    </div>
+    <div>
+      <a href="" class="button button-small mr1 button-link blue">NPM</a>
+      <a href="https://github.com/jxnblk/basscss-base-typography" class="button button-small mr1 button-link blue">Github</a>
+    </div>
+  </div>
+  <hr class="mt1 b2 border-aqua">
+</header>
+
+
+  <h1 id="basscss-base-typography">Basscss Base Typography</h1>
+<p>Base typography styles module for Basscss <a href="http://basscss.com">http://basscss.com</a></p>
+<h2 id="base-type-scale">Base type scale</h2>
+<p>Typographic elements are normalized to a simple type scale that works well across devices. Default top and bottom margins are set for commonly-used typographic elements.</p>
+<pre><code class="lang-html">&lt;h1&gt;Hamburger 1&lt;/h1&gt;
+&lt;h2&gt;Hamburger 2&lt;/h2&gt;
+&lt;h3&gt;Hamburger 3&lt;/h3&gt;
+&lt;h4&gt;Hamburger 4&lt;/h4&gt;
+&lt;h5&gt;Hamburger 5&lt;/h5&gt;
+&lt;h6&gt;Hamburger 6&lt;/h6&gt;
+</code></pre>
+<h2 id="type-scale-utilities">Type scale utilities</h2>
+<p>The <code>.h1</code> – <code>.h6</code> font-size utilities can be used to override an element’s default size.</p>
+<pre><code class="lang-html">&lt;p class=&quot;h1&quot;&gt;Pastrami 1&lt;/p&gt;
+&lt;p class=&quot;h2&quot;&gt;Pastrami 2&lt;/p&gt;
+&lt;p class=&quot;h3&quot;&gt;Pastrami 3&lt;/p&gt;
+&lt;p class=&quot;h4&quot;&gt;Pastrami 4&lt;/p&gt;
+&lt;p class=&quot;h5&quot;&gt;Pastrami 5&lt;/p&gt;
+&lt;p class=&quot;h6&quot;&gt;Pastrami 6&lt;/p&gt;
+</code></pre>
+<h2 id="lists">Lists</h2>
+<p>By default, lists have bullets or numbers and padding left.</p>
+<pre><code class="lang-html">&lt;ul&gt;
+  &lt;li&gt;Half-Smoke&lt;/li&gt;
+  &lt;li&gt;Kielbasa&lt;/li&gt;
+  &lt;li&gt;Bologna&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;Prosciutto&lt;/li&gt;
+  &lt;li&gt;Andouille&lt;/li&gt;
+  &lt;li&gt;Bratwurst&lt;/li&gt;
+  &lt;li&gt;Chorizo&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+<p>To remove default list styling, use <code>.list-reset</code>.</p>
+<pre><code class="lang-html">&lt;ul class=&quot;list-reset&quot;&gt;
+  &lt;li&gt;List Reset&lt;/li&gt;
+  &lt;li&gt;Removes bullets&lt;/li&gt;
+  &lt;li&gt;Removes numbers&lt;/li&gt;
+  &lt;li&gt;Removes padding&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>To set lists inline, use utilities.</p>
+<pre><code class="lang-html">&lt;ul class=&quot;list-reset&quot;&gt;
+  &lt;li class=&quot;inline-block mr1&quot;&gt;Half-Smoke&lt;/li&gt;
+  &lt;li class=&quot;inline-block mr1&quot;&gt;Kielbasa&lt;/li&gt;
+  &lt;li class=&quot;inline-block mr1&quot;&gt;Bologna&lt;/li&gt;
+  &lt;li class=&quot;inline-block mr1&quot;&gt;Prosciutto&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+  
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        2 KB
+        (565 bytes Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-base-typography-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          17 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          35 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          51 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          27 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-base-typography-css-source" style="max-height:50vh">/* Basscss Base Typography */
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  line-height: var(--heading-line-height);
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+p, dl, ol, ul {
+  font-size: var(--h4);
+  margin-top: 0;
+  margin-bottom: var(--space-2);
+}
+
+ol, ul {
+  padding-left: var(--space-3);
+}
+
+pre, code, samp {
+  font-family: var(--monospace-font-family);
+  font-size: inherit;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: var(--space-2);
+  overflow-x: scroll;
+}
+
+hr {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+blockquote {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-3);
+  margin-left: 0;
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+}
+  blockquote,
+  blockquote p {
+    font-size: var(--h3);
+    font-style: italic;
+  }
+
+h1, .h1 { font-size: var(--h1) }
+h2, .h2 { font-size: var(--h2) }
+h3, .h3 { font-size: var(--h3) }
+h4, .h4 { font-size: var(--h4) }
+h5, .h5 { font-size: var(--h5) }
+h6, .h6 { font-size: var(--h6) }
+
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+}
+
+:root {
+  --font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  --line-height: 1.5;
+  --heading-font-family: var(--font-family);
+  --heading-font-weight: bold;
+  --heading-line-height: 1.25;
+  --monospace-font-family: 'Source Code Pro', Consolas, monospace;
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --h4: 1rem;
+  --h5: .875rem;
+  --h6: .75rem;
+  --bold-font-weight: bold;
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+}
+
+</pre>
+  
+</footer>
+
+</section>
+
+  
+    
+<section id="base-forms" class="py2">
+  
+<header class="mt3 mb2">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#base-forms">
+          Base-forms
+        </a>
+      </h1>
+      
+        <h2 class="h5 m0">
+          basscss-base-forms
+          v1.0.6
+        </h2>
+      
+    </div>
+    <div>
+      <a href="" class="button button-small mr1 button-link blue">NPM</a>
+      <a href="https://github.com/jxnblk/basscss-base-forms" class="button button-small mr1 button-link blue">Github</a>
+    </div>
+  </div>
+  <hr class="mt1 b2 border-aqua">
+</header>
+
+
+  <h1 id="basscss-base-forms">Basscss Base Forms</h1>
+<p>Base form element styles module for Basscss - <a href="http://basscss.com">http://basscss.com</a></p>
+<p>Forms use base styles for their structure with color styles applied to adjust the look and feel.
+This creates a rhythmic consitency among all forms while allowing thematic differences where needed.
+Form elements do not rely on nested styles or markup structure,
+so utility styles can be used for contextual adjustments.</p>
+<h2 id="inline-forms">Inline Forms</h2>
+<p>By default, form elements display inline.</p>
+<pre><code class="lang-html">&lt;form&gt;
+  &lt;label&gt;Search&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;mb0 field-light&quot;&gt;
+  &lt;button class=&quot;button&quot;&gt;Go&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<h2 id="stacked-forms">Stacked Forms</h2>
+<p>Use <code>.block</code> and other utilities to stack form elements.
+The use of utilities allows for a lot of flexibility when building form layouts.</p>
+<pre><code class="lang-html">&lt;form class=&quot;sm-col-6&quot;&gt;
+  &lt;label&gt;Email Address&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;block full-width field-light&quot;&gt;
+  &lt;label&gt;Password&lt;/label&gt;
+  &lt;input type=&quot;password&quot; class=&quot;block full-width field-light&quot;&gt;
+  &lt;label&gt;Select&lt;/label&gt;
+  &lt;select class=&quot;block full-width field-light&quot;&gt;
+    &lt;option&gt;Option 1&lt;/option&gt;
+    &lt;option&gt;Option 2&lt;/option&gt;
+    &lt;option&gt;Option 3&lt;/option&gt;
+    &lt;option&gt;Option 4&lt;/option&gt;
+    &lt;option&gt;Option 5&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;label class=&quot;block full-width mb2&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked&gt;
+    Remember me
+  &lt;/label&gt;
+  &lt;button type=&quot;submit&quot; class=&quot;button&quot;&gt;Sign In&lt;/button&gt;
+  &lt;button type=&quot;reset&quot; class=&quot;button bg-gray&quot;&gt;Cancel&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<h2 id="fieldsets">Fieldsets</h2>
+<p>Fieldsets can be reset with <code>.fieldset-reset</code> to allow for easier styling of the fieldset and legend.</p>
+<pre><code class="lang-html">&lt;form class=&quot;sm-col-6&quot;&gt;
+  &lt;fieldset class=&quot;fieldset-reset&quot;&gt;
+    &lt;legend class=&quot;h3 bold&quot;&gt;Fieldset Legend&lt;/legend&gt;
+    &lt;label&gt;Hamburger&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;block full-width field-light&quot;&gt;
+    &lt;label&gt;Hot Dog&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;block full-width field-light&quot;&gt;
+  &lt;/fieldset&gt;
+  &lt;button type=&quot;sumbit&quot; class=&quot;button&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+
+  
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        1 KB
+        (406 bytes Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-base-forms-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          8 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          22 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          25 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          16 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-base-forms-css-source" style="max-height:50vh"><span class="hljs-comment">/* Basscss Base Forms */</span>
+
+<span class="hljs-tag">input</span>,
+<span class="hljs-tag">select</span>,
+<span class="hljs-tag">textarea</span>,
+<span class="hljs-tag">fieldset</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--form-field-font-size)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>, .<span class="hljs-number">5rem</span>)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=text]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=datetime]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=datetime-local]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=email]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=month]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=number]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=password]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=search]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=tel]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=time]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=url]</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=week]</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--form-field-height)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--form-field-padding-y) <span class="hljs-function">var</span>(--form-field-padding-x)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">vertical-align</span>:<span class="hljs-value"> middle</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">-webkit-appearance</span>:<span class="hljs-value"> none</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-tag">select</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">line-height</span>:<span class="hljs-value"> <span class="hljs-number">1.75</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--form-field-padding-y) <span class="hljs-function">var</span>(--form-field-padding-x)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-tag">select</span><span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[multiple]</span>) <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--form-field-height)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">vertical-align</span>:<span class="hljs-value"> middle</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-tag">textarea</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">line-height</span>:<span class="hljs-value"> <span class="hljs-number">1.75</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--form-field-padding-y) <span class="hljs-function">var</span>(--form-field-padding-x)</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.fieldset-reset</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.fieldset-reset</span> <span class="hljs-tag">legend</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--form-field-font-size</span>:<span class="hljs-value"> <span class="hljs-number">1rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--form-field-height</span>:<span class="hljs-value"> <span class="hljs-number">2.25rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--form-field-padding-y</span>:<span class="hljs-value"> .<span class="hljs-number">5rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--form-field-padding-x</span>:<span class="hljs-value"> .<span class="hljs-number">5rem</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+</pre>
+  
+</footer>
+
+</section>
+
+  
+    
+<section id="base-buttons" class="py2">
+  
+<header class="mt3 mb2">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#base-buttons">
+          Base-buttons
+        </a>
+      </h1>
+      
+        <h2 class="h5 m0">
+          basscss-base-buttons
+          v1.0.7
+        </h2>
+      
+    </div>
+    <div>
+      <a href="" class="button button-small mr1 button-link blue">NPM</a>
+      <a href="https://github.com/jxnblk/basscss-base-buttons" class="button button-small mr1 button-link blue">Github</a>
+    </div>
+  </div>
+  <hr class="mt1 b2 border-aqua">
+</header>
+
+
+  <h1 id="basscss-base-buttons">Basscss Base Buttons</h1>
+<p>Base button styles module for Basscss - <a href="http://basscss.com">http://basscss.com</a></p>
+<p>Structural styles and resets for buttons are set in this base element styles module.
+All buttons share common padding and height, well suited for tap targets on touchscreen displays.</p>
+<pre><code class="lang-html">&lt;div class=&quot;mb1&quot;&gt;
+  &lt;button&gt;Button&lt;/button&gt;
+  &lt;a href=&quot;#!&quot; class=&quot;button&quot;&gt;Link Button&lt;/a&gt;
+  &lt;input type=&quot;button&quot; class=&quot;button&quot; value=&quot;Input Button&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Color style modules and other custom extensions adjust their surface-level appearance.</p>
+<pre><code class="lang-html">&lt;div class=&quot;mb1&quot;&gt;
+  &lt;button class=&quot;button mb1&quot;&gt;Button&lt;/button&gt;
+  &lt;button class=&quot;button-outline blue mb1&quot;&gt;Button Outline&lt;/button&gt;
+  &lt;button class=&quot;button black bg-silver mb1&quot;&gt;Silver Button&lt;/button&gt;
+  &lt;button class=&quot;button bg-red mb1&quot;&gt;Button Red&lt;/button&gt;
+  &lt;button class=&quot;button-transparent mb1&quot;&gt;Transparent Button&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Note: adjusting the line-height and padding variables may require adjustments to form element variables to maintain vertical alignment.</p>
+
+  
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        828 bytes
+        (363 bytes Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-base-buttons-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          5 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          9 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          22 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          18 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-base-buttons-css-source" style="max-height:50vh"><span class="hljs-comment">/* Basscss Base Buttons */</span>
+
+<span class="hljs-tag">button</span>,
+<span class="hljs-class">.button</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--button-font-size)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--button-font-weight)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> none</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">cursor</span>:<span class="hljs-value"> pointer</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline-block</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">line-height</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--button-line-height)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--button-padding-y) <span class="hljs-function">var</span>(--button-padding-x)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-width) solid transparent</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">vertical-align</span>:<span class="hljs-value"> middle</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">-webkit-appearance</span>:<span class="hljs-value"> none</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-tag">button</span><span class="hljs-pseudo">:after</span>,
+<span class="hljs-tag">button</span><span class="hljs-pseudo">:before</span>,
+<span class="hljs-class">.button</span><span class="hljs-pseudo">:after</span>,
+<span class="hljs-class">.button</span><span class="hljs-pseudo">:before</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-pseudo">::-moz-focus-inner</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.button</span><span class="hljs-pseudo">:hover</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> none </span></span></span>}
+
+<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--button-font-size</span>:<span class="hljs-value"> inherit</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--button-font-weight</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--bold-font-weight, bold)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--button-line-height</span>:<span class="hljs-value"> <span class="hljs-number">1.125rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--button-padding-y</span>:<span class="hljs-value"> .<span class="hljs-number">5rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">--button-padding-x</span>:<span class="hljs-value"> <span class="hljs-number">1rem</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+</pre>
+  
+</footer>
+
+</section>
+
+  
+    
+<section id="base-tables" class="py2">
+  
+<header class="mt3 mb2">
+  <div class="flex flex-wrap flex-center py1">
+    <div class="flex-auto m0">
+      <h1 class="m0">
+        <a href="#base-tables">
+          Base-tables
+        </a>
+      </h1>
+      
+        <h2 class="h5 m0">
+          basscss-base-tables
+          v0.1.1
+        </h2>
+      
+    </div>
+    <div>
+      <a href="" class="button button-small mr1 button-link blue">NPM</a>
+      <a href="https://github.com/jxnblk/basscss-base-tables" class="button button-small mr1 button-link blue">Github</a>
+    </div>
+  </div>
+  <hr class="mt1 b2 border-aqua">
+</header>
+
+
+  <h1 id="basscss-base-tables">Basscss Base Tables</h1>
+<p class="hide">Base table element styles module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Default table styles are defined in base.
+Use the <code>table-light</code> color style from the <code>basscss-color-tables</code> module
+with other color utilities or create custom theme extensions to suit your needs.</p>
+<pre><code class="lang-html">&lt;div class=&quot;overflow-scroll&quot;&gt;
+  &lt;table class=&quot;table-light&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Artist&lt;/th&gt; &lt;th&gt;Album&lt;/th&gt; &lt;th&gt;Release Date&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt; &lt;td&gt;Huey Lewis and the News&lt;/td&gt; &lt;td&gt;Sports&lt;/td&gt; &lt;td&gt;1983&lt;/td&gt; &lt;/tr&gt;
+      &lt;tr&gt; &lt;td&gt;Phil Collins&lt;/td&gt; &lt;td&gt;No Jacket Required&lt;/td&gt; &lt;td&gt;1985&lt;/td&gt; &lt;/tr&gt;
+      &lt;tr&gt; &lt;td&gt;Peter Gabriel&lt;/td&gt; &lt;td&gt;So&lt;/td&gt; &lt;td&gt;1986&lt;/td&gt; &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+
+  
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        607 bytes
+        (285 bytes Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-base-tables-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          6 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          7 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          18 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          17 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-base-tables-css-source" style="max-height:50vh">/* Basscss Base Tables */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: var(--table-header-font-weight);
+}
+
+th,
+td {
+  padding: var(--table-cell-padding-y) var(--table-cell-padding-x);
+  line-height: inherit;
+}
+
+th { vertical-align: bottom }
+td { vertical-align: top }
+
+:root {
+  --bold-font-weight: bold;
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+  --table-header-font-weight: var(--bold-font-weight);
+  --table-cell-padding-x: var(--space-2);
+  --table-cell-padding-y: .25rem;
+}
+
+</pre>
+  
+</footer>
+
+</section>
+
+  
+
+
+
+    
+
+
+  <div class="clearfix mxn2 py2">
+    
+    
+      <a href="/docs/utility" class="h3 right button ml2 mr2 button-link blue">
+        Utility
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
+          <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
+        </svg>
+      </a>
+    
+  </div>
+
+
+
+  </div>
+</div>
+
+<div class="sm-hide fixed top-0 right-0">
+  <a href="#nav" class="button button-transparent">Menu</a>
+</div>
+
+<div id="nav" class="sm-fixed sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
+  
+
+<hr class="sm-hide mt1 mb1 b2 border-aqua">
+
+<a href="/" class="h1 button block button-transparent aqua">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
+    <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
+  </svg>
+</a>
+
+<a href="/" class="h4 caps button block button-transparent">Basscss</a>
+
+<ul class="flex flex-wrap list-reset mt2 mb1">
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/base"
+      class="block button button-transparent
+      bg-aqua">
+      Base
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/utility"
+      class="block button button-transparent
+      ">
+      Utility
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/layout"
+      class="block button button-transparent
+      ">
+      Layout
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color"
+      class="block button button-transparent
+      ">
+      Color
+    </a>
+    
+  </li>
+
+  <li class="col-12 mt2 mb2">
+    <a href="/docs/guides"
+      class="block button button-transparent
+      ">
+      Guides
+    </a>
+    
+      <ul class="h6 flex flex-wrap list-reset mb0">
+        
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/basics"
+      class="block button button-transparent
+      ">
+      Basics
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/layout"
+      class="block button button-transparent
+      ">
+      Page-layout
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/flex-layout"
+      class="block button button-transparent
+      ">
+      Flex Object Layout
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/ui"
+      class="block button button-transparent
+      ">
+      UI Elements
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/tips"
+      class="block button button-transparent
+      ">
+      Tips & Tricks
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/custom-builds"
+      class="block button button-transparent
+      ">
+      Custom Builds
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/css4"
+      class="block button button-transparent
+      ">
+      CSS4 Syntax
+    </a>
+    
+  </li>
+
+      </ul>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/principles"
+      class="block button button-transparent
+      ">
+      Design Principles
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/showcase"
+      class="block button button-transparent
+      ">
+      Built with Basscss
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/styles"
+      class="block button button-transparent
+      ">
+      Table of Styles
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/stats"
+      class="block button button-transparent
+      ">
+      Stats
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color-combinations"
+      class="block button button-transparent
+      ">
+      Color Combos
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/customize"
+      class="block button button-transparent
+      ">
+      Customize
+    </a>
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/resources"
+      class="block button button-transparent
+      ">
+      Tools & Resources
+    </a>
+    
+  </li>
+
+</ul>
+
+<hr class="mt1 mb1 b2 border-aqua">
+
+<footer class="flex flex-wrap mb2">
+  <a href="//github.com/jxnblk/basscss" class="h6 block col-6 sm-col-12 px2 button button-small button-transparent">Github</a>
+  <a href="//jxnblk.com" class="h6 block col-6 sm-col-12 px2 button button-small button-transparent">
+    Made by Jxnblk
+  </a>
+  </p>
 </footer>
 
 
@@ -294,11 +1044,13 @@ s.parentNode.insertBefore(wf, s);
 
 
 
-        </div>
-      </div>
-    </div>
-  </div>
+
+
+
+
+
 </div>
+
 
 </body>
 </html>

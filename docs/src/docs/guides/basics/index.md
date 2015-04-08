@@ -1,5 +1,3 @@
----
----
 
 <p class="h3">
   Understanding the basics of designing for the web with CSS

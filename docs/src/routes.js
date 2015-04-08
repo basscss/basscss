@@ -3,19 +3,19 @@
 
 module.exports = [
   {
-    name: 'home',
+    name: 'Basscss',
     path: '/',
-    layout: './layouts/base.html',
+    //layout: './layouts/base.html',
   },
   {
     name: 'docs',
     path: '/docs',
-    layout: './layouts/base.html',
+    //layout: './layouts/base.html',
     routes: [
-      {
-        name: 'getting-started',
-        path: '/getting-started',
-      },
+      //{
+      //  name: 'getting-started',
+      //  path: '/getting-started',
+      //},
       {
         name: 'base',
         path: '/base',
@@ -76,9 +76,9 @@ module.exports = [
           {
             name: 'page-layout',
             path: '/layout',
-            routes: [
-              { name: 'demo', path: '/demo' }
-            ],
+            //routes: [
+            //  { name: 'demo', path: '/demo' }
+            //],
             description: 'Creating page layouts in Basscss is incredibly fast and flexible. This guide will walk you through common layout patterns to create an entire page with a basic information hierarchy.',
           },
           {

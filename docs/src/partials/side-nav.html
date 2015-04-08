@@ -1,30 +1,36 @@
+<% 
+var docs = routes[1].routes;
+%>
 
-<% function renderLink(route) { %>
-  <li>
-    <a href="<%= route.fullpath %>">
-      <%= route.title %>
-    </a>
-    <% if (route.routes) { %>
-      <% route.routes.map(renderLink) %>
-    <% } %>
-  </li>
-<% } %>
+<hr class="sm-hide mt1 mb1 b2 border-aqua">
 
-<a href="/" class="h1 button block button-transparent aqua mt2">
+<a href="/" class="h1 button block button-transparent aqua">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
 </a>
 
-<a href="/" class="h4 caps mb3 button block button-transparent">Basscss</a>
+<a href="/" class="h4 caps button block button-transparent">Basscss</a>
 
-<ul class="list-reset mb3">
-  <% routes.map(renderLink) %>
+<ul class="flex flex-wrap list-reset mt2 mb1">
+  <% docs.map(renderLink) %>
 </ul>
 
+<%= include('footer') %>
 
 
-<a href="//github.com/jxnblk/basscss" class="button block mb4 button-transparent">
-  Github
-</a>
+<% function renderLink(route) { %>
+  <li class="<%= route.routes ? 'col-12 mt2 mb2' : 'col-6 sm-col-12' %>">
+    <a href="<%= route.path %>"
+      class="block button button-transparent
+      <%= obj.page.title === route.title ? 'bg-aqua' : '' %>">
+      <%= route.title %>
+    </a>
+    <% if (route.routes) { %>
+      <ul class="h6 flex flex-wrap list-reset mb0">
+        <% route.routes.map(renderLink) %>
+      </ul>
+    <% } %>
+  </li>
+<% } %>
 

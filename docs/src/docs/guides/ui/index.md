@@ -1,5 +1,3 @@
----
----
 
 <p class="h3">
   Basscss can be used to create many different user interface elements out of the box.

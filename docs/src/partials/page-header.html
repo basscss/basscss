@@ -6,12 +6,14 @@
     <a href="/" class="button button-small mr1 button-link blue">Home</a>
     <% if (obj.page.breadcrumbs) { %>
       <% obj.page.breadcrumbs.forEach(function(crumb, i) { %>
-      /
-      <a href="<%= crumb.path %>" class="button button-small ml1 mr1 button-link <%= (i == page.breadcrumbs.length - 1) ? '' : 'blue' %>">
-        <%= removePrefix(crumb.title) %>
-      </a>
+        /
+        <a href="<%= crumb.path %>" class="button button-small ml1 mr1 button-link blue">
+          <%= removePrefix(crumb.title) %>
+        </a>
       <% }) %>
     <% } %>
+    /
+    <span class="h5 bold inline-block ml1" style="vertical-align:middle"><%= page.title %></span>
   </div>
   <hr class="b2 border-aqua">
 </header>

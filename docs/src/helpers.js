@@ -1,6 +1,7 @@
 
 var Humanize = require('humanize-plus');
 var hljs = require('highlight.js');
+var stringify = require('json-stringify-safe');
 
 module.exports = {
   removePrefix: function(string) {
@@ -13,5 +14,8 @@ module.exports = {
   },
   highlightCss: function(string) {
     return hljs.highlight('css', string).value;
+  },
+  json: function(obj) {
+    return stringify(obj, null, 2);
   },
 };

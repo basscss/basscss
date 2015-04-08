@@ -3,27 +3,22 @@
 <%= include('head') %>
 <body>
 
-<div class="px2">
-  <div class="clearfix flex flex-stretch mxn2">
-    <% if (!obj.fullwidth) { %>
-      <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
-          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto border-right">
-            <%= include('side-nav') %>
-          </div>
-      </div>
-    <% } %>
-    <div class="<%= !obj.fullwidth ? 'sm-col sm-col-9 md-col-10' : 'full-width' %> flex flex-column" style="min-height:100vh">
-      <div class="flex-auto full-width px2 <%= !obj.fullwidth ? 'container-small' : 'container' %>">
-        <%= include('page-header') %>
-        <div class="py2">
-          <%= body %>
-          <%= include('pagination') %>
-          <%= include('footer') %>
-        </div>
-      </div>
-    </div>
+<div class="sm-ml12m">
+  <div class="container-small px2 py2">
+    <%= include('page-header') %>
+    <%= body %>
+    <%= include('pagination') %>
   </div>
 </div>
+
+<div class="sm-hide fixed top-0 right-0">
+  <a href="#nav" class="button button-transparent">Menu</a>
+</div>
+
+<div id="nav" class="sm-fixed sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
+  <%= include('side-nav') %>
+</div>
+
 
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>
     Basscss
-    
+     | Demo
   </title>
   <meta name="author" content="Brent Jackson">
   <meta name="description" content="Low-level CSS toolkit">
@@ -17,17 +17,19 @@
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
+  <style>
+    .l-sidebar { display: none }
+    @media (min-width: 40em) {
+      .l-sidebar { display: block; width: 12em }
+      .l-content { margin-left: 12em }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="px2">
-  <div class="clearfix flex flex-stretch mxn2">
-    
-      <div class="relative top-0 bottom-0 right-0 px2 py2 sm-col-3 md-col-2 sm-show" style="min-height:100vh">
-          <div class="fixed sm-col-3 md-col-2 top-0 bottom-0 left-0 overflow-auto border-right">
-            
-
+<div class="l-sidebar fixed top-0 bottom-0 left-0 overflow-auto border-right">
+  
 
 <a href="/" class="h1 button block button-transparent aqua mt2">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
@@ -40,193 +42,242 @@
 <ul class="list-reset mb3">
   
   <li>
-    <a href="/">
-      Home
-    </a>
-    
-  </li>
-
-  <li>
-    <a href="/docs">
-      Docs
-    </a>
-    
-      
-  <li>
-    <a href="/docs/getting-started">
+    <a href="/docs/getting-started"
+      class="block button button-transparent
+      ">
       Getting-started
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/base">
+    <a href="/docs/base"
+      class="block button button-transparent
+      ">
       Base
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/utility">
+    <a href="/docs/utility"
+      class="block button button-transparent
+      ">
       Utility
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/layout">
+    <a href="/docs/layout"
+      class="block button button-transparent
+      ">
       Layout
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/color">
+    <a href="/docs/color"
+      class="block button button-transparent
+      ">
       Color
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/guides">
+    <a href="/docs/guides"
+      class="block button button-transparent
+      ">
       Guides
     </a>
     
-      
+      <ul class="list-reset ml1">
+        
   <li>
-    <a href="/docs/guides/basics">
+    <a href="/docs/guides/basics"
+      class="block button button-transparent
+      ">
       Basics
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/guides/layout">
+    <a href="/docs/guides/layout"
+      class="block button button-transparent
+      ">
       Page-layout
     </a>
     
-      
+      <ul class="list-reset ml1">
+        
   <li>
-    <a href="/docs/guides/layout/demo">
+    <a href="/docs/guides/layout/demo"
+      class="block button button-transparent
+      bg-aqua">
       Demo
     </a>
     
   </li>
 
+      </ul>
     
   </li>
 
   <li>
-    <a href="/docs/guides/flex-layout">
+    <a href="/docs/guides/flex-layout"
+      class="block button button-transparent
+      ">
       Flex Object Layout
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/guides/ui">
+    <a href="/docs/guides/ui"
+      class="block button button-transparent
+      ">
       UI Elements
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/guides/tips">
+    <a href="/docs/guides/tips"
+      class="block button button-transparent
+      ">
       Tips & Tricks
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/guides/custom-builds">
+    <a href="/docs/guides/custom-builds"
+      class="block button button-transparent
+      ">
       Custom Builds
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/guides/css4">
+    <a href="/docs/guides/css4"
+      class="block button button-transparent
+      ">
       CSS4 Syntax
     </a>
     
   </li>
 
+      </ul>
     
   </li>
 
   <li>
-    <a href="/docs/principles">
+    <a href="/docs/principles"
+      class="block button button-transparent
+      ">
       Design Principles
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/showcase">
+    <a href="/docs/showcase"
+      class="block button button-transparent
+      ">
       Built with Basscss
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/styles">
+    <a href="/docs/styles"
+      class="block button button-transparent
+      ">
       Table of Styles
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/stats">
+    <a href="/docs/stats"
+      class="block button button-transparent
+      ">
       Stats
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/color-combinations">
+    <a href="/docs/color-combinations"
+      class="block button button-transparent
+      ">
       Color Combos
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/customize">
+    <a href="/docs/customize"
+      class="block button button-transparent
+      ">
       Customize
     </a>
     
   </li>
 
   <li>
-    <a href="/docs/resources">
+    <a href="/docs/resources"
+      class="block button button-transparent
+      ">
       Tools & Resources
     </a>
     
   </li>
 
-    
-  </li>
-
 </ul>
-
-
 
 <a href="//github.com/jxnblk/basscss" class="button block mb4 button-transparent">
   Github
 </a>
 
 
-          </div>
-      </div>
-    
-    <div class="sm-col sm-col-9 md-col-10 flex flex-column" style="min-height:100vh">
-      <div class="flex-auto full-width px2 container-small">
-        <header class="mt4">
+
+
+
+</div>
+
+<div class="l-content">
+  <div class="container-small px2 py2">
+    <header class="mt4">
   <h1 class="h1 h1-responsive caps m0">
-    false
+    Demo
   </h1>
   <div class="avenir h5 bold mb3">
     <a href="/" class="button button-small mr1 button-link blue">Home</a>
     
+      
+        /
+        <a href="/docs" class="button button-small ml1 mr1 button-link blue">
+          Docs
+        </a>
+      
+        /
+        <a href="/docs/guides" class="button button-small ml1 mr1 button-link blue">
+          Guides
+        </a>
+      
+        /
+        <a href="/docs/guides/layout" class="button button-small ml1 mr1 button-link blue">
+          Page-layout
+        </a>
+      
+    
+    /
+    <span class="h5 bold inline-block ml1" style="vertical-align:middle">Demo</span>
   </div>
   <hr class="b2 border-aqua">
 </header>
@@ -234,8 +285,7 @@
 
 
 
-        <div class="py2">
-          
+    
 
 <header class="white bg-gray bg-cover bg-center"
   style="background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)">
@@ -461,12 +511,12 @@
 </div>
 
 
-          
+    
 
 
 
 
-          <hr class="mb0 b2 border-aqua">
+    <hr class="mb0 b2 border-aqua">
 
 <footer class="mb3">
   <div class="">
@@ -511,9 +561,6 @@ s.parentNode.insertBefore(wf, s);
 
 
 
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
