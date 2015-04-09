@@ -39,6 +39,7 @@ data.partials['color-combo-card'] = fs.readFileSync('./docs/templates/partials/c
 data.partials['module-section'] = fs.readFileSync('./docs/templates/partials/module-section.html', 'utf8');
 data.partials['module-header'] = fs.readFileSync('./docs/templates/partials/module-header.html', 'utf8');
 data.partials['module-footer'] = fs.readFileSync('./docs/templates/partials/module-footer.html', 'utf8');
+data.partials['share-buttons'] = fs.readFileSync('./docs/templates/partials/share-buttons.html', 'utf8');
 
 
 Object.keys(helpers).forEach(function(key) {

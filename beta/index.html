@@ -19,6 +19,7 @@
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
     .prose p:first-of-type { font-size: 1.25rem }
+    .prose p { font-size: 1.125rem }
     @media (min-width: 40em) {
       .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
       .sm-fixed { position: fixed }
@@ -60,11 +61,11 @@
       
       -->
       
-<main class="xoverflow-hidden">
+<main class="overflow-hidden">
 
   <section class="py2">
-    <div class="md-flex flex-center mxn2">
-      <div class="md-col-7 px2">
+    <div class="md-flex flex-center mxn2 mb3">
+      <div class="md-col-8 px2">
         <h1 class="mt0 mb2">
           Lightning-Fast, Modular CSS
           <br class="lg-show">
@@ -77,17 +78,79 @@
       </div>
       <div class="flex-auto center p2">
         <a class="h4 button button-big" href="/docs">Download</a>
-        <a class="display-none button m1 button-outline b2 blue"
-          href="https://twitter.com/intent/tweet?text=Basscss:%20Low-level%20CSS%20toolkit&url=http://basscss.com&via=jxnblk">
-          Tweet
-        </a>
       </div>
     </div>
-    <div id="stats" class="h6 caps bold flex flex-baseline flex-wrap flex-justify mt2 py3 mxn1">
-      <div class="p1">4.72 kB</div>
-      <div class="p1">24 Modules</div>
-      <div class="p1">346 Rules</div>
-      <div class="p1">626 Declarations</div>
+    <div class="lg-flex flex-center mxn2">
+      <div id="share" class="flex flex-center px1">
+        <div class="flex-auto"></div>
+        
+
+
+<div class="clearfix inline-block px1">
+  <iframe class="left" src="https://ghbtns.com/github-btn.html?user=jxnblk&repo=basscss&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+</div>
+
+<div class="clearfix inline-block px1">
+  <a href="https://twitter.com/share" class="twitter-share-button left" data-url="http://basscss.com" data-text="Basscss: Low-level CSS toolkit" data-via="jxnblk" data-size="large" data-count="none">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+
+        <div class="flex-auto"></div>
+      </div>
+      <div id="stats" class="h6 caps bold flex-grow flex flex-center flex-wrap flex-justify px1">
+        <div class="px1 py2">4.72 kB</div>
+        <div class="px1 py2">24 Modules</div>
+        <div class="px1 py2">346 Rules</div>
+        <div class="px1 py2">626 Declarations</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="ml0 b2 border-aqua">
+
+  <section id="concepts" class="md-flex flex-wrap mxn2 py3">
+    <div class="md-col-6 px2">
+      <h1>No Side Effects</h1>
+      <p>
+        Styles behave exactly as expected to help prevent common pitfalls with CSS and to make layout debugging a thing of the past.
+      </p>
+    </div>
+    <div class="md-col-6 px2">
+      <h1>Code with Confidence</h1>
+      <p>
+        Read, write, and edit templates without the need to dig through pages of CSS documentation.
+      </p>
+    </div>
+    <div class="md-col-6 px2">
+      <h1>Designed for Design</h1>
+      <p>
+        With clear, humanized naming conventions, 
+        Basscss is quick to internalize and easy to wrap your head around,
+        while striking a balance between consistency and flexiblity.
+      </p>
+    </div>
+    <div class="md-col-6 px2">
+      <h1>Unobtrusive</h1>
+      <p>
+        Basscss doesn’t dictate what your site should look like.
+        With extensible base styles and variables for typography, white space, breakpoints, and UI elements,
+        it’s made to be customized.
+      </p>
+    </div>
+    <div class="md-col-6 px2">
+      <h1>Mix and Match</h1>
+      <p>
+        With modular styles that work like building blocks,
+        Basscss provides a foundation of reusable and inter-operable styles
+        for greater freedom when designing in the browser.
+      </p>
+    </div>
+    <div class="md-col-6 px2">
+      <h1>Responsive by Default</h1>
+      <p>
+        The web is inherently flexible, Basscss doesn’t break that tradition
+        and provides lightweight solutions to design for all devices.
+      </p>
     </div>
   </section>
 
@@ -143,22 +206,22 @@
     <div class="sm-col-5 px2 py1">
       <div class="">
         <div class="flex">
-          <div class="flex-auto p3 bg-navy"></div>
-          <div class="flex-auto p3 bg-blue"></div>
-          <div class="flex-auto p3 bg-aqua"></div>
-          <div class="flex-auto p3 bg-teal"></div>
+          <div class="flex-auto py3 bg-navy"></div>
+          <div class="flex-auto py3 bg-blue"></div>
+          <div class="flex-auto py3 bg-aqua"></div>
+          <div class="flex-auto py3 bg-teal"></div>
         </div>
         <div class="flex">
-          <div class="flex-auto p3 bg-olive"></div>
-          <div class="flex-auto p3 bg-green"></div>
-          <div class="flex-auto p3 bg-lime"></div>
-          <div class="flex-auto p3 bg-yellow"></div>
+          <div class="flex-auto py3 bg-olive"></div>
+          <div class="flex-auto py3 bg-green"></div>
+          <div class="flex-auto py3 bg-lime"></div>
+          <div class="flex-auto py3 bg-yellow"></div>
         </div>
         <div class="flex">
-          <div class="flex-auto p3 bg-orange"></div>
-          <div class="flex-auto p3 bg-red"></div>
-          <div class="flex-auto p3 bg-maroon"></div>
-          <div class="flex-auto p3 bg-fuchsia"></div>
+          <div class="flex-auto py3 bg-orange"></div>
+          <div class="flex-auto py3 bg-red"></div>
+          <div class="flex-auto py3 bg-maroon"></div>
+          <div class="flex-auto py3 bg-fuchsia"></div>
         </div>
       </div>
     </div>
@@ -169,52 +232,6 @@
         iterative design and allow for flexibility over time. 
         Featuring colors from
         <a href="//clrs.cc" target="_blank">mrmrs/colors</a>.
-      </p>
-    </div>
-  </section>
-
-  <section id="concepts" class="md-flex flex-wrap mxn2 py3">
-    <div class="md-col-6 px2">
-      <h1>No Side Effects</h1>
-      <p>
-        Styles behave exactly as expected to help prevent common pitfalls with CSS and to make layout debugging a thing of the past.
-      </p>
-    </div>
-    <div class="md-col-6 px2">
-      <h1>Code with Confidence</h1>
-      <p>
-        Read, write, and edit templates without the need to dig through pages of CSS documentation.
-      </p>
-    </div>
-    <div class="md-col-6 px2">
-      <h1>Designed for Design</h1>
-      <p>
-        With clear, humanized naming conventions, 
-        Basscss is quick to internalize and easy to wrap your head around,
-        while striking a balance between consistency and flexiblity.
-      </p>
-    </div>
-    <div class="md-col-6 px2">
-      <h1>Unobtrusive</h1>
-      <p>
-        Basscss doesn’t dictate what your site should look like.
-        With extensible base styles and variables for typography, white space, breakpoints, and UI elements,
-        it’s made to be customized.
-      </p>
-    </div>
-    <div class="md-col-6 px2">
-      <h1>Mix and Match</h1>
-      <p>
-        With modular styles that work like building blocks,
-        Basscss provides a foundation of reusable and inter-operable styles
-        for greater freedom when designing in the browser.
-      </p>
-    </div>
-    <div class="md-col-6 px2">
-      <h1>Responsive by Default</h1>
-      <p>
-        The web is inherently flexible, Basscss doesn’t break that tradition
-        and provides lightweight solutions to design for all devices.
       </p>
     </div>
   </section>
