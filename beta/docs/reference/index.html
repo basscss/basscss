@@ -13,11 +13,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.0/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
+    .prose p:first-of-type { font-size: 1.25rem }
     @media (min-width: 40em) {
       .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
       .sm-fixed { position: fixed }
@@ -31,11 +32,13 @@
 
 <div class="sm-ml12m">
   <div class="container-small px2 sm-px3 py2 mb3">
-    
-      <header class="mt4 mb4">
+    <header class="mt4 mb4">
   <h1 class="h1 h1-responsive caps m0">
     Reference
+    
   </h1>
+  
+  
   <hr class="mt1 mb1 b2 border-aqua">
   
     <div class="h5 bold mb3">
@@ -55,8 +58,12 @@
 
 
 
-    
-    
+    <div class="prose">
+      <!--
+        temporary in-page nav
+      
+      -->
+      
 
 
 <ul class="flex flex-wrap list-reset">
@@ -107,10 +114,12 @@
 </ul>
 
 
+    </div>
+    
     
 
 
-  <div class="clearfix mxn2 py2">
+  <div class="clearfix mt4 mxn2 py2">
     
       <a href="/docs/guides" class="h3 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
@@ -120,6 +129,13 @@
       </a>
     
     
+      <a href="/docs/reference/principles" class="h3 right button ml2 mr2 button-link blue">
+        Design Principles
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
+          <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
+        </svg>
+      </a>
+    
   </div>
 
 
@@ -127,11 +143,11 @@
   </div>
 </div>
 
-<div class="sm-hide fixed top-0 right-0">
-  <a href="#nav" class="button button-transparent">Menu</a>
+<div class="sm-hide fixed top-0 right-0 px2">
+  <a href="#nav" class="button button-link">Menu</a>
 </div>
 
-<div id="nav" class="sm-fixed sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
+<div id="nav" class="sm-fixed z2 sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
   
 <hr class="sm-hide mt1 mb1 b2 border-aqua">
 
@@ -149,16 +165,19 @@
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
   
-  <li class="col-6 sm-col-12">
-    <a href="/docs/getting-started"
+  
+  
+  <li class="col-12 mt2 mb2">
+    <a href="/docs"
       class="block button button-transparent
       ">
-      Getting-started
+      Docs
     </a>
     
     
-  </li>
-
+      <ul class="flex flex-wrap list-reset mb0">
+        
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-reset"
       class="block button button-transparent
@@ -169,6 +188,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-forms"
       class="block button button-transparent
@@ -179,6 +199,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-buttons"
       class="block button button-transparent
@@ -189,6 +210,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-tables"
       class="block button button-transparent
@@ -199,6 +221,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-typography"
       class="block button button-transparent
@@ -209,6 +232,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-layout"
       class="block button button-transparent
@@ -219,6 +243,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-typography"
       class="block button button-transparent
@@ -229,6 +254,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-white-space"
       class="block button button-transparent
@@ -239,6 +265,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-responsive-states"
       class="block button button-transparent
@@ -249,6 +276,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/positions"
       class="block button button-transparent
@@ -259,6 +287,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/ui-utility-button-sizes"
       class="block button button-transparent
@@ -269,6 +298,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/grid"
       class="block button button-transparent
@@ -279,6 +309,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/flex-object"
       class="block button button-transparent
@@ -289,6 +320,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-base"
       class="block button button-transparent
@@ -299,6 +331,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-forms"
       class="block button button-transparent
@@ -309,6 +342,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-forms-dark"
       class="block button button-transparent
@@ -319,6 +353,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/input-range"
       class="block button button-transparent
@@ -329,6 +364,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/progress"
       class="block button button-transparent
@@ -339,6 +375,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-tables"
       class="block button button-transparent
@@ -349,6 +386,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/button-outline"
       class="block button button-transparent
@@ -359,6 +397,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/button-transparent"
       class="block button button-transparent
@@ -369,6 +408,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/background-images"
       class="block button button-transparent
@@ -379,6 +419,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-borders"
       class="block button button-transparent
@@ -389,6 +430,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/colors"
       class="block button button-transparent
@@ -399,6 +441,7 @@
     
   </li>
 
+  
   <li class="col-12 mt2 mb2">
     <a href="/docs/guides"
       class="block button button-transparent
@@ -409,6 +452,7 @@
     
       <ul class="flex flex-wrap list-reset mb0">
         
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/basics"
       class="block button button-transparent
@@ -419,6 +463,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/layout"
       class="block button button-transparent
@@ -429,6 +474,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/flex-layout"
       class="block button button-transparent
@@ -439,6 +485,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/ui"
       class="block button button-transparent
@@ -449,6 +496,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/tips"
       class="block button button-transparent
@@ -459,6 +507,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/custom-builds"
       class="block button button-transparent
@@ -469,6 +518,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/css4"
       class="block button button-transparent
@@ -483,6 +533,7 @@
     
   </li>
 
+  
   <li class="col-12 mt2 mb2">
     <a href="/docs/reference"
       class="block button button-transparent
@@ -493,6 +544,7 @@
     
       <ul class="flex flex-wrap list-reset mb0">
         
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/principles"
       class="block button button-transparent
@@ -503,6 +555,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/showcase"
       class="block button button-transparent
@@ -513,6 +566,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/styles"
       class="block button button-transparent
@@ -523,6 +577,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/stats"
       class="block button button-transparent
@@ -533,6 +588,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/color-combinations"
       class="block button button-transparent
@@ -543,6 +599,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/resources"
       class="block button button-transparent
@@ -550,6 +607,10 @@
       Tools & Resources
     </a>
     
+    
+  </li>
+
+      </ul>
     
   </li>
 
@@ -593,6 +654,30 @@ s.parentNode.insertBefore(wf, s);
   ga('send', 'pageview');
 </script>
 
+<script>
+  /* Remember sidebar scroll position */
+  var sidebar = document.querySelector('#nav');
+  function debounce(func, wait) {
+    var timeout;
+    return function() {
+      var context = this,
+          args = arguments;
+      var later = function() {
+        timeout = null;
+        func.apply(context, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  };
+  function setPosition(y) { localStorage.setItem('sidebarY', y) }
+  function getPosition() { return localStorage.getItem('sidebarY') || 0 }
+  sidebar.addEventListener('scroll', function(e) {
+    var y = e.target.scrollTop;
+    debounce(setPosition(y), 300);
+  });
+  sidebar.scrollTop = getPosition();
+</script>
 
 
 

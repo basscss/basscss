@@ -13,11 +13,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.0/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
+    .prose p:first-of-type { font-size: 1.25rem }
     @media (min-width: 40em) {
       .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
       .sm-fixed { position: fixed }
@@ -31,11 +32,24 @@
 
 <div class="sm-ml12m">
   <div class="container-small px2 sm-px3 py2 mb3">
-    
-      <header class="mt4 mb4">
+    <header class="mt4 mb4">
   <h1 class="h1 h1-responsive caps m0">
     Input Range
+    
+    
   </h1>
+  
+    <div class="flex flex-baseline flex-wrap mxn1">
+      <div class="bold px1">
+        basscss-input-range
+        <span class="h5">v1.1.2</span>
+      </div>
+      <div class="flex-auto"></div>
+      <a href="//npmjs.com/package/basscss-input-range" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
+      <a href="https://github.com/jxnblk/basscss-input-range" class="h6 caps ml1 mr1 button button-small button-link">Github</a>
+    </div>
+  
+  
   <hr class="mt1 mb1 b2 border-aqua">
   
     <div class="h5 bold mb3">
@@ -55,18 +69,166 @@
 
 
 
+    <div class="prose">
+      <!--
+        temporary in-page nav
+      
+        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
+          <ul class="list-reset mb0 ml2">
+            
+          </ul>
+        </div>
+      
+      -->
+      <p><p>The <code>.range-light</code> style inherits color from its parent. Use color utilities to change the slider thumb color.</p></p>
+<div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <input type="range" class="full-width range-light">
+<input type="range" class="full-width blue range-light">
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;range&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;full-width range-light&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;range&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;full-width blue range-light&quot;</span>&gt;</span></pre>
+</div>
+
+    </div>
     
-    <p><h1 id="basscss-input-range">Basscss Input Range</h1></p>
-<p><p>Custom input range module for Basscss - <a href="http://basscss.com">http://basscss.com</a></p></p>
-<p><p>The <code>.range-light</code> style inherits color from its parent. Use color utilities to change the slider thumb color.</p></p>
-<pre><code class="lang-html">&lt;input type=&quot;range&quot; class=&quot;full-width range-light&quot;&gt;
-&lt;input type=&quot;range&quot; class=&quot;full-width blue range-light&quot;&gt;
-</code></pre>
+      
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        2.43 kB
+        (667 B Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-input-range-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          11 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          11 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          54 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          31 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-input-range-css-source">/* Basscss Input Range */
 
+input[type=range] {
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+.range-light {
+  color: inherit;
+  -webkit-appearance: none;
+  padding-top: var(--form-field-padding-y);
+  padding-bottom: var(--form-field-padding-y);
+}
+
+.range-light::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  width: var(--range-thumb-width);
+  height: var(--range-thumb-height);
+  border-radius: var(--border-radius);
+  background-color: currentcolor;
+  cursor: pointer;
+  margin-top: var(--range-thumb-offset);
+}
+
+/* Touch screen friendly pseudo element */
+.range-light::-webkit-slider-thumb:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc( -.5 * var(--range-thumb-pseudo-size) + (.5 * var(--range-thumb-height)) );
+  left: calc( (-.5 * var(--range-thumb-pseudo-size)) + (.5 * var(--range-thumb-width)) );
+  width: var(--range-thumb-pseudo-size);
+  height: var(--range-thumb-pseudo-size);
+  opacity: 0;
+}
+
+.range-light::-moz-range-thumb {
+  width: var(--range-thumb-width);
+  height: var(--range-thumb-height);
+  border-radius: var(--border-radius);
+  border-color: transparent;
+  border-width: 0;
+  background-color: currentcolor;
+  cursor: pointer;
+}
+
+.range-light::-webkit-slider-runnable-track {
+  height: var(--range-track-height);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background-color: var(--darken-3);
+}
+
+.range-light::-moz-range-track {
+  height: var(--range-track-height);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background-color: var(--darken-3);
+}
+
+.range-light:focus {
+  outline: none;
+}
+
+.range-light:focus::-webkit-slider-thumb {
+  outline: none;
+  border: 0;
+  box-shadow: 0 0 1px 2px currentcolor;
+}
+
+.range-light:focus::-moz-range-thumb {
+  outline: none;
+  border: 0;
+  box-shadow: 0 0 1px 2px currentcolor;
+}
+
+
+:root {
+
+  --border-radius: var(--border-radius, 3px);
+  --form-field-height: var(--form-field-height, 2.25rem);
+  --form-field-padding-y: var(--form-field-padding-y, .5rem);
+  --form-field-padding-x: var(--form-field-padding-x, .5rem);
+  --darken-3: rgba(0,0,0, .25);
+
+  --range-thumb-width: var(--form-field-padding-x);
+  --range-thumb-height: calc( var(--form-field-height) - (var(--form-field-padding-y) * 2) );
+  --range-track-height: calc( var(--form-field-padding-y) / 2 );
+  --range-thumb-offset: calc( var(--range-thumb-height) / -2 + (var(--range-track-height) / 2) );
+  --range-thumb-pseudo-size: var(--form-field-height);
+
+}
+
+</pre>
+  
+</footer>
+
+    
     
 
 
-  <div class="clearfix mxn2 py2">
+  <div class="clearfix mt4 mxn2 py2">
     
       <a href="/docs/color-forms-dark" class="h3 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
@@ -90,11 +252,11 @@
   </div>
 </div>
 
-<div class="sm-hide fixed top-0 right-0">
-  <a href="#nav" class="button button-transparent">Menu</a>
+<div class="sm-hide fixed top-0 right-0 px2">
+  <a href="#nav" class="button button-link">Menu</a>
 </div>
 
-<div id="nav" class="sm-fixed sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
+<div id="nav" class="sm-fixed z2 sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
   
 <hr class="sm-hide mt1 mb1 b2 border-aqua">
 
@@ -112,16 +274,19 @@
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
   
-  <li class="col-6 sm-col-12">
-    <a href="/docs/getting-started"
+  
+  
+  <li class="col-12 mt2 mb2">
+    <a href="/docs"
       class="block button button-transparent
       ">
-      Getting-started
+      Docs
     </a>
     
     
-  </li>
-
+      <ul class="flex flex-wrap list-reset mb0">
+        
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-reset"
       class="block button button-transparent
@@ -132,6 +297,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-forms"
       class="block button button-transparent
@@ -142,6 +308,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-buttons"
       class="block button button-transparent
@@ -152,6 +319,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-tables"
       class="block button button-transparent
@@ -162,6 +330,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-typography"
       class="block button button-transparent
@@ -172,6 +341,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-layout"
       class="block button button-transparent
@@ -182,6 +352,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-typography"
       class="block button button-transparent
@@ -192,6 +363,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-white-space"
       class="block button button-transparent
@@ -202,6 +374,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-responsive-states"
       class="block button button-transparent
@@ -212,6 +385,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/positions"
       class="block button button-transparent
@@ -222,6 +396,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/ui-utility-button-sizes"
       class="block button button-transparent
@@ -232,6 +407,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/grid"
       class="block button button-transparent
@@ -242,6 +418,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/flex-object"
       class="block button button-transparent
@@ -252,6 +429,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-base"
       class="block button button-transparent
@@ -262,6 +440,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-forms"
       class="block button button-transparent
@@ -272,6 +451,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-forms-dark"
       class="block button button-transparent
@@ -282,6 +462,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/input-range"
       class="block button button-transparent
@@ -292,6 +473,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/progress"
       class="block button button-transparent
@@ -302,6 +484,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-tables"
       class="block button button-transparent
@@ -312,6 +495,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/button-outline"
       class="block button button-transparent
@@ -322,6 +506,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/button-transparent"
       class="block button button-transparent
@@ -332,6 +517,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/background-images"
       class="block button button-transparent
@@ -342,6 +528,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-borders"
       class="block button button-transparent
@@ -352,6 +539,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/colors"
       class="block button button-transparent
@@ -362,6 +550,7 @@
     
   </li>
 
+  
   <li class="col-12 mt2 mb2">
     <a href="/docs/guides"
       class="block button button-transparent
@@ -372,6 +561,7 @@
     
       <ul class="flex flex-wrap list-reset mb0">
         
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/basics"
       class="block button button-transparent
@@ -382,6 +572,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/layout"
       class="block button button-transparent
@@ -392,6 +583,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/flex-layout"
       class="block button button-transparent
@@ -402,6 +594,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/ui"
       class="block button button-transparent
@@ -412,6 +605,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/tips"
       class="block button button-transparent
@@ -422,6 +616,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/custom-builds"
       class="block button button-transparent
@@ -432,6 +627,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/css4"
       class="block button button-transparent
@@ -446,6 +642,7 @@
     
   </li>
 
+  
   <li class="col-12 mt2 mb2">
     <a href="/docs/reference"
       class="block button button-transparent
@@ -456,6 +653,7 @@
     
       <ul class="flex flex-wrap list-reset mb0">
         
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/principles"
       class="block button button-transparent
@@ -466,6 +664,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/showcase"
       class="block button button-transparent
@@ -476,6 +675,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/styles"
       class="block button button-transparent
@@ -486,6 +686,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/stats"
       class="block button button-transparent
@@ -496,6 +697,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/color-combinations"
       class="block button button-transparent
@@ -506,6 +708,7 @@
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/resources"
       class="block button button-transparent
@@ -513,6 +716,10 @@
       Tools & Resources
     </a>
     
+    
+  </li>
+
+      </ul>
     
   </li>
 
@@ -556,6 +763,30 @@ s.parentNode.insertBefore(wf, s);
   ga('send', 'pageview');
 </script>
 
+<script>
+  /* Remember sidebar scroll position */
+  var sidebar = document.querySelector('#nav');
+  function debounce(func, wait) {
+    var timeout;
+    return function() {
+      var context = this,
+          args = arguments;
+      var later = function() {
+        timeout = null;
+        func.apply(context, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  };
+  function setPosition(y) { localStorage.setItem('sidebarY', y) }
+  function getPosition() { return localStorage.getItem('sidebarY') || 0 }
+  sidebar.addEventListener('scroll', function(e) {
+    var y = e.target.scrollTop;
+    debounce(setPosition(y), 300);
+  });
+  sidebar.scrollTop = getPosition();
+</script>
 
 
 

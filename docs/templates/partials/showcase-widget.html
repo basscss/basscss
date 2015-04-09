@@ -7,8 +7,8 @@
 <div class="flex flex-wrap mxn2">
   <% var i = 0 %>
   <% _.forIn(showcase, function(site, key) { %>
-    <% if (i < 3) { %>
-      <div class="col-4 px2">
+    <% if (i < 4) { %>
+      <div class="col-6 sm-col-3 p2">
         <a href="<%= site.url %>" class="h3 block black" title="View <%= site.url %>" target="_blank">
           <img src="<%= asset_path %>assets/<%= site.image %>" class="border" alt="<%= site.title %>"/>
           <div class="h3 bold"><%= site.title %></div>

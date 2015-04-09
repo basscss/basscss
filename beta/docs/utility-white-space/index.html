@@ -13,11 +13,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.0/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
+    .prose p:first-of-type { font-size: 1.25rem }
     @media (min-width: 40em) {
       .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
       .sm-fixed { position: fixed }
@@ -31,11 +32,24 @@
 
 <div class="sm-ml12m">
   <div class="container-small px2 sm-px3 py2 mb3">
-    
-      <header class="mt4 mb4">
+    <header class="mt4 mb4">
   <h1 class="h1 h1-responsive caps m0">
     White Space
+    
+    
   </h1>
+  
+    <div class="flex flex-baseline flex-wrap mxn1">
+      <div class="bold px1">
+        basscss-utility-white-space
+        <span class="h5">v0.0.5</span>
+      </div>
+      <div class="flex-auto"></div>
+      <a href="//npmjs.com/package/basscss-utility-white-space" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
+      <a href="https://github.com/jxnblk/basscss-utility-white-space" class="h6 caps ml1 mr1 button button-small button-link">Github</a>
+    </div>
+  
+  
   <hr class="mt1 mb1 b2 border-aqua">
   
     <div class="h5 bold mb3">
@@ -55,16 +69,22 @@
 
 
 
-    
-    <p><h1 id="basscss-utility-white-space">Basscss Utility White Space</h1></p>
-<p class="hide">White space margin and padding utilities module for Basscss</p>
-
-<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>Margin and padding utilities are based on a global white space scale defined with variables.
+    <div class="prose">
+      <!--
+        temporary in-page nav
+      
+        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
+          <ul class="list-reset mb0 ml2">
+            
+          </ul>
+        </div>
+      
+      -->
+      <p>Margin and padding utilities are based on a global white space scale defined with variables.
 These utilities use a shorthand naming convention.</p>
 <div class="overflow-scroll">
-  <table class="mb2 bg-darken-1 rounded table-light">
-    <thead class="bg-darken-1">
+  <table class="mb2 table-flush table-light">
+    <thead>
       <tr> <th>Shorthand</th> <th>Description</th> </tr>
     </thead>
     <tbody>
@@ -85,11 +105,104 @@ These utilities use a shorthand naming convention.</p>
   </table>
 </div>
 
-<h2 id="margins">Margins</h2>
-<p>Change or reset default margins using the global white space scale.
+<h2 id="margins"><a href="#margins">Margins</a></h2><p>Change or reset default margins using the global white space scale.
 Negative x-axis margins are used to offset padding.
 Margin auto is used to horizontally center block-level elements with a set width.</p>
-<pre><code class="lang-css">.m0  { margin:        0 }
+<pre><span class="hljs-class">.m0</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-number">0</span> }
+.mt0 { margin-top:    <span class="hljs-number">0</span> }
+.mr0 { margin-right:  <span class="hljs-number">0</span> }
+.mb0 { margin-bottom: <span class="hljs-number">0</span> }
+.ml0 { margin-left:   <span class="hljs-number">0</span> }
+
+.m1  { margin:        <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) }
+.mt1 { margin-top:    <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) }
+.mr1 { margin-right:  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) }
+.mb1 { margin-bottom: <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) }
+.ml1 { margin-left:   <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) }
+
+.m2  { margin:        <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) }
+.mt2 { margin-top:    <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) }
+.mr2 { margin-right:  <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) }
+.mb2 { margin-bottom: <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) }
+.ml2 { margin-left:   <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) }
+
+.m3  { margin:        <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) }
+.mt3 { margin-top:    <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) }
+.mr3 { margin-right:  <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) }
+.mb3 { margin-bottom: <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) }
+.ml3 { margin-left:   <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) }
+
+.m4  { margin:        <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) }
+.mt4 { margin-top:    <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) }
+.mr4 { margin-right:  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) }
+.mb4 { margin-bottom: <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) }
+.ml4 { margin-left:   <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) }
+
+.mxn1 { margin-left: <span class="hljs-function">-var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">1</span>)</span></span>; }</span>
+<span class="hljs-class">.mxn2</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">2</span>)</span></span>; }</span>
+<span class="hljs-class">.mxn3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">3</span>)</span></span>; }</span>
+<span class="hljs-class">.mxn4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">4</span>)</span></span>; }</span>
+
+<span class="hljs-class">.mx-auto</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> auto</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> auto</span></span>; }</span></pre><h2 id="padding"><a href="#padding">Padding</a></h2><p>Padding utilities are only available in symmetrical orientations.
+This is to normalize the spacing used around elements.</p>
+<pre><span class="hljs-class">.p1</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) }
+.py1 { padding-top:   <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) }
+.px1 { padding-left:  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) }
+
+.p2  { padding:       <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) }
+.py2 { padding-top:   <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) }
+.px2 { padding-left:  <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">2</span>) }
+
+.p3  { padding:       <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) }
+.py3 { padding-top:   <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) }
+.px3 { padding-left:  <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">3</span>) }
+
+.p4  { padding:       <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) }
+.py4 { padding-top:   <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) }
+.px4 { padding-left:  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) }</span></span></span></pre><p><span class="red">Margins and padding should never be declared outside of these utilities.</span>
+This is meant to help create consistent rhythm and avoid magic numbers.
+If, for some reason, the default white space scale does not suit your design,
+customize and extend it before implementation.</p>
+
+    </div>
+    
+      
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        2.05 kB
+        (433 B Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-utility-white-space-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          43 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          43 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          59 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          14 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-utility-white-space-css-source">/* Basscss Utility White Space */
+
+.m0  { margin:        0 }
 .mt0 { margin-top:    0 }
 .mr0 { margin-right:  0 }
 .mb0 { margin-bottom: 0 }
@@ -125,11 +238,7 @@ Margin auto is used to horizontally center block-level elements with a set width
 .mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }
 
 .mx-auto { margin-left: auto; margin-right: auto; }
-</code></pre>
-<h2 id="padding">Padding</h2>
-<p>Padding utilities are only available in symmetrical orientations.
-This is to normalize the spacing used around elements.</p>
-<pre><code class="lang-css">.p1  { padding:       var(--space-1) }
+.p1  { padding:       var(--space-1) }
 .py1 { padding-top:   var(--space-1); padding-bottom: var(--space-1) }
 .px1 { padding-left:  var(--space-1); padding-right:  var(--space-1) }
 
@@ -144,16 +253,23 @@ This is to normalize the spacing used around elements.</p>
 .p4  { padding:       var(--space-4) }
 .py4 { padding-top:   var(--space-4); padding-bottom: var(--space-4) }
 .px4 { padding-left:  var(--space-4); padding-right:  var(--space-4) }
-</code></pre>
-<p><span class="red">Margins and padding should never be declared outside of these utilities.</span>
-This is meant to help create consistent rhythm and avoid magic numbers.
-If, for some reason, the default white space scale does not suit your design,
-customize and extend it before implementation.</p>
 
+:root {
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+}
+
+</pre>
+  
+</footer>
+
+    
     
 
 
-  <div class="clearfix mxn2 py2">
+  <div class="clearfix mt4 mxn2 py2">
     
       <a href="/docs/utility-typography" class="h3 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
@@ -177,11 +293,11 @@ customize and extend it before implementation.</p>
   </div>
 </div>
 
-<div class="sm-hide fixed top-0 right-0">
-  <a href="#nav" class="button button-transparent">Menu</a>
+<div class="sm-hide fixed top-0 right-0 px2">
+  <a href="#nav" class="button button-link">Menu</a>
 </div>
 
-<div id="nav" class="sm-fixed sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
+<div id="nav" class="sm-fixed z2 sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
   
 <hr class="sm-hide mt1 mb1 b2 border-aqua">
 
@@ -199,16 +315,19 @@ customize and extend it before implementation.</p>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
   
-  <li class="col-6 sm-col-12">
-    <a href="/docs/getting-started"
+  
+  
+  <li class="col-12 mt2 mb2">
+    <a href="/docs"
       class="block button button-transparent
       ">
-      Getting-started
+      Docs
     </a>
     
     
-  </li>
-
+      <ul class="flex flex-wrap list-reset mb0">
+        
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-reset"
       class="block button button-transparent
@@ -219,6 +338,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-forms"
       class="block button button-transparent
@@ -229,6 +349,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-buttons"
       class="block button button-transparent
@@ -239,6 +360,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-tables"
       class="block button button-transparent
@@ -249,6 +371,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-typography"
       class="block button button-transparent
@@ -259,6 +382,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-layout"
       class="block button button-transparent
@@ -269,6 +393,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-typography"
       class="block button button-transparent
@@ -279,6 +404,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-white-space"
       class="block button button-transparent
@@ -289,6 +415,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-responsive-states"
       class="block button button-transparent
@@ -299,6 +426,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/positions"
       class="block button button-transparent
@@ -309,6 +437,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/ui-utility-button-sizes"
       class="block button button-transparent
@@ -319,6 +448,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/grid"
       class="block button button-transparent
@@ -329,6 +459,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/flex-object"
       class="block button button-transparent
@@ -339,6 +470,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-base"
       class="block button button-transparent
@@ -349,6 +481,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-forms"
       class="block button button-transparent
@@ -359,6 +492,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-forms-dark"
       class="block button button-transparent
@@ -369,6 +503,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/input-range"
       class="block button button-transparent
@@ -379,6 +514,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/progress"
       class="block button button-transparent
@@ -389,6 +525,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-tables"
       class="block button button-transparent
@@ -399,6 +536,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/button-outline"
       class="block button button-transparent
@@ -409,6 +547,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/button-transparent"
       class="block button button-transparent
@@ -419,6 +558,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/background-images"
       class="block button button-transparent
@@ -429,6 +569,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-borders"
       class="block button button-transparent
@@ -439,6 +580,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/colors"
       class="block button button-transparent
@@ -449,6 +591,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-12 mt2 mb2">
     <a href="/docs/guides"
       class="block button button-transparent
@@ -459,6 +602,7 @@ customize and extend it before implementation.</p>
     
       <ul class="flex flex-wrap list-reset mb0">
         
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/basics"
       class="block button button-transparent
@@ -469,6 +613,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/layout"
       class="block button button-transparent
@@ -479,6 +624,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/flex-layout"
       class="block button button-transparent
@@ -489,6 +635,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/ui"
       class="block button button-transparent
@@ -499,6 +646,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/tips"
       class="block button button-transparent
@@ -509,6 +657,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/custom-builds"
       class="block button button-transparent
@@ -519,6 +668,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/css4"
       class="block button button-transparent
@@ -533,6 +683,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-12 mt2 mb2">
     <a href="/docs/reference"
       class="block button button-transparent
@@ -543,6 +694,7 @@ customize and extend it before implementation.</p>
     
       <ul class="flex flex-wrap list-reset mb0">
         
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/principles"
       class="block button button-transparent
@@ -553,6 +705,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/showcase"
       class="block button button-transparent
@@ -563,6 +716,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/styles"
       class="block button button-transparent
@@ -573,6 +727,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/stats"
       class="block button button-transparent
@@ -583,6 +738,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/color-combinations"
       class="block button button-transparent
@@ -593,6 +749,7 @@ customize and extend it before implementation.</p>
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/resources"
       class="block button button-transparent
@@ -600,6 +757,10 @@ customize and extend it before implementation.</p>
       Tools & Resources
     </a>
     
+    
+  </li>
+
+      </ul>
     
   </li>
 
@@ -643,6 +804,30 @@ s.parentNode.insertBefore(wf, s);
   ga('send', 'pageview');
 </script>
 
+<script>
+  /* Remember sidebar scroll position */
+  var sidebar = document.querySelector('#nav');
+  function debounce(func, wait) {
+    var timeout;
+    return function() {
+      var context = this,
+          args = arguments;
+      var later = function() {
+        timeout = null;
+        func.apply(context, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  };
+  function setPosition(y) { localStorage.setItem('sidebarY', y) }
+  function getPosition() { return localStorage.getItem('sidebarY') || 0 }
+  sidebar.addEventListener('scroll', function(e) {
+    var y = e.target.scrollTop;
+    debounce(setPosition(y), 300);
+  });
+  sidebar.scrollTop = getPosition();
+</script>
 
 
 

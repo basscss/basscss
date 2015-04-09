@@ -13,11 +13,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.0/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
+    .prose p:first-of-type { font-size: 1.25rem }
     @media (min-width: 40em) {
       .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
       .sm-fixed { position: fixed }
@@ -31,11 +32,13 @@
 
 <div class="sm-ml12m">
   <div class="container-small px2 sm-px3 py2 mb3">
-    
-      <header class="mt4 mb4">
+    <header class="mt4 mb4">
   <h1 class="h1 h1-responsive caps m0">
     Tips & Tricks
+    
   </h1>
+  
+  
   <hr class="mt1 mb1 b2 border-aqua">
   
     <div class="h5 bold mb3">
@@ -60,8 +63,88 @@
 
 
 
-    
-    <p class="h3">
+    <div class="prose">
+      <!--
+        temporary in-page nav
+      
+        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
+          <ul class="list-reset mb0 ml2">
+            
+              <li>
+                <a href="#avoid-overrides"
+                  class="button button-small button-link blue">
+                  Avoid Overrides
+                </a>
+              </li>
+            
+              <li>
+                <a href="#utility-styles-are-immutable"
+                  class="button button-small button-link blue">
+                  Utility Styles are Immutable
+                </a>
+              </li>
+            
+              <li>
+                <a href="#look-before-adding"
+                  class="button button-small button-link blue">
+                  Look Before Adding
+                </a>
+              </li>
+            
+              <li>
+                <a href="#avoid-magic-numbers"
+                  class="button button-small button-link blue">
+                  Avoid Magic Numbers
+                </a>
+              </li>
+            
+              <li>
+                <a href="#don-t-use-contextual-selectors"
+                  class="button button-small button-link blue">
+                  Don’t Use Contextual Selectors
+                </a>
+              </li>
+            
+              <li>
+                <a href="#handle-complexity-in-markup"
+                  class="button button-small button-link blue">
+                  Handle Complexity in Markup
+                </a>
+              </li>
+            
+              <li>
+                <a href="#keep-specificity-low"
+                  class="button button-small button-link blue">
+                  Keep Specificity Low
+                </a>
+              </li>
+            
+              <li>
+                <a href="#don-t-nest-selectors"
+                  class="button button-small button-link blue">
+                  Don’t Nest Selectors
+                </a>
+              </li>
+            
+              <li>
+                <a href="#don-t-use-i-ds-as-selectors"
+                  class="button button-small button-link blue">
+                  Don’t Use IDs as Selectors
+                </a>
+              </li>
+            
+              <li>
+                <a href="#separate-structure-and-skin"
+                  class="button button-small button-link blue">
+                  Separate Structure and Skin
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+      -->
+      <p class="h3">
   Basscss is a versatile starting point for any project.
   These tips and tricks will help you build on top of its foundation
   in an elegant and maintainable way.
@@ -136,10 +219,12 @@ IDs also create excessive specificity that will trump the majority of Basscss’
 often differ by location, can change with the design over time, and don’t have a huge impact on page layout.
 Keeping structural styles and skins decoupled aids in interoperability and design flexibility.</p>
 
+    </div>
+    
     
 
 
-  <div class="clearfix mxn2 py2">
+  <div class="clearfix mt4 mxn2 py2">
     
       <a href="/docs/guides/ui" class="h3 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
@@ -163,11 +248,11 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
   </div>
 </div>
 
-<div class="sm-hide fixed top-0 right-0">
-  <a href="#nav" class="button button-transparent">Menu</a>
+<div class="sm-hide fixed top-0 right-0 px2">
+  <a href="#nav" class="button button-link">Menu</a>
 </div>
 
-<div id="nav" class="sm-fixed sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
+<div id="nav" class="sm-fixed z2 sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
   
 <hr class="sm-hide mt1 mb1 b2 border-aqua">
 
@@ -185,16 +270,19 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
   
-  <li class="col-6 sm-col-12">
-    <a href="/docs/getting-started"
+  
+  
+  <li class="col-12 mt2 mb2">
+    <a href="/docs"
       class="block button button-transparent
       ">
-      Getting-started
+      Docs
     </a>
     
     
-  </li>
-
+      <ul class="flex flex-wrap list-reset mb0">
+        
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-reset"
       class="block button button-transparent
@@ -205,6 +293,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-forms"
       class="block button button-transparent
@@ -215,6 +304,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-buttons"
       class="block button button-transparent
@@ -225,6 +315,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-tables"
       class="block button button-transparent
@@ -235,6 +326,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/base-typography"
       class="block button button-transparent
@@ -245,6 +337,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-layout"
       class="block button button-transparent
@@ -255,6 +348,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-typography"
       class="block button button-transparent
@@ -265,6 +359,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-white-space"
       class="block button button-transparent
@@ -275,6 +370,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/utility-responsive-states"
       class="block button button-transparent
@@ -285,6 +381,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/positions"
       class="block button button-transparent
@@ -295,6 +392,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/ui-utility-button-sizes"
       class="block button button-transparent
@@ -305,6 +403,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/grid"
       class="block button button-transparent
@@ -315,6 +414,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/flex-object"
       class="block button button-transparent
@@ -325,6 +425,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-base"
       class="block button button-transparent
@@ -335,6 +436,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-forms"
       class="block button button-transparent
@@ -345,6 +447,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-forms-dark"
       class="block button button-transparent
@@ -355,6 +458,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/input-range"
       class="block button button-transparent
@@ -365,6 +469,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/progress"
       class="block button button-transparent
@@ -375,6 +480,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-tables"
       class="block button button-transparent
@@ -385,6 +491,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/button-outline"
       class="block button button-transparent
@@ -395,6 +502,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/button-transparent"
       class="block button button-transparent
@@ -405,6 +513,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/background-images"
       class="block button button-transparent
@@ -415,6 +524,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/color-borders"
       class="block button button-transparent
@@ -425,6 +535,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/colors"
       class="block button button-transparent
@@ -435,6 +546,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-12 mt2 mb2">
     <a href="/docs/guides"
       class="block button button-transparent
@@ -445,6 +557,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
       <ul class="flex flex-wrap list-reset mb0">
         
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/basics"
       class="block button button-transparent
@@ -455,6 +568,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/layout"
       class="block button button-transparent
@@ -465,6 +579,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/flex-layout"
       class="block button button-transparent
@@ -475,6 +590,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/ui"
       class="block button button-transparent
@@ -485,6 +601,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/tips"
       class="block button button-transparent
@@ -495,6 +612,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/custom-builds"
       class="block button button-transparent
@@ -505,6 +623,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/guides/css4"
       class="block button button-transparent
@@ -519,6 +638,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-12 mt2 mb2">
     <a href="/docs/reference"
       class="block button button-transparent
@@ -529,6 +649,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
       <ul class="flex flex-wrap list-reset mb0">
         
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/principles"
       class="block button button-transparent
@@ -539,6 +660,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/showcase"
       class="block button button-transparent
@@ -549,6 +671,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/styles"
       class="block button button-transparent
@@ -559,6 +682,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/stats"
       class="block button button-transparent
@@ -569,6 +693,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/color-combinations"
       class="block button button-transparent
@@ -579,6 +704,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
     
   </li>
 
+  
   <li class="col-6 sm-col-12">
     <a href="/docs/reference/resources"
       class="block button button-transparent
@@ -586,6 +712,10 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
       Tools & Resources
     </a>
     
+    
+  </li>
+
+      </ul>
     
   </li>
 
@@ -629,6 +759,30 @@ s.parentNode.insertBefore(wf, s);
   ga('send', 'pageview');
 </script>
 
+<script>
+  /* Remember sidebar scroll position */
+  var sidebar = document.querySelector('#nav');
+  function debounce(func, wait) {
+    var timeout;
+    return function() {
+      var context = this,
+          args = arguments;
+      var later = function() {
+        timeout = null;
+        func.apply(context, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  };
+  function setPosition(y) { localStorage.setItem('sidebarY', y) }
+  function getPosition() { return localStorage.getItem('sidebarY') || 0 }
+  sidebar.addEventListener('scroll', function(e) {
+    var y = e.target.scrollTop;
+    debounce(setPosition(y), 300);
+  });
+  sidebar.scrollTop = getPosition();
+</script>
 
 
 

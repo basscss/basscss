@@ -14,13 +14,14 @@
 </a>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
-  <% routes[1].routes.map(renderLink) %>
+  <% routes.map(renderLink) %>
 </ul>
 
 <%= include('footer') %>
 
 
 <% function renderLink(route) { %>
+  <% if (route.path === '/') return false %>
   <li class="<%= route.routes ? 'col-12 mt2 mb2' : 'col-6 sm-col-12' %>">
     <a href="<%= route.path %>"
       class="block button button-transparent

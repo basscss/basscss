@@ -1,28 +1,34 @@
 
-<% function renderLink(link) { %>
-  <li class="col-6 sm-col-3 py2">
-    <a href="<%= link.path %>" class="h3 button button-small button-link blue">
-      <%= link.title %>
+<% function renderLink(route) { %>
+  <li class="<%= route.routes ? 'col-12 mt3' : 'col-6 sm-col-3' %> py2">
+    <a href="<%= route.path %>" class="<%= route.routes ? 'caps' : 'h3' %> button button-small button-link blue">
+      <%= route.title %>
     </a>
-    <% if (link.modules) { %>
-      <ul class="list-reset">
-        <% link.modules.forEach(function(mod) { %>
-          <li>
-            <a href="<%= link.path + '/#' + obj.removePrefix(mod.module) %>" class="button button-small button-link blue">
-              <%= _.capitalize((mod.name).replace(/\-/g, ' ')) %>
-            </a>
-          </li>
-        <% }) %>
+    <% if (route.routes) { %>
+      <ul class="flex flex-wrap list-reset">
+        <% route.routes.map(renderLink) %>
       </ul>
     <% } %>
   </li>
 <% } %>
 
+<h2>Getting Started</h2>
+<p class="h3">Download or install from one of these sources</p>
+<pre>npm install basscss</pre>
+<pre>bower install basscss</pre>
+<pre>git clone https://github.com/jxnblk/basscss.git</pre>
+
+<div class="py2">
+  <a href="https://github.com/jxnblk/basscss/archive/v<%= version %>.zip" class="h4 button">Download Source</a>
+</div>
+
+<p>Or use the CDN link:</p>
+<pre>&lt;link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/<%= version %>/basscss.min.css" rel="stylesheet"&gt;</pre>
+
+<hr class="b2 border-aqua">
 
 <p class="h3">
-  Basscss is organized according to four high-level categories:
-  <br class="md-show">
-  base elements, immutable utilities, layout modules, and color styles.
+  Basscss is composed of <%= modules.length %> modules - each available in standalone format on npm.
 </p>
 
 <ul class="flex flex-wrap list-reset mb3">

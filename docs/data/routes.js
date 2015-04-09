@@ -1,15 +1,7 @@
 
 var _ = require('lodash');
-var titleCase = require('title-case');
 var modules = require('./modules');
 
-var moduleRoutes = Object.keys(modules).map(function(key) {
-  var mod = modules[key];
-  //mod.title = titleCase(mod.name.replace(/^basscss\-/, '').replace(/\-/g, ' '));
-  mod.path = '/' + mod.name.replace(/^basscss\-/,'');
-  mod.content = 'content';
-  return mod;
-});
 
 module.exports = [
   {
@@ -20,13 +12,13 @@ module.exports = [
     name: 'docs',
     path: '/docs',
     routes: [].concat(
-      [
-        {
-          name: 'getting-started',
-          path: '/getting-started',
-        },
-      ],
-      moduleRoutes,
+      //[
+      //  {
+      //    name: 'getting-started',
+      //    path: '/getting-started',
+      //  },
+      //],
+      modules,
       [
         /*
         {

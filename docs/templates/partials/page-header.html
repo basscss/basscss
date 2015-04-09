@@ -1,7 +1,29 @@
 <header class="mt4 mb4">
   <h1 class="h1 h1-responsive caps m0">
     <%= page.title %>
+    <% if (page.module) { %>
+    <% } %>
   </h1>
+  <% if (page.module) { %>
+    <div class="flex flex-baseline flex-wrap mxn1">
+      <div class="bold px1">
+        <%= page.name %>
+        <span class="h5">v<%= page.version %></span>
+      </div>
+      <div class="flex-auto"></div>
+      <a href="<%= page.npm_link %>" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
+      <a href="<%= page.homepage %>" class="h6 caps ml1 mr1 button button-small button-link">Github</a>
+    </div>
+  <% } %>
+  <% if (page.path === '/') { %>
+    <div class="flex flex-wrap">
+      <p class="flex-auto h4 bold caps m0">
+        Low-level CSS toolkit
+        <span class="h5 caps">v<%= version %></span>
+      </p>
+      <a href="//github.com/jxnblk/basscss" class="h6 caps button button-small button-link">Github</a>
+    </div>
+  <% } %>
   <hr class="mt1 mb1 b2 border-aqua">
   <% if (obj.page.breadcrumbs.length) { %>
     <div class="h5 bold mb3">

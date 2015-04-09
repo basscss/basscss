@@ -5,19 +5,39 @@
 
 <div class="sm-ml12m">
   <div class="container-small px2 sm-px3 py2 mb3">
-    <% if(!obj.page.noHeader) { %>
-      <%= include('page-header') %>
+    <%= include('page-header') %>
+    <div class="prose">
+      <!--
+        temporary in-page nav
+      <% if (obj.page.sections) { %>
+        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
+          <ul class="list-reset mb0 ml2">
+            <% obj.page.sections.forEach(function(section) { %>
+              <li>
+                <a href="<%= '#' + _.kebabCase(section.content) %>"
+                  class="button button-small button-link blue">
+                  <%= section.content %>
+                </a>
+              </li>
+            <% }) %>
+          </ul>
+        </div>
+      <% } %>
+      -->
+      <%= body %>
+    </div>
+    <% if (page.module) { %>
+      <%= include('module-footer', { module: page }) %>
     <% } %>
-    <%= body %>
     <%= include('pagination') %>
   </div>
 </div>
 
-<div class="sm-hide fixed top-0 right-0">
-  <a href="#nav" class="button button-transparent">Menu</a>
+<div class="sm-hide fixed top-0 right-0 px2">
+  <a href="#nav" class="button button-link">Menu</a>
 </div>
 
-<div id="nav" class="sm-fixed sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
+<div id="nav" class="sm-fixed z2 sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
   <%= include('side-nav') %>
 </div>
 
