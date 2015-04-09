@@ -3,23 +3,21 @@
 
 module.exports = [
   {
-    name: 'Basscss',
+    name: 'basscss',
     path: '/',
-    //layout: './layouts/base.html',
   },
   {
     name: 'docs',
     path: '/docs',
-    //layout: './layouts/base.html',
     routes: [
-      //{
-      //  name: 'getting-started',
-      //  path: '/getting-started',
-      //},
+      {
+        name: 'getting-started',
+        path: '/getting-started',
+      },
       {
         name: 'base',
         path: '/base',
-        sections: [
+        modules: [
           { name: 'reset', module: 'basscss-base-reset' }, 
           { name: 'typography', module: 'basscss-base-typography' }, 
           { name: 'forms', module: 'basscss-base-forms' }, 
@@ -30,7 +28,7 @@ module.exports = [
       {
         name: 'utility',
         path: '/utility',
-        sections: [
+        modules: [
           { name: 'layout', module: 'basscss-utility-layout' }, 
           { name: 'typography', module: 'basscss-utility-typography' }, 
           { name: 'white-space-scale', module: 'basscss-utility-white-space' }, 
@@ -42,7 +40,7 @@ module.exports = [
       {
         name: 'layout',
         path: '/layout',
-        sections: [
+        modules: [
           { name: 'grid', module: 'basscss-grid' }, 
           { name: 'flex-object', module: 'flex-object' }, 
         ]
@@ -50,7 +48,7 @@ module.exports = [
       {
         name: 'color',
         path: '/color',
-        sections: [
+        modules: [
           { name: 'base', module: 'basscss-color-base' }, 
           { name: 'button-outline', module: 'basscss-button-outline' }, 
           { name: 'button-transparent', module: 'basscss-button-transparent' }, 
@@ -114,46 +112,51 @@ module.exports = [
         ]
       },
       {
-        name: 'principles',
-        title: 'Design Principles',
-        path: '/principles'
-      },
-      {
-        name: 'showcase',
-        title: 'Built with Basscss',
-        path: '/showcase',
-      },
-      {
-        name: 'Table of Styles',
-        path: '/styles'
-      },
-      {
-        name: 'stats',
-        path: '/stats'
-      },
-      {
-        name: 'color-combinations',
-        title: 'Color Combos',
-        path: '/color-combinations'
-      },
-      {
-        name: 'customize',
-        path: '/customize'
-      },
-      {
-        name: 'resources',
-        title: 'Tools & Resources',
-        path: '/resources'
-      },
+        name: 'reference',
+        path: '/reference',
+        routes: [
+          {
+            name: 'principles',
+            title: 'Design Principles',
+            path: '/principles'
+          },
+          {
+            name: 'showcase',
+            title: 'Built with Basscss',
+            path: '/showcase',
+          },
+          {
+            name: 'Table of Styles',
+            path: '/styles'
+          },
+          {
+            name: 'stats',
+            path: '/stats'
+          },
+          {
+            name: 'color-combinations',
+            title: 'Color Combos',
+            path: '/color-combinations'
+          },
+          {
+            name: 'customize',
+            path: '/customize'
+          },
+          {
+            name: 'resources',
+            title: 'Tools & Resources',
+            path: '/resources'
+          },
+        ]
+      }
     ]
   },
-  // Need filename option
-  //{
-  //  name: '404',
-  //  filename: '404.html',
-  //  path: '/',
-  //  filename: '404.html',
-  //  layout: './layouts/base.html'
-  //},
+  // Need filename option // Hidden path option?
+  {
+    name: '404',
+    filename: '404.html',
+    path: '/',
+    hidden: true,
+  },
 ];
 

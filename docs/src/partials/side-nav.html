@@ -1,19 +1,20 @@
-<% 
-var docs = routes[1].routes;
-%>
 
 <hr class="sm-hide mt1 mb1 b2 border-aqua">
 
-<a href="/" class="h1 button block button-transparent aqua">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
+<a href="/" class="h4 caps mt2 button block button-transparent aqua">
+  <svg xmlns="http://www.w3.org/2000/svg"
+    class="aqua"
+    viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
 </a>
 
-<a href="/" class="h4 caps button block button-transparent">Basscss</a>
+<a href="/" class="h4 caps button block button-transparent">
+  Basscss
+</a>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
-  <% docs.map(renderLink) %>
+  <% routes[1].routes.map(renderLink) %>
 </ul>
 
 <%= include('footer') %>
@@ -26,11 +27,25 @@ var docs = routes[1].routes;
       <%= obj.page.title === route.title ? 'bg-aqua' : '' %>">
       <%= route.title %>
     </a>
+    <% if (route.modules) { %>
+      <ul class="sm-show list-reset mb2">
+        <% route.modules.map(renderModuleLink, route) %>
+      </ul>
+    <% } %>
     <% if (route.routes) { %>
-      <ul class="h6 flex flex-wrap list-reset mb0">
+      <ul class="flex flex-wrap list-reset mb0">
         <% route.routes.map(renderLink) %>
       </ul>
     <% } %>
+  </li>
+<% } %>
+
+<% function renderModuleLink(mod) { %>
+  <li>
+    <a href="<%= this.path + '/#' + obj.removePrefix(mod.module) %>"
+      class="h6 block px2 button button-small button-transparent">
+        <%= _.capitalize(mod.name).replace(/\-/g, ' ') %>
+    </a>
   </li>
 <% } %>
 

@@ -54,8 +54,9 @@ var pages = autobass(data);
 
 function writePage(page) {
   var pagePath = path.join(__dirname, '../beta' + page.path);
+  var filename = page.filename || 'index.html';
   fs.ensureDirSync(pagePath);
-  fs.writeFileSync(pagePath + '/index.html', page.body);
+  fs.writeFileSync(pagePath + '/' + filename, page.body);
   console.log((pagePath + ' written'));
   if (page.routes) {
     page.routes.forEach(writePage);

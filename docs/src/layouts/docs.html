@@ -4,8 +4,10 @@
 <body>
 
 <div class="sm-ml12m">
-  <div class="container-small px2 py2">
-    <%= include('page-header') %>
+  <div class="container-small px2 sm-px3 py2 mb3">
+    <% if(!obj.page.noHeader) { %>
+      <%= include('page-header') %>
+    <% } %>
     <%= body %>
     <%= include('pagination') %>
   </div>

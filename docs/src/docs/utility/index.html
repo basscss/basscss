@@ -6,9 +6,9 @@
   while making its usage simple and obvious with short, humanized naming conventions.
 </p>
 
-<% if (obj.page.sections) { %>
-  <% page.sections.forEach(function(section) { %>
-    <%= include('module-section', { module: modules[section.module] }) %>
+<% if (obj.page.modules) { %>
+  <% page.modules.forEach(function(mod) { %>
+    <%= include('module-section', { module: modules[mod.module] }) %>
   <% }) %>
 <% }  %>
 
