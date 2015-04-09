@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>
+    Basscss
+     | White Space
+  </title>
+  <meta name="author" content="Brent Jackson">
+  <meta name="description" content="Low-level CSS toolkit">
+  
+    <meta name="keywords" content="CSS, OOCSS, framework, ">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.0/bassdock.min.css">
+  
+  <link rel="icon" href="/docs/images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
+  <style>
+    @media (min-width: 40em) {
+      .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
+      .sm-fixed { position: fixed }
+      .sm-w12m { width: 12em }
+      .sm-ml12m { margin-left: 12em }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="sm-ml12m">
+  <div class="container-small px2 sm-px3 py2 mb3">
+    
+      <header class="mt4 mb4">
+  <h1 class="h1 h1-responsive caps m0">
+    White Space
+  </h1>
+  <hr class="mt1 mb1 b2 border-aqua">
+  
+    <div class="h5 bold mb3">
+      <a href="/" class="button button-small mr1 button-link blue">Home</a>
+        
+          /
+          <a href="/docs" class="button button-small ml1 mr1 button-link blue">
+            Docs
+          </a>
+        
+      /
+      <span class="h5 bold inline-block ml1" style="vertical-align:middle">White Space</span>
+    </div>
+  
+</header>
+
+
+
+
+    
+    <p><h1 id="basscss-utility-white-space">Basscss Utility White Space</h1></p>
+<p class="hide">White space margin and padding utilities module for Basscss</p>
+
+<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
+<p>Margin and padding utilities are based on a global white space scale defined with variables.
+These utilities use a shorthand naming convention.</p>
+<div class="overflow-scroll">
+  <table class="mb2 bg-darken-1 rounded table-light">
+    <thead class="bg-darken-1">
+      <tr> <th>Shorthand</th> <th>Description</th> </tr>
+    </thead>
+    <tbody>
+      <tr> <td>m</td> <td>Margin</td> </tr>
+      <tr> <td>p</td> <td>Padding</td> </tr>
+      <tr> <td>t</td> <td>Top</td> </tr>
+      <tr> <td>r</td> <td>Right</td> </tr>
+      <tr> <td>b</td> <td>Bottom</td> </tr>
+      <tr> <td>l</td> <td>Left</td> </tr>
+      <tr> <td>x</td> <td>X-axis (left and right)</td> </tr>
+      <tr> <td>y</td> <td>Y-axis (top and bottom)</td> </tr>
+      <tr> <td>n</td> <td>Negative (margin only)</td> </tr>
+      <tr> <td>1</td> <td>--space-1 (default .5rem)</td> </tr>
+      <tr> <td>2</td> <td>--space-2 (default 1rem)</td> </tr>
+      <tr> <td>3</td> <td>--space-3 (default 2rem)</td> </tr>
+      <tr> <td>4</td> <td>--space-4 (default 4rem)</td> </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="margins">Margins</h2>
+<p>Change or reset default margins using the global white space scale.
+Negative x-axis margins are used to offset padding.
+Margin auto is used to horizontally center block-level elements with a set width.</p>
+<pre><code class="lang-css">.m0  { margin:        0 }
+.mt0 { margin-top:    0 }
+.mr0 { margin-right:  0 }
+.mb0 { margin-bottom: 0 }
+.ml0 { margin-left:   0 }
+
+.m1  { margin:        var(--space-1) }
+.mt1 { margin-top:    var(--space-1) }
+.mr1 { margin-right:  var(--space-1) }
+.mb1 { margin-bottom: var(--space-1) }
+.ml1 { margin-left:   var(--space-1) }
+
+.m2  { margin:        var(--space-2) }
+.mt2 { margin-top:    var(--space-2) }
+.mr2 { margin-right:  var(--space-2) }
+.mb2 { margin-bottom: var(--space-2) }
+.ml2 { margin-left:   var(--space-2) }
+
+.m3  { margin:        var(--space-3) }
+.mt3 { margin-top:    var(--space-3) }
+.mr3 { margin-right:  var(--space-3) }
+.mb3 { margin-bottom: var(--space-3) }
+.ml3 { margin-left:   var(--space-3) }
+
+.m4  { margin:        var(--space-4) }
+.mt4 { margin-top:    var(--space-4) }
+.mr4 { margin-right:  var(--space-4) }
+.mb4 { margin-bottom: var(--space-4) }
+.ml4 { margin-left:   var(--space-4) }
+
+.mxn1 { margin-left: -var(--space-1); margin-right: -var(--space-1); }
+.mxn2 { margin-left: -var(--space-2); margin-right: -var(--space-2); }
+.mxn3 { margin-left: -var(--space-3); margin-right: -var(--space-3); }
+.mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+</code></pre>
+<h2 id="padding">Padding</h2>
+<p>Padding utilities are only available in symmetrical orientations.
+This is to normalize the spacing used around elements.</p>
+<pre><code class="lang-css">.p1  { padding:       var(--space-1) }
+.py1 { padding-top:   var(--space-1); padding-bottom: var(--space-1) }
+.px1 { padding-left:  var(--space-1); padding-right:  var(--space-1) }
+
+.p2  { padding:       var(--space-2) }
+.py2 { padding-top:   var(--space-2); padding-bottom: var(--space-2) }
+.px2 { padding-left:  var(--space-2); padding-right:  var(--space-2) }
+
+.p3  { padding:       var(--space-3) }
+.py3 { padding-top:   var(--space-3); padding-bottom: var(--space-3) }
+.px3 { padding-left:  var(--space-3); padding-right:  var(--space-3) }
+
+.p4  { padding:       var(--space-4) }
+.py4 { padding-top:   var(--space-4); padding-bottom: var(--space-4) }
+.px4 { padding-left:  var(--space-4); padding-right:  var(--space-4) }
+</code></pre>
+<p><span class="red">Margins and padding should never be declared outside of these utilities.</span>
+This is meant to help create consistent rhythm and avoid magic numbers.
+If, for some reason, the default white space scale does not suit your design,
+customize and extend it before implementation.</p>
+
+    
+
+
+  <div class="clearfix mxn2 py2">
+    
+      <a href="/docs/utility-typography" class="h3 left button ml2 mr2 button-link blue">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
+          <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
+        </svg>
+        Typography
+      </a>
+    
+    
+      <a href="/docs/utility-responsive-states" class="h3 right button ml2 mr2 button-link blue">
+        Responsive States
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
+          <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
+        </svg>
+      </a>
+    
+  </div>
+
+
+
+  </div>
+</div>
+
+<div class="sm-hide fixed top-0 right-0">
+  <a href="#nav" class="button button-transparent">Menu</a>
+</div>
+
+<div id="nav" class="sm-fixed sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
+  
+<hr class="sm-hide mt1 mb1 b2 border-aqua">
+
+<a href="/" class="h4 caps mt2 button block button-transparent aqua">
+  <svg xmlns="http://www.w3.org/2000/svg"
+    class="aqua"
+    viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
+    <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
+  </svg>
+</a>
+
+<a href="/" class="h4 caps button block button-transparent">
+  Basscss
+</a>
+
+<ul class="flex flex-wrap list-reset mt2 mb1">
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/getting-started"
+      class="block button button-transparent
+      ">
+      Getting-started
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/base-reset"
+      class="block button button-transparent
+      ">
+      Base Reset
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/base-forms"
+      class="block button button-transparent
+      ">
+      Base Forms
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/base-buttons"
+      class="block button button-transparent
+      ">
+      Base Buttons
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/base-tables"
+      class="block button button-transparent
+      ">
+      Base Tables
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/base-typography"
+      class="block button button-transparent
+      ">
+      Base Typography
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/utility-layout"
+      class="block button button-transparent
+      ">
+      Layout
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/utility-typography"
+      class="block button button-transparent
+      ">
+      Typography
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/utility-white-space"
+      class="block button button-transparent
+      bg-aqua">
+      White Space
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/utility-responsive-states"
+      class="block button button-transparent
+      ">
+      Responsive States
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/positions"
+      class="block button button-transparent
+      ">
+      Positions
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/ui-utility-button-sizes"
+      class="block button button-transparent
+      ">
+      Button Sizes
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/grid"
+      class="block button button-transparent
+      ">
+      Grid
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/flex-object"
+      class="block button button-transparent
+      ">
+      Flex Object
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color-base"
+      class="block button button-transparent
+      ">
+      Color Base
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color-forms"
+      class="block button button-transparent
+      ">
+      Color Forms
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color-forms-dark"
+      class="block button button-transparent
+      ">
+      Color Forms Dark
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/input-range"
+      class="block button button-transparent
+      ">
+      Input Range
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/progress"
+      class="block button button-transparent
+      ">
+      Progress
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color-tables"
+      class="block button button-transparent
+      ">
+      Color Tables
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/button-outline"
+      class="block button button-transparent
+      ">
+      Button Outline
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/button-transparent"
+      class="block button button-transparent
+      ">
+      Button Transparent
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/background-images"
+      class="block button button-transparent
+      ">
+      Background Images
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color-borders"
+      class="block button button-transparent
+      ">
+      Color Borders
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/colors"
+      class="block button button-transparent
+      ">
+      Colors
+    </a>
+    
+    
+  </li>
+
+  <li class="col-12 mt2 mb2">
+    <a href="/docs/guides"
+      class="block button button-transparent
+      ">
+      Guides
+    </a>
+    
+    
+      <ul class="flex flex-wrap list-reset mb0">
+        
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/basics"
+      class="block button button-transparent
+      ">
+      Basics
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/layout"
+      class="block button button-transparent
+      ">
+      Page-layout
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/flex-layout"
+      class="block button button-transparent
+      ">
+      Flex Object Layout
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/ui"
+      class="block button button-transparent
+      ">
+      UI Elements
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/tips"
+      class="block button button-transparent
+      ">
+      Tips & Tricks
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/custom-builds"
+      class="block button button-transparent
+      ">
+      Custom Builds
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/css4"
+      class="block button button-transparent
+      ">
+      CSS4 Syntax
+    </a>
+    
+    
+  </li>
+
+      </ul>
+    
+  </li>
+
+  <li class="col-12 mt2 mb2">
+    <a href="/docs/reference"
+      class="block button button-transparent
+      ">
+      Reference
+    </a>
+    
+    
+      <ul class="flex flex-wrap list-reset mb0">
+        
+  <li class="col-6 sm-col-12">
+    <a href="/docs/reference/principles"
+      class="block button button-transparent
+      ">
+      Design Principles
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/reference/showcase"
+      class="block button button-transparent
+      ">
+      Built with Basscss
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/reference/styles"
+      class="block button button-transparent
+      ">
+      Table of Styles
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/reference/stats"
+      class="block button button-transparent
+      ">
+      Stats
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/reference/color-combinations"
+      class="block button button-transparent
+      ">
+      Color Combos
+    </a>
+    
+    
+  </li>
+
+  <li class="col-6 sm-col-12">
+    <a href="/docs/reference/resources"
+      class="block button button-transparent
+      ">
+      Tools & Resources
+    </a>
+    
+    
+  </li>
+
+      </ul>
+    
+  </li>
+
+</ul>
+
+<hr class="mt1 mb1 b2 border-aqua">
+
+<footer class="flex flex-wrap mb2">
+  <a href="//github.com/jxnblk/basscss" class="h6 block col-6 sm-col-12 px2 button button-small button-transparent">Github</a>
+  <a href="//jxnblk.com" class="h6 block col-6 sm-col-12 px2 button button-small button-transparent">
+    Made by Jxnblk
+  </a>
+  </p>
+</footer>
+
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Source+Code+Pro::latin' ] }
+  };
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})(); </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4603832-12', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>

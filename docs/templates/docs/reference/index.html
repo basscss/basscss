@@ -1,0 +1,15 @@
+
+<% function renderLink(link) { %>
+  <li class="col-6 sm-col-3 py2">
+    <a href="<%= link.path %>"
+      class="h3 button button-small button-link blue">
+      <%= link.title %>
+    </a>
+  </li>
+<% } %>
+
+<ul class="flex flex-wrap list-reset">
+  <% var i = _.findIndex(routes[1].routes, function(n) { return n.name === 'reference' }); %>
+  <% routes[1].routes[i].routes.map(renderLink) %>
+</ul>
+

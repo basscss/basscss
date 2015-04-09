@@ -4,7 +4,6 @@ var path = require('path');
 var mocha = require('mocha');
 var assert = require('assert');
 var cssstats = require('cssstats');
-var Cleancss = require('clean-css');
 
 // Rework
 var rework = require('rework');
@@ -16,14 +15,8 @@ var reworkColor = require('rework-color-function');
 var reworkPluginColors = require('rework-plugin-colors');
 var autoprefixer = require('autoprefixer');
 
-// Cssnext
 var cssnext = require('cssnext');
-
-// Other processors
 var basswork = require('basswork');
-var myth = require('myth');
-var reworkSuit = require('rework-suit');
-var suitcss = require('suitcss-preprocessor');
 
 
 module.exports = function(src) {
@@ -31,8 +24,6 @@ module.exports = function(src) {
   var processors = [
     'rework',
     'basswork',
-    'suitcss',
-    'myth',
     'cssnext',
   ];
 
@@ -49,30 +40,12 @@ module.exports = function(src) {
     ).css,
     basswork: basswork(src),
     cssnext: cssnext(src, { features: { rem: false } }),
-    myth: autoprefixer().process(
-      rework(src)
-        .use(reworkNpm())
-        .use(myth({ features: { import: false } }))
-        .toString()
-    ).css,
-    suitcss: autoprefixer().process(
-      rework(src)
-        .use(reworkColor)
-        .use(reworkSuit())
-        .toString()
-    ).css,
   };
 
-  var minified = {};
-  minified.release = new Cleancss().minify(results.release).styles;
-  processors.forEach(function(processor) {
-    minified[processor] = new Cleancss().minify(results[processor]).styles;
-  });
-
   var stats = {};
-  stats.release = cssstats(minified.release);
+  stats.release = cssstats(results.release);
   processors.forEach(function(processor) {
-    stats[processor] = cssstats(minified[processor]);
+    stats[processor] = cssstats(results[processor]);
   });
 
     
@@ -97,7 +70,6 @@ module.exports = function(src) {
   processors.forEach(function(processor) {
     testProcessors(processor);
   });
-
 
 };
 
