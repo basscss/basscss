@@ -47,7 +47,7 @@ WIP static site generator for modularized documentation
 Parses installed NPM modules for README.md, package.json, CSS, and CSS stats
 
 ### [Custom CSS](https://github.com/jxnblk/custom-css)
-React component for generating custom styles from a set of CSS modules – used in the [customize app](http://www.basscss.com/docs/customize/)
+React component for generating custom styles from a set of CSS modules<!-- – used in the [customize app](http://www.basscss.com/docs/customize/)-->
 
 ### [Rebass](https://github.com/jxnblk/rebass)
 WIP React UI components built with Basscss

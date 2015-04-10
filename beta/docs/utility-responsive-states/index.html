@@ -13,19 +13,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
     .prose p:first-of-type { font-size: 1.25rem }
-    .prose p { font-size: 1.125rem }
-    @media (min-width: 40em) {
-      .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
-      .sm-fixed { position: fixed }
-      .sm-w12m { width: 12em }
-      .sm-ml12m { margin-left: 12em }
-    }
+    .docs-show { display: block !important }
   </style>
 </head>
 
@@ -43,7 +37,7 @@
     <div class="flex flex-baseline flex-wrap mxn1">
       <div class="bold px1">
         basscss-utility-responsive-states
-        <span class="h5">v0.0.3</span>
+        <span class="h5">v0.0.4</span>
       </div>
       <div class="flex-auto"></div>
       <a href="//npmjs.com/package/basscss-utility-responsive-states" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
@@ -71,20 +65,11 @@
 
 
     <div class="prose">
-      <!--
-        temporary in-page nav
-      
-        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
-          <ul class="list-reset mb0 ml2">
-            
-          </ul>
-        </div>
-      
-      -->
-      <p><p>These styles allow for conditionally showing and hiding elements using a mobile-first approach.</p></p>
-<p><h2 id="prefix-naming-convention"><a href="#prefix-naming-convention">Prefix Naming Convention</a></h2><div class="overflow-scroll">
-  <table class="mb2 table-light overflow-hidden border rounded">
-    <thead class="bg-darken-1">
+      <p>Use these utilities to conditionally show and hide elements based on viewport width using a mobile-first approach.</p>
+<h2 id="prefix-naming-convention"><a href="#prefix-naming-convention">Prefix Naming Convention</a></h2><p>All breakpoint-based styles in Basscss follow the same naming convention.</p>
+<div class="overflow-auto">
+  <table class="mb2 table-flush table-light">
+    <thead>
       <tr> <th>Prefix</th> <th>Description</th> </tr>
     </thead>
     <tbody>
@@ -94,47 +79,20 @@
       <tr> <td>lg-</td> <td>--breakpoint-lg (default: min-width 64em)</td> </tr>
     </tbody>
   </table>
-</div></p>
-<p><p>To adjust the default breakpoints, declare custom media queries after importing the file via Rework, or manually adjust them in CSS.</p></p>
-<p><pre><span class="hljs-class">.sm-show</span>, <span class="hljs-class">.md-show</span>, <span class="hljs-class">.lg-show</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span>
-}
-@media (--breakpoint-sm) {
-  .sm-show { display: block <span class="hljs-important">!important</span> }
-}
-@media (--breakpoint-md) {
-  .md-show { display: block <span class="hljs-important">!important</span> }
-}
-@media (--breakpoint-lg) {
-  .lg-show { display: block <span class="hljs-important">!important</span> }
-}
-@media (--breakpoint-sm) {
-  .sm-hide { display: none <span class="hljs-important">!important</span> }
-}
-@media (--breakpoint-md) {
-  .md-hide { display: none <span class="hljs-important">!important</span> }
-}
-@media (--breakpoint-lg) {
-  .lg-hide { display: none <span class="hljs-important">!important</span> }
-}
-.display-none { display: none <span class="hljs-important">!important</span> }
-.hide {
-  position: absolute <span class="hljs-important">!important</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">1px</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">clip</span>:<span class="hljs-value"> <span class="hljs-function">rect</span>(<span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>, <span class="hljs-number">1px</span>)</span></span>;
-}</span></pre><h2 id="example"><a href="#example">Example</a></h2><p>Resize the browser window to see the effect.</p></p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
+</div>
+
+<p>Adjust the custom media queries to suite your needs.</p>
+<h2 id="show-and-hide-content"><a href="#show-and-hide-content">Show and hide content</a></h2><p>Resize the browser window to see the effect.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <h3 class="sm-show">Visible from <code>--breakpoint-sm</code> and up.</h3>
 <h3 class="sm-hide red">Hidden from <code>--breakpoint-sm</code> and up.</h3>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-show&quot;</span>&gt;</span>Visible from <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>--breakpoint-sm<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span> and up.<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sm-hide red&quot;</span>&gt;</span>Hidden from <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>--breakpoint-sm<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span> and up.<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span></pre>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-show"</span>&gt;</span>Visible from <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>--breakpoint-sm<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span> and up.<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-hide red"</span>&gt;</span>Hidden from <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>--breakpoint-sm<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span> and up.<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span></pre>
 </div>
 <h2 id="responsive-line-break"><a href="#responsive-line-break">Responsive Line Break</a></h2><p>Control wrapping at different screen widths.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <h1>
   Responsive Line Break
@@ -144,9 +102,24 @@
   </div>
   <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>
   Responsive Line Break
-  <span class="hljs-tag">&lt;<span class="hljs-title">br</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;md-show&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">br</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"md-show"</span>&gt;</span>
   To Control Wrapping
 <span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span></pre>
+</div>
+<h2 id="accessible-hide"><a href="#accessible-hide">Accessible Hide</a></h2><p>To visually hide things like form labels in an accessible way, use the <code>.hide</code> utility.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <form>
+  <label for="search" class="hide">Search</label>
+  <input id="search" type="search" class="field-light">
+  <button class="button">Go</button>
+</form>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"search"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hide"</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"search"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"search"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"field-light"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Go<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></pre>
 </div>
 
     </div>
@@ -240,7 +213,7 @@
 
   <div class="clearfix mt4 mxn2 py2">
     
-      <a href="/docs/utility-white-space" class="h3 left button ml2 mr2 button-link blue">
+      <a href="/docs/utility-white-space" class="h4 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
@@ -248,7 +221,7 @@
       </a>
     
     
-      <a href="/docs/positions" class="h3 right button ml2 mr2 button-link blue">
+      <a href="/docs/positions" class="h4 right button ml2 mr2 button-link blue">
         Positions
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
@@ -272,14 +245,15 @@
 
 <a href="/" class="h4 caps mt2 button block button-transparent aqua">
   <svg xmlns="http://www.w3.org/2000/svg"
-    class="aqua"
+    class="mr1 aqua"
     viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
+  <div class="sm-show mt1"></div>
+  <span class="black">Basscss</span>
 </a>
 
 <a href="/" class="h4 caps button block button-transparent">
-  Basscss
 </a>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
@@ -808,6 +782,10 @@ s.parentNode.insertBefore(wf, s);
 
 </div>
 
+      <!--
+        temporary in-page nav
+      
+      -->
 
 </body>
 </html>

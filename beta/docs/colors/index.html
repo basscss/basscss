@@ -13,19 +13,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
     .prose p:first-of-type { font-size: 1.25rem }
-    .prose p { font-size: 1.125rem }
-    @media (min-width: 40em) {
-      .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
-      .sm-fixed { position: fixed }
-      .sm-w12m { width: 12em }
-      .sm-ml12m { margin-left: 12em }
-    }
+    .docs-show { display: block !important }
   </style>
 </head>
 
@@ -71,19 +65,9 @@
 
 
     <div class="prose">
-      <!--
-        temporary in-page nav
-      
-        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
-          <ul class="list-reset mb0 ml2">
-            
-          </ul>
-        </div>
-      
-      -->
-      <p><p>Use this suite of color, background color, and border color utilities to directly style elements.
-The color values used in this module are from <a href="http://clrs.cc/">mrmrs/colors</a>.</p></p>
-<p><h2 id="colors"><a href="#colors">Colors</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
+      <p>Use this suite of color, background color, and border color utilities to directly style elements.
+The color values used in this module are from <a href="http://clrs.cc/">mrmrs/colors</a>.</p>
+<h2 id="colors"><a href="#colors">Colors</a></h2><div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <h3 class="center">
   <span class="black">.black</span>
@@ -105,29 +89,29 @@ The color values used in this module are from <a href="http://clrs.cc/">mrmrs/co
   <span class="maroon">.maroon</span>
 </h3>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;black&quot;</span>&gt;</span>.black<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;gray&quot;</span>&gt;</span>.gray<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;silver&quot;</span>&gt;</span>.silver<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;white&quot;</span>&gt;</span>.white<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;aqua&quot;</span>&gt;</span>.aqua<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;blue&quot;</span>&gt;</span>.blue<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;navy&quot;</span>&gt;</span>.navy<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;teal&quot;</span>&gt;</span>.teal<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;green&quot;</span>&gt;</span>.green<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;olive&quot;</span>&gt;</span>.olive<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;lime&quot;</span>&gt;</span>.lime<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;yellow&quot;</span>&gt;</span>.yellow<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;orange&quot;</span>&gt;</span>.orange<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;red&quot;</span>&gt;</span>.red<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fuchsia&quot;</span>&gt;</span>.fuchsia<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;purple&quot;</span>&gt;</span>.purple<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;maroon&quot;</span>&gt;</span>.maroon<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"black"</span>&gt;</span>.black<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gray"</span>&gt;</span>.gray<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"silver"</span>&gt;</span>.silver<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"white"</span>&gt;</span>.white<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"aqua"</span>&gt;</span>.aqua<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"blue"</span>&gt;</span>.blue<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navy"</span>&gt;</span>.navy<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"teal"</span>&gt;</span>.teal<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"green"</span>&gt;</span>.green<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"olive"</span>&gt;</span>.olive<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lime"</span>&gt;</span>.lime<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"yellow"</span>&gt;</span>.yellow<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"orange"</span>&gt;</span>.orange<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"red"</span>&gt;</span>.red<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fuchsia"</span>&gt;</span>.fuchsia<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"purple"</span>&gt;</span>.purple<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"maroon"</span>&gt;</span>.maroon<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span></pre>
-</div></p>
-<p><h2 id="background-colors"><a href="#background-colors">Background Colors</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
+</div>
+<h2 id="background-colors"><a href="#background-colors">Background Colors</a></h2><div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
-    <div class="center p1 white bg-black">.bg-black</div></p>
+    <div class="center p1 white bg-black">.bg-black</div>
 <div class="center p1 bg-gray">.bg-gray</div>
 <div class="center p1 bg-silver">.bg-silver</div>
 <div class="center p1 bg-white">.bg-white</div>
@@ -149,29 +133,29 @@ The color values used in this module are from <a href="http://clrs.cc/">mrmrs/co
 <div class="center p1 bg-darken-3">.bg-darken-3</div>
 <div class="center p1 bg-darken-4">.bg-darken-4</div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 white bg-black&quot;</span>&gt;</span>.bg-black<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-gray&quot;</span>&gt;</span>.bg-gray<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-silver&quot;</span>&gt;</span>.bg-silver<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-white&quot;</span>&gt;</span>.bg-white<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-aqua&quot;</span>&gt;</span>.bg-aqua<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-blue&quot;</span>&gt;</span>.bg-blue<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 white bg-navy&quot;</span>&gt;</span>.bg-navy<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-teal&quot;</span>&gt;</span>.bg-teal<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-green&quot;</span>&gt;</span>.bg-green<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-olive&quot;</span>&gt;</span>.bg-olive<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-lime&quot;</span>&gt;</span>.bg-lime<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-yellow&quot;</span>&gt;</span>.bg-yellow<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-orange&quot;</span>&gt;</span>.bg-orange<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-red&quot;</span>&gt;</span>.bg-red<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-fuchsia&quot;</span>&gt;</span>.bg-fuchsia<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-purple&quot;</span>&gt;</span>.bg-purple<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 white bg-maroon&quot;</span>&gt;</span>.bg-maroon<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-darken-1&quot;</span>&gt;</span>.bg-darken-1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-darken-2&quot;</span>&gt;</span>.bg-darken-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-darken-3&quot;</span>&gt;</span>.bg-darken-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center p1 bg-darken-4&quot;</span>&gt;</span>.bg-darken-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 white bg-black"</span>&gt;</span>.bg-black<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-gray"</span>&gt;</span>.bg-gray<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-silver"</span>&gt;</span>.bg-silver<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-white"</span>&gt;</span>.bg-white<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-aqua"</span>&gt;</span>.bg-aqua<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-blue"</span>&gt;</span>.bg-blue<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 white bg-navy"</span>&gt;</span>.bg-navy<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-teal"</span>&gt;</span>.bg-teal<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-green"</span>&gt;</span>.bg-green<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-olive"</span>&gt;</span>.bg-olive<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-lime"</span>&gt;</span>.bg-lime<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-yellow"</span>&gt;</span>.bg-yellow<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-orange"</span>&gt;</span>.bg-orange<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-red"</span>&gt;</span>.bg-red<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-fuchsia"</span>&gt;</span>.bg-fuchsia<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-purple"</span>&gt;</span>.bg-purple<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 white bg-maroon"</span>&gt;</span>.bg-maroon<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-darken-1"</span>&gt;</span>.bg-darken-1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-darken-2"</span>&gt;</span>.bg-darken-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-darken-3"</span>&gt;</span>.bg-darken-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p1 bg-darken-4"</span>&gt;</span>.bg-darken-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<h2 id="border-colors"><a href="#border-colors">Border Colors</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
+<h2 id="border-colors"><a href="#border-colors">Border Colors</a></h2><div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <div class="flex flex-wrap mxn1">
   <div class="flex-auto center m1 p1 border border-black">.border-black</div>
@@ -197,38 +181,38 @@ The color values used in this module are from <a href="http://clrs.cc/">mrmrs/co
   <div class="flex-auto center m1 p1 border border-darken-4">.border-darken-4</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex flex-wrap mxn1&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-black&quot;</span>&gt;</span>.border-black<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-gray&quot;</span>&gt;</span>.border-gray<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-silver&quot;</span>&gt;</span>.border-silver<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-white&quot;</span>&gt;</span>.border-white<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-aqua&quot;</span>&gt;</span>.border-aqua<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-blue&quot;</span>&gt;</span>.border-blue<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-navy&quot;</span>&gt;</span>.border-navy<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-teal&quot;</span>&gt;</span>.border-teal<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-green&quot;</span>&gt;</span>.border-green<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-olive&quot;</span>&gt;</span>.border-olive<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-lime&quot;</span>&gt;</span>.border-lime<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-yellow&quot;</span>&gt;</span>.border-yellow<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-orange&quot;</span>&gt;</span>.border-orange<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-red&quot;</span>&gt;</span>.border-red<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-fuchsia&quot;</span>&gt;</span>.border-fuchsia<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-purple&quot;</span>&gt;</span>.border-purple<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-maroon&quot;</span>&gt;</span>.border-maroon<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-darken-1&quot;</span>&gt;</span>.border-darken-1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-darken-2&quot;</span>&gt;</span>.border-darken-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-darken-3&quot;</span>&gt;</span>.border-darken-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex-auto center m1 p1 border border-darken-4&quot;</span>&gt;</span>.border-darken-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex flex-wrap mxn1"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-black"</span>&gt;</span>.border-black<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-gray"</span>&gt;</span>.border-gray<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-silver"</span>&gt;</span>.border-silver<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-white"</span>&gt;</span>.border-white<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-aqua"</span>&gt;</span>.border-aqua<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-blue"</span>&gt;</span>.border-blue<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-navy"</span>&gt;</span>.border-navy<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-teal"</span>&gt;</span>.border-teal<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-green"</span>&gt;</span>.border-green<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-olive"</span>&gt;</span>.border-olive<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-lime"</span>&gt;</span>.border-lime<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-yellow"</span>&gt;</span>.border-yellow<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-orange"</span>&gt;</span>.border-orange<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-red"</span>&gt;</span>.border-red<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-fuchsia"</span>&gt;</span>.border-fuchsia<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-purple"</span>&gt;</span>.border-purple<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-maroon"</span>&gt;</span>.border-maroon<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-darken-1"</span>&gt;</span>.border-darken-1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-darken-2"</span>&gt;</span>.border-darken-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-darken-3"</span>&gt;</span>.border-darken-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flex-auto center m1 p1 border border-darken-4"</span>&gt;</span>.border-darken-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="opacity"><a href="#opacity">Opacity</a></h2><p>To de-emphasize elements with lower opacity, use the <code>.muted</code> utility.</p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <span class="blue">Normal</span>
 <span class="blue muted">Muted</span>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;blue&quot;</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;blue muted&quot;</span>&gt;</span>Muted<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span></pre>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"blue"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"blue muted"</span>&gt;</span>Muted<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span></pre>
 </div>
 
     </div>
@@ -411,7 +395,7 @@ The color values used in this module are from <a href="http://clrs.cc/">mrmrs/co
 
   <div class="clearfix mt4 mxn2 py2">
     
-      <a href="/docs/color-borders" class="h3 left button ml2 mr2 button-link blue">
+      <a href="/docs/color-borders" class="h4 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
@@ -419,7 +403,7 @@ The color values used in this module are from <a href="http://clrs.cc/">mrmrs/co
       </a>
     
     
-      <a href="/docs/guides" class="h3 right button ml2 mr2 button-link blue">
+      <a href="/docs/guides" class="h4 right button ml2 mr2 button-link blue">
         Guides
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
@@ -443,14 +427,15 @@ The color values used in this module are from <a href="http://clrs.cc/">mrmrs/co
 
 <a href="/" class="h4 caps mt2 button block button-transparent aqua">
   <svg xmlns="http://www.w3.org/2000/svg"
-    class="aqua"
+    class="mr1 aqua"
     viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
+  <div class="sm-show mt1"></div>
+  <span class="black">Basscss</span>
 </a>
 
 <a href="/" class="h4 caps button block button-transparent">
-  Basscss
 </a>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
@@ -979,6 +964,10 @@ s.parentNode.insertBefore(wf, s);
 
 </div>
 
+      <!--
+        temporary in-page nav
+      
+      -->
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 
 <% function renderLink(route) { %>
-  <li class="<%= route.routes ? 'col-12 mt3' : 'col-6 sm-col-3' %> py2">
-    <a href="<%= route.path %>" class="<%= route.routes ? 'caps' : 'h3' %> button button-small button-link blue">
+  <li class="<%= route.routes ? 'col-12 mt3' : 'col-6 sm-col-3' %> py1">
+    <a href="<%= route.path %>" class="<%= route.routes ? 'h6 caps' : 'h4' %> button button-small button-link blue">
       <%= route.title %>
     </a>
     <% if (route.routes) { %>

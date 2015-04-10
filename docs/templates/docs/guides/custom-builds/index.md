@@ -102,10 +102,11 @@ var options = {
 @import "basscss/scss/base-typography";
 ```
 
+<!--
 # Customizer Web App
 
 If you’re not ready to dive into the command line, you can create custom builds of Basscss with the web app.
-
 <a href="/docs/customize" class="button button-outline blue">Customize</a>
+-->
 
 

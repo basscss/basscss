@@ -13,19 +13,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
     .prose p:first-of-type { font-size: 1.25rem }
-    .prose p { font-size: 1.125rem }
-    @media (min-width: 40em) {
-      .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
-      .sm-fixed { position: fixed }
-      .sm-w12m { width: 12em }
-      .sm-ml12m { margin-left: 12em }
-    }
+    .docs-show { display: block !important }
   </style>
 </head>
 
@@ -65,86 +59,6 @@
 
 
     <div class="prose">
-      <!--
-        temporary in-page nav
-      
-        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
-          <ul class="list-reset mb0 ml2">
-            
-              <li>
-                <a href="#avoid-overrides"
-                  class="button button-small button-link blue">
-                  Avoid Overrides
-                </a>
-              </li>
-            
-              <li>
-                <a href="#utility-styles-are-immutable"
-                  class="button button-small button-link blue">
-                  Utility Styles are Immutable
-                </a>
-              </li>
-            
-              <li>
-                <a href="#look-before-adding"
-                  class="button button-small button-link blue">
-                  Look Before Adding
-                </a>
-              </li>
-            
-              <li>
-                <a href="#avoid-magic-numbers"
-                  class="button button-small button-link blue">
-                  Avoid Magic Numbers
-                </a>
-              </li>
-            
-              <li>
-                <a href="#don-t-use-contextual-selectors"
-                  class="button button-small button-link blue">
-                  Don’t Use Contextual Selectors
-                </a>
-              </li>
-            
-              <li>
-                <a href="#handle-complexity-in-markup"
-                  class="button button-small button-link blue">
-                  Handle Complexity in Markup
-                </a>
-              </li>
-            
-              <li>
-                <a href="#keep-specificity-low"
-                  class="button button-small button-link blue">
-                  Keep Specificity Low
-                </a>
-              </li>
-            
-              <li>
-                <a href="#don-t-nest-selectors"
-                  class="button button-small button-link blue">
-                  Don’t Nest Selectors
-                </a>
-              </li>
-            
-              <li>
-                <a href="#don-t-use-i-ds-as-selectors"
-                  class="button button-small button-link blue">
-                  Don’t Use IDs as Selectors
-                </a>
-              </li>
-            
-              <li>
-                <a href="#separate-structure-and-skin"
-                  class="button button-small button-link blue">
-                  Separate Structure and Skin
-                </a>
-              </li>
-            
-          </ul>
-        </div>
-      
-      -->
       <p class="h3">
   Basscss is a versatile starting point for any project.
   These tips and tricks will help you build on top of its foundation
@@ -227,7 +141,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
 
   <div class="clearfix mt4 mxn2 py2">
     
-      <a href="/docs/guides/ui" class="h3 left button ml2 mr2 button-link blue">
+      <a href="/docs/guides/ui" class="h4 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
@@ -235,7 +149,7 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
       </a>
     
     
-      <a href="/docs/guides/custom-builds" class="h3 right button ml2 mr2 button-link blue">
+      <a href="/docs/guides/custom-builds" class="h4 right button ml2 mr2 button-link blue">
         Custom Builds
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
@@ -259,14 +173,15 @@ Keeping structural styles and skins decoupled aids in interoperability and desig
 
 <a href="/" class="h4 caps mt2 button block button-transparent aqua">
   <svg xmlns="http://www.w3.org/2000/svg"
-    class="aqua"
+    class="mr1 aqua"
     viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
+  <div class="sm-show mt1"></div>
+  <span class="black">Basscss</span>
 </a>
 
 <a href="/" class="h4 caps button block button-transparent">
-  Basscss
 </a>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
@@ -795,6 +710,86 @@ s.parentNode.insertBefore(wf, s);
 
 </div>
 
+      <!--
+        temporary in-page nav
+      
+        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
+          <ul class="list-reset mb0 ml2">
+            
+              <li>
+                <a href="#avoid-overrides"
+                  class="button button-small button-link blue">
+                  Avoid Overrides
+                </a>
+              </li>
+            
+              <li>
+                <a href="#utility-styles-are-immutable"
+                  class="button button-small button-link blue">
+                  Utility Styles are Immutable
+                </a>
+              </li>
+            
+              <li>
+                <a href="#look-before-adding"
+                  class="button button-small button-link blue">
+                  Look Before Adding
+                </a>
+              </li>
+            
+              <li>
+                <a href="#avoid-magic-numbers"
+                  class="button button-small button-link blue">
+                  Avoid Magic Numbers
+                </a>
+              </li>
+            
+              <li>
+                <a href="#don-t-use-contextual-selectors"
+                  class="button button-small button-link blue">
+                  Don’t Use Contextual Selectors
+                </a>
+              </li>
+            
+              <li>
+                <a href="#handle-complexity-in-markup"
+                  class="button button-small button-link blue">
+                  Handle Complexity in Markup
+                </a>
+              </li>
+            
+              <li>
+                <a href="#keep-specificity-low"
+                  class="button button-small button-link blue">
+                  Keep Specificity Low
+                </a>
+              </li>
+            
+              <li>
+                <a href="#don-t-nest-selectors"
+                  class="button button-small button-link blue">
+                  Don’t Nest Selectors
+                </a>
+              </li>
+            
+              <li>
+                <a href="#don-t-use-i-ds-as-selectors"
+                  class="button button-small button-link blue">
+                  Don’t Use IDs as Selectors
+                </a>
+              </li>
+            
+              <li>
+                <a href="#separate-structure-and-skin"
+                  class="button button-small button-link blue">
+                  Separate Structure and Skin
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+      -->
 
 </body>
 </html>

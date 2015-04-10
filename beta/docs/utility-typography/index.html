@@ -13,19 +13,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
     .prose p:first-of-type { font-size: 1.25rem }
-    .prose p { font-size: 1.125rem }
-    @media (min-width: 40em) {
-      .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
-      .sm-fixed { position: fixed }
-      .sm-w12m { width: 12em }
-      .sm-ml12m { margin-left: 12em }
-    }
+    .docs-show { display: block !important }
   </style>
 </head>
 
@@ -43,7 +37,7 @@
     <div class="flex flex-baseline flex-wrap mxn1">
       <div class="bold px1">
         basscss-utility-typography
-        <span class="h5">v0.0.3</span>
+        <span class="h5">v0.0.5</span>
       </div>
       <div class="flex-auto"></div>
       <a href="//npmjs.com/package/basscss-utility-typography" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
@@ -71,18 +65,8 @@
 
 
     <div class="prose">
-      <!--
-        temporary in-page nav
-      
-        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
-          <ul class="list-reset mb0 ml2">
-            
-          </ul>
-        </div>
-      
-      -->
-      <p><p>Change typographic styles and defaults with these utilities.</p></p>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
+      <p>Change typographic weights, styles, and alignment with these utility styles.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <p class="bold">Bold</p>
 <p class="regular">Regular</p>
@@ -92,15 +76,17 @@
 <p class="center">Center</p>
 <p class="right-align">Right align</p>
 <p class="justify">Justify Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+<p class="nowrap">No wrap</p>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bold&quot;</span>&gt;</span>Bold<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;regular&quot;</span>&gt;</span>Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;italic&quot;</span>&gt;</span>Italic<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;caps&quot;</span>&gt;</span>Caps<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;left-align&quot;</span>&gt;</span>Left align<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center&quot;</span>&gt;</span>Center<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;right-align&quot;</span>&gt;</span>Right align<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;justify&quot;</span>&gt;</span>Justify Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"bold"</span>&gt;</span>Bold<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"regular"</span>&gt;</span>Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"italic"</span>&gt;</span>Italic<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caps"</span>&gt;</span>Caps<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left-align"</span>&gt;</span>Left align<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center"</span>&gt;</span>Center<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right-align"</span>&gt;</span>Right align<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"justify"</span>&gt;</span>Justify Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nowrap"</span>&gt;</span>No wrap<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
 </div>
 
     </div>
@@ -167,7 +153,7 @@
 
   <div class="clearfix mt4 mxn2 py2">
     
-      <a href="/docs/utility-layout" class="h3 left button ml2 mr2 button-link blue">
+      <a href="/docs/utility-layout" class="h4 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
@@ -175,7 +161,7 @@
       </a>
     
     
-      <a href="/docs/utility-white-space" class="h3 right button ml2 mr2 button-link blue">
+      <a href="/docs/utility-white-space" class="h4 right button ml2 mr2 button-link blue">
         White Space
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
@@ -199,14 +185,15 @@
 
 <a href="/" class="h4 caps mt2 button block button-transparent aqua">
   <svg xmlns="http://www.w3.org/2000/svg"
-    class="aqua"
+    class="mr1 aqua"
     viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
+  <div class="sm-show mt1"></div>
+  <span class="black">Basscss</span>
 </a>
 
 <a href="/" class="h4 caps button block button-transparent">
-  Basscss
 </a>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
@@ -735,6 +722,10 @@ s.parentNode.insertBefore(wf, s);
 
 </div>
 
+      <!--
+        temporary in-page nav
+      
+      -->
 
 </body>
 </html>

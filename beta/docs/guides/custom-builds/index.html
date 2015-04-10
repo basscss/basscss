@@ -13,19 +13,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
     .prose p:first-of-type { font-size: 1.25rem }
-    .prose p { font-size: 1.125rem }
-    @media (min-width: 40em) {
-      .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
-      .sm-fixed { position: fixed }
-      .sm-w12m { width: 12em }
-      .sm-ml12m { margin-left: 12em }
-    }
+    .docs-show { display: block !important }
   </style>
 </head>
 
@@ -65,65 +59,6 @@
 
 
     <div class="prose">
-      <!--
-        temporary in-page nav
-      
-        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
-          <ul class="list-reset mb0 ml2">
-            
-              <li>
-                <a href="#css-4"
-                  class="button button-small button-link blue">
-                  CSS4
-                </a>
-              </li>
-            
-              <li>
-                <a href="#bassplate"
-                  class="button button-small button-link blue">
-                  Bassplate
-                </a>
-              </li>
-            
-              <li>
-                <a href="#npm-packages"
-                  class="button button-small button-link blue">
-                  Npm Packages
-                </a>
-              </li>
-            
-              <li>
-                <a href="#importing-files"
-                  class="button button-small button-link blue">
-                  Importing files
-                </a>
-              </li>
-            
-              <li>
-                <a href="#sass"
-                  class="button button-small button-link blue">
-                  Sass
-                </a>
-              </li>
-            
-              <li>
-                <a href="#sass-with-bower"
-                  class="button button-small button-link blue">
-                  Sass with Bower
-                </a>
-              </li>
-            
-              <li>
-                <a href="#customizer-web-app"
-                  class="button button-small button-link blue">
-                  Customizer Web App
-                </a>
-              </li>
-            
-          </ul>
-        </div>
-      
-      -->
       <p class="h3">
   Basscss is a collection of interoperable CSS modules
   and can be used in conjunction with many other frameworks, libraries, and stylesheets.
@@ -165,8 +100,12 @@ add <code>bower_components/basscss/scss</code> to the <code>includePaths</code> 
   includePaths: [<span class="hljs-string">'bower_components/'</span>]
 }</pre><pre><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss/scss/defaults"</span>;</span>
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss/scss/base-reset"</span>;</span>
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss/scss/base-typography"</span>;</span></pre><h1 id="customizer-web-app"><a href="#customizer-web-app">Customizer Web App</a></h1><p>If you’re not ready to dive into the command line, you can create custom builds of Basscss with the web app.</p>
-<p><a href="/docs/customize" class="button button-outline blue">Customize</a></p>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"basscss/scss/base-typography"</span>;</span></pre><!--
+# Customizer Web App
+
+If you’re not ready to dive into the command line, you can create custom builds of Basscss with the web app.
+<a href="/docs/customize" class="button button-outline blue">Customize</a>
+-->
 
     </div>
     
@@ -175,7 +114,7 @@ add <code>bower_components/basscss/scss</code> to the <code>includePaths</code> 
 
   <div class="clearfix mt4 mxn2 py2">
     
-      <a href="/docs/guides/tips" class="h3 left button ml2 mr2 button-link blue">
+      <a href="/docs/guides/tips" class="h4 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
@@ -183,7 +122,7 @@ add <code>bower_components/basscss/scss</code> to the <code>includePaths</code> 
       </a>
     
     
-      <a href="/docs/guides/css4" class="h3 right button ml2 mr2 button-link blue">
+      <a href="/docs/guides/css4" class="h4 right button ml2 mr2 button-link blue">
         CSS4 Syntax
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
@@ -207,14 +146,15 @@ add <code>bower_components/basscss/scss</code> to the <code>includePaths</code> 
 
 <a href="/" class="h4 caps mt2 button block button-transparent aqua">
   <svg xmlns="http://www.w3.org/2000/svg"
-    class="aqua"
+    class="mr1 aqua"
     viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
+  <div class="sm-show mt1"></div>
+  <span class="black">Basscss</span>
 </a>
 
 <a href="/" class="h4 caps button block button-transparent">
-  Basscss
 </a>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
@@ -743,6 +683,65 @@ s.parentNode.insertBefore(wf, s);
 
 </div>
 
+      <!--
+        temporary in-page nav
+      
+        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
+          <ul class="list-reset mb0 ml2">
+            
+              <li>
+                <a href="#css-4"
+                  class="button button-small button-link blue">
+                  CSS4
+                </a>
+              </li>
+            
+              <li>
+                <a href="#bassplate"
+                  class="button button-small button-link blue">
+                  Bassplate
+                </a>
+              </li>
+            
+              <li>
+                <a href="#npm-packages"
+                  class="button button-small button-link blue">
+                  Npm Packages
+                </a>
+              </li>
+            
+              <li>
+                <a href="#importing-files"
+                  class="button button-small button-link blue">
+                  Importing files
+                </a>
+              </li>
+            
+              <li>
+                <a href="#sass"
+                  class="button button-small button-link blue">
+                  Sass
+                </a>
+              </li>
+            
+              <li>
+                <a href="#sass-with-bower"
+                  class="button button-small button-link blue">
+                  Sass with Bower
+                </a>
+              </li>
+            
+              <li>
+                <a href="#customizer-web-app"
+                  class="button button-small button-link blue">
+                  Customizer Web App
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+      -->
 
 </body>
 </html>

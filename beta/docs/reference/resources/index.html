@@ -13,19 +13,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
     .prose p:first-of-type { font-size: 1.25rem }
-    .prose p { font-size: 1.125rem }
-    @media (min-width: 40em) {
-      .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
-      .sm-fixed { position: fixed }
-      .sm-w12m { width: 12em }
-      .sm-ml12m { margin-left: 12em }
-    }
+    .docs-show { display: block !important }
   </style>
 </head>
 
@@ -65,184 +59,6 @@
 
 
     <div class="prose">
-      <!--
-        temporary in-page nav
-      
-        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
-          <ul class="list-reset mb0 ml2">
-            
-              <li>
-                <a href="#cssnext-http-cssnext-github-io"
-                  class="button button-small button-link blue">
-                  [Cssnext](http://cssnext.github.io/)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#bassplate-https-github-com-jxnblk-bassplate"
-                  class="button button-small button-link blue">
-                  [Bassplate](https://github.com/jxnblk/bassplate)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#post-css-https-github-com-postcss-postcss"
-                  class="button button-small button-link blue">
-                  [PostCSS](https://github.com/postcss/postcss)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#rework-https-github-com-reworkcss-rework"
-                  class="button button-small button-link blue">
-                  [Rework](https://github.com/reworkcss/rework)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#basswork-https-github-com-jxnblk-basswork"
-                  class="button button-small button-link blue">
-                  [Basswork](https://github.com/jxnblk/basswork)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#css-scss-https-github-com-jxnblk-css-scss"
-                  class="button button-small button-link blue">
-                  [css-scss](https://github.com/jxnblk/css-scss)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#css-stats-http-cssstats-com"
-                  class="button button-small button-link blue">
-                  [CSS Stats](http://cssstats.com/)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#css-statistics-https-github-com-cssstats-css-statistics"
-                  class="button button-small button-link blue">
-                  [css-statistics](https://github.com/cssstats/css-statistics)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#gulp-cssstats-https-github-com-cssstats-gulp-cssstats"
-                  class="button button-small button-link blue">
-                  [gulp-cssstats](https://github.com/cssstats/gulp-cssstats)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#grunt-cssstats-https-github-com-cssstats-grunt-cssstats"
-                  class="button button-small button-link blue">
-                  [grunt-cssstats](https://github.com/cssstats/grunt-cssstats)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#colors-css-http-clrs-cc"
-                  class="button button-small button-link blue">
-                  [colors.css](http://clrs.cc/)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#autobass-https-github-com-jxnblk-autobass"
-                  class="button button-small button-link blue">
-                  [Autobass](https://github.com/jxnblk/autobass)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#marked-example-https-github-com-jxnblk-marked-example"
-                  class="button button-small button-link blue">
-                  [Marked Example](https://github.com/jxnblk/marked-example)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#get-module-info-https-github-com-jxnblk-get-module-info"
-                  class="button button-small button-link blue">
-                  [Get Module Info](https://github.com/jxnblk/get-module-info)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#custom-css-https-github-com-jxnblk-custom-css"
-                  class="button button-small button-link blue">
-                  [Custom CSS](https://github.com/jxnblk/custom-css)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#rebass-https-github-com-jxnblk-rebass"
-                  class="button button-small button-link blue">
-                  [Rebass](https://github.com/jxnblk/rebass)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#bassdock-https-github-com-jxnblk-bassdock"
-                  class="button button-small button-link blue">
-                  [Bassdock](https://github.com/jxnblk/bassdock)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#monobass-https-github-com-jxnblk-monobass"
-                  class="button button-small button-link blue">
-                  [Monobass](https://github.com/jxnblk/monobass)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#colorable-http-jxnblk-com-colorable"
-                  class="button button-small button-link blue">
-                  [Colorable](http://jxnblk.com/colorable/)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#handlebars-basscss-http-jxnblk-com-handlebars-basscss"
-                  class="button button-small button-link blue">
-                  [Handlebars Basscss](http://jxnblk.com/handlebars-basscss/)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#other-css-libraries"
-                  class="button button-small button-link blue">
-                  Other CSS libraries
-                </a>
-              </li>
-            
-              <li>
-                <a href="#tachyons-http-tachyons-io"
-                  class="button button-small button-link blue">
-                  [Tachyons](http://tachyons.io/)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#suit-css-http-suitcss-github-io"
-                  class="button button-small button-link blue">
-                  [Suit CSS](http://suitcss.github.io/)
-                </a>
-              </li>
-            
-              <li>
-                <a href="#inuitcss-https-github-com-inuitcss"
-                  class="button button-small button-link blue">
-                  [inuitcss](https://github.com/inuitcss)
-                </a>
-              </li>
-            
-          </ul>
-        </div>
-      
-      -->
       <p class="h3">
   A list of tools used in Basscss and other useful resources for working with CSS
 </p>
@@ -262,7 +78,7 @@
 <h3 id="a-href-https-github-com-jxnblk-autobass-autobass-a"><a href="#a-href-https-github-com-jxnblk-autobass-autobass-a"><a href="https://github.com/jxnblk/autobass">Autobass</a></a></h3><p>WIP static site generator for modularized documentation</p>
 <h3 id="a-href-https-github-com-jxnblk-marked-example-marked-example-a"><a href="#a-href-https-github-com-jxnblk-marked-example-marked-example-a"><a href="https://github.com/jxnblk/marked-example">Marked Example</a></a></h3><p><a href="https://www.npmjs.com/package/marked">Marked</a> markdown plugin for converting HTML fence blocks to live code examples</p>
 <h3 id="a-href-https-github-com-jxnblk-get-module-info-get-module-info-a"><a href="#a-href-https-github-com-jxnblk-get-module-info-get-module-info-a"><a href="https://github.com/jxnblk/get-module-info">Get Module Info</a></a></h3><p>Parses installed NPM modules for README.md, package.json, CSS, and CSS stats</p>
-<h3 id="a-href-https-github-com-jxnblk-custom-css-custom-css-a"><a href="#a-href-https-github-com-jxnblk-custom-css-custom-css-a"><a href="https://github.com/jxnblk/custom-css">Custom CSS</a></a></h3><p>React component for generating custom styles from a set of CSS modules – used in the <a href="http://www.basscss.com/docs/customize/">customize app</a></p>
+<h3 id="a-href-https-github-com-jxnblk-custom-css-custom-css-a"><a href="#a-href-https-github-com-jxnblk-custom-css-custom-css-a"><a href="https://github.com/jxnblk/custom-css">Custom CSS</a></a></h3><p>React component for generating custom styles from a set of CSS modules<!-- – used in the [customize app](http://www.basscss.com/docs/customize/)--></p>
 <h3 id="a-href-https-github-com-jxnblk-rebass-rebass-a"><a href="#a-href-https-github-com-jxnblk-rebass-rebass-a"><a href="https://github.com/jxnblk/rebass">Rebass</a></a></h3><p>WIP React UI components built with Basscss</p>
 <h3 id="a-href-https-github-com-jxnblk-bassdock-bassdock-a"><a href="#a-href-https-github-com-jxnblk-bassdock-bassdock-a"><a href="https://github.com/jxnblk/bassdock">Bassdock</a></a></h3><p>Theme used in Basscss’s site</p>
 <h3 id="a-href-https-github-com-jxnblk-monobass-monobass-a"><a href="#a-href-https-github-com-jxnblk-monobass-monobass-a"><a href="https://github.com/jxnblk/monobass">Monobass</a></a></h3><p>Minimal Basscss theme </p>
@@ -283,7 +99,7 @@ Handlebars helpers for creating UI components with Basscss
 
   <div class="clearfix mt4 mxn2 py2">
     
-      <a href="/docs/reference/color-combinations" class="h3 left button ml2 mr2 button-link blue">
+      <a href="/docs/reference/color-combinations" class="h4 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
@@ -291,7 +107,7 @@ Handlebars helpers for creating UI components with Basscss
       </a>
     
     
-      <a href="/docs/reference/principles" class="h3 right button ml2 mr2 button-link blue">
+      <a href="/docs/reference/principles" class="h4 right button ml2 mr2 button-link blue">
         Design Principles
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
@@ -315,14 +131,15 @@ Handlebars helpers for creating UI components with Basscss
 
 <a href="/" class="h4 caps mt2 button block button-transparent aqua">
   <svg xmlns="http://www.w3.org/2000/svg"
-    class="aqua"
+    class="mr1 aqua"
     viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
+  <div class="sm-show mt1"></div>
+  <span class="black">Basscss</span>
 </a>
 
 <a href="/" class="h4 caps button block button-transparent">
-  Basscss
 </a>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
@@ -851,6 +668,184 @@ s.parentNode.insertBefore(wf, s);
 
 </div>
 
+      <!--
+        temporary in-page nav
+      
+        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
+          <ul class="list-reset mb0 ml2">
+            
+              <li>
+                <a href="#cssnext-http-cssnext-github-io"
+                  class="button button-small button-link blue">
+                  [Cssnext](http://cssnext.github.io/)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#bassplate-https-github-com-jxnblk-bassplate"
+                  class="button button-small button-link blue">
+                  [Bassplate](https://github.com/jxnblk/bassplate)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#post-css-https-github-com-postcss-postcss"
+                  class="button button-small button-link blue">
+                  [PostCSS](https://github.com/postcss/postcss)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#rework-https-github-com-reworkcss-rework"
+                  class="button button-small button-link blue">
+                  [Rework](https://github.com/reworkcss/rework)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#basswork-https-github-com-jxnblk-basswork"
+                  class="button button-small button-link blue">
+                  [Basswork](https://github.com/jxnblk/basswork)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#css-scss-https-github-com-jxnblk-css-scss"
+                  class="button button-small button-link blue">
+                  [css-scss](https://github.com/jxnblk/css-scss)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#css-stats-http-cssstats-com"
+                  class="button button-small button-link blue">
+                  [CSS Stats](http://cssstats.com/)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#css-statistics-https-github-com-cssstats-css-statistics"
+                  class="button button-small button-link blue">
+                  [css-statistics](https://github.com/cssstats/css-statistics)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#gulp-cssstats-https-github-com-cssstats-gulp-cssstats"
+                  class="button button-small button-link blue">
+                  [gulp-cssstats](https://github.com/cssstats/gulp-cssstats)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#grunt-cssstats-https-github-com-cssstats-grunt-cssstats"
+                  class="button button-small button-link blue">
+                  [grunt-cssstats](https://github.com/cssstats/grunt-cssstats)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#colors-css-http-clrs-cc"
+                  class="button button-small button-link blue">
+                  [colors.css](http://clrs.cc/)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#autobass-https-github-com-jxnblk-autobass"
+                  class="button button-small button-link blue">
+                  [Autobass](https://github.com/jxnblk/autobass)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#marked-example-https-github-com-jxnblk-marked-example"
+                  class="button button-small button-link blue">
+                  [Marked Example](https://github.com/jxnblk/marked-example)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#get-module-info-https-github-com-jxnblk-get-module-info"
+                  class="button button-small button-link blue">
+                  [Get Module Info](https://github.com/jxnblk/get-module-info)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#custom-css-https-github-com-jxnblk-custom-css"
+                  class="button button-small button-link blue">
+                  [Custom CSS](https://github.com/jxnblk/custom-css)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#rebass-https-github-com-jxnblk-rebass"
+                  class="button button-small button-link blue">
+                  [Rebass](https://github.com/jxnblk/rebass)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#bassdock-https-github-com-jxnblk-bassdock"
+                  class="button button-small button-link blue">
+                  [Bassdock](https://github.com/jxnblk/bassdock)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#monobass-https-github-com-jxnblk-monobass"
+                  class="button button-small button-link blue">
+                  [Monobass](https://github.com/jxnblk/monobass)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#colorable-http-jxnblk-com-colorable"
+                  class="button button-small button-link blue">
+                  [Colorable](http://jxnblk.com/colorable/)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#handlebars-basscss-http-jxnblk-com-handlebars-basscss"
+                  class="button button-small button-link blue">
+                  [Handlebars Basscss](http://jxnblk.com/handlebars-basscss/)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#other-css-libraries"
+                  class="button button-small button-link blue">
+                  Other CSS libraries
+                </a>
+              </li>
+            
+              <li>
+                <a href="#tachyons-http-tachyons-io"
+                  class="button button-small button-link blue">
+                  [Tachyons](http://tachyons.io/)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#suit-css-http-suitcss-github-io"
+                  class="button button-small button-link blue">
+                  [Suit CSS](http://suitcss.github.io/)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#inuitcss-https-github-com-inuitcss"
+                  class="button button-small button-link blue">
+                  [inuitcss](https://github.com/inuitcss)
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+      -->
 
 </body>
 </html>

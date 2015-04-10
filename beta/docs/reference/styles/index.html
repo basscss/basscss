@@ -13,19 +13,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
     .prose p:first-of-type { font-size: 1.25rem }
-    .prose p { font-size: 1.125rem }
-    @media (min-width: 40em) {
-      .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
-      .sm-fixed { position: fixed }
-      .sm-w12m { width: 12em }
-      .sm-ml12m { margin-left: 12em }
-    }
+    .docs-show { display: block !important }
   </style>
 </head>
 
@@ -65,17 +59,13 @@
 
 
     <div class="prose">
-      <!--
-        temporary in-page nav
-      
-      -->
       
 
   <section id="basscss-base-reset" class="py3">
     <div class="flex flex-center mb1">
       <h2 class="flex-auto m0">
         Base Reset
-        <span class="h5">v0.0.4</span>
+        <span class="h5">v0.0.5</span>
       </h2>
       <a href="/docs/base-reset"
         class="button button-small button-link blue">
@@ -150,7 +140,7 @@
     <div class="flex flex-center mb1">
       <h2 class="flex-auto m0">
         Base Forms
-        <span class="h5">v1.0.7</span>
+        <span class="h5">v1.1.0</span>
       </h2>
       <a href="/docs/base-forms"
         class="button button-small button-link blue">
@@ -177,7 +167,7 @@ fieldset
                 
                 margin-top: 0;
                 
-                margin-bottom: var(--space-1, .5rem);
+                margin-bottom: 0;
                 
               </td>
             </tr>
@@ -306,7 +296,7 @@ input[type=week]
     <div class="flex flex-center mb1">
       <h2 class="flex-auto m0">
         Base Buttons
-        <span class="h5">v1.0.8</span>
+        <span class="h5">v1.0.9</span>
       </h2>
       <a href="/docs/base-buttons"
         class="button button-small button-link blue">
@@ -411,7 +401,7 @@ button:before,
     <div class="flex flex-center mb1">
       <h2 class="flex-auto m0">
         Base Tables
-        <span class="h5">v0.1.2</span>
+        <span class="h5">v0.1.3</span>
       </h2>
       <a href="/docs/base-tables"
         class="button button-small button-link blue">
@@ -510,7 +500,7 @@ td
     <div class="flex flex-center mb1">
       <h2 class="flex-auto m0">
         Base Typography
-        <span class="h5">v0.0.5</span>
+        <span class="h5">v0.0.6</span>
       </h2>
       <a href="/docs/base-typography"
         class="button button-small button-link blue">
@@ -573,19 +563,6 @@ td
                 margin-top: 0;
                 
                 margin-bottom: var(--space-2);
-                
-              </td>
-            </tr>
-          
-        
-          
-            <tr>
-              <td class="sm-col-3">
-                ol, ul
-              </td>
-              <td class="sm-col-9">
-                
-                padding-left: var(--space-3);
                 
               </td>
             </tr>
@@ -778,7 +755,7 @@ td
     <div class="flex flex-center mb1">
       <h2 class="flex-auto m0">
         Layout
-        <span class="h5">v0.0.3</span>
+        <span class="h5">v0.0.4</span>
       </h2>
       <a href="/docs/utility-layout"
         class="button button-small button-link blue">
@@ -971,7 +948,7 @@ td
     <div class="flex flex-center mb1">
       <h2 class="flex-auto m0">
         Typography
-        <span class="h5">v0.0.3</span>
+        <span class="h5">v0.0.5</span>
       </h2>
       <a href="/docs/utility-typography"
         class="button button-small button-link blue">
@@ -1113,7 +1090,7 @@ td
     <div class="flex flex-center mb1">
       <h2 class="flex-auto m0">
         White Space
-        <span class="h5">v0.0.5</span>
+        <span class="h5">v0.0.6</span>
       </h2>
       <a href="/docs/utility-white-space"
         class="button button-small button-link blue">
@@ -1708,7 +1685,7 @@ td
     <div class="flex flex-center mb1">
       <h2 class="flex-auto m0">
         Responsive States
-        <span class="h5">v0.0.3</span>
+        <span class="h5">v0.0.4</span>
       </h2>
       <a href="/docs/utility-responsive-states"
         class="button button-small button-link blue">
@@ -2005,29 +1982,6 @@ td
               <td class="sm-col-9">
                 
                 z-index: 4;
-                
-              </td>
-            </tr>
-          
-        
-          
-            <tr>
-              <td class="sm-col-3">
-                .absolute-center
-              </td>
-              <td class="sm-col-9">
-                
-                top: 0;
-                
-                right: 0;
-                
-                bottom: 0;
-                
-                left: 0;
-                
-                margin: auto;
-                
-                display: table;
                 
               </td>
             </tr>
@@ -4112,21 +4066,21 @@ td
                 
                 content: '';
                 
-                width: 100%;
-                
-                height: 100%;
-                
                 display: block;
                 
                 position: absolute;
                 
                 z-index: -1;
                 
-                top: -1px;
+                top: -var(--border-width);
                 
-                left: -1px;
+                right: -var(--border-width);
                 
-                border: 1px solid transparent;
+                bottom: -var(--border-width);
+                
+                left: -var(--border-width);
+                
+                border: var(--border-width) solid transparent;
                 
                 background-color: currentcolor;
                 
@@ -5530,7 +5484,7 @@ td
 
   <div class="clearfix mt4 mxn2 py2">
     
-      <a href="/docs/reference/showcase" class="h3 left button ml2 mr2 button-link blue">
+      <a href="/docs/reference/showcase" class="h4 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
@@ -5538,7 +5492,7 @@ td
       </a>
     
     
-      <a href="/docs/reference/stats" class="h3 right button ml2 mr2 button-link blue">
+      <a href="/docs/reference/stats" class="h4 right button ml2 mr2 button-link blue">
         Stats
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
@@ -5562,14 +5516,15 @@ td
 
 <a href="/" class="h4 caps mt2 button block button-transparent aqua">
   <svg xmlns="http://www.w3.org/2000/svg"
-    class="aqua"
+    class="mr1 aqua"
     viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
+  <div class="sm-show mt1"></div>
+  <span class="black">Basscss</span>
 </a>
 
 <a href="/" class="h4 caps button block button-transparent">
-  Basscss
 </a>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
@@ -6098,6 +6053,10 @@ s.parentNode.insertBefore(wf, s);
 
 </div>
 
+      <!--
+        temporary in-page nav
+      
+      -->
 
 </body>
 </html>

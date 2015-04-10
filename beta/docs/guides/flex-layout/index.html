@@ -13,19 +13,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
     .prose p:first-of-type { font-size: 1.25rem }
-    .prose p { font-size: 1.125rem }
-    @media (min-width: 40em) {
-      .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
-      .sm-fixed { position: fixed }
-      .sm-w12m { width: 12em }
-      .sm-ml12m { margin-left: 12em }
-    }
+    .docs-show { display: block !important }
   </style>
 </head>
 
@@ -65,100 +59,6 @@
 
 
     <div class="prose">
-      <!--
-        temporary in-page nav
-      
-        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
-          <ul class="list-reset mb0 ml2">
-            
-              <li>
-                <a href="#vertical-alignment"
-                  class="button button-small button-link blue">
-                  Vertical Alignment
-                </a>
-              </li>
-            
-              <li>
-                <a href="#sticky-footer"
-                  class="button button-small button-link blue">
-                  Sticky Footer
-                </a>
-              </li>
-            
-              <li>
-                <a href="#holy-grail"
-                  class="button button-small button-link blue">
-                  Holy Grail
-                </a>
-              </li>
-            
-              <li>
-                <a href="#input-groups"
-                  class="button button-small button-link blue">
-                  Input Groups
-                </a>
-              </li>
-            
-              <li>
-                <a href="#media-object"
-                  class="button button-small button-link blue">
-                  Media Object
-                </a>
-              </li>
-            
-              <li>
-                <a href="#automatic-grid"
-                  class="button button-small button-link blue">
-                  Automatic Grid
-                </a>
-              </li>
-            
-              <li>
-                <a href="#grid-with-individual-column-sizing"
-                  class="button button-small button-link blue">
-                  Grid with Individual Column Sizing
-                </a>
-              </li>
-            
-              <li>
-                <a href="#responsive-grid"
-                  class="button button-small button-link blue">
-                  Responsive Grid
-                </a>
-              </li>
-            
-              <li>
-                <a href="#nested-grid"
-                  class="button button-small button-link blue">
-                  Nested Grid
-                </a>
-              </li>
-            
-              <li>
-                <a href="#staggered-boxes"
-                  class="button button-small button-link blue">
-                  Staggered Boxes
-                </a>
-              </li>
-            
-              <li>
-                <a href="#equal-height-columns"
-                  class="button button-small button-link blue">
-                  Equal Height Columns
-                </a>
-              </li>
-            
-              <li>
-                <a href="#cards"
-                  class="button button-small button-link blue">
-                  Cards
-                </a>
-              </li>
-            
-          </ul>
-        </div>
-      
-      -->
       <p class="h3">
   The flex object can help solve many page-level and micro layout problems and can be combined with other utilities for a wide range of applications.
   This guide demonstrates several solutions to common layout problems using the flex object and other Basscss utilities.
@@ -842,7 +742,7 @@ This method also works well when the number of items changes dynamically.</p>
 
   <div class="clearfix mt4 mxn2 py2">
     
-      <a href="/docs/guides/layout" class="h3 left button ml2 mr2 button-link blue">
+      <a href="/docs/guides/layout" class="h4 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
@@ -850,7 +750,7 @@ This method also works well when the number of items changes dynamically.</p>
       </a>
     
     
-      <a href="/docs/guides/ui" class="h3 right button ml2 mr2 button-link blue">
+      <a href="/docs/guides/ui" class="h4 right button ml2 mr2 button-link blue">
         UI Elements
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
@@ -874,14 +774,15 @@ This method also works well when the number of items changes dynamically.</p>
 
 <a href="/" class="h4 caps mt2 button block button-transparent aqua">
   <svg xmlns="http://www.w3.org/2000/svg"
-    class="aqua"
+    class="mr1 aqua"
     viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
+  <div class="sm-show mt1"></div>
+  <span class="black">Basscss</span>
 </a>
 
 <a href="/" class="h4 caps button block button-transparent">
-  Basscss
 </a>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
@@ -1410,6 +1311,100 @@ s.parentNode.insertBefore(wf, s);
 
 </div>
 
+      <!--
+        temporary in-page nav
+      
+        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
+          <ul class="list-reset mb0 ml2">
+            
+              <li>
+                <a href="#vertical-alignment"
+                  class="button button-small button-link blue">
+                  Vertical Alignment
+                </a>
+              </li>
+            
+              <li>
+                <a href="#sticky-footer"
+                  class="button button-small button-link blue">
+                  Sticky Footer
+                </a>
+              </li>
+            
+              <li>
+                <a href="#holy-grail"
+                  class="button button-small button-link blue">
+                  Holy Grail
+                </a>
+              </li>
+            
+              <li>
+                <a href="#input-groups"
+                  class="button button-small button-link blue">
+                  Input Groups
+                </a>
+              </li>
+            
+              <li>
+                <a href="#media-object"
+                  class="button button-small button-link blue">
+                  Media Object
+                </a>
+              </li>
+            
+              <li>
+                <a href="#automatic-grid"
+                  class="button button-small button-link blue">
+                  Automatic Grid
+                </a>
+              </li>
+            
+              <li>
+                <a href="#grid-with-individual-column-sizing"
+                  class="button button-small button-link blue">
+                  Grid with Individual Column Sizing
+                </a>
+              </li>
+            
+              <li>
+                <a href="#responsive-grid"
+                  class="button button-small button-link blue">
+                  Responsive Grid
+                </a>
+              </li>
+            
+              <li>
+                <a href="#nested-grid"
+                  class="button button-small button-link blue">
+                  Nested Grid
+                </a>
+              </li>
+            
+              <li>
+                <a href="#staggered-boxes"
+                  class="button button-small button-link blue">
+                  Staggered Boxes
+                </a>
+              </li>
+            
+              <li>
+                <a href="#equal-height-columns"
+                  class="button button-small button-link blue">
+                  Equal Height Columns
+                </a>
+              </li>
+            
+              <li>
+                <a href="#cards"
+                  class="button button-small button-link blue">
+                  Cards
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+      -->
 
 </body>
 </html>

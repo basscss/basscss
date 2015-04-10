@@ -7,7 +7,7 @@ var renderer = new marked.Renderer();
 
 renderer.code = example({
   classes: {
-    container: 'mb2 bg-darken-1 rounded',
+    container: 'mb2 xbg-darken-1 rounded b2 border border-darken-1',
     rendered: 'p2',
     code: 'm0 p2 bg-darken-1 rounded-bottom'
   }

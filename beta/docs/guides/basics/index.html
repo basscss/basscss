@@ -13,19 +13,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
     .prose p:first-of-type { font-size: 1.25rem }
-    .prose p { font-size: 1.125rem }
-    @media (min-width: 40em) {
-      .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
-      .sm-fixed { position: fixed }
-      .sm-w12m { width: 12em }
-      .sm-ml12m { margin-left: 12em }
-    }
+    .docs-show { display: block !important }
   </style>
 </head>
 
@@ -65,114 +59,6 @@
 
 
     <div class="prose">
-      <!--
-        temporary in-page nav
-      
-        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
-          <ul class="list-reset mb0 ml2">
-            
-              <li>
-                <a href="#document-structure"
-                  class="button button-small button-link blue">
-                  Document structure
-                </a>
-              </li>
-            
-              <li>
-                <a href="#multiclass-css-pattern"
-                  class="button button-small button-link blue">
-                  Multiclass CSS pattern
-                </a>
-              </li>
-            
-              <li>
-                <a href="#example"
-                  class="button button-small button-link blue">
-                  Example
-                </a>
-              </li>
-            
-              <li>
-                <a href="#order"
-                  class="button button-small button-link blue">
-                  Order
-                </a>
-              </li>
-            
-              <li>
-                <a href="#writing-and-typography"
-                  class="button button-small button-link blue">
-                  Writing and Typography
-                </a>
-              </li>
-            
-              <li>
-                <a href="#block-level-and-inline-elements"
-                  class="button button-small button-link blue">
-                  Block-level and Inline Elements
-                </a>
-              </li>
-            
-              <li>
-                <a href="#display-property"
-                  class="button button-small button-link blue">
-                  Display Property
-                </a>
-              </li>
-            
-              <li>
-                <a href="#box-model"
-                  class="button button-small button-link blue">
-                  Box Model
-                </a>
-              </li>
-            
-              <li>
-                <a href="#box-model-simulation"
-                  class="button button-small button-link blue">
-                  Box Model Simulation
-                </a>
-              </li>
-            
-              <li>
-                <a href="#floats"
-                  class="button button-small button-link blue">
-                  Floats
-                </a>
-              </li>
-            
-              <li>
-                <a href="#widths"
-                  class="button button-small button-link blue">
-                  Widths
-                </a>
-              </li>
-            
-              <li>
-                <a href="#media-queries-and-mobile-first-approach"
-                  class="button button-small button-link blue">
-                  Media Queries and Mobile-First Approach
-                </a>
-              </li>
-            
-              <li>
-                <a href="#positions"
-                  class="button button-small button-link blue">
-                  Positions
-                </a>
-              </li>
-            
-              <li>
-                <a href="#extending-basscss"
-                  class="button button-small button-link blue">
-                  Extending Basscss
-                </a>
-              </li>
-            
-          </ul>
-        </div>
-      
-      -->
       <p class="h3">
   Understanding the basics of designing for the web with CSS
   is essential to using Basscss effectively.
@@ -447,7 +333,7 @@ here are some tips and recommendations to keep your code simple and maintainable
 
   <div class="clearfix mt4 mxn2 py2">
     
-      <a href="/docs/guides" class="h3 left button ml2 mr2 button-link blue">
+      <a href="/docs/guides" class="h4 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
@@ -455,7 +341,7 @@ here are some tips and recommendations to keep your code simple and maintainable
       </a>
     
     
-      <a href="/docs/guides/layout" class="h3 right button ml2 mr2 button-link blue">
+      <a href="/docs/guides/layout" class="h4 right button ml2 mr2 button-link blue">
         Page-layout
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
@@ -479,14 +365,15 @@ here are some tips and recommendations to keep your code simple and maintainable
 
 <a href="/" class="h4 caps mt2 button block button-transparent aqua">
   <svg xmlns="http://www.w3.org/2000/svg"
-    class="aqua"
+    class="mr1 aqua"
     viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
+  <div class="sm-show mt1"></div>
+  <span class="black">Basscss</span>
 </a>
 
 <a href="/" class="h4 caps button block button-transparent">
-  Basscss
 </a>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
@@ -1015,6 +902,114 @@ s.parentNode.insertBefore(wf, s);
 
 </div>
 
+      <!--
+        temporary in-page nav
+      
+        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
+          <ul class="list-reset mb0 ml2">
+            
+              <li>
+                <a href="#document-structure"
+                  class="button button-small button-link blue">
+                  Document structure
+                </a>
+              </li>
+            
+              <li>
+                <a href="#multiclass-css-pattern"
+                  class="button button-small button-link blue">
+                  Multiclass CSS pattern
+                </a>
+              </li>
+            
+              <li>
+                <a href="#example"
+                  class="button button-small button-link blue">
+                  Example
+                </a>
+              </li>
+            
+              <li>
+                <a href="#order"
+                  class="button button-small button-link blue">
+                  Order
+                </a>
+              </li>
+            
+              <li>
+                <a href="#writing-and-typography"
+                  class="button button-small button-link blue">
+                  Writing and Typography
+                </a>
+              </li>
+            
+              <li>
+                <a href="#block-level-and-inline-elements"
+                  class="button button-small button-link blue">
+                  Block-level and Inline Elements
+                </a>
+              </li>
+            
+              <li>
+                <a href="#display-property"
+                  class="button button-small button-link blue">
+                  Display Property
+                </a>
+              </li>
+            
+              <li>
+                <a href="#box-model"
+                  class="button button-small button-link blue">
+                  Box Model
+                </a>
+              </li>
+            
+              <li>
+                <a href="#box-model-simulation"
+                  class="button button-small button-link blue">
+                  Box Model Simulation
+                </a>
+              </li>
+            
+              <li>
+                <a href="#floats"
+                  class="button button-small button-link blue">
+                  Floats
+                </a>
+              </li>
+            
+              <li>
+                <a href="#widths"
+                  class="button button-small button-link blue">
+                  Widths
+                </a>
+              </li>
+            
+              <li>
+                <a href="#media-queries-and-mobile-first-approach"
+                  class="button button-small button-link blue">
+                  Media Queries and Mobile-First Approach
+                </a>
+              </li>
+            
+              <li>
+                <a href="#positions"
+                  class="button button-small button-link blue">
+                  Positions
+                </a>
+              </li>
+            
+              <li>
+                <a href="#extending-basscss"
+                  class="button button-small button-link blue">
+                  Extending Basscss
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+      -->
 
 </body>
 </html>

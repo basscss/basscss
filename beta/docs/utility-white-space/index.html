@@ -13,19 +13,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.1/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
   <style>
     .prose p:first-of-type { font-size: 1.25rem }
-    .prose p { font-size: 1.125rem }
-    @media (min-width: 40em) {
-      .sm-px3 { padding-left: 2rem; padding-right: 2rem; }
-      .sm-fixed { position: fixed }
-      .sm-w12m { width: 12em }
-      .sm-ml12m { margin-left: 12em }
-    }
+    .docs-show { display: block !important }
   </style>
 </head>
 
@@ -43,7 +37,7 @@
     <div class="flex flex-baseline flex-wrap mxn1">
       <div class="bold px1">
         basscss-utility-white-space
-        <span class="h5">v0.0.5</span>
+        <span class="h5">v0.0.6</span>
       </div>
       <div class="flex-auto"></div>
       <a href="//npmjs.com/package/basscss-utility-white-space" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
@@ -71,18 +65,10 @@
 
 
     <div class="prose">
-      <!--
-        temporary in-page nav
-      
-        <div class="sm-show sm-col-3 md-col-2 right ml3 mb3 border-left">
-          <ul class="list-reset mb0 ml2">
-            
-          </ul>
-        </div>
-      
-      -->
-      <p>Margin and padding utilities are based on a global white space scale defined with variables.
-These utilities use a shorthand naming convention.</p>
+      <p>Immutable margin and padding utilities are based on a global white space scale defined with custom properties.
+These can dramatically help reduce the size of large stylesheets and allow for greater flexibility and quicker iteration when designing in the browser.</p>
+<h2 id="naming-convention"><a href="#naming-convention">Naming Convention</a></h2><p>Due to the ubiquitous nature of setting margin and padding,
+these utilities use a shorthand naming convention.</p>
 <div class="overflow-scroll">
   <table class="mb2 table-flush table-light">
     <thead>
@@ -106,8 +92,8 @@ These utilities use a shorthand naming convention.</p>
   </table>
 </div>
 
-<h2 id="margins"><a href="#margins">Margins</a></h2><p>Change or reset default margins using the global white space scale.
-Negative x-axis margins are used to offset padding.
+<h2 id="margins"><a href="#margins">Margins</a></h2><p>Change or reset default margins using the white space scale.
+Negative x-axis margins are used to offset margins and padding of child elements.
 Margin auto is used to horizontally center block-level elements with a set width.</p>
 <pre><span class="hljs-class">.m0</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value">        <span class="hljs-number">0</span> }
 .mt0 { margin-top:    <span class="hljs-number">0</span> }
@@ -145,7 +131,7 @@ Margin auto is used to horizontally center block-level elements with a set width
 <span class="hljs-class">.mxn4</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-function">-var</span>(--space-<span class="hljs-number">4</span>)</span></span>; }</span>
 
 <span class="hljs-class">.mx-auto</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> auto</span></span>; <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> auto</span></span>; }</span></pre><h2 id="padding"><a href="#padding">Padding</a></h2><p>Padding utilities are only available in symmetrical orientations.
-This is to normalize the spacing used around elements.</p>
+This is to normalize the spacing used around elements and maintain a consistent visual rhythm.</p>
 <pre><span class="hljs-class">.p1</span>  <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value">       <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) }
 .py1 { padding-top:   <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) }
 .px1 { padding-left:  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">1</span>) }
@@ -160,10 +146,107 @@ This is to normalize the spacing used around elements.</p>
 
 .p4  { padding:       <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) }
 .py4 { padding-top:   <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) }
-.px4 { padding-left:  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) }</span></span></span></pre><p><span class="red">Margins and padding should never be declared outside of these utilities.</span>
-This is meant to help create consistent rhythm and avoid magic numbers.
+.px4 { padding-left:  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>)</span></span>; <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value">  <span class="hljs-function">var</span>(--space-<span class="hljs-number">4</span>) }</span></span></span></pre><h2 id="resetting-margins"><a href="#resetting-margins">Resetting Margins</a></h2><p>To increase information density and to better align elements, remove default margins from typographic elements
+using the margin utilities.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <h1 class="m0">No margin</h1>
+<h1 class="mt0">No margin top</h1>
+<h1 class="mb0">No margin bottom</h1>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"m0"</span>&gt;</span>No margin<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mt0"</span>&gt;</span>No margin top<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mb0"</span>&gt;</span>No margin bottom<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span></pre>
+</div>
+<h2 id="add-spacing"><a href="#add-spacing">Add Spacing</a></h2><p>Add spacing around elements using a combination of margin utilities.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="mxn1">
+  <button class="button m1">Button</button>
+  <button class="button m1">Button</button>
+  <button class="button m1">Button</button>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mxn1"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button m1"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button m1"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button m1"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>The negative margin utilities also work with padded children.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="border border-blue">
+  <div class="mxn2">
+    <div class="px2 border border-blue">Padded div</div>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mxn2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"px2 border border-blue"</span>&gt;</span>Padded div<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="center-elements"><a href="#center-elements">Center Elements</a></h2><p>Block elements with a set width can be centered with <code>.mx-auto</code>.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div>
+  <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg"
+    width="96"
+    height="96"
+    class="block mx-auto" />
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg"</span>
+    <span class="hljs-attribute">width</span>=<span class="hljs-value">"96"</span>
+    <span class="hljs-attribute">height</span>=<span class="hljs-value">"96"</span>
+    <span class="hljs-attribute">class</span>=<span class="hljs-value">"block mx-auto"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="box"><a href="#box">Box</a></h2><p>To create a simple box component, use padding along with color utilities.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="p2 bg-white border rounded">
+  A simple box
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 bg-white border rounded"</span>&gt;</span>
+  A simple box
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="overflow-hidden border rounded">
+  <div class="p2 bold white bg-blue">
+    Panel Header
+  </div>
+  <div class="p2">
+    Panel Body
+  </div>
+  <div class="p2 bg-silver">
+    Panel Footer
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden border rounded"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 bold white bg-blue"</span>&gt;</span>
+    Panel Header
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2"</span>&gt;</span>
+    Panel Body
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"p2 bg-silver"</span>&gt;</span>
+    Panel Footer
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p><span class="red">Margins and padding should never be declared outside of these utilities.</span>
+This is meant to help create consistency and avoid magic numbers.
 If, for some reason, the default white space scale does not suit your design,
-customize and extend it before implementation.</p>
+customize and extend it before using it.</p>
+<p>For larger scale projects, breakpoint-based responsive white space utilities are available in the <code>basscss-responsive-white-space</code> module (not included in the default Basscss).</p>
 
     </div>
     
@@ -272,7 +355,7 @@ customize and extend it before implementation.</p>
 
   <div class="clearfix mt4 mxn2 py2">
     
-      <a href="/docs/utility-typography" class="h3 left button ml2 mr2 button-link blue">
+      <a href="/docs/utility-typography" class="h4 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
@@ -280,7 +363,7 @@ customize and extend it before implementation.</p>
       </a>
     
     
-      <a href="/docs/utility-responsive-states" class="h3 right button ml2 mr2 button-link blue">
+      <a href="/docs/utility-responsive-states" class="h4 right button ml2 mr2 button-link blue">
         Responsive States
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
@@ -304,14 +387,15 @@ customize and extend it before implementation.</p>
 
 <a href="/" class="h4 caps mt2 button block button-transparent aqua">
   <svg xmlns="http://www.w3.org/2000/svg"
-    class="aqua"
+    class="mr1 aqua"
     viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
     <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
   </svg>
+  <div class="sm-show mt1"></div>
+  <span class="black">Basscss</span>
 </a>
 
 <a href="/" class="h4 caps button block button-transparent">
-  Basscss
 </a>
 
 <ul class="flex flex-wrap list-reset mt2 mb1">
@@ -840,6 +924,10 @@ s.parentNode.insertBefore(wf, s);
 
 </div>
 
+      <!--
+        temporary in-page nav
+      
+      -->
 
 </body>
 </html>
