@@ -1,6 +1,6 @@
 {
   "name": "basscss",
-  "version": "5.2.1",
+  "version": "6.0.0-beta.1",
   "description": "Low-level CSS toolkit",
   "style": "src/basscss.css",
   "scripts": {
@@ -9,13 +9,10 @@
     "watch:css": "watch 'npm run css' ./src",
     "sassify": "node scripts/sassify",
     "watch:sassify": "watch 'npm run sassify' ./src",
-    "html": "node docs/build",
-    "watch:html": "watch 'npm run html' ./docs/templates",
     "bower-bump": "node scripts/bower-bump",
     "s3": "node scripts/s3",
     "release": "npm run css && npm run sassify && npm run bower-bump",
-    "serve": "http-server -p 8000",
-    "start": "npm run watch:css & npm run watch:sassify & npm run watch:html & npm run serve"
+    "start": "npm run watch:css & npm run watch:sassify"
   },
   "dependencies": {
     "basscss-background-images": "0.0.9",
