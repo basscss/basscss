@@ -1,63 +1,70 @@
 # Basscss
 
-Low-level CSS toolkit
+Low-level CSS toolkit <http://basscss.com>
 
-http://basscss.com
+Documentation: <http://basscss.com/docs>
 
----
 
-## Lightning-Fast Modular CSS
 
-Basscss is a lightweight collection of base element styles, immutable utilities, layout modules, and color styles designed for speed, performance, and scalability.
+## Lightning-Fast Modular CSS with No Side Effects
+
+Basscss is a lightweight collection of
+base element styles, immutable utilities, layout modules, and color styles designed for speed, clarity, performance, and scalability.
+
+
 
 ## Features
 
-### Designed for Design
-With simple, humanized naming conventions,
-Basscss is quick to internalize and easy to wrap your head around,
-while striking a balance between consistency and flexibility.
+### Code with Confidence
 
-### Responsive by Default
-The web is inherently flexible, Basscss doesn't break that tradition
-and provides lightweight solutions to design for all devices.
+Using clear, humanized naming conventions, Basscss is quick to internalize
+and easy to reason about while speeding up development time with more scalable,
+more readable code.
 
-### Unobtrusive
-Basscss doesn't dictate what your site should look like.
-With extensible base styles and variables for typography, white space, breakpoints, and UI elements,
-customizing the look and feel is easy.
+### No Side Effects
 
-### Mix and Match
-With modular styles that work like building blocks,
-Basscss provides a foundation of reusable and inter-operable styles
-for greater freedom when designing in the browser.
+Things behave exactly as expected with immutable utilities
+and styles that follow the open/closed principle
+to help prevent common pitfalls with CSS.
 
-## Getting Started
+### Composable
 
-http://basscss.com/docs/getting-started
+Reusable, interoperable styles
+work like building blocks to lay the foundation for any stylesheet
+and can be mixed and matched in any number of combinations.
+
+## Designed for Design
+
+Basscss strikes a balance between consistency and flexibility
+to allow for rapid prototyping and quick iterative changes
+when designing in the browser.
+
+## Responsive by Default
+
+Basscss provides lightweight, performant styles
+and flexible utilities to design for any device
+and to help reduce boilerplate in stylesheets.
+
+## Unassuming
+
+Modular and customizable base, typography, layout, and color styles
+don't dictate what things should look like
+and play well with other stylesheets and frameworks.
+
+[Read More](http://basscss.com)
 
 ---
+
+## Contributing
+
+Please file an issue before submitting a pull request.
+If you're making changes to a module, please follow the
+[design principles]().
 
 ## Folder Structure
 - `src`: CSS4 source files
 - `css`: Processed CSS files for browser compatibility
-- `scss`: Sass partials converted from CSS4 syntax
 - `scripts`: Compilation and build scripts
-- `docs`: Files for http://basscss.com site
-
-
-## Documentation
-View the full documentation with inline examples:
-
-http://basscss.com/docs
-
-### Guides
-http://basscss.com/docs/guides
-
-### Design Principles
-http://basscss.com/docs/principles
-
-### Examples
-http://basscss.com/docs/showcase
 
 ---
 

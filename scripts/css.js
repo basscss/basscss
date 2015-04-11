@@ -5,26 +5,43 @@ var cssnext = require('cssnext');
 var Cleancss = require('clean-css');
 var pkg = require('../package.json');
 
-//var header = require('gulp-header');
-//var rename = require('gulp-rename');
-//var mincss = require('gulp-minify-css');
-//var gzip = require('gulp-gzip');
+var postcss = require('postcss');
+
+var removeComments = postcss.plugin('remove-comments', function(opts) {
+  opts = opts || {};
+  return function(root) {
+    root.eachComment(function(comment) {
+      comment.removeSelf();
+    });
+  }
+});
 
 compile = function() {
   var meta = [
-      '/*\n',
-       '    Basscss v' + pkg.version,
-       '    ' + pkg.description,
-       '    http://basscss.com',
-       '\n*/'
+      '/*',
+      '',
+      '    Basscss v' + pkg.version,
+      '    ' + pkg.description,
+      '    http://basscss.com',
+      '',
+      '*/',
+      ''
     ].join('\n');
   var dir = path.join(__dirname, '../src/');
   var dest = path.join(__dirname, '../css/');
 
   var src = fs.readFileSync(dir + 'basscss.css', 'utf8');
 
-  var css = cssnext(src, { features: { rem: false } } );
-  css = meta + '\n\n' + css;
+  var css = cssnext(src, {
+    features: {
+      customProperties: {
+        strict: false, // disable variable fallbacks from being redundantly added
+      },
+      rem: false
+    }
+  });
+  css = meta + '\n\n' + postcss().use(removeComments()).process(css).css;
+  //css = meta + '\n\n' + css;
   var minified = new Cleancss().minify(css).styles;
 
   fs.writeFileSync(dest + 'basscss.css', css);

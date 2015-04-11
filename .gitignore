@@ -1,4 +1,4 @@
-*.gz
+node_modules
+bower_components
 aws.json
-test/results
 
