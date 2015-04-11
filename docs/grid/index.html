@@ -37,11 +37,11 @@
     <div class="flex flex-baseline flex-wrap mxn1">
       <div class="bold px1">
         basscss-grid
-        <span class="h5">v0.0.17</span>
+        <span class="h5">v1.0.1</span>
       </div>
       <div class="flex-auto"></div>
       <a href="//npmjs.com/package/basscss-grid" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
-      <a href="https://github.com/jxnblk/basscss-grid" class="h6 caps ml1 mr1 button button-small button-link">Github</a>
+      <a href="https://github.com/basscss/grid" class="h6 caps ml1 mr1 button button-small button-link">Github</a>
     </div>
   
   
@@ -82,7 +82,7 @@ To adjust the max-width, set a new value with the <code>--container-width</code>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<p>Float columns using the <code>.col</code> style. This sets box-sizing border-box for each column.</p>
+<p>Float columns using the <code>.col</code> style. This also sets box-sizing border-box for each column.</p>
 <div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <div class="clearfix border border-blue">
@@ -124,7 +124,7 @@ To adjust the max-width, set a new value with the <code>--container-width</code>
   </table>
 </div>
 
-<p>Only apply the grid from the small breakpoint and up with the <code>.sm-col</code> and <code>.sm-col-6</code> utilities.</p>
+<p>Apply the grid from the small breakpoint and up with the <code>.sm-col</code> and <code>.sm-col-6</code> utilities.</p>
 <div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <div class="clearfix border border-blue">
@@ -137,7 +137,7 @@ To adjust the max-width, set a new value with the <code>--container-width</code>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 border border-blue"</span>&gt;</span>.sm-col.sm-col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<p>Add width adjustments for larger breakpoints.</p>
+<p>Add width adjustments for larger breakpoints. Resize the viewport width of the browser to see the effect.</p>
 <div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <div class="clearfix border border-blue">
@@ -155,7 +155,7 @@ The negative margin ensures content inside each column lines up with content out
 When using negative margin, be sure to compensate for the extra width created
 with a padded parent element or by using overflow hidden.
 Otherwise, horizontal scrolling may occur.</p>
-<p>Create gutters with a width of 2 units on the white space scale using <code>.mxn2</code> and <code>.px2</code>.</p>
+<p>Create gutters with a width of 2 units using <code>.mxn2</code> and <code>.px2</code>.</p>
 <div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <div class="clearfix mxn2 border border-blue">
@@ -168,7 +168,7 @@ Otherwise, horizontal scrolling may occur.</p>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-7 lg-col-8 px2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>.px2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<p>For larger or smaller gutters, use any of the white space utilities.</p>
+<p>For larger or smaller gutters, use any other step on the white space scale.</p>
 <div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <div class="clearfix mxn1 border border-blue">
@@ -240,7 +240,8 @@ Otherwise, horizontal scrolling may occur.</p>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
-<h2 id="breakpoint-based-floats"><a href="#breakpoint-based-floats">Breakpoint Based Floats</a></h2><p>Column float utilities can be used independently of width utilities to control floating at different breakpoints.</p>
+<h2 id="breakpoint-based-floats"><a href="#breakpoint-based-floats">Breakpoint Based Floats</a></h2><p>Column float utilities can be used independently of width utilities to control floating at different breakpoints.
+This example demonstrates a responsive media object.</p>
 <div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <div class="clearfix border border-blue">
@@ -569,7 +570,7 @@ Otherwise, horizontal scrolling may occur.</p>
 
   <div class="clearfix mt4 mxn2 py2">
     
-      <a href="/docs/ui-utility-button-sizes" class="h4 left button ml2 mr2 button-link blue">
+      <a href="/docs/button-sizes" class="h4 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
@@ -683,7 +684,7 @@ Otherwise, horizontal scrolling may occur.</p>
     <a href="/docs/utility-layout"
       class="block button button-transparent
       ">
-      Layout
+      Utility Layout
     </a>
     
     
@@ -694,7 +695,7 @@ Otherwise, horizontal scrolling may occur.</p>
     <a href="/docs/utility-typography"
       class="block button button-transparent
       ">
-      Typography
+      Utility Typography
     </a>
     
     
@@ -702,7 +703,7 @@ Otherwise, horizontal scrolling may occur.</p>
 
   
   <li class="col-6 sm-col-12">
-    <a href="/docs/utility-white-space"
+    <a href="/docs/white-space"
       class="block button button-transparent
       ">
       White Space
@@ -713,7 +714,7 @@ Otherwise, horizontal scrolling may occur.</p>
 
   
   <li class="col-6 sm-col-12">
-    <a href="/docs/utility-responsive-states"
+    <a href="/docs/responsive-states"
       class="block button button-transparent
       ">
       Responsive States
@@ -735,7 +736,7 @@ Otherwise, horizontal scrolling may occur.</p>
 
   
   <li class="col-6 sm-col-12">
-    <a href="/docs/ui-utility-button-sizes"
+    <a href="/docs/button-sizes"
       class="block button button-transparent
       ">
       Button Sizes
@@ -867,10 +868,10 @@ Otherwise, horizontal scrolling may occur.</p>
 
   
   <li class="col-6 sm-col-12">
-    <a href="/docs/color-borders"
+    <a href="/docs/borders"
       class="block button button-transparent
       ">
-      Color Borders
+      Borders
     </a>
     
     

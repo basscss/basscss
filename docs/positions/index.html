@@ -37,11 +37,11 @@
     <div class="flex flex-baseline flex-wrap mxn1">
       <div class="bold px1">
         basscss-positions
-        <span class="h5">v0.0.5</span>
+        <span class="h5">v1.0.1</span>
       </div>
       <div class="flex-auto"></div>
       <a href="//npmjs.com/package/basscss-positions" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
-      <a href="https://github.com/jxnblk/basscss-positions" class="h6 caps ml1 mr1 button button-small button-link">Github</a>
+      <a href="https://github.com/basscss/positions" class="h6 caps ml1 mr1 button button-small button-link">Github</a>
     </div>
   
   
@@ -65,35 +65,93 @@
 
 
     <div class="prose">
-      <h1 id="basscss-positions"><a href="#basscss-positions">Basscss Positions</a></h1><p class="hide">Positioning utilities for Basscss.</p>
+      <p>This module includes basic positioning utilities to alter the default document flow.</p>
+<p class="red">Use positions with caution. They are often unnecessary and commonly misused.</p>
 
-<p><a href="http://basscss.com" class="hide">basscss.com</a></p>
-<p>These styles alter the default document flow.</p>
-<p><span class="red">Use positions with caution.
-They are often unnecessary and commonly misused.</span><br>
-See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for more info.</p>
-<pre><span class="hljs-class">.relative</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative }
-.absolute { position: absolute }
-.fixed    { position: fixed }
+<p>Use <code>.relative</code> to create a new stacking context.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="relative">
+  <button class="button">Button</button>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"relative"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Use <code>.absolute</code> to move elements out of the default document flow.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="relative mb4">
+  <button class="button">Button</button>
+  <div class="absolute bg-white border rounded">
+    <a href="#" class="block button button-transparent">Dropdown Action</a>
+    <a href="#" class="block button button-transparent">Action</a>
+    <a href="#" class="block button button-transparent">Action</a>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"relative mb4"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"absolute bg-white border rounded"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block button button-transparent"</span>&gt;</span>Dropdown Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block button button-transparent"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block button button-transparent"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Use <code>.fixed</code> to position an element relative to the viewport.</p>
+<p class="docs-show" style="display:none">Note: fixed positioning has been disabled here for demonstration only.</p>
 
-.top-<span class="hljs-number">0</span>    { top: <span class="hljs-number">0</span> }
-.right-<span class="hljs-number">0</span>  { right: <span class="hljs-number">0</span> }
-.bottom-<span class="hljs-number">0</span> { bottom: <span class="hljs-number">0</span> }
-.left-<span class="hljs-number">0</span>   { left: <span class="hljs-number">0</span> }
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <button class="fixed button">
+  Button
+</button>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fixed button"</span>&gt;</span>
+  Button
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+</div>
+<p>Note: Fixed positioning is notoriously tricky to use well and can lead to inaccessible content and unwanted side effects. Use fixed positioning with caution.</p>
+<p>To anchor to a particular side, use <code>.top-0</code>, <code>.right-0</code>, <code>.bottom-0</code>, or <code>.left-0</code>. Margin and padding utilities can be used to space elements apart.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <button class="fixed top-0 right-0 m2 button">
+  Button
+</button>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fixed top-0 right-0 m2 button"</span>&gt;</span>
+  Button
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+</div>
+<p>To fill an entire width or height, use opposing directions.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="fixed top-0 left-0 right-0 p2 white bg-black">
+  Fixed bar
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fixed top-0 left-0 right-0 p2 white bg-black"</span>&gt;</span>
+  Fixed bar
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>To ensure the desired stacking order, use z-index utilities.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="fixed z2 top-0 left-0 right-0 p2 white bg-black">
+  Fixed bar
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fixed z2 top-0 left-0 right-0 p2 white bg-black"</span>&gt;</span>
+  Fixed bar
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<style>
+.MarkedExample .fixed { position: static }
+</style>
 
-.z1 { z-index: <span class="hljs-number">1</span> }
-.z2 { z-index: <span class="hljs-number">2</span> }
-.z3 { z-index: <span class="hljs-number">3</span> }
-.z4 { z-index: <span class="hljs-number">4</span> }
 
-.absolute-center {
-  top: <span class="hljs-number">0</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">right</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> auto</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> table</span></span>;
-}</span></pre>
     </div>
     
       
@@ -103,30 +161,30 @@ See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for 
       <h2 class="flex-auto">CSS Source</h2>
       <!--
       <div class="h5 bold">
-        392 B
-        (216 B Gzipped)
+        290 B
+        (168 B Gzipped)
       </div>
       -->
     </div>
     <div id="basscss-positions-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          12 Rules
+          11 Rules
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          12 Selectors
+          11 Selectors
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          17 Declarations
+          11 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          8 Properties
+          6 Properties
         </div>
       </div>
     </div>
@@ -146,16 +204,7 @@ See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for 
 .z3 { z-index: <span class="hljs-number">3</span> }
 .z4 { z-index: <span class="hljs-number">4</span> }
 
-.absolute-center {
-  top: <span class="hljs-number">0</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">right</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> auto</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> table</span></span>;
-}</span>
-
-</pre>
+</span></span></span></pre>
   
 </footer>
 
@@ -165,7 +214,7 @@ See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for 
 
   <div class="clearfix mt4 mxn2 py2">
     
-      <a href="/docs/utility-responsive-states" class="h4 left button ml2 mr2 button-link blue">
+      <a href="/docs/responsive-states" class="h4 left button ml2 mr2 button-link blue">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
         </svg>
@@ -173,7 +222,7 @@ See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for 
       </a>
     
     
-      <a href="/docs/ui-utility-button-sizes" class="h4 right button ml2 mr2 button-link blue">
+      <a href="/docs/button-sizes" class="h4 right button ml2 mr2 button-link blue">
         Button Sizes
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
           <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
@@ -279,7 +328,7 @@ See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for 
     <a href="/docs/utility-layout"
       class="block button button-transparent
       ">
-      Layout
+      Utility Layout
     </a>
     
     
@@ -290,7 +339,7 @@ See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for 
     <a href="/docs/utility-typography"
       class="block button button-transparent
       ">
-      Typography
+      Utility Typography
     </a>
     
     
@@ -298,7 +347,7 @@ See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for 
 
   
   <li class="col-6 sm-col-12">
-    <a href="/docs/utility-white-space"
+    <a href="/docs/white-space"
       class="block button button-transparent
       ">
       White Space
@@ -309,7 +358,7 @@ See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for 
 
   
   <li class="col-6 sm-col-12">
-    <a href="/docs/utility-responsive-states"
+    <a href="/docs/responsive-states"
       class="block button button-transparent
       ">
       Responsive States
@@ -331,7 +380,7 @@ See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for 
 
   
   <li class="col-6 sm-col-12">
-    <a href="/docs/ui-utility-button-sizes"
+    <a href="/docs/button-sizes"
       class="block button button-transparent
       ">
       Button Sizes
@@ -463,10 +512,10 @@ See the <a href="http://basscss.com/docs/guides/basics">Guide to Basics</a> for 
 
   
   <li class="col-6 sm-col-12">
-    <a href="/docs/color-borders"
+    <a href="/docs/borders"
       class="block button button-transparent
       ">
-      Color Borders
+      Borders
     </a>
     
     

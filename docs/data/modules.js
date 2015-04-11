@@ -10,7 +10,7 @@ var obj = {};
 modules = modules.map(function(name) {
   var mod = moduleInfo(name, { dirname: path.join(__dirname, '../..') });
   // Adjust this at the get-module-info level
-  var title = mod.title.replace(/^Basscss\-/, '').replace(/ui\-/,'').replace(/utility\-/,'');
+  var title = mod.title.replace(/^Basscss\-/, ''); //.replace(/ui\-/,'').replace(/utility\-/,'');
   mod.title = titleCase(title);
   mod.body = marked(mod.readme, { renderer: renderer });
   mod.content = true;

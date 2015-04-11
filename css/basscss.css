@@ -334,15 +334,6 @@ h6, .h6 { font-size: .75rem }
 .z2 { z-index: 2 }
 .z3 { z-index: 3 }
 .z4 { z-index: 4 }
-
-.absolute-center {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  display: table;
-}
 /* Basscss UI Utility Button Sizes */
 
 .button-small {
@@ -741,12 +732,12 @@ hr {
 .field-light:focus {
   outline: none;
   border-color: #0074d9;
-  box-shadow: 0 0 2px rgba(0, 116, 217, 0.5);
+  box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);
 }
 
 .field-light:disabled {
-  color: #aaa;
   background-color: rgba(0,0,0,.125);
+  opacity: .5;
 }
 
 .field-light:read-only:not(select) {
@@ -767,23 +758,6 @@ hr {
 
 .field-light.is-error {
   border-color: #ff4136;
-}
-
-
-.radio-light,
-.checkbox-light {
-  -webkit-transition: box-shadow .2s ease;
-          transition: box-shadow .2s ease;
-}
-
-.radio-light {
-  border-radius: 50%;
-}
-  
-.radio-light:focus,
-.checkbox-light:focus {
-  outline: none;
-  box-shadow: 0 0 2px rgba(0, 116, 217, 0.5);
 }
 /* Basscss Color Forms Dark */
 

@@ -24,16 +24,6 @@ $black: #111 !default;
 
 /* Basscss Color Forms */
 
-/*
-
-   COLOR VARIABLES
-
-   - Cool
-   - Warm
-   - Gray Scale
-
-*/
-
 .field-light {
   background-color: white;
   -webkit-transition: box-shadow .2s ease;
@@ -47,12 +37,12 @@ $black: #111 !default;
 .field-light:focus {
   outline: none;
   border-color: $blue;
-  box-shadow: 0 0 2px color($blue alpha(.5));
+  box-shadow: 0 0 0 2px color($blue a(.5));
 }
 
 .field-light:disabled {
-  color: $mid-gray;
   background-color: $darken-2;
+  opacity: .5;
 }
 
 .field-light:read-only:not(select) {
@@ -75,19 +65,12 @@ $black: #111 !default;
   border-color: $red;
 }
 
+/*
 
-.radio-light,
-.checkbox-light {
-  -webkit-transition: box-shadow .2s ease;
-          transition: box-shadow .2s ease;
-}
+   COLOR VARIABLES
 
-.radio-light {
-  border-radius: 50%;
-}
-  
-.radio-light:focus,
-.checkbox-light:focus {
-  outline: none;
-  box-shadow: 0 0 2px color($blue alpha(.5));
-}
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/

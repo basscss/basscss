@@ -37,11 +37,11 @@
     <div class="flex flex-baseline flex-wrap mxn1">
       <div class="bold px1">
         basscss-color-forms
-        <span class="h5">v1.1.2</span>
+        <span class="h5">v2.0.2</span>
       </div>
       <div class="flex-auto"></div>
       <a href="//npmjs.com/package/basscss-color-forms" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
-      <a href="https://github.com/jxnblk/basscss-color-forms" class="h6 caps ml1 mr1 button button-small button-link">Github</a>
+      <a href="https://github.com/basscss/color-forms" class="h6 caps ml1 mr1 button button-small button-link">Github</a>
     </div>
   
   
@@ -65,8 +65,9 @@
 
 
     <div class="prose">
-      <p>Basic color styles for form elements on a light background.</p>
-<h2 id="input-fields"><a href="#input-fields">Input Fields</a></h2><p>To style the color, background, and border styles for form fields, use the <code>.field-light</code> style.</p>
+      <p>This module sets basic color styles for form elements on a light background.</p>
+<h2 id="input-fields"><a href="#input-fields">Input Fields</a></h2><p>To style the color, background, and border styles for form fields, use the <code>.field-light</code> style.
+This style works on text inputs, selects, and textareas.</p>
 <div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <label>Input</label>
@@ -124,28 +125,6 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block full-width field-light is-error"</span>&gt;</span></pre>
 </div>
-<p>Style radio buttons and checkboxes with the <code>.radio-light</code> and <code>.checkbox-light</code> styles.
-These add focus states that are consistent with the other form elements.</p>
-<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
-  <div class="MarkedExample-rendered p2">
-    <label class="block">
-  <input type="checkbox" class="checkbox-light">
-  Checkbox
-</label>
-<label class="block">
-  <input type="radio" class="radio-light">
-  Radio
-</label>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox-light"</span>&gt;</span>
-  Checkbox
-<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"block"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio-light"</span>&gt;</span>
-  Radio
-<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span></pre>
-</div>
 
     </div>
     
@@ -156,25 +135,25 @@ These add focus states that are consistent with the other form elements.</p>
       <h2 class="flex-auto">CSS Source</h2>
       <!--
       <div class="h5 bold">
-        1.43 kB
-        (601 B Gzipped)
+        1.19 kB
+        (557 B Gzipped)
       </div>
       -->
     </div>
     <div id="basscss-color-forms-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          12 Rules
+          9 Rules
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          14 Selectors
+          9 Selectors
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          37 Declarations
+          33 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
@@ -184,6 +163,46 @@ These add focus states that are consistent with the other form elements.</p>
       </div>
     </div>
     <pre id="basscss-color-forms-css-source"><span class="hljs-comment">/* Basscss Color Forms */</span>
+
+<span class="hljs-class">.field-light</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> white</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transition</span>:<span class="hljs-value"> box-shadow .<span class="hljs-number">2s</span> ease</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-style</span>:<span class="hljs-value"> solid</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-width</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-width)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-color)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-radius)</span></span>;
+}</span>
+
+<span class="hljs-rule"><span class="hljs-attribute">.field-light</span>:<span class="hljs-value">focus {
+  outline: none</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--blue)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-function">color</span>(<span class="hljs-function">var</span>(--blue) <span class="hljs-function">a</span>(.<span class="hljs-number">5</span>))</span></span>;
+}
+
+<span class="hljs-rule"><span class="hljs-attribute">.field-light</span>:<span class="hljs-value">disabled {
+  background-color: <span class="hljs-function">var</span>(--darken-<span class="hljs-number">2</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"> .<span class="hljs-number">5</span></span></span>;
+}
+
+<span class="hljs-rule"><span class="hljs-attribute">.field-light</span>:<span class="hljs-value">read-only:<span class="hljs-function">not</span>(select) {
+  background-color: <span class="hljs-function">var</span>(--darken-<span class="hljs-number">2</span>)</span></span>;
+}
+
+<span class="hljs-rule"><span class="hljs-attribute">.field-light</span>:<span class="hljs-value">invalid {
+  border-color: <span class="hljs-function">var</span>(--red)</span></span>;
+}
+
+<span class="hljs-class">.field-light</span><span class="hljs-class">.is-success</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--green)</span></span>;
+}</span>
+
+<span class="hljs-class">.field-light</span><span class="hljs-class">.is-warning</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--yellow)</span></span>;
+}</span>
+
+<span class="hljs-class">.field-light</span><span class="hljs-class">.is-error</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red)</span></span>;
+}</span>
 
 <span class="hljs-comment">/*
 
@@ -226,63 +245,6 @@ These add focus states that are consistent with the other form elements.</p>
   <span class="hljs-rule"><span class="hljs-attribute">--black</span>:<span class="hljs-value">  <span class="hljs-hexcolor">#111</span></span></span>;
 
 }</span>
-
-<span class="hljs-class">.field-light</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> white</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">transition</span>:<span class="hljs-value"> box-shadow .<span class="hljs-number">2s</span> ease</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border-style</span>:<span class="hljs-value"> solid</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border-width</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-width)</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-color)</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-radius)</span></span>;
-}</span>
-
-<span class="hljs-rule"><span class="hljs-attribute">.field-light</span>:<span class="hljs-value">focus {
-  outline: none</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--blue)</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-function">color</span>(<span class="hljs-function">var</span>(--blue) <span class="hljs-function">alpha</span>(.<span class="hljs-number">5</span>))</span></span>;
-}
-
-<span class="hljs-rule"><span class="hljs-attribute">.field-light</span>:<span class="hljs-value">disabled {
-  color: <span class="hljs-function">var</span>(--mid-gray)</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--darken-<span class="hljs-number">2</span>)</span></span>;
-}
-
-<span class="hljs-rule"><span class="hljs-attribute">.field-light</span>:<span class="hljs-value">read-only:<span class="hljs-function">not</span>(select) {
-  background-color: <span class="hljs-function">var</span>(--darken-<span class="hljs-number">2</span>)</span></span>;
-}
-
-<span class="hljs-rule"><span class="hljs-attribute">.field-light</span>:<span class="hljs-value">invalid {
-  border-color: <span class="hljs-function">var</span>(--red)</span></span>;
-}
-
-<span class="hljs-class">.field-light</span><span class="hljs-class">.is-success</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--green)</span></span>;
-}</span>
-
-<span class="hljs-class">.field-light</span><span class="hljs-class">.is-warning</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--yellow)</span></span>;
-}</span>
-
-<span class="hljs-class">.field-light</span><span class="hljs-class">.is-error</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red)</span></span>;
-}</span>
-
-
-<span class="hljs-class">.radio-light</span>,
-<span class="hljs-class">.checkbox-light</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">transition</span>:<span class="hljs-value"> box-shadow .<span class="hljs-number">2s</span> ease</span></span>;
-}</span>
-
-<span class="hljs-class">.radio-light</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
-}</span>
-  
-<span class="hljs-rule"><span class="hljs-attribute">.radio-light</span>:<span class="hljs-value">focus,
-.checkbox-light:focus {
-  outline: none</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-function">color</span>(<span class="hljs-function">var</span>(--blue) <span class="hljs-function">alpha</span>(.<span class="hljs-number">5</span>))</span></span>;
-}
-
 
 </pre>
   
@@ -408,7 +370,7 @@ These add focus states that are consistent with the other form elements.</p>
     <a href="/docs/utility-layout"
       class="block button button-transparent
       ">
-      Layout
+      Utility Layout
     </a>
     
     
@@ -419,7 +381,7 @@ These add focus states that are consistent with the other form elements.</p>
     <a href="/docs/utility-typography"
       class="block button button-transparent
       ">
-      Typography
+      Utility Typography
     </a>
     
     
@@ -427,7 +389,7 @@ These add focus states that are consistent with the other form elements.</p>
 
   
   <li class="col-6 sm-col-12">
-    <a href="/docs/utility-white-space"
+    <a href="/docs/white-space"
       class="block button button-transparent
       ">
       White Space
@@ -438,7 +400,7 @@ These add focus states that are consistent with the other form elements.</p>
 
   
   <li class="col-6 sm-col-12">
-    <a href="/docs/utility-responsive-states"
+    <a href="/docs/responsive-states"
       class="block button button-transparent
       ">
       Responsive States
@@ -460,7 +422,7 @@ These add focus states that are consistent with the other form elements.</p>
 
   
   <li class="col-6 sm-col-12">
-    <a href="/docs/ui-utility-button-sizes"
+    <a href="/docs/button-sizes"
       class="block button button-transparent
       ">
       Button Sizes
@@ -592,10 +554,10 @@ These add focus states that are consistent with the other form elements.</p>
 
   
   <li class="col-6 sm-col-12">
-    <a href="/docs/color-borders"
+    <a href="/docs/borders"
       class="block button button-transparent
       ">
-      Color Borders
+      Borders
     </a>
     
     
