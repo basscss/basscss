@@ -1,10 +1,11 @@
 /*
 
-    Basscss v6.0.0-beta.2
+    Basscss v6.0.0-beta.3
     Low-level CSS toolkit
     http://basscss.com
 
 */
+
 
 
 body, button { margin: 0 }
@@ -16,7 +17,6 @@ button, input, select, textarea {
 
 img { max-width: 100% }
 svg { max-height: 100% }
-/* Basscss Base Forms */
 
 input,
 select,
@@ -73,30 +73,9 @@ textarea {
   padding: 0;
 }
 
-/* Basscss Defaults */
-
-/*
-
-   COLOR VARIABLES
-
-   - Cool
-   - Warm
-   - Gray Scale
-
-*/
-
 :root {
 
-  /* Cool */
-
-
-  /* Warm */
-
-
-  /* Gray scale */
-
 }
-/* Basscss Base Buttons */
 
 button,
 .button {
@@ -128,7 +107,6 @@ button:before,
 }
 
 .button:hover { text-decoration: none }
-/* Basscss Base Tables */
 
 table {
   border-collapse: separate;
@@ -150,7 +128,6 @@ td {
 
 th { vertical-align: bottom }
 td { vertical-align: top }
-/* Basscss Base Typography */
 
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -213,8 +190,6 @@ h6, .h6 { font-size: .75rem }
   padding-left: 0;
 }
 
-/* Basscss Utility Layout */
-
 .inline       { display: inline }
 .block        { display: block }
 .inline-block { display: inline-block }
@@ -237,7 +212,6 @@ h6, .h6 { font-size: .75rem }
 
 .half-width { width: 50% }
 .full-width { width: 100% }
-/* Basscss Utility Typography */
 
 .bold    { font-weight: bold }
 .regular { font-weight: normal }
@@ -250,7 +224,6 @@ h6, .h6 { font-size: .75rem }
 .justify      { text-align: justify }
 
 .nowrap { white-space: nowrap }
-/* Basscss Utility White Space */
 
 .m0  { margin:        0 }
 .mt0 { margin-top:    0 }
@@ -303,7 +276,6 @@ h6, .h6 { font-size: .75rem }
 .p4  { padding: 4rem }
 .py4 { padding-top: 4rem; padding-bottom: 4rem }
 .px4 { padding-left: 4rem; padding-right: 4rem }
-/* Basscss Utility Responsive States */
 
 .sm-show, .md-show, .lg-show {
   display: none !important
@@ -343,7 +315,6 @@ h6, .h6 { font-size: .75rem }
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* Basscss Positions */
 
 .relative { position: relative }
 .absolute { position: absolute }
@@ -358,7 +329,6 @@ h6, .h6 { font-size: .75rem }
 .z2 { z-index: 2 }
 .z3 { z-index: 3 }
 .z4 { z-index: 4 }
-/* Basscss UI Utility Button Sizes */
 
 .button-small {
   padding: .25rem .5rem;
@@ -372,8 +342,6 @@ h6, .h6 { font-size: .75rem }
   padding-left: .5rem;
   padding-right: .5rem;
 }
-
-/* Basscss Grid */
 
 .container {
   max-width: 64em;
@@ -620,7 +588,6 @@ h6, .h6 { font-size: .75rem }
   }
 
 }
-/* Flex Object */
 
 .flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
 
@@ -655,8 +622,6 @@ h6, .h6 { font-size: .75rem }
   .lg-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
   .lg-flex > div { box-sizing: border-box }
 }
-
-/* Basscss Color Base */
 
 body {
   color: #111;
@@ -717,7 +682,6 @@ hr {
 .button.is-disabled {
   opacity: .5;
 }
-/* Basscss Color Forms */
 
 .field-light {
   background-color: white;
@@ -759,7 +723,6 @@ hr {
 .field-light.is-error {
   border-color: #ff4136;
 }
-/* Basscss Color Forms Dark */
 
 .field-dark {
   color: white;
@@ -809,7 +772,6 @@ hr {
 .field-dark.is-error {
   border-color: #ff4136;
 }
-/* Basscss Input Range */
 
 input[type=range] {
   vertical-align: middle;
@@ -833,8 +795,6 @@ input[type=range] {
   cursor: pointer;
   margin-top: -0.5rem;
 }
-
-/* Touch screen friendly pseudo element */
 .range-light::-webkit-slider-thumb:before {
   content: '';
   display: block;
@@ -885,7 +845,6 @@ input[type=range] {
   border: 0;
   box-shadow: 0 0 0 3px rgba(0,0,0,.25);
 }
-/* Basscss Progress */
 
 .progress {
   display: block;
@@ -912,7 +871,6 @@ input[type=range] {
 .progress::-moz-progress-bar {
   background-color: currentColor;
 }
-/* Basscss Color Tables */
 
 .table-light th,
 .table-light td {
@@ -924,7 +882,6 @@ input[type=range] {
 .table-light tr:last-child td {
   border-bottom: 0;
 }
-/* Basscss Button Outline */
 
 .button-outline {
   position: relative;
@@ -986,7 +943,6 @@ input[type=range] {
 .button-outline.is-disabled {
   opacity: .5;
 }
-/* Basscss Button Transparent */
 
 .button-transparent {
   position: relative;
@@ -1052,7 +1008,6 @@ input[type=range] {
 .button-transparent.is-disabled {
   opacity: .5;
 }
-/* Basscss Background Images */
 
 .bg-cover   { background-size: cover }
 .bg-contain { background-size: contain }
@@ -1062,7 +1017,6 @@ input[type=range] {
 .bg-right   { background-position: right }
 .bg-bottom  { background-position: bottom }
 .bg-left    { background-position: left }
-/* Basscss Color Borders */
 
 .border {
   border-style: solid;
@@ -1103,10 +1057,6 @@ input[type=range] {
 .rounded-left   { border-radius: 3px 0 0 3px }
 
 .not-rounded { border-radius: 0 }
-/* Basscss Colors */
-
-
-/* Color */
 
 .black, .dark-gray   { color: #111 }
 .gray, .mid-gray     { color: #aaa }
@@ -1127,9 +1077,6 @@ input[type=range] {
 .fuchsia { color: #f012be }
 .purple  { color: #b10dc9 }
 .maroon  { color: #85144b }
-
-
-/* Background Color */
 
 .bg-black, .bg-dark-gray   { background-color: #111 }
 .bg-gray, .bg-mid-gray     { background-color: #aaa }
@@ -1156,9 +1103,6 @@ input[type=range] {
 .bg-darken-3 { background-color: rgba(0,0,0,.25) }
 .bg-darken-4 { background-color: rgba(0,0,0,.5) }
 
-
-/* Border Color */
-
 .border-aqua  { border-color: #7fdbff }
 .border-blue  { border-color: #0074d9 }
 .border-navy  { border-color: #001f3f }
@@ -1183,12 +1127,5 @@ input[type=range] {
 .border-darken-2 { border-color: rgba(0,0,0,.125) }
 .border-darken-3 { border-color: rgba(0,0,0,.25) }
 .border-darken-4 { border-color: rgba(0,0,0,.5) }
-
-/* Opacity */
 .muted { opacity: .5 }
 
-:root {
-  /*
-  --bold-font-weight: 500;
-  */
-}
