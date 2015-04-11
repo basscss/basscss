@@ -4,14 +4,14 @@ Low-level CSS toolkit <http://basscss.com>
 
 Documentation: <http://basscss.com/docs>
 
----
+
 
 ## Lightning-Fast Modular CSS with No Side Effects
 
 Basscss is a lightweight collection of
 base element styles, immutable utilities, layout modules, and color styles designed for speed, clarity, performance, and scalability.
 
----
+
 
 ## Features
 
@@ -50,6 +50,8 @@ and to help reduce boilerplate in stylesheets.
 Modular and customizable base, typography, layout, and color styles
 don't dictate what things should look like
 and play well with other stylesheets and frameworks.
+
+[Read More](http://basscss.com)
 
 ---
 
