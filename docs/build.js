@@ -49,7 +49,7 @@ Object.keys(helpers).forEach(function(key) {
 var pages = autobass(data);
 
 function writePage(page) {
-  var pagePath = path.join(__dirname, '../beta' + page.path);
+  var pagePath = path.join(__dirname, '..' + page.path);
   var filename = page.filename || 'index.html';
   fs.ensureDirSync(pagePath);
   fs.writeFileSync(pagePath + '/' + filename, page.body);
