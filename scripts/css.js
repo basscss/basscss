@@ -5,17 +5,19 @@ var cssnext = require('cssnext');
 var Cleancss = require('clean-css');
 var pkg = require('../package.json');
 
-// Try removing comments
-//var discardComments = require('postcss-discard-comments');
+var postcss = require('postcss');
+var discardComments = require('postcss-discard-comments');
 
 
 compile = function() {
   var meta = [
-      '/*\n',
-       '    Basscss v' + pkg.version,
-       '    ' + pkg.description,
-       '    http://basscss.com',
-       '\n*/'
+      '/*',
+      '',
+      '    Basscss v' + pkg.version,
+      '    ' + pkg.description,
+      '    http://basscss.com',
+      '',
+      '*/'
     ].join('\n');
   var dir = path.join(__dirname, '../src/');
   var dest = path.join(__dirname, '../css/');
@@ -30,6 +32,8 @@ compile = function() {
       rem: false
     }
   });
+    // postcss-discard-comments removes space after selector
+    //css = meta + '\n\n' + postcss().use(discardComments()).process(css).css;
   css = meta + '\n\n' + css;
   var minified = new Cleancss().minify(css).styles;
 
