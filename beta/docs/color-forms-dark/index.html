@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.5/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -37,7 +37,7 @@
     <div class="flex flex-baseline flex-wrap mxn1">
       <div class="bold px1">
         basscss-color-forms-dark
-        <span class="h5">v0.1.2</span>
+        <span class="h5">v0.1.4</span>
       </div>
       <div class="flex-auto"></div>
       <a href="//npmjs.com/package/basscss-color-forms-dark" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
@@ -65,8 +65,9 @@
 
 
     <div class="prose">
-      <p>Color styles for form elements on dark backgrounds.</p>
-<h2 id="input-fields"><a href="#input-fields">Input Fields</a></h2><p>To style the color, background, and border styles for form fields on dark backgrounds, use the <code>.field-dark</code> style.</p>
+      <p>This module sets basic color styles for form elements on dark backgrounds.</p>
+<h2 id="input-fields"><a href="#input-fields">Input Fields</a></h2><p>To style the color, background, and border styles for form fields on dark backgrounds, use the <code>.field-dark</code> style.
+This style works on text inputs, selects, and textareas.</p>
 <div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <form class="p2 white bg-dark-gray">
@@ -142,8 +143,8 @@
       <h2 class="flex-auto">CSS Source</h2>
       <!--
       <div class="h5 bold">
-        1.08 kB
-        (509 B Gzipped)
+        1.13 kB
+        (530 B Gzipped)
       </div>
       -->
     </div>
@@ -160,16 +161,54 @@
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          29 Declarations
+          30 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          23 Properties
+          24 Properties
         </div>
       </div>
     </div>
     <pre id="basscss-color-forms-dark-css-source"><span class="hljs-comment">/* Basscss Color Forms Dark */</span>
+
+<span class="hljs-class">.field-dark</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> white</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--darken-<span class="hljs-number">3</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid <span class="hljs-function">var</span>(--darken-<span class="hljs-number">1</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-radius, <span class="hljs-number">3px</span>)</span></span>;
+}</span>
+
+<span class="hljs-rule"><span class="hljs-attribute">.field-dark</span>:<span class="hljs-value">:placeholder {
+  color: <span class="hljs-function">rgba</span>(<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,.<span class="hljs-number">75</span>)</span></span>;
+}
+
+<span class="hljs-rule"><span class="hljs-attribute">.field-dark</span>:<span class="hljs-value">focus {
+  outline: <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid <span class="hljs-function">rgba</span>(<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,.<span class="hljs-number">5</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-function">rgba</span>(<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,.<span class="hljs-number">25</span>)</span></span>;
+}
+
+<span class="hljs-rule"><span class="hljs-attribute">.field-dark</span>:<span class="hljs-value">read-only:<span class="hljs-function">not</span>(select) {
+  background-color: <span class="hljs-function">rgba</span>(<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,.<span class="hljs-number">25</span>)</span></span>;
+}
+
+<span class="hljs-rule"><span class="hljs-attribute">.field-dark</span>:<span class="hljs-value">invalid {
+  border-color: <span class="hljs-function">var</span>(--red)</span></span>;
+}
+
+<span class="hljs-class">.field-dark</span><span class="hljs-class">.is-success</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--green)</span></span>;
+}</span>
+
+<span class="hljs-class">.field-dark</span><span class="hljs-class">.is-warning</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--yellow)</span></span>;
+}</span>
+
+<span class="hljs-class">.field-dark</span><span class="hljs-class">.is-error</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red)</span></span>;
+}</span>
+
 
 <span class="hljs-comment">/*
 
@@ -212,43 +251,6 @@
   <span class="hljs-rule"><span class="hljs-attribute">--black</span>:<span class="hljs-value">  <span class="hljs-hexcolor">#111</span></span></span>;
 
 }</span>
-
-<span class="hljs-class">.field-dark</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> white</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--darken-<span class="hljs-number">3</span>)</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid <span class="hljs-function">var</span>(--darken-<span class="hljs-number">1</span>)</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--border-radius, <span class="hljs-number">3px</span>)</span></span>;
-}</span>
-
-<span class="hljs-rule"><span class="hljs-attribute">.field-dark</span>:<span class="hljs-value">:placeholder {
-  color: <span class="hljs-function">rgba</span>(<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,.<span class="hljs-number">75</span>)</span></span>;
-}
-
-<span class="hljs-rule"><span class="hljs-attribute">.field-dark</span>:<span class="hljs-value">focus {
-  outline: <span class="hljs-number">0</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid <span class="hljs-function">rgba</span>(<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,.<span class="hljs-number">5</span>)</span></span>;
-}
-
-<span class="hljs-rule"><span class="hljs-attribute">.field-dark</span>:<span class="hljs-value">read-only:<span class="hljs-function">not</span>(select) {
-  background-color: <span class="hljs-function">rgba</span>(<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,.<span class="hljs-number">25</span>)</span></span>;
-}
-
-<span class="hljs-rule"><span class="hljs-attribute">.field-dark</span>:<span class="hljs-value">invalid {
-  border-color: <span class="hljs-function">var</span>(--red)</span></span>;
-}
-
-<span class="hljs-class">.field-dark</span><span class="hljs-class">.is-success</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--green)</span></span>;
-}</span>
-
-<span class="hljs-class">.field-dark</span><span class="hljs-class">.is-warning</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--yellow)</span></span>;
-}</span>
-
-<span class="hljs-class">.field-dark</span><span class="hljs-class">.is-error</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--red)</span></span>;
-}</span>
-
 
 </pre>
   

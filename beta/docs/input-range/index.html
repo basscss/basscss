@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.5/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -37,7 +37,7 @@
     <div class="flex flex-baseline flex-wrap mxn1">
       <div class="bold px1">
         basscss-input-range
-        <span class="h5">v1.1.2</span>
+        <span class="h5">v1.1.3</span>
       </div>
       <div class="flex-auto"></div>
       <a href="//npmjs.com/package/basscss-input-range" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
@@ -65,7 +65,8 @@
 
 
     <div class="prose">
-      <p>The <code>.range-light</code> style inherits color from its parent. Use color utilities to change the slider thumb color.</p>
+      <p>This module styles range inputs to match other form styles in Basscss.</p>
+<p>The <code>.range-light</code> style inherits color from its parent. Use color utilities to change the slider thumb color.</p>
 <div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <input type="range" class="full-width range-light">
@@ -85,7 +86,7 @@
       <!--
       <div class="h5 bold">
         2.43 kB
-        (667 B Gzipped)
+        (671 B Gzipped)
       </div>
       -->
     </div>
@@ -185,7 +186,7 @@ input[type=range] {
 .range-light:focus::-moz-range-thumb {
   outline: none;
   border: 0;
-  box-shadow: 0 0 1px 2px currentcolor;
+  box-shadow: 0 0 0 3px var(--darken-3);
 }
 
 

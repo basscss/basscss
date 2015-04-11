@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css">
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.5/bassdock.min.css">
   
   <link rel="icon" href="/docs/images/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
@@ -37,7 +37,7 @@
     <div class="flex flex-baseline flex-wrap mxn1">
       <div class="bold px1">
         basscss-progress
-        <span class="h5">v1.0.2</span>
+        <span class="h5">v1.0.3</span>
       </div>
       <div class="flex-auto"></div>
       <a href="//npmjs.com/package/basscss-progress" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
@@ -65,12 +65,15 @@
 
 
     <div class="prose">
-      <p>The <code>.progress</code> style inherits color from its parent. Use color utilities to adjust the fill color.</p>
+      <p>This module styles progress elements to better match other styles in Basscss.</p>
+<p>The <code>.progress</code> style inherits color from its parent. Use color utilities to adjust the fill color.</p>
 <div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
   <div class="MarkedExample-rendered p2">
     <progress value="0.375" class="progress">0.375</progress>
+<progress value="0.5" class="progress blue">0.5</progress>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">progress</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"0.375"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress"</span>&gt;</span>0.375<span class="hljs-tag">&lt;/<span class="hljs-title">progress</span>&gt;</span></pre>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">progress</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"0.375"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress"</span>&gt;</span>0.375<span class="hljs-tag">&lt;/<span class="hljs-title">progress</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">progress</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"0.5"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress blue"</span>&gt;</span>0.5<span class="hljs-tag">&lt;/<span class="hljs-title">progress</span>&gt;</span></pre>
 </div>
 
     </div>
@@ -82,8 +85,8 @@
       <h2 class="flex-auto">CSS Source</h2>
       <!--
       <div class="h5 bold">
-        802 B
-        (325 B Gzipped)
+        783 B
+        (316 B Gzipped)
       </div>
       -->
     </div>
@@ -100,12 +103,12 @@
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          19 Declarations
+          18 Declarations
         </div>
       </div>
       <div class="sm-col-6 lg-col-3 px2">
         <div class="h6">
-          14 Properties
+          13 Properties
         </div>
       </div>
     </div>
@@ -121,7 +124,6 @@
   border-radius: 10000px;
   overflow: hidden;
   -webkit-appearance: none;
-  cursor: pointer;
 }
 
 .progress::-webkit-progress-bar {

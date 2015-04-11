@@ -16,7 +16,7 @@ data.src = path.join(__dirname, './templates');
 data.layout = fs.readFileSync(path.join(__dirname, './templates/layouts/docs.html'), 'utf8');
 data.title = _.capitalize(data.name);
 data.baseurl = '//basscss.com';
-data.stylesheet = 'http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.3/bassdock.min.css';
+data.stylesheet = 'http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.5/bassdock.min.css';
 
 data.asset_path = 'http://d2v52k3cl9vedd.cloudfront.net/basscss/';
 
