@@ -54,9 +54,9 @@ a {
   text-decoration: none;
 }
 
-  a:hover {
-    text-decoration: underline;
-  }
+a:hover {
+  text-decoration: underline;
+}
 
 pre, code {
   background-color: $pre-background-color;
@@ -89,7 +89,7 @@ hr {
 .button:focus {
   outline: none;
   border-color: $darken-2;
-  box-shadow: 0 0 2px 1px $darken-3;
+  box-shadow: 0 0 0 3px $darken-3;
 }
 
 .button:active,

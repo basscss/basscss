@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>
+    Basscss
+     | Grid
+  </title>
+  <meta name="author" content="Brent Jackson">
+  <meta name="description" content="Low-level CSS toolkit">
+  
+    <meta name="keywords" content="CSS, OOCSS, framework, ">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.3.5/bassdock.min.css">
+  
+  <link rel="icon" href="/docs/images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/docs/images/apple-touch-icon.png">
+  <style>
+    .prose p:first-of-type { font-size: 1.25rem }
+    .docs-show { display: block !important }
+  </style>
+</head>
+
+<body>
+
+<div class="sm-ml12m">
+  <div class="container-small px2 sm-px3 py2 mb3">
+    <header class="mt4 mb4">
+  <h1 class="h1 h1-responsive caps m0">
+    Grid
+    
+    
+  </h1>
+  
+    <div class="flex flex-baseline flex-wrap mxn1">
+      <div class="bold px1">
+        basscss-grid
+        <span class="h5">v0.0.17</span>
+      </div>
+      <div class="flex-auto"></div>
+      <a href="//npmjs.com/package/basscss-grid" class="h6 caps ml1 mr1 button button-small button-link">npm</a>
+      <a href="https://github.com/jxnblk/basscss-grid" class="h6 caps ml1 mr1 button button-small button-link">Github</a>
+    </div>
+  
+  
+  <hr class="mt1 mb1 b2 border-aqua">
+  
+    <div class="h5 bold mb3">
+      <a href="/" class="button button-small mr1 button-link blue">Home</a>
+        
+          /
+          <a href="/docs" class="button button-small ml1 mr1 button-link blue">
+            Docs
+          </a>
+        
+      /
+      <span class="h5 bold inline-block ml1" style="vertical-align:middle">Grid</span>
+    </div>
+  
+</header>
+
+
+
+
+    <div class="prose">
+      <p>This module contains responsive float and width utilities, along with a container style, to create a variety of grid layouts.
+Use this module in combination with layout, white space, and other utilities.</p>
+<p>Start by using a <code>.clearfix</code> container.
+Optionally use a <code>.container</code> to set a max-width.
+To adjust the max-width, set a new value with the <code>--container-width</code> custom property.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="container">
+  <div class="clearfix">
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Float columns using the <code>.col</code> style. This sets box-sizing border-box for each column.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix border border-blue">
+  <div class="col border border-blue">.col</div>
+  <div class="col border border-blue">.col</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col border border-blue"</span>&gt;</span>.col<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col border border-blue"</span>&gt;</span>.col<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Add column width utilities. The total column-width number should add up to 12.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix border border-blue">
+  <div class="col col-6 border border-blue">.col.col-6</div>
+  <div class="col col-6 border border-blue">.col.col-6</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 border border-blue"</span>&gt;</span>.col.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 border border-blue"</span>&gt;</span>.col.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="responsive-grid"><a href="#responsive-grid">Responsive Grid</a></h2><p>Use breakpoint-prefixed column utilities to change the grid at different screen widths.</p>
+<p>All breakpoint-based styles in Basscss follow the same naming convention.</p>
+<div class="overflow-auto">
+  <table class="mb2 table-flush table-light">
+    <thead>
+      <tr> <th>Prefix</th> <th>Description</th> </tr>
+    </thead>
+    <tbody>
+      <tr> <td>(no prefix)</td> <td>Not scoped to a breakpoint</td> </tr>
+      <tr> <td>sm-</td> <td>--breakpoint-sm (default: min-width 40em)</td> </tr>
+      <tr> <td>md-</td> <td>--breakpoint-md (default: min-width 52em)</td> </tr>
+      <tr> <td>lg-</td> <td>--breakpoint-lg (default: min-width 64em)</td> </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Only apply the grid from the small breakpoint and up with the <code>.sm-col</code> and <code>.sm-col-6</code> utilities.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix border border-blue">
+  <div class="sm-col sm-col-6 border border-blue">.sm-col.sm-col-6</div>
+  <div class="sm-col sm-col-6 border border-blue">.sm-col.sm-col-6</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 border border-blue"</span>&gt;</span>.sm-col.sm-col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 border border-blue"</span>&gt;</span>.sm-col.sm-col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>Add width adjustments for larger breakpoints.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix border border-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4 border border-blue">.sm-col.sm-col-6.md-col-5.lg-col-4</div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8 border border-blue">.sm-col.sm-col-6.md-col-7.lg-col-8</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-5 lg-col-4 border border-blue"</span>&gt;</span>.sm-col.sm-col-6.md-col-5.lg-col-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-7 lg-col-8 border border-blue"</span>&gt;</span>.sm-col.sm-col-6.md-col-7.lg-col-8<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="gutters"><a href="#gutters">Gutters</a></h2><p>Use padding and negative margin utilities to create gutters based on the white space scale.
+The negative margin ensures content inside each column lines up with content outside of the grid.
+When using negative margin, be sure to compensate for the extra width created
+with a padded parent element or by using overflow hidden.
+Otherwise, horizontal scrolling may occur.</p>
+<p>Create gutters with a width of 2 units on the white space scale using <code>.mxn2</code> and <code>.px2</code>.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix mxn2 border border-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div class="border border-blue">.px2</div></div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2"><div class="border border-blue">.px2</div></div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2 border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-5 lg-col-4 px2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>.px2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-7 lg-col-8 px2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>.px2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<p>For larger or smaller gutters, use any of the white space utilities.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix mxn1 border border-blue">
+  <div class="col col-6 px1"><div class="border border-blue">.px1</div></div>
+  <div class="col col-6 px1"><div class="border border-blue">.px1</div></div>
+</div>
+<div class="clearfix mxn3 border border-blue">
+  <div class="col col-6 px3"><div class="border border-blue">.px3</div></div>
+  <div class="col col-6 px3"><div class="border border-blue">.px3</div></div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn1 border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 px1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>.px1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 px1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>.px1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn3 border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 px3"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>.px3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 px3"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>.px3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="nesting"><a href="#nesting">Nesting</a></h2><p>Nest entire grid structures within columns to created nested grids.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix mxn2 border border-blue">
+  <div class="sm-col sm-col-6 md-col-5 lg-col-4 px2"><div class="border border-blue">Unnested</div></div>
+  <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2">
+    <div class="clearfix mxn2">
+      <div class="col col-6 px2"><div class="border border-blue">Nested</div></div>
+      <div class="col col-6 px2"><div class="border border-blue">Nested</div></div>
+    </div>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2 border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-5 lg-col-4 px2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>Unnested<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col sm-col-6 md-col-7 lg-col-8 px2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 px2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>Nested<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 px2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>Nested<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="reversed"><a href="#reversed">Reversed</a></h2><p>To reverse the order of columns, use the <code>.col-right</code> class to float columns right.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix border border-blue">
+  <div class="col-right col-6 border border-blue">.col-right.col-6</div>
+  <div class="col col-6 border border-blue">.col.col-6</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-right col-6 border border-blue"</span>&gt;</span>.col-right.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col col-6 border border-blue"</span>&gt;</span>.col.col-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="centering-columns"><a href="#centering-columns">Centering Columns</a></h2><p>Use the <code>.mx-auto</code> class to center columns within their containers.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix mxn2 border border-blue">
+  <div class="col-8 px2 mx-auto">
+    <div class="border border-blue">Centered Column</div>
+  </div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix mxn2 border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-8 px2 mx-auto"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>Centered Column<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="breakpoint-based-floats"><a href="#breakpoint-based-floats">Breakpoint Based Floats</a></h2><p>Column float utilities can be used independently of width utilities to control floating at different breakpoints.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="clearfix border border-blue">
+  <div class="sm-col p2 border border-blue">.sm-col</div>
+  <div class="overflow-hidden border border-blue">.overflow-hidden</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clearfix border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sm-col p2 border border-blue"</span>&gt;</span>.sm-col<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overflow-hidden border border-blue"</span>&gt;</span>.overflow-hidden<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="width-utilities"><a href="#width-utilities">Width Utilities</a></h2><p>Column width utilities can also be used independently to add percentage based widths to any block or inline-block element.</p>
+<div class="MarkedExample mb2 xbg-darken-1 rounded b2 border border-darken-1">
+  <div class="MarkedExample-rendered p2">
+    <div class="border border-blue">
+  <div class="right sm-col-6 md-col-4 p2 border border-blue">.sm-col-6.md-col-4</div>
+  <p>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.</p>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"border border-blue"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right sm-col-6 md-col-4 p2 border border-blue"</span>&gt;</span>.sm-col-6.md-col-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison. Ham bacon corned beef, sausage kielbasa flank tongue pig drumstick capicola swine short loin ham hock kevin.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+
+    </div>
+    
+      
+<footer>
+  
+    <div class="flex flex-center">
+      <h2 class="flex-auto">CSS Source</h2>
+      <!--
+      <div class="h5 bold">
+        3.03 kB
+        (508 B Gzipped)
+      </div>
+      -->
+    </div>
+    <div id="basscss-grid-stats" class="bold caps sm-flex flex-center flex-wrap mb3 mxn2">
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          58 Rules
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          58 Selectors
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          68 Declarations
+        </div>
+      </div>
+      <div class="sm-col-6 lg-col-3 px2">
+        <div class="h6">
+          7 Properties
+        </div>
+      </div>
+    </div>
+    <pre id="basscss-grid-css-source"><span class="hljs-comment">/* Basscss Grid */</span>
+
+<span class="hljs-class">.container</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--container-width)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> auto</span></span>;
+}</span>
+<span class="hljs-class">.col</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+}</span>
+
+<span class="hljs-class">.col-right</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> right</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+}</span>
+
+<span class="hljs-class">.col-1</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">1</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+}</span>
+
+<span class="hljs-class">.col-2</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">2</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+}</span>
+
+<span class="hljs-class">.col-3</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">3</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+}</span>
+
+<span class="hljs-class">.col-4</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">4</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+}</span>
+
+<span class="hljs-class">.col-5</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">5</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+}</span>
+
+<span class="hljs-class">.col-6</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">6</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+}</span>
+
+<span class="hljs-class">.col-7</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">7</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+}</span>
+
+<span class="hljs-class">.col-8</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">8</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+}</span>
+
+<span class="hljs-class">.col-9</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">9</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+}</span>
+
+<span class="hljs-class">.col-10</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">10</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+}</span>
+
+<span class="hljs-class">.col-11</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">11</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+}</span>
+
+<span class="hljs-class">.col-12</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+}</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-sm) </span>{
+
+  <span class="hljs-class">.sm-col</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-right</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> right</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-1</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">1</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-2</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">2</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-3</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">3</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-4</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">4</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-5</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">5</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-6</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">6</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-7</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">7</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-8</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">8</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-9</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">9</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-10</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">10</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-11</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">11</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.sm-col-12</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+  }</span>
+
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-md) </span>{
+
+  <span class="hljs-class">.md-col</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-right</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> right</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-1</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">1</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-2</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">2</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-3</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">3</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-4</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">4</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-5</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">5</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-6</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">6</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-7</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">7</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-8</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">8</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-9</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">9</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-10</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">10</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-11</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">11</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.md-col-12</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+  }</span>
+
+}
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (--breakpoint-lg) </span>{
+
+  <span class="hljs-class">.lg-col</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-right</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> right</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-1</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">1</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-2</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">2</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-3</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">3</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-4</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">4</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-5</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">5</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-6</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">6</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-7</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">7</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-8</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">8</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-9</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">9</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-10</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">10</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-11</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-function">calc</span>(<span class="hljs-number">11</span>/<span class="hljs-number">12</span> * <span class="hljs-number">100%</span>)</span></span>;
+  }</span>
+
+  <span class="hljs-class">.lg-col-12</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+  }</span>
+
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-sm (min-width: <span class="hljs-number">40em</span>)</span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-md (min-width: <span class="hljs-number">52em</span>)</span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --breakpoint-lg (min-width: <span class="hljs-number">64em</span>)</span>;
+
+<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--container-width</span>:<span class="hljs-value"> <span class="hljs-number">64em</span></span></span>;
+}</span>
+
+</pre>
+  
+</footer>
+
+    
+    
+
+
+  <div class="clearfix mt4 mxn2 py2">
+    
+      <a href="/docs/ui-utility-button-sizes" class="h4 left button ml2 mr2 button-link blue">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
+          <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path>
+        </svg>
+        Button Sizes
+      </a>
+    
+    
+      <a href="/docs/flex-object" class="h4 right button ml2 mr2 button-link blue">
+        Flex Object
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentcolor">
+          <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path>
+        </svg>
+      </a>
+    
+  </div>
+
+
+
+  </div>
+</div>
+
+<div class="sm-hide fixed top-0 right-0 px2">
+  <a href="#nav" class="button button-link">Menu</a>
+</div>
+
+<div id="nav" class="sm-fixed z2 sm-w12m top-0 bottom-0 left-0 overflow-auto border-right">
+  
+<hr class="sm-hide mt1 mb1 b2 border-aqua">
+
+<a href="/" class="h4 caps mt2 button block button-transparent aqua">
+  <svg xmlns="http://www.w3.org/2000/svg"
+    class="mr1 aqua"
+    viewBox="0 0 40 16" width="40" height="16" fill="currentcolor">
+    <path d="M20 0 L24 8 L40 6 L20 16 L16 8 L0 10 z"/>
+  </svg>
+  <div class="sm-show mt1"></div>
+  <span class="black">Basscss</span>
+</a>
+
+<ul class="flex flex-wrap list-reset mt2 mb1">
+  
+  
+  
+  <li class="col-12 mt2 mb2">
+    <a href="/docs"
+      class="block button button-transparent
+      ">
+      Docs
+    </a>
+    
+    
+      <ul class="flex flex-wrap list-reset mb0">
+        
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/base-reset"
+      class="block button button-transparent
+      ">
+      Base Reset
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/base-forms"
+      class="block button button-transparent
+      ">
+      Base Forms
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/base-buttons"
+      class="block button button-transparent
+      ">
+      Base Buttons
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/base-tables"
+      class="block button button-transparent
+      ">
+      Base Tables
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/base-typography"
+      class="block button button-transparent
+      ">
+      Base Typography
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/utility-layout"
+      class="block button button-transparent
+      ">
+      Layout
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/utility-typography"
+      class="block button button-transparent
+      ">
+      Typography
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/utility-white-space"
+      class="block button button-transparent
+      ">
+      White Space
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/utility-responsive-states"
+      class="block button button-transparent
+      ">
+      Responsive States
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/positions"
+      class="block button button-transparent
+      ">
+      Positions
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/ui-utility-button-sizes"
+      class="block button button-transparent
+      ">
+      Button Sizes
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/grid"
+      class="block button button-transparent
+      bg-aqua">
+      Grid
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/flex-object"
+      class="block button button-transparent
+      ">
+      Flex Object
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color-base"
+      class="block button button-transparent
+      ">
+      Color Base
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color-forms"
+      class="block button button-transparent
+      ">
+      Color Forms
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color-forms-dark"
+      class="block button button-transparent
+      ">
+      Color Forms Dark
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/input-range"
+      class="block button button-transparent
+      ">
+      Input Range
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/progress"
+      class="block button button-transparent
+      ">
+      Progress
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color-tables"
+      class="block button button-transparent
+      ">
+      Color Tables
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/button-outline"
+      class="block button button-transparent
+      ">
+      Button Outline
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/button-transparent"
+      class="block button button-transparent
+      ">
+      Button Transparent
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/background-images"
+      class="block button button-transparent
+      ">
+      Background Images
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/color-borders"
+      class="block button button-transparent
+      ">
+      Color Borders
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/colors"
+      class="block button button-transparent
+      ">
+      Colors
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-12 mt2 mb2">
+    <a href="/docs/guides"
+      class="block button button-transparent
+      ">
+      Guides
+    </a>
+    
+    
+      <ul class="flex flex-wrap list-reset mb0">
+        
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/basics"
+      class="block button button-transparent
+      ">
+      Basics
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/layout"
+      class="block button button-transparent
+      ">
+      Page-layout
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/flex-layout"
+      class="block button button-transparent
+      ">
+      Flex Object Layout
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/ui"
+      class="block button button-transparent
+      ">
+      UI Elements
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/tips"
+      class="block button button-transparent
+      ">
+      Tips & Tricks
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/custom-builds"
+      class="block button button-transparent
+      ">
+      Custom Builds
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/guides/css4"
+      class="block button button-transparent
+      ">
+      CSS4 Syntax
+    </a>
+    
+    
+  </li>
+
+      </ul>
+    
+  </li>
+
+  
+  <li class="col-12 mt2 mb2">
+    <a href="/docs/reference"
+      class="block button button-transparent
+      ">
+      Reference
+    </a>
+    
+    
+      <ul class="flex flex-wrap list-reset mb0">
+        
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/reference/principles"
+      class="block button button-transparent
+      ">
+      Design Principles
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/reference/showcase"
+      class="block button button-transparent
+      ">
+      Built with Basscss
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/reference/styles"
+      class="block button button-transparent
+      ">
+      Table of Styles
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/reference/stats"
+      class="block button button-transparent
+      ">
+      Stats
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/reference/color-combinations"
+      class="block button button-transparent
+      ">
+      Color Combos
+    </a>
+    
+    
+  </li>
+
+  
+  <li class="col-6 sm-col-12">
+    <a href="/docs/reference/resources"
+      class="block button button-transparent
+      ">
+      Tools & Resources
+    </a>
+    
+    
+  </li>
+
+      </ul>
+    
+  </li>
+
+      </ul>
+    
+  </li>
+
+</ul>
+
+<hr class="mt1 mb1 b2 border-aqua">
+
+<footer class="flex flex-wrap mb2">
+  <a href="//github.com/jxnblk/basscss" class="h6 block col-6 sm-col-12 px2 button button-small button-transparent">Github</a>
+  <a href="//jxnblk.com" class="h6 block col-6 sm-col-12 px2 button button-small button-transparent">
+    Made by Jxnblk
+  </a>
+  </p>
+</footer>
+
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Source+Code+Pro::latin' ] }
+  };
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})(); </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4603832-12', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script>
+  /* Remember sidebar scroll position */
+  var sidebar = document.querySelector('#nav');
+  function debounce(func, wait) {
+    var timeout;
+    return function() {
+      var context = this,
+          args = arguments;
+      var later = function() {
+        timeout = null;
+        func.apply(context, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  };
+  function setPosition(y) { localStorage.setItem('sidebarY', y) }
+  function getPosition() { return localStorage.getItem('sidebarY') || 0 }
+  sidebar.addEventListener('scroll', function(e) {
+    var y = e.target.scrollTop;
+    debounce(setPosition(y), 300);
+  });
+  sidebar.scrollTop = getPosition();
+</script>
+
+
+
+
+
+
+
+
+
+</div>
+
+      <!--
+        temporary in-page nav
+      
+      -->
+
+</body>
+</html>

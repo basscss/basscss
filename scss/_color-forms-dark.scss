@@ -24,16 +24,6 @@ $black: #111 !default;
 
 /* Basscss Color Forms Dark */
 
-/*
-
-   COLOR VARIABLES
-
-   - Cool
-   - Warm
-   - Gray Scale
-
-*/
-
 .field-dark {
   color: white;
   background-color: $darken-3;
@@ -60,6 +50,7 @@ $black: #111 !default;
 .field-dark:focus {
   outline: 0;
   border: 1px solid rgba(255,255,255,.5);
+  box-shadow: 0 0 0 2px rgba(255,255,255,.25);
 }
 
 .field-dark:read-only:not(select) {
@@ -81,3 +72,14 @@ $black: #111 !default;
 .field-dark.is-error {
   border-color: $red;
 }
+
+
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/

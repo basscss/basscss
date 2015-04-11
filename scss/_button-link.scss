@@ -33,7 +33,7 @@
 .button-link:focus {
   outline: none;
   border-color: transparent;
-  box-shadow: 0 0 3px, inset 0 -.125em;
+  box-shadow: 0 0 0 3px $darken-3, inset 0 -.125em;
 }
 
 .button-link:disabled,

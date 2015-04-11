@@ -24,8 +24,7 @@ textarea,
 fieldset {
   font-size: 1rem;
   margin-top: 0;
-  margin-bottom: .5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0;
 }
 
 input[type=text],
@@ -147,10 +146,6 @@ p, dl, ol, ul {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1rem;
-}
-
-ol, ul {
-  padding-left: 2rem;
 }
 
 pre, code, samp {
@@ -625,6 +620,8 @@ h6, .h6 { font-size: .75rem }
 .flex-start    { -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start }
 .flex-end      { -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end }
 
+.flex-justify  { -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between }
+
 .flex-first { -webkit-box-ordinal-group: 0; -webkit-order: -1; -ms-flex-order: -1; order: -1 }
 .flex-last  { -webkit-box-ordinal-group: 1025; -webkit-order: 1024; -ms-flex-order: 1024; order: 1024 }
 
@@ -680,9 +677,9 @@ a {
   text-decoration: none;
 }
 
-  a:hover {
-    text-decoration: underline;
-  }
+a:hover {
+  text-decoration: underline;
+}
 
 pre, code {
   background-color: #ddd;
@@ -715,7 +712,7 @@ hr {
 .button:focus {
   outline: none;
   border-color: rgba(0,0,0,.125);
-  box-shadow: 0 0 2px 1px rgba(0,0,0,.25);
+  box-shadow: 0 0 0 3px rgba(0,0,0,.25);
 }
 
 .button:active,
@@ -730,28 +727,6 @@ hr {
   opacity: .5;
 }
 /* Basscss Color Forms */
-
-/*
-
-   COLOR VARIABLES
-
-   - Cool
-   - Warm
-   - Gray Scale
-
-*/
-
-:root {
-
-  /* Cool */
-
-
-  /* Warm */
-
-
-  /* Gray scale */
-
-}
 
 .field-light {
   background-color: white;
@@ -812,28 +787,6 @@ hr {
 }
 /* Basscss Color Forms Dark */
 
-/*
-
-   COLOR VARIABLES
-
-   - Cool
-   - Warm
-   - Gray Scale
-
-*/
-
-:root {
-
-  /* Cool */
-
-
-  /* Warm */
-
-
-  /* Gray scale */
-
-}
-
 .field-dark {
   color: white;
   background-color: rgba(0,0,0,.25);
@@ -861,6 +814,7 @@ hr {
 .field-dark:focus {
   outline: 0;
   border: 1px solid rgba(255,255,255,.5);
+  box-shadow: 0 0 0 2px rgba(255,255,255,.25);
 }
 
 .field-dark:read-only:not(select) {
@@ -956,7 +910,7 @@ input[type=range] {
 .range-light:focus::-moz-range-thumb {
   outline: none;
   border: 0;
-  box-shadow: 0 0 1px 2px currentcolor;
+  box-shadow: 0 0 0 3px rgba(0,0,0,.25);
 }
 /* Basscss Progress */
 
@@ -970,7 +924,6 @@ input[type=range] {
   border-radius: 10000px;
   overflow: hidden;
   -webkit-appearance: none;
-  cursor: pointer;
 }
 
 .progress::-webkit-progress-bar {
@@ -1018,12 +971,12 @@ input[type=range] {
 
 .button-outline:before {
   content: '';
-  width: 100%;
-  height: 100%;
   display: block;
   position: absolute;
   z-index: -1;
   top: -1px;
+  right: -1px;
+  bottom: -1px;
   left: -1px;
   border: 1px solid transparent;
   background-color: currentcolor;
@@ -1041,14 +994,15 @@ input[type=range] {
   box-shadow: none;
 }
 
-.button-outline:hover:before {
+.button-outline:hover:before,
+.button-outline:focus:before {
   opacity: .125;
 }
 
 .button-outline:focus {
   outline: none;
   border: 1px solid currentcolor;
-  box-shadow: 0 0 3px 1px;
+  box-shadow: 0 0 0 2px;
 }
 
 .button-outline:active,
@@ -1079,12 +1033,12 @@ input[type=range] {
 
 .button-transparent:before {
   content: '';
-  width: 100%;
-  height: 100%;
   display: block;
   position: absolute;
   z-index: -1;
   top: -1px;
+  right: -1px;
+  bottom: -1px;
   left: -1px;
   border: 1px solid transparent;
   background-color: currentcolor;
@@ -1101,15 +1055,20 @@ input[type=range] {
   box-shadow: none;
 }
 
-.button-transparent:hover:before {
-  opacity: .0625;
+.button-transparent:hover:before, 
+.button-transparent:focus:before {
   opacity: .09375;
 }
 
 .button-transparent:focus {
   outline: none;
   border-color: transparent;
-  box-shadow: 0 0 3px;
+  box-shadow: 0 0 0 2px; 
+}
+
+.button-transparent:active,
+.button-transparent.is-active {
+  box-shadow: none;
 }
 
 .button-transparent:active:before,
