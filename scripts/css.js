@@ -5,6 +5,9 @@ var cssnext = require('cssnext');
 var Cleancss = require('clean-css');
 var pkg = require('../package.json');
 
+// Try removing comments
+//var discardComments = require('postcss-discard-comments');
+
 
 compile = function() {
   var meta = [
@@ -19,7 +22,14 @@ compile = function() {
 
   var src = fs.readFileSync(dir + 'basscss.css', 'utf8');
 
-  var css = cssnext(src, { features: { rem: false } } );
+  var css = cssnext(src, {
+    features: {
+      customProperties: {
+        strict: false, // disable variable fallbacks from being redundantly added
+      },
+      rem: false
+    }
+  });
   css = meta + '\n\n' + css;
   var minified = new Cleancss().minify(css).styles;
 

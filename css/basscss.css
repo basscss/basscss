@@ -72,6 +72,30 @@ textarea {
 .fieldset-reset legend {
   padding: 0;
 }
+
+/* Basscss Defaults */
+
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/
+
+:root {
+
+  /* Cool */
+
+
+  /* Warm */
+
+
+  /* Gray scale */
+
+}
 /* Basscss Base Buttons */
 
 button,
@@ -596,9 +620,7 @@ h6, .h6 { font-size: .75rem }
   }
 
 }
-/*
- * Basscss Flex Object
- */
+/* Flex Object */
 
 .flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
 
@@ -636,30 +658,8 @@ h6, .h6 { font-size: .75rem }
 
 /* Basscss Color Base */
 
-/*
-
-   COLOR VARIABLES
-
-   - Cool
-   - Warm
-   - Gray Scale
-
-*/
-
-:root {
-
-  /* Cool */
-
-
-  /* Warm */
-
-
-  /* Gray scale */
-
-}
-
 body {
-  color: #222;
+  color: #111;
   background-color: white;
 }
 
@@ -673,7 +673,7 @@ a:hover {
 }
 
 pre, code {
-  background-color: #ddd;
+  background-color: transparent;
   border-radius: 3px;
 }
 
@@ -765,7 +765,6 @@ hr {
   color: white;
   background-color: rgba(0,0,0,.25);
   border: 1px solid rgba(0,0,0,.0625);
-  border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -1109,7 +1108,7 @@ input[type=range] {
 
 /* Color */
 
-.black, .dark-gray   { color: #222 }
+.black, .dark-gray   { color: #111 }
 .gray, .mid-gray     { color: #aaa }
 .silver, .light-gray { color: #ddd }
 .white { color: #fff }
@@ -1132,7 +1131,7 @@ input[type=range] {
 
 /* Background Color */
 
-.bg-black, .bg-dark-gray   { background-color: #222 }
+.bg-black, .bg-dark-gray   { background-color: #111 }
 .bg-gray, .bg-mid-gray     { background-color: #aaa }
 .bg-silver, .bg-light-gray { background-color: #ddd }
 .bg-white  { background-color: #fff }
@@ -1175,7 +1174,7 @@ input[type=range] {
 .border-purple  { border-color: #b10dc9 }
 .border-maroon  { border-color: #85144b }
 
-.border-black  { border-color: #222 }
+.border-black  { border-color: #111 }
 .border-gray   { border-color: #aaa }
 .border-silver { border-color: #ddd }
 .border-white  { border-color: #fff }
@@ -1188,11 +1187,8 @@ input[type=range] {
 /* Opacity */
 .muted { opacity: .5 }
 
-/* Basscss Defaults */
-
 :root {
-
-  /* Legacy support */
-
+  /*
+  --bold-font-weight: 500;
+  */
 }
-
