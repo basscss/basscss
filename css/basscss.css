@@ -1,6 +1,6 @@
 /*
 
-    Basscss v5.2.1
+    Basscss v6.0.0-beta.2
     Low-level CSS toolkit
     http://basscss.com
 
@@ -632,7 +632,7 @@ h6, .h6 { font-size: .75rem }
 @media (min-width: 64em) {
   .lg-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
   .lg-flex > div { box-sizing: border-box }
-} /* New */
+}
 
 /* Basscss Color Base */
 
@@ -925,7 +925,6 @@ input[type=range] {
 .table-light tr:last-child td {
   border-bottom: 0;
 }
-
 /* Basscss Button Outline */
 
 .button-outline {
@@ -987,7 +986,7 @@ input[type=range] {
 .button-outline:disabled,
 .button-outline.is-disabled {
   opacity: .5;
-} /* New */
+}
 /* Basscss Button Transparent */
 
 .button-transparent {
@@ -1053,7 +1052,7 @@ input[type=range] {
 .button-transparent:disabled,
 .button-transparent.is-disabled {
   opacity: .5;
-} /* New */
+}
 /* Basscss Background Images */
 
 .bg-cover   { background-size: cover }
@@ -1063,7 +1062,7 @@ input[type=range] {
 .bg-top     { background-position: top }
 .bg-right   { background-position: right }
 .bg-bottom  { background-position: bottom }
-.bg-left    { background-position: left } /* New */
+.bg-left    { background-position: left }
 /* Basscss Color Borders */
 
 .border {
@@ -1105,7 +1104,6 @@ input[type=range] {
 .rounded-left   { border-radius: 3px 0 0 3px }
 
 .not-rounded { border-radius: 0 }
-
 /* Basscss Colors */
 
 
@@ -1190,8 +1188,6 @@ input[type=range] {
 /* Opacity */
 .muted { opacity: .5 }
 
-
-/* Variables */
 /* Basscss Defaults */
 
 :root {

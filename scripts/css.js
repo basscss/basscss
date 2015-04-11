@@ -5,10 +5,6 @@ var cssnext = require('cssnext');
 var Cleancss = require('clean-css');
 var pkg = require('../package.json');
 
-//var header = require('gulp-header');
-//var rename = require('gulp-rename');
-//var mincss = require('gulp-minify-css');
-//var gzip = require('gulp-gzip');
 
 compile = function() {
   var meta = [

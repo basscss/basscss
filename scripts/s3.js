@@ -18,7 +18,6 @@ function upload() {
     s3Options: {
       accessKeyId: options.key,
       secretAccessKey: options.secret,
-      //region: options.region,
     }
   });
 

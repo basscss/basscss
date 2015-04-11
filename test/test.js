@@ -5,9 +5,6 @@ var assert = require('assert');
 var cssnext = require('cssnext');
 var cssstats = require('cssstats');
 
-var processors = require('./processors');
-var scss = require('./scss');
-
 var src = fs.readFileSync(path.join(__dirname, '../src/basscss.css'), 'utf8');
 
 var css;
@@ -42,9 +39,6 @@ describe('basscss', function() {
   it('should have properties', function() {
     assert(stats.aggregates.properties.length > 0);
   });
-
-  //processors(src);
-  scss();
 
 });
 
