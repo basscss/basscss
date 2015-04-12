@@ -59,7 +59,7 @@ and play well with other stylesheets and frameworks.
 
 Please file an issue before submitting a pull request.
 If you're making changes to a module, please follow the
-[design principles]().
+[design principles](http://www.basscss.com/docs/reference/principles/).
 
 ## Folder Structure
 - `src`: CSS4 source files
