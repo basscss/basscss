@@ -43,7 +43,9 @@ compile = function() {
     }
   });
   css = meta + '\n\n' + postcss().use(removeComments()).process(css).css;
-  var minified = new Cleancss().minify(css).styles;
+  var minified = new Cleancss({
+      advanced: false,
+    }).minify(css).styles;
 
   fs.writeFileSync(dest + 'basscss.css', css);
   fs.writeFileSync(dest + 'basscss.min.css', minified);
