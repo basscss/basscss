@@ -37,11 +37,12 @@ compile = function() {
       customProperties: {
         strict: false, // disable variable fallbacks from being redundantly added
       },
-      rem: false
+      rem: false,
+      pseudoElements: false,
+      colorRgba: false
     }
   });
   css = meta + '\n\n' + postcss().use(removeComments()).process(css).css;
-  //css = meta + '\n\n' + css;
   var minified = new Cleancss().minify(css).styles;
 
   fs.writeFileSync(dest + 'basscss.css', css);

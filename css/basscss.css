@@ -94,10 +94,10 @@ button,
   -webkit-appearance: none;
 }
 
-button:after,
-button:before,
-.button:after,
-.button:before {
+button::after,
+button::before,
+.button::after,
+.button::before {
   box-sizing: border-box;
 }
 
@@ -890,15 +890,9 @@ input[type=range] {
   background-color: transparent;
   border-radius: 3px;
   border: 1px solid currentcolor;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
 }
 
-.button-outline:before {
+.button-outline::before {
   content: '';
   display: block;
   position: absolute;
@@ -910,12 +904,6 @@ input[type=range] {
   border: 1px solid transparent;
   background-color: currentcolor;
   border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: opacity;
-          transition-property: opacity;
   opacity: 0;
 }
 
@@ -923,8 +911,8 @@ input[type=range] {
   box-shadow: none;
 }
 
-.button-outline:hover:before,
-.button-outline:focus:before {
+.button-outline:hover::before,
+.button-outline:focus::before {
   opacity: .125;
 }
 
@@ -951,15 +939,9 @@ input[type=range] {
   background-color: transparent;
   border-radius: 0;
   border: 1px solid transparent;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow;
-          transition-property: box-shadow;
 }
 
-.button-transparent:before {
+.button-transparent::before {
   content: '';
   display: block;
   position: absolute;
@@ -970,12 +952,6 @@ input[type=range] {
   left: -1px;
   border: 1px solid transparent;
   background-color: currentcolor;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: opacity;
-          transition-property: opacity;
   opacity: 0;
 }
 
@@ -983,8 +959,8 @@ input[type=range] {
   box-shadow: none;
 }
 
-.button-transparent:hover:before, 
-.button-transparent:focus:before {
+.button-transparent:hover::before, 
+.button-transparent:focus::before {
   opacity: .09375;
 }
 
@@ -999,8 +975,8 @@ input[type=range] {
   box-shadow: none;
 }
 
-.button-transparent:active:before,
-.button-transparent.is-active:before {
+.button-transparent:active::before,
+.button-transparent.is-active::before {
   opacity: .0625;
 }
 
