@@ -1,6 +1,6 @@
 /*
 
-    Basscss v6.0.1
+    Basscss v6.0.2
     Low-level CSS toolkit
     http://basscss.com
 
@@ -8,13 +8,7 @@
 
 
 
-body, button { margin: 0 }
-
-button, input, select, textarea {
-  font-family: inherit;
-  font-size: 100%;
-}
-
+body { margin: 0 }
 img { max-width: 100% }
 svg { max-height: 100% }
 
@@ -22,7 +16,9 @@ input,
 select,
 textarea,
 fieldset {
+  font-family: inherit;
   font-size: 1rem;
+  box-sizing: border-box;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -39,7 +35,6 @@ input[type=tel],
 input[type=time],
 input[type=url],
 input[type=week] {
-  box-sizing: border-box;
   height: 2.25rem;
   padding: .5rem .5rem;
   vertical-align: middle;
@@ -47,7 +42,6 @@ input[type=week] {
 }
 
 select {
-  box-sizing: border-box;
   line-height: 1.75;
   padding: .5rem .5rem;
 }
@@ -58,7 +52,6 @@ select:not([multiple]) {
 }
 
 textarea {
-  box-sizing: border-box;
   line-height: 1.75;
   padding: .5rem .5rem;
 }
@@ -79,12 +72,12 @@ textarea {
 
 button,
 .button {
+  font-family: inherit;
   font-size: inherit;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
-  box-sizing: border-box;
   line-height: 1.125rem;
   padding: .5rem 1rem;
   margin: 0;
@@ -94,10 +87,13 @@ button,
   -webkit-appearance: none;
 }
 
+button,
 button::after,
 button::before,
+.button,
 .button::after,
 .button::before {
+  box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -143,7 +139,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5em;
 }
 
-p, dl, ol, ul {
+p {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dl, ol, ul {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -166,17 +168,15 @@ hr {
 }
 
 blockquote {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
 }
-  blockquote,
-  blockquote p {
-    font-size: 1.25rem;
-    font-style: italic;
-  }
+
+blockquote,
+blockquote p {
+  font-size: 1.25rem;
+  font-style: italic;
+}
 
 h1, .h1 { font-size: 2rem }
 h2, .h2 { font-size: 1.5rem }
@@ -193,6 +193,8 @@ h6, .h6 { font-size: .75rem }
 .inline       { display: inline }
 .block        { display: block }
 .inline-block { display: inline-block }
+.table        { display: table }
+.table-cell   { display: table-cell }
 
 .overflow-hidden { overflow: hidden }
 .overflow-scroll { overflow: scroll }
