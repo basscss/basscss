@@ -663,12 +663,6 @@ hr {
   color: white;
   background-color: #0074d9;
   border-radius: 3px;
-  -webkit-transition-duration: .05s;
-          transition-duration: .05s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
 }
 
 .button:hover {
