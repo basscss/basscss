@@ -10,6 +10,7 @@
     "bower-bump": "node scripts/bower-bump",
     "s3": "node scripts/s3",
     "release": "npm run css && npm run bower-bump",
+    "prepublish": "npm run release",
     "start": "npm run watch:css"
   },
   "dependencies": {
@@ -18,7 +19,7 @@
     "basscss-base-forms": "^1.2.0",
     "basscss-base-reset": "^2.0.1",
     "basscss-base-tables": "^1.0.0",
-    "basscss-base-typography": "^1.1.0",
+    "basscss-base-typography": "^1.1.1",
     "basscss-borders": "^1.0.2",
     "basscss-button-blue": "0.0.1",
     "basscss-button-blue-outline": "0.0.3",
