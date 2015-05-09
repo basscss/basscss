@@ -712,20 +712,30 @@ hr {
   background-color: rgba(0,0,0,.125);
 }
 
-.field-light:invalid {
-  border-color: #ff4136;
-}
 
 .field-light.is-success {
   border-color: #2ecc40;
+}
+
+.field-light.is-success:focus {
+  box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);
 }
 
 .field-light.is-warning {
   border-color: #ffdc00;
 }
 
+.field-light.is-warning:focus {
+  box-shadow: 0 0 0 2px rgba(255, 220, 0, 0.5);
+}
+
+.field-light:invalid,
 .field-light.is-error {
   border-color: #ff4136;
+}
+
+.field-light.is-error:focus {
+  box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);
 }
 
 .field-dark {
