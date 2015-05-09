@@ -771,20 +771,29 @@ hr {
   background-color: rgba(255,255,255,.25);
 }
 
-.field-dark:invalid {
-  border-color: #ff4136;
-}
-
 .field-dark.is-success {
   border-color: #2ecc40;
+}
+
+.field-dark.is-success:focus {
+  box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);
 }
 
 .field-dark.is-warning {
   border-color: #ffdc00;
 }
 
+.field-dark.is-warning:focus {
+  box-shadow: 0 0 0 2px rgba(255, 220, 0, 0.5);
+}
+
+.field-dark:invalid,
 .field-dark.is-error {
   border-color: #ff4136;
+}
+
+.field-dark.is-error:focus {
+  box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);
 }
 
 input[type=range] {
