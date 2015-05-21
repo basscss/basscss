@@ -711,7 +711,7 @@ hr {
 }
 
 .field-light:read-only:not(select),
-.field.light.is-read-only {
+.field-light.is-read-only {
   background-color: rgba(0,0,0,.125);
 }
 
