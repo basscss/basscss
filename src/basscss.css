@@ -1,31 +1,46 @@
 
 @import 'basscss-base-reset';
 @import 'basscss-base-forms';
-@import 'basscss-base-buttons';
 @import 'basscss-base-tables';
 @import 'basscss-base-typography';
 
-@import 'basscss-utility-layout';
+@import 'basscss-color-base';
+
+@import 'src/btn.css';
+
+@import 'basscss-type-scale';
 @import 'basscss-utility-typography';
+
+@import 'basscss-utility-layout';
 @import 'basscss-white-space';
 @import 'basscss-responsive-states';
-@import 'basscss-positions';
-@import 'basscss-button-sizes';
 
 @import 'basscss-grid';
 @import 'flex-object';
 
-@import 'basscss-color-base';
 @import 'basscss-color-forms';
-@import 'basscss-color-forms-dark';
-@import 'basscss-input-range';
-@import 'basscss-progress';
 @import 'basscss-color-tables';
-@import 'basscss-button-outline';
-@import 'basscss-button-transparent';
-@import 'basscss-background-images';
 @import 'basscss-borders';
 @import 'basscss-colors';
+@import 'basscss-background-colors';
 
 @import 'basscss-defaults';
 
+
+/* Optionals
+@import 'basscss-progress';
+@import 'basscss-color-progress';
+@import 'basscss-input-range';
+@import 'basscss-color-input-range';
+ */
+
+/* Removed from core
+@import 'basscss-base-buttons';
+@import 'basscss-button-sizes';
+@import 'basscss-positions';
+@import 'basscss-button-outline';
+@import 'basscss-button-transparent';
+@import 'basscss-background-images';
+@import 'basscss-color-forms-dark';
+@import 'basscss-border-colors';
+*/
