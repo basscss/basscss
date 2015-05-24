@@ -4,12 +4,12 @@
     Low-level CSS toolkit
     http://basscss.com
 
-    Size: 14.25 kB
-    Gzipped: 3.25 kB
-    Rules: 265
-    Selectors: 315
-    Declarations: 424
-    Properties: 89
+    13.83 kB
+    3.15 kB Gzipped
+    263 Rules
+    303 Selectors
+    417 Declarations
+    83 Properties
 
 */
 
@@ -30,7 +30,12 @@ fieldset {
   margin-bottom: 0;
 }
 
+label {
+  vertical-align: middle;
+}
+
 input[type=text],
+input[type=date],
 input[type=datetime],
 input[type=datetime-local],
 input[type=email],
@@ -63,13 +68,14 @@ textarea {
   padding: .5rem .5rem;
 }
 
-.fieldset-reset {
+fieldset {
   padding: 0;
   margin-left: 0;
   margin-right: 0;
   border: 0;
 }
-.fieldset-reset legend {
+
+legend {
   padding: 0;
 }
 
@@ -164,7 +170,71 @@ hr {
   border-bottom-color: rgba(0,0,0,.125);
 }
 
-button,
+.field {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,.125);
+  border-radius: 3px;
+}
+
+.field:focus,
+.field.is-focused {
+  outline: none;
+  border-color: #0074d9;
+  box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);
+}
+
+.field:disabled,
+.field.is-disabled {
+  background-color: rgba(0,0,0,.125);
+  opacity: .5;
+}
+
+.field:read-only:not(select),
+.field.is-read-only {
+  background-color: rgba(0,0,0,.125);
+}
+
+
+.field.is-success {
+  border-color: #2ecc40;
+}
+
+.field.is-success:focus,
+.field.is-success.is-focused {
+  box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);
+}
+
+.field.is-warning {
+  border-color: #ffdc00;
+}
+
+.field.is-warning:focus,
+.field.is-warning.is-focused {
+  box-shadow: 0 0 0 2px rgba(255, 220, 0, 0.5);
+}
+
+.field:invalid,
+.field.is-error {
+  border-color: #ff4136;
+}
+
+.field.is-error:focus,
+.field.is-error.is-focused {
+  box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);
+}
+
+.table-light th,
+.table-light td {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0,0,0,.125);
+}
+
+.table-light tr:last-child td {
+  border-bottom: 0;
+}
+
 .btn {
   font-family: inherit;
   font-size: inherit;
@@ -179,32 +249,13 @@ button,
   border: 1px solid transparent;
   vertical-align: middle;
   -webkit-appearance: none;
-}
-
-button,
-button::after,
-button::before,
-.btn,
-.btn::after,
-.btn::before {
-  box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-// Color
-
-.btn {
   color: inherit;
   background-color: transparent;
 }
 
 .btn:hover {
   text-decoration: none;
+  border: 1px solid rgba(0,0,0,.0625);
   box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
 }
 
@@ -224,6 +275,24 @@ button::before,
 .btn:disabled,
 .btn.is-disabled {
   opacity: .5;
+}
+
+
+.btn-primary {
+  color: white;
+  background-color: #0074d9;
+  border-radius: 3px;
+}
+
+.btn-outline,
+.btn-outline:hover {
+  border-color: currentcolor;
+  border-radius: 3px;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
 
 .h1 { font-size: 2rem }
@@ -275,8 +344,12 @@ button::before,
 
 .fit { max-width: 100% }
 
-.half-width { width: 50% }
-.full-width { width: 100% }
+.border-box { box-sizing: border-box }
+
+.align-baseline { vertical-align: baseline }
+.align-top      { vertical-align: top }
+.align-middle   { vertical-align: middle }
+.align-bottom   { vertical-align: bottom }
 
 .m0  { margin:        0 }
 .mt0 { margin-top:    0 }
@@ -628,93 +701,17 @@ button::before,
 
 .flex-justify  { -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between }
 
-.flex-first { -webkit-box-ordinal-group: 0; -webkit-order: -1; -ms-flex-order: -1; order: -1 }
-.flex-last  { -webkit-box-ordinal-group: 1025; -webkit-order: 1024; -ms-flex-order: 1024; order: 1024 }
-
 .flex-auto { -webkit-box-flex: 1; -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto }
 .flex-grow { -webkit-box-flex: 1; -webkit-flex: 1 0 auto; -ms-flex: 1 0 auto; flex: 1 0 auto }
 .flex-none { -webkit-box-flex: 0; -webkit-flex: none; -ms-flex: none; flex: none }
-
-.flex > div { box-sizing: border-box }
 @media (min-width: 40em) {
   .sm-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
-  .sm-flex > div { box-sizing: border-box }
 }
 @media (min-width: 52em) {
   .md-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
-  .md-flex > div { box-sizing: border-box }
 }
 @media (min-width: 64em) {
   .lg-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
-  .lg-flex > div { box-sizing: border-box }
-}
-
-.field-light {
-  background-color: white;
-  -webkit-transition: box-shadow .2s ease;
-          transition: box-shadow .2s ease;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(0,0,0,.125);
-  border-radius: 3px;
-}
-
-.field-light:focus,
-.field-light.is-focused {
-  outline: none;
-  border-color: #0074d9;
-  box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);
-}
-
-.field-light:disabled,
-.field-light.is-disabled {
-  background-color: rgba(0,0,0,.125);
-  opacity: .5;
-}
-
-.field-light:read-only:not(select),
-.field.light.is-read-only {
-  background-color: rgba(0,0,0,.125);
-}
-
-
-.field-light.is-success {
-  border-color: #2ecc40;
-}
-
-.field-light.is-success:focus,
-.field-light.is-success.is-focused {
-  box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);
-}
-
-.field-light.is-warning {
-  border-color: #ffdc00;
-}
-
-.field-light.is-warning:focus,
-.field-light.is-warning.is-focused {
-  box-shadow: 0 0 0 2px rgba(255, 220, 0, 0.5);
-}
-
-.field-light:invalid,
-.field-light.is-error {
-  border-color: #ff4136;
-}
-
-.field-light.is-error:focus,
-.field-light.is-error.is-focused {
-  box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);
-}
-
-.table-light th,
-.table-light td {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(0,0,0,.125);
-}
-
-.table-light tr:last-child td {
-  border-bottom: 0;
 }
 
 .border {
@@ -757,10 +754,10 @@ button::before,
 
 .not-rounded { border-radius: 0 }
 
-.black, .dark-gray   { color: #111 }
-.gray, .mid-gray     { color: #aaa }
-.silver, .light-gray { color: #ddd }
-.white { color: #fff }
+.black  { color: #111 }
+.gray   { color: #aaa }
+.silver { color: #ddd }
+.white  { color: #fff }
 
 .aqua  { color: #7fdbff }
 .blue  { color: #0074d9 }
@@ -780,9 +777,9 @@ button::before,
 .color-inherit { color: inherit }
 .muted { opacity: .5 }
 
-.bg-black, .bg-dark-gray   { background-color: #111 }
-.bg-gray, .bg-mid-gray     { background-color: #aaa }
-.bg-silver, .bg-light-gray { background-color: #ddd }
+.bg-black  { background-color: #111 }
+.bg-gray   { background-color: #aaa }
+.bg-silver { background-color: #ddd }
 .bg-white  { background-color: #fff }
 
 .bg-aqua  { background-color: #7fdbff }
@@ -804,3 +801,4 @@ button::before,
 .bg-darken-2 { background-color: rgba(0,0,0,.125) }
 .bg-darken-3 { background-color: rgba(0,0,0,.25) }
 .bg-darken-4 { background-color: rgba(0,0,0,.5) }
+

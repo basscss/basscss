@@ -3,23 +3,23 @@
 @import 'basscss-base-forms';
 @import 'basscss-base-tables';
 @import 'basscss-base-typography';
-
 @import 'basscss-color-base';
 
-@import 'src/btn.css';
+@import 'basscss-color-forms';
+@import 'basscss-color-tables';
+@import 'basscss-btn';
 
 @import 'basscss-type-scale';
 @import 'basscss-utility-typography';
 
 @import 'basscss-utility-layout';
+@import 'basscss-align';
 @import 'basscss-white-space';
 @import 'basscss-responsive-states';
 
 @import 'basscss-grid';
 @import 'flex-object';
 
-@import 'basscss-color-forms';
-@import 'basscss-color-tables';
 @import 'basscss-borders';
 @import 'basscss-colors';
 @import 'basscss-background-colors';
@@ -44,3 +44,4 @@
 @import 'basscss-color-forms-dark';
 @import 'basscss-border-colors';
 */
+
