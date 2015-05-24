@@ -4,12 +4,12 @@
     Low-level CSS toolkit
     http://basscss.com
 
-    13.83 kB
-    3.15 kB Gzipped
-    263 Rules
-    303 Selectors
-    417 Declarations
-    83 Properties
+    13.89 kB
+    3.17 kB Gzipped
+    264 Rules
+    304 Selectors
+    419 Declarations
+    84 Properties
 
 */
 
@@ -320,6 +320,11 @@ hr {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.list-reset {
+  list-style: none;
+  padding-left: 0;
 }
 
 .inline       { display: inline }
