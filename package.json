@@ -67,6 +67,7 @@
   "devDependencies": {
     "basscss-color-base": "^1.4.0",
     "clean-css": "^3.1.9",
+    "css-mixed-properties": "^1.1.0",
     "cssnext": "^1.1.0",
     "cssstats": "^1.6.0",
     "filesize": "^3.1.2",

@@ -4,6 +4,7 @@ var path = require('path');
 var assert = require('assert');
 var cssnext = require('cssnext');
 var cssstats = require('cssstats');
+var mixed = require('css-mixed-properties');
 
 var src = fs.readFileSync(path.join(__dirname, '../src/basscss.css'), 'utf8');
 
@@ -38,6 +39,17 @@ describe('basscss', function() {
 
   it('should have properties', function() {
     assert(stats.aggregates.properties.length > 0);
+  });
+
+  it('should not have a high mix of structure and skin properties', function() {
+    var mix = mixed(css);
+    var max = 0;
+    mix.warnings.forEach(function(warning) {
+      if (warning.score > max) {
+        max = warning.score;
+      }
+    });
+    assert(max < 5);
   });
 
 });
