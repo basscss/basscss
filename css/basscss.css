@@ -1,13 +1,13 @@
 /*
 
-    Basscss v7.0.0-beta.0
+    Basscss v7.0.0-beta.1
     Low-level CSS toolkit
     http://basscss.com
 
-    13.89 kB
+    13.91 kB
     3.17 kB Gzipped
-    264 Rules
-    304 Selectors
+    265 Rules
+    305 Selectors
     419 Declarations
     84 Properties
 
@@ -287,6 +287,9 @@ hr {
 .btn-outline,
 .btn-outline:hover {
   border-color: currentcolor;
+}
+
+.btn-outline {
   border-radius: 3px;
 }
 
@@ -806,4 +809,5 @@ hr {
 .bg-darken-2 { background-color: rgba(0,0,0,.125) }
 .bg-darken-3 { background-color: rgba(0,0,0,.25) }
 .bg-darken-4 { background-color: rgba(0,0,0,.5) }
+
 
