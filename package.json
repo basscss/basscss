@@ -34,9 +34,6 @@
     "basscss-utility-layout": "^2.0.0-beta.1",
     "basscss-utility-typography": "^2.0.0-beta.0",
     "basscss-white-space": "^1.0.1",
-    "flex-object": "^2.0.0-beta.0"
-  },
-  "devDependencies": {
     "basscss-background-images": "0.0.9",
     "basscss-base-buttons": "^1.1.0",
     "basscss-button-link": "^1.2.3",
@@ -57,6 +54,9 @@
     "basscss-table-object": "0.0.7",
     "basscss-ui-utility-groups": "^1.0.1",
     "basscss-utility-headings": "0.0.6",
+    "flex-object": "^2.0.0-beta.0"
+  },
+  "devDependencies": {
     "clean-css": "^3.1.9",
     "css-mixed-properties": "^1.1.0",
     "cssnext": "^1.1.0",
