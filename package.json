@@ -37,7 +37,26 @@
     "flex-object": "^2.0.0-beta.0"
   },
   "devDependencies": {
+    "basscss-background-images": "0.0.9",
+    "basscss-base-buttons": "^1.1.0",
+    "basscss-button-link": "^1.2.3",
+    "basscss-button-outline": "^1.1.0",
+    "basscss-button-sizes": "^1.0.6",
+    "basscss-button-solid": "^1.0.0-beta.0",
+    "basscss-button-transparent": "^1.1.0",
     "basscss-color-base": "^1.4.0",
+    "basscss-color-buttons": "^1.0.1",
+    "basscss-color-forms-dark": "^1.1.0",
+    "basscss-color-input-range": "^1.0.0-beta.0",
+    "basscss-color-progress": "^1.0.0-beta.0",
+    "basscss-highlight": "^0.1.0",
+    "basscss-input-range": "^1.1.5",
+    "basscss-positions": "^1.0.1",
+    "basscss-progress": "^1.0.5",
+    "basscss-responsive-white-space": "0.0.1",
+    "basscss-table-object": "0.0.7",
+    "basscss-ui-utility-groups": "^1.0.1",
+    "basscss-utility-headings": "0.0.6",
     "clean-css": "^3.1.9",
     "css-mixed-properties": "^1.1.0",
     "cssnext": "^1.1.0",
@@ -90,15 +109,7 @@
       "basscss-button-link",
       "basscss-table-object",
       "basscss-ui-utility-groups",
-      "basscss-color-buttons",
-      "basscss-button-blue",
-      "basscss-button-blue-outline",
-      "basscss-button-gray",
-      "basscss-button-light-gray",
-      "basscss-button-red",
-      "basscss-button-nav-light",
-      "basscss-button-nav-dark",
-      "basscss-button-nav-tab"
+      "basscss-color-buttons"
     ],
     "variables": [
       "basscss-defaults"
