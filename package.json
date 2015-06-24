@@ -1,6 +1,6 @@
 {
   "name": "basscss",
-  "version": "7.0.0-beta.3",
+  "version": "7.0.0-beta.4",
   "description": "Low-level CSS toolkit",
   "style": "src/basscss.css",
   "scripts": {
@@ -23,7 +23,7 @@
     "basscss-border-colors": "^1.0.0-beta.0",
     "basscss-borders": "^1.0.2",
     "basscss-btn": "^1.0.0-beta.1",
-    "basscss-color-base": "^2.0.0-beta.0",
+    "basscss-color-base": "^1.4.0",
     "basscss-color-forms": "^3.0.0-beta.0",
     "basscss-color-tables": "^1.0.2",
     "basscss-colors": "^2.0.0-beta.1",
@@ -41,7 +41,6 @@
     "basscss-button-sizes": "^1.0.6",
     "basscss-button-solid": "^1.0.0-beta.0",
     "basscss-button-transparent": "^1.1.0",
-    "basscss-color-base": "^1.4.0",
     "basscss-color-buttons": "^1.0.1",
     "basscss-color-forms-dark": "^1.1.0",
     "basscss-color-input-range": "^1.0.0-beta.0",
