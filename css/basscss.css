@@ -4,12 +4,12 @@
     Low-level CSS toolkit
     http://basscss.com
 
-    14.19 kB
-    3.27 kB Gzipped
-    277 Rules
-    317 Selectors
-    431 Declarations
-    89 Properties
+    14.39 kB
+    3.32 kB Gzipped
+    279 Rules
+    319 Selectors
+    439 Declarations
+    93 Properties
 
 */
 
@@ -728,6 +728,9 @@ hr {
 .flex-auto { -webkit-box-flex: 1; -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto }
 .flex-grow { -webkit-box-flex: 1; -webkit-flex: 1 0 auto; -ms-flex: 1 0 auto; flex: 1 0 auto }
 .flex-none { -webkit-box-flex: 0; -webkit-flex: none; -ms-flex: none; flex: none }
+
+.flex-first { -webkit-box-ordinal-group: 0; -webkit-order: -1; -ms-flex-order: -1; order: -1 }
+.flex-last  { -webkit-box-ordinal-group: 100000; -webkit-order: 99999; -ms-flex-order: 99999; order: 99999 }
 @media (min-width: 40em) {
   .sm-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
 }
