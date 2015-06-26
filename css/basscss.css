@@ -4,11 +4,11 @@
     Low-level CSS toolkit
     http://basscss.com
 
-    14.81 kB
-    3.35 kB Gzipped
-    284 Rules
-    326 Selectors
-    444 Declarations
+    14.71 kB
+    3.33 kB Gzipped
+    282 Rules
+    324 Selectors
+    439 Declarations
     93 Properties
 
 */
@@ -66,17 +66,6 @@ select:not([multiple]) {
 textarea {
   line-height: 1.75;
   padding: .5rem .5rem;
-}
-
-fieldset {
-  padding: 0;
-  margin-left: 0;
-  margin-right: 0;
-  border: 0;
-}
-
-legend {
-  padding: 0;
 }
 
 table {
