@@ -8,6 +8,8 @@
 @import 'basscss-color-forms';
 @import 'basscss-color-tables';
 @import 'basscss-btn';
+@import 'basscss-btn-primary';
+@import 'basscss-btn-outline';
 @import 'basscss-type-scale';
 @import 'basscss-utility-typography';
 @import 'basscss-utility-layout';

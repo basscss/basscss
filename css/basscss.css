@@ -4,11 +4,11 @@
     Low-level CSS toolkit
     http://basscss.com
 
-    14.39 kB
-    3.32 kB Gzipped
-    279 Rules
-    319 Selectors
-    439 Declarations
+    14.76 kB
+    3.35 kB Gzipped
+    284 Rules
+    324 Selectors
+    444 Declarations
     93 Properties
 
 */
@@ -255,8 +255,6 @@ hr {
 
 .btn:hover {
   text-decoration: none;
-  border: 1px solid rgba(0,0,0,.0625);
-  box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
 }
 
 .btn:focus {
@@ -265,23 +263,31 @@ hr {
   box-shadow: 0 0 0 3px rgba(0,0,0,.25);
 }
 
-.btn:active,
-.btn.is-active {
-  box-shadow: inset 0 0 0 20rem rgba(0,0,0,.125),
-    inset 0 3px 4px 0 rgba(0,0,0,.25),
-    0 0 1px rgba(0,0,0,.125);
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
-
-.btn:disabled,
-.btn.is-disabled {
-  opacity: .5;
-}
-
 
 .btn-primary {
   color: white;
   background-color: #0074d9;
   border-radius: 3px;
+}
+
+.btn-primary:hover {
+  border: 1px solid rgba(0,0,0,.0625);
+  box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
+}
+
+.btn-primary:active {
+  box-shadow: inset 0 0 0 20rem rgba(0,0,0,.125),
+    inset 0 3px 4px 0 rgba(0,0,0,.25),
+    0 0 1px rgba(0,0,0,.125);
+}
+
+.btn-primary:disabled,
+.btn-primary.is-disabled {
+  opacity: .5;
 }
 
 .btn-outline,
@@ -293,9 +299,20 @@ hr {
   border-radius: 3px;
 }
 
-::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+.btn-outline:hover {
+  border: 1px solid rgba(0,0,0,.0625);
+  box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
+}
+
+.btn-outline:active {
+  box-shadow: inset 0 0 0 20rem rgba(0,0,0,.125),
+    inset 0 3px 4px 0 rgba(0,0,0,.25),
+    0 0 1px rgba(0,0,0,.125);
+}
+
+.btn-outline:disabled,
+.btn-outline.is-disabled {
+  opacity: .5;
 }
 
 .h1 { font-size: 2rem }
@@ -770,6 +787,8 @@ hr {
   border-left-width: 1px;
   border-left-color: rgba(0,0,0,.125);
 }
+
+.no-border { border: 0 }
 
 .rounded { border-radius: 3px }
 .circle  { border-radius: 50% }
