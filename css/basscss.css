@@ -4,7 +4,7 @@
     Low-level CSS toolkit
     http://basscss.com
 
-    14.71 kB
+    14.7 kB
     3.33 kB Gzipped
     282 Rules
     324 Selectors
@@ -135,7 +135,7 @@ h6 { font-size: .75rem }
 
 body {
   color: #111;
-  background-color: white;
+  background-color: #fff;
 }
 
 a {
@@ -260,7 +260,7 @@ hr {
 }
 
 .btn-primary {
-  color: white;
+  color: #fff;
   background-color: #0074d9;
   border-radius: 3px;
 }
