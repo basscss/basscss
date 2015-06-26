@@ -4,10 +4,10 @@
     Low-level CSS toolkit
     http://basscss.com
 
-    14.76 kB
+    14.81 kB
     3.35 kB Gzipped
     284 Rules
-    324 Selectors
+    326 Selectors
     444 Declarations
     93 Properties
 
@@ -219,6 +219,8 @@ hr {
   border-color: #ff4136;
 }
 
+.field:invalid:focus,
+.field:invalid.is-focused,
 .field.is-error:focus,
 .field.is-error.is-focused {
   box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);
