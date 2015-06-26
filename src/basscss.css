@@ -13,6 +13,7 @@
 @import 'basscss-utility-layout';
 @import 'basscss-align';
 @import 'basscss-white-space';
+@import 'basscss-positions';
 @import 'basscss-responsive-states';
 @import 'basscss-grid';
 @import 'flex-object';
