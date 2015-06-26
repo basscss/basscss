@@ -1,39 +1,39 @@
 
-var fs = require('fs');
-var path = require('path');
-var cssnext = require('cssnext');
-var cssstats = require('cssstats');
-var filesize = require('filesize');
-var Cleancss = require('clean-css');
-var pkg = require('../package.json');
+var fs = require('fs')
+var path = require('path')
+var cssnext = require('cssnext')
+var cssstats = require('cssstats')
+var filesize = require('filesize')
+var Cleancss = require('clean-css')
+var pkg = require('../package.json')
 
-var postcss = require('postcss');
+var postcss = require('postcss')
 
 var removeComments = postcss.plugin('remove-comments', function(opts) {
-  opts = opts || {};
+  opts = opts || {}
   return function(root) {
     root.eachComment(function(comment) {
-      comment.removeSelf();
-    });
+      comment.removeSelf()
+    })
   }
-});
+})
 
 var removeRoot = postcss.plugin('remove-root', function(opts) {
-  opts = opts || {};
+  opts = opts || {}
   return function(root) {
     root.eachRule(function(rule) {
       if (rule.selector === ':root') {
-        rule.removeSelf();
+        rule.removeSelf()
       }
-    });
+    })
   }
-});
+})
 
 compile = function() {
-  var dir = path.join(__dirname, '../src/');
-  var dest = path.join(__dirname, '../css/');
+  var dir = path.join(__dirname, '../src/')
+  var dest = path.join(__dirname, '../css/')
 
-  var src = fs.readFileSync(dir + 'basscss.css', 'utf8');
+  var src = fs.readFileSync(dir + 'basscss.css', 'utf8')
 
   var css = cssnext(src, {
     features: {
@@ -44,23 +44,23 @@ compile = function() {
       pseudoElements: false,
       colorRgba: false
     }
-  });
+  })
   css =
     postcss()
     .use(removeComments())
     .use(removeRoot())
     .process(css)
-    .css;
+    .css
   var minified = new Cleancss({
       advanced: false,
-    }).minify(css).styles;
+    }).minify(css).styles
 
-  var stats = cssstats(css);
-  console.log('Size: ' + filesize(stats.size));
-  console.log('Gzipped: ' + filesize(stats.gzipSize));
-  console.log('Rules: ' + stats.rules.length);
-  console.log('Selectors: ' + stats.aggregates.selectors);
-  console.log('Declarations: ' + stats.aggregates.declarations);
+  var stats = cssstats(css)
+  console.log('Size: ' + filesize(stats.size))
+  console.log('Gzipped: ' + filesize(stats.gzipSize))
+  console.log('Rules: ' + stats.rules.length)
+  console.log('Selectors: ' + stats.aggregates.selectors)
+  console.log('Declarations: ' + stats.aggregates.declarations)
 
   css = 
     [
@@ -78,15 +78,15 @@ compile = function() {
       '    ' + stats.aggregates.properties.length + ' Properties',
       '',
       '*/',
-      ''
-    ].join('\n') +
-    '\n\n' +
-    css;
-  fs.writeFileSync(dest + 'basscss.css', css);
-  fs.writeFileSync(dest + 'basscss.min.css', minified);
-  console.log('Compiled to css/basscss.css and css/basscss.min.css');
+      '',
+      '',
+      css
+    ].join('\n')
+  fs.writeFileSync(dest + 'basscss.css', css)
+  fs.writeFileSync(dest + 'basscss.min.css', minified)
+  console.log('Compiled to css/basscss.css and css/basscss.min.css')
 
-};
+}
 
-compile();
+compile()
 

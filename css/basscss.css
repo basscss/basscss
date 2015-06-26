@@ -1,14 +1,14 @@
 /*
 
-    Basscss v7.0.0-beta.4
+    Basscss v7.0.0-beta.5
     Low-level CSS toolkit
     http://basscss.com
 
-    14.7 kB
+    14.67 kB
     3.33 kB Gzipped
     282 Rules
     324 Selectors
-    439 Declarations
+    438 Declarations
     93 Properties
 
 */
@@ -291,7 +291,6 @@ hr {
 }
 
 .btn-outline:hover {
-  border: 1px solid rgba(0,0,0,.0625);
   box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
 }
 
