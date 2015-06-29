@@ -1,14 +1,14 @@
 /*
 
-    Basscss v7.0.0-beta.5
+    Basscss v7.0.0-beta.6
     Low-level CSS toolkit
     http://basscss.com
 
-    14.67 kB
+    14.59 kB
     3.33 kB Gzipped
     282 Rules
     324 Selectors
-    438 Declarations
+    435 Declarations
     93 Properties
 
 */
@@ -104,13 +104,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
 dl, ol, ul {
-  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -266,7 +264,6 @@ hr {
 }
 
 .btn-primary:hover {
-  border: 1px solid rgba(0,0,0,.0625);
   box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
 }
 
