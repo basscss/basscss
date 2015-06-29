@@ -42,7 +42,7 @@
     "basscss-grid": "^1.0.2",
     "basscss-highlight": "^0.1.0",
     "basscss-input-range": "^1.1.5",
-    "basscss-positions": "^1.0.2",
+    "basscss-positions": "^1.0.3",
     "basscss-progress": "^1.0.5",
     "basscss-responsive-states": "^1.0.3",
     "basscss-responsive-white-space": "0.0.1",
@@ -70,10 +70,10 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "keywords": [
-    "css",
-    "oocss",
     "atomic css",
-    "framework"
+    "css",
+    "framework",
+    "oocss"
   ],
   "repository": {
     "type": "git",
