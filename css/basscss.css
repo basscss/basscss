@@ -1,11 +1,11 @@
 /*
 
-    Basscss v7.0.0-beta.8
+    Basscss v7.0.0-beta.9
     Low-level CSS toolkit
     http://basscss.com
 
     14.59 kB
-    3.33 kB Gzipped
+    3.32 kB Gzipped
     282 Rules
     324 Selectors
     435 Declarations
@@ -775,7 +775,7 @@ hr {
   border-left-color: rgba(0,0,0,.125);
 }
 
-.no-border { border: 0 }
+.border-none { border: 0 }
 
 .rounded { border-radius: 3px }
 .circle  { border-radius: 50% }
