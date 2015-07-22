@@ -4,11 +4,11 @@
     Low-level CSS toolkit
     http://basscss.com
 
-    14.59 kB
-    3.32 kB Gzipped
-    282 Rules
-    324 Selectors
-    435 Declarations
+    14.8 kB
+    3.34 kB Gzipped
+    286 Rules
+    328 Selectors
+    439 Declarations
     93 Properties
 
 */
@@ -834,5 +834,10 @@ hr {
 .bg-darken-2 { background-color: rgba(0,0,0,.125) }
 .bg-darken-3 { background-color: rgba(0,0,0,.25) }
 .bg-darken-4 { background-color: rgba(0,0,0,.5) }
+
+.bg-lighten-1 { background-color: rgba(0,0,0,.0625) }
+.bg-lighten-2 { background-color: rgba(0,0,0,.125) }
+.bg-lighten-3 { background-color: rgba(0,0,0,.25) }
+.bg-lighten-4 { background-color: rgba(0,0,0,.5) }
 
 
