@@ -53,7 +53,7 @@
     "basscss-utility-layout": "^2.0.3",
     "basscss-utility-typography": "^2.0.0",
     "basscss-white-space": "^1.1.2",
-    "flex-object": "^2.0.1"
+    "flex-object": "^2.0.2"
   },
   "devDependencies": {
     "clean-css": "^3.1.9",
