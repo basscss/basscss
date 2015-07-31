@@ -25,20 +25,20 @@ describe('basscss', function() {
 
   it('should be css', function() {
     assert.doesNotThrow(function() {
-      stats = cssstats(css)
+      stats = cssstats(css, { safe: false })
     })
   })
 
   it('should have rules', function() {
-    assert(stats.rules.length > 0)
+    assert(stats.rules.total > 0)
   })
 
   it('should have declarations', function() {
-    assert(stats.aggregates.declarations > 0)
+    assert(stats.declarations.total > 0)
   })
 
   it('should have properties', function() {
-    assert(stats.aggregates.properties.length > 0)
+    assert(Object.keys(stats.declarations.properties).length > 0)
   })
 
   it('should not have a high mix of structure and skin properties', function() {

@@ -59,11 +59,12 @@
     "clean-css": "^3.1.9",
     "css-mixed-properties": "^1.1.0",
     "cssnext": "^1.1.0",
-    "cssstats": "^1.6.0",
+    "cssstats": "^2.0.0-beta.1",
     "filesize": "^3.1.2",
     "mocha": "^2.2.1",
     "postcss": "^4.1.4",
     "postcss-discard-comments": "^1.1.1",
+    "postcss-reporter": "^0.3.1",
     "s3": "^4.4.0",
     "watch": "^0.14.0"
   },
