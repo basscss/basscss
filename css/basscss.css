@@ -4,11 +4,11 @@
     Low-level CSS toolkit
     http://basscss.com
 
-    14.88 kB
-    3.38 kB Gzipped
-    286 Rules
-    328 Selectors
-    441 Declarations
+    15.46 kB
+    3.47 kB Gzipped
+    298 Rules
+    340 Selectors
+    465 Declarations
     95 Properties
 
 */
@@ -393,10 +393,25 @@ hr {
 .mb4 { margin-bottom: 4rem }
 .ml4 { margin-left: 4rem }
 
+.mx1 { margin-left: .5rem; margin-right: .5rem; }
+.mx2 { margin-left: 1rem; margin-right: 1rem; }
+.mx3 { margin-left: 2rem; margin-right: 2rem; }
+.mx4 { margin-left: 4rem; margin-right: 4rem; }
+
+.my1 { margin-top: .5rem; margin-bottom: .5rem; }
+.my2 { margin-top: 1rem; margin-bottom: 1rem; }
+.my3 { margin-top: 2rem; margin-bottom: 2rem; }
+.my4 { margin-top: 4rem; margin-bottom: 4rem; }
+
 .mxn1 { margin-left: -.5rem; margin-right: -.5rem; }
 .mxn2 { margin-left: -1rem; margin-right: -1rem; }
 .mxn3 { margin-left: -2rem; margin-right: -2rem; }
 .mxn4 { margin-left: -4rem; margin-right: -4rem; }
+
+.myn1 { margin-top: -.5rem; margin-bottom: -.5rem; }
+.myn2 { margin-top: -1rem; margin-bottom: -1rem; }
+.myn3 { margin-top: -2rem; margin-bottom: -2rem; }
+.myn4 { margin-top: -4rem; margin-bottom: -4rem; }
 
 .mx-auto { margin-left: auto; margin-right: auto; }
 .p0 { padding: 0 }
