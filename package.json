@@ -8,7 +8,9 @@
     "prepublish": "npm run css",
     "s3": "node scripts/s3",
     "start": "npm run css",
-    "test": "mocha test",
+    "karma": "karma start test/karma.config.js",
+    "mocha": "mocha test/test",
+    "test": "./node_modules/.bin/karma start test/karma.config.js --browsers Firefox --singleRun",
     "watch:css": "watch 'npm run css' ./src"
   },
   "dependencies": {
@@ -48,17 +50,30 @@
     "flex-object": "^2.0.2"
   },
   "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-loader": "^5.3.2",
     "clean-css": "^3.1.9",
     "css-mixed-properties": "^1.1.0",
     "cssnext": "^1.1.0",
     "cssstats": "^2.0.1",
+    "expect": "^1.10.0",
     "filesize": "^3.1.2",
+    "karma": "^0.13.9",
+    "karma-chai": "^0.1.0",
+    "karma-chai-plugins": "^0.6.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-cli": "^0.1.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-mocha": "^0.2.0",
+    "karma-mocha-reporter": "^1.1.1",
+    "karma-webpack": "^1.7.0",
     "mocha": "^2.2.1",
     "postcss": "^4.1.4",
     "postcss-discard-comments": "^1.1.1",
     "postcss-reporter": "^0.3.1",
     "s3": "^4.4.0",
-    "watch": "^0.14.0"
+    "watch": "^0.14.0",
+    "webpack": "^1.12.2"
   },
   "author": "Brent Jackson",
   "license": "MIT",
