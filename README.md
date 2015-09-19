@@ -62,6 +62,13 @@ If you're making changes to a module, please follow the
 - `css`: Processed CSS files for browser compatibility
 - `scripts`: Compilation and build scripts
 
+## Tests
+
+```
+npm run mocha
+npm run karma
+```
+
 ---
 
 [MIT license](http://opensource.org/licenses/MIT)
