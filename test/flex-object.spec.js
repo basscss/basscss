@@ -45,12 +45,12 @@ describe('flex-object', () => {
 
   it('should set align-items start', () => {
     container.className = 'flex-start'
-    expect(getStyle(container).alignItems).toEqual('start')
+    expect(getStyle(container).alignItems).toEqual('flex-start')
   })
 
   it('should set align-items end', () => {
     container.className = 'flex-end'
-    expect(getStyle(container).alignItems).toEqual('end')
+    expect(getStyle(container).alignItems).toEqual('flex-end')
   })
 
   it('should set justify-content space-between', () => {
