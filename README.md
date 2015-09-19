@@ -2,6 +2,8 @@
 
 Low-level CSS toolkit <http://basscss.com>
 
+[![Build Status](https://travis-ci.org/basscss/basscss.svg)](https://travis-ci.org/basscss/basscss)
+
 Documentation: <http://basscss.com/docs>
 
 ## Lightning-Fast Modular CSS with No Side Effects
