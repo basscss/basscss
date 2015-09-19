@@ -5,7 +5,6 @@
   "style": "src/basscss.css",
   "scripts": {
     "css": "node scripts/css",
-    "prepublish": "npm run css",
     "s3": "node scripts/s3",
     "start": "npm run css",
     "karma": "karma start test/karma.config.js",
