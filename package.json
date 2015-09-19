@@ -50,7 +50,9 @@
   },
   "devDependencies": {
     "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
     "babel-loader": "^5.3.2",
+    "chai": "^3.2.0",
     "clean-css": "^3.1.9",
     "css-mixed-properties": "^1.1.0",
     "cssnext": "^1.1.0",

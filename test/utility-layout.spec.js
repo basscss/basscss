@@ -45,6 +45,7 @@ describe('utility-layout', () => {
 
   it('should set float left', () => {
     div.className = 'left'
+    console.log(getStyle().float)
     expect(getStyle().float).toEqual('left')
   })
 
