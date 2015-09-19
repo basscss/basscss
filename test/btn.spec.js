@@ -7,7 +7,9 @@ describe('btn', () => {
   let button = document.createElement('button')
   let input = document.createElement('input')
   let link = document.createElement('a')
+
   const getStyle = (el) => ( window.getComputedStyle(el) )
+  const TRANSPARENT_REGEX = /rgba\(0,\ 0,\ 0,\ 0\)|transparent|^$/
 
   beforeEach(() => {
     container.style.fontFamily = 'Verdana'
@@ -15,14 +17,13 @@ describe('btn', () => {
     container.style.color = '#0ff'
     document.body.appendChild(container)
 
-    button.innerText = 'Basscss Btn'
+    button.textContent = 'Basscss Btn'
     input.type = 'submit'
     input.value = 'Basscss Btn'
-    link.innerText = 'Basscss Btn'
+    link.textContent = 'Basscss Btn'
   })
 
   describe('button element', () => {
-
     let style
 
     beforeEach(() => {
@@ -43,7 +44,108 @@ describe('btn', () => {
       expect(style.fontWeight).toMatch(/bold|700/)
     })
 
-    // Only relevant for links
+    it('should set cursor pointer', () => {
+      expect(style.cursor).toEqual('pointer')
+    })
+
+    it('should display inline-block', () => {
+      expect(style.display).toEqual('inline-block')
+    })
+
+    it('should have no margin', () => {
+      expect(style.margin).toMatch(/0px|^$/)
+    })
+
+    it('should set vertical-align middle', () => {
+      expect(style.verticalAlign).toEqual('middle')
+    })
+
+    it('should have a transparent border', () => {
+      expect(style.borderColor).toMatch(TRANSPARENT_REGEX)
+    })
+
+    it('should have a transparent background', () => {
+      expect(style.backgroundColor).toMatch(TRANSPARENT_REGEX)
+    })
+
+    it('should inherit color', () => {
+      expect(style.color).toEqual('rgb(0, 255, 255)')
+    })
+
+  })
+
+  describe('input element', () => {
+    let style
+
+    beforeEach(() => {
+      input.className = 'btn'
+      container.appendChild(input)
+      style = getStyle(input)
+    })
+
+    it('should inherit font-family', () => {
+      expect(style.fontFamily).toEqual('Verdana')
+    })
+
+    it('should inherit font-size', () => {
+      expect(style.fontSize).toEqual('24px')
+    })
+
+    it('should be bold', () => {
+      expect(style.fontWeight).toMatch(/bold|700/)
+    })
+
+    it('should set cursor pointer', () => {
+      expect(style.cursor).toEqual('pointer')
+    })
+
+    it('should display inline-block', () => {
+      expect(style.display).toEqual('inline-block')
+    })
+
+    it('should have no margin', () => {
+      expect(style.margin).toMatch(/0px|^$/)
+    })
+
+    it('should set vertical-align middle', () => {
+      expect(style.verticalAlign).toEqual('middle')
+    })
+
+    it('should have a transparent border', () => {
+      expect(style.borderColor).toMatch(TRANSPARENT_REGEX)
+    })
+
+    it('should have a transparent background', () => {
+      expect(style.backgroundColor).toMatch(TRANSPARENT_REGEX)
+    })
+
+    it('should inherit color', () => {
+      expect(style.color).toEqual('rgb(0, 255, 255)')
+    })
+
+  })
+
+  describe('link element', () => {
+    let style
+
+    beforeEach(() => {
+      link.className = 'btn'
+      container.appendChild(link)
+      style = getStyle(link)
+    })
+
+    it('should inherit font-family', () => {
+      expect(style.fontFamily).toEqual('Verdana')
+    })
+
+    it('should inherit font-size', () => {
+      expect(style.fontSize).toEqual('24px')
+    })
+
+    it('should be bold', () => {
+      expect(style.fontWeight).toMatch(/bold|700/)
+    })
+
     it('should remove text-decoration', () => {
       expect(style.textDecoration).toEqual('none')
     })
@@ -65,33 +167,16 @@ describe('btn', () => {
     })
 
     it('should have a transparent border', () => {
-      expect(style.borderColor).toMatch(/rgba(0, 0, 0, 0)|^$/)
+      expect(style.borderColor).toMatch(TRANSPARENT_REGEX)
     })
 
     it('should have a transparent background', () => {
-      expect(style.backgroundColor).toMatch(/rgba(0, 0, 0, 0)|transparent/)
+      expect(style.backgroundColor).toMatch(TRANSPARENT_REGEX)
     })
 
     it('should inherit color', () => {
       expect(style.color).toEqual('rgb(0, 255, 255)')
     })
-
-    context('when focused', () => {
-
-      beforeEach(() => {
-        button = document.querySelector('button')
-        button.focus()
-      })
-
-      it('should focus', () => {
-        expect(document.activeElement).toEqual(button)
-      })
-
-      it('should have a box-shadow', () => {
-        // expect(style.boxShadow).toNotEqual('none')
-      })
-    })
-
   })
 
 })
