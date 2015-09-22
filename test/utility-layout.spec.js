@@ -1,5 +1,7 @@
 
+import { clone } from 'lodash'
 import expect from 'expect'
+import { diff } from 'deep-diff'
 
 describe('utility-layout', () => {
 
@@ -8,6 +10,7 @@ describe('utility-layout', () => {
   let div = document.createElement('div')
 
   let style
+  let initial // = window.getComputedStyle(div.cloneNode())
 
   beforeEach(() => {
     div.textContent = 'Basscss Utility Layout'
@@ -15,7 +18,21 @@ describe('utility-layout', () => {
     container.appendChild(div)
     container.style.width = '768px'
     style = getStyle(div)
+    initial = clone(style)
   })
+
+  // it('should not differ from initial', () => {
+  //   console.log('style == initial', style == initial)
+  //   console.log(
+  //     diff(style, initial).map((d) => d)
+  //   )
+  //   // expect(style).toEqual(initial)
+  // })
+
+  // it('should only change display', () => {
+  //   div.className = 'inline'
+  //   // expect(style).toBe(initial)
+  // })
 
   it('should set display inline', () => {
     div.className = 'inline'

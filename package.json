@@ -59,6 +59,7 @@
     "css-mixed-properties": "^1.1.0",
     "cssnext": "^1.1.0",
     "cssstats": "^2.0.1",
+    "deep-diff": "^0.3.2",
     "expect": "^1.10.0",
     "filesize": "^3.1.2",
     "json-loader": "^0.5.3",
