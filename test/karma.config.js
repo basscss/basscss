@@ -3,7 +3,8 @@ module.exports = function (config) {
   config.set({
     browsers: [
       'Firefox',
-      'Chrome'
+      'Chrome',
+      'Safari'
     ],
 
     files: [
@@ -16,6 +17,7 @@ module.exports = function (config) {
     plugins: [
       'karma-chrome-launcher',
       'karma-firefox-launcher',
+      'karma-safari-launcher',
       'karma-chai',
       'karma-mocha',
       'karma-mocha-reporter',
@@ -47,6 +49,13 @@ module.exports = function (config) {
 
     webpackMiddleware: {
       noInfo: true
+    },
+
+    client: {
+      mocha: {
+        reporter: 'html',
+        ui: 'bdd'
+      }
     }
 
   })
