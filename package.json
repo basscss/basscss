@@ -73,6 +73,7 @@
     "karma-mocha-reporter": "^1.1.1",
     "karma-safari-launcher": "^0.1.1",
     "karma-webpack": "^1.7.0",
+    "lodash": "^3.10.1",
     "mocha": "^2.2.1",
     "postcss": "^4.1.4",
     "postcss-discard-comments": "^1.1.1",
