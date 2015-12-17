@@ -14,7 +14,7 @@
 
 @import 'basscss-type-scale';
 @import 'basscss-utility-typography'; /* Rename basscss-typography */
-@import 'basscss-utility-layout'; /* Rename basscss-layout */
+@import 'basscss-layout';
 @import 'basscss-align';
 @import 'basscss-white-space'; /* Replace with basscss-margin & basscss-padding */
 @import 'basscss-positions';
