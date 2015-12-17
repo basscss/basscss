@@ -4,7 +4,7 @@
   "description": "Layout utilities module for Basscss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/basscss/utility-layout.git"
+    "url": "https://github.com/basscss/basscss.git"
   },
   "keywords": [
     "css",
@@ -14,7 +14,7 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/basscss/utility-layout/issues"
+    "url": "https://github.com/basscss/basscss/issues"
   },
-  "homepage": "https://github.com/basscss/utility-layout"
+  "homepage": "https://github.com/basscss/basscss"
 }
