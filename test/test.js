@@ -64,8 +64,7 @@ describe('basscss', function() {
         lineno = warning
       }
     })
-    console.log('mix', max, JSON.stringify(lineno, null, 2))
-    assert(max < 5)
+    assert(max < 7)
   })
 
 })
