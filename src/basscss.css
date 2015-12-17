@@ -1,5 +1,6 @@
 /*! Basscss | http://basscss.com | MIT License */
 
+/* Deprecate */
 @import 'basscss-base-reset';
 @import 'basscss-base-forms';
 @import 'basscss-base-tables';
@@ -7,19 +8,24 @@
 @import 'basscss-color-base';
 @import 'basscss-color-forms';
 @import 'basscss-color-tables';
+
 @import 'basscss-btn';
 @import 'basscss-btn-primary';
 @import 'basscss-btn-outline';
+
+/* Move to monorepo */
 @import 'basscss-type-scale';
-@import 'basscss-utility-typography';
-@import 'basscss-utility-layout';
+@import 'basscss-utility-typography'; /* Rename basscss-typography */
+@import 'basscss-utility-layout'; /* Rename basscss-layout */
 @import 'basscss-align';
-@import 'basscss-white-space';
+@import 'basscss-white-space'; /* Replace with basscss-margin & basscss-padding */
 @import 'basscss-positions';
 @import 'basscss-responsive-states';
 @import 'basscss-grid';
-@import 'flex-object';
+@import 'flex-object'; /* Replace with basscss-flexbox */
 @import 'basscss-borders';
+
+/* Deprecate */
 @import 'basscss-colors';
 @import 'basscss-background-colors';
 
