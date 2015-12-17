@@ -1,0 +1,47 @@
+/* Basscss Btn */
+
+.btn {
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: var(--button-line-height);
+  padding: var(--button-padding-y) var(--button-padding-x);
+  margin: 0;
+  height: auto;
+  border: var(--border-width) solid transparent;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: none;
+  border-color: var(--darken-2);
+  box-shadow: 0 0 0 3px var(--darken-3);
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+@import 'basscss-defaults';
+
+:root {
+  --button-font-family: inherit;
+  --button-font-size: inherit;
+  --button-font-weight: var(--bold-font-weight, bold);
+  --button-line-height: 1.125rem;
+  --button-padding-y: .5rem;
+  --button-padding-x: 1rem;
+}
+
+
