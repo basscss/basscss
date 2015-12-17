@@ -1,0 +1,14 @@
+/* Basscss Grid */
+
+@import "./lib/container";
+@import "./lib/grid";
+@import "./lib/sm-grid";
+@import "./lib/md-grid";
+@import "./lib/lg-grid";
+
+@import 'basscss-defaults';
+
+:root {
+  --container-width: 64rem;
+}
+

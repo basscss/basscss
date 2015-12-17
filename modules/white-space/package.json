@@ -1,0 +1,24 @@
+{
+  "name": "basscss-white-space",
+  "version": "1.1.2",
+  "description": "White space margin and padding utilities module for Basscss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basscss/utility-white-space.git"
+  },
+  "keywords": [
+    "CSS",
+    "OOCSS",
+    "Basscss",
+    "Rework"
+  ],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basscss/utility-white-space/issues"
+  },
+  "homepage": "https://github.com/basscss/utility-white-space",
+  "dependencies": {
+    "basscss-defaults": "^2.0.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "basscss-type-scale",
+  "version": "1.0.0",
+  "description": "Type scale utility styles for Basscss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basscss/type-scale.git"
+  },
+  "keywords": [
+    "css",
+    "oocss",
+    "basscss"
+  ],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basscss/type-scale/issues"
+  },
+  "homepage": "https://github.com/basscss/type-scale",
+  "dependencies": {
+    "basscss-defaults": "^2.0.1"
+  }
+}

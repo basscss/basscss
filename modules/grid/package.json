@@ -1,0 +1,19 @@
+{
+  "name": "basscss-grid",
+  "version": "2.0.0-beta1",
+  "description": "CSS grid module for Basscss",
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basscss/grid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/basscss/grid/issues"
+  },
+  "homepage": "https://github.com/basscss/grid",
+  "style": "index.css",
+  "dependencies": {
+    "basscss-defaults": "^2.0.1"
+  }
+}
