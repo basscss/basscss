@@ -70,9 +70,11 @@
   "license": "MIT",
   "keywords": [
     "atomic css",
+    "functional css",
     "css",
     "framework",
-    "oocss"
+    "oocss",
+    "basscss"
   ],
   "repository": {
     "type": "git",
