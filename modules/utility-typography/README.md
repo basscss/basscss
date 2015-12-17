@@ -11,6 +11,11 @@ Change typographic weights, styles, and alignment with these utility styles.
 <p class="right-align">Right align</p>
 <p class="justify">Justify Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
 <p class="nowrap">No wrap</p>
+<p class="underline">Underline</p>
+<p class="truncate">Truncate</p>
+<p class="font-familiy-inherit">Font Family Inherit</p>
+<p class="font-size-inherit">Font Size Inherit</p>
+<a class="text-decoration-none">Text Decoration None</a>
 ```
 
 ## Lists
