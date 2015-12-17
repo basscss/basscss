@@ -2,7 +2,12 @@
 var fs = require('fs')
 var path = require('path')
 var assert = require('assert')
-var cssnext = require('cssnext')
+var postcss = require('postcss')
+var postcssImport = require('postcss-import')
+var postcssCustomMedia = require('postcss-custom-media')
+var postcssCustomProperties = require('postcss-custom-properties')
+var postcssCalc = require('postcss-calc')
+var postcssColorFunction = require('postcss-color-function')
 var cssstats = require('cssstats')
 var mixed = require('css-mixed-properties')
 
@@ -15,7 +20,15 @@ describe('basscss', function() {
 
   it('should compile', function() {
     assert.doesNotThrow(function() {
-      css = cssnext(src)
+      css = postcss([
+          postcssImport,
+          postcssCustomMedia,
+          postcssCustomProperties,
+          postcssCalc,
+          postcssColorFunction,
+        ])
+        .process(src)
+        .css
     })
   })
 
@@ -44,11 +57,14 @@ describe('basscss', function() {
   it('should not have a high mix of structure and skin properties', function() {
     var mix = mixed(css)
     var max = 0
+    var lineno = 0
     mix.warnings.forEach(function(warning) {
       if (warning.score > max) {
         max = warning.score
+        lineno = warning
       }
     })
+    console.log('mix', max, JSON.stringify(lineno, null, 2))
     assert(max < 5)
   })
 

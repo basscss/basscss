@@ -55,14 +55,11 @@ and play well with other stylesheets and frameworks.
 
 ## Contributing
 
-Please file an issue before submitting a pull request.
-If you're making changes to a module, please follow the
-[design principles](http://www.basscss.com/docs/reference/principles/).
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Folder Structure
 - `src`: CSS4 source files
 - `css`: Processed CSS files for browser compatibility
-- `scripts`: Compilation and build scripts
 
 ---
 

@@ -4,12 +4,11 @@
   "description": "Low-level CSS toolkit",
   "style": "src/basscss.css",
   "scripts": {
-    "css": "node scripts/css",
-    "prepublish": "npm run css",
-    "s3": "node scripts/s3",
-    "start": "npm run css",
-    "test": "mocha test",
-    "watch:css": "watch 'npm run css' ./src"
+    "build": "postcss -c postcss.config.js",
+    "minify": "postcss -u cssnano css/basscss.css -o css/basscss.min.css",
+    "prepublish": "npm run build && npm run minify",
+    "start": "postcss -c postcss.config.js -w",
+    "test": "mocha test"
   },
   "dependencies": {
     "basscss-align": "^1.0.0",
@@ -48,15 +47,22 @@
     "flex-object": "^2.0.2"
   },
   "devDependencies": {
+    "autoprefixer": "^6.1.2",
     "clean-css": "^3.1.9",
     "css-mixed-properties": "^1.1.0",
-    "cssnext": "^1.1.0",
-    "cssstats": "~2.0.1",
+    "cssnano": "^3.4.0",
+    "cssstats": "^2.1.2",
     "filesize": "^3.1.2",
     "mocha": "^2.2.1",
-    "postcss": "^4.1.4",
+    "postcss": "^5.0.13",
+    "postcss-calc": "^5.0.0",
+    "postcss-cli": "^2.3.2",
+    "postcss-color-function": "^2.0.0",
+    "postcss-custom-media": "^5.0.0",
+    "postcss-custom-properties": "^5.0.0",
     "postcss-discard-comments": "^1.1.1",
-    "postcss-reporter": "^0.3.1",
+    "postcss-import": "^7.1.3",
+    "postcss-reporter": "^1.3.0",
     "s3": "^4.4.0",
     "watch": "^0.14.0"
   },
