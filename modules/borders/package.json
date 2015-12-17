@@ -1,0 +1,25 @@
+{
+  "name": "basscss-borders",
+  "version": "2.0.5",
+  "description": "Border styles module for Basscss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basscss/basscss.git"
+  },
+  "keywords": [
+    "css",
+    "oocss",
+    "atomic",
+    "functional",
+    "basscss"
+  ],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basscss/basscss/issues"
+  },
+  "homepage": "https://github.com/basscss/basscss",
+  "dependencies": {
+    "basscss-defaults": "^2.0.1"
+  }
+}
