@@ -1,0 +1,18 @@
+{
+  "name": "basscss-defaults",
+  "version": "2.1.2",
+  "description": "Default variables for Basscss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basscss/basscss.git"
+  },
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basscss/basscss/issues"
+  },
+  "homepage": "https://github.com/basscss/basscss",
+  "dependencies": {
+    "colors.css": "^2.3.0"
+  }
+}

@@ -1,0 +1,52 @@
+/* Basscss Defaults */
+
+@import "colors.css/myth/variables";
+
+@custom-media --breakpoint-sm (min-width: 40em);
+@custom-media --breakpoint-md (min-width: 52em);
+@custom-media --breakpoint-lg (min-width: 64em);
+
+:root {
+  --font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  --line-height: 1.5;
+  --heading-font-family: var(--font-family);
+  --heading-font-weight: bold;
+  --heading-line-height: 1.25;
+  --monospace-font-family: 'Source Code Pro', Consolas, monospace;
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --h4: 1rem;
+  --h5: .875rem;
+  --h6: .75rem;
+  --bold-font-weight: bold;
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+  --form-field-font-size: 1rem;
+  --form-field-height: 2.25rem;
+  --form-field-padding-y: .5rem;
+  --form-field-padding-x: .5rem;
+  --button-font-size: inherit;
+  --button-font-weight: bold;
+  --button-line-height: 1.125rem;
+  --button-padding-y: .5rem;
+  --button-padding-x: 1rem;
+  --container-width: 64em;
+
+  --darken-1: rgba(0,0,0,.0625);
+  --darken-2: rgba(0,0,0,.125);
+  --darken-3: rgba(0,0,0,.25);
+  --darken-4: rgba(0,0,0,.5);
+
+  --lighten-1: rgba(255,255,255,.0625);
+  --lighten-2: rgba(255,255,255,.125);
+  --lighten-3: rgba(255,255,255,.25);
+  --lighten-4: rgba(255,255,255,.5);
+
+  --border-width: 1px;
+  --border-radius: 3px;
+  --border-color: var(--darken-2);
+}
+
