@@ -1,6 +1,6 @@
 {
-  "name": "basscss-borders",
-  "version": "2.0.5",
+  "name": "basscss-border",
+  "version": "3.0.0",
   "description": "Border styles module for Basscss",
   "repository": {
     "type": "git",

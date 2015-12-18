@@ -22,7 +22,7 @@
 @import 'basscss-responsive-states'; /* Rename basscss-hide */
 @import 'basscss-grid';
 @import 'flex-object'; /* Replace with basscss-flexbox */
-@import 'basscss-borders';
+@import 'basscss-border';
 
 @import 'basscss-colors';
 @import 'basscss-background-colors';

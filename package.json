@@ -17,6 +17,7 @@
     "basscss-base-reset": "^2.0.2",
     "basscss-base-tables": "^1.0.0",
     "basscss-base-typography": "^2.0.1",
+    "basscss-border": "^3.0.0",
     "basscss-border-colors": "^1.1.1",
     "basscss-borders": "^2.0.5",
     "basscss-btn": "^1.0.2",
