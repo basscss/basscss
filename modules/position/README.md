@@ -1,5 +1,4 @@
 
-
 This module includes basic positioning utilities to alter the default document flow.
 
 <p class="red">Use positions with caution. They are often unnecessary and commonly misused.</p>

@@ -32,6 +32,7 @@
     "basscss-layout": "^3.0.0",
     "basscss-margin": "^1.0.0",
     "basscss-padding": "^1.0.0",
+    "basscss-position": "^2.0.0",
     "basscss-positions": "^1.0.5",
     "basscss-responsive-states": "^1.0.4",
     "basscss-type-scale": "^1.0.1",

@@ -18,7 +18,7 @@
 @import 'basscss-align';
 @import 'basscss-margin';
 @import 'basscss-padding';
-@import 'basscss-positions';
+@import 'basscss-position';
 @import 'basscss-responsive-states'; /* Rename basscss-hide */
 @import 'basscss-grid';
 @import 'flex-object'; /* Replace with basscss-flexbox */
