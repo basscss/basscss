@@ -1,6 +1,6 @@
 {
-  "name": "basscss-utility-typography",
-  "version": "2.1.0",
+  "name": "basscss-typography",
+  "version": "3.0.0",
   "description": "Typography utilities module for Basscss",
   "repository": {
     "type": "git",

@@ -13,7 +13,7 @@
 @import 'basscss-btn-outline';
 
 @import 'basscss-type-scale';
-@import 'basscss-utility-typography'; /* Rename basscss-typography */
+@import 'basscss-typography';
 @import 'basscss-layout';
 @import 'basscss-align';
 @import 'basscss-white-space'; /* Replace with basscss-margin & basscss-padding */
