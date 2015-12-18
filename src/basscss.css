@@ -17,6 +17,7 @@
 @import 'basscss-layout';
 @import 'basscss-align';
 @import 'basscss-white-space'; /* Replace with basscss-margin & basscss-padding */
+@import 'basscss-margin';
 @import 'basscss-positions';
 @import 'basscss-responsive-states'; /* Rename basscss-hide */
 @import 'basscss-grid';
