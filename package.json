@@ -6,7 +6,7 @@
   "scripts": {
     "build": "postcss -c postcss.config.js",
     "minify": "postcss -u cssnano css/basscss.css -o css/basscss.min.css",
-    "prepublish": "npm run build && npm run minify",
+    "prepublish": "mkdir -p css && npm run build && npm run minify",
     "start": "postcss -c postcss.config.js -w",
     "test": "mocha test"
   },
