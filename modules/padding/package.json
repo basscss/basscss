@@ -1,7 +1,7 @@
 {
-  "name": "basscss-white-space",
-  "version": "1.1.3",
-  "description": "White space margin and padding utilities module for Basscss",
+  "name": "basscss-padding",
+  "version": "1.0.0",
+  "description": "Padding utilities module for Basscss",
   "repository": {
     "type": "git",
     "url": "https://github.com/basscss/basscss.git"

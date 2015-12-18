@@ -1,3 +1,4 @@
+/* Basscss Padding */
 
 .p0 { padding: 0 }
 
@@ -16,4 +17,6 @@
 .p4  { padding:       var(--space-4) }
 .py4 { padding-top:   var(--space-4); padding-bottom: var(--space-4) }
 .px4 { padding-left:  var(--space-4); padding-right:  var(--space-4) }
+
+@import 'basscss-defaults';
 
