@@ -6,12 +6,6 @@
     "type": "git",
     "url": "https://github.com/basscss/basscss.git"
   },
-  "keywords": [
-    "basscss",
-    "css",
-    "oocss",
-    "utility"
-  ],
   "author": "Brent Jackson",
   "license": "MIT",
   "bugs": {
