@@ -1,0 +1,16 @@
+/* Basscss Responsive Margin */
+
+@import "./lib/sm-margins";
+@import "./lib/md-margins";
+@import "./lib/lg-margins";
+
+@custom-media --breakpoint-sm (min-width: 40em);
+@custom-media --breakpoint-md (min-width: 52em);
+@custom-media --breakpoint-lg (min-width: 64em);
+
+:root {
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+}
