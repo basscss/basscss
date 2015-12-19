@@ -12,8 +12,5 @@
     "url": "https://github.com/basscss/basscss/issues"
   },
   "homepage": "https://github.com/basscss/basscss",
-  "style": "index.css",
-  "dependencies": {
-    "basscss-defaults": "^2.0.1"
-  }
+  "style": "index.css"
 }

@@ -10,8 +10,5 @@
   "bugs": {
     "url": "https://github.com/basscss/basscss/issues"
   },
-  "homepage": "https://github.com/basscss/basscss",
-  "devDependencies": {
-    "basscss-defaults": "^2.0.1"
-  }
+  "homepage": "https://github.com/basscss/basscss"
 }

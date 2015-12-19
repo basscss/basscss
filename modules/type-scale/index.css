@@ -7,5 +7,11 @@
 .h5 { font-size: var(--h5) }
 .h6 { font-size: var(--h6) }
 
-@import 'basscss-defaults';
-
+:root {
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --h4: 1rem;
+  --h5: .875rem;
+  --h6: .75rem;
+}

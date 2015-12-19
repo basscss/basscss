@@ -22,18 +22,10 @@
   text-decoration: none;
 }
 
-.btn:focus {
-  outline: none;
-  border-color: var(--darken-2);
-  box-shadow: 0 0 0 3px var(--darken-3);
-}
-
 ::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-
-@import 'basscss-defaults';
 
 :root {
   --button-font-family: inherit;
@@ -42,6 +34,6 @@
   --button-line-height: 1.125rem;
   --button-padding-y: .5rem;
   --button-padding-x: 1rem;
+  --border-width: 1px;
 }
-
 

@@ -18,5 +18,10 @@
 .py4 { padding-top:   var(--space-4); padding-bottom: var(--space-4) }
 .px4 { padding-left:  var(--space-4); padding-right:  var(--space-4) }
 
-@import 'basscss-defaults';
+:root {
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+}
 
