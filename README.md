@@ -57,10 +57,6 @@ and play well with other stylesheets and frameworks.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
-## Folder Structure
-- `src`: CSS4 source files
-- `css`: Processed CSS files for browser compatibility
-
 ---
 
 [MIT license](http://opensource.org/licenses/MIT)
