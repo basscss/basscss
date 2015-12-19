@@ -8,8 +8,8 @@
 @import 'basscss-margin';
 @import 'basscss-padding';
 @import 'basscss-position';
-  @import 'basscss-responsive-states';
 @import 'basscss-grid';
 @import 'basscss-flexbox';
 @import 'basscss-border';
+@import 'basscss-hide';
 
