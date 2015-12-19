@@ -1,0 +1,16 @@
+{
+  "name": "basscss-position",
+  "version": "2.0.0",
+  "description": "CSS positioning utilities for Basscss",
+  "style": "index.css",
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basscss/basscss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/basscss/basscss/issues"
+  },
+  "homepage": "https://github.com/basscss/basscss"
+}

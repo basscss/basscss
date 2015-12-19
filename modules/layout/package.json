@@ -1,0 +1,15 @@
+{
+  "name": "basscss-layout",
+  "version": "3.0.0",
+  "description": "Layout utilities module for Basscss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basscss/basscss.git"
+  },
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basscss/basscss/issues"
+  },
+  "homepage": "https://github.com/basscss/basscss"
+}
