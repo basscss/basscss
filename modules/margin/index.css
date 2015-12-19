@@ -35,6 +35,8 @@
 .mxn3 { margin-left: -var(--space-3); margin-right: -var(--space-3); }
 .mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }
 
+.ml-auto { margin-left: auto }
+.mr-auto { margin-right: auto }
 .mx-auto { margin-left: auto; margin-right: auto; }
 
 @import 'basscss-defaults';

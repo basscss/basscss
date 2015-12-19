@@ -10,6 +10,6 @@
 @import 'basscss-position';
   @import 'basscss-responsive-states';
 @import 'basscss-grid';
-  @import 'flex-object';
+@import 'basscss-flexbox';
 @import 'basscss-border';
 

@@ -1,0 +1,61 @@
+
+.flex { display: flex }
+
+@media (--breakpoint-sm) {
+  .sm-flex { display: flex }
+}
+
+@media (--breakpoint-md) {
+  .md-flex { display: flex }
+}
+
+@media (--breakpoint-lg) {
+  .lg-flex { display: flex }
+}
+
+.flex-column  { flex-direction: column }
+.flex-wrap    { flex-wrap: wrap }
+
+.align-items-start    { align-items: flex-start }
+.align-items-end      { align-items: flex-end }
+.align-items-center   { align-items: center }
+.align-items-baseline { align-items: baseline }
+.align-items-stretch  { align-items: stretch }
+
+.align-self-start    { align-self: flex-start }
+.align-self-end      { align-self: flex-end }
+.align-self-center   { align-self: center }
+.align-self-baseline { align-self: baseline }
+.align-self-stretch  { align-self: stretch }
+
+.justify-start   { justify-content: flex-start }
+.justify-end     { justify-content: flex-end }
+.justify-end     { justify-content: center }
+.justify-between { justify-content: space-between }
+.justify-around  { justify-content: space-around }
+
+.align-content-start   { align-content: flex-start }
+.align-content-end     { align-content: flex-end }
+.align-content-center  { align-content: center }
+.align-content-between { align-content: space-between }
+.align-content-around  { align-content: space-around }
+.align-content-stretch { align-content: stretch }
+
+/* 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893 */
+.flex-auto {
+  flex: 1 1 auto;
+  min-width: 0; /* 1 */
+  min-height: 0; /* 1 */
+}
+.flex-none { flex: none }
+
+.order-0 { order: 0 }
+.order-1 { order: 1 }
+.order-2 { order: 2 }
+.order-3 { order: 3 }
+.order-last { order: 99999 }
+
+@custom-media --breakpoint-sm (min-width: 40em);
+@custom-media --breakpoint-md (min-width: 52em);
+@custom-media --breakpoint-lg (min-width: 64em);
+
