@@ -36,8 +36,7 @@
     "basscss-positions": "^1.0.5",
     "basscss-responsive-states": "^1.0.4",
     "basscss-type-scale": "^1.0.1",
-    "basscss-typography": "^3.0.0",
-    "flex-object": "^2.0.3"
+    "basscss-typography": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.1.2",
