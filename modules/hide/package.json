@@ -1,6 +1,6 @@
 {
   "name": "basscss-hide",
-  "version": "1.0.0",
+  "version": "1.0.0-beta1",
   "description": "Responsive hide utilities module for Basscss",
   "repository": {
     "type": "git",
