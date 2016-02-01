@@ -1,5 +1,7 @@
 /* Basscss Utility Responsive States */
 
+@import 'basscss-defaults';
+
 .sm-show, .md-show, .lg-show {
   display: none !important
 }
@@ -38,6 +40,4 @@
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-
-@import 'basscss-defaults';
 

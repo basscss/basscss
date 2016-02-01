@@ -1,5 +1,7 @@
 /* Basscss Border */
 
+@import 'basscss-defaults';
+
 .border {
   border-style: solid;
   border-width: var(--border-width);
@@ -41,6 +43,4 @@
 .rounded-left   { border-radius: var(--border-radius) 0 0 var(--border-radius) }
 
 .not-rounded { border-radius: 0 }
-
-@import 'basscss-defaults';
 

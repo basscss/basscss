@@ -1,5 +1,7 @@
 /* Basscss Btn */
 
+@import 'basscss-defaults';
+
 .btn {
   font-family: var(--button-font-family);
   font-size: var(--button-font-size);
@@ -32,8 +34,6 @@
   border: 0;
   padding: 0;
 }
-
-@import 'basscss-defaults';
 
 :root {
   --button-font-family: inherit;
