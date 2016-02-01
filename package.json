@@ -9,8 +9,9 @@
     "prepublish": "mkdir -p css && npm run build && npm run minify",
     "start": "postcss -c postcss.config.js -w",
     "karma": "karma start",
+    "karma:watch": "karma start --no-single-run",
     "mocha": "mocha test/test",
-    "test": "./node_modules/.bin/karma start --browsers Firefox --singleRun"
+    "test": "npm run mocha && npm run karma"
   },
   "dependencies": {
     "basscss-align": "^1.0.1",

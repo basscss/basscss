@@ -7,14 +7,11 @@ var postcssCalc = require('postcss-calc')
 module.exports = function (config) {
   config.set({
     browsers: [
-      'Firefox',
-      // 'Chrome',
-      // 'Safari'
+      'Firefox'
     ],
 
     files: [
-      './test/index.js',
-      // '../css/basscss.css'
+      './test/index.js'
     ],
 
     frameworks: [ 'chai', 'mocha' ],
@@ -34,7 +31,7 @@ module.exports = function (config) {
     },
 
     reporters: [ 'mocha' ],
-    // singleRun: true,
+    singleRun: true,
 
     webpack: {
       module: {
