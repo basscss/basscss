@@ -17,9 +17,7 @@ module.exports = function (config) {
     frameworks: [ 'chai', 'mocha' ],
 
     plugins: [
-      'karma-chrome-launcher',
       'karma-firefox-launcher',
-      'karma-safari-launcher',
       'karma-chai',
       'karma-mocha',
       'karma-mocha-reporter',
