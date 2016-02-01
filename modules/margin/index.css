@@ -49,8 +49,6 @@
 .mr-auto { margin-right: auto }
 .mx-auto { margin-left: auto; margin-right: auto; }
 
-@import 'basscss-defaults';
-
 :root {
   --space-1: .5rem;
   --space-2: 1rem;
