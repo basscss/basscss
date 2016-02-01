@@ -32,6 +32,7 @@
     "babel": "^6.3.26",
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
     "chai": "^3.5.0",
     "css-loader": "^0.23.1",
     "css-mixed-properties": "^1.1.0",
