@@ -19,7 +19,6 @@ module.exports = {
     'postcss-custom-media',
     'postcss-custom-properties',
     'postcss-calc',
-    'postcss-color-function',
     'cssstats',
     'postcss-discard-comments',
     'autoprefixer',

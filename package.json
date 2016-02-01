@@ -8,7 +8,9 @@
     "minify": "postcss -u cssnano css/basscss.css -o css/basscss.min.css",
     "prepublish": "mkdir -p css && npm run build && npm run minify",
     "start": "postcss -c postcss.config.js -w",
-    "test": "mocha test"
+    "karma": "karma start",
+    "mocha": "mocha test/test",
+    "test": "./node_modules/.bin/karma start --browsers Firefox --singleRun"
   },
   "dependencies": {
     "basscss-align": "^1.0.1",
@@ -27,8 +29,10 @@
   "devDependencies": {
     "autoprefixer": "^6.1.2",
     "babel": "^6.3.26",
+    "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
     "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
     "css-mixed-properties": "^1.1.0",
     "cssnano": "^3.4.0",
     "cssstats": "^2.1.2",
@@ -50,7 +54,9 @@
     "postcss-custom-properties": "^5.0.0",
     "postcss-discard-comments": "^1.1.1",
     "postcss-import": "^7.1.3",
+    "postcss-loader": "^0.8.0",
     "postcss-reporter": "^1.3.0",
+    "style-loader": "^0.13.0",
     "webpack": "^1.12.12"
   },
   "author": "Brent Jackson",

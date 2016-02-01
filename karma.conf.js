@@ -1,4 +1,9 @@
 
+var postcssImport = require('postcss-import')
+var postcssCustomMedia = require('postcss-custom-media')
+var postcssCustomProperties = require('postcss-custom-properties')
+var postcssCalc = require('postcss-calc')
+
 module.exports = function (config) {
   config.set({
     browsers: [
@@ -9,7 +14,7 @@ module.exports = function (config) {
 
     files: [
       './test/index.js',
-      '../css/basscss.css'
+      // '../css/basscss.css'
     ],
 
     frameworks: [ 'chai', 'mocha' ],
@@ -40,12 +45,25 @@ module.exports = function (config) {
             loader: 'babel-loader'
           },
           {
+            test: /\.css$/,
+            loader: 'style-loader!css-loader!postcss-loader'
+          },
+          {
             test: /\.json$/,
             loader: 'json-loader'
           }
         ]
+      },
+      postcss: function () {
+        return [
+          postcssImport,
+          postcssCustomMedia,
+          postcssCustomProperties,
+          postcssCalc
+        ]
       }
     },
+
 
     webpackMiddleware: {
       noInfo: true
