@@ -18,17 +18,20 @@ var stats
 
 describe('basscss', function() {
 
-  it('should compile', function() {
+  it('should compile', function(done) {
     assert.doesNotThrow(function() {
-      css = postcss([
-          postcssImport,
-          postcssCustomMedia,
-          postcssCustomProperties,
-          postcssCalc,
-          postcssColorFunction,
-        ])
-        .process(src)
-        .css
+      postcss([
+        postcssImport,
+        postcssCustomMedia,
+        postcssCustomProperties,
+        postcssCalc,
+        postcssColorFunction,
+      ])
+      .process(src)
+      .then(function (result) {
+        css = result.css
+        done()
+      })
     })
   })
 

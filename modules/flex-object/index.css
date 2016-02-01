@@ -1,10 +1,9 @@
 /* Flex Object */
 
+@import 'basscss-defaults';
+
 @import "./lib/flex.css";
 @import "./lib/sm-flex.css";
 @import "./lib/md-flex.css";
 @import "./lib/lg-flex.css";
-
-
-@import 'basscss-defaults';
 
