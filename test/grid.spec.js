@@ -19,12 +19,6 @@ describe('grid', () => {
     it('should set max-width', () => {
       expect(container.computedStyle.maxWidth).to.equal('1024px')
     })
-    // it('should set margin-left auto', () => {
-    //   expect(container.computedStyle.marginLeft).to.equal('auto')
-    // })
-    // it('should set margin-right auto', () => {
-    //   expect(container.computedStyle.marginRight).to.equal('auto')
-    // })
   })
 
   describe('col', () => {

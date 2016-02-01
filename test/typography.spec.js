@@ -3,9 +3,29 @@ import addElement from './util/add-element'
 
 describe('typography', () => {
 
-  let h1 = addElement('h1')
-  let p = addElement('p')
-  let ul = addElement('ul')
+  const container = addElement('div')
+  const h1 = addElement('h1', container)
+  const p = addElement('p', container)
+  const ul = addElement('ul', container)
+  const a = addElement('a', container)
+
+  container.style.fontFamily = 'Helvetica'
+  container.style.fontSize = '32px'
+
+  it('should set font-family inherit', () => {
+    p.className = 'font-family-inherit'
+    expect(p.computedStyle.fontFamily).to.equal('Helvetica')
+  })
+
+  it('should set font-size inherit', () => {
+    p.className = 'font-size-inherit'
+    expect(p.computedStyle.fontSize).to.equal('32px')
+  })
+
+  it('should set text-decoration none', () => {
+    a.className = 'text-decoration-none'
+    expect(a.computedStyle.textDecoration).to.equal('none')
+  })
 
   it('should set font-weight bold', () => {
     p.className = 'bold'
@@ -56,6 +76,36 @@ describe('typography', () => {
   it('should set word-wrap break-word', () => {
     h1.className = 'break-word'
     expect(h1.computedStyle.wordWrap).to.equal('break-word')
+  })
+
+  it('should set line-height 1', () => {
+    h1.className = 'line-height-1'
+    expect(h1.computedStyle.lineHeight).to.equal('64px')
+  })
+
+  it('should set line-height 1.125', () => {
+    h1.className = 'line-height-2'
+    expect(h1.computedStyle.lineHeight).to.equal('72px')
+  })
+
+  it('should set line-height 1.25', () => {
+    h1.className = 'line-height-3'
+    expect(h1.computedStyle.lineHeight).to.equal('80px')
+  })
+
+  it('should set line-height 1.5', () => {
+    h1.className = 'line-height-4'
+    expect(h1.computedStyle.lineHeight).to.equal('96px')
+  })
+
+  it('should set list-style none', () => {
+    ul.className = 'list-style-none'
+    expect(ul.computedStyle.listStyle).to.match(/none|^$/)
+  })
+
+  it('should set text-decoration underline', () => {
+    h1.className = 'underline'
+    expect(h1.computedStyle.textDecoration).to.equal('underline')
   })
 
   it('should truncate text', () => {

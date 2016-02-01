@@ -25,40 +25,28 @@ describe('border', () => {
     expect(div.computedStyle.borderLeftWidth).to.equal('1px')
   })
 
-  it('should apply border color', () => {
-    div.className = 'border'
-    expect(div.computedStyle.borderTopColor).to.not.equal('none')
-    expect(div.computedStyle.borderRightColor).to.not.equal('none')
-    expect(div.computedStyle.borderBottomColor).to.not.equal('none')
-    expect(div.computedStyle.borderLeftColor).to.not.equal('none')
-  })
-
   it('should apply border top styles', () => {
     div.className = 'border-top'
     expect(div.computedStyle.borderTopWidth).to.equal('1px')
     expect(div.computedStyle.borderTopStyle).to.equal('solid')
-    expect(div.computedStyle.borderTopColor).to.not.equal('none')
   })
 
   it('should apply border right styles', () => {
     div.className = 'border-right'
     expect(div.computedStyle.borderRightWidth).to.equal('1px')
     expect(div.computedStyle.borderRightStyle).to.equal('solid')
-    expect(div.computedStyle.borderRightColor).to.not.equal('none')
   })
 
   it('should apply border bottom styles', () => {
     div.className = 'border-bottom'
     expect(div.computedStyle.borderBottomWidth).to.equal('1px')
     expect(div.computedStyle.borderBottomStyle).to.equal('solid')
-    expect(div.computedStyle.borderBottomColor).to.not.equal('none')
   })
 
   it('should apply border left styles', () => {
     div.className = 'border-left'
     expect(div.computedStyle.borderLeftWidth).to.equal('1px')
     expect(div.computedStyle.borderLeftStyle).to.equal('solid')
-    expect(div.computedStyle.borderLeftColor).to.not.equal('none')
   })
 
   it('should remove border styles', () => {

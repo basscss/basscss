@@ -63,4 +63,9 @@ describe('layout', () => {
     expect(div.computedStyle.overflow).to.equal('auto')
   })
 
+  it('should set box-sizing border-box', () => {
+    div.className = 'border-box'
+    expect(div.computedStyle.boxSizing).to.equal('border-box')
+  })
 })
+
