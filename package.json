@@ -13,7 +13,6 @@
   "dependencies": {
     "basscss-align": "^1.0.1",
     "basscss-border": "^3.0.0",
-    "basscss-btn": "^1.0.2",
     "basscss-colors": "^2.0.0",
     "basscss-flexbox": "^1.0.0-beta1",
     "basscss-grid": "^1.0.4",
