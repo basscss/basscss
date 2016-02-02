@@ -4,7 +4,7 @@ To learn more about the flexbox module, see [Using CSS flexible boxes](https://d
 
 To set a container to display flex, add the `.flex` class.
 
-```
+```html
 <div class="flex">
   <div>Hamburger</div>
   <div>Hot Dog</div>
@@ -13,7 +13,7 @@ To set a container to display flex, add the `.flex` class.
 
 To set a container to display flex at certain breakpoints, use the `.sm-flex`, `.md-flex`, and `.lg-flex` styles.
 
-```
+```html
 <div class="sm-flex">
   <div>Hamburger</div>
   <div>Hot Dog</div>
@@ -30,7 +30,7 @@ To set a container to display flex at certain breakpoints, use the `.sm-flex`, `
 
 To set a flexbox container to column direction, use `.flex-column`.
 
-```
+```html
 <div class="flex flex-column">
   <span>Hamburger</span>
   <span>Hot Dog</span>
@@ -39,7 +39,7 @@ To set a flexbox container to column direction, use `.flex-column`.
 
 To enable wrapping of flexbox containers, use `.flex-wrap`.
 
-```
+```html
 <div class="flex flex-wrap">
   <div>Hamburger</div>
   <div>Hamburger</div>
@@ -54,7 +54,7 @@ To enable wrapping of flexbox containers, use `.flex-wrap`.
 
 To set a flexbox item to automatically fill the available space, use the `flex-auto` utility.
 
-```
+```html
 <div class="flex">
   <div class="flex-auto">Hamburger</div>
   <div>Hot Dog</div>
@@ -63,7 +63,7 @@ To set a flexbox item to automatically fill the available space, use the `flex-a
 
 To prevent a flexbox item from growing or shrinking, use the `flex-none` utility.
 
-```
+```html
 <div class="flex">
   <div class="flex-none">Hamburger</div>
   <div>Hot Dog</div>
@@ -72,7 +72,7 @@ To prevent a flexbox item from growing or shrinking, use the `flex-none` utility
 
 To control alignment of flexbox items, use the `align-items` utilities. These styles uses a shorthand naming convention `start` and `end` for the `flex-start` and `flex-end` values.
 
-```
+```html
 <div class="flex align-items-start">
   <h1>Hamburger</h1>
   <div>Hot Dog</div>
@@ -97,7 +97,7 @@ To control alignment of flexbox items, use the `align-items` utilities. These st
 
 To align flexbox items on an item-by-item basis, use the `align-self` utilities. These override values set by the `align-items` property.
 
-```
+```html
 <div class="flex align-items-center">
   <h1 class="align-self-start">Hamburger</h1>
   <div>Hot Dog</div>
@@ -122,7 +122,7 @@ To align flexbox items on an item-by-item basis, use the `align-self` utilities.
 
 To control the spacing for items on the main axis, use the `justify-content` utilities. These styles use a shorhand naming convention `around` and `between` for the `space-around` and `space-between` values.
 
-```
+```html
 <div class="flex justify-start">
   <h1>Hamburger</h1>
   <div>Hot Dog</div>
@@ -147,7 +147,7 @@ To control the spacing for items on the main axis, use the `justify-content` uti
 
 To align items along the cross-axis, use the `align-content` utilities.
 
-```
+```html
 <div class="flex flex-wrap align-content-start">
   <div>Hamburger</div>
   <div>Hamburger</div>
@@ -188,7 +188,7 @@ To align items along the cross-axis, use the `align-content` utilities.
 
 To change the order of flexbox items, use the `order` utilities.
 
-```
+```html
 <div class="flex">
   <div class="order-2">.order-2</div>
   <div class="order-1">.order-2</div>
