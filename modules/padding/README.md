@@ -35,22 +35,28 @@ This is to normalize the spacing used around elements and maintain a consistent 
 
 ```css
 .p0  { padding: 0 }
+.pt0 { padding-top: 0 }
+.pr0 { padding-right: 0 }
+.pb0 { padding-bottom: 0 }
+.pl0 { padding-left: 0 }
+.px0 { padding-left: 0; padding-right:  0 }
+.py0 { padding-top: 0;  padding-bottom: 0 }
 
-.p1  { padding:       var(--space-1) }
-.py1 { padding-top:   var(--space-1); padding-bottom: var(--space-1) }
-.px1 { padding-left:  var(--space-1); padding-right:  var(--space-1) }
+.p1  { padding:        var(--space-1) }
+.pt1 { padding-top:    var(--space-1) }
+.pr1 { padding-right:  var(--space-1) }
+.pb1 { padding-bottom: var(--space-1) }
+.pl1 { padding-left:   var(--space-1) }
+.py1 { padding-top:    var(--space-1); padding-bottom: var(--space-1) }
+.px1 { padding-left:   var(--space-1); padding-right:  var(--space-1) }
 
-.p2  { padding:       var(--space-2) }
-.py2 { padding-top:   var(--space-2); padding-bottom: var(--space-2) }
-.px2 { padding-left:  var(--space-2); padding-right:  var(--space-2) }
-
-.p3  { padding:       var(--space-3) }
-.py3 { padding-top:   var(--space-3); padding-bottom: var(--space-3) }
-.px3 { padding-left:  var(--space-3); padding-right:  var(--space-3) }
-
-.p4  { padding:       var(--space-4) }
-.py4 { padding-top:   var(--space-4); padding-bottom: var(--space-4) }
-.px4 { padding-left:  var(--space-4); padding-right:  var(--space-4) }
+.p4  { padding:        var(--space-4) }
+.pt4 { padding-top:    var(--space-4) }
+.pr4 { padding-right:  var(--space-4) }
+.pb4 { padding-bottom: var(--space-4) }
+.pl4 { padding-left:   var(--space-4) }
+.py4 { padding-top:    var(--space-4); padding-bottom: var(--space-4) }
+.px4 { padding-left:   var(--space-4); padding-right:  var(--space-4) }
 ```
 
 ## Box
@@ -79,6 +85,5 @@ To create a simple box component, use padding along with color utilities.
 
 <span class="red">Padding should never be declared outside of these utilities.</span>
 This is meant to help create consistency and avoid magic numbers.
-If, for some reason, the default white space scale does not suit your design,
-customize and extend it before using it.
+If, for some reason, the default white space scale does not suit your design, customize and extend it before use.
 
