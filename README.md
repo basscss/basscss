@@ -3,6 +3,7 @@
 Low-level CSS toolkit <http://basscss.com>
 
 [![Build Status](https://travis-ci.org/basscss/basscss.svg)](https://travis-ci.org/basscss/basscss)
+[![npm version](https://badge.fury.io/js/basscss.svg)](https://badge.fury.io/js/basscss)
 
 Documentation: <http://basscss.com/docs>
 
