@@ -59,7 +59,3 @@ To ensure the desired stacking order, use z-index utilities.
 </div>
 ```
 
-<style>
-.MarkedExample .fixed { position: static }
-</style>
-
