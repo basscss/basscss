@@ -57,7 +57,7 @@ To visually hide things like form labels in an accessible way, use the `.hide` u
 
 Set display none with this utility. Use this with caution as it might cause accessibility issues depending on where it’s used.
 
-```
+```html
 <div>Visible</div>
 <div class="display-none">Hidden</div>
 ```
