@@ -49,7 +49,7 @@ To visually hide things like form labels in an accessible way, use the `.hide` u
 <form>
   <label for="search" class="hide">Search</label>
   <input id="search" type="search" class="field">
-  <button class="btn btn-primary">Go</button>
+  <button>Go</button>
 </form>
 ```
 
