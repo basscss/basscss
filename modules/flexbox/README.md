@@ -70,57 +70,57 @@ To prevent a flexbox item from growing or shrinking, use the `flex-none` utility
 </div>
 ```
 
-To control alignment of flexbox items, use the `align-items` utilities. These styles uses a shorthand naming convention `start` and `end` for the `flex-start` and `flex-end` values.
+To control alignment of flexbox items, use the `align-items` utilities. These styles uses a shorthand naming convention. `items` for the `align-items` property and `start` and `end` for the `flex-start` and `flex-end` values.
 
 ```html
-<div class="flex align-items-start">
+<div class="flex items-start">
   <h1>Hamburger</h1>
   <div>Hot Dog</div>
 </div>
-<div class="flex align-items-end">
+<div class="flex items-end">
   <h1>Hamburger</h1>
   <div>Hot Dog</div>
 </div>
-<div class="flex align-items-center">
+<div class="flex items-center">
   <h1>Hamburger</h1>
   <div>Hot Dog</div>
 </div>
-<div class="flex align-items-baseline">
+<div class="flex items-baseline">
   <h1>Hamburger</h1>
   <div>Hot Dog</div>
 </div>
-<div class="flex align-items-stretch">
+<div class="flex items-stretch">
   <h1>Hamburger</h1>
   <div>Hot Dog</div>
 </div>
 ```
 
-To align flexbox items on an item-by-item basis, use the `align-self` utilities. These override values set by the `align-items` property.
+To align flexbox items on an item-by-item basis, use the `align-self` utilities. These override values set by the `align-items` property. A shorthand naming convention of `self` for the `align-self` property is used.
 
 ```html
-<div class="flex align-items-center">
+<div class="flex items-center">
   <h1 class="align-self-start">Hamburger</h1>
   <div>Hot Dog</div>
 </div>
-<div class="flex align-items-center">
+<div class="flex items-center">
   <h1 class="align-self-end">Hamburger</h1>
   <div>Hot Dog</div>
 </div>
-<div class="flex align-items-start">
+<div class="flex items-start">
   <h1 class="align-self-center">Hamburger</h1>
   <div>Hot Dog</div>
 </div>
-<div class="flex align-items-center">
+<div class="flex items-center">
   <h1 class="align-self-baseline">Hamburger</h1>
   <div>Hot Dog</div>
 </div>
-<div class="flex align-items-center">
+<div class="flex items-center">
   <h1 class="align-self-stretch">Hamburger</h1>
   <div>Hot Dog</div>
 </div>
 ```
 
-To control the spacing for items on the main axis, use the `justify-content` utilities. These styles use a shorhand naming convention `around` and `between` for the `space-around` and `space-between` values.
+To control the spacing for items on the main axis, use the `justify-content` utilities. These styles use a shorhand naming convention. `justify` for the `justify-content` property and `around` and `between` for the `space-around` and `space-between` values.
 
 ```html
 <div class="flex justify-start">
@@ -145,40 +145,40 @@ To control the spacing for items on the main axis, use the `justify-content` uti
 </div>
 ```
 
-To align items along the cross-axis, use the `align-content` utilities.
+To align items along the cross-axis, use the `align-content` utilities. A shorthand naming convention `content` is used for the `align-content` property.
 
 ```html
-<div class="flex flex-wrap align-content-start">
+<div class="flex flex-wrap content-start">
   <div>Hamburger</div>
   <div>Hamburger</div>
   <div>Hamburger</div>
   <div>Hamburger</div>
 </div>
-<div class="flex flex-wrap align-content-end">
+<div class="flex flex-wrap content-end">
   <div>Hamburger</div>
   <div>Hamburger</div>
   <div>Hamburger</div>
   <div>Hamburger</div>
 </div>
-<div class="flex flex-wrap align-content-center">
+<div class="flex flex-wrap content-center">
   <div>Hamburger</div>
   <div>Hamburger</div>
   <div>Hamburger</div>
   <div>Hamburger</div>
 </div>
-<div class="flex flex-wrap align-content-between">
+<div class="flex flex-wrap content-between">
   <div>Hamburger</div>
   <div>Hamburger</div>
   <div>Hamburger</div>
   <div>Hamburger</div>
 </div>
-<div class="flex flex-wrap align-content-around">
+<div class="flex flex-wrap content-around">
   <div>Hamburger</div>
   <div>Hamburger</div>
   <div>Hamburger</div>
   <div>Hamburger</div>
 </div>
-<div class="flex flex-wrap align-content-stretch">
+<div class="flex flex-wrap content-stretch">
   <div>Hamburger</div>
   <div>Hamburger</div>
   <div>Hamburger</div>

@@ -16,17 +16,17 @@
 .flex-column  { flex-direction: column }
 .flex-wrap    { flex-wrap: wrap }
 
-.align-items-start    { align-items: flex-start }
-.align-items-end      { align-items: flex-end }
-.align-items-center   { align-items: center }
-.align-items-baseline { align-items: baseline }
-.align-items-stretch  { align-items: stretch }
+.items-start    { align-items: flex-start }
+.items-end      { align-items: flex-end }
+.items-center   { align-items: center }
+.items-baseline { align-items: baseline }
+.items-stretch  { align-items: stretch }
 
-.align-self-start    { align-self: flex-start }
-.align-self-end      { align-self: flex-end }
-.align-self-center   { align-self: center }
-.align-self-baseline { align-self: baseline }
-.align-self-stretch  { align-self: stretch }
+.self-start    { align-self: flex-start }
+.self-end      { align-self: flex-end }
+.self-center   { align-self: center }
+.self-baseline { align-self: baseline }
+.self-stretch  { align-self: stretch }
 
 .justify-start   { justify-content: flex-start }
 .justify-end     { justify-content: flex-end }
@@ -34,12 +34,12 @@
 .justify-between { justify-content: space-between }
 .justify-around  { justify-content: space-around }
 
-.align-content-start   { align-content: flex-start }
-.align-content-end     { align-content: flex-end }
-.align-content-center  { align-content: center }
-.align-content-between { align-content: space-between }
-.align-content-around  { align-content: space-around }
-.align-content-stretch { align-content: stretch }
+.content-start   { align-content: flex-start }
+.content-end     { align-content: flex-end }
+.content-center  { align-content: center }
+.content-between { align-content: space-between }
+.content-around  { align-content: space-around }
+.content-stretch { align-content: stretch }
 
 /* 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893 */
 .flex-auto {

@@ -1,6 +1,6 @@
 {
   "name": "basscss-flexbox",
-  "version": "1.0.0-beta4",
+  "version": "1.0.0-beta5",
   "description": "Flexbox utilities",
   "style": "index.css",
   "author": "Brent Jackson",
