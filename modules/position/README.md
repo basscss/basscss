@@ -7,7 +7,7 @@ Use `.relative` to create a new stacking context.
 
 ```html
 <div class="relative">
-  <button class="btn btn-primary">Button</button>
+  <div>Hamburger</div>
 </div>
 ```
 
@@ -15,32 +15,31 @@ Use `.absolute` to move elements out of the default document flow.
 
 ```html
 <div class="relative mb4">
-  <button class="btn btn-primary">Button</button>
+  <div>Hamburger</div>
   <div class="absolute bg-white border rounded">
-    <a href="#" class="block btn">Dropdown Action</a>
-    <a href="#" class="block btn">Action</a>
-    <a href="#" class="block btn">Action</a>
+    <a href="#" class="block p1">Dropdown Action</a>
+    <a href="#" class="block p1">Action</a>
+    <a href="#" class="block p1">Action</a>
   </div>
 </div>
 ```
 
-Use `.fixed` to position an element relative to the viewport.
-<p class="docs-show" style="display:none">Note: fixed positioning has been disabled here for demonstration only.</p>
+Use `.fixed` to position an element relative to the viewport. Fixed positioning is notoriously tricky to use well and can lead to inaccessible content and unwanted side effects. Use fixed positioning with caution.
 
 ```html
-<button class="fixed btn btn-primary">
-  Button
-</button>
+<div class="fixed">
+  Hamburger
+</div>
 ```
 
-Note: Fixed positioning is notoriously tricky to use well and can lead to inaccessible content and unwanted side effects. Use fixed positioning with caution.
+*Note: fixed positioning has been disabled here for demonstration only.*
 
 To anchor to a particular side, use `.top-0`, `.right-0`, `.bottom-0`, or `.left-0`. Margin and padding utilities can be used to space elements apart.
 
 ```html
-<button class="fixed top-0 right-0 m2 btn btn-primary">
-  Button
-</button>
+<div class="fixed top-0 right-0 m2">
+  Hamburger
+</div>
 ```
 
 To fill an entire width or height, use opposing directions.
