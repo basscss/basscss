@@ -21,52 +21,52 @@ describe('flexbox', () => {
   })
 
   it('should set align-items flex-start', () => {
-    div.className = 'align-items-start'
+    div.className = 'items-start'
     expect(div.computedStyle.alignItems).to.equal('flex-start')
   })
 
   it('should set align-items flex-end', () => {
-    div.className = 'align-items-end'
+    div.className = 'items-end'
     expect(div.computedStyle.alignItems).to.equal('flex-end')
   })
 
   it('should set align-items center', () => {
-    div.className = 'align-items-center'
+    div.className = 'items-center'
     expect(div.computedStyle.alignItems).to.equal('center')
   })
 
   it('should set align-items baseline', () => {
-    div.className = 'align-items-baseline'
+    div.className = 'items-baseline'
     expect(div.computedStyle.alignItems).to.equal('baseline')
   })
 
   it('should set align-items stretch', () => {
-    div.className = 'align-items-stretch'
+    div.className = 'items-stretch'
     expect(div.computedStyle.alignItems).to.equal('stretch')
   })
 
   it('should set align-self flex-start', () => {
-    div.className = 'align-self-start'
+    div.className = 'self-start'
     expect(div.computedStyle.alignSelf).to.equal('flex-start')
   })
 
   it('should set align-self flex-end', () => {
-    div.className = 'align-self-end'
+    div.className = 'self-end'
     expect(div.computedStyle.alignSelf).to.equal('flex-end')
   })
 
   it('should set align-self center', () => {
-    div.className = 'align-self-center'
+    div.className = 'self-center'
     expect(div.computedStyle.alignSelf).to.equal('center')
   })
 
   it('should set align-self baseline', () => {
-    div.className = 'align-self-baseline'
+    div.className = 'self-baseline'
     expect(div.computedStyle.alignSelf).to.equal('baseline')
   })
 
   it('should set align-self stretch', () => {
-    div.className = 'align-self-stretch'
+    div.className = 'self-stretch'
     expect(div.computedStyle.alignSelf).to.equal('stretch')
   })
 
@@ -96,32 +96,32 @@ describe('flexbox', () => {
   })
 
   it('should set align-content flex-start', () => {
-    div.className = 'align-content-start'
+    div.className = 'content-start'
     expect(div.computedStyle.alignContent).to.equal('flex-start')
   })
 
   it('should set align-content flex-end', () => {
-    div.className = 'align-content-end'
+    div.className = 'content-end'
     expect(div.computedStyle.alignContent).to.equal('flex-end')
   })
 
   it('should set align-content center', () => {
-    div.className = 'align-content-center'
+    div.className = 'content-center'
     expect(div.computedStyle.alignContent).to.equal('center')
   })
 
   it('should set align-content space-between', () => {
-    div.className = 'align-content-between'
+    div.className = 'content-between'
     expect(div.computedStyle.alignContent).to.equal('space-between')
   })
 
   it('should set align-content space-around', () => {
-    div.className = 'align-content-around'
+    div.className = 'content-around'
     expect(div.computedStyle.alignContent).to.equal('space-around')
   })
 
   it('should set align-content stretch', () => {
-    div.className = 'align-content-stretch'
+    div.className = 'content-stretch'
     expect(div.computedStyle.alignContent).to.equal('stretch')
   })
 
