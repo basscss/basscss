@@ -16,7 +16,7 @@
   "dependencies": {
     "basscss-align": "^1.0.1",
     "basscss-border": "^3.0.2",
-    "basscss-flexbox": "^1.0.0-beta5",
+    "basscss-flexbox": "^1.0.0-beta6",
     "basscss-grid": "^1.0.6",
     "basscss-hide": "^1.0.0-beta4",
     "basscss-layout": "^3.0.0",
