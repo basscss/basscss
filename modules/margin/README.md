@@ -111,9 +111,9 @@ Add spacing around elements using a combination of margin utilities.
 The negative margin utilities also work with padded children.
 
 ```html
-<div class="border border-blue">
+<div class="border">
   <div class="mxn2">
-    <div class="px2 border border-blue">Padded div</div>
+    <div class="px2 border">Padded div</div>
   </div>
 </div>
 ```
