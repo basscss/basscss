@@ -19,7 +19,6 @@ Use `.absolute` to move elements out of the default document flow.
   <div class="absolute bg-white border rounded">
     <a href="#" class="block p1">Dropdown Action</a>
     <a href="#" class="block p1">Action</a>
-    <a href="#" class="block p1">Action</a>
   </div>
 </div>
 ```
