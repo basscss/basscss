@@ -17,7 +17,7 @@ To adjust the display of an element, use the `.block`, `.inline`, `.inline-block
 
 ## Overflow
 
-To adjust element overflow, use `.overflow-hidden`, `.overflow-scroll`, and `.overflow-auto`. 
+To adjust element overflow, use `.overflow-hidden`, `.overflow-scroll`, and `.overflow-auto`.
 `.overflow-hidden` can also be used to create a new block formatting context or clear floats.
 
 ## Floats
@@ -25,9 +25,9 @@ To adjust element overflow, use `.overflow-hidden`, `.overflow-scroll`, and `.ov
 Use `.clearfix`, `.left`, and `.right` to clear and set floats.
 
 ```html
-<div class="clearfix border border-blue">
-  <div class="left border border-blue">.left</div>
-  <div class="right border border-blue">.right</div>
+<div class="clearfix border">
+  <div class="left border">.left</div>
+  <div class="right border">.right</div>
 </div>
 ```
 
@@ -47,8 +47,8 @@ Use `.border-box` to set box-sizing border-box per element.
 Create a media object using basic utilities.
 
 ```html
-<div class="clearfix mb2 border border-blue">
-  <div class="left p2 mr1 border border-blue">Image</div>
+<div class="clearfix mb2 border">
+  <div class="left p2 mr1 border">Image</div>
   <div class="overflow-hidden">
     <p><b>Body</b> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
   </div>
@@ -59,9 +59,9 @@ Create a media object using basic utilities.
 For a container with a flexible center, use a double-sided media object.
 
 ```html
-<div class="clearfix mb2 border border-blue">
-  <div class="left p2 mr1 border border-blue">Image</div>
-  <div class="right p2 ml1 border border-blue">Image</div>
+<div class="clearfix mb2 border">
+  <div class="left p2 mr1 border">Image</div>
+  <div class="right p2 ml1 border">Image</div>
   <div class="overflow-hidden">
     <p><b>Body</b> Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
   </div>
