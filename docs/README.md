@@ -5,6 +5,8 @@ The core documentation for Basscss is contained within each module’s README.md
 
 For the source code for each module, see the [`/modules`](/modules) folder.
 
+- [Getting Started](GettingStarted.md)
+- [Modules](/modules/README.md)
 - [Design Principles](DesignPrinciples.md)
 - [Guides](guides)
   - [Basics](guides/Basics.md)
