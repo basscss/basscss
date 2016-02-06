@@ -1,0 +1,23 @@
+{
+  "name": "basscss-progress",
+  "version": "2.0.0-beta.0",
+  "description": "Custom progress element module for Basscss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basscss/basscss.git"
+  },
+  "keywords": [
+    "css",
+    "oocss",
+    "basscss"
+  ],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basscss/basscss/issues"
+  },
+  "homepage": "https://github.com/basscss/basscss",
+  "basscss": {
+    "optional": true
+  }
+}

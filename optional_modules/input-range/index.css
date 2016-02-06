@@ -1,0 +1,53 @@
+/* Basscss Input Range */
+
+input[type=range] {
+  vertical-align: middle;
+  background-color: transparent;
+  padding-top: var(--form-field-padding-y);
+  padding-bottom: var(--form-field-padding-y);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  position: relative;
+  width: var(--range-thumb-width);
+  height: var(--range-thumb-height);
+  cursor: pointer;
+  margin-top: var(--range-thumb-offset);
+}
+
+/* Touch screen friendly pseudo element */
+input[type=range]::-webkit-slider-thumb:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc( -.5 * var(--range-thumb-pseudo-size) + (.5 * var(--range-thumb-height)) );
+  left: calc( (-.5 * var(--range-thumb-pseudo-size)) + (.5 * var(--range-thumb-width)) );
+  width: var(--range-thumb-pseudo-size);
+  height: var(--range-thumb-pseudo-size);
+  opacity: 0;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: var(--range-thumb-width);
+  height: var(--range-thumb-height);
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: var(--range-track-height);
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-track {
+  height: var(--range-track-height);
+  cursor: pointer;
+}
+
+:root {
+  --form-field-padding-y: .5rem;
+  --range-thumb-width: var(--form-field-padding-x);
+  --range-thumb-height: calc( var(--form-field-height) - (var(--form-field-padding-y) * 2) );
+  --range-track-height: calc( var(--form-field-padding-y) / 2 );
+  --range-thumb-offset: calc( var(--range-thumb-height) / -2 + (var(--range-track-height) / 2) );
+  --range-thumb-pseudo-size: var(--form-field-height);
+}

@@ -1,0 +1,22 @@
+/* Basscss UI Utility Button Sizes */
+
+.btn-small {
+  padding: var(--button-small-padding-y) var(--button-small-padding-x);
+}
+
+.btn-big {
+  padding: var(--button-big-padding-y) var(--button-big-padding-x);
+}
+
+.btn-narrow {
+  padding-left: var(--button-narrow-padding-x);
+  padding-right: var(--button-narrow-padding-x);
+}
+
+:root {
+  --button-small-padding-y: .25rem;
+  --button-small-padding-x: .5rem;
+  --button-big-padding-y: 1rem;
+  --button-big-padding-x: 1.25rem;
+  --button-narrow-padding-x: var(--space-1);
+}

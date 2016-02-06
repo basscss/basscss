@@ -1,0 +1,16 @@
+/* Basscss Responsive Padding */
+
+@import "./lib/sm-padding";
+@import "./lib/md-padding";
+@import "./lib/lg-padding";
+
+@custom-media --breakpoint-sm (min-width: 40em);
+@custom-media --breakpoint-md (min-width: 52em);
+@custom-media --breakpoint-lg (min-width: 64em);
+
+:root {
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+}

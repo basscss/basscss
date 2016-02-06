@@ -1,0 +1,53 @@
+
+@media (--breakpoint-sm) {
+
+  .sm-m0  { margin:        0 }
+  .sm-mt0 { margin-top:    0 }
+  .sm-mr0 { margin-right:  0 }
+  .sm-mb0 { margin-bottom: 0 }
+  .sm-ml0 { margin-left:   0 }
+  .sm-mx0 { margin-left:   0; margin-right:  0 }
+  .sm-my0 { margin-top:    0; margin-bottom: 0 }
+
+  .sm-m1  { margin:        var(--space-1) }
+  .sm-mt1 { margin-top:    var(--space-1) }
+  .sm-mr1 { margin-right:  var(--space-1) }
+  .sm-mb1 { margin-bottom: var(--space-1) }
+  .sm-ml1 { margin-left:   var(--space-1) }
+  .sm-mx1 { margin-left:   var(--space-1); margin-right:  var(--space-1) }
+  .sm-my1 { margin-top:    var(--space-1); margin-bottom: var(--space-1) }
+
+  .sm-m2  { margin:        var(--space-2) }
+  .sm-mt2 { margin-top:    var(--space-2) }
+  .sm-mr2 { margin-right:  var(--space-2) }
+  .sm-mb2 { margin-bottom: var(--space-2) }
+  .sm-ml2 { margin-left:   var(--space-2) }
+  .sm-mx2 { margin-left:   var(--space-2); margin-right:  var(--space-2) }
+  .sm-my2 { margin-top:    var(--space-2); margin-bottom: var(--space-2) }
+
+  .sm-m3  { margin:        var(--space-3) }
+  .sm-mt3 { margin-top:    var(--space-3) }
+  .sm-mr3 { margin-right:  var(--space-3) }
+  .sm-mb3 { margin-bottom: var(--space-3) }
+  .sm-ml3 { margin-left:   var(--space-3) }
+  .sm-mx3 { margin-left:   var(--space-3); margin-right:  var(--space-3) }
+  .sm-my3 { margin-top:    var(--space-3); margin-bottom: var(--space-3) }
+
+  .sm-m4  { margin:        var(--space-4) }
+  .sm-mt4 { margin-top:    var(--space-4) }
+  .sm-mr4 { margin-right:  var(--space-4) }
+  .sm-mb4 { margin-bottom: var(--space-4) }
+  .sm-ml4 { margin-left:   var(--space-4) }
+  .sm-mx4 { margin-left:   var(--space-4); margin-right:  var(--space-4) }
+  .sm-my4 { margin-top:    var(--space-4); margin-bottom: var(--space-4) }
+
+  .sm-mxn1 { margin-left: -var(--space-1); margin-right: -var(--space-1); }
+  .sm-mxn2 { margin-left: -var(--space-2); margin-right: -var(--space-2); }
+  .sm-mxn3 { margin-left: -var(--space-3); margin-right: -var(--space-3); }
+  .sm-mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }
+
+  .sm-ml-auto { margin-left: auto }
+  .sm-mr-auto { margin-right: auto }
+  .sm-mx-auto { margin-left: auto; margin-right: auto; }
+
+}

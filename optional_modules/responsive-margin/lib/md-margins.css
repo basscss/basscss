@@ -1,0 +1,53 @@
+
+@media (--breakpoint-md) {
+
+  .md-m0  { margin:        0 }
+  .md-mt0 { margin-top:    0 }
+  .md-mr0 { margin-right:  0 }
+  .md-mb0 { margin-bottom: 0 }
+  .md-ml0 { margin-left:   0 }
+  .md-mx0 { margin-left:   0; margin-right:  0 }
+  .md-my0 { margin-top:    0; margin-bottom: 0 }
+
+  .md-m1  { margin:        var(--space-1) }
+  .md-mt1 { margin-top:    var(--space-1) }
+  .md-mr1 { margin-right:  var(--space-1) }
+  .md-mb1 { margin-bottom: var(--space-1) }
+  .md-ml1 { margin-left:   var(--space-1) }
+  .md-mx1 { margin-left:   var(--space-1); margin-right:  var(--space-1) }
+  .md-my1 { margin-top:    var(--space-1); margin-bottom: var(--space-1) }
+
+  .md-m2  { margin:        var(--space-2) }
+  .md-mt2 { margin-top:    var(--space-2) }
+  .md-mr2 { margin-right:  var(--space-2) }
+  .md-mb2 { margin-bottom: var(--space-2) }
+  .md-ml2 { margin-left:   var(--space-2) }
+  .md-mx2 { margin-left:   var(--space-2); margin-right:  var(--space-2) }
+  .md-my2 { margin-top:    var(--space-2); margin-bottom: var(--space-2) }
+
+  .md-m3  { margin:        var(--space-3) }
+  .md-mt3 { margin-top:    var(--space-3) }
+  .md-mr3 { margin-right:  var(--space-3) }
+  .md-mb3 { margin-bottom: var(--space-3) }
+  .md-ml3 { margin-left:   var(--space-3) }
+  .md-mx3 { margin-left:   var(--space-3); margin-right:  var(--space-3) }
+  .md-my3 { margin-top:    var(--space-3); margin-bottom: var(--space-3) }
+
+  .md-m4  { margin:        var(--space-4) }
+  .md-mt4 { margin-top:    var(--space-4) }
+  .md-mr4 { margin-right:  var(--space-4) }
+  .md-mb4 { margin-bottom: var(--space-4) }
+  .md-ml4 { margin-left:   var(--space-4) }
+  .md-mx4 { margin-left:   var(--space-4); margin-right:  var(--space-4) }
+  .md-my4 { margin-top:    var(--space-4); margin-bottom: var(--space-4) }
+
+  .md-mxn1 { margin-left: -var(--space-1); margin-right: -var(--space-1); }
+  .md-mxn2 { margin-left: -var(--space-2); margin-right: -var(--space-2); }
+  .md-mxn3 { margin-left: -var(--space-3); margin-right: -var(--space-3); }
+  .md-mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }
+
+  .md-ml-auto { margin-left: auto }
+  .md-mr-auto { margin-right: auto }
+  .md-mx-auto { margin-left: auto; margin-right: auto; }
+
+}

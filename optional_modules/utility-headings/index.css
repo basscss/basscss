@@ -1,0 +1,30 @@
+/* Basscss Utility Headings */
+
+.h00 { font-size: var(--h00) }
+.h0 {  font-size: var(--h0) }
+
+@media (--breakpoint-md) {
+  .h00-responsive { font-size: var(--h00-responsive) }
+  .h0-responsive {  font-size: var(--h0-responsive) }
+  .h1-responsive {  font-size: var(--h1-responsive) }
+}
+
+@media (--breakpoint-xl) {
+  .h00-responsive { font-size: var(--h00-responsive-max) }
+  .h0-responsive {  font-size: var(--h0-responsive-max) }
+  .h1-responsive {  font-size: var(--h1-responsive-max) }
+}
+
+@custom-media --breakpoint-md (min-width: 52em);
+@custom-media --breakpoint-xl (min-width: 96em);
+
+:root {
+  --h00:    4rem;
+  --h0:     3rem;
+  --h00-responsive: 8vw;
+  --h0-responsive:  6vw;
+  --h1-responsive:  4vw;
+  --h00-responsive-max: 7.68rem;
+  --h0-responsive-max:  5.76rem;
+  --h1-responsive-max:  3.84rem;
+}

@@ -1,0 +1,38 @@
+
+@media (--breakpoint-sm) {
+
+  .sm-p0 { padding: 0 }
+
+  .sm-p1  { padding:        var(--space-1) }
+  .sm-pt1 { padding-top:    var(--space-1) }
+  .sm-pr1 { padding-right:  var(--space-1) }
+  .sm-pb1 { padding-bottom: var(--space-1) }
+  .sm-pl1 { padding-left:   var(--space-1) }
+  .sm-py1 { padding-top:    var(--space-1); padding-bottom: var(--space-1) }
+  .sm-px1 { padding-left:   var(--space-1); padding-right:  var(--space-1) }
+
+  .sm-p2  { padding:        var(--space-2) }
+  .sm-pt2 { padding-top:    var(--space-2) }
+  .sm-pr2 { padding-right:  var(--space-2) }
+  .sm-pb2 { padding-bottom: var(--space-2) }
+  .sm-pl2 { padding-left:   var(--space-2) }
+  .sm-py2 { padding-top:    var(--space-2); padding-bottom: var(--space-2) }
+  .sm-px2 { padding-left:   var(--space-2); padding-right:  var(--space-2) }
+
+  .sm-p3  { padding:        var(--space-3) }
+  .sm-pt3 { padding-top:    var(--space-3) }
+  .sm-pr3 { padding-right:  var(--space-3) }
+  .sm-pb3 { padding-bottom: var(--space-3) }
+  .sm-pl3 { padding-left:   var(--space-3) }
+  .sm-py3 { padding-top:    var(--space-3); padding-bottom: var(--space-3) }
+  .sm-px3 { padding-left:   var(--space-3); padding-right:  var(--space-3) }
+
+  .sm-p4  { padding:        var(--space-4) }
+  .sm-pt4 { padding-top:    var(--space-4) }
+  .sm-pr4 { padding-right:  var(--space-4) }
+  .sm-pb4 { padding-bottom: var(--space-4) }
+  .sm-pl4 { padding-left:   var(--space-4) }
+  .sm-py4 { padding-top:    var(--space-4); padding-bottom: var(--space-4) }
+  .sm-px4 { padding-left:   var(--space-4); padding-right:  var(--space-4) }
+
+}
