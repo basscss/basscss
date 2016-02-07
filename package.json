@@ -20,8 +20,8 @@
     "basscss-grid": "^1.0.6",
     "basscss-hide": "^1.0.0-beta4",
     "basscss-layout": "^3.0.1",
-    "basscss-margin": "^1.0.5",
-    "basscss-padding": "^1.1.1",
+    "basscss-margin": "^1.0.7",
+    "basscss-padding": "^1.1.3",
     "basscss-position": "^2.0.2",
     "basscss-type-scale": "^1.0.3",
     "basscss-typography": "^3.0.0"
