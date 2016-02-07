@@ -123,12 +123,10 @@ The negative margin utilities also work with padded children.
 Block elements with a set width can be centered with `.mx-auto`.
 
 ```html
-<div>
-  <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg"
-    width="96"
-    height="96"
-    class="block mx-auto" />
-</div>
+<img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg"
+  width="96"
+  height="96"
+  class="block mx-auto" />
 ```
 
 ## Space Flexbox Items
