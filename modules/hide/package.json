@@ -1,6 +1,6 @@
 {
   "name": "basscss-hide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Responsive hide utilities module for Basscss",
   "scripts": {
     "prepublish": "mkdir -p css && postcss index.css -u postcss-import -u postcss-custom-media -u postcss-custom-properties -u autoprefixer -o css/hide.css"
