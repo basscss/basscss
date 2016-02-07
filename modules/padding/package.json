@@ -1,6 +1,6 @@
 {
   "name": "basscss-padding",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Padding utilities module for Basscss",
   "scripts": {
     "prepublish": "mkdir -p css && postcss index.css -u postcss-import -u postcss-custom-media -u postcss-custom-properties -u autoprefixer -o css/padding.css"

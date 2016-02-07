@@ -1,6 +1,6 @@
 {
   "name": "basscss-align",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vertical align utilities module for Basscss",
   "scripts": {
     "prepublish": "mkdir -p css && postcss index.css -u postcss-import -u postcss-custom-media -u postcss-custom-properties -u autoprefixer -o css/align.css"
