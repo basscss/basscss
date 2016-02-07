@@ -37,3 +37,7 @@
 
 .not-rounded { border-radius: 0 }
 
+:root {
+  --border-radius: 3px;
+}
+
