@@ -50,6 +50,22 @@ This is to normalize the spacing used around elements and maintain a consistent 
 .py1 { padding-top:    var(--space-1); padding-bottom: var(--space-1) }
 .px1 { padding-left:   var(--space-1); padding-right:  var(--space-1) }
 
+.p2  { padding:        var(--space-2) }
+.pt2 { padding-top:    var(--space-2) }
+.pr2 { padding-right:  var(--space-2) }
+.pb2 { padding-bottom: var(--space-2) }
+.pl2 { padding-left:   var(--space-2) }
+.py2 { padding-top:    var(--space-2); padding-bottom: var(--space-2) }
+.px2 { padding-left:   var(--space-2); padding-right:  var(--space-2) }
+
+.p3  { padding:        var(--space-3) }
+.pt3 { padding-top:    var(--space-3) }
+.pr3 { padding-right:  var(--space-3) }
+.pb3 { padding-bottom: var(--space-3) }
+.pl3 { padding-left:   var(--space-3) }
+.py3 { padding-top:    var(--space-3); padding-bottom: var(--space-3) }
+.px3 { padding-left:   var(--space-3); padding-right:  var(--space-3) }
+
 .p4  { padding:        var(--space-4) }
 .pt4 { padding-top:    var(--space-4) }
 .pr4 { padding-right:  var(--space-4) }
