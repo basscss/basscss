@@ -48,6 +48,26 @@ describe('layout', () => {
     expect(div.computedStyle.maxWidth).to.match(/100\%|768px/)
   })
 
+  it('should set max-width 24rem', () => {
+    div.className = 'max-width-1'
+    expect(div.computedStyle.maxWidth).to.equal('384px')
+  })
+
+  it('should set max-width 32rem', () => {
+    div.className = 'max-width-2'
+    expect(div.computedStyle.maxWidth).to.equal('512px')
+  })
+
+  it('should set max-width 48rem', () => {
+    div.className = 'max-width-3'
+    expect(div.computedStyle.maxWidth).to.equal('768px')
+  })
+
+  it('should set max-width 64rem', () => {
+    div.className = 'max-width-4'
+    expect(div.computedStyle.maxWidth).to.equal('1024px')
+  })
+
   it('should set overflow hidden', () => {
     div.className = 'overflow-hidden'
     expect(div.computedStyle.overflow).to.equal('hidden')

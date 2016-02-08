@@ -10,16 +10,9 @@ describe('grid', () => {
   const row = addElement('div', container)
   const col = addElement('div', row)
 
-  container.className = 'container'
   row.className = 'clearfix'
 
   wrapper.style.width = width + 'px'
-
-  describe('container', () => {
-    it('should set max-width', () => {
-      expect(container.computedStyle.maxWidth).to.equal('1024px')
-    })
-  })
 
   describe('col', () => {
     it('should float left', () => {
