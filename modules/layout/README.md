@@ -35,6 +35,21 @@ Use `.clearfix`, `.left`, and `.right` to clear and set floats.
 
 Use `.fit` to set max-width 100%.
 
+```html
+<div class="col-3">
+  <img class="fit" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder.svg" />
+</div>
+```
+
+Use max-width utilities to control the width of containers.
+
+```html
+<p class="max-width-1">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+<p class="max-width-2">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+<p class="max-width-3">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+<p class="max-width-4">Bacon ipsum dolor sit amet chuck prosciutto landjaeger ham hock filet mignon shoulder hamburger pig venison.</p>
+```
+
 ## Box-Sizing Border-Box
 
 Use `.border-box` to set box-sizing border-box per element.
