@@ -12,3 +12,9 @@ The `.h1` – `.h6` font-size utilities can be used to override an element’s d
 <p class="h6">Pastrami 6</p>
 ```
 
+These are especially useful for altering the visual appearance of semantically correct headings.
+
+```html
+<h2 class="h1">Larger than default h2 style, but semantically correct</h2>
+```
+
