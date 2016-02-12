@@ -7,7 +7,7 @@ Any and all contributions are welcome, but remember to be nice :sunglasses:
 
 ## Design Principles
 
-If you’re new to Basscss, be sure to read the [Design Principles](http://www.basscss.com/docs/reference/principles/).
+If you’re new to Basscss, be sure to read the [Design Principles](http://www.basscss.com/v7/docs/reference/principles/).
 Basscss is just as much about what’s not included, as it is about what it has.
 
 ## Modules
