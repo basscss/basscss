@@ -5,18 +5,12 @@
 npm install basscss
 ```
 
-## Alternative Installation
-
 ### CDN
 
-*Or* use a link from [npmcdn.com](https://npmcdn.com/basscss/css/basscss.min.css).
+For a simple, zero-configuration option, use a link from [npmcdn.com](https://npmcdn.com/basscss/css/basscss.min.css).
 
-### Bower
-
-Although it’s not listed in the Bower registry, any GitHub repo can be installed with bower.
-
-```
-bower install basscss/basscss
+```html
+<link href="https://npmcdn.com/basscss@8.0.0/css/basscss.min.css" rel="stylesheet">
 ```
 
 ## Usage with PostCSS
