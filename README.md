@@ -5,8 +5,6 @@ Low-level CSS toolkit <http://basscss.com>
 [![Build Status](https://travis-ci.org/basscss/basscss.svg)](https://travis-ci.org/basscss/basscss)
 [![npm version](https://badge.fury.io/js/basscss.svg)](https://badge.fury.io/js/basscss)
 
-Documentation: <http://basscss.com/docs>
-
 ## Lightning-Fast Modular CSS with No Side Effects
 
 Basscss is a lightweight collection of base element styles and immutable utilities designed for speed, clarity, performance, and scalability.
