@@ -6,7 +6,8 @@
   "scripts": {
     "build": "postcss -c postcss.config.js",
     "minify": "postcss -u cssnano css/basscss.css -o css/basscss.min.css",
-    "prepublish": "mkdir -p css && npm run build && npm run minify",
+    "important": "postcss -u postcss-importantly css/basscss.css -o css/basscss-important.css",
+    "prepublish": "mkdir -p css && npm run build && npm run important && npm run minify",
     "start": "postcss -c postcss.config.js -w",
     "karma": "karma start",
     "karma:watch": "karma start --no-single-run",
@@ -55,6 +56,7 @@
     "postcss-custom-properties": "^5.0.0",
     "postcss-discard-comments": "^1.1.1",
     "postcss-import": "^7.1.3",
+    "postcss-importantly": "0.0.7",
     "postcss-loader": "^0.8.0",
     "postcss-remove-root": "0.0.2",
     "postcss-reporter": "^1.3.0",
