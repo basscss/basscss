@@ -15,3 +15,17 @@ Basscss is composed of 11 core modules, each available in standalone format on n
 - [border](border/README.md)
 - [hide](hide/README.md)
 
+## Example npm installation
+
+```
+npm i -D basscss-type-scale
+```
+
+## CDN Links
+
+Using https://npmcdn.com, each module is available in compiled format.
+
+```
+<link href="https://npmcdn.com/basscss-type-scale@1.0.5/css/type-scale.css" rel="stylesheet">
+```
+
