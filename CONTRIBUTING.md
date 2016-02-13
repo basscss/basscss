@@ -7,12 +7,12 @@ Any and all contributions are welcome, but remember to be nice :sunglasses:
 
 ## Design Principles
 
-If you’re new to Basscss, be sure to read the [Design Principles](http://www.basscss.com/v7/docs/reference/principles/).
+If you’re new to Basscss, be sure to read the [Design Principles](docs/DesignPrinciples.md).
 Basscss is just as much about what’s not included, as it is about what it has.
 
 ## Modules
 
-The majority of Basscss’s source code and documentation lives in individual modules and separate repositories.
+The majority of Basscss’s source code and documentation lives in individual modules. Core modules are within this repository, but optional modules each have their own.
 Please try to open issues and pull requests in their relevant repository.
 
 ## Issues
@@ -30,10 +30,6 @@ If you’d like to propose a change, please look through and reference any exist
 Then, open an issue with the *Enhancement* label, links to related issues, and code demonstrating the proposal.
 
 ## Technical considerations
-
-The core basscss/basscss repo only contains one source file [`src/basscss.css`](src/basscss.css).
-The bulk of the source CSS and documentation exists in separate repos under the [basscss organization](https://github.com/basscss).
-Please **do not** edit the files in the `css` folder.
 
 Most repos build scripts are handled with npm run scripts. Type `npm run` in any repo to see the available commands.
 

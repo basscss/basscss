@@ -3,6 +3,7 @@
 Low-level CSS toolkit <http://basscss.com>
 
 [![Build Status](https://travis-ci.org/basscss/basscss.svg)](https://travis-ci.org/basscss/basscss)
+[![npm version](https://badge.fury.io/js/basscss.svg)](https://badge.fury.io/js/basscss)
 
 ## Lightning-Fast Modular CSS with No Side Effects
 
@@ -57,5 +58,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
-[MIT license](http://opensource.org/licenses/MIT)
+[MIT license](LICENSE.md)
 

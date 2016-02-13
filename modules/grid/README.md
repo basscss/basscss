@@ -1,13 +1,19 @@
 
-This module contains responsive float and width utilities, along with a container style, to create a variety of grid layouts.
+This module contains responsive float and width utilities to create a variety of grid layouts.
 Use this module in combination with layout, white space, and other utilities.
 
 Start by using a `.clearfix` container.
-Optionally use a `.container` to set a max-width.
-To adjust the max-width, set a new value with the `--container-width` custom property.
 
 ```html
-<div class="container">
+<div class="clearfix">
+</div>
+```
+
+To optionally set a max-width, use a utility from the basscss-layout module.
+The `.mx-auto` utility sets margin left and right auto to center the container.
+
+```html
+<div class="max-width-4 mx-auto">
   <div class="clearfix">
   </div>
 </div>

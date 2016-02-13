@@ -7,7 +7,6 @@ var postcssImport = require('postcss-import')
 var postcssCustomMedia = require('postcss-custom-media')
 var postcssCustomProperties = require('postcss-custom-properties')
 var postcssCalc = require('postcss-calc')
-var postcssColorFunction = require('postcss-color-function')
 var cssstats = require('cssstats')
 var mixed = require('css-mixed-properties')
 
@@ -24,8 +23,7 @@ describe('basscss', function() {
         postcssImport,
         postcssCustomMedia,
         postcssCustomProperties,
-        postcssCalc,
-        postcssColorFunction,
+        postcssCalc
       ])
       .process(src)
       .then(function (result) {
