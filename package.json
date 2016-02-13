@@ -56,6 +56,7 @@
     "postcss-discard-comments": "^1.1.1",
     "postcss-import": "^7.1.3",
     "postcss-loader": "^0.8.0",
+    "postcss-remove-root": "0.0.2",
     "postcss-reporter": "^1.3.0",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.12"
