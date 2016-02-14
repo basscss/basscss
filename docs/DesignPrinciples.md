@@ -13,7 +13,7 @@ Avoid styles that require overrides elsewhere or are highly specific to context.
 ## Design with Reuse in Mind
 
 Abstract styles to their most essential form first.
-Content-agnostic, modular styles allow for design flexiblity and have a longer lifespan.
+Content-agnostic, modular styles allow for design flexibility and have a longer lifespan.
 Highly reusable styles can be widely adopted.
 Always keep structural and thematic considerations separate, and
 consider layout, interactions, states, and other properties in the most generalized way.
