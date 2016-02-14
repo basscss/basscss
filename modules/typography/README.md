@@ -13,7 +13,7 @@ Change typographic weights, styles, and alignment with these utility styles.
 <p class="nowrap">No wrap</p>
 <p class="underline">Underline</p>
 <p class="truncate">Truncate</p>
-<p class="font-familiy-inherit">Font Family Inherit</p>
+<p class="font-family-inherit">Font Family Inherit</p>
 <p class="font-size-inherit">Font Size Inherit</p>
 <a class="text-decoration-none">Text Decoration None</a>
 ```
