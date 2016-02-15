@@ -96,23 +96,23 @@ To align flexbox items on an item-by-item basis, use the `align-self` utilities.
 
 ```html
 <div class="flex items-center border">
-  <h1 class="align-self-start border">Hamburger</h1>
+  <h1 class="self-start border">Hamburger</h1>
   <div class="border">Hot Dog</div>
 </div>
 <div class="flex items-center border">
-  <h1 class="align-self-end border">Hamburger</h1>
+  <h1 class="self-end border">Hamburger</h1>
   <div class="border">Hot Dog</div>
 </div>
 <div class="flex items-start border">
-  <h1 class="align-self-center border">Hamburger</h1>
+  <h1 class="self-center border">Hamburger</h1>
   <div class="border">Hot Dog</div>
 </div>
 <div class="flex items-center border">
-  <h1 class="align-self-baseline border">Hamburger</h1>
+  <h1 class="self-baseline border">Hamburger</h1>
   <div class="border">Hot Dog</div>
 </div>
 <div class="flex items-center border">
-  <h1 class="align-self-stretch border">Hamburger</h1>
+  <h1 class="self-stretch border">Hamburger</h1>
   <div class="border">Hot Dog</div>
 </div>
 ```

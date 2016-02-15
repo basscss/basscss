@@ -1,6 +1,6 @@
 {
   "name": "basscss-flexbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Flexbox utilities",
   "scripts": {
     "prepublish": "mkdir -p css && postcss index.css -u postcss-import -u postcss-custom-media -u postcss-custom-properties -u autoprefixer -o css/flexbox.css"
