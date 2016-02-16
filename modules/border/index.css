@@ -5,6 +5,8 @@
   border-width: var(--border-width);
 }
 
+.border-none { border: 0 }
+
 .border-top {
   border-top-style: solid;
   border-top-width: var(--border-width);
@@ -24,8 +26,6 @@
   border-left-style: solid;
   border-left-width: var(--border-width);
 }
-
-.border-none { border: 0 }
 
 .rounded { border-radius: var(--border-radius) }
 .circle  { border-radius: 50% }
