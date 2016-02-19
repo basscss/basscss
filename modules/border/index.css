@@ -30,12 +30,12 @@
 .rounded { border-radius: var(--border-radius) }
 .circle  { border-radius: 50% }
 
+.not-rounded { border-radius: 0 }
+
 .rounded-top    { border-radius: var(--border-radius) var(--border-radius) 0 0 }
 .rounded-right  { border-radius: 0 var(--border-radius) var(--border-radius) 0 }
 .rounded-bottom { border-radius: 0 0 var(--border-radius) var(--border-radius) }
 .rounded-left   { border-radius: var(--border-radius) 0 0 var(--border-radius) }
-
-.not-rounded { border-radius: 0 }
 
 :root {
   --border-width: 1px;
