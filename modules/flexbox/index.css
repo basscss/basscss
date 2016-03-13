@@ -1,5 +1,8 @@
-
-.flex { display: flex }
+/* 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893 */
+.flex {
+  display: flex;
+  overflow: auto; /* 1 */
+}
 
 @media (--breakpoint-sm) {
   .sm-flex { display: flex }
@@ -41,12 +44,7 @@
 .content-around  { align-content: space-around }
 .content-stretch { align-content: stretch }
 
-/* 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893 */
-.flex-auto {
-  flex: 1 1 auto;
-  min-width: 0; /* 1 */
-  min-height: 0; /* 1 */
-}
+.flex-auto { flex: 1 1 auto }
 .flex-none { flex: none }
 
 .order-0 { order: 0 }
@@ -58,4 +56,3 @@
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);
-
