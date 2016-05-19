@@ -263,7 +263,7 @@ here are some tips and recommendations to keep your code simple and maintainable
 - Avoid using mixins and extends in sass &#x2013; it’s often easier and more readable (especially for others) to write styles out by hand.
 
 To learn more about building on top of Basscss, I recommend reading the
-[Design Principles](/docs/reference/principles).
+[Design Principles](/docs/DesignPrinciples.md).
 
 
 
