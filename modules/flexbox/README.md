@@ -117,7 +117,7 @@ To align flexbox items on an item-by-item basis, use the `align-self` utilities.
 </div>
 ```
 
-To control the spacing for items on the main axis, use the `justify-content` utilities. These styles use a shorhand naming convention. `justify` for the `justify-content` property and `around` and `between` for the `space-around` and `space-between` values.
+To control the spacing for items on the main axis, use the `justify-content` utilities. These styles use a shorthand naming convention. `justify` for the `justify-content` property and `around` and `between` for the `space-around` and `space-between` values.
 
 ```html
 <div class="flex justify-start border">
