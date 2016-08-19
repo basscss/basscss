@@ -2,6 +2,7 @@
   "name": "basscss",
   "version": "8.0.2",
   "description": "Low-level CSS toolkit",
+  "main": "css/basscss.css",
   "style": "src/basscss.css",
   "scripts": {
     "build": "postcss -c postcss.config.js",
