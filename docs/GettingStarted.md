@@ -7,10 +7,10 @@ npm install basscss
 
 ### CDN
 
-For a simple, zero-configuration option, use a link from [npmcdn.com](https://npmcdn.com/basscss/css/basscss.min.css).
+For a simple, zero-configuration option, use a link from [unpkg.com](https://unpkg.com/basscss/css/basscss.min.css).
 
 ```html
-<link href="https://npmcdn.com/basscss@8.0.0/css/basscss.min.css" rel="stylesheet">
+<link href="https://unpkg.com/basscss@8.0.0/css/basscss.min.css" rel="stylesheet">
 ```
 
 ## Usage with PostCSS

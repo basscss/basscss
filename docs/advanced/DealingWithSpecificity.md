@@ -24,6 +24,6 @@ import basscssImportant from 'basscss/css/basscss-important.css'
 ## CDN
 
 ```html
-<link href="https://npmcdn.com/basscss@8.0.0/css/basscss-important.css" rel="stylesheet">
+<link href="https://unpkg.com/basscss@8.0.0/css/basscss-important.css" rel="stylesheet">
 ```
 

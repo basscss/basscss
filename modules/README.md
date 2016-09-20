@@ -23,9 +23,9 @@ npm i -D basscss-type-scale
 
 ## CDN Links
 
-Using https://npmcdn.com, each module is available in compiled format.
+Using https://unpkg.com, each module is available in compiled format.
 
 ```
-<link href="https://npmcdn.com/basscss-type-scale@1.0.5/css/type-scale.css" rel="stylesheet">
+<link href="https://unpkg.com/basscss-type-scale@1.0.5/css/type-scale.css" rel="stylesheet">
 ```
 
