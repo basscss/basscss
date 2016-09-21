@@ -51,6 +51,28 @@ what things should look like and play well with other stylesheets and frameworks
 
 ---
 
+## Base styles
+
+The core Basscss package does not include any base element styles.
+For an out-of-the-box solution, see:
+
+https://github.com/basscss/basic
+
+## Addons
+
+In addition to the core modules, optional modules,
+including responsive margin, padding, layout, and typography styles, can be found here:
+
+https://github.com/basscss/addons
+
+## Ace.css
+
+For a bundle with the core Basscss and all optional modules, see:
+
+https://github.com/basscss/ace
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
