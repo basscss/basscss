@@ -80,4 +80,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 ---
 
 [MIT license](LICENSE.md)
-
