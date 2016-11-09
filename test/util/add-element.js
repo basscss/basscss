@@ -1,11 +1,7 @@
 
-const addElement = (el, parent) => {
+export default const addElement = (el, parent = document.body) => {
   const $el = document.createElement(el)
-  parent = parent || document.body
   parent.appendChild($el)
   $el.computedStyle = window.getComputedStyle($el)
   return $el
 }
-
-export default addElement
-
