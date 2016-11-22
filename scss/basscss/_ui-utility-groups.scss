@@ -1,0 +1,21 @@
+
+// Converted Variables
+
+$border-width: 1px !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss UI Utility Groups */
+
+.x-group-item { margin-left: -$border-width }
+.x-group-item:first-of-type { margin-left: 0 }
+
+.y-group-item { margin-top: -$border-width }
+.y-group-item:first-of-type { margin-top: 0 }
+
+.x-group-item:focus,
+.y-group-item:focus {
+  position: relative;
+  z-index: 1;
+}

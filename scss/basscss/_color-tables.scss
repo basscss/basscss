@@ -1,0 +1,22 @@
+
+// Converted Variables
+
+$light-gray: #ccc !default;
+$border-color: $light-gray !default;
+$border-width: 1px !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Color Tables */
+
+.table-light th,
+.table-light td {
+  border-bottom-style: solid;
+  border-bottom-width: $border-width;
+  border-bottom-color: $border-color;
+}
+
+.table-light tr:last-child td {
+  border-bottom: 0;
+}

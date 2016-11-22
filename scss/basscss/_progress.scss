@@ -1,0 +1,39 @@
+
+// Converted Variables
+
+$form-field-height: $form-field-height /* Fallback value:  2.25rem */ !default;
+$form-field-padding-y: $form-field-padding-y /* Fallback value:  .5rem */ !default;
+$form-field-padding-x: $form-field-padding-x /* Fallback value:  .5rem */ !default;
+$darken-2: rgba(0,0,0, .125) !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Progress */
+
+.progress {
+  display: block;
+  width: 100%;
+  height: ( $form-field-height / 4 );
+  margin: $form-field-padding-y 0;
+  background-color: $darken-2;
+  border: 0;
+  border-radius: 10000px;
+  overflow: hidden;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.progress::-webkit-progress-bar {
+  -webkit-appearance: none;
+  background-color: $darken-2
+}
+
+.progress::-webkit-progress-value {
+  -webkit-appearance: none;
+  background-color: currentColor;
+}
+
+.progress::-moz-progress-bar {
+  background-color: currentColor;
+}

@@ -1,0 +1,23 @@
+
+// Converted Variables
+
+$darken-2: rgba(#000,.125) !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Button Nav Dark */
+
+.button-nav-dark {
+  color: white;
+  background-color: transparent;
+}
+
+.button-nav-dark:hover {
+  background-color: $darken-2;
+}
+
+.button-nav-dark:active,
+.button-nav-dark.is-active {
+  background-color: $darken-2;
+}

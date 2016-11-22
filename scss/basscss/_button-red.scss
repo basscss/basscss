@@ -1,0 +1,41 @@
+
+// Converted Variables
+
+$red: #f95020 !default;
+$border-radius: 3px !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Button Red */
+
+.button-red {
+  color: white;
+  background-color: $red;
+  border-radius: $border-radius;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
+}
+  
+.button-red:hover {
+  opacity: .875;
+}
+
+.button-red:active,
+.button-red.is-active {
+  box-shadow: inset 0 0 0 32px rgba(#000,.125), inset 0 2px 3px 0 rgba(#000,.25);
+}
+
+.button-red:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(white, .5), 0 0 1px 4px rgba($red, .5);
+}
+
+.button-red:disabled,
+.button-red.is-disabled {
+  opacity: .5;
+}

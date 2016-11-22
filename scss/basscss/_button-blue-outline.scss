@@ -1,0 +1,46 @@
+
+// Converted Variables
+
+$blue: #0076df !default;
+$border-radius: 3px !default;
+$border-width: 1px !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Button Blue Outline */
+
+.button-blue-outline {
+  color: $blue;
+  background-color: transparent;
+  border-radius: $border-radius;
+  border: $border-width solid $blue;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
+}
+  
+.button-blue-outline:hover,
+.button-blue-outline.is-active {
+  color: white;
+  background-color: $blue;
+}
+
+.button-blue-outline:active {
+  box-shadow: inset 0 3px 3px 0 rgba(#000,.25);
+}
+
+.button-blue-outline:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(white, .5), 0 0 1px 4px rgba($blue, .5);
+}
+
+.button-blue-outline:disabled,
+.button-blue-outline.is-disabled {
+  color: $blue;
+  background-color: transparent;
+  opacity: .5;
+}

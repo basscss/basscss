@@ -1,0 +1,42 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/* Basscss Button Link */
+
+.button-link {
+  padding-right: 0;
+  padding-left: 0;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow;
+          transition-property: box-shadow;
+}
+
+.button-link:hover {
+  box-shadow: inset 0 -.125em;
+}
+
+.button-link:active,
+.button-link.is-active {
+  box-shadow: inset 0 -.125em;
+}
+
+.button-link:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 3px, inset 0 -.125em;
+}
+
+.button-link:disabled,
+.button-link.is-disabled {
+  opacity: .5;
+}

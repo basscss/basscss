@@ -1,0 +1,37 @@
+
+// Converted Variables
+
+$bold-font-weight: bold !default;
+$space-1: .5rem !default;
+$space-2: 1rem !default;
+$space-3: 2rem !default;
+$space-4: 4rem !default;
+$table-header-font-weight: $bold-font-weight !default;
+$table-cell-padding-x: $space-2 !default;
+$table-cell-padding-y: .25rem !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Base Tables */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: $table-header-font-weight;
+}
+
+th,
+td {
+  padding: $table-cell-padding-y $table-cell-padding-x;
+  line-height: inherit;
+}
+
+th { vertical-align: bottom }
+td { vertical-align: top }

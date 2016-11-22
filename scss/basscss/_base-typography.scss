@@ -1,0 +1,90 @@
+
+// Converted Variables
+
+$font-family: 'Helvetica Neue', Helvetica, sans-serif !default;
+$line-height: 1.5 !default;
+$heading-font-family: $font-family !default;
+$heading-font-weight: bold !default;
+$heading-line-height: 1.25 !default;
+$monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
+$h1: 2rem !default;
+$h2: 1.5rem !default;
+$h3: 1.25rem !default;
+$h4: 1rem !default;
+$h5: .875rem !default;
+$h6: .75rem !default;
+$bold-font-weight: bold !default;
+$space-1: .5rem !default;
+$space-2: 1rem !default;
+$space-3: 2rem !default;
+$space-4: 4rem !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss Base Typography */
+
+body {
+  font-family: $font-family;
+  line-height: $line-height;
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+p, dl, ol, ul {
+  font-size: $h4;
+  margin-top: 0;
+  margin-bottom: $space-2;
+}
+
+ol, ul {
+  padding-left: $space-3;
+}
+
+pre, code, samp {
+  font-family: $monospace-font-family;
+  font-size: inherit;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: $space-2;
+  overflow-x: scroll;
+}
+
+hr {
+  margin-top: $space-3;
+  margin-bottom: $space-3;
+}
+
+blockquote {
+  margin-top: $space-3;
+  margin-bottom: $space-3;
+  margin-left: 0;
+  padding-left: $space-2;
+  padding-right: $space-2;
+}
+  blockquote,
+  blockquote p {
+    font-size: $h3;
+    font-style: italic;
+  }
+
+h1, .h1 { font-size: $h1 }
+h2, .h2 { font-size: $h2 }
+h3, .h3 { font-size: $h3 }
+h4, .h4 { font-size: $h4 }
+h5, .h5 { font-size: $h5 }
+h6, .h6 { font-size: $h6 }
+
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+}

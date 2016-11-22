@@ -1,0 +1,26 @@
+
+// Converted Variables
+
+$space-1: .5rem !default;
+$button-small-padding-y: .25rem !default;
+$button-small-padding-x: .5rem !default;
+$button-big-padding-y: 1rem !default;
+$button-big-padding-x: 1.25rem !default;
+
+// Custom Media Query Variables
+
+
+/* Basscss UI Utility Button Sizes */
+
+.button-small {
+  padding: $button-small-padding-y $button-small-padding-x;
+}
+
+.button-big {
+  padding: $button-big-padding-y $button-big-padding-x;
+}
+
+.button-narrow {
+  padding-left: $space-1;
+  padding-right: $space-1;
+}
