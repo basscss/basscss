@@ -14,7 +14,10 @@ module.exports = {
     'postcss-reporter'
   ],
   input: 'src/basscss.css',
-  dir: 'css'
+  dir: 'css',
+  'postcss-custom-properties': {
+    preserve: true
+  }
 }
 
 
