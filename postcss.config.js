@@ -1,8 +1,5 @@
-
-var postcss = require('postcss')
-
 module.exports = {
-  use: [
+  plugins: [
     'postcss-import',
     'postcss-custom-media',
     'postcss-custom-properties',
@@ -12,9 +9,5 @@ module.exports = {
     'postcss-remove-root',
     'autoprefixer',
     'postcss-reporter'
-  ],
-  input: 'src/basscss.css',
-  dir: 'css'
+  ].map(require)
 }
-
-
