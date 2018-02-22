@@ -33,6 +33,7 @@
 .justify-center  { justify-content: center }
 .justify-between { justify-content: space-between }
 .justify-around  { justify-content: space-around }
+.justify-evenly  { justify-content: space-evenly }
 
 .content-start   { align-content: flex-start }
 .content-end     { align-content: flex-end }
