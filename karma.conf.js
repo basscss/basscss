@@ -33,28 +33,30 @@ module.exports = function (config) {
 
     webpack: {
       module: {
-        loaders: [
+        rules: [
           {
             test: /\.jsx?$/,
             exclude: /node_modules/,
-            loader: 'babel-loader'
+            use: 'babel-loader'
           },
           {
             test: /\.css$/,
-            loader: 'style-loader!css-loader!postcss-loader'
+            use: [
+              'style-loader',
+              { loader: 'css-loader', options: { importLoaders: 1 } },
+              {
+                loader: 'postcss-loader',
+                options: {
+                  plugins: loader => [
+                    postcssImport(),
+                    postcssCustomMedia(),
+                    postcssCustomProperties(),
+                    postcssCalc()
+                  ]
+                }
+              }
+            ]
           },
-          {
-            test: /\.json$/,
-            loader: 'json-loader'
-          }
-        ]
-      },
-      postcss: function () {
-        return [
-          postcssImport,
-          postcssCustomMedia,
-          postcssCustomProperties,
-          postcssCalc
         ]
       }
     },
