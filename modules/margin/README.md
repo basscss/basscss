@@ -131,12 +131,22 @@ Block elements with a set width can be centered with `.mx-auto`.
 
 ## Space Flexbox Items
 
-The `.ml-auto` and `.mr-auto` utilities can be used to add spacing around flexbox items.
+The `.ml-auto`, `.mr-auto`, `.mt-auto`, and `.mb-auto`  utilities can be used to add spacing around flexbox items.
 
 ```html
 <div class="flex">
   <div class="ml-auto">Hamburger</div>
   <div>Hot Dog</div>
+</div>
+
+<div class="flex">
+  <div>Hamburger</div>
+  <div class="mr-auto">Hot Dog</div>
+</div>
+
+<div class="flex">
+  <div class="mt-auto">Hamburger</div>
+  <div class="mb-auto">Hot Dog</div>
 </div>
 ```
 
@@ -144,4 +154,3 @@ The `.ml-auto` and `.mr-auto` utilities can be used to add spacing around flexbo
 This is meant to help create consistency and avoid magic numbers.
 If, for some reason, the default white space scale does not suit your design,
 customize and extend it before using it.
-

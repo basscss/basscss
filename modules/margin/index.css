@@ -45,9 +45,13 @@
 .mxn3 { margin-left: -var(--space-3); margin-right: -var(--space-3); }
 .mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }
 
-.ml-auto { margin-left: auto }
+.m-auto  { margin: auto; }
+.mt-auto { margin-top: auto }
 .mr-auto { margin-right: auto }
+.mb-auto { margin-bottom: auto }
+.ml-auto { margin-left: auto }
 .mx-auto { margin-left: auto; margin-right: auto; }
+.my-auto { margin-top: auto; margin-bottom: auto; }
 
 :root {
   --space-1: .5rem;
@@ -55,4 +59,3 @@
   --space-3: 2rem;
   --space-4: 4rem;
 }
-

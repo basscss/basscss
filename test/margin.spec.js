@@ -203,9 +203,13 @@ describe('margin', () => {
   })
 
   describe('auto', () => {
+    it('should set margin-top, margin-right, margin-bottom, and margin-left auto')
     it('should set margin-left auto')
     it('should set margin-right auto')
     it('should set margin-left and margin-right auto')
+    it('should set margin-top auto')
+    it('should set margin-bottom auto')
+    it('should set margin-top and margin-bottom auto')
   })
 
 })
