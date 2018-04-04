@@ -202,6 +202,29 @@ describe('margin', () => {
     })
   })
 
+  describe('negative', () => {
+    it('should set margin-left and margin-right to -8px', () => {
+      div.className = 'mxn1'
+      expect(div.computedStyle.marginLeft).to.equal('-8px')
+      expect(div.computedStyle.marginRight).to.equal('-8px')
+    })
+    it('should set margin-left and margin-right to -16px', () => {
+      div.className = 'mxn2'
+      expect(div.computedStyle.marginLeft).to.equal('-16px')
+      expect(div.computedStyle.marginRight).to.equal('-16px')
+    })
+    it('should set margin-left and margin-right to -32px', () => {
+      div.className = 'mxn3'
+      expect(div.computedStyle.marginLeft).to.equal('-32px')
+      expect(div.computedStyle.marginRight).to.equal('-32px')
+    })
+    it('should set margin-left and margin-right to -64px', () => {
+      div.className = 'mxn4'
+      expect(div.computedStyle.marginLeft).to.equal('-64px')
+      expect(div.computedStyle.marginRight).to.equal('-64px')
+    })
+  })
+
   describe('auto', () => {
     it('should set margin-top, margin-right, margin-bottom, and margin-left auto')
     it('should set margin-left auto')
