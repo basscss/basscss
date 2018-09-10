@@ -10,11 +10,6 @@ Any and all contributions are welcome, but remember to be nice :sunglasses:
 If you’re new to Basscss, be sure to read the [Design Principles](docs/DesignPrinciples.md).
 Basscss is just as much about what’s not included, as it is about what it has.
 
-## Modules
-
-The majority of Basscss’s source code and documentation lives in individual modules. Core modules are within this repository, but optional modules each have their own.
-Please try to open issues and pull requests in their relevant repository.
-
 ## Issues
 
 Before opening a pull request, please inquire or make a case for any proposed changes via GitHub issues.
@@ -29,11 +24,6 @@ Before proposing changes, consider alternative ways to achieve the intent behind
 If you’d like to propose a change, please look through and reference any existing issues that are related.
 Then, open an issue with the *Enhancement* label, links to related issues, and code demonstrating the proposal.
 
-## Technical considerations
-
-Most repos build scripts are handled with npm run scripts. Type `npm run` in any repo to see the available commands.
-
-For any questions related to compiling or building, please open an issue.
 
 ## License
 
