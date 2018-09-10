@@ -25,10 +25,5 @@
   "bugs": {
     "url": "https://github.com/basscss/basscss/issues"
   },
-  "homepage": "https://github.com/basscss/basscss",
-  "jest": {
-    "testMatch": [
-      "**/test/**/*.js"
-    ]
-  }
+  "homepage": "https://github.com/basscss/basscss"
 }
