@@ -1,5 +1,7 @@
 /* Basscss Type Scale */
 
+.h00 { font-size: var(--h00) }
+.h0 { font-size: var(--h0) }
 .h1 { font-size: var(--h1) }
 .h2 { font-size: var(--h2) }
 .h3 { font-size: var(--h3) }
@@ -8,6 +10,8 @@
 .h6 { font-size: var(--h6) }
 
 :root {
+  --h00: 4rem;
+  --h0: 3rem;
   --h1: 2rem;
   --h2: 1.5rem;
   --h3: 1.25rem;
