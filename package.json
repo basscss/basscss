@@ -5,7 +5,7 @@
   "style": "basscss.css",
   "main": "basscss.css",
   "scripts": {
-    "test": "echo 'todo'"
+    "test": "echo 'hi'"
   },
   "devDependencies": {},
   "author": "Brent Jackson",
@@ -25,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/basscss/basscss/issues"
   },
-  "homepage": "https://github.com/basscss/basscss"
+  "homepage": "https://github.com/basscss/basscss",
+  "jest": {
+    "testMatch": [
+      "**/test/**/*.js"
+    ]
+  }
 }
