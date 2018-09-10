@@ -3,6 +3,7 @@
   "version": "8.0.7",
   "description": "Low-level CSS toolkit",
   "style": "src/basscss.css",
+  "main": "src/basscss.css",
   "scripts": {
     "build": "postcss src/basscss.css -d css --config postcss.config.js",
     "minify": "postcss css/basscss.css -u cssnano -o css/basscss.min.css",
