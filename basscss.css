@@ -15,22 +15,6 @@
  * Hide
  */
 
-
-/*
-@custom-media --breakpoint-xs (max-width: 40em);
-@custom-media --breakpoint-sm-md (min-width: 40em) and (max-width: 52em);
-@custom-media --breakpoint-md-lg (min-width: 52em) and (max-width: 64em);
-@custom-media --breakpoint-lg (min-width: 64em);
-
-@custom-media --breakpoint-sm (min-width: 40em);
-@custom-media --breakpoint-md (min-width: 52em);
-@custom-media --breakpoint-lg (min-width: 64em);
-
-@custom-media --breakpoint-sm (min-width: 40em);
-@custom-media --breakpoint-md (min-width: 52em);
-@custom-media --breakpoint-lg (min-width: 64em);
-*/
-
 /* Custom Properties */
 
 :root {
@@ -319,7 +303,7 @@
 }
 
 
-@media (--breakpoint-sm) {
+@media (min-width:40em) {
   .sm-col {
     float: left;
     box-sizing: border-box;
@@ -380,7 +364,7 @@
 }
 
 
-@media (--breakpoint-md) {
+@media (min-width:52em) {
   .md-col {
     float: left;
     box-sizing: border-box;
@@ -441,7 +425,7 @@
 }
 
 
-@media (--breakpoint-lg) {
+@media (min-width:64em) {
   .lg-col {
     float: left;
     box-sizing: border-box;
@@ -504,15 +488,15 @@
 
 .flex { display: flex }
 
-@media (--breakpoint-sm) {
+@media (min-width:40em) {
   .sm-flex { display: flex }
 }
 
-@media (--breakpoint-md) {
+@media (min-width:52em) {
   .md-flex { display: flex }
 }
 
-@media (--breakpoint-lg) {
+@media (min-width:64em) {
   .lg-flex { display: flex }
 }
 
@@ -627,19 +611,19 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-@media (--breakpoint-xs) {
+@media (max-width:40em) {
   .xs-hide { display: none !important }
 }
 
-@media (--breakpoint-sm-md) {
+@media (min-width:40em) and (max-width:52em) {
   .sm-hide { display: none !important }
 }
 
-@media (--breakpoint-md-lg) {
+@media (min-width:52em) and (max-width:64em) {
   .md-hide { display: none !important }
 }
 
-@media (--breakpoint-lg) {
+@media (min-width:64em) {
   .lg-hide { display: none !important }
 }
 
