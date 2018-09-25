@@ -1,17 +1,37 @@
 
-# Docs
 
-The core documentation for Basscss is contained within each module’s README.md. A web version is hosted at <http://basscss.com>.
+# Getting Started
 
-For the source code for each module, see the [`/modules`](/modules) folder.
+Basscss is published to npm, allowing you to consume it with Node.js based tools.
 
-- [Getting Started](GettingStarted.md)
-- [Modules](/modules/README.md)
+```sh
+npm i basscss
+```
+
+## CDN
+
+To use Basscss in any webpage, use the link from
+[unpkg.com](https://unpkg.com/basscss/basscss.css).
+
+```html
+<link href="https://unpkg.com/basscss/basscss.css" rel="stylesheet">
+```
+
+- [Type Scale](type-scale.md)
+- [Typography](typography.md)
+- [Layout](layout.md)
+- [Align](align.md)
+- [Margin](margin.md)
+- [Padding](padding.md)
+- [Position](position.md)
+- [Grid](grid.md)
+- [Flexbox](flexbox.md)
+- [Border](border.md)
+- [Hide](hide.md)
+
 - [Design Principles](DesignPrinciples.md)
 - [Guides](guides)
   - [Basics](guides/Basics.md)
   - [Page Layout](guides/PageLayout.md)
   - [UI Elements](guides/UIElements.md)
   - [Tips & Tricks](guides/TipsAndTricks.md)
-  - [Custom Builds](guides/CustomBuilds.md)
-  - [Future CSS Syntax](guides/FutureCSSSyntax.md)
