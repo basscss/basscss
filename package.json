@@ -7,7 +7,6 @@
   "scripts": {
     "test": "echo 'hi'"
   },
-  "devDependencies": {},
   "author": "Brent Jackson",
   "license": "MIT",
   "keywords": [
