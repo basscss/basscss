@@ -28,7 +28,6 @@ To use Basscss in any webpage, use the link from
 - [Flexbox](flexbox.md)
 - [Border](border.md)
 - [Hide](hide.md)
-
 - [Design Principles](DesignPrinciples.md)
 - [Guides](guides)
   - [Basics](guides/Basics.md)
