@@ -1,0 +1,53 @@
+#
+# Check https://docs.gitlab.com/ee/ci/yaml/README.html for more details
+#
+image: node:9.11.2
+
+stages:
+  - setup
+  - execute
+  - deploy
+
+# https://docs.gitlab.com/ee/ci/yaml/#anchors
+.cache_rw: &cache_rw
+  paths: &cache_paths
+    - node_modules/
+    - .yarn
+
+.cache_ro: &cache_readonly
+  <<: *cache_rw
+  policy: pull
+
+.yarn_install:
+  before_script: &yarn_install
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN_RO}' > .npmrc
+    - yarn config set cache-folder .yarn
+    - yarn install --frozen-lockfile
+
+prepare:
+  stage: setup
+  cache: *cache_rw
+  script: *yarn_install
+  # Only running this on master to refresh yarn cache
+  # branches will reuse this cache and refresh locally
+  only:
+    - master
+
+build:
+  stage: execute
+  extends: .yarn_install
+  cache: *cache_readonly
+  script:
+    - yarn build
+  only:
+    - branches
+
+publish:
+  stage: deploy
+  environment: production
+  extends: .yarn_install
+  script:
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > .npmrc
+    - yarn semantic-release
+  only:
+    - master

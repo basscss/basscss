@@ -12,11 +12,7 @@
     "custom-props": "postcss src/basscss.css -u postcss-import -u postcss-custom-media -o css/basscss-cp.css",
     "custom-props:min": "postcss src/basscss.css -u postcss-import -u postcss-custom-media -u cssnano -o css/basscss-cp.min.css",
     "prepare": "mkdir -p css && npm run build && npm run important && npm run custom-props && npm run minify && npm run important:min && npm run custom-props:min",
-    "start": "postcss src/basscss.css -d css --config postcss.config.js -w",
-    "karma": "karma start",
-    "karma:watch": "karma start --no-single-run",
-    "mocha": "mocha test/test",
-    "test": "npm run mocha && npm run karma"
+    "start": "postcss src/basscss.css -d css --config postcss.config.js -w"
   },
   "dependencies": {
     "basscss-align": "^1.0.2",
@@ -32,6 +28,7 @@
     "basscss-typography": "^3.0.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
     "autoprefixer": "^8.0.0",
     "babel": "^6.3.26",
     "babel-core": "^6.4.5",
@@ -43,15 +40,6 @@
     "cssnano": "^3.4.0",
     "cssstats": "^3.2.0",
     "json-loader": "^0.5.4",
-    "karma": "^2.0.0",
-    "karma-chai": "^0.1.0",
-    "karma-chai-plugins": "^0.9.0",
-    "karma-cli": "^1.0.1",
-    "karma-firefox-launcher": "^1.1.0",
-    "karma-mocha": "^1.3.0",
-    "karma-mocha-reporter": "^2.2.5",
-    "karma-webpack": "^2.0.9",
-    "mocha": "^5.0.1",
     "postcss": "^6.0.19",
     "postcss-calc": "^6.0.1",
     "postcss-cli": "^5.0.0",
@@ -64,6 +52,7 @@
     "postcss-loader": "^2.1.0",
     "postcss-remove-root": "0.0.2",
     "postcss-reporter": "^5.0.0",
+    "prettier": "^1.16.4",
     "style-loader": "^0.20.2",
     "webpack": "^3.11.0"
   },

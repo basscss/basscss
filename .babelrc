@@ -1,6 +1,13 @@
 {
   "presets": [
-    "es2015"
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "Explorer 11"]
+        },
+        "modules": false
+      }
+    ]
   ]
 }
-
