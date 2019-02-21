@@ -1,59 +1,59 @@
-@media (--breakpoint-md) {
-  .md-col {
+@media (--breakpoint-xl) {
+  .xl-col {
     float: left;
     box-sizing: border-box;
   }
 
-  .md-col-right {
+  .xl-col-right {
     float: right;
     box-sizing: border-box;
   }
 
-  .md-col-1 {
+  .xl-col-1 {
     width: calc(1 / 12 * 100%);
   }
 
-  .md-col-2 {
+  .xl-col-2 {
     width: calc(2 / 12 * 100%);
   }
 
-  .md-col-3 {
+  .xl-col-3 {
     width: calc(3 / 12 * 100%);
   }
 
-  .md-col-4 {
+  .xl-col-4 {
     width: calc(4 / 12 * 100%);
   }
 
-  .md-col-5 {
+  .xl-col-5 {
     width: calc(5 / 12 * 100%);
   }
 
-  .md-col-6 {
+  .xl-col-6 {
     width: calc(6 / 12 * 100%);
   }
 
-  .md-col-7 {
+  .xl-col-7 {
     width: calc(7 / 12 * 100%);
   }
 
-  .md-col-8 {
+  .xl-col-8 {
     width: calc(8 / 12 * 100%);
   }
 
-  .md-col-9 {
+  .xl-col-9 {
     width: calc(9 / 12 * 100%);
   }
 
-  .md-col-10 {
+  .xl-col-10 {
     width: calc(10 / 12 * 100%);
   }
 
-  .md-col-11 {
+  .xl-col-11 {
     width: calc(11 / 12 * 100%);
   }
 
-  .md-col-12 {
+  .xl-col-12 {
     width: 100%;
   }
 }

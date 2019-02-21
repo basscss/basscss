@@ -5,7 +5,8 @@
 @import "./lib/md-grid";
 @import "./lib/lg-grid";
 
-@custom-media --breakpoint-sm (min-width: 40em);
-@custom-media --breakpoint-md (min-width: 52em);
-@custom-media --breakpoint-lg (min-width: 64em);
-
+@custom-media --breakpoint-sm (min-width: 640px);
+@custom-media --breakpoint-md (min-width: 832px);
+@custom-media --breakpoint-lg (min-width: 1024px);
+@custom-media --breakpoint-xl (min-width: 1440px);
+@custom-media --breakpoint-xxl (min-width: 1600px);
