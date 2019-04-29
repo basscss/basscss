@@ -34,7 +34,7 @@ remove it and replace it with more appropriate styles.
 
 Before writing any new styles on top of Basscss, check the source code or documentation to see
 if there is already a style that will do what you need. Chances are, there is,
-or there is a combination of styles that can acheive the same thing.
+or there is a combination of styles that can achieve the same thing.
 
 
 # Avoid Magic Numbers
