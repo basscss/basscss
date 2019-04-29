@@ -127,7 +127,7 @@ Borders and border radii can be controlled using utility styles.
 ## Media Object
 
 The [Media Object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/)
-is a classic OOCSS solution for setting a fluid column next to an image. To acheive this with the Flex Object, add `.flex` to the container element and `.flex-auto` to the Media Object's body. To vertically center the body, add `.flex-center` to the container. This technique can also be used for multiple combinations of images and other content.
+is a classic OOCSS solution for setting a fluid column next to an image. To achieve this with the Flex Object, add `.flex` to the container element and `.flex-auto` to the Media Object's body. To vertically center the body, add `.flex-center` to the container. This technique can also be used for multiple combinations of images and other content.
 
 ```html
 <div class="p2">
