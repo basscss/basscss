@@ -43,7 +43,7 @@ To use custom properties in a declaration, use the `var()` syntax.
 }
 ```
 
-To define a fallback value, in case a variable has not been definied, separate the value with a comma. This works similarly to CSS font stacks.
+To define a fallback value, in case a variable has not been defined, separate the value with a comma. This works similarly to CSS font stacks.
 
 ```css
 .button-blue {
