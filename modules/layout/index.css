@@ -7,8 +7,16 @@
 .table-cell   { display: table-cell }
 
 .overflow-hidden { overflow: hidden }
+.overflow-x-hidden { overflow-x: hidden }
+.overflow-y-hidden { overflow-y: hidden }
+
 .overflow-scroll { overflow: scroll }
+.overflow-x-scroll { overflow-x: scroll }
+.overflow-y-scroll { overflow-y: scroll }
+
 .overflow-auto   { overflow: auto }
+.overflow-x-auto { overflow-x: auto }
+.overflow-y-auto { overflow-y: auto }
 
 .clearfix:before,
 .clearfix:after {
