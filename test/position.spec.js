@@ -25,6 +25,11 @@ describe('position', () => {
     expect(div.computedStyle.position).to.equal('fixed')
   })
 
+  it('should set position sticky', () => {
+    div.className = 'sticky'
+    expect(div.computedStyle.position).to.equal('sticky')
+  })
+
   it('should set top 0', () => {
     div.className = 'top-0'
     expect(div.computedStyle.top).to.equal('0px')
