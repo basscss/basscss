@@ -10,7 +10,7 @@ var postcssCalc = require('postcss-calc')
 var cssstats = require('cssstats')
 var mixed = require('css-mixed-properties')
 
-var src = fs.readFileSync(path.join(__dirname, '../src/basscss.css'), 'utf8')
+var src = fs.readFileSync(path.join(__dirname, '../basscss.css'), 'utf8')
 
 var css
 var stats

@@ -1,6 +1,8 @@
 
 # Basscss modules
 
+**DEPRECATED**
+
 Basscss is composed of 11 core modules, each available in standalone format on npm.
 
 - [type-scale](type-scale/README.md)

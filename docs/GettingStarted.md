@@ -48,6 +48,6 @@ import basscss from 'basscss/css/basscss.min.css'
 The precompiled source code can be imported using [postcss-loader](https://github.com/postcss/postcss-loader).
 
 ```js
-import basscss from 'basscss/src/basscss.css'
+import basscss from 'basscss/basscss.css'
 ```
 

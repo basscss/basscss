@@ -1,4 +1,4 @@
-import basscss from '../src/basscss.css'
+import basscss from '../basscss.css'
 
 var context = require.context('.', true, /.+\.spec\.js$/)
 
