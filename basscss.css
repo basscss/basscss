@@ -90,16 +90,6 @@
 .overflow-scroll { overflow: scroll }
 .overflow-auto   { overflow: auto }
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table
-}
-.clearfix:after { clear: both }
-
-.left  { float: left }
-.right { float: right }
-
 .fit { max-width: 100% }
 
 .max-width-1 { max-width: var(--width-1) }
@@ -116,358 +106,191 @@
 .align-bottom   { vertical-align: bottom }
 
 /* Basscss Margin */
-.m0  { margin:        0 }
-.mt0 { margin-top:    0 }
-.mr0 { margin-right:  0 }
-.mb0 { margin-bottom: 0 }
-.ml0 { margin-left:   0 }
+.m0 { margin: 0 }
+.m1 { margin: var(--space-1) }
+.m2 { margin: var(--space-2) }
+.m3 { margin: var(--space-3) }
+.m4 { margin: var(--space-4) }
+.m-auto  { margin: auto; }
+
 .mx0 { margin-left:   0; margin-right:  0 }
-.my0 { margin-top:    0; margin-bottom: 0 }
-
-.m1  { margin:        var(--space-1) }
-.mt1 { margin-top:    var(--space-1) }
-.mr1 { margin-right:  var(--space-1) }
-.mb1 { margin-bottom: var(--space-1) }
-.ml1 { margin-left:   var(--space-1) }
 .mx1 { margin-left:   var(--space-1); margin-right:  var(--space-1) }
-.my1 { margin-top:    var(--space-1); margin-bottom: var(--space-1) }
-
-.m2  { margin:        var(--space-2) }
-.mt2 { margin-top:    var(--space-2) }
-.mr2 { margin-right:  var(--space-2) }
-.mb2 { margin-bottom: var(--space-2) }
-.ml2 { margin-left:   var(--space-2) }
 .mx2 { margin-left:   var(--space-2); margin-right:  var(--space-2) }
-.my2 { margin-top:    var(--space-2); margin-bottom: var(--space-2) }
-
-.m3  { margin:        var(--space-3) }
-.mt3 { margin-top:    var(--space-3) }
-.mr3 { margin-right:  var(--space-3) }
-.mb3 { margin-bottom: var(--space-3) }
-.ml3 { margin-left:   var(--space-3) }
 .mx3 { margin-left:   var(--space-3); margin-right:  var(--space-3) }
-.my3 { margin-top:    var(--space-3); margin-bottom: var(--space-3) }
-
-.m4  { margin:        var(--space-4) }
-.mt4 { margin-top:    var(--space-4) }
-.mr4 { margin-right:  var(--space-4) }
-.mb4 { margin-bottom: var(--space-4) }
-.ml4 { margin-left:   var(--space-4) }
 .mx4 { margin-left:   var(--space-4); margin-right:  var(--space-4) }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.my0 { margin-top:    0; margin-bottom: 0 }
+.my1 { margin-top:    var(--space-1); margin-bottom: var(--space-1) }
+.my2 { margin-top:    var(--space-2); margin-bottom: var(--space-2) }
+.my3 { margin-top:    var(--space-3); margin-bottom: var(--space-3) }
 .my4 { margin-top:    var(--space-4); margin-bottom: var(--space-4) }
+.my-auto { margin-top: auto; margin-bottom: auto; }
 
 .mxn1 { margin-left: calc(var(--space-1) * -1); margin-right: calc(var(--space-1) * -1); }
 .mxn2 { margin-left: calc(var(--space-2) * -1); margin-right: calc(var(--space-2) * -1); }
 .mxn3 { margin-left: calc(var(--space-3) * -1); margin-right: calc(var(--space-3) * -1); }
 .mxn4 { margin-left: calc(var(--space-4) * -1); margin-right: calc(var(--space-4) * -1); }
 
-.m-auto  { margin: auto; }
+
+.mt0 { margin-top:    0 }
+.mr0 { margin-right:  0 }
+.mb0 { margin-bottom: 0 }
+.ml0 { margin-left:   0 }
+
+.mt1 { margin-top:    var(--space-1) }
+.mr1 { margin-right:  var(--space-1) }
+.mb1 { margin-bottom: var(--space-1) }
+.ml1 { margin-left:   var(--space-1) }
+
+.mt2 { margin-top:    var(--space-2) }
+.mr2 { margin-right:  var(--space-2) }
+.mb2 { margin-bottom: var(--space-2) }
+.ml2 { margin-left:   var(--space-2) }
+
+.mt3 { margin-top:    var(--space-3) }
+.mr3 { margin-right:  var(--space-3) }
+.mb3 { margin-bottom: var(--space-3) }
+.ml3 { margin-left:   var(--space-3) }
+
+.mt4 { margin-top:    var(--space-4) }
+.mr4 { margin-right:  var(--space-4) }
+.mb4 { margin-bottom: var(--space-4) }
+.ml4 { margin-left:   var(--space-4) }
+
 .mt-auto { margin-top: auto }
 .mr-auto { margin-right: auto }
 .mb-auto { margin-bottom: auto }
 .ml-auto { margin-left: auto }
-.mx-auto { margin-left: auto; margin-right: auto; }
-.my-auto { margin-top: auto; margin-bottom: auto; }
 
 /* Basscss Padding */
-.p0  { padding: 0 }
+.p0 { padding: 0 }
+.p1 { padding: var(--space-1) }
+.p2 { padding: var(--space-2) }
+.p3 { padding: var(--space-3) }
+.p4 { padding: var(--space-4) }
+
+.px0 { padding-left: 0; padding-right:  0 }
+.px1 { padding-left:   var(--space-1); padding-right:  var(--space-1) }
+.px2 { padding-left:   var(--space-2); padding-right:  var(--space-2) }
+.px3 { padding-left:   var(--space-3); padding-right:  var(--space-3) }
+.px4 { padding-left:   var(--space-4); padding-right:  var(--space-4) }
+
+.py0 { padding-top: 0;  padding-bottom: 0 }
+.py1 { padding-top:    var(--space-1); padding-bottom: var(--space-1) }
+.py2 { padding-top:    var(--space-2); padding-bottom: var(--space-2) }
+.py3 { padding-top:    var(--space-3); padding-bottom: var(--space-3) }
+.py4 { padding-top:    var(--space-4); padding-bottom: var(--space-4) }
+
 .pt0 { padding-top: 0 }
 .pr0 { padding-right: 0 }
 .pb0 { padding-bottom: 0 }
 .pl0 { padding-left: 0 }
-.px0 { padding-left: 0; padding-right:  0 }
-.py0 { padding-top: 0;  padding-bottom: 0 }
 
-.p1  { padding:        var(--space-1) }
 .pt1 { padding-top:    var(--space-1) }
 .pr1 { padding-right:  var(--space-1) }
 .pb1 { padding-bottom: var(--space-1) }
 .pl1 { padding-left:   var(--space-1) }
-.py1 { padding-top:    var(--space-1); padding-bottom: var(--space-1) }
-.px1 { padding-left:   var(--space-1); padding-right:  var(--space-1) }
 
-.p2  { padding:        var(--space-2) }
 .pt2 { padding-top:    var(--space-2) }
 .pr2 { padding-right:  var(--space-2) }
 .pb2 { padding-bottom: var(--space-2) }
 .pl2 { padding-left:   var(--space-2) }
-.py2 { padding-top:    var(--space-2); padding-bottom: var(--space-2) }
-.px2 { padding-left:   var(--space-2); padding-right:  var(--space-2) }
 
-.p3  { padding:        var(--space-3) }
 .pt3 { padding-top:    var(--space-3) }
 .pr3 { padding-right:  var(--space-3) }
 .pb3 { padding-bottom: var(--space-3) }
 .pl3 { padding-left:   var(--space-3) }
-.py3 { padding-top:    var(--space-3); padding-bottom: var(--space-3) }
-.px3 { padding-left:   var(--space-3); padding-right:  var(--space-3) }
 
-.p4  { padding:        var(--space-4) }
 .pt4 { padding-top:    var(--space-4) }
 .pr4 { padding-right:  var(--space-4) }
 .pb4 { padding-bottom: var(--space-4) }
 .pl4 { padding-left:   var(--space-4) }
-.py4 { padding-top:    var(--space-4); padding-bottom: var(--space-4) }
-.px4 { padding-left:   var(--space-4); padding-right:  var(--space-4) }
 
 /* Basscss Grid */
-.col {
-  float: left;
-  box-sizing: border-box;
-}
-
-.col-right {
-  float: right;
-  box-sizing: border-box;
-}
-
-.col-1 {
-  width: calc(1/12 * 100%);
-}
-
-.col-2 {
-  width: calc(2/12 * 100%);
-}
-
-.col-3 {
-  width: calc(3/12 * 100%);
-}
-
-.col-4 {
-  width: calc(4/12 * 100%);
-}
-
-.col-5 {
-  width: calc(5/12 * 100%);
-}
-
-.col-6 {
-  width: calc(6/12 * 100%);
-}
-
-.col-7 {
-  width: calc(7/12 * 100%);
-}
-
-.col-8 {
-  width: calc(8/12 * 100%);
-}
-
-.col-9 {
-  width: calc(9/12 * 100%);
-}
-
-.col-10 {
-  width: calc(10/12 * 100%);
-}
-
-.col-11 {
-  width: calc(11/12 * 100%);
-}
-
-.col-12 {
-  width: 100%;
-}
-
+.col-1 { width: calc(1/12 * 100%) }
+.col-2 { width: calc(2/12 * 100%) }
+.col-3 { width: calc(3/12 * 100%) }
+.col-4 { width: calc(4/12 * 100%) }
+.col-5 { width: calc(5/12 * 100%) }
+.col-6 { width: calc(6/12 * 100%) }
+.col-7 { width: calc(7/12 * 100%) }
+.col-8 { width: calc(8/12 * 100%) }
+.col-9 { width: calc(9/12 * 100%) }
+.col-10 { width: calc(10/12 * 100%) }
+.col-11 { width: calc(11/12 * 100%) }
+.col-12 { width: 100% }
 
 @media ((min-width:40em)) {
-  .sm-col {
-    float: left;
-    box-sizing: border-box;
-  }
-
-  .sm-col-right {
-    float: right;
-    box-sizing: border-box;
-  }
-
-  .sm-col-1 {
-    width: calc(1/12 * 100%);
-  }
-
-  .sm-col-2 {
-    width: calc(2/12 * 100%);
-  }
-
-  .sm-col-3 {
-    width: calc(3/12 * 100%);
-  }
-
-  .sm-col-4 {
-    width: calc(4/12 * 100%);
-  }
-
-  .sm-col-5 {
-    width: calc(5/12 * 100%);
-  }
-
-  .sm-col-6 {
-    width: calc(6/12 * 100%);
-  }
-
-  .sm-col-7 {
-    width: calc(7/12 * 100%);
-  }
-
-  .sm-col-8 {
-    width: calc(8/12 * 100%);
-  }
-
-  .sm-col-9 {
-    width: calc(9/12 * 100%);
-  }
-
-  .sm-col-10 {
-    width: calc(10/12 * 100%);
-  }
-
-  .sm-col-11 {
-    width: calc(11/12 * 100%);
-  }
-
-  .sm-col-12 {
-    width: 100%;
-  }
+  .sm-col-1 { width: calc(1/12 * 100%) }
+  .sm-col-2 { width: calc(2/12 * 100%) }
+  .sm-col-3 { width: calc(3/12 * 100%) }
+  .sm-col-4 { width: calc(4/12 * 100%) }
+  .sm-col-5 { width: calc(5/12 * 100%) }
+  .sm-col-6 { width: calc(6/12 * 100%) }
+  .sm-col-7 { width: calc(7/12 * 100%) }
+  .sm-col-8 { width: calc(8/12 * 100%) }
+  .sm-col-9 { width: calc(9/12 * 100%) }
+  .sm-col-10 { width: calc(10/12 * 100%) }
+  .sm-col-11 { width: calc(11/12 * 100%) }
+  .sm-col-12 { width: 100% }
 }
 
-
 @media ((min-width:52em)) {
-  .md-col {
-    float: left;
-    box-sizing: border-box;
-  }
-
-  .md-col-right {
-    float: right;
-    box-sizing: border-box;
-  }
-
-  .md-col-1 {
-    width: calc(1/12 * 100%);
-  }
-
-  .md-col-2 {
-    width: calc(2/12 * 100%);
-  }
-
-  .md-col-3 {
-    width: calc(3/12 * 100%);
-  }
-
-  .md-col-4 {
-    width: calc(4/12 * 100%);
-  }
-
-  .md-col-5 {
-    width: calc(5/12 * 100%);
-  }
-
-  .md-col-6 {
-    width: calc(6/12 * 100%);
-  }
-
-  .md-col-7 {
-    width: calc(7/12 * 100%);
-  }
-
-  .md-col-8 {
-    width: calc(8/12 * 100%);
-  }
-
-  .md-col-9 {
-    width: calc(9/12 * 100%);
-  }
-
-  .md-col-10 {
-    width: calc(10/12 * 100%);
-  }
-
-  .md-col-11 {
-    width: calc(11/12 * 100%);
-  }
-
-  .md-col-12 {
-    width: 100%;
-  }
+  .md-col-1 { width: calc(1/12 * 100%) }
+  .md-col-2 { width: calc(2/12 * 100%) }
+  .md-col-3 { width: calc(3/12 * 100%) }
+  .md-col-4 { width: calc(4/12 * 100%) }
+  .md-col-5 { width: calc(5/12 * 100%) }
+  .md-col-6 { width: calc(6/12 * 100%) }
+  .md-col-7 { width: calc(7/12 * 100%) }
+  .md-col-8 { width: calc(8/12 * 100%) }
+  .md-col-9 { width: calc(9/12 * 100%) }
+  .md-col-10 { width: calc(10/12 * 100%) }
+  .md-col-11 { width: calc(11/12 * 100%) }
+  .md-col-12 { width: 100% }
 }
 
 @media ((min-width:64em)) {
-  .lg-col {
-    float: left;
-    box-sizing: border-box;
-  }
-
-  .lg-col-right {
-    float: right;
-    box-sizing: border-box;
-  }
-
-  .lg-col-1 {
-    width: calc(1/12 * 100%);
-  }
-
-  .lg-col-2 {
-    width: calc(2/12 * 100%);
-  }
-
-  .lg-col-3 {
-    width: calc(3/12 * 100%);
-  }
-
-  .lg-col-4 {
-    width: calc(4/12 * 100%);
-  }
-
-  .lg-col-5 {
-    width: calc(5/12 * 100%);
-  }
-
-  .lg-col-6 {
-    width: calc(6/12 * 100%);
-  }
-
-  .lg-col-7 {
-    width: calc(7/12 * 100%);
-  }
-
-  .lg-col-8 {
-    width: calc(8/12 * 100%);
-  }
-
-  .lg-col-9 {
-    width: calc(9/12 * 100%);
-  }
-
-  .lg-col-10 {
-    width: calc(10/12 * 100%);
-  }
-
-  .lg-col-11 {
-    width: calc(11/12 * 100%);
-  }
-
-  .lg-col-12 {
-    width: 100%;
-  }
+  .lg-col-1 { width: calc(1/12 * 100%) }
+  .lg-col-2 { width: calc(2/12 * 100%) }
+  .lg-col-3 { width: calc(3/12 * 100%) }
+  .lg-col-4 { width: calc(4/12 * 100%) }
+  .lg-col-5 { width: calc(5/12 * 100%) }
+  .lg-col-6 { width: calc(6/12 * 100%) }
+  .lg-col-7 { width: calc(7/12 * 100%) }
+  .lg-col-8 { width: calc(8/12 * 100%) }
+  .lg-col-9 { width: calc(9/12 * 100%) }
+  .lg-col-10 { width: calc(10/12 * 100%) }
+  .lg-col-11 { width: calc(11/12 * 100%) }
+  .lg-col-12 { width: 100% }
 }
 
-
 .flex { display: flex }
+.flex-column  { flex-direction: column }
+.flex-row     { flex-direction: row }
+.flex-wrap    { flex-wrap: wrap }
 
 @media ((min-width:40em)) {
   .sm-flex { display: flex }
+  .sm-flex-column  { flex-direction: column }
+  .sm-flex-row     { flex-direction: row }
+  .sm-flex-wrap    { flex-wrap: wrap }
 }
 
 @media ((min-width:52em)) {
   .md-flex { display: flex }
+  .md-flex-column  { flex-direction: column }
+  .md-flex-row     { flex-direction: row }
+  .md-flex-wrap    { flex-wrap: wrap }
 }
 
 @media ((min-width:64em)) {
   .lg-flex { display: flex }
+  .lg-flex-column  { flex-direction: column }
+  .lg-flex-row     { flex-direction: row }
+  .lg-flex-wrap    { flex-wrap: wrap }
 }
-
-.flex-column  { flex-direction: column }
-.flex-wrap    { flex-wrap: wrap }
 
 .items-start    { align-items: flex-start }
 .items-end      { align-items: flex-end }
