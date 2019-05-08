@@ -1,8 +1,5 @@
 
-var postcssImport = require('postcss-import')
-var postcssCustomMedia = require('postcss-custom-media')
 var postcssCustomProperties = require('postcss-custom-properties')
-var postcssCalc = require('postcss-calc')
 
 module.exports = function (config) {
   config.set({
@@ -49,10 +46,7 @@ module.exports = function (config) {
                 loader: 'postcss-loader',
                 options: {
                   plugins: loader => [
-                    postcssImport(),
-                    postcssCustomMedia(),
                     postcssCustomProperties(),
-                    postcssCalc()
                   ]
                 }
               }
