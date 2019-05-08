@@ -24,11 +24,6 @@ Before proposing changes, consider alternative ways to achieve the intent behind
 If you’d like to propose a change, please look through and reference any existing issues that are related.
 Then, open an issue with the *Enhancement* label, links to related issues, and code demonstrating the proposal.
 
-## Technical considerations
-
-Most repos build scripts are handled with npm run scripts. Type `npm run` in any repo to see the available commands.
-
-For any questions related to compiling or building, please open an issue.
 
 ## License
 
