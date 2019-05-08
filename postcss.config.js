@@ -1,13 +1,14 @@
 module.exports = {
   plugins: [
-    'postcss-import',
-    'postcss-custom-media',
-    'postcss-custom-properties',
-    'postcss-calc',
-    'cssstats',
-    'postcss-discard-comments',
-    'postcss-remove-root',
-    'autoprefixer',
-    'postcss-reporter'
-  ].map(require)
+    require('postcss-import'),
+    require('postcss-custom-media'),
+    require('postcss-custom-properties', {
+      preserve: true
+    }),
+    require('postcss-calc'),
+    require('cssstats'),
+    require('postcss-discard-comments'),
+    require('autoprefixer'),
+    require('postcss-reporter')
+  ]
 }
