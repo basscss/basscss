@@ -75,10 +75,10 @@ Margin auto is used to horizontally center block-level elements with a set width
 .mx4 { margin-left:   var(--space-4); margin-right:  var(--space-4) }
 .my4 { margin-top:    var(--space-4); margin-bottom: var(--space-4) }
 
-.mxn1 { margin-left: -var(--space-1); margin-right: -var(--space-1); }
-.mxn2 { margin-left: -var(--space-2); margin-right: -var(--space-2); }
-.mxn3 { margin-left: -var(--space-3); margin-right: -var(--space-3); }
-.mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }
+.mxn1 { margin-left: calc(var(--space-1) * -1); margin-right: calc(var(--space-1) * -1); }
+.mxn2 { margin-left: calc(var(--space-2) * -1); margin-right: calc(var(--space-2) * -1); }
+.mxn3 { margin-left: calc(var(--space-3) * -1); margin-right: calc(var(--space-3) * -1); }
+.mxn4 { margin-left: calc(var(--space-4) * -1); margin-right: calc(var(--space-4) * -1); }
 
 .ml-auto { margin-left: auto }
 .mr-auto { margin-right: auto }
