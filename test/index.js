@@ -1,7 +1,7 @@
-
 import basscss from '../src/basscss.css'
 
 var context = require.context('.', true, /.+\.spec\.js$/)
-context.keys().forEach(context)
-module.exports = context
 
+context.keys().forEach(context)
+
+export default context

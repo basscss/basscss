@@ -32,6 +32,7 @@ module.exports = function (config) {
     singleRun: true,
 
     webpack: {
+      mode: 'development',
       module: {
         rules: [
           {
