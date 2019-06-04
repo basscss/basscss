@@ -1,16 +1,20 @@
 
 .flex { display: flex }
+.inline-flex { display: inline-flex; }
 
 @media (--breakpoint-sm) {
   .sm-flex { display: flex }
+  .sm-inline-flex { display: inline-flex }
 }
 
 @media (--breakpoint-md) {
   .md-flex { display: flex }
+  .md-inline-flex { display: inline-flex }
 }
 
 @media (--breakpoint-lg) {
   .lg-flex { display: flex }
+  .lg-inline-flex { display: inline-flex }
 }
 
 .flex-column  { flex-direction: column }
