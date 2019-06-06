@@ -1,6 +1,6 @@
 # Basscss
 
-Low-level CSS toolkit – the original [Functional CSS][functional-css] library <http://basscss.com>
+Low-level CSS toolkit – the original [Functional CSS][functional-css] library <https://basscss.com>
 
 [![Build Status](https://travis-ci.org/basscss/basscss.svg)](https://travis-ci.org/basscss/basscss)
 [![npm version](https://badge.fury.io/js/basscss.svg)](https://badge.fury.io/js/basscss)
@@ -54,7 +54,7 @@ and to help reduce boilerplate in stylesheets.
 Modular and customizable typography and layout styles don’t dictate
 what things should look like and play well with other stylesheets and frameworks.
 
-[Read More](http://basscss.com)
+[Read More](https://basscss.com)
 
 ---
 
