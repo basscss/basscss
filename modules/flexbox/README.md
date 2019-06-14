@@ -2,7 +2,7 @@
 These flexbox-based utilities can replace the need for a grid system in many instances, and provide powerful constraint-based micro-layout solutions.
 To learn more about the flexbox module, see [Using CSS flexible boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) and the [CSS Flexible Box Layout Module Specification](https://www.w3.org/TR/css-flexbox-1/).
 
-To set a container to display flex, add the `.flex` class.
+To set a container to display flex, add the `.flex` or `.inline-flex` class.
 
 ```html
 <div class="flex">
