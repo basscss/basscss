@@ -11,7 +11,7 @@ To set a container to display flex, add the `.flex` or `.inline-flex` class.
 </div>
 ```
 
-To set a container to display flex at certain breakpoints, use the `.sm-flex`, `.md-flex`, and `.lg-flex` styles.
+To set a container to display flex at certain breakpoints, use the `.sm-flex`, `.md-flex`, and `.lg-flex` styles (or their `.*-inline-flex` equivalents).
 
 ```html
 <div class="sm-flex">
