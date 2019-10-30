@@ -1,5 +1,1 @@
-modules
 docs
-.gitattributes
-.travis.yml
-test.js

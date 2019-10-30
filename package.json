@@ -4,12 +4,6 @@
   "description": "Low-level CSS toolkit",
   "style": "basscss.css",
   "main": "basscss.css",
-  "scripts": {
-    "test": "ava"
-  },
-  "devDependencies": {
-    "ava": "^1.4.1"
-  },
   "author": "Brent Jackson",
   "license": "MIT",
   "keywords": [
@@ -20,12 +14,5 @@
     "oocss",
     "basscss"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/basscss/basscss.git"
-  },
-  "bugs": {
-    "url": "https://github.com/basscss/basscss/issues"
-  },
-  "homepage": "https://github.com/basscss/basscss"
+  "repository": "basscss/basscss"
 }
