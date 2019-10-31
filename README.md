@@ -1,6 +1,12 @@
+
+<img
+  src='docs/logo.svg'
+  alt='Lightning logo'
+/>
+
 # Basscss
 
-Low-level CSS toolkit – the original [Functional CSS][functional-css] library <http://basscss.com>
+Low-level CSS toolkit – the original [Functional][functional-css]/Utility/Atomic CSS library <http://basscss.com>
 
 [![Build Status](https://travis-ci.org/basscss/basscss.svg)](https://travis-ci.org/basscss/basscss)
 [![npm version](https://badge.fury.io/js/basscss.svg)](https://badge.fury.io/js/basscss)
@@ -8,12 +14,6 @@ Low-level CSS toolkit – the original [Functional CSS][functional-css] library 
 ## Lightning-Fast Modular CSS with No Side Effects
 
 Basscss is a lightweight collection of immutable utilities designed for speed, clarity, performance, and scalability.
-
-## Stable
-
-Basscss v8 is the final version of Basscss, which means no major, breaking changes will be introduced.
-Minor features and patches may be added, but
-due to the nature of this CSS approach, there are virtually no bugs in Basscss.
 
 ---
 
