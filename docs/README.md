@@ -1,17 +1,23 @@
 
 # Docs
 
-The core documentation for Basscss is contained within each module’s README.md. A web version is hosted at <http://basscss.com>.
-
-For the source code for each module, see the [`/modules`](/modules) folder.
-
-- [Getting Started](GettingStarted.md)
-- [Modules](/modules/README.md)
-- [Design Principles](DesignPrinciples.md)
+- [Getting Started](getting-started.md)
+- [Design Principles](design-principles.md)
+- [Align](align.md)
+- [Border](border.md)
+- [Flexbox](flexbox.md)
+- [Grid](grid.md)
+- [Hide](hide.md)
+- [Layout](layout.md)
+- [Margin](margin.md)
+- [Padding](padding.md)
+- [Position](position.md)
+- [Type Scale](type-scale.md)
+- [Typography](typography.md)
 - [Guides](guides)
-  - [Basics](guides/Basics.md)
-  - [Page Layout](guides/PageLayout.md)
-  - [UI Elements](guides/UIElements.md)
-  - [Tips & Tricks](guides/TipsAndTricks.md)
-  - [Custom Builds](guides/CustomBuilds.md)
-  - [Future CSS Syntax](guides/FutureCSSSyntax.md)
+  - [Basics](guides/basics.md)
+  - [Page Layout](guides/page-layout.md)
+  - [UI Elements](guides/ui-elements.md)
+  - [Tips & Tricks](guides/tips-and-tricks.md)
+  - [Custom Builds](guides/custom-builds.md)
+  - [Future CSS Syntax](guides/future-css-syntax.md)
