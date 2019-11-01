@@ -19,5 +19,3 @@
   - [Page Layout](guides/page-layout.md)
   - [UI Elements](guides/ui-elements.md)
   - [Tips & Tricks](guides/tips-and-tricks.md)
-  - [Custom Builds](guides/custom-builds.md)
-  - [Future CSS Syntax](guides/future-css-syntax.md)
