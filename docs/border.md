@@ -1,5 +1,6 @@
+# Border
 
-This module controls borders and border radii.
+Controls borders and border radii.
 
 ## Borders
 

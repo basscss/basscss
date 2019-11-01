@@ -1,3 +1,4 @@
+# Margin
 
 Immutable margin utilities are based on a global white space scale defined with custom properties.
 These can dramatically help reduce the size of large stylesheets and allow for greater flexibility and quicker iteration when designing in the browser.

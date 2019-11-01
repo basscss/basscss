@@ -1,5 +1,6 @@
+# Type Scale
 
-This module provides utilities for adjusting font-size.
+These styles provide utilities for adjusting font-size.
 
 The `.h1` – `.h6` font-size utilities can be used to override an element’s default size.
 
