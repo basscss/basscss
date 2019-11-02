@@ -15,6 +15,7 @@
     "@mdx-js/react": "^1.5.1",
     "@theme-ui/components": "^0.2.46",
     "@theme-ui/preset-base": "^0.2.44",
+    "@theme-ui/prism": "^0.2.46",
     "gatsby": "^2.17.7",
     "gatsby-plugin-catch-links": "^2.1.15",
     "gatsby-plugin-mdx": "^1.0.55",

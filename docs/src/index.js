@@ -1,5 +1,7 @@
 /** @jsx jsx */
 import { jsx, ThemeProvider } from 'theme-ui'
+import '../../basscss.css'
+import './overrides.css'
 
 const heading = Tag => ({ id, children, ...props }) =>
   !!id ? (

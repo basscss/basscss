@@ -1,7 +1,14 @@
 import base from '@theme-ui/preset-base'
+import prism from '@theme-ui/prism/presets/theme-ui'
 
 export default {
   ...base,
+  colors: {
+    ...base.colors,
+    secondary: 'purple',
+    accent: 'orange',
+    gray: '#666',
+  },
   sizes: {
     container: 1024,
   },
@@ -22,5 +29,8 @@ export default {
     h2: { variant: 'text.heading', },
     h3: { variant: 'text.heading', },
     h4: { variant: 'text.heading', },
+    pre: {
+      ...prism,
+    },
   }
 }
