@@ -1,10 +1,8 @@
 
 # Flex Object
 
-<p class="h3">
-  The flex object can help solve many page-level and micro layout problems and can be combined with other utilities for a wide range of applications.
-  This guide demonstrates several solutions to common layout problems using the flex object and other Basscss utilities.
-</p>
+The flex object can help solve many page-level and micro layout problems and can be combined with other utilities for a wide range of applications.
+This guide demonstrates several solutions to common layout problems using the flex object and other Basscss utilities.
 
 Many of the examples in this post are inspired by Philip Walton's excellent [Solved by Flexbox](http://philipwalton.github.io/solved-by-flexbox/) project.
 

@@ -1,11 +1,9 @@
 
 # Basics
 
-<p class="h3">
-  Understanding the basics of designing for the web with CSS
-  is essential to using Basscss effectively.
-  This guide covers the fundamentals to help get you started.
-</p>
+Understanding the basics of designing for the web with CSS
+is essential to using Basscss effectively.
+This guide covers the fundamentals to help get you started.
 
 # Document structure
 HTML is a semantically structured markup language.
@@ -40,11 +38,11 @@ While the order of classes doesn’t matter to the browser, maintaining
 a consistent order will drastically improve code readability.
 I recommend the following order:
 
-1. **Typography** &#x2013; sets the visual hierarchy and is one of the most important parts of web design</li>
-2. **Positioning** &#x2013; can severely change document flow</li>
-3. **Layout** &#x2013; can affect other elements and document flow</li>
-4. **Color & Theme** &#x2013; has little or no effect on layout</li>
-5. **State** &#x2013; is dynamic and often unnecessary</li>
+1. **Typography** &#x2013; sets the visual hierarchy and is one of the most important parts of web design
+2. **Positioning** &#x2013; can severely change document flow
+3. **Layout** &#x2013; can affect other elements and document flow
+4. **Color & Theme** &#x2013; has little or no effect on layout
+5. **State** &#x2013; is dynamic and often unnecessary
 
 # Writing and Typography
 
