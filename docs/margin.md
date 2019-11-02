@@ -8,28 +8,22 @@ These can dramatically help reduce the size of large stylesheets and allow for g
 Due to the ubiquitous nature of setting margin,
 these utilities use a shorthand naming convention.
 
-<div class="overflow-scroll">
-  <table class="mb2 table-flush table-light">
-    <thead>
-      <tr> <th>Shorthand</th> <th>Description</th> </tr>
-    </thead>
-    <tbody>
-      <tr> <td>m</td> <td>Margin</td> </tr>
-      <tr> <td>t</td> <td>Top</td> </tr>
-      <tr> <td>r</td> <td>Right</td> </tr>
-      <tr> <td>b</td> <td>Bottom</td> </tr>
-      <tr> <td>l</td> <td>Left</td> </tr>
-      <tr> <td>x</td> <td>X-axis (left and right)</td> </tr>
-      <tr> <td>y</td> <td>Y-axis (top and bottom)</td> </tr>
-      <tr> <td>n</td> <td>Negative</td> </tr>
-      <tr> <td>0</td> <td>0 reset</td> </tr>
-      <tr> <td>1</td> <td>--space-1 (default .5rem)</td> </tr>
-      <tr> <td>2</td> <td>--space-2 (default 1rem)</td> </tr>
-      <tr> <td>3</td> <td>--space-3 (default 2rem)</td> </tr>
-      <tr> <td>4</td> <td>--space-4 (default 4rem)</td> </tr>
-    </tbody>
-  </table>
-</div>
+Shorthand | Description
+---|---
+m | Margin
+t | Top
+r | Right
+b | Bottom
+l | Left
+x | X-axis
+y | Y-axis
+n | negative
+0 | 0 (reset)
+1 | `--space-1`
+2 | `--space-2`
+3 | `--space-3`
+4 | `--space-4`
+
 
 Change or reset default margins using the white space scale.
 Negative x-axis margins are used to offset margins and padding of child elements.

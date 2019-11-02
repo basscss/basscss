@@ -1,0 +1,105 @@
+:root {
+  --text: #000;
+  --background: #fff;
+  --primary: #07c;
+  --secondary: #c07;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+h1 a, h2 a, h3 a,
+h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover {
+  color: var(--primary);
+}
+
+h2 {
+  margin-top: var(--space-4);
+}
+
+blockquote {
+  font-weight: bold;
+}
+
+a {
+  color: var(--primary);
+}
+
+pre, code {
+  font-family: Menlo, monospace;
+}
+pre {
+  padding: var(--space-1);
+  margin-top: 0;
+  border-radius: var(--border-radius);
+  color: white;
+  background-color: black;
+}
+code {
+  color: var(--secondary);
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: var(--space-3);
+}
+th, td {
+  text-align: left;
+  border-bottom: 1px solid;
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-1);
+}
+th {
+  vertical-align: bottom;
+}
+td {
+  vertical-align: top;
+}
+
+.grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-gap: var(--space-3);
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid h3, .grid p, .grid blockquote {
+  margin: 0;
+}
+@media screen and (min-width: 52em) {
+  .grid ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 4;
+}
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-1);
+}
+
+/* overrides */
+.fixed { position: absolute }

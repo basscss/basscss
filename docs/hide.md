@@ -6,20 +6,12 @@ Use these utilities to conditionally hide elements based on viewport width.
 
 Hide utilities differ from other breakpoint-based styles in Basscss. Each hide utility only applies to one breakpoint range.
 
-<div class="overflow-auto">
-  <table class="mb2 table-flush table-light">
-    <thead>
-      <tr> <th>Prefix</th> <th>Description</th> </tr>
-    </thead>
-    <tbody>
-      <tr> <td>xs-</td> <td>below 40em</td> </tr>
-      <tr> <td>sm-</td> <td>40em – 52em</td> </tr>
-      <tr> <td>md-</td> <td>52em – 64em</td> </tr>
-      <tr> <td>lg-</td> <td>above 64em</td> </tr>
-    </tbody>
-  </table>
-</div>
-
+Prefix | Description
+---|---
+`xs-` | below 40em
+`sm-` | 40em — 52em
+`md-` | 52em — 64em
+`lg-` | above 64em
 
 ## Hide content
 Resize the browser window to see the effect.

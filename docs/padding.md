@@ -8,28 +8,20 @@ These can dramatically help reduce the size of large stylesheets and allow for g
 Due to the ubiquitous nature of setting padding,
 these utilities use a shorthand naming convention.
 
-<div class="overflow-scroll">
-  <table class="mb2 table-flush table-light">
-    <thead>
-      <tr> <th>Shorthand</th> <th>Description</th> </tr>
-    </thead>
-    <tbody>
-      <tr> <td>p</td> <td>Padding</td> </tr>
-      <tr> <td>t</td> <td>Top</td> </tr>
-      <tr> <td>r</td> <td>Right</td> </tr>
-      <tr> <td>b</td> <td>Bottom</td> </tr>
-      <tr> <td>l</td> <td>Left</td> </tr>
-      <tr> <td>x</td> <td>X-axis (left and right)</td> </tr>
-      <tr> <td>y</td> <td>Y-axis (top and bottom)</td> </tr>
-      <tr> <td>n</td> <td>Negative (margin only)</td> </tr>
-      <tr> <td>0</td> <td>0 reset</td> </tr>
-      <tr> <td>1</td> <td>--space-1 (default .5rem)</td> </tr>
-      <tr> <td>2</td> <td>--space-2 (default 1rem)</td> </tr>
-      <tr> <td>3</td> <td>--space-3 (default 2rem)</td> </tr>
-      <tr> <td>4</td> <td>--space-4 (default 4rem)</td> </tr>
-    </tbody>
-  </table>
-</div>
+Shorthand | Description
+---|---
+p | Padding
+t | Top
+r | Right
+b | Bottom
+l | Left
+x | X-axis
+y | Y-axis
+0 | 0 (reset)
+1 | `--space-1`
+2 | `--space-2`
+3 | `--space-3`
+4 | `--space-4`
 
 Padding utilities are only available in symmetrical orientations.
 This is to normalize the spacing used around elements and maintain a consistent visual rhythm.

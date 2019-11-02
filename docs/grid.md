@@ -43,19 +43,12 @@ Use breakpoint-prefixed column utilities to change the grid at different screen 
 
 All breakpoint-based styles in Basscss follow the same naming convention.
 
-<div class="overflow-auto">
-  <table class="mb2 table-flush table-light">
-    <thead>
-      <tr> <th>Prefix</th> <th>Description</th> </tr>
-    </thead>
-    <tbody>
-      <tr> <td>(no prefix)</td> <td>Not scoped to a breakpoint</td> </tr>
-      <tr> <td>sm-</td> <td>--breakpoint-sm (default: min-width 40em)</td> </tr>
-      <tr> <td>md-</td> <td>--breakpoint-md (default: min-width 52em)</td> </tr>
-      <tr> <td>lg-</td> <td>--breakpoint-lg (default: min-width 64em)</td> </tr>
-    </tbody>
-  </table>
-</div>
+Prefix | Description
+---|---
+(no prefix) | Not scoped to a breakpoint
+`sm-` | min-width: 40em
+`md-` | min-width: 52em
+`lg-` | min-width: 64em
 
 Apply the grid from the small breakpoint and up with the `.sm-col` and `.sm-col-6` utilities.
 
