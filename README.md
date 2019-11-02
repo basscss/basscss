@@ -54,15 +54,37 @@ and to help reduce boilerplate in stylesheets.
 Modular and customizable typography and layout styles don’t dictate
 what things should look like and play well with other stylesheets and frameworks.
 
-[Read More](http://basscss.com)
+## Documentation
+
+- [Getting Started](docs/getting-started.md)
+- [Design Principles](docs/design-principles.md)
+- [Align](docs/align.md)
+- [Border](docs/border.md)
+- [Flexbox](docs/flexbox.md)
+- [Grid](docs/grid.md)
+- [Hide](docs/hide.md)
+- [Layout](docs/layout.md)
+- [Margin](docs/margin.md)
+- [Padding](docs/padding.md)
+- [Position](docs/position.md)
+- [Type Scale](docs/type-scale.md)
+- [Typography](docs/typography.md)
+- [Guides](docs/guides)
+  - [Basics](docs/guides/basics.md)
+  - [Page Layout](docs/guides/page-layout.md)
+  - [UI Elements](docs/guides/ui-elements.md)
+  - [Tips & Tricks](docs/guides/tips-and-tricks.md)
 
 ---
 
 ## Related
 
-- [Tachyons][tachyons]
+- [Theme UI][]
+- [Tachyons][]
+- [Styled System][]
+- [Rebass][]
 - [Buzzfeed Solid][solid]
-- [OOCSS][oocss]
+- [OOCSS][]
 
 ## Thanks
 
@@ -84,3 +106,7 @@ This library was largely inspired and influenced by the following people
 [tachyons]: http://tachyons.io
 [solid]: https://solid.buzzfeed.com
 [oocss]: https://github.com/stubbornella/oocss/wiki
+[styled system]: https://styled-system.com
+[theme ui]: https://theme-ui.com
+[rebass]: https://rebassjs.org
+
