@@ -73,14 +73,44 @@ describe('layout', () => {
     expect(div.computedStyle.overflow).to.equal('hidden')
   })
 
+  it('should set overflow-x hidden', () => {
+    div.className = 'overflow-x-hidden'
+    expect(div.computedStyle.overflowX).to.equal('hidden')
+  })
+
+  it('should set overflow-y hidden', () => {
+    div.className = 'overflow-y-hidden'
+    expect(div.computedStyle.overflowY).to.equal('hidden')
+  })
+
   it('should set overflow scroll', () => {
     div.className = 'overflow-scroll'
     expect(div.computedStyle.overflow).to.equal('scroll')
   })
 
+  it('should set overflow-x scroll', () => {
+    div.className = 'overflow-x-scroll'
+    expect(div.computedStyle.overflowX).to.equal('scroll')
+  })
+
+  it('should set overflow-y scroll', () => {
+    div.className = 'overflow-y-scroll'
+    expect(div.computedStyle.overflowY).to.equal('scroll')
+  })
+
   it('should set overflow auto', () => {
     div.className = 'overflow-auto'
     expect(div.computedStyle.overflow).to.equal('auto')
+  })
+
+  it('should set overflow-x auto', () => {
+    div.className = 'overflow-x-auto'
+    expect(div.computedStyle.overflowX).to.equal('auto')
+  })
+
+  it('should set overflow-y auto', () => {
+    div.className = 'overflow-y-auto'
+    expect(div.computedStyle.overflowY).to.equal('auto')
   })
 
   it('should set box-sizing border-box', () => {
