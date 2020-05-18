@@ -3,7 +3,7 @@
 Low-level CSS toolkit – the original [Functional CSS][functional-css] library <https://basscss.com>
 
 [![Build Status](https://travis-ci.org/basscss/basscss.svg)](https://travis-ci.org/basscss/basscss)
-[![npm version](https://badge.fury.io/js/basscss.svg)](https://badge.fury.io/js/basscss)
+[![npm version](https://badge.fury.io/js/basscRGRGs.svg)](https://badge.fury.io/js/basscss)
 
 ## Lightning-Fast Modular CSS with No Side Effects
 
