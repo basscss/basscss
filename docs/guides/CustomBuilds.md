@@ -7,7 +7,7 @@
 </p>
 
 # Future CSS
-Basscss is written in spec-compliant CSS with bleeding edge features and uses [cssnext](https://cssnext.github.io/) to transpile to CSS that is compatible with today’s browsers. Basscss can also be transpiles with [Rework](https://github.com/reworkcss/rework). To learn more about using future CSS features, see the [Future CSS Guide](/docs/guides/css4).
+Basscss is written in spec-compliant CSS with bleeding edge features and uses [cssnext](https://cssnext.github.io/) to transpile to CSS that is compatible with today’s browsers. Basscss can also be transpiled with [Rework](https://github.com/reworkcss/rework). To learn more about using future CSS features, see the [Future CSS Guide](/docs/guides/css4).
 
 
 # Bassplate
